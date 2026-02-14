@@ -1,0 +1,49 @@
+{
+  "title": "Midnight Mass",
+  "slug": "midnight-mass",
+  "year": 2021,
+  "month": 9,
+  "rank": 46,
+  "genres": ["horror", "drama", "mystery"],
+  "final_score": 7.52,
+  "network": "Netflix",
+  "seasons": 1,
+  "episodes": 7,
+  "status": "completed",
+  "type": "miniseries",
+  "ratings": {
+    "imdb": {
+      "score": 7.7,
+      "votes": 68000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt10519086/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 7.535,
+      "votes": 1134,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/97400-midnight-mass",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 87,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/midnight_mass",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Kate Siegel",
+    "Zach Gilford",
+    "Hamish Linklater",
+    "Samantha Sloyan",
+    "Igor",
+    "Henry Thomas"
+  ],
+  "creator": "Mike Flanagan",
+  "description": "A charismatic priest brings miracles and mysteries to a dying island community.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}

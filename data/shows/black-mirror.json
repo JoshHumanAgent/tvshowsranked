@@ -1,0 +1,48 @@
+{
+  "title": "Black Mirror",
+  "slug": "black-mirror",
+  "year": 2011,
+  "month": 12,
+  "rank": 45,
+  "genres": ["sci-fi", "drama", "thriller"],
+  "final_score": 7.52,
+  "network": "Netflix",
+  "seasons": 7,
+  "episodes": 32,
+  "status": "ongoing",
+  "ratings": {
+    "imdb": {
+      "score": 8.1,
+      "votes": 285000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt2085059/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 8.3,
+      "votes": 5970,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/42009-black-mirror",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 87,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/black_mirror",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Daniel Kaluuya",
+    "Jonah Hawks",
+    "Ashley Reed",
+    "Michaela Coel",
+    "Letitia Wright",
+    "Josh Mathurin"
+  ],
+  "creator": "Charlie Brooker",
+  "description": "An anthology series exploring the dark side of technology and modern society.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}
