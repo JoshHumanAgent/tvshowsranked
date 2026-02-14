@@ -1,0 +1,20 @@
+        /* Genre Tags - Pill Style */
+        .genres {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--border);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .genre-tag {
+            padding: 0.3rem 0.7rem;
+            background: rgba(212, 175, 55, 0.06);
+            border: 1px solid var(--gold-dim);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            color: #a0a0a8;
+        }
