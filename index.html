@@ -1664,8 +1664,11 @@
             .search-input { font-size: 0.9rem; padding: 0.5rem 1rem 0.5rem 2rem; }
             .genre-pills { gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
             .genre-pill { padding: 0.3rem 0.6rem; font-size: 0.7rem; }
-            .weight-slider-row { flex-direction: column; gap: 0.3rem; }
-            .weight-label { min-width: unset; font-size: 0.75rem; }
+            .weight-slider-row { flex-direction: column; gap: 0.5rem; align-items: stretch; }
+            .weight-slider-label { font-size: 0.8rem; min-width: unset; text-align: left; }
+            .weight-slider-input { height: 8px !important; }
+            .weight-slider-input::-webkit-slider-thumb { width: 24px !important; height: 24px !important; }
+            .weight-value { font-size: 0.9rem; }
             .results-header { flex-direction: column; gap: 0.5rem; align-items: flex-start !important; }
         }
         
@@ -2134,7 +2137,7 @@
             slidersContainer.innerHTML = categories.map(cat => `
                 <div class="weight-slider-row">
                     <span class="weight-slider-label">${cat.label}</span>
-                    <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="50" value="${weights[cat.key]}">
+                    <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="50" step="5" value="${weights[cat.key]}">
                     <span class="weight-slider-value" id="weight-value-${cat.key}">${weights[cat.key]}%</span>
                 </div>
             `).join('');
