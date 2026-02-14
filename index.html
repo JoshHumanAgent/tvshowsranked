@@ -2238,11 +2238,11 @@
             // This year (2026)
             if (year === currentYear) return 'thisYear';
             
-            // Last 3 months = 2025
+            // Last 3 months = most recent full year (2025)
             if (year === currentYear - 1) return 'last3mo';
             
-            // Last 6 months = 2024-2025
-            if (year === currentYear - 1 || year === currentYear - 2) return 'last6mo';
+            // Last 6 months = previous year before last3mo (2024)
+            if (year === currentYear - 2) return 'last6mo';
             
             // Decades
             if (year >= 2020) return '2020s';
