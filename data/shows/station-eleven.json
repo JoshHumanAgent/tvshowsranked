@@ -1,0 +1,48 @@
+{
+  "title": "Station Eleven",
+  "slug": "station-eleven",
+  "year": 2021,
+  "month": 12,
+  "rank": 43,
+  "genres": ["drama", "sci-fi"],
+  "final_score": 7.53,
+  "network": "HBO Max",
+  "seasons": 1,
+  "episodes": 10,
+  "status": "completed",
+  "type": "miniseries",
+  "ratings": {
+    "imdb": {
+      "score": 7.7,
+      "votes": 42000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt1051424/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 7.021,
+      "votes": 389,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/90972-station-eleven",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 87,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/station_eleven",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Mackenzie Davis",
+    "Himesh Patel",
+    "Matilda Lawler",
+    " Gael García Bernal",
+    "Daniel Zovatto"
+  ],
+  "creator": "Patrick Somerville",
+  "description": "The survivors of a devastating flu attempt to rebuild and reimagine the world while holding on to the best of what's been lost.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}
