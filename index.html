@@ -2119,7 +2119,7 @@
         const activeFiltersEl = document.getElementById('active-filters');
         
         let currentGenres = ['all'];
-        let currentEra = 'all';
+        let currentEras = [];
         let minScore = 6.5;
         let searchTerm = '';
         let sortBy = 'rank';
@@ -2362,7 +2362,7 @@
             let filtered = shows.filter(show => {
                 const matchesSearch = show.title.toLowerCase().includes(searchTerm.toLowerCase());
                 const matchesScore = show.final >= minScore;
-                const matchesEra = currentEra === 'all' || getEra(show.year) === currentEra;
+                const matchesEra = currentEras.length === 0 || currentEras.includes(getEra(show.year));
                 
                 let matchesGenre = true;
                 if (!currentGenres.includes('all')) {
@@ -2488,8 +2488,11 @@
         function updateActiveFilters() {
             const tags = [];
             
-            if (currentEra !== 'all') {
-                tags.push({ type: 'era', value: currentEra, label: `Era: ${currentEra}` });
+            // Active era tags
+            if (currentEras.length > 0) {
+                currentEras.forEach(era => {
+                    tags.push({ type: 'era', value: era, label: `Era: ${era}` });
+                });
             }
             
             if (minScore > 6.5) {
@@ -2545,7 +2548,7 @@
         };
 
         window.clearAllFilters = function() {
-            currentEra = 'all';
+            currentEras = [];
             currentGenres = ['all'];
             minScore = 6.5;
             searchTerm = '';
@@ -2564,12 +2567,22 @@
             renderShows();
         };
 
-        // Era buttons
+        // Era buttons (multi-select)
         document.querySelectorAll('#era-filters .filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('#era-filters .filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentEra = btn.dataset.filter;
+                const era = btn.dataset.filter;
+                if (era === 'all') {
+                    currentEras = [];
+                    document.querySelectorAll('#era-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                } else {
+                    btn.classList.toggle('active');
+                    if (btn.classList.contains('active')) {
+                        currentEras.push(era);
+                    } else {
+                        currentEras = currentEras.filter(e => e !== era);
+                    }
+                    document.querySelector('#era-filters .filter-btn[data-filter="all"]').classList.remove('active');
+                }
                 renderShows();
             });
         });
