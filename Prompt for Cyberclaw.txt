@@ -1,0 +1,229 @@
+You are the research+documentation worker for the TV Show Ranked project. Your job is to build a durable data foundation for the site.
+
+Hard constraints
+
+Do not change the website’s functionality or UI in this task unless explicitly instructed in a separate request.
+
+Do not change any existing ranking text content. If you need to reference existing methodology text, copy it verbatim.
+
+Output must be saved into files inside the repo in a dedicated data/docs area.
+
+All summaries must be strictly non-spoiler: do not describe plot events, twists, endings, character fates, or specific story beats. Do not “explain what the show is about.” Describe the viewing experience and why someone would want to watch it.
+
+Deliverables
+A) Per-show “Show Intelligence File” (one file per show)
+
+For every show currently in the site’s dataset/list, create a structured file containing:
+
+Core metadata
+
+Title (canonical)
+
+Year(s) / first air date
+
+Status (ended/ongoing)
+
+Seasons, total episodes
+
+Runtime (typical)
+
+Country / language (if available)
+
+Genres (normalized)
+
+Key credits (creator/showrunner if available)
+
+Where to watch (optional, region-dependent; include only if easily verifiable and clearly labeled)
+
+External ratings + rankings (multi-source)
+Capture at least:
+
+IMDb rating + vote count (and any top-250 status if relevant)
+
+Rotten Tomatoes: critics score + audience score (where applicable)
+
+Metacritic: metascore + user score (where applicable)
+
+At least 1 additional reputable list/ranking reference (e.g., Ranker / TV guide / major publication lists), if available
+
+For each source, store:
+
+Score value
+
+Scale (e.g., /10, %, /100)
+
+Count (votes/reviews) when available
+
+Date accessed
+
+URL
+
+Consensus + review highlights
+
+“General critical consensus” (2–5 sentences, paraphrased)
+
+“Audience sentiment” (2–5 sentences, paraphrased)
+
+“Prominent user review highlights” (3–6 bullet snippets paraphrased; if quoting, keep extremely short and attribute properly)
+
+“Common praises” and “common critiques” (bullets)
+
+Strictly non-spoiler experiential summary
+Write a “what it feels like to watch” summary:
+
+Tone and pacing
+
+Emotional texture
+
+What kind of viewer it rewards
+
+What makes it distinct
+
+Zero plot detail beyond the broadest premise if unavoidable (prefer none)
+
+How it maps to OUR ranking system
+For each of our categories, add:
+
+Why the show tends to score high/low in that dimension (non-spoiler, experiential)
+
+A short “evidence-style” justification (1–3 bullets) rooted in craft and experience
+
+If helpful: “who would value this” and “who might not” (taste alignment, not plot)
+
+Asset pointers
+
+Poster URL(s) used + license/usage notes if applicable
+
+Any decorative assets used are out of scope here; only collect show imagery references.
+
+File format requirement
+
+Use a machine-readable format: data/shows/<slug>.json (preferred) OR .yaml.
+
+Also produce a human-readable companion: docs/shows/<slug>.md that renders nicely.
+
+B) A global index
+
+Create data/shows/index.json with:
+
+List of all shows included
+
+Slugs
+
+Key metadata for fast UI usage
+
+External rating fields
+
+Our current internal scores and weights snapshot (do not rewrite; import existing)
+
+C) Methodology essay + future scoring doctrine
+
+Create a doc: docs/methodology/system_scoring_doctrine.md containing:
+
+A deep explanation of each category (what it measures, what it avoids, what strong vs weak looks like)
+
+Why these categories matter and how they interact
+
+How you will score new shows going forward (rubric logic, decision rules, edge cases)
+
+How weightings affect outcomes and how to interpret them
+
+Do not change any existing category wording that already exists in the site; reference it verbatim where needed, then expand with commentary.
+
+D) “Why these rankings?” audit report
+
+Create docs/methodology/current_rankings_rationale.md explaining:
+
+Why the current top shows land where they do (high-level, non-spoiler)
+
+Category-by-category patterns among top performers
+
+Any detected inconsistencies (if any) and how to handle them later (without changing ranks yet)
+
+E) 500-show candidate list
+
+Create data/show_candidates/candidates_500.json:
+
+500 candidate shows (title + year + basic genre tags)
+
+Include a “confidence” field (high/med/low) and “why included” tags (e.g., influential, critical darling, popular, cult, genre-defining)
+
+Include a “missing from current list” flag
+
+No ranking required yet; this is an expansion pool.
+
+Research process requirements
+
+Read the repo to find the current show list and internal scoring fields. Do not invent titles. Use the existing dataset as the authoritative list of “current shows.”
+
+For each show:
+
+Use reliable sources first (IMDb, Rotten Tomatoes, Metacritic, Wikipedia for release/episode counts)
+
+Cross-check episode counts and year ranges (do not trust a single source blindly)
+
+Store “date accessed” for each source
+
+Respect site terms. Avoid heavy scraping. Prefer API or light browsing. Cache results locally in the JSON files.
+
+Non-spoiler enforcement rules (strict)
+
+Fail the task if any summary:
+
+Mentions specific plot events
+
+Mentions twists/endings
+
+Reveals character arcs or outcomes
+
+Explains the “story” in detail
+
+Even lightly spoils major premises beyond broad tone
+
+Write like: “slow-burn political intrigue with dense dialogue,” not “a family fights for a throne.”
+
+Success criteria
+
+Every current show has a JSON (or YAML) intelligence file + a readable MD file.
+
+Index exists and is consistent with the per-show files.
+
+Methodology doctrine and rankings rationale docs exist and are substantive.
+
+Candidate list contains ~500 entries with structured fields.
+
+All content remains non-spoiler.
+
+No site functionality/UI was altered.
+
+Failure modes
+
+Only some shows documented; missing files.
+
+Ratings without sources/URLs or without date accessed.
+
+Episode counts inconsistent across files.
+
+Spoilers present in summaries or justifications.
+
+You “change the system” instead of documenting it.
+
+Output is unstructured or dumped into one giant file without indexing.
+
+Verification checklist (must complete before finishing)
+
+Run a script or manual validation that every show in the current dataset has:
+
+intelligence file
+
+external ratings fields present
+
+dates + URLs
+
+Random-sample 10 summaries for spoiler leakage.
+
+Random-sample 10 shows for episode count/year consistency across sources.
+
+Confirm index.json matches the number of shows and slugs.
+
+Confirm the two methodology docs exist and are readable.

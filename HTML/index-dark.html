@@ -1605,42 +1605,97 @@
         
         /* Responsive */
         @media (max-width: 600px) {
+            main {
+                max-width: 100% !important;
+                padding: 1rem 0.5rem 3rem !important;
+            }
             .show-module {
-                flex-direction: column !important;
+                flex-direction: row !important;
                 gap: 0.5rem !important;
+                margin-bottom: 0.5rem !important;
+                align-items: flex-start !important;
             }
             .show-poster {
-                width: 100% !important;
-                max-width: 250px !important;
+                width: 100px !important;
                 min-width: 100px !important;
-                border-radius: 8px !important;
+                flex-shrink: 0 !important;
+                border-radius: 6px 0 0 6px !important;
             }
-            .show-poster img { height: auto !important; }
+            .show-poster img { 
+                height: auto !important; 
+                width: 100% !important;
+            }
             .show-card-panel {
-                border-radius: 12px !important;
-                border-left: 1px solid #252532 !important;
-                padding: 0.75rem !important;
+                border-radius: 0 6px 6px 0 !important;
+                padding: 0.5rem !important;
+                min-width: 0 !important;
             }
-            .filters-section { padding: 0.75rem 1rem; }
-            .card-header { flex-wrap: wrap; }
-            .rank-badge { width: 40px; height: 40px; font-size: 1rem; }
-            .score-section { text-align: left; margin-top: 0.5rem; }
+            header { padding: 2rem 1rem; }
+            h1 { font-size: 2.5rem !important; }
+            .subtitle { font-size: 0.8rem !important; padding: 0 1rem; }
+            .stats { gap: 1rem !important; padding: 0 1rem; }
+            .filters-section { padding: 0.5rem; }
+            .card-header {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            .show-title { flex: 1; min-width: 0; }
+            .score-section { flex-shrink: 0; }
+            .rank-badge { width: 28px; height: 28px; font-size: 0.75rem; flex-shrink: 0; }
+            .score-section { text-align: left; margin-top: 0.25rem; }
             .score-label { text-align: left; }
-            .show-card { padding: 1.25rem; }
-            .show-title { font-size: 1.5rem; }
-            .final-score { font-size: 2.2rem; }
-            .stats { flex-direction: column; gap: 0.5rem; }
-            .score-label-text { width: 120px; font-size: 0.7rem; }
+            .show-card { padding: 0.5rem; }
+            .show-title { font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+            .final-score { font-size: 1.2rem; }
+            .show-meta { font-size: 0.65rem; }
+            .score-breakdown {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 0.15rem !important;
+                margin-top: 0.25rem !important;
+                justify-content: flex-end !important;
+            }
+            .score-label-text { font-size: 0.45rem !important; width: auto !important; }
+            .score-value { font-size: 0.5rem !important; }
+            .score-bar-container { width: 20px !important; height: 2px !important; }
+            .results-header { flex-direction: column; gap: 0.5rem; align-items: flex-start !important; }
+        }
+            .search-input { font-size: 0.9rem; padding: 0.5rem 1rem 0.5rem 2rem; }
+            .genre-pills { gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+            .genre-pill { padding: 0.3rem 0.6rem; font-size: 0.7rem; }
+            .weight-slider-row { flex-direction: column; gap: 0.5rem; align-items: stretch; }
+            .weight-slider-label { font-size: 0.8rem; min-width: unset; text-align: left; }
+            .weight-slider-input { height: 8px !important; }
+            .weight-slider-input::-webkit-slider-thumb { width: 24px !important; height: 24px !important; }
+            .weight-value { font-size: 0.9rem; }
+            .results-header { flex-direction: column; gap: 0.5rem; align-items: flex-start !important; }
         }
         
         @media (max-width: 900px) {
-            .show-module { gap: 0 !important; }
-            .show-poster {
-                width: 150px !important;
-                min-width: 150px !important;
+            .show-module { 
+                gap: 0 !important; 
+                margin-bottom: 0.75rem !important;
             }
-            .show-poster img { height: auto !important; }
-            .show-card-panel { padding: 0.6rem 1rem !important; }
+            .show-poster {
+                width: 120px !important;
+                min-width: 120px !important;
+                flex-shrink: 0 !important;
+            }
+            .show-poster img { 
+                height: auto !important; 
+                width: 100% !important;
+            }
+            .show-card-panel { 
+                padding: 0.5rem 0.75rem !important;
+                min-width: 0 !important;
+            }
+            .show-title { font-size: 1.1rem; }
+            .final-score { font-size: 1.5rem; }
+            header { padding: 3rem 1.5rem; }
+            h1 { font-size: 3rem; }
+            .subtitle { font-size: 0.9rem; }
+            .stats { gap: 1.5rem; }
         }
         
         /* Animation */
@@ -1722,7 +1777,7 @@
             <div style="width:1px;height:30px;background:#2a2a38;"></div>
             <div style="text-align:center;">
                 <span style="font-size:0.65rem;color:#555566;text-transform:uppercase;letter-spacing:0.12em;">Updated</span>
-                <span class="num" style="font-family:'Unna',serif;font-size:1.4rem;font-weight:600;color:#8a8a9a;display:block;line-height:1;">March 2025</span>
+                <span class="num" style="font-family:'Unna',serif;font-size:1.4rem;font-weight:600;color:#8a8a9a;display:block;line-height:1;">February 2026</span>
             </div>
         </div>
         
@@ -1871,6 +1926,7 @@
             <label class="filter-label">Era</label>
             <div class="filter-row" id="era-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="last3mo">Last 3 Months</button>
                 <button class="filter-btn" data-filter="last6mo">Last 6 Months</button>
                 <button class="filter-btn" data-filter="thisYear">This Year</button>
                 <button class="filter-btn" data-filter="2020s">2020s</button>
@@ -1943,7 +1999,7 @@
         </div>
         <div class="show-list" id="rankings" style="display: flex;"></div>
         <div class="no-results" id="no-results" style="display: none;">
-            <p>No shows match your filters</p>
+            <p>None</p>
         </div>
     </main>
 
@@ -2064,7 +2120,7 @@
         const activeFiltersEl = document.getElementById('active-filters');
         
         let currentGenres = ['all'];
-        let currentEra = 'all';
+        let currentEras = [];
         let minScore = 6.5;
         let searchTerm = '';
         let sortBy = 'rank';
@@ -2082,7 +2138,7 @@
             slidersContainer.innerHTML = categories.map(cat => `
                 <div class="weight-slider-row">
                     <span class="weight-slider-label">${cat.label}</span>
-                    <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="50" value="${weights[cat.key]}">
+                    <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="50" step="5" value="${weights[cat.key]}">
                     <span class="weight-slider-value" id="weight-value-${cat.key}">${weights[cat.key]}%</span>
                 </div>
             `).join('');
@@ -2177,9 +2233,18 @@
         initWeightSliders();
 
         function getEra(year) {
-            const now = 2026;
-            if (year === now) return 'thisYear';
-            if (year >= now - 1) return 'last6mo'; // Simplified: treat 2025 as last 6mo
+            const currentYear = new Date().getFullYear();
+            
+            // This year (2026)
+            if (year === currentYear) return 'thisYear';
+            
+            // Last 3 months = most recent full year (2025)
+            if (year === currentYear - 1) return 'last3mo';
+            
+            // Last 6 months = most recent year (2025) - same as last3mo for now
+            if (year === currentYear - 1) return 'last6mo';
+            
+            // Decades
             if (year >= 2020) return '2020s';
             if (year >= 2010) return '2010s';
             if (year >= 2000) return '2000s';
@@ -2307,7 +2372,7 @@
             let filtered = shows.filter(show => {
                 const matchesSearch = show.title.toLowerCase().includes(searchTerm.toLowerCase());
                 const matchesScore = show.final >= minScore;
-                const matchesEra = currentEra === 'all' || getEra(show.year) === currentEra;
+                const matchesEra = currentEras.length === 0 || currentEras.includes(getEra(show.year));
                 
                 let matchesGenre = true;
                 if (!currentGenres.includes('all')) {
@@ -2433,8 +2498,11 @@
         function updateActiveFilters() {
             const tags = [];
             
-            if (currentEra !== 'all') {
-                tags.push({ type: 'era', value: currentEra, label: `Era: ${currentEra}` });
+            // Active era tags
+            if (currentEras.length > 0) {
+                currentEras.forEach(era => {
+                    tags.push({ type: 'era', value: era, label: `Era: ${era}` });
+                });
             }
             
             if (minScore > 6.5) {
@@ -2490,7 +2558,7 @@
         };
 
         window.clearAllFilters = function() {
-            currentEra = 'all';
+            currentEras = [];
             currentGenres = ['all'];
             minScore = 6.5;
             searchTerm = '';
@@ -2509,12 +2577,22 @@
             renderShows();
         };
 
-        // Era buttons
+        // Era buttons (multi-select)
         document.querySelectorAll('#era-filters .filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('#era-filters .filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentEra = btn.dataset.filter;
+                const era = btn.dataset.filter;
+                if (era === 'all') {
+                    currentEras = [];
+                    document.querySelectorAll('#era-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                } else {
+                    btn.classList.toggle('active');
+                    if (btn.classList.contains('active')) {
+                        currentEras.push(era);
+                    } else {
+                        currentEras = currentEras.filter(e => e !== era);
+                    }
+                    document.querySelector('#era-filters .filter-btn[data-filter="all"]').classList.remove('active');
+                }
                 renderShows();
             });
         });
