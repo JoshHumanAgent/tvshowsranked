@@ -2233,20 +2233,16 @@
         initWeightSliders();
 
         function getEra(year) {
-            const now = new Date();
-            const currentYear = now.getFullYear();
-            const currentMonth = now.getMonth() + 1; // 1-12
+            const currentYear = new Date().getFullYear();
             
-            // This year
+            // This year (2026)
             if (year === currentYear) return 'thisYear';
             
-            // Last 6 months: previous year if we're in Jan-Jun, or same year if Jul-Dec
-            if (year === currentYear - 1 && currentMonth <= 6) return 'last6mo';
-            if (year === currentYear && currentMonth >= 7) return 'last6mo';
+            // Last 3 months = 2025
+            if (year === currentYear - 1) return 'last3mo';
             
-            // Last 3 months: 2 years ago if we're in Jan-Mar, or previous year if Apr-Dec
-            if (year === currentYear - 1 && currentMonth >= 4) return 'last3mo';
-            if (year === currentYear - 2 && currentMonth <= 3) return 'last3mo';
+            // Last 6 months = 2024-2025
+            if (year === currentYear - 1 || year === currentYear - 2) return 'last6mo';
             
             // Decades
             if (year >= 2020) return '2020s';
