@@ -1610,46 +1610,41 @@
                 padding: 1rem 0.5rem 3rem !important;
             }
             .show-module {
-                flex-direction: column !important;
-                gap: 0 !important;
-                margin-bottom: 1rem !important;
-                border-radius: 0 !important;
+                flex-direction: row !important;
+                gap: 0.5rem !important;
+                margin-bottom: 0.5rem !important;
+                align-items: flex-start !important;
             }
             .show-poster {
-                width: 100% !important;
-                max-width: 100% !important;
-                min-width: 100% !important;
-                border-radius: 0 !important;
-                margin: 0 !important;
+                width: 100px !important;
+                min-width: 100px !important;
+                flex-shrink: 0 !important;
+                border-radius: 6px 0 0 6px !important;
             }
             .show-poster img { 
                 height: auto !important; 
                 width: 100% !important;
-                max-width: 100% !important;
-                object-fit: cover !important;
-                display: block !important;
             }
             .show-card-panel {
-                border-radius: 0 !important;
-                border: 1px solid #252532 !important;
-                border-top: none !important;
-                padding: 0.75rem !important;
-                width: 100% !important;
+                border-radius: 0 6px 6px 0 !important;
+                padding: 0.5rem !important;
+                min-width: 0 !important;
             }
             header { padding: 2rem 1rem; }
             h1 { font-size: 2.5rem !important; }
             .subtitle { font-size: 0.8rem !important; padding: 0 1rem; }
             .stats { gap: 1rem !important; padding: 0 1rem; }
             .filters-section { padding: 0.5rem; }
-            .card-header { flex-wrap: wrap; gap: 0.5rem; }
-            .rank-badge { width: 36px; height: 36px; font-size: 0.9rem; }
-            .score-section { text-align: left; margin-top: 0.5rem; }
+            .card-header { flex-wrap: wrap; gap: 0.25rem; }
+            .rank-badge { width: 28px; height: 28px; font-size: 0.75rem; }
+            .score-section { text-align: left; margin-top: 0.25rem; }
             .score-label { text-align: left; }
-            .show-card { padding: 1rem; }
-            .show-title { font-size: 1.2rem; }
-            .final-score { font-size: 1.8rem; }
-            .stats { flex-direction: column; gap: 0.5rem; }
-            .score-label-text { width: 100px; font-size: 0.65rem; }
+            .show-card { padding: 0.5rem; }
+            .show-title { font-size: 0.9rem; }
+            .final-score { font-size: 1.2rem; }
+            .show-meta { font-size: 0.65rem; }
+            .score-label-text { width: auto; font-size: 0.55rem; }
+            .score-value { font-size: 0.65rem; }
             .search-input { font-size: 0.9rem; padding: 0.5rem 1rem 0.5rem 2rem; }
             .genre-pills { gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
             .genre-pill { padding: 0.3rem 0.6rem; font-size: 0.7rem; }
