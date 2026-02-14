@@ -1,0 +1,44 @@
+{
+  "title": "24",
+  "slug": "24",
+  "year": 2001,
+  "month": 11,
+  "rank": 58,
+  "genres": ["action", "drama", "thriller", "cop-show"],
+  "final_score": 7.45,
+  "network": "Fox",
+  "seasons": 9,
+  "episodes": 204,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 8.4,
+      "votes": 205900,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt0285331/",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 92,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/24",
+      "date_accessed": "2026-02-15"
+    },
+    "metacritic": {
+      "score": 82,
+      "source": "Metacritic",
+      "url": "https://www.metacritic.com/tv/24",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Kiefer Sutherland",
+    "Sarah Clarke",
+    "Mary Lynn Rajskub",
+    "Dennis Haysbert",
+    "William Sadler",
+    "Kim Dickens"
+  ],
+  "creator": "Joel Surnow, Robert Cochran",
+  "description": "Counterterrorism agent Jack Bauer fights the bad guys of the world, a day at a time. With each week's episode unfolding in real time."
+}
