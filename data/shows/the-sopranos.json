@@ -1,78 +1,87 @@
-﻿{
-    "slug":  "the-sopranos",
-    "title":  "The Sopranos",
-    "year":  1999,
-    "month":  1,
-    "status":  "ended",
-    "seasons":  6,
-    "episodes":  86,
-    "runtime":  "55-60",
-    "country":  "United States",
-    "genres":  [
-                   "crime",
-                   "drama",
-                   "cop-show"
-               ],
-    "creator":  [
-                    "David Chase"
-                ],
-    "network":  "HBO",
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  9.2,
-                                          "scale":  10,
-                                          "count":  "566K",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt0141842/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "season_1":  {
-                                                                      "score":  98,
-                                                                      "scale":  100
-                                                                  },
-                                                     "season_2":  {
-                                                                      "score":  94,
-                                                                      "scale":  100
-                                                                  },
-                                                     "season_3":  {
-                                                                      "score":  100,
-                                                                      "scale":  100
-                                                                  },
-                                                     "season_4":  {
-                                                                      "score":  92,
-                                                                      "scale":  100
-                                                                  },
-                                                     "season_5":  {
-                                                                      "score":  93,
-                                                                      "scale":  100
-                                                                  },
-                                                     "season_6_pt1":  {
-                                                                          "score":  89,
-                                                                          "scale":  100
-                                                                      },
-                                                     "season_6_pt2":  {
-                                                                          "score":  84,
-                                                                          "scale":  100
-                                                                      },
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/the_sopranos"
-                                                 },
-                             "metacritic":  {
-                                                "score":  93,
-                                                "scale":  100,
-                                                "date_accessed":  "2026-02-15",
-                                                "url":  "https://www.metacritic.com/tv/the-sopranos"
-                                            }
-                         },
-    "consensus_highlights":  "The Sopranos revolutionized television and created the modern \u0027prestige drama.\u0027 James Gandolfini\u0027s Tony Soprano is one of the most complex characters ever writtenâ€” a mob boss with panic attacks who sees a therapist. David Chase\u0027s creation pioneered the antihero, influenced every drama that followed, and changed the cultural conversation about television as art.",
-    "ranking_system":  {
-                           "narrative_ambition":  10,
-                           "character_depth":  10,
-                           "thematic_resonance":  9,
-                           "cultural_impact":  10,
-                           "watchability":  8.5,
-                           "final_score":  8.38
-                       },
-    "notes":  "The Sopranos invented modern prestige television. Without it, no Breaking Bad, no Game of Thrones, no The Wire.",
-    "tmdbId":  1418
+{
+    "slug": "the-sopranos",
+    "title": "The Sopranos",
+    "year": 1999,
+    "month": 1,
+    "status": "ended",
+    "seasons": 6,
+    "episodes": 86,
+    "runtime": "55-60",
+    "country": "United States",
+    "genres": [
+        "crime",
+        "drama",
+        "cop-show"
+    ],
+    "creator": [
+        "David Chase"
+    ],
+    "network": "HBO",
+    "external_ratings": {
+        "imdb": {
+            "score": 9.2,
+            "scale": 10,
+            "count": "566K",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt0141842/"
+        },
+        "rotten_tomatoes": {
+            "season_1": {
+                "score": 98,
+                "scale": 100
+            },
+            "season_2": {
+                "score": 94,
+                "scale": 100
+            },
+            "season_3": {
+                "score": 100,
+                "scale": 100
+            },
+            "season_4": {
+                "score": 92,
+                "scale": 100
+            },
+            "season_5": {
+                "score": 93,
+                "scale": 100
+            },
+            "season_6_pt1": {
+                "score": 89,
+                "scale": 100
+            },
+            "season_6_pt2": {
+                "score": 84,
+                "scale": 100
+            },
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/the_sopranos"
+        },
+        "metacritic": {
+            "score": 93,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.metacritic.com/tv/the-sopranos"
+        }
+    },
+    "consensus_highlights": "The Sopranos revolutionized television and created the modern 'prestige drama.' James Gandolfini's Tony Soprano is one of the most complex characters ever writtenâ€” a mob boss with panic attacks who sees a therapist. David Chase's creation pioneered the antihero, influenced every drama that followed, and changed the cultural conversation about television as art.",
+    "ranking_system": {
+        "narrative_ambition": 10,
+        "character_depth": 10,
+        "thematic_resonance": 9,
+        "cultural_impact": 10,
+        "watchability": 8.5,
+        "final_score": 8.38
+    },
+    "notes": "The Sopranos invented modern prestige television. Without it, no Breaking Bad, no Game of Thrones, no The Wire.",
+    "tmdbId": 1418,
+    "streaming": {
+        "us": [
+            "Max",
+            "Amazon Prime Video"
+        ],
+        "uk": [
+            "Sky Atlantic"
+        ]
+    }
 }

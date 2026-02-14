@@ -1,44 +1,52 @@
-﻿{
-    "slug":  "sharp-objects",
-    "title":  "Sharp Objects",
-    "year":  2018,
-    "month":  7,
-    "status":  "completed",
-    "seasons":  1,
-    "episodes":  8,
-    "runtime":  "45-60",
-    "country":  "United States",
-    "genres":  [
-                   "drama",
-                   "mystery",
-                   "thriller"
-               ],
-    "creator":  null,
-    "network":  "HBO",
-    "tmdbId":  79042,
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  8.1,
-                                          "scale":  10,
-                                          "count":  "95000",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt5238906/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "score":  92,
-                                                     "scale":  100,
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/sharp_objects"
-                                                 }
-                         },
-    "consensus_highlights":  "A reporter confronts the psychological demons from her past when she returns home to investigate murders of young girls.",
-    "ranking_system":  {
-                           "narrative_ambition":  7.1,
-                           "character_depth":  7.8,
-                           "thematic_resonance":  7.5,
-                           "cultural_impact":  6.7,
-                           "watchability":  7.5,
-                           "final_score":  7.47
-                       },
-    "notes":  ""
+{
+    "slug": "sharp-objects",
+    "title": "Sharp Objects",
+    "year": 2018,
+    "month": 7,
+    "status": "completed",
+    "seasons": 1,
+    "episodes": 8,
+    "runtime": "45-60",
+    "country": "United States",
+    "genres": [
+        "drama",
+        "mystery",
+        "thriller"
+    ],
+    "creator": null,
+    "network": "HBO",
+    "tmdbId": 79042,
+    "external_ratings": {
+        "imdb": {
+            "score": 8.1,
+            "scale": 10,
+            "count": "95000",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt5238906/"
+        },
+        "rotten_tomatoes": {
+            "score": 92,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/sharp_objects"
+        }
+    },
+    "consensus_highlights": "A reporter confronts the psychological demons from her past when she returns home to investigate murders of young girls.",
+    "ranking_system": {
+        "narrative_ambition": 7.1,
+        "character_depth": 7.8,
+        "thematic_resonance": 7.5,
+        "cultural_impact": 6.7,
+        "watchability": 7.5,
+        "final_score": 7.47
+    },
+    "notes": "",
+    "streaming": {
+        "us": [
+            "HBO Max"
+        ],
+        "uk": [
+            "Sky Atlantic"
+        ]
+    }
 }

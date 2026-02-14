@@ -1,43 +1,52 @@
-﻿{
-    "slug":  "girls",
-    "title":  "Girls",
-    "year":  2012,
-    "month":  4,
-    "status":  "completed",
-    "seasons":  6,
-    "episodes":  62,
-    "runtime":  "45-60",
-    "country":  "United States",
-    "genres":  [
-                   "drama",
-                   "comedy"
-               ],
-    "creator":  "Lena Dunham",
-    "network":  "HBO",
-    "tmdbId":  42274,
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  7.4,
-                                          "scale":  10,
-                                          "count":  "82500",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt1723816/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "score":  91,
-                                                     "scale":  100,
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/girls"
-                                                 }
-                         },
-    "consensus_highlights":  "A comedy-drama following four young women navigating life in New York City after college.",
-    "ranking_system":  {
-                           "narrative_ambition":  7.3,
-                           "character_depth":  8.1,
-                           "thematic_resonance":  7.7,
-                           "cultural_impact":  6.9,
-                           "watchability":  7.7,
-                           "final_score":  7.68
-                       },
-    "notes":  ""
+{
+    "slug": "girls",
+    "title": "Girls",
+    "year": 2012,
+    "month": 4,
+    "status": "completed",
+    "seasons": 6,
+    "episodes": 62,
+    "runtime": "45-60",
+    "country": "United States",
+    "genres": [
+        "drama",
+        "comedy"
+    ],
+    "creator": "Lena Dunham",
+    "network": "HBO",
+    "tmdbId": 42274,
+    "external_ratings": {
+        "imdb": {
+            "score": 7.4,
+            "scale": 10,
+            "count": "82500",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt1723816/"
+        },
+        "rotten_tomatoes": {
+            "score": 91,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/girls"
+        }
+    },
+    "consensus_highlights": "A comedy-drama following four young women navigating life in New York City after college.",
+    "ranking_system": {
+        "narrative_ambition": 7.3,
+        "character_depth": 8.1,
+        "thematic_resonance": 7.7,
+        "cultural_impact": 6.9,
+        "watchability": 7.7,
+        "final_score": 7.68
+    },
+    "notes": "",
+    "streaming": {
+        "us": [
+            "HBO Max",
+            "Amazon Prime Video"
+        ],
+        "uk": [
+            "Sky Atlantic"
+        ]
+    }
 }

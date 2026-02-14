@@ -1,44 +1,54 @@
-﻿{
-    "slug":  "homeland",
-    "title":  "Homeland",
-    "year":  2011,
-    "month":  10,
-    "status":  "completed",
-    "seasons":  8,
-    "episodes":  96,
-    "runtime":  "45-60",
-    "country":  "United States",
-    "genres":  [
-                   "drama",
-                   "thriller",
-                   "action"
-               ],
-    "creator":  null,
-    "network":  "Showtime",
-    "tmdbId":  1405,
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  8.3,
-                                          "scale":  10,
-                                          "count":  "325000",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt1796960/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "score":  88,
-                                                     "scale":  100,
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/homeland"
-                                                 }
-                         },
-    "consensus_highlights":  "A bipolar CIA officer becomes convinced a returned POW has been turned by terrorists and is planning an attack on America.",
-    "ranking_system":  {
-                           "narrative_ambition":  7.3,
-                           "character_depth":  8.1,
-                           "thematic_resonance":  7.7,
-                           "cultural_impact":  6.9,
-                           "watchability":  7.7,
-                           "final_score":  7.67
-                       },
-    "notes":  ""
+{
+    "slug": "homeland",
+    "title": "Homeland",
+    "year": 2011,
+    "month": 10,
+    "status": "completed",
+    "seasons": 8,
+    "episodes": 96,
+    "runtime": "45-60",
+    "country": "United States",
+    "genres": [
+        "drama",
+        "thriller",
+        "action"
+    ],
+    "creator": null,
+    "network": "Showtime",
+    "tmdbId": 1405,
+    "external_ratings": {
+        "imdb": {
+            "score": 8.3,
+            "scale": 10,
+            "count": "325000",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt1796960/"
+        },
+        "rotten_tomatoes": {
+            "score": 88,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/homeland"
+        }
+    },
+    "consensus_highlights": "A bipolar CIA officer becomes convinced a returned POW has been turned by terrorists and is planning an attack on America.",
+    "ranking_system": {
+        "narrative_ambition": 7.3,
+        "character_depth": 8.1,
+        "thematic_resonance": 7.7,
+        "cultural_impact": 6.9,
+        "watchability": 7.7,
+        "final_score": 7.67
+    },
+    "notes": "",
+    "streaming": {
+        "us": [
+            "Showtime",
+            "Prime Video"
+        ],
+        "uk": [
+            "Channel 4",
+            "Prime Video"
+        ]
+    }
 }

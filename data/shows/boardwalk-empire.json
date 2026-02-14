@@ -1,66 +1,75 @@
-﻿{
-    "slug":  "boardwalk-empire",
-    "title":  "Boardwalk Empire",
-    "year":  2010,
-    "month":  9,
-    "status":  "ended",
-    "seasons":  5,
-    "episodes":  56,
-    "runtime":  "50-60",
-    "country":  "United States",
-    "genres":  [
-                   "crime",
-                   "drama",
-                   "historical"
-               ],
-    "creator":  [
-                    "Terrence Winter"
-                ],
-    "network":  "HBO",
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  8.5,
-                                          "scale":  10,
-                                          "count":  "145K",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt0979439/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "season_1":  {
-                                                                      "score":  92,
-                                                                      "scale":  100
-                                                                  },
-                                                     "season_2":  {
-                                                                      "score":  91,
-                                                                      "scale":  100
-                                                                  },
-                                                     "season_3":  {
-                                                                      "score":  93,
-                                                                      "scale":  100
-                                                                  },
-                                                     "season_4":  {
-                                                                      "score":  91,
-                                                                      "scale":  100
-                                                                  },
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/boardwalk_empire"
-                                                 },
-                             "metacritic":  {
-                                                "score":  78,
-                                                "scale":  100,
-                                                "date_accessed":  "2026-02-15",
-                                                "url":  "https://www.metacritic.com/tv/boardwalk-empire"
-                                            }
-                         },
-    "consensus_highlights":  "Boardwalk Empire is a lavish period crime drama set in Atlantic City during Prohibition. Steve Buscemi delivers a masterful performance as Enoch \u0027Nucky\u0027 Thompson, a political boss and crime lord navigating the turbulent 1920s. The series features impeccable production design and a remarkable ensemble cast.",
-    "ranking_system":  {
-                           "narrative_ambition":  8.5,
-                           "character_depth":  9,
-                           "thematic_resonance":  8,
-                           "cultural_impact":  8,
-                           "watchability":  8.5,
-                           "final_score":  7.98
-                       },
-    "notes":  "Terence Martin\u0027s screenplay for The Aviator provides the blueprint for Boardwalk Empire\u0027s lavish period recreation.",
-    "tmdbId":  1625
+{
+    "slug": "boardwalk-empire",
+    "title": "Boardwalk Empire",
+    "year": 2010,
+    "month": 9,
+    "status": "ended",
+    "seasons": 5,
+    "episodes": 56,
+    "runtime": "50-60",
+    "country": "United States",
+    "genres": [
+        "crime",
+        "drama",
+        "historical"
+    ],
+    "creator": [
+        "Terrence Winter"
+    ],
+    "network": "HBO",
+    "external_ratings": {
+        "imdb": {
+            "score": 8.5,
+            "scale": 10,
+            "count": "145K",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt0979439/"
+        },
+        "rotten_tomatoes": {
+            "season_1": {
+                "score": 92,
+                "scale": 100
+            },
+            "season_2": {
+                "score": 91,
+                "scale": 100
+            },
+            "season_3": {
+                "score": 93,
+                "scale": 100
+            },
+            "season_4": {
+                "score": 91,
+                "scale": 100
+            },
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/boardwalk_empire"
+        },
+        "metacritic": {
+            "score": 78,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.metacritic.com/tv/boardwalk-empire"
+        }
+    },
+    "consensus_highlights": "Boardwalk Empire is a lavish period crime drama set in Atlantic City during Prohibition. Steve Buscemi delivers a masterful performance as Enoch 'Nucky' Thompson, a political boss and crime lord navigating the turbulent 1920s. The series features impeccable production design and a remarkable ensemble cast.",
+    "ranking_system": {
+        "narrative_ambition": 8.5,
+        "character_depth": 9,
+        "thematic_resonance": 8,
+        "cultural_impact": 8,
+        "watchability": 8.5,
+        "final_score": 7.98
+    },
+    "notes": "Terence Martin's screenplay for The Aviator provides the blueprint for Boardwalk Empire's lavish period recreation.",
+    "tmdbId": 1625,
+    "streaming": {
+        "us": [
+            "Max",
+            "Amazon Prime Video"
+        ],
+        "uk": [
+            "Sky Atlantic"
+        ]
+    }
 }

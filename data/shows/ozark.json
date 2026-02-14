@@ -1,44 +1,52 @@
-﻿{
-    "slug":  "ozark",
-    "title":  "Ozark",
-    "year":  2017,
-    "month":  7,
-    "status":  "completed",
-    "seasons":  4,
-    "episodes":  44,
-    "runtime":  "45-60",
-    "country":  "United States",
-    "genres":  [
-                   "crime",
-                   "drama",
-                   "thriller"
-               ],
-    "creator":  "Bill Dubuque",
-    "network":  "Netflix",
-    "tmdbId":  69740,
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  8.5,
-                                          "scale":  10,
-                                          "count":  "205000",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt5071412/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "score":  82,
-                                                     "scale":  100,
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/ozark"
-                                                 }
-                         },
-    "consensus_highlights":  "A financial adviser drags his family to the Missouri Ozarks to launder money for a drug boss.",
-    "ranking_system":  {
-                           "narrative_ambition":  7.1,
-                           "character_depth":  7.9,
-                           "thematic_resonance":  7.5,
-                           "cultural_impact":  6.8,
-                           "watchability":  7.5,
-                           "final_score":  7.50
-                       },
-    "notes":  ""
+{
+    "slug": "ozark",
+    "title": "Ozark",
+    "year": 2017,
+    "month": 7,
+    "status": "completed",
+    "seasons": 4,
+    "episodes": 44,
+    "runtime": "45-60",
+    "country": "United States",
+    "genres": [
+        "crime",
+        "drama",
+        "thriller"
+    ],
+    "creator": "Bill Dubuque",
+    "network": "Netflix",
+    "tmdbId": 69740,
+    "external_ratings": {
+        "imdb": {
+            "score": 8.5,
+            "scale": 10,
+            "count": "205000",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt5071412/"
+        },
+        "rotten_tomatoes": {
+            "score": 82,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/ozark"
+        }
+    },
+    "consensus_highlights": "A financial adviser drags his family to the Missouri Ozarks to launder money for a drug boss.",
+    "ranking_system": {
+        "narrative_ambition": 7.1,
+        "character_depth": 7.9,
+        "thematic_resonance": 7.5,
+        "cultural_impact": 6.8,
+        "watchability": 7.5,
+        "final_score": 7.5
+    },
+    "notes": "",
+    "streaming": {
+        "us": [
+            "Netflix"
+        ],
+        "uk": [
+            "Netflix"
+        ]
+    }
 }

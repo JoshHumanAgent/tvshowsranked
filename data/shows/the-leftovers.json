@@ -1,44 +1,53 @@
-﻿{
-    "slug":  "the-leftovers",
-    "title":  "The Leftovers",
-    "year":  2014,
-    "month":  6,
-    "status":  "completed",
-    "seasons":  3,
-    "episodes":  28,
-    "runtime":  "45-60",
-    "country":  "United States",
-    "genres":  [
-                   "drama",
-                   "fantasy",
-                   "mystery"
-               ],
-    "creator":  null,
-    "network":  "HBO",
-    "tmdbId":  48869,
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  8.3,
-                                          "scale":  10,
-                                          "count":  "145000",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt2699128/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "score":  91,
-                                                     "scale":  100,
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/the_leftovers"
-                                                 }
-                         },
-    "consensus_highlights":  "When 2% of the world\u0027s population disappears, the people left behind struggle to understand what happened.",
-    "ranking_system":  {
-                           "narrative_ambition":  7.3,
-                           "character_depth":  8.0,
-                           "thematic_resonance":  7.6,
-                           "cultural_impact":  6.9,
-                           "watchability":  7.6,
-                           "final_score":  7.64
-                       },
-    "notes":  ""
+{
+    "slug": "the-leftovers",
+    "title": "The Leftovers",
+    "year": 2014,
+    "month": 6,
+    "status": "completed",
+    "seasons": 3,
+    "episodes": 28,
+    "runtime": "45-60",
+    "country": "United States",
+    "genres": [
+        "drama",
+        "fantasy",
+        "mystery"
+    ],
+    "creator": null,
+    "network": "HBO",
+    "tmdbId": 48869,
+    "external_ratings": {
+        "imdb": {
+            "score": 8.3,
+            "scale": 10,
+            "count": "145000",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt2699128/"
+        },
+        "rotten_tomatoes": {
+            "score": 91,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/the_leftovers"
+        }
+    },
+    "consensus_highlights": "When 2% of the world's population disappears, the people left behind struggle to understand what happened.",
+    "ranking_system": {
+        "narrative_ambition": 7.3,
+        "character_depth": 8,
+        "thematic_resonance": 7.6,
+        "cultural_impact": 6.9,
+        "watchability": 7.6,
+        "final_score": 7.64
+    },
+    "notes": "",
+    "streaming": {
+        "us": [
+            "HBO Max",
+            "Amazon Prime Video"
+        ],
+        "uk": [
+            "Sky Atlantic"
+        ]
+    }
 }

@@ -1,42 +1,51 @@
-﻿{
-    "slug":  "six-feet-under",
-    "title":  "Six Feet Under",
-    "year":  2001,
-    "month":  6,
-    "status":  "completed",
-    "seasons":  5,
-    "episodes":  63,
-    "runtime":  "45-60",
-    "country":  "United States",
-    "genres":  [
-                   "drama"
-               ],
-    "creator":  "Alan Ball",
-    "network":  "HBO",
-    "tmdbId":  1845,
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  8.7,
-                                          "scale":  10,
-                                          "count":  "185000",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt0301314/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "score":  90,
-                                                     "scale":  100,
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/six_feet_under"
-                                                 }
-                         },
-    "consensus_highlights":  "A drama about the Fisher family, who run a funeral home in Los Angeles, exploring death, family, and grief.",
-    "ranking_system":  {
-                           "narrative_ambition":  7.3,
-                           "character_depth":  8.1,
-                           "thematic_resonance":  7.7,
-                           "cultural_impact":  7.0,
-                           "watchability":  7.7,
-                           "final_score":  7.73
-                       },
-    "notes":  ""
+{
+    "slug": "six-feet-under",
+    "title": "Six Feet Under",
+    "year": 2001,
+    "month": 6,
+    "status": "completed",
+    "seasons": 5,
+    "episodes": 63,
+    "runtime": "45-60",
+    "country": "United States",
+    "genres": [
+        "drama"
+    ],
+    "creator": "Alan Ball",
+    "network": "HBO",
+    "tmdbId": 1845,
+    "external_ratings": {
+        "imdb": {
+            "score": 8.7,
+            "scale": 10,
+            "count": "185000",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt0301314/"
+        },
+        "rotten_tomatoes": {
+            "score": 90,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/six_feet_under"
+        }
+    },
+    "consensus_highlights": "A drama about the Fisher family, who run a funeral home in Los Angeles, exploring death, family, and grief.",
+    "ranking_system": {
+        "narrative_ambition": 7.3,
+        "character_depth": 8.1,
+        "thematic_resonance": 7.7,
+        "cultural_impact": 7,
+        "watchability": 7.7,
+        "final_score": 7.73
+    },
+    "notes": "",
+    "streaming": {
+        "us": [
+            "HBO Max",
+            "Amazon Prime Video"
+        ],
+        "uk": [
+            "Sky Atlantic"
+        ]
+    }
 }

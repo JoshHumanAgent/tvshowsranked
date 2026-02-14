@@ -1,50 +1,58 @@
-﻿{
-    "slug":  "the-boys",
-    "title":  "The Boys",
-    "year":  2019,
-    "month":  7,
-    "status":  "ongoing",
-    "seasons":  4,
-    "episodes":  34,
-    "runtime":  "45-60",
-    "country":  "United States",
-    "genres":  [
-                   "superhero",
-                   "action",
-                   "drama"
-               ],
-    "creator":  "Eric Kripke",
-    "network":  "Prime Video",
-    "tmdbId":  76479,
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  7.9,
-                                          "scale":  10,
-                                          "count":  "230000",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt1190634/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "score":  95,
-                                                     "scale":  100,
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/the_boys"
-                                                 },
-                             "metacritic":  {
-                                                "score":  76,
-                                                "scale":  100,
-                                                "date_accessed":  "2026-02-15",
-                                                "url":  "https://www.metacritic.com/tv/the-boys"
-                                            }
-                         },
-    "consensus_highlights":  "A group of vigilantes sets out to take down corrupt superheroes who abuse their powers.",
-    "ranking_system":  {
-                           "narrative_ambition":  7.0,
-                           "character_depth":  7.7,
-                           "thematic_resonance":  7.3,
-                           "cultural_impact":  6.6,
-                           "watchability":  7.3,
-                           "final_score":  7.33
-                       },
-    "notes":  ""
+{
+    "slug": "the-boys",
+    "title": "The Boys",
+    "year": 2019,
+    "month": 7,
+    "status": "ongoing",
+    "seasons": 4,
+    "episodes": 34,
+    "runtime": "45-60",
+    "country": "United States",
+    "genres": [
+        "superhero",
+        "action",
+        "drama"
+    ],
+    "creator": "Eric Kripke",
+    "network": "Prime Video",
+    "tmdbId": 76479,
+    "external_ratings": {
+        "imdb": {
+            "score": 7.9,
+            "scale": 10,
+            "count": "230000",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt1190634/"
+        },
+        "rotten_tomatoes": {
+            "score": 95,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/the_boys"
+        },
+        "metacritic": {
+            "score": 76,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.metacritic.com/tv/the-boys"
+        }
+    },
+    "consensus_highlights": "A group of vigilantes sets out to take down corrupt superheroes who abuse their powers.",
+    "ranking_system": {
+        "narrative_ambition": 7,
+        "character_depth": 7.7,
+        "thematic_resonance": 7.3,
+        "cultural_impact": 6.6,
+        "watchability": 7.3,
+        "final_score": 7.33
+    },
+    "notes": "",
+    "streaming": {
+        "us": [
+            "Prime Video"
+        ],
+        "uk": [
+            "Prime Video"
+        ]
+    }
 }

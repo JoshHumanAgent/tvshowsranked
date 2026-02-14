@@ -1,52 +1,60 @@
-﻿{
-    "slug":  "andor",
-    "title":  "Andor",
-    "year":  2022,
-    "month":  9,
-    "status":  "ended",
-    "seasons":  1,
-    "episodes":  12,
-    "runtime":  "40-50",
-    "country":  "United States",
-    "genres":  [
-                   "sci-fi",
-                   "drama",
-                   "action"
-               ],
-    "creator":  [
-                    "Tony Gilroy"
-                ],
-    "network":  "Disney+",
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  8.4,
-                                          "scale":  10,
-                                          "count":  "185K",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt9253284/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "score":  96,
-                                                     "scale":  100,
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/andor"
-                                                 },
-                             "metacritic":  {
-                                                "score":  81,
-                                                "scale":  100,
-                                                "date_accessed":  "2026-02-15",
-                                                "url":  "https://www.metacritic.com/tv/andor"
-                                            }
-                         },
-    "consensus_highlights":  "Andor is a revolutionary Star Wars story that transforms the franchise into serious prestige drama. Diego Luna returns as Cassian Andor, exploring his journey from cynical thief to rebel revolutionary. The series features meticulous world-building, political depth, and a willingness to explore the cost of resistance.",
-    "ranking_system":  {
-                           "narrative_ambition":  9,
-                           "character_depth":  9,
-                           "thematic_resonance":  9,
-                           "cultural_impact":  8,
-                           "watchability":  9,
-                           "final_score":  7.96
-                       },
-    "notes":  "Andor proves that Star Wars can produce mature, thoughtful storytelling. It\u0027s the anti-prequel in the best possible way.",
-    "tmdbId":  83867
+{
+    "slug": "andor",
+    "title": "Andor",
+    "year": 2022,
+    "month": 9,
+    "status": "ended",
+    "seasons": 1,
+    "episodes": 12,
+    "runtime": "40-50",
+    "country": "United States",
+    "genres": [
+        "sci-fi",
+        "drama",
+        "action"
+    ],
+    "creator": [
+        "Tony Gilroy"
+    ],
+    "network": "Disney+",
+    "external_ratings": {
+        "imdb": {
+            "score": 8.4,
+            "scale": 10,
+            "count": "185K",
+            "date_accessed": "2026-02-15",
+            "url": "https://www.imdb.com/title/tt9253284/"
+        },
+        "rotten_tomatoes": {
+            "score": 96,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.rottentomatoes.com/tv/andor"
+        },
+        "metacritic": {
+            "score": 81,
+            "scale": 100,
+            "date_accessed": "2026-02-15",
+            "url": "https://www.metacritic.com/tv/andor"
+        }
+    },
+    "consensus_highlights": "Andor is a revolutionary Star Wars story that transforms the franchise into serious prestige drama. Diego Luna returns as Cassian Andor, exploring his journey from cynical thief to rebel revolutionary. The series features meticulous world-building, political depth, and a willingness to explore the cost of resistance.",
+    "ranking_system": {
+        "narrative_ambition": 9,
+        "character_depth": 9,
+        "thematic_resonance": 9,
+        "cultural_impact": 8,
+        "watchability": 9,
+        "final_score": 7.96
+    },
+    "notes": "Andor proves that Star Wars can produce mature, thoughtful storytelling. It's the anti-prequel in the best possible way.",
+    "tmdbId": 83867,
+    "streaming": {
+        "us": [
+            "Disney+"
+        ],
+        "uk": [
+            "Disney+"
+        ]
+    }
 }

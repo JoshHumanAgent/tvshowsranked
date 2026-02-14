@@ -1,34 +1,40 @@
-﻿{
-    "slug":  "the-day-of-the-jackal",
-    "title":  "The Day of the Jackal",
-    "year":  2024,
-    "month":  11,
-    "status":  "ongoing",
-    "seasons":  1,
-    "episodes":  8,
-    "runtime":  "45-60",
-    "country":  "United States",
-    "genres":  [
-                   "thriller",
-                   "drama",
-                   "action"
-               ],
-    "creator":  [
-                    "TBD"
-                ],
-    "network":  "Streaming",
-    "tmdbId":  241096,
-    "external_ratings":  {
-
-                         },
-    "consensus_highlights":  "The Day of the Jackal is a thriller series.",
-    "ranking_system":  {
-                           "narrative_ambition":  7.8,
-                           "character_depth":  8.6,
-                           "thematic_resonance":  8.2,
-                           "cultural_impact":  7.3,
-                           "watchability":  8.2,
-                           "final_score":  8.16
-                       },
-    "notes":  "Added from website sync"
+{
+    "slug": "the-day-of-the-jackal",
+    "title": "The Day of the Jackal",
+    "year": 2024,
+    "month": 11,
+    "status": "ongoing",
+    "seasons": 1,
+    "episodes": 8,
+    "runtime": "45-60",
+    "country": "United States",
+    "genres": [
+        "thriller",
+        "drama",
+        "action"
+    ],
+    "creator": [
+        "TBD"
+    ],
+    "network": "Streaming",
+    "tmdbId": 241096,
+    "external_ratings": {},
+    "consensus_highlights": "The Day of the Jackal is a thriller series.",
+    "ranking_system": {
+        "narrative_ambition": 7.8,
+        "character_depth": 8.6,
+        "thematic_resonance": 8.2,
+        "cultural_impact": 7.3,
+        "watchability": 8.2,
+        "final_score": 8.16
+    },
+    "notes": "Added from website sync",
+    "streaming": {
+        "us": [
+            "Peacock"
+        ],
+        "uk": [
+            "Sky Atlantic"
+        ]
+    }
 }
