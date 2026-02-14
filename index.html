@@ -1635,8 +1635,13 @@
             .subtitle { font-size: 0.8rem !important; padding: 0 1rem; }
             .stats { gap: 1rem !important; padding: 0 1rem; }
             .filters-section { padding: 0.5rem; }
-            .card-header { flex-wrap: wrap; gap: 0.25rem; }
-            .rank-badge { width: 28px; height: 28px; font-size: 0.75rem; margin-right: 0.25rem; }
+            .card-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.5rem;
+            }
+            .rank-badge { width: 28px; height: 28px; font-size: 0.75rem; flex-shrink: 0; }
             .score-section { text-align: left; margin-top: 0.25rem; }
             .score-label { text-align: left; }
             .show-card { padding: 0.5rem; }
