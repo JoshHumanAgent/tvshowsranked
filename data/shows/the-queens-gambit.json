@@ -1,0 +1,48 @@
+{
+  "title": "The Queen's Gambit",
+  "slug": "the-queens-gambit",
+  "year": 2020,
+  "month": 10,
+  "rank": 34,
+  "genres": ["drama"],
+  "final_score": 7.66,
+  "network": "Netflix",
+  "seasons": 1,
+  "episodes": 7,
+  "status": "completed",
+  "type": "miniseries",
+  "ratings": {
+    "imdb": {
+      "score": 8.5,
+      "votes": 350000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt10083342/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 8.447,
+      "votes": 5302,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/87739-the-queens-gambit",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 97,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/the_queens_gambit",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Anya Taylor-Joy",
+    "Bill Camp",
+    "Moses Ingram",
+    "Charlotte Le Bon",
+    "Thomas Brodie-Sangster"
+  ],
+  "creators": "Scott Frank, Allan Scott",
+  "description": "In a 1950s orphanage, a young girl reveals an astonishing talent for chess and begins an unlikely journey to stardom while grappling with addiction.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}
