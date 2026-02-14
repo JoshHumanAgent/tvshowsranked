@@ -1,0 +1,48 @@
+{
+  "slug": "stranger-things",
+  "title": "Stranger Things",
+  "year": 2016,
+  "month": 7,
+  "status": "ended",
+  "seasons": 4,
+  "episodes": 34,
+  "runtime": "50-65",
+  "country": "United States",
+  "genres": ["drama", "horror", "sci-fi"],
+  "creator": ["The Duffer Brothers"],
+  "network": "Netflix",
+  "external_ratings": {
+    "imdb": {
+      "score": 8.7,
+      "scale": 10,
+      "count": "1.1M",
+      "date_accessed": "2026-02-15",
+      "url": "https://www.imdb.com/title/tt4574334/"
+    },
+    "rotten_tomatoes": {
+      "season_1": {"score": 97, "scale": 100},
+      "season_2": {"score": 94, "scale": 100},
+      "season_3": {"score": 88, "scale": 100},
+      "season_4": {"score": 97, "scale": 100},
+      "date_accessed": "2026-02-15",
+      "url": "https://www.rottentomatoes.com/tv/stranger_things"
+    },
+    "metacritic": {
+      "score": 72,
+      "scale": 100,
+      "date_accessed": "2026-02-15",
+      "url": "https://www.metacritic.com/tv/stranger-things"
+    }
+  },
+  "consensus_highlights": "Stranger Things is a nostalgic supernatural drama set in small-town Indiana in the 1980s. When a young boy vanishes, his mother, friends, and local sheriff investigate mysterious events involving government experiments and alternate dimensions. The series became a global phenomenon with its blend of horror, science fiction, and coming-of-age storytelling.",
+  "ranking_system": {
+    "characters": 7,
+    "world_building": 7,
+    "cinematography": 8,
+    "visual_spectacle": 8,
+    "conceptual_density": 6,
+    "narrative_drive": 8,
+    "resolution": 7,
+    "final_score": 7.40
+  }
+}

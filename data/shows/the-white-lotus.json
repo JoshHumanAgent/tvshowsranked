@@ -1,46 +1,47 @@
 {
-  "title": "The White Lotus",
   "slug": "the-white-lotus",
+  "title": "The White Lotus",
   "year": 2021,
   "month": 7,
-  "rank": 61,
-  "genres": ["drama", "comedy"],
-  "final_score": 7.45,
-  "network": "HBO",
+  "status": "ended",
   "seasons": 3,
   "episodes": 22,
-  "status": "completed",
-  "ratings": {
+  "runtime": "55-70",
+  "country": "United States",
+  "genres": ["drama", "comedy", "satire"],
+  "creator": ["Mike White"],
+  "network": "HBO",
+  "external_ratings": {
     "imdb": {
-      "score": 7.6,
-      "votes": 110000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt13991288/",
-      "date_accessed": "2026-02-15"
+      "score": 8.2,
+      "scale": 10,
+      "count": "230K",
+      "date_accessed": "2026-02-15",
+      "url": "https://www.imdb.com/title/tt13921944/"
     },
     "rotten_tomatoes": {
-      "score": 89,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/the_white_lotus",
-      "date_accessed": "2026-02-15"
+      "season_1": {"score": 96, "scale": 100},
+      "season_2": {"score": 86, "scale": 100},
+      "season_3": {"score": 92, "scale": 100},
+      "date_accessed": "2026-02-15",
+      "url": "https://www.rottentomatoes.com/tv/the_white_lotus"
     },
     "metacritic": {
       "score": 81,
-      "source": "Metacritic",
-      "url": "https://www.metacritic.com/tv/the-white-lotus",
-      "date_accessed": "2026-02-15"
+      "scale": 100,
+      "date_accessed": "2026-02-15",
+      "url": "https://www.metacritic.com/tv/the-white-lotus"
     }
   },
-  "cast": [
-    "Murray Bartlett",
-    "Connie Britton",
-    "Jennifer Coolidge",
-    "Alexandra Daddario",
-    "Fred Hechinger",
-    "Jake Lacy",
-    "Sydney Sweeney",
-    "Steve Zahn"
-  ],
-  "creator": "Mike White",
-  "description": "Social satire following wealthy guests at a luxurious resort in Hawaii, Sicily, and Thailand."
+  "consensus_highlights": "The White Lotus is a social satire following wealthy guests at a luxury Hawaiian resort. Each season centers on a different group of guests and staff, exploring class, power, sexuality, and death with darkly comedic precision. Mike White's masterful character studies have earned widespread critical acclaim.",
+  "ranking_system": {
+    "characters": 7.5,
+    "world_building": 7,
+    "cinematography": 9,
+    "visual_spectacle": 8,
+    "conceptual_density": 8,
+    "narrative_drive": 7,
+    "resolution": 8,
+    "final_score": 7.45
+  }
 }

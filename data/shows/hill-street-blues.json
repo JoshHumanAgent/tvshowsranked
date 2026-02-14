@@ -1,0 +1,44 @@
+{
+  "title": "Hill Street Blues",
+  "slug": "hill-street-blues",
+  "year": 1981,
+  "month": 12,
+  "rank": 74,
+  "genres": ["drama", "crime", "cop-show"],
+  "final_score": 7.35,
+  "network": "NBC",
+  "seasons": 7,
+  "episodes": 146,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 7.6,
+      "votes": 15000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt0081883/",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 95,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/hill_street_blues",
+      "date_accessed": "2026-02-15"
+    },
+    "metacritic": {
+      "score": 78,
+      "source": "Metacritic",
+      "url": "https://www.metacritic.com/tv/hill-street-blues",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Michael Conrad",
+    "Daniel J. Travanti",
+    "Betty Thomas",
+    "Bruce Weitz",
+    "James Sikking",
+    "Katherine Borowitz"
+  ],
+  "creator": "Steven Bochco, Michael Kozoll",
+  "description": "A gritty look at the lives and work of the staff of a police precinct in an unnamed American city."
+}

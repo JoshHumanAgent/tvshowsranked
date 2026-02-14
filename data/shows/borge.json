@@ -1,0 +1,47 @@
+{
+  "slug": "borge",
+  "title": "Borgen",
+  "year": 2010,
+  "month": 9,
+  "status": "ended",
+  "seasons": 4,
+  "episodes": 40,
+  "runtime": "58-60",
+  "country": "Denmark",
+  "genres": ["drama", "politics"],
+  "creator": ["Adam Price"],
+  "network": "DR1",
+  "external_ratings": {
+    "imdb": {
+      "score": 8.4,
+      "scale": 10,
+      "count": "45K",
+      "date_accessed": "2026-02-15",
+      "url": "https://www.imdb.com/title/tt1528618/"
+    },
+    "rotten_tomatoes": {
+      "season_1": {"score": 88, "scale": 100},
+      "season_2": {"score": 93, "scale": 100},
+      "season_3": {"score": 100, "scale": 100},
+      "date_accessed": "2026-02-15",
+      "url": "https://www.rottentomatoes.com/tv/borge"
+    },
+    "metacritic": {
+      "score": 80,
+      "scale": 100,
+      "date_accessed": "2026-02-15",
+      "url": "https://www.metacritic.com/tv/borge"
+    }
+  },
+  "consensus_highlights": "Borgen is a sophisticated Danish political drama that follows the fictional Prime Minister Birgitte Nyborg Christensen. The series offers a compelling look at the complexities of power, the personal costs of political ambition, and the challenges of governing. Known for its sharp writing and nuanced performances.",
+  "ranking_system": {
+    "characters": 8,
+    "world_building": 7,
+    "cinematography": 7,
+    "visual_spectacle": 5,
+    "conceptual_density": 8,
+    "narrative_drive": 8,
+    "resolution": 8,
+    "final_score": 7.45
+  }
+}

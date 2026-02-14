@@ -1,0 +1,43 @@
+{
+  "title": "Mare of Easttown",
+  "slug": "mare-of-easttown",
+  "year": 2021,
+  "month": 4,
+  "rank": 76,
+  "genres": ["crime", "drama", "mystery", "cop-show"],
+  "final_score": 7.32,
+  "network": "HBO",
+  "seasons": 1,
+  "episodes": 7,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 7.5,
+      "votes": 95000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt10370288/",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 93,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/mare_of_easttown",
+      "date_accessed": "2026-02-15"
+    },
+    "metacritic": {
+      "score": 76,
+      "source": "Metacritic",
+      "url": "https://www.metacritic.com/tv/mare-of-easttown",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Kate Winslet",
+    "Evan Peters",
+    "Julianne Nicholson",
+    "Jean Smart",
+    "Angourie Rice"
+  ],
+  "creator": "Brad Ingelsby",
+  "description": "A detective in a small Pennsylvania town investigates a murder while dealing with personal demons."
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "yellowjackets",
+  "title": "Yellowjackets",
+  "year": 2021,
+  "month": 11,
+  "status": "continuing",
+  "seasons": 3,
+  "episodes": 30,
+  "runtime": "45-55",
+  "country": "United States",
+  "genres": ["drama", "thriller", "horror"],
+  "creator": ["Ashley Lyle", "Bart Nickerson"],
+  "network": "Showtime",
+  "external_ratings": {
+    "imdb": {
+      "score": 7.7,
+      "scale": 10,
+      "count": "110K",
+      "date_accessed": "2026-02-15",
+      "url": "https://www.imdb.com/title/tt13834088/"
+    },
+    "rotten_tomatoes": {
+      "season_1": {"score": 90, "scale": 100},
+      "season_2": {"score": 86, "scale": 100},
+      "season_3": {"score": 88, "scale": 100},
+      "date_accessed": "2026-02-15",
+      "url": "https://www.rottentomatoes.com/tv/yellowjackets"
+    },
+    "metacritic": {
+      "score": 71,
+      "scale": 100,
+      "date_accessed": "2026-02-15",
+      "url": "https://www.metacritic.com/tv/yellowjackets"
+    }
+  },
+  "consensus_highlights": "Yellowjackets is a mystery drama about a high school girls' soccer team that survives a plane crash in the wilderness and the adult versions of the survivors. The show masterfully blends survival horror with a present-day mystery about what really happened in the forest.",
+  "ranking_system": {
+    "characters": 7.5,
+    "world_building": 6.5,
+    "cinematography": 7,
+    "visual_spectacle": 6,
+    "conceptual_density": 8,
+    "narrative_drive": 7,
+    "resolution": 5,
+    "final_score": 6.67
+  }
+}

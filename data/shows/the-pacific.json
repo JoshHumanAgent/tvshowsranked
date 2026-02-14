@@ -1,0 +1,43 @@
+{
+  "title": "The Pacific",
+  "slug": "the-pacific",
+  "year": 2010,
+  "month": 3,
+  "rank": 78,
+  "genres": ["drama", "war", "historical"],
+  "final_score": 7.30,
+  "network": "HBO",
+  "seasons": 1,
+  "episodes": 10,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 8.1,
+      "votes": 55000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt0374463/",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 85,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/the_pacific",
+      "date_accessed": "2026-02-15"
+    },
+    "metacritic": {
+      "score": 78,
+      "source": "Metacritic",
+      "url": "https://www.metacritic.com/tv/the-pacific",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "James Badge Dale",
+    "Jon Seda",
+    "Joseph Mawle",
+    "Eion Bailey",
+    "Alex Veadov"
+  ],
+  "creator": "Bruce C. McKenna, Graham Yost",
+  "description": "A miniseries following the experiences of U.S. Marines during World War II in the Pacific theater."
+}

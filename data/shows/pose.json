@@ -1,44 +1,47 @@
 {
-  "title": "Pose",
   "slug": "pose",
+  "title": "Pose",
   "year": 2018,
   "month": 6,
-  "rank": 60,
-  "genres": ["drama"],
-  "final_score": 7.45,
-  "network": "FX",
+  "status": "ended",
   "seasons": 3,
   "episodes": 26,
-  "status": "completed",
-  "ratings": {
+  "runtime": "50-65",
+  "country": "United States",
+  "genres": ["drama"],
+  "creator": ["Ryan Murphy", "Brad Falchuk", "Steven Canals"],
+  "network": "FX",
+  "external_ratings": {
     "imdb": {
-      "score": 8.5,
-      "votes": 28000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt7028556/",
-      "date_accessed": "2026-02-15"
+      "score": 8.6,
+      "scale": 10,
+      "count": "45K",
+      "date_accessed": "2026-02-15",
+      "url": "https://www.imdb.com/title/tt7025506/"
     },
     "rotten_tomatoes": {
-      "score": 98,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/pose",
-      "date_accessed": "2026-02-15"
+      "season_1": {"score": 98, "scale": 100},
+      "season_2": {"score": 97, "scale": 100},
+      "season_3": {"score": 100, "scale": 100},
+      "date_accessed": "2026-02-15",
+      "url": "https://www.rottentomatoes.com/tv/pose"
     },
     "metacritic": {
-      "score": 82,
-      "source": "Metacritic",
-      "url": "https://www.metacritic.com/tv/pose",
-      "date_accessed": "2026-02-15"
+      "score": 84,
+      "scale": 100,
+      "date_accessed": "2026-02-15",
+      "url": "https://www.metacritic.com/tv/pose"
     }
   },
-  "cast": [
-    "Michaela Jaé Rodriguez",
-    "Dominique Jackson",
-    "Billy Porter",
-    "Indya Moore",
-    "Ryan Jamaal Swain",
-    "Evan Peters"
-  ],
-  "creator": "Ryan Murphy, Brad Falchuk, Steven Canals",
-  "description": "A drama spotlighting the legends, icons and ferocious house mothers of New York's underground ball culture."
+  "consensus_highlights": "Pose is a groundbreaking drama set in the New York ballroom scene of the 1980s and 1990s. The series features the largest transgender cast in television history and explores themes of community, identity, and the AIDS crisis. Ryan Murphy's celebration of marginalized voices resulted in emotionally powerful television.",
+  "ranking_system": {
+    "characters": 7.5,
+    "world_building": 8,
+    "cinematography": 8,
+    "visual_spectacle": 7,
+    "conceptual_density": 8,
+    "narrative_drive": 7,
+    "resolution": 8,
+    "final_score": 7.45
+  }
 }

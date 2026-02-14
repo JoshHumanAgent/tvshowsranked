@@ -1,45 +1,44 @@
 {
-  "slug": "twin-peaks-the-return",
   "title": "Twin Peaks: The Return",
+  "slug": "twin-peaks-the-return",
   "year": 2017,
   "month": 5,
-  "status": "ended",
+  "rank": 66,
+  "genres": ["mystery", "drama", "thriller"],
+  "final_score": 7.39,
+  "network": "Showtime",
   "seasons": 1,
   "episodes": 18,
-  "runtime": "46-90",
-  "country": "United States",
-  "genres": ["drama", "mystery", "surreal"],
-  "creator": ["David Lynch", "Mark Frost"],
-  "network": "Showtime",
-  "external_ratings": {
+  "status": "completed",
+  "ratings": {
     "imdb": {
-      "score": 8.8,
-      "scale": 10,
-      "count": "120K",
-      "date_accessed": "2026-02-15",
-      "url": "https://www.imdb.com/title/tt4093826/"
+      "score": 8.1,
+      "votes": 75000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt4093826/",
+      "date_accessed": "2026-02-15"
     },
     "rotten_tomatoes": {
-      "season_1": {"score": 93, "scale": 100},
-      "date_accessed": "2026-02-15",
-      "url": "https://www.rottentomatoes.com/tv/twin_peaks_the_return"
+      "score": 83,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/twin_peaks",
+      "date_accessed": "2026-02-15"
     },
     "metacritic": {
-      "score": 89,
-      "scale": 100,
-      "date_accessed": "2026-02-15",
-      "url": "https://www.metacritic.com/tv/twin-peaks-the-return"
+      "score": 74,
+      "source": "Metacritic",
+      "url": "https://www.metacritic.com/tv/twin-peaks-the-return",
+      "date_accessed": "2026-02-15"
     }
   },
-  "consensus_highlights": "Twin Peaks: The Return is David Lynch's triumphant return to his groundbreaking creation, delivering an ambitious, surreal, and emotionally devastating continuation of the original series. Agent Dale Cooper's journey through the dark corners of reality and the town of Twin Peaks resulted in some of the most challenging and rewarding television ever made.",
-  "ranking_system": {
-    "characters": 8,
-    "world_building": 8,
-    "cinematography": 9.5,
-    "visual_spectacle": 9,
-    "conceptual_density": 9,
-    "narrative_drive": 5,
-    "resolution": 7,
-    "final_score": 7.39
-  }
+  "cast": [
+    "Kyle MacLachlan",
+    "Michael Cera",
+    "Jennifer Jason Leigh",
+    "Laura Dern",
+    "Harry Goaz",
+    "Michael Horse"
+  ],
+  "creator": "David Lynch, Mark Frost",
+  "description": "The long-awaited return of Agent Dale Cooper to the mysterious town of Twin Peaks, 25 years after the original series."
 }

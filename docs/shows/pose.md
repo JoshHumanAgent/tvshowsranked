@@ -1,39 +1,44 @@
 # Pose
 
-**Rank #60** | Drama | 2018-2021 | FX | 3 Seasons
+> *"We're not what they say we are. We're who we say we are."*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #60 |
+| **Year** | 2018 |
+| **Network** | FX |
+| **Seasons** | 3 |
+| **Episodes** | 26 |
+| **Runtime** | 50-65 min |
+| **Genres** | Drama |
+| **Creator** | Ryan Murphy, Brad Falchuk, Steven Canals |
 
 ## What It Feels Like to Watch
 
-In 1980s New York, the ballrooms are alive with competition. Houses — chosen families led by "mothers" — compete in elaborate categories: voguing, realness, executive realness. Behind the glamour, AIDS is spreading, discrimination is rampant, and these marginalized figures are building their own world.
+Pose is a groundbreaking celebration of a marginalized community that transformed television. Set in the New York ballroom scene of the 1980s and 1990s, it tells the stories of trans women, gay men, and others who built their own families when mainstream society rejected them.
 
-*Pose* is a revolution in how we see television. Created by Ryan Murphy with Steven Canals, it features the largest cast of transgender actors in series regular roles ever — and that representation never feels tokenistic. The performances are extraordinary: Michaela Jaé Rodriguez (then Mj Rodriguez) as Blanca, the mother who starts her own house after receiving an AIDS diagnosis; Dominique Jackson as Elektra, a legendary figure who refuses to be tamed; Billy Porter as Pray Tell, the emcee with a heart of gold.
+You watch Pose and feel joy and pain in equal measure. The ballroom competitions are exhilarating—costumes, performances, and fierce competition. But beneath the glamour lies the reality of the AIDS crisis, poverty, and violence against the community.
 
-The show is visually stunning — costumes and sets that capture the excess and beauty of the ballroom scene. The music, featuring original tracks and period-appropriate hits, keeps energy high. But what elevates *Pose* beyond style is its substance: it's a show about chosen family, about survival, about the cost of living authentically in a world that doesn't want you.
+The series features the largest transgender cast in television history. The performances are heartfelt and powerful. Mj Rodriguez's Blanca is the emotional heart—a woman who builds a house family and fights for her community.
 
-The first season establishes the world and its characters. The second digs deeper into the AIDS crisis with heartbreaking clarity. The third, truncated by the pandemic but no less powerful, brings arcs to emotionally satisfying conclusions.
+Pose is also historical. It documents a cultural movement that influenced fashion, music, and art. It's a love letter to a community that refused to be erased.
 
-This is television that matters. It tells stories that have been ignored, centers voices that have been marginalized, and does so with grace, power, and incredible style.
+## External Ratings
 
----
-
-## Where to Watch
-
-- **Streaming:** Netflix, Hulu
-
----
-
-## Ratings
-
-| Source | Score | Votes |
+| Source | Score | Scale |
 |--------|-------|-------|
-| IMDb | 8.5/10 | 28,000 |
-| Rotten Tomatoes | 98% | — |
-| Metacritic | 82/100 | — |
+| IMDb | 8.6 | 10 |
+| Rotten Tomatoes (S1) | 98% | 100 |
+| Metacritic | 84 | 100 |
 
-*Data accessed 2026-02-15*
+## Why It Ranks #60
+
+- **World Building (8/10)**: Rich depiction of ballroom culture.
+- **Conceptual Density (8/10)**: Explores identity, community, survival.
+- **Characters (7.5/10)**: Strong ensemble.
 
 ---
 
-**Previous:** [Borgen (#59)](borgen.md) | **Next:** [The White Lotus (#61)](the-white-lotus.md)
+*Ranked on: 2026-02-15*

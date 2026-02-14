@@ -1,0 +1,43 @@
+{
+  "title": "Gomorrah",
+  "slug": "gomorrah",
+  "year": 2014,
+  "month": 4,
+  "rank": 72,
+  "genres": ["crime", "drama"],
+  "final_score": 7.36,
+  "network": "Sky Italia",
+  "seasons": 5,
+  "episodes": 60,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 8.4,
+      "votes": 22000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt2049110/",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 95,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/gomorrah",
+      "date_accessed": "2026-02-15"
+    },
+    "metacritic": {
+      "score": 76,
+      "source": "Metacritic",
+      "url": "https://www.metacritic.com/tv/gomorrah",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Marco D'Amore",
+    "Fortunato Cerlino",
+    "Michele Venitucci",
+    "Maria Pia Calzone",
+    "Emanuele Lotti"
+  ],
+  "creator": "Roberto Saviano, Stefano Bises",
+  "description": "A Naples-based crime drama following the Camorra organized crime syndicate."
+}

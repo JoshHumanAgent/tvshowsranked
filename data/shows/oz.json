@@ -1,0 +1,46 @@
+{
+  "slug": "oz",
+  "title": "Oz",
+  "year": 1997,
+  "month": 7,
+  "status": "ended",
+  "seasons": 6,
+  "episodes": 56,
+  "runtime": "50-60",
+  "country": "United States",
+  "genres": ["drama", "crime", "thriller"],
+  "creator": ["Tom Fontana"],
+  "network": "HBO",
+  "external_ratings": {
+    "imdb": {
+      "score": 8.7,
+      "scale": 10,
+      "count": "65K",
+      "date_accessed": "2026-02-15",
+      "url": "https://www.imdb.com/title/tt0118421/"
+    },
+    "rotten_tomatoes": {
+      "season_1": {"score": 89, "scale": 100},
+      "season_2": {"score": 93, "scale": 100},
+      "date_accessed": "2026-02-15",
+      "url": "https://www.rottentomatoes.com/tv/oz"
+    },
+    "metacritic": {
+      "score": 79,
+      "scale": 100,
+      "date_accessed": "2026-02-15",
+      "url": "https://www.metacritic.com/tv/oz"
+    }
+  },
+  "consensus_highlights": "Oz is HBO's gritty prison drama that pulls no punches in its portrayal of life behind bars. The series examines the interconnecting lives of inmates and staff at the Emerald City prison with unflinching realism. Tom Fontana's creation was groundbreaking for its raw depiction of violence, sexuality, and institutional corruption.",
+  "ranking_system": {
+    "characters": 7.5,
+    "world_building": 7.5,
+    "cinematography": 6,
+    "visual_spectacle": 5,
+    "conceptual_density": 8,
+    "narrative_drive": 7,
+    "resolution": 7,
+    "final_score": 7.26
+  }
+}

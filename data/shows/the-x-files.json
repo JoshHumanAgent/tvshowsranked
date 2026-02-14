@@ -1,0 +1,43 @@
+{
+  "title": "The X-Files",
+  "slug": "the-x-files",
+  "year": 1993,
+  "month": 9,
+  "rank": 63,
+  "genres": ["sci-fi", "mystery", "thriller"],
+  "final_score": 7.40,
+  "network": "Fox",
+  "seasons": 11,
+  "episodes": 218,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 8.0,
+      "votes": 290000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt0106179/",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 87,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/the_xfiles",
+      "date_accessed": "2026-02-15"
+    },
+    "metacritic": {
+      "score": 65,
+      "source": "Metacritic",
+      "url": "https://www.metacritic.com/tv/the-x-files",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "David Duchovny",
+    "Gillian Anderson",
+    "Mitch Pileggi",
+    "Robert Patrick",
+    "Annabeth Gish"
+  ],
+  "creator": "Chris Carter",
+  "description": "FBI agents investigate paranormal cases and government conspiracies involving aliens."
+}
