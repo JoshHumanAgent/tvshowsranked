@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const PROJECT_DIR = 'C:\\Users\\randl\\Desktop\\OpenClaw-Workspace\\10-Projects\\tvshowsranked';
+const PROJECT_DIR = path.dirname(__filename);
 const DATA_DIR = path.join(PROJECT_DIR, 'data', 'shows');
 
 function loadJSON(filepath) {

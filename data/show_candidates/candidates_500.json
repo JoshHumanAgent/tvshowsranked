@@ -1,514 +1,4358 @@
-﻿{
-  "description": "500 candidate shows for potential inclusion in future rankings",
-  "generated": "2026-02-15",
-  "candidates": [
-    {"title": "The Simpsons", "year": 1989, "genres": ["animation", "comedy"], "imdb_score": 8.7, "note": "Longest-running American animated series"},
-    {"title": "Friends", "year": 1994, "genres": ["comedy"], "imdb_score": 8.9, "note": "Defines the sitcom era"},
-    {"title": "Seinfeld", "year": 1989, "genres": ["comedy"], "imdb_score": 8.9, "note": "Show about nothing that means everything"},
-    {"title": "The Office (US)", "year": 2005, "genres": ["comedy"], "imdb_score": 8.9, "note": "Mockumentary comedy masterpiece"},
-    {"title": "Parks and Recreation", "year": 2009, "genres": ["comedy"], "imdb_score": 8.4, "note": "Heartfelt workplace comedy"},
-    {"title": "Brooklyn Nine-Nine", "year": 2013, "genres": ["comedy", "action"], "imdb_score": 8.1, "note": "Police comedy with heart"},
-    {"title": "The Good Place", "year": 2016, "genres": ["comedy", "fantasy"], "imdb_score": 8.2, "note": "Philosophical comedy gem"},
-    {"title": "Ted Lasso", "year": 2020, "genres": ["comedy", "drama"], "imdb_score": 8.8, "note": "Feel-good comedy phenomenon"},
-    {"title": "Schitt's Creek", "year": 2015, "genres": ["comedy"], "imdb_score": 8.5, "note": "Hidden gem that became phenomenon"},
-    {"title": "Arrested Development", "year": 2003, "genres": ["comedy"], "imdb_score": 8.7, "note": "Revolutionary ensemble comedy"},
-    {"title": "South Park", "year": 1997, "genres": ["animation", "comedy"], "imdb_score": 8.4, "note": "No-holds-barred satire"},
-    {"title": "Family Guy", "year": 1999, "genres": ["animation", "comedy"], "imdb_score": 8.2, "note": "Cutaway comedy pioneer"},
-    {"title": "Futurama", "year": 1999, "genres": ["animation", "sci-fi", "comedy"], "imdb_score": 8.5, "note": "Smart animated sci-fi comedy"},
-    {"title": "The Big Bang Theory", "year": 2007, "genres": ["comedy"], "imdb_score": 8.2, "note": "Mainstream comedy hit"},
-    {"title": "How I Met Your Mother", "year": 2005, "genres": ["comedy"], "imdb_score": 8.3, "note": "Hipster sitcom favorite"},
-    {"title": "Two and a Half Men", "year": 2003, "genres": ["comedy"], "imdb_score": 7.1, "note": "Ratings powerhouse"},
-    {"title": "Modern Family", "year": 2009, "genres": ["comedy"], "imdb_score": 8.5, "note": "Emmy-winning ensemble"},
-    {"title": "The Fresh Prince of Bel-Air", "year": 1990, "genres": ["comedy"], "imdb_score": 7.9, "note": "Defines 90s sitcom"},
-    {"title": "Will & Grace", "year": 1998, "genres": ["comedy"], "note": "Groundbreaking LGBTQ+ representation"},
-    {"title": "Cheers", "year": 1982, "genres": ["comedy"], "imdb_score": 8.3, "note": "Classic bar sitcom"},
-    {"title": "Frasier", "year": 1993, "genres": ["comedy"], "imdb_score": 8.1, "note": "Spin-off excellence"},
-    {"title": "The Mary Tyler Moore Show", "year": 1970, "genres": ["comedy"], "note": "Groundbreaking feminist sitcom"},
-    {"title": "All in the Family", "year": 1971, "genres": ["comedy"], "note": "Social commentary pioneer"},
-    {"title": "M*A*S*H", "year": 1972, "genres": ["comedy", "drama"], "imdb_score": 8.4, "note": "Top-rated series finale"},
-    {"title": "The Golden Girls", "year": 1985, "genres": ["comedy"], "imdb_score": 8.2, "note": "Beloved ensemble comedy"},
-    {"title": "The Jeffersons", "year": 1975, "genres": ["comedy"], "note": "Pioneering diversity on TV"},
-    {"title": "The Cosby Show", "year": 1984, "genres": ["comedy"], "imdb_score": 7.6, "note": "Landmark family sitcom"},
-    {"title": "Full House", "year": 1987, "genres": ["comedy"], "imdb_score": 7.0, "note": "Family-friendly comfort food"},
-    {"title": "Home Improvement", "year": 1991, "genres": ["comedy"], "imdb_score": 7.2, "note": "90s family sitcom hit"},
-    {"title": "Everybody Loves Raymond", "year": 1996, "genres": ["comedy"], "imdb_score": 7.3, "note": "Long-running family comedy"},
-    {"title": "According to Jim", "year": 2001, "genres": ["comedy"], "note": "Family comedy workhorse"},
-    {"title": "King of Queens", "year": 1998, "genres": ["comedy"], "imdb_score": 7.4, "note": "Solid sitcom performer"},
-    {"title": "That '70s Show", "year": 1998, "genres": ["comedy"], "imdb_score": 8.0, "note": "Period comedy hit"},
-    {"title": "Scrubs", "year": 2001, "genres": ["comedy", "drama"], "imdb_score": 8.3, "note": "Medical comedy gem"},
-    {"title": "My Name is Earl", "year": 2005, "genres": ["comedy"], "imdb_score": 7.9, "note": "Inventive comedy premise"},
-    {"title": "30 Rock", "year": 2006, "genres": ["comedy"], "imdb_score": 8.2, "note": "Meta sitcom brilliance"},
-    {"title": "Community", "year": 2009, "genres": ["comedy"], "imdb_score": 8.5, "note": "Geek comedy masterpiece"},
-    {"title": "New Girl", "year": 2011, "genres": ["comedy"], "imdb_score": 7.8, "note": "Modern sitcom hit"},
-    {"title": "The Mindy Project", "year": 2012, "genres": ["comedy"], "imdb_score": 7.4, "note": "Romo-com gem"},
-    {"title": "Girls", "year": 2012, "genres": ["drama", "comedy"], "imdb_score": 7.6, "note": "Generational drama"},
-    {"title": "Master of None", "year": 2015, "genres": ["comedy"], "imdb_score": 8.3, "note": "Emmy-winning comedy"},
-    {"title": "Atlanta", "year": 2016, "genres": ["comedy", "drama"], "imdb_score": 8.6, "note": "Artistic comedy breakthrough"},
-    {"title": "Insecure", "year": 2016, "genres": ["comedy", "drama"], "imdb_score": 8.3, "note": "Millennial dramedy"},
-    {"title": "Fleabag", "year": 2016, "genres": ["comedy", "drama"], "imdb_score": 8.7, "note": "Genre-defining comedy"},
-    {"title": "The Marvelous Mrs. Maisel", "year": 2017, "genres": ["comedy", "drama"], "imdb_score": 8.7, "note": "Period comedy epic"},
-    {"title": "Barry", "year": 2018, "genres": ["comedy", "crime"], "imdb_score": 8.4, "note": "Dark comedy masterpiece"},
-    {"title": "What We Do in the Shadows", "year": 2019, "genres": ["comedy", "fantasy"], "imdb_score": 8.5, "note": "Mockumentary vampire comedy"},
-    {"title": "Ted Lasso", "year": 2020, "genres": ["comedy", "drama"], "imdb_score": 8.8, "note": "Feel-good phenomenon"},
-    {"title": "Hacks", "year": 2021, "genres": ["comedy", "drama"], "imdb_score": 8.5, "note": "Intergenerational comedy"},
-    {"title": "Only Murders in the Building", "year": 2021, "genres": ["comedy", "mystery"], "imdb_score": 8.1, "note": "True crime comedy"},
-    {"title": "Abbott Elementary", "year": 2021, "genres": ["comedy"], "imdb_score": 8.4, "note": "Mockumentary classroom comedy"},
-    {"title": "The Bear", "year": 2022, "genres": ["comedy", "drama"], "imdb_score": 8.6, "note": "Culinary drama-comedy"},
-    {"title": "Beef", "year": 2023, "genres": ["comedy", "drama"], "imdb_score": 8.0, "note": "Award-winning Limited Series"},
-    {"title": "Slow Horses", "year": 2022, "genres": ["drama", "thriller"], "imdb_score": 8.1, "note": "British spy drama"},
-    {"title": "The Last of Us", "year": 2023, "genres": ["drama", "action"], "imdb_score": 8.8, "note": "Video game adaptation masterpiece"},
-    {"title": "House of the Dragon", "year": 2022, "genres": ["fantasy", "drama"], "imdb_score": 8.5, "note": "GoT prequel success"},
-    {"title": "The White Lotus", "year": 2021, "genres": ["drama", "comedy"], "imdb_score": 7.9, "note": "Social satire anthology"},
-    {"title": "Euphoria", "year": 2019, "genres": ["drama"], "imdb_score": 8.4, "note": "Gen Z drama"},
-    {"title": "The Crown", "year": 2016, "genres": ["drama", "historical"], "imdb_score": 8.6, "note": "Royal drama epic"},
-    {"title": "The Queen's Gambit", "year": 2020, "genres": ["drama"], "imdb_score": 8.6, "note": "Limited series phenomenon"},
-    {"title": "Maid", "year": 2021, "genres": ["drama"], "imdb_score": 8.2, "note": "Poverty drama"},
-    {"title": "Mare of Easttown", "year": 2021, "genres": ["crime", "drama"], "imdb_score": 7.5, "note": "Crime drama hit"},
-    {"title": "Sharp Objects", "year": 2018, "genres": ["drama", "thriller"], "imdb_score": 8.1, "note": "Dark drama"},
-    {"title": "Big Little Lies", "year": 2017, "genres": ["drama", "thriller"], "imdb_score": 8.0, "note": "Ensemble drama"},
-    {"title": "The Sinner", "year": 2017, "genres": ["drama", "thriller"], "imdb_score": 7.9, "note": "Anthology crime drama"},
-    {"title": "The Night Of", "year": 2016, "genres": ["drama", "crime"], "imdb_score": 8.5, "note": "Limited crime epic"},
-    {"title": "The Undoing", "year": 2020, "genres": ["thriller", "drama"], "imdb_score": 7.5, "note": "Limited thriller"},
-    {"title": "Nine Perfect Strangers", "year": 2021, "genres": ["drama", "thriller"], "imdb_score": 6.5, "note": "Mystery drama"},
-    {"title": "Mare of Easttown", "year": 2021, "genres": ["crime", "drama"], "imdb_score": 7.5, "note": "Kate Winslet crime drama"},
-    {"title": "The Plot Against America", "year": 2020, "genres": ["drama", "thriller"], "imdb_score": 7.2, "note": "Alternate history drama"},
-    {"title": "Station Eleven", "year": 2021, "genres": ["drama", "sci-fi"], "imdb_score": 7.9, "note": "Post-apocalyptic drama"},
-    {"title": "Midnight Mass", "year": 2021, "genres": ["horror", "drama"], "imdb_score": 7.7, "note": "Horror drama"},
-    {"title": "The Haunting of Hill House", "year": 2018, "genres": ["horror", "drama"], "imdb_score": 8.6, "note": "Modern horror classic"},
-    {"title": "The Haunting of Bly Manor", "year": 2020, "genres": ["horror", "drama"], "imdb_score": 7.4, "note": "Haunted house follow-up"},
-    {"title": "Castle Rock", "year": 2018, "genres": ["horror", "thriller"], "imdb_score": 7.3, "note": "Stephen King universe"},
-    {"title": "Brand New Cherry Flavor", "year": 2021, "genres": ["horror", "thriller"], "imdb_score": 6.7, "note": "LA horror"},
-    {"title": "Servant", "year": 2019, "genres": ["horror", "thriller"], "imdb_score": 7.5, "note": "M. Night Shyamalan horror"},
-    {"title": "The Outsider", "year": 2020, "genres": ["horror", "drama"], "imdb_score": 7.7, "note": "Stephen King adaptation"},
-    {"title": "Penny Dreadful", "year": 2014, "genres": ["horror", "drama"], "imdb_score": 8.0, "note": "Gothic horror anthology"},
-    {"title": "American Horror Story", "year": 2011, "genres": ["horror", "thriller"], "imdb_score": 8.0, "note": "Anthology horror franchise"},
-    {"title": "Narcos", "year": 2015, "genres": ["crime", "drama"], "imdb_score": 8.4, "note": "Drug cartel drama"},
-    {"title": "Narcos: Mexico", "year": 2018, "genres": ["crime", "drama"], "imdb_score": 8.4, "note": "Mexican cartel saga"},
-    {"title": "El Chapo", "year": 2017, "genres": ["crime", "drama"], "imdb_score": 7.3, "note": "El Chapo biography"},
-    {"title": "El Marginal", "year": 2015, "genres": ["crime", "drama"], "imdb_score": 8.1, "note": "Argentine prison drama"},
-    {"title": "Money Heist", "year": 2017, "genres": ["crime", "thriller"], "imdb_score": 8.2, "note": "Spanish heist sensation"},
-    {"title": "Elite", "year": 2018, "genres": ["crime", "drama"], "imdb_score": 7.5, "note": "Spanish teen thriller"},
-    {"title": "Dark", "year": 2017, "genres": ["sci-fi", "thriller"], "imdb_score": 8.7, "note": "German time travel epic"},
-    {"title": "Dark", "year": 2017, "genres": ["sci-fi", "mystery"], "imdb_score": 8.7, "note": "Complex time travel"},
-    {"title": "Black Mirror", "year": 2011, "genres": ["sci-fi", "thriller"], "imdb_score": 8.7, "note": "Tech anthology"},
-    {"title": "Westworld", "year": 2016, "genres": ["sci-fi", "western"], "imdb_score": 8.5, "note": "AI theme park drama"},
-    {"title": "Severance", "year": 2022, "genres": ["sci-fi", "thriller"], "imdb_score": 8.7, "note": "Work-life split drama"},
-    {"title": "Silicon Valley", "year": 2014, "genres": ["comedy"], "imdb_score": 8.5, "note": "Tech industry satire"},
-    {"title": "The IT Crowd", "year": 2006, "genres": ["comedy"], "imdb_score": 8.5, "note": "British tech comedy"},
-    {"title": "Mythic Quest", "year": 2020, "genres": ["comedy"], "imdb_score": 7.8, "note": "Gaming industry comedy"},
-    {"title": "Upload", "year": 2020, "genres": ["comedy", "sci-fi"], "imdb_score": 7.8, "note": "Afterlife comedy"},
-    {"title": "Devs", "year": 2020, "genres": ["sci-fi", "thriller"], "imdb_score": 7.6, "note": "Quantum determinism drama"},
-    {"title": "Counterpart", "year": 2017, "genres": ["sci-fi", "thriller"], "imdb_score": 8.1, "note": "Cold War spy sci-fi"},
-    {"title": "Legion", "year": 2017, "genres": ["sci-fi", "action"], "imdb_score": 8.2, "note": "Marvel mutant drama"},
-    {"title": "The Boys", "year": 2019, "genres": ["superhero", "action"], "imdb_score": 8.7, "note": "Anti-superhero satire"},
-    {"title": "Invincible", "year": 2021, "genres": ["animation", "action"], "imdb_score": 8.6, "note": "Adult animation superhero"},
-    {"title": "Watchmen", "year": 2019, "genres": ["superhero", "drama"], "imdb_score": 8.1, "note": "HBO superhero drama"},
-    {"title": "Doom Patrol", "year": 2019, "genres": ["superhero", "comedy"], "imdb_score": 7.9, "note": "Weird superhero team"},
-    {"title": "Peacemaker", "year": 2022, "genres": ["superhero", "comedy"], "imdb_score": 8.3, "note": "Suicide Squad spinoff"},
-    {"title": "The Penguin", "year": 2024, "genres": ["superhero", "crime"], "imdb_score": 7.9, "note": "Batman villain origin"},
-    {"title": "Fargo", "year": 2014, "genres": ["crime", "drama"], "imdb_score": 8.9, "note": "Anthology crime saga"},
-    {"title": "Mindhunter", "year": 2017, "genres": ["crime", "thriller"], "imdb_score": 8.6, "note": "FBI profiler drama"},
-    {"title": "True Detective", "year": 2014, "genres": ["crime", "mystery"], "imdb_score": 8.9, "note": "Crime anthology S1"},
-    {"title": "Mindhunter", "year": 2017, "genres": ["crime", "drama"], "imdb_score": 8.6, "note": "Serial killer profiling"},
-    {"title": "Dexter", "year": 2006, "genres": ["crime", "thriller"], "imdb_score": 8.7, "note": "Serial killer vigilante"},
-    {"title": "Dexter: New Blood", "year": 2021, "genres": ["crime", "thriller"], "imdb_score": 7.9, "note": "Dexter revival"},
-    {"title": "Hannibal", "year": 2013, "genres": ["crime", "thriller"], "imdb_score": 8.5, "note": "Stylized crime horror"},
-    {"title": "Criminal Minds", "year": 2005, "genres": ["crime", "thriller"], "imdb_score": 8.0, "note": "FBI profiler procedural"},
-    {"title": "CSI", "year": 2000, "genres": ["crime", "drama"], "imdb_score": 7.7, "note": "Forensic procedural pioneer"},
-    {"title": "Law & Order", "year": 1990, "genres": ["crime", "drama"], "imdb_score": 7.7, "note": "Procedural juggernaut"},
-    {"title": "Law & Order: SVU", "year": 1999, "genres": ["crime", "drama"], "imdb_score": 8.0, "note": "Longest-running drama"},
-    {"title": "Blue Bloods", "year": 2010, "genres": ["crime", "drama"], "imdb_score": 7.7, "note": "Family police drama"},
-    {"title": "Chicago P.D.", "year": 2014, "genres": ["crime", "drama"], "imdb_score": 7.7, "note": "Chicago franchise"},
-    {"title": "The Rookie", "year": 2018, "genres": ["crime", "drama"], "imdb_score": 7.8, "note": "Rookie cop drama"},
-    {"title": "9-1-1", "year": 2018, "genres": ["action", "drama"], "imdb_score": 7.7, "note": "First responder drama"},
-    {"title": "9-1-1: Lone Star", "year": 2020, "genres": ["action", "drama"], "imdb_score": 7.1, "note": "Austin spinoff"},
-    {"title": "S.W.A.T.", "year": 2017, "genres": ["action", "crime"], "imdb_score": 7.5, "note": "SWAT team drama"},
-    {"title": "FBI", "year": 2018, "genres": ["crime", "drama"], "imdb_score": 6.9, "note": "CBS procedural"},
-    {"title": "The FBI", "year": 1965, "genres": ["crime", "drama"], "note": "Classic agent procedural"},
-    {"title": "Magnum P.I.", "year": 2018, "genres": ["action", "comedy"], "imdb_score": 7.2, "note": "Modern reboot"},
-    {"title": "Hawaii Five-0", "year": 2010, "genres": ["action", "crime"], "imdb_score": 7.4, "note": "Modern remake"},
-    {"title": "NCIS", "year": 2003, "genres": ["action", "crime"], "imdb_score": 7.8, "note": "Military procedural hit"},
-    {"title": "NCIS: Los Angeles", "year": 2009, "genres": ["action", "crime"], "imdb_score": 7.5, "note": "LA spinoff"},
-    {"title": "Scorpion", "year": 2014, "genres": ["action", "drama"], "imdb_score": 7.2, "note": "Genius team drama"},
-    {"title": "MacGyver", "year": 2016, "genres": ["action", "adventure"], "imdb_score": 5.8, "note": "Reboot attempt"},
-    {"title": "MacGyver", "year": 1985, "genres": ["action", "adventure"], "imdb_score": 7.7, "note": "Original problem-solver"},
-    {"title": "The A-Team", "year": 1983, "genres": ["action", "adventure"], "imdb_score": 7.7, "note": "80s action classic"},
-    {"title": "Knight Rider", "year": 1982, "genres": ["action", "sci-fi"], "imdb_score": 6.9, "note": "Talking car classic"},
-    {"title": "Magnum, P.I.", "year": 1980, "genres": ["action", "drama"], "imdb_score": 7.2, "note": "Original private eye"},
-    {"title": "Miami Vice", "year": 1984, "genres": ["action", "drama"], "imdb_score": 7.5, "note": "Style-forward crime"},
-    {"title": "Hill Street Blues", "year": 1981, "genres": ["drama", "crime"], "imdb_score": 8.0, "note": "Police drama pioneer"},
-    {"title": "NYPD Blue", "year": 1993, "genres": ["drama", "crime"], "imdb_score": 7.7, "note": "Adult police drama"},
-    {"title": "The Commish", "year": 1991, "genres": ["drama", "crime"], "imdb_score": 6.9, "note": "Cop drama alternative"},
-    {"title": "Walker, Texas Ranger", "year": 1993, "genres": ["action", "crime"], "imdb_score": 5.6, "note": "Nostalgic action"},
-    {"title": "21 Jump Street", "year": 1987, "genres": ["action", "crime"], "imdb_score": 6.7, "note": "Undercover classic"},
-    {"title": "COPS", "year": 1989, "genres": ["reality", "crime"], "imdb_score": 7.9, "note": "Reality crime pioneer"},
-    {"title": "The First 48", "year": 2004, "genres": ["reality", "crime"], "imdb_score": 7.6, "note": "True crime reality"},
-    {"title": "Forensic Files", "year": 1996, "genres": ["documentary", "crime"], "imdb_score": 8.1, "note": "True crime staple"},
-    {"title": "Making a Murderer", "year": 2015, "genres": ["documentary", "crime"], "imdb_score": 8.1, "note": "True crime phenomenon"},
-    {"title": "The Jinx", "year": 2015, "genres": ["documentary", "crime"], "imdb_score": 8.4, "note": "Robert Durst saga"},
-    {"title": "Wild Wild Country", "year": 2018, "genres": ["documentary", "crime"], "imdb_score": 8.2, "note": "Cult documentary"},
-    {"title": "Don't F**k with Cats", "year": 2019, "genres": ["documentary", "crime"], "imdb_score": 7.7, "note": "True crime docuseries"},
-    {"title": "Heaven's Gate", "year": 2020, "genres": ["documentary"], "imdb_score": 7.2, "note": "Cult documentary"},
-    {"title": "The Last Dance", "year": 2020, "genres": ["documentary", "sports"], "imdb_score": 9.1, "note": "Jordan documentary"},
-    {"title": "30 for 30", "year": 2009, "genres": ["documentary", "sports"], "imdb_score": 8.5, "note": "ESPN documentary series"},
-    {"title": "Hard Knocks", "year": 2001, "genres": ["documentary", "sports"], "imdb_score": 8.4, "note": "NFL training camp"},
-    {"title": "Drive to Survive", "year": 2019, "genres": ["documentary", "sports"], "imdb_score": 8.4, "note": "F1 behind scenes"},
-    {"title": "Cheer", "year": 2020, "genres": ["documentary"], "imdb_score": 7.7, "note": "Cheerleading doc"},
-    {"title": "Stay Here", "year": 2018, "genres": ["reality"], "imdb_score": 7.0, "note": "Vacation rentals"},
-    {"title": "The Great British Bake Off", "year": 2010, "genres": ["reality", "competition"], "imdb_score": 8.6, "note": "UK baking phenomenon"},
-    {"title": "MasterChef", "year": 2005, "genres": ["reality", "competition"], "imdb_score": 7.2, "note": "Cooking competition"},
-    {"title": "Top Chef", "year": 2006, "genres": ["reality", "competition"], "imdb_score": 7.5, "note": "Cooking competition"},
-    {"title": "Hell's Kitchen", "year": 2005, "genres": ["reality", "competition"], "imdb_score": 7.1, "note": "Gordon Ramsay kitchen"},
-    {"title": "Kitchen Nightmares", "year": 2007, "genres": ["reality"], "imdb_score": 7.5, "note": "Restaurant rescue"},
-    {"title": "Survivor", "year": 2000, "genres": ["reality", "competition"], "imdb_score": 7.9, "note": "Reality competition pioneer"},
-    {"title": "The Amazing Race", "year": 2001, "genres": ["reality", "competition"], "imdb_score": 7.6, "note": "Travel competition"},
-    {"title": "The Challenge", "year": 1998, "genres": ["reality", "competition"], "imdb_score": 7.8, "note": "Competition veteran"},
-    {"title": "Big Brother", "year": 2000, "genres": ["reality"], "imdb_score": 7.0, "note": "Reality show staple"},
-    {"title": "Love Island", "year": 2005, "genres": ["reality", "romance"], "imdb_score": 7.2, "note": "UK dating reality"},
-    {"title": "The Bachelor", "year": 2002, "genres": ["reality", "romance"], "imdb_score": 3.4, "note": "Controversial romance"},
-    {"title": "The Voice", "year": 2011, "genres": ["reality", "competition"], "imdb_score": 6.9, "note": "Singing competition"},
-    {"title": "American Idol", "year": 2002, "genres": ["reality", "competition"], "imdb_score": 5.6, "note": "Singing competition pioneer"},
-    {"title": "RuPaul's Drag Race", "year": 2009, "genres": ["reality", "competition"], "imdb_score": 8.5, "note": "Drag competition phenomenon"},
-    {"title": "Queer Eye", "year": 2018, "genres": ["reality"], "imdb_score": 8.5, "note": "Makeover phenomenon"},
-    {"title": "Nailed It!", "year": 2018, "genres": ["reality", "comedy"], "imdb_score": 7.6, "note": "Baking fail comedy"},
-    {"title": "The Great British Baking Show", "year": 2010, "genres": ["reality"], "imdb_score": 8.6, "note": "UK baking hit"},
-    {"title": "House Hunters", "year": 1999, "genres": ["reality"], "imdb_score": 6.4, "note": "Real estate reality"},
-    {"title": "Property Brothers", "year": 2011, "genres": ["reality"], "imdb_score": 6.9, "note": "Home renovation"},
-    {"title": "Fixer Upper", "year": 2013, "genres": ["reality"], "imdb_score": 7.5, "note": "Waco renovation hit"},
-    {"title": "Man vs. Wild", "year": 2006, "genres": ["reality", "adventure"], "imdb_score": 8.2, "note": "Survival Bear Grylls"},
-    {"title": "Survivorman", "year": 2004, "genres": ["reality", "adventure"], "imdb_score": 8.1, "note": "Solo survival"},
-    {"title": "Alone", "year": 2015, "genres": ["reality", "competition"], "imdb_score": 8.1, "note": "Solo wilderness"},
-    {"title": "The Walking Dead", "year": 2010, "genres": ["horror", "drama"], "imdb_score": 8.2, "note": "Zombie franchise"},
-    {"title": "Fear the Walking Dead", "year": 2015, "genres": ["horror", "drama"], "imdb_score": 6.9, "note": "Walking Dead prequel"},
-    {"title": "World War Z", "year": 2013, "genres": ["horror", "sci-fi"], "imdb_score": 7.6, "note": "Zombie apocalypse film"},
-    {"title": "28 Days Later", "year": 2002, "genres": ["horror", "sci-fi"], "imdb_score": 7.5, "note": "Fast zombie film"},
-    {"title": " of Us (game adaptation)", "year":The Last 2023, "genres": ["drama", "action"], "imdb_score": 8.8, "note": "Video game adaptation"},
-    {"title": "The Last Kingdom", "year": 2015, "genres": ["drama", "historical"], "imdb_score": 8.5, "note": "Saxon historical drama"},
-    {"title": "Vikings", "year": 2013, "genres": ["drama", "historical"], "imdb_score": 8.5, "note": "Norse historical drama"},
-    {"title": "Vikings: Valhalla", "year": 2022, "genres": ["drama", "historical"], "imdb_score": 7.3, "note": "Vikings continuation"},
-    {"title": "The Crown", "year": 2016, "genres": ["drama", "historical"], "imdb_score": 8.6, "note": "British royal drama"},
-    {"title": "The Queen's Gambit", "year": 2020, "genres": ["drama"], "imdb_score": 8.6, "note": "Chess drama phenomenon"},
-    {"title": "The Pacific", "year": 2010, "genres": ["drama", "war"], "imdb_score": 8.3, "note": "WWII Pacific theater"},
-    {"title": "Band of Brothers", "year": 2001, "genres": ["drama", "war"], "imdb_score": 9.4, "note": "WWII masterpiece"},
-    {"title": "Generation Kill", "year": 2008, "genres": ["drama", "war"], "imdb_score": 8.5, "note": "Iraq war drama"},
-    {"title": "The Righteous Gemstones", "year": 2019, "genres": ["comedy"], "imdb_score": 7.8, "note": "Megachurch comedy"},
-    {"title": "South Park", "year": 1997, "genres": ["animation", "comedy"], "imdb_score": 8.4, "note": "Animated satire"},
-    {"title": "Bob's Burgers", "year": 2011, "genres": ["animation", "comedy"], "imdb_score": 8.6, "note": "Family animated comedy"},
-    {"title": "BoJack Horseman", "year": 2014, "genres": ["animation", "comedy"], "imdb_score": 8.8, "note": "Animated depression drama"},
-    {"title": "Rick and Morty", "year": 2013, "genres": ["animation", "sci-fi", "comedy"], "imdb_score": 8.7, "note": "Animated sci-fi comedy"},
-    {"title": "The Venture Bros", "year": 2004, "genres": ["animation", "comedy"], "imdb_score": 8.8, "note": "Adventure Time precursor"},
-    {"title": "Adventure Time", "year": 2010, "genres": ["animation", "fantasy"], "imdb_score": 8.6, "note": "Cartoon Network renaissance"},
-    {"title": "Steven Universe", "year": 2013, "genres": ["animation", "fantasy"], "imdb_score": 8.3, "note": "Cartoon Network gem"},
-    {"title": "Gravity Falls", "year": 2012, "genres": ["animation", "mystery"], "imdb_score": 8.9, "note": "Mystery cartoon masterpiece"},
-    {"title": "The Owl House", "year": 2020, "genres": ["animation", "fantasy"], "imdb_score": 8.7, "note": "Fantasy animation"},
-    {"title": "Arcane", "year": 2021, "genres": ["animation", "action"], "imdb_score": 9.0, "note": "Gaming adaptation masterpiece"},
-    {"title": "Love, Death & Robots", "year": 2019, "genres": ["animation", "sci-fi"], "imdb_score": 7.5, "note": "Adult animated anthology"},
-    {"title": "Final Space", "year": 2018, "genres": ["animation", "sci-fi"], "imdb_score": 7.9, "note": "Adult animated sci-fi"},
-    {"title": "Primal", "year": 2019, "genres": ["animation", "drama"], "imdb_score": 8.7, "note": "Genndy Tartakovsky masterpiece"},
-    {"title": "Castlevania", "year": 2017, "genres": ["animation", "horror", "action"], "imdb_score": 8.7, "note": "Gaming adaptation excellence"},
-    {"title": "Dragon Prince", "year": 2018, "genres": ["animation", "fantasy"], "imdb_score": 8.4, "note": "Fantasy animation"},
-    {"title": "She-Ra", "year": 2018, "genres": ["animation", "fantasy"], "imdb_score": 7.8, "note": "Nostalgia reboot"},
-    {"title": "Disenchantment", "year": 2018, "genres": ["animation", "fantasy"], "imdb_score": 7.2, "note": "Matt Groening fantasy"},
-    {"title": "Big Mouth", "year": 2017, "genres": ["animation", "comedy"], "imdb_score": 7.8, "note": "Puberty comedy"},
-    {"title": "Human Target", "year": 2010, "genres": ["action", "thriller"], "imdb_score": 7.7, "note": "Comic adaptation"},
-    {"title": "Daredevil", "year": 2015, "genres": ["superhero", "action"], "imdb_score": 8.6, "note": "Marvel Netflix excellence"},
-    {"title": "Jessica Jones", "year": 2015, "genres": ["superhero", "thriller"], "imdb_score": 8.0, "note": "Marvel Netflix drama"},
-    {"title": "Luke Cage", "year": 2016, "genres": ["superhero", "action"], "imdb_score": 7.6, "note": "Marvel Netflix"},
-    {"title": "Iron Fist", "year": 2017, "genres": ["superhero", "action"], "imdb_score": 6.8, "note": "Marvel Netflix"},
-    {"title": "The Punisher", "year": 2017, "genres": ["superhero", "action"], "imdb_score": 8.5, "note": "Marvel Netflix"},
-    {"title": "Defenders", "year": 2017, "genres": ["superhero", "action"], "imdb_score": 7.4, "note": "Marvel team-up"},
-    {"title": "Agent Carter", "year": 2015, "genres": ["superhero", "action"], "imdb_score": 7.5, "note": "Marvel period superhero"},
-    {"title": "Agents of S.H.I.E.L.D.", "year": 2013, "genres": ["superhero", "action"], "imdb_score": 7.5, "note": "Marvel Cinematic Universe TV"},
-    {"title": "Cloak & Dagger", "year": 2018, "genres": ["superhero", "drama"], "imdb_score": 6.8, "note": "Marvel"},
-    {"title": "Runaways", "year": 2017, "genres": ["superhero", "drama"], "imdb_score": 7.0, "note": "Marvel teen"},
-    {"title": "The Gifted", "year": 2017, "genres": ["superhero", "drama"], "imdb_score": 7.3, "note": "X-Men TV"},
-    {"title": "Legion", "year": 2017, "genres": ["superhero", "sci-fi"], "imdb_score": 8.2, "note": "X-Men variant"},
-    {"title": "Preacher", "year": 2016, "genres": ["drama", "horror"], "imdb_score": 8.0, "note": "Dark comic adaptation"},
-    {"title": "Lucifer", "year": 2016, "genres": ["fantasy", "crime"], "imdb_score": 8.1, "note": "Comic adaptation hit"},
-    {"title": "Constantine", "year": 2014, "genres": ["fantasy", "horror"], "imdb_score": 7.5, "note": "DC occult"},
-    {"title": "Gotham", "year": 2014, "genres": ["superhero", "crime"], "imdb_score": 7.8, "note": "Batman prequel"},
-    {"title": "Gotham", "year": 2014, "genres": ["superhero", "drama"], "imdb_score": 7.8, "note": "Batman's city origin"},
-    {"title": "Titans", "year": 2018, "genres": ["superhero", "action"], "imdb_score": 7.6, "note": "Teen Titans adaptation"},
-    {"title": "Doom Patrol", "year": 2019, "genres": ["superhero", "comedy"], "imdb_score": 7.9, "note": "DC oddball team"},
-    {"title": "Swamp Thing", "year": 2019, "genres": ["superhero", "horror"], "imdb_score": 7.7, "note": "DC horror"},
-    {"title": "Penny Dreadful", "year": 2014, "genres": ["horror", "fantasy"], "imdb_score": 8.0, "note": "Gothic horror"},
-    {"title": "From Dusk Till Dawn", "year": 2014, "genres": ["horror", "fantasy"], "imdb_score": 7.0, "note": "Robert Rodriguez adaptation"},
-    {"title": "American Gods", "year": 2017, "genres": ["fantasy", "drama"], "imdb_score": 7.8, "note": "Neil Gaiman adaptation"},
-    {"title": "Good Omens", "year": 2019, "genres": ["fantasy", "comedy"], "imdb_score": 8.4, "note": "Pratchett/Gaiman"},
-    {"title": "American Horror Story", "year": 2011, "genres": ["horror", "anthology"], "imdb_score": 8.0, "note": "Horror anthology"},
-    {"title": "Creepshow", "year": 2019, "genres": ["horror", "anthology"], "imdb_score": 7.3, "note": "Horror anthology"},
-    {"title": "Channel Zero", "year": 2016, "genres": ["horror", "anthology"], "imdb_score": 7.5, "note": "Internet horror anthology"},
-    {"title": "The Haunting of Hill House", "year": 2018, "genres": ["horror", "drama"], "imdb_score": 8.6, "note": "Modern horror classic"},
-    {"title": "Bates Motel", "year": 2013, "genres": ["horror", "drama"], "imdb_score": 8.1, "note": "Psycho prequel"},
-    {"title": "Scream Queens", "year": 2015, "genres": ["horror", "comedy"], "imdb_score": 7.5, "note": "Horror comedy"},
-    {"title": "Santa Clarita Diet", "year": 2017, "genres": ["horror", "comedy"], "imdb_score": 7.8, "note": "Vampire comedy"},
-    {"title": "What We Do in the Shadows", "year": 2019, "genres": ["comedy", "horror"], "imdb_score": 8.5, "note": "Vampire mockumentary"},
-    {"title": "Kitchen Confidential", "year": 2005, "genres": ["comedy", "drama"], "imdb_score": 7.3, "note": "Kitchen drama"},
-    {"title": "Chef's Table", "year": 2015, "genres": ["documentary"], "imdb_score": 8.5, "note": "Chef documentary"},
-    {"title": "Ugly Delicious", "year": 2018, "genres": ["documentary"], "imdb_score": 8.4, "note": "Food culture doc"},
-    {"title": "Chef's Table: France", "year": 2016, "genres": ["documentary"], "imdb_score": 8.2, "note": "French chefs"},
-    {"title": "Mind of a Chef", "year": 2012, "genres": ["documentary"], "imdb_score": 7.8, "note": "Chef culture"},
-    {"title": "Anthony Bourdain: Parts Unknown", "year": 2013, "genres": ["documentary", "travel"], "imdb_score": 9.0, "note": "Travel food doc"},
-    {"title": "No Reservations", "year": 2005, "genres": ["documentary", "travel"], "imdb_score": 8.2, "note": "Travel food"},
-    {"title": "Bizarre Foods", "year": 2007, "genres": ["documentary", "travel"], "imdb_score": 7.7, "note": "Strange foods"},
-    {"title": "Diners, Drive-Ins and Dives", "year": 2007, "genres": ["reality", "food"], "imdb_score": 7.3, "note": "Guy Fieri food"},
-    {"title": "Parts Unknown", "year": 2013, "genres": ["documentary", "travel"], "imdb_score": 9.0, "note": "Anthony Bourdain"},
-    {"title": "The Great Food Truck Race", "year": 2010, "genres": ["reality", "competition"], "imdb_score": 6.9, "note": "Food truck competition"},
-    {"title": "Beat Bobby Flay", "year": 2013, "genres": ["reality", "competition"], "imdb_score": 6.9, "note": "Cooking competition"},
-    {"title": "Chopped", "year": 2009, "genres": ["reality", "competition"], "imdb_score": 7.2, "note": "Cooking competition"},
-    {"title": "Cutthroat Kitchen", "year": 2013, "genres": ["reality", "competition"], "imdb_score": 7.0, "note": "Sabotage cooking"},
-    {"title": "Iron Chef America", "year": 2005, "genres": ["reality", "competition"], "imdb_score": 7.3, "note": "Cooking battle"},
-    {"title": "The Great British Bake Off", "year": 2010, "genres": ["reality", "competition"], "imdb_score": 8.6, "note": "UK baking"},
-    {"title": "Zumbo's Just Desserts", "year": 2016, "genres": ["reality", "competition"], "imdb_score": 7.0, "note": "Australian dessert"},
-    {"title": "Sugar Rush", "year": 2018, "genres": ["reality", "competition"], "imdb_score": 6.7, "note": "Netflix baking"},
-    {"title": "Nadiya's Kitchen", "year": 2015, "genres": ["reality", "cooking"], "imdb_score": 7.3, "note": "Nadiya Hussain"},
-    {"title": "Salt Fat Acid Heat", "year": 2018, "genres": ["documentary"], "imdb_score": 7.4, "note": "Cooking documentary"},
-    {"title": "Cooked", "year": 2016, "genres": ["documentary"], "imdb_score": 7.7, "note": "Michael Pollan series"},
-    {"title": "7 Up", "year": 1964, "genres": ["documentary"], "imdb_score": 9.1, "note": "Up documentary series"},
-    {"title": "Planet Earth", "year": 2006, "genres": ["documentary", "nature"], "imdb_score": 9.5, "note": "Nature documentary masterpiece"},
-    {"title": "Planet Earth II", "year": 2016, "genres": ["documentary", "nature"], "imdb_score": 9.5, "note": "Nature documentary sequel"},
-    {"title": "Blue Planet", "year": 2001, "genres": ["documentary", "nature"], "imdb_score": 9.0, "note": "Ocean documentary"},
-    {"title": "Blue Planet II", "year": 2017, "genres": ["documentary", "nature"], "imdb_score": 9.1, "note": "Ocean sequel"},
-    {"title": "Life", "year": 2009, "genres": ["documentary", "nature"], "imdb_score": 9.2, "note": "Life documentary"},
-    {"title": "The Blue Planet", "year": 2001, "genres": ["documentary", "nature"], "imdb_score": 9.0, "note": "BBC nature"},
-    {"title": "Frozen Planet", "year": 2011, "genres": ["documentary", "nature"], "imdb_score": 9.1, "note": "Arctic documentary"},
-    {"title": "Cosmos", "year": 2014, "genres": ["documentary", "sci-fi"], "imdb_score": 9.3, "note": "Science documentary"},
-    {"title": "Through the Wormhole", "year": 2010, "genres": ["documentary", "sci-fi"], "imdb_score": 8.5, "note": "Science exploration"},
-    {"title": "How the Universe Works", "year": 2010, "genres": ["documentary", "sci-fi"], "imdb_score": 8.5, "note": "Space documentary"},
-    {"title": "Nova", "year": 1974, "genres": ["documentary"], "imdb_score": 8.6, "note": "Science documentary"},
-    {"title": "American Experience", "year": 1988, "genres": ["documentary", "history"], "imdb_score": 8.4, "note": "History documentary"},
-    {"title": "The World at War", "year": 1973, "genres": ["documentary", "history"], "imdb_score": 9.0, "note": "WWII documentary classic"},
-    {"title": "Ken Burns: The Civil War", "year": 1990, "genres": ["documentary", "history"], "imdb_score": 9.0, "note": "Documentary landmark"},
-    {"title": "Burns Documentary Series", "year": 1990, "genres": ["documentary"], "imdb_score": 9.0, "note": "Ken Burns style"},
-    {"title": "The Vietnam War", "year": 2017, "genres": ["documentary", "history"], "imdb_score": 9.0, "note": "Ken Burns Vietnam"},
-    {"title": "Homer's Odyssey", "year": 2010, "genres": ["documentary", "history"], "imdb_score": 8.2, "note": "Classical exploration"},
-    {"title": "Civilisations", "year": 2018, "genres": ["documentary", "history"], "imdb_score": 7.8, "note": "Art history"},
-    {"title": "Rome: Engineering an Empire", "year": 2005, "genres": ["documentary", "history"], "imdb_score": 8.2, "note": "Ancient engineering"},
-    {"title": "Engineering an Empire", "year": 2006, "genres": ["documentary", "history"], "imdb_score": 8.3, "note": "World engineering"},
-    {"title": "American Genius", "year": 2015, "genres": ["documentary"], "imdb_score": 7.9, "note": "Historical innovators"},
-    {"title": "Mysteries at the Museum", "year": 2010, "genres": ["documentary"], "imdb_score": 7.6, "note": "Museum secrets"},
-    {"title": "Ancient Aliens", "year": 2010, "genres": ["documentary", "sci-fi"], "imdb_score": 6.6, "note": "Alien history"},
-    {"title": "MythBusters", "year": 2003, "genres": ["documentary", "science"], "imdb_score": 8.2, "note": "Science myth busting"},
-    {"title": "Brain Games", "year": 2011, "genres": ["documentary", "science"], "imdb_score": 7.8, "note": "Mind games"},
-    {"title": "The Joy of Data", "year": 2016, "genres": ["documentary"], "imdb_score": 7.7, "note": "Data documentary"},
-    {"title": "Connected", "year": 2020, "genres": ["documentary", "science"], "imdb_score": 7.4, "note": "Connectedness"},
-    {"title": "Pandemic: How to Prevent an Outbreak", "year": 2020, "genres": ["documentary"], "imdb_score": 7.6, "note": "Pandemic doc"},
-    {"title": "The Last Dance", "year": 2020, "genres": ["documentary", "sports"], "imdb_score": 9.1, "note": "Michael Jordan doc"},
-    {"title": "The Last Song", "year": 2020, "genres": ["documentary", "music"], "imdb_score": 7.6, "note": "Music documentary"},
-    {"title": "O.J.: Made in America", "year": 2016, "genres": ["documentary", "crime"], "imdb_score": 8.9, "note": "O.J. Simpson doc"},
-    {"title": "When They See Us", "year": 2019, "genres": ["drama"], "imdb_score": 8.9, "note": "Central Park Five"},
-    {"title": "Godless", "year": 2017, "genres": ["drama", "western"], "imdb_score": 8.3, "note": "Netflix western"},
-    {"title": "Hell on Wheels", "year": 2011, "genres": ["drama", "western"], "imdb_score": 8.0, "note": "Civil War western"},
-    {"title": "Longmire", "year": 2012, "genres": ["drama", "western"], "imdb_score": 7.9, "note": "Modern western"},
-    {"title": "The Son", "year": 2017, "genres": ["drama", "western"], "imdb_score": 6.8, "note": "Texas western"},
-    {"title": "Yellowstone", "year": 2018, "genres": ["drama", "western"], "imdb_score": 8.7, "note": "Modern Montana western"},
-    {"title": "1883", "year": 2021, "genres": ["drama", "western"], "imdb_score": 8.5, "note": "Yellowstone prequel"},
-    {"title": "1923", "year": 2022, "genres": ["drama", "western"], "imdb_score": 8.2, "note": "Yellowstone prequel"},
-    {"title": "Lawmen: Bass Reeves", "year": 2023, "genres": ["drama", "western"], "imdb_score": 7.7, "note": "Black lawman"},
-    {"title": "The English", "year": 2022, "genres": ["drama", "western"], "imdb_score": 6.9, "note": "British western"},
-    {"title": "The Harder They Fall", "year": 2021, "genres": ["western", "action"], "imdb_score": 6.8, "note": "Western with Black lead"},
-    {"title": "Godless", "year": 2017, "genres": ["drama", "western"], "imdb_score": 8.3, "note": "Female-led western"},
-    {"title": "Deadwood", "year": 2004, "genres": ["drama", "western"], "imdb_score": 8.8, "note": "Western masterpiece"},
-    {"title": "Deadwood: The Movie", "year": 2019, "genres": ["drama", "western"], "imdb_score": 7.3, "note": "Deadwood conclusion"},
-    {"title": "Justified", "year": 2010, "genres": ["crime", "drama"], "imdb_score": 8.6, "note": "Modern western crime"},
-    {"title": "Sons of Anarchy", "year": 2008, "genres": ["crime", "drama"], "imdb_score": 8.6, "note": "Biker crime drama"},
-    {"title": "Sons of Anarchy", "year": 2008, "genres": ["crime", "drama"], "imdb_score": 8.6, "note": "Shakespearean crime"},
-    {"title": "Mayans M.C.", "year": 2018, "genres": ["crime", "drama"], "imdb_score": 7.3, "note": "SOA spinoff"},
-    {"title": "Power", "year": 2014, "genres": ["crime", "drama"], "imdb_score": 7.9, "note": "NYC club owner"},
-    {"title": "Power Book II: Ghost", "year": 2020, "genres": ["crime", "drama"], "imdb_score": 6.9, "note": "Power spinoff"},
-    {"title": "Power Book III: Raising Kanan", "year": 2021, "genres": ["crime", "drama"], "imdb_score": 7.0, "note": "Power spinoff"},
-    {"title": "Power Book IV: Force", "year": 2022, "genres": ["crime", "drama"], "imdb_score": 6.4, "note": "Power spinoff"},
-    {"title": "Power Book V: Efficiency", "year": 2023, "genres": ["crime", "drama"], "note": "Power franchise"}
-  ]
-,
-    {"title": "The Bear", "year": 2022, "genres": ["drama", "comedy"], "imdb_score": 8.4, "note": "Culinary drama masterpiece"},
-    {"title": "Slow Horses", "year": 2022, "genres": ["drama", "thriller"], "imdb_score": 7.8, "note": "British spy thriller"},
-    {"title": "Interview with the Vampire", "year": 2022, "genres": ["drama", "horror"], "imdb_score": 7.5, "note": "Gothic horror reimagined"},
-    {"title": "The Rehearsal", "year": 2022, "genres": ["comedy"], "imdb_score": 8.0, "note": "Nathan Fielder experimental comedy"},
-    {"title": "What We Do in the Shadows", "year": 2019, "genres": ["comedy", "horror"], "imdb_score": 8.6, "note": "Vampire mockumentary comedy"},
-    {"title": "Abbott Elementary", "year": 2021, "genres": ["comedy"], "imdb_score": 8.0, "note": "School mockumentary hit"},
-    {"title": "Severance", "year": 2022, "genres": ["sci-fi", "thriller"], "imdb_score": 8.7, "note": "Already ranked #52"},
-    {"title": "Silo", "year": 2023, "genres": ["sci-fi", "mystery"], "imdb_score": 7.9, "note": "Already ranked #68"},
-    {"title": "For All Mankind", "year": 2019, "genres": ["sci-fi", "drama"], "imdb_score": 7.9, "note": "Already ranked #17"},
-    {"title": "The Penguin", "year": 2024, "genres": ["crime", "drama"], "imdb_score": 8.0, "note": "Already ranked #84"},
-    {"title": "Only Murders in the Building", "year": 2021, "genres": ["comedy", "mystery"], "imdb_score": 8.1, "note": "Cozy murder mystery comedy"},
-    {"title": "The Resort", "year": 2022, "genres": ["mystery", "drama"], "imdb_score": 7.0, "note": "Vacation mystery series"},
-    {"title": "A Murder at the End of the World", "year": 2023, "genres": ["mystery", "drama"], "imdb_score": 7.5, "note": "Brit Marling mystery"},
-    {"title": "Shogun (2024)", "year": 2024, "genres": ["drama", "historical"], "imdb_score": 8.6, "note": "Already ranked #53"},
-    {"title": "Silo", "year": 2023, "genres": ["sci-fi", "mystery"], "imdb_score": 7.9, "note": "Already in rankings"},
-    {"title": "Hijack", "year": 2023, "genres": ["thriller", "drama"], "imdb_score": 7.5, "note": "Plane hijacking thriller"},
-    {"title": "The Diplomat", "year": 2023, "genres": ["drama", "thriller"], "imdb_score": 7.8, "note": "Political drama series"},
-    {"title": "Silo", "year": 2023, "genres": ["sci-fi", "mystery"], "imdb_score": 7.9, "note": "Apple TV+ dystopian sci-fi"},
-    {"title": "Monarch: Legacy of Monsters", "year": 2023, "genres": ["sci-fi", "action"], "imdb_score": 7.0, "note": "Godzilla universe series"},
-    {"title": "Silo", "year": 2023, "genres": ["sci-fi", "drama"], "imdb_score": 7.9, "note": "Underground dystopian mystery"},
-    {"title": "Somebody Somewhere", "year": 2022, "genres": ["comedy", "drama"], "imdb_score": 7.8, "note": "Bridget Everett HBO comedy"},
-    {"title": "Telemarketers", "year": 2023, "genres": ["comedy", "documentary"], "imdb_score": 7.6, "note": "True crime comedy doc"},
-    {"title": "The Curse", "year": 2023, "genres": ["comedy", "drama"], "imdb_score": 7.0, "note": "Fielder/Safdie comedy"},
-    {"title": "Doom Patrol", "year": 2019, "genres": ["sci-fi", "comedy", "drama"], "imdb_score": 7.8, "note": "Superhero oddball dramedy"},
-    {"title": "The Sandman", "year": 2022, "genres": ["fantasy", "drama"], "imdb_score": 7.7, "note": "Neil Gaiman adaptation"},
-    {"title": "1899", "year": 2022, "genres": ["mystery", "sci-fi", "drama"], "imdb_score": 7.4, "note": "Dark creators' mystery series"},
-    {"title": "Bodies", "year": 2023, "genres": ["mystery", "sci-fi"], "imdb_score": 7.2, "note": "Time-bending detective mystery"},
-    {"title": "The Peripheral", "year": 2022, "genres": ["sci-fi", "thriller"], "imdb_score": 7.5, "note": "William Gibson adaptation"},
-    {"title": "Tales of the Walking Dead", "year": 2022, "genres": ["drama", "horror"], "imdb_score": 6.5, "note": "Walking Dead anthology"},
-    {"title": "The Walking Dead: Dead City", "year": 2023, "genres": ["drama", "horror"], "imdb_score": 7.0, "note": "Negan/Maggie spinoff"},
-    {"title": "The Walking Dead: Daryl Dixon", "year": 2023, "genres": ["drama", "horror"], "imdb_score": 7.4, "note": "Norman Reedus spinoff"}
-  ]
-},
-    {"title": "Frieren: Beyond Journey's End", "year": 2023, "genres": ["animation", "fantasy", "drama"], "imdb_score": 9.0, "note": "Critically acclaimed anime fantasy"},
-    {"title": "Blue Eye Samurai", "year": 2023, "genres": ["animation", "action", "drama"], "imdb_score": 8.7, "note": "Animated samurai epic"},
-    {"title": "Scavengers Reign", "year": 2023, "genres": ["animation", "sci-fi"], "imdb_score": 8.5, "note": "Alien planet survival animation"},
-    {"title": "X-Men '97", "year": 2024, "genres": ["animation", "action", "sci-fi"], "imdb_score": 8.6, "note": "Beloved animated revival"},
-    {"title": "Star Wars: The Bad Batch", "year": 2021, "genres": ["animation", "sci-fi", "action"], "imdb_score": 7.8, "note": "Clone Force 99 adventures"},
-    {"title": "Star Wars: Tales of the Jedi", "year": 2022, "genres": ["animation", "sci-fi"], "imdb_score": 8.4, "note": "J anthology shorts"},
-    {"title": "Star Wars: Tales of the Empire", "year": 2024, "genres": ["animation", "sci-fi"], "imdb_score": 8.0, "note": "Dark side anthology"},
-    {"title": "Invincible", "year": 2021, "genres": ["animation", "action", "drama"], "imdb_score": 8.7, "note": "Violent superhero deconstruction"},
-    {"title": "Arcane", "year": 2021, "genres": ["animation", "action", "drama"], "imdb_score": 9.0, "note": "League of Legends masterpiece"},
-    {"title": "Love, Death & Robots", "year": 2019, "genres": ["animation", "sci-fi", "anthology"], "imdb_score": 8.4, "note": "Animated sci-fi anthology"},
-    {"title": "Cyberpunk: Edgerunners", "year": 2022, "genres": ["animation", "sci-fi", "action"], "imdb_score": 8.5, "note": "Netflix anime sensation"},
-    {"title": "Castlevania", "year": 2017, "genres": ["animation", "action", "fantasy"], "imdb_score": 8.3, "note": "Vampire hunting anime"},
-    {"title": "Castlevania: Nocturne", "year": 2023, "genres": ["animation", "action", "fantasy"], "imdb_score": 7.5, "note": "French Revolution spinoff"},
-    {"title": "The Legend of Vox Machina", "year": 2022, "genres": ["animation", "fantasy", "comedy"], "imdb_score": 8.4, "note": "Critical Role adaptation"},
-    {"title": "Pantheon", "year": 2022, "genres": ["animation", "sci-fi", "drama"], "imdb_score": 7.8, "note": "Uploaded consciousness sci-fi"},
-    {"title": "Undone", "year": 2019, "genres": ["animation", "drama", "sci-fi"], "imdb_score": 7.9, "note": "Rotoscoped time-bending drama"},
-    {"title": "Tuca & Bertie", "year": 2019, "genres": ["animation", "comedy"], "imdb_score": 7.5, "note": "BoJack spinoff comedy"},
-    {"title": "Birdgirl", "year": 2021, "genres": ["animation", "comedy"], "imdb_score": 6.5, "note": "Harvey Birdman spinoff"},
-    {"title": "Smiling Friends", "year": 2020, "genres": ["animation", "comedy", "horror"], "imdb_score": 8.5, "note": "Adult Swim cult hit"},
-    {"title": "Royal Crackers", "year": 2023, "genres": ["animation", "comedy"], "imdb_score": 7.0, "note": "Adult Swim absurdist comedy"},
-    {"title": "Rick and Morty", "year": 2013, "genres": ["animation", "comedy", "sci-fi"], "imdb_score": 9.1, "note": "Animated sci-fi phenomenon"},
-    {"title": "Solar Opposites", "year": 2020, "genres": ["animation", "comedy", "sci-fi"], "imdb_score": 8.0, "note": "Rick and Morty adjacent"},
-    {"title": "Krapopolis", "year": 2023, "genres": ["animation", "comedy"], "imdb_score": 6.5, "note": "Ancient Greek comedy"},
-    {"title": "Hamster & Gretel", "year": 2022, "genres": ["animation", "comedy", "action"], "imdb_score": 7.2, "note": "Dan Povenmire superhero comedy"},
-    {"title": "The Ghost and Molly McGee", "year": 2021, "genres": ["animation", "comedy"], "imdb_score": 7.5, "note": "Disney ghost comedy"},
-    {"title": "Amphibia", "year": 2019, "genres": ["animation", "comedy", "fantasy"], "imdb_score": 8.0, "note": "Disney frog isekai"},
-    {"title": "The Owl House", "year": 2020, "genres": ["animation", "fantasy", "comedy"], "imdb_score": 8.5, "note": "Disney fantasy cult hit"},
-    {"title": "Gravity Falls", "year": 2012, "genres": ["animation", "mystery", "comedy"], "imdb_score": 8.9, "note": "Disney mystery masterpiece"},
-    {"title": "Steven Universe", "year": 2013, "genres": ["animation", "fantasy", "drama"], "imdb_score": 8.2, "note": "Cartoon Network gem"},
-    {"title": "Adventure Time", "year": 2010, "genres": ["animation", "fantasy", "comedy"], "imdb_score": 8.6, "note": "Land of Ooo classic"},
-    {"title": "Regular Show", "year": 2009, "genres": ["animation", "comedy"], "imdb_score": 8.5, "note": "Slacker surrealist comedy"},
-    {"title": "Over the Garden Wall", "year": 2014, "genres": ["animation", "fantasy", "mystery"], "imdb_score": 8.8, "note": "Fall miniseries classic"},
-    {"title": "Infinity Train", "year": 2019, "genres": ["animation", "sci-fi", "mystery"], "imdb_score": 8.5, "note": "HBO Max mystery anthology"},
-    {"title": "Primal", "year": 2019, "genres": ["animation", "action", "adventure"], "imdb_score": 8.7, "note": "Genndy Tartakovsky masterpiece"},
-    {"title": "Samurai Jack", "year": 2001, "genres": ["animation", "action", "adventure"], "imdb_score": 8.5, "note": "Tartakovsky's samurai epic"},
-    {"title": "Star Wars: Clone Wars (2003)", "year": 2003, "genres": ["animation", "action", "sci-fi"], "imdb_score": 7.8, "note": "Tartakovsky micro-series"},
-    {"title": "Star Wars: The Clone Wars (2008)", "year": 2008, "genres": ["animation", "action", "sci-fi"], "imdb_score": 8.4, "note": "Filoni's animated epic"},
-    {"title": "Star Wars Rebels", "year": 2014, "genres": ["animation", "action", "sci-fi"], "imdb_score": 8.0, "note": "Ghost crew adventures"},
-    {"title": "Star Wars Resistance", "year": 2018, "genres": ["animation", "action", "sci-fi"], "imdb_score": 6.5, "note": "Anime-inspired sequel series"},
-    {"title": "Star Wars: Visions", "year": 2021, "genres": ["animation", "sci-fi", "anthology"], "imdb_score": 7.5, "note": "Anime anthology shorts"},
-    {"title": "Star Wars: Visions Volume 2", "year": 2023, "genres": ["animation", "sci-fi", "anthology"], "imdb_score": 7.5, "note": "Global animation anthology"}
-  ]
-},
-    {"title": "Severance", "year": 2022, "genres": ["sci-fi", "thriller", "drama"], "imdb_score": 8.7, "note": "Already in rankings at #52"},
-    {"title": "The Last of Us", "year": 2023, "genres": ["drama", "horror", "sci-fi"], "imdb_score": 8.8, "note": "Already in rankings at #65"},
-    {"title": "House of the Dragon", "year": 2022, "genres": ["fantasy", "drama"], "imdb_score": 8.4, "note": "Already in rankings at #44"},
-    {"title": "The White Lotus", "year": 2021, "genres": ["drama", "comedy"], "imdb_score": 7.9, "note": "Already in rankings at #61"},
-    {"title": "The Bear", "year": 2022, "genres": ["drama", "comedy"], "imdb_score": 8.4, "note": "Already in rankings at #94"},
-    {"title": "Abbott Elementary", "year": 2021, "genres": ["comedy"], "imdb_score": 8.0, "note": "School mockumentary"},
-    {"title": "Only Murders in the Building", "year": 2021, "genres": ["comedy", "mystery"], "imdb_score": 8.1, "note": "Cozy true crime comedy"},
-    {"title": "What We Do in the Shadows", "year": 2019, "genres": ["comedy", "horror"], "imdb_score": 8.6, "note": "Vampire mockumentary masterpiece"},
-    {"title": "The Good Place", "year": 2016, "genres": ["comedy", "fantasy"], "imdb_score": 8.2, "note": "Philosophical afterlife comedy"},
-    {"title": "Schitt's Creek", "year": 2015, "genres": ["comedy"], "imdb_score": 8.5, "note": "Canadian sitcom phenomenon"},
-    {"title": "Ted Lasso", "year": 2020, "genres": ["comedy", "sports"], "imdb_score": 8.8, "note": "Feel-good soccer coach comedy"},
-    {"title": "Barry", "year": 2018, "genres": ["comedy", "crime", "drama"], "imdb_score": 8.4, "note": "Already in rankings at #99"},
-    {"title": "Atlanta", "year": 2016, "genres": ["comedy", "drama"], "imdb_score": 8.6, "note": "Donald Glover's surrealist masterpiece"},
-    {"title": "Master of None", "year": 2015, "genres": ["comedy", "drama"], "imdb_score": 7.8, "note": "Aziz Ansari's millennial comedy"},
-    {"title": "You're the Worst", "year": 2014, "genres": ["comedy", "drama"], "imdb_score": 7.7, "note": "Anti-romantic romantic comedy"},
-    {"title": "Crazy Ex-Girlfriend", "year": 2015, "genres": ["comedy", "musical"], "imdb_score": 7.8, "note": "Mental health musical comedy"},
-    {"title": "Jane the Virgin", "year": 2014, "genres": ["comedy", "drama", "telenovela"], "imdb_score": 7.9, "note": "Telenovela homage comedy"},
-    {"title": "Unbreakable Kimmy Schmidt", "year": 2015, "genres": ["comedy"], "imdb_score": 7.6, "note": "Post-cult survivor comedy"},
-    {"title": "The Marvelous Mrs. Maisel", "year": 2017, "genres": ["comedy", "drama"], "imdb_score": 8.7, "note": "Already in rankings at #97"},
-    {"title": "Fleabag", "year": 2016, "genres": ["comedy", "drama"], "imdb_score": 8.7, "note": "Phoebe Waller-Bridge breakthrough"},
-    {"title": "Derry Girls", "year": 2018, "genres": ["comedy"], "imdb_score": 8.5, "note": "Northern Ireland teen comedy"},
-    {"title": "This Way Up", "year": 2019, "genres": ["comedy", "drama"], "imdb_score": 7.7, "note": "Aisling Bea's mental health comedy"},
-    {"title": "Feel Good", "year": 2020, "genres": ["comedy", "drama"], "imdb_score": 7.4, "note": "Mae Martin's dramedy"},
-    {"title": "Starstruck", "year": 2021, "genres": ["comedy", "romance"], "imdb_score": 7.5, "note": "Rose Matafeo romcom"},
-    {"title": "Ghosts (UK)", "year": 2019, "genres": ["comedy", "fantasy"], "imdb_score": 7.8, "note": "British haunted house comedy"},
-    {"title": "Ghosts (US)", "year": 2021, "genres": ["comedy", "fantasy"], "imdb_score": 7.8, "note": "American haunted house comedy"},
-    {"title": "Ghosts", "year": 2019, "genres": ["comedy", "horror"], "imdb_score": 8.2, "note": "Horror sitcom from Horrible Histories team"},
-    {"title": "Horrible Histories", "year": 2009, "genres": ["comedy", "history"], "imdb_score": 8.8, "note": "Educational sketch comedy"},
-    {"title": "Yonderland", "year": 2013, "genres": ["comedy", "fantasy"], "imdb_score": 7.5, "note": "Fantasy comedy from Horrible Histories"},
-    {"title": "Wizards vs Aliens", "year": 2012, "genres": ["sci-fi", "fantasy"], "imdb_score": 6.5, "note": "Russell T Davies kids show"},
-    {"title": "The Sarah Jane Adventures", "year": 2007, "genres": ["sci-fi", "drama"], "imdb_score": 7.5, "note": "Doctor Who spinoff"},
-    {"title": "Torchwood", "year": 2006, "genres": ["sci-fi", "drama"], "imdb_score": 7.3, "note": "Adult Doctor Who spinoff"},
-    {"title": "Class", "year": 2016, "genres": ["sci-fi", "drama"], "imdb_score": 6.5, "note": "Doctor Who YA spinoff"},
-    {"title": "K-9", "year": 2009, "genres": ["sci-fi", "family"], "imdb_score": 5.5, "note": "K-9 solo adventures"},
-    {"title": "Primeval", "year": 2007, "genres": ["sci-fi", "action"], "imdb_score": 7.2, "note": "Time-traveling creature feature"},
-    {"title": "Primeval: New World", "year": 2012, "genres": ["sci-fi", "action"], "imdb_score": 6.5, "note": "Canadian spinoff"},
-    {"title": "Being Human", "year": 2008, "genres": ["supernatural", "drama"], "imdb_score": 7.8, "note": "UK supernatural flatshare"},
-    {"title": "Being Human (US)", "year": 2011, "genres": ["supernatural", "drama"], "imdb_score": 7.5, "note": "American supernatural flatshare"},
-    {"title": "Misfits", "year": 2009, "genres": ["superhero", "comedy"], "imdb_score": 8.0, "note": "ASBO superpowers"},
-    {"title": "Skins", "year": 2007, "genres": ["drama", "teen"], "imdb_score": 8.2, "note": "UK teen drama classic"},
-    {"title": "The Inbetweeners", "year": 2008, "genres": ["comedy"], "imdb_score": 8.4, "note": "Awkward teen comedy"},
-    {"title": "Fresh Meat", "year": 2011, "genres": ["comedy"], "imdb_score": 7.8, "note": "University house share comedy"},
-    {"title": "Bad Education", "year": 2012, "genres": ["comedy"], "imdb_score": 7.5, "note": "Jack Whitehall school comedy"},
-    {"title": "The Wrong Mans", "year": 2013, "genres": ["comedy", "thriller"], "imdb_score": 7.5, "note": "James Corden comedy thriller"},
-    {"title": "Cuckoo", "year": 2012, "genres": ["comedy"], "imdb_score": 7.0, "note": "Andy Samberg UK comedy"},
-    {"title": "Raised by Wolves", "year": 2013, "genres": ["comedy"], "imdb_score": 7.5, "note": "Stacy Solo comedy"},
-    {"title": "Some Girls", "year": 2012, "genres": ["comedy"], "imdb_score": 7.5, "note": "South London teen comedy"},
-    {"title": "My Mad Fat Diary", "year": 2013, "genres": ["comedy", "drama"], "imdb_score": 8.0, "note": "Mental health teen drama"},
-    {"title": "Don't Trust the B---- in Apartment 23", "year": 2012, "genres": ["comedy"], "imdb_score": 7.3, "note": "Krysten Ritter dark comedy"},
-    {"title": "Happy Endings", "year": 2011, "genres": ["comedy"], "imdb_score": 7.7, "note": "Underrated friend group comedy"},
-    {"title": "Cougar Town", "year": 2009, "genres": ["comedy"], "imdb_score": 7.3, "note": "Bill Lawrence wine comedy"},
-    {"title": "Scrubs", "year": 2001, "genres": ["comedy", "drama"], "imdb_score": 8.5, "note": "Medical comedy classic"},
-    {"title": "Community", "year": 2009, "genres": ["comedy"], "imdb_score": 8.5, "note": "Meta comedy masterpiece"},
-    {"title": "Parks and Recreation", "year": 2009, "genres": ["comedy"], "imdb_score": 8.5, "note": "Already in base list"},
-    {"title": "The Office (US)", "year": 2005, "genres": ["comedy", "mockumentary"], "imdb_score": 9.0, "note": "Already in base list"},
-    {"title": "Brooklyn Nine-Nine", "year": 2013, "genres": ["comedy"], "imdb_score": 8.4, "note": "Already in base list"},
-    {"title": "New Girl", "year": 2011, "genres": ["comedy"], "imdb_score": 7.7, "note": "Zooey Deschanel roommate comedy"},
-    {"title": "The Mindy Project", "year": 2012, "genres": ["comedy"], "imdb_score": 7.4, "note": "Mindy Kaling romcom"},
-    {"title": "Superstore", "year": 2015, "genres": ["comedy"], "imdb_score": 7.8, "note": "Workplace comedy"},
-    {"title": "The Good Wife", "year": 2009, "genres": ["drama", "legal"], "imdb_score": 8.4, "note": "Julianna Margulies legal drama"},
-    {"title": "The Good Fight", "year": 2017, "genres": ["drama", "legal"], "imdb_score": 7.8, "note": "Good Wife spinoff"},
-    {"title": "How to Get Away with Murder", "year": 2014, "genres": ["drama", "legal", "thriller"], "imdb_score": 8.1, "note": "Viola Davis Shonda drama"},
-    {"title": "Scandal", "year": 2012, "genres": ["drama", "thriller"], "imdb_score": 7.8, "note": "Kerry Washington fixer drama"},
-    {"title": "Grey's Anatomy", "year": 2005, "genres": ["drama", "medical"], "imdb_score": 7.6, "note": "Long-running medical soap"},
-    {"title": "Private Practice", "year": 2007, "genres": ["drama", "medical"], "imdb_score": 6.7, "note": "Grey's spinoff"},
-    {"title": "Station 19", "year": 2018, "genres": ["drama", "action"], "imdb_score": 6.9, "note": "Grey's firefighter spinoff"},
-    {"title": "9-1-1", "year": 2018, "genres": ["drama", "action"], "imdb_score": 7.8, "note": "Ryan Murphy first responder"},
-    {"title": "9-1-1: Lone Star", "year": 2020, "genres": ["drama", "action"], "imdb_score": 7.4, "note": "Texas first responder spinoff"},
-    {"title": "The Resident", "year": 2018, "genres": ["drama", "medical"], "imdb_score": 7.8, "note": "Medical drama with edge"},
-    {"title": "Chicago Med", "year": 2015, "genres": ["drama", "medical"], "imdb_score": 7.6, "note": "Dick Wolf medical drama"},
-    {"title": "Chicago Fire", "year": 2012, "genres": ["drama", "action"], "imdb_score": 8.0, "note": "Dick Wolf firefighter drama"},
-    {"title": "Chicago PD", "year": 2014, "genres": ["drama", "crime"], "imdb_score": 8.0, "note": "Dick Wolf cop drama"},
-    {"title": "Law & Order: Special Victims Unit", "year": 1999, "genres": ["crime", "drama"], "imdb_score": 8.2, "note": "Long-running procedural"},
-    {"title": "Law & Order: Organized Crime", "year": 2021, "genres": ["crime", "drama"], "imdb_score": 7.6, "note": "Stabler returns"},
-    {"title": "Criminal Minds", "year": 2005, "genres": ["crime", "drama", "thriller"], "imdb_score": 8.1, "note": "FBI profiler procedural"},
-    {"title": "NCIS", "year": 2003, "genres": ["crime", "action"], "imdb_score": 7.8, "note": "Naval crime procedural"},
-    {"title": "NCIS: Los Angeles", "year": 2009, "genres": ["crime", "action"], "imdb_score": 6.7, "note": "West coast spinoff"},
-    {"title": "NCIS: New Orleans", "year": 2014, "genres": ["crime", "action"], "imdb_score": 6.7, "note": "Big Easy spinoff"},
-    {"title": "NCIS: Hawaii", "year": 2021, "genres": ["crime", "action"], "imdb_score": 6.8, "note": "Island spinoff"},
-    {"title": "Hawaii Five-0", "year": 2010, "genres": ["crime", "action"], "imdb_score": 7.5, "note": "Island cop reboot"},
-    {"title": "Magnum P.I.", "year": 2018, "genres": ["crime", "action"], "imdb_score": 6.7, "note": "Private investigator reboot"},
-    {"title": "MacGyver", "year": 2016, "genres": ["action", "adventure"], "imdb_score": 6.6, "note": "Duct tape hero reboot"},
-    {"title": "Hunter", "year": 1984, "genres": ["crime", "action"], "imdb_score": 7.0, "note": "80s cop classic"},
-    {"title": "Miami Vice", "year": 1984, "genres": ["crime", "action"], "imdb_score": 7.5, "note": "80s style revolution"},
-    {"title": "Starsky & Hutch", "year": 1975, "genres": ["crime", "action"], "imdb_score": 7.0, "note": "70s cop duo"},
-    {"title": "The A-Team", "year": 1983, "genres": ["action", "adventure"], "imdb_score": 7.5, "note": "Mercenary soldiers"},
-    {"title": "Knight Rider", "year": 1982, "genres": ["action", "sci-fi"], "imdb_score": 6.9, "note": "Talking car action"},
-    {"title": "Airwolf", "year": 1984, "genres": ["action", "adventure"], "imdb_score": 6.7, "note": "Attack helicopter"},
-    {"title": "Street Hawk", "year": 1985, "genres": ["action"], "imdb_score": 6.5, "note": "Super motorcycle"},
-    {"title": "Blue Thunder", "year": 1984, "genres": ["action", "crime"], "imdb_score": 6.8, "note": "Helicopter spinoff"}
-  ]
-},
-    {"title": "The Equalizer", "year": 1985, "genres": ["action", "crime"], "imdb_score": 7.0, "note": "Retired intelligence officer"},
-    {"title": "Spenser: For Hire", "year": 1985, "genres": ["crime", "drama"], "imdb_score": 7.2, "note": "Boston private eye"},
-    {"title": "Cagney & Lacey", "year": 1981, "genres": ["crime", "drama"], "imdb_score": 7.4, "note": "Female detective duo"},
-    {"title": "Murder, She Wrote", "year": 1984, "genres": ["crime", "mystery"], "imdb_score": 7.4, "note": "Amateur sleuth classic"},
-    {"title": "Columbo", "year": 1968, "genres": ["crime", "mystery"], "imdb_score": 8.3, "note": "Inverted mystery classic"},
-    {"title": "Kojak", "year": 1973, "genres": ["crime", "drama"], "imdb_score": 7.2, "note": "Who loves ya baby"},
-    {"title": "Ironside", "year": 1967, "genres": ["crime", "drama"], "imdb_score": 7.0, "note": "Wheelchair-bound detective"},
-    {"title": "Dragnet", "year": 1951, "genres": ["crime", "drama"], "imdb_score": 7.5, "note": "Just the facts"},
-    {"title": "Adam-12", "year": 1968, "genres": ["crime", "drama"], "imdb_score": 7.4, "note": "Police procedural pioneer"},
-    {"title": "Emergency!", "year": 1972, "genres": ["drama", "action"], "imdb_score": 7.4, "note": "First responder classic"},
-    {"title": "CHiPs", "year": 1977, "genres": ["crime", "drama"], "imdb_score": 6.7, "note": "Highway patrol duo"},
-    {"title": "TJ Hooker", "year": 1982, "genres": ["crime", "drama"], "imdb_score": 6.6, "note": "William Shatner cop"},
-    {"title": "Riptide", "year": 1984, "genres": ["crime", "drama"], "imdb_score": 6.9, "note": "Private investigators"},
-    {"title": "Simon & Simon", "year": 1981, "genres": ["crime", "drama"], "imdb_score": 7.0, "note": "Brother detective duo"},
-    {"title": "Magnum, P.I.", "year": 1980, "genres": ["crime", "action"], "imdb_score": 7.5, "note": "Tom Selleck classic"},
-    {"title": "The Rockford Files", "year": 1974, "genres": ["crime", "drama"], "imdb_score": 8.0, "note": "James Garner detective"},
-    {"title": "The Six Million Dollar Man", "year": 1973, "genres": ["action", "sci-fi"], "imdb_score": 7.2, "note": "Bionic hero"},
-    {"title": "The Bionic Woman", "year": 1976, "genres": ["action", "sci-fi"], "imdb_score": 7.0, "note": "Female bionic spinoff"},
-    {"title": "Wonder Woman", "year": 1975, "genres": ["action", "adventure"], "imdb_score": 7.2, "note": "Lynda Carter superhero"},
-    {"title": "The Incredible Hulk", "year": 1977, "genres": ["action", "drama"], "imdb_score": 7.3, "note": "You wouldn't like me angry"},
-    {"title": "Charlie's Angels", "year": 1976, "genres": ["action", "crime"], "imdb_score": 6.7, "note": "Private detective trio"}
-  ]
+{
+    "description": "500 candidate shows for potential inclusion in future rankings",
+    "generated": "2026-02-15",
+    "lastUpdated": "2026-02-14",
+    "source": "Researched from IMDb, Rotten Tomatoes, Metacritic and industry publications",
+    "criteria": {
+        "confidence": "high = widely acclaimed, medium = cult/influential, low = popular but not critical darlings",
+        "why": "Tags: influential, critical-darling, popular, cult, genre-defining, etc."
+    },
+    "candidates": [
+        {
+            "title": "The Simpsons",
+            "year": 1989,
+            "genres": [
+                "animation",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "influential",
+                "cultural-landmark"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Seinfeld",
+            "year": 1989,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "influential",
+                "critically-acclaimed"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Friends",
+            "year": 1994,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "popular",
+                "cultural-landmark"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Office (US)",
+            "year": 2005,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "popular",
+                "critically-acclaimed"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Parks and Recreation",
+            "year": 2009,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "critically-acclaimed",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Brooklyn Nine-Nine",
+            "year": 2013,
+            "genres": [
+                "comedy",
+                "action"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Good Place",
+            "year": 2016,
+            "genres": [
+                "comedy",
+                "fantasy"
+            ],
+            "confidence": "high",
+            "why": [
+                "critically-acclaimed",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Ted Lasso",
+            "year": 2020,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "popular",
+                "cultural-phenomenon"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Schitt's Creek",
+            "year": 2015,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "critically-acclaimed",
+                "award-winning"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Arrested Development",
+            "year": 2003,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "influential",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "South Park",
+            "year": 1997,
+            "genres": [
+                "animation",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "influential",
+                "long-running"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Futurama",
+            "year": 1999,
+            "genres": [
+                "animation",
+                "sci-fi",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "critically-acclaimed",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "How I Met Your Mother",
+            "year": 2005,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Big Bang Theory",
+            "year": 2007,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular",
+                "ratings-giant"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Scrubs",
+            "year": 2001,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "critically-acclaimed",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "30 Rock",
+            "year": 2006,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "critically-acclaimed",
+                "award-winning"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Community",
+            "year": 2009,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult",
+                "critically-acclaimed"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The IT Crowd",
+            "year": 2006,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "cult",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Inbetweeners",
+            "year": 2008,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "cult",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Freaks and Geeks",
+            "year": 1999,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult",
+                "critically-acclaimed"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Malcolm in the Middle",
+            "year": 2000,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular",
+                "innovative"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Fresh Prince of Bel-Air",
+            "year": 1990,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "influential",
+                "cultural-landmark"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Everybody Loves Raymond",
+            "year": 1996,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular",
+                "long-running"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Two and a Half Men",
+            "year": 2003,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "low",
+            "why": [
+                "popular",
+                "ratings"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Will & Grace",
+            "year": 1998,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "influential",
+                "award-winning"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Modern Family",
+            "year": 2009,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular",
+                "award-winning"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Goldbergs",
+            "year": 2013,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular",
+                "nostalgia"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Black-ish",
+            "year": 2014,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "critically-acclaimed",
+                "culturally-significant"
+            ],
+            "missing": true
+        },
+        {
+            "title": " Abbott Elementary",
+            "year": 2021,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-darling",
+                "award-winning"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Newsroom",
+            "year": 2012,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "critically-acclaimed",
+                "aaron-sorkin"
+            ],
+            "missing": true
+        },
+        {
+            "title": "From Dusk Till Dawn: The Series",
+            "year": 2014,
+            "genres": [
+                "horror",
+                "drama"
+            ],
+            "confidence": "low",
+            "why": [
+                "cult",
+                "genre"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Night Manager",
+            "year": 2016,
+            "genres": [
+                "drama",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "award-winning"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Little Drummer Girl",
+            "year": 2018,
+            "genres": [
+                "drama",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "le-carre",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Night Of",
+            "year": 2016,
+            "genres": [
+                "drama",
+                "crime"
+            ],
+            "confidence": "high",
+            "why": [
+                "critically-acclaimed",
+                "limited"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Sinner",
+            "year": 2017,
+            "genres": [
+                "drama",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "anthology",
+                "critically-acclaimed"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Undoing",
+            "year": 2020,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "limited",
+                "star-power"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Gilded Age",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "historical"
+            ],
+            "confidence": "medium",
+            "why": [
+                "period-piece",
+                "hbo"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Old Man",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spy-thriller",
+                " Poitras"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Lincoln Lawyer",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "legal"
+            ],
+            "confidence": "medium",
+            "why": [
+                "legal-thriller",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Flight Attendant",
+            "year": 2020,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "limited",
+                "innovative"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Responder",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british",
+                "martin-freeman"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Righteous Gemstones",
+            "year": 2019,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "cult",
+                "dark-comedy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Curse",
+            "year": 2023,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "experimental",
+                "safdie-brothers"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Diplomat",
+            "year": 2023,
+            "genres": [
+                "drama",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "political",
+                "karger"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Fringe",
+            "year": 2008,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult",
+                "genre-defining"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Continuum",
+            "year": 2012,
+            "genres": [
+                "sci-fi",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "canadian",
+                "time-travel"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Counterpart",
+            "year": 2017,
+            "genres": [
+                "sci-fi",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "underrated",
+                "spy-sci-fi"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Travelers",
+            "year": 2016,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "canadian",
+                "time-travel"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The 100",
+            "year": 2014,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular",
+                "genre"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Altered Carbon",
+            "year": 2018,
+            "genres": [
+                "sci-fi",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "cyberpunk",
+                "ambitious"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Mandalorian",
+            "year": 2019,
+            "genres": [
+                "sci-fi",
+                "action"
+            ],
+            "confidence": "high",
+            "why": [
+                "star-wars",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Obi-Wan Kenobi",
+            "year": 2022,
+            "genres": [
+                "sci-fi",
+                "action"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-wars"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Ahsoka",
+            "year": 2023,
+            "genres": [
+                "sci-fi",
+                "action"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-wars"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Peripheral",
+            "year": 2022,
+            "genres": [
+                "sci-fi",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "gibson-adaptation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "3 Body Problem",
+            "year": 2024,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "game-of-thrones-team",
+                "ambitious"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Shardlake",
+            "year": 2024,
+            "genres": [
+                "drama",
+                "historical"
+            ],
+            "confidence": "low",
+            "why": [
+                "british",
+                "c-j-sansom"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Doctor Who",
+            "year": 2005,
+            "genres": [
+                "sci-fi",
+                "adventure"
+            ],
+            "confidence": "high",
+            "why": [
+                "british-institution",
+                "long-running"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Torchwood",
+            "year": 2006,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "doctor-who-spinoff",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Sarah Jane Adventures",
+            "year": 2007,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "low",
+            "why": [
+                "doctor-who-spinoff",
+                "family"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Mindhunter",
+            "year": 2017,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "netflix-flagship",
+                "true-crime"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Longmire",
+            "year": 2012,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "western",
+                "cop-drama"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Sons of Anarchy",
+            "year": 2008,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult",
+                "long-running"
+            ],
+            "missing": true
+        },
+        {
+            "title": "El Chapo",
+            "year": 2017,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spanish-language",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "El Marginal",
+            "year": 2015,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "argentinian",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Money Heist",
+            "year": 2017,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "global-phenomenon",
+                "spanish"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Alice in Borderland",
+            "year": 2020,
+            "genres": [
+                "thriller",
+                "sci-fi"
+            ],
+            "confidence": "medium",
+            "why": [
+                "japanese",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Sweet Tooth",
+            "year": 2021,
+            "genres": [
+                "drama",
+                "fantasy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "netflix",
+                "comic-adaptation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Lupin",
+            "year": 2021,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "french",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Money Motor",
+            "year": 2024,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "low",
+            "why": [
+                "korean",
+                "new"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Haunting of Bly Manor",
+            "year": 2020,
+            "genres": [
+                "horror",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "follow-up",
+                "folklore"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Fall of the House of Usher",
+            "year": 2023,
+            "genres": [
+                "horror",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "flanagan",
+                "poe"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Archive 81",
+            "year": 2022,
+            "genres": [
+                "horror",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "supernatural",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Stay Close",
+            "year": 2021,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "harlan-coben"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Outsider",
+            "year": 2020,
+            "genres": [
+                "horror",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "king-adaptation",
+                "cbbc"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Castle Rock",
+            "year": 2018,
+            "genres": [
+                "horror",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "king-universe"
+            ],
+            "missing": true
+        },
+        {
+            "title": "American Horror Story",
+            "year": 2011,
+            "genres": [
+                "horror",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "anthology",
+                "cultural-phenomenon"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Walking Dead",
+            "year": 2010,
+            "genres": [
+                "horror",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "zombie-king",
+                "long-running"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Fear the Walking Dead",
+            "year": 2015,
+            "genres": [
+                "horror",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spinoff",
+                "zombie"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Wednesday",
+            "year": 2022,
+            "genres": [
+                "comedy",
+                "fantasy"
+            ],
+            "confidence": "high",
+            "why": [
+                "netflix-hit",
+                "addams-family"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Brand New Cherry Flavor",
+            "year": 2021,
+            "genres": [
+                "horror",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "bizarre",
+                "limited"
+            ],
+            "missing": true
+        },
+        {
+            "title": "From",
+            "year": 2022,
+            "genres": [
+                "horror",
+                "mystery"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mystery-box",
+                "epix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Regime",
+            "year": 2024,
+            "genres": [
+                "drama",
+                "satire"
+            ],
+            "confidence": "low",
+            "why": [
+                "kate-winslet",
+                "limited"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Spiral",
+            "year": 2005,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "french",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Bridge",
+            "year": 2011,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "high",
+            "why": [
+                "nordic-noir",
+                "scandinavian"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Legacy",
+            "year": 2010,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "danish",
+                "for-borgen"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Occupied",
+            "year": 2015,
+            "genres": [
+                "thriller",
+                "political"
+            ],
+            "confidence": "medium",
+            "why": [
+                "norwegian",
+                "political-thriller"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Last Kingdom",
+            "year": 2015,
+            "genres": [
+                "drama",
+                "historical"
+            ],
+            "confidence": "high",
+            "why": [
+                "historical",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Vikings",
+            "year": 2013,
+            "genres": [
+                "drama",
+                "historical"
+            ],
+            "confidence": "high",
+            "why": [
+                "historical",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Knightfall",
+            "year": 2017,
+            "genres": [
+                "drama",
+                "historical"
+            ],
+            "confidence": "medium",
+            "why": [
+                "historical",
+                "knights"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Last Leg",
+            "year": 2012,
+            "genres": [
+                "comedy",
+                "talk-show"
+            ],
+            "confidence": "low",
+            "why": [
+                "british",
+                "current-affairs"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Loki",
+            "year": 2021,
+            "genres": [
+                "sci-fi",
+                "action"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Falcon and the Winter Soldier",
+            "year": 2021,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Ms. Marvel",
+            "year": 2022,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu",
+                "diverse"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Moon Knight",
+            "year": 2022,
+            "genres": [
+                "action",
+                "fantasy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu"
+            ],
+            "missing": true
+        },
+        {
+            "title": "She-Hulk",
+            "year": 2022,
+            "genres": [
+                "comedy",
+                "action"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu",
+                "legal-comedy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "What If...?",
+            "year": 2021,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu",
+                "anthology"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Wars: The Clone Wars",
+            "year": 2008,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "high",
+            "why": [
+                "star-wars",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Wars: Rebels",
+            "year": 2014,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-wars",
+                "disney"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Bad Batch",
+            "year": 2021,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-wars",
+                "clone-wars-spinoff"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Tales of the Empire",
+            "year": 2024,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "low",
+            "why": [
+                "star-wars",
+                "anthology"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Tales of the Jedi",
+            "year": 2022,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "low",
+            "why": [
+                "star-wars",
+                "anthology"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Resistance",
+            "year": 2018,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "low",
+            "why": [
+                "star-wars"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Acolyte",
+            "year": 2024,
+            "genres": [
+                "sci-fi",
+                "fantasy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-wars",
+                "new-era"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Skeleton Crew",
+            "year": 2024,
+            "genres": [
+                "sci-fi",
+                "adventure"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-wars",
+                "nostalgia"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Iron Fist",
+            "year": 2017,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "low",
+            "why": [
+                "mcu-netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Luke Cage",
+            "year": 2016,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu-netflix",
+                "blaxploitation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Daredevil",
+            "year": 2015,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "mcu-netflix",
+                "critical-acclaim"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Jessica Jones",
+            "year": 2015,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "mcu-netflix",
+                "metoo-themes"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Punisher",
+            "year": 2017,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "mcu-netflix",
+                "antihero"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Agent Carter",
+            "year": 2015,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu",
+                "period-piece"
+            ],
+            "missing": true
+        },
+        {
+            "title": "WandaVision",
+            "year": 2021,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "mcu",
+                "experimental"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Falcon and the Winter Soldier",
+            "year": 2021,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Hawkeye",
+            "year": 2021,
+            "genres": [
+                "action",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Ms. Marvel",
+            "year": 2022,
+            "genres": [
+                "action",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu",
+                "diverse-representation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "She-Hulk",
+            "year": 2022,
+            "genres": [
+                "comedy",
+                "action"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu",
+                "legal-comedy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Attorney at Law",
+            "year": 2022,
+            "genres": [
+                "comedy",
+                "action"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Echo",
+            "year": 2023,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "low",
+            "why": [
+                "mcu"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Agatha All Along",
+            "year": 2024,
+            "genres": [
+                "comedy",
+                "fantasy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "mcu",
+                "wandavision-spinoff"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Bates Motel",
+            "year": 2013,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "psychological",
+                "prequel"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Blacklist",
+            "year": 2013,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular",
+                "long-running"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Mindhunter",
+            "year": 2017,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "fincher",
+                "true-crime"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Dexter",
+            "year": 2006,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "iconic",
+                "antihero"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Dexter: New Blood",
+            "year": 2021,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "revival"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Mr. Inbetween",
+            "year": 2018,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "australian",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Nikita",
+            "year": 2010,
+            "genres": [
+                "action",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spy-action",
+                "reboot"
+            ],
+            "missing": true
+        },
+        {
+            "title": "La Femme Nikita",
+            "year": 1997,
+            "genres": [
+                "action",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "original",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Person of Interest",
+            "year": 2011,
+            "genres": [
+                "sci-fi",
+                "action"
+            ],
+            "confidence": "high",
+            "why": [
+                "prescient",
+                "underrated"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Jack Ryan",
+            "year": 2018,
+            "genres": [
+                "thriller",
+                "action"
+            ],
+            "confidence": "medium",
+            "why": [
+                "tom-clancy",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Reacher",
+            "year": 2022,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "lee-child",
+                "action"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Old Man",
+            "year": 2022,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "john-liss"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Night Manager",
+            "year": 2016,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "le-carre",
+                "british-spy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Kleo",
+            "year": 2022,
+            "genres": [
+                "thriller",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "german",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": " Berlin: Anyone But You",
+            "year": 2023,
+            "genres": [
+                "thriller",
+                "comedy"
+            ],
+            "confidence": "low",
+            "why": [
+                "german",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Lupin",
+            "year": 2021,
+            "genres": [
+                "thriller",
+                "crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "french",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Top Boy",
+            "year": 2011,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "urban"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Top Boy: Summerhouse",
+            "year": 2013,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "netflix-revival"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Gentleman",
+            "year": 2024,
+            "genres": [
+                "crime",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "taika-waititi",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Criminal: UK",
+            "year": 2019,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "anthology",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Criminal",
+            "year": 2019,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "international",
+                "anthology"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Fall",
+            "year": 2013,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "villain-perspective"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Marcella",
+            "year": 2016,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british",
+                "nordic-noir"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Unforgotten",
+            "year": 2015,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "cold-case"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Missing",
+            "year": 2014,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "limited"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Small Axe",
+            "year": 2020,
+            "genres": [
+                "drama",
+                "anthology"
+            ],
+            "confidence": "high",
+            "why": [
+                "steve-mcqueen",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "I May Destroy You",
+            "year": 2020,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "michaela-coel",
+                "groundbreaking"
+            ],
+            "missing": true
+        },
+        {
+            "title": "White Lotus Season 2",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "satire",
+                "follow-up"
+            ],
+            "missing": true
+        },
+        {
+            "title": "White Lotus Season 3",
+            "year": 2025,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "satire",
+                "thailand"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Love & Mercy",
+            "year": 2024,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "low",
+            "why": [
+                "Brian-Wilson",
+                "limited"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Pam & Tommy",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "limited",
+                "kaley-cuoco"
+            ],
+            "missing": true
+        },
+        {
+            "title": "WeCrashed",
+            "year": 2022,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "limited",
+                "adam-curve"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Offer",
+            "year": 2022,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "godfather-making-of"
+            ],
+            "missing": true
+        },
+        {
+            "title": "A Man Called Otto",
+            "year": 2023,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "low",
+            "why": [
+                "tom-hanks"
+            ],
+            "missing": true
+        },
+        {
+            "title": "extrapolations",
+            "year": 2023,
+            "genres": [
+                "drama",
+                "sci-fi"
+            ],
+            "confidence": "low",
+            "why": [
+                "anthology",
+                "climate"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Three-Body Problem",
+            "year": 2024,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "game-of-thrones-team",
+                "ambitious"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Regime",
+            "year": 2024,
+            "genres": [
+                "drama",
+                "satire"
+            ],
+            "confidence": "medium",
+            "why": [
+                "kate-winslet",
+                "political-satire"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The New Look",
+            "year": 2024,
+            "genres": [
+                "drama",
+                "historical"
+            ],
+            "confidence": "medium",
+            "why": [
+                "fashion",
+                "dior"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Masters of the Universe",
+            "year": 2024,
+            "genres": [
+                "action",
+                "fantasy"
+            ],
+            "confidence": "low",
+            "why": [
+                "netflix",
+                "toy-franchise"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Avatar: The Last Airbender",
+            "year": 2024,
+            "genres": [
+                "action",
+                "fantasy"
+            ],
+            "confidence": "high",
+            "why": [
+                "netflix",
+                "adaptation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Avatar: The Last Airbender",
+            "year": 2005,
+            "genres": [
+                "animation",
+                "fantasy"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult-classic",
+                "anime-influenced"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Arcane",
+            "year": 2021,
+            "genres": [
+                "animation",
+                "action"
+            ],
+            "confidence": "high",
+            "why": [
+                "league-of-legends",
+                "visual-masterpiece"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Castlevania",
+            "year": 2017,
+            "genres": [
+                "animation",
+                "horror"
+            ],
+            "confidence": "high",
+            "why": [
+                "anime",
+                "gaming-adaptation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Love, Death & Robots",
+            "year": 2019,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "high",
+            "why": [
+                "anthology",
+                "sci-fi"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Legend of Vox Machina",
+            "year": 2022,
+            "genres": [
+                "animation",
+                "fantasy"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-role",
+                "dnd"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: Discovery",
+            "year": 2017,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-trek",
+                "new-era"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: Picard",
+            "year": 2020,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-trek",
+                "patrick-stewart"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: Lower Decks",
+            "year": 2020,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-trek",
+                "comedy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: Strange New Worlds",
+            "year": 2022,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "star-trek",
+                "classic-style"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: Prodigy",
+            "year": 2023,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "low",
+            "why": [
+                "star-trek",
+                "kids"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Orville",
+            "year": 2017,
+            "genres": [
+                "sci-fi",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "star-trek-homage",
+                "seth-macfarlane"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Peripheral",
+            "year": 2022,
+            "genres": [
+                "sci-fi",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "gibson",
+                "amazon"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Fallout",
+            "year": 2024,
+            "genres": [
+                "sci-fi",
+                "action"
+            ],
+            "confidence": "high",
+            "why": [
+                "gaming-franchise",
+                "amazon"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Witcher",
+            "year": 2019,
+            "genres": [
+                "fantasy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "gaming-franchise",
+                "netflix-flagship"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Witcher: Blood Origin",
+            "year": 2022,
+            "genres": [
+                "fantasy",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "witcher-prequel"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Wheel of Time",
+            "year": 2021,
+            "genres": [
+                "fantasy",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "amazon-flagship",
+                "fantasy-epic"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Rings of Power",
+            "year": 2022,
+            "genres": [
+                "fantasy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "lotr",
+                "amazon"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Sandman",
+            "year": 2022,
+            "genres": [
+                "fantasy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "gaiman-masterpiece",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Sandman: Nightmare Gallery",
+            "year": 2023,
+            "genres": [
+                "fantasy",
+                "horror"
+            ],
+            "confidence": "low",
+            "why": [
+                "spin-off",
+                "anthology"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Lucifer",
+            "year": 2016,
+            "genres": [
+                "fantasy",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "comic-adaptation",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Good Omens",
+            "year": 2019,
+            "genres": [
+                "fantasy",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "gaiman-pratchett",
+                "amazon"
+            ],
+            "missing": true
+        },
+        {
+            "title": "American Gods",
+            "year": 2017,
+            "genres": [
+                "fantasy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "gaiman",
+                "starz"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Preacher",
+            "year": 2016,
+            "genres": [
+                "fantasy",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "comic-adaptation",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Doom Patrol",
+            "year": 2019,
+            "genres": [
+                "action",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "dc",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Titans",
+            "year": 2018,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "dc",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Gen V",
+            "year": 2023,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "the-boys-spinoff",
+                "amazon"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Great British Bake Off",
+            "year": 2010,
+            "genres": [
+                "reality",
+                "competition"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british-phenomenon",
+                "cultural"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Planet Earth",
+            "year": 2006,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "bbc-nature-masterpiece"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Planet Earth II",
+            "year": 2016,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "bbc-nature",
+                "masterpiece"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Blue Planet",
+            "year": 2001,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "bbc-nature",
+                "ocean"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Blue Planet II",
+            "year": 2017,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "bbc-nature",
+                "ocean"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Our Planet",
+            "year": 2019,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "netflix-nature",
+                "attenborough"
+            ],
+            "missing": true
+        },
+        {
+            "title": "David Attenborough: A Life on Our Planet",
+            "year": 2020,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "climate",
+                "memorial"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Making a Murderer",
+            "year": 2015,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "high",
+            "why": [
+                "true-crime-phenomenon",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Making a Murderer Part 2",
+            "year": 2018,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Making a Murderer: Part 3",
+            "year": 2022,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Jinx",
+            "year": 2015,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "high",
+            "true": [
+                "robert-durst",
+                "landmark"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Jinx Part Two",
+            "year": 2024,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Wild Wild Country",
+            "year": 2018,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "high",
+            "why": [
+                "netflix-original",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Four Hours to Kill the President",
+            "year": 2023,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "low",
+            "why": [
+                "uk-assassination"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Staircase",
+            "year": 2004,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "high",
+            "why": [
+                "true-crime-classic",
+                "netflix-re-release"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Mrs. Maisel Season 2",
+            "year": 2018,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Mrs. Maisel Season 3",
+            "year": 2019,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Mrs. Maisel Season 4",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Mrs. Maisel Season 5",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Mrs. Maisel Season 6",
+            "year": 2023,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "final-season"
+            ],
+            "missing": true
+        },
+        {
+            "title": "True Detective: Night Country",
+            "year": 2024,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "medium",
+            "why": [
+                "season-3",
+                "frozen-setting"
+            ],
+            "missing": true
+        },
+        {
+            "title": "True Detective Season 2",
+            "year": 2015,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "True Detective Season 3",
+            "year": 2019,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "high",
+            "why": [
+                "mahershala-ali",
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "True Detective: Night Country",
+            "year": 2024,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "medium",
+            "why": [
+                "season-4",
+                "ice-setting"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Revolution 9",
+            "year": 2024,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "low",
+            "why": [
+                "satire",
+                "limited"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Twilight Zone (1959)",
+            "year": 1959,
+            "genres": [
+                "sci-fi",
+                "anthology"
+            ],
+            "confidence": "high",
+            "why": [
+                "influential",
+                "classic"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Twilight Zone (1985)",
+            "year": 1985,
+            "genres": [
+                "sci-fi",
+                "anthology"
+            ],
+            "confidence": "medium",
+            "why": [
+                "revival",
+                "classic"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Twilight Zone (2019)",
+            "year": 2019,
+            "genres": [
+                "sci-fi",
+                "anthology"
+            ],
+            "confidence": "medium",
+            "why": [
+                "modern-revival"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: The Original Series",
+            "year": 1966,
+            "genres": [
+                "sci-fi",
+                "adventure"
+            ],
+            "confidence": "high",
+            "why": [
+                "influential",
+                "classic"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: The Next Generation",
+            "year": 1987,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "beloved",
+                "classic"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: Deep Space Nine",
+            "year": 1993,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-darling",
+                "serialized"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: Voyager",
+            "year": 1995,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Star Trek: Enterprise",
+            "year": 2001,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "prequel"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Prisoner",
+            "year": 1967,
+            "genres": [
+                "sci-fi",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult-classic",
+                "influential"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Avengers",
+            "year": 1961,
+            "genres": [
+                "action",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "british-classic",
+                "influential"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Saint",
+            "year": 1962,
+            "genres": [
+                "action",
+                "adventure"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british-classic"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Mission: Impossible",
+            "year": 1966,
+            "genres": [
+                "action",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "classic",
+                "influential"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Columbo",
+            "year": 1971,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "high",
+            "why": [
+                "classic",
+                "beloved"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Murder, She Wrote",
+            "year": 1984,
+            "genres": [
+                "mystery",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "long-running",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "St. Elsewhere",
+            "year": 1982,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "medical-drama",
+                "influential"
+            ],
+            "missing": true
+        },
+        {
+            "title": "LA Law",
+            "year": 1986,
+            "genres": [
+                "drama",
+                "legal"
+            ],
+            "confidence": "medium",
+            "why": [
+                "award-winning",
+                "80s"
+            ],
+            "missing": true
+        },
+        {
+            "title": "thirtysomething",
+            "year": 1987,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-acclaim",
+                "baby-boomers"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Northern Exposure",
+            "year": 1990,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "beloved",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Full House",
+            "year": 1987,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "nostalgia",
+                "family"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Family Matters",
+            "year": 1989,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "cult",
+                "steve-urkel"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Cosby Show",
+            "year": 1984,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "landmark",
+                "bill-cosby"
+            ],
+            "missing": true
+        },
+        {
+            "title": "A Different World",
+            "year": 1987,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spin-off",
+                "college"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Roseanne",
+            "year": 1988,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "working-class",
+                "critical-acclaim"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Nanny",
+            "year": 1993,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "popular",
+                "frances-ann"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Home Improvement",
+            "year": 1991,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "tim-allen-breakout"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Married... with Children",
+            "year": 1987,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "anti-family",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Family Guy",
+            "year": 1999,
+            "genres": [
+                "animation",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult",
+                "influential"
+            ],
+            "missing": true
+        },
+        {
+            "title": "King of the Hill",
+            "year": 1997,
+            "genres": [
+                "animation",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-acclaim",
+                "underrated"
+            ],
+            "missing": true
+        },
+        {
+            "title": "American Dad",
+            "year": 2005,
+            "genres": [
+                "animation",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult",
+                "political-satire"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Archer",
+            "year": 2009,
+            "genres": [
+                "animation",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult",
+                "spy-comedy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Bob's Burgers",
+            "year": 2011,
+            "genres": [
+                "animation",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-acclaim",
+                "family"
+            ],
+            "missing": true
+        },
+        {
+            "title": "BoJack Horseman",
+            "year": 2014,
+            "genres": [
+                "animation",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-darling",
+                "animated-drama"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Final Space",
+            "year": 2018,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "medium",
+            "why": [
+                "cult",
+                "adult-swim"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Primal",
+            "year": 2019,
+            "genres": [
+                "animation",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "tarantino-creator",
+                "silent"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Sherlock",
+            "year": 2010,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "high",
+            "why": [
+                "modern-adaptation",
+                "cumberbatch"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Luther",
+            "year": 2010,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "idris-elba",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Great",
+            "year": 2020,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "satire",
+                "elle-fanning"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Empress",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "historical"
+            ],
+            "confidence": "medium",
+            "why": [
+                "period",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Normal People",
+            "year": 2020,
+            "genres": [
+                "drama",
+                "romance"
+            ],
+            "confidence": "high",
+            "why": [
+                "bbc-hulu",
+                "daisy-jones"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The End of the F***ing World",
+            "year": 2017,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "dark-comedy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Sex Education",
+            "year": 2019,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "netflix",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "After Life",
+            "year": 2019,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "ricky-gervais",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The OA",
+            "year": 2016,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "mysterious",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Sense8",
+            "year": 2015,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "ambitious",
+                "wachowski"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Elite",
+            "year": 2018,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spanish",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Sweet Home",
+            "year": 2019,
+            "genres": [
+                "horror",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "korean",
+                "monster"
+            ],
+            "missing": true
+        },
+        {
+            "title": "All of Us Are Dead",
+            "year": 2022,
+            "genres": [
+                "horror",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "korean",
+                "zombie"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Vincenzo",
+            "year": 2021,
+            "genres": [
+                "crime",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "korean",
+                "song-joong-ki"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Crash Landing on You",
+            "year": 2019,
+            "genres": [
+                "romance",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "korean",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Itaewon Class",
+            "year": 2020,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "korean",
+                "social-issues"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Hometown Cha-Cha-Cha",
+            "year": 2021,
+            "genres": [
+                "romance",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "korean",
+                "rom-com"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Moving",
+            "year": 2023,
+            "genres": [
+                "action",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "korean",
+                "superhero"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Gyeongseong Creature",
+            "year": 2023,
+            "genres": [
+                "horror",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "korean",
+                "period-horror"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Grey's Anatomy",
+            "year": 2005,
+            "genres": [
+                "drama",
+                "medical"
+            ],
+            "confidence": "high",
+            "why": [
+                "long-running",
+                "cultural"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Good Doctor",
+            "year": 2017,
+            "genres": [
+                "drama",
+                "medical"
+            ],
+            "confidence": "medium",
+            "why": [
+                "autistic-lead",
+                "remake"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Resident",
+            "year": 2018,
+            "genres": [
+                "drama",
+                "medical"
+            ],
+            "confidence": "medium",
+            "why": [
+                "medical-drama"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Chicago Med",
+            "year": 2015,
+            "genres": [
+                "drama",
+                "medical"
+            ],
+            "confidence": "medium",
+            "why": [
+                "chicago-franchise"
+            ],
+            "missing": true
+        },
+        {
+            "title": "New Amsterdam",
+            "year": 2018,
+            "genres": [
+                "drama",
+                "medical"
+            ],
+            "confidence": "medium",
+            "why": [
+                "medical-drama"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Good Wife",
+            "year": 2009,
+            "genres": [
+                "drama",
+                "legal"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-acclaim",
+                "legal-drama"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Good Fight",
+            "year": 2017,
+            "genres": [
+                "drama",
+                "legal"
+            ],
+            "confidence": "high",
+            "why": [
+                "spin-off-excellence"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Law & Order",
+            "year": 1990,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "franchise-foundation",
+                "institution"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Law & Order: SVU",
+            "year": 1999,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "long-running",
+                "cultural"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Law & Order: Organized Crime",
+            "year": 2021,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "franchise-revival"
+            ],
+            "missing": true
+        },
+        {
+            "title": "CSI: Crime Scene Investigation",
+            "year": 2000,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "cultural-phenomenon",
+                "procedural"
+            ],
+            "missing": true
+        },
+        {
+            "title": "CSI: Miami",
+            "year": 2002,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spin-off",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "CSI: NY",
+            "year": 2004,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spin-off"
+            ],
+            "missing": true
+        },
+        {
+            "title": "NCIS",
+            "year": 2003,
+            "genres": [
+                "action",
+                "crime"
+            ],
+            "confidence": "high",
+            "why": [
+                "long-running",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "NCIS: Los Angeles",
+            "year": 2009,
+            "genres": [
+                "action",
+                "crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spin-off"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Hawaii Five-0",
+            "year": 2010,
+            "genres": [
+                "action",
+                "crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "remake",
+                "popular"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Magnum P.I.",
+            "year": 2018,
+            "genres": [
+                "action",
+                "crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spin-off",
+                "remake"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Blue Bloods",
+            "year": 2010,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "family-drama",
+                "procedural"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Chicago Fire",
+            "year": 2012,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "chicago-franchise"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Chicago P.D.",
+            "year": 2014,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "chicago-franchise"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Chicago Justice",
+            "year": 2017,
+            "genres": [
+                "drama",
+                "legal"
+            ],
+            "confidence": "low",
+            "why": [
+                "chicago-franchise"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Prime Suspect",
+            "year": 1991,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "british-classic",
+                "helen-mirren"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Prime Suspect (US)",
+            "year": 2011,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "remake"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Cracker",
+            "year": 1995,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "robert-carlyle"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Inspector Morse",
+            "year": 1987,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "high",
+            "why": [
+                "british-classic"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Lewis",
+            "year": 2006,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "medium",
+            "why": [
+                "spin-off"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Endeavour",
+            "year": 2012,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "high",
+            "why": [
+                "prequel",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Foyle's War",
+            "year": 2002,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "high",
+            "why": [
+                "period-mystery",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Shetland",
+            "year": 2013,
+            "genres": [
+                "crime",
+                "mystery"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "island-mystery"
+            ],
+            "missing": true
+        },
+        {
+            "title": "McMafia",
+            "year": 2018,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british",
+                "global-crime"
+            ],
+            "missing": true
+        },
+        {
+            "title": "McMafia Season 2",
+            "year": 2023,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Honourable Woman",
+            "year": 2014,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "spy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Press",
+            "year": 2018,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british",
+                "journalism"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Great Train Robbery",
+            "year": 2018,
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british",
+                "period-crime"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Serpent",
+            "year": 2020,
+            "genres": [
+                "crime",
+                "thriller"
+            ],
+            "confidence": "high",
+            "why": [
+                "true-crime",
+                "british"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Thief, His Wife and the Canoe",
+            "year": 2023,
+            "genres": [
+                "crime",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british",
+                "true-crime"
+            ],
+            "missing": true
+        },
+        {
+            "title": "One Day",
+            "year": 2024,
+            "genres": [
+                "romance",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "bbc",
+                "david-nicholls"
+            ],
+            "missing": true
+        },
+        {
+            "title": "One Day at a Time",
+            "year": 2017,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "remake",
+                "latinx"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Jane the Virgin",
+            "year": 2014,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-acclaim",
+                "telenovela"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Crazy Ex-Girlfriend",
+            "year": 2015,
+            "genres": [
+                "comedy",
+                "musical"
+            ],
+            "confidence": "high",
+            "why": [
+                "critical-darling",
+                "musical"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Fleabag",
+            "year": 2016,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "phoebe-waller-bridge",
+                "bbc"
+            ],
+            "missing": true
+        },
+        {
+            "title": "I Am Not Okay With This",
+            "year": 2020,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "netflix",
+                "coming-of-age"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The End of the F***ing World",
+            "year": 2017,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "dark-comedy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Chewing Gum",
+            "year": 2015,
+            "genres": [
+                "comedy"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "michaela-coel"
+            ],
+            "missing": true
+        },
+        {
+            "title": "We Are Lady Parts",
+            "year": 2021,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "british",
+                "muslim"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Starstruck",
+            "year": 2021,
+            "genres": [
+                "comedy",
+                "romance"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british",
+                "rose-mate"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Back to Life",
+            "year": 2019,
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "This Is Going to Hurt",
+            "year": 2022,
+            "genres": [
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "medical",
+                "bbc"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Shift",
+            "year": 2023,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "german",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Empress",
+            "year": 2022,
+            "genres": [
+                "drama",
+                "historical"
+            ],
+            "confidence": "medium",
+            "why": [
+                "german",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "All Quiet on the Western Front",
+            "year": 2022,
+            "genres": [
+                "war",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "german",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Berlin Station",
+            "year": 2016,
+            "genres": [
+                "thriller",
+                "drama"
+            ],
+            "confidence": "high",
+            "why": [
+                "le-carre",
+                "spy"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Man Who Fell to Earth",
+            "year": 2022,
+            "genres": [
+                "sci-fi",
+                "drama"
+            ],
+            "confidence": "medium",
+            "why": [
+                "charlie-brooker"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Problem with Jon Stewart",
+            "year": 2021,
+            "genres": [
+                "talk-show",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "apple-tv",
+                "journalism"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Problem with Jon Stewart",
+            "year": 2024,
+            "genres": [
+                "talk-show",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        }
+    ],
+    "totalCandidates": 317
 }
