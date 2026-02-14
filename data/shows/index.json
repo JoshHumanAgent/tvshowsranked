@@ -1,5 +1,5 @@
 ﻿{
-    "description":  "Index of all 100 shows in TV Shows Ranked",
+    "description":  "Index of all 109 shows in TV Shows Ranked",
     "generated":  "2026-02-15",
     "shows":  [
                   {
@@ -1358,6 +1358,128 @@
                                  ],
                       "final":  6.83,
                       "tmdbId":  63247
+                  },
+                  {
+                      "rank":  101,
+                      "slug":  "slow-horses",
+                      "title":  "Slow Horses",
+                      "year":  2022,
+                      "month":  4,
+                      "genres":  [
+                                     "thriller",
+                                     "drama",
+                                     "action"
+                                 ],
+                      "final":  7.98,
+                      "tmdbId":  103516
+                  },
+                  {
+                      "rank":  102,
+                      "slug":  "somebody-somewhere",
+                      "title":  "Somebody Somewhere",
+                      "year":  2022,
+                      "month":  3,
+                      "genres":  [
+                                     "comedy",
+                                     "drama"
+                                 ],
+                      "final":  7.85,
+                      "tmdbId":  137080
+                  },
+                  {
+                      "rank":  103,
+                      "slug":  "frieren-beyond-journeys-end",
+                      "title":  "Frieren: Beyond Journey\u0027s End",
+                      "year":  2023,
+                      "month":  9,
+                      "genres":  [
+                                     "anime",
+                                     "fantasy",
+                                     "drama"
+                                 ],
+                      "final":  8.76,
+                      "tmdbId":  207784
+                  },
+                  {
+                      "rank":  104,
+                      "slug":  "the-rehearsal",
+                      "title":  "The Rehearsal",
+                      "year":  2022,
+                      "month":  7,
+                      "genres":  [
+                                     "comedy",
+                                     "documentary"
+                                 ],
+                      "final":  7.75,
+                      "tmdbId":  139443
+                  },
+                  {
+                      "rank":  105,
+                      "slug":  "interview-with-the-vampire",
+                      "title":  "Interview with the Vampire",
+                      "year":  2022,
+                      "month":  10,
+                      "genres":  [
+                                     "horror",
+                                     "drama",
+                                     "fantasy"
+                                 ],
+                      "final":  7.4,
+                      "tmdbId":  128098
+                  },
+                  {
+                      "rank":  106,
+                      "slug":  "rick-and-morty",
+                      "title":  "Rick and Morty",
+                      "year":  2013,
+                      "month":  12,
+                      "genres":  [
+                                     "animation",
+                                     "sci-fi",
+                                     "comedy"
+                                 ],
+                      "final":  8.68,
+                      "tmdbId":  60625
+                  },
+                  {
+                      "rank":  107,
+                      "slug":  "the-day-of-the-jackal",
+                      "title":  "The Day of the Jackal",
+                      "year":  2024,
+                      "month":  11,
+                      "genres":  [
+                                     "thriller",
+                                     "drama",
+                                     "action"
+                                 ],
+                      "final":  8.16,
+                      "tmdbId":  241096
+                  },
+                  {
+                      "rank":  108,
+                      "slug":  "telemarketers",
+                      "title":  "Telemarketers",
+                      "year":  2023,
+                      "month":  8,
+                      "genres":  [
+                                     "documentary",
+                                     "comedy"
+                                 ],
+                      "final":  7.25,
+                      "tmdbId":  232389
+                  },
+                  {
+                      "rank":  109,
+                      "slug":  "a-man-on-the-inside",
+                      "title":  "A Man on the Inside",
+                      "year":  2024,
+                      "month":  11,
+                      "genres":  [
+                                     "comedy",
+                                     "drama"
+                                 ],
+                      "final":  7.47,
+                      "tmdbId":  241096
                   }
               ]
 }
