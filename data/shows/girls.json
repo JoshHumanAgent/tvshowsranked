@@ -1,0 +1,49 @@
+{
+  "title": "Girls",
+  "slug": "girls",
+  "year": 2012,
+  "month": 4,
+  "rank": 30,
+  "genres": ["drama", "comedy"],
+  "final_score": 7.68,
+  "network": "HBO",
+  "seasons": 6,
+  "episodes": 62,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 7.4,
+      "votes": 82500,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt1723816/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 6.384,
+      "votes": 422,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/42282-girls",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 91,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/girls",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Lena Dunham",
+    "Allison Williams",
+    "Zosia Mamet",
+    " Jemima Kirke",
+    "Adam Driver",
+    "Alexis Bledel",
+    "Andrew Rannells"
+  ],
+  "creator": "Lena Dunham",
+  "description": "A comedy-drama following four young women navigating life in New York City after college.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "title": "When They See Us",
+  "slug": "when-they-see-us",
+  "year": 2019,
+  "month": 5,
+  "rank": 29,
+  "genres": ["drama"],
+  "final_score": 7.68,
+  "network": "Netflix",
+  "seasons": 1,
+  "episodes": 4,
+  "status": "completed",
+  "type": "miniseries",
+  "ratings": {
+    "imdb": {
+      "score": 8.8,
+      "votes": 157000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt7137906/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 8.224,
+      "votes": 981,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/81355-when-they-see-us",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 96,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/when_they_see_us",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Jharrel Jerome",
+    "Asante Black",
+    "Ethan Herisse",
+    "Marquis Rodriguez",
+    "Michael Liberty",
+    "John Leguizamo",
+    "Vera Farmiga",
+    "Felicity Huffman"
+  ],
+  "creator": "Ava DuVernay",
+  "description": "Based on the true story of the Central Park Five, five teens from Harlem are falsely accused of a brutal attack and fight for their exoneration.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}

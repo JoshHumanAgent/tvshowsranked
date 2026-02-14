@@ -1,0 +1,49 @@
+{
+  "title": "Six Feet Under",
+  "slug": "six-feet-under",
+  "year": 2001,
+  "month": 6,
+  "rank": 26,
+  "genres": ["drama"],
+  "final_score": 7.73,
+  "network": "HBO",
+  "seasons": 5,
+  "episodes": 63,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 8.7,
+      "votes": 185000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt0301314/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 8.1,
+      "votes": 1064,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/1274-six-feet-under",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 90,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/six_feet_under",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Peter Krause",
+    "Michael C. Hall",
+    "Frances Conroy",
+    "Lauren Ambrose",
+    "Freddie Prinzo Jr.",
+    "Mathew St. Patrick",
+    "Richard Jenkins"
+  ],
+  "creator": "Alan Ball",
+  "description": "A drama about the Fisher family, who run a funeral home in Los Angeles, exploring death, family, and grief.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}
