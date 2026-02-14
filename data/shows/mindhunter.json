@@ -1,46 +1,32 @@
-{
-  "slug": "mindhunter",
-  "title": "Mindhunter",
-  "year": 2017,
-  "month": 10,
-  "status": "ended",
-  "seasons": 2,
-  "episodes": 19,
-  "runtime": "45-65",
-  "country": "United States",
-  "genres": ["drama", "crime", "thriller"],
-  "creator": ["Joe Penhall"],
-  "network": "Netflix",
-  "external_ratings": {
-    "imdb": {
-      "score": 8.6,
-      "scale": 10,
-      "count": "290K",
-      "date_accessed": "2026-02-15",
-      "url": "https://www.imdb.com/title/tt5290382/"
-    },
-    "rotten_tomatoes": {
-      "season_1": {"score": 96, "scale": 100},
-      "season_2": {"score": 97, "scale": 100},
-      "date_accessed": "2026-02-15",
-      "url": "https://www.rottentomatoes.com/tv/mindhunter"
-    },
-    "metacritic": {
-      "score": 80,
-      "scale": 100,
-      "date_accessed": "2026-02-15",
-      "url": "https://www.metacritic.com/tv/mindhunter"
-    }
-  },
-  "consensus_highlights": "Mindhunter follows two FBI agents in the late 1970s who interview imprisoned serial killers to understand and catch active ones. The series is based on John Douglas and Mark Olshaker's book and is praised for its psychological depth and atmospheric tension. David Fincher's direction brings a chilling precision to the exploration of criminal minds.",
-  "ranking_system": {
-    "characters": 8,
-    "world_building": 7.5,
-    "cinematography": 9.5,
-    "visual_spectacle": 5,
-    "conceptual_density": 8,
-    "narrative_drive": 7,
-    "resolution": 5,
-    "final_score": 6.77
-  }
+﻿{
+    "slug":  "mindhunter",
+    "title":  "Mindhunter",
+    "year":  2017,
+    "month":  10,
+    "status":  "ended",
+    "seasons":  2,
+    "episodes":  19,
+    "runtime":  "45-60",
+    "country":  "United States",
+    "genres":  [
+                   "drama",
+                   "crime",
+                   "thriller"
+               ],
+    "creator":  "Joe Penhall",
+    "network":  "Netflix",
+    "tmdbId":  null,
+    "external_ratings":  {
+
+                         },
+    "consensus_highlights":  null,
+    "ranking_system":  {
+                           "narrative_ambition":  0,
+                           "character_depth":  0,
+                           "thematic_resonance":  0,
+                           "cultural_impact":  0,
+                           "watchability":  0,
+                           "final_score":  null
+                       },
+    "notes":  ""
 }

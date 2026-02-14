@@ -1,48 +1,49 @@
 ﻿{
-    "title":  "Downton Abbey",
     "slug":  "downton-abbey",
+    "title":  "Downton Abbey",
     "year":  2010,
     "month":  9,
-    "rank":  73,
+    "status":  "completed",
+    "seasons":  6,
+    "episodes":  52,
+    "runtime":  "45-60",
+    "country":  "United States",
     "genres":  [
                    "drama",
                    "historical"
                ],
-    "final_score":  7.36,
-    "network":  "ITV / PBS",
-    "seasons":  6,
-    "episodes":  52,
-    "status":  "completed",
-    "ratings":  {
-                    "imdb":  {
-                                 "score":  8.0,
-                                 "votes":  95000,
-                                 "source":  "IMDb",
-                                 "url":  "https://www.imdb.com/title/tt1606375/",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "rotten_tomatoes":  {
-                                            "score":  89,
-                                            "source":  "Rotten Tomatoes",
-                                            "url":  "https://www.rottentomatoes.com/tv/downton_abbey",
-                                            "date_accessed":  "2026-02-15"
-                                        },
-                    "metacritic":  {
-                                       "score":  72,
-                                       "source":  "Metacritic",
-                                       "url":  "https://www.metacritic.com/tv/downton-abbey",
-                                       "date_accessed":  "2026-02-15"
-                                   }
-                },
-    "cast":  [
-                 "Hugh Bonneville",
-                 "Jim Carter",
-                 "Michelle Dockery",
-                 "Elizabeth McGovern",
-                 "Joanna Froggatt",
-                 "Phyllis Logan"
-             ],
     "creator":  "Julian Fellowes",
-    "description":  "A chronicle of the lives of the aristocratic Crawley family and their servants in early 20th century England.",
-    "tmdbId":  39534
+    "network":  "ITV / PBS",
+    "tmdbId":  39534,
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.0,
+                                          "scale":  10,
+                                          "count":  "95000",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt1606375/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  89,
+                                                     "scale":  100,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/downton_abbey"
+                                                 },
+                             "metacritic":  {
+                                                "score":  72,
+                                                "scale":  100,
+                                                "date_accessed":  "2026-02-15",
+                                                "url":  "https://www.metacritic.com/tv/downton-abbey"
+                                            }
+                         },
+    "consensus_highlights":  "A chronicle of the lives of the aristocratic Crawley family and their servants in early 20th century England.",
+    "ranking_system":  {
+                           "narrative_ambition":  7.0,
+                           "character_depth":  7.7,
+                           "thematic_resonance":  7.4,
+                           "cultural_impact":  6.6,
+                           "watchability":  7.4,
+                           "final_score":  7.36
+                       },
+    "notes":  ""
 }

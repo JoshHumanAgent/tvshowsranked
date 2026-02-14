@@ -1,45 +1,34 @@
-{
-  "slug": "normal-people",
-  "title": "Normal People",
-  "year": 2020,
-  "month": 4,
-  "status": "ended",
-  "seasons": 1,
-  "episodes": 12,
-  "runtime": "30-35",
-  "country": "United Kingdom",
-  "genres": ["drama", "romance"],
-  "creator": ["Sally Rooney", "Alice Birch"],
-  "network": "BBC Three/Hulu",
-  "external_ratings": {
-    "imdb": {
-      "score": 8.3,
-      "scale": 10,
-      "count": "85K",
-      "date_accessed": "2026-02-15",
-      "url": "https://www.imdb.com/title/tt8491236/"
-    },
-    "rotten_tomatoes": {
-      "season_1": {"score": 85, "scale": 100},
-      "date_accessed": "2026-02-15",
-      "url": "https://www.rottentomatoes.com/tv/normal_people"
-    },
-    "metacritic": {
-      "score": 79,
-      "scale": 100,
-      "date_accessed": "2026-02-15",
-      "url": "https://www.metacritic.com/tv/normal-people"
-    }
-  },
-  "consensus_highlights": "Normal People is an intimate adaptation of Sally Rooney's novel following the complex relationship between Connell and Marianne over several years. The series explores themes of class, power, mental health, and modern relationships with subtlety and emotional depth. Known for its nuanced portrayal of young adult romance.",
-  "ranking_system": {
-    "characters": 8.5,
-    "world_building": 6.5,
-    "cinematography": 9,
-    "visual_spectacle": 5,
-    "conceptual_density": 7,
-    "narrative_drive": 7,
-    "resolution": 8,
-    "final_score": 6.96
-  }
+﻿{
+    "slug":  "normal-people",
+    "title":  "Normal People",
+    "year":  2020,
+    "month":  4,
+    "status":  "ended",
+    "seasons":  1,
+    "episodes":  12,
+    "runtime":  "45-60",
+    "country":  "United States",
+    "genres":  [
+                   "drama",
+                   "romance"
+               ],
+    "creator":  [
+                    "Sally Rooney",
+                    "Alice Birch"
+                ],
+    "network":  "BBC Three/Hulu",
+    "tmdbId":  null,
+    "external_ratings":  {
+
+                         },
+    "consensus_highlights":  null,
+    "ranking_system":  {
+                           "narrative_ambition":  0,
+                           "character_depth":  0,
+                           "thematic_resonance":  0,
+                           "cultural_impact":  0,
+                           "watchability":  0,
+                           "final_score":  null
+                       },
+    "notes":  ""
 }

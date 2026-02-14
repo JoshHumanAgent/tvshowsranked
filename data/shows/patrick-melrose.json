@@ -1,52 +1,42 @@
 ﻿{
-    "title":  "Patrick Melrose",
     "slug":  "patrick-melrose",
+    "title":  "Patrick Melrose",
     "year":  2018,
     "month":  5,
-    "rank":  55,
+    "status":  "completed",
+    "seasons":  1,
+    "episodes":  5,
+    "runtime":  "45-60",
+    "country":  "United States",
     "genres":  [
                    "drama"
                ],
-    "final_score":  7.47,
-    "network":  "Showtime",
-    "seasons":  1,
-    "episodes":  5,
-    "status":  "completed",
-    "type":  "miniseries",
-    "ratings":  {
-                    "imdb":  {
-                                 "score":  8.1,
-                                 "votes":  20000,
-                                 "source":  "IMDb",
-                                 "url":  "https://www.imdb.com/title/tt6583526/",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "tmdb":  {
-                                 "score":  7.564,
-                                 "votes":  305,
-                                 "source":  "The Movie Database",
-                                 "url":  "https://www.themoviedb.org/tv/72787-patrick-melrose",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "rotten_tomatoes":  {
-                                            "score":  92,
-                                            "source":  "Rotten Tomatoes",
-                                            "url":  "https://www.rottentomatoes.com/tv/patrick_melrose",
-                                            "date_accessed":  "2026-02-15"
-                                        }
-                },
-    "cast":  [
-                 "Benedict Cumberbatch",
-                 "Jennifer Jason Leigh",
-                 "Hugo Weaving",
-                 "Sebastian Maltz",
-                 "Jessica Raine",
-                 "Prasanna Puwanarajah"
-             ],
     "creator":  "David Nicholls",
-    "description":  "A critical look at the upper class, tracking the protagonist\u0027s odyssey from a traumatic childhood through substance abuse and toward recovery.",
-    "data_sources":  {
-                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
-                     },
-    "tmdbId":  78818
+    "network":  "Showtime",
+    "tmdbId":  78818,
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.1,
+                                          "scale":  10,
+                                          "count":  "20000",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt6583526/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  92,
+                                                     "scale":  100,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/patrick_melrose"
+                                                 }
+                         },
+    "consensus_highlights":  "A critical look at the upper class, tracking the protagonist\u0027s odyssey from a traumatic childhood through substance abuse and toward recovery.",
+    "ranking_system":  {
+                           "narrative_ambition":  7.1,
+                           "character_depth":  7.8,
+                           "thematic_resonance":  7.5,
+                           "cultural_impact":  6.7,
+                           "watchability":  7.5,
+                           "final_score":  7.47
+                       },
+    "notes":  ""
 }

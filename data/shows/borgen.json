@@ -1,47 +1,49 @@
 ﻿{
-    "title":  "Borgen",
     "slug":  "borgen",
+    "title":  "Borgen",
     "year":  2010,
     "month":  9,
-    "rank":  59,
+    "status":  "completed",
+    "seasons":  4,
+    "episodes":  38,
+    "runtime":  "45-60",
+    "country":  "United States",
     "genres":  [
                    "drama",
                    "political"
                ],
-    "final_score":  7.45,
-    "network":  "DR1 / Netflix",
-    "seasons":  4,
-    "episodes":  38,
-    "status":  "completed",
-    "ratings":  {
-                    "imdb":  {
-                                 "score":  8.4,
-                                 "votes":  45000,
-                                 "source":  "IMDb",
-                                 "url":  "https://www.imdb.com/title/tt1529750/",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "rotten_tomatoes":  {
-                                            "score":  93,
-                                            "source":  "Rotten Tomatoes",
-                                            "url":  "https://www.rottentomatoes.com/tv/borge",
-                                            "date_accessed":  "2026-02-15"
-                                        },
-                    "metacritic":  {
-                                       "score":  78,
-                                       "source":  "Metacritic",
-                                       "url":  "https://www.metacritic.com/tv/borge",
-                                       "date_accessed":  "2026-02-15"
-                                   }
-                },
-    "cast":  [
-                 "Sidse Babett Knudsen",
-                 "Birgitte Hjort SÃ¸rensen",
-                 "Pilou AsbÃ¦k",
-                 "SÃ¸ren Malling",
-                 "Mikael BirkkjÃ¦r"
-             ],
     "creator":  "Adam Price",
-    "description":  "A Danish political drama about Birgitte Nyborg becoming Denmark\u0027s first female Prime Minister.",
-    "tmdbId":  32057
+    "network":  "DR1 / Netflix",
+    "tmdbId":  32057,
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.4,
+                                          "scale":  10,
+                                          "count":  "45000",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt1529750/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  93,
+                                                     "scale":  100,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/borge"
+                                                 },
+                             "metacritic":  {
+                                                "score":  78,
+                                                "scale":  100,
+                                                "date_accessed":  "2026-02-15",
+                                                "url":  "https://www.metacritic.com/tv/borge"
+                                            }
+                         },
+    "consensus_highlights":  "A Danish political drama about Birgitte Nyborg becoming Denmark\u0027s first female Prime Minister.",
+    "ranking_system":  {
+                           "narrative_ambition":  7.1,
+                           "character_depth":  7.8,
+                           "thematic_resonance":  7.4,
+                           "cultural_impact":  6.7,
+                           "watchability":  7.4,
+                           "final_score":  7.45
+                       },
+    "notes":  ""
 }

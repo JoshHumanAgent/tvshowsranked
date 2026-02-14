@@ -1,53 +1,44 @@
 ﻿{
-    "title":  "Homeland",
     "slug":  "homeland",
+    "title":  "Homeland",
     "year":  2011,
     "month":  10,
-    "rank":  33,
+    "status":  "completed",
+    "seasons":  8,
+    "episodes":  96,
+    "runtime":  "45-60",
+    "country":  "United States",
     "genres":  [
                    "drama",
                    "thriller",
                    "action"
                ],
-    "final_score":  7.67,
+    "creator":  null,
     "network":  "Showtime",
-    "seasons":  8,
-    "episodes":  96,
-    "status":  "completed",
-    "ratings":  {
-                    "imdb":  {
-                                 "score":  8.3,
-                                 "votes":  325000,
-                                 "source":  "IMDb",
-                                 "url":  "https://www.imdb.com/title/tt1796960/",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "tmdb":  {
-                                 "score":  7.587,
-                                 "votes":  2485,
-                                 "source":  "The Movie Database",
-                                 "url":  "https://www.themoviedb.org/tv/1407-homeland",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "rotten_tomatoes":  {
-                                            "score":  88,
-                                            "source":  "Rotten Tomatoes",
-                                            "url":  "https://www.rottentomatoes.com/tv/homeland",
-                                            "date_accessed":  "2026-02-15"
-                                        }
-                },
-    "cast":  [
-                 "Claire Danes",
-                 "Damian Lewis",
-                 "Mandy Patinkin",
-                 "Rupert Friend",
-                 "Morena Baccarin",
-                 "F. Murray Abraham"
-             ],
-    "creators":  "Howard Gordon, Alex Gansa",
-    "description":  "A bipolar CIA officer becomes convinced a returned POW has been turned by terrorists and is planning an attack on America.",
-    "data_sources":  {
-                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
-                     },
-    "tmdbId":  1405
+    "tmdbId":  1405,
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.3,
+                                          "scale":  10,
+                                          "count":  "325000",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt1796960/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  88,
+                                                     "scale":  100,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/homeland"
+                                                 }
+                         },
+    "consensus_highlights":  "A bipolar CIA officer becomes convinced a returned POW has been turned by terrorists and is planning an attack on America.",
+    "ranking_system":  {
+                           "narrative_ambition":  7.3,
+                           "character_depth":  8.1,
+                           "thematic_resonance":  7.7,
+                           "cultural_impact":  6.9,
+                           "watchability":  7.7,
+                           "final_score":  7.67
+                       },
+    "notes":  ""
 }

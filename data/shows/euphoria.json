@@ -1,47 +1,48 @@
 ﻿{
-    "title":  "Euphoria",
     "slug":  "euphoria",
+    "title":  "Euphoria",
     "year":  2019,
     "month":  6,
-    "rank":  77,
+    "status":  "ongoing",
+    "seasons":  3,
+    "episodes":  26,
+    "runtime":  "45-60",
+    "country":  "United States",
     "genres":  [
                    "drama"
                ],
-    "final_score":  7.30,
-    "network":  "HBO",
-    "seasons":  3,
-    "episodes":  26,
-    "status":  "ongoing",
-    "ratings":  {
-                    "imdb":  {
-                                 "score":  7.3,
-                                 "votes":  280000,
-                                 "source":  "IMDb",
-                                 "url":  "https://www.imdb.com/title/tt8772296/",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "rotten_tomatoes":  {
-                                            "score":  81,
-                                            "source":  "Rotten Tomatoes",
-                                            "url":  "https://www.rottentomatoes.com/tv/euphoria",
-                                            "date_accessed":  "2026-02-15"
-                                        },
-                    "metacritic":  {
-                                       "score":  68,
-                                       "source":  "Metacritic",
-                                       "url":  "https://www.metacritic.com/tv/euphoria",
-                                       "date_accessed":  "2026-02-15"
-                                   }
-                },
-    "cast":  [
-                 "Zendaya",
-                 "Hunter Schafer",
-                 "Maude Apatow",
-                 "AngourICE",
-                 "Alex D. Sweeney",
-                 "Jacob Elordi"
-             ],
     "creator":  "Sam Levinson",
-    "description":  "A group of high school students navigate relationships, addiction, and identity in a fictional California town.",
-    "tmdbId":  85552
+    "network":  "HBO",
+    "tmdbId":  85552,
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  7.3,
+                                          "scale":  10,
+                                          "count":  "280000",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt8772296/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  81,
+                                                     "scale":  100,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/euphoria"
+                                                 },
+                             "metacritic":  {
+                                                "score":  68,
+                                                "scale":  100,
+                                                "date_accessed":  "2026-02-15",
+                                                "url":  "https://www.metacritic.com/tv/euphoria"
+                                            }
+                         },
+    "consensus_highlights":  "A group of high school students navigate relationships, addiction, and identity in a fictional California town.",
+    "ranking_system":  {
+                           "narrative_ambition":  6.9,
+                           "character_depth":  7.7,
+                           "thematic_resonance":  7.3,
+                           "cultural_impact":  6.6,
+                           "watchability":  7.3,
+                           "final_score":  7.30
+                       },
+    "notes":  ""
 }

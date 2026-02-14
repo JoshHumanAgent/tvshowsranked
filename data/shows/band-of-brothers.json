@@ -1,56 +1,44 @@
 ﻿{
-    "title":  "Band of Brothers",
     "slug":  "band-of-brothers",
+    "title":  "Band of Brothers",
     "year":  2001,
     "month":  9,
-    "rank":  25,
+    "status":  "completed",
+    "seasons":  1,
+    "episodes":  10,
+    "runtime":  "45-60",
+    "country":  "United States",
     "genres":  [
                    "drama",
                    "war",
                    "historical"
                ],
-    "final_score":  7.73,
+    "creator":  null,
     "network":  "HBO",
-    "seasons":  1,
-    "episodes":  10,
-    "status":  "completed",
-    "type":  "miniseries",
-    "ratings":  {
-                    "imdb":  {
-                                 "score":  9.4,
-                                 "votes":  586700,
-                                 "source":  "IMDb",
-                                 "url":  "https://www.imdb.com/title/tt0185906/",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "tmdb":  {
-                                 "score":  8.585,
-                                 "votes":  4013,
-                                 "source":  "The Movie Database",
-                                 "url":  "https://www.themoviedb.org/tv/4613-band-of-brothers",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "rotten_tomatoes":  {
-                                            "score":  94,
-                                            "source":  "Rotten Tomatoes",
-                                            "url":  "https://www.rottentomatoes.com/tv/band_of_brothers",
-                                            "date_accessed":  "2026-02-15"
-                                        }
-                },
-    "cast":  [
-                 "David Schwimmer",
-                 "Donnie Wahlberg",
-                 "Michael Fassbender",
-                 "James McAvoy",
-                 "Tom Hardy",
-                 " Damian Lewis",
-                 "Ron Livingston"
-             ],
-    "creators":  "Tom Hanks, Steven Spielberg",
-    "based_on":  "Stephen E. Ambrose\u0027s book",
-    "description":  "The story of Easy Company, 506th Regiment of the 101st Airborne Division, from training through the end of World War II.",
-    "data_sources":  {
-                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
-                     },
-    "tmdbId":  1623
+    "tmdbId":  1623,
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  9.4,
+                                          "scale":  10,
+                                          "count":  "586700",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt0185906/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  94,
+                                                     "scale":  100,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/band_of_brothers"
+                                                 }
+                         },
+    "consensus_highlights":  "The story of Easy Company, 506th Regiment of the 101st Airborne Division, from training through the end of World War II.",
+    "ranking_system":  {
+                           "narrative_ambition":  7.3,
+                           "character_depth":  8.1,
+                           "thematic_resonance":  7.7,
+                           "cultural_impact":  7.0,
+                           "watchability":  7.7,
+                           "final_score":  7.73
+                       },
+    "notes":  ""
 }

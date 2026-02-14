@@ -1,48 +1,50 @@
 ﻿{
-    "title":  "The X-Files",
     "slug":  "the-x-files",
+    "title":  "The X-Files",
     "year":  1993,
     "month":  9,
-    "rank":  63,
+    "status":  "completed",
+    "seasons":  11,
+    "episodes":  218,
+    "runtime":  "45-60",
+    "country":  "United States",
     "genres":  [
                    "sci-fi",
                    "mystery",
                    "thriller"
                ],
-    "final_score":  7.40,
-    "network":  "Fox",
-    "seasons":  11,
-    "episodes":  218,
-    "status":  "completed",
-    "ratings":  {
-                    "imdb":  {
-                                 "score":  8.0,
-                                 "votes":  290000,
-                                 "source":  "IMDb",
-                                 "url":  "https://www.imdb.com/title/tt0106179/",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "rotten_tomatoes":  {
-                                            "score":  87,
-                                            "source":  "Rotten Tomatoes",
-                                            "url":  "https://www.rottentomatoes.com/tv/the_xfiles",
-                                            "date_accessed":  "2026-02-15"
-                                        },
-                    "metacritic":  {
-                                       "score":  65,
-                                       "source":  "Metacritic",
-                                       "url":  "https://www.metacritic.com/tv/the-x-files",
-                                       "date_accessed":  "2026-02-15"
-                                   }
-                },
-    "cast":  [
-                 "David Duchovny",
-                 "Gillian Anderson",
-                 "Mitch Pileggi",
-                 "Robert Patrick",
-                 "Annabeth Gish"
-             ],
     "creator":  "Chris Carter",
-    "description":  "FBI agents investigate paranormal cases and government conspiracies involving aliens.",
-    "tmdbId":  4087
+    "network":  "Fox",
+    "tmdbId":  4087,
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.0,
+                                          "scale":  10,
+                                          "count":  "290000",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt0106179/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  87,
+                                                     "scale":  100,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/the_xfiles"
+                                                 },
+                             "metacritic":  {
+                                                "score":  65,
+                                                "scale":  100,
+                                                "date_accessed":  "2026-02-15",
+                                                "url":  "https://www.metacritic.com/tv/the-x-files"
+                                            }
+                         },
+    "consensus_highlights":  "FBI agents investigate paranormal cases and government conspiracies involving aliens.",
+    "ranking_system":  {
+                           "narrative_ambition":  7.0,
+                           "character_depth":  7.8,
+                           "thematic_resonance":  7.4,
+                           "cultural_impact":  6.7,
+                           "watchability":  7.4,
+                           "final_score":  7.40
+                       },
+    "notes":  ""
 }

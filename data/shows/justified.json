@@ -1,55 +1,44 @@
 ﻿{
-    "title":  "Justified",
     "slug":  "justified",
+    "title":  "Justified",
     "year":  2010,
     "month":  3,
-    "rank":  24,
+    "status":  "completed",
+    "seasons":  6,
+    "episodes":  78,
+    "runtime":  "45-60",
+    "country":  "United States",
     "genres":  [
                    "crime",
                    "drama",
                    "western"
                ],
-    "final_score":  7.75,
-    "network":  "FX",
-    "seasons":  6,
-    "episodes":  78,
-    "status":  "completed",
-    "ratings":  {
-                    "imdb":  {
-                                 "score":  8.6,
-                                 "votes":  129400,
-                                 "source":  "IMDb",
-                                 "url":  "https://www.imdb.com/title/tt1489428/",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "tmdb":  {
-                                 "score":  7.965,
-                                 "votes":  807,
-                                 "source":  "The Movie Database",
-                                 "url":  "https://www.themoviedb.org/tv/1436-justified",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "rotten_tomatoes":  {
-                                            "score":  97,
-                                            "source":  "Rotten Tomatoes",
-                                            "url":  "https://www.rottentomatoes.com/tv/justified",
-                                            "date_accessed":  "2026-02-15"
-                                        }
-                },
-    "cast":  [
-                 "Timothy Olyphant",
-                 "Walton Goggins",
-                 "Nick Searcy",
-                 "Joelle Carter",
-                 "Jacob Pitts",
-                 "Erica Tazel",
-                 "J.K. Simmons"
-             ],
     "creator":  "Graham Yost",
-    "based_on":  "Elmore Leonard\u0027s \u0027Fire in the Hole\u0027",
-    "description":  "U.S. Marshal Raylan Givens is reassigned to his hometown in Kentucky, where his old-school approach to law enforcement puts him at odds with criminals including his former friend Boyd Crowder.",
-    "data_sources":  {
-                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
-                     },
-    "tmdbId":  1435
+    "network":  "FX",
+    "tmdbId":  1435,
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.6,
+                                          "scale":  10,
+                                          "count":  "129400",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt1489428/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  97,
+                                                     "scale":  100,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/justified"
+                                                 }
+                         },
+    "consensus_highlights":  "U.S. Marshal Raylan Givens is reassigned to his hometown in Kentucky, where his old-school approach to law enforcement puts him at odds with criminals including his former friend Boyd Crowder.",
+    "ranking_system":  {
+                           "narrative_ambition":  7.4,
+                           "character_depth":  8.1,
+                           "thematic_resonance":  7.8,
+                           "cultural_impact":  7.0,
+                           "watchability":  7.8,
+                           "final_score":  7.75
+                       },
+    "notes":  ""
 }

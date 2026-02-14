@@ -1,52 +1,43 @@
 ﻿{
-    "title":  "Station Eleven",
     "slug":  "station-eleven",
+    "title":  "Station Eleven",
     "year":  2021,
     "month":  12,
-    "rank":  43,
+    "status":  "completed",
+    "seasons":  1,
+    "episodes":  10,
+    "runtime":  "45-60",
+    "country":  "United States",
     "genres":  [
                    "drama",
                    "sci-fi"
                ],
-    "final_score":  7.53,
-    "network":  "HBO Max",
-    "seasons":  1,
-    "episodes":  10,
-    "status":  "completed",
-    "type":  "miniseries",
-    "ratings":  {
-                    "imdb":  {
-                                 "score":  7.7,
-                                 "votes":  42000,
-                                 "source":  "IMDb",
-                                 "url":  "https://www.imdb.com/title/tt1051424/",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "tmdb":  {
-                                 "score":  7.021,
-                                 "votes":  389,
-                                 "source":  "The Movie Database",
-                                 "url":  "https://www.themoviedb.org/tv/90972-station-eleven",
-                                 "date_accessed":  "2026-02-15"
-                             },
-                    "rotten_tomatoes":  {
-                                            "score":  87,
-                                            "source":  "Rotten Tomatoes",
-                                            "url":  "https://www.rottentomatoes.com/tv/station_eleven",
-                                            "date_accessed":  "2026-02-15"
-                                        }
-                },
-    "cast":  [
-                 "Mackenzie Davis",
-                 "Himesh Patel",
-                 "Matilda Lawler",
-                 " Gael GarcÃ­a Bernal",
-                 "Daniel Zovatto"
-             ],
     "creator":  "Patrick Somerville",
-    "description":  "The survivors of a devastating flu attempt to rebuild and reimagine the world while holding on to the best of what\u0027s been lost.",
-    "data_sources":  {
-                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
-                     },
-    "tmdbId":  85720
+    "network":  "HBO Max",
+    "tmdbId":  85720,
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  7.7,
+                                          "scale":  10,
+                                          "count":  "42000",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt1051424/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  87,
+                                                     "scale":  100,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/station_eleven"
+                                                 }
+                         },
+    "consensus_highlights":  "The survivors of a devastating flu attempt to rebuild and reimagine the world while holding on to the best of what\u0027s been lost.",
+    "ranking_system":  {
+                           "narrative_ambition":  7.2,
+                           "character_depth":  7.9,
+                           "thematic_resonance":  7.5,
+                           "cultural_impact":  6.8,
+                           "watchability":  7.5,
+                           "final_score":  7.53
+                       },
+    "notes":  ""
 }
