@@ -7,8 +7,8 @@ This directory contains the structured data foundation for the TV Shows Ranked w
 ```
 data/
 ├── shows/
-│   ├── index.json              # Master index of all 100 ranked shows
-│   ├── <slug>.json             # Individual show intelligence files (100 files)
+│   ├── index.json              # Master index of all 109 ranked shows
+│   ├── <slug>.json             # Individual show intelligence files (109 files)
 │   └── README.md               # This file
 │
 ├── show_candidates/
@@ -20,7 +20,7 @@ data/
 
 docs/
 └── shows/
-    └── <slug>.md               # Human-readable show documentation (100 files)
+    └── <slug>.md               # Human-readable show documentation (109 files)
 ```
 
 ## Data Schema
@@ -139,15 +139,16 @@ All descriptions focus on experiential qualities:
 
 ## Data Quality
 
-- All 100 shows have JSON + MD files
-- All 100 shows have TMDB IDs
+- All 109 shows have JSON + MD files
+- All 109 shows have TMDB IDs
 - All external ratings include source URLs and date accessed
 - Episode counts cross-referenced across multiple sources
 
 ## Future Expansion
 
-5 additional shows have complete documentation ready:
-- bloodline, mindhunter, normal-people, tokyo-vice, yellowjackets
+500-show candidate pool available for systematic expansion.
+Recent additions include acclaimed 2022-2024 shows like:
+- Slow Horses, Frieren, The Day of the Jackal, A Man on the Inside
 
 500-show candidate pool available for systematic expansion.
 
