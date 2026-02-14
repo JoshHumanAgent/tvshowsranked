@@ -1,48 +1,53 @@
-{
-  "title": "Shōgun (2024)",
-  "slug": "shogun-2024",
-  "year": 2024,
-  "month": 2,
-  "rank": 53,
-  "genres": ["drama", "historical", "action"],
-  "final_score": 7.48,
-  "network": "FX",
-  "seasons": 1,
-  "episodes": 10,
-  "status": "ongoing",
-  "ratings": {
-    "imdb": {
-      "score": 8.6,
-      "votes": 95000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt27884380/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 8.439,
-      "votes": 1621,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/126308-shogun",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 99,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/shogun_2024_1",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Hiroyuki Sanada",
-    "Cosmo Jarvis",
-    "Anna Sawai",
-    "Tadanobu Asano",
-    "Takehiro Hira",
-    "Fumi Nikaido"
-  ],
-  "creators": "James Clavell, Rachel Kondo",
-  "description": "In Japan in 1600, Lord Yoshii Toranaga fights for his life as enemies unite against him.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "ShÅgun (2024)",
+    "slug":  "shogun-2024",
+    "year":  2024,
+    "month":  2,
+    "rank":  53,
+    "genres":  [
+                   "drama",
+                   "historical",
+                   "action"
+               ],
+    "final_score":  7.48,
+    "network":  "FX",
+    "seasons":  1,
+    "episodes":  10,
+    "status":  "ongoing",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.6,
+                                 "votes":  95000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt27884380/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  8.439,
+                                 "votes":  1621,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/126308-shogun",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  99,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/shogun_2024_1",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Hiroyuki Sanada",
+                 "Cosmo Jarvis",
+                 "Anna Sawai",
+                 "Tadanobu Asano",
+                 "Takehiro Hira",
+                 "Fumi Nikaido"
+             ],
+    "creators":  "James Clavell, Rachel Kondo",
+    "description":  "In Japan in 1600, Lord Yoshii Toranaga fights for his life as enemies unite against him.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  126308
 }

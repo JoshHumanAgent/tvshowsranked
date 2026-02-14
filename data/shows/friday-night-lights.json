@@ -1,48 +1,51 @@
-{
-  "title": "Friday Night Lights",
-  "slug": "friday-night-lights",
-  "year": 2006,
-  "month": 10,
-  "rank": 39,
-  "genres": ["drama"],
-  "final_score": 7.59,
-  "network": "NBC",
-  "seasons": 5,
-  "episodes": 76,
-  "status": "completed",
-  "ratings": {
-    "imdb": {
-      "score": 8.7,
-      "votes": 55000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt0800039/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 8.0,
-      "votes": 304,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/4278-friday-night-lights",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 94,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/friday_night_lights",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Kyle Chandler",
-    "Connie Britton",
-    "Zach Gilford",
-    "Minka Kelly",
-    "Madison Lintz",
-    "Taylor Kitsch"
-  ],
-  "creators": "Brian Grazer, Peter Berg",
-  "description": "The trials and triumphs of life in the small town of Dillon, Texas, where high school football is everything.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "Friday Night Lights",
+    "slug":  "friday-night-lights",
+    "year":  2006,
+    "month":  10,
+    "rank":  39,
+    "genres":  [
+                   "drama"
+               ],
+    "final_score":  7.59,
+    "network":  "NBC",
+    "seasons":  5,
+    "episodes":  76,
+    "status":  "completed",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.7,
+                                 "votes":  55000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt0800039/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  8.0,
+                                 "votes":  304,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/4278-friday-night-lights",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  94,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/friday_night_lights",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Kyle Chandler",
+                 "Connie Britton",
+                 "Zach Gilford",
+                 "Minka Kelly",
+                 "Madison Lintz",
+                 "Taylor Kitsch"
+             ],
+    "creators":  "Brian Grazer, Peter Berg",
+    "description":  "The trials and triumphs of life in the small town of Dillon, Texas, where high school football is everything.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  4294
 }

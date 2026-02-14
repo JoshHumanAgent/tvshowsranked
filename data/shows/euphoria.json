@@ -1,44 +1,47 @@
-{
-  "title": "Euphoria",
-  "slug": "euphoria",
-  "year": 2019,
-  "month": 6,
-  "rank": 77,
-  "genres": ["drama"],
-  "final_score": 7.30,
-  "network": "HBO",
-  "seasons": 3,
-  "episodes": 26,
-  "status": "ongoing",
-  "ratings": {
-    "imdb": {
-      "score": 7.3,
-      "votes": 280000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt8772296/",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 81,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/euphoria",
-      "date_accessed": "2026-02-15"
-    },
-    "metacritic": {
-      "score": 68,
-      "source": "Metacritic",
-      "url": "https://www.metacritic.com/tv/euphoria",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Zendaya",
-    "Hunter Schafer",
-    "Maude Apatow",
-    "AngourICE",
-    "Alex D. Sweeney",
-    "Jacob Elordi"
-  ],
-  "creator": "Sam Levinson",
-  "description": "A group of high school students navigate relationships, addiction, and identity in a fictional California town."
+﻿{
+    "title":  "Euphoria",
+    "slug":  "euphoria",
+    "year":  2019,
+    "month":  6,
+    "rank":  77,
+    "genres":  [
+                   "drama"
+               ],
+    "final_score":  7.30,
+    "network":  "HBO",
+    "seasons":  3,
+    "episodes":  26,
+    "status":  "ongoing",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  7.3,
+                                 "votes":  280000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt8772296/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  81,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/euphoria",
+                                            "date_accessed":  "2026-02-15"
+                                        },
+                    "metacritic":  {
+                                       "score":  68,
+                                       "source":  "Metacritic",
+                                       "url":  "https://www.metacritic.com/tv/euphoria",
+                                       "date_accessed":  "2026-02-15"
+                                   }
+                },
+    "cast":  [
+                 "Zendaya",
+                 "Hunter Schafer",
+                 "Maude Apatow",
+                 "AngourICE",
+                 "Alex D. Sweeney",
+                 "Jacob Elordi"
+             ],
+    "creator":  "Sam Levinson",
+    "description":  "A group of high school students navigate relationships, addiction, and identity in a fictional California town.",
+    "tmdbId":  85552
 }

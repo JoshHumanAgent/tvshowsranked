@@ -1,47 +1,62 @@
-{
-  "slug": "the-bear",
-  "title": "The Bear",
-  "year": 2022,
-  "month": 6,
-  "status": "continuing",
-  "seasons": 3,
-  "episodes": 28,
-  "runtime": "20-60",
-  "country": "United States",
-  "genres": ["drama", "comedy"],
-  "creator": ["Christopher Storer"],
-  "network": "FX/Hulu",
-  "external_ratings": {
-    "imdb": {
-      "score": 8.6,
-      "scale": 10,
-      "count": "320K",
-      "date_accessed": "2026-02-15",
-      "url": "https://www.imdb.com/title/tttt12239268/"
-    },
-    "rotten_tomatoes": {
-      "season_1": {"score": 100, "scale": 100},
-      "season_2": {"score": 99, "scale": 100},
-      "season_3": {"score": 98, "scale": 100},
-      "date_accessed": "2026-02-15",
-      "url": "https://www.rottentomatoes.com/tv/the_bear"
-    },
-    "metacritic": {
-      "score": 91,
-      "scale": 100,
-      "date_accessed": "2026-02-15",
-      "url": "https://www.metacritic.com/tv/the-bear"
-    }
-  },
-  "consensus_highlights": "The Bear is a critically acclaimed drama about a fine-dining chef who returns to Chicago to run his family's sandwich shop. The series is celebrated for its raw portrayal of mental health, family trauma, and the hospitality industry. Its innovative editing and intense pacing have redefined the prestige TV comedy-drama.",
-  "ranking_system": {
-    "characters": 7.5,
-    "world_building": 6.5,
-    "cinematography": 9,
-    "visual_spectacle": 5,
-    "conceptual_density": 7,
-    "narrative_drive": 8,
-    "resolution": 7,
-    "final_score": 7.01
-  }
+﻿{
+    "slug":  "the-bear",
+    "title":  "The Bear",
+    "year":  2022,
+    "month":  6,
+    "status":  "continuing",
+    "seasons":  3,
+    "episodes":  28,
+    "runtime":  "20-60",
+    "country":  "United States",
+    "genres":  [
+                   "drama",
+                   "comedy"
+               ],
+    "creator":  [
+                    "Christopher Storer"
+                ],
+    "network":  "FX/Hulu",
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.6,
+                                          "scale":  10,
+                                          "count":  "320K",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tttt12239268/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "season_1":  {
+                                                                      "score":  100,
+                                                                      "scale":  100
+                                                                  },
+                                                     "season_2":  {
+                                                                      "score":  99,
+                                                                      "scale":  100
+                                                                  },
+                                                     "season_3":  {
+                                                                      "score":  98,
+                                                                      "scale":  100
+                                                                  },
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/the_bear"
+                                                 },
+                             "metacritic":  {
+                                                "score":  91,
+                                                "scale":  100,
+                                                "date_accessed":  "2026-02-15",
+                                                "url":  "https://www.metacritic.com/tv/the-bear"
+                                            }
+                         },
+    "consensus_highlights":  "The Bear is a critically acclaimed drama about a fine-dining chef who returns to Chicago to run his family\u0027s sandwich shop. The series is celebrated for its raw portrayal of mental health, family trauma, and the hospitality industry. Its innovative editing and intense pacing have redefined the prestige TV comedy-drama.",
+    "ranking_system":  {
+                           "characters":  7.5,
+                           "world_building":  6.5,
+                           "cinematography":  9,
+                           "visual_spectacle":  5,
+                           "conceptual_density":  7,
+                           "narrative_drive":  8,
+                           "resolution":  7,
+                           "final_score":  7.01
+                       },
+    "tmdbId":  135699
 }

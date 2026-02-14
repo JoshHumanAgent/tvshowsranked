@@ -1,44 +1,49 @@
-{
-  "title": "Rome",
-  "slug": "rome",
-  "year": 2005,
-  "month": 8,
-  "rank": 67,
-  "genres": ["drama", "historical", "action"],
-  "final_score": 7.39,
-  "network": "HBO",
-  "seasons": 2,
-  "episodes": 22,
-  "status": "completed",
-  "ratings": {
-    "imdb": {
-      "score": 8.7,
-      "votes": 110000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt0384766/",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 90,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/rome",
-      "date_accessed": "2026-02-15"
-    },
-    "metacritic": {
-      "score": 82,
-      "source": "Metacritic",
-      "url": "https://www.metacritic.com/tv/rome",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Kevin McKidd",
-    "Ray Stevenson",
-    "Ciarán Hinds",
-    "Kenneth Cranham",
-    "Tobias Menzies",
-    "James Purefoy"
-  ],
-  "creator": "John Milius, William J. MacDonald, Bruno Heller",
-  "description": "A dramatic look at the rise and fall of the Roman Republic through the eyes of soldiers and politicians."
+﻿{
+    "title":  "Rome",
+    "slug":  "rome",
+    "year":  2005,
+    "month":  8,
+    "rank":  67,
+    "genres":  [
+                   "drama",
+                   "historical",
+                   "action"
+               ],
+    "final_score":  7.39,
+    "network":  "HBO",
+    "seasons":  2,
+    "episodes":  22,
+    "status":  "completed",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.7,
+                                 "votes":  110000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt0384766/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  90,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/rome",
+                                            "date_accessed":  "2026-02-15"
+                                        },
+                    "metacritic":  {
+                                       "score":  82,
+                                       "source":  "Metacritic",
+                                       "url":  "https://www.metacritic.com/tv/rome",
+                                       "date_accessed":  "2026-02-15"
+                                   }
+                },
+    "cast":  [
+                 "Kevin McKidd",
+                 "Ray Stevenson",
+                 "CiarÃ¡n Hinds",
+                 "Kenneth Cranham",
+                 "Tobias Menzies",
+                 "James Purefoy"
+             ],
+    "creator":  "John Milius, William J. MacDonald, Bruno Heller",
+    "description":  "A dramatic look at the rise and fall of the Roman Republic through the eyes of soldiers and politicians.",
+    "tmdbId":  1840
 }

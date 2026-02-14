@@ -1,50 +1,57 @@
-{
-  "title": "Watchmen (2019)",
-  "slug": "watchmen-2019",
-  "year": 2019,
-  "month": 10,
-  "rank": 31,
-  "genres": ["drama", "sci-fi", "superhero", "crime", "mystery"],
-  "final_score": 7.68,
-  "network": "HBO",
-  "seasons": 1,
-  "episodes": 9,
-  "status": "completed",
-  "type": "miniseries",
-  "ratings": {
-    "imdb": {
-      "score": 8.2,
-      "votes": 144800,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt7049682/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 7.6,
-      "votes": 1540,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/79788-watchmen",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 96,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/watchmen",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Regina King",
-    "Jeremy Irons",
-    "Tim Blake Nelson",
-    "Yahya Abdul-Mateen II",
-    "Jovan Adepo",
-    "Frances Fisher",
-    "Louis Gossett Jr."
-  ],
-  "creator": "Damon Lindelof",
-  "description": "A sequel to the graphic novel, set in an alternate history where masked vigilantes are outlaws.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "Watchmen (2019)",
+    "slug":  "watchmen-2019",
+    "year":  2019,
+    "month":  10,
+    "rank":  31,
+    "genres":  [
+                   "drama",
+                   "sci-fi",
+                   "superhero",
+                   "crime",
+                   "mystery"
+               ],
+    "final_score":  7.68,
+    "network":  "HBO",
+    "seasons":  1,
+    "episodes":  9,
+    "status":  "completed",
+    "type":  "miniseries",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.2,
+                                 "votes":  144800,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt7049682/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  7.6,
+                                 "votes":  1540,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/79788-watchmen",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  96,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/watchmen",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Regina King",
+                 "Jeremy Irons",
+                 "Tim Blake Nelson",
+                 "Yahya Abdul-Mateen II",
+                 "Jovan Adepo",
+                 "Frances Fisher",
+                 "Louis Gossett Jr."
+             ],
+    "creator":  "Damon Lindelof",
+    "description":  "A sequel to the graphic novel, set in an alternate history where masked vigilantes are outlaws.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  79739
 }

@@ -1,48 +1,53 @@
-{
-  "title": "Squid Game",
-  "slug": "squid-game",
-  "year": 2021,
-  "month": 9,
-  "rank": 57,
-  "genres": ["thriller", "drama", "sci-fi"],
-  "final_score": 7.46,
-  "network": "Netflix",
-  "seasons": 2,
-  "episodes": 16,
-  "status": "ongoing",
-  "ratings": {
-    "imdb": {
-      "score": 8.0,
-      "votes": 395000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt10919420/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 7.858,
-      "votes": 17143,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/93405-squid-game",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 95,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/squid_game",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Lee Jung-jae",
-    "Park Hae-soo",
-    "Wi Ha-jun",
-    "Jung Ho-yeon",
-    "O Yeong-su",
-    "Heo Sung-tae"
-  ],
-  "creator": "Hwang Dong-hyuk",
-  "description": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games with deadly high stakes.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "Squid Game",
+    "slug":  "squid-game",
+    "year":  2021,
+    "month":  9,
+    "rank":  57,
+    "genres":  [
+                   "thriller",
+                   "drama",
+                   "sci-fi"
+               ],
+    "final_score":  7.46,
+    "network":  "Netflix",
+    "seasons":  2,
+    "episodes":  16,
+    "status":  "ongoing",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.0,
+                                 "votes":  395000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt10919420/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  7.858,
+                                 "votes":  17143,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/93405-squid-game",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  95,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/squid_game",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Lee Jung-jae",
+                 "Park Hae-soo",
+                 "Wi Ha-jun",
+                 "Jung Ho-yeon",
+                 "O Yeong-su",
+                 "Heo Sung-tae"
+             ],
+    "creator":  "Hwang Dong-hyuk",
+    "description":  "Hundreds of cash-strapped players accept a strange invitation to compete in children\u0027s games with deadly high stakes.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  93405
 }

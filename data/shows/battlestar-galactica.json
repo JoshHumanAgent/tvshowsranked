@@ -1,48 +1,53 @@
-{
-  "title": "Battlestar Galactica",
-  "slug": "battlestar-galactica",
-  "year": 2004,
-  "month": 10,
-  "rank": 47,
-  "genres": ["sci-fi", "drama", "action"],
-  "final_score": 7.51,
-  "network": "Syfy",
-  "seasons": 4,
-  "episodes": 73,
-  "status": "completed",
-  "ratings": {
-    "imdb": {
-      "score": 8.7,
-      "votes": 185000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt0407362/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 8.2,
-      "votes": 1710,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/1972-battlestar-galactica",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 95,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/battlestar_galactica",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Edward James Olmos",
-    "Mary McDonnell",
-    "Katee Sackhoff",
-    "Jamie Bamber",
-    "James Callis",
-    "Tricia Helfer"
-  ],
-  "creators": "Glen A. Larson, Ronald D. Moore",
-  "description": "The crew of the aged Galactica protect a small civilian fleet as the last of humanity, journeying toward Earth.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "Battlestar Galactica",
+    "slug":  "battlestar-galactica",
+    "year":  2004,
+    "month":  10,
+    "rank":  47,
+    "genres":  [
+                   "sci-fi",
+                   "drama",
+                   "action"
+               ],
+    "final_score":  7.51,
+    "network":  "Syfy",
+    "seasons":  4,
+    "episodes":  73,
+    "status":  "completed",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.7,
+                                 "votes":  185000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt0407362/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  8.2,
+                                 "votes":  1710,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/1972-battlestar-galactica",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  95,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/battlestar_galactica",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Edward James Olmos",
+                 "Mary McDonnell",
+                 "Katee Sackhoff",
+                 "Jamie Bamber",
+                 "James Callis",
+                 "Tricia Helfer"
+             ],
+    "creators":  "Glen A. Larson, Ronald D. Moore",
+    "description":  "The crew of the aged Galactica protect a small civilian fleet as the last of humanity, journeying toward Earth.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  2785
 }

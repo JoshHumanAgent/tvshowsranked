@@ -1,48 +1,70 @@
-{
-  "slug": "the-wire",
-  "title": "The Wire",
-  "year": 2002,
-  "month": 6,
-  "status": "ended",
-  "seasons": 5,
-  "episodes": 60,
-  "runtime": "55-60",
-  "country": "United States",
-  "genres": ["crime", "drama", "cop-show"],
-  "creator": ["David Simon"],
-  "network": "HBO",
-  "external_ratings": {
-    "imdb": {
-      "score": 9.3,
-      "scale": 10,
-      "count": "425K",
-      "date_accessed": "2026-02-15",
-      "url": "https://www.imdb.com/title/tt0306414/"
-    },
-    "rotten_tomatoes": {
-      "season_1": {"score": 87, "scale": 100},
-      "season_2": {"score": 95, "scale": 100},
-      "season_3": {"score": 100, "scale": 100},
-      "season_4": {"score": 100, "scale": 100},
-      "season_5": {"score": 93, "scale": 100},
-      "date_accessed": "2026-02-15",
-      "url": "https://www.rottentomatoes.com/tv/the_wire"
-    },
-    "metacritic": {
-      "score": 82,
-      "scale": 100,
-      "date_accessed": "2026-02-15",
-      "url": "https://www.metacritic.com/tv/the-wire"
-    }
-  },
-  "consensus_highlights": "The Wire is widely regarded as one of the greatest television series ever made, praised for its realistic depiction of Baltimore, its complex characters on both sides of the law, and its unflinching social commentary. David Simon's masterpiece examines institutions—the drug trade, port, city hall, schools, media—through the lens of America's urban crisis.",
-  "ranking_system": {
-    "narrative_ambition": 10,
-    "character_depth": 10,
-    "thematic_resonance": 10,
-    "cultural_impact": 9,
-    "watchability": 7.5,
-    "final_score": 8.74
-  },
-  "notes": "The Wire requires patience but rewards it tenfold. It's not about individual episodes—it's about watching an entire social ecosystem unfold over five seasons."
+﻿{
+    "slug":  "the-wire",
+    "title":  "The Wire",
+    "year":  2002,
+    "month":  6,
+    "status":  "ended",
+    "seasons":  5,
+    "episodes":  60,
+    "runtime":  "55-60",
+    "country":  "United States",
+    "genres":  [
+                   "crime",
+                   "drama",
+                   "cop-show"
+               ],
+    "creator":  [
+                    "David Simon"
+                ],
+    "network":  "HBO",
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  9.3,
+                                          "scale":  10,
+                                          "count":  "425K",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt0306414/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "season_1":  {
+                                                                      "score":  87,
+                                                                      "scale":  100
+                                                                  },
+                                                     "season_2":  {
+                                                                      "score":  95,
+                                                                      "scale":  100
+                                                                  },
+                                                     "season_3":  {
+                                                                      "score":  100,
+                                                                      "scale":  100
+                                                                  },
+                                                     "season_4":  {
+                                                                      "score":  100,
+                                                                      "scale":  100
+                                                                  },
+                                                     "season_5":  {
+                                                                      "score":  93,
+                                                                      "scale":  100
+                                                                  },
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/the_wire"
+                                                 },
+                             "metacritic":  {
+                                                "score":  82,
+                                                "scale":  100,
+                                                "date_accessed":  "2026-02-15",
+                                                "url":  "https://www.metacritic.com/tv/the-wire"
+                                            }
+                         },
+    "consensus_highlights":  "The Wire is widely regarded as one of the greatest television series ever made, praised for its realistic depiction of Baltimore, its complex characters on both sides of the law, and its unflinching social commentary. David Simon\u0027s masterpiece examines institutionsâ€”the drug trade, port, city hall, schools, mediaâ€”through the lens of America\u0027s urban crisis.",
+    "ranking_system":  {
+                           "narrative_ambition":  10,
+                           "character_depth":  10,
+                           "thematic_resonance":  10,
+                           "cultural_impact":  9,
+                           "watchability":  7.5,
+                           "final_score":  8.74
+                       },
+    "notes":  "The Wire requires patience but rewards it tenfold. It\u0027s not about individual episodesâ€”it\u0027s about watching an entire social ecosystem unfold over five seasons.",
+    "tmdbId":  1841
 }

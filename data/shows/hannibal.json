@@ -1,47 +1,52 @@
-{
-  "title": "Hannibal",
-  "slug": "hannibal",
-  "year": 2013,
-  "month": 4,
-  "rank": 42,
-  "genres": ["crime", "thriller", "horror"],
-  "final_score": 7.55,
-  "network": "NBC",
-  "seasons": 3,
-  "episodes": 39,
-  "status": "completed",
-  "ratings": {
-    "imdb": {
-      "score": 8.5,
-      "votes": 185000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt2243973/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 8.251,
-      "votes": 2791,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/40008-hannibal",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 79,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/hannibal",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Mads Mikkelsen",
-    "Hugh Dancy",
-    "Laurence Fishburne",
-    "Caroline Dhavernas",
-    "Gillian Anderson"
-  ],
-  "creator": "Bryan Fuller",
-  "description": "Will Graham is a gifted FBI profiler who teams with psychiatrist Hannibal Lecter to solve crimes.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "Hannibal",
+    "slug":  "hannibal",
+    "year":  2013,
+    "month":  4,
+    "rank":  42,
+    "genres":  [
+                   "crime",
+                   "thriller",
+                   "horror"
+               ],
+    "final_score":  7.55,
+    "network":  "NBC",
+    "seasons":  3,
+    "episodes":  39,
+    "status":  "completed",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.5,
+                                 "votes":  185000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt2243973/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  8.251,
+                                 "votes":  2791,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/40008-hannibal",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  79,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/hannibal",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Mads Mikkelsen",
+                 "Hugh Dancy",
+                 "Laurence Fishburne",
+                 "Caroline Dhavernas",
+                 "Gillian Anderson"
+             ],
+    "creator":  "Bryan Fuller",
+    "description":  "Will Graham is a gifted FBI profiler who teams with psychiatrist Hannibal Lecter to solve crimes.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  40008
 }

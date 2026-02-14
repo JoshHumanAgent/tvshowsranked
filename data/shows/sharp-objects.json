@@ -1,49 +1,54 @@
-{
-  "title": "Sharp Objects",
-  "slug": "sharp-objects",
-  "year": 2018,
-  "month": 7,
-  "rank": 54,
-  "genres": ["drama", "mystery", "thriller"],
-  "final_score": 7.47,
-  "network": "HBO",
-  "seasons": 1,
-  "episodes": 8,
-  "status": "completed",
-  "type": "miniseries",
-  "ratings": {
-    "imdb": {
-      "score": 8.1,
-      "votes": 95000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt5238906/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 7.8,
-      "votes": 1010,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/70453-sharp-objects",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 92,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/sharp_objects",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Amy Adams",
-    "Patricia Clarkson",
-    "Chris Messina",
-    "Eliza Scanlen",
-    "Elizabeth Perkins",
-    "Taylor John Smith"
-  ],
-  "creators": "Gillian Flynn, Jean-Marc Vallée",
-  "description": "A reporter confronts the psychological demons from her past when she returns home to investigate murders of young girls.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "Sharp Objects",
+    "slug":  "sharp-objects",
+    "year":  2018,
+    "month":  7,
+    "rank":  54,
+    "genres":  [
+                   "drama",
+                   "mystery",
+                   "thriller"
+               ],
+    "final_score":  7.47,
+    "network":  "HBO",
+    "seasons":  1,
+    "episodes":  8,
+    "status":  "completed",
+    "type":  "miniseries",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.1,
+                                 "votes":  95000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt5238906/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  7.8,
+                                 "votes":  1010,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/70453-sharp-objects",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  92,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/sharp_objects",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Amy Adams",
+                 "Patricia Clarkson",
+                 "Chris Messina",
+                 "Eliza Scanlen",
+                 "Elizabeth Perkins",
+                 "Taylor John Smith"
+             ],
+    "creators":  "Gillian Flynn, Jean-Marc VallÃ©e",
+    "description":  "A reporter confronts the psychological demons from her past when she returns home to investigate murders of young girls.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  79042
 }

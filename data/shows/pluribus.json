@@ -1,45 +1,55 @@
-{
-  "slug": "pluribus",
-  "title": "Pluribus",
-  "year": 2023,
-  "month": 6,
-  "status": "ended",
-  "seasons": 1,
-  "episodes": 6,
-  "runtime": "45-55",
-  "country": "United States",
-  "genres": ["drama", "thriller", "political"],
-  "creator": ["Steven L. Katz"],
-  "network": "The Pup",
-  "external_ratings": {
-    "imdb": {
-      "score": 8.1,
-      "scale": 10,
-      "count": "3K",
-      "date_accessed": "2026-02-15",
-      "url": "https://www.imdb.com/title/tt15439732/"
-    },
-    "rotten_tomatoes": {
-      "season_1": {"score": 92, "scale": 100},
-      "date_accessed": "2026-02-15",
-      "url": "https://www.rottentomatoes.com/tv/pluribus"
-    },
-    "metacritic": {
-      "score": 78,
-      "scale": 100,
-      "date_accessed": "2026-02-15",
-      "url": "https://www.metacritic.com/tv/pluribus"
-    }
-  },
-  "consensus_highlights": "Pluribus is a political thriller following a senator who is handed a laptop containing evidence of a global conspiracy on the eve of announcing a presidential campaign. The limited series explores themes of power, corruption, and the price of political ambition.",
-  "ranking_system": {
-    "characters": 8.5,
-    "world_building": 7.5,
-    "cinematography": 8.5,
-    "visual_spectacle": 7,
-    "conceptual_density": 9,
-    "narrative_drive": 8.5,
-    "resolution": 6,
-    "final_score": 7.58
-  }
+﻿{
+    "slug":  "pluribus",
+    "title":  "Pluribus",
+    "year":  2023,
+    "month":  6,
+    "status":  "ended",
+    "seasons":  1,
+    "episodes":  6,
+    "runtime":  "45-55",
+    "country":  "United States",
+    "genres":  [
+                   "drama",
+                   "thriller",
+                   "political"
+               ],
+    "creator":  [
+                    "Steven L. Katz"
+                ],
+    "network":  "The Pup",
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.1,
+                                          "scale":  10,
+                                          "count":  "3K",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt15439732/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "season_1":  {
+                                                                      "score":  92,
+                                                                      "scale":  100
+                                                                  },
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/pluribus"
+                                                 },
+                             "metacritic":  {
+                                                "score":  78,
+                                                "scale":  100,
+                                                "date_accessed":  "2026-02-15",
+                                                "url":  "https://www.metacritic.com/tv/pluribus"
+                                            }
+                         },
+    "consensus_highlights":  "Pluribus is a political thriller following a senator who is handed a laptop containing evidence of a global conspiracy on the eve of announcing a presidential campaign. The limited series explores themes of power, corruption, and the price of political ambition.",
+    "ranking_system":  {
+                           "characters":  8.5,
+                           "world_building":  7.5,
+                           "cinematography":  8.5,
+                           "visual_spectacle":  7,
+                           "conceptual_density":  9,
+                           "narrative_drive":  8.5,
+                           "resolution":  6,
+                           "final_score":  7.58
+                       },
+    "tmdbId":  257474
 }

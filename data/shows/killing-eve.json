@@ -1,46 +1,53 @@
-{
-  "slug": "killing-eve",
-  "title": "Killing Eve",
-  "year": 2018,
-  "month": 4,
-  "status": "ended",
-  "seasons": 4,
-  "episodes": 32,
-  "runtime": "40-45",
-  "country": "United Kingdom / United States",
-  "genres": ["action", "drama", "thriller"],
-  "creator": ["Phoebe Waller-Bridge (based on codename Villainella)"],
-  "network": "BBC America / AMC",
-  "external_ratings": {
-    "imdb": {
-      "score": 8.3,
-      "scale": 10,
-      "count": "105K",
-      "date_accessed": "2026-02-15",
-      "url": "https://www.imdb.com/title/tt7016936/"
-    },
-    "rotten_tomatoes": {
-      "score": 96,
-      "scale": 100,
-      "audience": 89,
-      "date_accessed": "2026-02-15",
-      "url": "https://www.rottentomatoes.com/tv/killing_eve"
-    },
-    "metacritic": {
-      "score": 83,
-      "scale": 100,
-      "date_accessed": "2026-02-15",
-      "url": "https://www.metacritic.com/tv/killing-eve"
-    }
-  },
-  "consensus_highlights": "Killing Eve is a cat-and-mouse thriller between intelligence agent Eve Polastri and assassin Villanelle. Jodie Comer and Sandra Oh create electric chemistry in this exploration of obsession, identity, and the blurred lines between hunter and hunted.",
-  "ranking_system": {
-    "narrative_ambition": 8.5,
-    "character_depth": 9,
-    "thematic_resonance": 8,
-    "cultural_impact": 8,
-    "watchability": 8.5,
-    "final_score": 8.00
-  },
-  "notes": "Jodie Comer's Villanelle became an iconic character, blending charm, violence, and vulnerability. The show redefines the spy thriller genre with its psychological depth."
+﻿{
+    "slug":  "killing-eve",
+    "title":  "Killing Eve",
+    "year":  2018,
+    "month":  4,
+    "status":  "ended",
+    "seasons":  4,
+    "episodes":  32,
+    "runtime":  "40-45",
+    "country":  "United Kingdom / United States",
+    "genres":  [
+                   "action",
+                   "drama",
+                   "thriller"
+               ],
+    "creator":  [
+                    "Phoebe Waller-Bridge (based on codename Villainella)"
+                ],
+    "network":  "BBC America / AMC",
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.3,
+                                          "scale":  10,
+                                          "count":  "105K",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt7016936/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "score":  96,
+                                                     "scale":  100,
+                                                     "audience":  89,
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/killing_eve"
+                                                 },
+                             "metacritic":  {
+                                                "score":  83,
+                                                "scale":  100,
+                                                "date_accessed":  "2026-02-15",
+                                                "url":  "https://www.metacritic.com/tv/killing-eve"
+                                            }
+                         },
+    "consensus_highlights":  "Killing Eve is a cat-and-mouse thriller between intelligence agent Eve Polastri and assassin Villanelle. Jodie Comer and Sandra Oh create electric chemistry in this exploration of obsession, identity, and the blurred lines between hunter and hunted.",
+    "ranking_system":  {
+                           "narrative_ambition":  8.5,
+                           "character_depth":  9,
+                           "thematic_resonance":  8,
+                           "cultural_impact":  8,
+                           "watchability":  8.5,
+                           "final_score":  8.00
+                       },
+    "notes":  "Jodie Comer\u0027s Villanelle became an iconic character, blending charm, violence, and vulnerability. The show redefines the spy thriller genre with its psychological depth.",
+    "tmdbId":  72750
 }

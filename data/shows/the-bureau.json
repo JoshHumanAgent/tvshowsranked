@@ -1,48 +1,52 @@
-{
-  "title": "The Bureau",
-  "slug": "the-bureau",
-  "year": 2015,
-  "month": 4,
-  "rank": 32,
-  "genres": ["drama", "thriller"],
-  "final_score": 7.68,
-  "network": "Canal+",
-  "seasons": 5,
-  "episodes": 50,
-  "status": "completed",
-  "original_language": "French",
-  "ratings": {
-    "imdb": {
-      "score": 8.4,
-      "votes": 12000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt4064298/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 8.176,
-      "votes": 213,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/62476-the-bureau",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 100,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/the_bureau",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Mathieu Kassovitz",
-    "Jean-Pierre Darroussin",
-    "Léa Drucker",
-    "Florence Loiret",
-    "Sofia Essaïdi"
-  ],
-  "creator": "Éric Rochant",
-  "description": "A French drama following agents of the DGSE (external intelligence service) working undercover abroad.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "The Bureau",
+    "slug":  "the-bureau",
+    "year":  2015,
+    "month":  4,
+    "rank":  32,
+    "genres":  [
+                   "drama",
+                   "thriller"
+               ],
+    "final_score":  7.68,
+    "network":  "Canal+",
+    "seasons":  5,
+    "episodes":  50,
+    "status":  "completed",
+    "original_language":  "French",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.4,
+                                 "votes":  12000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt4064298/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  8.176,
+                                 "votes":  213,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/62476-the-bureau",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  100,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/the_bureau",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Mathieu Kassovitz",
+                 "Jean-Pierre Darroussin",
+                 "LÃ©a Drucker",
+                 "Florence Loiret",
+                 "Sofia EssaÃ¯di"
+             ],
+    "creator":  "Ã‰ric Rochant",
+    "description":  "A French drama following agents of the DGSE (external intelligence service) working undercover abroad.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  64357
 }

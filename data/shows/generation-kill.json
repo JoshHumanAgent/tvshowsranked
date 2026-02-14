@@ -1,49 +1,54 @@
-{
-  "title": "Generation Kill",
-  "slug": "generation-kill",
-  "year": 2008,
-  "month": 7,
-  "rank": 56,
-  "genres": ["drama", "war", "action"],
-  "final_score": 7.47,
-  "network": "HBO",
-  "seasons": 1,
-  "episodes": 7,
-  "status": "completed",
-  "type": "miniseries",
-  "ratings": {
-    "imdb": {
-      "score": 8.5,
-      "votes": 52000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt0995832/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 7.919,
-      "votes": 485,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/17035-generation-kill",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 94,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/generation_kill",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Alexander Skarsgård",
-    "James Ransone",
-    "Stark Sands",
-    "Jon Huertas",
-    "Rudy Reyes",
-    "Eric Kochmer"
-  ],
-  "creators": "Evan Wright, David Simon",
-  "description": "The first 40 days of the war in Iraq as seen through the eyes of an elite group of U.S. Marines.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "Generation Kill",
+    "slug":  "generation-kill",
+    "year":  2008,
+    "month":  7,
+    "rank":  56,
+    "genres":  [
+                   "drama",
+                   "war",
+                   "action"
+               ],
+    "final_score":  7.47,
+    "network":  "HBO",
+    "seasons":  1,
+    "episodes":  7,
+    "status":  "completed",
+    "type":  "miniseries",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.5,
+                                 "votes":  52000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt0995832/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  7.919,
+                                 "votes":  485,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/17035-generation-kill",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  94,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/generation_kill",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Alexander SkarsgÃ¥rd",
+                 "James Ransone",
+                 "Stark Sands",
+                 "Jon Huertas",
+                 "Rudy Reyes",
+                 "Eric Kochmer"
+             ],
+    "creators":  "Evan Wright, David Simon",
+    "description":  "The first 40 days of the war in Iraq as seen through the eyes of an elite group of U.S. Marines.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  1450
 }

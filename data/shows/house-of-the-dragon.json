@@ -1,48 +1,53 @@
-{
-  "title": "House of the Dragon",
-  "slug": "house-of-the-dragon",
-  "year": 2022,
-  "month": 8,
-  "rank": 44,
-  "genres": ["fantasy", "drama", "action"],
-  "final_score": 7.53,
-  "network": "HBO",
-  "seasons": 2,
-  "episodes": 18,
-  "status": "ongoing",
-  "ratings": {
-    "imdb": {
-      "score": 8.4,
-      "votes": 320000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt11198330/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 8.294,
-      "votes": 5711,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/94997-house-of-the-dragon",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 93,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/house_of_the_dragon",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Paddy Considine",
-    "Matt Smith",
-    "Emma D'Arcy",
-    "Olivia Cooke",
-    "Rhys Ifans",
-    "Steve Toussaint"
-  ],
-  "creators": "George R. R. Martin, Ryan Condal",
-  "description": "The story of the Targaryen civil war that led to the decline of the Targaryen dynasty, 200 years before Game of Thrones.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "House of the Dragon",
+    "slug":  "house-of-the-dragon",
+    "year":  2022,
+    "month":  8,
+    "rank":  44,
+    "genres":  [
+                   "fantasy",
+                   "drama",
+                   "action"
+               ],
+    "final_score":  7.53,
+    "network":  "HBO",
+    "seasons":  2,
+    "episodes":  18,
+    "status":  "ongoing",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.4,
+                                 "votes":  320000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt11198330/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  8.294,
+                                 "votes":  5711,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/94997-house-of-the-dragon",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  93,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/house_of_the_dragon",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Paddy Considine",
+                 "Matt Smith",
+                 "Emma D\u0027Arcy",
+                 "Olivia Cooke",
+                 "Rhys Ifans",
+                 "Steve Toussaint"
+             ],
+    "creators":  "George R. R. Martin, Ryan Condal",
+    "description":  "The story of the Targaryen civil war that led to the decline of the Targaryen dynasty, 200 years before Game of Thrones.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  94997
 }

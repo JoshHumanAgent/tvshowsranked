@@ -1,49 +1,53 @@
-{
-  "title": "BEEF",
-  "slug": "beef",
-  "year": 2023,
-  "month": 4,
-  "rank": 51,
-  "genres": ["drama", "comedy"],
-  "final_score": 7.49,
-  "network": "Netflix",
-  "seasons": 1,
-  "episodes": 10,
-  "status": "completed",
-  "type": "miniseries",
-  "ratings": {
-    "imdb": {
-      "score": 8.0,
-      "votes": 65000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt15435876/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 7.742,
-      "votes": 842,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/154385-beef",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 98,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/beef",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Steven Yeun",
-    "Ali Wong",
-    "Joseph Lee",
-    "Young Mazino",
-    "David Choe",
-    "Patti Yasutake"
-  ],
-  "creator": "Lee Sung Jin",
-  "description": "A road rage incident between two strangers sparks a feud that brings out their darkest impulses.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "BEEF",
+    "slug":  "beef",
+    "year":  2023,
+    "month":  4,
+    "rank":  51,
+    "genres":  [
+                   "drama",
+                   "comedy"
+               ],
+    "final_score":  7.49,
+    "network":  "Netflix",
+    "seasons":  1,
+    "episodes":  10,
+    "status":  "completed",
+    "type":  "miniseries",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.0,
+                                 "votes":  65000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt15435876/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  7.742,
+                                 "votes":  842,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/154385-beef",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  98,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/beef",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Steven Yeun",
+                 "Ali Wong",
+                 "Joseph Lee",
+                 "Young Mazino",
+                 "David Choe",
+                 "Patti Yasutake"
+             ],
+    "creator":  "Lee Sung Jin",
+    "description":  "A road rage incident between two strangers sparks a feud that brings out their darkest impulses.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  155309
 }

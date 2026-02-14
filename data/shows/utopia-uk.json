@@ -1,44 +1,49 @@
-{
-  "title": "Utopia (UK)",
-  "slug": "utopia-uk",
-  "year": 2013,
-  "month": 1,
-  "rank": 62,
-  "genres": ["sci-fi", "thriller", "drama"],
-  "final_score": 7.44,
-  "network": "Channel 4",
-  "seasons": 2,
-  "episodes": 12,
-  "status": "completed",
-  "ratings": {
-    "imdb": {
-      "score": 8.4,
-      "votes": 35000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt2380424/",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 90,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/utopia_uk",
-      "date_accessed": "2026-02-15"
-    },
-    "metacritic": {
-      "score": 78,
-      "source": "Metacritic",
-      "url": "https://www.metacritic.com/tv/utopia-uk",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Alexandra Roach",
-    "Nathan Stewart-Jarrett",
-    "Paul Higgins",
-    "Fiona O'Shaughnessy",
-    "Adeel Akhtar",
-    "Neil Maskell"
-  ],
-  "creator": "Dennis Kelly",
-  "description": "British conspiracy thriller about a group of strangers who find themselves in possession of a mysterious comic book."
+﻿{
+    "title":  "Utopia (UK)",
+    "slug":  "utopia-uk",
+    "year":  2013,
+    "month":  1,
+    "rank":  62,
+    "genres":  [
+                   "sci-fi",
+                   "thriller",
+                   "drama"
+               ],
+    "final_score":  7.44,
+    "network":  "Channel 4",
+    "seasons":  2,
+    "episodes":  12,
+    "status":  "completed",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.4,
+                                 "votes":  35000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt2380424/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  90,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/utopia_uk",
+                                            "date_accessed":  "2026-02-15"
+                                        },
+                    "metacritic":  {
+                                       "score":  78,
+                                       "source":  "Metacritic",
+                                       "url":  "https://www.metacritic.com/tv/utopia-uk",
+                                       "date_accessed":  "2026-02-15"
+                                   }
+                },
+    "cast":  [
+                 "Alexandra Roach",
+                 "Nathan Stewart-Jarrett",
+                 "Paul Higgins",
+                 "Fiona O\u0027Shaughnessy",
+                 "Adeel Akhtar",
+                 "Neil Maskell"
+             ],
+    "creator":  "Dennis Kelly",
+    "description":  "British conspiracy thriller about a group of strangers who find themselves in possession of a mysterious comic book.",
+    "tmdbId":  41810
 }

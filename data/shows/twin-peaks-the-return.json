@@ -1,44 +1,49 @@
-{
-  "title": "Twin Peaks: The Return",
-  "slug": "twin-peaks-the-return",
-  "year": 2017,
-  "month": 5,
-  "rank": 66,
-  "genres": ["mystery", "drama", "thriller"],
-  "final_score": 7.39,
-  "network": "Showtime",
-  "seasons": 1,
-  "episodes": 18,
-  "status": "completed",
-  "ratings": {
-    "imdb": {
-      "score": 8.1,
-      "votes": 75000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt4093826/",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 83,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/twin_peaks",
-      "date_accessed": "2026-02-15"
-    },
-    "metacritic": {
-      "score": 74,
-      "source": "Metacritic",
-      "url": "https://www.metacritic.com/tv/twin-peaks-the-return",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Kyle MacLachlan",
-    "Michael Cera",
-    "Jennifer Jason Leigh",
-    "Laura Dern",
-    "Harry Goaz",
-    "Michael Horse"
-  ],
-  "creator": "David Lynch, Mark Frost",
-  "description": "The long-awaited return of Agent Dale Cooper to the mysterious town of Twin Peaks, 25 years after the original series."
+﻿{
+    "title":  "Twin Peaks: The Return",
+    "slug":  "twin-peaks-the-return",
+    "year":  2017,
+    "month":  5,
+    "rank":  66,
+    "genres":  [
+                   "mystery",
+                   "drama",
+                   "thriller"
+               ],
+    "final_score":  7.39,
+    "network":  "Showtime",
+    "seasons":  1,
+    "episodes":  18,
+    "status":  "completed",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.1,
+                                 "votes":  75000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt4093826/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  83,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/twin_peaks",
+                                            "date_accessed":  "2026-02-15"
+                                        },
+                    "metacritic":  {
+                                       "score":  74,
+                                       "source":  "Metacritic",
+                                       "url":  "https://www.metacritic.com/tv/twin-peaks-the-return",
+                                       "date_accessed":  "2026-02-15"
+                                   }
+                },
+    "cast":  [
+                 "Kyle MacLachlan",
+                 "Michael Cera",
+                 "Jennifer Jason Leigh",
+                 "Laura Dern",
+                 "Harry Goaz",
+                 "Michael Horse"
+             ],
+    "creator":  "David Lynch, Mark Frost",
+    "description":  "The long-awaited return of Agent Dale Cooper to the mysterious town of Twin Peaks, 25 years after the original series.",
+    "tmdbId":  70809
 }

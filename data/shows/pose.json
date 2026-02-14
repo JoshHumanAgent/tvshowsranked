@@ -1,47 +1,63 @@
-{
-  "slug": "pose",
-  "title": "Pose",
-  "year": 2018,
-  "month": 6,
-  "status": "ended",
-  "seasons": 3,
-  "episodes": 26,
-  "runtime": "50-65",
-  "country": "United States",
-  "genres": ["drama"],
-  "creator": ["Ryan Murphy", "Brad Falchuk", "Steven Canals"],
-  "network": "FX",
-  "external_ratings": {
-    "imdb": {
-      "score": 8.6,
-      "scale": 10,
-      "count": "45K",
-      "date_accessed": "2026-02-15",
-      "url": "https://www.imdb.com/title/tt7025506/"
-    },
-    "rotten_tomatoes": {
-      "season_1": {"score": 98, "scale": 100},
-      "season_2": {"score": 97, "scale": 100},
-      "season_3": {"score": 100, "scale": 100},
-      "date_accessed": "2026-02-15",
-      "url": "https://www.rottentomatoes.com/tv/pose"
-    },
-    "metacritic": {
-      "score": 84,
-      "scale": 100,
-      "date_accessed": "2026-02-15",
-      "url": "https://www.metacritic.com/tv/pose"
-    }
-  },
-  "consensus_highlights": "Pose is a groundbreaking drama set in the New York ballroom scene of the 1980s and 1990s. The series features the largest transgender cast in television history and explores themes of community, identity, and the AIDS crisis. Ryan Murphy's celebration of marginalized voices resulted in emotionally powerful television.",
-  "ranking_system": {
-    "characters": 7.5,
-    "world_building": 8,
-    "cinematography": 8,
-    "visual_spectacle": 7,
-    "conceptual_density": 8,
-    "narrative_drive": 7,
-    "resolution": 8,
-    "final_score": 7.45
-  }
+﻿{
+    "slug":  "pose",
+    "title":  "Pose",
+    "year":  2018,
+    "month":  6,
+    "status":  "ended",
+    "seasons":  3,
+    "episodes":  26,
+    "runtime":  "50-65",
+    "country":  "United States",
+    "genres":  [
+                   "drama"
+               ],
+    "creator":  [
+                    "Ryan Murphy",
+                    "Brad Falchuk",
+                    "Steven Canals"
+                ],
+    "network":  "FX",
+    "external_ratings":  {
+                             "imdb":  {
+                                          "score":  8.6,
+                                          "scale":  10,
+                                          "count":  "45K",
+                                          "date_accessed":  "2026-02-15",
+                                          "url":  "https://www.imdb.com/title/tt7025506/"
+                                      },
+                             "rotten_tomatoes":  {
+                                                     "season_1":  {
+                                                                      "score":  98,
+                                                                      "scale":  100
+                                                                  },
+                                                     "season_2":  {
+                                                                      "score":  97,
+                                                                      "scale":  100
+                                                                  },
+                                                     "season_3":  {
+                                                                      "score":  100,
+                                                                      "scale":  100
+                                                                  },
+                                                     "date_accessed":  "2026-02-15",
+                                                     "url":  "https://www.rottentomatoes.com/tv/pose"
+                                                 },
+                             "metacritic":  {
+                                                "score":  84,
+                                                "scale":  100,
+                                                "date_accessed":  "2026-02-15",
+                                                "url":  "https://www.metacritic.com/tv/pose"
+                                            }
+                         },
+    "consensus_highlights":  "Pose is a groundbreaking drama set in the New York ballroom scene of the 1980s and 1990s. The series features the largest transgender cast in television history and explores themes of community, identity, and the AIDS crisis. Ryan Murphy\u0027s celebration of marginalized voices resulted in emotionally powerful television.",
+    "ranking_system":  {
+                           "characters":  7.5,
+                           "world_building":  8,
+                           "cinematography":  8,
+                           "visual_spectacle":  7,
+                           "conceptual_density":  8,
+                           "narrative_drive":  7,
+                           "resolution":  8,
+                           "final_score":  7.45
+                       },
+    "tmdbId":  78386
 }

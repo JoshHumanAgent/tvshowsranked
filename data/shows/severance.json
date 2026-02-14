@@ -1,48 +1,53 @@
-{
-  "title": "Severance",
-  "slug": "severance",
-  "year": 2022,
-  "month": 2,
-  "rank": 52,
-  "genres": ["sci-fi", "drama", "thriller"],
-  "final_score": 7.49,
-  "network": "Apple TV+",
-  "seasons": 1,
-  "episodes": 9,
-  "status": "ongoing",
-  "ratings": {
-    "imdb": {
-      "score": 8.7,
-      "votes": 125000,
-      "source": "IMDb",
-      "url": "https://www.imdb.com/title/tt11280740/",
-      "date_accessed": "2026-02-15"
-    },
-    "tmdb": {
-      "score": 8.398,
-      "votes": 2447,
-      "source": "The Movie Database",
-      "url": "https://www.themoviedb.org/tv/95396-severance",
-      "date_accessed": "2026-02-15"
-    },
-    "rotten_tomatoes": {
-      "score": 97,
-      "source": "Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/tv/severance",
-      "date_accessed": "2026-02-15"
-    }
-  },
-  "cast": [
-    "Adam Scott",
-    "Britt Lower",
-    "John Turturro",
-    "Christopher Walken",
-    "Patricia Arquette",
-    "Zach Cherry"
-  ],
-  "creator": "Dan Erickson",
-  "description": "Office workers undergo a procedure to surgically divide their memories between work and personal lives.",
-  "data_sources": {
-    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
-  }
+﻿{
+    "title":  "Severance",
+    "slug":  "severance",
+    "year":  2022,
+    "month":  2,
+    "rank":  52,
+    "genres":  [
+                   "sci-fi",
+                   "drama",
+                   "thriller"
+               ],
+    "final_score":  7.49,
+    "network":  "Apple TV+",
+    "seasons":  1,
+    "episodes":  9,
+    "status":  "ongoing",
+    "ratings":  {
+                    "imdb":  {
+                                 "score":  8.7,
+                                 "votes":  125000,
+                                 "source":  "IMDb",
+                                 "url":  "https://www.imdb.com/title/tt11280740/",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "tmdb":  {
+                                 "score":  8.398,
+                                 "votes":  2447,
+                                 "source":  "The Movie Database",
+                                 "url":  "https://www.themoviedb.org/tv/95396-severance",
+                                 "date_accessed":  "2026-02-15"
+                             },
+                    "rotten_tomatoes":  {
+                                            "score":  97,
+                                            "source":  "Rotten Tomatoes",
+                                            "url":  "https://www.rottentomatoes.com/tv/severance",
+                                            "date_accessed":  "2026-02-15"
+                                        }
+                },
+    "cast":  [
+                 "Adam Scott",
+                 "Britt Lower",
+                 "John Turturro",
+                 "Christopher Walken",
+                 "Patricia Arquette",
+                 "Zach Cherry"
+             ],
+    "creator":  "Dan Erickson",
+    "description":  "Office workers undergo a procedure to surgically divide their memories between work and personal lives.",
+    "data_sources":  {
+                         "tmdb_api":  "ca9b21cb89de2d1debed1050f603d7ad"
+                     },
+    "tmdbId":  112250
 }
