@@ -1605,16 +1605,21 @@
         
         /* Responsive */
         @media (max-width: 600px) {
+            main {
+                max-width: 100% !important;
+                padding: 1rem 0.5rem 3rem !important;
+            }
             .show-module {
                 flex-direction: column !important;
                 gap: 0 !important;
                 margin-bottom: 1rem !important;
+                border-radius: 0 !important;
             }
             .show-poster {
                 width: 100% !important;
                 max-width: 100% !important;
                 min-width: 100% !important;
-                border-radius: 8px 8px 0 0 !important;
+                border-radius: 0 !important;
                 margin: 0 !important;
             }
             .show-poster img { 
@@ -1625,10 +1630,9 @@
                 display: block !important;
             }
             .show-card-panel {
-                border-radius: 0 0 12px 12px !important;
-                border-left: 1px solid #252532 !important;
+                border-radius: 0 !important;
+                border: 1px solid #252532 !important;
                 border-top: none !important;
-                border-top: 1px solid #252532 !important;
                 padding: 0.75rem !important;
                 width: 100% !important;
             }
@@ -1651,6 +1655,7 @@
             .genre-pill { padding: 0.3rem 0.6rem; font-size: 0.7rem; }
             .weight-slider-row { flex-direction: column; gap: 0.3rem; }
             .weight-label { min-width: unset; font-size: 0.75rem; }
+            .results-header { flex-direction: column; gap: 0.5rem; align-items: flex-start !important; }
         }
         
         @media (max-width: 900px) {
