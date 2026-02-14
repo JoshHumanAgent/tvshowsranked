@@ -2007,7 +2007,26 @@
         const TMDB_API_KEY = 'ca9b21cb89de2d1debed1050f603d7ad';
         const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w500';
         
-        const shows = [
+        // Dynamic data loading from JSON
+        let shows = [];
+        
+        async function loadShowsData() {
+            try {
+                const response = await fetch('data/shows/index.json');
+                const data = await response.json();
+                shows = data.shows;
+                console.log(`Loaded ${shows.length} shows from JSON`);
+                renderShows();
+            } catch (error) {
+                console.error('Failed to load shows from JSON, using fallback:', error);
+                // Fallback to embedded data if JSON fails
+                shows = FALLBACK_SHOWS;
+                renderShows();
+            }
+        }
+        
+        // Fallback embedded data (same as original)
+        const FALLBACK_SHOWS = [
             { rank: 1, title: "Game of Thrones (S1-4)", year: 2011, month: 4, episodes: 40, char: 10, world: 10, cine: 8, spect: 9.5, conc: 9, drive: 10, resol: 9, final: 9.50, genres: ["fantasy", "drama", "action"], poster: "https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg" },
             { rank: 2, title: "Breaking Bad", year: 2008, month: 1, episodes: 62, char: 9, world: 7, cine: 9, spect: 6, conc: 8, drive: 10, resol: 10, final: 8.89, genres: ["crime", "drama", "thriller", "cop-show"], poster: "https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg" },
             { rank: 3, title: "The Wire", year: 2002, month: 6, episodes: 60, char: 9.5, world: 10, cine: 6, spect: 7, conc: 10, drive: 7, resol: 9, final: 8.74, genres: ["crime", "drama", "cop-show"], poster: "https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg" },
@@ -2118,6 +2137,9 @@
             { rank: 108, title: "Telemarketers", year: 2023, month: 8, episodes: 9, char: 7, world: 6, cine: 7, spect: 5, conc: 7, drive: 7, resol: 8, final: 7.25, genres: ["documentary", "comedy"], poster: "https://image.tmdb.org/t/p/w500/eyeamvQYIgDQo1vFOs8pMujPVBf.jpg" },
             { rank: 109, title: "A Man on the Inside", year: 2024, month: 11, episodes: 8, char: 7.5, world: 6.5, cine: 7, spect: 5, conc: 6, drive: 7, resol: 8, final: 7.47, genres: ["comedy", "drama"], poster: "https://image.tmdb.org/t/p/w500/c09XdTLpLku2tqHt158NZBgC4hi.jpg" }
         ];
+
+        // Initialize by loading from JSON (or fallback)
+        loadShowsData();
 
         const list = document.getElementById('rankings');
         const noResults = document.getElementById('no-results');
