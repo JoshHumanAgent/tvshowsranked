@@ -1,0 +1,48 @@
+{
+  "title": "Rectify",
+  "slug": "rectify",
+  "year": 2013,
+  "month": 4,
+  "rank": 48,
+  "genres": ["drama"],
+  "final_score": 7.50,
+  "network": "SundanceTV",
+  "seasons": 4,
+  "episodes": 30,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 7.9,
+      "votes": 15000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt2183646/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 7.6,
+      "votes": 284,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/46619-rectify",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 96,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/rectify",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Aden Young",
+    "Abigail Spencer",
+    "J. Smith-Cameron",
+    "Clayne Crawford",
+    "Luke Kirby",
+    "Bruce McKinnon"
+  ],
+  "creator": "Ray McKinnon",
+  "description": "After 19 years on Death Row, Daniel Holden is released and must reenter a world he no longer knows.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}

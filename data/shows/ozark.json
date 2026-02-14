@@ -1,0 +1,48 @@
+{
+  "title": "Ozark",
+  "slug": "ozark",
+  "year": 2017,
+  "month": 7,
+  "rank": 49,
+  "genres": ["crime", "drama", "thriller"],
+  "final_score": 7.50,
+  "network": "Netflix",
+  "seasons": 4,
+  "episodes": 44,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 8.5,
+      "votes": 205000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt5071412/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 8.2,
+      "votes": 2640,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/69740-ozark",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 82,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/ozark",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Jason Bateman",
+    "Laura Linney",
+    "Sofia Hublitz",
+    "Skylar Gaertner",
+    "Julia Garner",
+    "Peter Mullan"
+  ],
+  "creator": "Bill Dubuque",
+  "description": "A financial adviser drags his family to the Missouri Ozarks to launder money for a drug boss.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}

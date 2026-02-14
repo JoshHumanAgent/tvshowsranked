@@ -1,0 +1,48 @@
+{
+  "title": "Peaky Blinders",
+  "slug": "peaky-blinders",
+  "year": 2013,
+  "month": 9,
+  "rank": 50,
+  "genres": ["crime", "drama", "historical"],
+  "final_score": 7.50,
+  "network": "BBC One",
+  "seasons": 6,
+  "episodes": 36,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 8.8,
+      "votes": 480000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt2442560/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 8.525,
+      "votes": 10783,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/60574-peaky-blinders",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 94,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/peaky_blinders",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Cillian Murphy",
+    "Helen McCrory",
+    "Paul Anderson",
+    "Sophie Rundle",
+    "Tom Hardy",
+    "Anya Taylor-Joy"
+  ],
+  "creator": "Steven Knight",
+  "description": "A gangster family epic set in 1919 Birmingham, England, centered on the fierce boss Tommy Shelby.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}
