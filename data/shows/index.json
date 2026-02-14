@@ -1,106 +1,1363 @@
-{
-  "description": "Index of all 100 shows in TV Shows Ranked",
-  "generated": "2026-02-15",
-  "shows": [
-    { "rank": 1, "slug": "game-of-thrones-s1-4", "title": "Game of Thrones (S1-4)", "year": 2011, "month": 4, "genres": ["fantasy", "drama", "action"], "final": 9.50 },
-    { "rank": 2, "slug": "breaking-bad", "title": "Breaking Bad", "year": 2008, "month": 1, "genres": ["crime", "drama", "thriller", "cop-show"], "final": 8.89 },
-    { "rank": 3, "slug": "the-wire", "title": "The Wire", "year": 2002, "month": 6, "genres": ["crime", "drama", "cop-show"], "final": 8.74 },
-    { "rank": 4, "slug": "better-call-saul", "title": "Better Call Saul", "year": 2015, "month": 2, "genres": ["crime", "drama"], "final": 8.74 },
-    { "rank": 5, "slug": "chernobyl", "title": "Chernobyl", "year": 2019, "month": 5, "genres": ["drama", "historical"], "final": 8.54 },
-    { "rank": 6, "slug": "the-sopranos", "title": "The Sopranos", "year": 1999, "month": 1, "genres": ["crime", "drama", "cop-show"], "final": 8.38 },
-    { "rank": 7, "slug": "the-americans", "title": "The Americans", "year": 2013, "month": 1, "genres": ["drama", "thriller"], "final": 8.33 },
-    { "rank": 8, "slug": "the-shield", "title": "The Shield", "year": 2002, "month": 3, "genres": ["crime", "drama", "cop-show"], "final": 8.17 },
-    { "rank": 9, "slug": "the-expanse", "title": "The Expanse", "year": 2015, "month": 12, "genres": ["sci-fi", "drama", "thriller"], "final": 8.09 },
-    { "rank": 10, "slug": "succession", "title": "Succession", "year": 2018, "month": 6, "genres": ["drama"], "final": 8.03 },
-    { "rank": 11, "slug": "babylon-berlin", "title": "Babylon Berlin", "year": 2017, "month": 10, "genres": ["drama", "historical", "thriller"], "final": 8.03 },
-    { "rank": 12, "slug": "mr-robot", "title": "Mr. Robot", "year": 2015, "month": 5, "genres": ["drama", "thriller"], "final": 7.99 },
-    { "rank": 13, "slug": "boardwalk-empire", "title": "Boardwalk Empire", "year": 2010, "month": 9, "genres": ["crime", "drama", "historical"], "final": 7.98 },
-    { "rank": 14, "slug": "andor", "title": "Andor", "year": 2022, "month": 9, "genres": ["sci-fi", "drama", "action"], "final": 7.96 },
-    { "rank": 15, "slug": "adolescence", "title": "Adolescence", "year": 2025, "month": 3, "genres": ["drama", "thriller"], "final": 7.95 },
-    { "rank": 16, "slug": "true-detective-s1", "title": "True Detective S1", "year": 2014, "month": 1, "genres": ["crime", "mystery", "thriller", "cop-show"], "final": 7.90 },
-    { "rank": 17, "slug": "for-all-mankind", "title": "For All Mankind", "year": 2019, "month": 11, "genres": ["sci-fi", "drama"], "final": 7.88 },
-    { "rank": 18, "slug": "mad-men", "title": "Mad Men", "year": 2007, "month": 7, "genres": ["drama"], "final": 7.88 },
-    { "rank": 19, "slug": "halt-and-catch-fire", "title": "Halt and Catch Fire", "year": 2014, "month": 6, "genres": ["drama"], "final": 7.88 },
-    { "rank": 20, "slug": "angels-in-america", "title": "Angels in America", "year": 2003, "month": 12, "genres": ["drama"], "final": 7.82 },
-    { "rank": 21, "slug": "dark", "title": "Dark", "year": 2017, "month": 12, "genres": ["sci-fi", "mystery", "thriller"], "final": 7.79 },
-    { "rank": 22, "slug": "deadwood", "title": "Deadwood", "year": 2004, "month": 3, "genres": ["drama", "western"], "final": 7.78 },
-    { "rank": 23, "slug": "the-crown", "title": "The Crown", "year": 2016, "month": 11, "genres": ["drama", "historical"], "final": 7.76 },
-    { "rank": 24, "slug": "justified", "title": "Justified", "year": 2010, "month": 3, "genres": ["crime", "drama", "thriller"], "final": 7.75 },
-    { "rank": 25, "slug": "band-of-brothers", "title": "Band of Brothers", "year": 2001, "month": 9, "genres": ["drama", "historical", "war"], "final": 7.73 },
-    { "rank": 26, "slug": "six-feet-under", "title": "Six Feet Under", "year": 2001, "month": 6, "genres": ["drama"], "final": 7.73 },
-    { "rank": 27, "slug": "fargo", "title": "Fargo", "year": 2014, "month": 4, "genres": ["crime", "drama", "thriller"], "final": 7.73 },
-    { "rank": 28, "slug": "its-a-sin", "title": "It's a Sin", "year": 2021, "month": 1, "genres": ["drama"], "final": 7.71 },
-    { "rank": 29, "slug": "when-they-see-us", "title": "When They See Us", "year": 2019, "month": 5, "genres": ["drama"], "final": 7.68 },
-    { "rank": 30, "slug": "girls", "title": "Girls", "year": 2012, "month": 4, "genres": ["drama", "comedy"], "final": 7.68 },
-    { "rank": 31, "slug": "watchmen-2019", "title": "Watchmen (2019)", "year": 2019, "month": 10, "genres": ["drama", "sci-fi", "superhero"], "final": 7.68 },
-    { "rank": 32, "slug": "the-bureau", "title": "The Bureau", "year": 2015, "month": 9, "genres": ["drama", "thriller"], "final": 7.68 },
-    { "rank": 33, "slug": "homeland", "title": "Homeland", "year": 2011, "month": 10, "genres": ["drama", "thriller", "action"], "final": 7.67 },
-    { "rank": 34, "slug": "the-queens-gambit", "title": "The Queen's Gambit", "year": 2020, "month": 10, "genres": ["drama"], "final": 7.66 },
-    { "rank": 35, "slug": "the-leftovers", "title": "The Leftovers", "year": 2014, "month": 6, "genres": ["drama", "fantasy", "mystery"], "final": 7.64 },
-    { "rank": 36, "slug": "lost", "title": "Lost", "year": 2004, "month": 9, "genres": ["sci-fi", "drama", "mystery"], "final": 7.61 },
-    { "rank": 37, "slug": "the-knick", "title": "The Knick", "year": 2014, "month": 8, "genres": ["drama", "historical"], "final": 7.60 },
-    { "rank": 38, "slug": "the-haunting-of-hill-house", "title": "The Haunting of Hill House", "year": 2018, "month": 10, "genres": ["horror", "drama", "thriller"], "final": 7.60 },
-    { "rank": 39, "slug": "friday-night-lights", "title": "Friday Night Lights", "year": 2006, "month": 10, "genres": ["drama"], "final": 7.59 },
-    { "rank": 40, "slug": "wolf-hall", "title": "Wolf Hall", "year": 2015, "month": 1, "genres": ["drama", "historical"], "final": 7.58 },
-    { "rank": 41, "slug": "pluribus", "title": "Pluribus", "year": 2025, "month": 1, "genres": ["drama", "thriller", "sci-fi"], "final": 7.58 },
-    { "rank": 42, "slug": "hannibal", "title": "Hannibal", "year": 2013, "month": 4, "genres": ["crime", "thriller", "horror", "cop-show"], "final": 7.55 },
-    { "rank": 43, "slug": "station-eleven", "title": "Station Eleven", "year": 2021, "month": 12, "genres": ["drama", "sci-fi"], "final": 7.53 },
-    { "rank": 44, "slug": "house-of-the-dragon", "title": "House of the Dragon", "year": 2022, "month": 8, "genres": ["fantasy", "drama", "action"], "final": 7.53 },
-    { "rank": 45, "slug": "black-mirror", "title": "Black Mirror", "year": 2011, "month": 12, "genres": ["sci-fi", "drama", "thriller"], "final": 7.52 },
-    { "rank": 46, "slug": "midnight-mass", "title": "Midnight Mass", "year": 2021, "month": 9, "genres": ["horror", "drama", "mystery"], "final": 7.52 },
-    { "rank": 47, "slug": "battlestar-galactica", "title": "Battlestar Galactica", "year": 2004, "month": 10, "genres": ["sci-fi", "drama", "action"], "final": 7.51 },
-    { "rank": 48, "slug": "rectify", "title": "Rectify", "year": 2013, "month": 12, "genres": ["drama"], "final": 7.50 },
-    { "rank": 49, "slug": "ozark", "title": "Ozark", "year": 2017, "month": 7, "genres": ["crime", "drama", "thriller", "cop-show"], "final": 7.50 },
-    { "rank": 50, "slug": "peaky-blinders", "title": "Peaky Blinders", "year": 2013, "month": 9, "genres": ["crime", "drama", "historical"], "final": 7.50 },
-    { "rank": 51, "slug": "beef", "title": "Beef", "year": 2023, "month": 4, "genres": ["drama", "comedy"], "final": 7.49 },
-    { "rank": 52, "slug": "severance", "title": "Severance", "year": 2022, "month": 2, "genres": ["sci-fi", "drama", "thriller"], "final": 7.49 },
-    { "rank": 53, "slug": "shogun-2024", "title": "Shogun (2024)", "year": 2024, "month": 2, "genres": ["drama", "historical", "action"], "final": 7.48 },
-    { "rank": 54, "slug": "sharp-objects", "title": "Sharp Objects", "year": 2018, "month": 7, "genres": ["drama", "mystery", "thriller"], "final": 7.47 },
-    { "rank": 55, "slug": "patrick-melrose", "title": "Patrick Melrose", "year": 2018, "month": 5, "genres": ["drama"], "final": 7.47 },
-    { "rank": 56, "slug": "generation-kill", "title": "Generation Kill", "year": 2008, "month": 7, "genres": ["drama", "war", "action"], "final": 7.47 },
-    { "rank": 57, "slug": "squid-game", "title": "Squid Game", "year": 2021, "month": 9, "genres": ["thriller", "drama", "sci-fi"], "final": 7.46 },
-    { "rank": 58, "slug": "24", "title": "24", "year": 2001, "month": 11, "genres": ["action", "drama", "thriller", "cop-show"], "final": 7.45 },
-    { "rank": 59, "slug": "borgen", "title": "Borgen", "year": 2010, "month": 9, "genres": ["drama", "political"], "final": 7.45 },
-    { "rank": 60, "slug": "pose", "title": "Pose", "year": 2018, "month": 6, "genres": ["drama"], "final": 7.45 },
-    { "rank": 61, "slug": "the-white-lotus", "title": "The White Lotus", "year": 2021, "month": 7, "genres": ["drama", "comedy"], "final": 7.45 },
-    { "rank": 62, "slug": "utopia-uk", "title": "Utopia (UK)", "year": 2013, "month": 1, "genres": ["sci-fi", "thriller", "drama"], "final": 7.44 },
-    { "rank": 63, "slug": "the-x-files", "title": "The X-Files", "year": 1993, "month": 9, "genres": ["sci-fi", "mystery", "thriller"], "final": 7.40 },
-    { "rank": 64, "slug": "stranger-things", "title": "Stranger Things", "year": 2016, "month": 7, "genres": ["sci-fi", "horror", "drama"], "final": 7.40 },
-    { "rank": 65, "slug": "the-last-of-us", "title": "The Last of Us", "year": 2023, "month": 1, "genres": ["drama", "action", "sci-fi"], "final": 7.39 },
-    { "rank": 66, "slug": "twin-peaks-the-return", "title": "Twin Peaks: The Return", "year": 2017, "month": 5, "genres": ["mystery", "drama", "thriller"], "final": 7.39 },
-    { "rank": 67, "slug": "rome", "title": "Rome", "year": 2005, "month": 8, "genres": ["drama", "historical", "action"], "final": 7.39 },
-    { "rank": 68, "slug": "silo", "title": "Silo", "year": 2023, "month": 5, "genres": ["sci-fi", "drama", "mystery"], "final": 7.39 },
-    { "rank": 69, "slug": "the-underground-railroad", "title": "The Underground Railroad", "year": 2021, "month": 5, "genres": ["drama", "fantasy", "historical"], "final": 7.39 },
-    { "rank": 70, "slug": "penny-dreadful", "title": "Penny Dreadful", "year": 2014, "month": 5, "genres": ["horror", "drama", "fantasy"], "final": 7.37 },
-    { "rank": 71, "slug": "godless", "title": "Godless", "year": 2017, "month": 11, "genres": ["drama", "western"], "final": 7.37 },
-    { "rank": 72, "slug": "gomorrah", "title": "Gomorrah", "year": 2014, "month": 4, "genres": ["crime", "drama"], "final": 7.36 },
-    { "rank": 73, "slug": "downton-abbey", "title": "Downton Abbey", "year": 2010, "month": 9, "genres": ["drama", "historical"], "final": 7.36 },
-    { "rank": 74, "slug": "hill-street-blues", "title": "Hill Street Blues", "year": 1981, "month": 12, "genres": ["drama", "crime", "cop-show"], "final": 7.35 },
-    { "rank": 75, "slug": "the-boys", "title": "The Boys", "year": 2019, "month": 7, "genres": ["superhero", "action", "drama"], "final": 7.33 },
-    { "rank": 76, "slug": "mare-of-easttown", "title": "Mare of Easttown", "year": 2021, "month": 4, "genres": ["crime", "drama", "mystery", "cop-show"], "final": 7.32 },
-    { "rank": 77, "slug": "euphoria", "title": "Euphoria", "year": 2019, "month": 6, "genres": ["drama"], "final": 7.30 },
-    { "rank": 78, "slug": "the-pacific", "title": "The Pacific", "year": 2010, "month": 3, "genres": ["drama", "war", "historical"], "final": 7.30 },
-    { "rank": 79, "slug": "escape-at-dannemora", "title": "Escape at Dannemora", "year": 2018, "month": 11, "genres": ["drama", "crime", "thriller"], "final": 7.30 },
-    { "rank": 80, "slug": "line-of-duty", "title": "Line of Duty", "year": 2012, "month": 3, "genres": ["crime", "drama", "thriller", "cop-show"], "final": 7.30 },
-    { "rank": 81, "slug": "narcos", "title": "Narcos", "year": 2015, "month": 8, "genres": ["crime", "drama", "cop-show"], "final": 7.26 },
-    { "rank": 82, "slug": "oz", "title": "Oz", "year": 1997, "month": 7, "genres": ["crime", "drama"], "final": 7.26 },
-    { "rank": 83, "slug": "the-killing-dk", "title": "The Killing (DK)", "year": 2007, "month": 1, "genres": ["crime", "drama", "mystery", "cop-show"], "final": 7.23 },
-    { "rank": 84, "slug": "the-penguin", "title": "The Penguin", "year": 2024, "month": 9, "genres": ["crime", "drama", "superhero"], "final": 7.23 },
-    { "rank": 85, "slug": "the-plot-against-america", "title": "The Plot Against America", "year": 2020, "month": 3, "genres": ["drama", "historical", "thriller"], "final": 7.23 },
-    { "rank": 86, "slug": "dopesick", "title": "Dopesick", "year": 2021, "month": 10, "genres": ["drama"], "final": 7.23 },
-    { "rank": 87, "slug": "happy-valley", "title": "Happy Valley", "year": 2014, "month": 4, "genres": ["crime", "drama", "thriller", "cop-show"], "final": 7.22 },
-    { "rank": 88, "slug": "broadchurch", "title": "Broadchurch", "year": 2013, "month": 3, "genres": ["crime", "drama", "mystery", "cop-show"], "final": 7.21 },
-    { "rank": 89, "slug": "the-affair", "title": "The Affair", "year": 2014, "month": 10, "genres": ["drama"], "final": 7.14 },
-    { "rank": 90, "slug": "twin-peaks", "title": "Twin Peaks", "year": 1990, "month": 4, "genres": ["mystery", "drama", "thriller"], "final": 7.13 },
-    { "rank": 91, "slug": "homicide-life-on-the-street", "title": "Homicide: Life on the Street", "year": 1993, "month": 1, "genres": ["crime", "drama", "cop-show"], "final": 7.13 },
-    { "rank": 92, "slug": "foundation", "title": "Foundation", "year": 2021, "month": 9, "genres": ["sci-fi", "drama"], "final": 7.03 },
-    { "rank": 93, "slug": "the-handmaids-tale", "title": "The Handmaid's Tale", "year": 2017, "month": 4, "genres": ["drama", "sci-fi", "thriller"], "final": 7.03 },
-    { "rank": 94, "slug": "the-bear", "title": "The Bear", "year": 2022, "month": 6, "genres": ["drama", "comedy"], "final": 7.01 },
-    { "rank": 95, "slug": "big-little-lies", "title": "Big Little Lies", "year": 2017, "month": 2, "genres": ["drama", "thriller"], "final": 7.01 },
-    { "rank": 96, "slug": "true-detective-s3", "title": "True Detective S3", "year": 2019, "month": 1, "genres": ["crime", "mystery", "thriller"], "final": 6.97 },
-    { "rank": 97, "slug": "the-marvelous-mrs-maisel", "title": "The Marvelous Mrs. Maisel", "year": 2017, "month": 3, "genres": ["drama", "comedy", "historical"], "final": 6.96 },
-    { "rank": 98, "slug": "killing-eve", "title": "Killing Eve", "year": 2018, "month": 4, "genres": ["thriller", "action", "drama"], "final": 6.90 },
-    { "rank": 99, "slug": "barry", "title": "Barry", "year": 2018, "month": 3, "genres": ["crime", "drama", "comedy"], "final": 6.88 },
-    { "rank": 100, "slug": "westworld", "title": "Westworld", "year": 2016, "month": 10, "genres": ["sci-fi", "western", "drama"], "final": 6.83 }
-  ]
+﻿{
+    "description":  "Index of all 100 shows in TV Shows Ranked",
+    "generated":  "2026-02-15",
+    "shows":  [
+                  {
+                      "rank":  1,
+                      "slug":  "game-of-thrones-s1-4",
+                      "title":  "Game of Thrones (S1-4)",
+                      "year":  2011,
+                      "month":  4,
+                      "genres":  [
+                                     "fantasy",
+                                     "drama",
+                                     "action"
+                                 ],
+                      "final":  9.50,
+                      "tmdbId":  1399
+                  },
+                  {
+                      "rank":  2,
+                      "slug":  "breaking-bad",
+                      "title":  "Breaking Bad",
+                      "year":  2008,
+                      "month":  1,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "thriller",
+                                     "cop-show"
+                                 ],
+                      "final":  8.89,
+                      "tmdbId":  1396
+                  },
+                  {
+                      "rank":  3,
+                      "slug":  "the-wire",
+                      "title":  "The Wire",
+                      "year":  2002,
+                      "month":  6,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "cop-show"
+                                 ],
+                      "final":  8.74,
+                      "tmdbId":  1841
+                  },
+                  {
+                      "rank":  4,
+                      "slug":  "better-call-saul",
+                      "title":  "Better Call Saul",
+                      "year":  2015,
+                      "month":  2,
+                      "genres":  [
+                                     "crime",
+                                     "drama"
+                                 ],
+                      "final":  8.74,
+                      "tmdbId":  61889
+                  },
+                  {
+                      "rank":  5,
+                      "slug":  "chernobyl",
+                      "title":  "Chernobyl",
+                      "year":  2019,
+                      "month":  5,
+                      "genres":  [
+                                     "drama",
+                                     "historical"
+                                 ],
+                      "final":  8.54,
+                      "tmdbId":  87108
+                  },
+                  {
+                      "rank":  6,
+                      "slug":  "the-sopranos",
+                      "title":  "The Sopranos",
+                      "year":  1999,
+                      "month":  1,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "cop-show"
+                                 ],
+                      "final":  8.38,
+                      "tmdbId":  1418
+                  },
+                  {
+                      "rank":  7,
+                      "slug":  "the-americans",
+                      "title":  "The Americans",
+                      "year":  2013,
+                      "month":  1,
+                      "genres":  [
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  8.33,
+                      "tmdbId":  48891
+                  },
+                  {
+                      "rank":  8,
+                      "slug":  "the-shield",
+                      "title":  "The Shield",
+                      "year":  2002,
+                      "month":  3,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "cop-show"
+                                 ],
+                      "final":  8.17,
+                      "tmdbId":  1622
+                  },
+                  {
+                      "rank":  9,
+                      "slug":  "the-expanse",
+                      "title":  "The Expanse",
+                      "year":  2015,
+                      "month":  12,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  8.09,
+                      "tmdbId":  63639
+                  },
+                  {
+                      "rank":  10,
+                      "slug":  "succession",
+                      "title":  "Succession",
+                      "year":  2018,
+                      "month":  6,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  8.03,
+                      "tmdbId":  76331
+                  },
+                  {
+                      "rank":  11,
+                      "slug":  "babylon-berlin",
+                      "title":  "Babylon Berlin",
+                      "year":  2017,
+                      "month":  10,
+                      "genres":  [
+                                     "drama",
+                                     "historical",
+                                     "thriller"
+                                 ],
+                      "final":  8.03,
+                      "tmdbId":  71004
+                  },
+                  {
+                      "rank":  12,
+                      "slug":  "mr-robot",
+                      "title":  "Mr. Robot",
+                      "year":  2015,
+                      "month":  5,
+                      "genres":  [
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.99,
+                      "tmdbId":  62560
+                  },
+                  {
+                      "rank":  13,
+                      "slug":  "boardwalk-empire",
+                      "title":  "Boardwalk Empire",
+                      "year":  2010,
+                      "month":  9,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "historical"
+                                 ],
+                      "final":  7.98,
+                      "tmdbId":  1625
+                  },
+                  {
+                      "rank":  14,
+                      "slug":  "andor",
+                      "title":  "Andor",
+                      "year":  2022,
+                      "month":  9,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama",
+                                     "action"
+                                 ],
+                      "final":  7.96,
+                      "tmdbId":  83867
+                  },
+                  {
+                      "rank":  15,
+                      "slug":  "adolescence",
+                      "title":  "Adolescence",
+                      "year":  2025,
+                      "month":  3,
+                      "genres":  [
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.95,
+                      "tmdbId":  234474
+                  },
+                  {
+                      "rank":  16,
+                      "slug":  "true-detective-s1",
+                      "title":  "True Detective S1",
+                      "year":  2014,
+                      "month":  1,
+                      "genres":  [
+                                     "crime",
+                                     "mystery",
+                                     "thriller",
+                                     "cop-show"
+                                 ],
+                      "final":  7.90,
+                      "tmdbId":  46648
+                  },
+                  {
+                      "rank":  17,
+                      "slug":  "for-all-mankind",
+                      "title":  "For All Mankind",
+                      "year":  2019,
+                      "month":  11,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama"
+                                 ],
+                      "final":  7.88,
+                      "tmdbId":  87917
+                  },
+                  {
+                      "rank":  18,
+                      "slug":  "mad-men",
+                      "title":  "Mad Men",
+                      "year":  2007,
+                      "month":  7,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.88,
+                      "tmdbId":  1404
+                  },
+                  {
+                      "rank":  19,
+                      "slug":  "halt-and-catch-fire",
+                      "title":  "Halt and Catch Fire",
+                      "year":  2014,
+                      "month":  6,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.88,
+                      "tmdbId":  59659
+                  },
+                  {
+                      "rank":  20,
+                      "slug":  "angels-in-america",
+                      "title":  "Angels in America",
+                      "year":  2003,
+                      "month":  12,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.82,
+                      "tmdbId":  1887
+                  },
+                  {
+                      "rank":  21,
+                      "slug":  "dark",
+                      "title":  "Dark",
+                      "year":  2017,
+                      "month":  12,
+                      "genres":  [
+                                     "sci-fi",
+                                     "mystery",
+                                     "thriller"
+                                 ],
+                      "final":  7.79,
+                      "tmdbId":  70523
+                  },
+                  {
+                      "rank":  22,
+                      "slug":  "deadwood",
+                      "title":  "Deadwood",
+                      "year":  2004,
+                      "month":  3,
+                      "genres":  [
+                                     "drama",
+                                     "western"
+                                 ],
+                      "final":  7.78,
+                      "tmdbId":  1407
+                  },
+                  {
+                      "rank":  23,
+                      "slug":  "the-crown",
+                      "title":  "The Crown",
+                      "year":  2016,
+                      "month":  11,
+                      "genres":  [
+                                     "drama",
+                                     "historical"
+                                 ],
+                      "final":  7.76,
+                      "tmdbId":  65494
+                  },
+                  {
+                      "rank":  24,
+                      "slug":  "justified",
+                      "title":  "Justified",
+                      "year":  2010,
+                      "month":  3,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.75,
+                      "tmdbId":  1435
+                  },
+                  {
+                      "rank":  25,
+                      "slug":  "band-of-brothers",
+                      "title":  "Band of Brothers",
+                      "year":  2001,
+                      "month":  9,
+                      "genres":  [
+                                     "drama",
+                                     "historical",
+                                     "war"
+                                 ],
+                      "final":  7.73,
+                      "tmdbId":  1623
+                  },
+                  {
+                      "rank":  26,
+                      "slug":  "six-feet-under",
+                      "title":  "Six Feet Under",
+                      "year":  2001,
+                      "month":  6,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.73,
+                      "tmdbId":  1845
+                  },
+                  {
+                      "rank":  27,
+                      "slug":  "fargo",
+                      "title":  "Fargo",
+                      "year":  2014,
+                      "month":  4,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.73,
+                      "tmdbId":  60622
+                  },
+                  {
+                      "rank":  28,
+                      "slug":  "its-a-sin",
+                      "title":  "It\u0027s a Sin",
+                      "year":  2021,
+                      "month":  1,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.71,
+                      "tmdbId":  115123
+                  },
+                  {
+                      "rank":  29,
+                      "slug":  "when-they-see-us",
+                      "title":  "When They See Us",
+                      "year":  2019,
+                      "month":  5,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.68,
+                      "tmdbId":  83868
+                  },
+                  {
+                      "rank":  30,
+                      "slug":  "girls",
+                      "title":  "Girls",
+                      "year":  2012,
+                      "month":  4,
+                      "genres":  [
+                                     "drama",
+                                     "comedy"
+                                 ],
+                      "final":  7.68,
+                      "tmdbId":  42274
+                  },
+                  {
+                      "rank":  31,
+                      "slug":  "watchmen-2019",
+                      "title":  "Watchmen (2019)",
+                      "year":  2019,
+                      "month":  10,
+                      "genres":  [
+                                     "drama",
+                                     "sci-fi",
+                                     "superhero"
+                                 ],
+                      "final":  7.68,
+                      "tmdbId":  79739
+                  },
+                  {
+                      "rank":  32,
+                      "slug":  "the-bureau",
+                      "title":  "The Bureau",
+                      "year":  2015,
+                      "month":  9,
+                      "genres":  [
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.68,
+                      "tmdbId":  64357
+                  },
+                  {
+                      "rank":  33,
+                      "slug":  "homeland",
+                      "title":  "Homeland",
+                      "year":  2011,
+                      "month":  10,
+                      "genres":  [
+                                     "drama",
+                                     "thriller",
+                                     "action"
+                                 ],
+                      "final":  7.67,
+                      "tmdbId":  1405
+                  },
+                  {
+                      "rank":  34,
+                      "slug":  "the-queens-gambit",
+                      "title":  "The Queen\u0027s Gambit",
+                      "year":  2020,
+                      "month":  10,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.66,
+                      "tmdbId":  87739
+                  },
+                  {
+                      "rank":  35,
+                      "slug":  "the-leftovers",
+                      "title":  "The Leftovers",
+                      "year":  2014,
+                      "month":  6,
+                      "genres":  [
+                                     "drama",
+                                     "fantasy",
+                                     "mystery"
+                                 ],
+                      "final":  7.64,
+                      "tmdbId":  48869
+                  },
+                  {
+                      "rank":  36,
+                      "slug":  "lost",
+                      "title":  "Lost",
+                      "year":  2004,
+                      "month":  9,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama",
+                                     "mystery"
+                                 ],
+                      "final":  7.61,
+                      "tmdbId":  4607
+                  },
+                  {
+                      "rank":  37,
+                      "slug":  "the-knick",
+                      "title":  "The Knick",
+                      "year":  2014,
+                      "month":  8,
+                      "genres":  [
+                                     "drama",
+                                     "historical"
+                                 ],
+                      "final":  7.60,
+                      "tmdbId":  60751
+                  },
+                  {
+                      "rank":  38,
+                      "slug":  "the-haunting-of-hill-house",
+                      "title":  "The Haunting of Hill House",
+                      "year":  2018,
+                      "month":  10,
+                      "genres":  [
+                                     "horror",
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.60,
+                      "tmdbId":  79834
+                  },
+                  {
+                      "rank":  39,
+                      "slug":  "friday-night-lights",
+                      "title":  "Friday Night Lights",
+                      "year":  2006,
+                      "month":  10,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.59,
+                      "tmdbId":  4294
+                  },
+                  {
+                      "rank":  40,
+                      "slug":  "wolf-hall",
+                      "title":  "Wolf Hall",
+                      "year":  2015,
+                      "month":  1,
+                      "genres":  [
+                                     "drama",
+                                     "historical"
+                                 ],
+                      "final":  7.58,
+                      "tmdbId":  60580
+                  },
+                  {
+                      "rank":  41,
+                      "slug":  "pluribus",
+                      "title":  "Pluribus",
+                      "year":  2025,
+                      "month":  1,
+                      "genres":  [
+                                     "drama",
+                                     "thriller",
+                                     "sci-fi"
+                                 ],
+                      "final":  7.58,
+                      "tmdbId":  257474
+                  },
+                  {
+                      "rank":  42,
+                      "slug":  "hannibal",
+                      "title":  "Hannibal",
+                      "year":  2013,
+                      "month":  4,
+                      "genres":  [
+                                     "crime",
+                                     "thriller",
+                                     "horror",
+                                     "cop-show"
+                                 ],
+                      "final":  7.55,
+                      "tmdbId":  40008
+                  },
+                  {
+                      "rank":  43,
+                      "slug":  "station-eleven",
+                      "title":  "Station Eleven",
+                      "year":  2021,
+                      "month":  12,
+                      "genres":  [
+                                     "drama",
+                                     "sci-fi"
+                                 ],
+                      "final":  7.53,
+                      "tmdbId":  85720
+                  },
+                  {
+                      "rank":  44,
+                      "slug":  "house-of-the-dragon",
+                      "title":  "House of the Dragon",
+                      "year":  2022,
+                      "month":  8,
+                      "genres":  [
+                                     "fantasy",
+                                     "drama",
+                                     "action"
+                                 ],
+                      "final":  7.53,
+                      "tmdbId":  94997
+                  },
+                  {
+                      "rank":  45,
+                      "slug":  "black-mirror",
+                      "title":  "Black Mirror",
+                      "year":  2011,
+                      "month":  12,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.52,
+                      "tmdbId":  42949
+                  },
+                  {
+                      "rank":  46,
+                      "slug":  "midnight-mass",
+                      "title":  "Midnight Mass",
+                      "year":  2021,
+                      "month":  9,
+                      "genres":  [
+                                     "horror",
+                                     "drama",
+                                     "mystery"
+                                 ],
+                      "final":  7.52,
+                      "tmdbId":  93494
+                  },
+                  {
+                      "rank":  47,
+                      "slug":  "battlestar-galactica",
+                      "title":  "Battlestar Galactica",
+                      "year":  2004,
+                      "month":  10,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama",
+                                     "action"
+                                 ],
+                      "final":  7.51,
+                      "tmdbId":  2785
+                  },
+                  {
+                      "rank":  48,
+                      "slug":  "rectify",
+                      "title":  "Rectify",
+                      "year":  2013,
+                      "month":  12,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.50,
+                      "tmdbId":  41727
+                  },
+                  {
+                      "rank":  49,
+                      "slug":  "ozark",
+                      "title":  "Ozark",
+                      "year":  2017,
+                      "month":  7,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "thriller",
+                                     "cop-show"
+                                 ],
+                      "final":  7.50,
+                      "tmdbId":  69740
+                  },
+                  {
+                      "rank":  50,
+                      "slug":  "peaky-blinders",
+                      "title":  "Peaky Blinders",
+                      "year":  2013,
+                      "month":  9,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "historical"
+                                 ],
+                      "final":  7.50,
+                      "tmdbId":  60574
+                  },
+                  {
+                      "rank":  51,
+                      "slug":  "beef",
+                      "title":  "Beef",
+                      "year":  2023,
+                      "month":  4,
+                      "genres":  [
+                                     "drama",
+                                     "comedy"
+                                 ],
+                      "final":  7.49,
+                      "tmdbId":  155309
+                  },
+                  {
+                      "rank":  52,
+                      "slug":  "severance",
+                      "title":  "Severance",
+                      "year":  2022,
+                      "month":  2,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.49,
+                      "tmdbId":  112250
+                  },
+                  {
+                      "rank":  53,
+                      "slug":  "shogun-2024",
+                      "title":  "Shogun (2024)",
+                      "year":  2024,
+                      "month":  2,
+                      "genres":  [
+                                     "drama",
+                                     "historical",
+                                     "action"
+                                 ],
+                      "final":  7.48,
+                      "tmdbId":  126308
+                  },
+                  {
+                      "rank":  54,
+                      "slug":  "sharp-objects",
+                      "title":  "Sharp Objects",
+                      "year":  2018,
+                      "month":  7,
+                      "genres":  [
+                                     "drama",
+                                     "mystery",
+                                     "thriller"
+                                 ],
+                      "final":  7.47,
+                      "tmdbId":  79042
+                  },
+                  {
+                      "rank":  55,
+                      "slug":  "patrick-melrose",
+                      "title":  "Patrick Melrose",
+                      "year":  2018,
+                      "month":  5,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.47,
+                      "tmdbId":  78818
+                  },
+                  {
+                      "rank":  56,
+                      "slug":  "generation-kill",
+                      "title":  "Generation Kill",
+                      "year":  2008,
+                      "month":  7,
+                      "genres":  [
+                                     "drama",
+                                     "war",
+                                     "action"
+                                 ],
+                      "final":  7.47,
+                      "tmdbId":  1450
+                  },
+                  {
+                      "rank":  57,
+                      "slug":  "squid-game",
+                      "title":  "Squid Game",
+                      "year":  2021,
+                      "month":  9,
+                      "genres":  [
+                                     "thriller",
+                                     "drama",
+                                     "sci-fi"
+                                 ],
+                      "final":  7.46,
+                      "tmdbId":  93405
+                  },
+                  {
+                      "rank":  58,
+                      "slug":  "24",
+                      "title":  "24",
+                      "year":  2001,
+                      "month":  11,
+                      "genres":  [
+                                     "action",
+                                     "drama",
+                                     "thriller",
+                                     "cop-show"
+                                 ],
+                      "final":  7.45,
+                      "tmdbId":  1973
+                  },
+                  {
+                      "rank":  59,
+                      "slug":  "borgen",
+                      "title":  "Borgen",
+                      "year":  2010,
+                      "month":  9,
+                      "genres":  [
+                                     "drama",
+                                     "political"
+                                 ],
+                      "final":  7.45,
+                      "tmdbId":  32057
+                  },
+                  {
+                      "rank":  60,
+                      "slug":  "pose",
+                      "title":  "Pose",
+                      "year":  2018,
+                      "month":  6,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.45,
+                      "tmdbId":  78386
+                  },
+                  {
+                      "rank":  61,
+                      "slug":  "the-white-lotus",
+                      "title":  "The White Lotus",
+                      "year":  2021,
+                      "month":  7,
+                      "genres":  [
+                                     "drama",
+                                     "comedy"
+                                 ],
+                      "final":  7.45,
+                      "tmdbId":  111803
+                  },
+                  {
+                      "rank":  62,
+                      "slug":  "utopia-uk",
+                      "title":  "Utopia (UK)",
+                      "year":  2013,
+                      "month":  1,
+                      "genres":  [
+                                     "sci-fi",
+                                     "thriller",
+                                     "drama"
+                                 ],
+                      "final":  7.44,
+                      "tmdbId":  41810
+                  },
+                  {
+                      "rank":  63,
+                      "slug":  "the-x-files",
+                      "title":  "The X-Files",
+                      "year":  1993,
+                      "month":  9,
+                      "genres":  [
+                                     "sci-fi",
+                                     "mystery",
+                                     "thriller"
+                                 ],
+                      "final":  7.40,
+                      "tmdbId":  4087
+                  },
+                  {
+                      "rank":  64,
+                      "slug":  "stranger-things",
+                      "title":  "Stranger Things",
+                      "year":  2016,
+                      "month":  7,
+                      "genres":  [
+                                     "sci-fi",
+                                     "horror",
+                                     "drama"
+                                 ],
+                      "final":  7.40,
+                      "tmdbId":  45790
+                  },
+                  {
+                      "rank":  65,
+                      "slug":  "the-last-of-us",
+                      "title":  "The Last of Us",
+                      "year":  2023,
+                      "month":  1,
+                      "genres":  [
+                                     "drama",
+                                     "action",
+                                     "sci-fi"
+                                 ],
+                      "final":  7.39,
+                      "tmdbId":  100088
+                  },
+                  {
+                      "rank":  66,
+                      "slug":  "twin-peaks-the-return",
+                      "title":  "Twin Peaks: The Return",
+                      "year":  2017,
+                      "month":  5,
+                      "genres":  [
+                                     "mystery",
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.39,
+                      "tmdbId":  70809
+                  },
+                  {
+                      "rank":  67,
+                      "slug":  "rome",
+                      "title":  "Rome",
+                      "year":  2005,
+                      "month":  8,
+                      "genres":  [
+                                     "drama",
+                                     "historical",
+                                     "action"
+                                 ],
+                      "final":  7.39,
+                      "tmdbId":  1840
+                  },
+                  {
+                      "rank":  68,
+                      "slug":  "silo",
+                      "title":  "Silo",
+                      "year":  2023,
+                      "month":  5,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama",
+                                     "mystery"
+                                 ],
+                      "final":  7.39,
+                      "tmdbId":  135699
+                  },
+                  {
+                      "rank":  69,
+                      "slug":  "the-underground-railroad",
+                      "title":  "The Underground Railroad",
+                      "year":  2021,
+                      "month":  5,
+                      "genres":  [
+                                     "drama",
+                                     "fantasy",
+                                     "historical"
+                                 ],
+                      "final":  7.39,
+                      "tmdbId":  103099
+                  },
+                  {
+                      "rank":  70,
+                      "slug":  "penny-dreadful",
+                      "title":  "Penny Dreadful",
+                      "year":  2014,
+                      "month":  5,
+                      "genres":  [
+                                     "horror",
+                                     "drama",
+                                     "fantasy"
+                                 ],
+                      "final":  7.37,
+                      "tmdbId":  44484
+                  },
+                  {
+                      "rank":  71,
+                      "slug":  "godless",
+                      "title":  "Godless",
+                      "year":  2017,
+                      "month":  11,
+                      "genres":  [
+                                     "drama",
+                                     "western"
+                                 ],
+                      "final":  7.37,
+                      "tmdbId":  73857
+                  },
+                  {
+                      "rank":  72,
+                      "slug":  "gomorrah",
+                      "title":  "Gomorrah",
+                      "year":  2014,
+                      "month":  4,
+                      "genres":  [
+                                     "crime",
+                                     "drama"
+                                 ],
+                      "final":  7.36,
+                      "tmdbId":  4057
+                  },
+                  {
+                      "rank":  73,
+                      "slug":  "downton-abbey",
+                      "title":  "Downton Abbey",
+                      "year":  2010,
+                      "month":  9,
+                      "genres":  [
+                                     "drama",
+                                     "historical"
+                                 ],
+                      "final":  7.36,
+                      "tmdbId":  39534
+                  },
+                  {
+                      "rank":  74,
+                      "slug":  "hill-street-blues",
+                      "title":  "Hill Street Blues",
+                      "year":  1981,
+                      "month":  12,
+                      "genres":  [
+                                     "drama",
+                                     "crime",
+                                     "cop-show"
+                                 ],
+                      "final":  7.35,
+                      "tmdbId":  4094
+                  },
+                  {
+                      "rank":  75,
+                      "slug":  "the-boys",
+                      "title":  "The Boys",
+                      "year":  2019,
+                      "month":  7,
+                      "genres":  [
+                                     "superhero",
+                                     "action",
+                                     "drama"
+                                 ],
+                      "final":  7.33,
+                      "tmdbId":  76479
+                  },
+                  {
+                      "rank":  76,
+                      "slug":  "mare-of-easttown",
+                      "title":  "Mare of Easttown",
+                      "year":  2021,
+                      "month":  4,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "mystery",
+                                     "cop-show"
+                                 ],
+                      "final":  7.32,
+                      "tmdbId":  128816
+                  },
+                  {
+                      "rank":  77,
+                      "slug":  "euphoria",
+                      "title":  "Euphoria",
+                      "year":  2019,
+                      "month":  6,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.30,
+                      "tmdbId":  85552
+                  },
+                  {
+                      "rank":  78,
+                      "slug":  "the-pacific",
+                      "title":  "The Pacific",
+                      "year":  2010,
+                      "month":  3,
+                      "genres":  [
+                                     "drama",
+                                     "war",
+                                     "historical"
+                                 ],
+                      "final":  7.30,
+                      "tmdbId":  19609
+                  },
+                  {
+                      "rank":  79,
+                      "slug":  "escape-at-dannemora",
+                      "title":  "Escape at Dannemora",
+                      "year":  2018,
+                      "month":  11,
+                      "genres":  [
+                                     "drama",
+                                     "crime",
+                                     "thriller"
+                                 ],
+                      "final":  7.30,
+                      "tmdbId":  79354
+                  },
+                  {
+                      "rank":  80,
+                      "slug":  "line-of-duty",
+                      "title":  "Line of Duty",
+                      "year":  2012,
+                      "month":  3,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "thriller",
+                                     "cop-show"
+                                 ],
+                      "final":  7.30,
+                      "tmdbId":  43865
+                  },
+                  {
+                      "rank":  81,
+                      "slug":  "narcos",
+                      "title":  "Narcos",
+                      "year":  2015,
+                      "month":  8,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "cop-show"
+                                 ],
+                      "final":  7.26,
+                      "tmdbId":  63351
+                  },
+                  {
+                      "rank":  82,
+                      "slug":  "oz",
+                      "title":  "Oz",
+                      "year":  1997,
+                      "month":  7,
+                      "genres":  [
+                                     "crime",
+                                     "drama"
+                                 ],
+                      "final":  7.26,
+                      "tmdbId":  1624
+                  },
+                  {
+                      "rank":  83,
+                      "slug":  "the-killing-dk",
+                      "title":  "The Killing (DK)",
+                      "year":  2007,
+                      "month":  1,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "mystery",
+                                     "cop-show"
+                                 ],
+                      "final":  7.23,
+                      "tmdbId":  34410
+                  },
+                  {
+                      "rank":  84,
+                      "slug":  "the-penguin",
+                      "title":  "The Penguin",
+                      "year":  2024,
+                      "month":  9,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "superhero"
+                                 ],
+                      "final":  7.23,
+                      "tmdbId":  194583
+                  },
+                  {
+                      "rank":  85,
+                      "slug":  "the-plot-against-america",
+                      "title":  "The Plot Against America",
+                      "year":  2020,
+                      "month":  3,
+                      "genres":  [
+                                     "drama",
+                                     "historical",
+                                     "thriller"
+                                 ],
+                      "final":  7.23,
+                      "tmdbId":  83710
+                  },
+                  {
+                      "rank":  86,
+                      "slug":  "dopesick",
+                      "title":  "Dopesick",
+                      "year":  2021,
+                      "month":  10,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.23,
+                      "tmdbId":  110531
+                  },
+                  {
+                      "rank":  87,
+                      "slug":  "happy-valley",
+                      "title":  "Happy Valley",
+                      "year":  2014,
+                      "month":  4,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "thriller",
+                                     "cop-show"
+                                 ],
+                      "final":  7.22,
+                      "tmdbId":  55441
+                  },
+                  {
+                      "rank":  88,
+                      "slug":  "broadchurch",
+                      "title":  "Broadchurch",
+                      "year":  2013,
+                      "month":  3,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "mystery",
+                                     "cop-show"
+                                 ],
+                      "final":  7.21,
+                      "tmdbId":  50431
+                  },
+                  {
+                      "rank":  89,
+                      "slug":  "the-affair",
+                      "title":  "The Affair",
+                      "year":  2014,
+                      "month":  10,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.14,
+                      "tmdbId":  61463
+                  },
+                  {
+                      "rank":  90,
+                      "slug":  "twin-peaks",
+                      "title":  "Twin Peaks",
+                      "year":  1990,
+                      "month":  4,
+                      "genres":  [
+                                     "mystery",
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.13,
+                      "tmdbId":  1964
+                  },
+                  {
+                      "rank":  91,
+                      "slug":  "homicide-life-on-the-street",
+                      "title":  "Homicide: Life on the Street",
+                      "year":  1993,
+                      "month":  1,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "cop-show"
+                                 ],
+                      "final":  7.13,
+                      "tmdbId":  1597
+                  },
+                  {
+                      "rank":  92,
+                      "slug":  "foundation",
+                      "title":  "Foundation",
+                      "year":  2021,
+                      "month":  9,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama"
+                                 ],
+                      "final":  7.03,
+                      "tmdbId":  81356
+                  },
+                  {
+                      "rank":  93,
+                      "slug":  "the-handmaids-tale",
+                      "title":  "The Handmaid\u0027s Tale",
+                      "year":  2017,
+                      "month":  4,
+                      "genres":  [
+                                     "drama",
+                                     "sci-fi",
+                                     "thriller"
+                                 ],
+                      "final":  7.03,
+                      "tmdbId":  71606
+                  },
+                  {
+                      "rank":  94,
+                      "slug":  "the-bear",
+                      "title":  "The Bear",
+                      "year":  2022,
+                      "month":  6,
+                      "genres":  [
+                                     "drama",
+                                     "comedy"
+                                 ],
+                      "final":  7.01,
+                      "tmdbId":  135699
+                  },
+                  {
+                      "rank":  95,
+                      "slug":  "big-little-lies",
+                      "title":  "Big Little Lies",
+                      "year":  2017,
+                      "month":  2,
+                      "genres":  [
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.01,
+                      "tmdbId":  69629
+                  },
+                  {
+                      "rank":  96,
+                      "slug":  "true-detective-s3",
+                      "title":  "True Detective S3",
+                      "year":  2019,
+                      "month":  1,
+                      "genres":  [
+                                     "crime",
+                                     "mystery",
+                                     "thriller"
+                                 ],
+                      "final":  6.97,
+                      "tmdbId":  46648
+                  },
+                  {
+                      "rank":  97,
+                      "slug":  "the-marvelous-mrs-maisel",
+                      "title":  "The Marvelous Mrs. Maisel",
+                      "year":  2017,
+                      "month":  3,
+                      "genres":  [
+                                     "drama",
+                                     "comedy",
+                                     "historical"
+                                 ],
+                      "final":  6.96,
+                      "tmdbId":  70785
+                  },
+                  {
+                      "rank":  98,
+                      "slug":  "killing-eve",
+                      "title":  "Killing Eve",
+                      "year":  2018,
+                      "month":  4,
+                      "genres":  [
+                                     "thriller",
+                                     "action",
+                                     "drama"
+                                 ],
+                      "final":  6.90,
+                      "tmdbId":  72750
+                  },
+                  {
+                      "rank":  99,
+                      "slug":  "barry",
+                      "title":  "Barry",
+                      "year":  2018,
+                      "month":  3,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "comedy"
+                                 ],
+                      "final":  6.88,
+                      "tmdbId":  73116
+                  },
+                  {
+                      "rank":  100,
+                      "slug":  "westworld",
+                      "title":  "Westworld",
+                      "year":  2016,
+                      "month":  10,
+                      "genres":  [
+                                     "sci-fi",
+                                     "western",
+                                     "drama"
+                                 ],
+                      "final":  6.83,
+                      "tmdbId":  63247
+                  }
+              ]
 }
