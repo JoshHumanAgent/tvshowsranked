@@ -1,0 +1,46 @@
+{
+  "slug": "rome",
+  "title": "Rome",
+  "year": 2005,
+  "month": 8,
+  "status": "ended",
+  "seasons": 2,
+  "episodes": 22,
+  "runtime": "50-60",
+  "country": "United States",
+  "genres": ["drama", "history", "war"],
+  "creator": ["John Milius", "William J. MacDonald", "Bruno Heller"],
+  "network": "HBO",
+  "external_ratings": {
+    "imdb": {
+      "score": 8.7,
+      "scale": 10,
+      "count": "280K",
+      "date_accessed": "2026-02-15",
+      "url": "https://www.imdb.com/title/tt0443443/"
+    },
+    "rotten_tomatoes": {
+      "season_1": {"score": 92, "scale": 100},
+      "season_2": {"score": 90, "scale": 100},
+      "date_accessed": "2026-02-15",
+      "url": "https://www.rottentomatoes.com/tv/rome"
+    },
+    "metacritic": {
+      "score": 82,
+      "scale": 100,
+      "date_accessed": "2026-02-15",
+      "url": "https://www.metacritic.com/tv/rome"
+    }
+  },
+  "consensus_highlights": "Rome is a sprawling, ambitious historical drama that brings the ancient world to vivid life. The series follows the political machinations of Julius Caesar and the subsequent power struggle between Mark Antony and Octavian. With remarkable production values and compelling characters, HBO's Rome set a new standard for historical television.",
+  "ranking_system": {
+    "characters": 8,
+    "world_building": 8.5,
+    "cinematography": 7,
+    "visual_spectacle": 9,
+    "conceptual_density": 8,
+    "narrative_drive": 8,
+    "resolution": 6,
+    "final_score": 7.39
+  }
+}

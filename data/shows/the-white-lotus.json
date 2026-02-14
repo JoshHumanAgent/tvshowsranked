@@ -1,0 +1,46 @@
+{
+  "title": "The White Lotus",
+  "slug": "the-white-lotus",
+  "year": 2021,
+  "month": 7,
+  "rank": 61,
+  "genres": ["drama", "comedy"],
+  "final_score": 7.45,
+  "network": "HBO",
+  "seasons": 3,
+  "episodes": 22,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 7.6,
+      "votes": 110000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt13991288/",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 89,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/the_white_lotus",
+      "date_accessed": "2026-02-15"
+    },
+    "metacritic": {
+      "score": 81,
+      "source": "Metacritic",
+      "url": "https://www.metacritic.com/tv/the-white-lotus",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Murray Bartlett",
+    "Connie Britton",
+    "Jennifer Coolidge",
+    "Alexandra Daddario",
+    "Fred Hechinger",
+    "Jake Lacy",
+    "Sydney Sweeney",
+    "Steve Zahn"
+  ],
+  "creator": "Mike White",
+  "description": "Social satire following wealthy guests at a luxurious resort in Hawaii, Sicily, and Thailand."
+}

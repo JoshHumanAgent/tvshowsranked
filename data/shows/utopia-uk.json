@@ -1,0 +1,46 @@
+{
+  "slug": "utopia-uk",
+  "title": "Utopia (UK)",
+  "year": 2013,
+  "month": 1,
+  "status": "ended",
+  "seasons": 2,
+  "episodes": 12,
+  "runtime": "45-60",
+  "country": "United Kingdom",
+  "genres": ["drama", "sci-fi", "thriller"],
+  "creator": ["Dennis Kelly"],
+  "network": "Channel 4",
+  "external_ratings": {
+    "imdb": {
+      "score": 8.5,
+      "scale": 10,
+      "count": "68K",
+      "date_accessed": "2026-02-15",
+      "url": "https://www.imdb.com/title/tt2384441/"
+    },
+    "rotten_tomatoes": {
+      "season_1": {"score": 89, "scale": 100},
+      "season_2": {"score": 94, "scale": 100},
+      "date_accessed": "2026-02-15",
+      "url": "https://www.rottentomatoes.com/tv/utopia"
+    },
+    "metacritic": {
+      "score": 81,
+      "scale": 100,
+      "date_accessed": "2026-02-15",
+      "url": "https://www.metacritic.com/tv/utopia-2013"
+    }
+  },
+  "consensus_highlights": "Utopia is a visually stunning British conspiracy thriller with a distinctive aesthetic and relentless pacing. The series follows a group of strangers who uncover a mysterious graphic novel that appears to predict real-world events. Known for its striking cinematography and bleak worldview, it became a cult favorite.",
+  "ranking_system": {
+    "characters": 7.5,
+    "world_building": 7.5,
+    "cinematography": 10,
+    "visual_spectacle": 7,
+    "conceptual_density": 8,
+    "narrative_drive": 9,
+    "resolution": 6,
+    "final_score": 7.44
+  }
+}
