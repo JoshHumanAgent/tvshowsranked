@@ -1,0 +1,49 @@
+{
+  "title": "The Haunting of Hill House",
+  "slug": "the-haunting-of-hill-house",
+  "year": 2018,
+  "month": 10,
+  "rank": 38,
+  "genres": ["horror", "drama", "mystery"],
+  "final_score": 7.60,
+  "network": "Netflix",
+  "seasons": 1,
+  "episodes": 10,
+  "status": "completed",
+  "type": "miniseries",
+  "ratings": {
+    "imdb": {
+      "score": 8.6,
+      "votes": 145000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt6763664/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 8.108,
+      "votes": 2617,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/72844-the-haunting-of-hill-house",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 93,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/the_haunting_of_hill_house",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Michiel Huisman",
+    "Carla Gugino",
+    "Henry Thomas",
+    "Victoria Pedretti",
+    "Oliver Jackson-Cohen",
+    "Kate Siegel"
+  ],
+  "creator": "Mike Flanagan",
+  "description": "A fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}

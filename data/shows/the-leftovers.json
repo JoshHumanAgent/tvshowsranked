@@ -1,0 +1,48 @@
+{
+  "title": "The Leftovers",
+  "slug": "the-leftovers",
+  "year": 2014,
+  "month": 6,
+  "rank": 35,
+  "genres": ["drama", "fantasy", "mystery"],
+  "final_score": 7.64,
+  "network": "HBO",
+  "seasons": 3,
+  "episodes": 28,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 8.3,
+      "votes": 145000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt2699128/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 7.648,
+      "votes": 1145,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/54344-the-leftovers",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 91,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/the_leftovers",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Justin Theroux",
+    "Carrie Coon",
+    "Christopher Eccleston",
+    "Liv Tyler",
+    "Amy Brenneman",
+    "Margaret Qualley"
+  ],
+  "creators": "Damon Lindelof, Tom Perrotta",
+  "description": "When 2% of the world's population disappears, the people left behind struggle to understand what happened.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}

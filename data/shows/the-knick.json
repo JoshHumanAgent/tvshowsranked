@@ -1,0 +1,48 @@
+{
+  "title": "The Knick",
+  "slug": "the-knick",
+  "year": 2014,
+  "month": 8,
+  "rank": 37,
+  "genres": ["drama", "historical"],
+  "final_score": 7.60,
+  "network": "Cinemax",
+  "seasons": 2,
+  "episodes": 20,
+  "status": "completed",
+  "ratings": {
+    "imdb": {
+      "score": 8.5,
+      "votes": 52000,
+      "source": "IMDb",
+      "url": "https://www.imdb.com/title/tt3037326/",
+      "date_accessed": "2026-02-15"
+    },
+    "tmdb": {
+      "score": 7.856,
+      "votes": 492,
+      "source": "The Movie Database",
+      "url": "https://www.themoviedb.org/tv/61014-the-knick",
+      "date_accessed": "2026-02-15"
+    },
+    "rotten_tomatoes": {
+      "score": 88,
+      "source": "Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/tv/the_knick",
+      "date_accessed": "2026-02-15"
+    }
+  },
+  "cast": [
+    "Clive Owen",
+    "André Holland",
+    "Jeremy Bobb",
+    "Juliet Rylance",
+    "Eve Hewson",
+    "Michael Angarano"
+  ],
+  "creators": "Jack Amiel, Michael Begler",
+  "description": "Set in 1900s New York, this drama follows the groundbreaking surgeons at Knickerbocker Hospital as they push the boundaries of medicine.",
+  "data_sources": {
+    "tmdb_api": "ca9b21cb89de2d1debed1050f603d7ad"
+  }
+}
