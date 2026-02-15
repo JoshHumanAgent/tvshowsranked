@@ -2534,12 +2534,28 @@
         document.getElementById('multiplier-toggle')?.addEventListener('change', (e) => {
             multiplierEnabled = e.target.checked;
             
-            // Recalculate all finals with or without multiplier
-            // Use current show.final (may already have custom weights applied)
+            // Recalculate from BASE scores (not current - avoids double multiplication)
             shows.forEach(show => {
-                const currentFinal = show.final;
-                const mult = multiplierEnabled ? getMultiplier(show.episodes) : 1;
-                show.final = parseFloat((currentFinal * mult).toFixed(2));
+                const base = baseScores[show.title];
+                if (!base) return;
+                
+                // First calculate from base scores with current weights
+                let val = (
+                    (base.char * weights.char) +
+                    (base.world * weights.world) +
+                    (base.cine * weights.cine) +
+                    (base.spect * weights.spect) +
+                    (base.conc * weights.conc) +
+                    (base.drive * weights.drive) +
+                    (base.resol * weights.resol)
+                ) / 100;
+                
+                // Then apply multiplier if enabled
+                if (multiplierEnabled) {
+                    val = val * getMultiplier(show.episodes);
+                }
+                
+                show.final = parseFloat(val.toFixed(2));
             });
             
             // Sort and re-rank
