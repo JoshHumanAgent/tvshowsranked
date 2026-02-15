@@ -1,0 +1,47 @@
+FOR CYBERCLAW - RECENT CHANGES LOG
+====================================
+
+LATEST UPDATE: 2026-02-15
+--------------------------
+
+FEATURE: Per-Category Score Sliders on Every Show Card
+------------------------------------------------------
+
+Hey Cyberclaw, here's what just got added to index.html. This is a big one — interactive score editing across all show cards with live ranking recalculation.
+
+WHAT CHANGED:
+- Every category bar on every show card now has a range slider overlaid on it
+- Users can drag any slider to change a show's score in 0.5 increments (0-10)
+- Scores update live while dragging — bar fill, value text, and total score all update instantly
+- When a slider is released, the full ranking list reorders automatically (DOM nodes move, no full re-render)
+- Modified values show a blue tint (#60a5fa) so users know what they've changed
+- A fixed bottom save bar appears when any modifications exist
+
+PERSISTENCE:
+- "Save to localStorage" button stores overrides to tvranked_score_overrides key
+- Overrides auto-restore on page load
+- "Download JSON" exports a timestamped file with weights, base scores, overrides, and final rankings
+- "Import" reads a JSON file back in and applies overrides
+- "Reset All" reverts everything to original scores
+
+TECHNICAL DETAILS:
+- All changes are in index.html (single file, all CSS + JS inline)
+- ~500 lines added total
+- CSS added after line 827 (slider styles, save bar, mobile responsive)
+- HTML save bar added before </main>
+- JS score override system: baseScores (immutable), activeScores (mutable), modifiedShows (Set)
+- recalcFinal(show) is now the shared formula — replaced the old inline calculation in the weight recalc handler too
+- Slider events use delegation on the #rankings list element
+- input event = live visual update + 300ms debounced reorder check
+- change event = immediate reorder + localStorage persist
+- stopPropagation on slider mousedown/touchstart to prevent category modal from opening
+- checkAndReorder() uses DOM node reordering (appendChild), not innerHTML rebuild
+- Pinned shows system refactored to store titles instead of ranks (since ranks are now mutable)
+- CSS.escape() used for title selectors to handle special characters
+
+NOTHING ELSE WAS TOUCHED — no changes to filters, search, sort, weight sliders, modals, or any other existing functionality. The existing weight recalc button still works and composes correctly with slider overrides.
+
+When you push this live, users should be able to drag sliders on any show card and see rankings update in real time. The save bar at the bottom handles persistence.
+
+---
+This doc will be updated whenever new changes are made from this end.

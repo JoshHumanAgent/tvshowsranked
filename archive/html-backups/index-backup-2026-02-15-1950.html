@@ -825,161 +825,6 @@
             letter-spacing: -0.02em;
             min-width: 40px;
         }
-
-        /* Per-card category score sliders */
-        .cat-bar-container {
-            position: relative;
-            height: 14px;
-            display: flex;
-            align-items: center;
-        }
-        .cat-bar-track {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            height: 3px;
-            transform: translateY(-50%);
-            background: #333;
-            border-radius: 2px;
-            overflow: hidden;
-        }
-        .cat-bar-fill {
-            height: 100%;
-            border-radius: 2px;
-            transition: width 0.1s ease, background 0.1s ease;
-        }
-        .cat-slider-input {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            -webkit-appearance: none;
-            appearance: none;
-            background: transparent;
-            cursor: pointer;
-            margin: 0;
-            padding: 0;
-            z-index: 2;
-        }
-        .cat-slider-input::-webkit-slider-runnable-track {
-            height: 14px;
-            background: transparent;
-        }
-        .cat-slider-input::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 10px;
-            height: 10px;
-            background: #64748b;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: transform 0.15s, background 0.15s;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-        }
-        .cat-slider-input::-webkit-slider-thumb:hover {
-            background: #94a3b8;
-            transform: scale(1.3);
-        }
-        .cat-slider-input::-moz-range-track {
-            height: 14px;
-            background: transparent;
-            border: none;
-        }
-        .cat-slider-input::-moz-range-thumb {
-            width: 10px;
-            height: 10px;
-            background: #64748b;
-            border-radius: 50%;
-            cursor: pointer;
-            border: none;
-            transition: transform 0.15s, background 0.15s;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-        }
-        .cat-slider-input::-moz-range-thumb:hover {
-            background: #94a3b8;
-            transform: scale(1.3);
-        }
-        .cat-value-modified {
-            color: #60a5fa !important;
-        }
-
-        /* Score save bar */
-        .score-save-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(180deg, rgba(20,20,28,0.98), rgba(10,10,15,0.99));
-            border-top: 1px solid #64748b;
-            padding: 0.6rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            z-index: 999;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-            flex-wrap: wrap;
-        }
-        .score-save-bar.visible {
-            transform: translateY(0);
-        }
-        .score-save-bar .modified-count {
-            font-size: 0.8rem;
-            color: #60a5fa;
-            font-family: 'JetBrains Mono', monospace;
-        }
-        .score-save-bar button {
-            padding: 0.4rem 1rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-family: 'Source Sans 3', sans-serif;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-        .save-btn {
-            background: #64748b;
-            color: #e8e8ec;
-            border: 1px solid #64748b;
-        }
-        .save-btn:hover { background: #94a3b8; }
-        .export-btn {
-            background: transparent;
-            color: #d4af37;
-            border: 1px solid #d4af37;
-        }
-        .export-btn:hover { background: rgba(212,175,55,0.15); }
-        .import-btn {
-            background: transparent;
-            color: #64748b;
-            border: 1px solid #3a3a48;
-        }
-        .import-btn:hover { background: rgba(100,116,139,0.15); }
-        .reset-btn {
-            background: transparent;
-            color: #ef4444;
-            border: 1px solid #ef444480;
-        }
-        .reset-btn:hover { background: rgba(239,68,68,0.15); }
-
-        @media (max-width: 600px) {
-            .cat-slider-input::-webkit-slider-thumb {
-                width: 16px;
-                height: 16px;
-            }
-            .cat-slider-input::-moz-range-thumb {
-                width: 16px;
-                height: 16px;
-            }
-            .cat-bar-container {
-                height: 20px;
-            }
-        }
         
         .weight-recalc-btn {
             display: block;
@@ -2156,15 +2001,6 @@
         <div class="no-results" id="no-results" style="display: none;">
             <p>None</p>
         </div>
-        <!-- Score Save Bar -->
-        <div class="score-save-bar" id="score-save-bar">
-            <span class="modified-count" id="modified-count">0 shows modified</span>
-            <button class="save-btn" id="save-scores-btn">Save to localStorage</button>
-            <button class="export-btn" id="export-scores-btn">Download JSON</button>
-            <button class="import-btn" id="import-scores-btn">Import</button>
-            <input type="file" id="import-scores-file" accept=".json" style="display:none;">
-            <button class="reset-btn" id="reset-scores-btn">Reset All</button>
-        </div>
     </main>
 
     <script>
@@ -2180,13 +2016,11 @@
                 const data = await response.json();
                 shows = data.shows;
                 console.log(`Loaded ${shows.length} shows from JSON`);
-                initScoreSystem();
                 renderShows();
             } catch (error) {
                 console.error('Failed to load shows from JSON, using fallback:', error);
                 // Fallback to embedded data if JSON fails
                 shows = FALLBACK_SHOWS;
-                initScoreSystem();
                 renderShows();
             }
         }
@@ -2326,95 +2160,6 @@
         // Default weights
         const defaultWeights = { char: 20, world: 15, cine: 10, spect: 10, conc: 15, drive: 15, resol: 15 };
         let weights = { ...defaultWeights };
-
-        // Score override system
-        const baseScores = {};
-        const activeScores = {};
-        const modifiedShows = new Set();
-        const catKeys = ['char', 'world', 'cine', 'spect', 'conc', 'drive', 'resol'];
-
-        function recalcFinal(show) {
-            const val = (
-                (show.char * weights.char) +
-                (show.world * weights.world) +
-                (show.cine * weights.cine) +
-                (show.spect * weights.spect) +
-                (show.conc * weights.conc) +
-                (show.drive * weights.drive) +
-                (show.resol * weights.resol)
-            ) / 100;
-            show.final = parseFloat(val.toFixed(2));
-            return show.final;
-        }
-
-        function initScoreSystem() {
-            // Build base scores from loaded data
-            shows.forEach(show => {
-                baseScores[show.title] = {};
-                activeScores[show.title] = {};
-                catKeys.forEach(key => {
-                    baseScores[show.title][key] = show[key];
-                    activeScores[show.title][key] = show[key];
-                });
-            });
-
-            // Restore overrides from localStorage
-            try {
-                const saved = localStorage.getItem('tvranked_score_overrides');
-                if (saved) {
-                    const overrides = JSON.parse(saved);
-                    Object.keys(overrides).forEach(title => {
-                        const show = shows.find(s => s.title === title);
-                        if (!show) return;
-                        const changes = overrides[title];
-                        let hasChange = false;
-                        catKeys.forEach(key => {
-                            if (changes[key] !== undefined && changes[key] !== baseScores[title][key]) {
-                                show[key] = changes[key];
-                                activeScores[title][key] = changes[key];
-                                hasChange = true;
-                            }
-                        });
-                        if (hasChange) {
-                            modifiedShows.add(title);
-                            recalcFinal(show);
-                        }
-                    });
-
-                    if (modifiedShows.size > 0) {
-                        // Re-sort and re-rank
-                        shows.sort((a, b) => b.final - a.final);
-                        shows.forEach((show, idx) => { show.rank = idx + 1; });
-                        updateSaveBar();
-                    }
-                }
-            } catch (e) {
-                console.error('Failed to restore score overrides:', e);
-            }
-        }
-
-        function updateSaveBar() {
-            const bar = document.getElementById('score-save-bar');
-            const countEl = document.getElementById('modified-count');
-            if (!bar) return;
-            if (modifiedShows.size > 0) {
-                bar.classList.add('visible');
-                countEl.textContent = modifiedShows.size + ' show' + (modifiedShows.size !== 1 ? 's' : '') + ' modified';
-            } else {
-                bar.classList.remove('visible');
-            }
-        }
-
-        function saveOverridesToStorage() {
-            const overrides = {};
-            modifiedShows.forEach(title => {
-                overrides[title] = {};
-                catKeys.forEach(key => {
-                    overrides[title][key] = activeScores[title][key];
-                });
-            });
-            localStorage.setItem('tvranked_score_overrides', JSON.stringify(overrides));
-        }
         
         // Initialize weight sliders
         function initWeightSliders() {
@@ -2475,18 +2220,29 @@
         document.getElementById('recalc-weights')?.addEventListener('click', () => {
             const total = Object.values(weights).reduce((a, b) => a + b, 0);
             if (total !== 100) return;
-
-            // Recalculate final scores for all shows using shared formula
-            shows.forEach(show => recalcFinal(show));
-
+            
+            // Recalculate final scores for all shows
+            shows.forEach(show => {
+                const newFinal = (
+                    (show.char * weights.char) +
+                    (show.world * weights.world) +
+                    (show.cine * weights.cine) +
+                    (show.spect * weights.spect) +
+                    (show.conc * weights.conc) +
+                    (show.drive * weights.drive) +
+                    (show.resol * weights.resol)
+                ) / 100;
+                show.final = parseFloat(newFinal.toFixed(2));
+            });
+            
             // Re-sort shows by new final score
             shows.sort((a, b) => b.final - a.final);
-
+            
             // Update ranks
             shows.forEach((show, idx) => {
                 show.rank = idx + 1;
             });
-
+            
             // Re-render
             renderShows();
         });
@@ -2616,42 +2372,42 @@
             return genreColors[primary] || '#d4af37';
         }
         
-        // Pinned shows for Quick Compare (stored by title, not rank)
+        // Pinned shows for Quick Compare
         let pinnedShows = [];
-
+        
         function renderPinnedShows() {
             const container = document.getElementById('pinned-shows');
             const quickCompare = document.getElementById('quick-compare');
-
+            
             if (pinnedShows.length === 0) {
                 quickCompare.classList.remove('visible');
                 return;
             }
-
+            
             quickCompare.classList.add('visible');
-            container.innerHTML = pinnedShows.map(title => {
-                const show = shows.find(s => s.title === title);
+            container.innerHTML = pinnedShows.map(rank => {
+                const show = shows.find(s => s.rank === rank);
                 if (!show) return '';
                 return `
-                    <div class="pinned-card" data-pin-title="${show.title.replace(/"/g, '&quot;')}">
+                    <div class="pinned-card" data-rank="${show.rank}">
                         <span class="pin-rank">#${show.rank}</span>
                         <span class="pin-title">${show.title.replace(/\s*\(S\d+-\d+\)$/, '')}</span>
                         <span class="pin-score">${show.final.toFixed(2)}</span>
-                        <button class="unpin-btn" data-pin-title="${show.title.replace(/"/g, '&quot;')}">✕</button>
+                        <button class="unpin-btn" data-rank="${show.rank}">✕</button>
                     </div>
                 `;
             }).join('');
         }
-
-        function togglePin(title) {
-            const idx = pinnedShows.indexOf(title);
+        
+        function togglePin(rank) {
+            const idx = pinnedShows.indexOf(rank);
             if (idx > -1) {
                 pinnedShows.splice(idx, 1);
             } else {
                 if (pinnedShows.length >= 3) {
                     pinnedShows.shift(); // Max 3 pinned
                 }
-                pinnedShows.push(title);
+                pinnedShows.push(rank);
             }
             renderPinnedShows();
             renderShows();
@@ -2698,19 +2454,18 @@
                 const tierColors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
                 const tierColor = tierColors[tier];
                 
-                const showTitleEscaped = show.title.replace(/"/g, '&quot;');
                 return `
-                <div class="show-module" data-show-title="${showTitleEscaped}" style="display:flex;gap:0;margin-bottom:0.5rem;animation:fadeIn 0.4s ease-out;animation-delay:${idx*40}ms;animation-fill-mode:both;align-items:flex-start;">
+                <div class="show-module" style="display:flex;gap:0;margin-bottom:0.5rem;animation:fadeIn 0.4s ease-out;animation-delay:${idx*40}ms;animation-fill-mode:both;align-items:flex-start;">
                     <!-- Poster - larger image -->
                     <div class="show-poster" style="width:200px;min-width:200px;background:#1a1a24;border-radius:8px 0 0 8px;position:relative;flex-shrink:0;box-shadow:4px 0 20px rgba(0,0,0,0.4);overflow:hidden;">
-                        ${show.poster
+                        ${show.poster 
                             ? `<img src="${show.poster}" alt="${show.title}" style="width:100%;height:auto;display:block;">`
                             : `<span style="font-family:Unna,serif;font-size:5rem;color:rgba(255,255,255,0.12);font-weight:900;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;">${show.title.charAt(0)}</span>`
                         }
                         <!-- Rank badge -->
-                        <span data-rank-badge style="position:absolute;top:-6px;left:-6px;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,${tierColor}99,${tierColor});color:#0a0a0f;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:0.75rem;font-weight:600;z-index:5;box-shadow:0 4px 12px rgba(0,0,0,0.5);">#${show.rank}</span>
+                        <span style="position:absolute;top:-6px;left:-6px;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,${tierColor}99,${tierColor});color:#0a0a0f;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:0.75rem;font-weight:600;z-index:5;box-shadow:0 4px 12px rgba(0,0,0,0.5);">#${show.rank}</span>
                     </div>
-
+                    
                     <!-- Card Panel - flows next to poster -->
                     <div class="show-card-panel" style="flex:1;min-width:0;background:linear-gradient(135deg,rgba(20,20,28,0.95),rgba(20,20,28,0.8));border:1px solid #252532;border-radius:0 12px 12px 0;border-left:none;padding:0.8rem 1.25rem;position:relative;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af3740';this.style.background='linear-gradient(135deg,rgba(30,30,40,0.98),rgba(25,25,35,0.85))'" onmouseout="this.style.borderColor='#252532';this.style.background='linear-gradient(135deg,rgba(20,20,28,0.95),rgba(20,20,28,0.8))'">
                         <!-- Corner ornaments -->
@@ -2718,7 +2473,7 @@
                         <div style="position:absolute;top:6px;right:6px;width:12px;height:12px;border-top:1px solid #d4af3740;border-right:1px solid #d4af3740;"></div>
                         <div style="position:absolute;bottom:6px;left:6px;width:12px;height:12px;border-bottom:1px solid #d4af3740;border-left:1px solid #d4af3740;"></div>
                         <div style="position:absolute;bottom:6px;right:6px;width:12px;height:12px;border-bottom:1px solid #d4af3740;border-right:1px solid #d4af3740;"></div>
-
+                        
                         <!-- Top row: Title + Score -->
                         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;">
                             <div style="flex:1;min-width:100px;">
@@ -2736,19 +2491,19 @@
                             <div style="text-align:right;flex-shrink:0;position:relative;">
                                 <!-- Score glow effect for high scores -->
                                 ${show.final >= 9 ? `<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:50px;height:50px;background:radial-gradient(circle,${tierColor}30 0%,transparent 70%);border-radius:50%;pointer-events:none;"></div>` : ''}
-                                <div data-score-display style="font-family:Unna,serif;font-size:2.2rem;font-weight:900;color:${tierColor};line-height:1;animation:goldGlow 3s ease-in-out infinite;text-shadow:${show.final >= 9 ? `0 0 20px ${tierColor}40` : 'none'};">${show.final.toFixed(2)}</div>
+                                <div style="font-family:Unna,serif;font-size:2.2rem;font-weight:900;color:${tierColor};line-height:1;animation:goldGlow 3s ease-in-out infinite;text-shadow:${show.final >= 9 ? `0 0 20px ${tierColor}40` : 'none'};">${show.final.toFixed(2)}</div>
                                 <div style="font-size:0.5rem;color:#8a8a9a;text-transform:uppercase;letter-spacing:0.1em;">score</div>
                             </div>
                         </div>
-
+                        
                         <!-- Divider -->
                         <div style="display:flex;align-items:center;gap:0.5rem;padding:0.3rem 0;">
                             <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,#252532);"></div>
                             <div style="color:#d4af37;font-size:0.65rem;">✦</div>
                             <div style="flex:1;height:1px;background:linear-gradient(90deg,#252532,transparent);"></div>
                         </div>
-
-                        <!-- Category bars with sliders -->
+                        
+                        <!-- Category bars -->
                         <div style="display:flex;flex-direction:column;gap:2px;">
                             ${categories.map(cat => {
                                 const value = show[cat.key];
@@ -2756,22 +2511,18 @@
                                 const catTier = getTier(value);
                                 const catTierColors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
                                 const catTierColor = catTierColors[catTier];
-                                const isModified = baseScores[show.title] && value !== baseScores[show.title][cat.key];
                                 return `
                                     <div style="display:grid;grid-template-columns:35% 55% 10%;align-items:center;">
                                         <span style="font-family:Unna,serif;font-size:0.85rem;font-weight:200;font-style:italic;color:#e8e8ec;">${cat.label}</span>
-                                        <div class="cat-bar-container">
-                                            <div class="cat-bar-track">
-                                                <div class="cat-bar-fill" data-cat-bar="${cat.key}" style="background:linear-gradient(90deg,${catTierColor}99,${catTierColor},${catTierColor}99);width:${percentage}%;"></div>
-                                            </div>
-                                            <input type="range" class="cat-slider-input" data-show="${showTitleEscaped}" data-cat="${cat.key}" min="0" max="10" step="0.5" value="${value}">
+                                        <div style="background:#333;height:3px;border-radius:2px;overflow:hidden;">
+                                            <div style="background:linear-gradient(90deg,${catTierColor}99,${catTierColor},${catTierColor}99);height:100%;border-radius:2px;width:${percentage}%;"></div>
                                         </div>
-                                        <span class="cat-value-display${isModified ? ' cat-value-modified' : ''}" data-cat-value="${cat.key}" style="font-family:JetBrains Mono,monospace;font-size:0.7rem;font-weight:500;text-align:right;color:${isModified ? '#60a5fa' : catTierColor};">${value}</span>
+                                        <span style="font-family:JetBrains Mono,monospace;font-size:0.7rem;font-weight:500;text-align:right;color:${catTierColor};">${value}</span>
                                     </div>
                                 `;
                             }).join('')}
                         </div>
-
+                        
                         <!-- Genres -->
                         <div style="display:flex;flex-wrap:wrap;gap:0.25rem;margin-top:0.25rem;">
                             ${show.genres.map(g => `<span style="background:transparent;border:1px solid #64748b;color:#64748b;padding:0.08rem 0.25rem;border-radius:100px;font-size:0.5rem;font-weight:500;">${g}</span>`).join('')}
@@ -2961,12 +2712,12 @@
         // Pin button handlers
         document.addEventListener('click', (e) => {
             if (e.target.classList.contains('pin-btn')) {
-                const title = e.target.dataset.pinTitle || e.target.closest('.show-module')?.dataset.showTitle;
-                if (title) togglePin(title);
+                const rank = parseInt(e.target.dataset.rank);
+                togglePin(rank);
             }
             if (e.target.classList.contains('unpin-btn')) {
-                const title = e.target.dataset.pinTitle;
-                if (title) togglePin(title);
+                const rank = parseInt(e.target.dataset.rank);
+                togglePin(rank);
             }
             // Accordion for score descriptions - Category label
             if (e.target.classList.contains('score-label-text')) {
@@ -3056,266 +2807,9 @@
             });
         }
 
-        // ---- Per-card slider event handling ----
-        let reorderDebounce = null;
-
-        // Prevent slider drags from opening category modal
-        list.addEventListener('mousedown', (e) => {
-            if (e.target.classList.contains('cat-slider-input')) {
-                e.stopPropagation();
-            }
-        }, true);
-        list.addEventListener('touchstart', (e) => {
-            if (e.target.classList.contains('cat-slider-input')) {
-                e.stopPropagation();
-            }
-        }, true);
-
-        // Live update on slider drag
-        list.addEventListener('input', (e) => {
-            if (!e.target.classList.contains('cat-slider-input')) return;
-            const slider = e.target;
-            const title = slider.dataset.show;
-            const catKey = slider.dataset.cat;
-            const newVal = parseFloat(slider.value);
-
-            const show = shows.find(s => s.title === title);
-            if (!show || !activeScores[title]) return;
-
-            // Update data
-            activeScores[title][catKey] = newVal;
-            show[catKey] = newVal;
-            recalcFinal(show);
-
-            // Track modification
-            const isModified = catKeys.some(k => activeScores[title][k] !== baseScores[title][k]);
-            if (isModified) {
-                modifiedShows.add(title);
-            } else {
-                modifiedShows.delete(title);
-            }
-
-            // Targeted DOM update (no full re-render)
-            const card = list.querySelector(`.show-module[data-show-title="${CSS.escape(title)}"]`);
-            if (card) {
-                // Update bar fill
-                const barFill = card.querySelector(`[data-cat-bar="${catKey}"]`);
-                if (barFill) {
-                    const pct = (newVal / 10) * 100;
-                    const tier = getTier(newVal);
-                    const colors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
-                    const c = colors[tier];
-                    barFill.style.width = pct + '%';
-                    barFill.style.background = `linear-gradient(90deg,${c}99,${c},${c}99)`;
-                }
-
-                // Update value text
-                const valEl = card.querySelector(`[data-cat-value="${catKey}"]`);
-                if (valEl) {
-                    const valModified = baseScores[title] && newVal !== baseScores[title][catKey];
-                    valEl.textContent = newVal;
-                    if (valModified) {
-                        valEl.classList.add('cat-value-modified');
-                        valEl.style.color = '#60a5fa';
-                    } else {
-                        valEl.classList.remove('cat-value-modified');
-                        const tier = getTier(newVal);
-                        const colors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
-                        valEl.style.color = colors[tier];
-                    }
-                }
-
-                // Update total score display
-                const scoreDisplay = card.querySelector('[data-score-display]');
-                if (scoreDisplay) {
-                    const tier = getTier(show.final);
-                    const colors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
-                    scoreDisplay.textContent = show.final.toFixed(2);
-                    scoreDisplay.style.color = colors[tier];
-                }
-            }
-
-            updateSaveBar();
-
-            // Debounced reorder
-            if (reorderDebounce) clearTimeout(reorderDebounce);
-            reorderDebounce = setTimeout(() => checkAndReorder(), 300);
-        });
-
-        // On slider release — immediate reorder + persist
-        list.addEventListener('change', (e) => {
-            if (!e.target.classList.contains('cat-slider-input')) return;
-            if (reorderDebounce) { clearTimeout(reorderDebounce); reorderDebounce = null; }
-            checkAndReorder();
-            saveOverridesToStorage();
-        });
-
-        function checkAndReorder() {
-            // Re-sort shows array
-            shows.sort((a, b) => b.final - a.final);
-            shows.forEach((s, i) => { s.rank = i + 1; });
-
-            // Get current DOM order
-            const cards = Array.from(list.querySelectorAll('.show-module[data-show-title]'));
-            const currentOrder = cards.map(c => c.dataset.showTitle);
-            const desiredOrder = shows.map(s => s.title);
-
-            // Filter desired order to only currently-visible cards
-            const visibleTitles = new Set(currentOrder);
-            const desiredVisible = desiredOrder.filter(t => visibleTitles.has(t));
-
-            let needsMove = false;
-            for (let i = 0; i < desiredVisible.length; i++) {
-                if (currentOrder[i] !== desiredVisible[i]) { needsMove = true; break; }
-            }
-
-            if (needsMove) {
-                // Move DOM nodes to match desired order
-                desiredVisible.forEach(title => {
-                    const card = list.querySelector(`.show-module[data-show-title="${CSS.escape(title)}"]`);
-                    if (card) list.appendChild(card);
-                });
-            }
-
-            // Update all rank badges on visible cards
-            cards.forEach(card => {
-                const title = card.dataset.showTitle;
-                const show = shows.find(s => s.title === title);
-                if (!show) return;
-                const badge = card.querySelector('[data-rank-badge]');
-                if (badge) {
-                    badge.textContent = '#' + show.rank;
-                    const tier = getTier(show.final);
-                    const colors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
-                    const c = colors[tier];
-                    badge.style.background = `linear-gradient(135deg,${c}99,${c})`;
-                }
-            });
-
-            // Refresh pinned shows
-            renderPinnedShows();
-        }
-
-        // ---- Save / Export / Import / Reset ----
-        document.getElementById('save-scores-btn')?.addEventListener('click', () => {
-            saveOverridesToStorage();
-            const btn = document.getElementById('save-scores-btn');
-            const orig = btn.textContent;
-            btn.textContent = 'Saved!';
-            setTimeout(() => { btn.textContent = orig; }, 1500);
-        });
-
-        document.getElementById('export-scores-btn')?.addEventListener('click', () => {
-            const overrides = {};
-            modifiedShows.forEach(title => {
-                overrides[title] = {};
-                catKeys.forEach(key => {
-                    overrides[title][key] = activeScores[title][key];
-                });
-            });
-            const blob = new Blob([JSON.stringify({
-                timestamp: new Date().toISOString(),
-                weights: { ...weights },
-                baseScores: { ...baseScores },
-                overrides,
-                finalRankings: shows.map(s => ({ rank: s.rank, title: s.title, final: s.final }))
-            }, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            const ts = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
-            a.href = url;
-            a.download = `tvranked-scores-${ts}.json`;
-            a.click();
-            URL.revokeObjectURL(url);
-        });
-
-        document.getElementById('import-scores-btn')?.addEventListener('click', () => {
-            document.getElementById('import-scores-file').click();
-        });
-
-        document.getElementById('import-scores-file')?.addEventListener('change', (e) => {
-            const file = e.target.files[0];
-            if (!file) return;
-            const reader = new FileReader();
-            reader.onload = (ev) => {
-                try {
-                    const data = JSON.parse(ev.target.result);
-                    if (data.overrides) {
-                        // Reset to base first
-                        shows.forEach(show => {
-                            if (baseScores[show.title]) {
-                                catKeys.forEach(k => {
-                                    show[k] = baseScores[show.title][k];
-                                    activeScores[show.title][k] = baseScores[show.title][k];
-                                });
-                            }
-                        });
-                        modifiedShows.clear();
-
-                        // Apply imported overrides
-                        Object.keys(data.overrides).forEach(title => {
-                            const show = shows.find(s => s.title === title);
-                            if (!show) return;
-                            const changes = data.overrides[title];
-                            let hasChange = false;
-                            catKeys.forEach(key => {
-                                if (changes[key] !== undefined) {
-                                    show[key] = changes[key];
-                                    activeScores[title][key] = changes[key];
-                                    if (changes[key] !== baseScores[title][key]) hasChange = true;
-                                }
-                            });
-                            if (hasChange) modifiedShows.add(title);
-                            recalcFinal(show);
-                        });
-
-                        // Optionally import weights
-                        if (data.weights) {
-                            Object.assign(weights, data.weights);
-                            initWeightSliders();
-                        }
-
-                        shows.forEach(show => recalcFinal(show));
-                        shows.sort((a, b) => b.final - a.final);
-                        shows.forEach((s, i) => { s.rank = i + 1; });
-                        saveOverridesToStorage();
-                        updateSaveBar();
-                        renderShows();
-                    }
-                } catch (err) {
-                    console.error('Failed to import scores:', err);
-                    alert('Failed to import: invalid JSON file');
-                }
-            };
-            reader.readAsText(file);
-            e.target.value = ''; // reset file input
-        });
-
-        document.getElementById('reset-scores-btn')?.addEventListener('click', () => {
-            if (!confirm('Reset all score modifications to original values?')) return;
-            shows.forEach(show => {
-                if (baseScores[show.title]) {
-                    catKeys.forEach(k => {
-                        show[k] = baseScores[show.title][k];
-                        activeScores[show.title][k] = baseScores[show.title][k];
-                    });
-                    recalcFinal(show);
-                }
-            });
-            modifiedShows.clear();
-            localStorage.removeItem('tvranked_score_overrides');
-            shows.sort((a, b) => b.final - a.final);
-            shows.forEach((s, i) => { s.rank = i + 1; });
-            updateSaveBar();
-            renderShows();
-        });
-
-        // ---- Fix pinned shows to use titles instead of ranks ----
-        // (Ranks are now mutable, so pin by title)
-
         // Initial render
         renderShows();
-
+        
         // Ensure list is visible
         document.getElementById('rankings').style.display = 'flex';
     </script>

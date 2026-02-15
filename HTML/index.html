@@ -328,6 +328,111 @@
             box-shadow: 0 4px 12px var(--shadow);
         }
 
+        /* Edit Mode Button */
+        #edit-toggle {
+            background: var(--sage);
+        }
+
+        #edit-toggle.active {
+            background: var(--rust);
+        }
+
+        #edit-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        /* Score Sliders - only visible in edit mode */
+        .edit-mode .score-slider-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 2px;
+        }
+
+        .score-slider {
+            flex: 1;
+            height: 4px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: #e0e0e0;
+            outline: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .score-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            background: #64748b;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 1px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .score-slider::-moz-range-thumb {
+            width: 12px;
+            height: 12px;
+            background: #64748b;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 1px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .score-slider-value {
+            min-width: 28px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #64748b;
+            text-align: right;
+        }
+
+        .edit-mode .score-item {
+            margin-bottom: 4px;
+        }
+
+        .edit-mode .score-bar {
+            margin-bottom: 6px;
+        }
+
+        /* Save Rankings Button */
+        .save-rankings-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 1rem 2rem;
+            background: var(--gold);
+            color: var(--charcoal);
+            border: 2px solid var(--charcoal);
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 12px var(--shadow);
+            display: none;
+        }
+
+        .save-rankings-btn.visible {
+            display: block;
+        }
+
+        .save-rankings-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px var(--shadow);
+        }
+
+        .save-rankings-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
         .methodology-section {
             background: white;
             border-bottom: 2px solid var(--charcoal);
@@ -947,6 +1052,7 @@
             <button class="filter-btn" data-filter="pre2000">Pre-2000</button>
             <input type="text" class="search-box" placeholder="Search shows..." id="search">
             <button class="filter-btn" id="weights-toggle">⚙️ Adjust Weights</button>
+            <button class="filter-btn" id="edit-toggle">✏️ Edit Mode</button>
         </div>
     </div>
 
@@ -1544,6 +1650,217 @@
         searchInput.addEventListener('input', (e) => {
             searchTerm = e.target.value;
             renderShows();
+        });
+
+        // === EDIT MODE FUNCTIONALITY ===
+        
+        // Edit mode state
+        let editMode = false;
+        let modifiedShows = new Map(); // track which shows have been modified
+        let originalScores = new Map(); // store original scores for comparison
+
+        // Add edit toggle button
+        const editToggle = document.getElementById('edit-toggle');
+        
+        // Create save button
+        const saveBtn = document.createElement('button');
+        saveBtn.className = 'save-rankings-btn';
+        saveBtn.textContent = '💾 Save Rankings';
+        saveBtn.id = 'save-rankings';
+        document.body.appendChild(saveBtn);
+
+        // Toggle edit mode
+        editToggle.addEventListener('click', () => {
+            editMode = !editMode;
+            editToggle.classList.toggle('active', editMode);
+            
+            if (editMode) {
+                document.body.classList.add('edit-mode');
+                editToggle.textContent = '✓ Edit Mode ON';
+                saveBtn.classList.add('visible');
+            } else {
+                document.body.classList.remove('edit-mode');
+                editToggle.textContent = '✏️ Edit Mode';
+                saveBtn.classList.remove('visible');
+            }
+            
+            // Re-render to show/hide sliders
+            renderShows();
+        });
+
+        // Update renderScoreItem to include slider in edit mode
+        const originalRenderScoreItem = renderScoreItem;
+        
+        renderScoreItem = function(label, value, weight, category, showId) {
+            const percentage = (value / 10) * 100;
+            let sliderHTML = '';
+            
+            if (editMode) {
+                sliderHTML = `
+                    <div class="score-slider-container">
+                        <input type="range" min="0" max="10" step="0.5" value="${value}" 
+                            class="score-slider" data-category="${category}" data-show="${showId}">
+                        <span class="score-slider-value">${value}</span>
+                    </div>
+                `;
+            }
+            
+            return `
+                <div class="score-item">
+                    <span class="score-label">${label} <span style="color: #999; font-size: 0.85em;">(${weight}%)</span></span>
+                    <span class="score-value">${value}</span>
+                </div>
+                <div class="score-bar">
+                    <div class="score-bar-fill" data-width="${percentage}%" style="width: 0%"></div>
+                </div>
+                ${sliderHTML}
+            `;
+        };
+
+        // Handle slider changes
+        document.addEventListener('input', (e) => {
+            if (e.target.classList.contains('score-slider')) {
+                const category = e.target.dataset.category;
+                const showId = e.target.dataset.show;
+                const newValue = parseFloat(e.target.value);
+                
+                // Update the display value next to slider
+                const valueDisplay = e.target.parentElement.querySelector('.score-slider-value');
+                if (valueDisplay) {
+                    valueDisplay.textContent = newValue;
+                }
+                
+                // Find and update the show
+                const show = shows.find(s => s.slug === showId || s.title.toLowerCase().replace(/[^a-z0-9]/g, '-') === showId);
+                if (show) {
+                    // Store original if not already stored
+                    if (!originalScores.has(showId)) {
+                        originalScores.set(showId, {
+                            char: show.char,
+                            world: show.world,
+                            cine: show.cine,
+                            spect: show.spect,
+                            conc: show.conc,
+                            drive: show.drive,
+                            resol: show.resol
+                        });
+                    }
+                    
+                    // Update the category
+                    show[category] = newValue;
+                    
+                    // Mark as modified
+                    modifiedShows.set(showId, true);
+                    
+                    // Recalculate score and re-rank
+                    recalculateRankings();
+                    
+                    // Update score display in the card
+                    const scoreValueEl = e.target.closest('.score-details').querySelector('.score-value');
+                    if (scoreValueEl) {
+                        const label = e.target.closest('.score-item').querySelector('.score-label');
+                        const catMatch = label.textContent.match(/^([^(]+)/);
+                        if (catMatch) {
+                            const catName = catMatch[1].trim();
+                            const catMap = {
+                                'Characters & Acting': 'char',
+                                'World Building': 'world',
+                                'Cinematography': 'cine',
+                                'Visual Spectacle': 'spect',
+                                'Conceptual Density': 'conc',
+                                'Narrative Drive': 'drive',
+                                'Narrative Path & Resolution': 'resol'
+                            };
+                            const catKey = catMap[catName];
+                            if (catKey) {
+                                const itemEl = e.target.closest('.score-item').nextElementSibling;
+                                const barEl = itemEl ? itemEl.querySelector('.score-bar-fill') : null;
+                                if (barEl) {
+                                    const newPct = (newValue / 10) * 100;
+                                    barEl.style.width = newPct + '%';
+                                    barEl.dataset.width = newPct + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Save rankings function
+        saveBtn.addEventListener('click', () => {
+            // Validate
+            let hasErrors = false;
+            let errorMsg = '';
+            
+            for (const show of shows) {
+                const scores = [show.char, show.world, show.cine, show.spect, show.conc, show.drive, show.resol];
+                
+                // Check for NaN or invalid
+                if (scores.some(s => isNaN(s))) {
+                    errorMsg = `Error: ${show.title} has invalid score (NaN)`;
+                    hasErrors = true;
+                    break;
+                }
+                
+                // Check range
+                if (scores.some(s => s < 0 || s > 10)) {
+                    errorMsg = `Error: ${show.title} has score outside valid range (0-10)`;
+                    hasErrors = true;
+                    break;
+                }
+            }
+            
+            if (hasErrors) {
+                console.error('Save aborted:', errorMsg);
+                alert('Save failed: ' + errorMsg);
+                return;
+            }
+            
+            // Generate timestamp
+            const now = new Date();
+            const timestamp = now.getFullYear() +
+                String(now.getMonth() + 1).padStart(2, '0') +
+                String(now.getDate()).padStart(2, '0');
+            
+            // Build ranking data
+            const rankingData = {
+                description: "TV Shows Ranked - Custom Rankings",
+                generated: now.toISOString(),
+                timestamp: timestamp,
+                shows: shows.map((show, index) => ({
+                    rank: index + 1,
+                    title: show.title,
+                    year: show.year,
+                    episodes: show.episodes,
+                    char: show.char,
+                    world: show.world,
+                    cine: show.cine,
+                    spect: show.spect,
+                    conc: show.conc,
+                    drive: show.drive,
+                    resol: show.resol,
+                    final: parseFloat(show.calculatedScore.toFixed(2)),
+                    originalRank: show.rank
+                }))
+            };
+            
+            // Create and trigger download
+            const dataStr = JSON.stringify(rankingData, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `rankings_master_${timestamp}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            alert(`Rankings saved! File: rankings_master_${timestamp}.json\n\n` +
+                  `Total shows: ${shows.length}\n` +
+                  `Modified shows: ${modifiedShows.size}`);
         });
 
         // Initial calculation and render
