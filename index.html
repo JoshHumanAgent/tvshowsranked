@@ -2137,6 +2137,15 @@
             </div>
             <div class="weight-warning" id="weight-warning">⚠️ Total must equal 100%</div>
             <button class="weight-recalc-btn" id="recalc-weights">Recalculate Rankings</button>
+            
+            <!-- Episode Multiplier Toggle -->
+            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #3a3a48;">
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                    <input type="checkbox" id="multiplier-toggle" checked style="width: 16px; height: 16px; accent-color: #d4af37;">
+                    <span style="color: #e0e0e8; font-size: 0.85rem;">Episode Multiplier</span>
+                </label>
+                <div style="color: #64748b; font-size: 0.7rem; margin-top: 0.25rem;">Longer shows get bonus points</div>
+            </div>
         </div>
     </div>
     
@@ -2326,6 +2335,9 @@
         // Default weights
         const defaultWeights = { char: 20, world: 15, cine: 10, spect: 10, conc: 15, drive: 15, resol: 15 };
         let weights = { ...defaultWeights };
+        
+        // Episode multiplier toggle
+        let multiplierEnabled = true;
 
         // Score override system
         const baseScores = {};
@@ -2490,6 +2502,24 @@
             });
 
             // Re-render
+            renderShows();
+        });
+        
+        // Episode multiplier toggle
+        document.getElementById('multiplier-toggle')?.addEventListener('change', (e) => {
+            multiplierEnabled = e.target.checked;
+            
+            // Recalculate all finals with or without multiplier
+            shows.forEach(show => {
+                const baseFinal = baseScores[show.title].final;
+                const mult = multiplierEnabled ? getMultiplier(show.episodes) : 1;
+                show.final = parseFloat((baseFinal * mult).toFixed(2));
+            });
+            
+            // Sort and re-rank
+            shows.sort((a, b) => b.final - a.final);
+            shows.forEach((s, i) => { s.rank = i + 1; });
+            
             renderShows();
         });
         
