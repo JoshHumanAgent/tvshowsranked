@@ -2391,7 +2391,14 @@
                 // Store the unmultiplied weighted average as base.final
                 // This is the foundation for slider calculations
                 baseScores[show.title].final = parseFloat(baseWeighted.toFixed(2));
+                
+                // ALSO update show.final to ensure it's calculated, not stale from JSON
+                show.final = baseScores[show.title].final;
             });
+            
+            // Re-sort after recalculating all finals
+            shows.sort((a, b) => b.final - a.final);
+            shows.forEach((show, idx) => { show.rank = idx + 1; });
 
             // Restore overrides from localStorage
             try {
