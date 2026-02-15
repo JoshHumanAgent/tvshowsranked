@@ -2546,6 +2546,18 @@
                 return;
             }
             
+            // DEBUG: Trace Chernobyl specifically
+            const debugShow = shows.find(s => s.title === 'Chernobyl');
+            if (debugShow) {
+                console.log('Chernobyl BEFORE:', {
+                    final: debugShow.final,
+                    char: activeScores['Chernobyl']?.char,
+                    world: activeScores['Chernobyl']?.world,
+                    baseFinal: baseScores['Chernobyl']?.final,
+                    episodes: debugShow.episodes
+                });
+            }
+            
             // Recalculate using activeScores (includes any slider modifications)
             shows.forEach(show => {
                 const base = baseScores[show.title];
@@ -2569,10 +2581,15 @@
                 }
                 
                 show.final = parseFloat(val.toFixed(2));
-                
-                // Note: base.final should stay as the unmultiplied weighted average
-                // for correct slider delta calculations
             });
+            
+            // DEBUG: After calculation
+            if (debugShow) {
+                console.log('Chernobyl AFTER:', {
+                    final: debugShow.final,
+                    newRank: shows.findIndex(s => s.title === 'Chernobyl') + 1
+                });
+            }
             
             // Sort and re-rank
             shows.sort((a, b) => b.final - a.final);
