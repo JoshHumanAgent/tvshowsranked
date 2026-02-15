@@ -2539,6 +2539,7 @@
         // Episode multiplier toggle
         document.getElementById('multiplier-toggle')?.addEventListener('change', (e) => {
             multiplierEnabled = e.target.checked;
+            console.log('Multiplier toggled:', multiplierEnabled);
             
             // Recalculate from BASE scores (not current - avoids double multiplication)
             shows.forEach(show => {
