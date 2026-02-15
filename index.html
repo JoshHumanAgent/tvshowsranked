@@ -2929,7 +2929,9 @@
 
                         <!-- Genres -->
                         <div style="display:flex;flex-wrap:wrap;gap:0.25rem;margin-top:0.25rem;">
-                            ${show.genres.map(g => `<span style="background:transparent;border:1px solid #64748b;color:#64748b;padding:0.08rem 0.25rem;border-radius:100px;font-size:0.5rem;font-weight:500;">${g}</span>`).join('')}
+                            ${show.genres.map(g => `<span class="genre-tag" data-genre="${g}" style="background:transparent;border:1px solid #64748b;color:#64748b;padding:0.08rem 0.25rem;border-radius:100px;font-size:0.5rem;font-weight:500;cursor:pointer;transition:all 0.2s;"
+                                onmouseover="this.style.borderColor='#d4af37';this.style.color='#d4af37'" 
+                                onmouseout="this.style.borderColor='#64748b';this.style.color='#64748b'">${g}</span>`).join('')}
                         </div>
                     </div>
                 </div>
