@@ -1,44 +1,41 @@
-# Battlestar Galactica
+# Battlestar Galactica (2004)
 
-**Rank #47** | Sci-Fi, Drama, Action | 2004-2009 | Syfy | 4 Seasons, 73 Episodes
+**Rank:** 122 | **Final Score:** 9.0
 
----
+## Viewing Guide
 
-## What It Feels Like to Watch
+**Where to Watch:**
+- 🇺🇸 United States: Amazon Prime Video
+- 🇬🇧 United Kingdom: Amazon Prime Video
 
-*Battlestar Galactica* is the rare science fiction series that understands: the future is just a mirror held up to the present.
+**Watch Status:** Complete | 4 Seasons | 77 Episodes
 
-The premise is deceptively simple. The Cylons — robots created by humanity — have rebelled, destroyed the twelve colonies, and nearly wiped out the human race. The only survivors are aboard a ragtag fleet of ships, protected by the aging battlestar Galactica, searching for a mythical thirteenth colony called Earth.
+## The Landscape
 
-But this isn't really a show about space battles. It's about what happens when civilization collapses. How do you maintain democracy when survival is at stake? How do you trust when anyone could be a machine in disguise? How do you hold onto your humanity when the universe keeps trying to take it away?
+The Cylons were created by man. They evolved. They rebelled. And now they've destroyed the Twelve Colonies. 50,000 survivors flee across space in a fleet protected by one aging Battlestar. Ronald D. Moore's reimagining elevated sci-fi into serious drama.
 
-Edward James Olmos anchors everything as Commander Adama — a weary leader who understands that hope is the only thing keeping his people alive. Mary McDonnell is extraordinary as President Laura Roslin, a former schoolteacher thrust into leading what's left of humanity. Their relationship provides the show's moral center: two people trying to do right in a universe that rewards wrong.
+## The Characters
 
-The cast is deep. Katee Sackhoff's Starbuck is the breakout character — a pilot who breaks every rule and somehow keeps surviving. James Callis plays Gaius Baltar, a narcissistic scientist whose decisions have catastrophic consequences. Tricia Helfer's Number Six is haunting — a Cylon who may or may not be real, who may or may not be helping, who may or may not be in love.
+Admiral Adama: the father leading his people home. President Roslin: the dying leader prophesied by scripture. Starbuck: the pilot who breaks all the rules. Apollo: the son trying to escape his father's shadow. Baltar: the traitor who might save humanity. And the Cylons: machines indistinguishable from gods.
 
-What makes *Battlestar Galactica* essential is its willingness to engage with real issues. Torture, terrorism, occupation, religious extremism — the show tackles them all without easy answers. It's political without being preachy, philosophical without being pretentious.
+## What It Feels Like
 
-The finale, "Daybreak," is controversial. Some fans love it; others hate it. But it stays true to what the show always was: a meditation on what it means to be human, and whether that means anything in an indifferent universe.
+Like 9/11 commentary dressed as space opera. Like a show that asks what makes us human when our enemies look exactly like us. Like proof that science fiction can be the most serious art form.
 
----
+## All of This Has Happened Before
 
-## Where to Watch
+The cyclical history, the hybrid child, the final five. Battlestar built mystery into its mythology—and largely paid it off in ways that mattered.
 
-- **Streaming:** Amazon Prime Video (with Peacock subscription)
-- **Purchase:** Apple TV, Google Play
+## External Ratings
 
----
+- **IMDb:** 8.7/10 (179,000 votes)
+- **Rotten Tomatoes:** Critics 89%, Audience 94%
 
-## Ratings
+## Related Shows
 
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.7/10 | 185,000 |
-| TMDB | 8.2/10 | 1,710 |
-| Rotten Tomatoes | 95% | — |
-
-*Data accessed 2026-02-15*
+- "Caprica" (the prequel that didn't find its audience)
+- "Blood & Chrome" (web series continuation)
 
 ---
 
-**Previous:** [Midnight Mass (#46)](midnight-mass.md) | **Next:** [Rectify (#48)](rectify.md)
+*Last Updated: 2026-02-15*

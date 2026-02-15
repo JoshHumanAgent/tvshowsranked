@@ -2,50 +2,50 @@
     "slug": "six-feet-under",
     "title": "Six Feet Under",
     "year": 2001,
-    "month": 6,
-    "status": "completed",
-    "seasons": 5,
-    "episodes": 63,
-    "runtime": "45-60",
-    "country": "United States",
-    "genres": [
-        "drama"
-    ],
-    "creator": "Alan Ball",
+    "month": "06",
     "network": "HBO",
-    "tmdbId": 1845,
+    "status": "ended",
+    "streaming": {
+        "us": ["Max"],
+        "uk": ["Sky", "Now TV"]
+    },
+    "genres": ["Drama", "Dark Comedy"],
+    "creators": ["Alan Ball"],
+    "cast": ["Peter Krause", "Michael C. Hall", "Frances Conroy", "Lauren Ambrose", "Rachel Griffiths"],
     "external_ratings": {
         "imdb": {
             "score": 8.7,
-            "scale": 10,
-            "count": "185000",
-            "date_accessed": "2026-02-15",
-            "url": "https://www.imdb.com/title/tt0301314/"
+            "votes": 138000,
+            "url": "https://www.imdb.com/title/tt0248654/",
+            "date_accessed": "2026-02-15"
         },
         "rotten_tomatoes": {
-            "score": 90,
-            "scale": 100,
-            "date_accessed": "2026-02-15",
-            "url": "https://www.rottentomatoes.com/tv/six_feet_under"
+            "audience": 85,
+            "critics": 91,
+            "url": "https://www.rottentomatoes.com/tv/six_feet_under",
+            "date_accessed": "2026-02-15"
         }
     },
-    "consensus_highlights": "A drama about the Fisher family, who run a funeral home in Los Angeles, exploring death, family, and grief.",
     "ranking_system": {
-        "narrative_ambition": 7.3,
-        "character_depth": 8.1,
-        "thematic_resonance": 7.7,
-        "cultural_impact": 7,
-        "watchability": 7.7,
-        "final_score": 7.73
+        "char": 9.2,
+        "world": 8.8,
+        "cine": 8.5,
+        "spect": 7.5,
+        "conc": 9.0,
+        "drive": 9.0,
+        "resol": 9.5,
+        "final": 9.0
     },
-    "notes": "",
-    "streaming": {
-        "us": [
-            "HBO Max",
-            "Amazon Prime Video"
-        ],
-        "uk": [
-            "Sky Atlantic"
-        ]
-    }
+    "episodes": 63,
+    "seasons": 5,
+    "poster": "",
+    "tmdb_id": 742,
+    "consensus_highlights": [
+        "The greatest television finale ever filmed",
+        "Death as a family business: the Fishers of Fisher & Sons",
+        "Every episode opens with death, every episode is about life",
+        "Michael C. Hall before Dexter: quiet brilliance",
+        "Alan Ball's meditation on mortality and connection"
+    ],
+    "tags": ["death", "family", "dark-comedy", "hbo-original", "masterpiece-finale", "mortality"]
 }

@@ -2,83 +2,50 @@
     "slug": "the-expanse",
     "title": "The Expanse",
     "year": 2015,
-    "month": 12,
+    "month": "12",
+    "network": "Syfy/Amazon",
     "status": "ended",
-    "seasons": 6,
-    "episodes": 62,
-    "runtime": "42-60",
-    "country": "United States",
-    "genres": [
-        "sci-fi",
-        "drama",
-        "thriller"
-    ],
-    "creator": [
-        "Mark Fergus",
-        "Hawk Ostby"
-    ],
-    "network": "Syfy/Prime Video",
+    "streaming": {
+        "us": ["Amazon Prime Video"],
+        "uk": ["Amazon Prime Video"]
+    },
+    "genres": ["Sci-Fi", "Drama", "Political"],
+    "creators": ["Mark Fergus", "Hawk Ostby"],
+    "cast": ["Steven Strait", "Dominique Tipper", "Wes Chatham", "Shohreh Aghdashloo", "Frankie Adams"],
     "external_ratings": {
         "imdb": {
             "score": 8.5,
-            "scale": 10,
-            "count": "190K",
-            "date_accessed": "2026-02-15",
-            "url": "https://www.imdb.com/title/tt3230854/"
+            "votes": 180000,
+            "url": "https://www.imdb.com/title/tt3230854/",
+            "date_accessed": "2026-02-15"
         },
         "rotten_tomatoes": {
-            "season_1": {
-                "score": 93,
-                "scale": 100
-            },
-            "season_2": {
-                "score": 100,
-                "scale": 100
-            },
-            "season_3": {
-                "score": 100,
-                "scale": 100
-            },
-            "season_4": {
-                "score": 92,
-                "scale": 100
-            },
-            "season_5": {
-                "score": 100,
-                "scale": 100
-            },
-            "season_6": {
-                "score": 100,
-                "scale": 100
-            },
-            "date_accessed": "2026-02-15",
-            "url": "https://www.rottentomatoes.com/tv/the_expanse"
-        },
-        "metacritic": {
-            "score": 74,
-            "scale": 100,
-            "date_accessed": "2026-02-15",
-            "url": "https://www.metacritic.com/tv/the-expanse"
+            "audience": 93,
+            "critics": 95,
+            "url": "https://www.rottentomatoes.com/tv/the_expanse",
+            "date_accessed": "2026-02-15"
         }
     },
-    "consensus_highlights": "The Expanse is a science fiction epic that combines hard sci-fi world-building with compelling political intrigue and character-driven drama. Set in a future where humanity has colonized the solar system, the series follows a diverse crew as they uncover a conspiracy that threatens humanity. The show balances big ideas with intimate character moments, creating one of the most realistic depictions of space travel on television.",
     "ranking_system": {
-        "narrative_ambition": 10,
-        "character_depth": 8,
-        "thematic_resonance": 9,
-        "cultural_impact": 8,
-        "watchability": 9,
-        "final_score": 8.09
+        "char": 8.8,
+        "world": 9.5,
+        "cine": 8.5,
+        "spect": 9.0,
+        "conc": 9.0,
+        "drive": 9.2,
+        "resol": 8.5,
+        "final": 8.9
     },
-    "notes": "The Expanse proves that science fiction can be both intellectually ambitious and emotionally engaging. It was saved from cancellation by fan campaigns, a testament to its passionate following.",
-    "tmdbId": 63639,
-    "streaming": {
-        "us": [
-            "Prime Video",
-            "Apple TV+"
-        ],
-        "uk": [
-            "Prime Video"
-        ]
-    }
+    "episodes": 62,
+    "seasons": 6,
+    "poster": "",
+    "tmdb_id": 63639,
+    "consensus_highlights": [
+        "Hard sci-fi that respects physics and intelligence",
+        "Belters, Earth, Mars: a solar system built with geopolitical depth",
+        "The protomolecule: cosmic horror meets space opera",
+        "Fan campaign that saved it from cancellation",
+        "Sci-fi for smart people - Game of Thrones in space done right"
+    ],
+    "tags": ["hard-sci-fi", "space", "political", "saved-by-fans", "realistic", "geopolitics"]
 }

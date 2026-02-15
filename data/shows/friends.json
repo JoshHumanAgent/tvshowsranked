@@ -1,0 +1,51 @@
+{
+    "slug": "friends",
+    "title": "Friends",
+    "year": 1994,
+    "month": "09",
+    "network": "NBC",
+    "status": "ended",
+    "streaming": {
+        "us": ["Max"],
+        "uk": ["Netflix"]
+    },
+    "genres": ["Comedy", "Romance", "Sitcom"],
+    "creators": ["David Crane", "Marta Kauffman"],
+    "cast": ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow", "Matt LeBlanc", "Matthew Perry", "David Schwimmer"],
+    "external_ratings": {
+        "imdb": {
+            "score": 8.9,
+            "votes": 1026000,
+            "url": "https://www.imdb.com/title/tt0108778/",
+            "date_accessed": "2026-02-15"
+        },
+        "rotten_tomatoes": {
+            "audience": 74,
+            "critics": 78,
+            "url": "https://www.rottentomatoes.com/tv/friends",
+            "date_accessed": "2026-02-15"
+        }
+    },
+    "ranking_system": {
+        "char": 8.8,
+        "world": 8.0,
+        "cine": 7.0,
+        "spect": 6.0,
+        "conc": 8.0,
+        "drive": 8.5,
+        "resol": 8.5,
+        "final": 8.5
+    },
+    "episodes": 236,
+    "seasons": 10,
+    "poster": "",
+    "tmdb_id": 1668,
+    "consensus_highlights": [
+        "The definitive 'hangout show' that defined a generation",
+        "Ross and Rachel - television's most famous will-they-won't-they",
+        "Central Perk as a concept: your friends ARE your family",
+        "Quotable dialogue that became millennial shorthand",
+        "Comfort viewing at scale - familiarity beats novelty"
+    ],
+    "tags": ["sitcom", "hangout", "1990s", "new-york", "friendship", "comfort-viewing"]
+}

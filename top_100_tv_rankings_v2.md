@@ -1,0 +1,218 @@
+# Master Ranking: Top 100 Prestige Drama TV Shows
+
+## Scoring System
+
+**Scale:**
+| Score | Meaning |
+|-------|---------|
+| 10 | Perfect—literally impossible to improve |
+| 9 | Incredible—99% perfect, only minor imperfections |
+| 8 | Exceptional—among the very best in its class |
+| 7 | Very good—memorable, clearly stands out |
+| 6 | Good—noticeably better than typical TV |
+| 5 | Average—competent but unremarkable |
+
+**Categories (Weighted):**
+| Category | Weight |
+|----------|--------|
+| Characters & Acting | 20% |
+| World Building | 15% |
+| Cinematography | 10% |
+| Visual Spectacle | 10% |
+| Conceptual Density | 15% |
+| Narrative Drive | 15% |
+| Narrative Path & Resolution | 15% |
+
+**Episode Multiplier:**
+| Episodes | Multiplier |
+|----------|------------|
+| Miniseries | ×0.96 |
+| 10-20 | ×0.95 |
+| 21-30 | ×0.97 |
+| 31-40 | ×1.00 |
+| 41-50 | ×1.02 |
+| 51-60 | ×1.03 |
+| 61-75 | ×1.04 |
+| 76-100 | ×1.05 |
+| 100+ | ×1.06 |
+
+---
+
+## Category Definitions
+
+**Characters & Acting:** Whether people on screen feel like real individuals making authentic, internally consistent choices. Depth of characterization, psychological believability, meaningful change over time, ensemble strength. Acting judged on embodiment—performances should disappear into the role.
+
+**World Building:** How fully realized and self-sustaining the show's world feels. Consistency of rules, institutions, cultures. Sense that life exists beyond the immediate story. Benchmark: Game of Thrones/Westeros = 10.
+
+**Cinematography:** Visual craft and intentionality. Framing, camera movement, lighting, color, composition. Emphasis on coherence and meaning. Key marker: recognizability from a single frame.
+
+**Visual Spectacle:** Impact, ambition, and sustained presence of what is shown. Large-scale environments, production design, visual effects. Also novelty—revealing places or ways of life rarely seen.
+
+**Conceptual Density:** How many distinct ideas the series meaningfully engages with. Political, philosophical, social, moral concepts dramatized through story. Breadth of ideas combined with coherent execution.
+
+**Narrative Drive:** How effectively the story pulls the viewer forward. Pacing, clarity of stakes, escalation. Whether each episode meaningfully advances the narrative. Does the story move with purpose?
+
+**Narrative Path & Resolution:** How effectively a series fulfills its narrative promises. Loop management, closure rates, earned payoffs. Rewards narrative discipline. Unresolved, rushed, or undermining resolutions lower the score.
+
+---
+
+## TOP 100 RANKING (Sorted by Final Score)
+
+| Rank | Show | Char | World | Cine | Spect | Conc | Drive | Resol | Base | Mult | Final |
+|------|------|------|-------|------|-------|------|-------|-------|------|------|-------|
+| 1 | Game of Thrones (S1-4) | 10 | 10 | 8 | 9.5 | 9 | 10 | 9 | 9.50 | 1.00 | **9.50** |
+| 2 | Breaking Bad | 9 | 7 | 9 | 6 | 8 | 10 | 10 | 8.55 | 1.04 | **8.89** |
+| 3 | The Wire | 8.5 | 10 | 6 | 7 | 10 | 7 | 9 | 8.40 | 1.04 | **8.74** |
+| 4 | Better Call Saul | 9 | 7 | 9 | 6 | 8 | 9 | 10 | 8.40 | 1.04 | **8.74** |
+| 5 | Chernobyl | 8 | 8 | 9 | 9 | 9 | 10 | 10 | 8.90 | 0.96 | **8.54** |
+| 6 | The Sopranos | 9 | 7.5 | 6 | 5 | 9 | 7 | 9 | 7.98 | 1.05 | **8.38** |
+| 7 | The Americans | 8.5 | 7.5 | 7 | 5 | 8 | 8 | 10 | 7.93 | 1.05 | **8.33** |
+| 8 | The Shield | 8.5 | 6.5 | 6 | 5 | 7 | 9 | 10 | 7.78 | 1.05 | **8.17** |
+| 9 | The Expanse | 7.5 | 9 | 7 | 8.5 | 8 | 7.5 | 7 | 7.78 | 1.04 | **8.09** |
+| 10 | Succession | 9 | 7 | 8 | 7 | 7 | 8.5 | 9 | 8.03 | 1.00 | **8.03** |
+| 11 | Babylon Berlin | 7.5 | 9 | 9 | 9 | 8 | 7.5 | 7 | 8.03 | 1.00 | **8.03** |
+| 12 | Mr. Robot | 8 | 7 | 9 | 6 | 8 | 7.5 | 9 | 7.83 | 1.02 | **7.99** |
+| 13 | Boardwalk Empire | 8 | 8.5 | 8.5 | 8.5 | 7 | 7 | 7 | 7.75 | 1.03 | **7.98** |
+| 14 | Andor | 8.5 | 8.5 | 9 | 8.5 | 9 | 8.5 | 7 | 8.38 | 0.95 | **7.96** |
+| 15 | True Detective S1 | 8 | 7.5 | 10 | 8 | 8 | 9 | 8 | 8.23 | 0.96 | **7.90** |
+| 16 | Mad Men | 8 | 8 | 8 | 6 | 8 | 6 | 8 | 7.50 | 1.05 | **7.88** |
+| 17 | Halt and Catch Fire | 9 | 7.5 | 7 | 5 | 8 | 8 | 9 | 7.88 | 1.00 | **7.88** |
+| 18 | Angels in America | 8.5 | 7 | 8 | 7 | 10 | 7 | 9 | 8.15 | 0.96 | **7.82** |
+| 19 | Dark | 7 | 8 | 8.5 | 6.5 | 9 | 8.5 | 9 | 8.03 | 0.97 | **7.79** |
+| 20 | Deadwood | 9 | 8.5 | 7 | 7 | 9 | 7 | 6 | 7.78 | 1.00 | **7.78** |
+| 21 | Band of Brothers | 7.5 | 8 | 8 | 9 | 7 | 9 | 9 | 8.05 | 0.96 | **7.73** |
+| 22 | Six Feet Under | 8 | 6.5 | 7 | 5 | 8 | 6 | 10 | 7.43 | 1.04 | **7.73** |
+| 23 | Fargo | 7.5 | 7 | 8.5 | 6.5 | 7 | 8 | 8 | 7.50 | 1.03 | **7.73** |
+| 24 | It's a Sin | 8 | 7.5 | 8 | 6 | 8 | 8 | 10 | 8.03 | 0.96 | **7.71** |
+| 25 | For All Mankind | 7 | 8 | 8 | 8 | 8 | 8 | 7.5 | 7.73 | 1.02 | **7.88** |
+| 26 | The Leftovers | 7.5 | 7.5 | 8 | 7 | 9 | 8 | 8 | 7.88 | 0.97 | **7.64** |
+| 27 | Lost | 8 | 7.5 | 7 | 7.5 | 7 | 8 | 5 | 7.18 | 1.06 | **7.61** |
+| 28 | The Knick | 8.5 | 8.5 | 9.5 | 8 | 8 | 8 | 6 | 8.00 | 0.95 | **7.60** |
+| 29 | When They See Us | 8 | 7 | 8 | 5 | 9 | 8 | 10 | 8.00 | 0.96 | **7.68** |
+| 30 | Station Eleven | 7.5 | 8 | 9 | 7 | 9 | 7 | 8 | 7.93 | 0.95 | **7.53** |
+| 31 | House of the Dragon | 8.5 | 9.5 | 8 | 9.5 | 7 | 8 | 6 | 7.93 | 0.95 | **7.53** |
+| 32 | Euphoria | 8 | 7 | 9.5 | 8.5 | 8 | 7 | 6 | 7.68 | 0.95 | **7.30** |
+| 33 | Ozark | 7.5 | 7 | 8 | 6 | 7 | 8 | 7 | 7.35 | 1.02 | **7.50** |
+| 34 | Severance | 7.5 | 8.5 | 8.5 | 6.5 | 9 | 9 | 6 | 7.88 | 0.95 | **7.49** |
+| 35 | Shogun (2024) | 8 | 9 | 9 | 9 | 7 | 7.5 | 7 | 7.87 | 0.95 | **7.48** |
+| 36 | Rome | 8 | 8.5 | 7 | 9 | 8 | 8 | 6 | 7.78 | 0.95 | **7.39** |
+| 37 | Peaky Blinders | 7.5 | 8 | 9 | 7.5 | 7 | 7 | 7 | 7.50 | 1.00 | **7.50** |
+| 38 | Utopia (UK) | 7.5 | 7.5 | 10 | 7 | 8 | 9 | 6 | 7.83 | 0.95 | **7.44** |
+| 39 | Homeland | 8 | 7 | 7 | 6 | 7 | 8 | 7 | 7.30 | 1.05 | **7.67** |
+| 40 | Girls | 8.5 | 7 | 7 | 5 | 8 | 7 | 8 | 7.38 | 1.04 | **7.68** |
+| 41 | Twin Peaks: The Return | 8 | 8 | 9.5 | 9 | 9 | 5 | 7 | 7.78 | 0.95 | **7.39** |
+| 42 | Justified | 8 | 7.5 | 7 | 5 | 7 | 8 | 8 | 7.38 | 1.05 | **7.75** |
+| 43 | Friday Night Lights | 8 | 7.5 | 7 | 5 | 7 | 7 | 8 | 7.23 | 1.05 | **7.59** |
+| 44 | The X-Files | 7.5 | 7.5 | 7 | 7 | 7 | 7 | 6 | 7.05 | 1.05 | **7.40** |
+| 45 | Rectify | 9 | 7 | 8.5 | 5 | 9 | 6 | 9 | 7.73 | 0.97 | **7.50** |
+| 46 | Battlestar Galactica | 7 | 7 | 7 | 8 | 8 | 7 | 6 | 7.15 | 1.05 | **7.51** |
+| 47 | Hill Street Blues | 7.5 | 7 | 6 | 5 | 8 | 7 | 7 | 7.00 | 1.05 | **7.35** |
+| 48 | The Bureau | 8 | 7.5 | 7 | 5 | 8 | 8 | 8 | 7.53 | 1.02 | **7.68** |
+| 49 | Beef | 8.5 | 6.5 | 8 | 5 | 8 | 9 | 9 | 7.88 | 0.95 | **7.49** |
+| 50 | The Haunting of Hill House | 8 | 7 | 9 | 7 | 8 | 8 | 9 | 8.00 | 0.95 | **7.60** |
+| 51 | The Last of Us | 8 | 7.5 | 8 | 8 | 8 | 8 | 7 | 7.78 | 0.95 | **7.39** |
+| 52 | Hannibal | 8 | 6.5 | 10 | 8.5 | 7 | 6.5 | 8 | 7.55 | 1.00 | **7.55** |
+| 53 | Penny Dreadful | 8 | 8 | 9 | 8 | 8 | 7 | 6 | 7.60 | 0.97 | **7.37** |
+| 54 | Squid Game | 7 | 7.5 | 8 | 9 | 7 | 9 | 8 | 7.85 | 0.95 | **7.46** |
+| 55 | Borgen | 8 | 7 | 7 | 5 | 8 | 8 | 8 | 7.45 | 1.00 | **7.45** |
+| 56 | The Pacific | 7 | 8 | 8 | 9 | 7 | 7 | 8 | 7.60 | 0.96 | **7.30** |
+| 57 | Gomorrah | 7 | 8 | 8 | 6 | 7 | 7 | 7 | 7.15 | 1.03 | **7.36** |
+| 58 | Narcos | 7.5 | 8 | 8 | 7 | 7 | 8 | 7 | 7.48 | 0.97 | **7.26** |
+| 59 | Wolf Hall | 8 | 8.5 | 9 | 7 | 9 | 7 | 7 | 7.90 | 0.96 | **7.58** |
+| 60 | Pose | 7.5 | 8 | 8 | 7 | 8 | 7 | 8 | 7.68 | 0.97 | **7.45** |
+| 61 | Generation Kill | 7.5 | 8 | 8 | 7 | 9 | 7 | 8 | 7.78 | 0.96 | **7.47** |
+| 62 | Watchmen (2019) | 7.5 | 8 | 8 | 8 | 9 | 8 | 8 | 8.08 | 0.95 | **7.68** |
+| 63 | Stranger Things | 7 | 7 | 8 | 8 | 6 | 8 | 7 | 7.25 | 1.02 | **7.40** |
+| 64 | The Boys | 7 | 7.5 | 7 | 8 | 8 | 8 | 6 | 7.33 | 1.00 | **7.33** |
+| 65 | Adolescence | 8 | 6.5 | 9.5 | 5 | 9 | 9 | 10 | 8.28 | 0.96 | **7.95** |
+| 66 | Pluribus | 8.5 | 7.5 | 8.5 | 7 | 9 | 8.5 | 6 | 7.98 | 0.95 | **7.58** |
+| 67 | The Crown | 7.5 | 8 | 9 | 8 | 7 | 7 | 7 | 7.53 | 1.03 | **7.76** |
+| 68 | Twin Peaks | 7.5 | 8 | 8 | 7 | 9 | 6 | 6 | 7.35 | 0.97 | **7.13** |
+| 69 | The White Lotus | 7.5 | 7 | 9 | 8 | 8 | 7 | 8 | 7.68 | 0.97 | **7.45** |
+| 70 | Black Mirror | 7 | 7 | 8 | 7 | 9 | 8 | 8 | 7.75 | 0.97 | **7.52** |
+| 71 | The Affair | 7.5 | 6.5 | 8 | 5 | 8 | 7 | 6 | 6.93 | 1.03 | **7.14** |
+| 72 | Oz | 7.5 | 7.5 | 6 | 5 | 8 | 7 | 7 | 7.05 | 1.03 | **7.26** |
+| 73 | Downton Abbey | 7 | 8 | 8 | 8 | 6 | 7 | 7 | 7.15 | 1.03 | **7.36** |
+| 74 | Silo | 7.5 | 8.5 | 8 | 8 | 8 | 8.5 | 6 | 7.78 | 0.95 | **7.39** |
+| 75 | Foundation | 6 | 9 | 9 | 10 | 8 | 6 | 5 | 7.25 | 0.97 | **7.03** |
+| 76 | The Handmaid's Tale | 7 | 8 | 8.5 | 7.5 | 8 | 5 | 5 | 6.83 | 1.03 | **7.03** |
+| 77 | Mindhunter | 8 | 7.5 | 9.5 | 5 | 8 | 7 | 5 | 7.13 | 0.95 | **6.77** |
+| 78 | The Underground Railroad | 7.5 | 8 | 10 | 8 | 9 | 6 | 7 | 7.78 | 0.95 | **7.39** |
+| 79 | Big Little Lies | 7.5 | 7 | 8 | 7 | 7 | 7 | 8 | 7.38 | 0.95 | **7.01** |
+| 80 | Broadchurch | 7.5 | 7 | 8 | 6 | 7 | 8 | 8 | 7.43 | 0.97 | **7.21** |
+| 81 | The Queen's Gambit | 7.5 | 7.5 | 9 | 7 | 7 | 9 | 9 | 7.98 | 0.96 | **7.66** |
+| 82 | Tokyo Vice | 7.5 | 8 | 8 | 7 | 7 | 7 | 6 | 7.18 | 0.95 | **6.82** |
+| 83 | Normal People | 8.5 | 6.5 | 9 | 5 | 7 | 7 | 8 | 7.33 | 0.95 | **6.96** |
+| 84 | Midnight Mass | 7.5 | 7.5 | 8 | 6 | 9 | 7 | 9 | 7.83 | 0.96 | **7.52** |
+| 85 | Sharp Objects | 8.5 | 7.5 | 9 | 6 | 8 | 7 | 8 | 7.78 | 0.96 | **7.47** |
+| 86 | The Bear | 7.5 | 6.5 | 9 | 5 | 7 | 8 | 7 | 7.23 | 0.97 | **7.01** |
+| 87 | Bloodline | 7.5 | 7 | 8 | 6 | 7 | 7 | 6 | 7.00 | 0.97 | **6.79** |
+| 88 | Patrick Melrose | 8.5 | 7 | 8 | 6 | 8 | 7 | 9 | 7.78 | 0.96 | **7.47** |
+| 89 | Mare of Easttown | 8 | 7.5 | 7 | 5 | 7 | 8 | 9 | 7.63 | 0.96 | **7.32** |
+| 90 | The Penguin | 8 | 7.5 | 8 | 7 | 7 | 8 | 7 | 7.53 | 0.96 | **7.23** |
+| 91 | Escape at Dannemora | 8 | 7 | 8 | 5 | 7 | 8 | 9 | 7.60 | 0.96 | **7.30** |
+| 92 | The Plot Against America | 7.5 | 8 | 8 | 6 | 9 | 7 | 7 | 7.53 | 0.96 | **7.23** |
+| 93 | Godless | 7.5 | 8 | 9 | 8 | 7 | 7 | 8 | 7.68 | 0.96 | **7.37** |
+| 94 | Dopesick | 7.5 | 7 | 7 | 5 | 9 | 8 | 8 | 7.53 | 0.96 | **7.23** |
+| 95 | Happy Valley | 8 | 7 | 7 | 5 | 7 | 8 | 9 | 7.60 | 0.95 | **7.22** |
+| 96 | Line of Duty | 7.5 | 7 | 7 | 5 | 7 | 9 | 7 | 7.30 | 1.00 | **7.30** |
+| 97 | 24 | 6.5 | 6 | 6 | 7 | 6 | 9.5 | 7 | 7.03 | 1.06 | **7.45** |
+| 98 | The Killing (DK) | 7.5 | 7 | 7 | 5 | 7 | 8 | 8 | 7.23 | 1.00 | **7.23** |
+| 99 | Yellowjackets | 7.5 | 6.5 | 7 | 6 | 8 | 7 | 5 | 6.88 | 0.97 | **6.67** |
+| 100 | Homicide: Life on the Street | 7.5 | 6.5 | 6 | 5 | 7 | 7 | 7 | 6.73 | 1.06 | **7.13** |
+
+---
+
+## TOP 20 SUMMARY
+
+| Rank | Show | Final Score |
+|------|------|-------------|
+| 1 | Game of Thrones (S1-4) | **9.50** |
+| 2 | Breaking Bad | **8.89** |
+| 3 | The Wire | **8.74** |
+| 4 | Better Call Saul | **8.74** |
+| 5 | Chernobyl | **8.54** |
+| 6 | The Sopranos | **8.38** |
+| 7 | The Americans | **8.33** |
+| 8 | The Shield | **8.17** |
+| 9 | The Expanse | **8.09** |
+| 10 | Succession | **8.03** |
+| 11 | Babylon Berlin | **8.03** |
+| 12 | Mr. Robot | **7.99** |
+| 13 | Boardwalk Empire | **7.98** |
+| 14 | Adolescence | **7.95** |
+| 15 | Andor | **7.96** |
+| 16 | True Detective S1 | **7.90** |
+| 17 | For All Mankind | **7.88** |
+| 18 | Mad Men | **7.88** |
+| 19 | Halt and Catch Fire | **7.88** |
+| 20 | Angels in America | **7.82** |
+
+---
+
+## CATEGORY DEFINITIONS
+
+**Characters & Acting (20%)**
+Whether people on screen feel like real individuals making authentic, internally consistent choices. Depth of characterization, psychological believability, meaningful change over time, ensemble strength. Acting judged on embodiment—performances should disappear into the role.
+
+**World Building (15%)**
+How fully realized and self-sustaining the show's world feels. Consistency of rules, institutions, cultures. Sense that life exists beyond the immediate story. Benchmark: Game of Thrones/Westeros = 10.
+
+**Cinematography (10%)**
+Visual craft and intentionality. Framing, camera movement, lighting, color, composition. Emphasis on coherence and meaning. Key marker: recognizability from a single frame.
+
+**Visual Spectacle (10%)**
+Impact, ambition, and sustained presence of what is shown. Large-scale environments, production design, visual effects. Also novelty—revealing places or ways of life rarely seen.
+
+**Conceptual Density (15%)**
+How many distinct ideas the series meaningfully engages with. Political, philosophical, social, moral concepts dramatized through story. Breadth of ideas combined with coherent execution.
+
+**Narrative Drive (15%)**
+How effectively the story pulls the viewer forward. Pacing, clarity of stakes, escalation. Whether each episode meaningfully advances the narrative. Does the story move with purpose?
+
+**Narrative Path & Resolution (15%)**
+How effectively a series fulfills its narrative promises. Loop management, closure rates, earned payoffs. Rewards narrative discipline. Unresolved, rushed, or undermining resolutions lower the score.
+
+---
+
+*Last updated: January 2026*

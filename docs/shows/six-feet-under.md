@@ -1,44 +1,41 @@
-# Six Feet Under
+# Six Feet Under (2001)
 
-**Rank #26** | Drama | 2001-2005 | HBO | 5 Seasons, 63 Episodes
+**Rank:** 120 | **Final Score:** 9.0
 
----
+## Viewing Guide
 
-## What It Feels Like to Watch
+**Where to Watch:**
+- 🇺🇸 United States: Max
+- 🇬🇧 United Kingdom: Sky, Now TV
 
-Death walks through the front door every day at Fisher & Sons Funeral Home. But *Six Feet Under* isn't really about death — it's about what it means to be alive.
+**Watch Status:** Complete | 5 Seasons | 63 Episodes
 
-The series opens with a literal bang: Nathaniel Fisher Sr. dies in a car accident on the way to a bowling alley. His two sons — Nate, the irresponsible older one who was never supposed to take over the family business, and David, the tightly wound younger brother who hides his sexuality behind a wall of control — must now run the funeral home alongside their mother Ruth and teenage sister Claire. Alan Ball, creator of *American Beauty*, crafted this series as a meditation on mortality disguised as a family drama.
+## The Landscape
 
-The show has an unusual rhythm. Each episode begins with a death — sometimes mundane, sometimes violent, sometimes peaceful — and uses that death as a lens through which to examine the Fisher family. The bodies come in all shapes and sizes, and the people who mourn them reveal truths about grief that feel startlingly real. There's no sentimentality here, no Hollywood redemption. Just the raw, awkward, sometimes darkly funny way we try to make sense of losing the people we love.
+A funeral home in Los Angeles. Every episode opens with death—a stranger's death that somehow illuminates the Fishers' own struggles with life, love, and mortality. Alan Ball finds poetry in the business of endings.
 
-Peter Krause is magnificent as Nate — a man who spent his life running from responsibility only to find himself literally surrounded by it. Michael C. Hall's performance as David is a masterclass in restraint, a man whose interior life burns so hot you can see it through his careful exterior. Frances Conroy anchors everything as Ruth, the widow who discovers that her husband's death frees her in ways she never expected.
+## The Characters
 
-But the real star is the writing. Each episode functions as a short story, complete with its own beginning, middle, and end, while contributing to the larger arc of the Fisher family. The show has a poetic quality — characters speak in fragments, in revelations that come not from big speeches but from small moments. A glance across a kitchen table. A hand reaching for another hand. The silence after a question nobody wants to answer.
+Nate: the prodigal son returning to die. David: the closeted funeral director finding himself. Claire: the goth daughter growing into an artist. Ruth: the matriarch who never asked for any of this. Each Fisher wrestling with what it means to live while surrounded by death.
 
-The final episode, "Everyone's Waiting," is one of the greatest conclusions in television history. It jumps forward in time, showing where each character ends up — and then it shows where they end. It is devastating and beautiful and ultimately life-affirming, because it understands that death is not the opposite of life but part of it.
+## What It Feels Like
 
-This is a show that makes you want to call everyone you love and tell them that they matter. Watch it with someone you care about. You'll both be better for it.
+Like a meditation on mortality that happens to be funny. Like understanding that death is both the end and the beginning of everything. Like spending five years with a family that becomes your own.
 
----
+## The Finale
 
-## Where to Watch
+Six Feet and Flames—widely considered the greatest series finale ever made. Each character's ending revealed in montage. Life, death, and the space between. Prepare to weep.
 
-- **Streaming:** HBO Max, Amazon Prime Video (with subscription)
-- **Purchase:** Apple TV, Google Play
+## External Ratings
 
----
+- **IMDb:** 8.7/10 (138,000 votes)
+- **Rotten Tomatoes:** Critics 91%, Audience 85%
 
-## Ratings
+## Related Shows
 
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.7/10 | 185,000 |
-| TMDB | 8.1/10 | 1,064 |
-| Rotten Tomatoes | 90% | — |
-
-*Data accessed 2026-02-15*
+- **True Blood** (Ball's vampire soap)
+- **Here and Now** (Ball's later family drama)
 
 ---
 
-**Previous:** [Band of Brothers (#25)](band-of-brothers.md) | **Next:** [Fargo (#27)](fargo.md)
+*Last Updated: 2026-02-15*

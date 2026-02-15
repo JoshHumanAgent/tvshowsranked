@@ -1,43 +1,41 @@
-# Ozark
+# Ozark (2017)
 
-**Rank #49** | Crime, Drama, Thriller | 2017-2022 | Netflix | 4 Seasons, 44 Episodes
+**Rank:** 124 | **Final Score:** 8.8
 
----
+## Viewing Guide
 
-## What It Feels Like to Watch
+**Where to Watch:**
+- 🇺🇸 United States: Netflix
+- 🇬🇧 United Kingdom: Netflix
 
-Marty Byrde is a financial adviser who makes one terrible decision. When his business partner steals from a Mexican drug cartel, Marty offers to launder money in the Missouri Ozarks to save his life. What follows is a descent into darkness that consumes his entire family.
+**Watch Status:** Complete | 4 Seasons | 44 Episodes
 
-*Ozark* is often compared to *Breaking Bad*, and the comparison is apt. Both are about ordinary men who become monsters. Both explore how crime corrodes the soul. But *Ozark* has its own rhythm — slower, more deliberate, with a visual palette that's all cool blues and shadow.
+## The Landscape
 
-Jason Bateman is revelatory as Marty. Known for comedy, he delivers a performance of contained panic — a man always calculating, always maneuvering, always three moves ahead even as the ground shifts beneath him. You see the strain in his eyes, the cost of maintaining control.
+Marty Byrde's money laundering operation goes wrong—so he moves his family to the Ozarks to launder for a drug cartel. What follows is a slow descent into moral compromise, with each season adding new layers of violence and consequence.
 
-Laura Linney is equally good as his wife Wendy, who transforms over the series from reluctant accomplice to active participant. Their marriage becomes the show's most complex relationship — two people bound by secrets, increasingly complicit in each other's crimes.
+## The Characters
 
-Julia Garner's Ruth Langmore is the breakout character — a local criminal who becomes entangled with the Byrdes and provides the show's moral center, such as it is. Her journey from petty thief to major player is one of the great character arcs in recent television.
+Marty: the man who can talk himself out of anything until he can't. Wendy: the wife who becomes more ruthless than her husband. Ruth: the local who becomes something more. Each transformation is earned, each choice is costly.
 
-The show is relentless. Every season raises the stakes. The Byrdes accumulate enemies — the cartel, local criminals, the FBI, rival politicians — and they survive through a combination of intelligence, ruthlessness, and sheer luck. By the finale, you understand that there's no redemption coming, only escape.
+## What It Feels Like
 
-The final episodes are controversial but fitting. The Byrdes get what they wanted. Whether they deserved it is a question the show leaves unanswered.
+Like Breaking Blue—the blue-tinted noir to Breaking Bad's desert orange. Like watching Jason Bateman discover he's a great dramatic actor. Like Netflix's answer to prestige crime drama.
 
----
+## Julia Garner's Ruth
 
-## Where to Watch
+A breakout performance that steals every scene. Her Missouri accent, her ferocity, her vulnerability. Ruth Langmore becomes the soul of the show.
 
-- **Streaming:** Netflix
+## External Ratings
 
----
+- **IMDb:** 8.5/10 (274,000 votes)
+- **Rotten Tomatoes:** Critics 81%, Audience 88%
 
-## Ratings
+## Related Shows
 
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.5/10 | 205,000 |
-| TMDB | 8.2/10 | 2,640 |
-| Rotten Tomatoes | 82% | — |
-
-*Data accessed 2026-02-15*
+- "Breaking Bad" (the obvious comparison)
+- "Bloodline" (similar family crime drama)
 
 ---
 
-**Previous:** [Rectify (#48)](rectify.md) | **Next:** [Peaky Blinders (#50)](peaky-blinders.md)
+*Last Updated: 2026-02-15*

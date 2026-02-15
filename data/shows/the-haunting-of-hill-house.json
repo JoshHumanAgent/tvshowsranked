@@ -2,51 +2,50 @@
     "slug": "the-haunting-of-hill-house",
     "title": "The Haunting of Hill House",
     "year": 2018,
-    "month": 10,
-    "status": "completed",
-    "seasons": 1,
-    "episodes": 10,
-    "runtime": "45-60",
-    "country": "United States",
-    "genres": [
-        "horror",
-        "drama",
-        "mystery"
-    ],
-    "creator": "Mike Flanagan",
+    "month": "10",
     "network": "Netflix",
-    "tmdbId": 79834,
+    "status": "limited",
+    "streaming": {
+        "us": ["Netflix"],
+        "uk": ["Netflix"]
+    },
+    "genres": ["Horror", "Drama", "Mystery"],
+    "creators": ["Mike Flanagan"],
+    "cast": ["Michiel Huisman", "Carla Gugino", "Henry Thomas", "Victoria Pedretti", "Oliver Jackson-Cohen", "Kate Siegel"],
     "external_ratings": {
         "imdb": {
             "score": 8.6,
-            "scale": 10,
-            "count": "145000",
-            "date_accessed": "2026-02-15",
-            "url": "https://www.imdb.com/title/tt6763664/"
+            "votes": 255000,
+            "url": "https://www.imdb.com/title/tt6765456/",
+            "date_accessed": "2026-02-15"
         },
         "rotten_tomatoes": {
-            "score": 93,
-            "scale": 100,
-            "date_accessed": "2026-02-15",
-            "url": "https://www.rottentomatoes.com/tv/the_haunting_of_hill_house"
+            "audience": 77,
+            "critics": 93,
+            "url": "https://www.rottentomatoes.com/tv/the_haunting_of_hill_house",
+            "date_accessed": "2026-02-15"
         }
     },
-    "consensus_highlights": "A fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
     "ranking_system": {
-        "narrative_ambition": 7.2,
-        "character_depth": 8,
-        "thematic_resonance": 7.6,
-        "cultural_impact": 6.8,
-        "watchability": 7.6,
-        "final_score": 7.6
+        "char": 9.0,
+        "world": 9.5,
+        "cine": 9.5,
+        "spect": 9.0,
+        "conc": 9.2,
+        "drive": 8.8,
+        "resol": 8.5,
+        "final": 9.0
     },
-    "notes": "",
-    "streaming": {
-        "us": [
-            "Netflix"
-        ],
-        "uk": [
-            "Netflix"
-        ]
-    }
+    "episodes": 10,
+    "seasons": 1,
+    "poster": "",
+    "tmdb_id": 83829,
+    "consensus_highlights": [
+        "Mike Flanagan proves horror can be devastatingly emotional",
+        "The Bent-Neck Lady: grief made manifest",
+        "Five siblings, five traumas, one house that remembers",
+        "Genre as therapy: horror for healing",
+        "Cinematography that makes ghosts of the living"
+    ],
+    "tags": ["horror", "grief", "emotional", "flanagan", "limited-series", "family-trauma"]
 }

@@ -2,51 +2,50 @@
     "slug": "ozark",
     "title": "Ozark",
     "year": 2017,
-    "month": 7,
-    "status": "completed",
-    "seasons": 4,
-    "episodes": 44,
-    "runtime": "45-60",
-    "country": "United States",
-    "genres": [
-        "crime",
-        "drama",
-        "thriller"
-    ],
-    "creator": "Bill Dubuque",
+    "month": "07",
     "network": "Netflix",
-    "tmdbId": 69740,
+    "status": "ended",
+    "streaming": {
+        "us": ["Netflix"],
+        "uk": ["Netflix"]
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "creators": ["Bill Dubuque", "Mark Williams"],
+    "cast": ["Jason Bateman", "Laura Linney", "Sofia Hublitz", "Skylar Gaertner", "Julia Garner", "Tom Pelphrey"],
     "external_ratings": {
         "imdb": {
             "score": 8.5,
-            "scale": 10,
-            "count": "205000",
-            "date_accessed": "2026-02-15",
-            "url": "https://www.imdb.com/title/tt5071412/"
+            "votes": 274000,
+            "url": "https://www.imdb.com/title/tt5071412/",
+            "date_accessed": "2026-02-15"
         },
         "rotten_tomatoes": {
-            "score": 82,
-            "scale": 100,
-            "date_accessed": "2026-02-15",
-            "url": "https://www.rottentomatoes.com/tv/ozark"
+            "audience": 88,
+            "critics": 81,
+            "url": "https://www.rottentomatoes.com/tv/ozark",
+            "date_accessed": "2026-02-15"
         }
     },
-    "consensus_highlights": "A financial adviser drags his family to the Missouri Ozarks to launder money for a drug boss.",
     "ranking_system": {
-        "narrative_ambition": 7.1,
-        "character_depth": 7.9,
-        "thematic_resonance": 7.5,
-        "cultural_impact": 6.8,
-        "watchability": 7.5,
-        "final_score": 7.5
+        "char": 8.5,
+        "world": 9.0,
+        "cine": 8.8,
+        "spect": 8.5,
+        "conc": 8.8,
+        "drive": 9.2,
+        "resol": 8.5,
+        "final": 8.8
     },
-    "notes": "",
-    "streaming": {
-        "us": [
-            "Netflix"
-        ],
-        "uk": [
-            "Netflix"
-        ]
-    }
+    "episodes": 44,
+    "seasons": 4,
+    "poster": "",
+    "tmdb_id": 69740,
+    "consensus_highlights": [
+        "The Byrdes' descent: middle-class corruption as slow-motion tragedy",
+        "Jason Bateman's career renaissance - comedic actor, dramatic revelation",
+        "Julia Garner's Ruth Langmore: a breakout performance of genius",
+        "Blue-tinted noir: Ozark's distinct visual language",
+        "Netflix's prestige answer to Breaking Bad"
+    ],
+    "tags": ["crime", "money-laundering", "family-drama", "netflix-drama", "breakout-performances", "thriller"]
 }
