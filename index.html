@@ -3080,6 +3080,7 @@
             const title = slider.dataset.show;
             const catKey = slider.dataset.cat;
             const newVal = parseFloat(slider.value);
+            const oldVal = activeScores[title][catKey];
 
             const show = shows.find(s => s.title === title);
             if (!show || !activeScores[title]) return;
@@ -3087,7 +3088,11 @@
             // Update data
             activeScores[title][catKey] = newVal;
             show[catKey] = newVal;
-            recalcFinal(show);
+            
+            // Calculate final score adjustment from base (not current weights)
+            const weight = weights[catKey];
+            const delta = (newVal - oldVal) * (weight / 100);
+            show.final = parseFloat((baseScores[title].final + delta).toFixed(2));
 
             // Track modification
             const isModified = catKeys.some(k => activeScores[title][k] !== baseScores[title][k]);
