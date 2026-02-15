@@ -2466,8 +2466,8 @@
             
             totalEl.textContent = total + '%';
             
-            // Enable recalc for any total > 0 (not just 100)
-            if (total > 0) {
+            // Enable recalc only when total = 100
+            if (total === 100) {
                 totalContainer.classList.add('valid');
                 totalContainer.classList.remove('invalid');
                 warningEl.classList.remove('visible');
@@ -2475,6 +2475,7 @@
             } else {
                 totalContainer.classList.add('invalid');
                 totalContainer.classList.remove('valid');
+                warningEl.textContent = total > 100 ? `⚠️ Total ${total}% - reduce to 100%` : `⚠️ Total must equal 100%`;
                 warningEl.classList.add('visible');
                 recalcBtn?.classList.remove('active');
             }
@@ -2489,8 +2490,8 @@
         // Recalculate rankings with custom weights
         document.getElementById('recalc-weights')?.addEventListener('click', () => {
             const total = Object.values(weights).reduce((a, b) => a + b, 0);
-            // Allow any total (0-500) - not just 100
-            if (total === 0) return;
+            // Must equal 100
+            if (total !== 100) return;
 
             // Recalculate final scores from BASE scores (not current modifications)
             shows.forEach(show => {
