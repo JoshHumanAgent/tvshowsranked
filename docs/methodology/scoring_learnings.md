@@ -15,6 +15,15 @@
 
 ---
 
+### 🎬 Season Selection Philosophy
+**Shows are evaluated at their peak.** When later seasons decline in quality, only the excellent seasons are included in the ranking.
+
+- **Game of Thrones (S1-4)** — Only the first four seasons, the show at its absolute best
+- This mirrors how we select shows for inclusion: we're ranking television excellence, not mediocrity
+- A show's weakest moments don't define it — its strongest do
+
+---
+
 ## 📊 CATEGORY PATTERNS
 
 ### Characters & Acting (20%)

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows Ranked</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg: #0a0a0f;
+            --card: #12121a;
+            --border: #1e1e2e;
+            --text: #e4e4e7;
+            --text-muted: #a1a1aa;
+            --accent: #d4af37;
+            --accent-dim: #8a7020;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        
+        /* Filters */
+        .filters-section {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .filter-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+        
+        .filter-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        
+        .filter-btn.active {
+            background: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+            font-weight: 500;
+        }
+        
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.5rem 1rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        /* Genre Pills */
+        .genre-pills {
+            display: flex;
+            gap: 0.6rem;
+            overflow-x: auto;
+            padding: 0.5rem 0;
+            scrollbar-width: none;
+        }
+        
+        .genre-pills::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .genre-pill {
+            flex-shrink: 0;
+            padding: 0.5rem 1rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        
+        .genre-pill:hover {
+            border-color: var(--accent-dim);
+            color: var(--accent);
+        }
+        
+        .genre-pill.active {
+            background: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+            font-weight: 500;
+        }
+        
+        .genre-pill.more {
+            border-style: dashed;
+            border-color: var(--accent-dim);
+            color: var(--accent);
+        }
+        
+        /* Cards */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
+        }
+        
+        .show-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .show-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            border-color: var(--accent-dim);
+        }
+        
+        .show-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        
+        .rank {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+        
+        .score {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .show-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .show-meta {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+        
+        .genres {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+        
+        .genre-tag {
+            padding: 0.25rem 0.6rem;
+            background: var(--bg);
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-muted);
+        }
+        
+        @media (max-width: 768px) {
+            main { padding: 1rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TV Shows Ranked</h1>
+        <p class="subtitle">100 shows scored across 7 categories</p>
+    </header>
+    
+    <div class="filters-section">
+        <div class="filter-row">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="2020s">2020s</button>
+            <button class="filter-btn" data-filter="2010s">2010s</button>
+            <button class="filter-btn" data-filter="2000s">2000s</button>
+            <button class="filter-btn" data-filter="pre2000">Pre-2000</button>
+            <input type="text" class="search-input" placeholder="Search shows..." id="search">
+        </div>
+        <div class="genre-pills">
+            <button class="genre-pill active" data-genre="all">All</button>
+            <button class="genre-pill" data-genre="crime">Crime</button>
+            <button class="genre-pill" data-genre="drama">Drama</button>
+            <button class="genre-pill" data-genre="thriller">Thriller</button>
+            <button class="genre-pill" data-genre="sci-fi">Sci-Fi</button>
+            <button class="genre-pill" data-genre="fantasy">Fantasy</button>
+            <button class="genre-pill" data-genre="historical">Historical</button>
+            <button class="genre-pill" data-genre="mystery">Mystery</button>
+            <button class="genre-pill more">More →</button>
+        </div>
+    </div>
+    
+    <main>
+        <div class="grid" id="rankings"></div>
+        <div class="no-results" id="no-results" style="display: none;">No shows found</div>
+    </main>
+
+    <script>
+        const shows = [
+            { rank: 1, title: "Breaking Bad", year: 2008, score: 9.5, genres: ["crime", "drama", "thriller"] },
+            { rank: 2, title: "The Wire", year: 2002, score: 9.3, genres: ["crime", "drama"] },
+            { rank: 3, title: "Game of Thrones", year: 2011, score: 9.2, genres: ["fantasy", "drama"] },
+            { rank: 4, title: "The Sopranos", year: 1999, score: 9.2, genres: ["crime", "drama"] },
+            { rank: 5, title: "Chernobyl", year: 2019, score: 9.1, genres: ["drama", "historical"] },
+            { rank: 6, title: "True Detective", year: 2014, score: 9.0, genres: ["crime", "mystery", "thriller"] },
+            { rank: 7, title: "The Crown", year: 2016, score: 8.9, genres: ["drama", "historical"] },
+            { rank: 8, title: "Mindhunter", year: 2017, score: 8.8, genres: ["crime", "drama", "thriller"] },
+            { rank: 9, title: "Dark", year: 2017, score: 8.8, genres: ["sci-fi", "mystery", "thriller"] },
+            { rank: 10, title: "Band of Brothers", year: 2001, score: 8.7, genres: ["drama", "historical"] }
+        ];
+
+        const grid = document.getElementById('rankings');
+        const noResults = document.getElementById('no-results');
+        const searchInput = document.getElementById('search');
+        
+        let currentEra = 'all';
+        let currentGenres = ['all'];
+        let searchTerm = '';
+
+        function getEra(year) {
+            if (year >= 2020) return '2020s';
+            if (year >= 2010) return '2010s';
+            if (year >= 2000) return '2000s';
+            return 'pre2000';
+        }
+
+        function renderShows() {
+            let filtered = shows.filter(show => {
+                const matchesSearch = show.title.toLowerCase().includes(searchTerm.toLowerCase());
+                const matchesEra = currentEra === 'all' || getEra(show.year) === currentEra;
+                
+                let matchesGenre = true;
+                if (!currentGenres.includes('all')) {
+                    matchesGenre = currentGenres.some(g => show.genres.includes(g));
+                }
+                
+                return matchesSearch && matchesEra && matchesGenre;
+            });
+
+            if (filtered.length === 0) {
+                grid.style.display = 'none';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            grid.style.display = 'grid';
+            noResults.style.display = 'none';
+
+            grid.innerHTML = filtered.map(show => `
+                <div class="show-card">
+                    <div class="show-header">
+                        <span class="rank">#${show.rank}</span>
+                        <span class="score">${show.score}</span>
+                    </div>
+                    <div class="show-title">${show.title}</div>
+                    <div class="show-meta">${show.year} • ${show.genres.length} genres</div>
+                    <div class="genres">
+                        ${show.genres.map(g => `<span class="genre-tag">${g}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Era buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentEra = btn.dataset.filter;
+                renderShows();
+            });
+        });
+
+        // Genre pills
+        document.querySelectorAll('.genre-pill[data-genre]').forEach(pill => {
+            pill.addEventListener('click', () => {
+                const genre = pill.dataset.genre;
+                
+                if (genre === 'all') {
+                    document.querySelectorAll('.genre-pill').forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+                    currentGenres = ['all'];
+                } else {
+                    document.querySelector('.genre-pill[data-genre="all"]').classList.remove('active');
+                    
+                    if (pill.classList.contains('active')) {
+                        pill.classList.remove('active');
+                        currentGenres = currentGenres.filter(g => g !== genre);
+                        if (currentGenres.length === 0) {
+                            currentGenres = ['all'];
+                            document.querySelector('.genre-pill[data-genre="all"]').classList.add('active');
+                        }
+                    } else {
+                        pill.classList.add('active');
+                        if (currentGenres.includes('all')) {
+                            currentGenres = [genre];
+                        } else {
+                            currentGenres.push(genre);
+                        }
+                    }
+                }
+                renderShows();
+            });
+        });
+
+        // Search
+        searchInput.addEventListener('input', (e) => {
+            searchTerm = e.target.value;
+            renderShows();
+        });
+
+        // Initial render
+        renderShows();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The definitive ranking of the top 100 prestige TV dramas, scored across seven categories including characters, cinematography, narrative drive, and resolution. Filter by era, customize weights, and discover your next great watch.">
+    <meta name="keywords" content="TV shows ranked, best TV dramas, prestige television, TV rankings, Breaking Bad, The Wire, Game of Thrones, TV show ratings">
+    <title>TV Shows Ranked: A Comprehensive Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Crimson+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --gold: #d4af37;
+            --gold-dim: #8a7020;
+            --accent-blue: #58a6ff;
+            --accent-purple: #a371f7;
+            --accent-red: #f85149;
+            --border: #30363d;
+            --shadow: rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Pro', serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .grain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E");
+            z-index: 1000;
+        }
+
+        header {
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+            line-height: 0.95;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold-dim);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .methodology {
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+        }
+
+        .filters-section {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .filters-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 900;
+            text-align: center;
+            padding: 1.5rem 2rem 0.5rem;
+            color: var(--text-primary);
+            letter-spacing: 0.02em;
+        }
+
+        .filters {
+            padding: 1rem 2rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .filters-section {
+                position: relative;
+                top: auto;
+            }
+
+            .filters-title {
+                font-size: 1.1rem;
+                padding: 1rem 1rem 0.5rem;
+            }
+
+            .filters {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0.5rem 1rem 1.5rem;
+                gap: 1rem;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+        }
+
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            font-family: 'Crimson Pro', serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .filter-btn:hover {
+            background: var(--gold);
+            color: var(--bg-primary);
+            border-color: var(--gold);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .filter-btn.active {
+            background: var(--gold);
+            color: var(--bg-primary);
+            border-color: var(--gold);
+        }
+
+        .weights-panel {
+            display: none;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 2rem;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        .weights-panel.active {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .weights-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .weights-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .weights-header p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .weights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+
+        .weight-control {
+            background: var(--bg-tertiary);
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .weight-control label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .weight-input-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .weight-slider {
+            flex: 1;
+            height: 6px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: var(--border);
+            outline: none;
+            border-radius: 3px;
+        }
+
+        .weight-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: var(--gold);
+            cursor: pointer;
+            border-radius: 50%;
+            border: 2px solid var(--text-primary);
+        }
+
+        .weight-slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: var(--gold);
+            cursor: pointer;
+            border-radius: 50%;
+            border: 2px solid var(--text-primary);
+        }
+
+        .weight-number {
+            width: 60px;
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            font-family: 'Crimson Pro', serif;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .weight-input-group span {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .weights-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .total-weight {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--text-primary);
+        }
+
+        .total-weight.error {
+            color: var(--accent-red);
+        }
+
+        .total-weight.valid {
+            color: var(--accent-blue);
+        }
+
+        .reset-btn {
+            padding: 0.7rem 1.5rem;
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+            font-family: 'Crimson Pro', serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .reset-btn:hover {
+            background: var(--gold);
+            color: var(--bg-primary);
+            border-color: var(--gold);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .methodology-section {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 2rem;
+        }
+
+        .methodology-toggle {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.05em;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .methodology-toggle:hover {
+            background: var(--gold);
+            color: var(--bg-primary);
+            border-color: var(--gold);
+        }
+
+        .methodology-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .methodology-content.active {
+            max-height: none;
+            padding-top: 2rem;
+            overflow: visible;
+        }
+
+        .methodology-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .methodology-item {
+            background: var(--bg-tertiary);
+            padding: 1.5rem;
+            border-left: 4px solid var(--gold);
+        }
+
+        .methodology-item h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .weight-badge {
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            background: var(--gold);
+            color: var(--bg-primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 3px;
+        }
+
+        .methodology-item p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .scoring-scale {
+            background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+            padding: 2rem;
+            border: 1px solid var(--border);
+            margin-bottom: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .scoring-scale h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .scale-intro {
+            text-align: center;
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .scale-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .scale-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: var(--bg-secondary);
+            padding: 1rem 1.5rem;
+            border-left: 4px solid var(--gold);
+        }
+
+        .scale-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--gold);
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .scale-desc {
+            font-size: 1rem;
+            color: var(--text-primary);
+            flex: 1;
+        }
+
+        .scale-note {
+            text-align: center;
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--text-secondary);
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+        }
+
+        .multiplier-section {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border: 1px solid var(--border);
+            margin-bottom: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .multiplier-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .multiplier-intro {
+            text-align: center;
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .multiplier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .multiplier-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            background: var(--bg-tertiary);
+            padding: 1rem;
+            border-left: 4px solid var(--accent-blue);
+            text-align: center;
+        }
+
+        .multiplier-range {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+
+        .multiplier-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--accent-blue);
+        }
+
+        .multiplier-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .season-selection-callout {
+            background: linear-gradient(135deg, var(--bg-tertiary) 0%, #2d2415 100%);
+            padding: 2rem;
+            border: 2px solid var(--gold);
+            margin-bottom: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .season-selection-callout h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .season-selection-callout p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .season-selection-callout p:last-child {
+            margin-bottom: 0;
+        }
+
+        .season-selection-callout strong {
+            color: var(--accent-red);
+        }
+
+        .search-box {
+            padding: 0.7rem 1.2rem;
+            border: 1px solid var(--border);
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            font-family: 'Crimson Pro', serif;
+            font-size: 0.95rem;
+            width: 250px;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .rankings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .show-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .show-card.top-10 {
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+            overflow: hidden;
+        }
+
+        .show-card.top-10 .rank-banner {
+            background: linear-gradient(135deg, var(--gold-dim) 0%, var(--gold) 100%);
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .show-card.top-10 .rank-banner .rank-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--bg-primary);
+            line-height: 1;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .show-card.top-10 .rank-banner .rank-text {
+            font-family: 'Crimson Pro', serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--bg-primary);
+            opacity: 0.8;
+        }
+
+        .show-card.top-10 .rank-badge {
+            display: none;
+        }
+
+        .show-card.top-10 .show-header {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(138, 112, 32, 0.1) 100%);
+            border-bottom: 2px solid var(--gold);
+            padding: 1.25rem 1.5rem;
+            text-align: center;
+        }
+
+        .show-card.top-10 .show-title {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .show-card.top-10 .show-meta {
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .show-card.top-10 .final-score {
+            text-align: center;
+            font-size: 3rem;
+            color: var(--gold);
+            margin: 0;
+        }
+
+        /* Non-top-10 cards keep original layout */
+        .show-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 0.25rem;
+            line-height: 1.1;
+            text-align: center;
+        }
+
+        .show-meta {
+            display: flex;
+            gap: 0.75rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .final-score {
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            color: var(--gold);
+            text-align: center;
+            margin: 0.5rem 0;
+            line-height: 1;
+        }
+
+        @media (max-width: 480px) {
+            .show-card.top-10 .show-poster {
+                width: 100px;
+                min-width: 100px;
+                height: 150px;
+            }
+            .show-card.top-10 .show-title {
+                font-size: 1.2rem;
+            }
+            .show-card.top-10 .final-score {
+                font-size: 2.2rem;
+            }
+        }
+
+        .show-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px var(--shadow);
+            border-color: var(--gold);
+        }
+
+        .rank-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            color: var(--bg-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            z-index: 10;
+            border: 2px solid var(--gold);
+        }
+
+        .show-header {
+            padding: 1.5rem 1.5rem 1.5rem 5rem;
+            background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+            border-bottom: 1px solid var(--border);
+            position: relative;
+        }
+
+        .show-card.top-10 .show-header {
+            padding: 1rem 1.5rem;
+            text-align: center;
+        }
+
+        .show-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-bottom: 0.4rem;
+            line-height: 1.2;
+        }
+
+        .show-meta {
+            display: flex;
+            gap: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        .final-score {
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            color: var(--gold);
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .score-breakdown {
+            padding: 1.5rem;
+        }
+
+        .score-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .score-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .score-value {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        .score-bar {
+            height: 4px;
+            background: var(--border);
+            margin-top: 0.3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .score-bar-fill {
+            height: 100%;
+            background: linear-gradient(to right, var(--accent-blue), var(--gold));
+            transition: width 0.8s ease-out;
+        }
+
+        .tier-label {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: var(--gold);
+            color: var(--bg-primary);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-left: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+            background: var(--bg-secondary);
+            margin-top: 4rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            font-size: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .rankings-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+
+            .methodology-section {
+                padding: 1rem;
+            }
+
+            .methodology-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .methodology-item {
+                padding: 1rem;
+            }
+
+            .methodology-item h4 {
+                font-size: 1.1rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .scoring-scale {
+                padding: 1rem;
+            }
+
+            .scoring-scale h3 {
+                font-size: 1.5rem;
+            }
+
+            .scale-item {
+                padding: 0.75rem 1rem;
+                gap: 1rem;
+            }
+
+            .scale-number {
+                font-size: 1.5rem;
+                min-width: 40px;
+            }
+
+            .scale-desc {
+                font-size: 0.9rem;
+            }
+
+            .multiplier-section {
+                padding: 1rem;
+            }
+
+            .multiplier-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .season-selection-callout {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header>
+        <h1>TV Shows Ranked:<br>A Comprehensive Analysis</h1>
+        <p class="methodology">
+            A comprehensive analysis of television's greatest achievements. Each show receives precise scores across seven weighted categories—from the complexity of its characters to the power of its themes—with final rankings adjusted to reward shows that maintain excellence across dozens or hundreds of hours.
+        </p>
+    </header>
+
+    <div class="filters-section">
+        <h2 class="filters-title">Customize & Filter</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Eras</button>
+            <button class="filter-btn" data-filter="2020s">2020s</button>
+            <button class="filter-btn" data-filter="2010s">2010s</button>
+            <button class="filter-btn" data-filter="2000s">2000s</button>
+            <button class="filter-btn" data-filter="pre2000">Pre-2000</button>
+            <input type="text" class="search-box" placeholder="Search shows..." id="search">
+            <button class="filter-btn" id="weights-toggle">⚙️ Adjust Weights</button>
+        </div>
+    </div>
+
+    <div class="weights-panel" id="weights-panel">
+        <div class="weights-header">
+            <h3>Customize Your Rankings</h3>
+            <p>Adjust the importance of each category. Total must equal 100%.</p>
+        </div>
+        <div class="weights-grid">
+            <div class="weight-control">
+                <label>Characters & Acting</label>
+                <div class="weight-input-group">
+                    <input type="range" min="0" max="50" value="20" class="weight-slider" data-category="char">
+                    <input type="number" min="0" max="50" value="20" class="weight-number" data-category="char">
+                    <span>%</span>
+                </div>
+            </div>
+            <div class="weight-control">
+                <label>World Building</label>
+                <div class="weight-input-group">
+                    <input type="range" min="0" max="50" value="15" class="weight-slider" data-category="world">
+                    <input type="number" min="0" max="50" value="15" class="weight-number" data-category="world">
+                    <span>%</span>
+                </div>
+            </div>
+            <div class="weight-control">
+                <label>Cinematography</label>
+                <div class="weight-input-group">
+                    <input type="range" min="0" max="50" value="10" class="weight-slider" data-category="cine">
+                    <input type="number" min="0" max="50" value="10" class="weight-number" data-category="cine">
+                    <span>%</span>
+                </div>
+            </div>
+            <div class="weight-control">
+                <label>Visual Spectacle</label>
+                <div class="weight-input-group">
+                    <input type="range" min="0" max="50" value="10" class="weight-slider" data-category="spect">
+                    <input type="number" min="0" max="50" value="10" class="weight-number" data-category="spect">
+                    <span>%</span>
+                </div>
+            </div>
+            <div class="weight-control">
+                <label>Conceptual Density</label>
+                <div class="weight-input-group">
+                    <input type="range" min="0" max="50" value="15" class="weight-slider" data-category="conc">
+                    <input type="number" min="0" max="50" value="15" class="weight-number" data-category="conc">
+                    <span>%</span>
+                </div>
+            </div>
+            <div class="weight-control">
+                <label>Narrative Drive</label>
+                <div class="weight-input-group">
+                    <input type="range" min="0" max="50" value="15" class="weight-slider" data-category="drive">
+                    <input type="number" min="0" max="50" value="15" class="weight-number" data-category="drive">
+                    <span>%</span>
+                </div>
+            </div>
+            <div class="weight-control">
+                <label>Narrative Path & Resolution</label>
+                <div class="weight-input-group">
+                    <input type="range" min="0" max="50" value="15" class="weight-slider" data-category="resol">
+                    <input type="number" min="0" max="50" value="15" class="weight-number" data-category="resol">
+                    <span>%</span>
+                </div>
+            </div>
+        </div>
+        <div class="weights-footer">
+            <div class="total-weight" id="total-weight">Total: 100%</div>
+            <button class="reset-btn" id="reset-weights">Reset to Default</button>
+        </div>
+    </div>
+
+    <div class="methodology-section" id="methodology-section">
+        <button class="methodology-toggle" id="methodology-toggle">
+            📖 Understanding the Rankings
+        </button>
+        <div class="methodology-content" id="methodology-content">
+            <div class="scoring-scale">
+                <h3>The Scoring Scale</h3>
+                <p class="scale-intro">Every category uses a strict 1-10 scale calibrated for precision:</p>
+                <div class="scale-grid">
+                    <div class="scale-item"><span class="scale-number">10</span><span class="scale-desc">Perfect — The gold standard, no meaningful flaws</span></div>
+                    <div class="scale-item"><span class="scale-number">9</span><span class="scale-desc">Incredible — Near-flawless, only minor imperfections</span></div>
+                    <div class="scale-item"><span class="scale-number">8</span><span class="scale-desc">Exceptional — Among the very best in television</span></div>
+                    <div class="scale-item"><span class="scale-number">7</span><span class="scale-desc">Very Good — Clearly stands out, memorable</span></div>
+                    <div class="scale-item"><span class="scale-number">6</span><span class="scale-desc">Good — Noticeably above typical TV</span></div>
+                    <div class="scale-item"><span class="scale-number">5</span><span class="scale-desc">Average — Competent but unremarkable</span></div>
+                    <div class="scale-item"><span class="scale-number">≤4</span><span class="scale-desc">Below Average — Ranges from mediocre to poor</span></div>
+                </div>
+                <p class="scale-note">Final scores are weighted by category importance, then adjusted by episode count to reward sustained excellence over many hours.</p>
+            </div>
+
+            <div class="multiplier-section">
+                <h3>Episode Count Multipliers</h3>
+                <p class="multiplier-intro">Longer shows that maintain quality across many hours are rewarded. The multiplier system recognizes that sustaining excellence over 60+ episodes is harder than over 6.</p>
+                <div class="multiplier-grid">
+                    <div class="multiplier-item">
+                        <span class="multiplier-range">≤10 episodes</span>
+                        <span class="multiplier-value">×0.96</span>
+                        <span class="multiplier-label">Miniseries</span>
+                    </div>
+                    <div class="multiplier-item">
+                        <span class="multiplier-range">11-20 episodes</span>
+                        <span class="multiplier-value">×0.95</span>
+                        <span class="multiplier-label">Short Series</span>
+                    </div>
+                    <div class="multiplier-item">
+                        <span class="multiplier-range">21-30 episodes</span>
+                        <span class="multiplier-value">×0.97</span>
+                        <span class="multiplier-label">Limited Series</span>
+                    </div>
+                    <div class="multiplier-item">
+                        <span class="multiplier-range">31-40 episodes</span>
+                        <span class="multiplier-value">×1.00</span>
+                        <span class="multiplier-label">Baseline</span>
+                    </div>
+                    <div class="multiplier-item">
+                        <span class="multiplier-range">41-50 episodes</span>
+                        <span class="multiplier-value">×1.02</span>
+                        <span class="multiplier-label">Standard Run</span>
+                    </div>
+                    <div class="multiplier-item">
+                        <span class="multiplier-range">51-60 episodes</span>
+                        <span class="multiplier-value">×1.03</span>
+                        <span class="multiplier-label">Extended</span>
+                    </div>
+                    <div class="multiplier-item">
+                        <span class="multiplier-range">61-75 episodes</span>
+                        <span class="multiplier-value">×1.04</span>
+                        <span class="multiplier-label">Long-Form</span>
+                    </div>
+                    <div class="multiplier-item">
+                        <span class="multiplier-range">76-100 episodes</span>
+                        <span class="multiplier-value">×1.05</span>
+                        <span class="multiplier-label">Epic Run</span>
+                    </div>
+                    <div class="multiplier-item">
+                        <span class="multiplier-range">100+ episodes</span>
+                        <span class="multiplier-value">×1.06</span>
+                        <span class="multiplier-label">Maximum Bonus</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season-selection-callout">
+                <h3>On Season Selection</h3>
+                <p>Shows are evaluated at their peak. When later seasons decline in quality, only the excellent seasons are included in the ranking. <strong>Game of Thrones (S1-4)</strong> includes only the first four seasons—the show at its absolute best, before the source material ran out and quality declined.</p>
+                <p>This mirrors how we select only the best shows for inclusion: we're ranking television excellence, not mediocrity. A show's weakest moments don't define it—its strongest do.</p>
+            </div>
+
+            <div class="methodology-grid">
+                <div class="methodology-item">
+                    <h4>Characters & Acting <span class="weight-badge">20%</span></h4>
+                    <p>Characters & Acting evaluates whether the people on screen feel like real individuals making authentic, internally consistent choices. It assesses depth of characterization, psychological believability, meaningful change over time, and the strength of the ensemble as a whole—not just standout leads. Acting is judged on embodiment and invisibility: performances should disappear into the role rather than draw attention to themselves. High scores reflect characters who feel autonomous, linger in the viewer's mind, and remain compelling beyond the immediate plot.</p>
+                </div>
+                <div class="methodology-item">
+                    <h4>World Building <span class="weight-badge">15%</span></h4>
+                    <p>World Building measures how fully realized and self-sustaining the show's world feels. This includes consistency of rules, institutions, cultures, and social structures, as well as the sense that life exists beyond the immediate story being told. A strong world feels navigable and durable: the viewer can understand how power works, how people live, and what pressures shape behavior without constant exposition. High scores are reserved for worlds that feel lived-in, coherent, and capable of supporting many stories.</p>
+                </div>
+                <div class="methodology-item">
+                    <h4>Cinematography <span class="weight-badge">10%</span></h4>
+                    <p>Cinematography evaluates the visual craft and intentionality behind how the story is told. This includes framing, camera movement, lighting, color, composition, and visual rhythm, with emphasis on coherence and meaning rather than surface beauty. High-scoring shows demonstrate a distinctive and consistent visual language, where the camera communicates narrative or character information rather than merely recording events. A key marker is recognizability: the ability to identify the show from a single frame.</p>
+                </div>
+                <div class="methodology-item">
+                    <h4>Visual Spectacle <span class="weight-badge">10%</span></h4>
+                    <p>Visual Spectacle measures the impact, ambition, and sustained presence of what is shown on screen. This includes large-scale environments, meticulously crafted sets, production design, visual effects, and striking or immersive imagery. Frequency matters when spectacle is genuinely sustained across scenes and episodes. Spectacle may also arise from novelty and exposure—revealing places, systems, or ways of life the viewer has rarely or never seen, captured with authority and detail. The focus is on how visually compelling and memorable the on-screen world is, whether through epic construction or grounded realism.</p>
+                </div>
+                <div class="methodology-item">
+                    <h4>Conceptual Density <span class="weight-badge">15%</span></h4>
+                    <p>Conceptual Density measures how many distinct ideas a series meaningfully engages with, and how well those ideas are integrated into the narrative. These concepts may be political, philosophical, social, moral, or institutional, but must be dramatized through story, character, and world rather than stated directly. Higher scores reflect shows that sustain multiple independent concepts across episodes and seasons, explore them from different angles, and allow them to interact or conflict. The emphasis is on breadth of ideas combined with coherent execution, not symbolic interpretation or tone.</p>
+                </div>
+                <div class="methodology-item">
+                    <h4>Narrative Drive <span class="weight-badge">15%</span></h4>
+                    <p>Narrative Drive assesses how effectively the story pulls the viewer forward. This includes pacing, clarity of stakes, escalation, and whether each episode meaningfully advances the narrative. A strong sense of drive does not require constant action; slower or quieter series can score highly if momentum, tension, or curiosity are consistently maintained. Filler, stalling, or structural wheel-spinning lowers the score. The core question is whether the story moves with purpose.</p>
+                </div>
+                <div class="methodology-item">
+                    <h4>Narrative Path & Resolution <span class="weight-badge">15%</span></h4>
+                    <p>Narrative Path & Resolution evaluates how effectively a series fulfills the narrative promises it introduces. This includes how many story loops, mysteries, arcs, or tensions are opened, how deliberately they are carried forward, and how meaningfully they are resolved. High scores reflect disciplined loop management, strong closure rates, and payoffs that feel earned—often enhancing or recontextualizing earlier material. Ambiguity is not penalized when intentional and coherent, but unresolved, rushed, or undermining resolutions reduce the score. This category rewards narrative discipline over novelty.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="rankings-grid" id="rankings"></div>
+        <div class="no-results" id="no-results" style="display: none;">No shows found matching your criteria.</div>
+    </main>
+
+    <footer>
+        <p>Methodology: Weighted scoring system with episode count multipliers. Long-form excellence rewarded.</p>
+        <p style="margin-top: 0.5rem;">© 2026 • Crafted with obsessive attention to detail</p>
+    </footer>
+
+    <script>
+        const shows = [
+            { rank: 1, title: "Game of Thrones (S1-4)", year: 2011, episodes: 40, char: 10, world: 10, cine: 8, spect: 9.5, conc: 9, drive: 10, resol: 9, final: 9.50 },
+            { rank: 2, title: "Breaking Bad", year: 2008, episodes: 62, char: 9, world: 7, cine: 9, spect: 6, conc: 8, drive: 10, resol: 10, final: 8.89 },
+            { rank: 3, title: "The Wire", year: 2002, episodes: 60, char: 9.5, world: 10, cine: 6, spect: 7, conc: 10, drive: 7, resol: 9, final: 8.74 },
+            { rank: 4, title: "Better Call Saul", year: 2015, episodes: 63, char: 8.5, world: 7, cine: 9, spect: 6, conc: 8, drive: 9, resol: 10, final: 8.74 },
+            { rank: 5, title: "Chernobyl", year: 2019, episodes: 5, char: 8, world: 8, cine: 9, spect: 9, conc: 9, drive: 10, resol: 10, final: 8.54 },
+            { rank: 6, title: "The Sopranos", year: 1999, episodes: 86, char: 9.5, world: 9, cine: 6, spect: 5, conc: 9, drive: 7, resol: 9, final: 8.38 },
+            { rank: 7, title: "The Americans", year: 2013, episodes: 75, char: 8, world: 7.5, cine: 7, spect: 5, conc: 8, drive: 8, resol: 10, final: 8.33 },
+            { rank: 8, title: "The Shield", year: 2002, episodes: 88, char: 8.5, world: 6.5, cine: 6, spect: 5, conc: 7, drive: 9, resol: 10, final: 8.17 },
+            { rank: 9, title: "The Expanse", year: 2015, episodes: 62, char: 7.5, world: 9, cine: 7, spect: 9, conc: 8, drive: 7.5, resol: 7, final: 8.09 },
+            { rank: 10, title: "Succession", year: 2018, episodes: 39, char: 8.5, world: 7, cine: 8, spect: 7, conc: 7, drive: 8.5, resol: 9, final: 8.03 },
+            { rank: 11, title: "Babylon Berlin", year: 2017, episodes: 36, char: 7.5, world: 9, cine: 9, spect: 9, conc: 8, drive: 7.5, resol: 7, final: 8.03 },
+            { rank: 12, title: "Mr. Robot", year: 2015, episodes: 45, char: 8, world: 7, cine: 9, spect: 6, conc: 8, drive: 7.5, resol: 9, final: 7.99 },
+            { rank: 13, title: "Boardwalk Empire", year: 2010, episodes: 56, char: 9, world: 8.5, cine: 8.5, spect: 9, conc: 7, drive: 7, resol: 8, final: 7.98 },
+            { rank: 14, title: "Andor", year: 2022, episodes: 12, char: 8.5, world: 8.5, cine: 9, spect: 8.5, conc: 9, drive: 8.5, resol: 7, final: 7.96 },
+            { rank: 15, title: "Adolescence", year: 2025, episodes: 4, char: 8, world: 6.5, cine: 9.5, spect: 5, conc: 9, drive: 9, resol: 10, final: 7.95 },
+            { rank: 16, title: "True Detective S1", year: 2014, episodes: 8, char: 8, world: 7.5, cine: 10, spect: 8, conc: 8, drive: 9, resol: 8, final: 7.90 },
+            { rank: 17, title: "For All Mankind", year: 2019, episodes: 40, char: 7, world: 8, cine: 8, spect: 8, conc: 8, drive: 8, resol: 7.5, final: 7.88 },
+            { rank: 18, title: "Mad Men", year: 2007, episodes: 92, char: 8, world: 7.5, cine: 8, spect: 6, conc: 8, drive: 7, resol: 8, final: 7.88 },
+            { rank: 19, title: "Halt and Catch Fire", year: 2014, episodes: 40, char: 9, world: 7.5, cine: 7, spect: 5, conc: 8, drive: 8, resol: 9, final: 7.88 },
+            { rank: 20, title: "Angels in America", year: 2003, episodes: 6, char: 8.5, world: 7, cine: 8, spect: 7, conc: 10, drive: 7, resol: 9, final: 7.82 },
+            { rank: 21, title: "Dark", year: 2017, episodes: 26, char: 7, world: 8, cine: 8.5, spect: 6.5, conc: 9, drive: 8.5, resol: 9, final: 7.79 },
+            { rank: 22, title: "Deadwood", year: 2004, episodes: 36, char: 9, world: 8.5, cine: 7, spect: 7, conc: 9, drive: 7, resol: 6, final: 7.78 },
+            { rank: 23, title: "The Crown", year: 2016, episodes: 60, char: 7.5, world: 8, cine: 9, spect: 8, conc: 7, drive: 7, resol: 7, final: 7.76 },
+            { rank: 24, title: "Justified", year: 2010, episodes: 78, char: 8, world: 7.5, cine: 7, spect: 5, conc: 7, drive: 8, resol: 8, final: 7.75 },
+            { rank: 25, title: "Band of Brothers", year: 2001, episodes: 10, char: 7.5, world: 9, cine: 8, spect: 10, conc: 7, drive: 9, resol: 9, final: 7.73 },
+            { rank: 26, title: "Six Feet Under", year: 2001, episodes: 63, char: 8, world: 6.5, cine: 7, spect: 5, conc: 8, drive: 6, resol: 10, final: 7.73 },
+            { rank: 27, title: "Fargo", year: 2014, episodes: 51, char: 7.5, world: 7, cine: 8.5, spect: 6.5, conc: 7, drive: 8, resol: 8, final: 7.73 },
+            { rank: 28, title: "It's a Sin", year: 2021, episodes: 5, char: 8, world: 7.5, cine: 8, spect: 6, conc: 8, drive: 8, resol: 10, final: 7.71 },
+            { rank: 29, title: "When They See Us", year: 2019, episodes: 4, char: 8, world: 7, cine: 8, spect: 5, conc: 9, drive: 8, resol: 10, final: 7.68 },
+            { rank: 30, title: "Girls", year: 2012, episodes: 62, char: 8.5, world: 7, cine: 7, spect: 5, conc: 8, drive: 7, resol: 8, final: 7.68 },
+            { rank: 31, title: "Watchmen (2019)", year: 2019, episodes: 9, char: 7.5, world: 8, cine: 8, spect: 8, conc: 9, drive: 8, resol: 8, final: 7.68 },
+            { rank: 32, title: "The Bureau", year: 2015, episodes: 50, char: 8, world: 7.5, cine: 7, spect: 5, conc: 8, drive: 8, resol: 8, final: 7.68 },
+            { rank: 33, title: "Homeland", year: 2011, episodes: 96, char: 8, world: 7, cine: 7, spect: 6, conc: 7, drive: 8, resol: 7, final: 7.67 },
+            { rank: 34, title: "The Queen's Gambit", year: 2020, episodes: 7, char: 7.5, world: 7.5, cine: 9, spect: 7, conc: 7, drive: 9, resol: 9, final: 7.66 },
+            { rank: 35, title: "The Leftovers", year: 2014, episodes: 28, char: 7.5, world: 8, cine: 8, spect: 7, conc: 9, drive: 8, resol: 9, final: 7.64 },
+            { rank: 36, title: "Lost", year: 2004, episodes: 121, char: 8, world: 7.5, cine: 7, spect: 7.5, conc: 7, drive: 8, resol: 5, final: 7.61 },
+            { rank: 37, title: "The Knick", year: 2014, episodes: 20, char: 8.5, world: 8.5, cine: 9.5, spect: 8, conc: 8, drive: 8, resol: 6, final: 7.60 },
+            { rank: 38, title: "The Haunting of Hill House", year: 2018, episodes: 10, char: 8, world: 7, cine: 9, spect: 7, conc: 8, drive: 8, resol: 9, final: 7.60 },
+            { rank: 39, title: "Friday Night Lights", year: 2006, episodes: 76, char: 8, world: 7.5, cine: 7, spect: 5, conc: 7, drive: 7, resol: 8, final: 7.59 },
+            { rank: 40, title: "Wolf Hall", year: 2015, episodes: 6, char: 8, world: 8.5, cine: 9, spect: 7, conc: 9, drive: 7, resol: 7, final: 7.58 },
+            { rank: 41, title: "Pluribus", year: 2025, episodes: 10, char: 8.5, world: 7.5, cine: 8.5, spect: 7, conc: 9, drive: 8.5, resol: 6, final: 7.58 },
+            { rank: 42, title: "Hannibal", year: 2013, episodes: 39, char: 8, world: 6.5, cine: 10, spect: 8.5, conc: 7, drive: 6.5, resol: 8, final: 7.55 },
+            { rank: 43, title: "Station Eleven", year: 2021, episodes: 10, char: 7.5, world: 8, cine: 9, spect: 7, conc: 9, drive: 7, resol: 8, final: 7.53 },
+            { rank: 44, title: "House of the Dragon", year: 2022, episodes: 18, char: 8.5, world: 9.5, cine: 8, spect: 9.5, conc: 8, drive: 8, resol: 6, final: 7.53 },
+            { rank: 45, title: "Black Mirror", year: 2011, episodes: 29, char: 7, world: 7, cine: 8, spect: 7, conc: 9, drive: 8, resol: 8, final: 7.52 },
+            { rank: 46, title: "Midnight Mass", year: 2021, episodes: 7, char: 7.5, world: 7.5, cine: 8, spect: 6, conc: 9, drive: 7, resol: 9, final: 7.52 },
+            { rank: 47, title: "Battlestar Galactica", year: 2004, episodes: 75, char: 7, world: 7, cine: 7, spect: 8, conc: 8, drive: 7, resol: 6, final: 7.51 },
+            { rank: 48, title: "Rectify", year: 2013, episodes: 30, char: 9, world: 7, cine: 8.5, spect: 5, conc: 9, drive: 6, resol: 9, final: 7.50 },
+            { rank: 49, title: "Ozark", year: 2017, episodes: 44, char: 7.5, world: 7, cine: 8, spect: 6, conc: 7, drive: 8, resol: 7, final: 7.50 },
+            { rank: 50, title: "Peaky Blinders", year: 2013, episodes: 36, char: 7.5, world: 8, cine: 9, spect: 7.5, conc: 7, drive: 7, resol: 7, final: 7.50 },
+            { rank: 51, title: "Beef", year: 2023, episodes: 10, char: 8.5, world: 6.5, cine: 8, spect: 5, conc: 8, drive: 9, resol: 9, final: 7.49 },
+            { rank: 52, title: "Severance", year: 2022, episodes: 19, char: 7.5, world: 8.5, cine: 8.5, spect: 6.5, conc: 9, drive: 9, resol: 6, final: 7.49 },
+            { rank: 53, title: "Shogun (2024)", year: 2024, episodes: 10, char: 8, world: 9, cine: 9, spect: 9, conc: 7, drive: 7.5, resol: 7, final: 7.48 },
+            { rank: 54, title: "Sharp Objects", year: 2018, episodes: 8, char: 8.5, world: 7.5, cine: 9, spect: 6, conc: 8, drive: 7, resol: 8, final: 7.47 },
+            { rank: 55, title: "Patrick Melrose", year: 2018, episodes: 5, char: 8.5, world: 7, cine: 8, spect: 6, conc: 8, drive: 7, resol: 9, final: 7.47 },
+            { rank: 56, title: "Generation Kill", year: 2008, episodes: 7, char: 7.5, world: 8, cine: 8, spect: 7, conc: 9, drive: 7, resol: 8, final: 7.47 },
+            { rank: 57, title: "Squid Game", year: 2021, episodes: 18, char: 7, world: 7.5, cine: 8, spect: 9, conc: 7, drive: 9, resol: 8, final: 7.46 },
+            { rank: 58, title: "24", year: 2001, episodes: 192, char: 6.5, world: 6, cine: 6, spect: 7, conc: 6, drive: 9.5, resol: 7, final: 7.45 },
+            { rank: 59, title: "Borgen", year: 2010, episodes: 40, char: 8, world: 7, cine: 7, spect: 5, conc: 8, drive: 8, resol: 8, final: 7.45 },
+            { rank: 60, title: "Pose", year: 2018, episodes: 26, char: 7.5, world: 8, cine: 8, spect: 7, conc: 8, drive: 7, resol: 8, final: 7.45 },
+            { rank: 61, title: "The White Lotus", year: 2021, episodes: 21, char: 7.5, world: 7, cine: 9, spect: 8, conc: 8, drive: 7, resol: 8, final: 7.45 },
+            { rank: 62, title: "Utopia (UK)", year: 2013, episodes: 12, char: 7.5, world: 7.5, cine: 10, spect: 7, conc: 8, drive: 9, resol: 6, final: 7.44 },
+            { rank: 63, title: "The X-Files", year: 1993, episodes: 218, char: 7.5, world: 7.5, cine: 7, spect: 7, conc: 7, drive: 7, resol: 6, final: 7.40 },
+            { rank: 64, title: "Stranger Things", year: 2016, episodes: 42, char: 7, world: 7, cine: 8, spect: 8, conc: 6, drive: 8, resol: 7, final: 7.40 },
+            { rank: 65, title: "The Last of Us", year: 2023, episodes: 16, char: 8, world: 7.5, cine: 8, spect: 8, conc: 8, drive: 8, resol: 7, final: 7.39 },
+            { rank: 66, title: "Twin Peaks: The Return", year: 2017, episodes: 18, char: 8, world: 8, cine: 9.5, spect: 9, conc: 9, drive: 5, resol: 7, final: 7.39 },
+            { rank: 67, title: "Rome", year: 2005, episodes: 22, char: 8, world: 8.5, cine: 7, spect: 9, conc: 8, drive: 8, resol: 6, final: 7.39 },
+            { rank: 68, title: "Silo", year: 2023, episodes: 20, char: 7.5, world: 8.5, cine: 8, spect: 8, conc: 8, drive: 8.5, resol: 6, final: 7.39 },
+            { rank: 69, title: "The Underground Railroad", year: 2021, episodes: 10, char: 7.5, world: 8, cine: 10, spect: 8, conc: 9, drive: 6, resol: 7, final: 7.39 },
+            { rank: 70, title: "Penny Dreadful", year: 2014, episodes: 27, char: 8, world: 8, cine: 9, spect: 8, conc: 8, drive: 7, resol: 6, final: 7.37 },
+            { rank: 71, title: "Godless", year: 2017, episodes: 7, char: 7.5, world: 8, cine: 9, spect: 8, conc: 7, drive: 7, resol: 8, final: 7.37 },
+            { rank: 72, title: "Gomorrah", year: 2014, episodes: 58, char: 7, world: 8, cine: 8, spect: 6, conc: 7, drive: 7, resol: 7, final: 7.36 },
+            { rank: 73, title: "Downton Abbey", year: 2010, episodes: 52, char: 7, world: 8, cine: 8, spect: 8, conc: 6, drive: 7, resol: 7, final: 7.36 },
+            { rank: 74, title: "Hill Street Blues", year: 1981, episodes: 146, char: 7.5, world: 7, cine: 6, spect: 5, conc: 8, drive: 7, resol: 7, final: 7.35 },
+            { rank: 75, title: "The Boys", year: 2019, episodes: 40, char: 7, world: 7.5, cine: 7, spect: 8, conc: 8, drive: 8, resol: 6, final: 7.33 },
+            { rank: 76, title: "Mare of Easttown", year: 2021, episodes: 7, char: 8, world: 7.5, cine: 7, spect: 5, conc: 7, drive: 8, resol: 9, final: 7.32 },
+            { rank: 77, title: "Euphoria", year: 2019, episodes: 17, char: 8, world: 7, cine: 9.5, spect: 8.5, conc: 8, drive: 7, resol: 6, final: 7.30 },
+            { rank: 78, title: "The Pacific", year: 2010, episodes: 10, char: 7, world: 8, cine: 8, spect: 9, conc: 7, drive: 7, resol: 8, final: 7.30 },
+            { rank: 79, title: "Escape at Dannemora", year: 2018, episodes: 7, char: 8, world: 7, cine: 8, spect: 5, conc: 7, drive: 8, resol: 9, final: 7.30 },
+            { rank: 80, title: "Line of Duty", year: 2012, episodes: 37, char: 7.5, world: 7, cine: 7, spect: 5, conc: 7, drive: 9, resol: 7, final: 7.30 },
+            { rank: 81, title: "Narcos", year: 2015, episodes: 30, char: 7.5, world: 8, cine: 8, spect: 7, conc: 7, drive: 8, resol: 7, final: 7.26 },
+            { rank: 82, title: "Oz", year: 1997, episodes: 56, char: 7.5, world: 7.5, cine: 6, spect: 5, conc: 8, drive: 7, resol: 7, final: 7.26 },
+            { rank: 83, title: "The Killing (DK)", year: 2007, episodes: 40, char: 7.5, world: 7, cine: 7, spect: 5, conc: 7, drive: 8, resol: 8, final: 7.23 },
+            { rank: 84, title: "The Penguin", year: 2024, episodes: 8, char: 8, world: 7.5, cine: 8, spect: 7, conc: 7, drive: 8, resol: 7, final: 7.23 },
+            { rank: 85, title: "The Plot Against America", year: 2020, episodes: 6, char: 7.5, world: 8, cine: 8, spect: 6, conc: 9, drive: 7, resol: 7, final: 7.23 },
+            { rank: 86, title: "Dopesick", year: 2021, episodes: 8, char: 7.5, world: 7, cine: 7, spect: 5, conc: 9, drive: 8, resol: 8, final: 7.23 },
+            { rank: 87, title: "Happy Valley", year: 2014, episodes: 18, char: 8, world: 7, cine: 7, spect: 5, conc: 7, drive: 8, resol: 9, final: 7.22 },
+            { rank: 88, title: "Broadchurch", year: 2013, episodes: 24, char: 7.5, world: 7, cine: 8, spect: 6, conc: 7, drive: 8, resol: 8, final: 7.21 },
+            { rank: 89, title: "The Affair", year: 2014, episodes: 53, char: 7.5, world: 6.5, cine: 8, spect: 5, conc: 8, drive: 7, resol: 6, final: 7.14 },
+            { rank: 90, title: "Twin Peaks", year: 1990, episodes: 30, char: 7.5, world: 8, cine: 8, spect: 7, conc: 9, drive: 6, resol: 6, final: 7.13 },
+            { rank: 91, title: "Homicide: Life on the Street", year: 1993, episodes: 122, char: 7.5, world: 6.5, cine: 6, spect: 5, conc: 7, drive: 7, resol: 7, final: 7.13 },
+            { rank: 92, title: "Foundation", year: 2021, episodes: 30, char: 6, world: 9, cine: 9, spect: 10, conc: 8, drive: 6, resol: 5, final: 7.03 },
+            { rank: 93, title: "The Handmaid's Tale", year: 2017, episodes: 56, char: 7, world: 8, cine: 8.5, spect: 7.5, conc: 8, drive: 5, resol: 5, final: 7.03 },
+            { rank: 94, title: "The Bear", year: 2022, episodes: 28, char: 7.5, world: 6.5, cine: 9, spect: 5, conc: 7, drive: 8, resol: 7, final: 7.01 },
+            { rank: 95, title: "Big Little Lies", year: 2017, episodes: 14, char: 7.5, world: 7, cine: 8, spect: 7, conc: 7, drive: 7, resol: 8, final: 7.01 },
+            { rank: 96, title: "Normal People", year: 2020, episodes: 12, char: 8.5, world: 6.5, cine: 9, spect: 5, conc: 7, drive: 7, resol: 8, final: 6.96 },
+            { rank: 97, title: "Tokyo Vice", year: 2022, episodes: 18, char: 7.5, world: 8, cine: 8, spect: 7, conc: 7, drive: 7, resol: 6, final: 6.82 },
+            { rank: 98, title: "Bloodline", year: 2015, episodes: 33, char: 7.5, world: 7, cine: 8, spect: 6, conc: 7, drive: 7, resol: 6, final: 6.79 },
+            { rank: 99, title: "Mindhunter", year: 2017, episodes: 19, char: 8, world: 7.5, cine: 9.5, spect: 5, conc: 8, drive: 7, resol: 5, final: 6.77 },
+            { rank: 100, title: "Yellowjackets", year: 2021, episodes: 19, char: 7.5, world: 6.5, cine: 7, spect: 6, conc: 8, drive: 7, resol: 5, final: 6.67 }
+        ];
+
+        const rankingsContainer = document.getElementById('rankings');
+        const noResults = document.getElementById('no-results');
+        const searchInput = document.getElementById('search');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const weightsToggle = document.getElementById('weights-toggle');
+        const weightsPanel = document.getElementById('weights-panel');
+        const resetWeightsBtn = document.getElementById('reset-weights');
+        const totalWeightDisplay = document.getElementById('total-weight');
+        const methodologyToggle = document.getElementById('methodology-toggle');
+        const methodologyContent = document.getElementById('methodology-content');
+
+        let currentFilter = 'all';
+        let searchTerm = '';
+        
+        // Default weights (as percentages)
+        let weights = {
+            char: 20,
+            world: 15,
+            cine: 10,
+            spect: 10,
+            conc: 15,
+            drive: 15,
+            resol: 15
+        };
+
+        // Toggle methodology section
+        methodologyToggle.addEventListener('click', () => {
+            methodologyContent.classList.toggle('active');
+            if (methodologyContent.classList.contains('active')) {
+                methodologyToggle.textContent = '📖 Hide Methodology';
+            } else {
+                methodologyToggle.textContent = '📖 Understanding the Rankings';
+            }
+        });
+
+        // Episode multipliers
+        function getMultiplier(episodes) {
+            if (episodes <= 5) return 0.96; // miniseries
+            if (episodes <= 9) return 0.96;
+            if (episodes <= 20) return 0.95;
+            if (episodes <= 30) return 0.97;
+            if (episodes <= 40) return 1.00;
+            if (episodes <= 50) return 1.02;
+            if (episodes <= 60) return 1.03;
+            if (episodes <= 75) return 1.04;
+            if (episodes <= 100) return 1.05;
+            return 1.06;
+        }
+
+        // Calculate final score based on current weights
+        function calculateScore(show) {
+            const base = 
+                (show.char * weights.char / 100) +
+                (show.world * weights.world / 100) +
+                (show.cine * weights.cine / 100) +
+                (show.spect * weights.spect / 100) +
+                (show.conc * weights.conc / 100) +
+                (show.drive * weights.drive / 100) +
+                (show.resol * weights.resol / 100);
+            
+            return base * getMultiplier(show.episodes);
+        }
+
+        // Recalculate all scores and re-rank
+        function recalculateRankings() {
+            shows.forEach(show => {
+                show.calculatedScore = calculateScore(show);
+            });
+
+            // Sort by calculated score
+            shows.sort((a, b) => b.calculatedScore - a.calculatedScore);
+
+            // Update ranks
+            shows.forEach((show, index) => {
+                show.dynamicRank = index + 1;
+            });
+
+            renderShows();
+        }
+
+        // Toggle weights panel
+        weightsToggle.addEventListener('click', () => {
+            weightsPanel.classList.toggle('active');
+        });
+
+        // Reset weights to default
+        resetWeightsBtn.addEventListener('click', () => {
+            weights = {
+                char: 20,
+                world: 15,
+                cine: 10,
+                spect: 10,
+                conc: 15,
+                drive: 15,
+                resol: 15
+            };
+
+            // Update all inputs
+            document.querySelectorAll('.weight-slider, .weight-number').forEach(input => {
+                const category = input.dataset.category;
+                input.value = weights[category];
+            });
+
+            updateTotalWeight();
+            recalculateRankings();
+        });
+
+        // Handle weight changes
+        function updateTotalWeight() {
+            const total = Object.values(weights).reduce((sum, val) => sum + val, 0);
+            totalWeightDisplay.textContent = `Total: ${total}%`;
+            
+            if (total === 100) {
+                totalWeightDisplay.classList.remove('error');
+                totalWeightDisplay.classList.add('valid');
+            } else {
+                totalWeightDisplay.classList.remove('valid');
+                totalWeightDisplay.classList.add('error');
+            }
+
+            return total;
+        }
+
+        // Sync slider and number input
+        document.querySelectorAll('.weight-slider').forEach(slider => {
+            slider.addEventListener('input', (e) => {
+                const category = e.target.dataset.category;
+                const value = parseInt(e.target.value);
+                weights[category] = value;
+                
+                // Update corresponding number input
+                document.querySelector(`.weight-number[data-category="${category}"]`).value = value;
+                
+                updateTotalWeight();
+                recalculateRankings();
+            });
+        });
+
+        document.querySelectorAll('.weight-number').forEach(input => {
+            input.addEventListener('input', (e) => {
+                const category = e.target.dataset.category;
+                let value = parseInt(e.target.value) || 0;
+                value = Math.max(0, Math.min(50, value)); // Clamp between 0-50
+                weights[category] = value;
+                
+                // Update corresponding slider
+                document.querySelector(`.weight-slider[data-category="${category}"]`).value = value;
+                
+                updateTotalWeight();
+                recalculateRankings();
+            });
+        });
+
+        function getTier(score) {
+            if (score >= 8.5) return 'Masterpiece';
+            if (score >= 8) return 'Elite';
+            if (score >= 7.5) return 'Excellent';
+            if (score >= 7) return 'Great';
+            return 'Very Good';
+        }
+
+        function getEra(year) {
+            if (year >= 2020) return '2020s';
+            if (year >= 2010) return '2010s';
+            if (year >= 2000) return '2000s';
+            return 'pre2000';
+        }
+
+        function renderShows() {
+            // First filter by era
+            let filtered = shows.filter(show => {
+                const matchesSearch = show.title.toLowerCase().includes(searchTerm.toLowerCase());
+                const era = getEra(show.year);
+                const matchesFilter = 
+                    currentFilter === 'all' ? true :
+                    currentFilter === '2020s' ? era === '2020s' :
+                    currentFilter === '2010s' ? era === '2010s' :
+                    currentFilter === '2000s' ? era === '2000s' :
+                    currentFilter === 'pre2000' ? era === 'pre2000' : true;
+                
+                return matchesSearch && matchesFilter;
+            });
+
+            // Re-rank the filtered shows based on their scores
+            filtered.sort((a, b) => {
+                const scoreA = a.calculatedScore || a.final;
+                const scoreB = b.calculatedScore || b.final;
+                return scoreB - scoreA;
+            });
+
+            // Assign new ranks within this filtered set
+            filtered.forEach((show, index) => {
+                show.filteredRank = index + 1;
+            });
+
+            if (filtered.length === 0) {
+                rankingsContainer.style.display = 'none';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            rankingsContainer.style.display = 'grid';
+            noResults.style.display = 'none';
+
+            rankingsContainer.innerHTML = filtered.map((show, index) => {
+                const displayRank = show.filteredRank;
+                const displayScore = show.calculatedScore || show.final;
+                const isTop10 = displayRank <= 10;
+                
+                if (isTop10) {
+                    return `
+                    <div class="show-card top-10" style="animation-delay: ${index * 0.05}s">
+                        <div class="rank-banner">
+                            <span class="rank-num">#${displayRank}</span>
+                            <span class="rank-text">Top Ten</span>
+                        </div>
+                        <div class="show-header">
+                            <h2 class="show-title">${show.title}</h2>
+                            <div class="show-meta">
+                                <span>${show.year}</span>
+                                <span>•</span>
+                                <span>${show.episodes} episodes</span>
+                            </div>
+                            <div class="final-score">${displayScore.toFixed(2)}</div>
+                        </div>
+                        <div class="score-breakdown">
+                            ${renderScoreItem('Characters & Acting', show.char, weights.char)}
+                            ${renderScoreItem('World Building', show.world, weights.world)}
+                            ${renderScoreItem('Cinematography', show.cine, weights.cine)}
+                            ${renderScoreItem('Visual Spectacle', show.spect, weights.spect)}
+                            ${renderScoreItem('Conceptual Density', show.conc, weights.conc)}
+                            ${renderScoreItem('Narrative Drive', show.drive, weights.drive)}
+                            ${renderScoreItem('Narrative Path & Resolution', show.resol, weights.resol)}
+                        </div>
+                    </div>
+                    `;
+                } else {
+                    return `
+                    <div class="show-card" style="animation-delay: ${index * 0.05}s">
+                        <div class="rank-badge">${displayRank}</div>
+                        <div class="show-header">
+                            <h2 class="show-title">${show.title}</h2>
+                            <div class="show-meta">
+                                <span>${show.year}</span>
+                                <span>•</span>
+                                <span>${show.episodes} episodes</span>
+                            </div>
+                            <div class="final-score">${displayScore.toFixed(2)}</div>
+                        </div>
+                        <div class="score-breakdown">
+                            ${renderScoreItem('Characters & Acting', show.char, weights.char)}
+                            ${renderScoreItem('World Building', show.world, weights.world)}
+                            ${renderScoreItem('Cinematography', show.cine, weights.cine)}
+                            ${renderScoreItem('Visual Spectacle', show.spect, weights.spect)}
+                            ${renderScoreItem('Conceptual Density', show.conc, weights.conc)}
+                            ${renderScoreItem('Narrative Drive', show.drive, weights.drive)}
+                            ${renderScoreItem('Narrative Path & Resolution', show.resol, weights.resol)}
+                        </div>
+                    </div>
+                    `;
+                }
+            }).join('');
+
+            // Animate score bars
+            setTimeout(() => {
+                document.querySelectorAll('.score-bar-fill').forEach(bar => {
+                    bar.style.width = bar.dataset.width;
+                });
+            }, 100);
+        }
+
+        function renderScoreItem(label, value, weight) {
+            const percentage = (value / 10) * 100;
+            return `
+                <div class="score-item">
+                    <span class="score-label">${label} <span style="color: #999; font-size: 0.85em;">(${weight}%)</span></span>
+                    <span class="score-value">${value}</span>
+                </div>
+                <div class="score-bar">
+                    <div class="score-bar-fill" data-width="${percentage}%" style="width: 0%"></div>
+                </div>
+            `;
+        }
+
+        // Event listeners
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderShows();
+            });
+        });
+
+        searchInput.addEventListener('input', (e) => {
+            searchTerm = e.target.value;
+            renderShows();
+        });
+
+        // Initial calculation and render
+        recalculateRankings();
+    </script>
+</body>
+</html>

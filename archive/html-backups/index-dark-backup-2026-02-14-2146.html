@@ -1,0 +1,2458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TV Shows Ranked - The definitive ranking of prestige TV dramas">
+    <title>TV Shows Ranked</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Unna:wght@400;700&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --card: #14141c;
+            --card-hover: #1a1a26;
+            --border: #252532;
+            --border-hover: #32324a;
+            --text: #e8e8ec;
+            --text-muted: #8a8a9a;
+            --gold: #d4af37;
+            --gold-dim: #9a7d2a;
+            --gold-glow: rgba(212, 175, 55, 0.12);
+            --silver: #a8a8b0;
+            --silver-dim: #6a6a70;
+            --bronze: #a87d4a;
+            --bronze-dim: #6d5230;
+            --accent: #64748b;
+            --accent-dim: #475569;
+            --accent-glow: rgba(100, 116, 139, 0.12);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+        
+        /* Header */
+        header {
+            padding: 2rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, #0f0f18 0%, var(--bg) 100%);
+        }
+        
+        h1 {
+            font-family: 'Unna', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--text) 0%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        .stats {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .stats span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        
+        .stats .num {
+            font-family: 'Unna', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        
+        /* View Toggle */
+        /* Methodology Badge */
+        .methodology-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.35rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            background: transparent;
+            transition: all 0.2s;
+            margin-left: 1rem;
+            letter-spacing: 0.02em;
+        }
+        
+        .methodology-badge:hover {
+            border-color: var(--text-muted);
+            color: var(--text);
+        }
+        
+        .methodology-icon {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+        
+        /* Methodology Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .modal-overlay.visible {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            max-width: 700px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+        
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .modal-content::-webkit-scrollbar-track {
+            background: #1a1a24;
+            border-radius: 4px;
+        }
+        
+        .modal-content::-webkit-scrollbar-thumb {
+            background: var(--gold-dim);
+            border-radius: 4px;
+        }
+        
+        .modal-content::-webkit-scrollbar-thumb:hover {
+            background: var(--gold);
+        }
+        
+        /* Category Modal */
+        .category-modal-content {
+            max-width: 500px;
+            padding: 1.5rem;
+        }
+        
+        .category-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .category-modal-header h2 {
+            font-family: 'Unna', serif;
+            font-size: 1.5rem;
+            color: var(--text);
+            margin: 0;
+        }
+        
+        .category-modal-weight {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text);
+            background: var(--border);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .category-modal-desc {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+            line-height: 1;
+        }
+        
+        .modal-close:hover {
+            color: var(--gold);
+        }
+        
+        .modal-content h2 {
+            font-family: 'Unna', serif;
+            font-size: 1.8rem;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+        
+        /* Methodology Navigation */
+        .methodology-nav {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .methodology-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 0.35rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            transition: all 0.2s;
+        }
+        
+        .methodology-nav a:hover {
+            color: var(--gold);
+            border-color: var(--gold-dim);
+        }
+        
+        /* Methodology Sections */
+        .methodology-section {
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+            border-radius: 8px;
+            border-left: 3px solid;
+        }
+        
+        .methodology-intro {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05));
+            border-color: #3b82f6;
+        }
+        
+        .methodology-intro strong {
+            color: #60a5fa;
+        }
+        
+        .intro-header {
+            margin-bottom: 0.75rem;
+        }
+        
+        .intro-header h3 {
+            font-size: 1.1rem;
+            color: #60a5fa;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+        
+        .methodology-intro p {
+            margin-bottom: 0.6rem;
+        }
+        
+        .intro-example {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 3px solid #60a5fa;
+            padding: 0.6rem 0.75rem;
+            border-radius: 0 6px 6px 0;
+            margin: 0.75rem 0;
+        }
+        
+        .intro-example strong {
+            color: #93c5fd;
+        }
+        
+        .methodology-categories {
+            border-left: 3px solid var(--border);
+            padding-left: 0;
+        }
+        
+        .methodology-category {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: var(--bg);
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+        
+        .methodology-category:last-child {
+            margin-bottom: 0;
+        }
+        
+        .methodology-category h3 {
+            font-family: 'Unna', serif;
+            font-size: 1.1rem;
+            color: var(--text);
+            margin-bottom: 0;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+        
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-weight {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            background: var(--border);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .methodology-category p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+        
+        .methodology-multipliers {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05));
+            border-color: #f59e0b;
+        }
+        
+        .methodology-multipliers h3 {
+            color: #fbbf24;
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .methodology-multipliers p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 0.25rem;
+        }
+        
+        .methodology-multipliers strong {
+            color: #fbbf24;
+        }
+        
+        .methodology-tier {
+            padding: 1.25rem;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .methodology-tier h3 {
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .methodology-tier p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+        }
+        
+        .methodology-tier strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        /* Multiplier Grid */
+        .multiplier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .multiplier-item {
+            display: flex;
+            flex-direction: column;
+            padding: 0.6rem 0.75rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .multiplier-range {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .multiplier-value {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--gold);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .multiplier-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            opacity: 0.8;
+        }
+        
+        /* Score Scale */
+        .score-scale {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-top: 1rem;
+        }
+        
+        .scale-item {
+            display: grid;
+            grid-template-columns: 40px 100px 1fr;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0.75rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            border-left: 3px solid transparent;
+        }
+        
+        .scale-item.scale-perfect { border-left-color: #ffd700; }
+        .scale-item.scale-incredible { border-left-color: #f0c75b; }
+        .scale-item.scale-exceptional { border-left-color: #c0c0c0; }
+        .scale-item.scale-very-good { border-left-color: #cd7f32; }
+        .scale-item.scale-good { border-left-color: #4ade80; }
+        .scale-item.scale-average { border-left-color: #60a5fa; }
+        .scale-item.scale-below { border-left-color: #ef4444; }
+        
+        .scale-score {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text);
+        }
+        
+        .scale-label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--text);
+        }
+        
+        .scale-desc {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        
+        /* Quick Compare Bar */
+        .quick-compare {
+            display: none;
+            background: linear-gradient(180deg, var(--card) 0%, #0d0d14 100%);
+            border-bottom: 1px solid var(--gold-dim);
+            padding: 0.75rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        
+        .quick-compare.visible {
+            display: block;
+        }
+        
+        .quick-compare-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            margin-bottom: 0.4rem;
+        }
+        
+        .pinned-shows {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .pinned-card {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--bg);
+            border: 1px solid var(--gold-dim);
+            border-radius: 8px;
+            padding: 0.5rem 0.75rem;
+            min-width: 200px;
+            position: relative;
+        }
+        
+        .pinned-card .pin-rank {
+            font-family: 'Unna', serif;
+            font-weight: 900;
+            color: var(--gold);
+            font-size: 1.1rem;
+        }
+        
+        .pinned-card .pin-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text);
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .pinned-card .pin-score {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        .pinned-card .unpin-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 0;
+            line-height: 1;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+        
+        .pinned-card .unpin-btn:hover {
+            opacity: 1;
+            color: var(--bronze);
+        }
+        
+        /* Filters Section */
+        .filters-section {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .filter-group {
+            margin-bottom: 0.75rem;
+        }
+        
+        .filter-group:last-child {
+            margin-bottom: 0;
+        }
+        
+        .filter-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+            display: block;
+        }
+        
+        .filter-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .search-wrapper {
+            position: relative;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.5rem 1rem 0.5rem 2.5rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        
+        /* Weight Adjustment */
+        .weight-group {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .weight-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        
+        .weight-header .filter-label {
+            margin-bottom: 0;
+        }
+        
+        .weight-reset-btn {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .weight-reset-btn:hover {
+            border-color: var(--gold-dim);
+            color: var(--gold);
+        }
+        
+        .weight-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+            padding: 0.4rem 0.6rem;
+            background: var(--bg);
+            border-radius: 6px;
+        }
+        
+        .weight-total span:first-child {
+            color: var(--text-muted);
+        }
+        
+        .weight-total.valid {
+            background: rgba(34, 197, 94, 0.1);
+        }
+        
+        .weight-total.valid span:last-child {
+            color: #22c55e;
+        }
+        
+        .weight-total.invalid {
+            background: rgba(239, 68, 68, 0.1);
+        }
+        
+        .weight-total.invalid span:last-child {
+            color: #ef4444;
+        }
+        
+        .weight-warning {
+            display: none;
+            font-size: 0.75rem;
+            color: #ef4444;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        .weight-warning.visible {
+            display: block;
+        }
+        
+        .weight-sliders {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .weight-slider-row {
+            display: grid;
+            grid-template-columns: 140px 1fr 40px;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .weight-slider-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .weight-slider-input {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(180deg, #1a1a24 0%, #252532 100%);
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .weight-slider-input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            background: linear-gradient(145deg, #64748b, #475569);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.15s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        
+        .weight-slider-input::-webkit-slider-thumb:hover {
+            background: linear-gradient(145deg, #94a3b8, #64748b);
+            transform: scale(1.1);
+        }
+        
+        .weight-slider-value {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            font-family: 'JetBrains Mono', monospace;
+            text-align: right;
+        }
+        
+        .weight-recalc-btn {
+            display: block;
+            width: 100%;
+            margin-top: 0.75rem;
+            padding: 0.5rem;
+            background: transparent;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.2s;
+            opacity: 0.5;
+            pointer-events: none;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        
+        .weight-recalc-btn.active {
+            opacity: 1;
+            pointer-events: auto;
+            color: var(--text-muted);
+            border-color: var(--border-hover);
+        }
+        
+        .weight-recalc-btn.active:hover {
+            background: rgba(255,255,255,0.03);
+            border-color: var(--accent-dim);
+            color: var(--text);
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+        
+        .range-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex: 1;
+        }
+        
+        .range-slider {
+            flex: 1;
+            height: 4px;
+            -webkit-appearance: none;
+            background: var(--border);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            background: var(--gold);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .range-value {
+            font-size: 0.8rem;
+            color: var(--gold);
+            min-width: 2.5rem;
+            text-align: right;
+        }
+        
+        .genre-pills {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+        
+        .genre-pill {
+            padding: 0.25rem 0.6rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 100px;
+            font-size: 0.65rem;
+            transition: all 0.2s;
+            letter-spacing: 0.02em;
+        }
+        
+        .genre-pill:hover {
+            border-color: var(--text-muted);
+            color: var(--text);
+        }
+        
+        .genre-pill.active {
+            background: var(--border);
+            color: var(--text);
+            border-color: var(--border-hover);
+            font-weight: 500;
+        }
+        
+        /* Filter buttons (Era) */
+        .filter-btn {
+            padding: 0.3rem 0.65rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn:hover {
+            border-color: var(--text-muted);
+            color: var(--text);
+        }
+        
+        .filter-btn.active {
+            background: var(--border);
+            color: var(--text);
+            border-color: var(--border-hover);
+            font-weight: 500;
+        }
+        
+        .active-filters {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .active-filter-tag {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.2rem 0.45rem;
+            background: var(--gold-glow);
+            border: 1px solid var(--gold-dim);
+            border-radius: 4px;
+            font-size: 0.65rem;
+            color: var(--gold);
+        }
+        
+        .active-filter-tag button {
+            background: none;
+            border: none;
+            color: var(--gold);
+            cursor: pointer;
+            padding: 0;
+            font-size: 0.85rem;
+        }
+        
+        .clear-all {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            background: none;
+            border: none;
+            text-decoration: underline;
+        }
+        
+        /* Main */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem 4rem;
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .results-count {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .results-count strong {
+            color: var(--gold);
+        }
+        
+        .sort-select {
+            padding: 0.35rem 0.75rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+        
+        .sort-select:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        
+        /* Show Cards - Cinematic Editorial Style */
+        .show-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .show-list.hidden {
+            display: none !important;
+        }
+        
+        .score-breakdown.hidden {
+            display: none !important;
+        }
+        
+        .show-card {
+            background: #14141c !important;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem 1.75rem;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        
+        /* Universal transparent rule - strip backgrounds from card inner wrappers */
+        .show-card .title-section,
+        .show-card .score-section,
+        .show-card .score-breakdown,
+        .show-card .meta,
+        .show-card .title-section *,
+        .show-card .score-section *,
+        .show-card .score-breakdown *,
+        .show-card .meta * {
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+        
+        /* Exception: keep gradients for prestige elements */
+        .show-card .rank-badge {
+            background: linear-gradient(135deg, var(--gold-dim), var(--gold)) !important;
+        }
+        .show-card.tier-silver .rank-badge {
+            background: linear-gradient(135deg, var(--silver-dim), var(--silver)) !important;
+        }
+        .show-card.tier-bronze .rank-badge {
+            background: linear-gradient(135deg, var(--bronze-dim), var(--bronze)) !important;
+        }
+        .show-card .score-bar-fill {
+            background: linear-gradient(90deg, #9E7F2A, #F0C75B, #9E7F2A) !important;
+            background-size: 200% 100% !important;
+        }
+        .show-card .score-item.tier-silver .score-bar-fill {
+            background: linear-gradient(90deg, #7a7a80, #c0c0c8, #7a7a80) !important;
+            background-size: 200% 100% !important;
+        }
+        .show-card .score-item.tier-bronze .score-bar-fill {
+            background: linear-gradient(90deg, #8B5A2B, #CD853F, #8B5A2B) !important;
+            background-size: 200% 100% !important;
+        }
+        .show-card .season-badge {
+            background: var(--gold) !important;
+        }
+        .show-card .final-score {
+            background: unset !important;
+        }
+        
+        /* Also preserve score bar track color */
+        .show-card .score-bar {
+            background: #333333 !important;
+        }
+        .show-card .score-item {
+            background: transparent !important;
+        }
+        
+        /* Poster transparency */
+        .show-card .poster,
+        .show-card .poster-placeholder {
+            background: transparent !important;
+        }
+        
+        /* Score desc transparency */
+        .show-card .score-desc {
+            background: transparent !important;
+        }
+        
+        /* Score labels and values */
+        .show-card .score-label-text,
+        .show-card .score-value {
+            background: transparent !important;
+        }
+        
+        /* Genre tags */
+        .show-card .genre-tag {
+            background: transparent !important;
+            border: 1px solid var(--gold) !important;
+            color: var(--gold) !important;
+        }
+        .show-card .genre-tag:hover {
+            background: var(--gold) !important;
+            color: var(--bg) !important;
+        }
+        
+        /* Meta info */
+        .show-card .meta .year,
+        .show-card .meta .episodes {
+            background: transparent !important;
+        }
+        
+        /* Pin button - needs explicit background */
+        .show-card .pin-btn {
+            background: rgba(0, 0, 0, 0.6) !important;
+        }
+        
+        .show-card:hover {
+            background: #1a1a26 !important;
+            border-color: var(--border-hover);
+        }
+        
+        /* Force transparency on all card children */
+        .show-card > * {
+            background-color: transparent !important;
+        }
+            transition: opacity 0.3s;
+        }
+        
+        .show-card::after {
+            display: none !important;
+        }
+        
+        .show-card:hover {
+            background: var(--card-hover);
+            border-color: var(--border-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+        }
+        
+        .show-card::before,
+        .show-card::after {
+            display: none !important;
+        }
+        
+        .show-card.tier-gold { border-color: var(--gold-dim); }
+        .show-card.tier-gold .rank-badge { background: linear-gradient(135deg, var(--gold-dim), var(--gold)); color: var(--bg); border: none; box-shadow: 0 4px 16px rgba(212, 175, 55, 0.4); }
+        
+        .show-card.tier-silver { border-color: var(--silver-dim); }
+        .show-card.tier-silver .rank-badge { background: linear-gradient(135deg, var(--silver-dim), var(--silver)); color: var(--bg); border: none; }
+        
+        .show-card.tier-bronze { border-color: var(--bronze-dim); }
+        .show-card.tier-bronze .rank-badge { background: linear-gradient(135deg, var(--bronze-dim), var(--bronze)); color: var(--bg); border: none; }
+        
+        /* Card Header */
+        .card-header {
+            display: none; /* Removed - using direct children now */
+        }
+        
+        .title-section {
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        
+        /* Poster Thumbnail */
+        .poster {
+            width: 120px;
+            height: 180px;
+            border-radius: 4px;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .poster-glow {
+            display: none; /* Disabled for uniform card look */
+        }
+        
+        .poster-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Unna', serif;
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.15);
+            font-weight: 900;
+        }
+        
+        /* Pin Button */
+        .pin-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.2s;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            z-index: 10;
+        }
+        
+        .show-card:hover .pin-btn,
+        .pin-btn.pinned {
+            opacity: 1;
+        }
+        
+        .pin-btn:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--bg);
+        }
+        
+        .pin-btn.pinned {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--bg);
+        }
+        
+        .rank-badge {
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: var(--bg);
+            border: 2px solid var(--gold-dim);
+            border-radius: 50%;
+            font-family: 'Unna', serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            z-index: 10;
+        }
+        
+        .title-section {
+            flex: 1;
+            min-width: 0;
+            margin-top: -4px;
+        }
+        
+        .show-title {
+            font-family: 'Unna', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text);
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .season-badge {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 6px;
+            border: 1px solid var(--gold);
+            border-radius: 4px;
+            color: #000;
+            background: #D4AF37;
+            letter-spacing: 0.02em;
+        }
+            border: 1px solid var(--gold);
+            border-radius: 4px;
+            color: #000;
+            background: var(--gold);
+            letter-spacing: 0.02em;
+        }
+        
+        .show-meta {
+            display: flex;
+            gap: 0.6rem;
+            font-family: 'Unna', serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #AAAAAA;
+            margin-top: 0.25rem;
+            letter-spacing: 0.02em;
+        }
+        
+        .show-meta .year::before {
+            content: '•';
+            margin-right: 0.6rem;
+            color: var(--gold-dim);
+        }
+        
+        .show-meta .year {
+            color: var(--text);
+        }
+        
+        .show-meta .episodes {
+            color: var(--text-muted);
+        }
+        
+        .score-section {
+            text-align: right;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+            margin-left: auto;
+        }
+        
+        .final-score {
+            font-family: 'Unna', serif;
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: var(--gold);
+            text-align: right;
+            line-height: 1;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        
+        .final-score.silver {
+            color: var(--silver);
+            text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        
+        .final-score.bronze {
+            color: var(--bronze);
+            text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        
+        .score-label {
+            display: block;
+            font-size: 0.6rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            text-align: right;
+            margin-top: 0.3rem;
+        }
+        
+        /* Score Breakdown - List View */
+        .score-breakdown {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border);
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+        
+        .score-item {
+            display: grid;
+            grid-template-columns: 35% 55% 10%;
+            align-items: center;
+            gap: 0;
+        }
+        
+        .score-label-text {
+            font-family: 'Unna', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            flex-shrink: 0;
+            width: 100%;
+            letter-spacing: 0.01em;
+        }
+        
+        .score-bar {
+            height: 6px;
+            background: #333333;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        
+        .score-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.6s ease-out;
+            width: 0;
+        }
+        
+        /* Gold tier */
+        .score-item.tier-gold .score-bar-fill { background: linear-gradient(90deg, #9E7F2A, #F0C75B, #9E7F2A); background-size: 200% 100%; }
+        .score-item.tier-gold .score-value { color: var(--gold); }
+        
+        /* Silver tier */
+        .score-item.tier-silver .score-bar-fill { background: linear-gradient(90deg, #7a7a80, #c0c0c8, #7a7a80); background-size: 200% 100%; }
+        .score-item.tier-silver .score-value { color: var(--silver); }
+        
+        /* Bronze tier */
+        .score-item.tier-bronze .score-bar-fill { background: linear-gradient(90deg, #6d5230, #c9955a, #6d5230); background-size: 200% 100%; }
+        .score-item.tier-bronze .score-value { color: var(--bronze); }
+        
+        .score-value {
+            font-family: 'Unna', serif;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: var(--text);
+            text-align: right;
+            width: 100%;
+            letter-spacing: 0.02em;
+        }
+        
+        .score-value.clickable {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        
+        .score-value.clickable:hover {
+            color: var(--gold);
+        }
+        
+        /* Clickable score label */
+        .score-label-text.clickable {
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s;
+        }
+        
+        .score-label-text.clickable:hover {
+            color: var(--gold);
+        }
+        
+        .score-label-text.clickable::after {
+            content: '▼';
+            font-size: 0.5rem;
+            margin-left: 0.3rem;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .score-label-text.clickable:hover::after {
+            opacity: 0.5;
+        }
+        
+        /* Score description accordion */
+        .score-desc {
+            display: none;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            padding: 0.25rem 0;
+            line-height: 1.4;
+            font-style: italic;
+            width: 100%;
+            order: 3;
+        }
+        
+        .score-desc.expanded {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        /* Genres */
+        .genres {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            margin-top: 1.25rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .genre-tag {
+            padding: 0.2rem 0.5rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            font-family: 'Unna', serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            letter-spacing: 0.03em;
+        }
+        
+        .genre-tag:hover {
+            border-color: var(--text-muted);
+            color: var(--text);
+        }
+        
+        /* Card methodology link */
+        .card-methodology-link {
+            font-family: 'Unna', serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--text-muted);
+            transition: all 0.2s;
+            margin-top: 0.5rem;
+            display: inline-block;
+            letter-spacing: 0.02em;
+        }
+        
+        .card-methodology-link:hover {
+            color: var(--gold);
+            border-color: var(--gold);
+        }
+        
+        /* Read Review Arrow */
+        .read-more {
+            position: absolute;
+            bottom: 1rem;
+            right: 1.5rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        
+        .show-card:hover .read-more {
+            opacity: 1;
+            transform: translateX(-4px);
+        }
+        
+        .read-more-arrow {
+            transition: transform 0.3s;
+        }
+        
+        .show-card:hover .read-more-arrow {
+            transform: translateX(4px);
+        }
+        
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-muted);
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .filters-section { padding: 0.75rem 1rem; }
+            .card-header {
+                flex-wrap: wrap;
+            }
+            .rank-badge {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            .score-section {
+                text-align: left;
+                margin-top: 0.5rem;
+            }
+            .score-label { text-align: left; }
+            .show-card { padding: 1.25rem; }
+            .show-title { font-size: 1.5rem; }
+            .final-score { font-size: 2.2rem; }
+            .stats { flex-direction: column; gap: 0.5rem; }
+            .score-label-text { width: 120px; font-size: 0.7rem; }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .show-card {
+            animation: fadeIn 0.4s ease-out;
+            animation-fill-mode: both;
+        }
+        
+        /* ============================================
+           CARD RESET - KILLS ALL BACKGROUND ARTIFACTS
+           ============================================ */
+        .show-card,
+        .show-card *,
+        .show-card *::before,
+        .show-card *::after {
+            background: transparent !important;
+            background-color: transparent !important;
+            background-image: none !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+        
+        /* Now re-apply only what we need inline */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TV Shows Ranked</h1>
+        <p class="subtitle">100 prestige dramas scored across 7 categories</p>
+        <div class="stats">
+            <span><span class="num">100</span> Shows</span>
+            <span><span class="num">7</span> Categories</span>
+            <span><span class="num">2025</span> Last Updated</span>
+            <a href="#" class="methodology-badge" id="open-methodology">
+                <svg class="methodology-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 6h18M3 12h18M3 18h18M7 6v12M17 6v12M7 9h.01M17 9h.01"/>
+                </svg>
+                Methodology & Criteria
+            </a>
+        </div>
+    </header>
+    
+    <!-- Methodology Modal -->
+    <div class="modal-overlay" id="methodology-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-methodology">×</button>
+            <h2>Ranking Methodology</h2>
+            
+            <div class="methodology-nav">
+                <a href="#methodology-intro">Season Selection</a>
+                <a href="#methodology-categories">Core Metrics</a>
+                <a href="#methodology-multipliers">Multipliers</a>
+                <a href="#methodology-scale">Scoring Scale</a>
+            </div>
+            
+            <div class="methodology-section methodology-intro" id="methodology-intro">
+                <div class="intro-header">
+                    <h3>Season Selection Philosophy</h3>
+                </div>
+                <p>Shows are evaluated at their peak. When later seasons decline in quality, only the excellent seasons are included in the ranking.</p>
+                <p class="intro-example"><strong>Example:</strong> Game of Thrones (S1-4) includes only the first four seasons—the show at its absolute best, before the source material ran out and quality declined.</p>
+                <p>This mirrors how we select only the best shows for inclusion: we're ranking television excellence, not mediocrity. A show's weakest moments don't define it—its strongest do.</p>
+            </div>
+            
+            <div class="methodology-section" id="methodology-categories">
+                <div class="methodology-categories">
+                    <div class="methodology-category">
+                        <div class="category-header">
+                            <h3>Characters & Acting</h3>
+                            <span class="category-weight">20%</span>
+                        </div>
+                        <p>Characters & Acting evaluates whether the people on screen feel like real individuals making authentic, internally consistent choices. It assesses depth of characterization, psychological believability, meaningful change over time, and the strength of the ensemble as a whole—not just standout leads. Acting is judged on embodiment and invisibility: performances should disappear into the role rather than draw attention to themselves. High scores reflect characters who feel autonomous, linger in the viewer's mind, and remain compelling beyond the immediate plot.</p>
+                    </div>
+                    <div class="methodology-category">
+                        <div class="category-header">
+                            <h3>World Building</h3>
+                            <span class="category-weight">15%</span>
+                        </div>
+                        <p>World Building measures how fully realized and self-sustaining the show's world feels. This includes consistency of rules, institutions, cultures, and social structures, as well as the sense that life exists beyond the immediate story being told. A strong world feels navigable and durable: the viewer can understand how power works, how people live, and what pressures shape behavior without constant exposition. High scores are reserved for worlds that feel lived-in, coherent, and capable of supporting many stories.</p>
+                    </div>
+                    <div class="methodology-category">
+                        <div class="category-header">
+                            <h3>Cinematography</h3>
+                            <span class="category-weight">10%</span>
+                        </div>
+                        <p>Cinematography evaluates the visual craft and intentionality behind how the story is told. This includes framing, camera movement, lighting, color, composition, and visual rhythm, with emphasis on coherence and meaning rather than surface beauty. High-scoring shows demonstrate a distinctive and consistent visual language, where the camera communicates narrative or character information rather than merely recording events. A key marker is recognizability: the ability to identify the show from a single frame.</p>
+                    </div>
+                    <div class="methodology-category">
+                        <div class="category-header">
+                            <h3>Visual Spectacle</h3>
+                            <span class="category-weight">10%</span>
+                        </div>
+                        <p>Visual Spectacle measures the impact, ambition, and sustained presence of what is shown on screen. This includes large-scale environments, meticulously crafted sets, production design, visual effects, and striking or immersive imagery. Frequency matters when spectacle is genuinely sustained across scenes and episodes. Spectacle may also arise from novelty and exposure—revealing places, systems, or ways of life the viewer has rarely or never seen, captured with authority and detail. The focus is on how visually compelling and memorable the on-screen world is, whether through epic construction or grounded realism.</p>
+                    </div>
+                    <div class="methodology-category">
+                        <div class="category-header">
+                            <h3>Conceptual Density</h3>
+                            <span class="category-weight">15%</span>
+                        </div>
+                        <p>Conceptual Density measures how many distinct ideas a series meaningfully engages with, and how well those ideas are integrated into the narrative. These concepts may be political, philosophical, social, moral, or institutional, but must be dramatized through story, character, and world rather than stated directly. Higher scores reflect shows that sustain multiple independent concepts across episodes and seasons, explore them from different angles, and allow them to interact or conflict. The emphasis is on breadth of ideas combined with coherent execution, not symbolic interpretation or tone.</p>
+                    </div>
+                    <div class="methodology-category">
+                        <div class="category-header">
+                            <h3>Narrative Drive</h3>
+                            <span class="category-weight">15%</span>
+                        </div>
+                        <p>Narrative Drive assesses how effectively the story pulls the viewer forward. This includes pacing, clarity of stakes, escalation, and whether each episode meaningfully advances the narrative. A strong sense of drive does not require constant action; slower or quieter series can score highly if momentum, tension, or curiosity are consistently maintained. Filler, stalling, or structural wheel-spinning lowers the score. The core question is whether the story moves with purpose.</p>
+                    </div>
+                    <div class="methodology-category">
+                        <div class="category-header">
+                            <h3>Narrative Path & Resolution</h3>
+                            <span class="category-weight">15%</span>
+                        </div>
+                        <p>Narrative Path & Resolution evaluates how effectively a series fulfills the narrative promises it introduces. This includes how many story loops, mysteries, arcs, or tensions are opened, how deliberately they are carried forward, and how meaningfully they are resolved. High scores reflect disciplined loop management, strong closure rates, and payoffs that feel earned—often enhancing or recontextualizing earlier material. Ambiguity is not penalized when intentional and coherent, but unresolved, rushed, or undermining resolutions reduce the score. This category rewards narrative discipline over novelty.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="methodology-section methodology-multipliers" id="methodology-multipliers">
+                <h3>Episode Count Multipliers</h3>
+                <p>Longer shows that maintain quality across many hours are rewarded. The multiplier system recognizes that sustaining excellence over 60+ episodes is harder than over 6.</p>
+                <div class="multiplier-grid">
+                    <div class="multiplier-item"><span class="multiplier-range">≤10 episodes</span><span class="multiplier-value">×0.96</span><span class="multiplier-label">Miniseries</span></div>
+                    <div class="multiplier-item"><span class="multiplier-range">11–20 episodes</span><span class="multiplier-value">×0.95</span><span class="multiplier-label">Short Series</span></div>
+                    <div class="multiplier-item"><span class="multiplier-range">21–30 episodes</span><span class="multiplier-value">×0.97</span><span class="multiplier-label">Limited Series</span></div>
+                    <div class="multiplier-item"><span class="multiplier-range">31–40 episodes</span><span class="multiplier-value">×1.00</span><span class="multiplier-label">Baseline</span></div>
+                    <div class="multiplier-item"><span class="multiplier-range">41–50 episodes</span><span class="multiplier-value">×1.02</span><span class="multiplier-label">Standard Run</span></div>
+                    <div class="multiplier-item"><span class="multiplier-range">51–60 episodes</span><span class="multiplier-value">×1.03</span><span class="multiplier-label">Extended</span></div>
+                    <div class="multiplier-item"><span class="multiplier-range">61–75 episodes</span><span class="multiplier-value">×1.04</span><span class="multiplier-label">Long-Form</span></div>
+                    <div class="multiplier-item"><span class="multiplier-range">76–100 episodes</span><span class="multiplier-value">×1.05</span><span class="multiplier-label">Epic Run</span></div>
+                    <div class="multiplier-item"><span class="multiplier-range">100+ episodes</span><span class="multiplier-value">×1.06</span><span class="multiplier-label">Maximum Bonus</span></div>
+                </div>
+            </div>
+            
+            <div class="methodology-section methodology-tier" id="methodology-scale">
+                <h3>The Scoring Scale</h3>
+                <p>Every category uses a strict 1-10 scale calibrated for precision:</p>
+                <div class="score-scale">
+                    <div class="scale-item scale-perfect"><span class="scale-score">10</span><span class="scale-label">Perfect</span><span class="scale-desc">The gold standard, no meaningful flaws</span></div>
+                    <div class="scale-item scale-incredible"><span class="scale-score">9</span><span class="scale-label">Incredible</span><span class="scale-desc">Near-flawless, only minor imperfections</span></div>
+                    <div class="scale-item scale-exceptional"><span class="scale-score">8</span><span class="scale-label">Exceptional</span><span class="scale-desc">Among the very best in television</span></div>
+                    <div class="scale-item scale-very-good"><span class="scale-score">7</span><span class="scale-label">Very Good</span><span class="scale-desc">Clearly stands out, memorable</span></div>
+                    <div class="scale-item scale-good"><span class="scale-score">6</span><span class="scale-label">Good</span><span class="scale-desc">Noticeably above typical TV</span></div>
+                    <div class="scale-item scale-average"><span class="scale-score">5</span><span class="scale-label">Average</span><span class="scale-desc">Competent but unremarkable</span></div>
+                    <div class="scale-item scale-below"><span class="scale-score">≤4</span><span class="scale-label">Below Average</span><span class="scale-desc">Ranges from mediocre to poor</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Category Detail Modal -->
+    <div class="modal-overlay" id="category-modal">
+        <div class="modal-content category-modal-content">
+            <button class="modal-close" id="close-category">&times;</button>
+            <div class="category-modal-header">
+                <h2 id="category-modal-title">Category</h2>
+                <span class="category-modal-weight" id="category-modal-weight">20%</span>
+            </div>
+            <p class="category-modal-desc" id="category-modal-desc">Description</p>
+        </div>
+    </div>
+    
+    <!-- Quick Compare Bar -->
+    <div class="quick-compare" id="quick-compare">
+        <div class="quick-compare-label">📌 Quick Compare (Pinned Shows)</div>
+        <div class="pinned-shows" id="pinned-shows"></div>
+    </div>
+    
+    <div class="filters-section">
+        <!-- Search -->
+        <div class="filter-group">
+            <div class="filter-row">
+                <div class="search-wrapper">
+                    <span class="search-icon">⌕</span>
+                    <input type="text" class="search-input" placeholder="Search shows..." id="search">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Era Filter -->
+        <div class="filter-group">
+            <label class="filter-label">Era</label>
+            <div class="filter-row" id="era-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="last6mo">Last 6 Months</button>
+                <button class="filter-btn" data-filter="thisYear">This Year</button>
+                <button class="filter-btn" data-filter="2020s">2020s</button>
+                <button class="filter-btn" data-filter="2010s">2010s</button>
+                <button class="filter-btn" data-filter="2000s">2000s</button>
+                <button class="filter-btn" data-filter="pre2000">Pre-2000</button>
+            </div>
+        </div>
+        
+        <!-- Genre Filter -->
+        <div class="filter-group">
+            <label class="filter-label">Genre</label>
+            <div class="genre-pills" id="genre-filters">
+                <button class="genre-pill active" data-genre="all">All</button>
+                <button class="genre-pill" data-genre="drama">Drama</button>
+                <button class="genre-pill" data-genre="crime">Crime</button>
+                <button class="genre-pill" data-genre="thriller">Thriller</button>
+                <button class="genre-pill" data-genre="mystery">Mystery</button>
+                <button class="genre-pill" data-genre="sci-fi">Sci-Fi</button>
+                <button class="genre-pill" data-genre="fantasy">Fantasy</button>
+                <button class="genre-pill" data-genre="historical">Historical</button>
+                <button class="genre-pill" data-genre="comedy">Comedy</button>
+                <button class="genre-pill" data-genre="action">Action</button>
+                <button class="genre-pill" data-genre="horror">Horror</button>
+                <button class="genre-pill" data-genre="western">Western</button>
+                <button class="genre-pill" data-genre="superhero">Superhero</button>
+                <button class="genre-pill" data-genre="cop-show">Cop Show</button>
+            </div>
+        </div>
+        
+        <!-- Active Filters -->
+        <div class="active-filters" id="active-filters"></div>
+        
+        <!-- Weight Adjustment -->
+        <div class="filter-group weight-group">
+            <div class="weight-header">
+                <label class="filter-label">Custom Weightings</label>
+                <button class="weight-reset-btn" id="reset-weights">Reset to Default</button>
+            </div>
+            <div class="weight-total">
+                <span>Total:</span>
+                <span id="weight-total-value">100%</span>
+            </div>
+            <div class="weight-sliders" id="weight-sliders">
+                <!-- Generated by JS -->
+            </div>
+            <div class="weight-warning" id="weight-warning">⚠️ Total must equal 100%</div>
+            <button class="weight-recalc-btn" id="recalc-weights">Recalculate Rankings</button>
+        </div>
+    </div>
+    
+    <main>
+        <div class="results-header">
+            <div class="results-count">Showing <strong id="results-num">100</strong> shows</div>
+            <select class="sort-select" id="sort-select">
+                <option value="rank">Sort by Rank</option>
+                <option value="score-desc">Highest Score</option>
+                <option value="score-asc">Lowest Score</option>
+                <option value="year-desc">Newest First</option>
+                <option value="year-asc">Oldest First</option>
+                <option value="title">Alphabetical</option>
+            </select>
+        </div>
+        <div class="show-list" id="rankings" style="display: flex;"></div>
+        <div class="no-results" id="no-results" style="display: none;">
+            <p>No shows match your filters</p>
+        </div>
+    </main>
+
+    <script>
+        const shows = [
+            { rank: 1, title: "Game of Thrones (S1-4)", year: 2011, episodes: 40, char: 10, world: 10, cine: 8, spect: 9.5, conc: 9, drive: 10, resol: 9, final: 9.50, genres: ["fantasy", "drama", "action"] },
+            { rank: 2, title: "Breaking Bad", year: 2008, episodes: 62, char: 9, world: 7, cine: 9, spect: 6, conc: 8, drive: 10, resol: 10, final: 8.89, genres: ["crime", "drama", "thriller", "cop-show"] },
+            { rank: 3, title: "The Wire", year: 2002, episodes: 60, char: 9.5, world: 10, cine: 6, spect: 7, conc: 10, drive: 7, resol: 9, final: 8.74, genres: ["crime", "drama", "cop-show"] },
+            { rank: 4, title: "Better Call Saul", year: 2015, episodes: 63, char: 8.5, world: 7, cine: 9, spect: 6, conc: 8, drive: 9, resol: 10, final: 8.74, genres: ["crime", "drama"] },
+            { rank: 5, title: "Chernobyl", year: 2019, episodes: 5, char: 8, world: 8, cine: 9, spect: 9, conc: 9, drive: 10, resol: 10, final: 8.54, genres: ["drama", "historical"] },
+            { rank: 6, title: "The Sopranos", year: 1999, episodes: 86, char: 9.5, world: 9, cine: 6, spect: 5, conc: 9, drive: 7, resol: 9, final: 8.38, genres: ["crime", "drama", "cop-show"] },
+            { rank: 7, title: "The Americans", year: 2013, episodes: 75, char: 8, world: 7.5, cine: 7, spect: 5, conc: 8, drive: 8, resol: 10, final: 8.33, genres: ["drama", "thriller"] },
+            { rank: 8, title: "The Shield", year: 2002, episodes: 88, char: 8.5, world: 6.5, cine: 6, spect: 5, conc: 7, drive: 9, resol: 10, final: 8.17, genres: ["crime", "drama", "cop-show"] },
+            { rank: 9, title: "The Expanse", year: 2015, episodes: 62, char: 7.5, world: 9, cine: 7, spect: 9, conc: 8, drive: 7.5, resol: 7, final: 8.09, genres: ["sci-fi", "drama", "thriller"] },
+            { rank: 10, title: "Succession", year: 2018, episodes: 39, char: 8.5, world: 7, cine: 8, spect: 7, conc: 7, drive: 8.5, resol: 9, final: 8.03, genres: ["drama"] },
+            { rank: 11, title: "Babylon Berlin", year: 2017, episodes: 36, char: 7.5, world: 9, cine: 9, spect: 9, conc: 8, drive: 7.5, resol: 7, final: 8.03, genres: ["drama", "historical", "thriller"] },
+            { rank: 12, title: "Mr. Robot", year: 2015, episodes: 45, char: 8, world: 7, cine: 9, spect: 6, conc: 8, drive: 7.5, resol: 9, final: 7.99, genres: ["drama", "thriller"] },
+            { rank: 13, title: "Boardwalk Empire", year: 2010, episodes: 56, char: 9, world: 8.5, cine: 8.5, spect: 9, conc: 7, drive: 7, resol: 8, final: 7.98, genres: ["crime", "drama", "historical"] },
+            { rank: 14, title: "Andor", year: 2022, episodes: 12, char: 8.5, world: 8.5, cine: 9, spect: 8.5, conc: 9, drive: 8.5, resol: 7, final: 7.96, genres: ["sci-fi", "drama", "action"] },
+            { rank: 15, title: "Adolescence", year: 2025, episodes: 4, char: 8, world: 6.5, cine: 9.5, spect: 5, conc: 9, drive: 9, resol: 10, final: 7.95, genres: ["drama", "thriller"] },
+            { rank: 16, title: "True Detective S1", year: 2014, episodes: 8, char: 8, world: 7.5, cine: 10, spect: 8, conc: 8, drive: 9, resol: 8, final: 7.90, genres: ["crime", "mystery", "thriller", "cop-show"] },
+            { rank: 17, title: "For All Mankind", year: 2019, episodes: 40, char: 7, world: 8, cine: 8, spect: 8, conc: 8, drive: 8, resol: 7.5, final: 7.88, genres: ["sci-fi", "drama"] },
+            { rank: 18, title: "Mad Men", year: 2007, episodes: 92, char: 8, world: 7.5, cine: 8, spect: 6, conc: 8, drive: 7, resol: 8, final: 7.88, genres: ["drama"] },
+            { rank: 19, title: "Halt and Catch Fire", year: 2014, episodes: 40, char: 9, world: 7.5, cine: 7, spect: 5, conc: 8, drive: 8, resol: 9, final: 7.88, genres: ["drama"] },
+            { rank: 20, title: "Angels in America", year: 2003, episodes: 6, char: 8.5, world: 7, cine: 8, spect: 7, conc: 10, drive: 7, resol: 9, final: 7.82, genres: ["drama"] },
+            { rank: 21, title: "Dark", year: 2017, episodes: 26, char: 7, world: 8, cine: 8.5, spect: 6.5, conc: 9, drive: 8.5, resol: 9, final: 7.79, genres: ["sci-fi", "mystery", "thriller"] },
+            { rank: 22, title: "Deadwood", year: 2004, episodes: 36, char: 9, world: 8.5, cine: 7, spect: 7, conc: 9, drive: 7, resol: 6, final: 7.78, genres: ["drama", "western"] },
+            { rank: 23, title: "The Crown", year: 2016, episodes: 60, char: 7.5, world: 8, cine: 9, spect: 8, conc: 7, drive: 7, resol: 7, final: 7.76, genres: ["drama", "historical"] },
+            { rank: 24, title: "Justified", year: 2010, episodes: 78, char: 8, world: 7.5, cine: 7, spect: 5, conc: 7, drive: 8, resol: 8, final: 7.75, genres: ["crime", "drama", "thriller"] },
+            { rank: 25, title: "Band of Brothers", year: 2001, episodes: 10, char: 7.5, world: 9, cine: 8, spect: 10, conc: 7, drive: 9, resol: 9, final: 7.73, genres: ["drama", "historical", "war"] },
+            { rank: 26, title: "Six Feet Under", year: 2001, episodes: 63, char: 8, world: 6.5, cine: 7, spect: 5, conc: 8, drive: 6, resol: 10, final: 7.73, genres: ["drama"] },
+            { rank: 27, title: "Fargo", year: 2014, episodes: 51, char: 7.5, world: 7, cine: 8.5, spect: 6.5, conc: 7, drive: 8, resol: 8, final: 7.73, genres: ["crime", "drama", "thriller"] },
+            { rank: 28, title: "It's a Sin", year: 2021, episodes: 5, char: 8, world: 7.5, cine: 8, spect: 6, conc: 8, drive: 8, resol: 10, final: 7.71, genres: ["drama"] },
+            { rank: 29, title: "When They See Us", year: 2019, episodes: 4, char: 8, world: 7, cine: 8, spect: 5, conc: 9, drive: 8, resol: 10, final: 7.68, genres: ["drama"] },
+            { rank: 30, title: "Girls", year: 2012, episodes: 62, char: 8.5, world: 7, cine: 7, spect: 5, conc: 8, drive: 7, resol: 8, final: 7.68, genres: ["drama", "comedy"] },
+            { rank: 31, title: "Watchmen (2019)", year: 2019, episodes: 9, char: 7.5, world: 8, cine: 8, spect: 8, conc: 9, drive: 8, resol: 8, final: 7.68, genres: ["drama", "sci-fi", "superhero"] },
+            { rank: 32, title: "The Bureau", year: 2015, episodes: 50, char: 8, world: 7.5, cine: 7, spect: 5, conc: 8, drive: 8, resol: 8, final: 7.68, genres: ["drama", "thriller"] },
+            { rank: 33, title: "Homeland", year: 2011, episodes: 96, char: 8, world: 7, cine: 7, spect: 6, conc: 7, drive: 8, resol: 7, final: 7.67, genres: ["drama", "thriller", "action"] },
+            { rank: 34, title: "The Queen's Gambit", year: 2020, episodes: 7, char: 7.5, world: 7.5, cine: 9, spect: 7, conc: 7, drive: 9, resol: 9, final: 7.66, genres: ["drama"] },
+            { rank: 35, title: "The Leftovers", year: 2014, episodes: 28, char: 7.5, world: 8, cine: 8, spect: 7, conc: 9, drive: 8, resol: 9, final: 7.64, genres: ["drama", "fantasy", "mystery"] },
+            { rank: 36, title: "Lost", year: 2004, episodes: 121, char: 8, world: 7.5, cine: 7, spect: 7.5, conc: 7, drive: 8, resol: 5, final: 7.61, genres: ["sci-fi", "drama", "mystery"] },
+            { rank: 37, title: "The Knick", year: 2014, episodes: 20, char: 8.5, world: 8.5, cine: 9.5, spect: 8, conc: 8, drive: 8, resol: 6, final: 7.60, genres: ["drama", "historical"] },
+            { rank: 38, title: "The Haunting of Hill House", year: 2018, episodes: 10, char: 8, world: 7, cine: 9, spect: 7, conc: 8, drive: 8, resol: 9, final: 7.60, genres: ["horror", "drama", "thriller"] },
+            { rank: 39, title: "Friday Night Lights", year: 2006, episodes: 76, char: 8, world: 7.5, cine: 7, spect: 5, conc: 7, drive: 7, resol: 8, final: 7.59, genres: ["drama"] },
+            { rank: 40, title: "Wolf Hall", year: 2015, episodes: 6, char: 8, world: 8.5, cine: 9, spect: 7, conc: 9, drive: 7, resol: 7, final: 7.58, genres: ["drama", "historical"] },
+            { rank: 41, title: "Pluribus", year: 2025, episodes: 10, char: 8.5, world: 7.5, cine: 8.5, spect: 7, conc: 9, drive: 8.5, resol: 6, final: 7.58, genres: ["drama", "thriller", "sci-fi"] },
+            { rank: 42, title: "Hannibal", year: 2013, episodes: 39, char: 8, world: 6.5, cine: 10, spect: 8.5, conc: 7, drive: 6.5, resol: 8, final: 7.55, genres: ["crime", "thriller", "horror", "cop-show"] },
+            { rank: 43, title: "Station Eleven", year: 2021, episodes: 10, char: 7.5, world: 8, cine: 9, spect: 7, conc: 9, drive: 7, resol: 8, final: 7.53, genres: ["drama", "sci-fi"] },
+            { rank: 44, title: "House of the Dragon", year: 2022, episodes: 18, char: 8.5, world: 9.5, cine: 8, spect: 9.5, conc: 8, drive: 8, resol: 6, final: 7.53, genres: ["fantasy", "drama", "action"] },
+            { rank: 45, title: "Black Mirror", year: 2011, episodes: 29, char: 7, world: 7, cine: 8, spect: 7, conc: 9, drive: 8, resol: 8, final: 7.52, genres: ["sci-fi", "drama", "thriller"] },
+            { rank: 46, title: "Midnight Mass", year: 2021, episodes: 7, char: 7.5, world: 7.5, cine: 8, spect: 6, conc: 9, drive: 7, resol: 9, final: 7.52, genres: ["horror", "drama", "mystery"] },
+            { rank: 47, title: "Battlestar Galactica", year: 2004, episodes: 75, char: 7, world: 7, cine: 7, spect: 8, conc: 8, drive: 7, resol: 6, final: 7.51, genres: ["sci-fi", "drama", "action"] },
+            { rank: 48, title: "Rectify", year: 2013, episodes: 30, char: 9, world: 7, cine: 8.5, spect: 5, conc: 9, drive: 6, resol: 9, final: 7.50, genres: ["drama"] },
+            { rank: 49, title: "Ozark", year: 2017, episodes: 44, char: 7.5, world: 7, cine: 8, spect: 6, conc: 7, drive: 8, resol: 7, final: 7.50, genres: ["crime", "drama", "thriller", "cop-show"] },
+            { rank: 50, title: "Peaky Blinders", year: 2013, episodes: 36, char: 7.5, world: 8, cine: 9, spect: 7.5, conc: 7, drive: 7, resol: 7, final: 7.50, genres: ["crime", "drama", "historical"] },
+            { rank: 51, title: "Beef", year: 2023, episodes: 10, char: 8.5, world: 6.5, cine: 8, spect: 5, conc: 8, drive: 9, resol: 9, final: 7.49, genres: ["drama", "comedy"] },
+            { rank: 52, title: "Severance", year: 2022, episodes: 19, char: 7.5, world: 8.5, cine: 8.5, spect: 6.5, conc: 9, drive: 9, resol: 6, final: 7.49, genres: ["sci-fi", "drama", "thriller"] },
+            { rank: 53, title: "Shogun (2024)", year: 2024, episodes: 10, char: 8, world: 9, cine: 9, spect: 9, conc: 7, drive: 7.5, resol: 7, final: 7.48, genres: ["drama", "historical", "action"] },
+            { rank: 54, title: "Sharp Objects", year: 2018, episodes: 8, char: 8.5, world: 7.5, cine: 9, spect: 6, conc: 8, drive: 7, resol: 8, final: 7.47, genres: ["drama", "mystery", "thriller"] },
+            { rank: 55, title: "Patrick Melrose", year: 2018, episodes: 5, char: 8.5, world: 7, cine: 8, spect: 6, conc: 8, drive: 7, resol: 9, final: 7.47, genres: ["drama"] },
+            { rank: 56, title: "Generation Kill", year: 2008, episodes: 7, char: 7.5, world: 8, cine: 8, spect: 7, conc: 9, drive: 7, resol: 8, final: 7.47, genres: ["drama", "war", "action"] },
+            { rank: 57, title: "Squid Game", year: 2021, episodes: 18, char: 7, world: 7.5, cine: 8, spect: 9, conc: 7, drive: 9, resol: 8, final: 7.46, genres: ["thriller", "drama", "sci-fi"] },
+            { rank: 58, title: "24", year: 2001, episodes: 192, char: 6.5, world: 6, cine: 6, spect: 7, conc: 6, drive: 9.5, resol: 7, final: 7.45, genres: ["action", "drama", "thriller", "cop-show"] },
+            { rank: 59, title: "Borgen", year: 2010, episodes: 40, char: 8, world: 7, cine: 7, spect: 5, conc: 8, drive: 8, resol: 8, final: 7.45, genres: ["drama", "political"] },
+            { rank: 60, title: "Pose", year: 2018, episodes: 26, char: 7.5, world: 8, cine: 8, spect: 7, conc: 8, drive: 7, resol: 8, final: 7.45, genres: ["drama"] },
+            { rank: 61, title: "The White Lotus", year: 2021, episodes: 21, char: 7.5, world: 7, cine: 9, spect: 8, conc: 8, drive: 7, resol: 8, final: 7.45, genres: ["drama", "comedy"] },
+            { rank: 62, title: "Utopia (UK)", year: 2013, episodes: 12, char: 7.5, world: 7.5, cine: 10, spect: 7, conc: 8, drive: 9, resol: 6, final: 7.44, genres: ["sci-fi", "thriller", "drama"] },
+            { rank: 63, title: "The X-Files", year: 1993, episodes: 218, char: 7.5, world: 7.5, cine: 7, spect: 7, conc: 7, drive: 7, resol: 6, final: 7.40, genres: ["sci-fi", "mystery", "thriller"] },
+            { rank: 64, title: "Stranger Things", year: 2016, episodes: 42, char: 7, world: 7, cine: 8, spect: 8, conc: 6, drive: 8, resol: 7, final: 7.40, genres: ["sci-fi", "horror", "drama"] },
+            { rank: 65, title: "The Last of Us", year: 2023, episodes: 16, char: 8, world: 7.5, cine: 8, spect: 8, conc: 8, drive: 8, resol: 7, final: 7.39, genres: ["drama", "action", "sci-fi"] },
+            { rank: 66, title: "Twin Peaks: The Return", year: 2017, episodes: 18, char: 8, world: 8, cine: 9.5, spect: 9, conc: 9, drive: 5, resol: 7, final: 7.39, genres: ["mystery", "drama", "thriller"] },
+            { rank: 67, title: "Rome", year: 2005, episodes: 22, char: 8, world: 8.5, cine: 7, spect: 9, conc: 8, drive: 8, resol: 6, final: 7.39, genres: ["drama", "historical", "action"] },
+            { rank: 68, title: "Silo", year: 2023, episodes: 20, char: 7.5, world: 8.5, cine: 8, spect: 8, conc: 8, drive: 8.5, resol: 6, final: 7.39, genres: ["sci-fi", "drama", "mystery"] },
+            { rank: 69, title: "The Underground Railroad", year: 2021, episodes: 10, char: 7.5, world: 8, cine: 10, spect: 8, conc: 9, drive: 6, resol: 7, final: 7.39, genres: ["drama", "fantasy", "historical"] },
+            { rank: 70, title: "Penny Dreadful", year: 2014, episodes: 27, char: 8, world: 8, cine: 9, spect: 8, conc: 8, drive: 7, resol: 6, final: 7.37, genres: ["horror", "drama", "fantasy"] },
+            { rank: 71, title: "Godless", year: 2017, episodes: 7, char: 7.5, world: 8, cine: 9, spect: 8, conc: 7, drive: 7, resol: 8, final: 7.37, genres: ["drama", "western"] },
+            { rank: 72, title: "Gomorrah", year: 2014, episodes: 58, char: 7, world: 8, cine: 8, spect: 6, conc: 7, drive: 7, resol: 7, final: 7.36, genres: ["crime", "drama"] },
+            { rank: 73, title: "Downton Abbey", year: 2010, episodes: 52, char: 7, world: 8, cine: 8, spect: 8, conc: 6, drive: 7, resol: 7, final: 7.36, genres: ["drama", "historical"] },
+            { rank: 74, title: "Hill Street Blues", year: 1981, episodes: 146, char: 7.5, world: 7, cine: 6, spect: 5, conc: 8, drive: 7, resol: 7, final: 7.35, genres: ["drama", "crime", "cop-show"] },
+            { rank: 75, title: "The Boys", year: 2019, episodes: 40, char: 7, world: 7.5, cine: 7, spect: 8, conc: 8, drive: 8, resol: 6, final: 7.33, genres: ["superhero", "action", "drama"] },
+            { rank: 76, title: "Mare of Easttown", year: 2021, episodes: 7, char: 8, world: 7.5, cine: 7, spect: 5, conc: 7, drive: 8, resol: 9, final: 7.32, genres: ["crime", "drama", "mystery", "cop-show"] },
+            { rank: 77, title: "Euphoria", year: 2019, episodes: 17, char: 8, world: 7, cine: 9.5, spect: 8.5, conc: 8, drive: 7, resol: 6, final: 7.30, genres: ["drama"] },
+            { rank: 78, title: "The Pacific", year: 2010, episodes: 10, char: 7, world: 8, cine: 8, spect: 9, conc: 7, drive: 7, resol: 8, final: 7.30, genres: ["drama", "war", "historical"] },
+            { rank: 79, title: "Escape at Dannemora", year: 2018, episodes: 7, char: 8, world: 7, cine: 8, spect: 5, conc: 7, drive: 8, resol: 9, final: 7.30, genres: ["drama", "crime", "thriller"] },
+            { rank: 80, title: "Line of Duty", year: 2012, episodes: 37, char: 7.5, world: 7, cine: 7, spect: 5, conc: 7, drive: 9, resol: 7, final: 7.30, genres: ["crime", "drama", "thriller", "cop-show"] },
+            { rank: 81, title: "Narcos", year: 2015, episodes: 30, char: 7.5, world: 8, cine: 8, spect: 7, conc: 7, drive: 8, resol: 7, final: 7.26, genres: ["crime", "drama", "cop-show"] },
+            { rank: 82, title: "Oz", year: 1997, episodes: 56, char: 7.5, world: 7.5, cine: 6, spect: 5, conc: 8, drive: 7, resol: 7, final: 7.26, genres: ["crime", "drama"] },
+            { rank: 83, title: "The Killing (DK)", year: 2007, episodes: 40, char: 7.5, world: 7, cine: 7, spect: 5, conc: 7, drive: 8, resol: 8, final: 7.23, genres: ["crime", "drama", "mystery", "cop-show"] },
+            { rank: 84, title: "The Penguin", year: 2024, episodes: 8, char: 8, world: 7.5, cine: 8, spect: 7, conc: 7, drive: 8, resol: 7, final: 7.23, genres: ["crime", "drama", "superhero"] },
+            { rank: 85, title: "The Plot Against America", year: 2020, episodes: 6, char: 7.5, world: 8, cine: 8, spect: 6, conc: 9, drive: 7, resol: 7, final: 7.23, genres: ["drama", "historical", "thriller"] },
+            { rank: 86, title: "Dopesick", year: 2021, episodes: 8, char: 7.5, world: 7, cine: 7, spect: 5, conc: 9, drive: 8, resol: 8, final: 7.23, genres: ["drama"] },
+            { rank: 87, title: "Happy Valley", year: 2014, episodes: 18, char: 8, world: 7, cine: 7, spect: 5, conc: 7, drive: 8, resol: 9, final: 7.22, genres: ["crime", "drama", "thriller", "cop-show"] },
+            { rank: 88, title: "Broadchurch", year: 2013, episodes: 24, char: 7.5, world: 7, cine: 8, spect: 6, conc: 7, drive: 8, resol: 8, final: 7.21, genres: ["crime", "drama", "mystery", "cop-show"] },
+            { rank: 89, title: "The Affair", year: 2014, episodes: 53, char: 7.5, world: 6.5, cine: 8, spect: 5, conc: 8, drive: 7, resol: 6, final: 7.14, genres: ["drama"] },
+            { rank: 90, title: "Twin Peaks", year: 1990, episodes: 30, char: 7.5, world: 8, cine: 8, spect: 7, conc: 9, drive: 6, resol: 6, final: 7.13, genres: ["mystery", "drama", "thriller"] },
+            { rank: 91, title: "Homicide: Life on the Street", year: 1993, episodes: 122, char: 7.5, world: 6.5, cine: 6, spect: 5, conc: 7, drive: 7, resol: 7, final: 7.13, genres: ["crime", "drama", "cop-show"] },
+            { rank: 92, title: "Foundation", year: 2021, episodes: 30, char: 6, world: 9, cine: 9, spect: 10, conc: 8, drive: 6, resol: 5, final: 7.03, genres: ["sci-fi", "drama"] },
+            { rank: 93, title: "The Handmaid's Tale", year: 2017, episodes: 56, char: 7, world: 8, cine: 8.5, spect: 7.5, conc: 8, drive: 5, resol: 5, final: 7.03, genres: ["drama", "sci-fi", "thriller"] },
+            { rank: 94, title: "The Bear", year: 2022, episodes: 28, char: 7.5, world: 6.5, cine: 9, spect: 5, conc: 7, drive: 8, resol: 7, final: 7.01, genres: ["drama", "comedy"] },
+            { rank: 95, title: "Big Little Lies", year: 2017, episodes: 14, char: 7.5, world: 7, cine: 8, spect: 7, conc: 7, drive: 7, resol: 8, final: 7.01, genres: ["drama", "thriller"] },
+            { rank: 96, title: "True Detective S3", year: 2019, episodes: 8, char: 7.5, world: 7.5, cine: 8, spect: 6, conc: 7, drive: 7, resol: 8, final: 6.97, genres: ["crime", "mystery", "thriller"] },
+            { rank: 97, title: "The Marvelous Mrs. Maisel", year: 2017, episodes: 43, char: 7, world: 7, cine: 8, spect: 7, conc: 7, drive: 7, resol: 8, final: 6.96, genres: ["drama", "comedy", "historical"] },
+            { rank: 98, title: "Killing Eve", year: 2018, episodes: 32, char: 7, world: 6.5, cine: 7, spect: 7, conc: 7, drive: 8, resol: 7, final: 6.90, genres: ["thriller", "action", "drama"] },
+            { rank: 99, title: "Barry", year: 2018, episodes: 32, char: 7.5, world: 6, cine: 8, spect: 6, conc: 7, drive: 8, resol: 7, final: 6.88, genres: ["crime", "drama", "comedy"] },
+            { rank: 100, title: "Westworld", year: 2016, episodes: 36, char: 7, world: 8, cine: 8, spect: 8, conc: 7, drive: 5, resol: 5, final: 6.83, genres: ["sci-fi", "western", "drama"] }
+        ];
+
+        const list = document.getElementById('rankings');
+        const noResults = document.getElementById('no-results');
+        const searchInput = document.getElementById('search');
+        const scoreFilter = document.getElementById('score-filter');
+        const scoreValue = document.getElementById('score-value');
+        const sortSelect = document.getElementById('sort-select');
+        const resultsNum = document.getElementById('results-num');
+        const activeFiltersEl = document.getElementById('active-filters');
+        
+        let currentGenres = ['all'];
+        let currentEra = 'all';
+        let minScore = 6.5;
+        let searchTerm = '';
+        let sortBy = 'rank';
+        let viewMode = 'list';
+        
+        // Default weights
+        const defaultWeights = { char: 20, world: 15, cine: 10, spect: 10, conc: 15, drive: 15, resol: 15 };
+        let weights = { ...defaultWeights };
+        
+        // Initialize weight sliders
+        function initWeightSliders() {
+            const slidersContainer = document.getElementById('weight-sliders');
+            if (!slidersContainer) return;
+            
+            slidersContainer.innerHTML = categories.map(cat => `
+                <div class="weight-slider-row">
+                    <span class="weight-slider-label">${cat.label}</span>
+                    <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="50" value="${weights[cat.key]}">
+                    <span class="weight-slider-value" id="weight-value-${cat.key}">${weights[cat.key]}%</span>
+                </div>
+            `).join('');
+            
+            // Add event listeners
+            slidersContainer.querySelectorAll('.weight-slider-input').forEach(input => {
+                input.addEventListener('input', (e) => {
+                    const key = e.target.dataset.key;
+                    const value = parseInt(e.target.value);
+                    weights[key] = value;
+                    document.getElementById(`weight-value-${key}`).textContent = value + '%';
+                    updateWeightTotal();
+                });
+            });
+            
+            updateWeightTotal();
+        }
+        
+        function updateWeightTotal() {
+            const total = Object.values(weights).reduce((a, b) => a + b, 0);
+            const totalEl = document.getElementById('weight-total-value');
+            const totalContainer = totalEl.parentElement;
+            const warningEl = document.getElementById('weight-warning');
+            const recalcBtn = document.getElementById('recalc-weights');
+            
+            totalEl.textContent = total + '%';
+            
+            if (total === 100) {
+                totalContainer.classList.add('valid');
+                totalContainer.classList.remove('invalid');
+                warningEl.classList.remove('visible');
+                recalcBtn?.classList.add('active');
+            } else {
+                totalContainer.classList.add('invalid');
+                totalContainer.classList.remove('valid');
+                warningEl.classList.add('visible');
+                recalcBtn?.classList.remove('active');
+            }
+        }
+        
+        // Reset weights
+        document.getElementById('reset-weights')?.addEventListener('click', () => {
+            weights = { ...defaultWeights };
+            initWeightSliders();
+        });
+        
+        // Recalculate rankings with custom weights
+        document.getElementById('recalc-weights')?.addEventListener('click', () => {
+            const total = Object.values(weights).reduce((a, b) => a + b, 0);
+            if (total !== 100) return;
+            
+            // Recalculate final scores for all shows
+            shows.forEach(show => {
+                const newFinal = (
+                    (show.char * weights.char) +
+                    (show.world * weights.world) +
+                    (show.cine * weights.cine) +
+                    (show.spect * weights.spect) +
+                    (show.conc * weights.conc) +
+                    (show.drive * weights.drive) +
+                    (show.resol * weights.resol)
+                ) / 100;
+                show.final = parseFloat(newFinal.toFixed(2));
+            });
+            
+            // Re-sort shows by new final score
+            shows.sort((a, b) => b.final - a.final);
+            
+            // Update ranks
+            shows.forEach((show, idx) => {
+                show.rank = idx + 1;
+            });
+            
+            // Re-render
+            renderShows();
+        });
+        
+        // Initialize on load
+        // Note: initWeightSliders called after categories is defined
+
+        const categories = [
+            { key: 'char', label: 'Characters & Acting', weight: '20%', desc: 'Characters & Acting evaluates whether the people on screen feel like real individuals making authentic, internally consistent choices. It assesses depth of characterization, psychological believability, meaningful change over time, and the strength of the ensemble as a whole—not just standout leads. Acting is judged on embodiment and invisibility: performances should disappear into the role rather than draw attention to themselves. High scores reflect characters who feel autonomous, linger in the viewer\'s mind, and remain compelling beyond the immediate plot.' },
+            { key: 'world', label: 'World Building', weight: '15%', desc: 'World Building measures how fully realized and self-sustaining the show\'s world feels. This includes consistency of rules, institutions, cultures, and social structures, as well as the sense that life exists beyond the immediate story being told. A strong world feels navigable and durable: the viewer can understand how power works, how people live, and what pressures shape behavior without constant exposition. High scores are reserved for worlds that feel lived-in, coherent, and capable of supporting many stories.' },
+            { key: 'cine', label: 'Cinematography', weight: '10%', desc: 'Cinematography evaluates the visual craft and intentionality behind how the story is told. This includes framing, camera movement, lighting, color, composition, and visual rhythm, with emphasis on coherence and meaning rather than surface beauty. High-scoring shows demonstrate a distinctive and consistent visual language, where the camera communicates narrative or character information rather than merely recording events. A key marker is recognizability: the ability to identify the show from a single frame.' },
+            { key: 'spect', label: 'Visual Spectacle', weight: '10%', desc: 'Visual Spectacle measures the impact, ambition, and sustained presence of what is shown on screen. This includes large-scale environments, meticulously crafted sets, production design, visual effects, and striking or immersive imagery. Frequency matters when spectacle is genuinely sustained across scenes and episodes. Spectacle may also arise from novelty and exposure—revealing places, systems, or ways of life the viewer has rarely or never seen, captured with authority and detail. The focus is on how visually compelling and memorable the on-screen world is, whether through epic construction or grounded realism.' },
+            { key: 'conc', label: 'Conceptual Density', weight: '15%', desc: 'Conceptual Density measures how many distinct ideas a series meaningfully engages with, and how well those ideas are integrated into the narrative. These concepts may be political, philosophical, social, moral, or institutional, but must be dramatized through story, character, and world rather than stated directly. Higher scores reflect shows that sustain multiple independent concepts across episodes and seasons, explore them from different angles, and allow them to interact or conflict. The emphasis is on breadth of ideas combined with coherent execution, not symbolic interpretation or tone.' },
+            { key: 'drive', label: 'Narrative Drive', weight: '15%', desc: 'Narrative Drive assesses how effectively the story pulls the viewer forward. This includes pacing, clarity of stakes, escalation, and whether each episode meaningfully advances the narrative. A strong sense of drive does not require constant action; slower or quieter series can score highly if momentum, tension, or curiosity are consistently maintained. Filler, stalling, or structural wheel-spinning lowers the score. The core question is whether the story moves with purpose.' },
+            { key: 'resol', label: 'Narrative Path & Resolution', weight: '15%', desc: 'Narrative Path & Resolution evaluates how effectively a series fulfills the narrative promises it introduces. This includes how many story loops, mysteries, arcs, or tensions are opened, how deliberately they are carried forward, and how meaningfully they are resolved. High scores reflect disciplined loop management, strong closure rates, and payoffs that feel earned—often enhancing or recontextualizing earlier material. Ambiguity is not penalized when intentional and coherent, but unresolved, rushed, or undermining resolutions reduce the score. This category rewards narrative discipline over novelty.' }
+        ];
+
+        // Initialize weight sliders after categories is defined
+        initWeightSliders();
+
+        function getEra(year) {
+            const now = 2026;
+            if (year === now) return 'thisYear';
+            if (year >= now - 1) return 'last6mo'; // Simplified: treat 2025 as last 6mo
+            if (year >= 2020) return '2020s';
+            if (year >= 2010) return '2010s';
+            if (year >= 2000) return '2000s';
+            return 'pre2000';
+        }
+        
+        function getTier(score) {
+            if (score >= 9) return 'gold';
+            if (score >= 7) return 'silver';
+            return 'bronze';
+        }
+        
+        function getScoreMeaning(score) {
+            if (score >= 10) return 'Perfect — The gold standard, no meaningful flaws';
+            if (score >= 9) return 'Incredible — Near-flawless, only minor imperfections';
+            if (score >= 8) return 'Exceptional — Among the very best in television';
+            if (score >= 7) return 'Very Good — Clearly stands out, memorable';
+            if (score >= 6) return 'Good — Noticeably above typical TV';
+            if (score >= 5) return 'Average — Competent but unremarkable';
+            return 'Below Average — Ranges from mediocre to poor';
+        }
+        
+        // Poster colors by genre
+        const genreColors = {
+            'fantasy': '#7B68EE',
+            'drama': '#4A90A4',
+            'action': '#E63946',
+            'crime': '#2D3436',
+            'thriller': '#6C5CE7',
+            'cop-show': '#1ABC9C',
+            'scifi': '#00CEC9',
+            'horror': '#A63333',
+            'comedy': '#F39C12',
+            'western': '#D35400',
+            'romance': '#E91E63',
+            'mystery': '#34495E',
+            'historical': '#8B4513',
+            'war': '#5D6D7E'
+        };
+        
+        function getPosterColor(genres) {
+            const primary = genres[0] || 'drama';
+            return genreColors[primary] || '#d4af37';
+        }
+        
+        // Pinned shows for Quick Compare
+        let pinnedShows = [];
+        
+        function renderPinnedShows() {
+            const container = document.getElementById('pinned-shows');
+            const quickCompare = document.getElementById('quick-compare');
+            
+            if (pinnedShows.length === 0) {
+                quickCompare.classList.remove('visible');
+                return;
+            }
+            
+            quickCompare.classList.add('visible');
+            container.innerHTML = pinnedShows.map(rank => {
+                const show = shows.find(s => s.rank === rank);
+                if (!show) return '';
+                return `
+                    <div class="pinned-card" data-rank="${show.rank}">
+                        <span class="pin-rank">#${show.rank}</span>
+                        <span class="pin-title">${show.title.replace(/\s*\(S\d+-\d+\)$/, '')}</span>
+                        <span class="pin-score">${show.final.toFixed(2)}</span>
+                        <button class="unpin-btn" data-rank="${show.rank}">✕</button>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function togglePin(rank) {
+            const idx = pinnedShows.indexOf(rank);
+            if (idx > -1) {
+                pinnedShows.splice(idx, 1);
+            } else {
+                if (pinnedShows.length >= 3) {
+                    pinnedShows.shift(); // Max 3 pinned
+                }
+                pinnedShows.push(rank);
+            }
+            renderPinnedShows();
+            renderShows();
+        }
+
+        function renderShows() {
+            let filtered = shows.filter(show => {
+                const matchesSearch = show.title.toLowerCase().includes(searchTerm.toLowerCase());
+                const matchesScore = show.final >= minScore;
+                const matchesEra = currentEra === 'all' || getEra(show.year) === currentEra;
+                
+                let matchesGenre = true;
+                if (!currentGenres.includes('all')) {
+                    matchesGenre = currentGenres.every(g => show.genres.includes(g));
+                }
+                
+                return matchesSearch && matchesScore && matchesEra && matchesGenre;
+            });
+
+            filtered.sort((a, b) => {
+                switch(sortBy) {
+                    case 'score-desc': return b.final - a.final;
+                    case 'score-asc': return a.final - b.final;
+                    case 'year-desc': return b.year - a.year;
+                    case 'year-asc': return a.year - b.year;
+                    case 'title': return a.title.localeCompare(b.title);
+                    default: return a.rank - b.rank;
+                }
+            });
+
+            resultsNum.textContent = filtered.length;
+
+            if (filtered.length === 0) {
+                list.style.display = 'none';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            list.style.display = 'flex';
+            noResults.style.display = 'none';
+
+            list.innerHTML = filtered.map((show, idx) => {
+                const tier = getTier(show.final);
+                const tierColors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
+                const tierColor = tierColors[tier];
+                
+                return `
+                <div style="display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-start;padding:2rem 0;border-bottom:1px solid transparent;position:relative;animation:fadeIn 0.4s ease-out;animation-delay:${idx*40}ms;animation-fill-mode:both;">
+                    <div style="position:absolute;bottom:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#252532 20%,#252532 80%,transparent);"></div>
+                    <div style="position:absolute;bottom:0;left:35%;right:35%;height:3px;background:#252532;border-radius:2px;"></div>
+                    <div style="width:80px;height:120px;background:#1a1a24;border-radius:4px;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;">
+                        <span style="font-family:Unna,serif;font-size:2rem;color:rgba(255,255,255,0.15);font-weight:900;">${show.title.charAt(0)}</span>
+                        <span style="position:absolute;top:-4px;left:-4px;width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,${tierColor}99,${tierColor});color:#0a0a0f;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:0.65rem;font-weight:500;z-index:5;">#${show.rank}</span>
+                    </div>
+                    <div style="flex:1;min-width:150px;display:flex;flex-direction:column;">
+                        <div style="font-family:Unna,serif;font-size:3.6rem;font-weight:700;color:#e8e8ec;display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+                            ${show.title.replace(/\s*\(S\d+-\d+\)$/, '')}
+                            ${show.title.match(/\(S\d+-\d+\)/) ? `<span style="background:#475569;color:#e8e8ec;font-size:1.3rem;padding:0.15rem 0.4rem;border-radius:4px;font-weight:600;">${show.title.match(/\(S\d+-\d+\)/)[0].replace(/[()]/g,'')}</span>` : ''}
+                        </div>
+                        <div style="font-size:1.6rem;color:#8a8a9a;margin-top:0.25rem;">
+                            <span>${show.year}</span>
+                            <span style="margin-left:0.75rem;">${show.episodes} episodes</span>
+                        </div>
+                    </div>
+                    <div style="text-align:right;flex-shrink:0;align-self:flex-end;margin-bottom:0.5rem;">
+                        <div style="font-family:Unna,serif;font-size:4rem;font-weight:900;color:${tierColor};line-height:1;">${show.final.toFixed(2)}</div>
+                        <div style="font-size:0.7rem;color:#8a8a9a;text-transform:uppercase;letter-spacing:0.1em;">score</div>
+                    </div>
+                    <div style="width:100%;display:flex;flex-direction:column;gap:6px;padding-top:0.5rem;">
+                        ${categories.map(cat => {
+                            const value = show[cat.key];
+                            const percentage = (value / 10) * 100;
+                            const catTier = getTier(value);
+                            const catTierColors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
+                            const catTierColor = catTierColors[catTier];
+                            return `
+                                <div style="display:grid;grid-template-columns:35% 55% 10%;align-items:center;">
+                                    <span style="font-family:Unna,serif;font-size:1.4rem;font-weight:200;font-style:italic;color:#e8e8ec;">${cat.label}</span>
+                                    <div style="background:#333;height:5px;border-radius:3px;overflow:hidden;">
+                                        <div style="background:linear-gradient(90deg,${catTierColor}99,${catTierColor},${catTierColor}99);height:100%;border-radius:3px;width:${percentage}%;"></div>
+                                    </div>
+                                    <span style="font-family:JetBrains Mono,monospace;font-size:0.85rem;font-weight:500;text-align:right;color:${catTierColor};">${value}</span>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                    <div style="width:100%;display:flex;flex-wrap:wrap;gap:0.4rem;">
+                        ${show.genres.map(g => `<span style="background:transparent;border:1px solid #64748b;color:#64748b;padding:0.15rem 0.4rem;border-radius:100px;font-size:0.65rem;font-weight:500;">${g}</span>`).join('')}
+                    </div>
+                </div>
+            `}).join('');
+
+            setTimeout(() => {
+                document.querySelectorAll('.score-bar-fill').forEach(bar => {
+                    bar.style.width = bar.dataset.width;
+                });
+            }, 100);
+
+            updateActiveFilters();
+        }
+
+        function updateActiveFilters() {
+            const tags = [];
+            
+            if (currentEra !== 'all') {
+                tags.push({ type: 'era', value: currentEra, label: `Era: ${currentEra}` });
+            }
+            
+            if (minScore > 6.5) {
+                tags.push({ type: 'score', value: minScore, label: `Score: ${minScore}+` });
+            }
+            
+            if (!currentGenres.includes('all')) {
+                currentGenres.forEach(g => {
+                    tags.push({ type: 'genre', value: g, label: g });
+                });
+            }
+            
+            if (searchTerm) {
+                tags.push({ type: 'search', value: searchTerm, label: `"${searchTerm}"` });
+            }
+            
+            if (tags.length === 0) {
+                activeFiltersEl.innerHTML = '';
+                return;
+            }
+            
+            activeFiltersEl.innerHTML = tags.map(t => `
+                <span class="active-filter-tag">
+                    ${t.label}
+                    <button onclick="removeFilter('${t.type}', '${t.value}')">×</button>
+                </span>
+            `).join('') + `<button class="clear-all" onclick="clearAllFilters()">Clear all</button>`;
+        }
+
+        window.removeFilter = function(type, value) {
+            if (type === 'era') {
+                currentEra = 'all';
+                document.querySelectorAll('#era-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                document.querySelector('#era-filters .filter-btn[data-filter="all"]').classList.add('active');
+            } else if (type === 'score') {
+                minScore = 6.5;
+                if (scoreFilter) scoreFilter.value = 6.5;
+                if (scoreValue) scoreValue.textContent = '6.5';
+            } else if (type === 'genre') {
+                currentGenres = currentGenres.filter(g => g !== value);
+                if (currentGenres.length === 0) {
+                    currentGenres = ['all'];
+                    document.querySelectorAll('#genre-filters .genre-pill').forEach(p => p.classList.remove('active'));
+                    document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.add('active');
+                } else {
+                    document.querySelector(`#genre-filters .genre-pill[data-genre="${value}"]`).classList.remove('active');
+                }
+            } else if (type === 'search') {
+                searchTerm = '';
+                searchInput.value = '';
+            }
+            renderShows();
+        };
+
+        window.clearAllFilters = function() {
+            currentEra = 'all';
+            currentGenres = ['all'];
+            minScore = 6.5;
+            searchTerm = '';
+            sortBy = 'rank';
+            
+            searchInput.value = '';
+            if (scoreFilter) scoreFilter.value = 6.5;
+            if (scoreValue) scoreValue.textContent = '6.5';
+            sortSelect.value = 'rank';
+            
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.genre-pill').forEach(p => p.classList.remove('active'));
+            document.querySelector('#era-filters .filter-btn[data-filter="all"]').classList.add('active');
+            document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.add('active');
+            
+            renderShows();
+        };
+
+        // Era buttons
+        document.querySelectorAll('#era-filters .filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('#era-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentEra = btn.dataset.filter;
+                renderShows();
+            });
+        });
+
+        // Genre pills
+        document.querySelectorAll('#genre-filters .genre-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                const genre = pill.dataset.genre;
+                
+                if (genre === 'all') {
+                    document.querySelectorAll('#genre-filters .genre-pill').forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+                    currentGenres = ['all'];
+                } else {
+                    document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.remove('active');
+                    
+                    if (pill.classList.contains('active')) {
+                        pill.classList.remove('active');
+                        currentGenres = currentGenres.filter(g => g !== genre);
+                        if (currentGenres.length === 0) {
+                            currentGenres = ['all'];
+                            document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.add('active');
+                        }
+                    } else {
+                        pill.classList.add('active');
+                        if (currentGenres.includes('all')) {
+                            currentGenres = [genre];
+                        } else {
+                            currentGenres.push(genre);
+                        }
+                    }
+                }
+                renderShows();
+            });
+        });
+
+        // Search
+        searchInput.addEventListener('input', (e) => {
+            searchTerm = e.target.value;
+            renderShows();
+        });
+        
+        // Genre tags on cards - click to filter
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('genre-tag')) {
+                const genre = e.target.textContent;
+                document.querySelectorAll('#genre-filters .genre-pill').forEach(p => p.classList.remove('active'));
+                const pill = document.querySelector(`#genre-filters .genre-pill[data-genre="${genre}"]`);
+                if (pill) {
+                    pill.classList.add('active');
+                    currentGenres = [genre];
+                    renderShows();
+                }
+            }
+        });
+
+        // Score filter (only if element exists)
+        if (scoreFilter) {
+            scoreFilter.addEventListener('input', (e) => {
+                minScore = parseFloat(e.target.value);
+                if (scoreValue) scoreValue.textContent = minScore.toFixed(1);
+                renderShows();
+            });
+        }
+
+        // Sort
+        sortSelect.addEventListener('change', (e) => {
+            sortBy = e.target.value;
+            renderShows();
+        });
+        
+        // Pin button handlers
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('pin-btn')) {
+                const rank = parseInt(e.target.dataset.rank);
+                togglePin(rank);
+            }
+            if (e.target.classList.contains('unpin-btn')) {
+                const rank = parseInt(e.target.dataset.rank);
+                togglePin(rank);
+            }
+            // Accordion for score descriptions - Category label
+            if (e.target.classList.contains('score-label-text')) {
+                const desc = e.target.nextElementSibling.nextElementSibling; // score-bar is between
+                const allDescs = document.querySelectorAll('.score-desc.expanded');
+                allDescs.forEach(d => {
+                    if (d !== desc) d.classList.remove('expanded');
+                });
+                desc.classList.toggle('expanded');
+            }
+            // Score value click - show score meaning
+            if (e.target.classList.contains('score-value')) {
+                const meaning = e.target.dataset.meaning;
+                const catDesc = e.target.previousElementSibling.previousElementSibling.querySelector('.score-desc');
+                const allDescs = document.querySelectorAll('.score-desc.expanded');
+                allDescs.forEach(d => {
+                    if (d !== catDesc) d.classList.remove('expanded');
+                });
+                // Show category description with score meaning
+                if (catDesc) {
+                    catDesc.innerHTML = `<strong>Score ${e.target.dataset.score}:</strong> ${meaning}<br><em>${catDesc.textContent}</em>`;
+                    catDesc.classList.toggle('expanded');
+                }
+            }
+        });
+
+        // Methodology modal
+        const modal = document.getElementById('methodology-modal');
+        const openLink = document.getElementById('open-methodology');
+        const closeBtn = document.getElementById('close-methodology');
+        
+        if (openLink && modal && closeBtn) {
+            openLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.add('visible');
+            });
+            
+            // Card-level methodology links
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('card-methodology-link')) {
+                    e.preventDefault();
+                    modal.classList.add('visible');
+                }
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                modal.classList.remove('visible');
+            });
+            
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('visible');
+                }
+            });
+        }
+
+        // Category modal
+        const categoryModal = document.getElementById('category-modal');
+        const categoryModalTitle = document.getElementById('category-modal-title');
+        const categoryModalWeight = document.getElementById('category-modal-weight');
+        const categoryModalDesc = document.getElementById('category-modal-desc');
+        const closeCategoryBtn = document.getElementById('close-category');
+        
+        if (categoryModal) {
+            // Click on score labels
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('score-label-text') || e.target.classList.contains('score-value')) {
+                    const catKey = e.target.dataset.cat || e.target.dataset.score;
+                    const category = categories.find(c => c.key === catKey);
+                    if (category) {
+                        categoryModalTitle.textContent = category.label;
+                        categoryModalWeight.textContent = category.weight;
+                        categoryModalDesc.textContent = category.desc;
+                        categoryModal.classList.add('visible');
+                    }
+                }
+            });
+            
+            closeCategoryBtn.addEventListener('click', () => {
+                categoryModal.classList.remove('visible');
+            });
+            
+            categoryModal.addEventListener('click', (e) => {
+                if (e.target === categoryModal) {
+                    categoryModal.classList.remove('visible');
+                }
+            });
+        }
+
+        // Initial render
+        renderShows();
+        
+        // Ensure list is visible
+        document.getElementById('rankings').style.display = 'flex';
+    </script>
+</body>
+</html>

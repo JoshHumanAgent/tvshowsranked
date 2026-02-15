@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The definitive ranking of the top 100 prestige TV dramas - dark mode with advanced filtering">
+    <meta name="keywords" content="TV shows ranked, best TV dramas, prestige television, TV rankings">
+    <title>TV Shows Ranked</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --card: #12121a;
+            --card-hover: #1a1a24;
+            --border: #1e1e2e;
+            --border-hover: #2a2a3e;
+            --text: #e4e4e7;
+            --text-muted: #71717a;
+            --accent: #fbbf24;
+            --accent-dim: #a16207;
+            --accent-glow: rgba(251, 191, 36, 0.15);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        /* Header */
+        header {
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, #0f0f18 0%, var(--bg) 100%);
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        .stats {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .stats span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        
+        .stats .num {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        /* Filters Section */
+        .filters-section {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .filter-group {
+            margin-bottom: 1rem;
+        }
+        
+        .filter-group:last-child {
+            margin-bottom: 0;
+        }
+        
+        .filter-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .filter-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .filter-btn {
+            padding: 0.4rem 0.85rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn:hover {
+            border-color: var(--accent-dim);
+            color: var(--accent);
+        }
+        
+        .filter-btn.active {
+            background: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+            font-weight: 500;
+        }
+        
+        /* Search */
+        .search-wrapper {
+            position: relative;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.5rem 1rem 0.5rem 2.5rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        /* Range Slider */
+        .range-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex: 1;
+        }
+        
+        .range-slider {
+            flex: 1;
+            height: 4px;
+            -webkit-appearance: none;
+            background: var(--border);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            background: var(--accent);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .range-value {
+            font-size: 0.8rem;
+            color: var(--accent);
+            min-width: 2.5rem;
+            text-align: right;
+        }
+        
+        /* Genre Pills */
+        .genre-pills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .genre-pill {
+            padding: 0.35rem 0.75rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            transition: all 0.2s;
+        }
+        
+        .genre-pill:hover {
+            border-color: var(--accent-dim);
+            color: var(--accent);
+        }
+        
+        .genre-pill.active {
+            background: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+            font-weight: 500;
+        }
+        
+        /* Main Grid */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 4rem;
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .results-count {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .results-count strong {
+            color: var(--accent);
+        }
+        
+        .sort-select {
+            padding: 0.35rem 0.75rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+        
+        .sort-select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        /* Show Card */
+        .show-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.25rem;
+            transition: all 0.25s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .show-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-dim), var(--accent));
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        
+        .show-card:hover {
+            transform: translateY(-3px);
+            background: var(--card-hover);
+            border-color: var(--border-hover);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+        }
+        
+        .show-card:hover::before {
+            opacity: 1;
+        }
+        
+        .show-card.top-10 {
+            border-color: var(--accent-dim);
+        }
+        
+        .show-card.top-10::before {
+            opacity: 1;
+        }
+        
+        .show-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+        
+        .rank-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        
+        .top-10 .rank-badge {
+            background: linear-gradient(135deg, var(--accent-dim), var(--accent));
+            color: var(--bg);
+            border: none;
+        }
+        
+        .score-wrapper {
+            text-align: right;
+        }
+        
+        .score {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .score-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .show-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+            line-height: 1.3;
+        }
+        
+        .show-meta {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+        
+        .show-meta .year {
+            color: var(--text-muted);
+        }
+        
+        .show-meta .episodes {
+            color: var(--text-muted);
+        }
+        
+        .category-scores {
+            display: flex;
+            gap: 0.35rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .cat-score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.25rem 0.4rem;
+            background: var(--bg);
+            border-radius: 4px;
+            font-size: 0.65rem;
+        }
+        
+        .cat-score .val {
+            font-weight: 600;
+            color: var(--text);
+        }
+        
+        .cat-score .cat {
+            color: var(--text-muted);
+            font-size: 0.55rem;
+            text-transform: uppercase;
+        }
+        
+        .genres {
+            display: flex;
+            gap: 0.35rem;
+            flex-wrap: wrap;
+        }
+        
+        .genre-tag {
+            padding: 0.2rem 0.5rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+        
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-muted);
+            grid-column: 1 / -1;
+        }
+        
+        .no-results-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+        
+        /* Active Filters Display */
+        .active-filters {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .active-filter-tag {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.25rem 0.5rem;
+            background: var(--accent-glow);
+            border: 1px solid var(--accent-dim);
+            border-radius: 4px;
+            font-size: 0.7rem;
+            color: var(--accent);
+        }
+        
+        .active-filter-tag button {
+            background: none;
+            border: none;
+            color: var(--accent);
+            cursor: pointer;
+            padding: 0;
+            font-size: 0.9rem;
+            line-height: 1;
+        }
+        
+        .clear-all {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            background: none;
+            border: none;
+            text-decoration: underline;
+        }
+        
+        .clear-all:hover {
+            color: var(--text);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            main { padding: 1rem; }
+            .filters-section { padding: 1rem; }
+            .grid { grid-template-columns: 1fr; }
+            .stats { flex-direction: column; gap: 0.5rem; }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .show-card {
+            animation: fadeIn 0.3s ease-out;
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TV Shows Ranked</h1>
+        <p class="subtitle">100 prestige dramas scored across 7 categories</p>
+        <div class="stats">
+            <span><span class="num">100</span> Shows</span>
+            <span><span class="num">7</span> Categories</span>
+            <span><span class="num">2025</span> Last Updated</span>
+        </div>
+    </header>
+    
+    <div class="filters-section">
+        <!-- Search -->
+        <div class="filter-group">
+            <div class="filter-row">
+                <div class="search-wrapper">
+                    <span class="search-icon">⌕</span>
+                    <input type="text" class="search-input" placeholder="Search shows..." id="search">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Score Filter -->
+        <div class="filter-group">
+            <label class="filter-label">Minimum Score</label>
+            <div class="filter-row">
+                <div class="range-wrapper">
+                    <input type="range" class="range-slider" id="score-filter" min="6.5" max="10" step="0.1" value="6.5">
+                    <span class="range-value" id="score-value">6.5</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Genre Filter -->
+        <div class="filter-group">
+            <label class="filter-label">Genre</label>
+            <div class="genre-pills" id="genre-filters">
+                <button class="genre-pill active" data-genre="all">All</button>
+                <button class="genre-pill" data-genre="drama">Drama</button>
+                <button class="genre-pill" data-genre="crime">Crime</button>
+                <button class="genre-pill" data-genre="thriller">Thriller</button>
+                <button class="genre-pill" data-genre="sci-fi">Sci-Fi</button>
+                <button class="genre-pill" data-genre="fantasy">Fantasy</button>
+                <button class="genre-pill" data-genre="historical">Historical</button>
+                <button class="genre-pill" data-genre="mystery">Mystery</button>
+                <button class="genre-pill" data-genre="comedy">Comedy</button>
+            </div>
+        </div>
+        
+        <!-- Active Filters -->
+        <div class="active-filters" id="active-filters"></div>
+    </div>
+    
+    <main>
+        <div class="results-header">
+            <div class="results-count">Showing <strong id="results-num">100</strong> shows</div>
+            <select class="sort-select" id="sort-select">
+                <option value="rank">Sort by Rank</option>
+                <option value="score-desc">Highest Score</option>
+                <option value="score-asc">Lowest Score</option>
+                <option value="year-desc">Newest First</option>
+                <option value="year-asc">Oldest First</option>
+                <option value="title">Alphabetical</option>
+            </select>
+        </div>
+        <div class="grid" id="rankings"></div>
+        <div class="no-results" id="no-results" style="display: none;">
+            <div class="no-results-icon">📺</div>
+            <p>No shows match your filters</p>
+        </div>
+    </main>
+
+    <script>
+        const shows = [
+            { rank: 1, title: "Game of Thrones (S1-4)", year: 2011, episodes: 40, char: 10, world: 10, cine: 8, spect: 9.5, conc: 9, drive: 10, resol: 9, final: 9.50, genres: ["fantasy", "drama", "action"] },
+            { rank: 2, title: "Breaking Bad", year: 2008, episodes: 62, char: 9, world: 7, cine: 9, spect: 6, conc: 8, drive: 10, resol: 10, final: 8.89, genres: ["crime", "drama", "thriller"] },
+            { rank: 3, title: "The Wire", year: 2002, episodes: 60, char: 9.5, world: 10, cine: 6, spect: 7, conc: 10, drive: 7, resol: 9, final: 8.74, genres: ["crime", "drama"] },
+            { rank: 4, title: "Better Call Saul", year: 2015, episodes: 63, char: 8.5, world: 7, cine: 9, spect: 6, conc: 8, drive: 9, resol: 10, final: 8.74, genres: ["crime", "drama"] },
+            { rank: 5, title: "Chernobyl", year: 2019, episodes: 5, char: 8, world: 8, cine: 9, spect: 9, conc: 9, drive: 10, resol: 10, final: 8.54, genres: ["drama", "historical"] },
+            { rank: 6, title: "The Sopranos", year: 1999, episodes: 86, char: 9.5, world: 9, cine: 6, spect: 5, conc: 9, drive: 7, resol: 9, final: 8.38, genres: ["crime", "drama"] },
+            { rank: 7, title: "The Americans", year: 2013, episodes: 75, char: 8, world: 7.5, cine: 7, spect: 5, conc: 8, drive: 8, resol: 10, final: 8.33, genres: ["drama", "thriller"] },
+            { rank: 8, title: "The Shield", year: 2002, episodes: 88, char: 8.5, world: 6.5, cine: 6, spect: 5, conc: 7, drive: 9, resol: 10, final: 8.17, genres: ["crime", "drama"] },
+            { rank: 9, title: "The Expanse", year: 2015, episodes: 62, char: 7.5, world: 9, cine: 7, spect: 9, conc: 8, drive: 7.5, resol: 7, final: 8.09, genres: ["sci-fi", "drama", "thriller"] },
+            { rank: 10, title: "Succession", year: 2018, episodes: 39, char: 8.5, world: 7, cine: 8, spect: 7, conc: 7, drive: 8.5, resol: 9, final: 8.03, genres: ["drama"] },
+            { rank: 11, title: "Babylon Berlin", year: 2017, episodes: 36, char: 7.5, world: 9, cine: 9, spect: 9, conc: 8, drive: 7.5, resol: 7, final: 8.03, genres: ["drama", "historical", "thriller"] },
+            { rank: 12, title: "Mr. Robot", year: 2015, episodes: 45, char: 8, world: 7, cine: 9, spect: 6, conc: 8, drive: 7.5, resol: 9, final: 7.99, genres: ["drama", "thriller"] },
+            { rank: 13, title: "Boardwalk Empire", year: 2010, episodes: 56, char: 9, world: 8.5, cine: 8.5, spect: 9, conc: 7, drive: 7, resol: 8, final: 7.98, genres: ["crime", "drama", "historical"] },
+            { rank: 14, title: "Andor", year: 2022, episodes: 12, char: 8.5, world: 8.5, cine: 9, spect: 8.5, conc: 9, drive: 8.5, resol: 7, final: 7.96, genres: ["sci-fi", "drama", "action"] },
+            { rank: 15, title: "Adolescence", year: 2025, episodes: 4, char: 8, world: 6.5, cine: 9.5, spect: 5, conc: 9, drive: 9, resol: 10, final: 7.95, genres: ["drama", "thriller"] },
+            { rank: 16, title: "True Detective S1", year: 2014, episodes: 8, char: 8, world: 7.5, cine: 10, spect: 8, conc: 8, drive: 9, resol: 8, final: 7.90, genres: ["crime", "mystery", "thriller"] },
+            { rank: 17, title: "For All Mankind", year: 2019, episodes: 40, char: 7, world: 8, cine: 8, spect: 8, conc: 8, drive: 8, resol: 7.5, final: 7.88, genres: ["sci-fi", "drama"] },
+            { rank: 18, title: "Mad Men", year: 2007, episodes: 92, char: 8, world: 7.5, cine: 8, spect: 6, conc: 8, drive: 7, resol: 8, final: 7.88, genres: ["drama"] },
+            { rank: 19, title: "Halt and Catch Fire", year: 2014, episodes: 40, char: 9, world: 7.5, cine: 7, spect: 5, conc: 8, drive: 8, resol: 9, final: 7.88, genres: ["drama"] },
+            { rank: 20, title: "Angels in America", year: 2003, episodes: 6, char: 8.5, world: 7, cine: 8, spect: 7, conc: 10, drive: 7, resol: 9, final: 7.82, genres: ["drama"] },
+            { rank: 21, title: "Dark", year: 2017, episodes: 26, char: 7, world: 8, cine: 8.5, spect: 6.5, conc: 9, drive: 8.5, resol: 9, final: 7.79, genres: ["sci-fi", "mystery", "thriller"] },
+            { rank: 22, title: "Deadwood", year: 2004, episodes: 36, char: 9, world: 8.5, cine: 7, spect: 7, conc: 9, drive: 7, resol: 6, final: 7.78, genres: ["drama", "western"] },
+            { rank: 23, title: "The Crown", year: 2016, episodes: 60, char: 7.5, world: 8, cine: 9, spect: 8, conc: 7, drive: 7, resol: 7, final: 7.76, genres: ["drama", "historical"] },
+            { rank: 24, title: "Justified", year: 2010, episodes: 78, char: 8, world: 7.5, cine: 7, spect: 5, conc: 7, drive: 8, resol: 8, final: 7.75, genres: ["crime", "drama", "thriller"] },
+            { rank: 25, title: "Band of Brothers", year: 2001, episodes: 10, char: 7.5, world: 9, cine: 8, spect: 10, conc: 7, drive: 9, resol: 9, final: 7.73, genres: ["drama", "historical", "war"] },
+            { rank: 26, title: "Six Feet Under", year: 2001, episodes: 63, char: 8, world: 6.5, cine: 7, spect: 5, conc: 8, drive: 6, resol: 10, final: 7.73, genres: ["drama"] },
+            { rank: 27, title: "Fargo", year: 2014, episodes: 51, char: 7.5, world: 7, cine: 8.5, spect: 6.5, conc: 7, drive: 8, resol: 8, final: 7.73, genres: ["crime", "drama", "thriller"] },
+            { rank: 28, title: "It's a Sin", year: 2021, episodes: 5, char: 8, world: 7.5, cine: 8, spect: 6, conc: 8, drive: 8, resol: 10, final: 7.71, genres: ["drama"] },
+            { rank: 29, title: "When They See Us", year: 2019, episodes: 4, char: 8, world: 7, cine: 8, spect: 5, conc: 9, drive: 8, resol: 10, final: 7.68, genres: ["drama"] },
+            { rank: 30, title: "Girls", year: 2012, episodes: 62, char: 8.5, world: 7, cine: 7, spect: 5, conc: 8, drive: 7, resol: 8, final: 7.68, genres: ["drama", "comedy"] },
+            { rank: 31, title: "Watchmen (2019)", year: 2019, episodes: 9, char: 7.5, world: 8, cine: 8, spect: 8, conc: 9, drive: 8, resol: 8, final: 7.68, genres: ["drama", "sci-fi", "superhero"] },
+            { rank: 32, title: "The Bureau", year: 2015, episodes: 50, char: 8, world: 7.5, cine: 7, spect: 5, conc: 8, drive: 8, resol: 8, final: 7.68, genres: ["drama", "thriller"] },
+            { rank: 33, title: "Homeland", year: 2011, episodes: 96, char: 8, world: 7, cine: 7, spect: 6, conc: 7, drive: 8, resol: 7, final: 7.67, genres: ["drama", "thriller", "action"] },
+            { rank: 34, title: "The Queen's Gambit", year: 2020, episodes: 7, char: 7.5, world: 7.5, cine: 9, spect: 7, conc: 7, drive: 9, resol: 9, final: 7.66, genres: ["drama"] },
+            { rank: 35, title: "The Leftovers", year: 2014, episodes: 28, char: 7.5, world: 8, cine: 8, spect: 7, conc: 9, drive: 8, resol: 9, final: 7.64, genres: ["drama", "fantasy", "mystery"] },
+            { rank: 36, title: "Lost", year: 2004, episodes: 121, char: 8, world: 7.5, cine: 7, spect: 7.5, conc: 7, drive: 8, resol: 5, final: 7.61, genres: ["sci-fi", "drama", "mystery"] },
+            { rank: 37, title: "The Knick", year: 2014, episodes: 20, char: 8.5, world: 8.5, cine: 9.5, spect: 8, conc: 8, drive: 8, resol: 6, final: 7.60, genres: ["drama", "historical"] },
+            { rank: 38, title: "The Haunting of Hill House", year: 2018, episodes: 10, char: 8, world: 7, cine: 9, spect: 7, conc: 8, drive: 8, resol: 9, final: 7.60, genres: ["horror", "drama", "thriller"] },
+            { rank: 39, title: "Friday Night Lights", year: 2006, episodes: 76, char: 8, world: 7.5, cine: 7, spect: 5, conc: 7, drive: 7, resol: 8, final: 7.59, genres: ["drama"] },
+            { rank: 40, title: "Wolf Hall", year: 2015, episodes: 6, char: 8, world: 8.5, cine: 9, spect: 7, conc: 9, drive: 7, resol: 7, final: 7.58, genres: ["drama", "historical"] },
+            { rank: 41, title: "Pluribus", year: 2025, episodes: 10, char: 8.5, world: 7.5, cine: 8.5, spect: 7, conc: 9, drive: 8.5, resol: 6, final: 7.58, genres: ["drama", "thriller", "sci-fi"] },
+            { rank: 42, title: "Hannibal", year: 2013, episodes: 39, char: 8, world: 6.5, cine: 10, spect: 8.5, conc: 7, drive: 6.5, resol: 8, final: 7.55, genres: ["crime", "thriller", "horror"] },
+            { rank: 43, title: "Station Eleven", year: 2021, episodes: 10, char: 7.5, world: 8, cine: 9, spect: 7, conc: 9, drive: 7, resol: 8, final: 7.53, genres: ["drama", "sci-fi"] },
+            { rank: 44, title: "House of the Dragon", year: 2022, episodes: 18, char: 8.5, world: 9.5, cine: 8, spect: 9.5, conc: 8, drive: 8, resol: 6, final: 7.53, genres: ["fantasy", "drama", "action"] },
+            { rank: 45, title: "Black Mirror", year: 2011, episodes: 29, char: 7, world: 7, cine: 8, spect: 7, conc: 9, drive: 8, resol: 8, final: 7.52, genres: ["sci-fi", "drama", "thriller"] },
+            { rank: 46, title: "Midnight Mass", year: 2021, episodes: 7, char: 7.5, world: 7.5, cine: 8, spect: 6, conc: 9, drive: 7, resol: 9, final: 7.52, genres: ["horror", "drama", "mystery"] },
+            { rank: 47, title: "Battlestar Galactica", year: 2004, episodes: 75, char: 7, world: 7, cine: 7, spect: 8, conc: 8, drive: 7, resol: 6, final: 7.51, genres: ["sci-fi", "drama", "action"] },
+            { rank: 48, title: "Rectify", year: 2013, episodes: 30, char: 9, world: 7, cine: 8.5, spect: 5, conc: 9, drive: 6, resol: 9, final: 7.50, genres: ["drama"] },
+            { rank: 49, title: "Ozark", year: 2017, episodes: 44, char: 7.5, world: 7, cine: 8, spect: 6, conc: 7, drive: 8, resol: 7, final: 7.50, genres: ["crime", "drama", "thriller"] },
+            { rank: 50, title: "Peaky Blinders", year: 2013, episodes: 36, char: 7.5, world: 8, cine: 9, spect: 7.5, conc: 7, drive: 7, resol: 7, final: 7.50, genres: ["crime", "drama", "historical"] },
+            { rank: 51, title: "Beef", year: 2023, episodes: 10, char: 8.5, world: 6.5, cine: 8, spect: 5, conc: 8, drive: 9, resol: 9, final: 7.49, genres: ["drama", "comedy"] },
+            { rank: 52, title: "Severance", year: 2022, episodes: 19, char: 7.5, world: 8.5, cine: 8.5, spect: 6.5, conc: 9, drive: 9, resol: 6, final: 7.49, genres: ["sci-fi", "drama", "thriller"] },
+            { rank: 53, title: "Shogun (2024)", year: 2024, episodes: 10, char: 8, world: 9, cine: 9, spect: 9, conc: 7, drive: 7.5, resol: 7, final: 7.48, genres: ["drama", "historical", "action"] },
+            { rank: 54, title: "Sharp Objects", year: 2018, episodes: 8, char: 8.5, world: 7.5, cine: 9, spect: 6, conc: 8, drive: 7, resol: 8, final: 7.47, genres: ["drama", "mystery", "thriller"] },
+            { rank: 55, title: "Patrick Melrose", year: 2018, episodes: 5, char: 8.5, world: 7, cine: 8, spect: 6, conc: 8, drive: 7, resol: 9, final: 7.47, genres: ["drama"] },
+            { rank: 56, title: "Generation Kill", year: 2008, episodes: 7, char: 7.5, world: 8, cine: 8, spect: 7, conc: 9, drive: 7, resol: 8, final: 7.47, genres: ["drama", "war", "action"] },
+            { rank: 57, title: "Squid Game", year: 2021, episodes: 18, char: 7, world: 7.5, cine: 8, spect: 9, conc: 7, drive: 9, resol: 8, final: 7.46, genres: ["thriller", "drama", "sci-fi"] },
+            { rank: 58, title: "24", year: 2001, episodes: 192, char: 6.5, world: 6, cine: 6, spect: 7, conc: 6, drive: 9.5, resol: 7, final: 7.45, genres: ["action", "drama", "thriller"] },
+            { rank: 59, title: "Borgen", year: 2010, episodes: 40, char: 8, world: 7, cine: 7, spect: 5, conc: 8, drive: 8, resol: 8, final: 7.45, genres: ["drama", "political"] },
+            { rank: 60, title: "Pose", year: 2018, episodes: 26, char: 7.5, world: 8, cine: 8, spect: 7, conc: 8, drive: 7, resol: 8, final: 7.45, genres: ["drama"] },
+            { rank: 61, title: "The White Lotus", year: 2021, episodes: 21, char: 7.5, world: 7, cine: 9, spect: 8, conc: 8, drive: 7, resol: 8, final: 7.45, genres: ["drama", "comedy"] },
+            { rank: 62, title: "Utopia (UK)", year: 2013, episodes: 12, char: 7.5, world: 7.5, cine: 10, spect: 7, conc: 8, drive: 9, resol: 6, final: 7.44, genres: ["sci-fi", "thriller", "drama"] },
+            { rank: 63, title: "The X-Files", year: 1993, episodes: 218, char: 7.5, world: 7.5, cine: 7, spect: 7, conc: 7, drive: 7, resol: 6, final: 7.40, genres: ["sci-fi", "mystery", "thriller"] },
+            { rank: 64, title: "Stranger Things", year: 2016, episodes: 42, char: 7, world: 7, cine: 8, spect: 8, conc: 6, drive: 8, resol: 7, final: 7.40, genres: ["sci-fi", "horror", "drama"] },
+            { rank: 65, title: "The Last of Us", year: 2023, episodes: 16, char: 8, world: 7.5, cine: 8, spect: 8, conc: 8, drive: 8, resol: 7, final: 7.39, genres: ["drama", "action", "sci-fi"] },
+            { rank: 66, title: "Twin Peaks: The Return", year: 2017, episodes: 18, char: 8, world: 8, cine: 9.5, spect: 9, conc: 9, drive: 5, resol: 7, final: 7.39, genres: ["mystery", "drama", "thriller"] },
+            { rank: 67, title: "Rome", year: 2005, episodes: 22, char: 8, world: 8.5, cine: 7, spect: 9, conc: 8, drive: 8, resol: 6, final: 7.39, genres: ["drama", "historical", "action"] },
+            { rank: 68, title: "Silo", year: 2023, episodes: 20, char: 7.5, world: 8.5, cine: 8, spect: 8, conc: 8, drive: 8.5, resol: 6, final: 7.39, genres: ["sci-fi", "drama", "mystery"] },
+            { rank: 69, title: "The Underground Railroad", year: 2021, episodes: 10, char: 7.5, world: 8, cine: 10, spect: 8, conc: 9, drive: 6, resol: 7, final: 7.39, genres: ["drama", "fantasy", "historical"] },
+            { rank: 70, title: "Penny Dreadful", year: 2014, episodes: 27, char: 8, world: 8, cine: 9, spect: 8, conc: 8, drive: 7, resol: 6, final: 7.37, genres: ["horror", "drama", "fantasy"] },
+            { rank: 71, title: "Godless", year: 2017, episodes: 7, char: 7.5, world: 8, cine: 9, spect: 8, conc: 7, drive: 7, resol: 8, final: 7.37, genres: ["drama", "western"] },
+            { rank: 72, title: "Gomorrah", year: 2014, episodes: 58, char: 7, world: 8, cine: 8, spect: 6, conc: 7, drive: 7, resol: 7, final: 7.36, genres: ["crime", "drama"] },
+            { rank: 73, title: "Downton Abbey", year: 2010, episodes: 52, char: 7, world: 8, cine: 8, spect: 8, conc: 6, drive: 7, resol: 7, final: 7.36, genres: ["drama", "historical"] },
+            { rank: 74, title: "Hill Street Blues", year: 1981, episodes: 146, char: 7.5, world: 7, cine: 6, spect: 5, conc: 8, drive: 7, resol: 7, final: 7.35, genres: ["drama", "crime"] },
+            { rank: 75, title: "The Boys", year: 2019, episodes: 40, char: 7, world: 7.5, cine: 7, spect: 8, conc: 8, drive: 8, resol: 6, final: 7.33, genres: ["superhero", "action", "drama"] },
+            { rank: 76, title: "Mare of Easttown", year: 2021, episodes: 7, char: 8, world: 7.5, cine: 7, spect: 5, conc: 7, drive: 8, resol: 9, final: 7.32, genres: ["crime", "drama", "mystery"] },
+            { rank: 77, title: "Euphoria", year: 2019, episodes: 17, char: 8, world: 7, cine: 9.5, spect: 8.5, conc: 8, drive: 7, resol: 6, final: 7.30, genres: ["drama"] },
+            { rank: 78, title: "The Pacific", year: 2010, episodes: 10, char: 7, world: 8, cine: 8, spect: 9, conc: 7, drive: 7, resol: 8, final: 7.30, genres: ["drama", "war", "historical"] },
+            { rank: 79, title: "Escape at Dannemora", year: 2018, episodes: 7, char: 8, world: 7, cine: 8, spect: 5, conc: 7, drive: 8, resol: 9, final: 7.30, genres: ["drama", "crime", "thriller"] },
+            { rank: 80, title: "Line of Duty", year: 2012, episodes: 37, char: 7.5, world: 7, cine: 7, spect: 5, conc: 7, drive: 9, resol: 7, final: 7.30, genres: ["crime", "drama", "thriller"] },
+            { rank: 81, title: "Narcos", year: 2015, episodes: 30, char: 7.5, world: 8, cine: 8, spect: 7, conc: 7, drive: 8, resol: 7, final: 7.26, genres: ["crime", "drama"] },
+            { rank: 82, title: "Oz", year: 1997, episodes: 56, char: 7.5, world: 7.5, cine: 6, spect: 5, conc: 8, drive: 7, resol: 7, final: 7.26, genres: ["crime", "drama"] },
+            { rank: 83, title: "The Killing (DK)", year: 2007, episodes: 40, char: 7.5, world: 7, cine: 7, spect: 5, conc: 7, drive: 8, resol: 8, final: 7.23, genres: ["crime", "drama", "mystery"] },
+            { rank: 84, title: "The Penguin", year: 2024, episodes: 8, char: 8, world: 7.5, cine: 8, spect: 7, conc: 7, drive: 8, resol: 7, final: 7.23, genres: ["crime", "drama", "superhero"] },
+            { rank: 85, title: "The Plot Against America", year: 2020, episodes: 6, char: 7.5, world: 8, cine: 8, spect: 6, conc: 9, drive: 7, resol: 7, final: 7.23, genres: ["drama", "historical", "thriller"] },
+            { rank: 86, title: "Dopesick", year: 2021, episodes: 8, char: 7.5, world: 7, cine: 7, spect: 5, conc: 9, drive: 8, resol: 8, final: 7.23, genres: ["drama"] },
+            { rank: 87, title: "Happy Valley", year: 2014, episodes: 18, char: 8, world: 7, cine: 7, spect: 5, conc: 7, drive: 8, resol: 9, final: 7.22, genres: ["crime", "drama", "thriller"] },
+            { rank: 88, title: "Broadchurch", year: 2013, episodes: 24, char: 7.5, world: 7, cine: 8, spect: 6, conc: 7, drive: 8, resol: 8, final: 7.21, genres: ["crime", "drama", "mystery"] },
+            { rank: 89, title: "The Affair", year: 2014, episodes: 53, char: 7.5, world: 6.5, cine: 8, spect: 5, conc: 8, drive: 7, resol: 6, final: 7.14, genres: ["drama"] },
+            { rank: 90, title: "Twin Peaks", year: 1990, episodes: 30, char: 7.5, world: 8, cine: 8, spect: 7, conc: 9, drive: 6, resol: 6, final: 7.13, genres: ["mystery", "drama", "thriller"] },
+            { rank: 91, title: "Homicide: Life on the Street", year: 1993, episodes: 122, char: 7.5, world: 6.5, cine: 6, spect: 5, conc: 7, drive: 7, resol: 7, final: 7.13, genres: ["crime", "drama"] },
+            { rank: 92, title: "Foundation", year: 2021, episodes: 30, char: 6, world: 9, cine: 9, spect: 10, conc: 8, drive: 6, resol: 5, final: 7.03, genres: ["sci-fi", "drama"] },
+            { rank: 93, title: "The Handmaid's Tale", year: 2017, episodes: 56, char: 7, world: 8, cine: 8.5, spect: 7.5, conc: 8, drive: 5, resol: 5, final: 7.03, genres: ["drama", "sci-fi", "thriller"] },
+            { rank: 94, title: "The Bear", year: 2022, episodes: 28, char: 7.5, world: 6.5, cine: 9, spect: 5, conc: 7, drive: 8, resol: 7, final: 7.01, genres: ["drama", "comedy"] },
+            { rank: 95, title: "Big Little Lies", year: 2017, episodes: 14, char: 7.5, world: 7, cine: 8, spect: 7, conc: 7, drive: 7, resol: 8, final: 7.01, genres: ["drama", "thriller"] },
+            { rank: 96, title: "True Detective S3", year: 2019, episodes: 8, char: 7.5, world: 7.5, cine: 8, spect: 6, conc: 7, drive: 7, resol: 8, final: 6.97, genres: ["crime", "mystery", "thriller"] },
+            { rank: 97, title: "The Marvelous Mrs. Maisel", year: 2017, episodes: 43, char: 7, world: 7, cine: 8, spect: 7, conc: 7, drive: 7, resol: 8, final: 6.96, genres: ["drama", "comedy", "historical"] },
+            { rank: 98, title: "Killing Eve", year: 2018, episodes: 32, char: 7, world: 6.5, cine: 7, spect: 7, conc: 7, drive: 8, resol: 7, final: 6.90, genres: ["thriller", "action", "drama"] },
+            { rank: 99, title: "Barry", year: 2018, episodes: 32, char: 7.5, world: 6, cine: 8, spect: 6, conc: 7, drive: 8, resol: 7, final: 6.88, genres: ["crime", "drama", "comedy"] },
+            { rank: 100, title: "Westworld", year: 2016, episodes: 36, char: 7, world: 8, cine: 8, spect: 8, conc: 7, drive: 5, resol: 5, final: 6.83, genres: ["sci-fi", "western", "drama"] }
+        ];
+
+        const grid = document.getElementById('rankings');
+        const noResults = document.getElementById('no-results');
+        const searchInput = document.getElementById('search');
+        const scoreFilter = document.getElementById('score-filter');
+        const scoreValue = document.getElementById('score-value');
+        const sortSelect = document.getElementById('sort-select');
+        const resultsNum = document.getElementById('results-num');
+        const activeFiltersEl = document.getElementById('active-filters');
+        
+        let currentGenres = ['all'];
+        let minScore = 6.5;
+        let searchTerm = '';
+        let sortBy = 'rank';
+
+        function renderShows() {
+            let filtered = shows.filter(show => {
+                const matchesSearch = show.title.toLowerCase().includes(searchTerm.toLowerCase());
+                const matchesScore = show.final >= minScore;
+                
+                let matchesGenre = true;
+                if (!currentGenres.includes('all')) {
+                    matchesGenre = currentGenres.some(g => show.genres.includes(g));
+                }
+                
+                return matchesSearch && matchesScore && matchesGenre;
+            });
+
+            // Sort
+            filtered.sort((a, b) => {
+                switch(sortBy) {
+                    case 'score-desc': return b.final - a.final;
+                    case 'score-asc': return a.final - b.final;
+                    case 'year-desc': return b.year - a.year;
+                    case 'year-asc': return a.year - b.year;
+                    case 'title': return a.title.localeCompare(b.title);
+                    default: return a.rank - b.rank;
+                }
+            });
+
+            resultsNum.textContent = filtered.length;
+
+            if (filtered.length === 0) {
+                grid.style.display = 'none';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            grid.style.display = 'grid';
+            noResults.style.display = 'none';
+
+            grid.innerHTML = filtered.map((show, idx) => {
+                const isTop10 = show.rank <= 10;
+                const catLabels = ['char', 'world', 'cine', 'spect', 'conc', 'drive', 'resol'];
+                const catNames = ['Chr', 'Wld', 'Cin', 'Spx', 'Cnc', 'Drv', 'Res'];
+                
+                return `
+                <div class="show-card ${isTop10 ? 'top-10' : ''}" style="animation-delay: ${idx * 30}ms">
+                    <div class="show-header">
+                        <span class="rank-badge">#${show.rank}</span>
+                        <div class="score-wrapper">
+                            <div class="score">${show.final.toFixed(2)}</div>
+                            <div class="score-label">score</div>
+                        </div>
+                    </div>
+                    <div class="show-title">${show.title}</div>
+                    <div class="show-meta">
+                        <span class="year">${show.year}</span>
+                        <span class="episodes">${show.episodes} eps</span>
+                    </div>
+                    <div class="category-scores">
+                        ${catLabels.map((cat, i) => `
+                            <div class="cat-score">
+                                <span class="val">${show[cat]}</span>
+                                <span class="cat">${catNames[i]}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="genres">
+                        ${show.genres.map(g => `<span class="genre-tag">${g}</span>`).join('')}
+                    </div>
+                </div>
+            `}).join('');
+
+            updateActiveFilters();
+        }
+
+        function updateActiveFilters() {
+            const tags = [];
+            
+            if (minScore > 6.5) {
+                tags.push({ type: 'score', value: minScore, label: `Score: ${minScore}+` });
+            }
+            
+            if (!currentGenres.includes('all')) {
+                currentGenres.forEach(g => {
+                    tags.push({ type: 'genre', value: g, label: g });
+                });
+            }
+            
+            if (searchTerm) {
+                tags.push({ type: 'search', value: searchTerm, label: `"${searchTerm}"` });
+            }
+            
+            if (tags.length === 0) {
+                activeFiltersEl.innerHTML = '';
+                return;
+            }
+            
+            activeFiltersEl.innerHTML = tags.map(t => `
+                <span class="active-filter-tag">
+                    ${t.label}
+                    <button onclick="removeFilter('${t.type}', '${t.value}')">×</button>
+                </span>
+            `).join('') + `<button class="clear-all" onclick="clearAllFilters()">Clear all</button>`;
+        }
+
+        window.removeFilter = function(type, value) {
+            if (type === 'score') {
+                minScore = 6.5;
+                scoreFilter.value = 6.5;
+                scoreValue.textContent = '6.5';
+            } else if (type === 'genre') {
+                currentGenres = currentGenres.filter(g => g !== value);
+                if (currentGenres.length === 0) {
+                    currentGenres = ['all'];
+                    document.querySelectorAll('#genre-filters .genre-pill').forEach(p => p.classList.remove('active'));
+                    document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.add('active');
+                } else {
+                    document.querySelector(`#genre-filters .genre-pill[data-genre="${value}"]`).classList.remove('active');
+                }
+            } else if (type === 'search') {
+                searchTerm = '';
+                searchInput.value = '';
+            }
+            renderShows();
+        };
+
+        window.clearAllFilters = function() {
+            currentGenres = ['all'];
+            minScore = 6.5;
+            searchTerm = '';
+            sortBy = 'rank';
+            
+            searchInput.value = '';
+            scoreFilter.value = 6.5;
+            scoreValue.textContent = '6.5';
+            sortSelect.value = 'rank';
+            
+            document.querySelectorAll('.genre-pill').forEach(p => p.classList.remove('active'));
+            document.querySelector('.genre-pill[data-genre="all"]').classList.add('active');
+            
+            renderShows();
+        };
+
+        // Genre pills
+        document.querySelectorAll('#genre-filters .genre-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                const genre = pill.dataset.genre;
+                
+                if (genre === 'all') {
+                    document.querySelectorAll('#genre-filters .genre-pill').forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+                    currentGenres = ['all'];
+                } else {
+                    document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.remove('active');
+                    
+                    if (pill.classList.contains('active')) {
+                        pill.classList.remove('active');
+                        currentGenres = currentGenres.filter(g => g !== genre);
+                        if (currentGenres.length === 0) {
+                            currentGenres = ['all'];
+                            document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.add('active');
+                        }
+                    } else {
+                        pill.classList.add('active');
+                        if (currentGenres.includes('all')) {
+                            currentGenres = [genre];
+                        } else {
+                            currentGenres.push(genre);
+                        }
+                    }
+                }
+                renderShows();
+            });
+        });
+
+        // Search
+        searchInput.addEventListener('input', (e) => {
+            searchTerm = e.target.value;
+            renderShows();
+        });
+
+        // Score filter
+        scoreFilter.addEventListener('input', (e) => {
+            minScore = parseFloat(e.target.value);
+            scoreValue.textContent = minScore.toFixed(1);
+            renderShows();
+        });
+
+        // Sort
+        sortSelect.addEventListener('change', (e) => {
+            sortBy = e.target.value;
+            renderShows();
+        });
+
+        // Initial render
+        renderShows();
+    </script>
+</body>
+</html>
