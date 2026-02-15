@@ -2356,6 +2356,8 @@
                     baseScores[show.title][key] = show[key];
                     activeScores[show.title][key] = show[key];
                 });
+                // Also save the original final score
+                baseScores[show.title].final = show.final;
             });
 
             // Restore overrides from localStorage
@@ -3304,7 +3306,8 @@
                         show[k] = baseScores[show.title][k];
                         activeScores[show.title][k] = baseScores[show.title][k];
                     });
-                    recalcFinal(show);
+                    // Restore original final score instead of recalculating
+                    show.final = baseScores[show.title].final;
                 }
             });
             modifiedShows.clear();
