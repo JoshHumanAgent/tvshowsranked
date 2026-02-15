@@ -2546,6 +2546,19 @@
                 }
                 
                 show.final = parseFloat(val.toFixed(2));
+                
+                // CRITICAL: Also update baseScores.final (unmultiplied) for slider calculations
+                // This ensures slider deltas are calculated from the correct baseline
+                const baseUnmultiplied = (
+                    (baseScores[show.title].char * weights.char) +
+                    (baseScores[show.title].world * weights.world) +
+                    (baseScores[show.title].cine * weights.cine) +
+                    (baseScores[show.title].spect * weights.spect) +
+                    (baseScores[show.title].conc * weights.conc) +
+                    (baseScores[show.title].drive * weights.drive) +
+                    (baseScores[show.title].resol * weights.resol)
+                ) / 100;
+                baseScores[show.title].final = parseFloat(baseUnmultiplied.toFixed(2));
             });
 
             // Re-sort shows by new final score
