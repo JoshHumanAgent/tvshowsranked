@@ -2345,7 +2345,7 @@
         const catKeys = ['char', 'world', 'cine', 'spect', 'conc', 'drive', 'resol'];
 
         function recalcFinal(show) {
-            const val = (
+            let val = (
                 (show.char * weights.char) +
                 (show.world * weights.world) +
                 (show.cine * weights.cine) +
@@ -2354,6 +2354,12 @@
                 (show.drive * weights.drive) +
                 (show.resol * weights.resol)
             ) / 100;
+            
+            // Apply episode multiplier if enabled
+            if (multiplierEnabled) {
+                val = val * getMultiplier(show.episodes);
+            }
+            
             show.final = parseFloat(val.toFixed(2));
             return show.final;
         }
@@ -3455,8 +3461,8 @@
                         show[k] = baseScores[show.title][k];
                         activeScores[show.title][k] = baseScores[show.title][k];
                     });
-                    // Restore original final score instead of recalculating
-                    show.final = baseScores[show.title].final;
+                    // Recalculate final with current weights and multiplier state
+                    recalcFinal(show);
                 }
             });
             modifiedShows.clear();
