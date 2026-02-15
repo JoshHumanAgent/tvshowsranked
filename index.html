@@ -2495,18 +2495,18 @@
         
         // Recalculate rankings with custom weights (shared function)
         function recalculateWithWeights() {
-            // Recalculate final scores from BASE scores (not current modifications)
+            // Recalculate final scores using activeScores (includes modifications)
             shows.forEach(show => {
-                const base = baseScores[show.title];
-                if (!base) return;
+                const active = activeScores[show.title];
+                if (!active) return;
                 let val = (
-                    (base.char * weights.char) +
-                    (base.world * weights.world) +
-                    (base.cine * weights.cine) +
-                    (base.spect * weights.spect) +
-                    (base.conc * weights.conc) +
-                    (base.drive * weights.drive) +
-                    (base.resol * weights.resol)
+                    (active.char * weights.char) +
+                    (active.world * weights.world) +
+                    (active.cine * weights.cine) +
+                    (active.spect * weights.spect) +
+                    (active.conc * weights.conc) +
+                    (active.drive * weights.drive) +
+                    (active.resol * weights.resol)
                 ) / 100;
                 
                 // Apply multiplier if enabled
@@ -2546,20 +2546,21 @@
                 return;
             }
             
-            // Recalculate from BASE scores (not current - avoids double multiplication)
+            // Recalculate using activeScores (includes any slider modifications)
             shows.forEach(show => {
                 const base = baseScores[show.title];
-                if (!base) return;
+                const active = activeScores[show.title];
+                if (!base || !active) return;
                 
-                // First calculate from base scores with current weights
+                // Calculate from active scores (current values) with current weights
                 let val = (
-                    (base.char * weights.char) +
-                    (base.world * weights.world) +
-                    (base.cine * weights.cine) +
-                    (base.spect * weights.spect) +
-                    (base.conc * weights.conc) +
-                    (base.drive * weights.drive) +
-                    (base.resol * weights.resol)
+                    (active.char * weights.char) +
+                    (active.world * weights.world) +
+                    (active.cine * weights.cine) +
+                    (active.spect * weights.spect) +
+                    (active.conc * weights.conc) +
+                    (active.drive * weights.drive) +
+                    (active.resol * weights.resol)
                 ) / 100;
                 
                 // Then apply multiplier if enabled
@@ -2568,6 +2569,9 @@
                 }
                 
                 show.final = parseFloat(val.toFixed(2));
+                
+                // Update base.final to match unmultiplied value for correct delta calculations
+                base.final = parseFloat(val.toFixed(2));
             });
             
             // Sort and re-rank
@@ -3178,7 +3182,13 @@
                 const delta = activeScores[title][k] - baseScores[title][k];
                 finalDelta += delta * (weights[k] / 100);
             });
-            show.final = parseFloat((baseScores[title].final + finalDelta).toFixed(2));
+            
+            // Apply episode multiplier if enabled
+            let newFinal = baseScores[title].final + finalDelta;
+            if (multiplierEnabled) {
+                newFinal = newFinal * getMultiplier(show.episodes);
+            }
+            show.final = parseFloat(newFinal.toFixed(2));
 
             // Track modification
             const isModified = catKeys.some(k => activeScores[title][k] !== baseScores[title][k]);
