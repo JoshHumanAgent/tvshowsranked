@@ -2526,10 +2526,11 @@
             multiplierEnabled = e.target.checked;
             
             // Recalculate all finals with or without multiplier
+            // Use current show.final (may already have custom weights applied)
             shows.forEach(show => {
-                const baseFinal = baseScores[show.title].final;
+                const currentFinal = show.final;
                 const mult = multiplierEnabled ? getMultiplier(show.episodes) : 1;
-                show.final = parseFloat((baseFinal * mult).toFixed(2));
+                show.final = parseFloat((currentFinal * mult).toFixed(2));
             });
             
             // Sort and re-rank
