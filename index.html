@@ -2367,8 +2367,21 @@
                     baseScores[show.title][key] = show[key];
                     activeScores[show.title][key] = show[key];
                 });
-                // Also save the original final score
-                baseScores[show.title].final = show.final;
+                
+                // Calculate the base weighted average (unmultiplied)
+                const baseWeighted = (
+                    (show.char * weights.char) +
+                    (show.world * weights.world) +
+                    (show.cine * weights.cine) +
+                    (show.spect * weights.spect) +
+                    (show.conc * weights.conc) +
+                    (show.drive * weights.drive) +
+                    (show.resol * weights.resol)
+                ) / 100;
+                
+                // Store the unmultiplied weighted average as base.final
+                // This is the foundation for slider calculations
+                baseScores[show.title].final = parseFloat(baseWeighted.toFixed(2));
             });
 
             // Restore overrides from localStorage
@@ -2499,6 +2512,8 @@
             shows.forEach(show => {
                 const active = activeScores[show.title];
                 if (!active) return;
+                
+                // Calculate weighted average from category scores
                 let val = (
                     (active.char * weights.char) +
                     (active.world * weights.world) +
@@ -2546,23 +2561,14 @@
                 return;
             }
             
-            // DEBUG: Trace Chernobyl specifically
-            const debugShow = shows.find(s => s.title === 'Chernobyl');
-            if (debugShow) {
-                console.log('Chernobyl BEFORE:', {
-                    final: debugShow.final,
-                    char: activeScores['Chernobyl']?.char,
-                    world: activeScores['Chernobyl']?.world,
-                    baseFinal: baseScores['Chernobyl']?.final,
-                    episodes: debugShow.episodes
-                });
-            }
+            // DEBUG: Show top 5 before
+            console.log('BEFORE toggle - Top 5:');
+            shows.slice(0, 5).forEach((s, i) => console.log(`  ${i+1}. ${s.title.substring(0,20)}: ${s.final}`));
             
             // Recalculate using activeScores (includes any slider modifications)
             shows.forEach(show => {
-                const base = baseScores[show.title];
                 const active = activeScores[show.title];
-                if (!base || !active) return;
+                if (!active) return;
                 
                 // Calculate from active scores (current values) with current weights
                 let val = (
@@ -2583,17 +2589,13 @@
                 show.final = parseFloat(val.toFixed(2));
             });
             
-            // DEBUG: After calculation
-            if (debugShow) {
-                console.log('Chernobyl AFTER:', {
-                    final: debugShow.final,
-                    newRank: shows.findIndex(s => s.title === 'Chernobyl') + 1
-                });
-            }
-            
             // Sort and re-rank
             shows.sort((a, b) => b.final - a.final);
             shows.forEach((s, i) => { s.rank = i + 1; });
+            
+            // DEBUG: Show top 5 after
+            console.log('AFTER toggle - Top 5:');
+            shows.slice(0, 5).forEach((s, i) => console.log(`  ${i+1}. ${s.title.substring(0,20)}: ${s.final}`));
             
             renderShows();
         });
