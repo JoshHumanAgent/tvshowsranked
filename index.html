@@ -2438,7 +2438,7 @@
             slidersContainer.innerHTML = categories.map(cat => `
                 <div class="weight-slider-row">
                     <span class="weight-slider-label">${cat.label}</span>
-                    <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="50" step="5" value="${weights[cat.key]}">
+                    <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="100" step="5" value="${weights[cat.key]}">
                     <span class="weight-slider-value" id="weight-value-${cat.key}">${weights[cat.key]}%</span>
                 </div>
             `).join('');
@@ -2466,7 +2466,8 @@
             
             totalEl.textContent = total + '%';
             
-            if (total === 100) {
+            // Enable recalc for any total > 0 (not just 100)
+            if (total > 0) {
                 totalContainer.classList.add('valid');
                 totalContainer.classList.remove('invalid');
                 warningEl.classList.remove('visible');
@@ -2488,7 +2489,8 @@
         // Recalculate rankings with custom weights
         document.getElementById('recalc-weights')?.addEventListener('click', () => {
             const total = Object.values(weights).reduce((a, b) => a + b, 0);
-            if (total !== 100) return;
+            // Allow any total (0-500) - not just 100
+            if (total === 0) return;
 
             // Recalculate final scores from BASE scores (not current modifications)
             shows.forEach(show => {
