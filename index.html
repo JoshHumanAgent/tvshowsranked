@@ -2141,7 +2141,7 @@
             <!-- Episode Multiplier Toggle -->
             <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #3a3a48;">
                 <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
-                    <input type="checkbox" id="multiplier-toggle" checked style="width: 16px; height: 16px; accent-color: #d4af37;">
+                    <input type="checkbox" id="multiplier-toggle" style="width: 16px; height: 16px; accent-color: #d4af37;">
                     <span style="color: #e0e0e8; font-size: 0.85rem;">Episode Multiplier</span>
                 </label>
                 <div style="color: #64748b; font-size: 0.7rem; margin-top: 0.25rem;">Longer shows get bonus points</div>
@@ -2337,7 +2337,7 @@
         let weights = { ...defaultWeights };
         
         // Episode multiplier toggle
-        let multiplierEnabled = true;
+        let multiplierEnabled = false;
 
         // Score override system
         const baseScores = {};
