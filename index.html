@@ -3484,13 +3484,30 @@
             weights = { ...defaultWeights };
             initWeightSliders();
             
+            // First reset all shows to base values
             shows.forEach(show => {
                 if (baseScores[show.title]) {
                     catKeys.forEach(k => {
                         show[k] = baseScores[show.title][k];
                         activeScores[show.title][k] = baseScores[show.title][k];
                     });
-                    // Recalculate final with current weights and multiplier state
+                }
+            });
+            
+            // Then recalculate baseScores.final with reset (default) weights
+            shows.forEach(show => {
+                if (baseScores[show.title]) {
+                    const baseUnmultiplied = (
+                        (baseScores[show.title].char * weights.char) +
+                        (baseScores[show.title].world * weights.world) +
+                        (baseScores[show.title].cine * weights.cine) +
+                        (baseScores[show.title].spect * weights.spect) +
+                        (baseScores[show.title].conc * weights.conc) +
+                        (baseScores[show.title].drive * weights.drive) +
+                        (baseScores[show.title].resol * weights.resol)
+                    ) / 100;
+                    baseScores[show.title].final = parseFloat(baseUnmultiplied.toFixed(2));
+                    // Recalculate show.final with current multiplier state
                     recalcFinal(show);
                 }
             });
