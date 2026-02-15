@@ -2490,8 +2490,21 @@
             const total = Object.values(weights).reduce((a, b) => a + b, 0);
             if (total !== 100) return;
 
-            // Recalculate final scores for all shows using shared formula
-            shows.forEach(show => recalcFinal(show));
+            // Recalculate final scores from BASE scores (not current modifications)
+            shows.forEach(show => {
+                const base = baseScores[show.title];
+                if (!base) return;
+                const val = (
+                    (base.char * weights.char) +
+                    (base.world * weights.world) +
+                    (base.cine * weights.cine) +
+                    (base.spect * weights.spect) +
+                    (base.conc * weights.conc) +
+                    (base.drive * weights.drive) +
+                    (base.resol * weights.resol)
+                ) / 100;
+                show.final = parseFloat(val.toFixed(2));
+            });
 
             // Re-sort shows by new final score
             shows.sort((a, b) => b.final - a.final);
