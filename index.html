@@ -3293,6 +3293,11 @@
 
         document.getElementById('reset-scores-btn')?.addEventListener('click', () => {
             if (!confirm('Reset all score modifications to original values?')) return;
+            
+            // Also reset weights to defaults
+            weights = { ...defaultWeights };
+            initWeightSliders();
+            
             shows.forEach(show => {
                 if (baseScores[show.title]) {
                     catKeys.forEach(k => {
