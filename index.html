@@ -3442,6 +3442,22 @@
                             Object.assign(weights, data.weights);
                             initWeightSliders();
                         }
+                        
+                        // Recalculate baseScores.final with imported/current weights
+                        shows.forEach(show => {
+                            if (baseScores[show.title]) {
+                                const baseUnmultiplied = (
+                                    (baseScores[show.title].char * weights.char) +
+                                    (baseScores[show.title].world * weights.world) +
+                                    (baseScores[show.title].cine * weights.cine) +
+                                    (baseScores[show.title].spect * weights.spect) +
+                                    (baseScores[show.title].conc * weights.conc) +
+                                    (baseScores[show.title].drive * weights.drive) +
+                                    (baseScores[show.title].resol * weights.resol)
+                                ) / 100;
+                                baseScores[show.title].final = parseFloat(baseUnmultiplied.toFixed(2));
+                            }
+                        });
 
                         shows.forEach(show => recalcFinal(show));
                         shows.sort((a, b) => b.final - a.final);
