@@ -2499,7 +2499,7 @@
             shows.forEach(show => {
                 const base = baseScores[show.title];
                 if (!base) return;
-                const val = (
+                let val = (
                     (base.char * weights.char) +
                     (base.world * weights.world) +
                     (base.cine * weights.cine) +
@@ -2508,6 +2508,12 @@
                     (base.drive * weights.drive) +
                     (base.resol * weights.resol)
                 ) / 100;
+                
+                // Apply multiplier if enabled
+                if (multiplierEnabled) {
+                    val = val * getMultiplier(show.episodes);
+                }
+                
                 show.final = parseFloat(val.toFixed(2));
             });
 
