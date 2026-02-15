@@ -904,6 +904,17 @@
         .cat-value-modified {
             color: #60a5fa !important;
         }
+        
+        /* Category label hover effect for modal */
+        .score-label-text:hover {
+            color: var(--gold) !important;
+            text-decoration: underline;
+            text-decoration-color: var(--gold);
+            text-underline-offset: 3px;
+        }
+        .score-value:hover {
+            color: var(--gold) !important;
+        }
 
         /* Score save bar */
         .score-save-bar {
@@ -2903,14 +2914,14 @@
                                 const isModified = baseScores[show.title] && value !== baseScores[show.title][cat.key];
                                 return `
                                     <div style="display:grid;grid-template-columns:35% 55% 10%;align-items:center;">
-                                        <span style="font-family:Unna,serif;font-size:0.85rem;font-weight:200;font-style:italic;color:#e8e8ec;">${cat.label}</span>
+                                        <span class="score-label-text" data-cat="${cat.key}" style="font-family:Unna,serif;font-size:0.85rem;font-weight:200;font-style:italic;color:#e8e8ec;cursor:pointer;" title="Click for details">${cat.label}</span>
                                         <div class="cat-bar-container">
                                             <div class="cat-bar-track">
                                                 <div class="cat-bar-fill" data-cat-bar="${cat.key}" style="background:linear-gradient(90deg,${catTierColor}99,${catTierColor},${catTierColor}99);width:${percentage}%;"></div>
                                             </div>
                                             <input type="range" class="cat-slider-input" data-show="${showTitleEscaped}" data-cat="${cat.key}" min="0" max="10" step="0.5" value="${value}">
                                         </div>
-                                        <span class="cat-value-display${isModified ? ' cat-value-modified' : ''}" data-cat-value="${cat.key}" style="font-family:JetBrains Mono,monospace;font-size:0.7rem;font-weight:500;text-align:right;color:${isModified ? '#60a5fa' : catTierColor};">${value}</span>
+                                        <span class="cat-value-display${isModified ? ' cat-value-modified' : ''} score-value" data-cat-value="${cat.key}" style="font-family:JetBrains Mono,monospace;font-size:0.7rem;font-weight:500;text-align:right;color:${isModified ? '#60a5fa' : catTierColor};cursor:pointer;" title="Click for details">${value}</span>
                                     </div>
                                 `;
                             }).join('')}
