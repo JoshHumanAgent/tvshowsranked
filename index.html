@@ -2570,8 +2570,8 @@
                 
                 show.final = parseFloat(val.toFixed(2));
                 
-                // Update base.final to match unmultiplied value for correct delta calculations
-                base.final = parseFloat(val.toFixed(2));
+                // Note: base.final should stay as the unmultiplied weighted average
+                // for correct slider delta calculations
             });
             
             // Sort and re-rank
