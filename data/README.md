@@ -46,7 +46,9 @@ Each show has a structured JSON file containing:
 | `tmdbId` | int | TMDB API identifier for posters |
 | `external_ratings` | object | IMDb, RT, Metacritic scores |
 | `consensus_highlights` | string | Critical consensus summary |
-| `ranking_system` | object | Our category scores |
+| `ranking_system` | object | Our 7-dimension category scores |
+| `streaming` | object | US/UK streaming availability |
+| `notes` | string | Additional scoring notes |
 
 ### Example Show JSON
 
@@ -72,17 +74,36 @@ Each show has a structured JSON file containing:
       "count": "2.4M",
       "date_accessed": "2026-02-15",
       "url": "https://www.imdb.com/title/tt0903747/"
+    },
+    "rotten_tomatoes": {
+      "season_1": { "score": 86, "scale": 100 },
+      "season_5": { "score": 97, "scale": 100 },
+      "date_accessed": "2026-02-15",
+      "url": "https://www.rottentomatoes.com/tv/breaking_bad"
+    },
+    "metacritic": {
+      "score": 85,
+      "scale": 100,
+      "date_accessed": "2026-02-15",
+      "url": "https://www.metacritic.com/tv/breaking-bad"
     }
   },
   "consensus_highlights": "Breaking Bad is a masterclass in television storytelling...",
   "ranking_system": {
-    "narrative_ambition": 9.5,
-    "character_depth": 10,
-    "thematic_resonance": 9,
-    "cultural_impact": 9,
-    "watchability": 9,
+    "characters_acting": 9.5,
+    "world_building": 8.5,
+    "cinematography": 9.0,
+    "visual_spectacle": 8.5,
+    "conceptual_density": 9.0,
+    "narrative_drive": 9.0,
+    "narrative_resolution": 9.5,
     "final_score": 8.89
-  }
+  },
+  "streaming": {
+    "us": ["Netflix", "AMC+", "Amazon Prime Video"],
+    "uk": ["Netflix", "Amazon Prime Video"]
+  },
+  "notes": "Breaking Bad represents peak character study television..."
 }
 ```
 
@@ -97,9 +118,12 @@ Each show has a Markdown companion file with:
 ## Index.json
 
 The master index contains:
-- All 100 shows with ranking, slug, title, year, month, genres, final score
+- All 109 shows with ranking, slug, title, year, month, genres, final score
+- Abbreviated category scores: `char`, `world`, `cine`, `spect`, `conc`, `drive`, `resol`
+- `episodes` count and `poster` URL (TMDB)
 - `tmdbId` field for each show for poster fetching
-- Sorted by final rank (1-100)
+- `streaming` object with US and UK availability
+- Sorted by final rank (1-109)
 
 ## Candidate Pool
 
@@ -111,19 +135,23 @@ The master index contains:
 
 ## TMDB Integration
 
-All 100 shows have TMDB IDs for poster images:
+All 109 shows have TMDB IDs for poster images:
 - Base URL: `https://image.tmdb.org/t/p/w500`
 - API key stored in website configuration
 - Posters fetched at 2:3 aspect ratio
 
 ## Methodology
 
-Scoring uses 5 dimensions (10 points each):
-1. Narrative Ambition (20% weight)
-2. Character Depth (25% weight)
-3. Thematic Resonance (20% weight)
-4. Cultural Impact (15% weight)
-5. Watchability (20% weight)
+Scoring uses 7 dimensions (10 points each):
+1. **Characters & Acting** (`char`) — 20% weight
+2. **World Building** (`world`) — 15% weight  
+3. **Cinematography** (`cine`) — 10% weight
+4. **Visual Spectacle** (`spect`) — 10% weight
+5. **Conceptual Density** (`conc`) — 15% weight
+6. **Narrative Drive** (`drive`) — 15% weight
+7. **Narrative Resolution** (`resol`) — 15% weight
+
+Episode count multipliers are applied to adjust final scores based on show length.
 
 External ratings from IMDb, Rotten Tomatoes, and Metacritic inform but don't determine final scores.
 
@@ -140,17 +168,17 @@ All descriptions focus on experiential qualities:
 ## Data Quality
 
 - All 109 shows have JSON + MD files
-- All 109 shows have TMDB IDs
+- All 109 shows have TMDB IDs and poster URLs
+- All 109 shows have US/UK streaming data
 - All external ratings include source URLs and date accessed
 - Episode counts cross-referenced across multiple sources
+- Exports available: CSV and full JSON
 
 ## Future Expansion
 
 500-show candidate pool available for systematic expansion.
 Recent additions include acclaimed 2022-2024 shows like:
-- Slow Horses, Frieren, The Day of the Jackal, A Man on the Inside
-
-500-show candidate pool available for systematic expansion.
+- Slow Horses, The Day of the Jackal, Adolescence, Shogun (2024), Pluribus
 
 ---
 
