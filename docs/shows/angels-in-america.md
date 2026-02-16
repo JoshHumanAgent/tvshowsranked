@@ -33,43 +33,43 @@ But beyond the spectacle, what you remember is the emotional truth. This is a sh
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, the performances are theatrical in the best sense—emotional, technical, heightened. Al Pacino as Roy Cohn is spectacular scenery-chewing; Meryl Streep disappears into multiple roles; Justin Kirk and Ben Shenkman provide human anchor. The acting serves Kushner's language, which demands commitment and style. It's theatre on screen.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 7.5, 1980s New York during the AIDS crisis is rendered with period detail and dreamlike interludes. The show moves between reality and fantasy, heaven and earth. The world building encompasses both documentary realism and magical realist imagination. Angels appear; ancestors visit; the scale is metaphysical as well as geographical.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 7, Nichols directs with careful attention to performance, occasionally at the expense of visual ingenuity. The show looks good without being distinctive. The heavenly sequences provide visual variety. The approach serves the material without transcending it.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, spectacle arrives through theatrical magic—angels descending, ancestors materializing, fantastical sequences interrupting reality. The show understands that spectacle serves Kushner's vision rather than dominates it. The angel wings, celestial locations, and dream sequences provide visual interest.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 9, Kushner's text is the star—exploring AIDS, Mormonism, Judaism, conservatism, sexuality, and American identity through multiple lenses. The density is extraordinary; every scene operates on multiple levels. It's one of the great American plays, adapted with its intellectual heft intact.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 8.5, the six-hour runtime builds like theatre—acts accumulating toward revelation. The structure requires patience but rewards it. The narrative moves through multiple storylines that eventually intertwine. The pacing is deliberate, allowing Kushner's ideas space to breathe.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+Scoring 8, the conclusion—Prior's benediction, Harper's departure, Louis's return—provides emotional closure while acknowledging ongoing struggle. The show refuses false hope while affirming survival. The ending is messy, human, earned. It honors the text's ambivalence about progress and defeat.
 
 ## Scoring Summary
 

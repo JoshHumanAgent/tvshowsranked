@@ -25,43 +25,43 @@ The Expanse is a sci-fi/drama/thriller series that delivers compelling televisio
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 7.5, the ensemble is solid without being exceptional. Thomas Jane's Miller provides noir edge; Steven Strait's Holden grows into command; Shohreh Aghdashloo's Avasarala steals every scene. The supporting cast—Dominique Tipper, Wes Chatham, Frankie Adams—is capable but functional. The acting serves the world more than transcending it.
 
 ### 2. World Building (15%) — Score: 10
 
 **Raw Score: 10 | Weighted: 1.50**
 
-Analysis for World Building dimension.
+Scoring 10, the solar system is built with unprecedented scientific rigor—Belter culture, Martian society, Earth politics, the outer planets. The show creates distinct civilizations with their own languages (Belter creole), customs, and grievances. The world building is the show's greatest achievement; the science fiction feels plausible.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 8.5, space opera visuals are handled with grounded realism—ships have inertia, space is silent, colonies look functional rather than glamorous. The show nails the physics and aesthetic of near-future space colonization. The visual approach supports the grounded science fiction.
 
 ### 4. Visual Spectacle (10%) — Score: 10
 
 **Raw Score: 10 | Weighted: 1.00**
 
-Analysis for Visual Spectacle dimension.
+Scoring 9, spectacle includes the Ring gates, massive space battles, zero-G sequences, and planetary-scale destruction. The show delivers impressive scale on television budget. The protomolecule sequences are genuinely uncanny. The space battles respect physics while delivering excitement.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 8.5, the show explores colonialism, resource exploitation, political systems, and first contact. The density comes from social science fiction—how societies organize, how resources drive conflict, how technology changes power. It's smart speculative fiction asking real questions.
 
 ### 6. Narrative Drive (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, the narrative builds effectively across seasons—from noir mystery to political thriller to cosmic horror. The pacing is patient, trusting viewers to follow complex solar-system politics. The Ring gates change the game in season three. The show maintains momentum despite complexity.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 8, the show was cancelled after six seasons (covering six of nine books). The ending is satisfying without being complete—major plotlines resolve, characters arc, but the Laconian Empire awaits. It's better than expected given cancellation, though not the full saga promised.
 
 ## Scoring Summary
 

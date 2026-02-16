@@ -35,43 +35,43 @@ The Americans is slow. It asks for patience. But if you give it six seasons, you
 
 **Raw Score: 8.5 | Weighted: 1.70**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, Keri Russell and Matthew Rhys as Elizabeth and Philip Jennings deliver career-defining work—underneath the wigs, the accents, the violence, they're always recognizable as a couple trying to survive. The performances require extraordinary range: suburban parents, Soviet spies, various cover identities, all while maintaining emotional coherence.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 8, 1980s Washington DC and the suburbs are rendered with period accuracy—clothing, cars, Cold War paranoia. The show builds the KGB's American network, the FBI's counter-intelligence, the world of illegal agents. It's convincing historical fiction.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show is shot with appropriate naturalism—period aesthetics, functional coverage. The cinematography serves the performances and period rather than drawing attention. It's consistently competent.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8, action sequences are brutal and brief—realistic violence rather than stylized. The show delivers suspense through implication: dead drops, surveillance, near-misses. The spectacle is psychological.
 
 ### 5. Conceptual Density (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Conceptual Density dimension.
+Scoring 8.5, the marriage-as-cover interrogates love, loyalty, duty, and identity. What does it mean to pretend to be something for decades? The show explores marriage, parenthood, patriotism, and betrayal with genuine insight.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, each season builds tension—missions escalate, the FBI closes in, the children grow suspicious. The narrative is consistently propulsive. The final seasons achieve genuine suspense.
 
 ### 7. Narrative Resolution (15%) — Score: 10
 
 **Raw Score: 10 | Weighted: 1.50**
 
-Analysis for Narrative Resolution dimension.
+Scoring 8.5, the series finale is devastating and perfect—the parking garage, the phone call, the train, the future glimpsed in silence. It's one of television's best endings—earned, painful, inevitable, hopeful.
 
 ## Scoring Summary
 

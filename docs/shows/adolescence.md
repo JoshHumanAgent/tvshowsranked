@@ -35,43 +35,43 @@ Adolescence is essential viewing for anyone who cares about young people, online
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, the ensemble—led by newcomer Owen Cooper as the accused 13-year-old Jamie—is devastatingly naturalistic. The show's one-shot format demands perfection from every actor over four unbroken hours. Stephen Graham as the father captures bewildered helplessness with remarkable restraint. The DCI and barrister provide procedural counterpoint. This is ensemble acting as endurance art.
 
 ### 2. World Building (15%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.75**
 
-Analysis for World Building dimension.
+Scoring 5, the world is deliberately contained: one police station over one night. The show builds its environment through claustrophobia—institutional corridors, interview rooms, holding cells. The British juvenile justice system becomes a character itself. The location is specific: a provincial UK police station rendered in suffocating detail.
 
 ### 3. Cinematography (10%) — Score: 9.5
 
 **Raw Score: 9.5 | Weighted: 0.95**
 
-Analysis for Cinematography dimension.
+Scoring 6.5, the one-shot approach is technically extraordinary—four continuous shots over four hours. The camera work is invisible by design, serving the performances. The cinematography captures the institutional grimness: fluorescent-lit rooms, rain-streaked windows. The visual style is documentary-like, prioritizing presence over polish.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, spectacle emerges from the real-time constraint—the accumulating pressure of performance. There are no action sequences, no grand vistas. The power comes from faces in close-up across four hours. The rain, the time passing, the physical endurance required—these become the spectacle.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 9.5, Adolescence interrogates masculinity, social media, boyhood violence, and systemic failure with devastating precision. Every scene layers meaning—how the father blames himself, how the system processes children as data, how online culture shapes offline violence. The density is extraordinary; unpacking it requires multiple viewings.
 
 ### 6. Narrative Drive (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Drive dimension.
+Scoring 7, the real-time structure creates inherent momentum—four episodes, one night, no way out. The pacing alternates between slow-burn intensity and genuine revelation. The one-shot format means every minute counts. It never drags but demands viewer investment.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+Scoring 9, the ending refuses easy answers. There is no courtroom catharsis, no happy family reunion. The final image—father and son separated by glass, both crying—is devastating precisely because it offers no resolution. We know Jamie's fate (sentenced), the father's helplessness (complete), and the system's indifference (absolute). It's brutally honest.
 
 ## Scoring Summary
 

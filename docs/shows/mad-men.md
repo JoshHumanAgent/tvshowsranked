@@ -35,43 +35,43 @@ Mad Men is slow. It demands patience. But it rewards with one of the greatest se
 
 **Raw Score: 8.5 | Weighted: 1.70**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, Jon Hamm's Don Draper is one of television's great performances—charming, empty, self-destructive, occasionally capable of genuine connection. The ensemble—Elisabeth Moss, Vincent Kartheiser, January Jones, John Slattery, Christina Hendricks—creates a world of professionals performing competence while falling apart. Every character is a study in period performance.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 8, 1960s New York is built through details—cigarettes in offices, martinis at lunch, casual misogyny as wallpaper. The advertising industry provides perfect lens for exploring American dreams and lies. The decade's progression—from Kennedy to Nixon—is mapped onto professional and personal lives.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show looks gorgeous—period-perfect production design captured with careful composition. The visuals serve the era: bright colors giving way to film grain. It's consistently handsome without being visually revolutionary.
 
 ### 4. Visual Spectacle (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8.5, spectacle arrives through period recreation—street scenes, parties, office life. The show's visual power comes from accumulation: how did people dress, smoke, drink, interact? The historical moments—Kennedy assassination, moon landing—provide anchor points.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, Mad Men explores identity, consumerism, American mythology, and the lies men tell themselves. Don Draper as self-invention, as impostor syndrome given flesh. The show interrogates advertising's relationship to truth. It's thematically rich.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, the show moves through seasons with accumulating weight. Each year brings new clients, new crises, new self-destruction. The narrative rewards patience with emotional payoff. The final season achieves genuine forward momentum.
 
 ### 7. Narrative Resolution (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7.5, the finale—Don's smile, Peggy and Stan's confession, Pete and Trudy's reconciliation, Betty's fate—provides closure while acknowledging continuation. The Coke ad ending is debated: cynical or hopeful? Either way, it honors the show's ambivalence.
 
 ## Scoring Summary
 

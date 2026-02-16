@@ -35,43 +35,43 @@ The second season escalates the conflict. Alliances are tested, dragons take fli
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, the ensemble operates at high level, though not quite Game of Thrones' peak. Paddy Considine's Viserys provides tragic humanity; Matt Smith's Daemon is magnetic chaos; Emma D'Arcy's Rhaenyra grows into power visibly. The time jumps require multiple actors per character, handled gracefully. The secondary cast—Olivia Cooke, Rhys Ifans—is strong.
 
 ### 2. World Building (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for World Building dimension.
+Scoring 9, Westeros is expanded with Targaryen history—Valyrian legacy, dragon lore, dynastic politics. The world feels lived-in and ancient. The locations are stunning (Croatian coastlines representing Driftmark). The show builds a convincing prehistory that enriches the original series.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 8, the visual approach mirrors Thrones' production values—beautiful locations, careful composition, dragon CGI integrated convincingly. The Battle of the Stepstones demonstrates capable action direction. The show looks expensive and cinematic throughout.
 
 ### 4. Visual Spectacle (10%) — Score: 9.5
 
 **Raw Score: 9.5 | Weighted: 0.95**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8.5, spectacle involves dragons—multiple fully-realized creatures with distinct personalities. The dragon-riding sequences are thrilling. The show delivers action set pieces (tournaments, battles) alongside quieter court intrigue. The scale justifies the Thrones heritage.
 
 ### 5. Conceptual Density (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores patriarchy, succession anxiety, maternal grief, and the corrupting nature of power. The themes are there but sometimes less dense than the original. The focus on gender and legitimacy provides thematic through-line. It's prestige drama concepts rather than philosophical inquiry.
 
 ### 6. Narrative Drive (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the narrative moves with purpose across generations. The time jumps create momentum while occasionally sacrificing intimacy. The central conflict—Rhaenyra vs. Alicent—builds effectively. Season one ends with civil war brewing; season two accelerates into open conflict.
 
 ### 7. Narrative Resolution (15%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.97**
 
-Analysis for Narrative Resolution dimension.
+Scoring 6.5, the story is ongoing (continues in future seasons). Season one provides incomplete arcs by design. The resolution to come depends on future seasons. The prequel structure means we know the Targaryen dynasty's ultimate fate, creating tragic irony.
 
 ## Scoring Summary
 
