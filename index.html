@@ -4032,6 +4032,13 @@
                     categoryModal.classList.remove('visible');
                 }
             });
+
+            // Push state when opening category modal
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('score-label-text') || e.target.classList.contains('score-value')) {
+                    history.pushState({ modal: 'category' }, '');
+                }
+            });
         }
 
         // Show Detail Modal
@@ -4058,6 +4065,7 @@
                     const showTitle = showModule.dataset.showTitle;
                     const show = shows.find(s => s.title === showTitle);
                     if (show) {
+                        history.pushState({ modal: 'show-detail' }, '');
                         openShowDetail(show);
                     }
                 }
@@ -4074,6 +4082,25 @@
                     showDetailModal.classList.remove('visible');
                 }
             });
+
+            // Back button on mobile closes popup
+            window.addEventListener('popstate', (e) => {
+                if (showDetailModal.classList.contains('visible')) {
+                    showDetailModal.classList.remove('visible');
+                    e.stopImmediatePropagation();
+                }
+                if (categoryModal.classList.contains('visible')) {
+                    categoryModal.classList.remove('visible');
+                    e.stopImmediatePropagation();
+                }
+            });
+
+            // Push state when opening modal
+            const originalOpenShowDetail = openShowDetail;
+            openShowDetail = function(show) {
+                history.pushState({ modal: 'show-detail' }, '');
+                originalOpenShowDetail(show);
+            };
         }
 
         // Function to open show detail modal
@@ -4215,23 +4242,19 @@
                 consensusHtml = `<div class="consensus-content"><p>${showData.consensus_highlights}</p></div>`;
             }
 
-            // Build the category breakdown HTML
+            // Build the category breakdown HTML - text only, no bars
             const categoryHtml = categories.map(cat => {
                 const value = show[cat.key];
                 const weighted = (value * parseInt(cat.weight) / 100).toFixed(2);
                 const catTier = getTier(value);
-                const catTierColor = catTier === 'gold' ? 'var(--gold)' : catTier === 'silver' ? 'var(--silver)' : 'var(--bronze)';
                 return `
                     <div class="show-detail-dimension">
                         <div class="show-detail-dimension-header">
-                            <span class="show-detail-dimension-title">${cat.label} (${cat.weight})</span>
+                            <span class="show-detail-dimension-title">${cat.label}</span>
                             <div class="show-detail-dimension-score">
-                                <span class="show-detail-raw-score ${catTier}">${value}</span>
-                                <span class="show-detail-weighted-score">→ ${weighted}</span>
+                                <span class="show-detail-raw-score ${catTier}">${value}/10</span>
+                                <span class="show-detail-weighted-score">×${cat.weight}% = ${weighted}</span>
                             </div>
-                        </div>
-                        <div class="show-detail-dimension-bar">
-                            <div class="${catTier}" style="width: ${value * 10}%;"></div>
                         </div>
                     </div>
                 `;
