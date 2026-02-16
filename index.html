@@ -3438,7 +3438,7 @@
                                     if (score >= 9) return '#a8a8b0';  // Silver - Excellent
                                     if (score >= 8) return '#a87d4a';  // Bronze - Very Good
                                     if (score >= 7) return '#8b4513';  // Dark Brown - Good
-                                    return '#1a1a1a';                   // Black - Average/Below
+                                    return '#2a1515';                   // Very dark red - Average/Below
                                 };
                                 const catTierColor = getScoreColor(value);
                                 const isModified = baseScores[show.title] && value !== baseScores[show.title][cat.key];
@@ -4076,7 +4076,7 @@
                         if (score >= 9) return '#a8a8b0';  // Silver - Excellent
                         if (score >= 8) return '#a87d4a';  // Bronze - Very Good
                         if (score >= 7) return '#8b4513';  // Dark Brown - Good
-                        return '#1a1a1a';                   // Black - Average/Below
+                        return '#2a1515';                   // Very dark red - Average/Below
                     };
                     const c = getScoreColor(newVal);
                     barFill.style.width = pct + '%';
@@ -4102,7 +4102,7 @@
                             if (score >= 9) return '#a8a8b0';  // Silver - Excellent
                             if (score >= 8) return '#a87d4a';  // Bronze - Very Good
                             if (score >= 7) return '#8b4513';  // Dark Brown - Good
-                            return '#1a1a1a';                   // Black - Average/Below
+                            return '#2a1515';                   // Very dark red - Average/Below
                         };
                         valEl.style.color = getScoreColor(newVal);
                     }
