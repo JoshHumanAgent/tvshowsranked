@@ -35,43 +35,43 @@ Babylon Berlin proves that German television can match international standards w
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, Volker Bruch's Gereon Rath provides noir gravitas; Liv Lisa Fries's Charlotte offers period-defying independence. The German ensemble creates convincing Weimar Republic atmosphere. The performances serve the historical recreation without showboating. The acting is committed and appropriate.
 
 ### 2. World Building (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for World Building dimension.
+Scoring 9, 1929 Berlin is rendered in obsessive detail—political factions, cabaret culture, economic desperation, rising fascism. The show builds Weimar Germany as a powder keg waiting to ignite. The world is historically authentic and politically timely.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show looks gorgeous—period production values, careful framing, appropriate glamour amid decay. Cinematography serves historical recreation without drawing attention. The visual approach is expensive and convincing.
 
 ### 4. Visual Spectacle (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, spectacle emerges through production scale—street scenes, train stations, clubs, political gatherings. The show delivers period atmosphere as spectacle. Big set pieces occur but are secondary to character.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores Weimar collapse, political extremism, gender liberation, and crime in desperate times. The density is historical and political. It asks how societies fail and what individuals do when systems crumble.
 
 ### 6. Narrative Drive (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Narrative Drive dimension.
+Scoring 7, the mystery-procedural structure provides momentum across multiple seasons. The plot moves deliberately through cases and conspiracies. The pacing is patient, rewarding attention. Some seasons drag compared to others.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 6, the show is ongoing (continuing production); it addresses historical endpoint (1933) approaching. Some character arcs complete while the political situation worsens. Resolution is partial by necessity.
 
 ## Scoring Summary
 

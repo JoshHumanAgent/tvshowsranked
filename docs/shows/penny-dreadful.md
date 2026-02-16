@@ -35,43 +35,43 @@ For fans of Gothic horror, this is required viewing.
 
 **Raw Score: 8.5 | Weighted: 1.70**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Eva Green's Vanessa Ives is the show's dark heart—possessed, powerful, tragic. The ensemble—Josh Hartnett, Timothy Dalton, Rory Kinnear—commits to gothic excess. The performances serve horror melodrama without irony. Eva Green is extraordinary; others support effectively.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 8.5, Victorian London plus supernatural elements—Frankenstein, Dracula, Dorian Gray, werewolves, witchcraft. The show builds a cohesive mythology from disparate sources. The world is atmospheric and literate.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show looks gorgeous—gothic production design, candlelit interiors, fog-wrapped exteriors. Visually appropriate for the genre. The show creates convincing 19th-century atmosphere.
 
 ### 4. Visual Spectacle (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, supernatural horror provides spectacle—creatures, possessions, occult rituals. The show delivers gothic imagery effectively. The horror is more atmospheric than action-oriented.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 4, the show prioritizes atmosphere over ideas. Themes exist—faith, damnation, identity—but remain underdeveloped compared to character and style. It's beautiful and empty.
 
 ### 6. Narrative Drive (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the supernatural mystery structure creates momentum across three seasons. Vanessa's story provides narrative through-line. The plotting can be uneven. Character moments outweigh plot mechanics.
 
 ### 7. Narrative Resolution (15%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.90**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7.5, the series finale kills Vanessa—tragic but appropriate. The monster assembly is satisfying. Some characters get closure; others tease future stories. The ending honors the gothic tradition.
 
 ## Scoring Summary
 

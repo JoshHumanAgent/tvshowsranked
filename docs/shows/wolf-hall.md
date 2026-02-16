@@ -37,43 +37,43 @@ The second season, arriving nearly a decade later, continues the story with the 
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 9, Mark Rylance's Cromwell says more with silence than most do with speeches. The performance is minutely observed—every glance, every pause, every calculated movement. The ensemble (Damian Lewis, Claire Foy) operates at the same level. It's acting as art.
 
 ### 2. World Building (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for World Building dimension.
+Scoring 8.5, 1530s England is built through detail—court protocols, religious politics, factional maneuvering. The show creates convincing Tudor court as dangerous chess game. The world is historically authentic and politically treacherous.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 8.5, the visual approach is candle-lit and shadowed—natural lighting, meticulous framing, period accuracy. The show looks like paintings come to life. The cinematography serves history without romanticizing it.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 6.5, spectacle is restrained—this is people talking in rooms. The show delivers through performance rather than scale. Individual scenes have visual power; there's no action to speak of.
 
 ### 5. Conceptual Density (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores power, loyalty, religion, and survival in treacherous times. Mantel's source material provides intellectual heft. It asks how individuals navigate systems that consume them.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the narrative follows history—Cromwell's rise, Anne's fall. The pacing is deliberate, even slow. The show trusts viewers to engage with court politics. Historical knowledge helps but isn't required.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7.5, season one ends with Anne's execution; season two covers Cromwell's fall. The historical arc completes his story. It's tragic but complete. The show honors the historical record while dramatizing brilliantly.
 
 ## Scoring Summary
 

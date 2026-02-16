@@ -37,43 +37,43 @@ This is television as puzzle box, but one with genuine emotional stakes. It's ab
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 9, Adam Scott's duality as innie and outtie is technically extraordinary—same actor, different performances. The ensemble—Britt Lower, John Turturro, Christopher Walken, Patricia Arquette—commits fully to the premise's absurdity. The acting balances deadpan comedy with existential dread flawlessly.
 
 ### 2. World Building (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for World Building dimension.
+Scoring 10, Lumon Industries is built with obsessive detail—the Macrodata Refinement floor, the hallways, the perpetually 1970s aesthetic. The show creates uncanny corporate limbo. The world feels simultaneously familiar and alien. It's among TV's best world-building.
 
 ### 3. Cinematography (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Cinematography dimension.
+Scoring 9, the visual approach is sterile perfection—symmetrical compositions, liminal lighting, corporate horror. The cinematography makes office work visually compelling. The show is funny, disturbing, and gorgeous simultaneously.
 
 ### 4. Visual Spectacle (10%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.65**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, spectacle arrives through implication—the hallway scenes, the perpetuity wing, the goat room. The show delivers memorable images without action. The visual power comes from design intelligence.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 9, Severance interrogates work-life balance literally—what parts of ourselves we sacrifice for employment. It explores identity, consciousness, memory, and capitalism's colonization of the self. The density is extraordinary; every episode layers meaning.
 
 ### 6. Narrative Drive (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Drive dimension.
+Scoring 8.5, the mystery structure is propulsive—each episode provides revelations and new questions. The pacing is masterful, building toward season finales that explode expectations. The show maintains tension through restraint.
 
 ### 7. Narrative Resolution (15%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.90**
 
-Analysis for Narrative Resolution dimension.
+Scoring 6, season one ends on a cliffhanger—the innies outside Lumon. Season two is ongoing. It's incomplete by design. The journey so far is extraordinary but the story isn't over.
 
 ## Scoring Summary
 

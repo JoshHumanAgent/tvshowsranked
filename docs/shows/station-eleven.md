@@ -37,43 +37,43 @@ This is television as poetry. It moves slowly, trusts you to follow, and rewards
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Mackenzie Davis and Himesh Patel ground the post-apocalypse in human specificity. The ensemble weaves between pre- and post-pandemic timelines with grace. The Traveling Symphony provides community within devastation. The acting is quiet, human, unshowy.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 8.5, the post-pandemic Great Lakes region is built through accumulation—abandoned airports, repurposed malls, the dangerous territory between settlements. The show creates convincing aftermath through mundanity. The world feels like tourism through collapse.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show looks beautiful—Toronto standing in for multiple locations, careful composition, natural light. The cinematography captures both the emptiness and the reclaimed beauty. It's visually poetic without ostentation.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, spectacle is understated—the show finds beauty in abandoned spaces rather than destruction. The Traveling Symphony performances provide moments of visual interest. The focus is on human scale, not set pieces.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores memory, art, community, and what survives catastrophe. The density is emotional rather than philosophical. It asks what we owe each other and what endures. The pandemic framing gained resonance post-COVID.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 7, the interwoven timelines require patience but reward attention. The narrative moves deliberately through memory and present. Some viewers find the pace slow. The structure serves theme over propulsion.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7, the series finale connects timelines and characters—Tyler's redemption, Kirsten's peace, the Symphony's continuity. It provides closure without tidiness. The ending affirms art's persistence through loss.
 
 ## Scoring Summary
 

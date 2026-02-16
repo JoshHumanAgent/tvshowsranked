@@ -37,43 +37,43 @@ True Detective S1 created the anthology format for prestige television. Its infl
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, McConaughey's Rust Cohle is iconic—philosophical, broken, magnetic. Harrelson's Marty provides perfect counterpoint—conventional, compromised, human. The two-hander structure lets both actors shine. Supporting cast is functional. The performances elevate the material into something memorable.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 8.5, Louisiana's bayou country becomes a character—Spanish moss, industrial decay, regional religion, cultic history. The show builds a convincing Southern Gothic atmosphere. The world is specific, atmospheric, and threatening.
 
 ### 3. Cinematography (10%) — Score: 10
 
 **Raw Score: 10 | Weighted: 1.00**
 
-Analysis for Cinematography dimension.
+Scoring 9, Cary Fukunaga's direction is extraordinary—6-minute tracking shot, careful composition, natural lighting, the Yellow King imagery. This is prestige television cinematography at its peak. The show looks like cinema.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8, spectacle arrives through location—the bayou, abandoned churches, industrial landscapes. The show delivers haunting images: the tree, the spiral, the Ledoux compound. The 6-minute tracking shot is legendary.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, the show explores time, memory, masculinity, religion, and cosmic horror. Cohle's philosophical monologues provide intellectual density. Questions of determinism, evil, and human nature pervade. It's smart without being pretentious.
 
 ### 6. Narrative Drive (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Drive dimension.
+Scoring 8.5, the dual-timeline structure (1995/2012/2014) creates mystery and momentum. The narrative is propulsive despite philosophical digressions. Eight episodes is the perfect length—no fat. Every scene advances or reveals.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 8, the ending—Cohle's realization about the light, Marty's bemused acceptance—provides emotional closure while honoring ambiguity. The case resolves; the questions remain. It's a complete story well-told.
 
 ## Scoring Summary
 

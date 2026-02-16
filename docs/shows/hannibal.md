@@ -37,43 +37,43 @@ This is not a show for everyone. It's slow, it's stylized, and it's deeply, prof
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, Mads Mikkelsen's Hannibal is otherworldly—elegant, terrifying, seductive. Hugh Dancy's Will Graham matches him through empathy and fragmentation. The two-hander drives the series. Supporting cast—Laurence Fishburne, Gillian Anderson—provides grounding.
 
 ### 2. World Building (15%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.97**
 
-Analysis for World Building dimension.
+Scoring 8.5, the show builds a heightened reality where killers create art from bodies. The FBI and Hannibal's world blur—his practice, his kitchen, his victims as aesthetic. It's a fairy tale rendered in blood and cuisine.
 
 ### 3. Cinematography (10%) — Score: 10
 
 **Raw Score: 10 | Weighted: 1.00**
 
-Analysis for Cinematography dimension.
+Scoring 9, Fuller created television's most visually ambitious show—every frame composed like a painting. The horror is beautiful; the violence is aesthetic. The show looks more expensive than it was. It's pure visual excess.
 
 ### 4. Visual Spectacle (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8.5, the death tableaux are genuinely stunning—horror as art installation. The show delivers visual spectacle through audacity. The kitchen scenes, the murders, the dream sequences—all are unforgettable.
 
 ### 5. Conceptual Density (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, the show explores empathy, obsession, identity, and the relationship between creator and subject. The density is psychological—what it means to understand monsters, to become them, to love them. It's intellectually ambitious.
 
 ### 6. Narrative Drive (15%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.97**
 
-Analysis for Narrative Drive dimension.
+Scoring 6.5, the plot moves slowly, prioritizing aesthetic and psychology over propulsion. Individual episodes can feel static. The show requires patience. The Red Dragon arc accelerates in the final season. It's a slow burn.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 3.5, the series was cancelled mid-story. The finale—Cliff of the Fallen—provides beautiful imagery but incomplete narrative. It's among TV's most frustrating endings. The movie or revival never came.
 
 ## Scoring Summary
 

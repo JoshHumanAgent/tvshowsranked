@@ -33,43 +33,43 @@ Dark is challenging. You'll need to pay attention, maybe take notes. But if you'
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+Scoring 7.5, the German ensemble commits fully to the show's complexity—actors playing multiple versions of themselves across time. Louis Hofmann's Jonas anchors the emotional chaos; Lisa Vicari's Martha provides tragic romance. The dual-role performances require extraordinary discipline. The acting serves the plot's demands rather than transcending them.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 9.5, Winden is built through generations—the same locations across 1953, 1986, 2019, 2052. The show creates convincing small-town Germany while layering temporal paradox. The interconnected families spanning decades is the show's architectural marvel. Time travel world-building done right.
 
 ### 3. Cinematography (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Cinematography dimension.
+Scoring 8, the visual approach is muted and deliberate—dark forests, industrial facilities, domestic interiors. The cinematography emphasizes dread over spectacle. The show uses its limited locations effectively through time period differentiation. It looks expensive and thoughtful.
 
 ### 4. Visual Spectacle (10%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.65**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, spectacle is restrained—the show delivers through implication. The time travel portals, the wormhole, the apocalypse events are shown economically. The show's power comes from mystery, not scale. The red cave provides striking visual anchor.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 9, Dark is a masterclass in conceptual density—determinism vs. free will, the bootstrap paradox, time travel mechanics, family trauma, cycles of abuse. It asks: Can we change fate? The density requires attention but rewards it. It's philosophy wrapped in thriller.
 
 ### 6. Narrative Drive (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Narrative Drive dimension.
+Scoring 8.5, the narrative operates across three seasons with escalating complexity—seasons 1-2 build the mystery; season 3 explodes the multiverse. The pacing is patient, requiring viewer investment. The final season achieves genuine momentum toward revelation.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+Scoring 8, the series finale resolves the central paradox (Jonas and Martha's choice) while acknowledging the tragedy. It's not happy but it's complete. The show honors its determinism theme—ending is inevitable, but meaning is chosen. It sticks the landing.
 
 ## Scoring Summary
 

@@ -35,43 +35,43 @@ The show ended after two seasons when Soderbergh decided to move on, and there's
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Clive Owen's Thackery is magnetic—addicted genius, cruel brilliance, occasional humanity. The ensemble (André Holland, Eve Hewson, Juliet Rylance) creates convincing period hospital ecosystem. The performances serve medical procedural demands while adding depth.
 
 ### 2. World Building (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for World Building dimension.
+Scoring 9, 1900 New York and the Knickerbocker Hospital is built with documentary precision—medical procedures, ethnic neighborhoods, electrical lighting, period technology. The show captures medicine emerging from barbarism. The world is historically authentic and visceral.
 
 ### 3. Cinematography (10%) — Score: 9.5
 
 **Raw Score: 9.5 | Weighted: 0.95**
 
-Analysis for Cinematography dimension.
+Scoring 8.5, Soderbergh shoots with period-appropriate techniques—lens choices, color grading, directorial restraint. The surgery scenes are unflinching. The show looks expensive and historically convincing.
 
 ### 4. Visual Spectacle (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, spectacle includes surgery sequences—unflinching medical procedures, early electrical experiments. The show delivers period recreation as spectacle. Hospital scale and location provide visual interest.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores medical ethics, addiction, race, class, and scientific progress. The density comes from historical medicine's moral complexity. It asks what doctors owe patients, what progress costs.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 7, the medical-procedural structure provides weekly cases amid seasonal arcs. The pacing is deliberate, occasionally slow. The show trusts viewers to follow medical detail. Character development outweighs plot urgency.
 
 ### 7. Narrative Resolution (15%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.90**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7, Season 2 ends with closure for some characters, cliffhangers for others. The show was cancelled before planned completion. It's incomplete but not unsatisfying. The journey outweighs the destination.
 
 ## Scoring Summary
 
