@@ -1,5 +1,30 @@
 # Current Rankings Rationale
 
+## Recent Score Updates (2026-02-16)
+
+### Breaking Bad: 8.55 → 8.80 (+0.25)
+
+**Rationale:** Second-pass slider adjustment revealed that Breaking Bad's cinematography and conceptual density were underscored. The series' use of color symbolism, time-lapse sequences, and visual storytelling (particularly in seasons 4-5) justifies a bump in the cinematography score. Additionally, the show's exploration of moral decay, capitalism, and Heisenberg's transformation warrants higher conceptual density recognition.
+
+**Dimension Changes:**
+- **Cinematography (cine):** 9 → 10 — The visual language (desert landscapes, color-coded timelines, meticulous framing) is among television's finest.
+- **Conceptual Density (conc):** 8 → 9 — Deeper appreciation for the thematic layering around ego, empire-building, and moral justification.
+
+**Impact:** Breaking Bad solidifies its #2 position, creating clearer separation from The Wire/Better Call Saul cluster.
+
+---
+
+### True Detective S1: 8.28 → 8.08 (-0.20)
+
+**Rationale:** Re-evaluation of the season's spectacle elements revealed over-scoring. While the cinematography (Cary Fukunaga's long takes) and character work remain elite, the actual "visual spectacle"—action sequences, set pieces, and memorable imagery—is more restrained than initially credited. The season's power comes from atmosphere and performance, not visual spectacle.
+
+**Dimension Changes:**
+- **Visual Spectacle (spect):** 8 → 6 — Limited action sequences; the Carcosa finale is atmospheric rather than spectacular. The season prioritizes dread over spectacle.
+
+**Impact:** True Detective S1 drops to #10 but remains in the elite tier, swapping places with Succession.
+
+---
+
 ## Top 10 Analysis
 
 ### #1: Game of Thrones (S1-4) — 9.50
@@ -92,7 +117,21 @@ The Expanse combines hard science fiction with compelling political intrigue. Th
 - Strong ensemble cast
 - Fan-saved due to passionate following
 
-### #10: Succession — 8.03
+### #10: True Detective S1 — 8.08
+
+Nic Pizzolatto's anthology series debut remains a towering achievement in mystery storytelling. Matthew McConaughey's Rust Cohle is a philosophical detective for the ages, while Cary Fukunaga's direction (particularly the six-minute tracking shot in "Who Goes There") redefined what television could achieve visually. The Louisiana setting becomes a character itself—sweltering, decaying, haunted.
+
+**Key Strengths:**
+- Career-defining performance from McConaughey
+- Innovative non-linear narrative structure
+- Atmospheric dread and Gothic horror elements
+- Philosophical depth without pretension
+
+**Score Change Note:** The visual spectacle score was adjusted from 8 to 6, reflecting that the season's power comes from atmosphere and dread rather than action sequences or set pieces. This caused the final score to shift from 8.28 to 8.08, but it remains firmly in the elite tier.
+
+---
+
+### #11: Succession — 8.03
 
 Succession is a savage satire of media dynasties that manages to be both hilarious and devastating. Brian Cox's Logan Roy is one of television's greatest antagonists, while Jesse Armstrong's writing balances dark comedy with genuine emotional weight.
 

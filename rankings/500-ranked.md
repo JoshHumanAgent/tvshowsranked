@@ -17,7 +17,7 @@
 | 7 | The Americans | 8.33 |
 | 8 | The Shield | 8.17 |
 | 9 | The Expanse | 8.09 |
-| 10 | Succession | 8.03 |
+| 10 | True Detective S1 | 8.08 |
 
 ---
 
@@ -39,13 +39,13 @@
 | 7 | The Americans | 8.33 | Full |
 | 8 | The Shield | 8.17 | Full |
 | 9 | The Expanse | 8.09 | Full |
-| 10 | Succession | 8.03 | Full |
-| 11 | Babylon Berlin | 8.03 | Full |
-| 12 | Mr. Robot | 7.99 | Full |
-| 13 | Boardwalk Empire | 7.98 | Full |
-| 14 | Andor | 7.96 | Full |
-| 15 | Adolescence | 7.95 | Full |
-| 16 | True Detective S1 | 8.08 | S1 |
+| 10 | True Detective S1 | 8.08 | S1 |
+| 11 | Succession | 8.03 | Full |
+| 12 | Babylon Berlin | 8.03 | Full |
+| 13 | Mr. Robot | 7.99 | Full |
+| 14 | Boardwalk Empire | 7.98 | Full |
+| 15 | Andor | 7.96 | Full |
+| 16 | Adolescence | 7.95 | Full |
 | 17 | For All Mankind | 7.88 | Full |
 | 18 | Mad Men | 7.88 | Full |
 | 19 | Halt and Catch Fire | 7.88 | Full |
