@@ -35,43 +35,43 @@ This is television as testimony. It doesn't ask you to feel good. It asks you to
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+With a score of 7.5, the performances anchor this devastating true story. Jharrel Jerome's Emmy-winning turn as Korey Wise is the standout—a gut-wrenching portrayal of a child brutalized by the system. The ensemble of young actors playing the five boys captures their confusion, fear, and gradual loss of innocence. The adult cast, including Vera Farmiga and Felicity Huffman as the prosecutors, plays the institutional antagonists with chilling effectiveness.
 
 ### 2. World Building (15%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.97**
 
-Analysis for World Building dimension.
+Scoring 6.5, the world building focuses on recreating 1980s New York—the racial dynamics, the media frenzy, the machinery of prosecution. It's period-accurate and immersive, though the scope is necessarily narrower than some dramas; this is a story about a specific injustice, not an attempt to build an entire universe. The world feels authentic but contained.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Earning an 8, Ava DuVernay's direction brings visual poetry to horror. The cinematography moves between intimate close-ups that capture the boys' deteriorating hope and wider shots that emphasize their isolation within an indifferent system. The color palette shifts with time periods and emotional states, creating visual continuity across the fragmented timeline.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+With a score of 5, this is television as witness, not entertainment. There are no action sequences, no visual fireworks—just the stark reality of interrogation rooms, courtrooms, and prison cells. The spectacle comes from the faces of the real men shown alongside the actors in the finale, a choice more powerful than any special effect.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 9, the show is a devastating meditation on systemic racism, the failures of criminal justice, media complicity, and the cost of trauma. Every scene interrogates how institutions destroy individual lives. The conceptual weight is heavy—this isn't just a story, it's evidence. The final episode showing the real men grounds the abstract themes in inescapable reality.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+With a score of 8, the narrative moves relentlessly from the night of the attack through arrest, trial, imprisonment, and eventually exoneration across four tightly paced episodes. The timeline fragmentation—jumping between past and present—heightens the tension while the constant return to these men's suffering creates unbearable momentum. You watch even when you want to look away.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+Earning a 9, the resolution finds its power in the truth: these men were eventually exonerated, but nothing could return their lost years. The final episode's inclusion of the real Exonerated Five alongside the actors delivers emotional catharsis while refusing easy comfort. There's no happy ending, only acknowledgment. The show honors their survival without minimizing their loss.
 
 ## Scoring Summary
 

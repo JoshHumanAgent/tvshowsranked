@@ -15,7 +15,11 @@
 
 ## What It Feels Like to Watch
 
-Gomorrah is a crime/drama series that delivers compelling television across 58 episodes.
+Gomorrah offers the most brutally realistic portrayal of organized crime since The Wire, set in the Naples housing projects where the Camorra operates. Based on Roberto Saviano's investigative reporting, the show refuses to romanticize the mafia—the violence is graphic, the betrayals are constant, and survival is never guaranteed.
+
+You watch because the characters feel authentically trapped in their circumstances, born into a system where escape is nearly impossible. The show follows multiple factions within the Camorra, showing how power flows and shifts through blood and treachery.
+
+Across 58 episodes, the series maintains a relentless pace and unflinching gaze. There are no heroes here—only people navigating impossible choices, and the consequences are always permanent.
 
 ---
 
@@ -25,43 +29,43 @@ Gomorrah is a crime/drama series that delivers compelling television across 58 e
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+With a score of 7, the ensemble delivers authentic, grounded performances that avoid romanticizing the Camorra. The characters feel like real people born into a violent system rather than crime-drama archetypes.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+The score of 8 reflects the immersive recreation of Naples' criminal underworld, particularly the housing projects controlled by the Camorra. The authentic locations and cultural specificity bring harsh reality to the crime genre.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+With a score of 8, the cinematography captures Naples' beauty and decay with documentary-like immediacy. The visual approach maintains gritty realism that serves the show's unflinching portrayal of organized crime.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+The score of 6 reflects that violence is portrayed with harsh realism rather than cinematic stylization. The graphic content serves the story but isn't glorified or made beautiful.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+With a score of 7, the show explores how organized crime functions as an economic system, trapping generations in poverty and violence. The sociological perspective adds meaningful depth to the crime narrative.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+The score of 7 reflects the propulsive storytelling that follows multiple Camorra factions through power struggles. The 58-episode run maintains momentum despite occasional repetitiveness.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+With a score of 7, the series provides appropriately grim conclusions that respect the reality of organized crime—there are no happy endings, only temporary victors and inevitable losses.
 
 ## Scoring Summary
 

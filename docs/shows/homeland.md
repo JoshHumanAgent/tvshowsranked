@@ -35,43 +35,43 @@ The finale, "Prisoners of War," is haunting. Carrie has spent years sacrificing 
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Claire Danes delivers a tour de force as Carrie Mathison, capturing the character's bipolar intensity with raw, unflinching commitment. Mandy Patinkin brings gravitas to Saul, the series' moral compass. The 8.0 reflects powerful central performances that anchor the series' ambitious exploration of intelligence work and personal sacrifice.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+The series constructs a convincing intelligence community with shifting geopolitical alliances, terrorist threats, and institutional politics. From CIA headquarters to Middle Eastern safe houses, the show maintains authenticity through eight seasons of evolving conflicts. The 7.0 reflects solid consistency, though later seasons stretch credibility with increasingly fantastical scenarios.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+The handheld, documentary-style approach creates immediacy during surveillance sequences and action set pieces. Color grading subtly distinguishes locations—warm for domestic scenes, cold for professional settings. The 7.0 reflects competent, functional visual storytelling that prioritizes narrative clarity over distinctive aesthetic vision, keeping the focus on character psychology.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+The series delivers occasional explosive sequences and tense escape scenarios but remains fundamentally character-driven. Production values are television-standard, with location shooting adding authenticity. The 6.0 acknowledges that spectacle serves the thriller elements rather than aspiring to cinematic scale—this is intimate suspense rather than blockbuster action.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+The series interrogates the war on terror, surveillance ethics, and the personal cost of national security. Themes of loyalty, betrayal, and moral compromise weave throughout eight seasons. The 7.0 reflects genuine thematic ambitions that occasionally slip into thriller convention, but the show consistently raises uncomfortable questions about America's intelligence apparatus.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+The propulsive first seasons maintain relentless tension through twist-laden plotting and cliffhanger structures. Carrie's relentless pursuit of terrorists creates unstoppable momentum. The 8.0 acknowledges strong drive that weakens in later seasons as storylines become repetitive, but the core engine of suspense remains effective throughout the series' run.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+The series finale, "Prisoners of War," delivers a haunting meditation on sacrifice and identity, answering the central question of whether Carrie's devotion was worth the cost. Individual seasons resolve their terrorist threats effectively. The 7.0 reflects solid overall resolution despite some repetitive patterns across eight seasons and a few rushed conclusions.
 
 ## Scoring Summary
 

@@ -35,43 +35,43 @@ The episodes are best experienced without spoilers. Each one is designed to make
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+Scoring 7, the anthology format means performances vary significantly by episode. Standouts include Bryce Dallas Howard in "Nosedive" and Kelly Macdonald in "Hated in the Nation," while some entries feature more functional performances serving the concept rather than deep character work. The rotating cast allows for fresh faces and big-name surprises (Miley Cyrus, Jon Hamm), but depth is deliberately sacrificed for narrative expediency in many installments.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Earning 7, each episode constructs a self-contained near-future world extrapolated from current technological trends. The show excels at making the speculative feel grounded—social credit systems in China, memory-recording devices, artificial consciousness—all feel like tomorrow's headlines. However, since these worlds exist for single episodes, they lack the cumulative depth of serialized world-building, trading longevity for precision satire.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 8, the visual style shifts to match each episode's tone—from the sunny pastels of "Nosedive" to the noir shadows of "White Bear" to the retro aesthetic of "San Junipero." The show uses cinematic language purposefully, with some episodes (particularly "Metalhead" shot in black and white) demonstrating sophisticated visual storytelling. Consistent excellence across rotating directors keeps the quality high.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Earning 7, the spectacle is selective and conceptual rather than constant. "USS Callister" delivers gleaming spaceship interiors and virtual vistas, while episodes like "The National Anthem" unfold almost entirely in mundane interiors. When the show spends its budget, it creates memorable images—robots, digital afterlives, augmented reality—but many stories are intentionally small-scale, keeping this score moderate.
 
 ### 5. Conceptual Density (15%) — Score: 9.5
 
 **Raw Score: 9.5 | Weighted: 1.43**
 
-Analysis for Conceptual Density dimension.
+Scoring an exceptional 9.5, this is Black Mirror's greatest strength—each episode functions as a philosophical thought experiment about technology's impact on human relationships, memory, identity, and mortality. The density of ideas per hour is unmatched: artificial intelligence, social media validation, digital consciousness, surveillance, and more are explored with genuine insight. The show asks not just "what if" but "what does this mean for us"—and rarely settles for easy answers.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, the show constructs tight, propulsive plots that often unfold in real-time or over compact timeframes. The anthology format means no episode overstays its welcome, with stories building efficiently toward twists and revelations. While some episodes prioritize concept over momentum (the experimental "Bandersnatch"), most maintain narrative tension through mystery, stakes escalation, or character desperation.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Earning 8, the show lands its endings with grim precision, typically leaving viewers disturbed rather than satisfied—which is precisely the point. Episodes like "White Bear" and "Shut Up and Dance" conclude with devastating reveals that recontextualize everything preceding them. The series understands that resolution doesn't require comfort, and some of its most powerful conclusions stay with you for years after viewing.
 
 ## Scoring Summary
 

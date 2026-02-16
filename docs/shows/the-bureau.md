@@ -35,43 +35,43 @@ If you love *The Americans* or *Tinker Tailor Soldier Spy*, this is essential vi
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+The score of 8 reflects Mathieu Kassovitz's mesmerizing performance as Malotru, capturing a man who has become his own cover identity. The strong ensemble, particularly the women running the Paris office, brings psychological authenticity to the spy world.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+With a score of 7.5, the show constructs a convincingly realistic DGSE intelligence world enriched by French cultural specificity—the language, bureaucracy, and philosophical approach to espionage. The authenticity reportedly came from consulting actual French intelligence operatives.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+The score of 7 reflects competent, serviceable cinematography that prioritizes capturing performances over visual style. The aesthetic is appropriately restrained for the grounded espionage material.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+With a modest score of 5, the show deliberately avoids action spectacle in favor of psychological tension. There are no car chases or shootouts—just people in rooms, reading documents, and lying with extraordinary skill.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+The strong score of 8 comes from the show's philosophical exploration of identity, loyalty, and the psychological toll of living multiple lives. The French approach to espionage brings genuine depth to questions about who we become when we pretend to be someone else.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+With a score of 8, the methodical pacing creates sustained tension through the mental chess of intelligence work and the constant threat of exposure. The slow-burn approach rewards patient viewing with mounting intensity.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+The score of 8 reflects a satisfying conclusion to Malotru's story arc that provides closure while leaving viewers haunted by the questions raised about identity and performance.
 
 ## Scoring Summary
 

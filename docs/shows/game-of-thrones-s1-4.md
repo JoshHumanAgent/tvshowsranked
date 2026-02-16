@@ -33,43 +33,43 @@ S1-4 delivers on every level: spectacle, substance, shock, and soul. It created 
 
 **Raw Score: 10 | Weighted: 2.00**
 
-Analysis for Characters & Acting dimension.
+With a perfect score of 10, this dimension represents the absolute pinnacle of ensemble television. Peter Dinklage's Tyrion Lannister transforms from a witty observer to the show's moral compass across these seasons. Sean Bean's Ned Stark delivers gravitas that anchors the early narrative, while Charles Dance's Tywin Lannister exudes terrifying paternal authority. The depth of the cast—from Maisie Williams' Arya to Lena Headey's Cersei—creates a tapestry of fully realized characters whose motivations remain complex and compelling throughout.
 
 ### 2. World Building (15%) — Score: 10
 
 **Raw Score: 10 | Weighted: 1.50**
 
-Analysis for World Building dimension.
+With a perfect score of 10, the world-building in these early seasons is virtually unmatched in television history. The adaptation of George R.R. Martin's lore creates a fully realized medieval world where every region—from the frozen North to the desert lands of Dorne—has distinct culture, politics, and history. The mechanics of Westerosi society feel lived-in and authentic: the laws of succession, the religion of the Seven, the Wall's ancient purpose, and the looming supernatural threat all interweave seamlessly. This is world-building as high art.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+With a score of 8, the cinematography delivers consistent visual excellence across multiple international filming locations. The Northern Ireland landscapes provide a windswept authenticity to Winterfell scenes, while Mediterranean locations create the warmth of King's Landing. The framing regularly uses natural light and weather to enhance mood—from the snow-covered Wall to sun-drenched Dornish gardens. Battle sequences like "Blackwater" (S2E9) demonstrate sophisticated understanding of scale and chaos. The visual approach balances epic grandeur with intimate character moments.
 
 ### 4. Visual Spectacle (10%) — Score: 9.5
 
 **Raw Score: 9.5 | Weighted: 0.95**
 
-Analysis for Visual Spectacle dimension.
+With a score of 9.5, these seasons deliver visual spectacle that rivals theatrical blockbusters. The dragons—particularly Drogon's emergence in S1 and his growth through S4—represent groundbreaking CGI integration. The Battle of Castle Black (S4E9) and the Wildling assault create genuine cinematic scale. Costumes by Michele Clapton tell stories through fabric, from Dany's evolving wardrobe reflecting her growing power to the Lannister lion motifs. The production design throughout is HBO at its most ambitious, creating images that became instant cultural touchstones.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+With a score of 9, the narrative complexity is extraordinarily rich. Multiple plotlines—Stark succession crisis, Dany's emergence from exile, the Night's Watch threat, Lannister power consolidation—weave together with remarkable coherence. The political maneuvering at King's Landing operates on multiple levels: public posturing, private scheming, and hidden betrayals. Themes of honor vs. pragmatism, the cost of power, and moral compromise in impossible situations give the story intellectual weight beyond its entertainment value. These seasons reward close attention and repeat viewing.
 
 ### 6. Narrative Drive (15%) — Score: 10
 
 **Raw Score: 10 | Weighted: 1.50**
 
-Analysis for Narrative Drive dimension.
+With a perfect score of 10, the narrative momentum is relentless and masterfully constructed. Every episode ends with a compelling reason to watch the next one—what the showrunners called "holy shit moments." The pacing balances long-term character arcs with immediate cliffhangers. Season 1 builds to Ned Stark's shocking fate; Season 2 culminates in the Blackwater battle; Season 3 delivers the Red Wedding devastation; Season 4 brings the Wall confrontation and Tywin's fate. Each season operates as a complete narrative unit while advancing the larger story. This is serialized storytelling at its most addictive.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+With a score of 9, the conclusion of Season 4 provides satisfying resolution to multiple major arcs while opening new paths forward. Tyrion's confrontation with Tywin delivers years of built-up emotional catharsis. Dany's choice to stay in Meereen rather than immediately invade Westeros demonstrates character growth over plot convenience. Arya's departure for Braavos and Sansa's emergence from victimhood both feel earned. The Wildling threat neutralization and Stannis's arrival at the Wall resolve immediate conflicts while setting up larger ones. These seasons demonstrate that television can deliver both episodic satisfaction and long-form storytelling mastery.
 
 ## Scoring Summary
 

@@ -37,43 +37,43 @@ The final episode, "Always," is one of the great series endings. It jumps years 
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+With a score of 8, Kyle Chandler's Coach Taylor and Connie Britton's Tami provide the emotional anchor, while the young ensemble—including Zach Gilford, Taylor Kitsch, and Minka Kelly—delivers performances of remarkable authenticity.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+The score of 7.5 reflects the deeply felt creation of Dillon, Texas as a place where football is oxygen and religion. The rotating cast of players across seasons reinforces that this is a story about a community, not just a team.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+With a score of 7, the cinematography effectively captures Texas landscapes and small-town life with documentary-style intimacy. The visual approach prioritizes capturing performances over cinematic stylization.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+The modest score of 5 reflects that this is a character drama where football is the backdrop, not the spectacle. Friday Night Lights is about people, not game-day grandeur.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+With a score of 7, the show explores how sports provide meaning and hope in small-town America, touching on class, family, and community. The emotional honesty transcends the sports genre conventions.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+The score of 7 reflects the character-driven storytelling that moves at the rhythm of life rather than plot mechanics. The rotating cast across seasons requires adjustment but serves the show's themes.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+With a score of 8, the series finale "Always" is one of the great endings—jumping years forward to show where everyone landed, with some finding peace and others not, but all coming home for one more game.
 
 ## Scoring Summary
 

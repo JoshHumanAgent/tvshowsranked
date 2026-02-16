@@ -33,43 +33,43 @@ The characters are flawed, compelling, and often hard to like—which is exactly
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+With a score of 7.5, the ensemble creates compelling, morally complex characters who feel authentically human in their selfishness and occasional heroism. The flawed protagonists are hard to like by design, making their journey through the conspiracy all the more gripping.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+The score of 7.5 reflects the show's effective construction of a shadow world where conspiracy theories bleed into reality. The British setting and cultural specificity ground the global conspiracy in recognizable locations.
 
 ### 3. Cinematography (10%) — Score: 10
 
 **Raw Score: 10 | Weighted: 1.00**
 
-Analysis for Cinematography dimension.
+The perfect score of 10 is earned through bold, graphic novel-inspired compositions featuring striking colors and geometric precision. Every frame is composed with artistic vision that makes the show visually unforgettable.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+With a score of 7, the visual spectacle comes from the stylized violence and surreal imagery that punctuates the conspiracy thriller. The show's aesthetic choices create memorable, shocking visual moments.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+The strong score of 8 reflects the show's sharp critique of power structures, government corruption, and corporate control. The conspiracy at its heart raises genuinely unsettling questions about who controls our world.
 
 ### 6. Narrative Drive (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Drive dimension.
+The high score of 9 comes from the relentless narrative momentum—the conspiracy unspools with devastating efficiency, and the brutal, unexpected deaths keep tension at maximum. The pacing is masterfully controlled.
 
 ### 7. Narrative Resolution (15%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.90**
 
-Analysis for Narrative Resolution dimension.
+The lower score of 6 reflects that the ending feels somewhat rushed and doesn't fully satisfyingly resolve all the conspiracy threads. While the journey is exceptional, the destination leaves some questions unanswered.
 
 ## Scoring Summary
 

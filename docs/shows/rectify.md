@@ -37,43 +37,43 @@ The final season is devastating. It offers no easy answers, no tidy resolution. 
 
 **Raw Score: 9 | Weighted: 1.80**
 
-Analysis for Characters & Acting dimension.
+The exceptional score of 9 reflects Aden Young's magnificent performance as Daniel—a man relearning how to be human after 19 years on Death Row. Abigail Spencer, J. Smith-Cameron, and Clayne Crawford create a deeply felt family dynamic.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+With a score of 7, the show effectively creates the small Georgia town that convicted Daniel and hasn't forgotten. The community feels lived-in, with the weight of history and judgment palpable in every interaction.
 
 ### 3. Cinematography (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Cinematography dimension.
+The high score of 8.5 comes from patient, contemplative cinematography that lingers on faces, landscapes, and moments. The camera's unhurried gaze mirrors Daniel's disorientation, creating an immersive, meditative experience.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+With a modest score of 5, this is intimate character drama where visual spectacle would be inappropriate. The beauty comes from Georgia landscapes and human faces, not cinematic showmanship.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+The exceptional score of 9 reflects the profound exploration of incarceration, institutionalization, and what happens when the system spits you out. The show asks: who are you after trauma has remade you?
 
 ### 6. Narrative Drive (15%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.90**
 
-Analysis for Narrative Drive dimension.
+The lower score of 6 reflects the deliberately slow pacing—scenes unfold in real time, testing the patience of viewers expecting plot momentum. This is television as meditation; the narrative moves at the speed of healing.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+With a score of 9, the final season offers no easy answers or tidy resolution, just profound understanding that wounds don't heal and people don't fully come back. The ending is devastatingly honest about survival.
 
 ## Scoring Summary
 

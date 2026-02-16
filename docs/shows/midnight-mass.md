@@ -39,43 +39,43 @@ This is not *Hill House*. It's quieter, more meditative, and ultimately more dev
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+With a score of 7.5, Kate Siegel delivers excellent work as Erin Greene, while Hamish Linklater brings charismatic intensity to Father Paul. The ensemble effectively portrays a community of believable people wrestling with faith and loss.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+The score of 7 reflects the effective creation of Crockett Island as a dying fishing community with a palpable sense of isolation and decline. The island's geography and social dynamics feel coherent, though the world is intentionally small and contained.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+With a score of 8, the cinematography creates atmospheric dread through moody island landscapes and carefully lit interiors. The visual approach emphasizes the contrast between sacred spaces and the horror that invades them.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+The modest score of 6 reflects that this is a slow-burn horror focused on atmosphere over spectacle. When visual elements arrive, they're effective but restrained—the show prioritizes psychological horror over visceral effects.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+The exceptional score of 9 comes from the show's serious engagement with faith, sacrifice, and belief—characters explicitly debate scripture and theology. The questions about what happens when miracles turn monstrous are explored with genuine philosophical weight.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+With a score of 7, the deliberately slow pacing builds atmosphere over action, which won't work for all viewers. The methodical unfolding creates mounting dread but occasionally tests patience.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+The high score of 9 reflects the devastating final episodes that bring the story to a haunting, theologically complex conclusion. The ending delivers on the slow build with genuine terror and profound emotional impact.
 
 ## Scoring Summary
 

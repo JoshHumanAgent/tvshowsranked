@@ -33,43 +33,43 @@ The escape took weeks to plan and execute, and the show captures every moment of
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Patricia Arquette delivers a transformative, physically committed performance as Joyce "Tilly" Mitchell, embodying a woman drawn to danger through loneliness. Benicio Del Toro brings seductive menace to Richard Matt, while Paul Dano's David Sweat simmers with desperation. The 8.0 reflects exceptional ensemble acting that elevates the true-crime material into character study.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Clinton Correctional Facility becomes a suffocating character—the industrial corridors, the maintenance shops, the claustrophobic cells all rendered with documentary precision. The surrounding rural New York landscape contrasts sharply with the prison's oppressive architecture. The 7.0 reflects meticulous environmental recreation that grounds the true story in specific, tangible geography.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Ben Stiller directs with visual confidence, using cold institutional lighting and tight framing to emphasize confinement. The color palette of grays and muted greens evokes the prison's bleakness, while warmer tones signal Tilly's domestic entrapment. The 8.0 reflects sophisticated visual craft that transforms a prison drama into something formally striking.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+The painstaking depiction of the actual escape—tunneling through walls, the cramped infrastructure passages, the eventual flight through forest—builds tension without relying on action pyrotechnics. The 5.0 acknowledges spectacle takes a backseat to psychological intensity, though the escape sequences are viscerally effective when they arrive.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+The series explores institutional decay, the psychology of manipulation, class dynamics between guards and prisoners, and the blurred lines between coercion and consent. Based on real events, it raises questions about systems that create such vulnerabilities. The 7.0 reflects thoughtful engagement with these themes, though the focus remains primarily on character rather than overt social commentary.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+The seven-episode structure maintains precise tension, building inexorably toward the escape itself. Flashback structures illuminate character motivations without disrupting momentum. The 8.0 reflects tight, disciplined storytelling that never wastes a scene, with each episode adding pressure to the inevitable climactic breakout.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+Knowing the real outcome—the capture, the death—doesn't diminish the finale's power. The final episode delivers devastating consequences for all three central characters, with Tilly's fate particularly haunting. The 9.0 reflects a conclusion that finds tragic poetry in true events, giving each character their earned, heartbreaking ending.
 
 ## Scoring Summary
 

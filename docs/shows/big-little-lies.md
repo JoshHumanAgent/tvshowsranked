@@ -33,43 +33,43 @@ The show won multiple Emmys and launched a conversation about domestic violence.
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+With a score of 7.5, the exceptional ensemble—including Reese Witherspoon, Nicole Kidman, and Laura Dern—brings depth to wealthy Monterey mothers hiding dark secrets. Shailene Woodley provides crucial perspective as the outsider.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+The score of 7 reflects the effective creation of wealthy Monterey and the social dynamics among the "Monterey Five." The privileged world feels authentic, though primarily serves as backdrop for character drama.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+With a score of 8, Jean-Marc Vallée's direction creates a dreamy, fragmented visual style that reflects the characters' fractured psyches. The cinematography mirrors the psychological tension through quick cuts and dissolves.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+The score of 7 comes from the striking coastal California landscapes and the polished aesthetic of wealth. The show contrasts natural beauty with the rot beneath the surface.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+With a score of 7, the show explores domestic violence, female friendship, and the performances women put on for the world. The themes are important but approached somewhat superficially, particularly in the weaker second season.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+The score of 7 reflects solid pacing in the first season with the murder mystery structure, though momentum flags in the second season where the central question is already answered.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+With a score of 8, the first season delivers a stunning conclusion that recontextualizes everything preceding it. The finale's revelations provide shocking but earned resolution to the mystery.
 
 ## Scoring Summary
 

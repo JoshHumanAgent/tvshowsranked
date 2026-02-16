@@ -37,43 +37,43 @@ The finale is devastating — not because of violence, but because of recognitio
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+With a score of 8, Beef showcases two extraordinary central performances. Steven Yeun and Ali Wong find humanity in deeply flawed people, making Danny and Amy simultaneously frustrating and deeply sympathetic. Their chemistry is electric—you can't look away even when they're making terrible choices. The supporting cast—including Joseph Lee as Paul's earnest brother—fits perfectly into the A24-signature uncomfortable intimacy.
 
 ### 2. World Building (15%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.97**
 
-Analysis for World Building dimension.
+Scoring 6.5, the world building focuses on two specific Californian lives: a failing contractor in the Valley and a wealthy entrepreneur in Calabasas. The show captures the texture of contemporary LA with specificity—the parking lots, the strip malls, the way class resentment simmers beneath surface interactions. It's not an expansive universe, but it's precisely observed.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Earning an 8, the cinematography embraces the A24 aesthetic—wide frames that let characters exist in uncomfortable space, intimate close-ups that capture micro-expressions of rage and vulnerability. The visual approach mirrors the story's escalating tensions, using negative space and deliberate pacing to create unease. It's beautiful in its anxiety.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+With a score of 5, Beef is spectacle-free by design. This is about faces, not explosions; about emotional warfare, not physical action. The production values are modest and appropriate—Lee Sung Jin invests in performance and atmosphere rather than visual fireworks. The "spectacle" is watching two people spiral.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, Beef explores rich thematic territory: the performative nature of anger, the way we project our failures onto others, the Asian-American experience of success and inadequacy. It's doing serious work about race, class, mental health, and the loneliness of modern existence—all wrapped in a deceptively simple revenge premise. The symbolism (the birds, the tunnels) rewards attention.
 
 ### 6. Narrative Drive (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Drive dimension.
+With a score of 9, the show is binge-perfect. Each episode escalates the feud in unexpected directions, and the chain of retaliation creates propulsive momentum. The structure—ten episodes that could stand alone but build to a devastating finale—keeps you hooked. The pace is deliberately measured but never slow, letting tension accumulate like pressure building toward inevitable explosion.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+Earning a 9, the finale delivers emotional devastation that feels earned rather than manipulative. Without spoiling, the resolution honors the show's central insight: Danny and Amy don't need to like each other to recognize themselves in each other. It's a rare ending that feels both surprising and inevitable, completing the emotional journey without tidy moralizing.
 
 ## Scoring Summary
 

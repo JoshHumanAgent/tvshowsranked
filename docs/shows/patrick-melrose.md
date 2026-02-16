@@ -35,43 +35,43 @@ The final episode, "At Last," offers no fairy-tale redemption. Just a man learni
 
 **Raw Score: 8.5 | Weighted: 1.70**
 
-Analysis for Characters & Acting dimension.
+The high score of 8.5 reflects Benedict Cumberbatch's career-best performance as Patrick—delivering jagged edges and desperate charm while playing addiction as both defense and disease. Hugo Weaving and Jennifer Jason Leigh are chilling as the casually sadistic parents who destroy their son.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+With a score of 7, the show effectively captures the specific cruelty of the British upper class across multiple time periods and locations. The privilege-as-prison environment is established through precise period detail and social observation.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+The score of 8 reflects elegant, atmospheric cinematography that serves the miniseries' tone of memory and trauma. The visual approach shifts appropriately between time periods while maintaining a cohesive aesthetic.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+With a modest score of 6, the show focuses on intimate character study rather than visual spectacle. The locations and production design support the narrative without calling attention to themselves.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+The strong score of 8 comes from the show's exploration of addiction, abuse, and survival without sentimentality. The non-linear structure examining how trauma echoes across time adds meaningful complexity.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+With a score of 7, the five-episode structure—each set in different periods—keeps viewers off-balance and engaged, though the fragmented timeline occasionally disrupts momentum. The cumulative effect is devastating.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+The excellent score of 9 reflects the finale "At Last," which offers no fairy-tale redemption but provides profound emotional closure. The ending's quiet hope—a man learning to be present moment by moment without drugs—is deeply satisfying.
 
 ## Scoring Summary
 

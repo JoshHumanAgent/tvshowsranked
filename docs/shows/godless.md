@@ -35,43 +35,43 @@ This is a Western that happens to feature women at its center, and it's all the 
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+With a score of 7.5, the performances are led by Jeff Daniels' terrifying portrayal of Frank Griffin and Michelle Dockery's commanding presence as Alice Fletcher. The ensemble effectively populates this female-driven Western with complex, memorable characters.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+The strong score of 8 reflects the detailed construction of La Belle and the surrounding New Mexico territory as a lived-in world. The post-disaster town where women have taken charge feels historically grounded while offering fresh genre perspectives.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+With a score of 9, the cinematography transforms the New Mexico landscapes into paintings—every frame showcases the vast, unforgiving magnificence of the West. The location shooting pays dividends in visual grandeur.
 
 ### 4. Visual Spectacle (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Visual Spectacle dimension.
+The score of 8 comes from the stunning landscape photography and the brutal, consequential violence that arrives with devastating impact. The final episode's showdown is a masterclass in visual tension.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+With a score of 7, the show explores interesting gender dynamics and questions what happens when women run society, though it doesn't push these themes as deeply as it could. The genre revisionism is present but takes a backseat to character drama.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+The score of 7 reflects the deliberately slow unfolding of story, building tension through character development rather than plot mechanics. The patient pacing serves the Western atmosphere but may test viewers expecting faster momentum.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+With a score of 8, the limited series delivers a satisfying conclusion that brings all storylines to a powerful climax. The finale's tension and release provide emotional and narrative closure worthy of the build-up.
 
 ## Scoring Summary
 

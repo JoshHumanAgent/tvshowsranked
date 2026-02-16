@@ -39,43 +39,43 @@ The series asks what it means to be loyal, what it means to be civilized, and wh
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, the ensemble is anchored by Hiroyuki Sanada's towering presence as Toranaga—a performance communicated largely through silence, subtle expressions, and commanding stillness. Cosmo Jarvis brings convincing bewilderment and eventual understanding as Blackthorne, while Anna Sawai delivers the series' emotional core as Mariko, navigating impossible loyalties with heartbreaking grace. The Japanese-speaking cast brings authenticity and gravitas that elevates the entire production.
 
 ### 2. World Building (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for World Building dimension.
+Earning 9, the series creates an immersive 1600 Japan through meticulous attention to detail—the political machinations of the Council of Regents, the complex social hierarchies, the Buddhist and Christian tensions, and the warrior code of bushido. The show trusts viewers to learn through immersion rather than exposition, presenting a culture with its own internal logic that Blackthorne must learn to navigate. The result feels less like a backdrop and more like a fully realized civilization.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 9, the visual approach combines epic landscapes with intimate chamber drama—vistas of Japanese coastline shot in golden light contrasted with candlelit interiors where decisions that shape empires are made in whispered conversations. The camera honors traditional composition, using negative space and natural framing. The cinematography captures both the external beauty and the internal tension of its world, earning comparisons to Kurosawa's work.
 
 ### 4. Visual Spectacle (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Visual Spectacle dimension.
+Earning 9, the series delivers grandeur through production design—samurai armor gleaming in torchlight, castles built to period specifications, armies massed on beaches, and ships burning in the harbor. The spectacle serves story rather than overwhelming it, whether it's the stunning opening shot of Toranaga's procession or the brutal efficiency of samurai combat. The scale feels appropriately epic for a story about the future of Japan itself.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7, the series explores cultural collision—East meets West through Blackthorne's journey from barbarian to almost-samurai. Themes of loyalty, death, and what constitutes a "good death" (seppuku versus cowardice) recur throughout. The show examines how power operates through patience and strategy rather than brute force, with Toranaga's 4D chess game serving as the central intellectual puzzle. However, the focus remains on political intrigue and personal sacrifice more than philosophical exploration.
 
 ### 6. Narrative Drive (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Narrative Drive dimension.
+Earning 7.5, the series proceeds deliberately, favoring character development and political maneuvering over rapid plot advancement. This is slow television that rewards attention—each conversation potentially contains a shift in alliance, each glance a strategic calculation. The pacing mirrors feudal Japanese society itself: formal, patient, with explosions of sudden violence. Some viewers may find this approach more contemplative than propulsive.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7, the season finale delivers emotional catharsis for several major characters while leaving the larger political arc unresolved—this is, after all, only the beginning of Toranaga's rise. Major character deaths are given weight and meaning, while Blackthorne's transformation feels complete. However, the setup for future seasons means the main conflict continues, keeping this score from going higher for viewers seeking complete closure.
 
 ## Scoring Summary
 

@@ -33,43 +33,43 @@ This is a show about memory, time, and the weight of unresolved trauma. It's not
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+With a score of 7.5, Mahershala Ali delivers an extraordinary performance as Wayne Hays, bringing profound depth to a detective grappling with memory loss and guilt. Carmen Ejogo provides strong support as his wife Amelia, though the supporting cast is less memorable than Season 1's ensemble.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+The score of 7.5 reflects effective construction of 1980s Arkansas across three timelines, capturing the rural community and its evolution over decades. The Ozarks setting provides atmospheric specificity.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+With a score of 8, the cinematography recreates the atmospheric dread of the first season with moody lighting and careful period detail. The visual approach supports the show's contemplative, melancholic tone.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+The modest score of 6 reflects that this is a character-driven mystery without visual spectacle. The Arkansas locations are rendered atmospherically but without cinematic grandeur.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+With a score of 7, the show explores themes of memory, time, and unresolved trauma through its three-timeline structure, though it doesn't achieve the philosophical depth of Season 1. The focus on aging and memory adds meaningful layers.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+The score of 7 reflects solid narrative momentum across the multiple timelines, though the pacing occasionally meanders. The mystery structure keeps engagement moderate without the relentless pull of the first season.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+With a score of 8, the season delivers a satisfying conclusion that brings the various timelines together and provides emotional closure for Wayne Hays' journey. The ending lands effectively despite the season's occasionally unfocused middle.
 
 ## Scoring Summary
 

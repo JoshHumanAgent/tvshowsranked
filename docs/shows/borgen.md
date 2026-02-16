@@ -33,43 +33,43 @@ The fourth season, released nearly a decade later on Netflix, expands the scope 
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+With a score of 8, Sidse Babett Knudsen delivers an essential performance as Birgitte Nyborg, capturing both idealism and political pragmatism. The ensemble—including Kasper, Katrine, and Phillip—creates a rich ecosystem of power relationships.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+The score of 7 reflects the effective creation of Christiansborg Palace and Danish political culture. The show makes Danish coalition politics accessible and compelling, proving political drama doesn't need American settings.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+With a score of 7, the cinematography is clean and functional, capturing the Scandinavian aesthetic of the political world. The visual approach serves the material without drawing attention to itself.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+The modest score of 5 reflects that this is a dialogue-driven political drama where spectacle would be inappropriate. The power comes from words and negotiations, not visual grandeur.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+With a score of 8, the show explores coalition government, media manipulation, international diplomacy, and the cost of power with sharp intelligence. Each season takes on different political challenges while maintaining personal stakes.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+The score of 8 reflects the tight writing that keeps political maneuvering engaging across the original three seasons. The fourth Netflix season expands scope but maintains narrative momentum.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+With a score of 8, the show provides satisfying conclusions to political arcs while acknowledging that governance is ongoing. Birgitte's journey from idealist to seasoned politician reaches appropriate resolution across the series.
 
 ## Scoring Summary
 

@@ -33,43 +33,43 @@ This is prestige crime drama that doesn't romanticize the drug trade — it show
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+With a score of 7.5, Wagner Moura delivers an extraordinary, charismatic performance as Pablo Escobar that captures the drug lord's contradictions. The Colombian ensemble brings authenticity, though the American DEA agents are less compelling.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+The strong score of 8 reflects the immersive recreation of 1980s Colombia—the Medellín and Cali cartels, the political landscape, and the war on drugs. Location filming provides invaluable texture and cultural specificity.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+With a score of 8, the cinematography captures Colombia's beauty and danger with documentary-style authenticity. The visual approach serves the prestige crime drama while showcasing the country's landscapes.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+The score of 7 reflects effective action sequences and period recreation that bring the drug war to visceral life. The show depicts violence without glamour, showing its brutal, messy reality.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+With a score of 7, the show addresses the political and social dimensions of the drug trade—corruption, American intervention, and supply-side economics—though it sometimes prioritizes biography over systemic analysis.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+The score of 8 reflects the propulsive biographical storytelling that follows Escobar's rise and the DEA's pursuit. The first two seasons maintain exceptional momentum, though the Cali Cartel seasons lose some steam.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+With a score of 7, the show provides historically satisfying conclusions to each cartel story, though the transition between Escobar and Cali narratives creates some discontinuity. The endings land with appropriate weight.
 
 ## Scoring Summary
 

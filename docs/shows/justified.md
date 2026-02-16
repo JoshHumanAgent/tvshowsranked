@@ -37,43 +37,43 @@ The final season ties things up with a melancholy grace that feels earned. There
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+With a score of 8, Justified boasts exceptional character work anchored by Timothy Olyphant's laconic, morally complex Raylan Givens. The real revelation is Walton Goggins as Boyd Crowder, whose philosophical outlaw provides the perfect foil to Raylan's weary lawman. Their chemistry crackles across 78 episodes, building one of television's most compelling frenemy relationships. The supporting cast of Harlan County criminals and law enforcement is uniformly excellent.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 7.5, the world building creates a fully realized vision of rural Kentucky's criminal underbelly. The show honors Elmore Leonard's voice with authentic Appalachian texture—family feuds that span generations, criminal enterprises both petty and professional, and a code of honor among thieves that proves remarkably consistent. Harlan County becomes a character in itself, rich with specificity and regional authenticity.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Earning a 7, the cinematography embraces a sun-bleached, wide-open aesthetic that captures Kentucky's distinctive landscapes. The visual approach is functional rather than flashy, using natural light and expansive vistas to emphasize the isolation of rural America. The gunfights are staged with clarity and spatial intelligence, respecting the viewer's eye without overwhelming visual gimmickry.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+With a score of 5, Justified isn't here to dazzle your eyes. This is television as character study, not spectacle. The production values are solid but modest—the show's budget went to actors and writers rather than explosions or CGI. What spectacle exists comes from the stark beauty of Kentucky's coal country and the sudden violence of its gunfights, not from visual excess.
 
 ### 5. Conceptual Density (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores meaty themes of legacy, justice versus law, and whether we can ever truly escape where we come from. The Elmore Leonard influence means every interaction carries weight—conversations about honor, family, and the cost of violence. It's not as philosophically ambitious as some prestige dramas, but within its neo-Western wheelhouse, it delivers thoughtful complexity.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+With a score of 8, Justified maintains steady momentum across six seasons through its case-of-the-week structure and serialized arcs. Each season introduces a new big bad while advancing Raylan and Boyd's ongoing dance. The show knows how to craft a compelling episode—plenty of quotable dialogue, tension-building confrontations, and enough standalone stories to keep things fresh over 78 installments.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Earning an 8, the final season brings Raylan and Boyd's long game to a satisfying conclusion that feels earned rather than rushed. The show respects its characters enough to give them proper endings—some tragic, some hopeful, all fitting. It avoids the trap of overstaying its welcome, wrapping up while the storytelling remained strong. The final confrontation between Raylan and Boyd delivers exactly what viewers had been waiting six seasons to see.
 
 ## Scoring Summary
 

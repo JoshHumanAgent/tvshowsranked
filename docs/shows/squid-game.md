@@ -37,43 +37,43 @@ The second season expands the world while maintaining the tension. Gi-hun return
 
 **Raw Score: 6.5 | Weighted: 1.30**
 
-Analysis for Characters & Acting dimension.
+With a score of 6.5, Squid Game prioritizes its high-concept premise over deep character development. Lee Jung-jae grounds the chaos as Gi-hun, finding genuine pathos in a gambling addict fighting for redemption. Jung Ho-yeon shines as defector Kang Sae-byeok, and O Yeong-su brings unexpected tenderness as the elderly Il-nam. But many contestants function more as types than people—a sacrifice in service of the allegory.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 7.5, the world building is the show's crowning achievement. The game complex—a surreal, candy-colored hellscape of childhood innocence corrupted—creates immediate visual identity. The show extrapolates logically from its premise, building out the infrastructure of death games, the masked hierarchy, and the wealthy VIPs who bet on human lives. It asks: what would this actually look like? The answer is meticulously designed.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Earning an 8, the cinematography uses the jarring contrast between playground aesthetics and lethal stakes to create unforgettable imagery. Every frame is deliberate—the geometric perfection of the game halls, the pastel staircases, the red-green color scheme that becomes menacing through repetition. The camera finds both beauty and horror in the same composition.
 
 ### 4. Visual Spectacle (10%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 0.75**
 
-Analysis for Visual Spectacle dimension.
+With a score of 7.5, the show delivers genuine spectacle through its production design. The massive game environments, the synchronized violence of "Red Light, Green Light," the glass bridge stretching into infinity—these are images designed for impact. The visual imagination consistently surprises, finding ways to make childhood games feel operatic in scale and terrifying in execution.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7, the show explores its themes with clarity if not subtlety. The critique of capitalism—that the desperate poor compete for entertainment of the wealthy—is direct and effective. The show asks whether morality can survive extreme pressure, and whether redemption is possible for those who compromise. It's not the most nuanced social commentary, but it's coherent and emotionally resonant.
 
 ### 6. Narrative Drive (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Drive dimension.
+With a score of 9, the show is engineered for binge-watching. Each episode eliminates contestants, raises stakes, and introduces new psychological pressures. The game structure creates natural cliffhangers, and the mystery of who runs the games and why provides propulsive momentum across both seasons. It's rare to find a show that actually justifies Netflix's episode-rollover format—this one does.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Earning an 8, the first season provides satisfying revelations about the games' nature and Gi-hun's determination to stop them. The second season expands the world while maintaining tension. The story isn't complete—more is promised—but what's resolved lands effectively. The show manages to answer enough questions while preserving enough mystery to sustain interest across multiple seasons.
 
 ## Scoring Summary
 
