@@ -1,8 +1,17 @@
 # Borgen
 
-**Rank #59** | Drama, Political | 2010-2022 | DR1 / Netflix | 4 Seasons
+> *Borgen*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #67 |
+| **Score** | 7.45 |
+| **Year** | 2010 |
+| **Episodes** | 40 |
+| **Genres** | drama, political |
+| **TMDB ID** | 32057 |
 
 ## What It Feels Like to Watch
 
@@ -18,174 +27,69 @@ The fourth season, released nearly a decade later on Netflix, expands the scope 
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Netflix
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.4/10 | 45,000 |
-| Rotten Tomatoes | 93% | — |
-| Metacritic | 78/100 | — |
-
-*Data accessed 2026-02-15*
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
-**Strengths:**
-- **Birgitte Nyborg (Sidse Babett Knudsen)**: Magnificent performance. Knudsen conveys both competence and human cost of leadership.
-- **Kasper Juul (Pilou Asbæk)**: The spin doctor's moral compromises are compelling.
-- **Katrine Fønsmark (Birgitte Hjort Sørensen)**: Journalist provides conscience and investigation.
-- **Phillip Christensen (Mikael Birkkjær)**: Husband's journey grounds the political in personal.
-- **Ensemble depth**: The cabinet, press corps, and opposition all populated with distinct characters.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- Some secondary politicians blur together.
-- Later seasons dilute character focus.
+### 2. World Building (15%) — Score: 7
 
-**Why 8.5 not 9.0**: Exceptional central performance and strong supporting cast across multiple seasons.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.5
+### 3. Cinematography (10%) — Score: 7
 
-**Raw Score: 8.5 | Weighted: 1.275**
+**Raw Score: 7 | Weighted: 0.70**
 
-**Strengths:**
-- **Danish parliamentary system**: Accessible yet distinct political world.
-- **Coalition politics**: The negotiation and compromise feel authentic.
-- **Media landscape**: The press-politics relationship is vivid.
-- **International scope**: Expands beyond Denmark convincingly.
-- **Christiansborg as character**: The building itself takes on significance.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- Some viewers may find the Danish specifics less engaging.
-- Fourth season expansion loses focus.
+### 4. Visual Spectacle (10%) — Score: 5
 
-**Why 8.5**: Excellent political world-building accessible despite foreign setting.
+**Raw Score: 5 | Weighted: 0.50**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 7.5
+### 5. Conceptual Density (15%) — Score: 8
 
-**Raw Score: 7.5 | Weighted: 0.75**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Copenhagen locations**: The city is shot beautifully.
-- **Parliamentary framing**: The corridors and chambers have gravitas.
-- **Intimate close-ups**: Capture political conversations.
-- **Clean aesthetic**: Appropriate for political drama.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Occasionally conventional.
-- Less visually distinctive than some productions.
-- Dialogue heavy limits visual variety.
+### 6. Narrative Drive (15%) — Score: 8
 
-**Why 7.5**: Solid but workmanlike. Serves the material.
+**Raw Score: 8 | Weighted: 1.20**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.0
+### 7. Narrative Resolution (15%) — Score: 8
 
-**Raw Score: 7.0 | Weighted: 0.70**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Copenhagen locations**: Denmark looks good on camera.
-- **Production value**: Convincing government settings.
-- **International locations**: Some variety in later seasons.
-
-**Weaknesses:**
-- Intimate drama with limited spectacle.
-- Office and political settings dominate.
-
-**Why 7.0**: Appropriate restraint for political drama.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Political philosophy**: Explores duty, compromise, idealism.
-- **Representation**: First female PM provides gender commentary.
-- **Media and politics**: The relationship between power and press.
-- **Coalition mathematics**: How governments actually form.
-- **Personal cost**: What power does to individuals.
-
-**Weaknesses:**
-- Some issues handled more than others.
-- Occasional preachiness.
-
-**Why 8.5**: Dense with political insight and democratic theory.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Episodic cases**: Each episode addresses political challenge.
-- **Seasonal arcs**: Long-term stories develop satisfyingly.
-- **Political stakes**: Real consequences for decisions.
-- **Multi-thread plot**: Cabinet, press, personal life create momentum.
-
-**Weaknesses:**
-- Occasionally slow-paced.
-- Fourth season loses some narrative juice.
-
-**Why 8.0**: Solid storytelling but less propulsive than some dramas.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Seasonal closure**: Each season resolves satisfactorily.
-- **Character conclusions**: Major characters get closure across four seasons.
-- **Fourth season return**: Provides additional resolution decades later.
-- **Birgitte's journey**: Complete political arc.
-
-**Weaknesses:**
-- Fourth season feels somewhat disconnected.
-- Some threads from early seasons abandoned.
-
-**Why 8.0**: Satisfying across seasons with the bonus of later return.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 8.5 | 15% | 1.275 |
-| Cinematography | 7.5 | 10% | 0.75 |
-| Visual Spectacle | 7.0 | 10% | 0.70 |
-| Conceptual Density | 8.5 | 15% | 1.275 |
-| Narrative Drive | 8.0 | 15% | 1.20 |
-| Narrative Resolution | 8.0 | 15% | 1.20 |
-| **Base Score** | | | **7.30** |
-| **Episode Multiplier** | | 1.02 | +0.15 |
+| Characters & Acting | 8 | 20% | 1.60 |
+| World Building | 7 | 15% | 1.05 |
+| Cinematography | 7 | 10% | 0.70 |
+| Visual Spectacle | 5 | 10% | 0.50 |
+| Conceptual Density | 8 | 15% | 1.20 |
+| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Resolution | 8 | 15% | 1.20 |
 | **FINAL SCORE** | | | **7.45** |
 
 ---
 
-**Previous:** [24 (#58)](24.md) | **Next:** [Pose (#60)](pose.md)
+## Why It Ranks #67
+
+Borgen achieves a final score of 7.45 based on its performance across all seven dimensions.
 
 ---
 
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

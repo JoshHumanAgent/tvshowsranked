@@ -1,20 +1,17 @@
 # Watchmen (2019)
 
-> *"Nothing ever ends."*
+> *Watchmen (2019)*
 
 ## Overview
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #31 |
-| **Score** | 7.68 |
+| **Rank** | #73 |
+| **Score** | 7.38 |
 | **Year** | 2019 |
-| **Network** | HBO |
-| **Seasons** | 1 |
 | **Episodes** | 9 |
-| **Runtime** | 50-70 min |
-| **Genres** | Drama, Sci-Fi, Superhero, Crime |
-| **Creator** | Damon Lindelof |
+| **Genres** | drama, sci-fi, superhero |
+| **TMDB ID** | 79739 |
 
 ## What It Feels Like to Watch
 
@@ -36,187 +33,67 @@ The finale is divisive, but it sticks with you. It's the rare superhero story th
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 9.0
+### 1. Characters & Acting (20%) — Score: 7
 
-**Raw Score: 9.0 | Weighted: 1.80**
+**Raw Score: 7 | Weighted: 1.40**
 
-**Strengths:**
-- **Angela Abar/Sister Night (Regina King)**: An Emmy-winning performance. King brings ferocity, vulnerability, and moral complexity to a detective who must wear the mask while being herself.
-- **Cal Abar (Yahya Abdul-Mateen II)**: His character arc is one of the season's revelations. Abdul-Mateen navigates it with stunning precision.
-- **Adrian Veidt (Jeremy Irons)**: The man who was Ozymandias is now a prisoner of his own narrative. Irons is theatrical, strange, and magnetic.
-- **Laurie Blake (Jean Smart)**: The original Silk Spectre returns, older and cynical and still formidable. Smart is wonderful.
-- **Lady Trieu (Hong Chau)**: The mysterious billionaire provides philosophical depth and menace. Chau is excellent.
-- **Looking Glass (Tim Blake Nelson)**: The masked agent who believes truth is power. Nelson brings paranoia and pathos.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- Some supporting characters feel underdeveloped.
-- The sprawling cast means less time for depth.
-- Senator Keene feels somewhat one-dimensional.
+### 2. World Building (15%) — Score: 7.5
 
-**Why 9.0 and not 9.5**: Strong ensemble, but the limited season prevents full character exploration.
+**Raw Score: 7.5 | Weighted: 1.13**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 9.5
+### 3. Cinematography (10%) — Score: 7.5
 
-**Raw Score: 9.5 | Weighted: 1.425**
+**Raw Score: 7.5 | Weighted: 0.75**
 
-**Strengths:**
-- **Alternate America**: The Watchmen universe is fully realized—an America where Vietnam became the 51st state, where electric cars replaced combustion, where masked crime-fighters are regulated.
-- **Tulsa**: The specific setting is grounded in real history—the 1921 Tulsa Race Massacre gives the story weight.
-- **The Watchmen legacy**: References to the original comic are woven throughout without being heavy-handed.
-- **Alternate timeline**: The show imagines an America that diverged from ours decades ago.
-- **Cultural detail**: Every car, building, and advertisement fits the world.
-- **The police state**: The balance between masked crime-fighters and authoritarian policing is explored.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- Some elements remain mysterious—perhaps intentionally.
-- The world is so detailed it can feel overwhelming.
+### 4. Visual Spectacle (10%) — Score: 8
 
-**Why 9.5**: Extraordinary world-building that rivals the original material.
+**Raw Score: 8 | Weighted: 0.80**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 9.0
+### 5. Conceptual Density (15%) — Score: 7
 
-**Raw Score: 9.0 | Weighted: 0.90**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **Claire Mathon's eye**: The Leftovers cinematographer brings distinctive vision.
-- **Tulsa landscapes**: The Oklahoma setting is captured beautifully.
-- **Purple snow**: Visual hallucinations that serve the story.
-- **Period sequences**: The 1921 massacre is filmed with devastating beauty.
-- **Mars**: Brief glimpses of the red planet.
-- **Lighting**: Noir influences with modern polish.
-- **Visual poetry**: Every frame is composed with care.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Some sequences are more standard than others.
-- The visual density can be overwhelming.
+### 6. Narrative Drive (15%) — Score: 7
 
-**Why 9.0**: Gorgeous, distinctive cinematography that creates a unique visual language.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8.5
+### 7. Narrative Resolution (15%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Superhero action**: The fights are choreographed with impact.
-- **The opening**: The Tulsa massacre recreation is devastating and powerful.
-- **Squid rain**: Strange, beautiful, original.
-- **The funeral**: Episode 3's sequence is visceral.
-- **Mars sequences**: Brief but visually striking.
-- **Final confrontation**: The finale provides spectacle.
-- **Practical effects**: The squid, explosions—impressive for television.
-
-**Weaknesses:**
-- Limited action compared to superhero films.
-- Some CGI noticeable.
-
-**Why 8.5 and not 9.0**: Strong spectacle that serves the story.
-
----
-
-### 5. Conceptual Density (15%) — Score: 9.5
-
-**Raw Score: 9.5 | Weighted: 1.425**
-
-**Strengths:**
-- **American racism**: The show engages with the Tulsa race massacre and contemporary racial violence.
-- **Police and violence**: What does it mean for state actors to wear masks?
-- **Legacy**: How do we reckon with our past?
-- **Justice and revenge**: When does justice become something else?
-- **Heroes and monsters**: Who are the heroes? Who are the villains?
-- **The American Dream**: The show dismantles the myth.
-- **Identity and masks**: Who are we when we hide?
-- **Historical amnesia**: What do we choose to forget?
-
-**Weaknesses:**
-- The density can be overwhelming for viewers.
-- Some concepts are introduced but not fully explored.
-
-**Why 9.5 and not 10.0**: One of the most intellectually challenging superhero stories.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Mystery unraveling**: The central mystery keeps momentum.
-- **Angela's journey**: Her arc provides clear motivation.
-- **Multiple timelines**: The structure weaves past and present.
-- **Escalation**: Stakes rise as conspiracies unfold.
-- **Episode 6**: The centerpiece episode provides massive momentum.
-
-**Weaknesses:**
-- Slow start—the first two episodes feel like setup.
-- Some detours (the Veidt subplot) slow momentum.
-- The finale feels somewhat rushed.
-
-**Why 8.0**: Strong mystery momentum, though pacing varies.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Season finale**: Provides answers to the central mystery.
-- **Angela's arc**: Reaches a satisfying endpoint.
-- **Thematic completion**: The themes are brought home powerfully.
-- **Character endings**: Major characters get appropriate conclusions.
-- **Open questions**: Some ambiguity serves the material.
-
-**Weaknesses:**
-- **Divisive ending**: The finale drew mixed reactions.
-- **Unresolved threads**: Several plot threads are left hanging.
-- **Veidt's fate**: Feels somewhat rushed.
-- **Only one season**: No continuation of the story.
-
-**Why 7.5 and not 8.0**: The resolution is strong but not fully satisfying.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 9.0 | 20% | 1.80 |
-| World Building | 9.5 | 15% | 1.425 |
-| Cinematography | 9.0 | 10% | 0.90 |
-| Visual Spectacle | 8.5 | 10% | 0.85 |
-| Conceptual Density | 9.5 | 15% | 1.425 |
-| Narrative Drive | 8.0 | 15% | 1.20 |
-| Narrative Resolution | 7.5 | 15% | 1.125 |
-| **Base Score** | | | **7.925** |
-| **Episode Multiplier** | | 0.97 | -0.245 |
-| **FINAL SCORE** | | | **7.68** |
+| Characters & Acting | 7 | 20% | 1.40 |
+| World Building | 7.5 | 15% | 1.13 |
+| Cinematography | 7.5 | 10% | 0.75 |
+| Visual Spectacle | 8 | 10% | 0.80 |
+| Conceptual Density | 7 | 15% | 1.05 |
+| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Resolution | 8 | 15% | 1.20 |
+| **FINAL SCORE** | | | **7.38** |
 
 ---
 
-## External Ratings
+## Why It Ranks #73
 
-| Source | Score | Scale |
-|--------|-------|-------|
-| IMDb | 8.2 | 10 |
-| Rotten Tomatoes | 96% | 100 |
-| Metacritic | 85 | 100 |
+Watchmen (2019) achieves a final score of 7.38 based on its performance across all seven dimensions.
 
 ---
 
-## Why It Ranks #31
-
-Watchmen is extraordinary television that achieves something rare: a superhero story with genuine intellectual ambition. The world-building is peerless—an alternate America that feels both familiar and deeply strange. The concepts are dense: race, power, history, masks, and identity are all explored with genuine depth. This is what prestige superhero television looks like.
-
-However, the narrative resolution is divisive, and the limited season means the story can't fully explore all its threads. Additionally, while the acting is strong, the rotating focus and limited runtime prevent the kind of character depth achieved by longer series.
-
-For viewers seeking superhero narratives that engage with real history and social issues, Watchmen is essential. It proves that genre fiction can be both entertaining and intellectually challenging—and that sometimes the cape is just a costume.
-
----
-
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

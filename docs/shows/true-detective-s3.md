@@ -1,8 +1,17 @@
 # True Detective S3
 
-**Rank #96** | Crime, Mystery, Thriller | 2019 | HBO | 1 Season
+> *True Detective S3*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #78 |
+| **Score** | 7.32 |
+| **Year** | 2019 |
+| **Episodes** | 8 |
+| **Genres** | crime, mystery, thriller |
+| **TMDB ID** | 46648 |
 
 ## What It Feels Like to Watch
 
@@ -18,185 +27,69 @@ This is a show about memory, time, and the weight of unresolved trauma. It's not
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Max
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 7.9/10 | 75,000 |
-| Rotten Tomatoes | 86% | — |
-| Metacritic | 72/100 | — |
-
-*Data accessed 2026-02-15*
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 7.5
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 7.5 | Weighted: 1.50**
 
-**Strengths:**
-- **Wayne Hays (Mahershala Ali)**: Ali's performance is extraordinary—layered, nuanced, and deeply moving. He makes Wayne's memory loss feel authentic.
-- **Roland West (Carmen Ejogo)**: Ejogo brings depth to the detective partner.
-- **Amelia Reardon (Scoot McNairy)**: The wife who writes about the case provides emotional grounding.
-- **Three timelines**: Ali navigates Wayne at different ages with subtlety.
-- **Supporting cast**: Strong performances throughout.
-
-**Weaknesses:**
-- **Some side characters**: Feel less developed than the leads.
-- **The children**: Not all family members are equally compelling.
-
-**Why 8.5**: Ali carries the season magnificently—truly great acting.
-
----
+Analysis for Characters & Acting dimension.
 
 ### 2. World Building (15%) — Score: 7.5
 
-**Raw Score: 7.5 | Weighted: 1.125**
+**Raw Score: 7.5 | Weighted: 1.13**
 
-**Strengths:**
-- **1980s Arkansas**: The period setting is well-rendered.
-- **The Ozarks**: The rural setting provides atmosphere.
-- **Three timelines**: 1980, 1990, 2015—each era feels distinct.
-- **The case's reach**: Shows how the mystery affects a community.
+Analysis for World Building dimension.
 
-**Weaknesses:**
-- **Limited scope**: The world feels smaller than True Detective Season 1.
-- Less atmospheric than the Louisiana setting.
+### 3. Cinematography (10%) — Score: 8
 
-**Why 7.5**: Solid period world-building, but not as distinctive as Season 1.
+**Raw Score: 8 | Weighted: 0.80**
 
----
+Analysis for Cinematography dimension.
 
-### 3. Cinematography (10%) — Score: 8.0
+### 4. Visual Spectacle (10%) — Score: 6
 
-**Raw Score: 8.0 | Weighted: 0.80**
+**Raw Score: 6 | Weighted: 0.60**
 
-**Strengths:**
-- **Three timelines**: Visual distinctions between eras.
-- **The Ozarks**: Captures the rural landscape beautifully.
-- **Dark atmosphere**: The noir aesthetic is well-executed.
-- **Memory sequences**: Wayne's memory loss is visually represented.
+Analysis for Visual Spectacle dimension.
 
-**Weaknesses:**
-- Not as visually distinctive as Season 1.
-- Some sequences feel more standard.
+### 5. Conceptual Density (15%) — Score: 7
 
-**Why 8.0**: Strong visual storytelling, though not groundbreaking.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for Conceptual Density dimension.
 
-### 4. Visual Spectacle (10%) — Score: 6.5
+### 6. Narrative Drive (15%) — Score: 7
 
-**Raw Score: 6.5 | Weighted: 0.65**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **Action sequences**: The confrontation with the perpetrator is intense.
-- **Period vehicles and settings**: The time periods are distinct.
+Analysis for Narrative Drive dimension.
 
-**Weaknesses:**
-- **Limited spectacle**: Not an action-driven show.
-- Minimal set pieces.
-- Focus is on character, not visuals.
+### 7. Narrative Resolution (15%) — Score: 8
 
-**Why 6.5**: Low spectacle by design—character-driven rather than visual.
+**Raw Score: 8 | Weighted: 1.20**
 
----
-
-### 5. Conceptual Density (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Memory and time**: Explores how memory shapes identity.
-- **The nature of truth**: What do we really remember?
-- **Unresolved trauma**: Wayne's guilt and its long-term effects.
-- **Race**: Subtly explores race in the South.
-- **The cost of obsession**: How the case haunts Wayne across decades.
-
-**Weaknesses:**
-- Less philosophical depth than Season 1.
-- Some themes could be explored more deeply.
-
-**Why 8.0**: Thoughtful themes about memory and identity.
-
----
-
-### 6. Narrative Drive (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Three timelines**: The structure creates constant forward motion.
-- **The mystery**: The case hooks you from the start.
-- **Tension**: Wayne's memory loss adds urgency.
-- **Pacing**: Generally well-paced for its length.
-
-**Weaknesses:**
-- **Middle episodes**: Some sag in the middle.
-- **The reveal**: Not as shocking as Season 1's twists.
-
-**Why 7.5**: Solid mystery structure, though not as propulsive as the best.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 7.0
-
-**Raw Score: 7.0 | Weighted: 1.05**
-
-**Strengths:**
-- **The case resolution**: The mystery is solved satisfactorily.
-- **Wayne's arc**: His journey reaches an emotional conclusion.
-- **The finale**: Some found it moving.
-- **Memory theme**: The ending ties into memory thoughtfully.
-
-**Weaknesses:**
-- **The finale**: Some found it understated.
-- **Roland's arc**: Could use more resolution.
-- **Not transcendent**: Doesn't reach the heights of Season 1's ending.
-
-**Why 7.0**: Satisfying conclusion, though not extraordinary.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 7.5 | 15% | 1.125 |
-| Cinematography | 8.0 | 10% | 0.80 |
-| Visual Spectacle | 6.5 | 10% | 0.65 |
-| Conceptual Density | 8.0 | 15% | 1.20 |
-| Narrative Drive | 7.5 | 15% | 1.125 |
-| Narrative Resolution | 7.0 | 15% | 1.05 |
-| **Base Score** | | | **7.65** |
-| **Episode Multiplier** | | 0.91 | -0.69 |
-| **FINAL SCORE** | | | **6.96 → 6.97** |
+| Characters & Acting | 7.5 | 20% | 1.50 |
+| World Building | 7.5 | 15% | 1.13 |
+| Cinematography | 8 | 10% | 0.80 |
+| Visual Spectacle | 6 | 10% | 0.60 |
+| Conceptual Density | 7 | 15% | 1.05 |
+| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Resolution | 8 | 15% | 1.20 |
+| **FINAL SCORE** | | | **7.32** |
 
 ---
 
-## Why It Ranks #96
+## Why It Ranks #78
 
-- **Characters (8.5/10)**: Mahershala Ali's extraordinary performance
-- **World (7.5/10)**: Solid period Arkansas setting
-- **Cinematography (8.0/10)**: Strong noir atmosphere
-- **Spectacle (6.5/10)**: Character, not spectacle
-- **Concept (8.0/10)**: Memory and identity themes
-- **Drive (7.5/10)**: Engaging mystery structure
-- **Resolution (7.0/10)**: Satisfying, not transcendent
+True Detective S3 achieves a final score of 7.32 based on its performance across all seven dimensions.
 
 ---
 
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
-
----
-
-**Previous:** [Big Little Lies (#95)](big-little-lies.md) | **Next:** [The Marvelous Mrs. Maisel (#97)](the-marvelous-mrs-maisel.md)
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

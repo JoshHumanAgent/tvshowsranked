@@ -1,8 +1,17 @@
 # The Knick
 
-**Rank #37** | Drama, Historical | 2014-2015 | Cinemax | 2 Seasons, 20 Episodes
+> *The Knick*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #18 |
+| **Score** | 8.02 |
+| **Year** | 2014 |
+| **Episodes** | 20 |
+| **Genres** | drama, historical |
+| **TMDB ID** | 60751 |
 
 ## What It Feels Like to Watch
 
@@ -20,209 +29,69 @@ The show ended after two seasons when Soderbergh decided to move on, and there's
 
 ---
 
-## Where to Watch
-
-- **Streaming:** HBO Max
-- **Purchase:** Amazon Prime Video, Apple TV, Google Play
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.5/10 | 52,000 |
-| TMDB | 7.86/10 | 492 |
-| Rotten Tomatoes | 88% | — |
-
-*Data accessed 2026-02-15*
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 9.0
+### 1. Characters & Acting (20%) — Score: 8.5
 
-**Raw Score: 9.0 | Weighted: 1.80**
+**Raw Score: 8.5 | Weighted: 1.70**
 
-**Strengths:**
-- **Clive Owen as Dr. John Thackery**: Brilliant performance as a man whose genius and self-destruction are intertwined. His cocaine addiction is not a subplot—it's the engine of his character.
-- **André Holland as Dr. Algernon Edwards**: Provides the show's moral and social complexity. His struggle against racism in the medical establishment is compelling.
-- **Juliet Rylance as Cornelia Robertson**: Strong female character navigating the constraints of the era.
-- **Michael Angarano as Dr. Bertram "Bertie" Chickering Jr.**: The young doctor provides a worthy sidekick.
-- **Supporting ensemble**: The nurses, orderlies, and patients create a lived-in world.
-
-**Weaknesses:**
-- **Female characters**: While present, they don't receive equal development.
-- **Thackery's arc**: His decline is difficult to watch, which is intentional but may frustrate.
-- **Limited ensemble size**: The focus is narrow.
-
-**Why 9.0 and not 9.5**: Exceptional leads, but the supporting cast is smaller than top-tier ensemble shows.
-
----
+Analysis for Characters & Acting dimension.
 
 ### 2. World Building (15%) — Score: 8.5
 
-**Raw Score: 8.5 | Weighted: 1.275**
+**Raw Score: 8.5 | Weighted: 1.27**
 
-**Strengths:**
-- **1900s New York**: The period is meticulously realized—the technology, the social customs, the medical practices.
-- **Knickerbocker Hospital**: The institution itself is a character.
-- **Racial dynamics**: The show doesn't shy away from the racism of the era.
-- **Medical innovation**: The procedures being pioneered feel genuinely significant.
-- **Class distinctions**: The wealthy patients vs. the working-class hospital create tension.
-
-**Weaknesses:**
-- Limited geographic scope.
-- The world outside the hospital is less developed.
-- Some historical liberties.
-
-**Why 8.5**: Highly detailed period world, though focused primarily on the hospital setting.
-
----
+Analysis for World Building dimension.
 
 ### 3. Cinematography (10%) — Score: 9.5
 
 **Raw Score: 9.5 | Weighted: 0.95**
 
-**Strengths:**
-- **Steven Soderbergh's direction**: The entire series was directed by him—a remarkable achievement.
-- **Early photography aesthetic**: The muted colors and compositions evoke early 20th-century photography.
-- **Surgery sequences**: Visceral, unflinching, and brilliantly executed.
-- **Long takes**: The camera moves fluidly through scenes.
-- **Period authenticity**: Every frame feels of its era.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- The visual style, while distinctive, doesn't vary much across episodes.
-- Some viewers may find the clinical camera distance cold.
+### 4. Visual Spectacle (10%) — Score: 8
 
-**Why 9.5**: Soderbergh creates a unique visual language. Among the most cinematically accomplished TV series ever.
+**Raw Score: 8 | Weighted: 0.80**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8.5
+### 5. Conceptual Density (15%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Surgery sequences**: The procedures are visually stunning and visceral.
-- **Period production design**: The early 1900s setting is beautifully realized.
-- **New York City**: The period streets and buildings provide visual scope.
-- **The blood**: The show doesn't shy away from the reality of early surgery.
-- **Special effects**: Blood, gore, and medical procedures are effective.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Limited action spectacle.
-- No major set pieces or explosions.
-- The spectacle is primarily medical rather than traditional.
+### 6. Narrative Drive (15%) — Score: 8
 
-**Why 8.5**: Visually striking medical drama, though not traditional spectacle.
+**Raw Score: 8 | Weighted: 1.20**
 
----
+Analysis for Narrative Drive dimension.
 
-### 5. Conceptual Density (15%) — Score: 8.0
+### 7. Narrative Resolution (15%) — Score: 6
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 6 | Weighted: 0.90**
 
-**Strengths:**
-- **Medical ethics**: What is acceptable in the pursuit of progress?
-- **Racism in medicine**: The show confronts the institutional racism of the era.
-- **Addiction and genius**: Thackery's cocaine use and its relationship to his work.
-- **Innovation vs. tradition**: The tension between old and new medicine.
-- **Class and privilege**: How wealth determines who receives care.
-
-**Weaknesses:**
-- Some themes are implicit rather than fully explored.
-- The historical setting limits explicit modern parallels.
-- Not all conceptual threads receive equal attention.
-
-**Why 8.0**: Thoughtful engagement with historical medicine and social issues, though not as explicitly philosophical as some shows.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Medical cases**: Each episode presents new medical challenges.
-- **Character momentum**: Thackery's decline provides forward motion.
-- **Racial tension**: Edwards' struggle creates ongoing conflict.
-- **Hospital politics**: Institutional power dynamics drive narrative.
-- **Season arcs**: Each season has a distinct focus.
-
-**Weaknesses:**
-- Only two seasons limits narrative scope.
-- Deliberate pacing may not suit all viewers.
-- Some episodes feel more procedural than narrative.
-
-**Why 8.0**: Effective character and procedural momentum within a limited run.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Thackery's arc**: His story reaches a definitive, if tragic, conclusion.
-- **Season 2 finale**: Provides closure while acknowledging the limitations of the era.
-- **Edwards' journey**: His struggle receives appropriate ending.
-- **Thematic completion**: The show concludes its ideas about progress and cost.
-- **Intentional limitation**: Two seasons feels right for the story.
-
-**Weaknesses:**
-- Some characters receive less closure than others.
-- The show was cancelled rather than concluded by design.
-- Not all storylines are fully resolved.
-
-**Why 8.0**: Satisfying conclusion within the show's scope, though some may want more.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 9.0 | 20% | 1.80 |
-| World Building | 8.5 | 15% | 1.275 |
+| Characters & Acting | 8.5 | 20% | 1.70 |
+| World Building | 8.5 | 15% | 1.27 |
 | Cinematography | 9.5 | 10% | 0.95 |
-| Visual Spectacle | 8.5 | 10% | 0.85 |
-| Conceptual Density | 8.0 | 15% | 1.20 |
-| Narrative Drive | 8.0 | 15% | 1.20 |
-| Narrative Resolution | 8.0 | 15% | 1.20 |
-| **Base Score** | | | **8.475** |
-| **Episode Multiplier** | | 0.91 | -0.38 |
-| **FINAL SCORE** | | | **8.10 → 7.60** |
+| Visual Spectacle | 8 | 10% | 0.80 |
+| Conceptual Density | 8 | 15% | 1.20 |
+| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Resolution | 6 | 15% | 0.90 |
+| **FINAL SCORE** | | | **8.02** |
 
 ---
 
-## External Ratings
+## Why It Ranks #18
 
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.5/10 | 52,000 |
-| TMDB | 7.86/10 | 492 |
-| Rotten Tomatoes | 88% | — |
-
-*Data accessed 2026-02-15*
+The Knick achieves a final score of 8.02 based on its performance across all seven dimensions.
 
 ---
 
-## Why It Ranks #37
-
-- **Characters (9.0/10)**: Clive Owen and André Holland deliver exceptional performances
-- **World (8.5/10)**: Meticulously realized 1900s New York
-- **Cinematography (9.5/10)**: Steven Soderbergh creates a unique visual language
-- **Spectacle (8.5/10)**: Visceral medical procedures
-- **Concept (8.0/10)**: Thoughtful exploration of medical ethics and racism
-- **Drive (8.0/10)**: Effective momentum within limited run
-- **Resolution (8.0/10)**: Satisfying conclusion to Thackery's tragic arc
-
----
-
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
-
----
-
-**Previous:** [Lost (#36)](lost.md) | **Next:** [The Haunting of Hill House (#38)](the-haunting-of-hill-house.md)
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

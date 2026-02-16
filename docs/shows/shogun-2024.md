@@ -1,8 +1,17 @@
-# Shōgun (2024)
+# Shogun (2024)
 
-**Rank #53** | Drama, Historical, Action | 2024 | FX | 1+ Season
+> *Shogun (2024)*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #22 |
+| **Score** | 7.98 |
+| **Year** | 2024 |
+| **Episodes** | 10 |
+| **Genres** | drama, historical, action |
+| **TMDB ID** | 126308 |
 
 ## What It Feels Like to Watch
 
@@ -24,171 +33,69 @@ The series asks what it means to be loyal, what it means to be civilized, and wh
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Hulu, Disney+
-- **Purchase:** Amazon Prime Video, Apple TV
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.6/10 | 95,000 |
-| TMDB | 8.44/10 | 1,621 |
-| Rotten Tomatoes | 99% | — |
-
-*Data accessed 2026-02-15*
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
-**Strengths:**
-- **Lord Yoshii Toranaga (Hiroyuki Sanada)**: A masterclass in controlled power. Sanada communicates entire philosophies through stillness and silence. His political maneuvering is compelling to watch.
-- **John Blackthorne (Cosmo Jarvis)**: The "barbarian" undergoes genuine transformation. Jarvis makes the character's cultural dislocation feel authentic.
-- **Lady Mariko (Anna Sawai)**: The most complex character—caught between Christian faith, samurai duty, and personal desire. Sawai delivers a career-defining performance.
-- **Frequent use of Japanese**: The show's commitment to authenticity elevates every performance.
-- **Supporting daimyo**: Each regent has distinct motivations and personality.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- Some secondary characters remain somewhat one-dimensional.
-- Blackthorne's initial brashness can be grating.
+### 2. World Building (15%) — Score: 9
 
-**Why 8.5 not 9.0**: Excellent performances but not quite the ensemble depth of multi-season dramas. Limited time prevents full character development beyond the central trio.
+**Raw Score: 9 | Weighted: 1.35**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.0
+### 3. Cinematography (10%) — Score: 9
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 9 | Weighted: 0.90**
 
-**Strengths:**
-- **Feudal Japan immersion**: The 1600s setting feels fully realized—customs, hierarchy, religious tensions.
-- **Cultural authenticity**: Christian presence, Portuguese Jesuits, English sailors all depicted with nuance.
-- **Political complexity**: The Council of Regents creates genuine intrigue.
-- **Physical environments**: Castles, villages, and landscapes feel authentic and lived-in.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- Limited scope—mostly focuses on political centers.
-- Some Western perspectives still seep through.
+### 4. Visual Spectacle (10%) — Score: 9
 
-**Why 8.0**: Excellent historical recreation but not as expansive as fantasy worlds or modern urban settings with multiple layers.
+**Raw Score: 9 | Weighted: 0.90**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.5
+### 5. Conceptual Density (15%) — Score: 7
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **Stunning landscapes**: Japanese locations provide breathtaking backdrops.
-- **Strategic framing**: Conversations are blocked like chess games.
-- **Color palette**: Muted tones enhance the historical feel.
-- **Action choreography**: Battle sequences are tactical rather than chaotic.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Occasionally conventional in shot selection.
-- Limited visual variety compared to more stylized series.
+### 6. Narrative Drive (15%) — Score: 7.5
 
-**Why 8.5**: Consistently beautiful but not as distinctive as the most iconic cinematographic work.
+**Raw Score: 7.5 | Weighted: 1.13**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8.0
+### 7. Narrative Resolution (15%) — Score: 7
 
-**Raw Score: 8.0 | Weighted: 0.80**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **Costume design**: Period-accurate garb is intricate and beautiful.
-- **Castle productions**: The sets are impressive and atmospheric.
-- **Battle sequences**: Naval engagements and land battles are well-executed.
-- **Overall production value**: High budget evident in every frame.
-
-**Weaknesses:**
-- Not an action-heavy show—spectacle takes a backseat to dialogue.
-- Limited large-scale battles compared to war dramas.
-
-**Why 8.0**: Spectacle serves the story. Appropriate restraint for a political drama.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Loyalty as theme**: Explores what loyalty means when all sides claim it.
-- **East-West tension**: Genuine engagement with cultural differences.
-- **Honor and survival**: Questions whether codes of honor serve or constrain.
-- **Power dynamics**: Shows how realpolitik works in practice.
-
-**Weaknesses:**
-- Some thematic elements could be explored more deeply.
-- The Christian subplot feels somewhat underdeveloped.
-
-**Why 8.5**: Dense with political philosophy but not as intellectually challenging as the most complex dramas.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Political chess**: Each episode advances the power struggle.
-- **Character stakes**: Toranaga's survival is genuinely uncertain.
-- **Cultural tension**: Blackthorne's learning curve provides momentum.
-
-**Weaknesses:**
-- Slower pacing than typical prestige dramas.
-- Not as propulsive as thriller narratives.
-
-**Why 8.0**: Deliberate pacing may not suit all viewers. Rewards patience but lacks urgency.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Season finale**: Satisfying conclusions to immediate conflicts.
-- **Character arcs**: Toranaga's strategy comes to fruition.
-- **Setup for more**: Leaves room for continuation.
-
-**Weaknesses:**
-- Clearly designed for multiple seasons.
-- Some threads intentionally left open.
-
-**Why 7.5**: Incomplete story by design. Appropriate for ongoing narrative but reduces closure satisfaction.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 8.0 | 15% | 1.20 |
-| Cinematography | 8.5 | 10% | 0.85 |
-| Visual Spectacle | 8.0 | 10% | 0.80 |
-| Conceptual Density | 8.5 | 15% | 1.275 |
-| Narrative Drive | 8.0 | 15% | 1.20 |
-| Narrative Resolution | 7.5 | 15% | 1.125 |
-| **Base Score** | | | **7.17** |
-| **Episode Multiplier** | | 1.04 | +0.31 |
-| **FINAL SCORE** | | | **7.48** |
+| Characters & Acting | 8 | 20% | 1.60 |
+| World Building | 9 | 15% | 1.35 |
+| Cinematography | 9 | 10% | 0.90 |
+| Visual Spectacle | 9 | 10% | 0.90 |
+| Conceptual Density | 7 | 15% | 1.05 |
+| Narrative Drive | 7.5 | 15% | 1.13 |
+| Narrative Resolution | 7 | 15% | 1.05 |
+| **FINAL SCORE** | | | **7.98** |
 
 ---
 
-**Previous:** [Severance (#52)](severance.md) | **Next:** [Sharp Objects (#54)](sharp-objects.md)
+## Why It Ranks #22
+
+Shogun (2024) achieves a final score of 7.98 based on its performance across all seven dimensions.
 
 ---
 
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

@@ -1,8 +1,17 @@
 # Patrick Melrose
 
-**Rank #55** | Drama | 2018 | Showtime | 1 Season, 5 Episodes
+> *Patrick Melrose*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #44 |
+| **Score** | 7.75 |
+| **Year** | 2018 |
+| **Episodes** | 5 |
+| **Genres** | drama |
+| **TMDB ID** | 78818 |
 
 ## What It Feels Like to Watch
 
@@ -20,173 +29,69 @@ The final episode, "At Last," offers no fairy-tale redemption. Just a man learni
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Showtime, Paramount+
-- **Purchase:** Amazon Prime Video, Apple TV
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.1/10 | 20,000 |
-| TMDB | 7.56/10 | 305 |
-| Rotten Tomatoes | 92% | — |
-
-*Data accessed 2026-02-15*
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 9.0
+### 1. Characters & Acting (20%) — Score: 8.5
 
-**Raw Score: 9.0 | Weighted: 1.80**
+**Raw Score: 8.5 | Weighted: 1.70**
 
-**Strengths:**
-- **Patrick Melrose (Benedict Cumberbatch)**: Career-defining performance. Cumberbatch captures addiction's desperation and charm simultaneously.
-- **David Melrose (Hugo Weaving)**: Terrifying in his casual cruelty. Weaving makes the father monster-like yet believably human.
-- **Eleanor Melrose (Jennifer Jason Leigh)**: Equally chilling as the emotionally absent mother.
-- **Johnny (Parker Sawyers)**: Patrick's friend provides grounded perspective.
-- **Emotional range**: From comedic self-destruction to devastating vulnerability.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- Limited time (5 episodes) prevents deeper supporting character development.
-- Some characters exist primarily in Patrick's memories.
+### 2. World Building (15%) — Score: 7
 
-**Why 9.0 not 9.5**: Exceptional leads but limited ensemble compared to longer series.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 7.5
+### 3. Cinematography (10%) — Score: 8
 
-**Raw Score: 7.5 | Weighted: 1.125**
+**Raw Score: 8 | Weighted: 0.80**
 
-**Strengths:**
-- **British upper class**: Captures the specific atmosphere of privilege and decay.
-- **Locations**: From New York to Nice to London, each setting feels distinct.
-- **Time periods**: Different eras are convincingly recreated.
-- **Recovery settings**: Detox and therapy environments feel authentic.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- Limited scope—focuses on Patrick's personal world.
-- Single-season limits world expansion.
+### 4. Visual Spectacle (10%) — Score: 6
 
-**Why 7.5**: Sufficient world to support the story but not expansive.
+**Raw Score: 6 | Weighted: 0.60**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.5
+### 5. Conceptual Density (15%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Visual variety**: Each episode has distinct visual palette appropriate to its time period.
-- **Intimate framing**: Close-ups capture nuanced performances.
-- **Transition techniques**: Smooth movement between time periods.
-- **European locations**: Nice and London are shot beautifully.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Not as visually distinctive as some prestige productions.
-- Limited visual experimentation.
+### 6. Narrative Drive (15%) — Score: 7
 
-**Why 8.5**: Solid craft that serves the material.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.0
+### 7. Narrative Resolution (15%) — Score: 9
 
-**Raw Score: 7.0 | Weighted: 0.70**
+**Raw Score: 9 | Weighted: 1.35**
 
-**Strengths:**
-- **Production design**: Period-accurate settings and costumes.
-- **European locations**: Nice provides beautiful backdrops.
-- **High society events**: Certain scenes showcase elegant environments.
-
-**Weaknesses:**
-- Intimate drama with limited spectacle opportunities.
-- No action or large-scale sequences.
-
-**Why 7.0**: Visual restraint appropriate for subject matter.
-
----
-
-### 5. Conceptual Density (15%) — Score: 9.0
-
-**Raw Score: 9.0 | Weighted: 1.35**
-
-**Strengths:**
-- **Addiction psychology**: Deep exploration of why people destroy themselves.
-- **Class critique**: Shows how privilege becomes its own prison.
-- **Intergenerational trauma**: How abuse passes from parent to child.
-- **Recovery philosophy**: The final episode offers genuine insight into healing.
-- **Dark humor**: Uses comedy to illuminate tragedy.
-
-**Weaknesses:**
-- May feel bleak without payoff for some viewers.
-- Limited scope beyond Patrick's personal journey.
-
-**Why 9.0**: Dense with psychological and social insight.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Chronological jumps**: Keep the story dynamic.
-- **Escalating revelations**: Each episode reveals more of Patrick's trauma.
-- **Emotional momentum**: Builds toward final episode's catharsis.
-- **Episode variety**: Each has distinct structure and challenge.
-
-**Weaknesses:**
-- Limited episodes (5) prevents deeper development.
-- Some may find pacing uneven.
-
-**Why 8.0**: Compact but effective storytelling.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Finale "At Last"**: Provides genuine emotional payoff.
-- **Patrick's progress**: Shows real (if incomplete) healing.
-- **No false redemption**: Earned rather than easy resolution.
-- **Cycle awareness**: Acknowledges ongoing struggle.
-
-**Weaknesses:**
-- Some threads remain unresolved (intentionally).
-- Open-ended regarding Patrick's future.
-
-**Why 8.0**: Satisfying conclusion to Patrick's immediate journey.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 9.0 | 20% | 1.80 |
-| World Building | 7.5 | 15% | 1.125 |
-| Cinematography | 8.5 | 10% | 0.85 |
-| Visual Spectacle | 7.0 | 10% | 0.70 |
-| Conceptual Density | 9.0 | 15% | 1.35 |
-| Narrative Drive | 8.0 | 15% | 1.20 |
-| Narrative Resolution | 8.0 | 15% | 1.20 |
-| **Base Score** | | | **7.29** |
-| **Episode Multiplier** | | 1.02 | +0.18 |
-| **FINAL SCORE** | | | **7.47** |
+| Characters & Acting | 8.5 | 20% | 1.70 |
+| World Building | 7 | 15% | 1.05 |
+| Cinematography | 8 | 10% | 0.80 |
+| Visual Spectacle | 6 | 10% | 0.60 |
+| Conceptual Density | 8 | 15% | 1.20 |
+| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Resolution | 9 | 15% | 1.35 |
+| **FINAL SCORE** | | | **7.75** |
 
 ---
 
-**Previous:** [Sharp Objects (#54)](sharp-objects.md) | **Next:** [Generation Kill (#56)](generation-kill.md)
+## Why It Ranks #44
+
+Patrick Melrose achieves a final score of 7.75 based on its performance across all seven dimensions.
 
 ---
 
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

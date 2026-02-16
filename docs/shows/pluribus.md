@@ -1,183 +1,87 @@
 # Pluribus
 
-> *"The most dangerous person is one who has nothing to lose."*
+> *Pluribus*
 
 ## Overview
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #41 |
-| **Year** | 2023 |
-| **Network** | The Pup |
-| **Seasons** | 1 |
-| **Episodes** | 6 |
-| **Runtime** | 45-55 min |
-| **Genres** | Drama, Thriller, Political |
-| **Creator** | Steven L. Katz |
+| **Rank** | #25 |
+| **Score** | 7.90 |
+| **Year** | 2025 |
+| **Episodes** | 10 |
+| **Genres** | drama, thriller, sci-fi |
+| **TMDB ID** | 257474 |
 
 ## What It Feels Like to Watch
 
-Pluribus is a political thriller that gets inside the machinery of American politics. When a senator is handed a laptop containing evidence of a global conspiracy, he must decide what he's willing to sacrifice for truth.
-
-You watch Pluribus and feel the weight of power. The series explores how difficult it is to do the right thing when the system is rigged against you. The conspirators are smart, connected, and ruthless.
-
-The limited series format works well—six episodes that move efficiently from setup to climax. It's a contained story with big ideas about democracy, corruption, and individual agency.
+Pluribus is a drama/thriller/sci-fi series that delivers compelling television across 10 episodes.
 
 ---
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 7.5
+### 1. Characters & Acting (20%) — Score: 8.5
 
-**Raw Score: 7.5 | Weighted: 1.50**
+**Raw Score: 8.5 | Weighted: 1.70**
 
-**Strengths:**
-- **The Senator**: A compelling protagonist who must choose between truth and survival. His moral struggle drives the series.
-- **The Conspirators**: Smart, connected, and ruthless—formidable antagonists.
-- **Political staff**: Supporting characters add grounding to the political world.
-- **Acting quality**: Strong performances throughout the limited series.
-
-**Weaknesses:**
-- Limited time prevents deep character development.
-- Supporting characters somewhat generic.
-- Love interest subplot feels obligatory.
-
-**Why 7.5 not 8.0**: Good for a limited series, but characters lack the depth of longer-running shows.
-
----
+Analysis for Characters & Acting dimension.
 
 ### 2. World Building (15%) — Score: 7.5
 
-**Raw Score: 7.5 | Weighted: 1.125**
+**Raw Score: 7.5 | Weighted: 1.13**
 
-**Strengths:**
-- **Political machinery**: Shows how power actually works in Washington.
-- **Conspiracy realism**: The threat feels grounded, not cartoonish.
-- **Institutional details**: Congressional offices, back rooms, power brokering.
+Analysis for World Building dimension.
 
-**Weaknesses:**
-- Limited scope due to 6-episode format.
-- The conspiracy's global reach is asserted rather than shown.
+### 3. Cinematography (10%) — Score: 8.5
 
-**Why 7.5**: Effective political world-building within narrow constraints.
+**Raw Score: 8.5 | Weighted: 0.85**
 
----
+Analysis for Cinematography dimension.
 
-### 3. Cinematography (10%) — Score: 7.5
+### 4. Visual Spectacle (10%) — Score: 7
 
-**Raw Score: 7.5 | Weighted: 0.75**
+**Raw Score: 7 | Weighted: 0.70**
 
-**Strengths:**
-- **Political spaces**: Capitol buildings, offices shot with appropriate gravitas.
-- **Tension shots**: Close-ups during key decisions.
-- **Washington DC locations**: Authentic sense of place.
+Analysis for Visual Spectacle dimension.
 
-**Weaknesses:**
-- Functional rather than artistic.
-- Limited visual ambition.
+### 5. Conceptual Density (15%) — Score: 9
 
-**Why 7.5**: Professional, competent workmanlike cinematography.
+**Raw Score: 9 | Weighted: 1.35**
 
----
+Analysis for Conceptual Density dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.0
+### 6. Narrative Drive (15%) — Score: 8.5
 
-**Raw Score: 7.0 | Weighted: 0.70**
+**Raw Score: 8.5 | Weighted: 1.27**
 
-**Strengths:**
-- **Political rallies**: Visually energetic.
-- **Montage sequences**: Effective for conveying information quickly.
+Analysis for Narrative Drive dimension.
 
-**Weaknesses:**
-- Not a spectacle-driven show.
-- Limited action or visual set pieces.
+### 7. Narrative Resolution (15%) — Score: 6
 
-**Why 7.0**: A talky political thriller. Spectacle isn't the priority.
+**Raw Score: 6 | Weighted: 0.90**
 
----
-
-### 5. Conceptual Density (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Democracy vs. conspiracy**: What does truth cost?
-- **Individual agency**: Can one person matter against systemic power?
-- **Journalistic ethics**: The show wrestles with media complicity.
-- **Political realism**: Rarely does idealism triumph completely.
-
-**Weaknesses:**
-- Some themes implicit rather than explored.
-- Limited time prevents deep philosophical dives.
-
-**Why 8.0**: Thought-provoking questions about power and truth.
-
----
-
-### 6. Narrative Drive (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Efficient pacing**: Six episodes keep things moving.
-- **The laptop mystery**: Central MacGuffin drives tension.
-- **Escalation**: Stakes build from personal to systemic.
-
-**Weaknesses:**
-- Some middle-episode sag.
-- Certain plot contrivances strain credibility.
-
-**Why 7.5**: A tight thriller that mostly earns its momentum.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Ambiguous ending**: Avoids tidy Hollywood resolution.
-- **Cost of truth**: The senator pays a real price.
-
-**Weaknesses:**
-- **Ambiguous ending**: Too many threads left unresolved.
-- Some plot points abandoned rather than concluded.
-
-**Why 7.5**: Intentionally incomplete—but incomplete nonetheless.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 7.5 | 20% | 1.50 |
-| World Building | 7.5 | 15% | 1.125 |
-| Cinematography | 7.5 | 10% | 0.75 |
-| Visual Spectacle | 7.0 | 10% | 0.70 |
-| Conceptual Density | 8.0 | 15% | 1.20 |
-| Narrative Drive | 7.5 | 15% | 1.125 |
-| Narrative Resolution | 7.5 | 15% | 1.125 |
-| **Base Score** | | | **7.50** |
-| **Episode Multiplier** | | 1.01 | +0.08 |
-| **FINAL SCORE** | | | **7.58** |
+| Characters & Acting | 8.5 | 20% | 1.70 |
+| World Building | 7.5 | 15% | 1.13 |
+| Cinematography | 8.5 | 10% | 0.85 |
+| Visual Spectacle | 7 | 10% | 0.70 |
+| Conceptual Density | 9 | 15% | 1.35 |
+| Narrative Drive | 8.5 | 15% | 1.27 |
+| Narrative Resolution | 6 | 15% | 0.90 |
+| **FINAL SCORE** | | | **7.90** |
 
 ---
 
-## External Ratings
+## Why It Ranks #25
 
-| Source | Score | Scale |
-|--------|-------|-------|
-| IMDb | 8.1 | 10 |
-| Rotten Tomatoes | 92% | 100 |
-| Metacritic | 78 | 100 |
-
-## Why It Ranks #66
-
-- **Characters (8.5/10)**: Strong political leads.
-- **Conceptual Density (9/10)**: Explores conspiracy and power.
-- **Resolution (6/10)**: Ambiguous ending.
+Pluribus achieves a final score of 7.90 based on its performance across all seven dimensions.
 
 ---
 
-*Ranked on: 2026-02-15*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

@@ -1,8 +1,17 @@
 # Twin Peaks
 
-**Rank #90** | Mystery, Drama, Thriller | 1990-1991 | ABC | 2 Seasons
+> *Twin Peaks*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #75 |
+| **Score** | 7.35 |
+| **Year** | 1990 |
+| **Episodes** | 30 |
+| **Genres** | mystery, drama, thriller |
+| **TMDB ID** | 1964 |
 
 ## What It Feels Like to Watch
 
@@ -20,178 +29,67 @@ The original series was canceled after two seasons, but it spawned a film (*Twin
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 7.5
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 7.5 | Weighted: 1.50**
 
-**Strengths:**
-- **Agent Dale Cooper (Kyle MacLachlan)**: Iconic performance—combines noir detective tropes with surreal curiosity. MacLachlan's range is remarkable.
-- **Laura Palmer (Sheryl Lee)**: Haunting dual role—both victim and spectral presence.
-- **Sheriff Harry S. Truman (Michael Ontkean)**: Grounded, trustworthy anchor to reality.
-- **The Log Lady (Catherine Coulson)**: Unforgettable mystic deliverer of cryptic wisdom.
-- **Leland Palmer (Ray Wise)**: Devastating portrayal of possession and corruption.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- Some supporting characters feel more like archetypes than fully developed people.
-- Second season introduces characters who don't get full development.
+### 2. World Building (15%) — Score: 8
 
-**Why 8.5 and not 9.0**: Legendary lead performance and memorable ensemble, but the format limits deep development for everyone.
+**Raw Score: 8 | Weighted: 1.20**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.0
+### 3. Cinematography (10%) — Score: 8
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 8 | Weighted: 0.80**
 
-**Strengths:**
-- **Twin Peaks as character**: The town itself feels mysterious, secrets in every corner.
-- **Black Lodge mythology**: Introduces supernatural dimension that expands the world.
-- **Twin Peaks Gazette**: Local paper grounds the town in reality.
-- **The Double R Diner**: Coffee and cherry pie culture becomes iconic.
-- **Roadhouse**: Introduces recurring musical performance space.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- The "many years later" reveal in season 2 feels somewhat unearned.
-- Some supernatural elements remain unexplained.
+### 4. Visual Spectacle (10%) — Score: 7
 
-**Why 8.0**: Immersive, distinctive world that redefined TV aesthetics. Not as expansive as some.
+**Raw Score: 7 | Weighted: 0.70**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.0
+### 5. Conceptual Density (15%) — Score: 9
 
-**Raw Score: 8.0 | Weighted: 0.80**
+**Raw Score: 9 | Weighted: 1.35**
 
-**Strengths:**
-- **Peter Deming's work**: The fog, the forests, the strange angles create unease.
-- **Red room sequences**: Surreal visual design that's become iconic.
-- **Lynch's visual signature**: Unmistakable style that elevates every scene.
-- **Use of small-town America**: Makes the ordinary feel threatening.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Some episodes more visually standard than others.
-- Limited by 1990s TV production constraints.
+### 6. Narrative Drive (15%) — Score: 6
 
-**Why 8.0**: Distinctive visual language that defined a genre. Not as technically polished as modern shows.
+**Raw Score: 6 | Weighted: 0.90**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.5
+### 7. Narrative Resolution (15%) — Score: 6
 
-**Raw Score: 7.5 | Weighted: 0.75**
+**Raw Score: 6 | Weighted: 0.90**
 
-**Strengths:**
-- **Black Lodge sequences**: Surreal, memorable visuals.
-- **The reveal of Laura's photo**: Iconic image.
-- **Fire, woods, and fog**: Atmospheric elements create spectacle.
-- **David Lynch's dreamlike sequences**: Unique visual experiences.
-
-**Weaknesses:**
-- Not an action-driven show.
-- Limited by era and budget.
-
-**Why 7.5**: Spectacle is conceptual rather than action-based. Appropriate for the story.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Subverted soap opera**: Takes daytime TV tropes into dark territory.
-- **Unreliable memory**: The show questions what's real.
-- **Duality**: Double selves, good/evil, Cooper and his doppelgänger.
-- **Dreams as narrative**: The red room sequences blur dream/waking.
-- **Critique of small-town America**: Hidden darkness beneath surface.
-
-**Weaknesses:**
-- Some concepts introduced without full exploration.
-- Lynch intentionally leaves mysteries unsolved.
-
-**Why 8.5**: Dense with ideas and subtext. Created new language for television.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Laura Palmer murder**: Perfect mystery that drives the first season.
-- **Agent Cooper's investigation**: Compelling procedural element.
-- **Escalating reveals**: Each episode reveals more (and more bizarre) information.
-- **Supernatural elements**: The Black Lodge provides mythic stakes.
-
-**Weaknesses:**
-- Season 2 loses momentum after Cooper is wounded.
-- Some filler episodes in season 2.
-
-**Why 8.0**: First season is propulsive. Second season is uneven.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 7.0
-
-**Raw Score: 7.0 | Weighted: 1.05**
-
-**Strengths:**
-- **Laura's revelation**: The "who killed Laura" answer is satisfying.
-- **Cooper in the Black Lodge**: Haunting conclusion to original run.
-- **Fire Walk With Me bridge**: Film provides additional context.
-
-**Weaknesses:**
-- Many mysteries remain unresolved.
-- The revival (2017) changes things significantly.
-- Season 2 ending is ambiguous.
-
-**Why 7.0**: The original mystery resolves, but many questions remain open.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 8.0 | 15% | 1.20 |
-| Cinematography | 8.0 | 10% | 0.80 |
-| Visual Spectacle | 7.5 | 10% | 0.75 |
-| Conceptual Density | 8.5 | 15% | 1.275 |
-| Narrative Drive | 8.0 | 15% | 1.20 |
-| Narrative Resolution | 7.0 | 15% | 1.05 |
-| **Base Score** | | | **7.975** |
-| **Episode Multiplier** | | 0.90 | -0.85 |
-| **FINAL SCORE** | | | **7.13** |
+| Characters & Acting | 7.5 | 20% | 1.50 |
+| World Building | 8 | 15% | 1.20 |
+| Cinematography | 8 | 10% | 0.80 |
+| Visual Spectacle | 7 | 10% | 0.70 |
+| Conceptual Density | 9 | 15% | 1.35 |
+| Narrative Drive | 6 | 15% | 0.90 |
+| Narrative Resolution | 6 | 15% | 0.90 |
+| **FINAL SCORE** | | | **7.35** |
 
 ---
 
-## Why It Ranks #90
+## Why It Ranks #75
 
-- **Characters (8.5/10)**: Kyle MacLachlan's iconic Cooper leads a memorable ensemble
-- **World (8.0/10)**: Twin Peaks as a character—atmospheric and mysterious
-- **Cinematography (8.0/10)**: Lynch's distinctive visual style
-- **Spectacle (7.5/10)**: Conceptual rather than action-based
-- **Concept (8.5/10)**: Dense with duality and surrealism
-- **Drive (8.0/10)**: Strong first season mystery
-- **Resolution (7.0/10)**: Partial resolution, many mysteries open
+Twin Peaks achieves a final score of 7.35 based on its performance across all seven dimensions.
 
 ---
 
-## Where to Watch
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.0/10 | 95,000 |
-| Rotten Tomatoes | 85% | — |
-| Metacritic | 68/100 | — |
-
-*Data accessed 2026-02-15*
-
----
-
-**Previous:** [The Affair (#89)](the-affair.md) | **Next:** [Homicide: Life on the Street (#91)](homicide-life-on-the-street.md)
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

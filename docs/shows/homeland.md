@@ -1,8 +1,17 @@
 # Homeland
 
-**Rank #33** | Drama, Thriller, Action | 2011-2020 | Showtime | 8 Seasons, 96 Episodes
+> *Homeland*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #82 |
+| **Score** | 7.25 |
+| **Year** | 2011 |
+| **Episodes** | 96 |
+| **Genres** | drama, thriller, action |
+| **TMDB ID** | 1405 |
 
 ## What It Feels Like to Watch
 
@@ -20,195 +29,69 @@ The finale, "Prisoners of War," is haunting. Carrie has spent years sacrificing 
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Paramount+, Hulu
-- **Purchase:** Amazon Prime Video, Apple TV, Google Play
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.3/10 | 325,000 |
-| TMDB | 7.59/10 | 2,485 |
-| Rotten Tomatoes | 88% | — |
-
-*Data accessed 2026-02-15*
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
-**Strengths:**
-- **Claire Danes as Carrie Mathison**: Career-defining performance. She embodies the intensity, brilliance, and instability of a bipolar spy with remarkable range. Her ability to convey vulnerability beneath the toughness is extraordinary.
-- **Mandy Patinkin as Saul Berenson**: Provides emotional anchor as Carrie's mentor. His paternal relationship with Carrie is the show's emotional core.
-- **Damian Lewis as Nicholas Brody**: Controversial but compelling. Lewis makes the audience question Brody's allegiances throughout.
-- **David Harewood as Quinn**: Later seasons add a compelling operative with his own moral complexity.
-- **Ensemble depth**: Strong supporting cast across all eight seasons.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- **Brody characterization**: Some viewers found the character inconsistent.
-- **Season decline**: Later seasons introduce characters who don't reach the same heights.
-- **Carrie fatigue**: By later seasons, the repeated "Carrie in crisis" cycles feel somewhat formulaic.
+### 2. World Building (15%) — Score: 7
 
-**Why 8.5 and not 9.0**: Outstanding lead performance, but the extended run and some inconsistent character decisions prevent top-tier ensemble status.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.0
+### 3. Cinematography (10%) — Score: 7
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 7 | Weighted: 0.70**
 
-**Strengths:**
-- **CIA operations**: Authentic-feeling depiction of intelligence work.
-- **International locations**: Pakistan, Afghanistan, Iraq, Germany, Russia—the show travels effectively.
-- **Post-9/11 context**: The show captures the paranoia and urgency of the War on Terror era.
-- **Political complexity**: Shows multiple perspectives on American foreign policy.
-- **Terrorist organizations**: Attempts to portray militant groups with some nuance.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- **Caribbean operations**: Later season storylines feel less grounded.
-- **Russian intrigue**: Some plots become convoluted.
-- **Inconsistent accuracy**: The show takes significant dramatic liberties.
+### 4. Visual Spectacle (10%) — Score: 6
 
-**Why 8.0**: Effective geopolitical world-building, though not as rigorously realistic as The Bureau.
+**Raw Score: 6 | Weighted: 0.60**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.0
+### 5. Conceptual Density (15%) — Score: 7
 
-**Raw Score: 8.0 | Weighted: 0.80**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **International locations**: The show films in various countries, adding visual variety.
-- **Intensity framing**: Close-ups and handheld camera work convey psychological tension.
-- **Interrogation sequences**: Visually powerful depictions of psychological manipulation.
-- **Season 4-5 production value**: The Afghanistan sequences are well-shot.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Variable quality across seasons.
-- Not as visually distinctive as top-tier prestige productions.
-- Some standard TV cinematography in earlier seasons.
+### 6. Narrative Drive (15%) — Score: 8
 
-**Why 8.0**: Solid workmanlike cinematography that serves the story without being exceptional.
+**Raw Score: 8 | Weighted: 1.20**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.5
+### 7. Narrative Resolution (15%) — Score: 7
 
-**Raw Score: 7.5 | Weighted: 0.75**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **International settings**: Varied locations provide visual interest.
-- **Action sequences**: The show includes effective action when needed.
-- **Bombings and attacks**: The terrorist attack sequences are visceral.
-- **Car chases and shootouts**: Competently executed when present.
-
-**Weaknesses:**
-- Not action-focused.
-- Limited spectacle compared to other shows in its genre.
-- Later seasons reduce action in favor of political intrigue.
-
-**Why 7.5**: Competent when displaying spectacle, but it's not the show's primary concern.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Moral ambiguity**: The show questions whether the ends justify the means.
-- **Brainwashing and identity**: Brody's "turning" raises questions about free will.
-- **Mental illness portrayal**: Carrie's bipolar disorder is depicted with unusual complexity.
-- **Terrorism from inside**: Explores the enemy within concept.
-- **Institutional corruption**: Later seasons tackle CIA malfeasance.
-
-**Weaknesses:**
-- Some seasons are more concept-forward than others.
-- The Carrie-Brody relationship sometimes overshadows thematic exploration.
-- Not all conceptual threads are fully developed.
-
-**Why 8.0**: Thoughtful engagement with ethics of surveillance and counterterrorism, though variable across seasons.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Season 1 momentum**: The "is Brody a terrorist?" question drives compulsive viewing.
-- **Binge-worthy structure**: Each episode ends with revelations or cliffhangers.
-- **Escalating stakes**: Each season raises the personal and political consequences.
-- **The Carrie-Saul dynamic**: Their relationship provides consistent tension.
-- **Season finales**: Many seasons end with shocking turns.
-
-**Weaknesses:**
-- Later seasons lose some momentum.
-- The extended run dilutes urgency.
-- Some repetitive "mission gone wrong" patterns.
-
-**Why 8.5**: Strong drive, especially in early seasons. The eight-season run shows some natural decline.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Series finale "Prisoners of War"**: Provides thematic closure for Carrie's journey.
-- **Carrie's arc**: Her evolution across seasons receives conclusion.
-- **Saul's ending**: His storyline resolves appropriately.
-- **Thematic resolution**: The show answers its central questions about cost and sacrifice.
-
-**Weaknesses:**
-- **Brody's ending**: The character's conclusion is divisive.
-- **Later season threads**: Some storylines don't receive adequate resolution.
-- **Open-ended elements**: The finale leaves some questions about the future.
-
-**Why 7.5**: Thematically satisfying but not all character arcs receive complete closure.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 8.0 | 15% | 1.20 |
-| Cinematography | 8.0 | 10% | 0.80 |
-| Visual Spectacle | 7.5 | 10% | 0.75 |
-| Conceptual Density | 8.0 | 15% | 1.20 |
-| Narrative Drive | 8.5 | 15% | 1.275 |
-| Narrative Resolution | 7.5 | 15% | 1.125 |
-| **Base Score** | | | **8.03** |
-| **Episode Multiplier** | | 0.86 | -0.42 |
-| **FINAL SCORE** | | | **7.61 → 7.67** |
+| Characters & Acting | 8 | 20% | 1.60 |
+| World Building | 7 | 15% | 1.05 |
+| Cinematography | 7 | 10% | 0.70 |
+| Visual Spectacle | 6 | 10% | 0.60 |
+| Conceptual Density | 7 | 15% | 1.05 |
+| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Resolution | 7 | 15% | 1.05 |
+| **FINAL SCORE** | | | **7.25** |
 
 ---
 
-## Why It Ranks #33
+## Why It Ranks #82
 
-- **Characters (8.5/10)**: Claire Danes delivers a career-defining performance
-- **World (8.0/10)**: Effective depiction of post-9/11 intelligence operations
-- **Cinematography (8.0/10)**: Solid work across international locations
-- **Spectacle (7.5/10)**: Competent when present, not the show's focus
-- **Concept (8.0/10)**: Engages with ethics of counterterrorism
-- **Drive (8.5/10)**: Compelling early seasons, extended run shows some decline
-- **Resolution (7.5/10)**: Thematically satisfying but incomplete closure
+Homeland achieves a final score of 7.25 based on its performance across all seven dimensions.
 
 ---
 
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
-
----
-
-**Previous:** [The Bureau (#32)](the-bureau.md) | **Next:** [The Queen's Gambit (#34)](the-queens-gambit.md)
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

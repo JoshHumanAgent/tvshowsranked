@@ -1,8 +1,17 @@
 # Mare of Easttown
 
-**Rank #76** | Crime, Drama, Mystery | 2021 | HBO | 1 Season
+> *Mare of Easttown*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #61 |
+| **Score** | 7.52 |
+| **Year** | 2021 |
+| **Episodes** | 7 |
+| **Genres** | crime, drama, mystery, cop-show |
+| **TMDB ID** | 128816 |
 
 ## What It Feels Like to Watch
 
@@ -18,168 +27,69 @@ The show won multiple Emmys, including Outstanding Limited Series, and it's easy
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Max
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 9.0
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 9.0 | Weighted: 1.80**
+**Raw Score: 8 | Weighted: 1.60**
 
-**Strengths:**
-- **Mare Sheehan (Kate Winslet)**: Career-defining performance. Winslet disappears into this broken woman.
-- **Detective Zabel (Evan Peters)**: Charming but haunted, provides perfect foil to Mare.
-- **Lori (Julianne Nicholson)**: Grounded, relatable presence.
-- **Helen (Jean Smart)**: Mare's mother provides emotional anchor.
-- **Authentic Philadelphia accent**: Winslet's accent is remarkable.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- **Limited character development for secondary cast**: Focus is entirely on Mare.
-- **Some supporting characters feel underdeveloped**.
+### 2. World Building (15%) — Score: 7.5
 
-**Why 9.0 and not 9.5**: Kate Winslet carries the entire show. Exceptional but focused on one character.
+**Raw Score: 7.5 | Weighted: 1.13**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.0
+### 3. Cinematography (10%) — Score: 7
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 7 | Weighted: 0.70**
 
-**Strengths:**
-- **Small-town Pennsylvania**: Intimate, lived-in setting.
-- **Community dynamics**: Everyone knows everyone's business.
-- **Grief permeate**: The town's collective trauma feels real.
-- **Economic decay**: Visible in abandoned buildings and struggling businesses.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- **Limited world expansion**: The town is contained and doesn't grow.
-- **Generic small-town feel**: Could be any declining rust belt town.
+### 4. Visual Spectacle (10%) — Score: 5
 
-**Why 8.0**: Effectively realized small world, though not expansive.
+**Raw Score: 5 | Weighted: 0.50**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.5
+### 5. Conceptual Density (15%) — Score: 7
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **Restrained visuals**: Perfectly matches the somber tone.
-- **Pennsylvania winter**: Cold, gray atmosphere captured beautifully.
-- **Intimate close-ups**: Emphasis on faces and reactions.
-- **Handheld authenticity**: Documentary-style adds realism.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- **Limited visual range**: Mostly interiors and small-town streets.
-- **Somewhat conventional**: Not pushing visual boundaries.
+### 6. Narrative Drive (15%) — Score: 8
 
-**Why 8.5**: Perfectly serves the story, though not visually revolutionary.
+**Raw Score: 8 | Weighted: 1.20**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 6.5
+### 7. Narrative Resolution (15%) — Score: 9
 
-**Raw Score: 6.5 | Weighted: 0.65**
+**Raw Score: 9 | Weighted: 1.35**
 
-**Strengths:**
-- **Authentic locations**: Real Pennsylvania settings.
-- **Seasonal atmosphere**: Winter visuals add mood.
-- **Period accuracy**: 2019 small-town aesthetic.
-
-**Weaknesses:**
-- **No action or major set pieces**: Not the kind of show that offers spectacle.
-- **Limited visual variety**: Interiors dominate.
-
-**Why 6.5**: Minimal spectacle, but that's not the point. The drama is internal.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Grief and loss**: Profound exploration of unresolved trauma.
-- **Small-town secrets**: Layered mystery reveals community rot.
-- **Motherhood themes**: Multiple generations of complicated mothers.
-- **Addiction**: Honest depiction of substance abuse.
-- **Class dynamics**: Economic struggles underlying everything.
-
-**Weaknesses:**
-- **Mystery takes precedence**: Social commentary sometimes secondary.
-- **Some thematic threads underbaked**.
-
-**Why 8.5**: Dense with emotional and social themes.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Slow-burn mystery**: Carefully paced reveals.
-- **Character-driven tension**: Emotional stakes override plot stakes.
-- **Episode hooks**: Each episode ends with meaningful revelations.
-- **Building dread**: Knows how to let tension simmer.
-
-**Weaknesses:**
-- **Pacing can test patience**: Not for viewers wanting constant action.
-- **Predictable elements**: Some mystery tropes are obvious.
-
-**Why 8.5**: Masterful slow burn. Rewards patient viewing.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Mystery solved**: Case is resolved satisfyingly.
-- **Mare's arc completion**: Her journey toward healing feels earned.
-- **Emotional catharsis**: The finale delivers payoff.
-- **Ambiguous elements**: Some things appropriately left unresolved.
-
-**Weaknesses:**
-- **Finale controversy**: Some viewers felt let down.
-- **Open threads**: Future remains uncertain for some characters.
-
-**Why 8.0**: Emotionally satisfying conclusion, though not universally loved.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 9.0 | 20% | 1.80 |
-| World Building | 8.0 | 15% | 1.20 |
-| Cinematography | 8.5 | 10% | 0.85 |
-| Visual Spectacle | 6.5 | 10% | 0.65 |
-| Conceptual Density | 8.5 | 15% | 1.275 |
-| Narrative Drive | 8.5 | 15% | 1.275 |
-| Narrative Resolution | 8.0 | 15% | 1.20 |
-| **Base Score** | | | **8.25** |
-| **Episode Multiplier** | | 0.89 | -0.93 |
-| **FINAL SCORE** | | | **7.32** |
+| Characters & Acting | 8 | 20% | 1.60 |
+| World Building | 7.5 | 15% | 1.13 |
+| Cinematography | 7 | 10% | 0.70 |
+| Visual Spectacle | 5 | 10% | 0.50 |
+| Conceptual Density | 7 | 15% | 1.05 |
+| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Resolution | 9 | 15% | 1.35 |
+| **FINAL SCORE** | | | **7.52** |
 
 ---
 
-## Ratings
+## Why It Ranks #61
 
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 7.5/10 | 95,000 |
-| Rotten Tomatoes | 93% | — |
-| Metacritic | 76/100 | — |
-
-*Data accessed 2026-02-15*
+Mare of Easttown achieves a final score of 7.52 based on its performance across all seven dimensions.
 
 ---
 
-**Previous:** [The Boys (#75)](the-boys.md) | **Next:** [Euphoria (#77)](euphoria.md)
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

@@ -1,8 +1,17 @@
 # Rectify
 
-**Rank #48** | Drama | 2013-2016 | SundanceTV | 4 Seasons, 30 Episodes
+> *Rectify*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #34 |
+| **Score** | 7.80 |
+| **Year** | 2013 |
+| **Episodes** | 30 |
+| **Genres** | drama |
+| **TMDB ID** | 41727 |
 
 ## What It Feels Like to Watch
 
@@ -22,169 +31,69 @@ The final season is devastating. It offers no easy answers, no tidy resolution. 
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Netflix, AMC+
-- **Purchase:** Amazon Prime Video, Apple TV
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 7.9/10 | 15,000 |
-| TMDB | 7.6/10 | 284 |
-| Rotten Tomatoes | 96% | — |
-
-*Data accessed 2026-02-15*
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 9
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 9 | Weighted: 1.80**
 
-**Strengths:**
-- **Daniel Holden (Aden Young)**: Magnificent as a man relearning how to be human. Every gesture conveys institutionalization.
-- **Amantha Holden (Abigail Spencer)**: The sister who's fought two decades for justice. Her frustration and love are palpable.
-- **Janet Talbot (J. Smith-Cameron)**: The mother trying to hold the family together. Subtle and heartbreaking.
-- **Ted Talbot Jr. (Clayne Crawford)**: The stepbrother who resents Daniel's return. Complex and sympathetic.
-- **Supporting cast**: Every performance is grounded and real.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- Some supporting characters underwritten.
-- The romantic subplot with Tawney feels rushed.
+### 2. World Building (15%) — Score: 7
 
-**Why 8.5 not 9.0**: The core performances are extraordinary, but limited run time prevents fuller development of the ensemble.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.0
+### 3. Cinematography (10%) — Score: 8.5
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 8.5 | Weighted: 0.85**
 
-**Strengths:**
-- **Paulie, Georgia**: A small Southern town that feels authentic.
-- **Prison's shadow**: The series shows how incarceration touches everyone.
-- **Family dynamics**: The Talbot/Holden family is convincingly fractured.
-- **The justice system**: Courts, lawyers, and bureaucracy feel real.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- Limited exploration of the town beyond immediate family.
-- The world feels intentionally small, which limits scope.
+### 4. Visual Spectacle (10%) — Score: 5
 
-**Why 8.0**: Excellent micro-world building. Paulie feels like a real place.
+**Raw Score: 5 | Weighted: 0.50**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 9.0
+### 5. Conceptual Density (15%) — Score: 9
 
-**Raw Score: 9.0 | Weighted: 0.90**
+**Raw Score: 9 | Weighted: 1.35**
 
-**Strengths:**
-- **Slow cinema approach**: Scenes unfold in real time.
-- **Natural lighting**: Georgia light captured beautifully.
-- **Silence**: The show isn't afraid of quiet moments.
-- **Close-ups**: Faces tell the story.
-- **The prison**: Shot with appropriate institutional bleakness.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Some might find the pacing too slow.
-- Visual vocabulary somewhat repetitive.
+### 6. Narrative Drive (15%) — Score: 6
 
-**Why 9.0**: A masterclass in contemplative cinematography.
+**Raw Score: 6 | Weighted: 0.90**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.0
+### 7. Narrative Resolution (15%) — Score: 9
 
-**Raw Score: 7.0 | Weighted: 0.70**
+**Raw Score: 9 | Weighted: 1.35**
 
-**Strengths:**
-- **Georgia landscapes**: The natural beauty provides contrast to Daniel's darkness.
-- **Prison flashbacks**: Effectively disorienting.
-
-**Weaknesses:**
-- Not a spectacle show by design.
-- Very little action or visual excitement.
-
-**Why 7.0**: Beautiful but intentionally understated.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Justice vs. truth**: The show doesn't care about proving guilt or innocence.
-- **Institutionalization**: What incarceration does to the human spirit.
-- **The aftermath**: How trauma echoes through families.
-- **Redemption**: Can people truly change? Should they?
-- **Faith**: Religion provides both comfort and conflict.
-
-**Weaknesses:**
-- Some themes remain implicit.
-- Limited time prevents deeper exploration.
-
-**Why 8.5**: Dense with ideas about justice, trauma, and healing.
-
----
-
-### 6. Narrative Drive (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Character-driven**: Every scene advances emotional understanding.
-- **The season arcs**: Each season has clear thematic progression.
-- **The finale build**: The final season leads to emotional release.
-
-**Weaknesses:**
-- **Slow pacing**: The show is proudly unhurried.
-- **Minimal plot**: Not much actually happens.
-- **Some episodes feel like vignettes** rather than chapters.
-
-**Why 7.5**: Not for everyone. The contemplative pace is intentional but limiting.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **The final season**: Devastating and earned.
-- **Daniel's choice**: His decision about the plea is right for the character.
-- **No easy answers**: The ending respects the audience's intelligence.
-- **Hope without resolution**: Some wounds don't heal.
-
-**Weaknesses:**
-- Some subplot threads abandoned.
-- The ambiguity will frustrate viewers wanting closure.
-
-**Why 8.0**: An ending appropriate for the story—but definitely not tidy.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 8.0 | 15% | 1.20 |
-| Cinematography | 9.0 | 10% | 0.90 |
-| Visual Spectacle | 7.0 | 10% | 0.70 |
-| Conceptual Density | 8.5 | 15% | 1.275 |
-| Narrative Drive | 7.5 | 15% | 1.125 |
-| Narrative Resolution | 8.0 | 15% | 1.20 |
-| **Base Score** | | | **7.70** |
-| **Episode Multiplier** | | 1.03 | +0.26 |
-| **FINAL SCORE** | | | **7.50** |
+| Characters & Acting | 9 | 20% | 1.80 |
+| World Building | 7 | 15% | 1.05 |
+| Cinematography | 8.5 | 10% | 0.85 |
+| Visual Spectacle | 5 | 10% | 0.50 |
+| Conceptual Density | 9 | 15% | 1.35 |
+| Narrative Drive | 6 | 15% | 0.90 |
+| Narrative Resolution | 9 | 15% | 1.35 |
+| **FINAL SCORE** | | | **7.80** |
 
 ---
 
-**Previous:** [Battlestar Galactica (#47)](battlestar-galactica.md) | **Next:** [Ozark (#49)](ozark.md)
+## Why It Ranks #34
+
+Rectify achieves a final score of 7.80 based on its performance across all seven dimensions.
+
+---
+
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

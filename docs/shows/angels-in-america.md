@@ -1,20 +1,17 @@
 # Angels in America
 
-> *"The world only spins forward."*
+> *Angels in America*
 
 ## Overview
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #20 |
-| **Score** | 7.82 |
+| **Rank** | #10 |
+| **Score** | 8.15 |
 | **Year** | 2003 |
-| **Network** | HBO |
-| **Seasons** | 1 |
 | **Episodes** | 6 |
-| **Runtime** | 68-70 min |
-| **Genres** | Drama |
-| **Creator** | Tony Kushner |
+| **Genres** | drama |
+| **TMDB ID** | 1887 |
 
 ## What It Feels Like to Watch
 
@@ -32,177 +29,67 @@ But beyond the spectacle, what you remember is the emotional truth. This is a sh
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 10.0
+### 1. Characters & Acting (20%) — Score: 8.5
 
-**Raw Score: 10.0 | Weighted: 2.00**
+**Raw Score: 8.5 | Weighted: 1.70**
 
-**Strengths:**
-- **Roy Cohn (Al Pacino)**: One of the greatest performances in television history. Pacino disappears into this real-life monster—a fixer who denies his own sexuality even as he dies of AIDS. His scenes with Belize (Jeffrey Wright) are masterpieces of tension.
-- **Prior Walter (Justin Kirk)**: The emotional heart of the series. Kirk makes Prior's journey from abandonment to transcendence feel real and moving.
-- **Harper Pitt (Mary-Louise Parker)**: The agoraphobic Mormon wife whose hallucinations become real. Parker's vulnerability is heartbreaking.
-- **Louis Ironson (Ben Shenkman)**: The boyfriend who abandons Prior. Shenkman makes his moral weakness compelling rather than simply contemptible.
-- **The Angel (Emma Thompson)**: The physical embodiment of prophecy. Thompson's theatrical performance is unforgettable.
-- **The ensemble**: Meryl Streep's multiple roles, Jeffrey Wright's dignity, Patrick Wilson's Joe—all extraordinary.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- None. This is arguably the greatest ensemble in television history.
+### 2. World Building (15%) — Score: 7
 
-**Why 10.0**: The definitive television acting showcase. Every performer operates at the highest possible level.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.0
+### 3. Cinematography (10%) — Score: 8
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 8 | Weighted: 0.80**
 
-**Strengths:**
-- **1985 New York**: The AIDS crisis is palpably present—hospitals, funerals, fear.
-- **The supernatural**: Heaven, prophecy, angels—the fantastical elements feel real.
-- **Mormonism**: The show accurately depicts the Mormon community.
-- **Political machinery**: Roy Cohn's connection to power feels authentic.
-- **Cultural moment**: The show captures a specific historical tragedy.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- The world is somewhat contained—it's a character study rather than a sprawling world.
-- The supernatural elements, while powerful, don't create a fully realized fantasy world.
+### 4. Visual Spectacle (10%) — Score: 7
 
-**Why 8.0**: Strong sense of time and place, but limited by its theatrical origins.
+**Raw Score: 7 | Weighted: 0.70**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.5
+### 5. Conceptual Density (15%) — Score: 10
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 10 | Weighted: 1.50**
 
-**Strengths:**
-- **Mike Nichols' direction**: The legendary director brings theatrical elegance to television.
-- **The Angel's entrance**: The special effects shot is iconic.
-- **Intimate framing**: Close-ups capture every emotion.
-- **Theatrical blocking**: The camera respects the stage origins while using cinematic tools.
-- **Heaven sequences**: The angelic realm is visually distinctive.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- The theatrical origins sometimes constrain visual ambition.
-- Not as distinctive as some prestige dramas.
+### 6. Narrative Drive (15%) — Score: 7
 
-**Why 8.5**: Elegant direction that serves the material beautifully.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8.5
+### 7. Narrative Resolution (15%) — Score: 9
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 9 | Weighted: 1.35**
 
-**Strengths:**
-- **The Angel**: Emma Thompson crashing through the ceiling is unforgettable.
-- **Heaven**: The celestial realm is visually striking.
-- **Period recreation**: 1980s New York is well-captured.
-- **Fantastical sequences**: Prior's visions are visually powerful.
-- **The ending**: The final visual tableau is haunting.
-
-**Weaknesses:**
-- Not an action or effects-driven show.
-- The spectacle is primarily theatrical rather than cinematic.
-
-**Why 8.5**: Groundbreaking for television of its era. The Angel sequence alone justifies the score.
-
----
-
-### 5. Conceptual Density (15%) — Score: 10.0
-
-**Raw Score: 10.0 | Weighted: 1.50**
-
-**Strengths:**
-- **The AIDS crisis**: A profound meditation on the epidemic and its meaning.
-- **America itself**: The show asks what it means to be American in the Reagan era.
-- **Mormonism and identity**: Joe Pitt's struggle with faith and sexuality.
-- **Prophecy and change**: The show is literally about "the world only spinning forward."
-- **Identity and sexuality**: Multiple characters explore who they are.
-- **Death and legacy**: Roy Cohn's denial of his own mortality reflects broader themes.
-- **Community and isolation**: The connections between characters.
-
-**Weaknesses:**
-- The density can overwhelm some viewers.
-- The theatricality of the script can feel overwhelming.
-
-**Why 10.0**: One of the most intellectually and thematically dense works in television history.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Six-hour structure**: The show uses its length well—every episode advances the story.
-- **Character arcs**: Multiple storylines intertwine effectively.
-- **Revelations**: The supernatural elements provide constant surprises.
-- **Tension**: The relationships create ongoing drama.
-
-**Weaknesses:**
-- The theatrical pacing can feel slower than cinematic storytelling.
-- Some scenes prioritize dialogue over action.
-
-**Why 8.5**: Compelling despite its theatrical origins. The structure serves the material.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **The finale**: "Perestroika" provides emotional and thematic closure.
-- **Character endings**: Every character reaches a meaningful conclusion.
-- **Prior's journey**: His transformation is complete and moving.
-- **The Angel's departure**: The prophecy is resolved.
-- **Hope**: The ending balances tragedy with possibility.
-
-**Weaknesses:**
-- Some viewers find the ending too hopeful given the tragedy.
-- Roy Cohn's ending is fitting but not cathartic.
-
-**Why 8.5**: Beautiful, thematically appropriate conclusion. Not as conclusive as some, but fitting.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 10.0 | 20% | 2.00 |
-| World Building | 8.0 | 15% | 1.20 |
-| Cinematography | 8.5 | 10% | 0.85 |
-| Visual Spectacle | 8.5 | 10% | 0.85 |
-| Conceptual Density | 10.0 | 15% | 1.50 |
-| Narrative Drive | 8.5 | 15% | 1.275 |
-| Narrative Resolution | 8.5 | 15% | 1.275 |
-| **Base Score** | | | **8.85** |
-| **Episode Multiplier** | | 0.88 | -1.06 |
-| **FINAL SCORE** | | | **7.79 → 7.82** |
+| Characters & Acting | 8.5 | 20% | 1.70 |
+| World Building | 7 | 15% | 1.05 |
+| Cinematography | 8 | 10% | 0.80 |
+| Visual Spectacle | 7 | 10% | 0.70 |
+| Conceptual Density | 10 | 15% | 1.50 |
+| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Resolution | 9 | 15% | 1.35 |
+| **FINAL SCORE** | | | **8.15** |
 
 ---
 
-## External Ratings
+## Why It Ranks #10
 
-| Source | Score | Scale |
-|--------|-------|-------|
-| IMDb | 8.3 | 10 |
-| Rotten Tomatoes | 93% | 100 |
-| Metacritic | 85 | 100 |
+Angels in America achieves a final score of 8.15 based on its performance across all seven dimensions.
 
 ---
 
-## Why It Ranks #20
-
-- **Characters (10.0/10)**: The greatest ensemble in television history
-- **World (8.0/10)**: Theatrical but immersive
-- **Cinematography (8.5/10)**: Mike Nichols' elegant direction
-- **Spectacle (8.5/10)**: Groundbreaking for television of its era
-- **Concept (10.0/10)**: Dense with themes about America, AIDS, identity
-- **Drive (8.5/10)**: Compelling despite theatrical origins
-- **Resolution (8.5/10)**: Beautiful, thematically appropriate
-
----
-
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

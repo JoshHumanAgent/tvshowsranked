@@ -1,20 +1,17 @@
 # Oz
 
-> *"There's no such thing as a good prison."*
+> *Oz*
 
 ## Overview
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #82 |
-| **Score** | 7.26 |
+| **Rank** | #97 |
+| **Score** | 7.02 |
 | **Year** | 1997 |
-| **Network** | HBO |
-| **Seasons** | 6 |
 | **Episodes** | 56 |
-| **Runtime** | 50-60 min |
-| **Genres** | Drama, Crime, Thriller |
-| **Creator** | Tom Fontana |
+| **Genres** | crime, drama |
+| **TMDB ID** | 1624 |
 
 ## What It Feels Like to Watch
 
@@ -34,162 +31,63 @@ But Oz is more than shock value. It's a serious exploration of what happens when
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-**Strengths:**
-- **Ernie Hudson (Leo Glynn)**: The warden narrator provides moral commentary. Hudson brings gravitas.
-- **Harold Perrineau (Augustus Hill)**: The poet-inmate offers philosophical perspective.
-- **J.K. Simmons (Vince Mazur)**: The Nazi inmate is terrifyingly real.
-- **Lee Terges (Alvarez Theodore)**: The transgender inmate's storyline was groundbreaking.
-- **Bobby Zappit (Miguel Ferrer)**: The drug dealer provides comic relief.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- **Quantity over quality**: 56 episodes across 6 seasons dilutes character development.
-- **Protagonist vacuum**: No clear lead character to anchor the ensemble.
-- **Serialized nature**: Some characters become caricatures over time.
+### 2. World Building (15%) — Score: 7.5
 
-**Why 7.5**: Strong ensemble with memorable performances, but no single standout character carries the series.
+**Raw Score: 7.5 | Weighted: 1.13**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.0
+### 3. Cinematography (10%) — Score: 6
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 6 | Weighted: 0.60**
 
-**Strengths:**
-- **Emerald City prison**: A fully realized institutional environment.
-- **Cell block structure**: The show creates distinct territories and rivalries.
-- **Institutional corruption**: Guards and administrators are as flawed as inmates.
-- **Prison hierarchy**: Gangs, racial tensions, power dynamics feel authentic.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- **Limited outside world**: The prison walls rarely open.
-- **Repetitive setting**: Same locations for 56 episodes can feel claustrophobic.
+### 4. Visual Spectacle (10%) — Score: 5
 
-**Why 8.0**: Excellent prison world-building that defined the genre.
+**Raw Score: 5 | Weighted: 0.50**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 7.0
+### 5. Conceptual Density (15%) — Score: 8
 
-**Raw Score: 7.0 | Weighted: 0.70**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Theatrical framing**: The stage-like presentation is distinctive.
-- **Close-ups**: Intense facial shots capture emotion.
-- **Steadicam work**: Handheld camera work adds immediacy.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- **Stage-bound**: Limited visual variety.
-- **No signature style**: Cinematography is functional rather than memorable.
+### 6. Narrative Drive (15%) — Score: 7
 
-**Why 7.0**: Competent but unremarkable visuals.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.5
+### 7. Narrative Resolution (15%) — Score: 7
 
-**Raw Score: 7.5 | Weighted: 0.75**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **Violence**: The show doesn't shy away from graphic content.
-- **Inmate interactions**: Fights, negotiations, alliances provide visual interest.
-- **Stunts**: Prison riots and confrontations are well-executed.
-
-**Weaknesses:**
-- **Confined setting**: Limited action scope.
-- **Repetitive violence**: Can feel exploitative rather than purposeful.
-
-**Why 7.5**: Appropriate for the prison setting, though sometimes gratuitous.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Institutional critique**: Explores how prison systems fail everyone.
-- **Moral ambiguity**: No heroes, only survivors.
-- **Social experiment**: Tests boundaries of what TV can show.
-- **Redemption arcs**: Some characters change; most don't.
-
-**Weaknesses:**
-- **Shock value**: Sometimes prioritizes controversy over insight.
-- **Incomplete exploration**: Themes are raised but not always developed.
-
-**Why 8.0**: Dense with ideas about humanity and institutional failure.
-
----
-
-### 6. Narrative Drive (15%) — Score: 7.0
-
-**Raw Score: 7.0 | Weighted: 1.05**
-
-**Strengths:**
-- **Serialized storytelling**: Ongoing character arcs across seasons.
-- **Episodic incidents**: Each episode has self-contained conflicts.
-- **Stakes escalation**: Violence and consequences escalate over time.
-
-**Weaknesses:**
-- **Pacing issues**: 56 episodes tests patience.
-- **No clear protagonist**: Diffuse focus weakens narrative momentum.
-- **Repetitive conflicts**: Similar storylines recur.
-
-**Why 7.0**: Solid storytelling but spread too thin across seasons.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 6.5
-
-**Raw Score: 6.5 | Weighted: 0.975**
-
-**Strengths:**
-- **Series finale**: Provides some closure for key characters.
-- **Character conclusions**: Several arcs reach satisfying endpoints.
-
-**Weaknesses:**
-- **Abrupt ending**: The series was canceled, not concluded.
-- **Unfinished threads**: Many character stories remain unresolved.
-- **Final season dip**: Quality declined in later years.
-
-**Why 6.5**: Some resolution but largely unfinished.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 7.5 | 20% | 1.50 |
-| World Building | 8.0 | 15% | 1.20 |
-| Cinematography | 7.0 | 10% | 0.70 |
-| Visual Spectacle | 7.5 | 10% | 0.75 |
-| Conceptual Density | 8.0 | 15% | 1.20 |
-| Narrative Drive | 7.0 | 15% | 1.05 |
-| Narrative Resolution | 6.5 | 15% | 0.975 |
-| **Base Score** | | | **7.375** |
-| **Episode Multiplier** | | 0.93 | -0.52 |
-| **FINAL SCORE** | | | **6.86 → 7.26** |
+| World Building | 7.5 | 15% | 1.13 |
+| Cinematography | 6 | 10% | 0.60 |
+| Visual Spectacle | 5 | 10% | 0.50 |
+| Conceptual Density | 8 | 15% | 1.20 |
+| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Resolution | 7 | 15% | 1.05 |
+| **FINAL SCORE** | | | **7.02** |
 
 ---
 
-## External Ratings
+## Why It Ranks #97
 
-| Source | Score | Scale |
-|--------|-------|-------|
-| IMDb | 8.7 | 10 |
-| Rotten Tomatoes (S1) | 89% | 100 |
-| Metacritic | 79 | 100 |
-
-## Why It Ranks #82
-
-- **Characters (7.5/10)**: Strong ensemble but no central protagonist
-- **World (8.0/10)**: Excellent prison environment
-- **Cinematography (7.0/10)**: Functional but unremarkable
-- **Spectacle (7.5/10)**: Appropriate violence, confined setting
-- **Concept (8.0/10)**: Dense with institutional critique
-- **Drive (7.0/10)**: Solid but spread too thin
-- **Resolution (6.5/10)**: Abrupt, unfinished ending
+Oz achieves a final score of 7.02 based on its performance across all seven dimensions.
 
 ---
 
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

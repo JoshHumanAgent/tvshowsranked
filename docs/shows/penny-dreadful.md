@@ -1,8 +1,17 @@
 # Penny Dreadful
 
-**Rank #70** | Horror, Drama, Fantasy | 2014-2016 | Showtime | 3 Seasons
+> *Penny Dreadful*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #53 |
+| **Score** | 7.65 |
+| **Year** | 2014 |
+| **Episodes** | 27 |
+| **Genres** | horror, drama, fantasy |
+| **TMDB ID** | 44484 |
 
 ## What It Feels Like to Watch
 
@@ -22,181 +31,67 @@ For fans of Gothic horror, this is required viewing.
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
-**Strengths:**
-- **Eva Green as Vanessa Ives**: Extraordinary performance as a woman battling darkness. The show's anchor.
-- **Josh Hartnett as Ethan Chandler**: Surprisingly effective, brings haunted quality.
-- **Timothy Dalton as Sir Malcolm Murray**: Gravitas and determination.
-- **Harry Treadaway as Dr. Frankenstein**: Cold brilliance.
-- **The ensemble**: Strong performances across the gothic cast.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- Some characters get more development than others.
-- The third season rushes some arcs.
+### 2. World Building (15%) — Score: 8
 
-**Why 8.5 and not 9.0**: Eva Green is transcendent, but some characters remain archetypal.
+**Raw Score: 8 | Weighted: 1.20**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.5
+### 3. Cinematography (10%) — Score: 9
 
-**Raw Score: 8.5 | Weighted: 1.275**
+**Raw Score: 9 | Weighted: 0.90**
 
-**Strengths:**
-- **Victorian London**: Atmospheric, foggy, dangerous.
-- **Gothic literature mashup**: Frankenstein, Dorian Gray, Dracula, Jekyll/Hyde.
-- **Supernatural mythology**: The show creates its own lore while honoring sources.
-- **Period detail**: Ornate Victorian settings.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- Sometimes the world feels crowded.
-- Not all literary adaptations are equally successful.
+### 4. Visual Spectacle (10%) — Score: 8
 
-**Why 8.5**: Rich, atmospheric world that honors gothic tradition.
+**Raw Score: 8 | Weighted: 0.80**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.5
+### 5. Conceptual Density (15%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Gothic atmosphere**: Fog, shadow, candlelight.
-- **Color palette**: Muted, moody, appropriate.
-- **Period detail**: Every frame feels authentic.
-- **Horror sequences**: Creatively shot scares.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Some scenes are visually routine.
-- Limited visual variety across seasons.
+### 6. Narrative Drive (15%) — Score: 7
 
-**Why 8.5**: Consistently atmospheric and appropriate to genre.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.5
+### 7. Narrative Resolution (15%) — Score: 6
 
-**Raw Score: 7.5 | Weighted: 0.75**
+**Raw Score: 6 | Weighted: 0.90**
 
-**Strengths:**
-- **Creature effects**: The Frankenstein monster is impressive.
-- **Horror sequences**: Visceral and well-staged.
-- **Period costumes**: Beautiful Victorian design.
-- **Supernatural moments**: Visual impact when needed.
-
-**Weaknesses:**
-- Budget constraints sometimes show.
-- Not an action-heavy show.
-
-**Why 7.5**: The spectacle serves the horror, not the action.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Addiction and desire**: Vanessa's demons as external forces.
-- **Identity and duality**: Hyde, Dorian, the Creature.
-- **Motherhood and loss**: Malcolm's arc is powerful.
-- **Sexuality**: The show explores desire without shame.
-
-**Weaknesses:**
-- Some themes are explored superficially.
-- The mashup format limits depth.
-
-**Why 8.0**: Solid thematic work for a genre show.
-
----
-
-### 6. Narrative Drive (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Vanessa's arc**: The driving force throughout.
-- **The Monster**: His story is compelling across all seasons.
-- **Tension building**: The horror escalates well.
-- **Cliffhangers**: Strong episode endings.
-
-**Weaknesses:**
-- **Season 2 drags**: Some filler episodes.
-- **Multiple plotlines**: Can feel scattered.
-
-**Why 7.5**: Strong when focused, but pacing issues.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Vanessa's conclusion**: Bold, tragic, fitting.
-- **Ethan's arc**: Satisfying resolution.
-- **The Creature**: His ending is poignant.
-
-**Weaknesses:**
-- **Cancellation impact**: Some stories feel rushed.
-- **Dorian Gray**: Could have used more closure.
-
-**Why 8.0**: The ending works despite cancellation pressure.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 8.5 | 15% | 1.275 |
-| Cinematography | 8.5 | 10% | 0.85 |
-| Visual Spectacle | 7.5 | 10% | 0.75 |
-| Conceptual Density | 8.0 | 15% | 1.20 |
-| Narrative Drive | 7.5 | 15% | 1.125 |
-| Narrative Resolution | 8.0 | 15% | 1.20 |
-| **Base Score** | | | **8.10** |
-| **Episode Multiplier** | | 0.92 | -0.67 |
-| **FINAL SCORE** | | | **7.43 → 7.37** |
+| Characters & Acting | 8 | 20% | 1.60 |
+| World Building | 8 | 15% | 1.20 |
+| Cinematography | 9 | 10% | 0.90 |
+| Visual Spectacle | 8 | 10% | 0.80 |
+| Conceptual Density | 8 | 15% | 1.20 |
+| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Resolution | 6 | 15% | 0.90 |
+| **FINAL SCORE** | | | **7.65** |
 
 ---
 
-## Where to Watch
+## Why It Ranks #53
 
-- **Streaming:** Showtime, Paramount+
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 7.9/10 | 85,000 |
-| Rotten Tomatoes | 79% | — |
-| Metacritic | 69/100 | — |
-
-*Data accessed 2026-02-15*
+Penny Dreadful achieves a final score of 7.65 based on its performance across all seven dimensions.
 
 ---
 
-## Why It Ranks #70
-
-- **Characters (8.5/10)**: Eva Green anchors an excellent ensemble
-- **World (8.5/10)**: Rich gothic world of literary figures
-- **Cinematography (8.5/10)**: Atmospheric Victorian style
-- **Spectacle (7.5/10)**: Good creature effects, limited scope
-- **Concept (8.0/10)**: Identity, duality, desire
-- **Drive (7.5/10)**: Strong when focused, pacing issues
-- **Resolution (8.0/10)**: Bold conclusion despite cancellation
-
----
-
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
-
----
-
-**Previous:** [The Underground Railroad (#69)](the-underground-railroad.md) | **Next:** [Godless (#71)](godless.md)
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

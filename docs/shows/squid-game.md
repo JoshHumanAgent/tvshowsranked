@@ -1,8 +1,17 @@
 # Squid Game
 
-**Rank #57** | Thriller, Drama, Sci-Fi | 2021-Present | Netflix | 2+ Seasons
+> *Squid Game*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #33 |
+| **Score** | 7.82 |
+| **Year** | 2021 |
+| **Episodes** | 18 |
+| **Genres** | thriller, drama, sci-fi |
+| **TMDB ID** | 93405 |
 
 ## What It Feels Like to Watch
 
@@ -22,174 +31,69 @@ The second season expands the world while maintaining the tension. Gi-hun return
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Netflix
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 8.0/10 | 395,000 |
-| TMDB | 7.86/10 | 17,143 |
-| Rotten Tomatoes | 95% | — |
-
-*Data accessed 2026-02-15*
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 7
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 7 | Weighted: 1.40**
 
-**Strengths:**
-- **Seong Gi-hun (Lee Jung-jae)**: Compelling protagonist whose moral compass keeps him going. His transformation from desperate debtor to determined survivor is well-executed.
-- **Kang Sae-byeok (Jung Ho-yeon)**: Breakout performance as the North Korean defector. Her stoicism masks deep vulnerability.
-- **Oh Il-nam (O Yeong-su)**: The elderly contestant forms genuine emotional connection.
-- **Ali (Anupam Tripathi)**: His faith and sacrifice are narrative highlights.
-- **Ensemble casting**: International cast works well together.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- Some supporting players feel functional rather than fully realized.
-- Villains (front man, VIPs) are somewhat underdeveloped.
-- Character depth sacrificed for plot momentum.
+### 2. World Building (15%) — Score: 7.5
 
-**Why 8.5 not 9.0**: Strong central performances but limited time to develop full ensemble. Some characters exist primarily to die.
+**Raw Score: 7.5 | Weighted: 1.13**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.0
+### 3. Cinematography (10%) — Score: 8
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 8 | Weighted: 0.80**
 
-**Strengths:**
-- **Game environments**: The surreal sets are meticulously designed. Each game location creates distinct atmosphere.
-- **Underground organization**: The facility operations are believably complex.
-- **Korean social context**: Debt, gambling, class inequality all feel authentic.
-- **The guards**: Their hierarchy and uniforms create creepy mythology.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- Limited exploration outside the games.
-- Some of the organization's logistics remain unexplained.
+### 4. Visual Spectacle (10%) — Score: 9
 
-**Why 8.0**: Excellent game environments but the"real world" outside is less developed.
+**Raw Score: 9 | Weighted: 0.90**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.0
+### 5. Conceptual Density (15%) — Score: 7
 
-**Raw Score: 8.0 | Weighted: 0.80**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **Color contrast**: Pastel colors versus brutal violence creates unease.
-- **Game framing**: Wide shots emphasize the arena scale.
-- **Movement sequences**: The "Red Light, Green Light" doll sequence is iconic.
-- **Set design cinematography**: The rooms themselves become characters.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Occasionally conventional shot selection.
-- Less visually distinctive outside game spaces.
+### 6. Narrative Drive (15%) — Score: 9
 
-**Why 8.0**: Strong visual identity in games but more standard elsewhere.
+**Raw Score: 9 | Weighted: 1.35**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8.5
+### 7. Narrative Resolution (15%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Production design**: The sets are extraordinary — childlike yet sinister.
-- **Game sequences**: Set pieces that become iconic.
-- **Costume design**: The green tracksuits, pink guards, masks all distinctive.
-- **Practical effects**: Violence is visceral rather than CGI-heavy.
-
-**Weaknesses:**
-- Limited action variety across season.
-- Not as consistently spectacular as some productions.
-
-**Why 8.5**: The production design elevates the material significantly.
-
----
-
-### 5. Conceptual Density (15%) — Score: 9.0
-
-**Raw Score: 9.0 | Weighted: 1.35**
-
-**Strengths:**
-- **Capitalism critique**: The show's metaphor is immediately understandable.
-- **Class commentary**: "Life is already a death game for the poor."
-- **Moral choices**: Games are designed to make players choose between humanity and survival.
-- **Childhood innocence corrupted**: Nostalgia weaponized.
-- **Critique of debt**: The modern economy as trap.
-
-**Weaknesses:**
-- The metaphor can be heavy-handed.
-- Some political aspects remain unexplored.
-
-**Why 9.0**: Dense with social commentary that resonates globally.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **High stakes**: Every episode has life-or-death consequences.
-- **Game structure**: Tension escalates with each round.
-- **Mystery elements**: The organization behind the games provides ongoing intrigue.
-- **Binge structure**: Designed to keep watching.
-
-**Weaknesses:**
-- Some pacing issues between game sequences.
-- Character beats sometimes rushed.
-
-**Why 8.5**: Propulsive but occasionally uneven.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Season one finale**: Gi-hun's choice and transformation.
-- **The reveal (spoiler)**: Il-nam's identity twist is earned.
-- **Setup for more**: Clearly designed for continuation.
-
-**Weaknesses:**
-- Open-ended by design.
-- Many questions unanswered.
-- Second season continues rather than concluding.
-
-**Why 7.5**: Incomplete story. Resolves season one but promises continuation.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 8.0 | 15% | 1.20 |
-| Cinematography | 8.0 | 10% | 0.80 |
-| Visual Spectacle | 8.5 | 10% | 0.85 |
-| Conceptual Density | 9.0 | 15% | 1.35 |
-| Narrative Drive | 8.5 | 15% | 1.275 |
-| Narrative Resolution | 7.5 | 15% | 1.125 |
-| **Base Score** | | | **7.45** |
-| **Episode Multiplier** | | 1.01 | +0.01 |
-| **FINAL SCORE** | | | **7.46** |
+| Characters & Acting | 7 | 20% | 1.40 |
+| World Building | 7.5 | 15% | 1.13 |
+| Cinematography | 8 | 10% | 0.80 |
+| Visual Spectacle | 9 | 10% | 0.90 |
+| Conceptual Density | 7 | 15% | 1.05 |
+| Narrative Drive | 9 | 15% | 1.35 |
+| Narrative Resolution | 8 | 15% | 1.20 |
+| **FINAL SCORE** | | | **7.82** |
 
 ---
 
-**Previous:** [Generation Kill (#56)](generation-kill.md) | **Next:** [24 (#58)](24.md)
+## Why It Ranks #33
+
+Squid Game achieves a final score of 7.82 based on its performance across all seven dimensions.
 
 ---
 
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

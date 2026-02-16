@@ -1,8 +1,17 @@
 # The Affair
 
-**Rank #89** | Drama | 2014-2019 | Showtime | 5 Seasons
+> *The Affair*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #99 |
+| **Score** | 6.92 |
+| **Year** | 2014 |
+| **Episodes** | 53 |
+| **Genres** | drama |
+| **TMDB ID** | 61463 |
 
 ## What It Feels Like to Watch
 
@@ -16,178 +25,69 @@ The show evolves over five seasons, following the characters through divorce, re
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Showtime, Paramount+
-
----
-
-## Ratings
-
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 7.2/10 | 30,000 |
-| Rotten Tomatoes | 89% | — |
-| Metacritic | 68/100 | — |
-
-*Data accessed 2026-02-15*
-
----
-
 ## 7-Dimension Scoring Breakdown
 
 ### 1. Characters & Acting (20%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-**Strengths:**
-- **Alison Lockhart (Ruth Wilson)**: Wilson is extraordinary—vulnerable, searching, and deeply human.
-- **Noah Solloway (Dominic West)**: West brings complexity to a potentially unlikable character.
-- **Cole Lockhart (Joshua Jackson)**: Jackson is heartbreaking as the wronged husband.
-- **Helen Solloway (Maura Tierney)**: Tierney's performance is excellent.
-- **The first season**: All performances shine.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- **Later seasons**: Some performances feel stretched.
-- **New characters**: Not all additions work.
+### 2. World Building (15%) — Score: 6.5
 
-**Why 7.5**: Strong core performances, especially Wilson and West.
+**Raw Score: 6.5 | Weighted: 0.97**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 7.0
+### 3. Cinematography (10%) — Score: 8
 
-**Raw Score: 7.0 | Weighted: 1.05**
+**Raw Score: 8 | Weighted: 0.80**
 
-**Strengths:**
-- **Montauk**: The coastal town is evocative.
-- **The dual perspectives**: The world looks different depending on who's viewing it.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- **Limited scope**: The world feels small.
-- **Later seasons**: Loses the intimate setting.
+### 4. Visual Spectacle (10%) — Score: 5
 
-**Why 7.0**: Solid within limited scope.
+**Raw Score: 5 | Weighted: 0.50**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 7.5
+### 5. Conceptual Density (15%) — Score: 8
 
-**Raw Score: 7.5 | Weighted: 0.75**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Montauk visuals**: The water, the light—evocative.
-- **Subjective shots**: The dual perspectives are visually represented.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Not groundbreaking.
-- Later seasons feel more standard.
+### 6. Narrative Drive (15%) — Score: 7
 
-**Why 7.5**: Appropriately atmospheric.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 6.0
+### 7. Narrative Resolution (15%) — Score: 6
 
-**Raw Score: 6.0 | Weighted: 0.60**
+**Raw Score: 6 | Weighted: 0.90**
 
-**Strengths:**
-- **Montauk locations**: Beautiful coastal imagery.
-
-**Weaknesses:**
-- **Limited spectacle**: Not a visually spectacular show.
-- **Focus on character**: Visuals serve story, not spectacle.
-
-**Why 6.0**: Limited spectacle.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Memory and perception**: How we remember events differently.
-- **Marriage and infidelity**: Explores why people cheat.
-- **Grief and healing**: Alison's loss and recovery.
-- **Identity**: Who we are versus who we think we are.
-- **The stories we tell**: How we construct narratives about ourselves.
-
-**Weaknesses:**
-- **Later seasons**: Lost focus on core themes.
-- Some philosophical elements get lost.
-
-**Why 8.0**: Original ideas about perception and truth.
-
----
-
-### 6. Narrative Drive (15%) — Score: 7.0
-
-**Raw Score: 7.0 | Weighted: 1.05**
-
-**Strengths:**
-- **First season**: The dual narrative structure is compelling.
-- **The mystery**: The death investigation provides structure.
-
-**Weaknesses:**
-- **Later seasons**: Lost momentum.
-- **Repetitive**: Some relationship dynamics become tiresome.
-- **Pacing**: Can feel slow.
-
-**Why 7.0**: Strong start, loses steam.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 5.0
-
-**Raw Score: 5.0 | Weighted: 0.75**
-
-**Strengths:**
-- **First season**: Strong ending.
-- **Some character conclusions**: Certain arcs resolve.
-
-**Weaknesses:**
-- **Final season**: Widely considered disappointing.
-- **Rushed ending**: The series conclusion feels abrupt.
-- **Unresolved threads**: Many plotlines don't pay off.
-
-**Why 5.0**: The show didn't stick the landing.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 7.5 | 20% | 1.50 |
-| World Building | 7.0 | 15% | 1.05 |
-| Cinematography | 7.5 | 10% | 0.75 |
-| Visual Spectacle | 6.0 | 10% | 0.60 |
-| Conceptual Density | 8.0 | 15% | 1.20 |
-| Narrative Drive | 7.0 | 15% | 1.05 |
-| Narrative Resolution | 5.0 | 15% | 0.75 |
-| **Base Score** | | | **6.90** |
-| **Episode Multiplier** | | 0.97 | -0.21 |
-| **FINAL SCORE** | | | **6.69 → 7.14** |
-
-*Note: Score adjusted to reflect strong first season despite later decline*
+| World Building | 6.5 | 15% | 0.97 |
+| Cinematography | 8 | 10% | 0.80 |
+| Visual Spectacle | 5 | 10% | 0.50 |
+| Conceptual Density | 8 | 15% | 1.20 |
+| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Resolution | 6 | 15% | 0.90 |
+| **FINAL SCORE** | | | **6.92** |
 
 ---
 
-## Why It Ranks #89
+## Why It Ranks #99
 
-- **Characters (7.5/10)**: Strong performances by Wilson and West
-- **World (7.0/10)**: Evocative Montauk setting
-- **Cinematography (7.5/10)**: Atmospheric coastal visuals
-- **Spectacle (6.0/10)**: Limited
-- **Concept (8.0/10)**: Original ideas about memory
-- **Drive (7.0/10)**: Great first season, weaker later
-- **Resolution (5.0/10)**: Disappointing ending
+The Affair achieves a final score of 6.92 based on its performance across all seven dimensions.
 
 ---
 
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
-
----
-
-**Previous:** [Broadchurch (#88)](broadchurch.md) | **Next:** [Twin Peaks (#90)](twin-peaks.md)
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

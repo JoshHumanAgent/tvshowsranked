@@ -1,8 +1,17 @@
 # Euphoria
 
-**Rank #77** | Drama | 2019-Present | HBO | 3+ Seasons
+> *Euphoria*
 
----
+## Overview
+
+| Attribute | Details |
+|-----------|---------|
+| **Rank** | #55 |
+| **Score** | 7.60 |
+| **Year** | 2019 |
+| **Episodes** | 17 |
+| **Genres** | drama |
+| **TMDB ID** | 85552 |
 
 ## What It Feels Like to Watch
 
@@ -18,174 +27,69 @@ Zendaya won an Emmy for her performance as Rue — and it's well-deserved. She's
 
 ---
 
-## Where to Watch
-
-- **Streaming:** Max
-
----
-
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
-**Strengths:**
-- **Rue (Zendaya)**: Emmy-winning performance. Captures addiction's chaos and loneliness.
-- **Jules (Hunter Schafer)**: Trans character portrayed with nuance and authenticity.
-- **Nate (Jacob Elordi)**: A terrifying study in repressed rage and toxic masculinity.
-- **Cassie (Sydney Sweeney)**: The need for male validation portrayed devastatingly.
-- **Maddie (Alexa Demie)**: Complex woman with hidden depths.
-- **Ensemble**: Strong performances across the young cast.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- **Limited adult characters**: Parents are mostly background.
-- **Character consistency**: Some behave inconsistently between seasons.
+### 2. World Building (15%) — Score: 7
 
-**Why 8.5**: Strong performances, especially Zendaya. Ensemble is solid but uneven.
+**Raw Score: 7 | Weighted: 1.05**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 7.5
+### 3. Cinematography (10%) — Score: 9.5
 
-**Raw Score: 7.5 | Weighted: 1.125**
+**Raw Score: 9.5 | Weighted: 0.95**
 
-**Strengths:**
-- **Instagram era adolescence**: Captures Gen Z social media anxiety.
-- **Suburban America**: High school as pressure cooker.
-- **Party culture**: Realistic depiction of teenage excess.
-- **Digital natives**: Technology integrated naturally into lives.
-
-**Weaknesses:**
-- **Hyper-stylized**: Not always grounded in realism.
-- **Limited community**: Focuses on cliques, not broader world.
-- **High school bubble**: No sense of life beyond this microcosm.
-
-**Why 7.5**: Effective for its story, though narrow in scope.
-
----
-
-### 3. Cinematography (10%) — Score: 9.0
-
-**Raw Score: 9.0 | Weighted: 0.90**
-
-**Strengths:**
-- **Music video aesthetic**: Inventive, bold visual style.
-- **Neon and color**: Distinctive color palette.
-- **Long takes**: Intimate, unflinching scenes.
-- **Montage sequences**: Creative time manipulation.
-- **Dreamlike atmosphere**: Visuals match drug-induced states.
-
-**Weaknesses:**
-- **Can be overwhelming**: Visuals sometimes distract from content.
-- **Inconsistent style**: Some episodes more restrained.
-
-**Why 9.0**: Visually arresting and distinctive. One of TV's most aesthetically unique shows.
-
----
+Analysis for Cinematography dimension.
 
 ### 4. Visual Spectacle (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-**Strengths:**
-- **Carnival sequence**: Set piece showcases visual ambition.
-- **Fashion and styling**: Costumes are characters.
-- **Makeup artistry**: Glitter, tears, blood—all heightened.
-- **Party scenes**: Elaborate, immersive sequences.
+Analysis for Visual Spectacle dimension.
 
-**Weaknesses:**
-- **Spectacle over substance**: Sometimes style crowds out story.
-- **Budget limitations**: Some sequences could be more elaborate.
+### 5. Conceptual Density (15%) — Score: 8
 
-**Why 8.5**: Visually impressive, though occasionally prioritizes style.
+**Raw Score: 8 | Weighted: 1.20**
 
----
+Analysis for Conceptual Density dimension.
 
-### 5. Conceptual Density (15%) — Score: 8.0
+### 6. Narrative Drive (15%) — Score: 7
 
-**Raw Score: 8.0 | Weighted: 1.20**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **Addiction**: Honest depiction of substance abuse and recovery.
-- **Identity and sexuality**: Multiple characters exploring gender and orientation.
-- **Trauma**: Generational trauma passed down.
-- **Social media**: Addiction to validation and image.
-- **Toxic masculinity**: Deconstruction of repressed male rage.
+Analysis for Narrative Drive dimension.
 
-**Weaknesses:**
-- **Controversy**: Accused of glamorizing drug use.
-- **Teen exploitation concern**: Sexual content with underage characters.
-- **Limited solutions**: Raises issues but offers few paths forward.
+### 7. Narrative Resolution (15%) — Score: 6
 
-**Why 8.0**: Dense with themes, though controversial in execution.
+**Raw Score: 6 | Weighted: 0.90**
 
----
-
-### 6. Narrative Drive (15%) — Score: 7.5
-
-**Raw Score: 7.5 | Weighted: 1.125**
-
-**Strengths:**
-- **Non-linear storytelling**: Episode intros show backstories.
-- **Character-focused**: Each episode centers a different character.
-- **Emotional momentum**: Feelings drive the narrative.
-- **Cliffhangers**: Knows how to leave viewers wanting more.
-
-**Weaknesses:**
-- **Slow plot**: More character study than plot-driven.
-- **Pacing issues**: Some episodes drag.
-- **Meandering**: Can feel directionless at times.
-
-**Why 7.5**: Character-driven, not plot-driven. Can test patience.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 7.0
-
-**Raw Score: 7.0 | Weighted: 1.05**
-
-**Strengths:**
-- **Season finales**: Generally provide emotional satisfaction.
-- **Character arcs**: Meaningful development across seasons.
-- **Ambiguity**: Appropriately open-ended about Rue's future.
-
-**Weaknesses:**
-- **Unfinished story**: No real resolution yet (ongoing series).
-- **Season 2 finale disappointment**: Some felt it lacked payoff.
-- **No clear ending**: Story continues to expand.
-
-**Why 7.0**: Incomplete by design. Resolution depends on future seasons.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 7.5 | 15% | 1.125 |
-| Cinematography | 9.0 | 10% | 0.90 |
+| Characters & Acting | 8 | 20% | 1.60 |
+| World Building | 7 | 15% | 1.05 |
+| Cinematography | 9.5 | 10% | 0.95 |
 | Visual Spectacle | 8.5 | 10% | 0.85 |
-| Conceptual Density | 8.0 | 15% | 1.20 |
-| Narrative Drive | 7.5 | 15% | 1.125 |
-| Narrative Resolution | 7.0 | 15% | 1.05 |
-| **Base Score** | | | **7.95** |
-| **Episode Multiplier** | | 0.92 | -0.65 |
-| **FINAL SCORE** | | | **7.30** |
+| Conceptual Density | 8 | 15% | 1.20 |
+| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Resolution | 6 | 15% | 0.90 |
+| **FINAL SCORE** | | | **7.60** |
 
 ---
 
-## Ratings
+## Why It Ranks #55
 
-| Source | Score | Votes |
-|--------|-------|-------|
-| IMDb | 7.3/10 | 280,000 |
-| Rotten Tomatoes | 81% | — |
-| Metacritic | 68/100 | — |
-
-*Data accessed 2026-02-15*
+Euphoria achieves a final score of 7.60 based on its performance across all seven dimensions.
 
 ---
 
-**Previous:** [Mare of Easttown (#76)](mare-of-easttown.md) | **Next:** [The Pacific (#78)](the-pacific.md)
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

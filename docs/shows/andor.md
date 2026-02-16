@@ -1,20 +1,17 @@
 # Andor
 
-> *"I don't like them. I don't trust them. And I'm not going to think about them."*
+> *Andor*
 
 ## Overview
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #14 |
-| **Score** | 7.96 |
+| **Rank** | #7 |
+| **Score** | 8.22 |
 | **Year** | 2022 |
-| **Network** | Disney+ |
-| **Seasons** | 1 |
 | **Episodes** | 12 |
-| **Runtime** | 40-50 min |
-| **Genres** | Sci-Fi, Drama, Action |
-| **Creator** | Tony Gilroy |
+| **Genres** | sci-fi, drama, action |
+| **TMDB ID** | 83867 |
 
 ## What It Feels Like to Watch
 
@@ -36,174 +33,67 @@ Andor is proof that Star Wars can tell mature stories. It's the anti-prequel—i
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 9.0
+### 1. Characters & Acting (20%) — Score: 7.5
 
-**Raw Score: 9.0 | Weighted: 1.80**
+**Raw Score: 7.5 | Weighted: 1.50**
 
-**Strengths:**
-- **Cassian Andor (Diego Luna)**: A revelation. Luna takes a supporting character from a film and makes him compelling. His emotional range—from anger to grief to hope—is remarkable.
-- **Luthen Rael (Stellan Skarsgård)**: The secret rebel leader is magnetic. Skarsgård brings weariness and conviction to this complicated figure.
-- **Mon Mothma (Genevieve O'Reilly)**: A politician trying to maintain humanity while funding violence. O'Reilly is magnificent.
-- **Dedra Meero (Denise Gough)**: The Imperial officer is terrifying in her competence. Gough makes you understand how the Empire functions.
-- **Kino Loy (Andy Serkis)**: The prison supervisor who transforms is a highlight. Serkis brings unexpected depth.
-- **Bix Caleen (Adria Arjona)**: Cassian's love interest provides emotional grounding.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- **Limited development for some rebels**: The larger network remains somewhat abstract.
-- **Skeen**: The mercenary feels somewhat underdeveloped.
+### 2. World Building (15%) — Score: 9.5
 
-**Why 9.0 and not 9.5**: Excellent ensemble, but the single season limits character depth compared to multi-season shows.
+**Raw Score: 9.5 | Weighted: 1.43**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.5
+### 3. Cinematography (10%) — Score: 8.5
 
-**Raw Score: 8.5 | Weighted: 1.275**
+**Raw Score: 8.5 | Weighted: 0.85**
 
-**Strengths:**
-- **Star Wars realism**: The franchise has never felt more grounded. The Empire is bureaucratic, the rebellion is fragmented.
-- **Corporate exploitation**: The Mining Guild/Cyberonics represents corporate evil—more realistic than the Death Star.
-- **Imperial occupation**: The occupation of Ferrix shows everyday oppression.
-- **Rebel networks**: The show depicts how underground movements actually work.
-- **Physical locations**: Morlana One, Ferrix, Narkina 5—each location feels distinct and real.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- **Limited scope**: Only 12 episodes means the world stays relatively contained.
-- **Star Wars tropes**: Some familiar elements feel obligatory.
+### 4. Visual Spectacle (10%) — Score: 8.5
 
-**Why 8.5**: Excellent within its scope. The show makes Star Wars feel mature.
+**Raw Score: 8.5 | Weighted: 0.85**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 9.0
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 9.0 | Weighted: 0.90**
+**Raw Score: 8.5 | Weighted: 1.27**
 
-**Strengths:**
-- **Tony Gilroy's eye**: The director brings Michael Clayton precision to sci-fi.
-- **Natural lighting**: The show uses real light sources—candles, screens, sun.
-- **Long takes**: The Narkina 5 escape sequence is a masterclass in tension.
-- **Composition**: Every frame is deliberate and beautiful.
-- **Color grading**: The muted palette feels grounded rather than fantastical.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Some episodes are more visually standard than others.
-- Limited visual variety across settings.
+### 6. Narrative Drive (15%) — Score: 7.5
 
-**Why 9.0**: Consistently beautiful. Not as distinctive as some, but always purposeful.
+**Raw Score: 7.5 | Weighted: 1.13**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8.0
+### 7. Narrative Resolution (15%) — Score: 8
 
-**Raw Score: 8.0 | Weighted: 0.80**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Star Destroyers**: The Imperial ships look impressive.
-- **Prison sequence**: Narkina 5 provides visual variety.
-- **Action choreography**: The heists and fights are well-executed.
-- **Ferrix destruction**: The uprising is visually powerful.
-
-**Weaknesses:**
-- Not an action-driven show. Limited spectacle compared to other Star Wars.
-- No major battles, no lightsaber duels, no big space battles.
-
-**Why 8.0**: Spectacle serves story rather than dominating it. Appropriate for the narrative.
-
----
-
-### 5. Conceptual Density (15%) — Score: 9.0
-
-**Raw Score: 9.0 | Weighted: 1.35**
-
-**Strengths:**
-- **Moral complexity of rebellion**: The show asks hard questions about what we sacrifice for freedom.
-- **Imperial bureaucracy**: The Empire is shown as a system, not just villains.
-- **Sacrifice**: Characters die meaninglessly. Victory is not guaranteed.
-- **Revolutionary theory**: Luthen's speech about being "stained" is profound.
-- **Cost of idealism**: The show doesn't romanticize resistance.
-
-**Weaknesses:**
-- Some thematic elements are implicit rather than fully explored.
-- Limited time prevents deeper philosophical dives.
-
-**Why 9.0**: Dense with ideas about resistance and morality. The most thoughtful Star Wars.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Tight episodes**: Each episode advances the story meaningfully.
-- **Escalation**: The stakes build from personal survival to galactic rebellion.
-- **Tension**: The prison sequence is unbearably tense.
-- **Payoffs**: The heist, the Aldhani robbery, the finale—all deliver.
-
-**Weaknesses:**
-- **First three episodes**: While good, they're slower than the rest.
-- **One season**: The story feels abbreviated.
-
-**Why 8.5**: Compact and efficient. Every episode earns its place.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Season finale**: "Rix Road" provides emotional and narrative payoff.
-- **Cassian's arc**: His transformation from cynic to believer is complete.
-- **Narkina 5 closure**: The prison storyline resolves satisfyingly.
-- **Setup for more**: The show leaves room for continuation.
-
-**Weaknesses:**
-- **Open-ended**: Clearly set up for more seasons.
-- **Some threads unresolved**: The larger rebellion remains incomplete.
-
-**Why 8.0**: Satisfying within its season but clearly part of a larger story.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 9.0 | 20% | 1.80 |
-| World Building | 8.5 | 15% | 1.275 |
-| Cinematography | 9.0 | 10% | 0.90 |
-| Visual Spectacle | 8.0 | 10% | 0.80 |
-| Conceptual Density | 9.0 | 15% | 1.35 |
-| Narrative Drive | 8.5 | 15% | 1.275 |
-| Narrative Resolution | 8.0 | 15% | 1.20 |
-| **Base Score** | | | **8.60** |
-| **Episode Multiplier** | | 0.93 | -0.60 |
-| **FINAL SCORE** | | | **8.00 → 7.96** |
+| Characters & Acting | 7.5 | 20% | 1.50 |
+| World Building | 9.5 | 15% | 1.43 |
+| Cinematography | 8.5 | 10% | 0.85 |
+| Visual Spectacle | 8.5 | 10% | 0.85 |
+| Conceptual Density | 8.5 | 15% | 1.27 |
+| Narrative Drive | 7.5 | 15% | 1.13 |
+| Narrative Resolution | 8 | 15% | 1.20 |
+| **FINAL SCORE** | | | **8.22** |
 
 ---
 
-## External Ratings
+## Why It Ranks #7
 
-| Source | Score | Scale |
-|--------|-------|-------|
-| IMDb | 8.4 | 10 |
-| Rotten Tomatoes | 96% | 100 |
-| Metacritic | 81 | 100 |
+Andor achieves a final score of 8.22 based on its performance across all seven dimensions.
 
 ---
 
-## Why It Ranks #14
-
-- **Characters (9.0/10)**: Diego Luna leads an excellent ensemble
-- **World (8.5/10)**: Grounded, mature Star Wars
-- **Cinematography (9.0/10)**: Tony Gilroy's cinematic eye
-- **Spectacle (8.0/10)**: Story over action
-- **Concept (9.0/10)**: Dense with moral complexity
-- **Drive (8.5/10)**: Tight, efficient storytelling
-- **Resolution (8.0/10)**: Satisfying season, open future
-
----
-
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

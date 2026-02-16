@@ -1,19 +1,17 @@
-﻿# Lost
+# Lost
 
-> *"If we can't live together, we're gonna die alone."*
+> *Lost*
 
 ## Overview
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #36 |
-| **Year** | 2004-2010 |
-| **Network** | ABC |
-| **Seasons** | 6 |
+| **Rank** | #90 |
+| **Score** | 7.18 |
+| **Year** | 2004 |
 | **Episodes** | 121 |
-| **Runtime** | 42-50 min |
-| **Genres** | Sci-Fi, Drama, Mystery |
-| **Creators** | J.J. Abrams, Damon Lindelof, Jeffrey Lieber |
+| **Genres** | sci-fi, drama, mystery |
+| **TMDB ID** | 4607 |
 
 ## What It Feels Like to Watch
 
@@ -27,215 +25,71 @@ The structure is ambitious and sometimes frustrating. The time travel in Season 
 
 What you take away from Lost is the feeling of being part of something special. It was television as event, as conversation, as obsession. It proved that network TV could tell stories on the scale of novels, with depth and complexity that rewarded deep engagement. The island may be mysterious, but the experience of watching is unforgettable.
 
-## External Ratings
-
-| Source | Score | Scale |
-|--------|-------|-------|
-| IMDb | 8.3 | 10 |
-| Rotten Tomatoes | 80% | 100 |
-| Metacritic | 72 | 100 |
-
-## Why It Ranks #36
-
-- **Characters (8.5/10)**: Rich ensemble with memorable character arcs across all seasons
-- **World Building (8.5/10)**: The island mythology is compelling and mysterious
-- **Cinematography (8.0/10)**: Strong production values for network television
-- **Visual Spectacle (8.5/10)**: Impressive scope and effects for its time
-- **Conceptual Density (8.5/10)**: Explores themes of fate, free will, and redemption
-- **Narrative Drive (9.0/10)**: Compelling mythology drives compulsive viewing
-- **Resolution (7.0/10)**: Divisive finale, though emotionally satisfying for many
-
----
-
-*Ranked on: 2026-02-15*
-
 ---
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
-**Strengths:**
-- **Matthew Fox as Jack Shephard**: The reluctant leader is compelling throughout. Fox carries the show's emotional weight.
-- **Terry O'Quinn as John Locke**: The believer is mysterious and magnetic. His transformation is central to the mythology.
-- **Evangeline Lilly as Kate Austen**: Holds her own among the male ensemble.
-- **Josh Holloway as James "Sawyer" Ford**: The con man with hidden depth is fan favorite.
-- **Nostalgic ensemble**: The characters feel like old friends.
-- **Harold Perrineau as Michael Dawson**: His journey adds complexity.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- **Female characters**: Kate and some others are sometimes defined by their relationships.
-- **Supporting cast**: Some characters are underutilized.
-- **Later seasons**: Some character developments are dropped or changed.
+### 2. World Building (15%) — Score: 7.5
 
-**Why 8.5 and not 9.0**: Strong ensemble but not quite the depth of The Wire or The Leftovers.
+**Raw Score: 7.5 | Weighted: 1.13**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.5
+### 3. Cinematography (10%) — Score: 7
 
-**Raw Score: 8.5 | Weighted: 1.275**
+**Raw Score: 7 | Weighted: 0.70**
 
-**Strengths:**
-- **The Island**: One of the most compelling fictional locations in television.
-- **The Others**: The mysterious inhabitants create ongoing tension.
-- **Mythology**: The Dharma Initiative, the smoke monster, the hatch—all contribute to a rich world.
-- **Flashback structure**: Character backstories create a layered world.
-- **Supernatural elements**: The island's unique properties are endlessly intriguing.
-- **Geographic scope**: Various locations (beaches, jungle, hatch, others' camp) feel distinct.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- Some mythology elements are confusing or contradictory.
-- The world beyond the island is less developed.
-- The rules of the island are sometimes inconsistent.
+### 4. Visual Spectacle (10%) — Score: 7.5
 
-**Why 8.5**: Rich, mysterious world-building, though not as internally consistent as some shows.
+**Raw Score: 7.5 | Weighted: 0.75**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.0
+### 5. Conceptual Density (15%) — Score: 7
 
-**Raw Score: 8.0 | Weighted: 0.80**
+**Raw Score: 7 | Weighted: 1.05**
 
-**Strengths:**
-- **Hawaiian locations**: The island is visually stunning.
-- **Cinematic quality**: High production values for network TV.
-- **Flashback sequences**: Varied visual styles for different timelines.
-- **The hatch**: A unique, claustrophobic visual space.
-- **Key episodes**: Certain sequences are visually memorable.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Variable quality across seasons.
-- Some standard TV cinematography in earlier episodes.
-- Not as visually distinctive as later prestige dramas.
+### 6. Narrative Drive (15%) — Score: 8
 
-**Why 8.0**: Solid work that serves the story without being exceptional.
+**Raw Score: 8 | Weighted: 1.20**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8.5
+### 7. Narrative Resolution (15%) — Score: 5
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 5 | Weighted: 0.75**
 
-**Strengths:**
-- **Island scope**: The jungle, beaches, and mountains provide visual variety.
-- **The smoke monster**: Groundbreaking for its time.
-- **Action sequences**: Plane crash, battles with the Others.
-- **The submarine**: Several visually impressive set pieces.
-- **Time travel**: Season 5 provides visual complexity.
-- **The light**: The final season's visual centerpiece.
-
-**Weaknesses:**
-- Some effects haven't aged well.
-- Limited spectacle compared to modern productions.
-- Not as consistently impressive as shows with bigger budgets.
-
-**Why 8.5**: Strong visual scope for its era, though effects show their age.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Faith vs. science**: The central philosophical debate between Locke and Jack.
-- **Fate vs. free will**: Are the characters destined to be there?
-- **Redemption**: Many characters seek redemption for past sins.
-- **Good vs. evil**: The light/dark mythology.
-- **Grief and loss**: The "鳄 people we've lost" theme.
-- **Identity**: What defines us—our choices or our circumstances?
-
-**Weaknesses:**
-- Some conceptual threads are abandoned.
-- The mythology sometimes overwhelms thematic exploration.
-- Not all ideas are fully developed.
-
-**Why 8.5**: Dense with philosophical questions, though execution is sometimes uneven.
-
----
-
-### 6. Narrative Drive (15%) — Score: 9.0
-
-**Raw Score: 9.0 | Weighted: 1.35**
-
-**Strengths:**
-- **Mystery-box structure**: Each episode ends with questions demanding answers.
-- **The hatch**: "What lies in the hatch?" drove massive engagement.
-- **Escalating mythology**: Each season expands the stakes.
-- **Binge-worthy**: The show rewards continuous watching.
-- **The Others**: Ongoing tension about this mysterious group.
-- **Flashback/forward structure**: Keeps the narrative fresh.
-
-**Weaknesses:**
-- Mid-series pacing issues.
-- Some seasons feel like filler.
-- The mythology expansion can overwhelm.
-
-**Why 9.0**: Near-peerless in driving viewer engagement. The mystery-box format was revolutionary.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 7.0
-
-**Raw Score: 7.0 | Weighted: 1.05**
-
-**Strengths:**
-- **Character closures**: Most characters get emotional endings.
-- **The church scene**: Jack's final moments provide emotional catharsis.
-- **Flash-sideways**: The afterlife timeline provides satisfying parallel.
-- **Some mythology answers**: Key questions are addressed.
-- **Emotional resonance**: Many viewers found it moving.
-
-**Weaknesses:**
-- **Divisive ending**: Many viewers felt answers were insufficient.
-- **Some mythology unexplained**: Key elements remain ambiguous.
-- **The twist**: The sideways timeline as afterlife was unexpected.
-- **Not all questions answered**: The show invited speculation it couldn't satisfy.
-
-**Why 7.0**: Emotionally satisfying for many, but narratively divisive.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 8.5 | 15% | 1.275 |
-| Cinematography | 8.0 | 10% | 0.80 |
-| Visual Spectacle | 8.5 | 10% | 0.85 |
-| Conceptual Density | 8.5 | 15% | 1.275 |
-| Narrative Drive | 9.0 | 15% | 1.35 |
-| Narrative Resolution | 7.0 | 15% | 1.05 |
-| **Base Score** | | | **8.28** |
-| **Episode Multiplier** | | 1.06 | +0.22 |
-| **FINAL SCORE** | | | **8.50 → 7.61** |
+| Characters & Acting | 8 | 20% | 1.60 |
+| World Building | 7.5 | 15% | 1.13 |
+| Cinematography | 7 | 10% | 0.70 |
+| Visual Spectacle | 7.5 | 10% | 0.75 |
+| Conceptual Density | 7 | 15% | 1.05 |
+| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Resolution | 5 | 15% | 0.75 |
+| **FINAL SCORE** | | | **7.18** |
 
 ---
 
-## External Ratings
+## Why It Ranks #90
 
-| Source | Score | Scale |
-|--------|-------|-------|
-| IMDb | 8.3 | 10 |
-| Rotten Tomatoes | 80% | 100 |
-| Metacritic | 72 | 100 |
+Lost achieves a final score of 7.18 based on its performance across all seven dimensions.
 
 ---
 
-## Why It Ranks #36
-
-- **Characters (8.5/10)**: Rich ensemble with memorable character arcs across all seasons
-- **World Building (8.5/10)**: The island mythology is compelling and mysterious
-- **Cinematography (8.0/10)**: Strong production values for network television
-- **Visual Spectacle (8.5/10)**: Impressive scope and effects for its time
-- **Conceptual Density (8.5/10)**: Explores themes of fate, free will, and redemption
-- **Narrative Drive (9.0/10)**: Compelling mythology drives compulsive viewing
-- **Resolution (7.0/10)**: Divisive finale, though emotionally satisfying for many
-
----
-
-*Ranked on: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*

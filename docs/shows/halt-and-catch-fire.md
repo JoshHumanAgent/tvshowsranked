@@ -1,20 +1,17 @@
 # Halt and Catch Fire
 
-> *"You can do anything. You just can't do everything."*
+> *Halt and Catch Fire*
 
 ## Overview
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #19 |
+| **Rank** | #27 |
 | **Score** | 7.88 |
 | **Year** | 2014 |
-| **Network** | AMC |
-| **Seasons** | 4 |
 | **Episodes** | 40 |
-| **Runtime** | 45-60 min |
-| **Genres** | Drama |
-| **Creators** | Christopher Cantwell, Christopher Rogers |
+| **Genres** | drama |
+| **TMDB ID** | 59659 |
 
 ## What It Feels Like to Watch
 
@@ -34,176 +31,67 @@ Four seasons cover the rise of the PC, the birth of graphical interfaces, and th
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 9.0
+### 1. Characters & Acting (20%) — Score: 9
 
-**Raw Score: 9.0 | Weighted: 1.80**
+**Raw Score: 9 | Weighted: 1.80**
 
-**Strengths:**
-- **Cameron Howe (Mackenzie Davis)**: The heart of the show. Davis portrays a brilliant programmer whose refusal to compromise is both inspiring and destructive. Her arc from rebel to industry leader is compelling.
-- **Gordon Clark (Scoot McNairy)**: The dreamer whose ambitions exceed his abilities. McNairy brings vulnerability to this tragic figure.
-- **Joe MacMillan (Lee Pace)**: The charismatic force who pushes everyone. Pace makes Joe compelling despite his flaws.
-- **Donna Clark (Alison Pill)**: The revelation. Pill transforms from supportive wife to industry force. Her arc is the show's most satisfying.
-- **The relationships**: The Cameron/Donna partnership, the Gordon/Joe rivalry—the dynamics are complex and real.
+Analysis for Characters & Acting dimension.
 
-**Weaknesses:**
-- **Season 1**: The first season doesn't fully realize the characters.
-- **Joe's arc**: His character arc becomes less central in later seasons.
+### 2. World Building (15%) — Score: 7.5
 
-**Why 9.0 and not 9.5**: Exceptional ensemble, but the first season holds it back from the peak.
+**Raw Score: 7.5 | Weighted: 1.13**
 
----
+Analysis for World Building dimension.
 
-### 2. World Building (15%) — Score: 8.5
+### 3. Cinematography (10%) — Score: 7
 
-**Raw Score: 8.5 | Weighted: 1.275**
+**Raw Score: 7 | Weighted: 0.70**
 
-**Strengths:**
-- **Tech evolution**: The show accurately depicts the PC revolution—the machines, the software, the companies.
-- **Silicon Valley**: The geography of the tech world feels real.
-- **Office culture**: The startup environments are captured authentically.
-- **The era**: 1980s-1990s America is meticulously recreated.
-- **Industry mechanics**: How companies are built, how deals are made—all depicted.
+Analysis for Cinematography dimension.
 
-**Weaknesses:**
-- Limited geographic scope.
-- Tech world can feel insular.
+### 4. Visual Spectacle (10%) — Score: 5
 
-**Why 8.5**: Authentic depiction of the computer revolution. The era comes alive.
+**Raw Score: 5 | Weighted: 0.50**
 
----
+Analysis for Visual Spectacle dimension.
 
-### 3. Cinematography (10%) — Score: 8.0
+### 5. Conceptual Density (15%) — Score: 8
 
-**Raw Score: 8.0 | Weighted: 0.80**
+**Raw Score: 8 | Weighted: 1.20**
 
-**Strengths:**
-- **Period accuracy**: The visual style captures the era.
-- **Computer screens**: The CRT monitors, the code, the interfaces—all visually present.
-- **Intimate framing**: Character scenes are well-composed.
-- **Retro aesthetic**: The show embraces the visual style of the era.
+Analysis for Conceptual Density dimension.
 
-**Weaknesses:**
-- Not visually distinctive.
-- Limited visual ambition compared to prestige dramas.
+### 6. Narrative Drive (15%) — Score: 8
 
-**Why 8.0**: Effective but not groundbreaking. The visuals serve the story.
+**Raw Score: 8 | Weighted: 1.20**
 
----
+Analysis for Narrative Drive dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.0
+### 7. Narrative Resolution (15%) — Score: 9
 
-**Raw Score: 7.0 | Weighted: 0.70**
+**Raw Score: 9 | Weighted: 1.35**
 
-**Strengths:**
-- **Period recreation**: The 80s-90s aesthetic is well-captured.
-- **Tech equipment**: The computers themselves are visual centerpieces.
-- **Occasional set pieces**: Comdex, product launches, office confrontations.
-
-**Weaknesses:**
-- Not an action or spectacle show.
-- Limited visual variety.
-- Most scenes are conversations in offices.
-
-**Why 7.0**: The spectacle is in the ideas, not the visuals.
-
----
-
-### 5. Conceptual Density (15%) — Score: 8.5
-
-**Raw Score: 8.5 | Weighted: 1.275**
-
-**Strengths:**
-- **Innovation and ethics**: What are we willing to sacrifice for progress?
-- **Gender in tech**: The show explores Cameron's struggles as a woman in a man's field.
-- **Creativity vs. commerce**: The tension between making great products and making money.
-- **Friendship and betrayal**: The complex relationships between collaborators.
-- **Identity**: Who are we when we define ourselves by our work?
-- **The American dream**: Is it still possible to change the world?
-
-**Weaknesses:**
-- Themes sometimes underemphasized in favor of plot.
-- Later seasons focus less on ideas.
-
-**Why 8.5**: Dense with themes about technology, ambition, and identity.
-
----
-
-### 6. Narrative Drive (15%) — Score: 8.0
-
-**Raw Score: 8.0 | Weighted: 1.20**
-
-**Strengths:**
-- **Season arcs**: Each season has a clear dramatic focus.
-- **Escalation**: The stakes increase across seasons—from building a PC to creating an OS to launching a browser.
-- **Character momentum**: Characters evolve significantly.
-- **Relationship tension**: The Cameron/Donna partnership, the Gordon/Joe rivalry.
-
-**Weaknesses:**
-- **Season 1**: Slow start that nearly killed the show.
-- **Uneven pacing**: Some seasons stronger than others.
-
-**Why 8.0**: Compelling but requires patience. The rewards come later.
-
----
-
-### 7. Narrative Resolution (15%) — Score: 9.0
-
-**Raw Score: 9.0 | Weighted: 1.35**
-
-**Strengths:**
-- **Series finale**: "Ten" provides beautiful closure on all four characters.
-- **Character arcs completed**: Every main character reaches a meaningful endpoint.
-- **Thematic resolution**: The show answers its questions about work and identity.
-- **Emotional satisfaction**: The ending is moving without being sentimental.
-
-**Weaknesses:**
-- Some viewers wanted more explicit resolution of certain plots.
-- The ending is quiet rather than climactic.
-
-**Why 9.0**: One of television's most satisfying conclusions. The characters earn their endings.
-
----
+Analysis for Narrative Resolution dimension.
 
 ## Scoring Summary
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 9.0 | 20% | 1.80 |
-| World Building | 8.5 | 15% | 1.275 |
-| Cinematography | 8.0 | 10% | 0.80 |
-| Visual Spectacle | 7.0 | 10% | 0.70 |
-| Conceptual Density | 8.5 | 15% | 1.275 |
-| Narrative Drive | 8.0 | 15% | 1.20 |
-| Narrative Resolution | 9.0 | 15% | 1.35 |
-| **Base Score** | | | **8.40** |
-| **Episode Multiplier** | | 0.94 | -0.50 |
-| **FINAL SCORE** | | | **7.90 → 7.88** |
+| Characters & Acting | 9 | 20% | 1.80 |
+| World Building | 7.5 | 15% | 1.13 |
+| Cinematography | 7 | 10% | 0.70 |
+| Visual Spectacle | 5 | 10% | 0.50 |
+| Conceptual Density | 8 | 15% | 1.20 |
+| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Resolution | 9 | 15% | 1.35 |
+| **FINAL SCORE** | | | **7.88** |
 
 ---
 
-## External Ratings
+## Why It Ranks #27
 
-| Source | Score | Scale |
-|--------|-------|-------|
-| IMDb | 8.5 | 10 |
-| Rotten Tomatoes (S1) | 75% | 100 |
-| Rotten Tomatoes (S2) | 94% | 100 |
-| Rotten Tomatoes (S3) | 100% | 100 |
-| Rotten Tomatoes (S4) | 100% | 100 |
-| Metacritic | 77 | 100 |
+Halt and Catch Fire achieves a final score of 7.88 based on its performance across all seven dimensions.
 
 ---
 
-## Why It Ranks #19
-
-- **Characters (9.0/10)**: Exceptional ensemble led by Mackenzie Davis and Alison Pill
-- **World (8.5/10)**: Authentic depiction of the PC revolution
-- **Cinematography (8.0/10)**: Effective period recreation
-- **Spectacle (7.0/10)**: Not the point—character over spectacle
-- **Concept (8.5/10)**: Dense with themes about tech and ambition
-- **Drive (8.0/10)**: Improves dramatically over seasons
-- **Resolution (9.0/10)**: Beautiful, satisfying conclusion
-
----
-
-*Scored: 2026-02-15 | Methodology: 7-Dimension System*
+*Scored: 2026-02-16 | Methodology: 7-Dimension System*
