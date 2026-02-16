@@ -1270,47 +1270,63 @@
             -webkit-appearance: none;
             appearance: none;
             background: transparent;
-            cursor: pointer;
+            cursor: default;
             margin: 0;
             padding: 0;
             z-index: 2;
+            pointer-events: none;
+            touch-action: none;
         }
         .cat-slider-input::-webkit-slider-runnable-track {
             height: 14px;
             background: transparent;
+            pointer-events: none;
         }
         .cat-slider-input::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 10px;
-            height: 10px;
-            background: #64748b;
+            width: 16px;
+            height: 16px;
+            background: #d4af37;
             border-radius: 50%;
-            cursor: pointer;
+            cursor: grab;
             transition: transform 0.15s, background 0.15s;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            pointer-events: auto;
+            position: relative;
+            z-index: 3;
         }
         .cat-slider-input::-webkit-slider-thumb:hover {
-            background: #94a3b8;
+            background: #f4e4a6;
+            transform: scale(1.2);
+        }
+        .cat-slider-input::-webkit-slider-thumb:active {
+            cursor: grabbing;
             transform: scale(1.3);
         }
         .cat-slider-input::-moz-range-track {
             height: 14px;
             background: transparent;
             border: none;
+            pointer-events: none;
         }
         .cat-slider-input::-moz-range-thumb {
-            width: 10px;
-            height: 10px;
-            background: #64748b;
+            width: 16px;
+            height: 16px;
+            background: #d4af37;
             border-radius: 50%;
-            cursor: pointer;
+            cursor: grab;
             border: none;
             transition: transform 0.15s, background 0.15s;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            pointer-events: auto;
         }
         .cat-slider-input::-moz-range-thumb:hover {
-            background: #94a3b8;
+            background: #f4e4a6;
+            transform: scale(1.2);
+        }
+        .cat-slider-input::-moz-range-thumb:active {
+            cursor: grabbing;
             transform: scale(1.3);
         }
         .cat-value-modified {
@@ -3379,9 +3395,15 @@
                             ${categories.map(cat => {
                                 const value = show[cat.key];
                                 const percentage = (value / 10) * 100;
-                                const catTier = getTier(value);
-                                const catTierColors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
-                                const catTierColor = catTierColors[catTier];
+                                // Color based on exact score: 10=gold, 9=silver, 8=bronze, 7=dark orange
+                                const getScoreColor = (score) => {
+                                    if (score === 10) return '#d4af37';
+                                    if (score >= 9) return '#a8a8b0';
+                                    if (score >= 8) return '#a87d4a';
+                                    if (score >= 7) return '#8b4513';
+                                    return '#4a4a55';
+                                };
+                                const catTierColor = getScoreColor(value);
                                 const isModified = baseScores[show.title] && value !== baseScores[show.title][cat.key];
                                 return `
                                     <div style="display:grid;grid-template-columns:35% 55% 10%;align-items:center;">
@@ -3939,16 +3961,31 @@
 
         // ---- Per-card slider event handling ----
         let reorderDebounce = null;
+        let sliderDragState = new Map();
 
         // Prevent slider drags from opening category modal
         list.addEventListener('mousedown', (e) => {
             if (e.target.classList.contains('cat-slider-input')) {
                 e.stopPropagation();
+                sliderDragState.set(e.target, { isDragging: true });
             }
         }, true);
         list.addEventListener('touchstart', (e) => {
             if (e.target.classList.contains('cat-slider-input')) {
                 e.stopPropagation();
+                sliderDragState.set(e.target, { isDragging: true });
+            }
+        }, true);
+
+        // Prevent click-to-snap behavior on range sliders
+        list.addEventListener('click', (e) => {
+            if (e.target.classList.contains('cat-slider-input')) {
+                const state = sliderDragState.get(e.target);
+                if (!state || !state.isDragging) {
+                    e.preventDefault();
+                    return;
+                }
+                sliderDragState.delete(e.target);
             }
         }, true);
 
@@ -3996,9 +4033,14 @@
                 const barFill = card.querySelector(`[data-cat-bar="${catKey}"]`);
                 if (barFill) {
                     const pct = (newVal / 10) * 100;
-                    const tier = getTier(newVal);
-                    const colors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
-                    const c = colors[tier];
+                    const getScoreColor = (score) => {
+                        if (score === 10) return '#d4af37';
+                        if (score >= 9) return '#a8a8b0';
+                        if (score >= 8) return '#a87d4a';
+                        if (score >= 7) return '#8b4513';
+                        return '#4a4a55';
+                    };
+                    const c = getScoreColor(newVal);
                     barFill.style.width = pct + '%';
                     barFill.style.background = `linear-gradient(90deg,${c}99,${c},${c}99)`;
                 }
@@ -4013,9 +4055,14 @@
                         valEl.style.color = '#60a5fa';
                     } else {
                         valEl.classList.remove('cat-value-modified');
-                        const tier = getTier(newVal);
-                        const colors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
-                        valEl.style.color = colors[tier];
+                        const getScoreColor = (score) => {
+                            if (score === 10) return '#d4af37';
+                            if (score >= 9) return '#a8a8b0';
+                            if (score >= 8) return '#a87d4a';
+                            if (score >= 7) return '#8b4513';
+                            return '#4a4a55';
+                        };
+                        valEl.style.color = getScoreColor(newVal);
                     }
                 }
 
