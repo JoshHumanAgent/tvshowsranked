@@ -33,43 +33,43 @@ The show ran for five seasons and ended on its own terms. It's a crowd-pleaser t
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Rachel Brosnahan's Midge is rapid-fire perfection—wit, energy, fragility. The performance is technically extraordinary. Tony Shalhoub and Alex Borstein provide support. The acting serves the dialogue.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 8.5, 1950s-60s New York is built through period detail—Borscht Belt, the Gaslight, the suburbs. The show creates convincing Jewish-American experience. The historical figures add authenticity.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show looks gorgeous—period production design, costume porn, beautiful locations. The cinematography is polished. The show is visually delightful.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, the stand-up sequences provide energy and entertainment value. The performances within performances are spectacle. The production value is evident.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7, the show explores gender, ambition, performance, and family expectation. The density is present but sometimes overwhelmed by style. Ideas are there but compete with wit.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the narrative follows Midge's career with professional highs and lows. The structure is episodic but cumulates. Later seasons lose some momentum.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 6.5, the final season rushes through years to provide closure. The finale is satisfying if expedient. The character arc completes.
 
 ## Scoring Summary
 

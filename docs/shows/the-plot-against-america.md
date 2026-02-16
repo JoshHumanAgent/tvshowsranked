@@ -31,43 +31,43 @@ The series explores how ordinary people respond to extraordinary threats. Some r
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 7.5, Zoe Kazan and Winona Ryder ground the alternate history in family experience. The performances are quietly devastating. The ensemble (John Turturro, Anthony Boyle) creates convincing 1940s community. The acting serves the historical warning.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 8.5, 1940s Newark is built through period detail and the plausible nightmare of Lindbergh's America. The show creates convincing alternate history. The Jewish community feels authentic.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show is shot with period atmosphere and appropriate restraint. The cinematography serves the family drama. It's unshowy.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+Scoring 6.5, spectacle is restrained—this is domestic drama. The show finds horror in political implication. No visual set pieces.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, the show explores fascism, American exceptionalism, Jewish identity, and the fragility of democracy. The density is political and urgently relevant. It's a warning.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the narrative moves through the Lindbergh presidency with inexorable dread. The pacing builds effectively toward catastrophe. The alternative history structure provides momentum.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7, the ending is ambiguous and devastating—history reset to familiar path, but the trauma remains. It provides closure without comfort. The finale is appropriate to the warning.
 
 ## Scoring Summary
 

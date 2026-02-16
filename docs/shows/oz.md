@@ -31,43 +31,43 @@ But Oz is more than shock value. It's a serious exploration of what happens when
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, the ensemble is extraordinary—Simmons, Tergesen, Meloni, Winters, Reddick. The performances commit to the brutality. The acting serves the prison setting without exploitation.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 8.5, Emerald City and Oz prison are built with claustrophobic detail—the cages, the gangs, the administration. The show creates convincing maximum security hell.
 
 ### 3. Cinematography (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show is shot intimately—close on violence and degradation. The cinematography makes the prison feel suffocating. The theatrical narrator provides Greek chorus.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, violence is constant and brutal—this is prison life as horror. The show delivers through intensity rather than scale. The violence is the spectacle.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores punishment, redemption, race, sexuality, and institutional failure. The density is present but sometimes overwhelmed by soap opera. Ideas exist but compete with plot.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 6.5, the narrative moves through multiple storylines with varying success. The season arcs sometimes feel repetitive. The show takes on too many characters.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7.5, the series finale provides closure for surviving characters. Many die along the way. The ending acknowledges the system's cruelty.
 
 ## Scoring Summary
 

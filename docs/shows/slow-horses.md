@@ -25,43 +25,43 @@ Placeholder experiential summary to be written.
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Gary Oldman's Lamb is magnificently disreputable—flatulent, brilliant, surprisingly humane. The ensemble (Jack Lowden, Kristin Scott Thomas) commits to the espionage drudgery. The performances find humor in failure.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 8.5, Slough House and MI5 are built through bureaucratic detail—the failed spies, the institutional contempt, the London intelligence world. The show creates convincing espionage drudgery.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show captures London gray and the mundanity of spycraft. The cinematography is functional with occasional flair. The locations are appropriate.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+Scoring 6.5, action is restrained—this is people in offices and cars. The show finds tension in surveillance. Minimal spectacle.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores loyalty, failure, institutional rot, and competence in incompetent systems. The density comes from character and observation. It's dry and smart.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, each season adapts a Herron novel with propulsive plotting. The mysteries build effectively. The pacing is confident.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7, each season provides complete resolution while teasing future. The show maintains closure within continuity. It's satisfying.
 
 ## Scoring Summary
 

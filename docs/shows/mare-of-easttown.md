@@ -33,43 +33,43 @@ The show won multiple Emmys, including Outstanding Limited Series, and it's easy
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, Kate Winslet's Mare is extraordinary—Pennsylvania detective, grandmother, grieving mother, exhausted woman. The performance is specific and lived-in. The ensemble (Julianne Nicholson, Jean Smart) provides community.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 8, working-class Pennsylvania is built through accents, locations, community dynamics. The show creates convincing small-town America. The local detail is specific and authentic.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show captures the gray East Coast atmosphere—winter, decay, domesticity. The cinematography is naturalistic. The location provides visual character.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 6.5, spectacle is minimal—this is faces and grief. The show finds power in small domestic spaces. No visual ambition beyond appropriate atmosphere.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores grief, addiction, working-class struggle, and small-town secrets. The density is personal rather than philosophical. It's character study.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, the mystery unfolds with genuine tension across seven episodes. The pacing is patient but propulsive. The revelation is earned.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+Scoring 8, the finale resolves the mystery while acknowledging ongoing grief. It doesn't tidy everything. The ending honors the difficulty.
 
 ## Scoring Summary
 

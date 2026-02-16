@@ -33,43 +33,43 @@ This isn't a whodunit — the show often reveals the killer early. It's about th
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, Sofie Gråbøl's Sarah Lund is iconic—scarf, obsessions, human damage. The performance is specific and lived-in. The supporting cast provides Danish procedural authenticity.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 8.5, Copenhagen and Danish politics are built through location and social detail. The show creates convincing investigation environment. The rain and gray provide atmosphere.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show looks distinctive—Scandinavian gray, careful framing, intimate coverage. The cinematography creates mood. It's visually recognizable.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, the show delivers through intensity rather than scale. The investigation provides procedural spectacle. No action set pieces.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores obsession, family cost, and political corruption. The density is procedural with personal stakes. It's character study.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, each season builds toward revelation with genuine tension. The mystery structure is propulsive. The red herrings and reversals maintain momentum.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7, each season provides killer revelation. The answers are sometimes satisfying, sometimes not. The journey outweighs the destination.
 
 ## Scoring Summary
 

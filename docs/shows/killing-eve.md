@@ -31,43 +31,43 @@ The show ran for four seasons, and each one tried something different. The first
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Jodie Comer's Villanelle is iconic—playful, deadly, magnetic. Sandra Oh's Eve matches her through obsession and restraint. The two-hander was television's most compelling game of cat and cat.
 
 ### 2. World Building (15%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.97**
 
-Analysis for World Building dimension.
+Scoring 7.5, international espionage is built through glamorous locations and hitman logistics. The show creates convincing spy-adjacent world. The Twelve organization remains mysterious.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show is stylish—European locations, fashion, murder-as-aesthetic. The cinematography is polished and colorful. It looks like expensive music video.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, the assassinations are staged with panache. The show delivers kills-as-entertainment. The set pieces are appropriately stylish.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7, the show explores obsession, identity, sexuality, and morality. The density is present but sometimes overwhelmed by style. It's more interested in the game than philosophy.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 7, the will-they-won't-they murder plot propels early seasons. Later seasons lose momentum. The narrative becomes repetitive.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 4, the finale killed Villanelle and denied satisfaction. It felt rushed and wrong. Many fans rejected the ending.
 
 ## Scoring Summary
 

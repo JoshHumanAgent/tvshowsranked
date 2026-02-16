@@ -33,43 +33,43 @@ The original series was canceled after two seasons, but it spawned a film (*Twin
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Kyle MacLachlan's Cooper is iconic—eccentric, sincere, otherworldly. The ensemble (Sherilyn Fenn, Sheryl Lee, Ray Wise) commits to the dream. The performances are stylized and appropriate.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 9, the original Twin Peaks created television mythology—the town, the Lodge, the supernatural rules. The show built a world that felt both specific and universal. The woods hold secrets.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 8.5, 1990s television had rarely looked so cinematic. The dreamy atmosphere, the slow motion, the music. Lynch and Frost created visual language.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, the show delivers surreal imagery through implication. The Red Room, the waterfall, the music. The spectacle is atmospheric.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 8.5, the show explores evil, innocence, dreams, and American darkness. The density is mysterious and rich. It resists interpretation.
 
 ### 6. Narrative Drive (15%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.90**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the murder mystery structure was compelling until the network forced resolution. The Laura Palmer case drives early momentum. Later episodes wander.
 
 ### 7. Narrative Resolution (15%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.90**
 
-Analysis for Narrative Resolution dimension.
+Scoring 4, the network-mandated killer revelation undermined the mystery. The film provides additional context. The ending is compromised but culturally significant.
 
 ## Scoring Summary
 

@@ -31,43 +31,43 @@ The finale—"Six Feet Under and Flames"—is widely considered the greatest ser
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, the ensemble is extraordinary—Peter Krause, Michael C. Hall, Rachel Griffiths, Frances Conroy. The performances find comedy in death and family dysfunction. Acting elevates material to art.
 
 ### 2. World Building (15%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.97**
 
-Analysis for World Building dimension.
+Scoring 8, the funeral home and Fisher family are built through specific ritual detail. The show creates convincing family business and domestic dysfunction. The dead appear as commentary.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show captures LA light and family spaces. The cinematography is functional. The fantasy sequences provide variety.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 6.5, spectacle comes from death—every episode opens with demise. The funerals provide visual interest. No action.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, the show explores death, grief, family, and meaning. The density is philosophical and emotional. It asks what remains.
 
 ### 6. Narrative Drive (15%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.90**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the narrative follows family drama with accumulated weight. The episodic structure provides variety. Seasons build emotional momentum.
 
 ### 7. Narrative Resolution (15%) — Score: 10
 
 **Raw Score: 10 | Weighted: 1.50**
 
-Analysis for Narrative Resolution dimension.
+Scoring 9.5, the finale is legendary—Claire's vision, the song, the montage, the future deaths. One of television's most moving endings. It completes beautifully.
 
 ## Scoring Summary
 

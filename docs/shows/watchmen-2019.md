@@ -37,43 +37,43 @@ The finale is divisive, but it sticks with you. It's the rare superhero story th
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Regina King's Sister Night is commanding—mysterious, principled, devastating. The ensemble (Jean Smart, Jeremy Irons, Hong Chau) commits to the alternative history. Moore's material is honored if not fully captured.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 9, the alternate America with Vietnam as 51st state and reparations for Tulsa is built with detail. The show creates convincing reality from Moore's excess. The world building is extraordinary.
 
 ### 3. Cinematography (10%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 0.75**
 
-Analysis for Cinematography dimension.
+Scoring 8.5, the show looks distinctive—masks, period mash-up, the Tulsa massacre rendered with horror. The cinematography serves the alternative history. It's visually adventurous.
 
 ### 4. Visual Spectacle (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8, the vigilante action, the Tulsa rendering, the squid rain—spectacle serves theme. The show delivers memorable images. Episode 6 is particularly striking.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 9, the show explores race, history, vigilantism, and American mythology. The density is extraordinary—every layer refers outward. It asks who watches the Watchmen.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, the mystery of Cal's identity, the conspiracy, the Tulsa legacy—multiple plotlines converge. The pacing is propulsive. The nine episodes build effectively.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7.5, the finale provides revelation and closure while leaving future open. It honors Moore's ambiguity while providing some resolution. The ending is appropriate.
 
 ## Scoring Summary
 

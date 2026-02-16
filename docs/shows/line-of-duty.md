@@ -33,43 +33,43 @@ The show isn't perfect: the final season divided opinion, and some plotlines wen
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Martin Compston's Steve, Vicky McClure's Kate, and Adrian Dunbar's Ted create the most compelling police procedural trio. The interrogations are masterclasses in acting under pressure. The rotating guest stars as suspects provide season-by-season excellence.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 8.5, AC-12 and British policing are built with procedural authenticity—interviews, paperwork, hierarchy. The show creates convincing anti-corruption unit. The detail feels researched.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show captures interview room intensity through coverage and editing. The cinematography is functional. The focus is on faces and evidence.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 6.5, action is occasional—this is talk, not chase. The show finds tension in paperwork. The finale's spectacle is emotional, not visual.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores police corruption, institutional loyalty, and the cost of truth. The density is procedural and moral. It asks who watches the watchers.
 
 ### 6. Narrative Drive (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Drive dimension.
+Scoring 8.5, each season builds toward the interview—Hasting's catchphrase, the revelation. The narrative is propulsive. The central mystery accumulates.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 6.5, the finale was divisive—some answers, many questions. The H reveal disappointed some. It's closure but not the expected closure.
 
 ## Scoring Summary
 
