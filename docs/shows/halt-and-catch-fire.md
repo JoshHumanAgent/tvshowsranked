@@ -35,43 +35,43 @@ Four seasons cover the rise of the PC, the birth of graphical interfaces, and th
 
 **Raw Score: 8.5 | Weighted: 1.70**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Lee Pace's Joe MacMillan is charismatic emptiness; Mackenzie Davis's Cameron provides the show's heart. The ensemble (Scoot McNairy, Kerry Bishé) creates the most authentic partnership in television. The acting is subtle and cumulative.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 8.5, the 1980s-90s tech industry is built through specific detail—hardware, software, business culture, the personal computer revolution. The show captures Silicon Valley before it was called that. The world evolves with the industry.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show captures period through production design and costumes. The visual approach is functional. The focus is on people, not visual invention.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 6.5, spectacle is restrained—this is people coding, arguing, building. The show finds poetry in mundanity. No set pieces, just human moments.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, the show explores creation, failure, partnership, and the personal cost of ambition. It's about what we build and why. The density is emotional and philosophical.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, each season covers different era (computers, internet, web). The narrative moves deliberately. Later seasons focused on Cameron and Donna achieve momentum.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+undefined
 
 ## Scoring Summary
 

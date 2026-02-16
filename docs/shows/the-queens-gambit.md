@@ -37,43 +37,43 @@ This is a show about what it costs to be exceptional. And it's beautiful.
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Anya Taylor-Joy's Beth Harmon is iconic—intensity, vulnerability, genius addiction. The performance carries the limited series. Supporting cast (Bill Camp, Marielle Heller) provides grounding.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 8, 1960s chess culture and international competition is built through period detail and competitive atmosphere. The show makes chess visually compelling. The orphanage-to-stardom trajectory is convincing.
 
 ### 3. Cinematography (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Cinematography dimension.
+Scoring 8.5, the show is visually stunning—chess as geometry, period production design, hallucinatory sequences. The cinematography makes strategy cinematic. The visual language is distinctive.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, spectacle arrives through chess matches rendered as psychological warfare. The show finds drama in stillness. The tournament sequences have genuine tension.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7, the show explores addiction, genius, gender barriers, and found family. The density is personal rather than philosophical. It asks what excellence costs.
 
 ### 6. Narrative Drive (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, the narrative follows Beth's rise through competition with propulsive energy. The structure is classic sports movie but executed with style. The pacing is perfect for the format.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 8, the finale—Moscow, the final match, the park bench—provides satisfying triumph. It's earned and complete. The limited series format allows genuine closure.
 
 ## Scoring Summary
 

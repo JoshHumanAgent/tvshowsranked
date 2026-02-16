@@ -33,43 +33,43 @@ What makes the show work is its ambition. This is television that tries to tackl
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+Scoring 7, Jared Harris provides gravitas; Lee Pace is magnetic as multiple emperors. The ensemble is capable but material sometimes overwhelms. Acting is committed but variable.
 
 ### 2. World Building (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for World Building dimension.
+Scoring 9, the galaxy-spanning empire is built with scale—Trantor, Terminus, multiple worlds. The show delivers convincing space opera production value. World building honors Asimov while expanding.
 
 ### 3. Cinematography (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Cinematography dimension.
+Scoring 8.5, the show looks expensive—visual effects, production design, cinematography all at high level. The scope is cinematic. It justifies the Apple budget.
 
 ### 4. Visual Spectacle (10%) — Score: 9.5
 
 **Raw Score: 9.5 | Weighted: 0.95**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8.5, space opera spectacle—ships, planets, the fall of Trantor. The show delivers visual scale. The genetic dynasty visual concept is striking.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores empire, decline, psychohistory, and determinism. The density is present but sometimes overwhelmed by production. Ideas exist but compete with spectacle.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 7, the narrative moves through multiple timelines with varying success. The scope creates momentum issues. Some storylines are more compelling than others.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 5, the show is ongoing; storylines are incomplete. The Seldon Plan spans centuries so resolution is distant. It feels like prologue.
 
 ## Scoring Summary
 

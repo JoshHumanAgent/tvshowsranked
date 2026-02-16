@@ -37,43 +37,43 @@ This is not a show for everyone. It can be frustrating, self-indulgent, and too 
 
 **Raw Score: 8.5 | Weighted: 1.70**
 
-Analysis for Characters & Acting dimension.
+Scoring 7.5, Lena Dunham's Hannah is self-absorbed, narcissistic, occasionally brilliant. The ensemble (Allison Williams, Jemima Kirke, Zosia Mamet) creates specific millennial types. The acting is raw and uncomfortable.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 7, 2010s Brooklyn is built through specific reference points—jobs, apartments, relationships, cultural context. The show creates a particular urban millennial experience.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 7, the show is shot intimately—close-ups, natural lighting, handheld feel. The cinematography serves the personal drama. It's unshowy.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 5, spectacle is non-existent—this is people in rooms talking. The show finds drama in interpersonal awkwardness. No visual ambition.
 
 ### 5. Conceptual Density (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Conceptual Density dimension.
+Scoring 7, the show explores millennial entitlement, friendship, creative ambition, and privileged angst. The density is sociological. It captures a specific cultural moment.
 
 ### 6. Narrative Drive (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Narrative Drive dimension.
+Scoring 7, the narrative follows twenty-something drift—careers, relationships, growing up. The pacing is deliberately aimless. Some seasons are more propulsive than others.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7.5, the finale—Hannah as mother, the final confrontation—provides character closure. It's appropriate to the show's ambivalence. Not everyone grows up.
 
 ## Scoring Summary
 

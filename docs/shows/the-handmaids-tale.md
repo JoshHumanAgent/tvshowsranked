@@ -33,43 +33,43 @@ The fifth season ended the story (for now), and it's one of the most important t
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, Elisabeth Moss carries the series—June's suffering, rage, and resistance. The performance is physically committed. The ensemble (Yvonne Strahovski, Ann Dowd, O-T Fagbenle) provides strong support.
 
 ### 2. World Building (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for World Building dimension.
+Scoring 9, Gilead is built with documentary precision—the rituals, the oppression, the geography of tyranny. The show creates convincing dystopia through detail. The world is terrifyingly plausible.
 
 ### 3. Cinematography (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show looks distinctive—red cloaks, the Wall, the commanders' houses. The cinematography emphasizes surveillance and oppression. It's visually striking.
 
 ### 4. Visual Spectacle (10%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 0.75**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, the show delivers through Gilead's ritual horror—ceremonies, punishments, rebellions. The spectacle is ideological. The escapes provide action.
 
 ### 5. Conceptual Density (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Conceptual Density dimension.
+Scoring 8.5, the show explores patriarchy, reproductive rights, resistance, and survival. The density is political and urgent. It's among the most thematically loaded series.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 6, the narrative stretches beyond its natural length. Some seasons feel repetitive. The momentum wavers as the story expands. It's better in concentrated doses.
 
 ### 7. Narrative Resolution (15%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.90**
 
-Analysis for Narrative Resolution dimension.
+Scoring 5, the show continues beyond the source material; June's story lacks clear endpoint. It feels ongoing rather than building toward conclusion. The story needs an ending.
 
 ## Scoring Summary
 

@@ -31,43 +31,43 @@ Pose is also historical. It documents a cultural movement that influenced fashio
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, the cast brings authentic trans experience—MJ Rodriguez, Dominique Jackson, Indya Moore. Billy Porter's Pray Tell is extraordinary. The acting is grounded in real community.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 8.5, 1980s-90s New York ballroom culture is built with love and authenticity—the houses, the categories, the AIDS crisis. The show creates a world rarely seen on television.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show captures period through production design and costume. The ballroom sequences have visual energy. The cinematography is functional with flashes of beauty.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, the ballroom performances provide spectacle—costumes, dancing, competition. The show finds joy in community. The AIDS crisis provides tragic counterpoint.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores chosen family, trans identity, the AIDS crisis, and survival. The density is personal and political. It's historically important.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the narrative moves through the years with accumulating loss. The structure follows house mothers and their children. Season three accelerates toward conclusion.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7.5, the final season provides closure for characters—some survive, many don't. The ending honors the history—joy and grief intertwined.
 
 ## Scoring Summary
 

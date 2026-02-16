@@ -33,43 +33,43 @@ By the final episode, you will be wrecked. Not because it's manipulative, but be
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, the young ensemble captures 1980s London with authenticity—friends navigating sexuality and crisis. Olly Alexander leads with vulnerability; the supporting cast feels like real found family. The performances are emotionally raw without exploitation.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 8, 1980s London built through music, fashion, and the AIDS epidemic's devastating progression. The show creates a specific time and place—the innocence before, the horror during. The flat becomes a character.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show captures period atmosphere through production design. The visual approach is functional, serving the emotional story. It's appropriate without being distinctive.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+Scoring 6.5, spectacle is understated—this is intimate drama. The show delivers emotional power through faces, not scale. The period recreation provides visual context.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores the AIDS crisis, queer identity, friendship, and political indifference. The density is personal tragedy within historical catastrophe. It's devastating and necessary.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, the narrative moves from joy to devastation across five episodes. The pace accelerates as the crisis deepens. The structure honors both the friendship and the loss.
 
 ### 7. Narrative Resolution (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7.5, the final episode is heartbreaking—survivor's guilt, memory, and the cost. It acknowledges those lost. The ending is appropriate to the tragedy—it cannot fully resolve.
 
 ## Scoring Summary
 

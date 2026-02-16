@@ -35,43 +35,43 @@ Four seasons in, the show has evolved from alternate history to something else e
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+Scoring 7.5, Joel Kinnaman's Baldwin anchors the alternate history with convincing astronaut gravitas. The ensemble rotates through decades but maintains continuity. The acting serves the epic scope.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 8.5, the alternate space race is built with technical authenticity—NASA culture, space missions, the expanding timeline. The show creates convincing aerospace world that diverges from our own.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 8, the space sequences look expensive and convincing. The cinematography captures both technical realism and wonder. The Mars sequences achieve genuine visual scope.
 
 ### 4. Visual Spectacle (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8, space travel provides spectacle—launches, spacewalks, lunar bases, Mars colonies. The show delivers space opera grounded in engineering. The scale justifies the Apple budget.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 7, the show explores American exceptionalism, sacrifice, and the value of exploration. The density is present but sometimes overwhelmed by plot mechanics. Ideas exist but compete with timeline juggling.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the narrative leaps through decades, creating momentum through technological escalation. Seasonal arcs vary in propulsion. The later seasons accelerate toward Mars.
 
 ### 7. Narrative Resolution (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Narrative Resolution dimension.
+Scoring 5, the show is ongoing; humanity's space future continues. Season endings provide partial closure while teasing future expansion. It's incomplete by design.
 
 ## Scoring Summary
 

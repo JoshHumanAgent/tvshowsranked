@@ -35,43 +35,43 @@ This is not a pro-war or anti-war show. It's a "this is what war is" show — ch
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+Scoring 7.5, the ensemble of unknowns creates convincing Marine culture—banter, hierarchy, confusion. Alexander Skarsgård stands out as Iceman. The acting is naturalistic and immersive.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 8.5, the 2003 Iraq invasion is built through embedded detail—military procedure, chain of command chaos, cultural collision. The show is journalism as drama.
 
 ### 3. Cinematography (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show captures desert warfare with documentary realism. The cinematography serves the journalistic tone. It's unglamorous and appropriate.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, combat provides spectacle but the show emphasizes confusion over heroism. The Humvee convoy sequences have tension. No glorification.
 
 ### 5. Conceptual Density (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, the show explores military culture, incompetence, the fog of war, and American imperialism. The density comes from observation rather than argument. It's smart war reporting.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the episodic structure follows the invasion's progression. The narrative moves with purpose toward Baghdad. The momentum is inexorable.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7, the series ends with arrival in Baghdad—mission incomplete, war ongoing. It provides situational closure but not narrative resolution. The ending honors the reality.
 
 ## Scoring Summary
 

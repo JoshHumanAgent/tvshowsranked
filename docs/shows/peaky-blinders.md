@@ -35,43 +35,43 @@ The final season brings everything full circle. Tommy faces his past, his enemie
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 7.5, Cillian Murphy's Tommy Shelby is magnetic—contained violence, strategic brilliance, wounded humanity. The ensemble (Paul Anderson, Helen McCrory, Tom Hardy in guest spots) commits to period gangster grandeur. The acting serves the stylized tone.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 8, 1920s Birmingham is built through industrial grime, criminal hierarchy, and family mythology. The show creates convincing working-class gangster world. The Peaky Blinders become legend through accumulated detail.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show looks gorgeous—anachronistic modern music, stylized violence, period atmosphere. The cinematography is deliberately cool. Slow motion and montage create distinctive visual language.
 
 ### 4. Visual Spectacle (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8.5, the show delivers stylized violence, gang warfare, and period production value. The spectacle is central to appeal. Every episode has visual punch.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 6.5, the show explores family, loyalty, and the cost of ambition. Themes exist but secondary to style. It's more concerned with cool than philosophy.
 
 ### 6. Narrative Drive (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the narrative moves through gangster rise with propulsive energy. Seasonal arcs build effectively. Later seasons lose some momentum as the scope expands.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 6, the final season provides closure of sorts but feels rushed. The movie continuation is planned. It's incomplete but the character journey has shape.
 
 ## Scoring Summary
 
