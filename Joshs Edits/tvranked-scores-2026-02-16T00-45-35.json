@@ -1,0 +1,1581 @@
+{
+  "timestamp": "2026-02-16T00:45:35.826Z",
+  "weights": {
+    "char": 20,
+    "world": 15,
+    "cine": 10,
+    "spect": 10,
+    "conc": 15,
+    "drive": 15,
+    "resol": 15
+  },
+  "baseScores": {
+    "24": {
+      "char": 6.5,
+      "world": 6,
+      "cine": 6,
+      "spect": 7,
+      "conc": 6,
+      "drive": 9.5,
+      "resol": 7,
+      "final": 6.88
+    },
+    "Game of Thrones (S1-4)": {
+      "char": 10,
+      "world": 10,
+      "cine": 8,
+      "spect": 9.5,
+      "conc": 9,
+      "drive": 10,
+      "resol": 9,
+      "final": 9.45
+    },
+    "The Wire": {
+      "char": 9.5,
+      "world": 10,
+      "cine": 6,
+      "spect": 7,
+      "conc": 10,
+      "drive": 7,
+      "resol": 9,
+      "final": 8.6
+    },
+    "Breaking Bad": {
+      "char": 9,
+      "world": 7,
+      "cine": 9,
+      "spect": 6,
+      "conc": 8,
+      "drive": 10,
+      "resol": 10,
+      "final": 8.55
+    },
+    "Band of Brothers": {
+      "char": 7.5,
+      "world": 9,
+      "cine": 8,
+      "spect": 10,
+      "conc": 7,
+      "drive": 9,
+      "resol": 9,
+      "final": 8.4
+    },
+    "Better Call Saul": {
+      "char": 8.5,
+      "world": 7,
+      "cine": 9,
+      "spect": 6,
+      "conc": 8,
+      "drive": 9,
+      "resol": 10,
+      "final": 8.3
+    },
+    "True Detective S1": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 10,
+      "spect": 8,
+      "conc": 8,
+      "drive": 9,
+      "resol": 8,
+      "final": 8.28
+    },
+    "Andor": {
+      "char": 7.5,
+      "world": 9.5,
+      "cine": 8.5,
+      "spect": 8.5,
+      "conc": 8.5,
+      "drive": 7.5,
+      "resol": 8,
+      "final": 8.22
+    },
+    "Adolescence": {
+      "char": 8,
+      "world": 6.5,
+      "cine": 9.5,
+      "spect": 5,
+      "conc": 9,
+      "drive": 9,
+      "resol": 10,
+      "final": 8.22
+    },
+    "House of the Dragon": {
+      "char": 8.5,
+      "world": 9.5,
+      "cine": 8,
+      "spect": 9.5,
+      "conc": 8,
+      "drive": 8,
+      "resol": 6,
+      "final": 8.18
+    },
+    "Angels in America": {
+      "char": 8.5,
+      "world": 7,
+      "cine": 8,
+      "spect": 7,
+      "conc": 10,
+      "drive": 7,
+      "resol": 9,
+      "final": 8.15
+    },
+    "Boardwalk Empire": {
+      "char": 9,
+      "world": 8.5,
+      "cine": 8.5,
+      "spect": 9,
+      "conc": 7,
+      "drive": 7,
+      "resol": 8,
+      "final": 8.12
+    },
+    "The Sopranos": {
+      "char": 9.5,
+      "world": 9,
+      "cine": 6,
+      "spect": 5,
+      "conc": 9,
+      "drive": 7,
+      "resol": 9,
+      "final": 8.1
+    },
+    "The Leftovers": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 8,
+      "spect": 7,
+      "conc": 9,
+      "drive": 8,
+      "resol": 9,
+      "final": 8.1
+    },
+    "Dark": {
+      "char": 7,
+      "world": 8,
+      "cine": 8.5,
+      "spect": 6.5,
+      "conc": 9,
+      "drive": 8.5,
+      "resol": 9,
+      "final": 8.08
+    },
+    "Chernobyl": {
+      "char": 7,
+      "world": 8,
+      "cine": 9,
+      "spect": 8,
+      "conc": 8,
+      "drive": 8,
+      "resol": 9,
+      "final": 8.05
+    },
+    "Babylon Berlin": {
+      "char": 7.5,
+      "world": 9,
+      "cine": 9,
+      "spect": 9,
+      "conc": 8,
+      "drive": 7.5,
+      "resol": 7,
+      "final": 8.02
+    },
+    "It's a Sin": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 6,
+      "conc": 8,
+      "drive": 8,
+      "resol": 10,
+      "final": 8.02
+    },
+    "The Knick": {
+      "char": 8.5,
+      "world": 8.5,
+      "cine": 9.5,
+      "spect": 8,
+      "conc": 8,
+      "drive": 8,
+      "resol": 6,
+      "final": 8.02
+    },
+    "When They See Us": {
+      "char": 8,
+      "world": 7,
+      "cine": 8,
+      "spect": 5,
+      "conc": 9,
+      "drive": 8,
+      "resol": 10,
+      "final": 8
+    },
+    "The Haunting of Hill House": {
+      "char": 8,
+      "world": 7,
+      "cine": 9,
+      "spect": 7,
+      "conc": 8,
+      "drive": 8,
+      "resol": 9,
+      "final": 8
+    },
+    "The Queen's Gambit": {
+      "char": 7.5,
+      "world": 7.5,
+      "cine": 9,
+      "spect": 7,
+      "conc": 7,
+      "drive": 9,
+      "resol": 9,
+      "final": 7.98
+    },
+    "Shogun (2024)": {
+      "char": 8,
+      "world": 9,
+      "cine": 9,
+      "spect": 9,
+      "conc": 7,
+      "drive": 7.5,
+      "resol": 7,
+      "final": 7.98
+    },
+    "Succession": {
+      "char": 8.5,
+      "world": 7,
+      "cine": 8,
+      "spect": 7,
+      "conc": 7,
+      "drive": 8.5,
+      "resol": 9,
+      "final": 7.92
+    },
+    "Wolf Hall": {
+      "char": 8,
+      "world": 8.5,
+      "cine": 9,
+      "spect": 7,
+      "conc": 9,
+      "drive": 7,
+      "resol": 7,
+      "final": 7.92
+    },
+    "Pluribus": {
+      "char": 8.5,
+      "world": 7.5,
+      "cine": 8.5,
+      "spect": 7,
+      "conc": 9,
+      "drive": 8.5,
+      "resol": 6,
+      "final": 7.9
+    },
+    "Station Eleven": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 9,
+      "spect": 7,
+      "conc": 9,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.9
+    },
+    "Halt and Catch Fire": {
+      "char": 9,
+      "world": 7.5,
+      "cine": 7,
+      "spect": 5,
+      "conc": 8,
+      "drive": 8,
+      "resol": 9,
+      "final": 7.88
+    },
+    "Severance": {
+      "char": 7.5,
+      "world": 8.5,
+      "cine": 8.5,
+      "spect": 6.5,
+      "conc": 9,
+      "drive": 9,
+      "resol": 6,
+      "final": 7.88
+    },
+    "Beef": {
+      "char": 8.5,
+      "world": 6.5,
+      "cine": 8,
+      "spect": 5,
+      "conc": 8,
+      "drive": 9,
+      "resol": 9,
+      "final": 7.88
+    },
+    "The Americans": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 7,
+      "spect": 5,
+      "conc": 8,
+      "drive": 8,
+      "resol": 10,
+      "final": 7.82
+    },
+    "The Expanse": {
+      "char": 7.5,
+      "world": 9,
+      "cine": 7,
+      "spect": 9,
+      "conc": 8,
+      "drive": 7.5,
+      "resol": 7,
+      "final": 7.82
+    },
+    "Mr. Robot": {
+      "char": 8,
+      "world": 7,
+      "cine": 9,
+      "spect": 6,
+      "conc": 8,
+      "drive": 7.5,
+      "resol": 9,
+      "final": 7.82
+    },
+    "Squid Game": {
+      "char": 7,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 9,
+      "conc": 7,
+      "drive": 9,
+      "resol": 8,
+      "final": 7.82
+    },
+    "Rectify": {
+      "char": 9,
+      "world": 7,
+      "cine": 8.5,
+      "spect": 5,
+      "conc": 9,
+      "drive": 6,
+      "resol": 9,
+      "final": 7.8
+    },
+    "Generation Kill": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 8,
+      "spect": 7,
+      "conc": 9,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.8
+    },
+    "The Underground Railroad": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 10,
+      "spect": 8,
+      "conc": 9,
+      "drive": 6,
+      "resol": 7,
+      "final": 7.8
+    },
+    "Twin Peaks: The Return": {
+      "char": 8,
+      "world": 8,
+      "cine": 9.5,
+      "spect": 9,
+      "conc": 9,
+      "drive": 5,
+      "resol": 7,
+      "final": 7.8
+    },
+    "Deadwood": {
+      "char": 9,
+      "world": 8.5,
+      "cine": 7,
+      "spect": 7,
+      "conc": 9,
+      "drive": 7,
+      "resol": 6,
+      "final": 7.78
+    },
+    "Midnight Mass": {
+      "char": 7.5,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 6,
+      "conc": 9,
+      "drive": 7,
+      "resol": 9,
+      "final": 7.78
+    },
+    "Sharp Objects": {
+      "char": 8.5,
+      "world": 7.5,
+      "cine": 9,
+      "spect": 6,
+      "conc": 8,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.78
+    },
+    "Utopia (UK)": {
+      "char": 7.5,
+      "world": 7.5,
+      "cine": 10,
+      "spect": 7,
+      "conc": 8,
+      "drive": 9,
+      "resol": 6,
+      "final": 7.78
+    },
+    "The Last of Us": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 8,
+      "conc": 8,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.78
+    },
+    "Rome": {
+      "char": 8,
+      "world": 8.5,
+      "cine": 7,
+      "spect": 9,
+      "conc": 8,
+      "drive": 8,
+      "resol": 6,
+      "final": 7.78
+    },
+    "Patrick Melrose": {
+      "char": 8.5,
+      "world": 7,
+      "cine": 8,
+      "spect": 6,
+      "conc": 8,
+      "drive": 7,
+      "resol": 9,
+      "final": 7.75
+    },
+    "Silo": {
+      "char": 7.5,
+      "world": 8.5,
+      "cine": 8,
+      "spect": 8,
+      "conc": 8,
+      "drive": 8.5,
+      "resol": 6,
+      "final": 7.75
+    },
+    "For All Mankind": {
+      "char": 7,
+      "world": 8,
+      "cine": 8,
+      "spect": 8,
+      "conc": 8,
+      "drive": 8,
+      "resol": 7.5,
+      "final": 7.72
+    },
+    "Black Mirror": {
+      "char": 7,
+      "world": 7,
+      "cine": 8,
+      "spect": 7,
+      "conc": 9,
+      "drive": 8,
+      "resol": 8,
+      "final": 7.7
+    },
+    "The White Lotus": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 9,
+      "spect": 8,
+      "conc": 8,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.7
+    },
+    "Godless": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 9,
+      "spect": 8,
+      "conc": 7,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.7
+    },
+    "The Shield": {
+      "char": 8.5,
+      "world": 6.5,
+      "cine": 6,
+      "spect": 5,
+      "conc": 7,
+      "drive": 9,
+      "resol": 10,
+      "final": 7.68
+    },
+    "Hannibal": {
+      "char": 8,
+      "world": 6.5,
+      "cine": 10,
+      "spect": 8.5,
+      "conc": 7,
+      "drive": 6.5,
+      "resol": 8,
+      "final": 7.65
+    },
+    "Pose": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 8,
+      "spect": 7,
+      "conc": 8,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.65
+    },
+    "Penny Dreadful": {
+      "char": 8,
+      "world": 8,
+      "cine": 9,
+      "spect": 8,
+      "conc": 8,
+      "drive": 7,
+      "resol": 6,
+      "final": 7.65
+    },
+    "The Pacific": {
+      "char": 7,
+      "world": 8,
+      "cine": 8,
+      "spect": 9,
+      "conc": 7,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.6
+    },
+    "Euphoria": {
+      "char": 8,
+      "world": 7,
+      "cine": 9.5,
+      "spect": 8.5,
+      "conc": 8,
+      "drive": 7,
+      "resol": 6,
+      "final": 7.6
+    },
+    "Mad Men": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 6,
+      "conc": 8,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.58
+    },
+    "The Crown": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 9,
+      "spect": 8,
+      "conc": 7,
+      "drive": 7,
+      "resol": 7,
+      "final": 7.55
+    },
+    "Escape at Dannemora": {
+      "char": 8,
+      "world": 7,
+      "cine": 8,
+      "spect": 5,
+      "conc": 7,
+      "drive": 8,
+      "resol": 9,
+      "final": 7.55
+    },
+    "The Plot Against America": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 8,
+      "spect": 6,
+      "conc": 9,
+      "drive": 7,
+      "resol": 7,
+      "final": 7.55
+    },
+    "The Bureau": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 7,
+      "spect": 5,
+      "conc": 8,
+      "drive": 8,
+      "resol": 8,
+      "final": 7.52
+    },
+    "Mare of Easttown": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 7,
+      "spect": 5,
+      "conc": 7,
+      "drive": 8,
+      "resol": 9,
+      "final": 7.52
+    },
+    "The Penguin": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 7,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.52
+    },
+    "Fargo": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 8.5,
+      "spect": 6.5,
+      "conc": 7,
+      "drive": 8,
+      "resol": 8,
+      "final": 7.5
+    },
+    "Peaky Blinders": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 9,
+      "spect": 7.5,
+      "conc": 7,
+      "drive": 7,
+      "resol": 7,
+      "final": 7.5
+    },
+    "Narcos": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 8,
+      "spect": 7,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.5
+    },
+    "Dopesick": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 7,
+      "spect": 5,
+      "conc": 9,
+      "drive": 8,
+      "resol": 8,
+      "final": 7.5
+    },
+    "Borgen": {
+      "char": 8,
+      "world": 7,
+      "cine": 7,
+      "spect": 5,
+      "conc": 8,
+      "drive": 8,
+      "resol": 8,
+      "final": 7.45
+    },
+    "Happy Valley": {
+      "char": 8,
+      "world": 7,
+      "cine": 7,
+      "spect": 5,
+      "conc": 7,
+      "drive": 8,
+      "resol": 9,
+      "final": 7.45
+    },
+    "Girls": {
+      "char": 8.5,
+      "world": 7,
+      "cine": 7,
+      "spect": 5,
+      "conc": 8,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.4
+    },
+    "Broadchurch": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 8,
+      "spect": 6,
+      "conc": 7,
+      "drive": 8,
+      "resol": 8,
+      "final": 7.4
+    },
+    "Justified": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 7,
+      "spect": 5,
+      "conc": 7,
+      "drive": 8,
+      "resol": 8,
+      "final": 7.38
+    },
+    "Six Feet Under": {
+      "char": 8,
+      "world": 6.5,
+      "cine": 7,
+      "spect": 5,
+      "conc": 8,
+      "drive": 6,
+      "resol": 10,
+      "final": 7.38
+    },
+    "Watchmen (2019)": {
+      "char": 7,
+      "world": 7.5,
+      "cine": 7.5,
+      "spect": 8,
+      "conc": 7,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.38
+    },
+    "Interview with the Vampire": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 7,
+      "conc": 7,
+      "drive": 7,
+      "resol": 7,
+      "final": 7.38
+    },
+    "Twin Peaks": {
+      "char": 7.5,
+      "world": 8,
+      "cine": 8,
+      "spect": 7,
+      "conc": 9,
+      "drive": 6,
+      "resol": 6,
+      "final": 7.35
+    },
+    "Big Little Lies": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 8,
+      "spect": 7,
+      "conc": 7,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.35
+    },
+    "The Boys": {
+      "char": 7,
+      "world": 7.5,
+      "cine": 7,
+      "spect": 8,
+      "conc": 8,
+      "drive": 8,
+      "resol": 6,
+      "final": 7.32
+    },
+    "True Detective S3": {
+      "char": 7.5,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 6,
+      "conc": 7,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.32
+    },
+    "Foundation": {
+      "char": 6,
+      "world": 9,
+      "cine": 9,
+      "spect": 10,
+      "conc": 8,
+      "drive": 6,
+      "resol": 5,
+      "final": 7.3
+    },
+    "The Day of the Jackal": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 8,
+      "spect": 6,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.25
+    },
+    "Slow Horses": {
+      "char": 8,
+      "world": 7,
+      "cine": 7,
+      "spect": 6,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.25
+    },
+    "Homeland": {
+      "char": 8,
+      "world": 7,
+      "cine": 7,
+      "spect": 6,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.25
+    },
+    "Ozark": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 8,
+      "spect": 6,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.25
+    },
+    "The Marvelous Mrs. Maisel": {
+      "char": 7,
+      "world": 7,
+      "cine": 8,
+      "spect": 7,
+      "conc": 7,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.25
+    },
+    "Friday Night Lights": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 7,
+      "spect": 5,
+      "conc": 7,
+      "drive": 7,
+      "resol": 8,
+      "final": 7.22
+    },
+    "Stranger Things": {
+      "char": 7,
+      "world": 7,
+      "cine": 8,
+      "spect": 8,
+      "conc": 6,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.2
+    },
+    "Downton Abbey": {
+      "char": 7,
+      "world": 8,
+      "cine": 8,
+      "spect": 8,
+      "conc": 6,
+      "drive": 7,
+      "resol": 7,
+      "final": 7.2
+    },
+    "Line of Duty": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 7,
+      "spect": 5,
+      "conc": 7,
+      "drive": 9,
+      "resol": 7,
+      "final": 7.2
+    },
+    "The Killing (DK)": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 7,
+      "spect": 5,
+      "conc": 7,
+      "drive": 8,
+      "resol": 8,
+      "final": 7.2
+    },
+    "Lost": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 7,
+      "spect": 7.5,
+      "conc": 7,
+      "drive": 8,
+      "resol": 5,
+      "final": 7.18
+    },
+    "The Bear": {
+      "char": 7.5,
+      "world": 6.5,
+      "cine": 9,
+      "spect": 5,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.18
+    },
+    "Gomorrah": {
+      "char": 7,
+      "world": 8,
+      "cine": 8,
+      "spect": 6,
+      "conc": 7,
+      "drive": 7,
+      "resol": 7,
+      "final": 7.15
+    },
+    "Battlestar Galactica": {
+      "char": 7,
+      "world": 7,
+      "cine": 7,
+      "spect": 8,
+      "conc": 8,
+      "drive": 7,
+      "resol": 6,
+      "final": 7.1
+    },
+    "Barry": {
+      "char": 7.5,
+      "world": 6,
+      "cine": 8,
+      "spect": 6,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.1
+    },
+    "Killing Eve": {
+      "char": 7,
+      "world": 6.5,
+      "cine": 7,
+      "spect": 7,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "final": 7.08
+    },
+    "The X-Files": {
+      "char": 7.5,
+      "world": 7.5,
+      "cine": 7,
+      "spect": 7,
+      "conc": 7,
+      "drive": 7,
+      "resol": 6,
+      "final": 7.02
+    },
+    "Oz": {
+      "char": 7.5,
+      "world": 7.5,
+      "cine": 6,
+      "spect": 5,
+      "conc": 8,
+      "drive": 7,
+      "resol": 7,
+      "final": 7.02
+    },
+    "Hill Street Blues": {
+      "char": 7.5,
+      "world": 7,
+      "cine": 6,
+      "spect": 5,
+      "conc": 8,
+      "drive": 7,
+      "resol": 7,
+      "final": 6.95
+    },
+    "The Affair": {
+      "char": 7.5,
+      "world": 6.5,
+      "cine": 8,
+      "spect": 5,
+      "conc": 8,
+      "drive": 7,
+      "resol": 6,
+      "final": 6.92
+    },
+    "The Handmaid's Tale": {
+      "char": 7,
+      "world": 8,
+      "cine": 8.5,
+      "spect": 7.5,
+      "conc": 8,
+      "drive": 5,
+      "resol": 5,
+      "final": 6.9
+    },
+    "Westworld": {
+      "char": 7,
+      "world": 8,
+      "cine": 8,
+      "spect": 8,
+      "conc": 7,
+      "drive": 5,
+      "resol": 5,
+      "final": 6.75
+    },
+    "Homicide: Life on the Street": {
+      "char": 7.5,
+      "world": 6.5,
+      "cine": 6,
+      "spect": 5,
+      "conc": 7,
+      "drive": 7,
+      "resol": 7,
+      "final": 6.72
+    }
+  },
+  "overrides": {
+    "Breaking Bad": {
+      "char": 9,
+      "world": 7,
+      "cine": 10,
+      "spect": 6,
+      "conc": 9,
+      "drive": 10,
+      "resol": 10
+    },
+    "True Detective S1": {
+      "char": 8,
+      "world": 7.5,
+      "cine": 10,
+      "spect": 6,
+      "conc": 8,
+      "drive": 9,
+      "resol": 8
+    }
+  },
+  "finalRankings": [
+    {
+      "rank": 1,
+      "title": "Game of Thrones (S1-4)",
+      "final": 9.45
+    },
+    {
+      "rank": 2,
+      "title": "Breaking Bad",
+      "final": 8.8
+    },
+    {
+      "rank": 3,
+      "title": "The Wire",
+      "final": 8.6
+    },
+    {
+      "rank": 4,
+      "title": "Band of Brothers",
+      "final": 8.4
+    },
+    {
+      "rank": 5,
+      "title": "Better Call Saul",
+      "final": 8.3
+    },
+    {
+      "rank": 6,
+      "title": "Andor",
+      "final": 8.22
+    },
+    {
+      "rank": 7,
+      "title": "Adolescence",
+      "final": 8.22
+    },
+    {
+      "rank": 8,
+      "title": "House of the Dragon",
+      "final": 8.18
+    },
+    {
+      "rank": 9,
+      "title": "Angels in America",
+      "final": 8.15
+    },
+    {
+      "rank": 10,
+      "title": "Boardwalk Empire",
+      "final": 8.12
+    },
+    {
+      "rank": 11,
+      "title": "The Sopranos",
+      "final": 8.1
+    },
+    {
+      "rank": 12,
+      "title": "The Leftovers",
+      "final": 8.1
+    },
+    {
+      "rank": 13,
+      "title": "Dark",
+      "final": 8.08
+    },
+    {
+      "rank": 14,
+      "title": "True Detective S1",
+      "final": 8.07
+    },
+    {
+      "rank": 15,
+      "title": "Chernobyl",
+      "final": 8.05
+    },
+    {
+      "rank": 16,
+      "title": "Babylon Berlin",
+      "final": 8.02
+    },
+    {
+      "rank": 17,
+      "title": "It's a Sin",
+      "final": 8.02
+    },
+    {
+      "rank": 18,
+      "title": "The Knick",
+      "final": 8.02
+    },
+    {
+      "rank": 19,
+      "title": "When They See Us",
+      "final": 8
+    },
+    {
+      "rank": 20,
+      "title": "The Haunting of Hill House",
+      "final": 8
+    },
+    {
+      "rank": 21,
+      "title": "The Queen's Gambit",
+      "final": 7.98
+    },
+    {
+      "rank": 22,
+      "title": "Shogun (2024)",
+      "final": 7.98
+    },
+    {
+      "rank": 23,
+      "title": "Succession",
+      "final": 7.92
+    },
+    {
+      "rank": 24,
+      "title": "Wolf Hall",
+      "final": 7.92
+    },
+    {
+      "rank": 25,
+      "title": "Pluribus",
+      "final": 7.9
+    },
+    {
+      "rank": 26,
+      "title": "Station Eleven",
+      "final": 7.9
+    },
+    {
+      "rank": 27,
+      "title": "Halt and Catch Fire",
+      "final": 7.88
+    },
+    {
+      "rank": 28,
+      "title": "Severance",
+      "final": 7.88
+    },
+    {
+      "rank": 29,
+      "title": "Beef",
+      "final": 7.88
+    },
+    {
+      "rank": 30,
+      "title": "The Americans",
+      "final": 7.82
+    },
+    {
+      "rank": 31,
+      "title": "The Expanse",
+      "final": 7.82
+    },
+    {
+      "rank": 32,
+      "title": "Mr. Robot",
+      "final": 7.82
+    },
+    {
+      "rank": 33,
+      "title": "Squid Game",
+      "final": 7.82
+    },
+    {
+      "rank": 34,
+      "title": "Rectify",
+      "final": 7.8
+    },
+    {
+      "rank": 35,
+      "title": "Generation Kill",
+      "final": 7.8
+    },
+    {
+      "rank": 36,
+      "title": "The Underground Railroad",
+      "final": 7.8
+    },
+    {
+      "rank": 37,
+      "title": "Twin Peaks: The Return",
+      "final": 7.8
+    },
+    {
+      "rank": 38,
+      "title": "Deadwood",
+      "final": 7.78
+    },
+    {
+      "rank": 39,
+      "title": "Midnight Mass",
+      "final": 7.78
+    },
+    {
+      "rank": 40,
+      "title": "Sharp Objects",
+      "final": 7.78
+    },
+    {
+      "rank": 41,
+      "title": "Utopia (UK)",
+      "final": 7.78
+    },
+    {
+      "rank": 42,
+      "title": "The Last of Us",
+      "final": 7.78
+    },
+    {
+      "rank": 43,
+      "title": "Rome",
+      "final": 7.78
+    },
+    {
+      "rank": 44,
+      "title": "Patrick Melrose",
+      "final": 7.75
+    },
+    {
+      "rank": 45,
+      "title": "Silo",
+      "final": 7.75
+    },
+    {
+      "rank": 46,
+      "title": "For All Mankind",
+      "final": 7.72
+    },
+    {
+      "rank": 47,
+      "title": "Black Mirror",
+      "final": 7.7
+    },
+    {
+      "rank": 48,
+      "title": "The White Lotus",
+      "final": 7.7
+    },
+    {
+      "rank": 49,
+      "title": "Godless",
+      "final": 7.7
+    },
+    {
+      "rank": 50,
+      "title": "The Shield",
+      "final": 7.68
+    },
+    {
+      "rank": 51,
+      "title": "Hannibal",
+      "final": 7.65
+    },
+    {
+      "rank": 52,
+      "title": "Pose",
+      "final": 7.65
+    },
+    {
+      "rank": 53,
+      "title": "Penny Dreadful",
+      "final": 7.65
+    },
+    {
+      "rank": 54,
+      "title": "The Pacific",
+      "final": 7.6
+    },
+    {
+      "rank": 55,
+      "title": "Euphoria",
+      "final": 7.6
+    },
+    {
+      "rank": 56,
+      "title": "Mad Men",
+      "final": 7.58
+    },
+    {
+      "rank": 57,
+      "title": "The Crown",
+      "final": 7.55
+    },
+    {
+      "rank": 58,
+      "title": "Escape at Dannemora",
+      "final": 7.55
+    },
+    {
+      "rank": 59,
+      "title": "The Plot Against America",
+      "final": 7.55
+    },
+    {
+      "rank": 60,
+      "title": "The Bureau",
+      "final": 7.52
+    },
+    {
+      "rank": 61,
+      "title": "Mare of Easttown",
+      "final": 7.52
+    },
+    {
+      "rank": 62,
+      "title": "The Penguin",
+      "final": 7.52
+    },
+    {
+      "rank": 63,
+      "title": "Fargo",
+      "final": 7.5
+    },
+    {
+      "rank": 64,
+      "title": "Peaky Blinders",
+      "final": 7.5
+    },
+    {
+      "rank": 65,
+      "title": "Narcos",
+      "final": 7.5
+    },
+    {
+      "rank": 66,
+      "title": "Dopesick",
+      "final": 7.5
+    },
+    {
+      "rank": 67,
+      "title": "Borgen",
+      "final": 7.45
+    },
+    {
+      "rank": 68,
+      "title": "Happy Valley",
+      "final": 7.45
+    },
+    {
+      "rank": 69,
+      "title": "Girls",
+      "final": 7.4
+    },
+    {
+      "rank": 70,
+      "title": "Broadchurch",
+      "final": 7.4
+    },
+    {
+      "rank": 71,
+      "title": "Justified",
+      "final": 7.38
+    },
+    {
+      "rank": 72,
+      "title": "Six Feet Under",
+      "final": 7.38
+    },
+    {
+      "rank": 73,
+      "title": "Watchmen (2019)",
+      "final": 7.38
+    },
+    {
+      "rank": 74,
+      "title": "Interview with the Vampire",
+      "final": 7.38
+    },
+    {
+      "rank": 75,
+      "title": "Twin Peaks",
+      "final": 7.35
+    },
+    {
+      "rank": 76,
+      "title": "Big Little Lies",
+      "final": 7.35
+    },
+    {
+      "rank": 77,
+      "title": "The Boys",
+      "final": 7.32
+    },
+    {
+      "rank": 78,
+      "title": "True Detective S3",
+      "final": 7.32
+    },
+    {
+      "rank": 79,
+      "title": "Foundation",
+      "final": 7.3
+    },
+    {
+      "rank": 80,
+      "title": "The Day of the Jackal",
+      "final": 7.25
+    },
+    {
+      "rank": 81,
+      "title": "Slow Horses",
+      "final": 7.25
+    },
+    {
+      "rank": 82,
+      "title": "Homeland",
+      "final": 7.25
+    },
+    {
+      "rank": 83,
+      "title": "Ozark",
+      "final": 7.25
+    },
+    {
+      "rank": 84,
+      "title": "The Marvelous Mrs. Maisel",
+      "final": 7.25
+    },
+    {
+      "rank": 85,
+      "title": "Friday Night Lights",
+      "final": 7.22
+    },
+    {
+      "rank": 86,
+      "title": "Stranger Things",
+      "final": 7.2
+    },
+    {
+      "rank": 87,
+      "title": "Downton Abbey",
+      "final": 7.2
+    },
+    {
+      "rank": 88,
+      "title": "Line of Duty",
+      "final": 7.2
+    },
+    {
+      "rank": 89,
+      "title": "The Killing (DK)",
+      "final": 7.2
+    },
+    {
+      "rank": 90,
+      "title": "Lost",
+      "final": 7.18
+    },
+    {
+      "rank": 91,
+      "title": "The Bear",
+      "final": 7.18
+    },
+    {
+      "rank": 92,
+      "title": "Gomorrah",
+      "final": 7.15
+    },
+    {
+      "rank": 93,
+      "title": "Battlestar Galactica",
+      "final": 7.1
+    },
+    {
+      "rank": 94,
+      "title": "Barry",
+      "final": 7.1
+    },
+    {
+      "rank": 95,
+      "title": "Killing Eve",
+      "final": 7.08
+    },
+    {
+      "rank": 96,
+      "title": "The X-Files",
+      "final": 7.02
+    },
+    {
+      "rank": 97,
+      "title": "Oz",
+      "final": 7.02
+    },
+    {
+      "rank": 98,
+      "title": "Hill Street Blues",
+      "final": 6.95
+    },
+    {
+      "rank": 99,
+      "title": "The Affair",
+      "final": 6.92
+    },
+    {
+      "rank": 100,
+      "title": "The Handmaid's Tale",
+      "final": 6.9
+    },
+    {
+      "rank": 101,
+      "title": "24",
+      "final": 6.88
+    },
+    {
+      "rank": 102,
+      "title": "Westworld",
+      "final": 6.75
+    },
+    {
+      "rank": 103,
+      "title": "Homicide: Life on the Street",
+      "final": 6.72
+    }
+  ]
+}
