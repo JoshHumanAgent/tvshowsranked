@@ -4155,14 +4155,15 @@
                 });
             }
 
-            // Update all rank badges on visible cards
-            cards.forEach(card => {
+            // Update all rank badges on visible cards (color only, not text - text set by template)
+            cards.forEach((card, cardIdx) => {
                 const title = card.dataset.showTitle;
                 const show = shows.find(s => s.title === title);
                 if (!show) return;
                 const badge = card.querySelector('[data-rank-badge]');
                 if (badge) {
-                    badge.textContent = '#' + show.rank;
+                    // Update rank text to match current position in filtered view
+                    badge.textContent = '#' + (cardIdx + 1);
                     const tier = getTier(show.final);
                     const colors = { gold: '#d4af37', silver: '#a8a8b0', bronze: '#a87d4a' };
                     const c = colors[tier];
