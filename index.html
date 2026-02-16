@@ -2414,6 +2414,193 @@
         }
 
         /* Now re-apply only what we need inline */
+    
+        /* ============================================
+           FILTERS SECTION - COLLAPSIBLE
+           ============================================ */
+        .filters-toggle-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            color: #d4af37;
+            font-family: 'Unna', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .filters-toggle-btn:hover {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.1));
+            border-color: #d4af37;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .filters-toggle-icon {
+            font-size: 1.3rem;
+        }
+
+        .filters-toggle-arrow {
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .filters-content {
+            max-height: 2000px;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        .filters-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+        }
+
+        /* Center era filters */
+        .era-filter-row {
+            justify-content: center;
+        }
+
+        /* Make "Create Your Custom Ranking" header bigger */
+        .weight-section-title {
+            font-family: 'Unna', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #e0e0e8;
+            letter-spacing: -0.01em;
+        }
+
+        /* Weight slider labels - bigger text */
+        .weight-slider-label {
+            font-size: 1.05rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        /* Weight sliders - half width */
+        .weight-slider-row {
+            display: grid;
+            grid-template-columns: 200px 1fr 50px;
+            align-items: center;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .weight-slider-input {
+            width: 100%;
+        }
+
+        .weight-slider-value {
+            font-size: 1rem;
+        }
+
+        /* Sticky search bar at bottom */
+        .search-bar-fixed {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(10,10,15,0.98), rgba(10,10,15,1));
+            border-top: 1px solid #2a2a38;
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+        }
+
+        .search-wrapper-fixed {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-input-fixed {
+            width: 100%;
+            padding: 0.9rem 3rem 0.9rem 1.2rem;
+            background: rgba(20,20,28,0.9);
+            border: 1px solid #3a3a48;
+            color: #e0e0e8;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Source Sans 3', sans-serif;
+            transition: all 0.2s ease;
+        }
+
+        .search-input-fixed:focus {
+            outline: none;
+            border-color: #d4af37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+
+        .search-input-fixed::placeholder {
+            color: #64748b;
+        }
+
+        .search-clear-btn {
+            position: absolute;
+            right: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #64748b;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.25rem;
+            transition: color 0.2s;
+        }
+
+        .search-clear-btn:hover {
+            color: #d4af37;
+        }
+
+        /* Ensure main content has padding for fixed search bar */
+        main {
+            padding-bottom: 80px;
+        }
+
+        /* Methodology badge - not full width, inline */
+        .methodology-badge {
+            display: inline-flex !important;
+            width: auto !important;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .filters-toggle-btn {
+                font-size: 1rem;
+                padding: 0.875rem 1rem;
+            }
+
+            .weight-section-title {
+                font-size: 1.3rem;
+            }
+
+            .weight-slider-label {
+                font-size: 0.9rem;
+            }
+
+            .weight-slider-row {
+                grid-template-columns: 140px 1fr 45px;
+                gap: 0.75rem;
+            }
+
+            .search-bar-fixed {
+                padding: 0.75rem 1rem;
+            }
+
+            .search-input-fixed {
+                font-size: 0.95rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -2602,84 +2789,94 @@
     </div>
 
     <div class="filters-section">
-        <!-- Search -->
-        <div class="filter-group">
-            <div class="filter-row">
-                <div class="search-wrapper">
-                    <input type="text" class="search-input" placeholder="Search shows..." id="search">
+        <!-- Collapse/Expand Button -->
+        <button class="filters-toggle-btn" id="filters-toggle">
+            <span class="filters-toggle-icon">⚙️</span>
+            <span class="filters-toggle-text">Filters & Settings</span>
+            <span class="filters-toggle-arrow">▼</span>
+        </button>
+        
+        <!-- Collapsible Content -->
+        <div class="filters-content" id="filters-content">
+            <!-- Era Filter -->
+            <div class="filter-group">
+                <label class="filter-label">Era</label>
+                <div class="filter-row era-filter-row" id="era-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="last3mo">Last 3 Months</button>
+                    <button class="filter-btn" data-filter="last6mo">Last 6 Months</button>
+                    <button class="filter-btn" data-filter="thisYear">This Year</button>
+                    <button class="filter-btn" data-filter="2020s">2020s</button>
+                    <button class="filter-btn" data-filter="2010s">2010s</button>
+                    <button class="filter-btn" data-filter="2000s">2000s</button>
+                    <button class="filter-btn" data-filter="pre2000">Pre-2000</button>
+                </div>
+            </div>
+
+            <!-- Genre Filter -->
+            <div class="filter-group">
+                <label class="filter-label">Genre</label>
+                <div class="genre-pills" id="genre-filters">
+                    <button class="genre-pill active" data-genre="all">All</button>
+                    <button class="genre-pill" data-genre="drama">Drama</button>
+                    <button class="genre-pill" data-genre="crime">Crime</button>
+                    <button class="genre-pill" data-genre="thriller">Thriller</button>
+                    <button class="genre-pill" data-genre="mystery">Mystery</button>
+                    <button class="genre-pill" data-genre="sci-fi">Sci-Fi</button>
+                    <button class="genre-pill" data-genre="fantasy">Fantasy</button>
+                    <button class="genre-pill" data-genre="historical">Historical</button>
+                    <button class="genre-pill" data-genre="comedy">Comedy</button>
+                    <button class="genre-pill" data-genre="action">Action</button>
+                    <button class="genre-pill" data-genre="horror">Horror</button>
+                    <button class="genre-pill" data-genre="western">Western</button>
+                    <button class="genre-pill" data-genre="superhero">Superhero</button>
+                    <button class="genre-pill" data-genre="cop-show">Cop Show</button>
+                </div>
+            </div>
+
+            <!-- Active Filters -->
+            <div class="active-filters" id="active-filters"></div>
+
+            <!-- Weight Adjustment -->
+            <div class="filter-group weight-group">
+                <!-- Methodology Button - positioned above, not full width -->
+                <a href="#" class="methodology-badge" id="open-methodology" style="display:inline-flex;align-items:center;gap:0.5rem;background:linear-gradient(135deg,rgba(212,175,55,0.15),rgba(212,175,55,0.05));border:1px solid #d4af37;color:#d4af37;padding:0.5rem 1rem;border-radius:4px;text-decoration:none;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;transition:all 0.3s ease;margin-bottom:1rem;width:auto;justify-content:flex-start;">
+                    <svg class="methodology-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;">
+                        <path d="M3 6h18M3 12h18M3 18h18M7 6v12M17 6v12M7 9h.01M17 9h.01"/>
+                    </svg>
+                    Methodology & Criteria
+                </a>
+                <div class="weight-header">
+                    <span class="weight-section-title">Create Your Custom Ranking</span>
+                    <button class="weight-reset-btn" id="reset-weights">Reset</button>
+                </div>
+                <div class="weight-total-row">
+                    <span>Total</span>
+                    <span id="weight-total-value">100%</span>
+                </div>
+                <div class="weight-guidance">Adjust sliders until total reaches 100%</div>
+                <div class="weight-sliders" id="weight-sliders">
+                    <!-- Generated by JS -->
+                </div>
+                <div class="weight-warning" id="weight-warning">⚠️ Total must equal 100%</div>
+
+                <!-- Episode Multiplier Toggle -->
+                <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #3a3a48;">
+                    <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                        <input type="checkbox" id="multiplier-toggle" style="width: 16px; height: 16px; accent-color: #d4af37;">
+                        <span style="color: #e0e0e8; font-size: 0.85rem;">Episode Multiplier</span>
+                    </label>
+                    <div style="color: #64748b; font-size: 0.7rem; margin-top: 0.25rem;">Longer shows get bonus points</div>
                 </div>
             </div>
         </div>
-
-        <!-- Era Filter -->
-        <div class="filter-group">
-            <label class="filter-label">Era</label>
-            <div class="filter-row" id="era-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="last3mo">Last 3 Months</button>
-                <button class="filter-btn" data-filter="last6mo">Last 6 Months</button>
-                <button class="filter-btn" data-filter="thisYear">This Year</button>
-                <button class="filter-btn" data-filter="2020s">2020s</button>
-                <button class="filter-btn" data-filter="2010s">2010s</button>
-                <button class="filter-btn" data-filter="2000s">2000s</button>
-                <button class="filter-btn" data-filter="pre2000">Pre-2000</button>
-            </div>
-        </div>
-
-        <!-- Genre Filter -->
-        <div class="filter-group">
-            <label class="filter-label">Genre</label>
-            <div class="genre-pills" id="genre-filters">
-                <button class="genre-pill active" data-genre="all">All</button>
-                <button class="genre-pill" data-genre="drama">Drama</button>
-                <button class="genre-pill" data-genre="crime">Crime</button>
-                <button class="genre-pill" data-genre="thriller">Thriller</button>
-                <button class="genre-pill" data-genre="mystery">Mystery</button>
-                <button class="genre-pill" data-genre="sci-fi">Sci-Fi</button>
-                <button class="genre-pill" data-genre="fantasy">Fantasy</button>
-                <button class="genre-pill" data-genre="historical">Historical</button>
-                <button class="genre-pill" data-genre="comedy">Comedy</button>
-                <button class="genre-pill" data-genre="action">Action</button>
-                <button class="genre-pill" data-genre="horror">Horror</button>
-                <button class="genre-pill" data-genre="western">Western</button>
-                <button class="genre-pill" data-genre="superhero">Superhero</button>
-                <button class="genre-pill" data-genre="cop-show">Cop Show</button>
-            </div>
-        </div>
-
-        <!-- Active Filters -->
-        <div class="active-filters" id="active-filters"></div>
-
-        <!-- Weight Adjustment -->
-        <div class="filter-group weight-group">
-            <a href="#" class="methodology-badge" id="open-methodology" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;background:linear-gradient(135deg,rgba(212,175,55,0.15),rgba(212,175,55,0.05));border:1px solid #d4af37;color:#d4af37;padding:0.6rem 1rem;border-radius:4px;text-decoration:none;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;transition:all 0.3s ease;margin-bottom:1rem;">
-                <svg class="methodology-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;">
-                    <path d="M3 6h18M3 12h18M3 18h18M7 6v12M17 6v12M7 9h.01M17 9h.01"/>
-                </svg>
-                Methodology & Criteria
-            </a>
-            <div class="weight-header">
-                <span class="weight-section-title">Create Your Custom Ranking</span>
-                <button class="weight-reset-btn" id="reset-weights">Reset</button>
-            </div>
-            <div class="weight-total-row">
-                <span>Total</span>
-                <span id="weight-total-value">100%</span>
-            </div>
-            <div class="weight-guidance">Adjust sliders until total reaches 100%</div>
-            <div class="weight-sliders" id="weight-sliders">
-                <!-- Generated by JS -->
-            </div>
-            <div class="weight-warning" id="weight-warning">⚠️ Total must equal 100%</div>
-
-            <!-- Episode Multiplier Toggle -->
-            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #3a3a48;">
-                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
-                    <input type="checkbox" id="multiplier-toggle" style="width: 16px; height: 16px; accent-color: #d4af37;">
-                    <span style="color: #e0e0e8; font-size: 0.85rem;">Episode Multiplier</span>
-                </label>
-                <div style="color: #64748b; font-size: 0.7rem; margin-top: 0.25rem;">Longer shows get bonus points</div>
-            </div>
+    </div>
+    
+    <!-- Sticky Search Bar at Bottom -->
+    <div class="search-bar-fixed" id="search-bar-fixed">
+        <div class="search-wrapper-fixed">
+            <input type="text" class="search-input-fixed" placeholder="Search shows..." id="search">
+            <button class="search-clear-btn" id="search-clear">✕</button>
         </div>
     </div>
 
@@ -4341,6 +4538,35 @@
 
         // ---- Fix pinned shows to use titles instead of ranks ----
         // (Ranks are now mutable, so pin by title)
+
+        // ---- Filters Collapse/Expand Toggle ----
+        const filtersToggle = document.getElementById('filters-toggle');
+        const filtersContent = document.getElementById('filters-content');
+        const filtersArrow = filtersToggle.querySelector('.filters-toggle-arrow');
+        
+        // Check localStorage for saved state
+        const filtersCollapsed = localStorage.getItem('tvranked_filters_collapsed');
+        if (filtersCollapsed === 'true') {
+            filtersContent.classList.add('collapsed');
+            filtersArrow.textContent = '▶';
+        }
+        
+        filtersToggle.addEventListener('click', () => {
+            filtersContent.classList.toggle('collapsed');
+            const isCollapsed = filtersContent.classList.contains('collapsed');
+            filtersArrow.textContent = isCollapsed ? '▶' : '▼';
+            localStorage.setItem('tvranked_filters_collapsed', isCollapsed);
+        });
+
+        // ---- Search Clear Button ----
+        const searchInput = document.getElementById('search');
+        const searchClearBtn = document.getElementById('search-clear');
+        
+        searchClearBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            searchTerm = '';
+            filterAndRender();
+        });
 
         // Initial render
         renderShows();
