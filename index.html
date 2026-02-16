@@ -322,6 +322,42 @@
             color: var(--text-muted);
         }
         
+        /* Narrative content styling */
+        .show-detail-narrative {
+            background: rgba(20, 20, 28, 0.3);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        .narrative-content p {
+            font-size: 1rem;
+            line-height: 1.9;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+        
+        .narrative-content p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .narrative-content h3, 
+        .narrative-content h4 {
+            font-family: 'Unna', serif;
+            color: var(--gold);
+            margin: 1.5rem 0 0.75rem;
+        }
+        
+        .narrative-content em {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        
+        .narrative-content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        
         .show-detail-dimension {
             margin-bottom: 1.5rem;
             padding: 1rem;
@@ -3442,31 +3478,11 @@
         }
         
         // Function to open show detail modal
-        function openShowDetail(show) {
+        async function openShowDetail(show) {
             const tier = getTier(show.final);
             const tierColor = tier === 'gold' ? 'var(--gold)' : tier === 'silver' ? 'var(--silver)' : 'var(--bronze)';
             
-            const categoryHtml = categories.map(cat => {
-                const value = show[cat.key];
-                const weighted = (value * parseInt(cat.weight) / 100).toFixed(2);
-                const catTier = getTier(value);
-                const catTierColor = catTier === 'gold' ? 'var(--gold)' : catTier === 'silver' ? 'var(--silver)' : 'var(--bronze)';
-                return `
-                    <div class="show-detail-dimension">
-                        <div class="show-detail-dimension-header">
-                            <span class="show-detail-dimension-title">${cat.label} (${cat.weight})</span>
-                            <div class="show-detail-dimension-score">
-                                <span class="show-detail-raw-score" style="color: ${catTierColor}">${value}</span>
-                                <span class="show-detail-weighted-score">→ ${weighted}</span>
-                            </div>
-                        </div>
-                        <div class="show-detail-dimension-bar" style="height: 4px; background: #333; border-radius: 2px; overflow: hidden; margin: 0.5rem 0;">
-                            <div style="height: 100%; background: ${catTierColor}; width: ${value * 10}%; border-radius: 2px;"></div>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-            
+            // Show loading state immediately
             showDetailBody.innerHTML = `
                 <div class="show-detail-header">
                     <div class="show-detail-poster">
@@ -3493,8 +3509,102 @@
                 <div class="show-detail-body">
                     <div class="show-detail-section">
                         <h3>What It Feels Like to Watch</h3>
-                        <p>Full narrative analysis coming soon. This section will display the detailed "What it feels like to watch" content from the show's documentation.</p>
-                        <p style="margin-top:1rem;"><a href="docs/shows/${show.slug}.html" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-dim);padding-bottom:2px;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gold)'">Read full analysis →</a></p>
+                        <p style="color:var(--text-muted);"><em>Loading narrative...</em></p>
+                    </div>
+                </div>
+            `;
+            showDetailModal.classList.add('visible');
+            
+            // Fetch narrative content
+            let narrativeHtml = '';
+            let dimensionsHtml = '';
+            try {
+                const response = await fetch(`docs/shows/${show.slug}.html`);
+                if (response.ok) {
+                    const html = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    
+                    // Extract "What It Feels Like to Watch" section
+                    const heading = Array.from(doc.querySelectorAll('h2')).find(h => h.textContent.includes('What It Feels Like to Watch'));
+                    if (heading) {
+                        let content = '';
+                        let nextEl = heading.nextElementSibling;
+                        while (nextEl && !nextEl.tagName.match(/^H[12]$/i)) {
+                            content += nextEl.outerHTML;
+                            nextEl = nextEl.nextElementSibling;
+                        }
+                        narrativeHtml = content || '<p>Narrative content available on full page.</p>';
+                    } else {
+                        narrativeHtml = '<p><a href="docs/shows/' + show.slug + '.html" style="color:var(--gold);">Read full analysis →</a></p>';
+                    }
+                    
+                    // Extract "7-Dimension Scoring Breakdown" section
+                    const dimHeading = Array.from(doc.querySelectorAll('h2')).find(h => h.textContent.includes('7-Dimension Scoring'));
+                    if (dimHeading) {
+                        let content = '';
+                        let nextEl = dimHeading.nextElementSibling;
+                        while (nextEl && !nextEl.tagName.match(/^H2$/i)) {
+                            content += nextEl.outerHTML;
+                            nextEl = nextEl.nextElementSibling;
+                        }
+                        dimensionsHtml = content;
+                    }
+                }
+            } catch (err) {
+                narrativeHtml = '<p><a href="docs/shows/' + show.slug + '.html" style="color:var(--gold);">Read full analysis →</a></p>';
+            }
+            
+            // Build the category breakdown HTML
+            const categoryHtml = categories.map(cat => {
+                const value = show[cat.key];
+                const weighted = (value * parseInt(cat.weight) / 100).toFixed(2);
+                const catTier = getTier(value);
+                const catTierColor = catTier === 'gold' ? 'var(--gold)' : catTier === 'silver' ? 'var(--silver)' : 'var(--bronze)';
+                return `
+                    <div class="show-detail-dimension">
+                        <div class="show-detail-dimension-header">
+                            <span class="show-detail-dimension-title">${cat.label} (${cat.weight})</span>
+                            <div class="show-detail-dimension-score">
+                                <span class="show-detail-raw-score" style="color: ${catTierColor}">${value}</span>
+                                <span class="show-detail-weighted-score">→ ${weighted}</span>
+                            </div>
+                        </div>
+                        <div class="show-detail-dimension-bar" style="height: 4px; background: #333; border-radius: 2px; overflow: hidden; margin: 0.5rem 0;">
+                            <div style="height: 100%; background: ${catTierColor}; width: ${value * 10}%; border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            // Update modal with full content
+            showDetailBody.innerHTML = `
+                <div class="show-detail-header">
+                    <div class="show-detail-poster">
+                        ${show.poster 
+                            ? `<img src="${show.poster}" alt="${show.title}">`
+                            : `<div style="width:100%;height:270px;background:#1a1a24;display:flex;align-items:center;justify-content:center;"><span style="font-family:Unna,serif;font-size:5rem;color:rgba(255,255,255,0.12);font-weight:900;">${show.title.charAt(0)}</span></div>`
+                        }
+                    </div>
+                    <div class="show-detail-info">
+                        <h2 class="show-detail-title">${show.title.replace(/\s*\(S\d+-\d+\)$/, '')}</h2>
+                        <div class="show-detail-meta">
+                            <span>${show.year}</span>
+                            <span>•</span>
+                            <span>${show.episodes} episodes</span>
+                            <span>•</span>
+                            <span>${show.genres.join(', ')}</span>
+                        </div>
+                        <div class="show-detail-score">
+                            <span class="show-detail-final-score ${tier}">${show.final.toFixed(2)}</span>
+                            <span class="show-detail-score-label">final score</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-detail-body">
+                    <div class="show-detail-section show-detail-narrative">
+                        <h3>What It Feels Like to Watch</h3>
+                        <div class="narrative-content">${narrativeHtml || '<p>Full narrative analysis coming soon.</p>'}</div>
                     </div>
                     <div class="show-detail-section">
                         <h3>7-Dimension Scoring</h3>
@@ -3502,8 +3612,6 @@
                     </div>
                 </div>
             `;
-            
-            showDetailModal.classList.add('visible');
         }
 
         // ---- Per-card slider event handling ----
