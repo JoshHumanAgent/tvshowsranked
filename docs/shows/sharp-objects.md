@@ -37,43 +37,43 @@ This is not a traditional mystery. The question of who killed the girls matters 
 
 **Raw Score: 8.5 | Weighted: 1.70**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, Amy Adams's Camille is devastating—self-harm survivor, alcoholic, damaged journalist. The performance is raw and brave. Patricia Clarkson's mother is monstrous; Eliza Scanlen's sister is heartbreaking. The acting is uniformly exceptional.
 
 ### 2. World Building (15%) — Score: 7.5
 
 **Raw Score: 7.5 | Weighted: 1.13**
 
-Analysis for World Building dimension.
+Scoring 8, small-town Missouri is built through oppressive heat, social hierarchy, and buried secrets. The show creates Wind Gap as Gothic South. The world serves the psychological thriller.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 8.5, Jean-Marc Vallée's direction is dreamlike—flashbacks, subjectivity, fragmented memory. The editing and music create hypnotic atmosphere. The show looks distinctive and artful.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, spectacle is understated—this is faces and interiors. The show finds horror in domestic spaces. The flashback sequences provide visual interest.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, the show explores trauma, self-harm, family dysfunction, and small-town evil. Vallee and Flynn create dense psychological portrait. It's thematically rich and emotionally difficult.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 7.5, the mystery unfolds deliberately across eight episodes. The pacing is slow, building toward revelation. The show requires patience but rewards attention. The final episodes accelerate effectively.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 6, the limited series ends with the killer revealed and Camille's fate ambiguous. It's emotionally powerful but not fully resolved. Some storylines feel truncated. The ending honors the tragedy rather than resolving it.
 
 ## Scoring Summary
 

@@ -31,43 +31,43 @@ What makes Fargo special is its willingness to be strange. The narration. The "t
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 7.5, each season casts different ensemble at high level—Billy Bob Thornton, Martin Freeman, Kirsten Dunst, Ewan McGregor, Carrie Coon. The performances serve the Coen-esque tone. Acting is consistently strong.
 
 ### 2. World Building (15%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.97**
 
-Analysis for World Building dimension.
+Scoring 8.5, Midwest Minnesota/North Dakota is built with affection and irony—snow, politeness, underlying violence. The show creates distinctive regional identity. The world is familiar yet strange.
 
 ### 3. Cinematography (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show mimics Coen brothers' visual language—snowy vistas, careful composition, dark comedy timing. It looks like a prestige cable drama. The cinematography is handsome.
 
 ### 4. Visual Spectacle (10%) — Score: 6
 
 **Raw Score: 6 | Weighted: 0.60**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, violence provides spectacle—a Coen signature. The show delivers shocking moments amid mundanity. The winter landscapes provide visual scope.
 
 ### 5. Conceptual Density (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores coincidence, evil, morality, and the absurdity of existence. The density comes from crime thriller tropes examined philosophically. It's smart without being heavy.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 7, the plotting varies by season—some propulsive, some meandering. The anthology structure starts fresh each year. Some seasons achieve momentum; others drift.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7, each season resolves its crime story. The endings vary in emotional impact. The anthology format means closure is built in.
 
 ## Scoring Summary
 

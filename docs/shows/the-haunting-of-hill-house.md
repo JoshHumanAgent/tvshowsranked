@@ -37,43 +37,43 @@ The finale, "Silence Lay Steadily," brings everything together in a way that fee
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, the ensemble operates across two timelines with different actors playing the same characters. The performances are emotionally grounded—Henry Thomas, Carla Gugino, Victoria Pedretti. The acting sells the horror through human response rather than genre theatrics.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 8.5, Hill House is a character—architecture as threat, the Red Room, the supernatural rules. The show builds convincing haunted house mythology. The family history spanning decades provides structure.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 8.5, Flanagan composes every frame with dread—the hidden ghosts, the symmetry, the color coding. The show looks beautiful even when terrifying. The long takes are technically impressive.
 
 ### 4. Visual Spectacle (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, horror provides spectacle through dread rather than gore. The Bent-Neck Lady, the hidden ghosts, the Red Room—these create lasting images. The show is scary through implication.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores family trauma, grief, and how the past haunts the present. The horror is metaphor made literal. The density is emotional rather than philosophical.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, the dual-timeline structure creates mystery and revelation. The pacing builds dread effectively. The show moves between past and present with purpose. The Red Room revelation provides satisfying payoff.
 
 ### 7. Narrative Resolution (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7, the ending—the family sacrificing themselves to save the youngest—provides closure while honoring the tragedy. Some viewers find it sentimental. The haunted house genre demands ambiguous endings; this is relatively decisive.
 
 ## Scoring Summary
 

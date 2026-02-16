@@ -31,43 +31,43 @@ But beneath the satire lies something deeper. The show asks uncomfortable questi
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 7.5, each season casts new group—season one: Murray Bartlett, Natasha Rothwell, Alexandra Daddario. Season two: F. Murray Abraham, Aubrey Plaza. The performances are appropriately heightened. The acting serves the satire.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 8, the resorts are characters—Hawaii in season one, Sicily in season two. The show builds luxury as both beautiful and oppressive. The locations provide commentary on wealth tourism.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show looks gorgeous—tropical vistas, European architecture, wealthy interiors. The cinematography creates beauty that becomes claustrophobic. Opening credits are distinctive.
 
 ### 4. Visual Spectacle (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, spectacle comes from location—tropical beaches, Italian palaces. The show delivers beautiful settings as character. The deaths provide plot structure and imagery.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, White explores wealth, privilege, colonialism, and terrible rich people. The satire is sharp if occasionally too on-the-nose. The density is social commentary rather than philosophy.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, each season is a closed mystery—who dies, how, why. The structure provides inherent momentum. The episodic format allows for revelation and escalation.
 
 ### 7. Narrative Resolution (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Resolution dimension.
+Scoring 7.5, each season resolves its central mystery. Season one provides tragedy; season two provides irony. The endings are appropriate to the satire.
 
 ## Scoring Summary
 

@@ -33,43 +33,43 @@ This is television that asks big questions. It's not always successful, but it's
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 7, the ensemble is excellent—Hopkins, Harris, Newton, Wood, Marsden—but the material eventually overwhelms them. Acting is committed despite the writing. Performance quality remains even as plot quality declines.
 
 ### 2. World Building (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for World Building dimension.
+Scoring 9, the park itself is extraordinary—Western, Shogun, Raj, the real world. The show built convincing multi-themed simulation. The world building is the show's greatest achievement.
 
 ### 3. Cinematography (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Cinematography dimension.
+Scoring 9, the show looks stunning—production values match feature film. The cinematography is consistently beautiful. The Western aesthetic is particularly gorgeous.
 
 ### 4. Visual Spectacle (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Visual Spectacle dimension.
+Scoring 8.5, the robots, the violence, the landscape—it's visually spectacular. The show delivers HBO-scale action sequences. Production design is extraordinary.
 
 ### 5. Conceptual Density (15%) — Score: 9.5
 
 **Raw Score: 9.5 | Weighted: 1.43**
 
-Analysis for Conceptual Density dimension.
+Scoring 7.5, the show explores consciousness, free will, human nature, and what makes us who we are. Early seasons are philosophically dense. Later seasons become about plot mechanics.
 
 ### 6. Narrative Drive (15%) — Score: 6.5
 
 **Raw Score: 6.5 | Weighted: 0.97**
 
-Analysis for Narrative Drive dimension.
+Scoring 6.5, the narrative becomes increasingly convoluted. Season one is brilliantly structured. Later seasons lose momentum in twist proliferation. The show becomes confusing where it was once mysterious.
 
 ### 7. Narrative Resolution (15%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.75**
 
-Analysis for Narrative Resolution dimension.
+Scoring 4, the show was cancelled after four seasons. The ending is incomplete—storylines unresolved, characters fates unknown. Season four attempts closure but it doesn't feel finished.
 
 ## Scoring Summary
 

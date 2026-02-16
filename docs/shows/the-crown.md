@@ -35,43 +35,43 @@ The later seasons tackle Diana, Charles, and the modern era with the same unflin
 
 **Raw Score: 7.5 | Weighted: 1.50**
 
-Analysis for Characters & Acting dimension.
+Scoring 8, three actors playing Elizabeth across decades—Foy, Colman, Debicki—all excellent. The ensemble rotates with historical period. The performances are consistently strong, occasionally exceptional.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+Scoring 8.5, the monarchy is built through decade-appropriate detail—political history, royal protocol, period atmosphere. The show creates convincing Westminster and royal world.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 8, the show looks expensive—stately homes, period recreation, beautiful costuming. The cinematography is appropriately dignified. Production values justify the budget.
 
 ### 4. Visual Spectacle (10%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 0.85**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7.5, spectacle arrives through historical recreation—coronations, weddings, state occasions. The show delivers royal pageantry as entertainment.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 7, the show explores duty, power, and private lives lived publicly. The density is historical and biographical. It asks what royalty means in modern world.
 
 ### 6. Narrative Drive (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Drive dimension.
+Scoring 7, the historical progression provides structure. Some seasons cover more ground than others. The final seasons accelerate toward conclusion.
 
 ### 7. Narrative Resolution (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Narrative Resolution dimension.
+Scoring 5, the show ends with Diana's death and Charles's future. It's partial closure—history continues beyond the series. The final season feels like stopping rather than finishing.
 
 ## Scoring Summary
 

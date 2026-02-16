@@ -33,43 +33,43 @@ This is not fast-paced television — it's patient, character-driven drama that 
 
 **Raw Score: 8 | Weighted: 1.60**
 
-Analysis for Characters & Acting dimension.
+Scoring 8.5, Sarah Lancashire's Catherine Cawood is extraordinary—prickly, wounded, resilient, funny, dangerous. One of television's great performances. The ensemble supports effectively but this is Lancashire's show.
 
 ### 2. World Building (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for World Building dimension.
+Scoring 8, West Yorkshire is built through specific detail—local dialect, class dynamics, landscape, community. The show creates convincing Northern England.
 
 ### 3. Cinematography (10%) — Score: 7
 
 **Raw Score: 7 | Weighted: 0.70**
 
-Analysis for Cinematography dimension.
+Scoring 7.5, the show is shot directly—functional cinematography serving the performances. The bleak landscape provides visual character. It's unshowy but appropriate.
 
 ### 4. Visual Spectacle (10%) — Score: 5
 
 **Raw Score: 5 | Weighted: 0.50**
 
-Analysis for Visual Spectacle dimension.
+Scoring 7, the show delivers crime thriller moments but prioritizes character. The violence is brief and impactful. No action spectacle, just human stakes.
 
 ### 5. Conceptual Density (15%) — Score: 7
 
 **Raw Score: 7 | Weighted: 1.05**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, the show explores trauma, family, redemption, and working-class life. The density comes from character psychology. It asks whether people can change and forgive.
 
 ### 6. Narrative Drive (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Narrative Drive dimension.
+Scoring 8, the three seasons build across years—Catherine's confrontation with her demons. The plotting is propulsive. The series finale is devastating and earned.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+Scoring 9, the finale is perfect—Catherine's choices, the confrontation, the aftermath. It's one of British television's most satisfying endings.
 
 ## Scoring Summary
 
