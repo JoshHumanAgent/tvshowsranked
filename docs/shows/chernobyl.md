@@ -37,43 +37,43 @@ Chernobyl isn't easy to watch. It's not supposed to be. But it's essential—bec
 
 **Raw Score: 7 | Weighted: 1.40**
 
-Analysis for Characters & Acting dimension.
+Scoring 7, the performances are understated, functional, and devastating. Jared Harris as Valery Legasov carries the weight of the disaster in his posture, his pauses, his defeated eyes. Stellan Skarsgård's Shcherbina undergoes a transformation from bureaucrat to human being. Emily Watson's composite character Ulana Khomyuk represents the scientific conscience. These aren't showy performances; they're embodiments of ordinary people in extraordinary circumstances. The acting serves truth rather than entertainment.
 
 ### 2. World Building (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for World Building dimension.
+At 8, the 1986 Soviet Union is recreated with documentary precision—Propaganda posters, institutional architecture, the specific texture of life in the Ukrainian SSR. The show builds two worlds: the immediate disaster zone (Pripyat, the plant) and the corridors of power in Moscow. The contrast between the exclusion zone's silence and the Kremlin's buzzing activity creates dramatic geography without histrionics.
 
 ### 3. Cinematography (10%) — Score: 9
 
 **Raw Score: 9 | Weighted: 0.90**
 
-Analysis for Cinematography dimension.
+Scoring 9, the visual approach is patient, observational, and haunting. Wide shots of the abandoned city, the industrial scale of the plant, the granular detail of radiation sickness—these are images that linger. The color palette drains as the disaster unfolds, creating visual metaphor for contamination. The use of actual Lithuanian locations standing in for Pripyat provides authentic Soviet-era architecture.
 
 ### 4. Visual Spectacle (10%) — Score: 8
 
 **Raw Score: 8 | Weighted: 0.80**
 
-Analysis for Visual Spectacle dimension.
+With 8, spectacle arrives through scale and implication rather than CGI. The explosion itself is seen through windows, reflected on faces—more effective than any direct depiction. The reactor roof covered in radioactive graphite, the bio-robots clearing debris, the helicopter crash—these moments carry weight because they're earned. The show's power comes from restraint; it knows that silence and scale are more powerful than gore.
 
 ### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
-Analysis for Conceptual Density dimension.
+Scoring 8, the series interrogates the cost of lies, the danger of authoritarianism, the heroism of ordinary people, and the fragility of truth. Each episode operates as both historical recreation and philosophical inquiry. The final episode's courtroom scene—entirely fabricated but emotionally true—becomes a meditation on accountability. The show asks: How do systems fail? How is catastrophe hidden? What is the price of silence?
 
 ### 6. Narrative Drive (15%) — Score: 8.5
 
 **Raw Score: 8.5 | Weighted: 1.27**
 
-Analysis for Narrative Drive dimension.
+At 8.5, the five-episode structure creates relentless momentum. Each hour advances both the disaster and the cover-up, intercutting between ground zero and the Kremlin. The narrative operates like a procedural—we follow the investigation, the containment efforts, the political negotiations. There's propulsion without sensationalism. The ticking clock of the reactor's continued threat maintains tension throughout.
 
 ### 7. Narrative Resolution (15%) — Score: 9
 
 **Raw Score: 9 | Weighted: 1.35**
 
-Analysis for Narrative Resolution dimension.
+Scoring 9, the finale honors sacrifice while refusing false hope. Legasov's testimony provides narrative closure; his suicide provides tragic context. The series ends not with triumph but with truth—the cost in lives, the incomplete justice, the enduring contamination. The final title cards, naming the real casualties, transform entertainment into memorial. It's resolution without comfort.
 
 ## Scoring Summary
 
