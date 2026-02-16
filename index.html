@@ -3217,12 +3217,12 @@
                     (show.resol * weights.resol)
                 ) / 100;
 
-                // Store the unmultiplied weighted average as base.final
-                // This is the foundation for slider calculations
-                baseScores[show.title].final = parseFloat(baseWeighted.toFixed(2));
+                // Store the unmultiplied weighted average as base.final for recalculation reference
+                baseScores[show.title].calculatedFinal = parseFloat(baseWeighted.toFixed(2));
 
-                // ALSO update show.final to ensure it's calculated, not stale from JSON
-                show.final = baseScores[show.title].final;
+                // USE JSON FINAL: Trust the AI-adjusted final score from JSON rather than recalculating
+                // The JSON final values have been human-reviewed and adjusted
+                baseScores[show.title].final = show.final;
             });
 
             // Re-sort after recalculating all finals
