@@ -3432,13 +3432,15 @@
                             ${categories.map(cat => {
                                 const value = show[cat.key];
                                 const percentage = (value / 10) * 100;
-                                // Classic medal tier color scheme
+                                // Classic medal tier color scheme - visible on dark backgrounds
                                 const getScoreColor = (score) => {
                                     if (score === 10) return '#d4af37'; // Gold - Perfect
                                     if (score >= 9) return '#a8a8b0';  // Silver - Excellent
                                     if (score >= 8) return '#a87d4a';  // Bronze - Very Good
                                     if (score >= 7) return '#8b4513';  // Dark Brown - Good
-                                    return '#2a1515';                   // Very dark red - Average/Below
+                                    if (score >= 6) return '#8B0000';  // Maroon - Average
+                                    if (score >= 5) return '#DC143C';  // Crimson Red - Below Average
+                                    return '#FF3344';                   // Bright Red - Poor
                                 };
                                 const catTierColor = getScoreColor(value);
                                 const isModified = baseScores[show.title] && value !== baseScores[show.title][cat.key];
@@ -4070,13 +4072,15 @@
                 const barFill = card.querySelector(`[data-cat-bar="${catKey}"]`);
                 if (barFill) {
                     const pct = (newVal / 10) * 100;
-                    // Classic medal tier color scheme
+                    // Classic medal tier color scheme - visible on dark backgrounds
                     const getScoreColor = (score) => {
                         if (score === 10) return '#d4af37'; // Gold - Perfect
                         if (score >= 9) return '#a8a8b0';  // Silver - Excellent
                         if (score >= 8) return '#a87d4a';  // Bronze - Very Good
                         if (score >= 7) return '#8b4513';  // Dark Brown - Good
-                        return '#2a1515';                   // Very dark red - Average/Below
+                        if (score >= 6) return '#8B0000';  // Maroon - Average
+                        if (score >= 5) return '#DC143C';  // Crimson Red - Below Average
+                        return '#FF3344';                   // Bright Red - Poor
                     };
                     const c = getScoreColor(newVal);
                     barFill.style.width = pct + '%';
@@ -4096,13 +4100,15 @@
                         valEl.style.color = '#60a5fa';
                     } else {
                         valEl.classList.remove('cat-value-modified');
-                        // Classic medal tier color scheme
+                        // Classic medal tier color scheme - visible on dark backgrounds
                         const getScoreColor = (score) => {
                             if (score === 10) return '#d4af37'; // Gold - Perfect
                             if (score >= 9) return '#a8a8b0';  // Silver - Excellent
                             if (score >= 8) return '#a87d4a';  // Bronze - Very Good
                             if (score >= 7) return '#8b4513';  // Dark Brown - Good
-                            return '#2a1515';                   // Very dark red - Average/Below
+                            if (score >= 6) return '#8B0000';  // Maroon - Average
+                            if (score >= 5) return '#DC143C';  // Crimson Red - Below Average
+                            return '#FF3344';                   // Bright Red - Poor
                         };
                         valEl.style.color = getScoreColor(newVal);
                     }
