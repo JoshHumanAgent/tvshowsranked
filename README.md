@@ -32,6 +32,20 @@ A curated ranking of prestige television dramas with interactive scoring and str
 ├── docs/
 │   ├── shows/              # Human-readable show docs (109)
 │   └── methodology/        # Scoring methodology
+├── memory/                 # Agent memory & workflow docs
+│   ├── 00-START-HERE.md    # Recovery protocol (READ FIRST)
+│   ├── 01-SETUP.md         # Start dev server
+│   ├── 02-BROWSER.md       # Browser control (NO EXTENSION)
+│   ├── 03-SITE-NAV.md      # Navigate site via API
+│   ├── 04-GIT.md           # Commit & deploy
+│   ├── 05-STATUS.md        # Current state & rankings
+│   ├── 06-CHANGES.md       # Feature history
+│   ├── 07-DEBUG.md         # 40 tests passed
+│   ├── INDEX.md            # Quick reference
+│   └── 2026-02-16.md       # Session log
+├── scripts/                # Batch processing tools
+│   ├── batch-*.js          # Data generation scripts
+│   └── check-*.js          # Validation scripts
 └── README.md               # This file
 ```
 
@@ -41,13 +55,13 @@ Shows are scored across 7 dimensions (0-10 scale):
 
 | Dimension | Weight | Code |
 |-----------|--------|------|
-| Characters & Acting | 20% | `char` |
+| Characters & Acting | 25% | `char` |
 | World Building | 15% | `world` |
-| Cinematography | 10% | `cine` |
-| Visual Spectacle | 10% | `spect` |
+| Cinematography | 5% | `cine` |
+| Visual Spectacle | 5% | `spect` |
 | Conceptual Density | 15% | `conc` |
 | Narrative Drive | 15% | `drive` |
-| Narrative Resolution | 15% | `resol` |
+| Narrative Path & Resolution | 20% | `resol` |
 
 Episode count multipliers adjust final scores based on show length.
 
@@ -72,6 +86,9 @@ Episode count multipliers adjust final scores based on show length.
 
 ## Recent Changes
 
+- **2026-02-16**: Agent-native instrumentation — full browser control via `tvshowsAgent` API
+- **2026-02-16**: UI refinements: compact search bar, methodology button reposition, episode multiplier featured
+- **2026-02-16**: Weight adjustments: Characters 25%, Spectacle/Cinematography 5% each, Resolution 20%
 - **2026-02-15**: Added interactive per-category score sliders on every show card
 - **2026-02-15**: Added streaming availability (US/UK) for all 109 shows
 - **2026-02-15**: Generated index files by genre, era, network, status, country
