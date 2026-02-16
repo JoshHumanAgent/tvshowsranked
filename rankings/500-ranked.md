@@ -40,28 +40,28 @@
 | 8 | Chernobyl | 8.13 | Full |
 | 9 | Succession | 8.10 | Full |
 | 10 | Deadwood | 8.10 | Full |
-| 11 | Ozark | 8.10 | Full |
-| 12 | The Expanse | 8.07 | Full |
-| 13 | Mad Men | 8.07 | Full |
-| 14 | Andor | 8.03 | Full |
-| 15 | True Detective S1 | 8.00 | S1 |
-| 16 | The Leftovers | 8.00 | Full |
-| 17 | Dark | 8.00 | Full |
-| 18 | The Americans | 8.00 | Full |
+| 11 | The Expanse | 8.07 | Full |
+| 12 | Mad Men | 8.07 | Full |
+| 13 | Andor | 8.03 | Full |
+| 14 | True Detective S1 | 8.00 | S1 |
+| 15 | The Leftovers | 8.00 | Full |
+| 16 | Dark | 8.00 | Full |
+| 17 | The Americans | 8.00 | Full |
 
 ### Tier: VERY GOOD (7.5-7.99)
 | Rank | Show | Score | Peak Seasons |
 |------|------|-------|--------------|
-| 19 | Shogun (2024) | 7.98 | Full |
-| 20 | Babylon Berlin | 7.95 | Full |
-| 21 | House of the Dragon | 7.92 | Full |
-| 22 | The Knick | 7.92 | Full |
-| 23 | Penny Dreadful | 7.92 | Full |
-| 24 | Angels in America | 7.90 | Full |
-| 25 | Pluribus | 7.90 | Full |
-| 26 | Station Eleven | 7.90 | Full |
-| 27 | Silo | 7.90 | Full |
-| 28 | Euphoria | 7.90 | Full |
+| 18 | Shogun (2024) | 7.98 | Full |
+| 19 | Babylon Berlin | 7.95 | Full |
+| 20 | House of the Dragon | 7.92 | Full |
+| 21 | The Knick | 7.92 | Full |
+| 22 | Penny Dreadful | 7.92 | Full |
+| 23 | Angels in America | 7.90 | Full |
+| 24 | Pluribus | 7.90 | Full |
+| 25 | Station Eleven | 7.90 | Full |
+| 26 | Silo | 7.90 | Full |
+| 27 | Euphoria | 7.90 | Full |
+| 28 | Ozark | 7.88 | Full |
 | 29 | Severance | 7.88 | Full |
 | 30 | Hannibal | 7.88 | Full |
 | 31 | Adolescence | 7.85 | Full |
@@ -99,37 +99,37 @@
 | 63 | The Crown | 7.60 | Full |
 | 64 | The Handmaid's Tale | 7.60 | Full |
 | 65 | Squid Game | 7.58 | Full |
-| 66 | Escape at Dannemora | 7.55 | Full |
-| 67 | The Plot Against America | 7.55 | Full |
-| 68 | The Bureau | 7.52 | Full |
-| 69 | Mare of Easttown | 7.52 | Full |
-| 70 | Narcos | 7.50 | Full |
-| 71 | Dopesick | 7.50 | Full |
+| 66 | Stranger Things | 7.58 | Full |
+| 67 | Escape at Dannemora | 7.55 | Full |
+| 68 | The Plot Against America | 7.55 | Full |
+| 69 | The Bureau | 7.52 | Full |
+| 70 | Mare of Easttown | 7.52 | Full |
+| 71 | Narcos | 7.50 | Full |
+| 72 | Dopesick | 7.50 | Full |
 
 ### Tier: GOOD (7.0-7.49)
 | Rank | Show | Score | Peak Seasons |
 |------|------|-------|--------------|
-| 72 | Borgen | 7.45 | Full |
-| 73 | Happy Valley | 7.45 | Full |
-| 74 | Justified | 7.45 | Full |
-| 75 | Broadchurch | 7.40 | Full |
-| 76 | Six Feet Under | 7.38 | Full |
-| 77 | Watchmen (2019) | 7.38 | Full |
-| 78 | Interview with the Vampire | 7.38 | Full |
-| 79 | Stranger Things | 7.38 | Full |
+| 73 | Borgen | 7.45 | Full |
+| 74 | Happy Valley | 7.45 | Full |
+| 75 | Justified | 7.45 | Full |
+| 76 | Broadchurch | 7.40 | Full |
+| 77 | Six Feet Under | 7.38 | Full |
+| 78 | Watchmen (2019) | 7.38 | Full |
+| 79 | Interview with the Vampire | 7.38 | Full |
 | 80 | Twin Peaks | 7.35 | Full |
 | 81 | Big Little Lies | 7.35 | Full |
 | 82 | The Boys | 7.32 | Full |
 | 83 | True Detective S3 | 7.32 | Full |
-| 84 | The Day of the Jackal | 7.25 | Full |
-| 85 | Slow Horses | 7.25 | Full |
-| 86 | Homeland | 7.25 | Full |
-| 87 | The Marvelous Mrs. Maisel | 7.25 | Full |
-| 88 | Friday Night Lights | 7.22 | Full |
-| 89 | Downton Abbey | 7.20 | Full |
-| 90 | Line of Duty | 7.20 | Full |
-| 91 | The Killing (DK) | 7.20 | Full |
-| 92 | The Bear | 7.18 | Full |
+| 84 | The Bear | 7.28 | Full |
+| 85 | The Day of the Jackal | 7.25 | Full |
+| 86 | Slow Horses | 7.25 | Full |
+| 87 | Homeland | 7.25 | Full |
+| 88 | The Marvelous Mrs. Maisel | 7.25 | Full |
+| 89 | Friday Night Lights | 7.22 | Full |
+| 90 | Downton Abbey | 7.20 | Full |
+| 91 | Line of Duty | 7.20 | Full |
+| 92 | The Killing (DK) | 7.20 | Full |
 | 93 | Gomorrah | 7.15 | Full |
 | 94 | Lost | 7.13 | Full |
 | 95 | Battlestar Galactica | 7.10 | Full |

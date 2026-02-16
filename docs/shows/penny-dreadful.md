@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #23 |
+| **Rank** | #22 |
 | **Score** | 7.92 |
 | **Year** | 2014 |
 | **Episodes** | 27 |
@@ -88,7 +88,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #23
+## Why It Ranks #22
 
 Penny Dreadful achieves a final score of 7.92.
 

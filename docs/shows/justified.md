@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #74 |
+| **Rank** | #75 |
 | **Score** | 7.45 |
 | **Year** | 2010 |
 | **Episodes** | 78 |
@@ -90,7 +90,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #74
+## Why It Ranks #75
 
 Justified achieves a final score of 7.45.
 

@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #85 |
+| **Rank** | #86 |
 | **Score** | 7.25 |
 | **Year** | 2022 |
 | **Episodes** | 18 |
@@ -78,7 +78,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #85
+## Why It Ranks #86
 
 Slow Horses achieves a final score of 7.25.
 

@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #68 |
+| **Rank** | #69 |
 | **Score** | 7.52 |
 | **Year** | 2015 |
 | **Episodes** | 50 |
@@ -88,7 +88,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #68
+## Why It Ranks #69
 
 The Bureau achieves a final score of 7.52.
 

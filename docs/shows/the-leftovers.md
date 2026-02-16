@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #16 |
+| **Rank** | #15 |
 | **Score** | 8.00 |
 | **Year** | 2014 |
 | **Episodes** | 28 |
@@ -80,7 +80,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #16
+## Why It Ranks #15
 
 The Leftovers achieves a final score of 8.00.
 

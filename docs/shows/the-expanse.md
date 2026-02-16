@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #12 |
+| **Rank** | #11 |
 | **Score** | 8.07 |
 | **Year** | 2015 |
 | **Episodes** | 62 |
@@ -78,7 +78,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #12
+## Why It Ranks #11
 
 The Expanse achieves a final score of 8.07.
 

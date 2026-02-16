@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #22 |
+| **Rank** | #21 |
 | **Score** | 7.92 |
 | **Year** | 2014 |
 | **Episodes** | 20 |
@@ -88,7 +88,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #22
+## Why It Ranks #21
 
 The Knick achieves a final score of 7.92.
 

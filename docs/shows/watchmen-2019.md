@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #77 |
+| **Rank** | #78 |
 | **Score** | 7.38 |
 | **Year** | 2019 |
 | **Episodes** | 9 |
@@ -90,7 +90,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #77
+## Why It Ranks #78
 
 Watchmen (2019) achieves a final score of 7.38.
 

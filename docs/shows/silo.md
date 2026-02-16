@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #27 |
+| **Rank** | #26 |
 | **Score** | 7.90 |
 | **Year** | 2023 |
 | **Episodes** | 20 |
@@ -78,7 +78,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #27
+## Why It Ranks #26
 
 Silo achieves a final score of 7.90.
 

@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #11 |
-| **Score** | 8.10 |
+| **Rank** | #28 |
+| **Score** | 7.88 |
 | **Year** | 2017 |
 | **Episodes** | 44 |
 | **Genres** | crime, drama, thriller, cop-show |
@@ -45,21 +45,21 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 9
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 8.5
+### 6. Narrative Drive (15%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.27**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 8.5
+### 7. Narrative Resolution (15%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.27**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for Narrative Resolution dimension.
 
@@ -71,16 +71,16 @@ Analysis for Narrative Resolution dimension.
 | World Building | 7 | 15% | 1.05 |
 | Cinematography | 8.5 | 10% | 0.85 |
 | Visual Spectacle | 6 | 10% | 0.60 |
-| Conceptual Density | 9 | 15% | 1.35 |
-| Narrative Drive | 8.5 | 15% | 1.27 |
-| Narrative Resolution | 8.5 | 15% | 1.27 |
-| **FINAL SCORE** | | | **8.10** |
+| Conceptual Density | 8.5 | 15% | 1.27 |
+| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Resolution | 8 | 15% | 1.20 |
+| **FINAL SCORE** | | | **7.88** |
 
 ---
 
-## Why It Ranks #11
+## Why It Ranks #28
 
-Ozark achieves a final score of 8.10.
+Ozark achieves a final score of 7.88.
 
 ---
 

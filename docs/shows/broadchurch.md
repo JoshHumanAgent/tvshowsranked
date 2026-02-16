@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #75 |
+| **Rank** | #76 |
 | **Score** | 7.40 |
 | **Year** | 2013 |
 | **Episodes** | 24 |
@@ -86,7 +86,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #75
+## Why It Ranks #76
 
 Broadchurch achieves a final score of 7.40.
 

@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #28 |
+| **Rank** | #27 |
 | **Score** | 7.90 |
 | **Year** | 2019 |
 | **Episodes** | 17 |
@@ -86,7 +86,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #28
+## Why It Ranks #27
 
 Euphoria achieves a final score of 7.90.
 

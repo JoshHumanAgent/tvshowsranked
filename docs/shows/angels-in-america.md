@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #24 |
+| **Rank** | #23 |
 | **Score** | 7.90 |
 | **Year** | 2003 |
 | **Episodes** | 6 |
@@ -86,7 +86,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #24
+## Why It Ranks #23
 
 Angels in America achieves a final score of 7.90.
 

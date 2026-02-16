@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #89 |
+| **Rank** | #90 |
 | **Score** | 7.20 |
 | **Year** | 2010 |
 | **Episodes** | 52 |
@@ -84,7 +84,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #89
+## Why It Ranks #90
 
 Downton Abbey achieves a final score of 7.20.
 

@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #21 |
+| **Rank** | #20 |
 | **Score** | 7.92 |
 | **Year** | 2022 |
 | **Episodes** | 18 |
@@ -88,7 +88,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #21
+## Why It Ranks #20
 
 House of the Dragon achieves a final score of 7.92.
 

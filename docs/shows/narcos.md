@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #70 |
+| **Rank** | #71 |
 | **Score** | 7.50 |
 | **Year** | 2015 |
 | **Episodes** | 30 |
@@ -86,7 +86,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #70
+## Why It Ranks #71
 
 Narcos achieves a final score of 7.50.
 

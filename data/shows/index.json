@@ -327,38 +327,6 @@
         },
         {
             "rank": 11,
-            "slug": "ozark",
-            "title": "Ozark",
-            "year": 2017,
-            "month": 7,
-            "genres": [
-                "crime",
-                "drama",
-                "thriller",
-                "cop-show"
-            ],
-            "final": 8.1,
-            "tmdbId": 69740,
-            "char": 8.5,
-            "world": 7,
-            "cine": 8.5,
-            "spect": 6,
-            "conc": 9,
-            "drive": 8.5,
-            "resol": 8.5,
-            "episodes": 44,
-            "poster": "https://image.tmdb.org/t/p/w500/pCGyPVrI9Fzw6rE1Pvi4BIXF6ET.jpg",
-            "streaming": {
-                "us": [
-                    "Netflix"
-                ],
-                "uk": [
-                    "Netflix"
-                ]
-            }
-        },
-        {
-            "rank": 12,
             "slug": "the-expanse",
             "title": "The Expanse",
             "year": 2015,
@@ -390,7 +358,7 @@
             }
         },
         {
-            "rank": 13,
+            "rank": 12,
             "slug": "mad-men",
             "title": "Mad Men",
             "year": 2007,
@@ -421,7 +389,7 @@
             }
         },
         {
-            "rank": 14,
+            "rank": 13,
             "slug": "andor",
             "title": "Andor",
             "year": 2022,
@@ -452,7 +420,7 @@
             }
         },
         {
-            "rank": 15,
+            "rank": 14,
             "slug": "true-detective-s1",
             "title": "True Detective S1",
             "year": 2014,
@@ -486,7 +454,7 @@
             }
         },
         {
-            "rank": 16,
+            "rank": 15,
             "slug": "the-leftovers",
             "title": "The Leftovers",
             "year": 2014,
@@ -518,7 +486,7 @@
             }
         },
         {
-            "rank": 17,
+            "rank": 16,
             "slug": "dark",
             "title": "Dark",
             "year": 2017,
@@ -549,7 +517,7 @@
             }
         },
         {
-            "rank": 18,
+            "rank": 17,
             "slug": "the-americans",
             "title": "The Americans",
             "year": 2013,
@@ -581,7 +549,7 @@
             }
         },
         {
-            "rank": 19,
+            "rank": 18,
             "slug": "shogun-2024",
             "title": "Shogun (2024)",
             "year": 2024,
@@ -613,7 +581,7 @@
             }
         },
         {
-            "rank": 20,
+            "rank": 19,
             "slug": "babylon-berlin",
             "title": "Babylon Berlin",
             "year": 2017,
@@ -646,7 +614,7 @@
             }
         },
         {
-            "rank": 21,
+            "rank": 20,
             "slug": "house-of-the-dragon",
             "title": "House of the Dragon",
             "year": 2022,
@@ -678,7 +646,7 @@
             }
         },
         {
-            "rank": 22,
+            "rank": 21,
             "slug": "the-knick",
             "title": "The Knick",
             "year": 2014,
@@ -708,7 +676,7 @@
             }
         },
         {
-            "rank": 23,
+            "rank": 22,
             "slug": "penny-dreadful",
             "title": "Penny Dreadful",
             "year": 2014,
@@ -740,7 +708,7 @@
             }
         },
         {
-            "rank": 24,
+            "rank": 23,
             "slug": "angels-in-america",
             "title": "Angels in America",
             "year": 2003,
@@ -769,7 +737,7 @@
             }
         },
         {
-            "rank": 25,
+            "rank": 24,
             "slug": "pluribus",
             "title": "Pluribus",
             "year": 2025,
@@ -800,7 +768,7 @@
             }
         },
         {
-            "rank": 26,
+            "rank": 25,
             "slug": "station-eleven",
             "title": "Station Eleven",
             "year": 2021,
@@ -830,7 +798,7 @@
             }
         },
         {
-            "rank": 27,
+            "rank": 26,
             "slug": "silo",
             "title": "Silo",
             "year": 2023,
@@ -861,7 +829,7 @@
             }
         },
         {
-            "rank": 28,
+            "rank": 27,
             "slug": "euphoria",
             "title": "Euphoria",
             "year": 2019,
@@ -886,6 +854,38 @@
                 ],
                 "uk": [
                     "Sky Atlantic"
+                ]
+            }
+        },
+        {
+            "rank": 28,
+            "slug": "ozark",
+            "title": "Ozark",
+            "year": 2017,
+            "month": 7,
+            "genres": [
+                "crime",
+                "drama",
+                "thriller",
+                "cop-show"
+            ],
+            "final": 7.88,
+            "tmdbId": 69740,
+            "char": 8.5,
+            "world": 7,
+            "cine": 8.5,
+            "spect": 6,
+            "conc": 8.5,
+            "drive": 8,
+            "resol": 8,
+            "episodes": 44,
+            "poster": "https://image.tmdb.org/t/p/w500/pCGyPVrI9Fzw6rE1Pvi4BIXF6ET.jpg",
+            "streaming": {
+                "us": [
+                    "Netflix"
+                ],
+                "uk": [
+                    "Netflix"
                 ]
             }
         },
@@ -2034,6 +2034,37 @@
         },
         {
             "rank": 66,
+            "slug": "stranger-things",
+            "title": "Stranger Things",
+            "year": 2016,
+            "month": 7,
+            "genres": [
+                "sci-fi",
+                "horror",
+                "drama"
+            ],
+            "final": 7.58,
+            "tmdbId": 45790,
+            "char": 7,
+            "world": 8.5,
+            "cine": 8,
+            "spect": 8,
+            "conc": 6.5,
+            "drive": 8.5,
+            "resol": 7,
+            "episodes": 42,
+            "poster": "https://image.tmdb.org/t/p/w500/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
+            "streaming": {
+                "us": [
+                    "Netflix"
+                ],
+                "uk": [
+                    "Netflix"
+                ]
+            }
+        },
+        {
+            "rank": 67,
             "slug": "escape-at-dannemora",
             "title": "Escape at Dannemora",
             "year": 2018,
@@ -2065,7 +2096,7 @@
             }
         },
         {
-            "rank": 67,
+            "rank": 68,
             "slug": "the-plot-against-america",
             "title": "The Plot Against America",
             "year": 2020,
@@ -2096,7 +2127,7 @@
             }
         },
         {
-            "rank": 68,
+            "rank": 69,
             "slug": "the-bureau",
             "title": "The Bureau",
             "year": 2015,
@@ -2126,7 +2157,7 @@
             }
         },
         {
-            "rank": 69,
+            "rank": 70,
             "slug": "mare-of-easttown",
             "title": "Mare of Easttown",
             "year": 2021,
@@ -2158,7 +2189,7 @@
             }
         },
         {
-            "rank": 70,
+            "rank": 71,
             "slug": "narcos",
             "title": "Narcos",
             "year": 2015,
@@ -2189,7 +2220,7 @@
             }
         },
         {
-            "rank": 71,
+            "rank": 72,
             "slug": "dopesick",
             "title": "Dopesick",
             "year": 2021,
@@ -2218,7 +2249,7 @@
             }
         },
         {
-            "rank": 72,
+            "rank": 73,
             "slug": "borgen",
             "title": "Borgen",
             "year": 2010,
@@ -2250,7 +2281,7 @@
             }
         },
         {
-            "rank": 73,
+            "rank": 74,
             "slug": "happy-valley",
             "title": "Happy Valley",
             "year": 2014,
@@ -2283,7 +2314,7 @@
             }
         },
         {
-            "rank": 74,
+            "rank": 75,
             "slug": "justified",
             "title": "Justified",
             "year": 2010,
@@ -2316,7 +2347,7 @@
             }
         },
         {
-            "rank": 75,
+            "rank": 76,
             "slug": "broadchurch",
             "title": "Broadchurch",
             "year": 2013,
@@ -2350,7 +2381,7 @@
             }
         },
         {
-            "rank": 76,
+            "rank": 77,
             "slug": "six-feet-under",
             "title": "Six Feet Under",
             "year": 2001,
@@ -2380,7 +2411,7 @@
             }
         },
         {
-            "rank": 77,
+            "rank": 78,
             "slug": "watchmen-2019",
             "title": "Watchmen (2019)",
             "year": 2019,
@@ -2412,7 +2443,7 @@
             }
         },
         {
-            "rank": 78,
+            "rank": 79,
             "slug": "interview-with-the-vampire",
             "title": "Interview with the Vampire",
             "year": 2022,
@@ -2440,37 +2471,6 @@
                 ],
                 "uk": [
                     "AMC+"
-                ]
-            }
-        },
-        {
-            "rank": 79,
-            "slug": "stranger-things",
-            "title": "Stranger Things",
-            "year": 2016,
-            "month": 7,
-            "genres": [
-                "sci-fi",
-                "horror",
-                "drama"
-            ],
-            "final": 7.38,
-            "tmdbId": 45790,
-            "char": 7,
-            "world": 8,
-            "cine": 8,
-            "spect": 7.5,
-            "conc": 6,
-            "drive": 8.5,
-            "resol": 7,
-            "episodes": 42,
-            "poster": "https://image.tmdb.org/t/p/w500/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
-            "streaming": {
-                "us": [
-                    "Netflix"
-                ],
-                "uk": [
-                    "Netflix"
                 ]
             }
         },
@@ -2600,6 +2600,37 @@
         },
         {
             "rank": 84,
+            "slug": "the-bear",
+            "title": "The Bear",
+            "year": 2022,
+            "month": 6,
+            "genres": [
+                "drama",
+                "comedy"
+            ],
+            "final": 7.28,
+            "tmdbId": 135699,
+            "char": 7.5,
+            "world": 6.5,
+            "cine": 9,
+            "spect": 6,
+            "conc": 7,
+            "drive": 8,
+            "resol": 7,
+            "episodes": 28,
+            "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+            "streaming": {
+                "us": [
+                    "Hulu",
+                    "FX"
+                ],
+                "uk": [
+                    "Disney+"
+                ]
+            }
+        },
+        {
+            "rank": 85,
             "slug": "the-day-of-the-jackal",
             "title": "The Day of the Jackal",
             "year": 2024,
@@ -2630,7 +2661,7 @@
             }
         },
         {
-            "rank": 85,
+            "rank": 86,
             "slug": "slow-horses",
             "title": "Slow Horses",
             "year": 2022,
@@ -2661,7 +2692,7 @@
             }
         },
         {
-            "rank": 86,
+            "rank": 87,
             "slug": "homeland",
             "title": "Homeland",
             "year": 2011,
@@ -2694,7 +2725,7 @@
             }
         },
         {
-            "rank": 87,
+            "rank": 88,
             "slug": "the-marvelous-mrs-maisel",
             "title": "The Marvelous Mrs. Maisel",
             "year": 2017,
@@ -2725,7 +2756,7 @@
             }
         },
         {
-            "rank": 88,
+            "rank": 89,
             "slug": "friday-night-lights",
             "title": "Friday Night Lights",
             "year": 2006,
@@ -2755,7 +2786,7 @@
             }
         },
         {
-            "rank": 89,
+            "rank": 90,
             "slug": "downton-abbey",
             "title": "Downton Abbey",
             "year": 2010,
@@ -2787,7 +2818,7 @@
             }
         },
         {
-            "rank": 90,
+            "rank": 91,
             "slug": "line-of-duty",
             "title": "Line of Duty",
             "year": 2012,
@@ -2820,7 +2851,7 @@
             }
         },
         {
-            "rank": 91,
+            "rank": 92,
             "slug": "the-killing-dk",
             "title": "The Killing (DK)",
             "year": 2007,
@@ -2849,37 +2880,6 @@
                 ],
                 "uk": [
                     "BBC iPlayer"
-                ]
-            }
-        },
-        {
-            "rank": 92,
-            "slug": "the-bear",
-            "title": "The Bear",
-            "year": 2022,
-            "month": 6,
-            "genres": [
-                "drama",
-                "comedy"
-            ],
-            "final": 7.18,
-            "tmdbId": 135699,
-            "char": 7.5,
-            "world": 6.5,
-            "cine": 9,
-            "spect": 5,
-            "conc": 7,
-            "drive": 8,
-            "resol": 7,
-            "episodes": 28,
-            "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
-            "streaming": {
-                "us": [
-                    "Hulu",
-                    "FX"
-                ],
-                "uk": [
-                    "Disney+"
                 ]
             }
         },

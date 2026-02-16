@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #18 |
+| **Rank** | #17 |
 | **Score** | 8.00 |
 | **Year** | 2013 |
 | **Episodes** | 75 |
@@ -88,7 +88,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #18
+## Why It Ranks #17
 
 The Americans achieves a final score of 8.00.
 

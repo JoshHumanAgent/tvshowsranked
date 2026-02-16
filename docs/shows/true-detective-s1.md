@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #15 |
+| **Rank** | #14 |
 | **Score** | 8.00 |
 | **Year** | 2014 |
 | **Episodes** | 8 |
@@ -90,7 +90,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #15
+## Why It Ranks #14
 
 True Detective S1 achieves a final score of 8.00.
 

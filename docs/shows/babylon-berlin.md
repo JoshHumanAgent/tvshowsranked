@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #20 |
+| **Rank** | #19 |
 | **Score** | 7.95 |
 | **Year** | 2017 |
 | **Episodes** | 36 |
@@ -88,7 +88,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #20
+## Why It Ranks #19
 
 Babylon Berlin achieves a final score of 7.95.
 

@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #14 |
+| **Rank** | #13 |
 | **Score** | 8.03 |
 | **Year** | 2022 |
 | **Episodes** | 12 |
@@ -90,7 +90,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #14
+## Why It Ranks #13
 
 Andor achieves a final score of 8.03.
 

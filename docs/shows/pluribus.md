@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #25 |
+| **Rank** | #24 |
 | **Score** | 7.90 |
 | **Year** | 2025 |
 | **Episodes** | 10 |
@@ -78,7 +78,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #25
+## Why It Ranks #24
 
 Pluribus achieves a final score of 7.90.
 

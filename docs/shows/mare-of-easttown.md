@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #69 |
+| **Rank** | #70 |
 | **Score** | 7.52 |
 | **Year** | 2021 |
 | **Episodes** | 7 |
@@ -86,7 +86,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #69
+## Why It Ranks #70
 
 Mare of Easttown achieves a final score of 7.52.
 

@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #17 |
+| **Rank** | #16 |
 | **Score** | 8.00 |
 | **Year** | 2017 |
 | **Episodes** | 26 |
@@ -86,7 +86,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #17
+## Why It Ranks #16
 
 Dark achieves a final score of 8.00.
 

@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #13 |
+| **Rank** | #12 |
 | **Score** | 8.07 |
 | **Year** | 2007 |
 | **Episodes** | 92 |
@@ -88,7 +88,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #13
+## Why It Ranks #12
 
 Mad Men achieves a final score of 8.07.
 

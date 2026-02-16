@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #92 |
-| **Score** | 7.18 |
+| **Rank** | #84 |
+| **Score** | 7.28 |
 | **Year** | 2022 |
 | **Episodes** | 28 |
 | **Genres** | drama, comedy |
@@ -39,9 +39,9 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 5
+### 4. Visual Spectacle (10%) — Score: 6
 
-**Raw Score: 5 | Weighted: 0.50**
+**Raw Score: 6 | Weighted: 0.60**
 
 Analysis for Visual Spectacle dimension.
 
@@ -70,17 +70,17 @@ Analysis for Narrative Resolution dimension.
 | Characters & Acting | 7.5 | 20% | 1.50 |
 | World Building | 6.5 | 15% | 0.97 |
 | Cinematography | 9 | 10% | 0.90 |
-| Visual Spectacle | 5 | 10% | 0.50 |
+| Visual Spectacle | 6 | 10% | 0.60 |
 | Conceptual Density | 7 | 15% | 1.05 |
 | Narrative Drive | 8 | 15% | 1.20 |
 | Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **7.18** |
+| **FINAL SCORE** | | | **7.28** |
 
 ---
 
-## Why It Ranks #92
+## Why It Ranks #84
 
-The Bear achieves a final score of 7.18.
+The Bear achieves a final score of 7.28.
 
 ---
 

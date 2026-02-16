@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #87 |
+| **Rank** | #88 |
 | **Score** | 7.25 |
 | **Year** | 2017 |
 | **Episodes** | 43 |
@@ -86,7 +86,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #87
+## Why It Ranks #88
 
 The Marvelous Mrs. Maisel achieves a final score of 7.25.
 

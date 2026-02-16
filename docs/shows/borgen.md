@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #72 |
+| **Rank** | #73 |
 | **Score** | 7.45 |
 | **Year** | 2010 |
 | **Episodes** | 40 |
@@ -86,7 +86,7 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #72
+## Why It Ranks #73
 
 Borgen achieves a final score of 7.45.
 
