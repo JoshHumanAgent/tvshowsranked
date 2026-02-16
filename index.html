@@ -215,6 +215,182 @@
             color: var(--text-muted);
         }
         
+        /* Show Detail Modal */
+        .show-detail-content {
+            max-width: 900px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 0;
+        }
+        
+        .show-detail-header {
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--card) 0%, var(--bg) 100%);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .show-detail-poster {
+            width: 180px;
+            min-width: 180px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+        
+        .show-detail-poster img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .show-detail-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .show-detail-title {
+            font-family: 'Unna', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        .show-detail-meta {
+            display: flex;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+        
+        .show-detail-score {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .show-detail-final-score {
+            font-family: 'Unna', serif;
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+        }
+        
+        .show-detail-final-score.silver { color: var(--silver); }
+        .show-detail-final-score.bronze { color: var(--bronze); }
+        
+        .show-detail-score-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .show-detail-body {
+            padding: 2rem;
+        }
+        
+        .show-detail-section {
+            margin-bottom: 2rem;
+        }
+        
+        .show-detail-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .show-detail-section h3 {
+            font-family: 'Unna', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .show-detail-section p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+        
+        .show-detail-dimension {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(20, 20, 28, 0.5);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        .show-detail-dimension:last-child {
+            margin-bottom: 0;
+        }
+        
+        .show-detail-dimension-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        
+        .show-detail-dimension-title {
+            font-family: 'Unna', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        
+        .show-detail-dimension-score {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .show-detail-raw-score {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+        
+        .show-detail-weighted-score {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .show-detail-dimension-desc {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+        
+        /* Clickable card cursor */
+        .show-module {
+            cursor: pointer;
+        }
+        
+        .show-card-panel {
+            transition: all 0.3s ease;
+        }
+        
+        .show-card-panel:hover {
+            border-color: var(--gold-dim);
+            background: linear-gradient(135deg, rgba(30, 30, 40, 0.98), rgba(25, 25, 35, 0.85));
+        }
+        
+        /* Make sliders not trigger card click */
+        .cat-slider-input {
+            cursor: pointer;
+        }
+        
         .modal-close {
             position: absolute;
             top: 1rem;
@@ -2071,6 +2247,16 @@
         </div>
     </div>
     
+    <!-- Show Detail Modal -->
+    <div class="modal-overlay" id="show-detail-modal">
+        <div class="modal-content show-detail-content">
+            <button class="modal-close" id="close-show-detail">&times;</button>
+            <div id="show-detail-body">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </div>
+    
     <!-- Quick Compare Bar -->
     <div class="quick-compare" id="quick-compare">
         <div class="quick-compare-label">📌 Quick Compare (Pinned Shows)</div>
@@ -3211,6 +3397,113 @@
                     categoryModal.classList.remove('visible');
                 }
             });
+        }
+
+        // Show Detail Modal
+        const showDetailModal = document.getElementById('show-detail-modal');
+        const showDetailBody = document.getElementById('show-detail-body');
+        const closeShowDetailBtn = document.getElementById('close-show-detail');
+        
+        if (showDetailModal) {
+            // Click on show cards to open detail view (but not on sliders or interactive elements)
+            list.addEventListener('click', (e) => {
+                // Don't open if clicking on interactive elements
+                if (e.target.tagName === 'INPUT' || 
+                    e.target.tagName === 'BUTTON' ||
+                    e.target.classList.contains('cat-slider-input') ||
+                    e.target.classList.contains('genre-tag') ||
+                    e.target.classList.contains('score-label-text') ||
+                    e.target.classList.contains('score-value')) {
+                    return;
+                }
+                
+                // Find the show module
+                const showModule = e.target.closest('.show-module');
+                if (showModule) {
+                    const showTitle = showModule.dataset.showTitle;
+                    const show = shows.find(s => s.title === showTitle);
+                    if (show) {
+                        openShowDetail(show);
+                    }
+                }
+            });
+            
+            // Close button
+            closeShowDetailBtn.addEventListener('click', () => {
+                showDetailModal.classList.remove('visible');
+            });
+            
+            // Click outside to close
+            showDetailModal.addEventListener('click', (e) => {
+                if (e.target === showDetailModal) {
+                    showDetailModal.classList.remove('visible');
+                }
+            });
+        }
+        
+        // Function to open show detail modal
+        function openShowDetail(show) {
+            const tier = getTier(show.final);
+            const tierColor = tier === 'gold' ? 'var(--gold)' : tier === 'silver' ? 'var(--silver)' : 'var(--bronze)';
+            
+            const categoryHtml = categories.map(cat => {
+                const value = show[cat.key];
+                const weighted = (value * parseInt(cat.weight) / 100).toFixed(2);
+                const catTier = getTier(value);
+                const catTierColor = catTier === 'gold' ? 'var(--gold)' : catTier === 'silver' ? 'var(--silver)' : 'var(--bronze)';
+                return `
+                    <div class="show-detail-dimension">
+                        <div class="show-detail-dimension-header">
+                            <span class="show-detail-dimension-title">${cat.label} (${cat.weight})</span>
+                            <div class="show-detail-dimension-score">
+                                <span class="show-detail-raw-score" style="color: ${catTierColor}">${value}</span>
+                                <span class="show-detail-weighted-score">→ ${weighted}</span>
+                            </div>
+                        </div>
+                        <div class="show-detail-dimension-bar" style="height: 4px; background: #333; border-radius: 2px; overflow: hidden; margin: 0.5rem 0;">
+                            <div style="height: 100%; background: ${catTierColor}; width: ${value * 10}%; border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            showDetailBody.innerHTML = `
+                <div class="show-detail-header">
+                    <div class="show-detail-poster">
+                        ${show.poster 
+                            ? `<img src="${show.poster}" alt="${show.title}">`
+                            : `<div style="width:100%;height:270px;background:#1a1a24;display:flex;align-items:center;justify-content:center;"><span style="font-family:Unna,serif;font-size:5rem;color:rgba(255,255,255,0.12);font-weight:900;">${show.title.charAt(0)}</span></div>`
+                        }
+                    </div>
+                    <div class="show-detail-info">
+                        <h2 class="show-detail-title">${show.title.replace(/\s*\(S\d+-\d+\)$/, '')}</h2>
+                        <div class="show-detail-meta">
+                            <span>${show.year}</span>
+                            <span>•</span>
+                            <span>${show.episodes} episodes</span>
+                            <span>•</span>
+                            <span>${show.genres.join(', ')}</span>
+                        </div>
+                        <div class="show-detail-score">
+                            <span class="show-detail-final-score ${tier}">${show.final.toFixed(2)}</span>
+                            <span class="show-detail-score-label">final score</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-detail-body">
+                    <div class="show-detail-section">
+                        <h3>7-Dimension Scoring</h3>
+                        ${categoryHtml}
+                    </div>
+                    <div class="show-detail-section">
+                        <h3>What It Feels Like to Watch</h3>
+                        <p>Full narrative analysis coming soon. This section will display the detailed "What it feels like to watch" content from the show's documentation.</p>
+                        <p style="margin-top:1rem;"><a href="docs/shows/${show.slug}.html" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-dim);padding-bottom:2px;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gold)'">Read full analysis →</a></p>
+                    </div>
+                </div>
+            `;
+            
+            showDetailModal.classList.add('visible');
         }
 
         // ---- Per-card slider event handling ----
