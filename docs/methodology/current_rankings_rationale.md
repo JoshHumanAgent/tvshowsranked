@@ -12,7 +12,7 @@ Game of Thrones Seasons 1-4 represents the pinnacle of fantasy television. The a
 - Stunning cinematography and battle sequences
 - Intelligent political plotting
 
-### #2: Breaking Bad — 8.89
+### #2: Breaking Bad — 8.80
 
 Breaking Bad redefined what television could achieve with a single protagonist. Vince Gilligan's creation charts Walter White's transformation from chemistry teacher to drug kingpin with unflinching precision. The series maintains incredible consistency across five seasons, building to one of television's most satisfying conclusions.
 
@@ -118,4 +118,6 @@ Better Call Saul's placement shows that prequels can surpass their source materi
 
 ## Methodology Notes
 
-These rankings reflect our assessment of each show's achievements across five dimensions: narrative ambition, character depth, thematic resonance, cultural impact, and watchability. External ratings from IMDb, Rotten Tomatoes, and Metacritic inform but do not determine our final placement.
+These rankings reflect our assessment of each show's achievements across seven dimensions: Characters & Acting, World Building, Cinematography, Visual Spectacle, Conceptual Density, Narrative Drive, and Narrative Resolution. External ratings from IMDb, Rotten Tomatoes, and Metacritic inform but do not determine our final placement.
+
+See [scoring_learnings.md](scoring_learnings.md) for the complete 7-dimension scoring system and category definitions.

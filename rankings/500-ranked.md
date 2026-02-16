@@ -9,7 +9,7 @@
 | Rank | Show | Score |
 |------|------|-------|
 | 1 | Game of Thrones (S1-4) | 9.50 |
-| 2 | Breaking Bad | 8.89 |
+| 2 | Breaking Bad | 8.80 |
 | 3 | The Wire | 8.74 |
 | 4 | Better Call Saul | 8.74 |
 | 5 | Chernobyl | 8.54 |
@@ -31,7 +31,7 @@
 ### Tier: ELITE (8.0-8.99)
 | Rank | Show | Score | Peak Seasons |
 |------|------|-------|--------------|
-| 2 | Breaking Bad | 8.89 | Full |
+| 2 | Breaking Bad | 8.80 | Full |
 | 3 | The Wire | 8.74 | Full |
 | 4 | Better Call Saul | 8.74 | Full |
 | 5 | Chernobyl | 8.54 | Full |
@@ -45,7 +45,7 @@
 | 13 | Boardwalk Empire | 7.98 | Full |
 | 14 | Andor | 7.96 | Full |
 | 15 | Adolescence | 7.95 | Full |
-| 16 | True Detective S1 | 7.90 | S1 |
+| 16 | True Detective S1 | 8.08 | S1 |
 | 17 | For All Mankind | 7.88 | Full |
 | 18 | Mad Men | 7.88 | Full |
 | 19 | Halt and Catch Fire | 7.88 | Full |
