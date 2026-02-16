@@ -1123,14 +1123,17 @@
         }
 
         .weight-total-row {
-            display: flex;
+            display: inline-flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.4rem 0.75rem;
+            padding: 0.35rem 0.75rem;
             background: rgba(20,20,28,0.8);
             border-radius: 4px;
             border: 1px solid #2a2a38;
-            margin-bottom: 0.35rem;
+            margin-bottom: 0.25rem;
+            width: auto;
+            min-width: 140px;
+            gap: 1rem;
         }
 
         .weight-total-row span:first-child {
@@ -1156,6 +1159,12 @@
 
         .weight-total-row.invalid span:last-child {
             color: #ef4444;
+        }
+
+        .weight-total-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.25rem;
         }
 
         .weight-guidance {
@@ -2503,7 +2512,7 @@
             font-size: 1rem;
         }
 
-        /* Sticky search bar at bottom */
+        /* Sticky search bar at bottom - COMPACT */
         .search-bar-fixed {
             position: fixed;
             bottom: 0;
@@ -2511,9 +2520,9 @@
             right: 0;
             background: linear-gradient(180deg, rgba(10,10,15,0.98), rgba(10,10,15,1));
             border-top: 1px solid #2a2a38;
-            padding: 1rem 2rem;
+            padding: 0.5rem 1rem;
             z-index: 1000;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+            box-shadow: 0 -2px 12px rgba(0,0,0,0.4);
         }
 
         .search-wrapper-fixed {
@@ -2524,14 +2533,15 @@
 
         .search-input-fixed {
             width: 100%;
-            padding: 0.9rem 3rem 0.9rem 1.2rem;
+            padding: 0.6rem 2.5rem 0.6rem 1rem;
             background: rgba(20,20,28,0.9);
             border: 1px solid #3a3a48;
             color: #e0e0e8;
-            border-radius: 8px;
-            font-size: 1rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
             font-family: 'Source Sans 3', sans-serif;
             transition: all 0.2s ease;
+            line-height: 1.4;
         }
 
         .search-input-fixed:focus {
@@ -2562,9 +2572,9 @@
             color: #d4af37;
         }
 
-        /* Ensure main content has padding for fixed search bar */
+        /* Ensure main content has padding for fixed search bar - COMPACT */
         main {
-            padding-bottom: 80px;
+            padding-bottom: 50px;
         }
 
         /* Methodology badge - not full width, inline */
@@ -2594,11 +2604,12 @@
             }
 
             .search-bar-fixed {
-                padding: 0.75rem 1rem;
+                padding: 0.5rem 0.75rem;
             }
 
             .search-input-fixed {
-                font-size: 0.95rem;
+                font-size: 0.9rem;
+                padding: 0.55rem 2.25rem 0.55rem 0.875rem;
             }
         }
     </style>
@@ -2839,34 +2850,44 @@
 
             <!-- Weight Adjustment -->
             <div class="filter-group weight-group">
-                <!-- Methodology Button - positioned above, not full width -->
-                <a href="#" class="methodology-badge" id="open-methodology" style="display:inline-flex;align-items:center;gap:0.5rem;background:linear-gradient(135deg,rgba(212,175,55,0.15),rgba(212,175,55,0.05));border:1px solid #d4af37;color:#d4af37;padding:0.5rem 1rem;border-radius:4px;text-decoration:none;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;transition:all 0.3s ease;margin-bottom:1rem;width:auto;justify-content:flex-start;">
+                <div class="weight-header">
+                    <span class="weight-section-title">Create Your Custom Ranking</span>
+                    <button class="weight-reset-btn" id="reset-weights">Reset</button>
+                </div>
+                
+                <!-- Compact Total Indicator -->
+                <div class="weight-total-wrapper">
+                    <div class="weight-total-row">
+                        <span>Total</span>
+                        <span id="weight-total-value">100%</span>
+                    </div>
+                </div>
+                <div class="weight-guidance">Adjust sliders until total reaches 100%</div>
+                
+                <!-- Methodology Button - positioned above category sliders -->
+                <a href="#" class="methodology-badge" id="open-methodology" style="display:inline-flex;align-items:center;gap:0.5rem;background:linear-gradient(135deg,rgba(212,175,55,0.15),rgba(212,175,55,0.05));border:1px solid #d4af37;color:#d4af37;padding:0.5rem 1rem;border-radius:4px;text-decoration:none;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;transition:all 0.3s ease;margin:0.75rem 0;width:auto;justify-content:flex-start;">
                     <svg class="methodology-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;">
                         <path d="M3 6h18M3 12h18M3 18h18M7 6v12M17 6v12M7 9h.01M17 9h.01"/>
                     </svg>
                     Methodology & Criteria
                 </a>
-                <div class="weight-header">
-                    <span class="weight-section-title">Create Your Custom Ranking</span>
-                    <button class="weight-reset-btn" id="reset-weights">Reset</button>
-                </div>
-                <div class="weight-total-row">
-                    <span>Total</span>
-                    <span id="weight-total-value">100%</span>
-                </div>
-                <div class="weight-guidance">Adjust sliders until total reaches 100%</div>
+                
                 <div class="weight-sliders" id="weight-sliders">
                     <!-- Generated by JS -->
                 </div>
                 <div class="weight-warning" id="weight-warning">⚠️ Total must equal 100%</div>
 
-                <!-- Episode Multiplier Toggle -->
-                <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #3a3a48;">
-                    <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
-                        <input type="checkbox" id="multiplier-toggle" style="width: 16px; height: 16px; accent-color: #d4af37;">
-                        <span style="color: #e0e0e8; font-size: 0.85rem;">Episode Multiplier</span>
+                <!-- Episode Multiplier - Featured Component -->
+                <div class="episode-multiplier-featured" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #3a3a48; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                    <label class="episode-multiplier-block" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(34, 197, 94, 0.05)); border: 1px solid rgba(34, 197, 94, 0.4); border-radius: 6px; padding: 0.6rem 1rem; transition: all 0.2s ease;">
+                        <input type="checkbox" id="multiplier-toggle" style="width: 18px; height: 18px; accent-color: #22c55e; cursor: pointer;">
+                        <span style="color: #22c55e; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Episode Multiplier</span>
                     </label>
-                    <div style="color: #64748b; font-size: 0.7rem; margin-top: 0.25rem;">Longer shows get bonus points</div>
+                    <p class="episode-multiplier-desc" style="color: #8a8a9a; font-size: 0.8rem; line-height: 1.4; margin: 0; flex: 1; min-width: 200px;">
+                        <strong style="color: #a8a8b0;">What it does:</strong> Adjusts final scores based on episode count.<br>
+                        <strong style="color: #a8a8b0;">Why it matters:</strong> Sustaining excellence over 60+ episodes is harder than 6.<br>
+                        <strong style="color: #a8a8b0;">Impact:</strong> Bonus ×1.02–×1.06 for longer runs, slight reduction for limited series.
+                    </p>
                 </div>
             </div>
         </div>
