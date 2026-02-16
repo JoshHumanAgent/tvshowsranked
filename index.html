@@ -2871,14 +2871,6 @@
             </div>
         </div>
     </div>
-    
-    <!-- Sticky Search Bar at Bottom -->
-    <div class="search-bar-fixed" id="search-bar-fixed">
-        <div class="search-wrapper-fixed">
-            <input type="text" class="search-input-fixed" placeholder="Search shows..." id="search">
-            <button class="search-clear-btn" id="search-clear">✕</button>
-        </div>
-    </div>
 
     <main>
         <div class="results-header">
@@ -2906,6 +2898,14 @@
             <button class="reset-btn" id="reset-scores-btn">Reset All</button>
         </div>
     </main>
+    
+    <!-- Sticky Search Bar at Bottom -->
+    <div class="search-bar-fixed" id="search-bar-fixed">
+        <div class="search-wrapper-fixed">
+            <input type="text" class="search-input-fixed" placeholder="Search shows..." id="search">
+            <button class="search-clear-btn" id="search-clear">✕</button>
+        </div>
+    </div>
 
     <script>
         const TMDB_API_KEY = 'ca9b21cb89de2d1debed1050f603d7ad';
@@ -4559,13 +4559,12 @@
         });
 
         // ---- Search Clear Button ----
-        const searchInput = document.getElementById('search');
         const searchClearBtn = document.getElementById('search-clear');
         
-        searchClearBtn.addEventListener('click', () => {
+        searchClearBtn?.addEventListener('click', () => {
             searchInput.value = '';
             searchTerm = '';
-            filterAndRender();
+            renderShows();
         });
 
         // Initial render
