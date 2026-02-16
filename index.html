@@ -3386,8 +3386,8 @@
                             ? `<img src="${show.poster}" alt="${show.title}" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">`
                             : `<span style="font-family:Unna,serif;font-size:5rem;color:rgba(255,255,255,0.12);font-weight:900;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;">${show.title.charAt(0)}</span>`
                         }
-                        <!-- Rank badge -->
-                        <span data-rank-badge style="position:absolute;top:-6px;left:-6px;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,${tierColor}99,${tierColor});color:#0a0a0f;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:0.75rem;font-weight:600;z-index:5;box-shadow:0 4px 12px rgba(0,0,0,0.5);">#${show.rank}</span>
+                        <!-- Rank badge shows current display position -->
+                        <span data-rank-badge style="position:absolute;top:-6px;left:-6px;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,${tierColor}99,${tierColor});color:#0a0a0f;display:flex;align-items:center;justify-content:center;font-family:JetBrains Mono,monospace;font-size:0.75rem;font-weight:600;z-index:5;box-shadow:0 4px 12px rgba(0,0,0,0.5);">#${idx + 1}</span>
                     </div>
 
                     <!-- Card Panel - flows next to poster -->
