@@ -4242,24 +4242,6 @@
                 consensusHtml = `<div class="consensus-content"><p>${showData.consensus_highlights}</p></div>`;
             }
 
-            // Build the category breakdown HTML - text only, no bars
-            const categoryHtml = categories.map(cat => {
-                const value = show[cat.key];
-                const weighted = (value * parseInt(cat.weight) / 100).toFixed(2);
-                const catTier = getTier(value);
-                return `
-                    <div class="show-detail-dimension">
-                        <div class="show-detail-dimension-header">
-                            <span class="show-detail-dimension-title">${cat.label}</span>
-                            <div class="show-detail-dimension-score">
-                                <span class="show-detail-raw-score ${catTier}">${value}/10</span>
-                                <span class="show-detail-weighted-score">×${cat.weight}% = ${weighted}</span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-
             // Update modal with full content
             showDetailBody.innerHTML = `
                 <div class="show-detail-header">
@@ -4302,10 +4284,6 @@
                         ${whyItRanksHtml}
                     </div>
                     ` : ''}
-                    <div class="show-detail-section">
-                        <h3>7-Dimension Scoring</h3>
-                        ${categoryHtml}
-                    </div>
                 </div>
             `;
         }
