@@ -3432,13 +3432,14 @@
                             ${categories.map(cat => {
                                 const value = show[cat.key];
                                 const percentage = (value / 10) * 100;
-                                // Color based on exact score: 10=gold, 9=silver, 8=bronze, 7=dark orange
+                                // Cinema film stock color scheme
                                 const getScoreColor = (score) => {
-                                    if (score === 10) return '#d4af37';
-                                    if (score >= 9) return '#a8a8b0';
-                                    if (score >= 8) return '#a87d4a';
-                                    if (score >= 7) return '#8b4513';
-                                    return '#4a4a55';
+                                    if (score === 10) return '#C41E3A'; // Kodak red - Elite/Masterpiece
+                                    if (score >= 9) return '#D4AF37';  // Technicolor gold - Exceptional
+                                    if (score >= 8) return '#8B6916';  // Sepia bronze - Very Good
+                                    if (score >= 7) return '#6B4423';  // Coffee/warm - Good
+                                    if (score >= 5) return '#4A4A55';  // Neutral gray - Average
+                                    return '#2C3E50';                   // Cyan/slate - Below par
                                 };
                                 const catTierColor = getScoreColor(value);
                                 const isModified = baseScores[show.title] && value !== baseScores[show.title][cat.key];
@@ -4070,16 +4071,21 @@
                 const barFill = card.querySelector(`[data-cat-bar="${catKey}"]`);
                 if (barFill) {
                     const pct = (newVal / 10) * 100;
+                    // Cinema film stock color scheme
                     const getScoreColor = (score) => {
-                        if (score === 10) return '#d4af37';
-                        if (score >= 9) return '#a8a8b0';
-                        if (score >= 8) return '#a87d4a';
-                        if (score >= 7) return '#8b4513';
-                        return '#4a4a55';
+                        if (score === 10) return '#C41E3A'; // Kodak red - Elite
+                        if (score >= 9) return '#D4AF37';  // Technicolor gold
+                        if (score >= 8) return '#8B6916';  // Sepia bronze
+                        if (score >= 7) return '#6B4423';  // Coffee/warm
+                        if (score >= 5) return '#4A4A55';  // Neutral gray
+                        return '#2C3E50';                   // Cyan/slate
                     };
                     const c = getScoreColor(newVal);
                     barFill.style.width = pct + '%';
                     barFill.style.background = `linear-gradient(90deg,${c}99,${c},${c}99)`;
+                    
+                    // Update slider thumb color
+                    slider.style.setProperty('--thumb-color', c);
                 }
 
                 // Update value text
@@ -4092,12 +4098,14 @@
                         valEl.style.color = '#60a5fa';
                     } else {
                         valEl.classList.remove('cat-value-modified');
+                        // Cinema film stock color scheme
                         const getScoreColor = (score) => {
-                            if (score === 10) return '#d4af37';
-                            if (score >= 9) return '#a8a8b0';
-                            if (score >= 8) return '#a87d4a';
-                            if (score >= 7) return '#8b4513';
-                            return '#4a4a55';
+                            if (score === 10) return '#C41E3A'; // Kodak red - Elite
+                            if (score >= 9) return '#D4AF37';  // Technicolor gold
+                            if (score >= 8) return '#8B6916';  // Sepia bronze
+                            if (score >= 7) return '#6B4423';  // Coffee/warm
+                            if (score >= 5) return '#4A4A55';  // Neutral gray
+                            return '#2C3E50';                   // Cyan/slate
                         };
                         valEl.style.color = getScoreColor(newVal);
                     }
