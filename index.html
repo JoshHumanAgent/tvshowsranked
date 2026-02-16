@@ -4108,6 +4108,9 @@
             const tier = getTier(show.final);
             const tierColor = tier === 'gold' ? 'var(--gold)' : tier === 'silver' ? 'var(--silver)' : 'var(--bronze)';
 
+            // Generate slug if not present
+            const slug = show.slug || show.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+
             // Show loading state immediately
             showDetailBody.innerHTML = `
                 <div class="show-detail-header">
@@ -4135,7 +4138,7 @@
                 <div class="show-detail-body">
                     <div class="show-detail-section">
                         <h3>What It Feels Like to Watch</h3>
-                        <p style="color:var(--text-muted);"><em>Loading narrative...</em></p>
+                        <p style="color:var(--text-muted);"><em>Loading...</em></p>
                     </div>
                 </div>
             `;
@@ -4150,7 +4153,7 @@
 
             try {
                 // Fetch JSON data for external ratings and consensus
-                const jsonResponse = await fetch(`data/shows/${show.slug}.json`);
+                const jsonResponse = await fetch(`data/shows/${slug}.json`);
                 if (jsonResponse.ok) {
                     showData = await jsonResponse.json();
                 }
@@ -4160,7 +4163,7 @@
 
             try {
                 // Fetch HTML for narrative and why it ranks
-                const response = await fetch(`docs/shows/${show.slug}.html`);
+                const response = await fetch(`docs/shows/${slug}.html`);
                 if (response.ok) {
                     const html = await response.text();
                     const parser = new DOMParser();
@@ -4191,7 +4194,12 @@
                     }
                 }
             } catch (err) {
-                narrativeHtml = narrativeHtml || '<p>Full analysis available soon.</p>';
+                // HTML fetch failed
+            }
+
+            // Set fallback content if nothing loaded
+            if (!narrativeHtml && !whyItRanksHtml) {
+                narrativeHtml = `<p style="color:var(--text-muted);">${show.title} is ranked #${show.rank} with a score of ${show.final.toFixed(2)}. Full narrative analysis coming soon.</p>`;
             }
 
             // Build external ratings HTML from JSON data
