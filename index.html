@@ -1282,28 +1282,60 @@
             background: transparent;
             pointer-events: none;
         }
+        /* Cinema film reel thumb styling */
         .cat-slider-input::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 10px;
-            height: 10px;
+            width: 16px;
+            height: 12px;
             background: var(--thumb-color, #d4af37);
-            border-radius: 50%;
+            border-radius: 3px;
             cursor: grab;
-            transition: transform 0.15s, box-shadow 0.15s;
-            box-shadow: 0 0 0 2px rgba(0,0,0,0.3), 0 2px 4px rgba(0,0,0,0.4);
+            transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+            box-shadow: 
+                inset 0 1px 2px rgba(255,255,255,0.3),
+                inset 0 -1px 2px rgba(0,0,0,0.3),
+                0 0 0 2px rgba(0,0,0,0.4),
+                0 2px 6px rgba(0,0,0,0.5);
             pointer-events: auto;
             position: relative;
             z-index: 3;
-            margin-top: -2px;
+            margin-top: -1px;
+            /* Film reel texture - sprocket holes */
+            background-image: 
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(0,0,0,0.4) 2px,
+                    rgba(0,0,0,0.4) 3px,
+                    transparent 3px,
+                    transparent 5px
+                );
+        }
+        .cat-slider-input::-webkit-slider-thumb::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 2px;
+            background: rgba(255,255,255,0.4);
+            border-radius: 1px;
         }
         .cat-slider-input::-webkit-slider-thumb:hover {
-            transform: scale(1.25);
-            box-shadow: 0 0 0 2px rgba(0,0,0,0.3), 0 3px 8px rgba(0,0,0,0.5), 0 0 10px var(--thumb-color, #d4af37);
+            transform: scale(1.15) translateY(-1px);
+            box-shadow: 
+                inset 0 1px 2px rgba(255,255,255,0.3),
+                inset 0 -1px 2px rgba(0,0,0,0.3),
+                0 0 0 2px rgba(0,0,0,0.4),
+                0 4px 10px rgba(0,0,0,0.5),
+                0 0 12px var(--thumb-color, #d4af37);
         }
         .cat-slider-input::-webkit-slider-thumb:active {
             cursor: grabbing;
-            transform: scale(1.35);
+            transform: scale(1.2) translateY(-1px);
         }
         .cat-slider-input::-moz-range-track {
             height: 14px;
@@ -1312,23 +1344,43 @@
             pointer-events: none;
         }
         .cat-slider-input::-moz-range-thumb {
-            width: 10px;
-            height: 10px;
+            width: 16px;
+            height: 12px;
             background: var(--thumb-color, #d4af37);
-            border-radius: 50%;
+            border-radius: 3px;
             cursor: grab;
             border: none;
-            transition: transform 0.15s, box-shadow 0.15s;
-            box-shadow: 0 0 0 2px rgba(0,0,0,0.3), 0 2px 4px rgba(0,0,0,0.4);
+            transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+            box-shadow: 
+                inset 0 1px 2px rgba(255,255,255,0.3),
+                inset 0 -1px 2px rgba(0,0,0,0.3),
+                0 0 0 2px rgba(0,0,0,0.4),
+                0 2px 6px rgba(0,0,0,0.5);
             pointer-events: auto;
+            /* Film reel texture */
+            background-image: 
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(0,0,0,0.4) 2px,
+                    rgba(0,0,0,0.4) 3px,
+                    transparent 3px,
+                    transparent 5px
+                );
         }
         .cat-slider-input::-moz-range-thumb:hover {
-            transform: scale(1.25);
-            box-shadow: 0 0 0 2px rgba(0,0,0,0.3), 0 3px 8px rgba(0,0,0,0.5), 0 0 10px var(--thumb-color, #d4af37);
+            transform: scale(1.15) translateY(-1px);
+            box-shadow: 
+                inset 0 1px 2px rgba(255,255,255,0.3),
+                inset 0 -1px 2px rgba(0,0,0,0.3),
+                0 0 0 2px rgba(0,0,0,0.4),
+                0 4px 10px rgba(0,0,0,0.5),
+                0 0 12px var(--thumb-color, #d4af37);
         }
         .cat-slider-input::-moz-range-thumb:active {
             cursor: grabbing;
-            transform: scale(1.35);
+            transform: scale(1.2) translateY(-1px);
         }
         .cat-value-modified {
             color: #60a5fa !important;
