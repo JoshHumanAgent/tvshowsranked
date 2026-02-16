@@ -1,3 +1,5 @@
+### 1. Characters & Acting (25%) — Score: 8.5
+
 **Raw Score: 8.5 | Weighted: 1.70**
 
 Scoring 8.5, the ensemble rises to the show's sci-fi premise with committed performances balancing intellectual and emotional demands. The acting serves the conceptual material without losing human grounding.
