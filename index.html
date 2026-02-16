@@ -2345,76 +2345,34 @@
             color: var(--text-muted);
         }
 
-        /* Responsive */
+        /* Mobile - same as desktop */
         @media (max-width: 600px) {
-            main {
-                max-width: 100% !important;
-                padding: 1rem 0.5rem 3rem !important;
-            }
-            .show-module {
-                flex-direction: row !important;
-                gap: 0.5rem !important;
-                margin-bottom: 0.5rem !important;
-                align-items: flex-start !important;
-            }
-            .show-poster {
-                width: 100px !important;
-                min-width: 100px !important;
-                flex-shrink: 0 !important;
-                border-radius: 6px 0 0 6px !important;
-                height: auto !important;
-                align-self: stretch !important;
-            }
-            .show-poster img {
-                height: 100% !important;
-                width: 100% !important;
-                object-fit: cover !important;
-            }
-            .show-card-panel {
-                border-radius: 0 6px 6px 0 !important;
-                padding: 0.5rem !important;
-                min-width: 0 !important;
-            }
             header { padding: 2rem 1rem; }
             h1 { font-size: 2.5rem !important; }
             .subtitle { font-size: 0.8rem !important; padding: 0 1rem; }
             .stats { gap: 1rem !important; padding: 0 1rem; }
             .filters-section { padding: 0.5rem; }
-            .card-header {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
+            .filters-toggle-btn {
+                font-size: 1rem;
+                padding: 0.875rem 1rem;
             }
-            .show-title { flex: 1; min-width: 0; }
-            .score-section { flex-shrink: 0; }
-            .rank-badge { width: 28px; height: 28px; font-size: 0.75rem; flex-shrink: 0; }
-            .score-section { text-align: left; margin-top: 0.25rem; }
-            .score-label { text-align: left; }
-            .show-card { padding: 0.5rem; cursor: pointer; }
-            .show-title { font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-            .final-score { font-size: 1.2rem; }
-            .show-meta { font-size: 0.65rem; }
-            .score-breakdown {
-                display: flex !important;
-                flex-wrap: wrap !important;
-                gap: 0.15rem !important;
-                margin-top: 0.25rem !important;
-                justify-content: flex-end !important;
+            .weight-section-title {
+                font-size: 1.3rem;
             }
-            .score-label-text { font-size: 0.45rem !important; width: auto !important; }
-            .score-value { font-size: 0.5rem !important; }
-            .score-bar-container { width: 20px !important; height: 2px !important; }
-            .results-header { flex-direction: column; gap: 0.5rem; align-items: flex-start !important; }
-        }
-            .search-input { font-size: 0.9rem; padding: 0.5rem 1rem 0.5rem 2rem; }
-            .genre-pills { gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
-            .genre-pill { padding: 0.3rem 0.6rem; font-size: 0.7rem; }
-            .weight-slider-row { flex-direction: column; gap: 0.5rem; align-items: stretch; }
-            .weight-slider-label { font-size: 0.8rem; min-width: unset; text-align: left; }
-            .weight-slider-input { height: 8px !important; }
-            .weight-slider-input::-webkit-slider-thumb { width: 24px !important; height: 24px !important; }
-            .weight-value { font-size: 0.9rem; }
-            .results-header { flex-direction: column; gap: 0.5rem; align-items: flex-start !important; }
+            .weight-slider-label {
+                font-size: 0.9rem;
+            }
+            .weight-slider-row {
+                grid-template-columns: 140px 1fr 45px;
+                gap: 0.75rem;
+            }
+            .search-bar-fixed {
+                padding: 0.5rem 0.75rem;
+            }
+            .search-input-fixed {
+                font-size: 0.9rem;
+                padding: 0.55rem 2.25rem 0.55rem 0.875rem;
+            }
         }
 
         @media (max-width: 900px) {
