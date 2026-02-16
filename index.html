@@ -3432,14 +3432,13 @@
                             ${categories.map(cat => {
                                 const value = show[cat.key];
                                 const percentage = (value / 10) * 100;
-                                // Cinema film stock color scheme
+                                // Classic medal tier color scheme
                                 const getScoreColor = (score) => {
-                                    if (score === 10) return '#C41E3A'; // Kodak red - Elite/Masterpiece
-                                    if (score >= 9) return '#D4AF37';  // Technicolor gold - Exceptional
-                                    if (score >= 8) return '#8B6916';  // Sepia bronze - Very Good
-                                    if (score >= 7) return '#6B4423';  // Coffee/warm - Good
-                                    if (score >= 5) return '#4A4A55';  // Neutral gray - Average
-                                    return '#2C3E50';                   // Cyan/slate - Below par
+                                    if (score === 10) return '#d4af37'; // Gold - Perfect
+                                    if (score >= 9) return '#a8a8b0';  // Silver - Excellent
+                                    if (score >= 8) return '#a87d4a';  // Bronze - Very Good
+                                    if (score >= 7) return '#8b4513';  // Dark Brown - Good
+                                    return '#1a1a1a';                   // Black - Average/Below
                                 };
                                 const catTierColor = getScoreColor(value);
                                 const isModified = baseScores[show.title] && value !== baseScores[show.title][cat.key];
@@ -4071,14 +4070,13 @@
                 const barFill = card.querySelector(`[data-cat-bar="${catKey}"]`);
                 if (barFill) {
                     const pct = (newVal / 10) * 100;
-                    // Cinema film stock color scheme
+                    // Classic medal tier color scheme
                     const getScoreColor = (score) => {
-                        if (score === 10) return '#C41E3A'; // Kodak red - Elite
-                        if (score >= 9) return '#D4AF37';  // Technicolor gold
-                        if (score >= 8) return '#8B6916';  // Sepia bronze
-                        if (score >= 7) return '#6B4423';  // Coffee/warm
-                        if (score >= 5) return '#4A4A55';  // Neutral gray
-                        return '#2C3E50';                   // Cyan/slate
+                        if (score === 10) return '#d4af37'; // Gold - Perfect
+                        if (score >= 9) return '#a8a8b0';  // Silver - Excellent
+                        if (score >= 8) return '#a87d4a';  // Bronze - Very Good
+                        if (score >= 7) return '#8b4513';  // Dark Brown - Good
+                        return '#1a1a1a';                   // Black - Average/Below
                     };
                     const c = getScoreColor(newVal);
                     barFill.style.width = pct + '%';
@@ -4098,14 +4096,13 @@
                         valEl.style.color = '#60a5fa';
                     } else {
                         valEl.classList.remove('cat-value-modified');
-                        // Cinema film stock color scheme
+                        // Classic medal tier color scheme
                         const getScoreColor = (score) => {
-                            if (score === 10) return '#C41E3A'; // Kodak red - Elite
-                            if (score >= 9) return '#D4AF37';  // Technicolor gold
-                            if (score >= 8) return '#8B6916';  // Sepia bronze
-                            if (score >= 7) return '#6B4423';  // Coffee/warm
-                            if (score >= 5) return '#4A4A55';  // Neutral gray
-                            return '#2C3E50';                   // Cyan/slate
+                            if (score === 10) return '#d4af37'; // Gold - Perfect
+                            if (score >= 9) return '#a8a8b0';  // Silver - Excellent
+                            if (score >= 8) return '#a87d4a';  // Bronze - Very Good
+                            if (score >= 7) return '#8b4513';  // Dark Brown - Good
+                            return '#1a1a1a';                   // Black - Average/Below
                         };
                         valEl.style.color = getScoreColor(newVal);
                     }
