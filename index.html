@@ -1638,13 +1638,62 @@
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 1.5rem 1.75rem;
-            transition: all 0.2s;
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             align-items: flex-start;
+            cursor: pointer;
+        }
+        
+        /* Click indicator overlay */
+        .show-card::before {
+            content: 'View Details';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0.75rem 1.5rem;
+            background: rgba(212, 175, 55, 0.9);
+            color: #1a1a24;
+            font-family: 'Unna', serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 30px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 10;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        
+        .show-card:hover::before {
+            opacity: 1;
+        }
+        
+        .show-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            border-radius: 12px;
+        }
+        
+        .show-card:hover::after {
+            opacity: 1;
+        }
+        
+        .show-card:hover {
+            border-color: var(--gold-dim);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 0 40px rgba(212, 175, 55, 0.15);
+            transform: translateY(-2px);
         }
         
         /* Universal transparent rule - strip backgrounds from card inner wrappers */
@@ -2223,7 +2272,7 @@
             .rank-badge { width: 28px; height: 28px; font-size: 0.75rem; flex-shrink: 0; }
             .score-section { text-align: left; margin-top: 0.25rem; }
             .score-label { text-align: left; }
-            .show-card { padding: 0.5rem; }
+            .show-card { padding: 0.5rem; cursor: pointer; }
             .show-title { font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
             .final-score { font-size: 1.2rem; }
             .show-meta { font-size: 0.65rem; }
