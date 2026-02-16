@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #6 |
-| **Score** | 8.08 |
+| **Rank** | #15 |
+| **Score** | 8.00 |
 | **Year** | 2014 |
 | **Episodes** | 8 |
 | **Genres** | crime, mystery, thriller, cop-show |
@@ -39,9 +39,9 @@ True Detective S1 created the anthology format for prestige television. Its infl
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 7.5
+### 2. World Building (15%) — Score: 7
 
-**Raw Score: 7.5 | Weighted: 1.13**
+**Raw Score: 7 | Weighted: 1.05**
 
 Analysis for World Building dimension.
 
@@ -80,19 +80,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 8 | 20% | 1.60 |
-| World Building | 7.5 | 15% | 1.13 |
+| World Building | 7 | 15% | 1.05 |
 | Cinematography | 10 | 10% | 1.00 |
 | Visual Spectacle | 6 | 10% | 0.60 |
 | Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 9 | 15% | 1.35 |
 | Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **8.08** |
+| **FINAL SCORE** | | | **8.00** |
 
 ---
 
-## Why It Ranks #6
+## Why It Ranks #15
 
-True Detective S1 achieves a final score of 8.08 based on its performance across all seven dimensions.
+True Detective S1 achieves a final score of 8.00.
 
 ---
 

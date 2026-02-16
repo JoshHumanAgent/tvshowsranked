@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #55 |
-| **Score** | 7.60 |
+| **Rank** | #28 |
+| **Score** | 7.90 |
 | **Year** | 2019 |
 | **Episodes** | 17 |
 | **Genres** | drama |
@@ -59,15 +59,15 @@ Analysis for Visual Spectacle dimension.
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 7
+### 6. Narrative Drive (15%) — Score: 8
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 6
+### 7. Narrative Resolution (15%) — Score: 7
 
-**Raw Score: 6 | Weighted: 0.90**
+**Raw Score: 7 | Weighted: 1.05**
 
 Analysis for Narrative Resolution dimension.
 
@@ -80,15 +80,15 @@ Analysis for Narrative Resolution dimension.
 | Cinematography | 9.5 | 10% | 0.95 |
 | Visual Spectacle | 8.5 | 10% | 0.85 |
 | Conceptual Density | 8 | 15% | 1.20 |
-| Narrative Drive | 7 | 15% | 1.05 |
-| Narrative Resolution | 6 | 15% | 0.90 |
-| **FINAL SCORE** | | | **7.60** |
+| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Resolution | 7 | 15% | 1.05 |
+| **FINAL SCORE** | | | **7.90** |
 
 ---
 
-## Why It Ranks #55
+## Why It Ranks #28
 
-Euphoria achieves a final score of 7.60 based on its performance across all seven dimensions.
+Euphoria achieves a final score of 7.90.
 
 ---
 

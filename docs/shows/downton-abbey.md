@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #87 |
+| **Rank** | #89 |
 | **Score** | 7.20 |
 | **Year** | 2010 |
 | **Episodes** | 52 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #87
+## Why It Ranks #89
 
-Downton Abbey achieves a final score of 7.20 based on its performance across all seven dimensions.
+Downton Abbey achieves a final score of 7.20.
 
 ---
 

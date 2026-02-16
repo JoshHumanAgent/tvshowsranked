@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #9 |
-| **Score** | 8.18 |
+| **Rank** | #21 |
+| **Score** | 7.92 |
 | **Year** | 2022 |
 | **Episodes** | 18 |
 | **Genres** | fantasy, drama, action |
@@ -31,15 +31,15 @@ The second season escalates the conflict. Alliances are tested, dragons take fli
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 9.5
+### 2. World Building (15%) — Score: 9
 
-**Raw Score: 9.5 | Weighted: 1.43**
+**Raw Score: 9 | Weighted: 1.35**
 
 Analysis for World Building dimension.
 
@@ -55,21 +55,21 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 8
+### 5. Conceptual Density (15%) — Score: 7.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 8
+### 6. Narrative Drive (15%) — Score: 7.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 6
+### 7. Narrative Resolution (15%) — Score: 6.5
 
-**Raw Score: 6 | Weighted: 0.90**
+**Raw Score: 6.5 | Weighted: 0.97**
 
 Analysis for Narrative Resolution dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 9.5 | 15% | 1.43 |
+| Characters & Acting | 8 | 20% | 1.60 |
+| World Building | 9 | 15% | 1.35 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 9.5 | 10% | 0.95 |
-| Conceptual Density | 8 | 15% | 1.20 |
-| Narrative Drive | 8 | 15% | 1.20 |
-| Narrative Resolution | 6 | 15% | 0.90 |
-| **FINAL SCORE** | | | **8.18** |
+| Conceptual Density | 7.5 | 15% | 1.13 |
+| Narrative Drive | 7.5 | 15% | 1.13 |
+| Narrative Resolution | 6.5 | 15% | 0.97 |
+| **FINAL SCORE** | | | **7.92** |
 
 ---
 
-## Why It Ranks #9
+## Why It Ranks #21
 
-House of the Dragon achieves a final score of 8.18 based on its performance across all seven dimensions.
+House of the Dragon achieves a final score of 7.92.
 
 ---
 

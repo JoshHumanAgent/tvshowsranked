@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #10 |
-| **Score** | 8.15 |
+| **Rank** | #24 |
+| **Score** | 7.90 |
 | **Year** | 2003 |
 | **Episodes** | 6 |
 | **Genres** | drama |
@@ -29,9 +29,9 @@ But beyond the spectacle, what you remember is the emotional truth. This is a sh
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
 Analysis for Characters & Acting dimension.
 
@@ -53,9 +53,9 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 10
+### 5. Conceptual Density (15%) — Score: 9
 
-**Raw Score: 10 | Weighted: 1.50**
+**Raw Score: 9 | Weighted: 1.35**
 
 Analysis for Conceptual Density dimension.
 
@@ -75,20 +75,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
+| Characters & Acting | 8 | 20% | 1.60 |
 | World Building | 7 | 15% | 1.05 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 7 | 10% | 0.70 |
-| Conceptual Density | 10 | 15% | 1.50 |
+| Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 7 | 15% | 1.05 |
 | Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **8.15** |
+| **FINAL SCORE** | | | **7.90** |
 
 ---
 
-## Why It Ranks #10
+## Why It Ranks #24
 
-Angels in America achieves a final score of 8.15 based on its performance across all seven dimensions.
+Angels in America achieves a final score of 7.90.
 
 ---
 

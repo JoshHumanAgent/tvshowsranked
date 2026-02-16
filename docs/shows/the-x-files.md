@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #96 |
+| **Rank** | #98 |
 | **Score** | 7.02 |
 | **Year** | 1993 |
 | **Episodes** | 218 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #96
+## Why It Ranks #98
 
-The X-Files achieves a final score of 7.02 based on its performance across all seven dimensions.
+The X-Files achieves a final score of 7.02.
 
 ---
 

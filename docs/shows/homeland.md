@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #82 |
+| **Rank** | #86 |
 | **Score** | 7.25 |
 | **Year** | 2011 |
 | **Episodes** | 96 |
@@ -88,9 +88,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #82
+## Why It Ranks #86
 
-Homeland achieves a final score of 7.25 based on its performance across all seven dimensions.
+Homeland achieves a final score of 7.25.
 
 ---
 

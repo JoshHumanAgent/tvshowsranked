@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #46 |
+| **Rank** | #51 |
 | **Score** | 7.72 |
 | **Year** | 2019 |
 | **Episodes** | 40 |
@@ -88,9 +88,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #46
+## Why It Ranks #51
 
-For All Mankind achieves a final score of 7.72 based on its performance across all seven dimensions.
+For All Mankind achieves a final score of 7.72.
 
 ---
 

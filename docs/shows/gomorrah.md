@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #92 |
+| **Rank** | #93 |
 | **Score** | 7.15 |
 | **Year** | 2014 |
 | **Episodes** | 58 |
@@ -78,9 +78,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #92
+## Why It Ranks #93
 
-Gomorrah achieves a final score of 7.15 based on its performance across all seven dimensions.
+Gomorrah achieves a final score of 7.15.
 
 ---
 

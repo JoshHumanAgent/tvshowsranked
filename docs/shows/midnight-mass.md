@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #39 |
-| **Score** | 7.78 |
+| **Rank** | #54 |
+| **Score** | 7.70 |
 | **Year** | 2021 |
 | **Episodes** | 7 |
 | **Genres** | horror, drama, mystery |
@@ -41,9 +41,9 @@ This is not *Hill House*. It's quieter, more meditative, and ultimately more dev
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 7.5
+### 2. World Building (15%) — Score: 7
 
-**Raw Score: 7.5 | Weighted: 1.13**
+**Raw Score: 7 | Weighted: 1.05**
 
 Analysis for World Building dimension.
 
@@ -82,19 +82,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 7.5 | 20% | 1.50 |
-| World Building | 7.5 | 15% | 1.13 |
+| World Building | 7 | 15% | 1.05 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 6 | 10% | 0.60 |
 | Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 7 | 15% | 1.05 |
 | Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **7.78** |
+| **FINAL SCORE** | | | **7.70** |
 
 ---
 
-## Why It Ranks #39
+## Why It Ranks #54
 
-Midnight Mass achieves a final score of 7.78 based on its performance across all seven dimensions.
+Midnight Mass achieves a final score of 7.70.
 
 ---
 

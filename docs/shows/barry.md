@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #94 |
+| **Rank** | #96 |
 | **Score** | 7.10 |
 | **Year** | 2018 |
 | **Episodes** | 32 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #94
+## Why It Ranks #96
 
-Barry achieves a final score of 7.10 based on its performance across all seven dimensions.
+Barry achieves a final score of 7.10.
 
 ---
 

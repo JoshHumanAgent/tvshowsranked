@@ -7,7 +7,7 @@
 | Attribute | Details |
 |-----------|---------|
 | **Rank** | #50 |
-| **Score** | 7.68 |
+| **Score** | 7.75 |
 | **Year** | 2002 |
 | **Episodes** | 88 |
 | **Genres** | crime, drama, cop-show |
@@ -37,9 +37,9 @@ The Shield runs for seven seasons, and it never loses its edge. The final season
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 6.5
+### 2. World Building (15%) — Score: 7
 
-**Raw Score: 6.5 | Weighted: 0.97**
+**Raw Score: 7 | Weighted: 1.05**
 
 Analysis for World Building dimension.
 
@@ -78,19 +78,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 8.5 | 20% | 1.70 |
-| World Building | 6.5 | 15% | 0.97 |
+| World Building | 7 | 15% | 1.05 |
 | Cinematography | 6 | 10% | 0.60 |
 | Visual Spectacle | 5 | 10% | 0.50 |
 | Conceptual Density | 7 | 15% | 1.05 |
 | Narrative Drive | 9 | 15% | 1.35 |
 | Narrative Resolution | 10 | 15% | 1.50 |
-| **FINAL SCORE** | | | **7.68** |
+| **FINAL SCORE** | | | **7.75** |
 
 ---
 
 ## Why It Ranks #50
 
-The Shield achieves a final score of 7.68 based on its performance across all seven dimensions.
+The Shield achieves a final score of 7.75.
 
 ---
 

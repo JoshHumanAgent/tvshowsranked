@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #66 |
+| **Rank** | #71 |
 | **Score** | 7.50 |
 | **Year** | 2021 |
 | **Episodes** | 8 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #66
+## Why It Ranks #71
 
-Dopesick achieves a final score of 7.50 based on its performance across all seven dimensions.
+Dopesick achieves a final score of 7.50.
 
 ---
 

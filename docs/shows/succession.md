@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #23 |
-| **Score** | 7.92 |
+| **Rank** | #9 |
+| **Score** | 8.10 |
 | **Year** | 2018 |
 | **Episodes** | 39 |
 | **Genres** | drama |
@@ -31,9 +31,9 @@ But what elevates Succession beyond mere satire is its emotional core. Beneath t
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 9
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 9 | Weighted: 1.80**
 
 Analysis for Characters & Acting dimension.
 
@@ -55,9 +55,9 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 7
+### 5. Conceptual Density (15%) — Score: 7.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Conceptual Density dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
+| Characters & Acting | 9 | 20% | 1.80 |
 | World Building | 7 | 15% | 1.05 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 7 | 10% | 0.70 |
-| Conceptual Density | 7 | 15% | 1.05 |
+| Conceptual Density | 7.5 | 15% | 1.13 |
 | Narrative Drive | 8.5 | 15% | 1.27 |
 | Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **7.92** |
+| **FINAL SCORE** | | | **8.10** |
 
 ---
 
-## Why It Ranks #23
+## Why It Ranks #9
 
-Succession achieves a final score of 7.92 based on its performance across all seven dimensions.
+Succession achieves a final score of 8.10.
 
 ---
 

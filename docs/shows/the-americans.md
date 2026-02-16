@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #30 |
-| **Score** | 7.82 |
+| **Rank** | #18 |
+| **Score** | 8.00 |
 | **Year** | 2013 |
 | **Episodes** | 75 |
 | **Genres** | drama, thriller |
@@ -31,9 +31,9 @@ The Americans is slow. It asks for patience. But if you give it six seasons, you
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8
+### 1. Characters & Acting (20%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.60**
+**Raw Score: 8.5 | Weighted: 1.70**
 
 Analysis for Characters & Acting dimension.
 
@@ -55,9 +55,9 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 8
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Conceptual Density dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8 | 20% | 1.60 |
+| Characters & Acting | 8.5 | 20% | 1.70 |
 | World Building | 7.5 | 15% | 1.13 |
 | Cinematography | 7 | 10% | 0.70 |
 | Visual Spectacle | 5 | 10% | 0.50 |
-| Conceptual Density | 8 | 15% | 1.20 |
+| Conceptual Density | 8.5 | 15% | 1.27 |
 | Narrative Drive | 8 | 15% | 1.20 |
 | Narrative Resolution | 10 | 15% | 1.50 |
-| **FINAL SCORE** | | | **7.82** |
+| **FINAL SCORE** | | | **8.00** |
 
 ---
 
-## Why It Ranks #30
+## Why It Ranks #18
 
-The Americans achieves a final score of 7.82 based on its performance across all seven dimensions.
+The Americans achieves a final score of 8.00.
 
 ---
 

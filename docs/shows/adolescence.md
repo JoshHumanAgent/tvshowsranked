@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #8 |
-| **Score** | 8.22 |
+| **Rank** | #31 |
+| **Score** | 7.85 |
 | **Year** | 2025 |
 | **Episodes** | 4 |
 | **Genres** | drama, thriller |
@@ -37,9 +37,9 @@ Adolescence is essential viewing for anyone who cares about young people, online
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 6.5
+### 2. World Building (15%) — Score: 5
 
-**Raw Score: 6.5 | Weighted: 0.97**
+**Raw Score: 5 | Weighted: 0.75**
 
 Analysis for World Building dimension.
 
@@ -67,9 +67,9 @@ Analysis for Conceptual Density dimension.
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 10
+### 7. Narrative Resolution (15%) — Score: 9
 
-**Raw Score: 10 | Weighted: 1.50**
+**Raw Score: 9 | Weighted: 1.35**
 
 Analysis for Narrative Resolution dimension.
 
@@ -78,19 +78,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 8 | 20% | 1.60 |
-| World Building | 6.5 | 15% | 0.97 |
+| World Building | 5 | 15% | 0.75 |
 | Cinematography | 9.5 | 10% | 0.95 |
 | Visual Spectacle | 5 | 10% | 0.50 |
 | Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 9 | 15% | 1.35 |
-| Narrative Resolution | 10 | 15% | 1.50 |
-| **FINAL SCORE** | | | **8.22** |
+| Narrative Resolution | 9 | 15% | 1.35 |
+| **FINAL SCORE** | | | **7.85** |
 
 ---
 
-## Why It Ranks #8
+## Why It Ranks #31
 
-Adolescence achieves a final score of 8.22 based on its performance across all seven dimensions.
+Adolescence achieves a final score of 7.85.
 
 ---
 

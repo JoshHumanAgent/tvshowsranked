@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #4 |
-| **Score** | 8.40 |
+| **Rank** | #3 |
+| **Score** | 8.70 |
 | **Year** | 2001 |
 | **Episodes** | 10 |
 | **Genres** | drama, historical, war |
@@ -57,9 +57,9 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 7
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Conceptual Density dimension.
 
@@ -69,9 +69,9 @@ Analysis for Conceptual Density dimension.
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 9
+### 7. Narrative Resolution (15%) — Score: 9.5
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 9.5 | Weighted: 1.43**
 
 Analysis for Narrative Resolution dimension.
 
@@ -83,16 +83,16 @@ Analysis for Narrative Resolution dimension.
 | World Building | 9 | 15% | 1.35 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 10 | 10% | 1.00 |
-| Conceptual Density | 7 | 15% | 1.05 |
+| Conceptual Density | 8.5 | 15% | 1.27 |
 | Narrative Drive | 9 | 15% | 1.35 |
-| Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **8.40** |
+| Narrative Resolution | 9.5 | 15% | 1.43 |
+| **FINAL SCORE** | | | **8.70** |
 
 ---
 
-## Why It Ranks #4
+## Why It Ranks #3
 
-Band of Brothers achieves a final score of 8.40 based on its performance across all seven dimensions.
+Band of Brothers achieves a final score of 8.70.
 
 ---
 

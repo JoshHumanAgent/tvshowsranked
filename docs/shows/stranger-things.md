@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #86 |
-| **Score** | 7.20 |
+| **Rank** | #79 |
+| **Score** | 7.38 |
 | **Year** | 2016 |
 | **Episodes** | 42 |
 | **Genres** | sci-fi, horror, drama |
@@ -33,9 +33,9 @@ But Stranger Things is more than nostalgia. It's a show about trauma, about how 
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 7
+### 2. World Building (15%) — Score: 8
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for World Building dimension.
 
@@ -45,9 +45,9 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8
+### 4. Visual Spectacle (10%) — Score: 7.5
 
-**Raw Score: 8 | Weighted: 0.80**
+**Raw Score: 7.5 | Weighted: 0.75**
 
 Analysis for Visual Spectacle dimension.
 
@@ -57,9 +57,9 @@ Analysis for Visual Spectacle dimension.
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 8
+### 6. Narrative Drive (15%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Narrative Drive dimension.
 
@@ -74,19 +74,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 7 | 20% | 1.40 |
-| World Building | 7 | 15% | 1.05 |
+| World Building | 8 | 15% | 1.20 |
 | Cinematography | 8 | 10% | 0.80 |
-| Visual Spectacle | 8 | 10% | 0.80 |
+| Visual Spectacle | 7.5 | 10% | 0.75 |
 | Conceptual Density | 6 | 15% | 0.90 |
-| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Drive | 8.5 | 15% | 1.27 |
 | Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **7.20** |
+| **FINAL SCORE** | | | **7.38** |
 
 ---
 
-## Why It Ranks #86
+## Why It Ranks #79
 
-Stranger Things achieves a final score of 7.20 based on its performance across all seven dimensions.
+Stranger Things achieves a final score of 7.38.
 
 ---
 

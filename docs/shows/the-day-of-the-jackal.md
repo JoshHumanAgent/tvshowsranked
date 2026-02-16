@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #80 |
+| **Rank** | #84 |
 | **Score** | 7.25 |
 | **Year** | 2024 |
 | **Episodes** | 8 |
@@ -78,9 +78,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #80
+## Why It Ranks #84
 
-The Day of the Jackal achieves a final score of 7.25 based on its performance across all seven dimensions.
+The Day of the Jackal achieves a final score of 7.25.
 
 ---
 

@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #57 |
-| **Score** | 7.55 |
+| **Rank** | #63 |
+| **Score** | 7.60 |
 | **Year** | 2016 |
 | **Episodes** | 60 |
 | **Genres** | drama, historical |
@@ -49,9 +49,9 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8
+### 4. Visual Spectacle (10%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 0.80**
+**Raw Score: 8.5 | Weighted: 0.85**
 
 Analysis for Visual Spectacle dimension.
 
@@ -80,17 +80,17 @@ Analysis for Narrative Resolution dimension.
 | Characters & Acting | 7.5 | 20% | 1.50 |
 | World Building | 8 | 15% | 1.20 |
 | Cinematography | 9 | 10% | 0.90 |
-| Visual Spectacle | 8 | 10% | 0.80 |
+| Visual Spectacle | 8.5 | 10% | 0.85 |
 | Conceptual Density | 7 | 15% | 1.05 |
 | Narrative Drive | 7 | 15% | 1.05 |
 | Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **7.55** |
+| **FINAL SCORE** | | | **7.60** |
 
 ---
 
-## Why It Ranks #57
+## Why It Ranks #63
 
-The Crown achieves a final score of 7.55 based on its performance across all seven dimensions.
+The Crown achieves a final score of 7.60.
 
 ---
 

@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #77 |
+| **Rank** | #82 |
 | **Score** | 7.32 |
 | **Year** | 2019 |
 | **Episodes** | 40 |
@@ -78,9 +78,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #77
+## Why It Ranks #82
 
-The Boys achieves a final score of 7.32 based on its performance across all seven dimensions.
+The Boys achieves a final score of 7.32.
 
 ---
 

@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #43 |
-| **Score** | 7.78 |
+| **Rank** | #33 |
+| **Score** | 7.85 |
 | **Year** | 2005 |
 | **Episodes** | 22 |
 | **Genres** | drama, historical, action |
@@ -27,9 +27,9 @@ Rome is a drama/historical/action series that delivers compelling television acr
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 8.5
+### 2. World Building (15%) — Score: 9
 
-**Raw Score: 8.5 | Weighted: 1.27**
+**Raw Score: 9 | Weighted: 1.35**
 
 Analysis for World Building dimension.
 
@@ -68,19 +68,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 8 | 20% | 1.60 |
-| World Building | 8.5 | 15% | 1.27 |
+| World Building | 9 | 15% | 1.35 |
 | Cinematography | 7 | 10% | 0.70 |
 | Visual Spectacle | 9 | 10% | 0.90 |
 | Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 8 | 15% | 1.20 |
 | Narrative Resolution | 6 | 15% | 0.90 |
-| **FINAL SCORE** | | | **7.78** |
+| **FINAL SCORE** | | | **7.85** |
 
 ---
 
-## Why It Ranks #43
+## Why It Ranks #33
 
-Rome achieves a final score of 7.78 based on its performance across all seven dimensions.
+Rome achieves a final score of 7.85.
 
 ---
 

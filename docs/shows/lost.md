@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #90 |
-| **Score** | 7.18 |
+| **Rank** | #94 |
+| **Score** | 7.13 |
 | **Year** | 2004 |
 | **Episodes** | 121 |
 | **Genres** | sci-fi, drama, mystery |
@@ -29,21 +29,21 @@ What you take away from Lost is the feeling of being part of something special. 
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8
+### 1. Characters & Acting (20%) — Score: 9
 
-**Raw Score: 8 | Weighted: 1.60**
+**Raw Score: 9 | Weighted: 1.80**
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 7.5
+### 2. World Building (15%) — Score: 8
 
-**Raw Score: 7.5 | Weighted: 1.13**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for World Building dimension.
 
-### 3. Cinematography (10%) — Score: 7
+### 3. Cinematography (10%) — Score: 7.5
 
-**Raw Score: 7 | Weighted: 0.70**
+**Raw Score: 7.5 | Weighted: 0.75**
 
 Analysis for Cinematography dimension.
 
@@ -59,15 +59,15 @@ Analysis for Visual Spectacle dimension.
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 8
+### 6. Narrative Drive (15%) — Score: 9.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 9.5 | Weighted: 1.43**
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 5
+### 7. Narrative Resolution (15%) — Score: 1
 
-**Raw Score: 5 | Weighted: 0.75**
+**Raw Score: 1 | Weighted: 0.15**
 
 Analysis for Narrative Resolution dimension.
 
@@ -75,20 +75,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8 | 20% | 1.60 |
-| World Building | 7.5 | 15% | 1.13 |
-| Cinematography | 7 | 10% | 0.70 |
+| Characters & Acting | 9 | 20% | 1.80 |
+| World Building | 8 | 15% | 1.20 |
+| Cinematography | 7.5 | 10% | 0.75 |
 | Visual Spectacle | 7.5 | 10% | 0.75 |
 | Conceptual Density | 7 | 15% | 1.05 |
-| Narrative Drive | 8 | 15% | 1.20 |
-| Narrative Resolution | 5 | 15% | 0.75 |
-| **FINAL SCORE** | | | **7.18** |
+| Narrative Drive | 9.5 | 15% | 1.43 |
+| Narrative Resolution | 1 | 15% | 0.15 |
+| **FINAL SCORE** | | | **7.13** |
 
 ---
 
-## Why It Ranks #90
+## Why It Ranks #94
 
-Lost achieves a final score of 7.18 based on its performance across all seven dimensions.
+Lost achieves a final score of 7.13.
 
 ---
 

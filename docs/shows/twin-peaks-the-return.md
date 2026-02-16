@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #37 |
-| **Score** | 7.80 |
+| **Rank** | #48 |
+| **Score** | 7.75 |
 | **Year** | 2017 |
 | **Episodes** | 18 |
 | **Genres** | mystery, drama, thriller |
@@ -33,9 +33,9 @@ Analysis for Characters & Acting dimension.
 
 Analysis for World Building dimension.
 
-### 3. Cinematography (10%) — Score: 9.5
+### 3. Cinematography (10%) — Score: 9
 
-**Raw Score: 9.5 | Weighted: 0.95**
+**Raw Score: 9 | Weighted: 0.90**
 
 Analysis for Cinematography dimension.
 
@@ -69,18 +69,18 @@ Analysis for Narrative Resolution dimension.
 |-----------|-----------|--------|----------|
 | Characters & Acting | 8 | 20% | 1.60 |
 | World Building | 8 | 15% | 1.20 |
-| Cinematography | 9.5 | 10% | 0.95 |
+| Cinematography | 9 | 10% | 0.90 |
 | Visual Spectacle | 9 | 10% | 0.90 |
 | Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 5 | 15% | 0.75 |
 | Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **7.80** |
+| **FINAL SCORE** | | | **7.75** |
 
 ---
 
-## Why It Ranks #37
+## Why It Ranks #48
 
-Twin Peaks: The Return achieves a final score of 7.80 based on its performance across all seven dimensions.
+Twin Peaks: The Return achieves a final score of 7.75.
 
 ---
 

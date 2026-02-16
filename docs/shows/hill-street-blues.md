@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #98 |
+| **Rank** | #101 |
 | **Score** | 6.95 |
 | **Year** | 1981 |
 | **Episodes** | 146 |
@@ -78,9 +78,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #98
+## Why It Ranks #101
 
-Hill Street Blues achieves a final score of 6.95 based on its performance across all seven dimensions.
+Hill Street Blues achieves a final score of 6.95.
 
 ---
 

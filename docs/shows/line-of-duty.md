@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #88 |
+| **Rank** | #90 |
 | **Score** | 7.20 |
 | **Year** | 2012 |
 | **Episodes** | 37 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #88
+## Why It Ranks #90
 
-Line of Duty achieves a final score of 7.20 based on its performance across all seven dimensions.
+Line of Duty achieves a final score of 7.20.
 
 ---
 

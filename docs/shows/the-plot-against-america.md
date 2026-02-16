@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #59 |
+| **Rank** | #67 |
 | **Score** | 7.55 |
 | **Year** | 2020 |
 | **Episodes** | 6 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #59
+## Why It Ranks #67
 
-The Plot Against America achieves a final score of 7.55 based on its performance across all seven dimensions.
+The Plot Against America achieves a final score of 7.55.
 
 ---
 

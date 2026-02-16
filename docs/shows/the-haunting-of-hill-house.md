@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #20 |
-| **Score** | 8.00 |
+| **Rank** | #35 |
+| **Score** | 7.83 |
 | **Year** | 2018 |
 | **Episodes** | 10 |
 | **Genres** | horror, drama, thriller |
@@ -33,9 +33,9 @@ The finale, "Silence Lay Steadily," brings everything together in a way that fee
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8
+### 1. Characters & Acting (20%) — Score: 7.5
 
-**Raw Score: 8 | Weighted: 1.60**
+**Raw Score: 7.5 | Weighted: 1.50**
 
 Analysis for Characters & Acting dimension.
 
@@ -69,9 +69,9 @@ Analysis for Conceptual Density dimension.
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 9
+### 7. Narrative Resolution (15%) — Score: 8.5
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Narrative Resolution dimension.
 
@@ -79,20 +79,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8 | 20% | 1.60 |
+| Characters & Acting | 7.5 | 20% | 1.50 |
 | World Building | 7 | 15% | 1.05 |
 | Cinematography | 9 | 10% | 0.90 |
 | Visual Spectacle | 7 | 10% | 0.70 |
 | Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 8 | 15% | 1.20 |
-| Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **8.00** |
+| Narrative Resolution | 8.5 | 15% | 1.27 |
+| **FINAL SCORE** | | | **7.83** |
 
 ---
 
-## Why It Ranks #20
+## Why It Ranks #35
 
-The Haunting of Hill House achieves a final score of 8.00 based on its performance across all seven dimensions.
+The Haunting of Hill House achieves a final score of 7.83.
 
 ---
 

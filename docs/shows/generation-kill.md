@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #35 |
-| **Score** | 7.80 |
+| **Rank** | #53 |
+| **Score** | 7.70 |
 | **Year** | 2008 |
 | **Episodes** | 7 |
 | **Genres** | drama, war, action |
@@ -31,9 +31,9 @@ This is not a pro-war or anti-war show. It's a "this is what war is" show — ch
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 7.5
+### 1. Characters & Acting (20%) — Score: 7
 
-**Raw Score: 7.5 | Weighted: 1.50**
+**Raw Score: 7 | Weighted: 1.40**
 
 Analysis for Characters & Acting dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 7.5 | 20% | 1.50 |
+| Characters & Acting | 7 | 20% | 1.40 |
 | World Building | 8 | 15% | 1.20 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 7 | 10% | 0.70 |
 | Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 7 | 15% | 1.05 |
 | Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **7.80** |
+| **FINAL SCORE** | | | **7.70** |
 
 ---
 
-## Why It Ranks #35
+## Why It Ranks #53
 
-Generation Kill achieves a final score of 7.80 based on its performance across all seven dimensions.
+Generation Kill achieves a final score of 7.70.
 
 ---
 

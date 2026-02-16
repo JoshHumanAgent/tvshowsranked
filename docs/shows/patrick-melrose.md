@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #44 |
+| **Rank** | #49 |
 | **Score** | 7.75 |
 | **Year** | 2018 |
 | **Episodes** | 5 |
@@ -88,9 +88,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #44
+## Why It Ranks #49
 
-Patrick Melrose achieves a final score of 7.75 based on its performance across all seven dimensions.
+Patrick Melrose achieves a final score of 7.75.
 
 ---
 

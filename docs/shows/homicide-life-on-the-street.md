@@ -88,7 +88,7 @@ Analysis for Narrative Resolution dimension.
 
 ## Why It Ranks #103
 
-Homicide: Life on the Street achieves a final score of 6.72 based on its performance across all seven dimensions.
+Homicide: Life on the Street achieves a final score of 6.72.
 
 ---
 

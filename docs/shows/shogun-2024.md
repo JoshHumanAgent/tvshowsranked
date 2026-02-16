@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #22 |
+| **Rank** | #19 |
 | **Score** | 7.98 |
 | **Year** | 2024 |
 | **Episodes** | 10 |
@@ -92,9 +92,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #22
+## Why It Ranks #19
 
-Shogun (2024) achieves a final score of 7.98 based on its performance across all seven dimensions.
+Shogun (2024) achieves a final score of 7.98.
 
 ---
 

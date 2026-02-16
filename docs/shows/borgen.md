@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #67 |
+| **Rank** | #72 |
 | **Score** | 7.45 |
 | **Year** | 2010 |
 | **Episodes** | 40 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #67
+## Why It Ranks #72
 
-Borgen achieves a final score of 7.45 based on its performance across all seven dimensions.
+Borgen achieves a final score of 7.45.
 
 ---
 

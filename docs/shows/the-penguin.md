@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #62 |
-| **Score** | 7.52 |
+| **Rank** | #34 |
+| **Score** | 7.85 |
 | **Year** | 2024 |
 | **Episodes** | 8 |
 | **Genres** | crime, drama, superhero |
@@ -33,9 +33,9 @@ The production values are exceptional. Gotham has never looked better. The story
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 7.5
+### 2. World Building (15%) — Score: 8.5
 
-**Raw Score: 7.5 | Weighted: 1.13**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for World Building dimension.
 
@@ -45,27 +45,27 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7
+### 4. Visual Spectacle (10%) — Score: 6.5
 
-**Raw Score: 7 | Weighted: 0.70**
+**Raw Score: 6.5 | Weighted: 0.65**
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 7
-
-**Raw Score: 7 | Weighted: 1.05**
-
-Analysis for Conceptual Density dimension.
-
-### 6. Narrative Drive (15%) — Score: 8
+### 5. Conceptual Density (15%) — Score: 8
 
 **Raw Score: 8 | Weighted: 1.20**
 
+Analysis for Conceptual Density dimension.
+
+### 6. Narrative Drive (15%) — Score: 7.5
+
+**Raw Score: 7.5 | Weighted: 1.13**
+
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 7
+### 7. Narrative Resolution (15%) — Score: 8
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for Narrative Resolution dimension.
 
@@ -74,19 +74,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 8 | 20% | 1.60 |
-| World Building | 7.5 | 15% | 1.13 |
+| World Building | 8.5 | 15% | 1.27 |
 | Cinematography | 8 | 10% | 0.80 |
-| Visual Spectacle | 7 | 10% | 0.70 |
-| Conceptual Density | 7 | 15% | 1.05 |
-| Narrative Drive | 8 | 15% | 1.20 |
-| Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **7.52** |
+| Visual Spectacle | 6.5 | 10% | 0.65 |
+| Conceptual Density | 8 | 15% | 1.20 |
+| Narrative Drive | 7.5 | 15% | 1.13 |
+| Narrative Resolution | 8 | 15% | 1.20 |
+| **FINAL SCORE** | | | **7.85** |
 
 ---
 
-## Why It Ranks #62
+## Why It Ranks #34
 
-The Penguin achieves a final score of 7.52 based on its performance across all seven dimensions.
+The Penguin achieves a final score of 7.85.
 
 ---
 

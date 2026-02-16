@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #74 |
+| **Rank** | #78 |
 | **Score** | 7.38 |
 | **Year** | 2022 |
 | **Episodes** | 18 |
@@ -78,9 +78,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #74
+## Why It Ranks #78
 
-Interview with the Vampire achieves a final score of 7.38 based on its performance across all seven dimensions.
+Interview with the Vampire achieves a final score of 7.38.
 
 ---
 

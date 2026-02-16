@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #78 |
+| **Rank** | #83 |
 | **Score** | 7.32 |
 | **Year** | 2019 |
 | **Episodes** | 8 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #78
+## Why It Ranks #83
 
-True Detective S3 achieves a final score of 7.32 based on its performance across all seven dimensions.
+True Detective S3 achieves a final score of 7.32.
 
 ---
 

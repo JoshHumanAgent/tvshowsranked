@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #14 |
-| **Score** | 8.08 |
+| **Rank** | #17 |
+| **Score** | 8.00 |
 | **Year** | 2017 |
 | **Episodes** | 26 |
 | **Genres** | sci-fi, mystery, thriller |
@@ -35,9 +35,9 @@ Dark is challenging. You'll need to pay attention, maybe take notes. But if you'
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 8
+### 2. World Building (15%) — Score: 7.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for World Building dimension.
 
@@ -76,19 +76,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 7 | 20% | 1.40 |
-| World Building | 8 | 15% | 1.20 |
+| World Building | 7.5 | 15% | 1.13 |
 | Cinematography | 8.5 | 10% | 0.85 |
 | Visual Spectacle | 6.5 | 10% | 0.65 |
 | Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 8.5 | 15% | 1.27 |
 | Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **8.08** |
+| **FINAL SCORE** | | | **8.00** |
 
 ---
 
-## Why It Ranks #14
+## Why It Ranks #17
 
-Dark achieves a final score of 8.08 based on its performance across all seven dimensions.
+Dark achieves a final score of 8.00.
 
 ---
 

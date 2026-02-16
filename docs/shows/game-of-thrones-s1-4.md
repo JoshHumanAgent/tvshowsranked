@@ -88,7 +88,7 @@ Analysis for Narrative Resolution dimension.
 
 ## Why It Ranks #1
 
-Game of Thrones (S1-4) achieves a final score of 9.45 based on its performance across all seven dimensions.
+Game of Thrones (S1-4) achieves a final score of 9.45.
 
 ---
 

@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #83 |
-| **Score** | 7.25 |
+| **Rank** | #11 |
+| **Score** | 8.10 |
 | **Year** | 2017 |
 | **Episodes** | 44 |
 | **Genres** | crime, drama, thriller, cop-show |
@@ -21,9 +21,9 @@ Ozark is a crime/drama/thriller/cop-show series that delivers compelling televis
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 7.5
+### 1. Characters & Acting (20%) — Score: 8.5
 
-**Raw Score: 7.5 | Weighted: 1.50**
+**Raw Score: 8.5 | Weighted: 1.70**
 
 Analysis for Characters & Acting dimension.
 
@@ -33,9 +33,9 @@ Analysis for Characters & Acting dimension.
 
 Analysis for World Building dimension.
 
-### 3. Cinematography (10%) — Score: 8
+### 3. Cinematography (10%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 0.80**
+**Raw Score: 8.5 | Weighted: 0.85**
 
 Analysis for Cinematography dimension.
 
@@ -45,21 +45,21 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 7
+### 5. Conceptual Density (15%) — Score: 9
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 9 | Weighted: 1.35**
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 8
+### 6. Narrative Drive (15%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 7
+### 7. Narrative Resolution (15%) — Score: 8.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Narrative Resolution dimension.
 
@@ -67,20 +67,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 7.5 | 20% | 1.50 |
+| Characters & Acting | 8.5 | 20% | 1.70 |
 | World Building | 7 | 15% | 1.05 |
-| Cinematography | 8 | 10% | 0.80 |
+| Cinematography | 8.5 | 10% | 0.85 |
 | Visual Spectacle | 6 | 10% | 0.60 |
-| Conceptual Density | 7 | 15% | 1.05 |
-| Narrative Drive | 8 | 15% | 1.20 |
-| Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **7.25** |
+| Conceptual Density | 9 | 15% | 1.35 |
+| Narrative Drive | 8.5 | 15% | 1.27 |
+| Narrative Resolution | 8.5 | 15% | 1.27 |
+| **FINAL SCORE** | | | **8.10** |
 
 ---
 
-## Why It Ranks #83
+## Why It Ranks #11
 
-Ozark achieves a final score of 7.25 based on its performance across all seven dimensions.
+Ozark achieves a final score of 8.10.
 
 ---
 

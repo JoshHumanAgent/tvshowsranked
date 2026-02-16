@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #63 |
-| **Score** | 7.50 |
+| **Rank** | #57 |
+| **Score** | 7.70 |
 | **Year** | 2014 |
 | **Episodes** | 51 |
 | **Genres** | crime, drama, thriller |
@@ -27,15 +27,15 @@ What makes Fargo special is its willingness to be strange. The narration. The "t
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 7.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 7.5 | Weighted: 1.50**
+**Raw Score: 8 | Weighted: 1.60**
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 7
+### 2. World Building (15%) — Score: 6.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 6.5 | Weighted: 0.97**
 
 Analysis for World Building dimension.
 
@@ -45,15 +45,15 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 6.5
+### 4. Visual Spectacle (10%) — Score: 6
 
-**Raw Score: 6.5 | Weighted: 0.65**
+**Raw Score: 6 | Weighted: 0.60**
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 7
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Conceptual Density dimension.
 
@@ -73,20 +73,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 7.5 | 20% | 1.50 |
-| World Building | 7 | 15% | 1.05 |
+| Characters & Acting | 8 | 20% | 1.60 |
+| World Building | 6.5 | 15% | 0.97 |
 | Cinematography | 8.5 | 10% | 0.85 |
-| Visual Spectacle | 6.5 | 10% | 0.65 |
-| Conceptual Density | 7 | 15% | 1.05 |
+| Visual Spectacle | 6 | 10% | 0.60 |
+| Conceptual Density | 8.5 | 15% | 1.27 |
 | Narrative Drive | 8 | 15% | 1.20 |
 | Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **7.50** |
+| **FINAL SCORE** | | | **7.70** |
 
 ---
 
-## Why It Ranks #63
+## Why It Ranks #57
 
-Fargo achieves a final score of 7.50 based on its performance across all seven dimensions.
+Fargo achieves a final score of 7.70.
 
 ---
 

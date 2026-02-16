@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #51 |
-| **Score** | 7.65 |
+| **Rank** | #30 |
+| **Score** | 7.88 |
 | **Year** | 2013 |
 | **Episodes** | 39 |
 | **Genres** | crime, thriller, horror, cop-show |
@@ -57,9 +57,9 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 7
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Conceptual Density dimension.
 
@@ -83,16 +83,16 @@ Analysis for Narrative Resolution dimension.
 | World Building | 6.5 | 15% | 0.97 |
 | Cinematography | 10 | 10% | 1.00 |
 | Visual Spectacle | 8.5 | 10% | 0.85 |
-| Conceptual Density | 7 | 15% | 1.05 |
+| Conceptual Density | 8.5 | 15% | 1.27 |
 | Narrative Drive | 6.5 | 15% | 0.97 |
 | Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **7.65** |
+| **FINAL SCORE** | | | **7.88** |
 
 ---
 
-## Why It Ranks #51
+## Why It Ranks #30
 
-Hannibal achieves a final score of 7.65 based on its performance across all seven dimensions.
+Hannibal achieves a final score of 7.88.
 
 ---
 

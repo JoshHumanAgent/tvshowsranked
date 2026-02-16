@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #56 |
-| **Score** | 7.58 |
+| **Rank** | #13 |
+| **Score** | 8.07 |
 | **Year** | 2007 |
 | **Episodes** | 92 |
 | **Genres** | drama |
@@ -31,15 +31,15 @@ Mad Men is slow. It demands patience. But it rewards with one of the greatest se
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8
+### 1. Characters & Acting (20%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.60**
+**Raw Score: 8.5 | Weighted: 1.70**
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 7.5
+### 2. World Building (15%) — Score: 8
 
-**Raw Score: 7.5 | Weighted: 1.13**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for World Building dimension.
 
@@ -49,15 +49,15 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 6
+### 4. Visual Spectacle (10%) — Score: 8.5
 
-**Raw Score: 6 | Weighted: 0.60**
+**Raw Score: 8.5 | Weighted: 0.85**
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 8
+### 5. Conceptual Density (15%) — Score: 9
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 9 | Weighted: 1.35**
 
 Analysis for Conceptual Density dimension.
 
@@ -67,9 +67,9 @@ Analysis for Conceptual Density dimension.
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 8
+### 7. Narrative Resolution (15%) — Score: 7.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Narrative Resolution dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8 | 20% | 1.60 |
-| World Building | 7.5 | 15% | 1.13 |
+| Characters & Acting | 8.5 | 20% | 1.70 |
+| World Building | 8 | 15% | 1.20 |
 | Cinematography | 8 | 10% | 0.80 |
-| Visual Spectacle | 6 | 10% | 0.60 |
-| Conceptual Density | 8 | 15% | 1.20 |
+| Visual Spectacle | 8.5 | 10% | 0.85 |
+| Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 7 | 15% | 1.05 |
-| Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **7.58** |
+| Narrative Resolution | 7.5 | 15% | 1.13 |
+| **FINAL SCORE** | | | **8.07** |
 
 ---
 
-## Why It Ranks #56
+## Why It Ranks #13
 
-Mad Men achieves a final score of 7.58 based on its performance across all seven dimensions.
+Mad Men achieves a final score of 8.07.
 
 ---
 

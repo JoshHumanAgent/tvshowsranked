@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #16 |
-| **Score** | 8.02 |
+| **Rank** | #20 |
+| **Score** | 7.95 |
 | **Year** | 2017 |
 | **Episodes** | 36 |
 | **Genres** | drama, historical, thriller |
@@ -37,9 +37,9 @@ Babylon Berlin proves that German television can match international standards w
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 9
+### 2. World Building (15%) — Score: 8.5
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for World Building dimension.
 
@@ -78,19 +78,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 7.5 | 20% | 1.50 |
-| World Building | 9 | 15% | 1.35 |
+| World Building | 8.5 | 15% | 1.27 |
 | Cinematography | 9 | 10% | 0.90 |
 | Visual Spectacle | 9 | 10% | 0.90 |
 | Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 7.5 | 15% | 1.13 |
 | Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **8.02** |
+| **FINAL SCORE** | | | **7.95** |
 
 ---
 
-## Why It Ranks #16
+## Why It Ranks #20
 
-Babylon Berlin achieves a final score of 8.02 based on its performance across all seven dimensions.
+Babylon Berlin achieves a final score of 7.95.
 
 ---
 

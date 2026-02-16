@@ -80,7 +80,7 @@ Analysis for Narrative Resolution dimension.
 
 ## Why It Ranks #25
 
-Pluribus achieves a final score of 7.90 based on its performance across all seven dimensions.
+Pluribus achieves a final score of 7.90.
 
 ---
 

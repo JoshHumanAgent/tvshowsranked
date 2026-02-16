@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #85 |
+| **Rank** | #88 |
 | **Score** | 7.22 |
 | **Year** | 2006 |
 | **Episodes** | 76 |
@@ -90,9 +90,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #85
+## Why It Ranks #88
 
-Friday Night Lights achieves a final score of 7.22 based on its performance across all seven dimensions.
+Friday Night Lights achieves a final score of 7.22.
 
 ---
 

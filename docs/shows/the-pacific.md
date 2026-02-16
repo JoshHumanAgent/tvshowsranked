@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #54 |
+| **Rank** | #62 |
 | **Score** | 7.60 |
 | **Year** | 2010 |
 | **Episodes** | 10 |
@@ -78,9 +78,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #54
+## Why It Ranks #62
 
-The Pacific achieves a final score of 7.60 based on its performance across all seven dimensions.
+The Pacific achieves a final score of 7.60.
 
 ---
 

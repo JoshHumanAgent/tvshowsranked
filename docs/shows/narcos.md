@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #65 |
+| **Rank** | #70 |
 | **Score** | 7.50 |
 | **Year** | 2015 |
 | **Episodes** | 30 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #65
+## Why It Ranks #70
 
-Narcos achieves a final score of 7.50 based on its performance across all seven dimensions.
+Narcos achieves a final score of 7.50.
 
 ---
 

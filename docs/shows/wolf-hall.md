@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #24 |
-| **Score** | 7.92 |
+| **Rank** | #32 |
+| **Score** | 7.85 |
 | **Year** | 2015 |
 | **Episodes** | 6 |
 | **Genres** | drama, historical |
@@ -57,9 +57,9 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 9
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Conceptual Density dimension.
 
@@ -83,16 +83,16 @@ Analysis for Narrative Resolution dimension.
 | World Building | 8.5 | 15% | 1.27 |
 | Cinematography | 9 | 10% | 0.90 |
 | Visual Spectacle | 7 | 10% | 0.70 |
-| Conceptual Density | 9 | 15% | 1.35 |
+| Conceptual Density | 8.5 | 15% | 1.27 |
 | Narrative Drive | 7 | 15% | 1.05 |
 | Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **7.92** |
+| **FINAL SCORE** | | | **7.85** |
 
 ---
 
-## Why It Ranks #24
+## Why It Ranks #32
 
-Wolf Hall achieves a final score of 7.92 based on its performance across all seven dimensions.
+Wolf Hall achieves a final score of 7.85.
 
 ---
 

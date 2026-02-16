@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #12 |
-| **Score** | 8.10 |
+| **Rank** | #6 |
+| **Score** | 8.30 |
 | **Year** | 1999 |
 | **Episodes** | 86 |
 | **Genres** | crime, drama, cop-show |
@@ -35,15 +35,15 @@ The cut to black. The most debated ending in television history. Did Tony die? D
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 9
+### 2. World Building (15%) — Score: 8
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for World Building dimension.
 
-### 3. Cinematography (10%) — Score: 6
+### 3. Cinematography (10%) — Score: 6.5
 
-**Raw Score: 6 | Weighted: 0.60**
+**Raw Score: 6.5 | Weighted: 0.65**
 
 Analysis for Cinematography dimension.
 
@@ -53,21 +53,21 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 9
+### 5. Conceptual Density (15%) — Score: 9.5
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 9.5 | Weighted: 1.43**
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 7
+### 6. Narrative Drive (15%) — Score: 8
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 9
+### 7. Narrative Resolution (15%) — Score: 9.5
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 9.5 | Weighted: 1.43**
 
 Analysis for Narrative Resolution dimension.
 
@@ -76,19 +76,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 9.5 | 20% | 1.90 |
-| World Building | 9 | 15% | 1.35 |
-| Cinematography | 6 | 10% | 0.60 |
+| World Building | 8 | 15% | 1.20 |
+| Cinematography | 6.5 | 10% | 0.65 |
 | Visual Spectacle | 5 | 10% | 0.50 |
-| Conceptual Density | 9 | 15% | 1.35 |
-| Narrative Drive | 7 | 15% | 1.05 |
-| Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **8.10** |
+| Conceptual Density | 9.5 | 15% | 1.43 |
+| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Resolution | 9.5 | 15% | 1.43 |
+| **FINAL SCORE** | | | **8.30** |
 
 ---
 
-## Why It Ranks #12
+## Why It Ranks #6
 
-The Sopranos achieves a final score of 8.10 based on its performance across all seven dimensions.
+The Sopranos achieves a final score of 8.30.
 
 ---
 

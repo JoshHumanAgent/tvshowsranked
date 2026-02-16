@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #69 |
-| **Score** | 7.40 |
+| **Rank** | #58 |
+| **Score** | 7.70 |
 | **Year** | 2012 |
 | **Episodes** | 62 |
 | **Genres** | drama, comedy |
@@ -57,15 +57,15 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 8
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 7
+### 6. Narrative Drive (15%) — Score: 8.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Narrative Drive dimension.
 
@@ -83,16 +83,16 @@ Analysis for Narrative Resolution dimension.
 | World Building | 7 | 15% | 1.05 |
 | Cinematography | 7 | 10% | 0.70 |
 | Visual Spectacle | 5 | 10% | 0.50 |
-| Conceptual Density | 8 | 15% | 1.20 |
-| Narrative Drive | 7 | 15% | 1.05 |
+| Conceptual Density | 8.5 | 15% | 1.27 |
+| Narrative Drive | 8.5 | 15% | 1.27 |
 | Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **7.40** |
+| **FINAL SCORE** | | | **7.70** |
 
 ---
 
-## Why It Ranks #69
+## Why It Ranks #58
 
-Girls achieves a final score of 7.40 based on its performance across all seven dimensions.
+Girls achieves a final score of 7.70.
 
 ---
 

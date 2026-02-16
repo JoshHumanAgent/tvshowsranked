@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #11 |
-| **Score** | 8.12 |
+| **Rank** | #7 |
+| **Score** | 8.28 |
 | **Year** | 2010 |
 | **Episodes** | 56 |
 | **Genres** | crime, drama, historical |
@@ -37,39 +37,39 @@ Boardwalk Empire ran for five seasons and never lost its visual ambition. The fi
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 8.5
+### 2. World Building (15%) — Score: 9
 
-**Raw Score: 8.5 | Weighted: 1.27**
+**Raw Score: 9 | Weighted: 1.35**
 
 Analysis for World Building dimension.
 
-### 3. Cinematography (10%) — Score: 8.5
+### 3. Cinematography (10%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 8 | Weighted: 0.80**
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 9
+### 4. Visual Spectacle (10%) — Score: 9.5
 
-**Raw Score: 9 | Weighted: 0.90**
+**Raw Score: 9.5 | Weighted: 0.95**
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 7
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 7
+### 6. Narrative Drive (15%) — Score: 6.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 6.5 | Weighted: 0.97**
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 8
+### 7. Narrative Resolution (15%) — Score: 7.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Narrative Resolution dimension.
 
@@ -78,19 +78,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 9 | 20% | 1.80 |
-| World Building | 8.5 | 15% | 1.27 |
-| Cinematography | 8.5 | 10% | 0.85 |
-| Visual Spectacle | 9 | 10% | 0.90 |
-| Conceptual Density | 7 | 15% | 1.05 |
-| Narrative Drive | 7 | 15% | 1.05 |
-| Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **8.12** |
+| World Building | 9 | 15% | 1.35 |
+| Cinematography | 8 | 10% | 0.80 |
+| Visual Spectacle | 9.5 | 10% | 0.95 |
+| Conceptual Density | 8.5 | 15% | 1.27 |
+| Narrative Drive | 6.5 | 15% | 0.97 |
+| Narrative Resolution | 7.5 | 15% | 1.13 |
+| **FINAL SCORE** | | | **8.28** |
 
 ---
 
-## Why It Ranks #11
+## Why It Ranks #7
 
-Boardwalk Empire achieves a final score of 8.12 based on its performance across all seven dimensions.
+Boardwalk Empire achieves a final score of 8.28.
 
 ---
 

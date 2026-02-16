@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #93 |
+| **Rank** | #95 |
 | **Score** | 7.10 |
 | **Year** | 2004 |
 | **Episodes** | 75 |
@@ -78,9 +78,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #93
+## Why It Ranks #95
 
-Battlestar Galactica achieves a final score of 7.10 based on its performance across all seven dimensions.
+Battlestar Galactica achieves a final score of 7.10.
 
 ---
 

@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #27 |
-| **Score** | 7.88 |
+| **Rank** | #40 |
+| **Score** | 7.78 |
 | **Year** | 2014 |
 | **Episodes** | 40 |
 | **Genres** | drama |
@@ -31,9 +31,9 @@ Four seasons cover the rise of the PC, the birth of graphical interfaces, and th
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 9
+### 1. Characters & Acting (20%) — Score: 8.5
 
-**Raw Score: 9 | Weighted: 1.80**
+**Raw Score: 8.5 | Weighted: 1.70**
 
 Analysis for Characters & Acting dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 9 | 20% | 1.80 |
+| Characters & Acting | 8.5 | 20% | 1.70 |
 | World Building | 7.5 | 15% | 1.13 |
 | Cinematography | 7 | 10% | 0.70 |
 | Visual Spectacle | 5 | 10% | 0.50 |
 | Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 8 | 15% | 1.20 |
 | Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **7.88** |
+| **FINAL SCORE** | | | **7.78** |
 
 ---
 
-## Why It Ranks #27
+## Why It Ranks #40
 
-Halt and Catch Fire achieves a final score of 7.88 based on its performance across all seven dimensions.
+Halt and Catch Fire achieves a final score of 7.78.
 
 ---
 

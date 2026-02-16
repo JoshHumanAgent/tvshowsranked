@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #53 |
-| **Score** | 7.65 |
+| **Rank** | #23 |
+| **Score** | 7.92 |
 | **Year** | 2014 |
 | **Episodes** | 27 |
 | **Genres** | horror, drama, fantasy |
@@ -31,9 +31,9 @@ For fans of Gothic horror, this is required viewing.
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8
+### 1. Characters & Acting (20%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.60**
+**Raw Score: 8.5 | Weighted: 1.70**
 
 Analysis for Characters & Acting dimension.
 
@@ -49,9 +49,9 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8
+### 4. Visual Spectacle (10%) — Score: 9
 
-**Raw Score: 8 | Weighted: 0.80**
+**Raw Score: 9 | Weighted: 0.90**
 
 Analysis for Visual Spectacle dimension.
 
@@ -61,9 +61,9 @@ Analysis for Visual Spectacle dimension.
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 7
+### 6. Narrative Drive (15%) — Score: 7.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Narrative Drive dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8 | 20% | 1.60 |
+| Characters & Acting | 8.5 | 20% | 1.70 |
 | World Building | 8 | 15% | 1.20 |
 | Cinematography | 9 | 10% | 0.90 |
-| Visual Spectacle | 8 | 10% | 0.80 |
+| Visual Spectacle | 9 | 10% | 0.90 |
 | Conceptual Density | 8 | 15% | 1.20 |
-| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Drive | 7.5 | 15% | 1.13 |
 | Narrative Resolution | 6 | 15% | 0.90 |
-| **FINAL SCORE** | | | **7.65** |
+| **FINAL SCORE** | | | **7.92** |
 
 ---
 
-## Why It Ranks #53
+## Why It Ranks #23
 
-Penny Dreadful achieves a final score of 7.65 based on its performance across all seven dimensions.
+Penny Dreadful achieves a final score of 7.92.
 
 ---
 

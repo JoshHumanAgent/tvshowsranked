@@ -90,7 +90,7 @@ Analysis for Narrative Resolution dimension.
 
 ## Why It Ranks #5
 
-Better Call Saul achieves a final score of 8.30 based on its performance across all seven dimensions.
+Better Call Saul achieves a final score of 8.30.
 
 ---
 

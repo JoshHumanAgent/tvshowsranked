@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #18 |
-| **Score** | 8.02 |
+| **Rank** | #22 |
+| **Score** | 7.92 |
 | **Year** | 2014 |
 | **Episodes** | 20 |
 | **Genres** | drama, historical |
@@ -31,9 +31,9 @@ The show ended after two seasons when Soderbergh decided to move on, and there's
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
 Analysis for Characters & Acting dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
+| Characters & Acting | 8 | 20% | 1.60 |
 | World Building | 8.5 | 15% | 1.27 |
 | Cinematography | 9.5 | 10% | 0.95 |
 | Visual Spectacle | 8 | 10% | 0.80 |
 | Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 8 | 15% | 1.20 |
 | Narrative Resolution | 6 | 15% | 0.90 |
-| **FINAL SCORE** | | | **8.02** |
+| **FINAL SCORE** | | | **7.92** |
 
 ---
 
-## Why It Ranks #18
+## Why It Ranks #22
 
-The Knick achieves a final score of 8.02 based on its performance across all seven dimensions.
+The Knick achieves a final score of 7.92.
 
 ---
 

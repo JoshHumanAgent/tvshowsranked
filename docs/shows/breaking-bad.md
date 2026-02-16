@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #3 |
+| **Rank** | #2 |
 | **Score** | 8.80 |
 | **Year** | 2008 |
 | **Episodes** | 62 |
@@ -88,9 +88,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #3
+## Why It Ranks #2
 
-Breaking Bad achieves a final score of 8.80 based on its performance across all seven dimensions.
+Breaking Bad achieves a final score of 8.80.
 
 ---
 

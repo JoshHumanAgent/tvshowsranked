@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #100 |
-| **Score** | 6.90 |
+| **Rank** | #64 |
+| **Score** | 7.60 |
 | **Year** | 2017 |
 | **Episodes** | 56 |
 | **Genres** | drama, sci-fi, thriller |
@@ -29,15 +29,15 @@ The fifth season ended the story (for now), and it's one of the most important t
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 7
+### 1. Characters & Acting (20%) — Score: 7.5
 
-**Raw Score: 7 | Weighted: 1.40**
+**Raw Score: 7.5 | Weighted: 1.50**
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 8
+### 2. World Building (15%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for World Building dimension.
 
@@ -53,21 +53,21 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 8
+### 5. Conceptual Density (15%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 5
+### 6. Narrative Drive (15%) — Score: 7
 
-**Raw Score: 5 | Weighted: 0.75**
+**Raw Score: 7 | Weighted: 1.05**
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 5
+### 7. Narrative Resolution (15%) — Score: 6
 
-**Raw Score: 5 | Weighted: 0.75**
+**Raw Score: 6 | Weighted: 0.90**
 
 Analysis for Narrative Resolution dimension.
 
@@ -75,20 +75,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 7 | 20% | 1.40 |
-| World Building | 8 | 15% | 1.20 |
+| Characters & Acting | 7.5 | 20% | 1.50 |
+| World Building | 8.5 | 15% | 1.27 |
 | Cinematography | 8.5 | 10% | 0.85 |
 | Visual Spectacle | 7.5 | 10% | 0.75 |
-| Conceptual Density | 8 | 15% | 1.20 |
-| Narrative Drive | 5 | 15% | 0.75 |
-| Narrative Resolution | 5 | 15% | 0.75 |
-| **FINAL SCORE** | | | **6.90** |
+| Conceptual Density | 8.5 | 15% | 1.27 |
+| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Resolution | 6 | 15% | 0.90 |
+| **FINAL SCORE** | | | **7.60** |
 
 ---
 
-## Why It Ranks #100
+## Why It Ranks #64
 
-The Handmaid's Tale achieves a final score of 6.90 based on its performance across all seven dimensions.
+The Handmaid's Tale achieves a final score of 7.60.
 
 ---
 

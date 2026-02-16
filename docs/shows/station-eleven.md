@@ -92,7 +92,7 @@ Analysis for Narrative Resolution dimension.
 
 ## Why It Ranks #26
 
-Station Eleven achieves a final score of 7.90 based on its performance across all seven dimensions.
+Station Eleven achieves a final score of 7.90.
 
 ---
 

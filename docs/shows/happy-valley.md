@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #68 |
+| **Rank** | #73 |
 | **Score** | 7.45 |
 | **Year** | 2014 |
 | **Episodes** | 18 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #68
+## Why It Ranks #73
 
-Happy Valley achieves a final score of 7.45 based on its performance across all seven dimensions.
+Happy Valley achieves a final score of 7.45.
 
 ---
 

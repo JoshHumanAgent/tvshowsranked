@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #89 |
+| **Rank** | #91 |
 | **Score** | 7.20 |
 | **Year** | 2007 |
 | **Episodes** | 40 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #89
+## Why It Ranks #91
 
-The Killing (DK) achieves a final score of 7.20 based on its performance across all seven dimensions.
+The Killing (DK) achieves a final score of 7.20.
 
 ---
 

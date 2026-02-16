@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #76 |
+| **Rank** | #81 |
 | **Score** | 7.35 |
 | **Year** | 2017 |
 | **Episodes** | 14 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #76
+## Why It Ranks #81
 
-Big Little Lies achieves a final score of 7.35 based on its performance across all seven dimensions.
+Big Little Lies achieves a final score of 7.35.
 
 ---
 

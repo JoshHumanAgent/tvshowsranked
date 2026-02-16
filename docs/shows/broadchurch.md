@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #70 |
+| **Rank** | #75 |
 | **Score** | 7.40 |
 | **Year** | 2013 |
 | **Episodes** | 24 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #70
+## Why It Ranks #75
 
-Broadchurch achieves a final score of 7.40 based on its performance across all seven dimensions.
+Broadchurch achieves a final score of 7.40.
 
 ---
 

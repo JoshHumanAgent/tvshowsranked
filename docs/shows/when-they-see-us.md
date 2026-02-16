@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #19 |
-| **Score** | 8.00 |
+| **Rank** | #59 |
+| **Score** | 7.67 |
 | **Year** | 2019 |
 | **Episodes** | 4 |
 | **Genres** | drama |
@@ -31,15 +31,15 @@ This is television as testimony. It doesn't ask you to feel good. It asks you to
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8
+### 1. Characters & Acting (20%) — Score: 7.5
 
-**Raw Score: 8 | Weighted: 1.60**
+**Raw Score: 7.5 | Weighted: 1.50**
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 7
+### 2. World Building (15%) — Score: 6.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 6.5 | Weighted: 0.97**
 
 Analysis for World Building dimension.
 
@@ -67,9 +67,9 @@ Analysis for Conceptual Density dimension.
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 10
+### 7. Narrative Resolution (15%) — Score: 9
 
-**Raw Score: 10 | Weighted: 1.50**
+**Raw Score: 9 | Weighted: 1.35**
 
 Analysis for Narrative Resolution dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8 | 20% | 1.60 |
-| World Building | 7 | 15% | 1.05 |
+| Characters & Acting | 7.5 | 20% | 1.50 |
+| World Building | 6.5 | 15% | 0.97 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 5 | 10% | 0.50 |
 | Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 8 | 15% | 1.20 |
-| Narrative Resolution | 10 | 15% | 1.50 |
-| **FINAL SCORE** | | | **8.00** |
+| Narrative Resolution | 9 | 15% | 1.35 |
+| **FINAL SCORE** | | | **7.67** |
 
 ---
 
-## Why It Ranks #19
+## Why It Ranks #59
 
-When They See Us achieves a final score of 8.00 based on its performance across all seven dimensions.
+When They See Us achieves a final score of 7.67.
 
 ---
 

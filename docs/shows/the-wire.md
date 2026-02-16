@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #2 |
-| **Score** | 8.60 |
+| **Rank** | #4 |
+| **Score** | 8.68 |
 | **Year** | 2002 |
 | **Episodes** | 60 |
 | **Genres** | crime, drama, cop-show |
@@ -27,27 +27,27 @@ The show is revolutionary in its approach to narrative. There's no protagonist i
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 9.5
+### 1. Characters & Acting (20%) — Score: 9
 
-**Raw Score: 9.5 | Weighted: 1.90**
+**Raw Score: 9 | Weighted: 1.80**
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 10
+### 2. World Building (15%) — Score: 9.5
 
-**Raw Score: 10 | Weighted: 1.50**
+**Raw Score: 9.5 | Weighted: 1.43**
 
 Analysis for World Building dimension.
 
-### 3. Cinematography (10%) — Score: 6
+### 3. Cinematography (10%) — Score: 6.5
 
-**Raw Score: 6 | Weighted: 0.60**
+**Raw Score: 6.5 | Weighted: 0.65**
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7
+### 4. Visual Spectacle (10%) — Score: 7.5
 
-**Raw Score: 7 | Weighted: 0.70**
+**Raw Score: 7.5 | Weighted: 0.75**
 
 Analysis for Visual Spectacle dimension.
 
@@ -57,15 +57,15 @@ Analysis for Visual Spectacle dimension.
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 7
+### 6. Narrative Drive (15%) — Score: 7.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 9
+### 7. Narrative Resolution (15%) — Score: 9.5
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 9.5 | Weighted: 1.43**
 
 Analysis for Narrative Resolution dimension.
 
@@ -73,20 +73,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 9.5 | 20% | 1.90 |
-| World Building | 10 | 15% | 1.50 |
-| Cinematography | 6 | 10% | 0.60 |
-| Visual Spectacle | 7 | 10% | 0.70 |
+| Characters & Acting | 9 | 20% | 1.80 |
+| World Building | 9.5 | 15% | 1.43 |
+| Cinematography | 6.5 | 10% | 0.65 |
+| Visual Spectacle | 7.5 | 10% | 0.75 |
 | Conceptual Density | 10 | 15% | 1.50 |
-| Narrative Drive | 7 | 15% | 1.05 |
-| Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **8.60** |
+| Narrative Drive | 7.5 | 15% | 1.13 |
+| Narrative Resolution | 9.5 | 15% | 1.43 |
+| **FINAL SCORE** | | | **8.68** |
 
 ---
 
-## Why It Ranks #2
+## Why It Ranks #4
 
-The Wire achieves a final score of 8.60 based on its performance across all seven dimensions.
+The Wire achieves a final score of 8.68.
 
 ---
 

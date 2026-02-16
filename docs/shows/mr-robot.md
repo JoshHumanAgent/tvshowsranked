@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #32 |
+| **Rank** | #36 |
 | **Score** | 7.82 |
 | **Year** | 2015 |
 | **Episodes** | 45 |
@@ -88,9 +88,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #32
+## Why It Ranks #36
 
-Mr. Robot achieves a final score of 7.82 based on its performance across all seven dimensions.
+Mr. Robot achieves a final score of 7.82.
 
 ---
 

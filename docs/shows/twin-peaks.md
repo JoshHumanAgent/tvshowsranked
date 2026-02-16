@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #75 |
+| **Rank** | #80 |
 | **Score** | 7.35 |
 | **Year** | 1990 |
 | **Episodes** | 30 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #75
+## Why It Ranks #80
 
-Twin Peaks achieves a final score of 7.35 based on its performance across all seven dimensions.
+Twin Peaks achieves a final score of 7.35.
 
 ---
 

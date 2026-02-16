@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #58 |
+| **Rank** | #66 |
 | **Score** | 7.55 |
 | **Year** | 2018 |
 | **Episodes** | 7 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #58
+## Why It Ranks #66
 
-Escape at Dannemora achieves a final score of 7.55 based on its performance across all seven dimensions.
+Escape at Dannemora achieves a final score of 7.55.
 
 ---
 

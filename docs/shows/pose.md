@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #52 |
+| **Rank** | #61 |
 | **Score** | 7.65 |
 | **Year** | 2018 |
 | **Episodes** | 26 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #52
+## Why It Ranks #61
 
-Pose achieves a final score of 7.65 based on its performance across all seven dimensions.
+Pose achieves a final score of 7.65.
 
 ---
 

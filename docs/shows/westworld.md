@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #102 |
-| **Score** | 6.75 |
+| **Rank** | #60 |
+| **Score** | 7.67 |
 | **Year** | 2016 |
 | **Episodes** | 36 |
 | **Genres** | sci-fi, western, drama |
@@ -29,39 +29,39 @@ This is television that asks big questions. It's not always successful, but it's
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 7
+### 1. Characters & Acting (20%) — Score: 7.5
 
-**Raw Score: 7 | Weighted: 1.40**
+**Raw Score: 7.5 | Weighted: 1.50**
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 8
+### 2. World Building (15%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for World Building dimension.
 
-### 3. Cinematography (10%) — Score: 8
+### 3. Cinematography (10%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 0.80**
+**Raw Score: 8.5 | Weighted: 0.85**
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 8
+### 4. Visual Spectacle (10%) — Score: 9
 
-**Raw Score: 8 | Weighted: 0.80**
+**Raw Score: 9 | Weighted: 0.90**
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 7
+### 5. Conceptual Density (15%) — Score: 9.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 9.5 | Weighted: 1.43**
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 5
+### 6. Narrative Drive (15%) — Score: 6.5
 
-**Raw Score: 5 | Weighted: 0.75**
+**Raw Score: 6.5 | Weighted: 0.97**
 
 Analysis for Narrative Drive dimension.
 
@@ -75,20 +75,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 7 | 20% | 1.40 |
-| World Building | 8 | 15% | 1.20 |
-| Cinematography | 8 | 10% | 0.80 |
-| Visual Spectacle | 8 | 10% | 0.80 |
-| Conceptual Density | 7 | 15% | 1.05 |
-| Narrative Drive | 5 | 15% | 0.75 |
+| Characters & Acting | 7.5 | 20% | 1.50 |
+| World Building | 8.5 | 15% | 1.27 |
+| Cinematography | 8.5 | 10% | 0.85 |
+| Visual Spectacle | 9 | 10% | 0.90 |
+| Conceptual Density | 9.5 | 15% | 1.43 |
+| Narrative Drive | 6.5 | 15% | 0.97 |
 | Narrative Resolution | 5 | 15% | 0.75 |
-| **FINAL SCORE** | | | **6.75** |
+| **FINAL SCORE** | | | **7.67** |
 
 ---
 
-## Why It Ranks #102
+## Why It Ranks #60
 
-Westworld achieves a final score of 6.75 based on its performance across all seven dimensions.
+Westworld achieves a final score of 7.67.
 
 ---
 

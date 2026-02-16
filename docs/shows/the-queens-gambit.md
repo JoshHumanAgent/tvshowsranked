@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #21 |
-| **Score** | 7.98 |
+| **Rank** | #52 |
+| **Score** | 7.70 |
 | **Year** | 2020 |
 | **Episodes** | 7 |
 | **Genres** | drama |
@@ -39,15 +39,15 @@ This is a show about what it costs to be exceptional. And it's beautiful.
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 7.5
+### 2. World Building (15%) — Score: 7
 
-**Raw Score: 7.5 | Weighted: 1.13**
+**Raw Score: 7 | Weighted: 1.05**
 
 Analysis for World Building dimension.
 
-### 3. Cinematography (10%) — Score: 9
+### 3. Cinematography (10%) — Score: 8.5
 
-**Raw Score: 9 | Weighted: 0.90**
+**Raw Score: 8.5 | Weighted: 0.85**
 
 Analysis for Cinematography dimension.
 
@@ -69,9 +69,9 @@ Analysis for Conceptual Density dimension.
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 9
+### 7. Narrative Resolution (15%) — Score: 8
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for Narrative Resolution dimension.
 
@@ -80,19 +80,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 7.5 | 20% | 1.50 |
-| World Building | 7.5 | 15% | 1.13 |
-| Cinematography | 9 | 10% | 0.90 |
+| World Building | 7 | 15% | 1.05 |
+| Cinematography | 8.5 | 10% | 0.85 |
 | Visual Spectacle | 7 | 10% | 0.70 |
 | Conceptual Density | 7 | 15% | 1.05 |
 | Narrative Drive | 9 | 15% | 1.35 |
-| Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **7.98** |
+| Narrative Resolution | 8 | 15% | 1.20 |
+| **FINAL SCORE** | | | **7.70** |
 
 ---
 
-## Why It Ranks #21
+## Why It Ranks #52
 
-The Queen's Gambit achieves a final score of 7.98 based on its performance across all seven dimensions.
+The Queen's Gambit achieves a final score of 7.70.
 
 ---
 

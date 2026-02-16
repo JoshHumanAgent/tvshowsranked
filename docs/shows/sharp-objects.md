@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #40 |
+| **Rank** | #42 |
 | **Score** | 7.78 |
 | **Year** | 2018 |
 | **Episodes** | 8 |
@@ -90,9 +90,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #40
+## Why It Ranks #42
 
-Sharp Objects achieves a final score of 7.78 based on its performance across all seven dimensions.
+Sharp Objects achieves a final score of 7.78.
 
 ---
 

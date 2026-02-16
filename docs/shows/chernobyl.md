@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #15 |
-| **Score** | 8.05 |
+| **Rank** | #8 |
+| **Score** | 8.13 |
 | **Year** | 2019 |
 | **Episodes** | 5 |
 | **Genres** | drama, historical |
@@ -63,9 +63,9 @@ Analysis for Visual Spectacle dimension.
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 8
+### 6. Narrative Drive (15%) — Score: 8.5
 
-**Raw Score: 8 | Weighted: 1.20**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Narrative Drive dimension.
 
@@ -84,15 +84,15 @@ Analysis for Narrative Resolution dimension.
 | Cinematography | 9 | 10% | 0.90 |
 | Visual Spectacle | 8 | 10% | 0.80 |
 | Conceptual Density | 8 | 15% | 1.20 |
-| Narrative Drive | 8 | 15% | 1.20 |
+| Narrative Drive | 8.5 | 15% | 1.27 |
 | Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **8.05** |
+| **FINAL SCORE** | | | **8.13** |
 
 ---
 
-## Why It Ranks #15
+## Why It Ranks #8
 
-Chernobyl achieves a final score of 8.05 based on its performance across all seven dimensions.
+Chernobyl achieves a final score of 8.13.
 
 ---
 

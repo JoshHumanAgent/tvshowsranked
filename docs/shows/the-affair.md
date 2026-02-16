@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #99 |
+| **Rank** | #102 |
 | **Score** | 6.92 |
 | **Year** | 2014 |
 | **Episodes** | 53 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #99
+## Why It Ranks #102
 
-The Affair achieves a final score of 6.92 based on its performance across all seven dimensions.
+The Affair achieves a final score of 6.92.
 
 ---
 

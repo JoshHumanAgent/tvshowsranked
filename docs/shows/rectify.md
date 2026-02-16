@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #34 |
+| **Rank** | #38 |
 | **Score** | 7.80 |
 | **Year** | 2013 |
 | **Episodes** | 30 |
@@ -90,9 +90,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #34
+## Why It Ranks #38
 
-Rectify achieves a final score of 7.80 based on its performance across all seven dimensions.
+Rectify achieves a final score of 7.80.
 
 ---
 

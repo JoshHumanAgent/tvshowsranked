@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #72 |
+| **Rank** | #76 |
 | **Score** | 7.38 |
 | **Year** | 2001 |
 | **Episodes** | 63 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #72
+## Why It Ranks #76
 
-Six Feet Under achieves a final score of 7.38 based on its performance across all seven dimensions.
+Six Feet Under achieves a final score of 7.38.
 
 ---
 

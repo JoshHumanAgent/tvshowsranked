@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #49 |
+| **Rank** | #56 |
 | **Score** | 7.70 |
 | **Year** | 2017 |
 | **Episodes** | 7 |
@@ -88,9 +88,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #49
+## Why It Ranks #56
 
-Godless achieves a final score of 7.70 based on its performance across all seven dimensions.
+Godless achieves a final score of 7.70.
 
 ---
 

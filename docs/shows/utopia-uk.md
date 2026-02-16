@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #41 |
+| **Rank** | #43 |
 | **Score** | 7.78 |
 | **Year** | 2013 |
 | **Episodes** | 12 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #41
+## Why It Ranks #43
 
-Utopia (UK) achieves a final score of 7.78 based on its performance across all seven dimensions.
+Utopia (UK) achieves a final score of 7.78.
 
 ---
 

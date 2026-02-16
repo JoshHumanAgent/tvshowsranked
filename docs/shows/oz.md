@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #97 |
+| **Rank** | #99 |
 | **Score** | 7.02 |
 | **Year** | 1997 |
 | **Episodes** | 56 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #97
+## Why It Ranks #99
 
-Oz achieves a final score of 7.02 based on its performance across all seven dimensions.
+Oz achieves a final score of 7.02.
 
 ---
 

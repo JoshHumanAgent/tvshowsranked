@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #95 |
+| **Rank** | #97 |
 | **Score** | 7.08 |
 | **Year** | 2018 |
 | **Episodes** | 32 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #95
+## Why It Ranks #97
 
-Killing Eve achieves a final score of 7.08 based on its performance across all seven dimensions.
+Killing Eve achieves a final score of 7.08.
 
 ---
 

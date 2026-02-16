@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #33 |
-| **Score** | 7.82 |
+| **Rank** | #65 |
+| **Score** | 7.58 |
 | **Year** | 2021 |
 | **Episodes** | 18 |
 | **Genres** | thriller, drama, sci-fi |
@@ -33,9 +33,9 @@ The second season expands the world while maintaining the tension. Gi-hun return
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 7
+### 1. Characters & Acting (20%) — Score: 6.5
 
-**Raw Score: 7 | Weighted: 1.40**
+**Raw Score: 6.5 | Weighted: 1.30**
 
 Analysis for Characters & Acting dimension.
 
@@ -51,9 +51,9 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 9
+### 4. Visual Spectacle (10%) — Score: 7.5
 
-**Raw Score: 9 | Weighted: 0.90**
+**Raw Score: 7.5 | Weighted: 0.75**
 
 Analysis for Visual Spectacle dimension.
 
@@ -79,20 +79,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 7 | 20% | 1.40 |
+| Characters & Acting | 6.5 | 20% | 1.30 |
 | World Building | 7.5 | 15% | 1.13 |
 | Cinematography | 8 | 10% | 0.80 |
-| Visual Spectacle | 9 | 10% | 0.90 |
+| Visual Spectacle | 7.5 | 10% | 0.75 |
 | Conceptual Density | 7 | 15% | 1.05 |
 | Narrative Drive | 9 | 15% | 1.35 |
 | Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **7.82** |
+| **FINAL SCORE** | | | **7.58** |
 
 ---
 
-## Why It Ranks #33
+## Why It Ranks #65
 
-Squid Game achieves a final score of 7.82 based on its performance across all seven dimensions.
+Squid Game achieves a final score of 7.58.
 
 ---
 

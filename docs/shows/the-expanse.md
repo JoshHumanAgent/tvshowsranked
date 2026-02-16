@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #31 |
-| **Score** | 7.82 |
+| **Rank** | #12 |
+| **Score** | 8.07 |
 | **Year** | 2015 |
 | **Episodes** | 62 |
 | **Genres** | sci-fi, drama, thriller |
@@ -27,9 +27,9 @@ The Expanse is a sci-fi/drama/thriller series that delivers compelling televisio
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 9
+### 2. World Building (15%) — Score: 10
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 10 | Weighted: 1.50**
 
 Analysis for World Building dimension.
 
@@ -39,9 +39,9 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 9
+### 4. Visual Spectacle (10%) — Score: 10
 
-**Raw Score: 9 | Weighted: 0.90**
+**Raw Score: 10 | Weighted: 1.00**
 
 Analysis for Visual Spectacle dimension.
 
@@ -68,19 +68,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 7.5 | 20% | 1.50 |
-| World Building | 9 | 15% | 1.35 |
+| World Building | 10 | 15% | 1.50 |
 | Cinematography | 7 | 10% | 0.70 |
-| Visual Spectacle | 9 | 10% | 0.90 |
+| Visual Spectacle | 10 | 10% | 1.00 |
 | Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 7.5 | 15% | 1.13 |
 | Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **7.82** |
+| **FINAL SCORE** | | | **8.07** |
 
 ---
 
-## Why It Ranks #31
+## Why It Ranks #12
 
-The Expanse achieves a final score of 7.82 based on its performance across all seven dimensions.
+The Expanse achieves a final score of 8.07.
 
 ---
 

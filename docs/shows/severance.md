@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #28 |
+| **Rank** | #29 |
 | **Score** | 7.88 |
 | **Year** | 2022 |
 | **Episodes** | 19 |
@@ -90,9 +90,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #28
+## Why It Ranks #29
 
-Severance achieves a final score of 7.88 based on its performance across all seven dimensions.
+Severance achieves a final score of 7.88.
 
 ---
 

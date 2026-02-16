@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #7 |
-| **Score** | 8.22 |
+| **Rank** | #14 |
+| **Score** | 8.03 |
 | **Year** | 2022 |
 | **Episodes** | 12 |
 | **Genres** | sci-fi, drama, action |
@@ -39,15 +39,15 @@ Andor is proof that Star Wars can tell mature stories. It's the anti-prequel—i
 
 Analysis for Characters & Acting dimension.
 
-### 2. World Building (15%) — Score: 9.5
+### 2. World Building (15%) — Score: 9
 
-**Raw Score: 9.5 | Weighted: 1.43**
+**Raw Score: 9 | Weighted: 1.35**
 
 Analysis for World Building dimension.
 
-### 3. Cinematography (10%) — Score: 8.5
+### 3. Cinematography (10%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 0.85**
+**Raw Score: 8 | Weighted: 0.80**
 
 Analysis for Cinematography dimension.
 
@@ -57,9 +57,9 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 8.5
+### 5. Conceptual Density (15%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.27**
+**Raw Score: 8 | Weighted: 1.20**
 
 Analysis for Conceptual Density dimension.
 
@@ -80,19 +80,19 @@ Analysis for Narrative Resolution dimension.
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
 | Characters & Acting | 7.5 | 20% | 1.50 |
-| World Building | 9.5 | 15% | 1.43 |
-| Cinematography | 8.5 | 10% | 0.85 |
+| World Building | 9 | 15% | 1.35 |
+| Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 8.5 | 10% | 0.85 |
-| Conceptual Density | 8.5 | 15% | 1.27 |
+| Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 7.5 | 15% | 1.13 |
 | Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **8.22** |
+| **FINAL SCORE** | | | **8.03** |
 
 ---
 
-## Why It Ranks #7
+## Why It Ranks #14
 
-Andor achieves a final score of 8.22 based on its performance across all seven dimensions.
+Andor achieves a final score of 8.03.
 
 ---
 

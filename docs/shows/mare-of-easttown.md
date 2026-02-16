@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #61 |
+| **Rank** | #69 |
 | **Score** | 7.52 |
 | **Year** | 2021 |
 | **Episodes** | 7 |
@@ -86,9 +86,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #61
+## Why It Ranks #69
 
-Mare of Easttown achieves a final score of 7.52 based on its performance across all seven dimensions.
+Mare of Easttown achieves a final score of 7.52.
 
 ---
 

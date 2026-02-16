@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #64 |
-| **Score** | 7.50 |
+| **Rank** | #46 |
+| **Score** | 7.78 |
 | **Year** | 2013 |
 | **Episodes** | 36 |
 | **Genres** | crime, drama, historical |
@@ -31,9 +31,9 @@ The final season brings everything full circle. Tommy faces his past, his enemie
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 7.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 7.5 | Weighted: 1.50**
+**Raw Score: 8 | Weighted: 1.60**
 
 Analysis for Characters & Acting dimension.
 
@@ -49,9 +49,9 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7.5
+### 4. Visual Spectacle (10%) — Score: 8.5
 
-**Raw Score: 7.5 | Weighted: 0.75**
+**Raw Score: 8.5 | Weighted: 0.85**
 
 Analysis for Visual Spectacle dimension.
 
@@ -61,9 +61,9 @@ Analysis for Visual Spectacle dimension.
 
 Analysis for Conceptual Density dimension.
 
-### 6. Narrative Drive (15%) — Score: 7
+### 6. Narrative Drive (15%) — Score: 7.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Narrative Drive dimension.
 
@@ -77,20 +77,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 7.5 | 20% | 1.50 |
+| Characters & Acting | 8 | 20% | 1.60 |
 | World Building | 8 | 15% | 1.20 |
 | Cinematography | 9 | 10% | 0.90 |
-| Visual Spectacle | 7.5 | 10% | 0.75 |
+| Visual Spectacle | 8.5 | 10% | 0.85 |
 | Conceptual Density | 7 | 15% | 1.05 |
-| Narrative Drive | 7 | 15% | 1.05 |
+| Narrative Drive | 7.5 | 15% | 1.13 |
 | Narrative Resolution | 7 | 15% | 1.05 |
-| **FINAL SCORE** | | | **7.50** |
+| **FINAL SCORE** | | | **7.78** |
 
 ---
 
-## Why It Ranks #64
+## Why It Ranks #46
 
-Peaky Blinders achieves a final score of 7.50 based on its performance across all seven dimensions.
+Peaky Blinders achieves a final score of 7.78.
 
 ---
 

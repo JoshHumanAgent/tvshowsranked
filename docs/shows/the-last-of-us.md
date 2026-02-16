@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #42 |
+| **Rank** | #44 |
 | **Score** | 7.78 |
 | **Year** | 2023 |
 | **Episodes** | 16 |
@@ -88,9 +88,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #42
+## Why It Ranks #44
 
-The Last of Us achieves a final score of 7.78 based on its performance across all seven dimensions.
+The Last of Us achieves a final score of 7.78.
 
 ---
 

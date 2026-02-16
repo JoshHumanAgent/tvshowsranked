@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #13 |
-| **Score** | 8.10 |
+| **Rank** | #16 |
+| **Score** | 8.00 |
 | **Year** | 2014 |
 | **Episodes** | 28 |
 | **Genres** | drama, fantasy, mystery |
@@ -23,9 +23,9 @@ Like watching a mystery that refuses to solve itself. Like grief made visible. L
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 7.5
+### 1. Characters & Acting (20%) — Score: 7
 
-**Raw Score: 7.5 | Weighted: 1.50**
+**Raw Score: 7 | Weighted: 1.40**
 
 Analysis for Characters & Acting dimension.
 
@@ -69,20 +69,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 7.5 | 20% | 1.50 |
+| Characters & Acting | 7 | 20% | 1.40 |
 | World Building | 8 | 15% | 1.20 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 7 | 10% | 0.70 |
 | Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 8 | 15% | 1.20 |
 | Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **8.10** |
+| **FINAL SCORE** | | | **8.00** |
 
 ---
 
-## Why It Ranks #13
+## Why It Ranks #16
 
-The Leftovers achieves a final score of 8.10 based on its performance across all seven dimensions.
+The Leftovers achieves a final score of 8.00.
 
 ---
 

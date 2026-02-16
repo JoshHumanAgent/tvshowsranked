@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #38 |
-| **Score** | 7.78 |
+| **Rank** | #10 |
+| **Score** | 8.10 |
 | **Year** | 2004 |
 | **Episodes** | 36 |
 | **Genres** | drama, western |
@@ -45,9 +45,9 @@ Analysis for World Building dimension.
 
 Analysis for Cinematography dimension.
 
-### 4. Visual Spectacle (10%) — Score: 7
+### 4. Visual Spectacle (10%) — Score: 8
 
-**Raw Score: 7 | Weighted: 0.70**
+**Raw Score: 8 | Weighted: 0.80**
 
 Analysis for Visual Spectacle dimension.
 
@@ -63,9 +63,9 @@ Analysis for Conceptual Density dimension.
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 6
+### 7. Narrative Resolution (15%) — Score: 7.5
 
-**Raw Score: 6 | Weighted: 0.90**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Narrative Resolution dimension.
 
@@ -76,17 +76,17 @@ Analysis for Narrative Resolution dimension.
 | Characters & Acting | 9 | 20% | 1.80 |
 | World Building | 8.5 | 15% | 1.27 |
 | Cinematography | 7 | 10% | 0.70 |
-| Visual Spectacle | 7 | 10% | 0.70 |
+| Visual Spectacle | 8 | 10% | 0.80 |
 | Conceptual Density | 9 | 15% | 1.35 |
 | Narrative Drive | 7 | 15% | 1.05 |
-| Narrative Resolution | 6 | 15% | 0.90 |
-| **FINAL SCORE** | | | **7.78** |
+| Narrative Resolution | 7.5 | 15% | 1.13 |
+| **FINAL SCORE** | | | **8.10** |
 
 ---
 
-## Why It Ranks #38
+## Why It Ranks #10
 
-Deadwood achieves a final score of 7.78 based on its performance across all seven dimensions.
+Deadwood achieves a final score of 8.10.
 
 ---
 

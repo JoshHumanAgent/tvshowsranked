@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #29 |
-| **Score** | 7.88 |
+| **Rank** | #41 |
+| **Score** | 7.78 |
 | **Year** | 2023 |
 | **Episodes** | 10 |
 | **Genres** | drama, comedy |
@@ -33,9 +33,9 @@ The finale is devastating — not because of violence, but because of recognitio
 
 ## 7-Dimension Scoring Breakdown
 
-### 1. Characters & Acting (20%) — Score: 8.5
+### 1. Characters & Acting (20%) — Score: 8
 
-**Raw Score: 8.5 | Weighted: 1.70**
+**Raw Score: 8 | Weighted: 1.60**
 
 Analysis for Characters & Acting dimension.
 
@@ -79,20 +79,20 @@ Analysis for Narrative Resolution dimension.
 
 | Dimension | Raw Score | Weight | Weighted |
 |-----------|-----------|--------|----------|
-| Characters & Acting | 8.5 | 20% | 1.70 |
+| Characters & Acting | 8 | 20% | 1.60 |
 | World Building | 6.5 | 15% | 0.97 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 5 | 10% | 0.50 |
 | Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 9 | 15% | 1.35 |
 | Narrative Resolution | 9 | 15% | 1.35 |
-| **FINAL SCORE** | | | **7.88** |
+| **FINAL SCORE** | | | **7.78** |
 
 ---
 
-## Why It Ranks #29
+## Why It Ranks #41
 
-Beef achieves a final score of 7.88 based on its performance across all seven dimensions.
+Beef achieves a final score of 7.78.
 
 ---
 

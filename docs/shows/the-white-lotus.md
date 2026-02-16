@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #48 |
+| **Rank** | #55 |
 | **Score** | 7.70 |
 | **Year** | 2021 |
 | **Episodes** | 21 |
@@ -84,9 +84,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #48
+## Why It Ranks #55
 
-The White Lotus achieves a final score of 7.70 based on its performance across all seven dimensions.
+The White Lotus achieves a final score of 7.70.
 
 ---
 

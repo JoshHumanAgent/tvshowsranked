@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #47 |
-| **Score** | 7.70 |
+| **Rank** | #45 |
+| **Score** | 7.78 |
 | **Year** | 2011 |
 | **Episodes** | 29 |
 | **Genres** | sci-fi, drama, thriller |
@@ -55,9 +55,9 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 9
+### 5. Conceptual Density (15%) — Score: 9.5
 
-**Raw Score: 9 | Weighted: 1.35**
+**Raw Score: 9.5 | Weighted: 1.43**
 
 Analysis for Conceptual Density dimension.
 
@@ -81,16 +81,16 @@ Analysis for Narrative Resolution dimension.
 | World Building | 7 | 15% | 1.05 |
 | Cinematography | 8 | 10% | 0.80 |
 | Visual Spectacle | 7 | 10% | 0.70 |
-| Conceptual Density | 9 | 15% | 1.35 |
+| Conceptual Density | 9.5 | 15% | 1.43 |
 | Narrative Drive | 8 | 15% | 1.20 |
 | Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **7.70** |
+| **FINAL SCORE** | | | **7.78** |
 
 ---
 
-## Why It Ranks #47
+## Why It Ranks #45
 
-Black Mirror achieves a final score of 7.70 based on its performance across all seven dimensions.
+Black Mirror achieves a final score of 7.78.
 
 ---
 

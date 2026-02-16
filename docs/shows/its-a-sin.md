@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #17 |
-| **Score** | 8.02 |
+| **Rank** | #37 |
+| **Score** | 7.80 |
 | **Year** | 2021 |
 | **Episodes** | 5 |
 | **Genres** | drama |
@@ -65,9 +65,9 @@ Analysis for Conceptual Density dimension.
 
 Analysis for Narrative Drive dimension.
 
-### 7. Narrative Resolution (15%) — Score: 10
+### 7. Narrative Resolution (15%) — Score: 8.5
 
-**Raw Score: 10 | Weighted: 1.50**
+**Raw Score: 8.5 | Weighted: 1.27**
 
 Analysis for Narrative Resolution dimension.
 
@@ -81,14 +81,14 @@ Analysis for Narrative Resolution dimension.
 | Visual Spectacle | 6 | 10% | 0.60 |
 | Conceptual Density | 8 | 15% | 1.20 |
 | Narrative Drive | 8 | 15% | 1.20 |
-| Narrative Resolution | 10 | 15% | 1.50 |
-| **FINAL SCORE** | | | **8.02** |
+| Narrative Resolution | 8.5 | 15% | 1.27 |
+| **FINAL SCORE** | | | **7.80** |
 
 ---
 
-## Why It Ranks #17
+## Why It Ranks #37
 
-It's a Sin achieves a final score of 8.02 based on its performance across all seven dimensions.
+It's a Sin achieves a final score of 7.80.
 
 ---
 

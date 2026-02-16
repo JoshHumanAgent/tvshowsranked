@@ -6,7 +6,7 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #36 |
+| **Rank** | #39 |
 | **Score** | 7.80 |
 | **Year** | 2021 |
 | **Episodes** | 10 |
@@ -78,9 +78,9 @@ Analysis for Narrative Resolution dimension.
 
 ---
 
-## Why It Ranks #36
+## Why It Ranks #39
 
-The Underground Railroad achieves a final score of 7.80 based on its performance across all seven dimensions.
+The Underground Railroad achieves a final score of 7.80.
 
 ---
 

@@ -6,8 +6,8 @@
 
 | Attribute | Details |
 |-----------|---------|
-| **Rank** | #71 |
-| **Score** | 7.38 |
+| **Rank** | #74 |
+| **Score** | 7.45 |
 | **Year** | 2010 |
 | **Episodes** | 78 |
 | **Genres** | crime, drama, thriller |
@@ -57,9 +57,9 @@ Analysis for Cinematography dimension.
 
 Analysis for Visual Spectacle dimension.
 
-### 5. Conceptual Density (15%) — Score: 7
+### 5. Conceptual Density (15%) — Score: 7.5
 
-**Raw Score: 7 | Weighted: 1.05**
+**Raw Score: 7.5 | Weighted: 1.13**
 
 Analysis for Conceptual Density dimension.
 
@@ -83,16 +83,16 @@ Analysis for Narrative Resolution dimension.
 | World Building | 7.5 | 15% | 1.13 |
 | Cinematography | 7 | 10% | 0.70 |
 | Visual Spectacle | 5 | 10% | 0.50 |
-| Conceptual Density | 7 | 15% | 1.05 |
+| Conceptual Density | 7.5 | 15% | 1.13 |
 | Narrative Drive | 8 | 15% | 1.20 |
 | Narrative Resolution | 8 | 15% | 1.20 |
-| **FINAL SCORE** | | | **7.38** |
+| **FINAL SCORE** | | | **7.45** |
 
 ---
 
-## Why It Ranks #71
+## Why It Ranks #74
 
-Justified achieves a final score of 7.38 based on its performance across all seven dimensions.
+Justified achieves a final score of 7.45.
 
 ---
 
