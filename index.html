@@ -2295,10 +2295,13 @@
                 min-width: 100px !important;
                 flex-shrink: 0 !important;
                 border-radius: 6px 0 0 6px !important;
+                height: auto !important;
+                align-self: stretch !important;
             }
             .show-poster img {
-                height: auto !important;
+                height: 100% !important;
                 width: 100% !important;
+                object-fit: cover !important;
             }
             .show-card-panel {
                 border-radius: 0 6px 6px 0 !important;
@@ -2356,10 +2359,12 @@
                 width: 120px !important;
                 min-width: 120px !important;
                 flex-shrink: 0 !important;
+                align-self: stretch !important;
             }
             .show-poster img {
-                height: auto !important;
+                height: 100% !important;
                 width: 100% !important;
+                object-fit: cover !important;
             }
             .show-card-panel {
                 padding: 0.5rem 0.75rem !important;
@@ -3374,11 +3379,11 @@
 
                 const showTitleEscaped = show.title.replace(/"/g, '&quot;');
                 return `
-                <div class="show-module" data-show-title="${showTitleEscaped}" style="display:flex;gap:0;margin-bottom:0.5rem;animation:fadeIn 0.4s ease-out;animation-delay:${idx*40}ms;animation-fill-mode:both;align-items:flex-start;">
-                    <!-- Poster - larger image -->
-                    <div class="show-poster" style="width:200px;min-width:200px;background:#1a1a24;border-radius:8px 0 0 8px;position:relative;flex-shrink:0;box-shadow:4px 0 20px rgba(0,0,0,0.4);overflow:hidden;">
+                <div class="show-module" data-show-title="${showTitleEscaped}" style="display:flex;gap:0;margin-bottom:0.5rem;animation:fadeIn 0.4s ease-out;animation-delay:${idx*40}ms;animation-fill-mode:both;align-items:stretch;">
+                    <!-- Poster - full height of card -->
+                    <div class="show-poster" style="width:200px;min-width:200px;height:100%;background:#1a1a24;border-radius:8px 0 0 8px;position:relative;flex-shrink:0;box-shadow:4px 0 20px rgba(0,0,0,0.4);overflow:hidden;align-self:stretch;">
                         ${show.poster
-                            ? `<img src="${show.poster}" alt="${show.title}" style="width:100%;height:auto;display:block;">`
+                            ? `<img src="${show.poster}" alt="${show.title}" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">`
                             : `<span style="font-family:Unna,serif;font-size:5rem;color:rgba(255,255,255,0.12);font-weight:900;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;">${show.title.charAt(0)}</span>`
                         }
                         <!-- Rank badge -->
