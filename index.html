@@ -408,9 +408,58 @@
             color: var(--text-muted);
         }
         
-        /* Clickable card cursor */
-        .show-module {
-            cursor: pointer;
+        /* External Ratings */
+        .show-detail-external {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .external-ratings-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .external-rating {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0.5rem 0.75rem;
+            background: rgba(20, 20, 28, 0.5);
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+        
+        .rating-source {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+        }
+        
+        .rating-value {
+            font-family: 'Unna', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        
+        .rating-count {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+        
+        /* Consensus Section */
+        .show-detail-consensus {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid var(--gold-dim);
+        }
+        
+        .consensus-content p {
+            font-style: italic;
+            color: var(--text);
+            line-height: 1.8;
         }
         
         .show-card-panel {
@@ -3515,10 +3564,25 @@
             `;
             showDetailModal.classList.add('visible');
             
-            // Fetch narrative content
+            // Fetch both HTML and JSON data
             let narrativeHtml = '';
-            let dimensionsHtml = '';
+            let whyItRanksHtml = '';
+            let externalRatingsHtml = '';
+            let consensusHtml = '';
+            let showData = null;
+            
             try {
+                // Fetch JSON data for external ratings and consensus
+                const jsonResponse = await fetch(`data/shows/${show.slug}.json`);
+                if (jsonResponse.ok) {
+                    showData = await jsonResponse.json();
+                }
+            } catch (err) {
+                // JSON might not exist, continue
+            }
+            
+            try {
+                // Fetch HTML for narrative and why it ranks
                 const response = await fetch(`docs/shows/${show.slug}.html`);
                 if (response.ok) {
                     const html = await response.text();
@@ -3535,24 +3599,70 @@
                             nextEl = nextEl.nextElementSibling;
                         }
                         narrativeHtml = content || '<p>Narrative content available on full page.</p>';
-                    } else {
-                        narrativeHtml = '<p><a href="docs/shows/' + show.slug + '.html" style="color:var(--gold);">Read full analysis →</a></p>';
                     }
                     
-                    // Extract "7-Dimension Scoring Breakdown" section
-                    const dimHeading = Array.from(doc.querySelectorAll('h2')).find(h => h.textContent.includes('7-Dimension Scoring'));
-                    if (dimHeading) {
+                    // Extract "Why It Ranks" section
+                    const whyHeading = Array.from(doc.querySelectorAll('h2')).find(h => h.textContent.includes('Why It Ranks'));
+                    if (whyHeading) {
                         let content = '';
-                        let nextEl = dimHeading.nextElementSibling;
+                        let nextEl = whyHeading.nextElementSibling;
                         while (nextEl && !nextEl.tagName.match(/^H2$/i)) {
                             content += nextEl.outerHTML;
                             nextEl = nextEl.nextElementSibling;
                         }
-                        dimensionsHtml = content;
+                        whyItRanksHtml = content;
                     }
                 }
             } catch (err) {
-                narrativeHtml = '<p><a href="docs/shows/' + show.slug + '.html" style="color:var(--gold);">Read full analysis →</a></p>';
+                narrativeHtml = narrativeHtml || '<p>Full analysis available soon.</p>';
+            }
+            
+            // Build external ratings HTML from JSON data
+            if (showData && showData.external_ratings) {
+                const ratings = showData.external_ratings;
+                let ratingsItems = [];
+                
+                if (ratings.imdb) {
+                    ratingsItems.push(`
+                        <div class="external-rating">
+                            <span class="rating-source">IMDB</span>
+                            <span class="rating-value">${ratings.imdb.score}/${ratings.imdb.scale}</span>
+                            ${ratings.imdb.count ? `<span class="rating-count">${ratings.imdb.count} ratings</span>` : ''}
+                        </div>
+                    `);
+                }
+                
+                if (ratings.rotten_tomatoes) {
+                    const rtScore = ratings.rotten_tomatoes.season_1?.score || ratings.rotten_tomatoes.score;
+                    ratingsItems.push(`
+                        <div class="external-rating">
+                            <span class="rating-source">Rotten Tomatoes</span>
+                            <span class="rating-value">${rtScore}%</span>
+                        </div>
+                    `);
+                }
+                
+                if (ratings.metacritic) {
+                    ratingsItems.push(`
+                        <div class="external-rating">
+                            <span class="rating-source">Metacritic</span>
+                            <span class="rating-value">${ratings.metacritic.score}/${ratings.metacritic.scale}</span>
+                        </div>
+                    `);
+                }
+                
+                if (ratingsItems.length > 0) {
+                    externalRatingsHtml = `
+                        <div class="external-ratings-grid">
+                            ${ratingsItems.join('')}
+                        </div>
+                    `;
+                }
+            }
+            
+            // Build consensus highlights
+            if (showData && showData.consensus_highlights) {
+                consensusHtml = `<div class="consensus-content"><p>${showData.consensus_highlights}</p></div>`;
             }
             
             // Build the category breakdown HTML
@@ -3599,13 +3709,26 @@
                             <span class="show-detail-final-score ${tier}">${show.final.toFixed(2)}</span>
                             <span class="show-detail-score-label">final score</span>
                         </div>
+                        ${externalRatingsHtml ? `<div class="show-detail-external">${externalRatingsHtml}</div>` : ''}
                     </div>
                 </div>
                 <div class="show-detail-body">
+                    ${consensusHtml ? `
+                    <div class="show-detail-section show-detail-consensus">
+                        <h3>Critical Consensus</h3>
+                        ${consensusHtml}
+                    </div>
+                    ` : ''}
                     <div class="show-detail-section show-detail-narrative">
                         <h3>What It Feels Like to Watch</h3>
                         <div class="narrative-content">${narrativeHtml || '<p>Full narrative analysis coming soon.</p>'}</div>
                     </div>
+                    ${whyItRanksHtml ? `
+                    <div class="show-detail-section">
+                        <h3>Why It Ranks #${show.rank}</h3>
+                        ${whyItRanksHtml}
+                    </div>
+                    ` : ''}
                     <div class="show-detail-section">
                         <h3>7-Dimension Scoring</h3>
                         ${categoryHtml}
