@@ -6,6 +6,9 @@
     <meta name="description" content="Dynamic Rank Engine - AI-powered custom rankings across any category">
     <title>Dynamic Rank Engine</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Unna:wght@400;700&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
     <style>
         :root {
             --bg: #0a0a0f;
@@ -2769,6 +2772,220 @@
                 padding: 0.55rem 2.25rem 0.55rem 0.875rem;
             }
         }
+        /* Auth styles */
+        .auth-container {
+            position: absolute;
+            top: 25px;
+            right: 80px;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .auth-btn {
+            background: transparent;
+            border: 1px solid var(--gold-dim);
+            color: var(--gold);
+            padding: 0.4rem 1rem;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-radius: 2px;
+        }
+        .auth-btn:hover {
+            background: var(--gold-glow);
+            border-color: var(--gold);
+        }
+        .auth-user-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .auth-user-info img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1px solid var(--gold-dim);
+        }
+        .auth-user-info .auth-user-name {
+            color: var(--text-muted);
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.75rem;
+            max-width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .auth-signout-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 0.25rem 0.6rem;
+            font-size: 0.7rem;
+            cursor: pointer;
+            font-family: 'Source Sans 3', sans-serif;
+            border-radius: 2px;
+            transition: all 0.2s;
+        }
+        .auth-signout-btn:hover {
+            border-color: var(--border-hover);
+            color: var(--text);
+        }
+        .auth-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+        }
+        .auth-modal.visible {
+            display: flex;
+        }
+        .auth-modal-content {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+        }
+        .auth-modal-content h2 {
+            font-family: 'Unna', serif;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .auth-modal-close {
+            position: absolute;
+            top: 0.75rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .auth-modal-close:hover { color: var(--text); }
+        .auth-google-btn {
+            width: 100%;
+            padding: 0.7rem;
+            background: #fff;
+            color: #333;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .auth-google-btn:hover { background: #f0f0f0; }
+        .auth-divider {
+            display: flex;
+            align-items: center;
+            margin: 1.25rem 0;
+            gap: 0.75rem;
+        }
+        .auth-divider::before,
+        .auth-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+        .auth-divider span {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+        .auth-form input {
+            width: 100%;
+            padding: 0.65rem 0.75rem;
+            margin-bottom: 0.75rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text);
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.9rem;
+        }
+        .auth-form input:focus {
+            outline: none;
+            border-color: var(--gold-dim);
+        }
+        .auth-submit {
+            width: 100%;
+            padding: 0.7rem;
+            background: var(--gold);
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .auth-submit:hover { background: #e0be4a; }
+        .auth-error {
+            color: #e74c3c;
+            font-size: 0.8rem;
+            margin-top: 0.75rem;
+            text-align: center;
+            font-family: 'Source Sans 3', sans-serif;
+            min-height: 1.2em;
+        }
+        .auth-toggle {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: 'Source Sans 3', sans-serif;
+        }
+        .auth-toggle button {
+            background: none;
+            border: none;
+            color: var(--gold);
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-family: 'Source Sans 3', sans-serif;
+            text-decoration: underline;
+        }
+        .auth-toggle button:hover { color: #e0be4a; }
+        .sync-status {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            font-family: 'Source Sans 3', sans-serif;
+        }
+        .sync-status.saving { color: var(--gold-dim); }
+        .sync-status.saved { color: #4ade80; }
+        .sync-status.error { color: #e74c3c; }
+
+        @media (max-width: 768px) {
+            .auth-container {
+                top: 10px;
+                right: 10px;
+            }
+            .auth-btn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.7rem;
+            }
+            .auth-user-info .auth-user-name {
+                display: none;
+            }
+            .auth-modal-content {
+                padding: 1.5rem;
+                width: 95%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -2814,6 +3031,11 @@
                 <span style="font-size:0.65rem;color:#555566;text-transform:uppercase;letter-spacing:0.12em;">Updated</span>
                 <span class="num" style="font-family:'Unna',serif;font-size:1.4rem;font-weight:600;color:#8a8a9a;display:block;line-height:1;">February 2026</span>
             </div>
+        </div>
+
+        <div class="auth-container" id="auth-container">
+            <span class="sync-status" id="sync-status"></span>
+            <button class="auth-btn" id="auth-btn">Sign In</button>
         </div>
 
         <!-- Bottom decorative line -->
@@ -3070,9 +3292,42 @@
         </div>
     </div>
 
+    <div class="auth-modal" id="auth-modal">
+        <div class="auth-modal-content">
+            <button class="auth-modal-close" id="auth-modal-close">&times;</button>
+            <h2 id="auth-modal-title">Sign In</h2>
+            <button class="auth-google-btn" id="google-signin">Continue with Google</button>
+            <div class="auth-divider"><span>or</span></div>
+            <form class="auth-form" id="auth-form">
+                <input type="email" id="auth-email" placeholder="Email" required>
+                <input type="password" id="auth-password" placeholder="Password" required>
+                <button type="submit" class="auth-submit" id="auth-submit">Sign In</button>
+            </form>
+            <div class="auth-error" id="auth-error"></div>
+            <p class="auth-toggle">
+                <span id="auth-toggle-text">Don't have an account?</span>
+                <button type="button" id="auth-toggle-btn">Register</button>
+            </p>
+        </div>
+    </div>
+
     <script>
         const TMDB_API_KEY = 'ca9b21cb89de2d1debed1050f603d7ad';
         const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w500';
+
+        // Firebase setup — config from Firebase Console
+        const firebaseConfig = {
+            apiKey: "AIzaSyBv1YGqfEqoo4b6BCVgS1TOMtSuFxc-AEE",
+            authDomain: "dynamic-rank-engine.firebaseapp.com",
+            projectId: "dynamic-rank-engine",
+            storageBucket: "dynamic-rank-engine.firebasestorage.app",
+            messagingSenderId: "401210721108",
+            appId: "1:401210721108:web:32cd33854cd30646dabec1"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        let currentUser = null;
 
         // Dynamic data loading from JSON
         let shows = [];
@@ -3350,6 +3605,7 @@
                 });
             });
             localStorage.setItem('tvranked_score_overrides', JSON.stringify(overrides));
+            debouncedSave();
         }
 
         // Initialize weight sliders
@@ -3373,6 +3629,7 @@
                     weights[key] = value;
                     document.getElementById(`weight-value-${key}`).textContent = value + '%';
                     updateWeightTotal();
+                    debouncedSave();
                 });
             });
 
@@ -3405,11 +3662,13 @@
             weights = { ...defaultWeights };
             initWeightSliders();
             recalculateWithWeights();
+            debouncedSave();
         });
 
         // Recalculate on button click
         document.getElementById('recalc-weights-header')?.addEventListener('click', () => {
             recalculateWithWeights();
+            debouncedSave();
         });
 
         // Recalculate rankings with custom weights (shared function)
@@ -3517,6 +3776,7 @@
             shows.slice(0, 5).forEach((s, i) => console.log(`  ${i+1}. ${s.title.substring(0,20)}: ${s.final}`));
 
             renderShows();
+            debouncedSave();
         });
 
         // Initialize on load
@@ -3683,6 +3943,7 @@
             }
             renderPinnedShows();
             renderShows();
+            debouncedSave();
         }
 
         function renderShows() {
@@ -3924,6 +4185,7 @@
             document.querySelector('#genre-filters .fp-genre-pill[data-genre="all"]').classList.add('active');
 
             renderShows();
+            debouncedSave();
         };
 
         // Era buttons (multi-select)
@@ -3943,6 +4205,7 @@
                     document.querySelector('#era-filters .fp-era-chip[data-filter="all"]').classList.remove('active');
                 }
                 renderShows();
+                debouncedSave();
             });
         });
 
@@ -3975,6 +4238,7 @@
                     }
                 }
                 renderShows();
+                debouncedSave();
             });
         });
 
@@ -4003,6 +4267,7 @@
                     document.querySelector('.filters-tab[data-tab="filters"]').classList.add('active');
                     document.getElementById('tab-filters').classList.add('active');
                     renderShows();
+                    debouncedSave();
                 }
             }
         });
@@ -4020,6 +4285,7 @@
         sortSelect.addEventListener('change', (e) => {
             sortBy = e.target.value;
             renderShows();
+            debouncedSave();
         });
 
         // Pin button handlers
@@ -4772,6 +5038,7 @@
             const isCollapsed = filtersContent.classList.contains('collapsed');
             filtersArrow.textContent = isCollapsed ? '▶' : '▼';
             localStorage.setItem('tvranked_filters_collapsed', isCollapsed);
+            debouncedSave();
         });
 
         // ---- Tab Switching ----
@@ -4798,6 +5065,221 @@
 
         // Ensure list is visible
         document.getElementById('rankings').style.display = 'flex';
+
+        // ============================================================
+        // FIREBASE AUTH + SYNC
+        // ============================================================
+        let saveTimeout = null;
+        let isRegistering = false;
+
+        function updateAuthUI(user) {
+            const container = document.getElementById('auth-container');
+            const syncStatus = document.getElementById('sync-status');
+            if (user) {
+                const photoHTML = user.photoURL
+                    ? `<img src="${user.photoURL}" alt="">`
+                    : '';
+                const displayName = user.displayName || user.email.split('@')[0];
+                container.innerHTML = `
+                    <span class="sync-status" id="sync-status"></span>
+                    <div class="auth-user-info">
+                        ${photoHTML}
+                        <span class="auth-user-name">${displayName}</span>
+                        <button class="auth-signout-btn" id="auth-signout">Sign Out</button>
+                    </div>
+                `;
+                document.getElementById('auth-signout').addEventListener('click', () => {
+                    auth.signOut();
+                });
+            } else {
+                container.innerHTML = `
+                    <span class="sync-status" id="sync-status"></span>
+                    <button class="auth-btn" id="auth-btn">Sign In</button>
+                `;
+                document.getElementById('auth-btn').addEventListener('click', () => {
+                    document.getElementById('auth-modal').classList.add('visible');
+                });
+            }
+        }
+
+        function setSyncStatus(status) {
+            const el = document.getElementById('sync-status');
+            if (!el) return;
+            el.className = 'sync-status';
+            if (status === 'saving') { el.textContent = 'Saving...'; el.classList.add('saving'); }
+            else if (status === 'saved') { el.textContent = 'Synced'; el.classList.add('saved'); setTimeout(() => { el.textContent = ''; }, 2000); }
+            else if (status === 'error') { el.textContent = 'Sync error'; el.classList.add('error'); }
+            else { el.textContent = ''; }
+        }
+
+        async function saveUserPreferences() {
+            if (!currentUser) return;
+            const overrides = {};
+            modifiedShows.forEach(title => {
+                overrides[title] = {};
+                catKeys.forEach(key => {
+                    overrides[title][key] = activeScores[title][key];
+                });
+            });
+            const data = {
+                weights: { ...weights },
+                multiplierEnabled,
+                currentGenres: [...currentGenres],
+                currentEras: [...currentEras],
+                sortBy,
+                filtersCollapsed: document.getElementById('filters-content')?.classList.contains('collapsed') || false,
+                pinnedShows: [...pinnedShows],
+                scoreOverrides: overrides
+            };
+            try {
+                setSyncStatus('saving');
+                await db.collection('users').doc(currentUser.uid).set(data, { merge: true });
+                setSyncStatus('saved');
+            } catch (err) {
+                console.error('Failed to save preferences:', err);
+                setSyncStatus('error');
+            }
+        }
+
+        function debouncedSave() {
+            if (!currentUser) return;
+            clearTimeout(saveTimeout);
+            saveTimeout = setTimeout(saveUserPreferences, 500);
+        }
+
+        async function loadUserPreferences() {
+            if (!currentUser) return;
+            try {
+                const doc = await db.collection('users').doc(currentUser.uid).get();
+                if (!doc.exists) return;
+                const data = doc.data();
+
+                if (data.weights) {
+                    Object.assign(weights, data.weights);
+                    initWeightSliders();
+                }
+                if (typeof data.multiplierEnabled === 'boolean') {
+                    multiplierEnabled = data.multiplierEnabled;
+                    const toggle = document.getElementById('multiplier-toggle');
+                    if (toggle) toggle.checked = multiplierEnabled;
+                }
+                if (data.sortBy) {
+                    sortBy = data.sortBy;
+                    if (sortSelect) sortSelect.value = sortBy;
+                }
+                if (data.currentGenres) {
+                    currentGenres = data.currentGenres;
+                    document.querySelectorAll('#genre-filters .fp-genre-pill').forEach(p => p.classList.remove('active'));
+                    if (currentGenres.includes('all')) {
+                        document.querySelector('#genre-filters .fp-genre-pill[data-genre="all"]')?.classList.add('active');
+                    } else {
+                        currentGenres.forEach(g => {
+                            document.querySelector(`#genre-filters .fp-genre-pill[data-genre="${g}"]`)?.classList.add('active');
+                        });
+                    }
+                }
+                if (data.currentEras) {
+                    currentEras = data.currentEras;
+                    document.querySelectorAll('#era-filters .fp-era-chip').forEach(b => b.classList.remove('active'));
+                    if (currentEras.length === 0) {
+                        document.querySelector('#era-filters .fp-era-chip[data-filter="all"]')?.classList.add('active');
+                    } else {
+                        currentEras.forEach(e => {
+                            document.querySelector(`#era-filters .fp-era-chip[data-filter="${e}"]`)?.classList.add('active');
+                        });
+                    }
+                }
+                if (typeof data.filtersCollapsed === 'boolean') {
+                    const fc = document.getElementById('filters-content');
+                    const arrow = document.querySelector('.filters-toggle-arrow');
+                    if (data.filtersCollapsed) {
+                        fc?.classList.add('collapsed');
+                        if (arrow) arrow.textContent = '▶';
+                    } else {
+                        fc?.classList.remove('collapsed');
+                        if (arrow) arrow.textContent = '▼';
+                    }
+                }
+                if (data.pinnedShows) {
+                    pinnedShows = data.pinnedShows;
+                    renderPinnedShows();
+                }
+                if (data.scoreOverrides) {
+                    Object.entries(data.scoreOverrides).forEach(([title, scores]) => {
+                        if (activeScores[title]) {
+                            catKeys.forEach(key => {
+                                if (typeof scores[key] === 'number') {
+                                    activeScores[title][key] = scores[key];
+                                }
+                            });
+                            modifiedShows.add(title);
+                        }
+                    });
+                }
+
+                // Recalculate and render
+                shows.forEach(show => recalcFinal(show));
+                shows.sort((a, b) => b.final - a.final);
+                shows.forEach((s, i) => { s.rank = i + 1; });
+                renderShows();
+            } catch (err) {
+                console.error('Failed to load preferences:', err);
+            }
+        }
+
+        // Auth state listener
+        auth.onAuthStateChanged(user => {
+            currentUser = user;
+            updateAuthUI(user);
+            if (user) loadUserPreferences();
+        });
+
+        // Auth modal handlers
+        document.getElementById('auth-btn')?.addEventListener('click', () => {
+            document.getElementById('auth-modal').classList.add('visible');
+        });
+        document.getElementById('auth-modal-close').addEventListener('click', () => {
+            document.getElementById('auth-modal').classList.remove('visible');
+            document.getElementById('auth-error').textContent = '';
+        });
+        document.getElementById('auth-modal').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) {
+                e.currentTarget.classList.remove('visible');
+                document.getElementById('auth-error').textContent = '';
+            }
+        });
+        document.getElementById('google-signin').addEventListener('click', async () => {
+            try {
+                await auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+                document.getElementById('auth-modal').classList.remove('visible');
+            } catch (err) {
+                document.getElementById('auth-error').textContent = err.message;
+            }
+        });
+        document.getElementById('auth-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('auth-email').value;
+            const password = document.getElementById('auth-password').value;
+            try {
+                if (isRegistering) {
+                    await auth.createUserWithEmailAndPassword(email, password);
+                } else {
+                    await auth.signInWithEmailAndPassword(email, password);
+                }
+                document.getElementById('auth-modal').classList.remove('visible');
+                document.getElementById('auth-error').textContent = '';
+            } catch (err) {
+                document.getElementById('auth-error').textContent = err.message;
+            }
+        });
+        document.getElementById('auth-toggle-btn').addEventListener('click', () => {
+            isRegistering = !isRegistering;
+            document.getElementById('auth-modal-title').textContent = isRegistering ? 'Register' : 'Sign In';
+            document.getElementById('auth-submit').textContent = isRegistering ? 'Register' : 'Sign In';
+            document.getElementById('auth-toggle-text').textContent = isRegistering ? 'Already have an account?' : "Don't have an account?";
+            document.getElementById('auth-toggle-btn').textContent = isRegistering ? 'Sign In' : 'Register';
+            document.getElementById('auth-error').textContent = '';
+        });
 
         // ============================================================
         // AGENT INSTRUMENTATION LAYER (Invisible to users)
