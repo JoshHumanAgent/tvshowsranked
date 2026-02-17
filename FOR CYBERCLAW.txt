@@ -94,6 +94,23 @@ HOW TO AVOID THIS IN THE FUTURE:
    No special characters in show names unless absolutely necessary.
 
 
+ALSO FIXED: RANK BADGE SHOWING WRONG NUMBERS (2026-02-17)
+-----------------------------------------------------------
+
+The rank badge (top-left corner of poster) was using:
+  filtered.findIndex(s => s.title === show.title) + 1
+
+This calculates the show's POSITION in the filtered array, NOT its actual rank.
+That's wrong — it should use show.rank directly.
+
+Fixed to: show.rank
+
+Line ~3672 in index.html.
+
+NOTE FOR CYBERCLAW: Don't use findIndex for rank display. The rank is already
+stored on each show object. Just use show.rank.
+
+
 PREVIOUS CHANGES (2026-02-15):
 ==============================
 
