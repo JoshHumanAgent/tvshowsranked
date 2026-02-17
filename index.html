@@ -1152,6 +1152,26 @@
             color: var(--gold);
         }
 
+        .weight-recalc-btn-header {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dim));
+            border: none;
+            color: #1a1a2e;
+            padding: 0.4rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .weight-recalc-btn-header:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2px 12px rgba(212, 175, 55, 0.4);
+        }
+
         .weight-subheader {
             display: flex;
             align-items: center;
@@ -1195,9 +1215,9 @@
 
         .weight-slider-row {
             display: grid;
-            grid-template-columns: 1fr auto;
+            grid-template-columns: auto 1fr auto;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.5rem;
             padding: 0.5rem 0;
             border-bottom: 1px solid rgba(255,255,255,0.03);
         }
@@ -1237,6 +1257,8 @@
             position: relative;
             display: flex;
             align-items: center;
+            flex: 1;
+            height: 24px;
         }
 
         .weight-slider-input {
@@ -1248,6 +1270,8 @@
             border-radius: 4px;
             outline: none;
             cursor: pointer;
+            position: relative;
+            z-index: 1;
         }
 
         .weight-slider-input::-webkit-slider-thumb {
@@ -1267,7 +1291,64 @@
             box-shadow: 0 2px 10px rgba(212, 175, 55, 0.4);
         }
 
-        /* Episode Multiplier - Integrated */
+        /* +/- Buttons for weight adjustment */
+        .weight-adj-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid #3a3a48;
+            background: rgba(100, 116, 139, 0.15);
+            color: var(--gold);
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.15s ease;
+            flex-shrink: 0;
+        }
+
+        .weight-adj-btn:hover {
+            background: rgba(212, 175, 55, 0.2);
+            border-color: var(--gold);
+            transform: scale(1.1);
+        }
+
+        .weight-adj-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Slider grooves */
+        .weight-slider-grooves {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 8px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .weight-slider-grooves .groove {
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background: rgba(100, 116, 139, 0.4);
+            transform: translateY(-50%);
+        }
+
+        .weight-slider-grooves .groove:nth-child(5n+1) {
+            background: rgba(100, 116, 139, 0.7);
+        }
+
+        .weight-slider-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
         .episode-multiplier-section {
             display: flex;
             align-items: center;
@@ -2713,16 +2794,47 @@
             }
 
             .weight-section-title {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
+            }
+
+            .weight-header {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .weight-header-right {
+                gap: 0.4rem;
+            }
+
+            .weight-total-badge {
+                padding: 0.3rem 0.5rem;
+                font-size: 0.75rem;
+            }
+
+            .weight-recalc-btn-header {
+                padding: 0.3rem 0.5rem;
+                font-size: 0.65rem;
+            }
+
+            .weight-reset-btn {
+                padding: 0.3rem 0.5rem;
+                font-size: 0.65rem;
             }
 
             .weight-slider-label {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
             }
 
             .weight-slider-row {
-                grid-template-columns: 140px 1fr 45px;
-                gap: 0.75rem;
+                grid-template-columns: auto 1fr auto;
+                gap: 0.4rem;
+                padding: 0.4rem 0;
+            }
+
+            .weight-adj-btn {
+                width: 28px;
+                height: 28px;
+                font-size: 1rem;
             }
 
             .search-bar-fixed {
@@ -2979,12 +3091,13 @@
                             <span>Total</span>
                             <span id="weight-total-value">100%</span>
                         </div>
+                        <button class="weight-recalc-btn-header" id="recalc-weights-header">Recalculate</button>
                         <button class="weight-reset-btn" id="reset-weights">Reset</button>
                     </div>
                 </div>
                 
                 <div class="weight-subheader">
-                    <span class="weight-guidance">Adjust sliders until total reaches 100%</span>
+                    <span class="weight-guidance">Adjust sliders or use +/- buttons, then click Recalculate</span>
                     <a href="#" class="weight-methodology-btn" id="open-methodology">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M3 6h18M3 12h18M3 18h18M7 6v12M17 6v12M7 9h.01M17 9h.01"/>
@@ -3336,17 +3449,24 @@
 
             slidersContainer.innerHTML = categories.map(cat => `
                 <div class="weight-slider-row">
-                    <div class="weight-slider-header">
-                        <span class="weight-slider-label">${cat.label}</span>
-                        <span class="weight-slider-value" id="weight-value-${cat.key}">${weights[cat.key]}%</span>
+                    <button class="weight-adj-btn minus" data-key="${cat.key}" aria-label="Decrease">−</button>
+                    <div class="weight-slider-main">
+                        <div class="weight-slider-header">
+                            <span class="weight-slider-label">${cat.label}</span>
+                            <span class="weight-slider-value" id="weight-value-${cat.key}">${weights[cat.key]}%</span>
+                        </div>
+                        <div class="weight-slider-wrapper">
+                            <div class="weight-slider-grooves">
+                                ${[0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100].map(n => `<div class="groove" style="left:${n}%"></div>`).join('')}
+                            </div>
+                            <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="100" step="5" value="${weights[cat.key]}">
+                        </div>
                     </div>
-                    <div class="weight-slider-wrapper">
-                        <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="100" step="5" value="${weights[cat.key]}">
-                    </div>
+                    <button class="weight-adj-btn plus" data-key="${cat.key}" aria-label="Increase">+</button>
                 </div>
             `).join('');
 
-            // Add event listeners
+            // Add event listeners for slider input
             slidersContainer.querySelectorAll('.weight-slider-input').forEach(input => {
                 input.addEventListener('input', (e) => {
                     const key = e.target.dataset.key;
@@ -3354,12 +3474,26 @@
                     weights[key] = value;
                     document.getElementById(`weight-value-${key}`).textContent = value + '%';
                     updateWeightTotal();
+                });
+            });
 
-                    // Auto-recalculate if total = 100
-                    const total = Object.values(weights).reduce((a, b) => a + b, 0);
-                    if (total === 100) {
-                        recalculateWithWeights();
+            // Add event listeners for +/- buttons
+            slidersContainer.querySelectorAll('.weight-adj-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const key = e.target.dataset.key;
+                    let value = weights[key];
+                    if (e.target.classList.contains('plus')) {
+                        value = Math.min(100, value + 5);
+                    } else {
+                        value = Math.max(0, value - 5);
                     }
+                    weights[key] = value;
+                    
+                    // Update slider
+                    const slider = slidersContainer.querySelector(`.weight-slider-input[data-key="${key}"]`);
+                    if (slider) slider.value = value;
+                    document.getElementById(`weight-value-${key}`).textContent = value + '%';
+                    updateWeightTotal();
                 });
             });
 
@@ -3391,6 +3525,11 @@
         document.getElementById('reset-weights')?.addEventListener('click', () => {
             weights = { ...defaultWeights };
             initWeightSliders();
+            recalculateWithWeights();
+        });
+
+        // Recalculate on button click
+        document.getElementById('recalc-weights-header')?.addEventListener('click', () => {
             recalculateWithWeights();
         });
 
