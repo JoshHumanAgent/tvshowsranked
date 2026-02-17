@@ -1,0 +1,112 @@
+FOR CYBERCLAW - CHANGES LOG & NOTES
+=====================================
+
+LATEST UPDATE: 2026-02-17 — MASTER LIST SYNC FIX
+--------------------------------------------------
+
+Hey Cyberclaw, Josh asked me (Claude Opus) to fix the rankings because they
+didn't match the master list. Here's exactly what was wrong and what I fixed.
+
+
+WHAT WAS WRONG:
+===============
+
+1. THE RANKINGS WERE NOT MATCHING THE MASTER LIST
+   The source of truth is: docs/top100currentdefault.md
+   But index.json and the FALLBACK_SHOWS in index.html had different ranks,
+   different scores, and even different shows. Almost every show was in the
+   wrong position.
+
+2. EXTRA SHOW: "Pluribus" (was rank 31 in index.json)
+   This show is NOT in the master list. It should not be on the site.
+   I removed it.
+
+3. TITLE ENCODING: "Shogun (2024)" was stored with corrupted characters
+   somewhere in the pipeline — showed up as "ShÅgun (2024)" in some contexts.
+   Fixed to plain ASCII "Shogun (2024)".
+
+4. TITLE MISMATCHES:
+   - "BEEF" should be "Beef" (case)
+   - "True Detective: Season 3" should be "True Detective S3" (naming convention)
+
+5. SCORE MISMATCHES:
+   Every show had scores that didn't match the master list. For example:
+   - GoT was final: 9.53 in index.json, should be 9.45
+   - Breaking Bad was final: 8.95, should be 8.80
+   - Band of Brothers wasn't even in the top 10, should be rank 3
+   This was likely caused by rebuilding the index with different weights or
+   without applying the current weight configuration (25/15/5/5/15/15/20).
+
+6. RANK 24 GAP:
+   The master list skips rank 24 (goes 23 → 25). This is intentional.
+   There are 102 shows total, ranked 1-103 with 24 missing.
+
+
+WHAT I FIXED:
+=============
+
+Files changed:
+  - data/shows/index.json — rebuilt with all 102 shows matching master list
+  - index.html — FALLBACK_SHOWS array replaced with corrected 102 shows
+
+What I preserved from the old data:
+  - All poster URLs
+  - All streaming availability (US/UK)
+  - All TMDB IDs
+  - All slugs
+  - All month data (master list only has years)
+
+What came from the master list (source of truth):
+  - Ranks
+  - Titles
+  - Years
+  - Episode counts
+  - All 7 category scores (char, world, cine, spect, conc, drive, resol)
+  - Final scores
+  - Genres
+
+Tool used: scripts/sync-master.js
+  - This script reads the master list data (hardcoded from docs/top100currentdefault.md)
+  - Merges with metadata from the old index.json
+  - Outputs corrected index.json and FALLBACK_OUTPUT.txt
+  - Run with: node scripts/sync-master.js
+  - You can re-run this anytime to re-sync if data drifts
+
+
+HOW TO AVOID THIS IN THE FUTURE:
+=================================
+
+1. NEVER regenerate index.json by recalculating scores from scratch.
+   The master list (docs/top100currentdefault.md) has the FINAL scores.
+   Use those directly.
+
+2. If you need to rebuild index.json, use scripts/sync-master.js.
+   It pulls scores from the master list and metadata from existing data.
+
+3. Don't add shows that aren't in the master list. If Josh wants to add
+   a show, it goes in the master list FIRST, then gets synced to the site.
+
+4. The default weights in index.html are 25/15/5/5/15/15/20.
+   These match the master list. Don't change them without updating the
+   master list too.
+
+5. Watch out for title encoding — use plain ASCII for all titles.
+   No special characters in show names unless absolutely necessary.
+
+
+PREVIOUS CHANGES (2026-02-15):
+==============================
+
+FEATURE: Per-Category Score Sliders on Every Show Card
+- Every category bar has a range slider overlaid on it (0-10, step 0.5)
+- Live score/ranking updates while dragging
+- Modified values show blue tint (#60a5fa)
+- Fixed bottom save bar with Save/Export/Import/Reset
+- localStorage persistence (tvranked_score_overrides key)
+- JSON export/import for portability
+- recalcFinal(show) is the shared calculation formula
+- Pinned shows stored by title (not rank, since ranks are mutable)
+
+---
+This doc will be updated whenever changes are made from this end.
+Push both index.html and data/shows/index.json to make this live.
