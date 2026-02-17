@@ -4351,12 +4351,15 @@
         // ---- Per-card slider event handling ----
         let reorderDebounce = null;
         let sliderDragState = new Map();
+        let activeSliderShow = null; // Track show being edited for auto-scroll
 
         // Prevent slider drags from opening category modal
         list.addEventListener('mousedown', (e) => {
             if (e.target.classList.contains('cat-slider-input')) {
                 e.stopPropagation();
                 sliderDragState.set(e.target, { isDragging: true });
+                // Track which show is being edited
+                activeSliderShow = e.target.dataset.show;
             }
         }, true);
         list.addEventListener('touchstart', (e) => {
@@ -4375,6 +4378,13 @@
                     return;
                 }
                 sliderDragState.delete(e.target);
+            }
+        }, true);
+
+        // Clear active slider show when user clicks somewhere else
+        document.addEventListener('click', (e) => {
+            if (!e.target.classList.contains('cat-slider-input')) {
+                activeSliderShow = null;
             }
         }, true);
 
@@ -4487,6 +4497,17 @@
             if (reorderDebounce) { clearTimeout(reorderDebounce); reorderDebounce = null; }
             checkAndReorder();
             saveOverridesToStorage();
+            
+            // Scroll to the edited show after release
+            const title = e.target.dataset.show;
+            if (title) {
+                setTimeout(() => {
+                    const card = list.querySelector(`.show-module[data-show-title="${CSS.escape(title)}"]`);
+                    if (card) {
+                        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }, 50);
+            }
         });
 
         function checkAndReorder() {
@@ -4534,6 +4555,14 @@
 
             // Refresh pinned shows
             renderPinnedShows();
+
+            // Auto-scroll to the show being edited (if still editing)
+            if (activeSliderShow) {
+                const activeCard = list.querySelector(`.show-module[data-show-title="${CSS.escape(activeSliderShow)}"]`);
+                if (activeCard) {
+                    activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
         }
 
         // ---- Save / Export / Import / Reset ----
