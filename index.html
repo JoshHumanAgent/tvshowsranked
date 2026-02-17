@@ -1015,32 +1015,6 @@
             z-index: 100;
         }
 
-        .filter-group {
-            margin-bottom: 1.25rem;
-        }
-
-        .filter-group:last-child {
-            margin-bottom: 0;
-        }
-
-        .filter-label {
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 0.65rem;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: #64748b;
-            margin-bottom: 0.6rem;
-            display: block;
-            font-weight: 500;
-        }
-
-        .filter-row {
-            display: flex;
-            gap: 0.4rem;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
         .search-wrapper {
             position: relative;
             flex: 1;
@@ -1072,25 +1046,210 @@
             color: #555566;
         }
 
-        /* Weight Adjustment - Redesigned */
-        .weight-group {
-            background: linear-gradient(180deg, rgba(20,20,28,0.95), rgba(15,15,22,0.98));
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
+        /* Tab bar */
+        .filters-tab-bar {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid #2a2a38;
             margin-bottom: 1rem;
         }
 
-        .weight-header {
+        .filters-tab {
+            padding: 0.6rem 1.25rem;
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: #8a8a9a;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filters-tab:hover {
+            color: #c0c0c8;
+        }
+
+        .filters-tab.active {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+        }
+
+        .filters-tab-panel {
+            display: none;
+        }
+
+        .filters-tab-panel.active {
+            display: block;
+        }
+
+        /* Filter sections */
+        .fp-section {
+            margin-bottom: 1rem;
+        }
+
+        .fp-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .fp-section-label {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+            display: block;
+            font-weight: 500;
+        }
+
+        .fp-era-chips {
+            display: flex;
+            gap: 0.35rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .fp-era-chip {
+            padding: 0.35rem 0.7rem;
+            background: transparent;
+            border: 1px solid #3a3a48;
+            color: #8a8a9a;
+            cursor: pointer;
+            border-radius: 100px;
+            font-size: 0.65rem;
+            font-family: 'Source Sans 3', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            transition: all 0.2s ease;
+        }
+
+        .fp-era-chip:hover {
+            border-color: #64748b;
+            color: #c0c0c8;
+            background: rgba(100, 116, 139, 0.1);
+        }
+
+        .fp-era-chip.active {
+            background: #64748b;
+            color: #ffffff;
+            border-color: #64748b;
+            font-weight: 600;
+        }
+
+        .fp-genre-pills {
+            display: flex;
+            gap: 0.35rem;
+            flex-wrap: wrap;
+        }
+
+        .fp-genre-pill {
+            padding: 0.3rem 0.65rem;
+            background: transparent;
+            border: 1px solid #3a3a48;
+            color: #8a8a9a;
+            cursor: pointer;
+            border-radius: 100px;
+            font-size: 0.65rem;
+            font-family: 'Source Sans 3', sans-serif;
+            transition: all 0.2s ease;
+            letter-spacing: 0.03em;
+            text-transform: lowercase;
+        }
+
+        .fp-genre-pill:hover {
+            border-color: #64748b;
+            color: #c0c0c8;
+            background: rgba(100, 116, 139, 0.1);
+        }
+
+        .fp-genre-pill.active {
+            background: #64748b;
+            color: #ffffff;
+            border-color: #64748b;
+            font-weight: 500;
+        }
+
+        .fp-sort-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .fp-sort-select {
+            padding: 0.35rem 0.75rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+
+        .fp-sort-select:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        /* Active filter tags */
+        .active-filters {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.75rem;
+        }
+
+        .active-filters:empty {
+            display: none;
+        }
+
+        .active-filter-tag {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.2rem 0.45rem;
+            background: var(--gold-glow);
+            border: 1px solid var(--gold-dim);
+            border-radius: 4px;
+            font-size: 0.65rem;
+            color: var(--gold);
+        }
+
+        .active-filter-tag button {
+            background: none;
+            border: none;
+            color: var(--gold);
+            cursor: pointer;
+            padding: 0;
+            font-size: 0.85rem;
+        }
+
+        .clear-all {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            background: none;
+            border: none;
+            text-decoration: underline;
+        }
+
+        /* Weights tab */
+        .wt-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1rem;
             padding-bottom: 0.75rem;
             border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
-        .weight-section-title {
+        .wt-title {
             font-family: 'Unna', serif;
             font-size: 1.3rem;
             font-weight: 600;
@@ -1100,46 +1259,67 @@
             background-clip: text;
         }
 
-        .weight-header-right {
+        .wt-controls {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.6rem;
         }
 
-        .weight-total-badge {
+        .wt-total-badge {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.4rem 0.75rem;
+            gap: 0.4rem;
+            padding: 0.35rem 0.65rem;
             background: rgba(34, 197, 94, 0.1);
             border: 1px solid rgba(34, 197, 94, 0.4);
             border-radius: 6px;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             color: #22c55e;
         }
 
-        .weight-total-badge.invalid {
+        .wt-total-badge.invalid {
             background: rgba(239, 68, 68, 0.1);
             border-color: rgba(239, 68, 68, 0.4);
             color: #ef4444;
         }
 
-        .weight-total-badge span:first-child {
-            font-size: 0.65rem;
+        .wt-total-badge span:first-child {
+            font-size: 0.6rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
             opacity: 0.8;
         }
 
-        .weight-reset-btn {
+        .wt-recalc-btn {
+            background: linear-gradient(135deg, var(--gold), #c4a035);
+            border: none;
+            color: #1a1a1e;
+            padding: 0.4rem 0.85rem;
+            border-radius: 6px;
+            font-size: 0.6rem;
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            box-shadow: 0 3px 10px rgba(212,175,55,0.25);
+        }
+
+        .wt-recalc-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 16px rgba(212, 175, 55, 0.4);
+        }
+
+        .wt-reset-btn {
             background: linear-gradient(145deg, rgba(30,30,40,0.9), rgba(20,20,30,0.9));
             border: 1px solid rgba(100,116,139,0.25);
             color: var(--text-muted);
-            padding: 0.4rem 0.75rem;
+            padding: 0.4rem 0.65rem;
             border-radius: 6px;
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             font-family: 'Source Sans 3', sans-serif;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -1147,344 +1327,152 @@
             letter-spacing: 0.05em;
         }
 
-        .weight-reset-btn:hover {
+        .wt-reset-btn:hover {
             border-color: rgba(212,175,55,0.4);
             color: var(--gold);
-            background: linear-gradient(145deg, rgba(40,40,55,0.9), rgba(30,30,45,0.9));
         }
 
-        .weight-recalc-btn-header {
-            background: linear-gradient(135deg, var(--gold), #c4a035);
-            border: none;
-            color: #1a1a1e;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-size: 0.65rem;
-            font-family: 'Source Sans 3', sans-serif;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            box-shadow: 0 4px 12px rgba(212,175,55,0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .weight-recalc-btn-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s;
-        }
-
-        .weight-recalc-btn-header:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
-        }
-
-        .weight-recalc-btn-header:hover::before {
-            left: 100%;
-        }
-
-        .weight-recalc-btn-header:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 8px rgba(212,175,55,0.3);
-        }
-
-        .weight-subheader {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.25rem;
-            flex-wrap: wrap;
-        }
-
-        .weight-guidance {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        .weight-methodology-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            color: var(--gold);
-            text-decoration: none;
-            font-size: 0.75rem;
-            font-weight: 500;
-            padding: 0.4rem 0.75rem;
-            border: 1px solid var(--gold);
-            border-radius: 4px;
-            background: transparent;
-            transition: all 0.2s ease;
-            margin-left: auto;
-        }
-
-        .weight-methodology-btn:hover {
-            background: rgba(212, 175, 55, 0.15);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
-        }
-
-        .weight-sliders {
+        .wt-sliders {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-        }
-
-        .weight-slider-row {
-            display: grid;
-            grid-template-columns: 44px 1fr 44px;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(145deg, rgba(255,255,255,0.02), rgba(255,255,255,0.005));
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: all 0.2s ease;
-        }
-
-        .weight-slider-row:hover {
-            background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
-            border-color: rgba(212,175,55,0.15);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .weight-slider-row:last-child {
-            margin-bottom: 0;
-        }
-
-        .weight-slider-main {
-            display: flex;
-            flex-direction: column;
-            gap: 0.35rem;
-            min-width: 0;
-        }
-
-        .weight-slider-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2px;
             gap: 0.5rem;
+            margin-bottom: 1rem;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .weight-slider-label {
+        .wt-slider-row {
+            display: grid;
+            grid-template-columns: 140px 1fr 45px;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.4rem 0;
+        }
+
+        .wt-slider-label {
             font-size: 0.85rem;
-            font-weight: 600;
+            font-weight: 500;
             color: var(--text);
-            letter-spacing: 0.02em;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
 
-        .weight-slider-value {
+        .wt-slider-input {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 6px;
+            background: rgba(100,116,139,0.2);
+            border-radius: 3px;
+            outline: none;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .wt-slider-input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: linear-gradient(145deg, #f0d878, var(--gold));
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4), 0 0 0 2px rgba(212,175,55,0.2);
+            border: 1.5px solid rgba(255,255,255,0.15);
+        }
+
+        .wt-slider-input::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+            box-shadow: 0 3px 12px rgba(212, 175, 55, 0.4), 0 0 0 3px rgba(212,175,55,0.25);
+        }
+
+        .wt-slider-input::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            background: linear-gradient(145deg, #f0d878, var(--gold));
+            border-radius: 50%;
+            cursor: pointer;
+            border: 1.5px solid rgba(255,255,255,0.15);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        }
+
+        .wt-slider-value {
             font-size: 0.8rem;
             font-weight: 700;
             color: var(--gold);
             font-family: 'JetBrains Mono', monospace;
-            min-width: 44px;
+            text-align: right;
+        }
+
+        .wt-warning {
             text-align: center;
-            padding: 0.25rem 0.4rem;
-            background: rgba(212,175,55,0.1);
-            border-radius: 6px;
-            border: 1px solid rgba(212,175,55,0.2);
-            flex-shrink: 0;
+            font-size: 0.75rem;
+            color: #ef4444;
+            padding: 0.4rem;
+            display: none;
         }
 
-        .weight-slider-wrapper {
-            position: relative;
+        .wt-warning.visible {
+            display: block;
+        }
+
+        .wt-multiplier {
             display: flex;
             align-items: center;
-            flex: 1;
-            height: 24px;
-        }
-
-        .weight-slider-input {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 100%;
-            height: 12px;
-            background: linear-gradient(90deg, 
-                rgba(100,116,139,0.15) 0%, 
-                rgba(100,116,139,0.25) 50%,
-                rgba(100,116,139,0.15) 100%);
-            border-radius: 6px;
-            outline: none;
-            cursor: pointer;
-            position: relative;
-            z-index: 1;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.05);
-            margin: 0;
-        }
-
-        .weight-slider-input::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 24px;
-            height: 24px;
-            background: linear-gradient(145deg, #f0d878, var(--gold));
-            border-radius: 50%;
-            cursor: pointer;
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 14px rgba(0,0,0,0.5), 0 0 0 3px rgba(212,175,55,0.2);
-            border: 2px solid rgba(255,255,255,0.2);
-            margin-top: -6px;
-        }
-
-        .weight-slider-input::-webkit-slider-runnable-track {
-            height: 12px;
-            border-radius: 6px;
-        }
-
-        .weight-slider-input::-webkit-slider-thumb:hover {
-            transform: scale(1.15);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5), 0 0 0 4px rgba(212,175,55,0.3);
-        }
-
-        .weight-slider-input::-webkit-slider-thumb:active {
-            transform: scale(1.05);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5), 0 0 0 2px rgba(212,175,55,0.4);
-        }
-
-        /* +/- Buttons for weight adjustment - FIXED */
-        .weight-adj-btn {
-            width: 38px;
-            height: 38px;
-            border-radius: 10px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            background: linear-gradient(145deg, rgba(30,30,40,0.9), rgba(20,20,30,0.95));
-            color: var(--gold);
-            font-size: 1.6rem;
-            font-weight: 300;
-            line-height: 1;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            flex-shrink: 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05);
-            position: relative;
-            overflow: hidden;
-            padding: 0;
-        }
-
-        .weight-adj-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(145deg, rgba(212,175,55,0.1), transparent);
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-
-        .weight-adj-btn:hover {
-            border-color: var(--gold);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 24px rgba(212,175,55,0.25), inset 0 1px 0 rgba(255,255,255,0.1);
-        }
-
-        .weight-adj-btn:hover::before {
-            opacity: 1;
-        }
-
-        .weight-adj-btn:active {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4), inset 0 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .weight-adj-btn.minus {
-            color: #ff6b6b;
-            border-color: rgba(255, 107, 107, 0.3);
-        }
-
-        .weight-adj-btn.minus:hover {
-            border-color: #ff6b6b;
-            box-shadow: 0 8px 24px rgba(255,107,107,0.25), inset 0 1px 0 rgba(255,255,255,0.1);
-        }
-
-        /* Slider grooves - FIXED */
-        .weight-slider-grooves {
-            position: absolute;
-            left: 12px;
-            right: 12px;
-            top: 50%;
-            transform: translateY(-50%);
-            height: 14px;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .weight-slider-grooves .groove {
-            position: absolute;
-            width: 2px;
-            height: 8px;
-            background: linear-gradient(to bottom, rgba(100,116,139,0.5), rgba(100,116,139,0.2));
-            border-radius: 1px;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .weight-slider-grooves .groove:nth-child(5n+1) {
-            height: 12px;
-            width: 3px;
-            background: linear-gradient(to bottom, rgba(212,175,55,0.4), rgba(212,175,55,0.15));
-        }
-
-        .weight-slider-wrapper {
-            position: relative;
-            display: flex;
-            align-items: center;
-            flex: 1;
-            height: 28px;
-            margin: 0;
-        }
-        .episode-multiplier-section {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 0.75rem 1rem;
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(34, 197, 94, 0.02));
-            border: 1px solid rgba(34, 197, 94, 0.2);
+            gap: 0.75rem;
+            padding: 0.65rem 0.85rem;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.06), rgba(34, 197, 94, 0.02));
+            border: 1px solid rgba(34, 197, 94, 0.15);
             border-radius: 8px;
-            margin-top: 0.5rem;
+            margin-top: 0.75rem;
+            flex-wrap: wrap;
         }
 
-        .episode-multiplier-checkbox {
+        .wt-multiplier-toggle {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.4rem;
             cursor: pointer;
             color: #22c55e;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
         }
 
-        .episode-multiplier-checkbox input {
-            width: 18px;
-            height: 18px;
+        .wt-multiplier-toggle input {
+            width: 16px;
+            height: 16px;
             accent-color: #22c55e;
             cursor: pointer;
         }
 
-        .episode-multiplier-desc {
+        .wt-multiplier-desc {
             color: var(--text-muted);
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             line-height: 1.4;
-            flex: 1;
+        }
+
+        .wt-methodology-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.4rem 0.65rem;
+            border: 1px solid rgba(212,175,55,0.3);
+            border-radius: 4px;
+            background: transparent;
+            transition: all 0.2s ease;
+            margin-top: 0.75rem;
+        }
+
+        .wt-methodology-btn:hover {
+            background: rgba(212, 175, 55, 0.12);
+            border-color: var(--gold);
         }
 
         /* Per-card category score sliders */
@@ -1782,106 +1770,6 @@
             text-align: right;
         }
 
-        .genre-pills {
-            display: flex;
-            gap: 0.4rem;
-            flex-wrap: wrap;
-        }
-
-        .genre-pill {
-            padding: 0.3rem 0.7rem;
-            background: transparent;
-            border: 1px solid #3a3a48;
-            color: #8a8a9a;
-            cursor: pointer;
-            border-radius: 100px;
-            font-size: 0.65rem;
-            font-family: 'Source Sans 3', sans-serif;
-            transition: all 0.2s ease;
-            letter-spacing: 0.03em;
-            text-transform: lowercase;
-        }
-
-        .genre-pill:hover {
-            border-color: #64748b;
-            color: #c0c0c8;
-            background: rgba(100, 116, 139, 0.1);
-        }
-
-        .genre-pill.active {
-            background: #64748b;
-            color: #ffffff;
-            border-color: #64748b;
-            font-weight: 500;
-        }
-
-        /* Filter buttons (Era) */
-        .filter-btn {
-            padding: 0.4rem 0.75rem;
-            background: transparent;
-            border: 1px solid #3a3a48;
-            color: #8a8a9a;
-            cursor: pointer;
-            border-radius: 3px;
-            font-size: 0.7rem;
-            font-family: 'Source Sans 3', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            transition: all 0.2s ease;
-        }
-
-        .filter-btn:hover {
-            border-color: #64748b;
-            color: #c0c0c8;
-            background: rgba(100, 116, 139, 0.1);
-        }
-
-        .filter-btn.active {
-            background: #64748b;
-            color: #ffffff;
-            border-color: #64748b;
-            font-weight: 600;
-        }
-
-        .active-filters {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-top: 0.5rem;
-            padding-top: 0.5rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .active-filter-tag {
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-            padding: 0.2rem 0.45rem;
-            background: var(--gold-glow);
-            border: 1px solid var(--gold-dim);
-            border-radius: 4px;
-            font-size: 0.65rem;
-            color: var(--gold);
-        }
-
-        .active-filter-tag button {
-            background: none;
-            border: none;
-            color: var(--gold);
-            cursor: pointer;
-            padding: 0;
-            font-size: 0.85rem;
-        }
-
-        .clear-all {
-            font-size: 0.65rem;
-            color: var(--text-muted);
-            cursor: pointer;
-            background: none;
-            border: none;
-            text-decoration: underline;
-        }
-
         /* Main */
         main {
             max-width: 900px;
@@ -1903,21 +1791,6 @@
 
         .results-count strong {
             color: var(--gold);
-        }
-
-        .sort-select {
-            padding: 0.35rem 0.75rem;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            color: var(--text);
-            border-radius: 6px;
-            font-size: 0.75rem;
-            cursor: pointer;
-        }
-
-        .sort-select:focus {
-            outline: none;
-            border-color: var(--gold);
         }
 
         /* Show Cards - Cinematic Editorial Style */
@@ -2543,15 +2416,15 @@
                 font-size: 1rem;
                 padding: 0.875rem 1rem;
             }
-            .weight-section-title {
-                font-size: 1.3rem;
+            .wt-slider-row {
+                grid-template-columns: 100px 1fr 40px;
+                gap: 0.5rem;
             }
-            .weight-slider-label {
-                font-size: 0.9rem;
+            .wt-title {
+                font-size: 1.1rem;
             }
-            .weight-slider-row {
-                grid-template-columns: 140px 1fr 45px;
-                gap: 0.75rem;
+            .wt-slider-label {
+                font-size: 0.8rem;
             }
             .search-bar-fixed {
                 padding: 0.5rem 0.75rem;
@@ -2777,44 +2650,6 @@
             opacity: 0;
         }
 
-        /* Center era filters */
-        .era-filter-row {
-            justify-content: center;
-        }
-
-        /* Make "Create Your Custom Ranking" header bigger */
-        .weight-section-title {
-            font-family: 'Unna', serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: #e0e0e8;
-            letter-spacing: -0.01em;
-        }
-
-        /* Weight slider labels - bigger text */
-        .weight-slider-label {
-            font-size: 1.05rem;
-            color: var(--text);
-            font-weight: 500;
-        }
-
-        /* Weight sliders - half width */
-        .weight-slider-row {
-            display: grid;
-            grid-template-columns: 200px 1fr 50px;
-            align-items: center;
-            gap: 1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .weight-slider-input {
-            width: 100%;
-        }
-
-        .weight-slider-value {
-            font-size: 1rem;
-        }
 
         /* Sticky search bar at bottom - COMPACT */
         .search-bar-fixed {
@@ -2894,48 +2729,28 @@
                 padding: 0.875rem 1rem;
             }
 
-            .weight-section-title {
-                font-size: 1.1rem;
+            .wt-header {
+                flex-direction: column;
+                align-items: flex-start;
             }
 
-            .weight-header {
-                flex-wrap: wrap;
-                gap: 0.5rem;
-            }
-
-            .weight-header-right {
+            .wt-controls {
                 gap: 0.4rem;
             }
 
-            .weight-total-badge {
+            .wt-total-badge {
                 padding: 0.3rem 0.5rem;
                 font-size: 0.75rem;
             }
 
-            .weight-recalc-btn-header {
+            .wt-recalc-btn {
                 padding: 0.3rem 0.5rem;
-                font-size: 0.65rem;
+                font-size: 0.6rem;
             }
 
-            .weight-reset-btn {
+            .wt-reset-btn {
                 padding: 0.3rem 0.5rem;
-                font-size: 0.65rem;
-            }
-
-            .weight-slider-label {
-                font-size: 0.8rem;
-            }
-
-            .weight-slider-row {
-                grid-template-columns: auto 1fr auto;
-                gap: 0.4rem;
-                padding: 0.4rem 0;
-            }
-
-            .weight-adj-btn {
-                width: 28px;
-                height: 28px;
-                font-size: 1rem;
+                font-size: 0.6rem;
             }
 
             .search-bar-fixed {
@@ -3135,93 +2950,88 @@
     </div>
 
     <div class="filters-section">
-        <!-- Collapse/Expand Button -->
         <button class="filters-toggle-btn" id="filters-toggle">
             <span class="filters-toggle-icon">⚙️</span>
-            <span class="filters-toggle-text">Filters & Settings</span>
+            <span>Filters & Settings</span>
             <span class="filters-toggle-arrow">▼</span>
         </button>
-        
-        <!-- Collapsible Content -->
+
         <div class="filters-content" id="filters-content">
-            <!-- Era Filter -->
-            <div class="filter-group">
-                <label class="filter-label">Era</label>
-                <div class="filter-row era-filter-row" id="era-filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="last3mo">Last 3 Months</button>
-                    <button class="filter-btn" data-filter="last6mo">Last 6 Months</button>
-                    <button class="filter-btn" data-filter="thisYear">This Year</button>
-                    <button class="filter-btn" data-filter="2020s">2020s</button>
-                    <button class="filter-btn" data-filter="2010s">2010s</button>
-                    <button class="filter-btn" data-filter="2000s">2000s</button>
-                    <button class="filter-btn" data-filter="pre2000">Pre-2000</button>
-                </div>
-            </div>
-
-            <!-- Genre Filter -->
-            <div class="filter-group">
-                <label class="filter-label">Genre</label>
-                <div class="genre-pills" id="genre-filters">
-                    <button class="genre-pill active" data-genre="all">All</button>
-                    <button class="genre-pill" data-genre="drama">Drama</button>
-                    <button class="genre-pill" data-genre="crime">Crime</button>
-                    <button class="genre-pill" data-genre="thriller">Thriller</button>
-                    <button class="genre-pill" data-genre="mystery">Mystery</button>
-                    <button class="genre-pill" data-genre="sci-fi">Sci-Fi</button>
-                    <button class="genre-pill" data-genre="fantasy">Fantasy</button>
-                    <button class="genre-pill" data-genre="historical">Historical</button>
-                    <button class="genre-pill" data-genre="comedy">Comedy</button>
-                    <button class="genre-pill" data-genre="action">Action</button>
-                    <button class="genre-pill" data-genre="horror">Horror</button>
-                    <button class="genre-pill" data-genre="western">Western</button>
-                    <button class="genre-pill" data-genre="superhero">Superhero</button>
-                    <button class="genre-pill" data-genre="cop-show">Cop Show</button>
-                </div>
-            </div>
-
-            <!-- Active Filters -->
             <div class="active-filters" id="active-filters"></div>
 
-            <!-- Weight Adjustment -->
-            <div class="filter-group weight-group">
-                <div class="weight-header">
-                    <span class="weight-section-title">Create Your Custom Ranking</span>
-                    <div class="weight-header-right">
-                        <div class="weight-total-badge" id="weight-total-badge">
+            <div class="filters-tab-bar">
+                <button class="filters-tab active" data-tab="filters">Filters</button>
+                <button class="filters-tab" data-tab="weights">Weights</button>
+            </div>
+
+            <div class="filters-tab-panel active" id="tab-filters">
+                <div class="fp-section">
+                    <label class="fp-section-label">Era</label>
+                    <div class="fp-era-chips" id="era-filters">
+                        <button class="fp-era-chip active" data-filter="all">All</button>
+                        <button class="fp-era-chip" data-filter="last3mo">3Mo</button>
+                        <button class="fp-era-chip" data-filter="last6mo">6Mo</button>
+                        <button class="fp-era-chip" data-filter="thisYear">Year</button>
+                        <button class="fp-era-chip" data-filter="2020s">2020s</button>
+                        <button class="fp-era-chip" data-filter="2010s">2010s</button>
+                        <button class="fp-era-chip" data-filter="2000s">2000s</button>
+                        <button class="fp-era-chip" data-filter="pre2000">Pre-2000</button>
+                    </div>
+                </div>
+                <div class="fp-section">
+                    <label class="fp-section-label">Genre</label>
+                    <div class="fp-genre-pills" id="genre-filters">
+                        <button class="fp-genre-pill active" data-genre="all">All</button>
+                        <button class="fp-genre-pill" data-genre="drama">Drama</button>
+                        <button class="fp-genre-pill" data-genre="crime">Crime</button>
+                        <button class="fp-genre-pill" data-genre="thriller">Thriller</button>
+                        <button class="fp-genre-pill" data-genre="mystery">Mystery</button>
+                        <button class="fp-genre-pill" data-genre="sci-fi">Sci-Fi</button>
+                        <button class="fp-genre-pill" data-genre="fantasy">Fantasy</button>
+                        <button class="fp-genre-pill" data-genre="historical">Historical</button>
+                        <button class="fp-genre-pill" data-genre="comedy">Comedy</button>
+                        <button class="fp-genre-pill" data-genre="action">Action</button>
+                        <button class="fp-genre-pill" data-genre="horror">Horror</button>
+                        <button class="fp-genre-pill" data-genre="western">Western</button>
+                        <button class="fp-genre-pill" data-genre="superhero">Superhero</button>
+                        <button class="fp-genre-pill" data-genre="cop-show">Cop Show</button>
+                    </div>
+                </div>
+                <div class="fp-section">
+                    <label class="fp-section-label">Sort</label>
+                    <select class="fp-sort-select" id="sort-select">
+                        <option value="rank">Sort by Rank</option>
+                        <option value="score-desc">Highest Score</option>
+                        <option value="score-asc">Lowest Score</option>
+                        <option value="year-desc">Newest First</option>
+                        <option value="year-asc">Oldest First</option>
+                        <option value="title">Alphabetical</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filters-tab-panel" id="tab-weights">
+                <div class="wt-header">
+                    <span class="wt-title">Custom Ranking</span>
+                    <div class="wt-controls">
+                        <div class="wt-total-badge" id="weight-total-badge">
                             <span>Total</span>
                             <span id="weight-total-value">100%</span>
                         </div>
-                        <button class="weight-recalc-btn-header" id="recalc-weights-header">Recalculate</button>
-                        <button class="weight-reset-btn" id="reset-weights">Reset</button>
+                        <button class="wt-recalc-btn" id="recalc-weights-header">Recalculate</button>
+                        <button class="wt-reset-btn" id="reset-weights">Reset</button>
                     </div>
                 </div>
-                
-                <div class="weight-subheader">
-                    <span class="weight-guidance">Adjust sliders or use +/- buttons, then click Recalculate</span>
-                    <a href="#" class="weight-methodology-btn" id="open-methodology">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 6h18M3 12h18M3 18h18M7 6v12M17 6v12M7 9h.01M17 9h.01"/>
-                        </svg>
-                        Methodology &amp; Criteria
-                    </a>
-                </div>
-                
-                <div class="weight-sliders" id="weight-sliders">
-                    <!-- Generated by JS -->
-                </div>
-                <div class="weight-warning" id="weight-warning">⚠️ Total must equal 100%</div>
-
-                <!-- Episode Multiplier -->
-                <div class="episode-multiplier-section">
-                    <label class="episode-multiplier-checkbox">
+                <div class="wt-sliders" id="weight-sliders"></div>
+                <div class="wt-warning" id="weight-warning">⚠️ Total must equal 100%</div>
+                <div class="wt-multiplier">
+                    <label class="wt-multiplier-toggle">
                         <input type="checkbox" id="multiplier-toggle">
                         <span>Episode Multiplier</span>
                     </label>
-                    <span class="episode-multiplier-desc">
-                        Adjusts scores based on episode count — longer series get bonuses (×1.02–×1.06) for sustaining quality
-                    </span>
+                    <span class="wt-multiplier-desc">Longer series get ×1.02–×1.06 bonus</span>
                 </div>
+                <a href="#" class="wt-methodology-btn" id="open-methodology">Methodology &amp; Criteria</a>
             </div>
         </div>
     </div>
@@ -3229,14 +3039,6 @@
     <main>
         <div class="results-header">
             <div class="results-count">Showing <strong id="results-num">100</strong> shows</div>
-            <select class="sort-select" id="sort-select">
-                <option value="rank">Sort by Rank</option>
-                <option value="score-desc">Highest Score</option>
-                <option value="score-asc">Lowest Score</option>
-                <option value="year-desc">Newest First</option>
-                <option value="year-asc">Oldest First</option>
-                <option value="title">Alphabetical</option>
-            </select>
         </div>
         <div class="show-list" id="rankings" style="display: flex;"></div>
         <div class="no-results" id="no-results" style="display: none;">
@@ -3549,50 +3351,19 @@
             if (!slidersContainer) return;
 
             slidersContainer.innerHTML = categories.map(cat => `
-                <div class="weight-slider-row">
-                    <button class="weight-adj-btn minus" data-key="${cat.key}" aria-label="Decrease">−</button>
-                    <div class="weight-slider-main">
-                        <div class="weight-slider-header">
-                            <span class="weight-slider-label" title="${cat.label}">${cat.label}</span>
-                            <span class="weight-slider-value" id="weight-value-${cat.key}">${weights[cat.key]}%</span>
-                        </div>
-                        <div class="weight-slider-wrapper">
-                            <div class="weight-slider-grooves">
-                                ${[0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100].map(n => `<div class="groove" style="left:${n}%"></div>`).join('')}
-                            </div>
-                            <input type="range" class="weight-slider-input" data-key="${cat.key}" min="0" max="100" step="5" value="${weights[cat.key]}">
-                        </div>
-                    </div>
-                    <button class="weight-adj-btn plus" data-key="${cat.key}" aria-label="Increase">+</button>
+                <div class="wt-slider-row">
+                    <span class="wt-slider-label">${cat.label}</span>
+                    <input type="range" class="wt-slider-input" data-key="${cat.key}" min="0" max="100" step="5" value="${weights[cat.key]}">
+                    <span class="wt-slider-value" id="weight-value-${cat.key}">${weights[cat.key]}%</span>
                 </div>
             `).join('');
 
             // Add event listeners for slider input
-            slidersContainer.querySelectorAll('.weight-slider-input').forEach(input => {
+            slidersContainer.querySelectorAll('.wt-slider-input').forEach(input => {
                 input.addEventListener('input', (e) => {
                     const key = e.target.dataset.key;
                     const value = parseInt(e.target.value);
                     weights[key] = value;
-                    document.getElementById(`weight-value-${key}`).textContent = value + '%';
-                    updateWeightTotal();
-                });
-            });
-
-            // Add event listeners for +/- buttons
-            slidersContainer.querySelectorAll('.weight-adj-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const key = e.target.dataset.key;
-                    let value = weights[key];
-                    if (e.target.classList.contains('plus')) {
-                        value = Math.min(100, value + 5);
-                    } else {
-                        value = Math.max(0, value - 5);
-                    }
-                    weights[key] = value;
-                    
-                    // Update slider
-                    const slider = slidersContainer.querySelector(`.weight-slider-input[data-key="${key}"]`);
-                    if (slider) slider.value = value;
                     document.getElementById(`weight-value-${key}`).textContent = value + '%';
                     updateWeightTotal();
                 });
@@ -4099,8 +3870,8 @@
         window.removeFilter = function(type, value) {
             if (type === 'era') {
                 currentEra = 'all';
-                document.querySelectorAll('#era-filters .filter-btn').forEach(b => b.classList.remove('active'));
-                document.querySelector('#era-filters .filter-btn[data-filter="all"]').classList.add('active');
+                document.querySelectorAll('#era-filters .fp-era-chip').forEach(b => b.classList.remove('active'));
+                document.querySelector('#era-filters .fp-era-chip[data-filter="all"]').classList.add('active');
             } else if (type === 'score') {
                 minScore = 6.5;
                 if (scoreFilter) scoreFilter.value = 6.5;
@@ -4109,10 +3880,10 @@
                 currentGenres = currentGenres.filter(g => g !== value);
                 if (currentGenres.length === 0) {
                     currentGenres = ['all'];
-                    document.querySelectorAll('#genre-filters .genre-pill').forEach(p => p.classList.remove('active'));
-                    document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.add('active');
+                    document.querySelectorAll('#genre-filters .fp-genre-pill').forEach(p => p.classList.remove('active'));
+                    document.querySelector('#genre-filters .fp-genre-pill[data-genre="all"]').classList.add('active');
                 } else {
-                    document.querySelector(`#genre-filters .genre-pill[data-genre="${value}"]`).classList.remove('active');
+                    document.querySelector(`#genre-filters .fp-genre-pill[data-genre="${value}"]`).classList.remove('active');
                 }
             } else if (type === 'search') {
                 searchTerm = '';
@@ -4133,21 +3904,21 @@
             if (scoreValue) scoreValue.textContent = '6.5';
             sortSelect.value = 'rank';
 
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            document.querySelectorAll('.genre-pill').forEach(p => p.classList.remove('active'));
-            document.querySelector('#era-filters .filter-btn[data-filter="all"]').classList.add('active');
-            document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.add('active');
+            document.querySelectorAll('.fp-era-chip').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.fp-genre-pill').forEach(p => p.classList.remove('active'));
+            document.querySelector('#era-filters .fp-era-chip[data-filter="all"]').classList.add('active');
+            document.querySelector('#genre-filters .fp-genre-pill[data-genre="all"]').classList.add('active');
 
             renderShows();
         };
 
         // Era buttons (multi-select)
-        document.querySelectorAll('#era-filters .filter-btn').forEach(btn => {
+        document.querySelectorAll('#era-filters .fp-era-chip').forEach(btn => {
             btn.addEventListener('click', () => {
                 const era = btn.dataset.filter;
                 if (era === 'all') {
                     currentEras = [];
-                    document.querySelectorAll('#era-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('#era-filters .fp-era-chip').forEach(b => b.classList.remove('active'));
                 } else {
                     btn.classList.toggle('active');
                     if (btn.classList.contains('active')) {
@@ -4155,30 +3926,30 @@
                     } else {
                         currentEras = currentEras.filter(e => e !== era);
                     }
-                    document.querySelector('#era-filters .filter-btn[data-filter="all"]').classList.remove('active');
+                    document.querySelector('#era-filters .fp-era-chip[data-filter="all"]').classList.remove('active');
                 }
                 renderShows();
             });
         });
 
         // Genre pills
-        document.querySelectorAll('#genre-filters .genre-pill').forEach(pill => {
+        document.querySelectorAll('#genre-filters .fp-genre-pill').forEach(pill => {
             pill.addEventListener('click', () => {
                 const genre = pill.dataset.genre;
 
                 if (genre === 'all') {
-                    document.querySelectorAll('#genre-filters .genre-pill').forEach(p => p.classList.remove('active'));
+                    document.querySelectorAll('#genre-filters .fp-genre-pill').forEach(p => p.classList.remove('active'));
                     pill.classList.add('active');
                     currentGenres = ['all'];
                 } else {
-                    document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.remove('active');
+                    document.querySelector('#genre-filters .fp-genre-pill[data-genre="all"]').classList.remove('active');
 
                     if (pill.classList.contains('active')) {
                         pill.classList.remove('active');
                         currentGenres = currentGenres.filter(g => g !== genre);
                         if (currentGenres.length === 0) {
                             currentGenres = ['all'];
-                            document.querySelector('#genre-filters .genre-pill[data-genre="all"]').classList.add('active');
+                            document.querySelector('#genre-filters .fp-genre-pill[data-genre="all"]').classList.add('active');
                         }
                     } else {
                         pill.classList.add('active');
@@ -4203,11 +3974,20 @@
         document.addEventListener('click', (e) => {
             if (e.target.classList.contains('genre-tag')) {
                 const genre = e.target.textContent;
-                document.querySelectorAll('#genre-filters .genre-pill').forEach(p => p.classList.remove('active'));
-                const pill = document.querySelector(`#genre-filters .genre-pill[data-genre="${genre}"]`);
+                document.querySelectorAll('#genre-filters .fp-genre-pill').forEach(p => p.classList.remove('active'));
+                const pill = document.querySelector(`#genre-filters .fp-genre-pill[data-genre="${genre}"]`);
                 if (pill) {
                     pill.classList.add('active');
                     currentGenres = [genre];
+                    // Open filters panel and switch to Filters tab
+                    const fc = document.getElementById('filters-content');
+                    if (fc.classList.contains('collapsed')) {
+                        document.getElementById('filters-toggle').click();
+                    }
+                    document.querySelectorAll('.filters-tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.filters-tab-panel').forEach(p => p.classList.remove('active'));
+                    document.querySelector('.filters-tab[data-tab="filters"]').classList.add('active');
+                    document.getElementById('tab-filters').classList.add('active');
                     renderShows();
                 }
             }
@@ -4980,6 +4760,16 @@
             localStorage.setItem('tvranked_filters_collapsed', isCollapsed);
         });
 
+        // ---- Tab Switching ----
+        document.querySelectorAll('.filters-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.filters-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.filters-tab-panel').forEach(p => p.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+            });
+        });
+
         // ---- Search Clear Button ----
         const searchClearBtn = document.getElementById('search-clear');
         
@@ -5026,7 +4816,7 @@
                 });
                 
                 // Weight sliders (global)
-                document.querySelectorAll('.weight-slider-input').forEach((slider, idx) => {
+                document.querySelectorAll('.wt-slider-input').forEach((slider, idx) => {
                     const cat = catKeys[idx];
                     slider.dataset.agentTarget = 'weight-slider';
                     slider.dataset.agentCategory = cat;
@@ -5141,7 +4931,7 @@
                 setWeight: (category, value) => {
                     const idx = catKeys.indexOf(category);
                     if (idx === -1) return false;
-                    const slider = document.querySelectorAll('.weight-slider-input')[idx];
+                    const slider = document.querySelectorAll('.wt-slider-input')[idx];
                     if (slider) {
                         slider.value = value;
                         slider.dispatchEvent(new Event('input', { bubbles: true }));
