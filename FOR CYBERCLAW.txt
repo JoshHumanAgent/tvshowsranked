@@ -43,6 +43,27 @@ IMPORTANT NOTES:
 - On mobile (<=600px) it becomes visible and the poster hides
 - If you need to re-fetch backdrops: node scripts/fetch-backdrops.js
 - The fallback for missing backdrops uses the poster with blur(2px) + brightness(0.7)
+- To update FALLBACK_SHOWS after changes: node scripts/update-fallback.js
+
+ALSO FIXED: 9 WRONG TMDB IDs (2026-02-17)
+-------------------------------------------
+Many tmdbIds in the data were pointing to completely wrong shows. This means
+the poster images and backdrop images were for the WRONG shows. Fixed:
+
+  Silo:                  135699 (Chinese drama) -> 125988
+  The Bear:              135699 (same Chinese drama!) -> 136315
+  Angels in America:     1887 (Alfred J. Kwak) -> 11245
+  Gomorrah:              4057 (Criminal Minds) -> 61068
+  Twin Peaks:            1964 (The Jeffersons) -> 1920
+  Twin Peaks: The Return: 70809 (Atomic Forest) -> 1920
+  Utopia (UK):           41810 (Humse Hai Liife) -> 46511
+  Adolescence:           234474 (Korean drama) -> 249042
+  The Day of the Jackal: 241096 (American Patchwork) -> 222766
+
+Tool used: scripts/fix-tmdbids.js then scripts/fetch-backdrops.js
+NOTE FOR CYBERCLAW: When adding new shows, ALWAYS verify the tmdbId is correct
+by checking https://api.themoviedb.org/3/tv/{id}?api_key=ca9b21cb89de2d1debed1050f603d7ad
+and confirming the name matches before saving
 
 ---
 
