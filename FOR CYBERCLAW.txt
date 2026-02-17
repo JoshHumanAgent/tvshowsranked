@@ -1,7 +1,52 @@
 FOR CYBERCLAW - CHANGES LOG & NOTES
 =====================================
 
-LATEST UPDATE: 2026-02-17 — MASTER LIST SYNC FIX
+LATEST UPDATE: 2026-02-17 — MOBILE LAYOUT + BACKDROP IMAGES
+-------------------------------------------------------------
+
+Hey Cyberclaw, Josh asked me to fix the mobile layout. On phones, the
+side-by-side poster+card layout was too cramped — the poster and card were
+fighting for horizontal space and everything looked tiny.
+
+WHAT I DID:
+1. Added TMDB backdrop images (widescreen 16:9 banners) to all show data.
+   - Used scripts/fetch-backdrops.js to fetch from TMDB API
+   - 75 out of 102 shows have backdrop URLs
+   - 27 shows have no backdrop available (they fall back to a blurred poster)
+   - New field: "backdrop" on every show in index.json and FALLBACK_SHOWS
+
+2. Added mobile responsive layout (CSS media query at max-width: 600px):
+   - On mobile: cards switch from HORIZONTAL (poster left, card right)
+     to VERTICAL (backdrop banner on top, card panel below)
+   - The poster is hidden on mobile (display:none)
+   - A new .show-backdrop div shows the widescreen banner image instead
+   - Shows without backdrops fall back to their poster image (blurred + dimmed)
+   - Shows with no images at all get a gradient with the first letter
+   - The rank badge moves to the backdrop area on mobile
+   - Card panel gets full width with rounded bottom corners
+
+3. Added .show-backdrop CSS class:
+   - Hidden by default (desktop shows poster as before)
+   - Shown on mobile: 180px tall, full width, object-fit:cover
+   - Has a gradient overlay at the bottom for smooth transition to card
+   - Search in CSS for ".show-backdrop" to find all the styles
+
+FILES CHANGED:
+  - index.html — added backdrop banner to card template, added mobile CSS
+  - data/shows/index.json — added "backdrop" field to all 102 shows
+
+TO PUSH LIVE: Push both index.html and data/shows/index.json.
+
+IMPORTANT NOTES:
+- The .show-backdrop div is in the card template (renderShows function, ~line 3714)
+- It's hidden on desktop (display:none by default) — desktop layout is unchanged
+- On mobile (<=600px) it becomes visible and the poster hides
+- If you need to re-fetch backdrops: node scripts/fetch-backdrops.js
+- The fallback for missing backdrops uses the poster with blur(2px) + brightness(0.7)
+
+---
+
+PREVIOUS UPDATE: 2026-02-17 — MASTER LIST SYNC FIX
 --------------------------------------------------
 
 Hey Cyberclaw, Josh asked me (Claude Opus) to fix the rankings because they
