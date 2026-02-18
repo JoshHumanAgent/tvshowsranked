@@ -1058,8 +1058,13 @@
 
         /* LOGIN BAR - Above Filters */
         .login-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
             padding: 0.625rem 1.5rem;
             border-bottom: 1px solid var(--border);
+            background: rgba(20, 20, 28, 0.98);
+            backdrop-filter: blur(8px);
         }
 
         .login-bar-btn {
