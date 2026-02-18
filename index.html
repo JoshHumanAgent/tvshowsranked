@@ -1106,6 +1106,35 @@
             opacity: 0.8;
         }
 
+        /* METHODOLOGY BUTTON */
+        .methodology-bar {
+            padding: 0 1.5rem 0.625rem;
+        }
+
+        .methodology-btn {
+            width: 100%;
+            padding: 0.6rem 1rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-muted);
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .methodology-btn:hover {
+            background: rgba(212,175,55,0.05);
+            border-color: var(--gold-dim);
+            color: var(--gold);
+        }
+
         /* FILTERS SECTION - CLEAN REDESIGN */
         .filters-section {
             background: var(--bg);
@@ -1785,23 +1814,29 @@
         .wt-multiplier-toggle {
             display: flex;
             align-items: center;
-            gap: 0.4rem;
+            gap: 0.6rem;
             cursor: pointer;
             color: #22c55e;
-            font-size: 0.8rem;
-            font-weight: 600;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.5rem 0;
         }
 
         .wt-multiplier-toggle input {
-            width: 16px;
-            height: 16px;
+            width: 22px;
+            height: 22px;
             accent-color: #22c55e;
             cursor: pointer;
         }
 
+        .wt-multiplier-label {
+            font-size: 1rem;
+            letter-spacing: 0.02em;
+        }
+
         .wt-multiplier-desc {
             color: var(--text-muted);
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             line-height: 1.4;
         }
 
@@ -3362,7 +3397,7 @@
             </div>
         </div>
 
-        <div class="auth-container" id="auth-container">
+        <div class="auth-container" id="auth-container" style="display:none;">
             <span class="sync-status" id="sync-status"></span>
             <button class="auth-btn" id="auth-btn">Sign In</button>
         </div>
@@ -3518,7 +3553,7 @@
     </div>
 
     <!-- Login Bar - Above Filters -->
-    <div class="login-bar">
+    <div class="login-bar" id="login-bar">
         <button class="login-bar-btn" id="login-bar-btn">
             <span class="login-bar-icon">👤</span>
             <span class="login-bar-text">Log in to save your settings</span>
@@ -3526,14 +3561,21 @@
         </button>
     </div>
 
+    <!-- Methodology Button -->
+    <div class="methodology-bar">
+        <button class="methodology-btn" id="open-methodology">
+            <span>📖 How Rankings Work</span>
+        </button>
+    </div>
+
     <div class="filters-section">
-        <button class="filters-toggle-btn" id="filters-toggle" aria-expanded="true">
+        <button class="filters-toggle-btn" id="filters-toggle" aria-expanded="false">
             <span class="filters-toggle-icon">⚙</span>
             <span>Filters & Settings</span>
-            <span class="filters-toggle-arrow">▼</span>
+            <span class="filters-toggle-arrow">▶</span>
         </button>
 
-        <div class="filters-content visible" id="filters-content">
+        <div class="filters-content" id="filters-content">
             <div class="active-filters" id="active-filters"></div>
 
             <!-- ERA -->
@@ -3605,12 +3647,11 @@
                 <div class="weights-footer">
                     <div class="wt-multiplier">
                         <label class="wt-multiplier-toggle">
-                            <input type="checkbox" id="multiplier-toggle">
-                            <span>Episode Bonus</span>
+                            <input type="checkbox" id="multiplier-toggle" checked>
+                            <span class="wt-multiplier-label">Episode Bonus</span>
                         </label>
                         <span class="wt-multiplier-desc">Longer shows get +2-6%</span>
                     </div>
-                    <button class="wt-methodology-btn" id="open-methodology">Methodology</button>
                 </div>
             </div>
         </div>
@@ -3834,7 +3875,7 @@
         let weights = { ...defaultWeights };
 
         // Episode multiplier toggle
-        let multiplierEnabled = false;
+        let multiplierEnabled = true;
 
         // Score override system
         const baseScores = {};
@@ -4360,6 +4401,9 @@
                     default: return a.rank - b.rank;
                 }
             });
+
+            // Limit to 100 shows
+            filtered = filtered.slice(0, 100);
 
             resultsNum.textContent = filtered.length;
 
