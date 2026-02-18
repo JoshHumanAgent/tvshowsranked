@@ -3178,6 +3178,19 @@
         <div class="pinned-shows" id="pinned-shows"></div>
     </div>
 
+    <!-- Login Prompt Banner - shows when logged out and changes detected -->
+    <div id="login-save-banner" style="display:none;background:linear-gradient(135deg,#1a1a2e,#0f172a);border:1px solid #d4af3740;border-bottom:1px solid #252532;padding:1.2rem 2rem;text-align:center;">
+        <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
+            <span style="color:#e8e8ec;font-size:1rem;">💾 Want to <strong style="color:#d4af37;">save your rankings</strong>?</span>
+            <button id="banner-login-btn" style="background:linear-gradient(135deg,#d4af37,#c4a035);border:none;color:#1a1a1e;padding:0.5rem 1.2rem;border-radius:6px;font-weight:700;cursor:pointer;font-size:0.85rem;transition:all 0.2s;"
+                onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(212,175,55,0.4)'"
+                onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                Log In to Save Changes
+            </button>
+            <span style="color:#8a8a9a;font-size:0.75rem;font-style:italic;">or continue as guest (changes lost on refresh)</span>
+        </div>
+    </div>
+
     <div class="filters-section">
         <button class="filters-toggle-btn" id="filters-toggle">
             <span class="filters-toggle-icon">⚙️</span>
@@ -3589,15 +3602,11 @@
         }
 
         function updateSaveBar() {
-            const bar = document.getElementById('score-save-bar');
             const countEl = document.getElementById('modified-count');
-            if (!bar) return;
-            if (modifiedShows.size > 0) {
-                bar.classList.add('visible');
+            if (countEl) {
                 countEl.textContent = modifiedShows.size + ' show' + (modifiedShows.size !== 1 ? 's' : '') + ' modified';
-            } else {
-                bar.classList.remove('visible');
             }
+            updateSaveBarVisibility();
         }
 
         function saveOverridesToStorage() {
@@ -4802,6 +4811,9 @@
             } else {
                 modifiedShows.delete(title);
             }
+            
+            // Update save bar visibility (shows login banner if logged out)
+            updateSaveBarVisibility();
 
             // Targeted DOM update (no full re-render)
             const card = list.querySelector(`.show-module[data-show-title="${CSS.escape(title)}"]`);
@@ -4945,6 +4957,11 @@
 
         // ---- Save / Export / Import / Reset ----
         document.getElementById('save-scores-btn')?.addEventListener('click', () => {
+            if (!currentUser) {
+                alert('Please log in to save your changes');
+                document.getElementById('auth-modal').classList.add('visible');
+                return;
+            }
             saveOverridesToStorage();
             const btn = document.getElementById('save-scores-btn');
             const orig = btn.textContent;
@@ -4953,6 +4970,11 @@
         });
 
         document.getElementById('export-scores-btn')?.addEventListener('click', () => {
+            if (!currentUser) {
+                alert('Please log in to export your changes');
+                document.getElementById('auth-modal').classList.add('visible');
+                return;
+            }
             const overrides = {};
             modifiedShows.forEach(title => {
                 overrides[title] = {};
@@ -5309,8 +5331,41 @@
         auth.onAuthStateChanged(user => {
             currentUser = user;
             updateAuthUI(user);
-            if (user) loadUserPreferences();
+            if (user) {
+                loadUserPreferences();
+            } else {
+                // Clear localStorage on refresh when not logged in
+                localStorage.removeItem('tvranked_score_overrides');
+                localStorage.removeItem('tvranked_weights');
+            }
+            updateSaveBarVisibility();
         });
+
+        // Banner login button
+        document.getElementById('banner-login-btn')?.addEventListener('click', () => {
+            document.getElementById('auth-modal').classList.add('visible');
+        });
+
+        function updateSaveBarVisibility() {
+            const saveBar = document.getElementById('score-save-bar');
+            const loginBanner = document.getElementById('login-save-banner');
+            const isLoggedIn = !!currentUser;
+            const hasChanges = modifiedShows.size > 0;
+            
+            // Show login banner when logged out and has changes
+            if (loginBanner) {
+                loginBanner.style.display = (!isLoggedIn && hasChanges) ? 'block' : 'none';
+            }
+            
+            // Only show save bar when logged in and has changes
+            if (saveBar) {
+                if (isLoggedIn && hasChanges) {
+                    saveBar.classList.add('visible');
+                } else {
+                    saveBar.classList.remove('visible');
+                }
+            }
+        }
 
         // Auth modal handlers
         document.getElementById('auth-btn')?.addEventListener('click', () => {
