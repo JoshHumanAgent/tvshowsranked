@@ -1056,15 +1056,19 @@
             color: var(--bronze);
         }
 
-        /* LOGIN BAR - Above Filters */
-        .login-bar {
+        /* TOP ACTION BAR - Sticky container for all buttons */
+        .top-action-bar {
             position: sticky;
             top: 0;
             z-index: 100;
-            padding: 0.625rem 1.5rem;
-            border-bottom: 1px solid var(--border);
             background: rgba(20, 20, 28, 0.98);
             backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* LOGIN BAR - Inside sticky container */
+        .login-bar {
+            padding: 0.625rem 1rem 0.5rem;
         }
 
         .login-bar-btn {
@@ -1073,7 +1077,7 @@
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
-            padding: 0.75rem 1.25rem;
+            padding: 0.625rem 1rem;
             background: transparent;
             border: 1px solid var(--border);
             border-radius: 6px;
@@ -1113,12 +1117,12 @@
 
         /* METHODOLOGY BUTTON */
         .methodology-bar {
-            padding: 0 1.5rem 0.625rem;
+            padding: 0 1rem 0.5rem;
         }
 
         .methodology-btn {
             width: 100%;
-            padding: 0.6rem 1rem;
+            padding: 0.5rem 1rem;
             background: transparent;
             border: 1px solid var(--border);
             border-radius: 6px;
@@ -1140,11 +1144,11 @@
             color: var(--gold);
         }
 
-        /* FILTERS SECTION - CLEAN REDESIGN */
+        /* FILTERS SECTION - Toggle only */
         .filters-section {
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            padding: 0.625rem 1.5rem;
+            padding: 0 1rem 0.625rem;
+            background: transparent;
+            border-bottom: none;
         }
 
         .filters-toggle-btn {
@@ -1185,9 +1189,10 @@
         }
 
         .filters-content {
-            padding: 1.25rem 1.5rem;
+            padding: 1.25rem 1rem;
             display: none;
-            background: rgba(15,15,20,0.3);
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
         }
 
         .filters-content.visible {
@@ -3557,30 +3562,36 @@
         </div>
     </div>
 
-    <!-- Login Bar - Above Filters -->
-    <div class="login-bar" id="login-bar">
-        <button class="login-bar-btn" id="login-bar-btn">
-            <span class="login-bar-icon">👤</span>
-            <span class="login-bar-text">Log in to save your settings</span>
-            <span class="login-bar-arrow">→</span>
-        </button>
+    <!-- Top Action Bar - Sticky Container -->
+    <div class="top-action-bar" id="top-action-bar">
+        <!-- Login Button -->
+        <div class="login-bar" id="login-bar">
+            <button class="login-bar-btn" id="login-bar-btn">
+                <span class="login-bar-icon">👤</span>
+                <span class="login-bar-text">Log in to save your settings</span>
+                <span class="login-bar-arrow">→</span>
+            </button>
+        </div>
+
+        <!-- Methodology Button -->
+        <div class="methodology-bar">
+            <button class="methodology-btn" id="open-methodology">
+                <span>📖 How Rankings Work</span>
+            </button>
+        </div>
+
+        <!-- Filters Toggle -->
+        <div class="filters-section">
+            <button class="filters-toggle-btn" id="filters-toggle" aria-expanded="false">
+                <span class="filters-toggle-icon">⚙</span>
+                <span>Filters & Settings</span>
+                <span class="filters-toggle-arrow">▶</span>
+            </button>
+        </div>
     </div>
 
-    <!-- Methodology Button -->
-    <div class="methodology-bar">
-        <button class="methodology-btn" id="open-methodology">
-            <span>📖 How Rankings Work</span>
-        </button>
-    </div>
-
-    <div class="filters-section">
-        <button class="filters-toggle-btn" id="filters-toggle" aria-expanded="false">
-            <span class="filters-toggle-icon">⚙</span>
-            <span>Filters & Settings</span>
-            <span class="filters-toggle-arrow">▶</span>
-        </button>
-
-        <div class="filters-content" id="filters-content">
+    <!-- Filters Content - Separate from sticky -->
+    <div class="filters-content" id="filters-content">
             <div class="active-filters" id="active-filters"></div>
 
             <!-- ERA -->
