@@ -3261,6 +3261,11 @@
                     <span class="wt-multiplier-desc">Longer series get ×1.02–×1.06 bonus</span>
                 </div>
                 <a href="#" class="wt-methodology-btn" id="open-methodology">Methodology &amp; Criteria</a>
+                <!-- Global Reset All Shows Button -->
+                <div style="margin-top:1rem;padding-top:0.75rem;border-top:1px solid rgba(100,116,139,0.2);display:flex;align-items:center;justify-content:flex-end;gap:0.75rem;">
+                    <span style="font-size:0.7rem;color:#8a8a9a;">↺ Reset ALL show scores to original values</span>
+                    <button class="wt-reset-btn" id="reset-all-shows" type="button">Reset All Scores</button>
+                </div>
             </div>
         </div>
     </div>
@@ -3268,6 +3273,10 @@
     <main>
         <div class="results-header">
             <div class="results-count">Showing <strong id="results-num">100</strong> shows</div>
+            <button id="factory-reset-btn" style="background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.4);color:#ef4444;padding:0.35rem 0.75rem;border-radius:4px;font-size:0.7rem;font-weight:600;cursor:pointer;transition:all 0.2s;text-transform:uppercase;letter-spacing:0.05em;"
+                onmouseover="this.style.background='rgba(239,68,68,0.25)';this.style.borderColor='#ef4444'"
+                onmouseout="this.style.background='rgba(239,68,68,0.15)';this.style.borderColor='rgba(239,68,68,0.4)'"
+                title="Reset ALL episode rankings to site defaults">↺ Factory Reset</button>
         </div>
         <div class="show-list" id="rankings" style="display: flex;"></div>
         <div class="no-results" id="no-results" style="display: none;">
@@ -3669,6 +3678,77 @@
         document.getElementById('recalc-weights-header')?.addEventListener('click', () => {
             recalculateWithWeights();
             debouncedSave();
+        });
+
+        // Reset ALL shows to default - full factory reset
+        document.getElementById('reset-all-shows')?.addEventListener('click', () => {
+            if (!confirm('⚠️ RESET EVERYTHING?\n\nThis will:\n• Reset ALL show scores to original values\n• Reset weights to defaults (25/15/5/5/15/15/20)\n• Clear all saved modifications\n\nAre you sure?')) return;
+            
+            // Clear localStorage
+            localStorage.removeItem('tvranked_score_overrides');
+            localStorage.removeItem('tvranked_weights');
+            
+            // Reset weights to defaults
+            weights = { ...defaultWeights };
+            initWeightSliders();
+            
+            // Reset ALL shows to baseScores
+            shows.forEach(show => {
+                if (baseScores[show.title]) {
+                    catKeys.forEach(k => {
+                        show[k] = baseScores[show.title][k];
+                        activeScores[show.title][k] = baseScores[show.title][k];
+                    });
+                    // Recalculate final with current weights
+                    recalcFinal(show);
+                }
+            });
+            
+            // Clear modified set
+            modifiedShows.clear();
+            
+            // Re-sort by new finals
+            shows.sort((a, b) => b.final - a.final);
+            shows.forEach((s, i) => { s.rank = i + 1; });
+            
+            // Update UI
+            updateSaveBar();
+            renderShows();
+            
+            console.log('[tvshowsRanked] Full reset complete - all scores and weights restored to defaults');
+        });
+
+        // Factory Reset button - big prominent reset in header
+        document.getElementById('factory-reset-btn')?.addEventListener('click', () => {
+            if (!confirm('⚠️ FACTORY RESET?\n\nThis will reset ALL episode rankings to site defaults.\n\nAre you sure?')) return;
+            
+            // Clear localStorage
+            localStorage.removeItem('tvranked_score_overrides');
+            localStorage.removeItem('tvranked_weights');
+            
+            // Reset weights to defaults
+            weights = { ...defaultWeights };
+            initWeightSliders();
+            
+            // Reset ALL shows to baseScores
+            shows.forEach(show => {
+                if (baseScores[show.title]) {
+                    catKeys.forEach(k => {
+                        show[k] = baseScores[show.title][k];
+                        activeScores[show.title][k] = baseScores[show.title][k];
+                    });
+                    recalcFinal(show);
+                }
+            });
+            
+            modifiedShows.clear();
+            shows.sort((a, b) => b.final - a.final);
+            shows.forEach((s, i) => { s.rank = i + 1; });
+            
+            updateSaveBar();
+            renderShows();
+            
+            console.log('[tvshowsRanked] Factory reset complete');
         });
 
         // Recalculate rankings with custom weights (shared function)
@@ -4085,6 +4165,15 @@
                                 onmouseover="this.style.borderColor='#d4af37';this.style.color='#d4af37'"
                                 onmouseout="this.style.borderColor='#64748b';this.style.color='#64748b'">${g}</span>`).join('')}
                         </div>
+
+                        <!-- Per-show reset button (visible when modified) -->
+                        ${modifiedShows.has(show.title) ? `
+                        <div style="display:flex;justify-content:flex-end;margin-top:0.5rem;">
+                            <button class="show-reset-btn" data-show-reset="${showTitleEscaped}" style="background:transparent;border:1px solid rgba(239,68,68,0.4);color:#ef4444;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.6rem;font-family:'Source Sans 3',sans-serif;cursor:pointer;transition:all 0.2s;text-transform:uppercase;letter-spacing:0.05em;"
+                                onmouseover="this.style.background='rgba(239,68,68,0.1)';this.style.borderColor='#ef4444'"
+                                onmouseout="this.style.background='transparent';this.style.borderColor='rgba(239,68,68,0.4)'">↺ Reset Scores</button>
+                        </div>
+                        ` : ''}
                     </div>
                 </div>
             `}).join('');
@@ -4269,6 +4358,38 @@
                     renderShows();
                     debouncedSave();
                 }
+            }
+        });
+
+        // Per-show reset button handler
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('show-reset-btn') || e.target.closest('.show-reset-btn')) {
+                const btn = e.target.classList.contains('show-reset-btn') ? e.target : e.target.closest('.show-reset-btn');
+                const showTitle = btn.dataset.showReset;
+                if (!showTitle || !baseScores[showTitle]) return;
+                
+                // Reset this show's scores to base values
+                const show = shows.find(s => s.title === showTitle);
+                if (!show) return;
+                
+                catKeys.forEach(key => {
+                    show[key] = baseScores[showTitle][key];
+                    activeScores[showTitle][key] = baseScores[showTitle][key];
+                });
+                
+                // Recalculate final
+                recalcFinal(show);
+                
+                // Remove from modified set
+                modifiedShows.delete(showTitle);
+                
+                // Save and re-render
+                saveOverridesToStorage();
+                updateSaveBar();
+                renderShows();
+                
+                // Emit event for agent instrumentation
+                document.dispatchEvent(new CustomEvent('tvshow:show-reset', { detail: { title: showTitle } }));
             }
         });
 
@@ -5535,6 +5656,26 @@
                 resetScores: () => {
                     document.getElementById('reset-scores-btn')?.click();
                     emit('scores-reset');
+                },
+                
+                // Per-show reset
+                resetShow: (title) => {
+                    const card = document.querySelector(`.show-module[data-show-title="${title}"]`);
+                    if (card) {
+                        const btn = card.querySelector('.show-reset-btn');
+                        if (btn) {
+                            btn.click();
+                            emit('show-reset', { title });
+                            return true;
+                        }
+                    }
+                    return false;
+                },
+                
+                // Full factory reset - ALL shows
+                resetAllShows: () => {
+                    document.getElementById('reset-all-shows')?.click();
+                    emit('all-shows-reset');
                 },
                 
                 // Event subscription
