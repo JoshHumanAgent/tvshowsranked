@@ -1056,6 +1056,58 @@
             color: var(--bronze);
         }
 
+        /* LOGIN BAR - Above Filters */
+        .login-bar {
+            background: linear-gradient(180deg, rgba(212,175,55,0.08) 0%, rgba(212,175,55,0.02) 100%);
+            border-bottom: 1px solid rgba(212,175,55,0.15);
+            padding: 0.75rem 1.5rem;
+        }
+
+        .login-bar-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 0.875rem 1.5rem;
+            background: linear-gradient(135deg, var(--gold) 0%, #c9a227 100%);
+            border: none;
+            border-radius: 8px;
+            color: var(--bg);
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(212,175,55,0.3);
+        }
+
+        .login-bar-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(212,175,55,0.4);
+        }
+
+        .login-bar-btn:active {
+            transform: translateY(0);
+        }
+
+        .login-bar-icon {
+            font-size: 1.1rem;
+        }
+
+        .login-bar-text {
+            letter-spacing: 0.02em;
+        }
+
+        .login-bar-arrow {
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+
+        .login-bar-btn:hover .login-bar-arrow {
+            transform: translateX(4px);
+        }
+
         /* FILTERS SECTION - CLEAN REDESIGN */
         .filters-section {
             background: var(--bg);
@@ -3472,6 +3524,15 @@
         </div>
     </div>
 
+    <!-- Login Bar - Above Filters -->
+    <div class="login-bar">
+        <button class="login-bar-btn" id="login-bar-btn">
+            <span class="login-bar-icon">👤</span>
+            <span class="login-bar-text">Log in to save your settings</span>
+            <span class="login-bar-arrow">→</span>
+        </button>
+    </div>
+
     <div class="filters-section">
         <button class="filters-toggle-btn" id="filters-toggle" aria-expanded="true">
             <span class="filters-toggle-icon">⚙</span>
@@ -5627,6 +5688,11 @@
 
         // Banner login button
         document.getElementById('banner-login-btn')?.addEventListener('click', () => {
+            document.getElementById('auth-modal').classList.add('visible');
+        });
+
+        // Login bar button (above filters)
+        document.getElementById('login-bar-btn')?.addEventListener('click', () => {
             document.getElementById('auth-modal').classList.add('visible');
         });
 
