@@ -5510,7 +5510,11 @@
         function updateAuthUI(user) {
             const container = document.getElementById('auth-container');
             const syncStatus = document.getElementById('sync-status');
+            const loginBar = document.getElementById('login-bar');
             if (user) {
+                // Hide login bar when logged in
+                if (loginBar) loginBar.style.display = 'none';
+                
                 const photoHTML = user.photoURL
                     ? `<img src="${user.photoURL}" alt="">`
                     : '';
@@ -5527,6 +5531,9 @@
                     auth.signOut();
                 });
             } else {
+                // Show login bar when logged out
+                if (loginBar) loginBar.style.display = 'block';
+                
                 container.innerHTML = `
                     <span class="sync-status" id="sync-status"></span>
                     <button class="auth-btn" id="auth-btn">Sign In</button>
@@ -5562,7 +5569,7 @@
                 currentGenres: [...currentGenres],
                 currentEras: [...currentEras],
                 sortBy,
-                filtersCollapsed: document.getElementById('filters-content')?.classList.contains('collapsed') || false,
+                filtersCollapsed: !document.getElementById('filters-content')?.classList.contains('visible'),
                 pinnedShows: [...pinnedShows],
                 scoreOverrides: overrides
             };
