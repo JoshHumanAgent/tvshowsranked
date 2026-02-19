@@ -3770,6 +3770,13 @@
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
         const db = firebase.firestore();
+        db.enablePersistence({ synchronizeTabs: true }).catch(err => {
+            if (err.code === 'unimplemented') {
+                console.warn('Firestore persistence not supported in this browser.');
+            } else {
+                console.warn('Firestore persistence error:', err);
+            }
+        });
         let currentUser = null;
         let showsReady = false;        // true once loadShowsData completes
         let initialAuthFired = false;   // distinguishes page-load auth from live login/logout
