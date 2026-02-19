@@ -5683,10 +5683,13 @@
             if (!currentUser) return;
             const overrides = {};
             modifiedShows.forEach(title => {
+                const show = shows.find(s => s.title === title);
                 overrides[title] = {};
                 catKeys.forEach(key => {
                     overrides[title][key] = activeScores[title][key];
                 });
+                // Save exact computed final so other devices restore it identically
+                if (show) overrides[title]._final = show.final;
             });
             const data = {
                 weights: { ...weights },
@@ -5795,7 +5798,7 @@
                     renderPinnedShows();
                 }
 
-                // Score overrides — apply to BOTH show[key] and activeScores so recalc is correct
+                // Score overrides — restore category scores and exact final
                 if (data.scoreOverrides) {
                     Object.entries(data.scoreOverrides).forEach(([title, scores]) => {
                         const show = shows.find(s => s.title === title);
@@ -5808,12 +5811,33 @@
                                 changed = true;
                             }
                         });
-                        if (changed) modifiedShows.add(title);
+                        if (changed) {
+                            modifiedShows.add(title);
+                            if (typeof scores._final === 'number') {
+                                // Restore the exact final that was computed on the saving device
+                                show.final = scores._final;
+                            } else {
+                                // Fallback for old Firestore data without _final: use delta approach
+                                let finalDelta = 0;
+                                catKeys.forEach(k => {
+                                    finalDelta += (activeScores[title][k] - baseScores[title][k]) * (weights[k] / 100);
+                                });
+                                show.final = parseFloat((baseScores[title].final + finalDelta).toFixed(2));
+                            }
+                        }
                     });
                 }
 
-                // Recalculate all finals with loaded weights + overrides, then re-rank
-                shows.forEach(show => recalcFinal(show));
+                // For non-overridden shows: if weights are custom, recalculate their finals
+                // (matches what recalculateWithWeights does on the main PC after a weight change)
+                const hasCustomWeights = catKeys.some(k => weights[k] !== defaultWeights[k]);
+                if (hasCustomWeights) {
+                    shows.forEach(show => {
+                        if (!modifiedShows.has(show.title)) recalcFinal(show);
+                    });
+                }
+                // Non-overridden shows with default weights keep their JSON human-adjusted finals
+
                 shows.sort((a, b) => b.final - a.final);
                 shows.forEach((s, i) => { s.rank = i + 1; });
                 updateSaveBar();
