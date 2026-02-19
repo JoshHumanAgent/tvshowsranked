@@ -4114,7 +4114,7 @@
             weights = { ...defaultWeights };
             initWeightSliders();
             recalculateWithWeights();
-            debouncedSave();
+            saveUserPreferences();
         });
 
         // Recalculate on button click
@@ -4152,7 +4152,7 @@
             
             updateSaveBar();
             renderShows();
-            debouncedSave();
+            saveUserPreferences();
             console.log('[tvshowsRanked] Factory reset complete');
         });
 
@@ -4789,6 +4789,7 @@
                 
                 // Save and re-render
                 saveOverridesToStorage();
+                saveUserPreferences();
                 updateSaveBar();
                 renderShows();
                 
@@ -5554,7 +5555,7 @@
             shows.forEach((s, i) => { s.rank = i + 1; });
             updateSaveBar();
             renderShows();
-            debouncedSave();
+            saveUserPreferences();
         });
 
         // ---- Fix pinned shows to use titles instead of ranks ----
@@ -5629,12 +5630,29 @@
         }
 
         function setSyncStatus(status) {
-            // Show sync status briefly in the login button's signout label
+            if (!currentUser) return;
             const label = document.querySelector('.login-signout-label');
-            if (!label) return;
-            if (status === 'saving') { label.textContent = 'Saving...'; label.className = 'login-signout-label sync-status-inline saving'; }
-            else if (status === 'saved') { label.textContent = 'Synced ✓'; label.className = 'login-signout-label sync-status-inline saved'; setTimeout(() => { label.textContent = 'Sign Out'; label.className = 'login-signout-label'; }, 2000); }
-            else if (status === 'error') { label.textContent = 'Sync error'; label.className = 'login-signout-label sync-status-inline error'; setTimeout(() => { label.textContent = 'Sign Out'; label.className = 'login-signout-label'; }, 3000); }
+            const btn = document.getElementById('login-bar-btn');
+            if (!label || !btn) return;
+            if (status === 'saving') {
+                label.textContent = 'Saving...';
+                label.className = 'login-signout-label sync-status-inline saving';
+                btn.style.opacity = '0.7';
+            } else if (status === 'saved') {
+                label.textContent = 'Synced ✓';
+                label.className = 'login-signout-label sync-status-inline saved';
+                btn.style.opacity = '1';
+                setTimeout(() => {
+                    if (label) { label.textContent = 'Sign Out'; label.className = 'login-signout-label'; }
+                }, 2500);
+            } else if (status === 'error') {
+                label.textContent = 'Sync failed';
+                label.className = 'login-signout-label sync-status-inline error';
+                btn.style.opacity = '1';
+                setTimeout(() => {
+                    if (label) { label.textContent = 'Sign Out'; label.className = 'login-signout-label'; }
+                }, 4000);
+            }
         }
 
         // Wipes all state back to clean defaults and re-renders.
