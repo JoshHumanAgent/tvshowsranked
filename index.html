@@ -5629,6 +5629,49 @@
             else if (status === 'error') { label.textContent = 'Sync error'; label.className = 'login-signout-label sync-status-inline error'; setTimeout(() => { label.textContent = 'Sign Out'; label.className = 'login-signout-label'; }, 3000); }
         }
 
+        // Wipes all state back to clean defaults and re-renders.
+        // Called on logout, and before applying Firestore prefs on login.
+        function resetAllState(andRender = true) {
+            // Reset state variables
+            weights = { ...defaultWeights };
+            multiplierEnabled = true;
+            currentGenres = ['all'];
+            currentEras = [];
+            sortBy = 'rank';
+            searchTerm = '';
+            pinnedShows = [];
+            modifiedShows.clear();
+
+            // Restore every show's category scores AND activeScores from baseScores
+            shows.forEach(show => {
+                if (!baseScores[show.title]) return;
+                catKeys.forEach(key => {
+                    show[key] = baseScores[show.title][key];
+                    activeScores[show.title][key] = baseScores[show.title][key];
+                });
+                show.final = baseScores[show.title].final;
+            });
+            shows.sort((a, b) => b.final - a.final);
+            shows.forEach((s, i) => { s.rank = i + 1; });
+
+            // Reset UI controls
+            initWeightSliders();
+            if (sortSelect) sortSelect.value = 'rank';
+            const multiplierToggle = document.getElementById('multiplier-toggle');
+            if (multiplierToggle) multiplierToggle.checked = multiplierEnabled;
+            if (searchInput) searchInput.value = '';
+
+            document.querySelectorAll('#era-filters .fp-era-chip').forEach(b => b.classList.remove('active'));
+            document.querySelector('#era-filters .fp-era-chip[data-filter="all"]')?.classList.add('active');
+            document.querySelectorAll('#genre-filters .fp-genre-pill').forEach(p => p.classList.remove('active'));
+            document.querySelector('#genre-filters .fp-genre-pill[data-genre="all"]')?.classList.add('active');
+
+            renderPinnedShows();
+            updateSaveBar();
+
+            if (andRender) renderShows();
+        }
+
         async function saveUserPreferences() {
             if (!currentUser) return;
             const overrides = {};
@@ -5668,22 +5711,36 @@
             if (!currentUser) return;
             try {
                 const doc = await db.collection('users').doc(currentUser.uid).get();
-                if (!doc.exists) return;
+
+                // Always start from a clean slate — wipes localStorage mods and stale state
+                resetAllState(false);
+
+                if (!doc.exists) {
+                    renderShows();
+                    return;
+                }
                 const data = doc.data();
 
+                // Weights
                 if (data.weights) {
                     Object.assign(weights, data.weights);
                     initWeightSliders();
                 }
+
+                // Multiplier
                 if (typeof data.multiplierEnabled === 'boolean') {
                     multiplierEnabled = data.multiplierEnabled;
                     const toggle = document.getElementById('multiplier-toggle');
                     if (toggle) toggle.checked = multiplierEnabled;
                 }
+
+                // Sort
                 if (data.sortBy) {
                     sortBy = data.sortBy;
                     if (sortSelect) sortSelect.value = sortBy;
                 }
+
+                // Genre filters
                 if (data.currentGenres) {
                     currentGenres = data.currentGenres;
                     document.querySelectorAll('#genre-filters .fp-genre-pill').forEach(p => p.classList.remove('active'));
@@ -5695,6 +5752,8 @@
                         });
                     }
                 }
+
+                // Era filters
                 if (data.currentEras) {
                     currentEras = data.currentEras;
                     document.querySelectorAll('#era-filters .fp-era-chip').forEach(b => b.classList.remove('active'));
@@ -5706,6 +5765,8 @@
                         });
                     }
                 }
+
+                // Filters panel open/closed
                 if (typeof data.filtersCollapsed === 'boolean') {
                     const fc = document.getElementById('filters-content');
                     const ft = document.getElementById('filters-toggle');
@@ -5720,30 +5781,39 @@
                         if (arrow) arrow.textContent = '▼';
                     }
                 }
+
+                // Pinned shows
                 if (data.pinnedShows) {
                     pinnedShows = data.pinnedShows;
                     renderPinnedShows();
                 }
+
+                // Score overrides — apply to BOTH show[key] and activeScores so recalc is correct
                 if (data.scoreOverrides) {
                     Object.entries(data.scoreOverrides).forEach(([title, scores]) => {
-                        if (activeScores[title]) {
-                            catKeys.forEach(key => {
-                                if (typeof scores[key] === 'number') {
-                                    activeScores[title][key] = scores[key];
-                                }
-                            });
-                            modifiedShows.add(title);
-                        }
+                        const show = shows.find(s => s.title === title);
+                        if (!show || !activeScores[title]) return;
+                        let changed = false;
+                        catKeys.forEach(key => {
+                            if (typeof scores[key] === 'number') {
+                                show[key] = scores[key];
+                                activeScores[title][key] = scores[key];
+                                changed = true;
+                            }
+                        });
+                        if (changed) modifiedShows.add(title);
                     });
                 }
 
-                // Recalculate and render
+                // Recalculate all finals with loaded weights + overrides, then re-rank
                 shows.forEach(show => recalcFinal(show));
                 shows.sort((a, b) => b.final - a.final);
                 shows.forEach((s, i) => { s.rank = i + 1; });
+                updateSaveBar();
                 renderShows();
             } catch (err) {
                 console.error('Failed to load preferences:', err);
+                renderShows();
             }
         }
 
@@ -5754,9 +5824,9 @@
             if (user) {
                 loadUserPreferences();
             } else {
-                // Clear localStorage on refresh when not logged in
-                localStorage.removeItem('tvranked_score_overrides');
-                localStorage.removeItem('tvranked_weights');
+                // Logged out — reset everything to clean defaults
+                // (only do this if shows data is already loaded)
+                if (shows.length > 0) resetAllState(true);
             }
             updateSaveBarVisibility();
         });
