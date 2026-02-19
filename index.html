@@ -3771,6 +3771,8 @@
         const auth = firebase.auth();
         const db = firebase.firestore();
         let currentUser = null;
+        let showsReady = false;        // true once loadShowsData completes
+        let initialAuthFired = false;   // distinguishes page-load auth from live login/logout
 
         // Dynamic data loading from JSON
         let shows = [];
@@ -3781,13 +3783,18 @@
                 const data = await response.json();
                 shows = data.shows;
                 console.log(`Loaded ${shows.length} shows from JSON`);
-                initScoreSystem();
-                renderShows();
             } catch (error) {
                 console.error('Failed to load shows from JSON, using fallback:', error);
-                // Fallback to embedded data if JSON fails
                 shows = FALLBACK_SHOWS;
-                initScoreSystem();
+            }
+            // Always runs regardless of fetch success/failure:
+            initScoreSystem();
+            showsReady = true;
+            // If the user was already resolved by Firebase before shows loaded,
+            // apply their preferences now. Otherwise just render guest state.
+            if (currentUser) {
+                await loadUserPreferences();
+            } else {
                 renderShows();
             }
         }
@@ -5821,12 +5828,18 @@
         auth.onAuthStateChanged(user => {
             currentUser = user;
             updateAuthUI(user);
-            if (user) {
-                loadUserPreferences();
+
+            if (!initialAuthFired) {
+                // First fire = page load. loadShowsData handles preferences
+                // once shows are ready (avoids race with fetch).
+                initialAuthFired = true;
             } else {
-                // Logged out — reset everything to clean defaults
-                // (only do this if shows data is already loaded)
-                if (shows.length > 0) resetAllState(true);
+                // Subsequent fires = user actually logged in or out mid-session.
+                if (user) {
+                    if (showsReady) loadUserPreferences();
+                } else {
+                    if (showsReady) resetAllState(true);
+                }
             }
             updateSaveBarVisibility();
         });
