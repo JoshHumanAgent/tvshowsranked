@@ -4152,7 +4152,7 @@
             
             updateSaveBar();
             renderShows();
-            
+            debouncedSave();
             console.log('[tvshowsRanked] Factory reset complete');
         });
 
@@ -5554,6 +5554,7 @@
             shows.forEach((s, i) => { s.rank = i + 1; });
             updateSaveBar();
             renderShows();
+            debouncedSave();
         });
 
         // ---- Fix pinned shows to use titles instead of ranks ----
