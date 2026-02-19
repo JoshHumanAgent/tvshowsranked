@@ -5673,7 +5673,7 @@
             };
             try {
                 setSyncStatus('saving');
-                await db.collection('users').doc(currentUser.uid).set(data, { merge: true });
+                await db.collection('users').doc(currentUser.uid).set(data);
                 setSyncStatus('saved');
             } catch (err) {
                 console.error('Failed to save preferences:', err);
