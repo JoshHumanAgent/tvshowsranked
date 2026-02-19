@@ -1066,54 +1066,81 @@
             border-bottom: 1px solid var(--border);
         }
 
-        /* LOGIN BAR - Inside sticky container */
-        .login-bar {
-            padding: 0.625rem 1rem 0.5rem;
+        /* LOGIN BUTTON - stacked with action bar buttons */
+        .login-bar-section {
+            padding: 0 1rem 0.5rem;
         }
 
-        .login-bar-btn {
+        .login-fixed-btn {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
-            padding: 0.625rem 1rem;
-            background: transparent;
-            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            background: rgba(212, 175, 55, 0.06);
+            border: 1px solid rgba(212, 175, 55, 0.22);
             border-radius: 6px;
-            color: var(--text-muted);
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 0.8rem;
-            font-weight: 600;
+            color: var(--gold);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
             cursor: pointer;
             transition: all 0.2s ease;
+            font-family: 'Source Sans 3', sans-serif;
         }
 
-        .login-bar-btn:hover {
-            background: rgba(212,175,55,0.08);
+        .login-fixed-btn:hover {
+            background: rgba(212, 175, 55, 0.13);
             border-color: var(--gold-dim);
-            color: var(--gold);
         }
 
-        .login-bar-icon {
-            font-size: 0.9rem;
-            opacity: 0.8;
+        .login-fixed-btn.logged-in {
+            color: var(--text-muted);
+            border-color: var(--border);
+            background: transparent;
+            justify-content: space-between;
         }
 
-        .login-bar-text {
-            letter-spacing: 0.05em;
+        .login-fixed-btn.logged-in:hover {
+            border-color: var(--border-hover);
+            color: var(--text);
+            background: rgba(255,255,255,0.03);
         }
 
-        .login-bar-arrow {
+        .login-user-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .login-user-info img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid var(--gold-dim);
+        }
+
+        .login-user-name {
+            max-width: 140px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .login-signout-label {
             font-size: 0.7rem;
-            opacity: 0.4;
-            transition: transform 0.2s ease;
+            color: var(--text-muted);
+            opacity: 0.7;
         }
 
-        .login-bar-btn:hover .login-bar-arrow {
-            transform: translateX(3px);
-            opacity: 0.8;
+        .sync-status-inline {
+            font-size: 0.65rem;
+            font-family: 'Source Sans 3', sans-serif;
         }
+        .sync-status-inline.saving { color: var(--gold-dim); }
+        .sync-status-inline.saved  { color: #4ade80; }
+        .sync-status-inline.error  { color: #e74c3c; }
 
         /* METHODOLOGY BUTTON */
         .methodology-bar {
@@ -2830,6 +2857,11 @@
                 padding: 0.55rem 2.25rem 0.55rem 0.875rem;
             }
 
+            /* Login button mobile */
+            .login-user-name {
+                max-width: 90px;
+            }
+
             /* Modal mobile fixes */
             .modal-overlay {
                 padding: 0.5rem !important;
@@ -3564,15 +3596,6 @@
 
     <!-- Top Action Bar - Sticky Container -->
     <div class="top-action-bar" id="top-action-bar">
-        <!-- Login Button -->
-        <div class="login-bar" id="login-bar">
-            <button class="login-bar-btn" id="login-bar-btn">
-                <span class="login-bar-icon">👤</span>
-                <span class="login-bar-text">Log in to save your settings</span>
-                <span class="login-bar-arrow">→</span>
-            </button>
-        </div>
-
         <!-- Methodology Button -->
         <div class="methodology-bar">
             <button class="methodology-btn" id="open-methodology">
@@ -3586,6 +3609,14 @@
                 <span class="filters-toggle-icon">⚙</span>
                 <span>Filters & Settings</span>
                 <span class="filters-toggle-arrow">▶</span>
+            </button>
+        </div>
+
+        <!-- Login / User Button -->
+        <div class="login-bar-section" id="login-bar">
+            <button class="login-fixed-btn" id="login-bar-btn">
+                <span class="login-fixed-icon">👤</span>
+                <span class="login-fixed-text">Sign In</span>
             </button>
         </div>
     </div>
@@ -5568,50 +5599,34 @@
         let isRegistering = false;
 
         function updateAuthUI(user) {
-            const container = document.getElementById('auth-container');
-            const syncStatus = document.getElementById('sync-status');
-            const loginBar = document.getElementById('login-bar');
+            const btn = document.getElementById('login-bar-btn');
+            if (!btn) return;
+
             if (user) {
-                // Hide login bar when logged in
-                if (loginBar) loginBar.style.display = 'none';
-                
-                const photoHTML = user.photoURL
-                    ? `<img src="${user.photoURL}" alt="">`
-                    : '';
                 const displayName = user.displayName || user.email.split('@')[0];
-                container.innerHTML = `
-                    <span class="sync-status" id="sync-status"></span>
-                    <div class="auth-user-info">
-                        ${photoHTML}
-                        <span class="auth-user-name">${displayName}</span>
-                        <button class="auth-signout-btn" id="auth-signout">Sign Out</button>
-                    </div>
+                const photoHTML = user.photoURL
+                    ? `<img src="${user.photoURL}" alt="" style="width:20px;height:20px;border-radius:50%;border:1px solid var(--gold-dim);">`
+                    : '👤';
+                btn.className = 'login-fixed-btn logged-in';
+                btn.innerHTML = `
+                    <span class="login-user-info">${photoHTML}<span class="login-user-name">${displayName}</span></span>
+                    <span class="login-signout-label">Sign Out</span>
                 `;
-                document.getElementById('auth-signout').addEventListener('click', () => {
-                    auth.signOut();
-                });
+                btn.onclick = () => auth.signOut();
             } else {
-                // Show login bar when logged out
-                if (loginBar) loginBar.style.display = 'block';
-                
-                container.innerHTML = `
-                    <span class="sync-status" id="sync-status"></span>
-                    <button class="auth-btn" id="auth-btn">Sign In</button>
-                `;
-                document.getElementById('auth-btn').addEventListener('click', () => {
-                    document.getElementById('auth-modal').classList.add('visible');
-                });
+                btn.className = 'login-fixed-btn';
+                btn.innerHTML = `<span class="login-fixed-icon">👤</span><span class="login-fixed-text">Sign In</span>`;
+                btn.onclick = () => document.getElementById('auth-modal').classList.add('visible');
             }
         }
 
         function setSyncStatus(status) {
-            const el = document.getElementById('sync-status');
-            if (!el) return;
-            el.className = 'sync-status';
-            if (status === 'saving') { el.textContent = 'Saving...'; el.classList.add('saving'); }
-            else if (status === 'saved') { el.textContent = 'Synced'; el.classList.add('saved'); setTimeout(() => { el.textContent = ''; }, 2000); }
-            else if (status === 'error') { el.textContent = 'Sync error'; el.classList.add('error'); }
-            else { el.textContent = ''; }
+            // Show sync status briefly in the login button's signout label
+            const label = document.querySelector('.login-signout-label');
+            if (!label) return;
+            if (status === 'saving') { label.textContent = 'Saving...'; label.className = 'login-signout-label sync-status-inline saving'; }
+            else if (status === 'saved') { label.textContent = 'Synced ✓'; label.className = 'login-signout-label sync-status-inline saved'; setTimeout(() => { label.textContent = 'Sign Out'; label.className = 'login-signout-label'; }, 2000); }
+            else if (status === 'error') { label.textContent = 'Sync error'; label.className = 'login-signout-label sync-status-inline error'; setTimeout(() => { label.textContent = 'Sign Out'; label.className = 'login-signout-label'; }, 3000); }
         }
 
         async function saveUserPreferences() {
@@ -5751,10 +5766,7 @@
             document.getElementById('auth-modal').classList.add('visible');
         });
 
-        // Login bar button (above filters)
-        document.getElementById('login-bar-btn')?.addEventListener('click', () => {
-            document.getElementById('auth-modal').classList.add('visible');
-        });
+        // login-bar-btn click is handled dynamically by updateAuthUI
 
         function updateSaveBarVisibility() {
             const saveBar = document.getElementById('score-save-bar');
