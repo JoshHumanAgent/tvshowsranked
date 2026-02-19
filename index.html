@@ -2025,6 +2025,41 @@
             color: #60a5fa !important;
         }
 
+        /* === CARD SLIDER LOCK === */
+        .show-card-panel.sliders-locked .cat-slider-input {
+            pointer-events: none !important;
+            opacity: 0.25;
+        }
+        .show-card-panel.sliders-locked .cat-bar-container {
+            opacity: 0.5;
+        }
+        .card-lock-btn {
+            display: block;
+            background: none;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 4px;
+            color: rgba(255,255,255,0.28);
+            padding: 0.1rem 0.3rem;
+            font-size: 0.65rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 0.3rem;
+            line-height: 1.4;
+            min-width: 28px;
+            text-align: center;
+            user-select: none;
+            font-family: inherit;
+        }
+        .card-lock-btn:hover {
+            border-color: rgba(212,175,55,0.4);
+            color: rgba(212,175,55,0.7);
+            background: rgba(212,175,55,0.05);
+        }
+        .card-lock-btn.unlocked {
+            border-color: rgba(212,175,55,0.3);
+            color: rgba(212,175,55,0.55);
+        }
+
         /* Category label hover effect for modal */
         .score-label-text:hover {
             color: var(--gold) !important;
@@ -2902,13 +2937,56 @@
                 font-size: 2.5rem !important;
             }
             .show-detail-body {
-                padding: 1.5rem !important;
+                padding: 1.25rem 1rem !important;
             }
             .show-detail-section {
-                margin-bottom: 1.5rem !important;
+                margin-bottom: 2rem !important;
+            }
+            .show-detail-section h3 {
+                font-size: 0.82rem !important;
+                margin-bottom: 0.9rem !important;
+            }
+            .consensus-content p {
+                font-size: 0.93rem !important;
+                line-height: 1.75 !important;
+            }
+            .show-detail-consensus {
+                padding: 1rem !important;
+            }
+            .show-detail-consensus::before {
+                font-size: 3rem !important;
+                top: 0.25rem !important;
+                right: 0.75rem !important;
+            }
+            .show-detail-narrative {
+                padding: 1rem !important;
+            }
+            .narrative-content p {
+                font-size: 0.9rem !important;
+                line-height: 1.9 !important;
+                margin-bottom: 1rem !important;
+            }
+            .narrative-content h3,
+            .narrative-content h4 {
+                font-size: 0.98rem !important;
+                margin: 1.25rem 0 0.6rem !important;
             }
             .show-detail-dimension {
-                padding: 1rem !important;
+                padding: 0.85rem !important;
+                margin-bottom: 0.75rem !important;
+            }
+            .show-detail-dimension-title {
+                font-size: 0.93rem !important;
+            }
+            .show-detail-raw-score {
+                font-size: 1.3rem !important;
+            }
+            /* Mobile lock button — bigger tap target */
+            .card-lock-btn {
+                padding: 0.35rem 0.5rem !important;
+                font-size: 0.7rem !important;
+                min-width: 34px !important;
+                min-height: 28px !important;
             }
             .category-modal-content {
                 max-width: 100% !important;
@@ -4484,7 +4562,7 @@
                     </div>
 
                     <!-- Card Panel - flows next to poster -->
-                    <div class="show-card-panel" style="flex:1;min-width:0;background:linear-gradient(135deg,rgba(20,20,28,0.95),rgba(20,20,28,0.8));border:1px solid #252532;border-radius:0 12px 12px 0;border-left:none;padding:0.8rem 1.25rem;position:relative;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af3740';this.style.background='linear-gradient(135deg,rgba(30,30,40,0.98),rgba(25,25,35,0.85))'" onmouseout="this.style.borderColor='#252532';this.style.background='linear-gradient(135deg,rgba(20,20,28,0.95),rgba(20,20,28,0.8))'">
+                    <div class="show-card-panel sliders-locked" style="flex:1;min-width:0;background:linear-gradient(135deg,rgba(20,20,28,0.95),rgba(20,20,28,0.8));border:1px solid #252532;border-radius:0 12px 12px 0;border-left:none;padding:0.8rem 1.25rem;position:relative;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af3740';this.style.background='linear-gradient(135deg,rgba(30,30,40,0.98),rgba(25,25,35,0.85))'" onmouseout="this.style.borderColor='#252532';this.style.background='linear-gradient(135deg,rgba(20,20,28,0.95),rgba(20,20,28,0.8))'">
                         <!-- Corner ornaments -->
                         <div style="position:absolute;top:6px;left:6px;width:12px;height:12px;border-top:1px solid #d4af3740;border-left:1px solid #d4af3740;"></div>
                         <div style="position:absolute;top:6px;right:6px;width:12px;height:12px;border-top:1px solid #d4af3740;border-right:1px solid #d4af3740;"></div>
@@ -4505,11 +4583,12 @@
                                     <span style="font-size:0.8rem;font-family:'JetBrains Mono',monospace;vertical-align:0;${getMultiplier(show.episodes) > 1 ? 'color:#22c55e;' : getMultiplier(show.episodes) < 1 ? 'color:#ef4444;' : 'color:#64748b;'}">×${getMultiplier(show.episodes).toFixed(2)}</span>
                                 </div>
                             </div>
-                            <div style="text-align:right;flex-shrink:0;position:relative;">
+                            <div style="text-align:right;flex-shrink:0;position:relative;display:flex;flex-direction:column;align-items:flex-end;">
                                 <!-- Score glow effect for high scores -->
                                 ${show.final >= 9 ? `<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:50px;height:50px;background:radial-gradient(circle,${tierColor}30 0%,transparent 70%);border-radius:50%;pointer-events:none;"></div>` : ''}
                                 <div data-score-display style="font-family:Unna,serif;font-size:2.2rem;font-weight:900;color:${tierColor};line-height:1;animation:goldGlow 3s ease-in-out infinite;text-shadow:${show.final >= 9 ? `0 0 20px ${tierColor}40` : 'none'};">${show.final.toFixed(2)}</div>
                                 <div style="font-size:0.5rem;color:#8a8a9a;text-transform:uppercase;letter-spacing:0.1em;">score</div>
+                                <button class="card-lock-btn" title="Unlock sliders to edit">🔒</button>
                             </div>
                         </div>
 
@@ -5164,9 +5243,24 @@
         let sliderDragState = new Map();
         let activeSliderShow = null; // Track show being edited for auto-scroll
 
+        // Card slider lock toggle
+        list.addEventListener('click', (e) => {
+            const lockBtn = e.target.closest('.card-lock-btn');
+            if (!lockBtn) return;
+            e.stopPropagation();
+            const panel = lockBtn.closest('.show-card-panel');
+            if (!panel) return;
+            const isNowLocked = panel.classList.toggle('sliders-locked');
+            lockBtn.textContent = isNowLocked ? '🔒' : '🔓';
+            lockBtn.title = isNowLocked ? 'Unlock sliders to edit' : 'Lock sliders';
+            lockBtn.classList.toggle('unlocked', !isNowLocked);
+        }, false);
+
         // Prevent slider drags from opening category modal
         list.addEventListener('mousedown', (e) => {
             if (e.target.classList.contains('cat-slider-input')) {
+                const panel = e.target.closest('.show-card-panel');
+                if (panel?.classList.contains('sliders-locked')) return;
                 e.stopPropagation();
                 sliderDragState.set(e.target, { isDragging: true });
                 // Track which show is being edited
@@ -5175,6 +5269,8 @@
         }, true);
         list.addEventListener('touchstart', (e) => {
             if (e.target.classList.contains('cat-slider-input')) {
+                const panel = e.target.closest('.show-card-panel');
+                if (panel?.classList.contains('sliders-locked')) return;
                 e.stopPropagation();
                 sliderDragState.set(e.target, { isDragging: true });
             }
@@ -5183,6 +5279,11 @@
         // Prevent click-to-snap behavior on range sliders
         list.addEventListener('click', (e) => {
             if (e.target.classList.contains('cat-slider-input')) {
+                const panel = e.target.closest('.show-card-panel');
+                if (panel?.classList.contains('sliders-locked')) {
+                    e.preventDefault();
+                    return;
+                }
                 const state = sliderDragState.get(e.target);
                 if (!state || !state.isDragging) {
                     e.preventDefault();
@@ -5202,6 +5303,8 @@
         // Live update on slider drag
         list.addEventListener('input', (e) => {
             if (!e.target.classList.contains('cat-slider-input')) return;
+            const panel = e.target.closest('.show-card-panel');
+            if (panel?.classList.contains('sliders-locked')) return;
             const slider = e.target;
             const title = slider.dataset.show;
             const catKey = slider.dataset.cat;
@@ -5500,13 +5603,15 @@
             e.target.value = ''; // reset file input
         });
 
-        document.getElementById('reset-scores-btn')?.addEventListener('click', () => {
+        document.getElementById('reset-scores-btn')?.addEventListener('click', async () => {
             if (!confirm('Reset all score modifications to original values?')) return;
             localStorage.removeItem('tvranked_score_overrides');
             localStorage.removeItem('tvranked_weights');
+            localStorage.setItem('tvranked_reset_pending', '1');
             clearTimeout(saveTimeout);
             resetAllState(true);
-            saveUserPreferences();
+            await saveUserPreferences();
+            localStorage.removeItem('tvranked_reset_pending');
         });
 
         // ---- Fix pinned shows to use titles instead of ranks ----
@@ -5689,6 +5794,16 @@
 
         async function loadUserPreferences() {
             if (!currentUser) return;
+
+            // If a full reset was in-flight when the page refreshed, finish it now
+            if (localStorage.getItem('tvranked_reset_pending')) {
+                localStorage.removeItem('tvranked_reset_pending');
+                resetAllState(false);
+                await saveUserPreferences();
+                renderShows();
+                return;
+            }
+
             try {
                 const doc = await db.collection('users').doc(currentUser.uid).get();
 
