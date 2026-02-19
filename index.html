@@ -4403,6 +4403,9 @@
         // Fetch posters from TMDB
         async function fetchPosters() {
             for (let show of shows) {
+                // Skip shows that already have a curated poster URL
+                if (show.poster) continue;
+
                 // Clean title for search (remove season info in parentheses)
                 const searchTitle = show.title.replace(/\s*\(S\d+.*\)/, '').trim();
                 try {
