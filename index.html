@@ -5853,18 +5853,23 @@
             currentUser = user;
             updateAuthUI(user);
 
-            if (!initialAuthFired) {
-                // First fire = page load. loadShowsData handles preferences
-                // once shows are ready (avoids race with fetch).
-                initialAuthFired = true;
+            const isFirstFire = !initialAuthFired;
+            initialAuthFired = true;
+
+            if (isFirstFire && !showsReady) {
+                // Firebase resolved before shows loaded.
+                // loadShowsData will check currentUser after initScoreSystem and call
+                // loadUserPreferences / renderShows at that point. Nothing to do now.
             } else {
-                // Subsequent fires = user actually logged in or out mid-session.
+                // Either: Firebase fired after shows were already ready (isFirstFire && showsReady)
+                // Or: an actual mid-session login/logout event (!isFirstFire)
                 if (user) {
                     if (showsReady) loadUserPreferences();
                 } else {
                     if (showsReady) resetAllState(true);
                 }
             }
+
             updateSaveBarVisibility();
         });
 
