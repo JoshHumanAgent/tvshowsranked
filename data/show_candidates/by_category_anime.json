@@ -1,0 +1,77 @@
+{
+    "description": "Anime/Animation (Japanese Style) shows filtered from candidates_500",
+    "generated": "2026-02-20",
+    "count": 5,
+    "candidates": [
+        {
+            "title": "Avatar: The Last Airbender",
+            "year": 2024,
+            "genres": [
+                "action",
+                "fantasy"
+            ],
+            "confidence": "high",
+            "why": [
+                "netflix",
+                "adaptation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Avatar: The Last Airbender",
+            "year": 2005,
+            "genres": [
+                "animation",
+                "fantasy"
+            ],
+            "confidence": "high",
+            "why": [
+                "cult-classic",
+                "anime-influenced"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Arcane",
+            "year": 2021,
+            "genres": [
+                "animation",
+                "action"
+            ],
+            "confidence": "high",
+            "why": [
+                "league-of-legends",
+                "visual-masterpiece"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Castlevania",
+            "year": 2017,
+            "genres": [
+                "animation",
+                "horror"
+            ],
+            "confidence": "high",
+            "why": [
+                "anime",
+                "gaming-adaptation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Love, Death & Robots",
+            "year": 2019,
+            "genres": [
+                "animation",
+                "sci-fi"
+            ],
+            "confidence": "high",
+            "why": [
+                "anthology",
+                "sci-fi"
+            ],
+            "missing": true
+        }
+    ]
+}

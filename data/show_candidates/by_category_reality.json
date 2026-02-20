@@ -1,0 +1,253 @@
+{
+    "description": "Reality/Documentary shows filtered from candidates_500",
+    "generated": "2026-02-20",
+    "count": 18,
+    "candidates": [
+        {
+            "title": "The Last Leg",
+            "year": 2012,
+            "genres": [
+                "comedy",
+                "talk-show"
+            ],
+            "confidence": "low",
+            "why": [
+                "british",
+                "current-affairs"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Great British Bake Off",
+            "year": 2010,
+            "genres": [
+                "reality",
+                "competition"
+            ],
+            "confidence": "medium",
+            "why": [
+                "british-phenomenon",
+                "cultural"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Planet Earth",
+            "year": 2006,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "bbc-nature-masterpiece"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Planet Earth II",
+            "year": 2016,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "bbc-nature",
+                "masterpiece"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Blue Planet",
+            "year": 2001,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "bbc-nature",
+                "ocean"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Blue Planet II",
+            "year": 2017,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "bbc-nature",
+                "ocean"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Our Planet",
+            "year": 2019,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "netflix-nature",
+                "attenborough"
+            ],
+            "missing": true
+        },
+        {
+            "title": "David Attenborough: A Life on Our Planet",
+            "year": 2020,
+            "genres": [
+                "documentary",
+                "nature"
+            ],
+            "confidence": "high",
+            "why": [
+                "climate",
+                "memorial"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Making a Murderer",
+            "year": 2015,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "high",
+            "why": [
+                "true-crime-phenomenon",
+                "netflix"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Making a Murderer Part 2",
+            "year": 2018,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Making a Murderer: Part 3",
+            "year": 2022,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Jinx",
+            "year": 2015,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "high",
+            "true": [
+                "robert-durst",
+                "landmark"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Jinx Part Two",
+            "year": 2024,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Wild Wild Country",
+            "year": 2018,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "high",
+            "why": [
+                "netflix-original",
+                "cult"
+            ],
+            "missing": true
+        },
+        {
+            "title": "Four Hours to Kill the President",
+            "year": 2023,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "low",
+            "why": [
+                "uk-assassination"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Staircase",
+            "year": 2004,
+            "genres": [
+                "documentary",
+                "true-crime"
+            ],
+            "confidence": "high",
+            "why": [
+                "true-crime-classic",
+                "netflix-re-release"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Problem with Jon Stewart",
+            "year": 2021,
+            "genres": [
+                "talk-show",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "apple-tv",
+                "journalism"
+            ],
+            "missing": true
+        },
+        {
+            "title": "The Problem with Jon Stewart",
+            "year": 2024,
+            "genres": [
+                "talk-show",
+                "comedy"
+            ],
+            "confidence": "medium",
+            "why": [
+                "continuation"
+            ],
+            "missing": true
+        }
+    ]
+}
