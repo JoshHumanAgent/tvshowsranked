@@ -1,191 +1,447 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Borgen - Dynamic Rank Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borgen (2010-2022) - 7-Dimension Analysis</title>
     <style>
-        body { font-family: 'Source Sans Pro', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0d0d12; padding: 2rem; }
-        h2 { color: #ffd700; font-family: 'Oranienbaum', serif; border-bottom: 2px solid #2a2a35; padding-bottom: 0.5rem; }
-        h3 { color: #c0a050; font-family: 'Unna', serif; margin-top: 2rem; }
-        .dimension-block { background: #1a1a24; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #c0a050; }
-        .dimension-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-        .dimension-score { font-size: 1.5rem; color: #ffd700; font-weight: bold; min-width: 60px; }
-        .dimension-name { font-size: 1.2rem; color: #e0e0e0; font-weight: 600; }
-        .dimension-weight { color: #888; font-size: 0.9rem; }
-        .dimension-content { color: #b0b0b0; line-height: 1.8; }
-        .final-score { background: linear-gradient(135deg, #1a1a24, #2a2a35); padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem; border: 2px solid #ffd700; }
-        .final-score-value { font-size: 3rem; color: #ffd700; font-weight: bold; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e8e8e8;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(196, 30, 58, 0.3);
+        }
+        
+        .show-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: -1px;
+        }
+        
+        .show-meta {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .tagline {
+            font-style: italic;
+            font-size: 1.3rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .final-score-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 15px 40px;
+            border-radius: 50px;
+            margin-top: 25px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .final-score-badge .label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
+        
+        .final-score-badge .score {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ffd700;
+        }
+        
+        section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #fff;
+            border-bottom: 3px solid #c41e3a;
+            padding-bottom: 15px;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+        
+        .feeling-section {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.2) 0%, rgba(22, 33, 62, 0.8) 100%);
+        }
+        
+        .feeling-content {
+            font-size: 1.15rem;
+            line-height: 2;
+        }
+        
+        .feeling-content p {
+            margin-bottom: 20px;
+        }
+        
+        .dimension-block {
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-left: 5px solid;
+            transition: transform 0.3s ease;
+        }
+        
+        .dimension-block:hover {
+            transform: translateX(5px);
+        }
+        
+        .dimension-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .dimension-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .dimension-score {
+            font-size: 1.8rem;
+            font-weight: 800;
+            padding: 8px 20px;
+            border-radius: 30px;
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .dimension-score.high { color: #4ade80; }
+        .dimension-score.medium { color: #fbbf24; }
+        .dimension-score.low { color: #f87171; }
+        
+        .dimension-content {
+            color: #b8b8b8;
+            font-size: 1.05rem;
+        }
+        
+        .dimension-content p {
+            margin-bottom: 12px;
+        }
+        
+        /* Dimension-specific colors */
+        .dim-characters { border-left-color: #4ade80; }
+        .dim-world { border-left-color: #60a5fa; }
+        .dim-cinema { border-left-color: #a78bfa; }
+        .dim-visual { border-left-color: #f87171; }
+        .dim-concept { border-left-color: #fbbf24; }
+        .dim-narrative { border-left-color: #c084fc; }
+        .dim-resolution { border-left-color: #34d399; }
+        
+        .final-score-section {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(196, 30, 58, 0.3) 100%);
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .final-score-display {
+            margin: 30px 0;
+        }
+        
+        .final-score-number {
+            font-size: 5rem;
+            font-weight: 900;
+            color: #ffd700;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+        }
+        
+        .score-label {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #b8b8b8;
+            margin-top: 10px;
+        }
+        
+        .score-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        
+        .breakdown-item {
+            background: rgba(0,0,0,0.3);
+            padding: 15px 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .breakdown-name {
+            color: #b8b8b8;
+            font-size: 0.95rem;
+        }
+        
+        .breakdown-score {
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .verdict {
+            font-size: 1.3rem;
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+        
+        .cast-info {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .cast-info strong {
+            color: #ffd700;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .show-title { font-size: 2.5rem; }
+            .final-score-number { font-size: 3.5rem; }
+            section { padding: 25px; }
+            .dimension-header { flex-direction: column; align-items: flex-start; }
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1 class="show-title">BORGEN</h1>
+            <p class="show-meta">Danish Political Drama | 2010-2022 | 4 Seasons | 38 Episodes</p>
+            <p class="tagline">"The epicentre of Danish political power has always been Borgen—the nickname for Christiansborg Palace. This is the story of those who wish to inhabit it."</p>
+            <div class="final-score-badge">
+                <div class="label">Final Score</div>
+                <div class="score">7.45</div>
+            </div>
+        </header>
 
-<h2>What It Feels Like to Watch</h2>
+        <section class="feeling-section">
+            <h2>What It Feels Like to Watch</h2>
+            <div class="feeling-content">
+                <p>Watching <em>Borgen</em> is like being granted a backstage pass to the machinery of democracy—messy, compromised, and utterly fascinating. From the very first episode, creator Adam Price immerses you in the smoky back rooms of Danish politics, where idealism collides with the brutal arithmetic of coalition building. The show doesn't glamourise power; it reveals the cost of wielding it.</p>
+                
+                <p>There's a distinct Scandinavian melancholy that permeates every frame, a recognition that progress is incremental and victory often tastes like defeat. Yet beneath this measured restraint burns something remarkably compelling: the first female Prime Minister of Denmark navigating a boys' club that never asked for her, constantly calculating which principles she can afford to sacrifice and which she must defend at any cost.</p>
+                
+                <p>The emotional texture of <em>Borgen</em> is strangely intimate despite its political epic scope. You'll find yourself oddly invested in budget negotiations, genuinely anxious about housing reform votes, and surprisingly moved by the loneliness of leadership. Sidse Babett Knudsen's Birgitte Nyborg doesn't shout or grandstand; she thinks, she listens, she calculates. The performance is so internalised that when emotion finally breaks through—her marriage crumbling under the weight of ambition, her children growing distant, her idealism eroding—it lands with devastating force.</p>
+                
+                <p>What stays with you long after the credits roll is the show's unflinching honesty about compromise. <em>Borgen</em> understands that politics isn't a Marvel movie of good versus evil—it's a Danish design aesthetic of finding the least-worst solution while everyone hates you for it. The series feels remarkably prophetic about contemporary politics: the rise of populism, the erosion of trust in institutions, the impossible balancing act between conviction and electability. Watching it today, you recognise our current political landscape taking shape, and it feels both prescient and deeply sad.</p>
+                
+                <p>Yet for all its sober realism, <em>Borgen</em> maintains a stubborn belief in the possibility of good governance, of public service as vocation rather than vanity project. It's this tension—between cynicism and hope, between what's possible and what's right—that makes the show so compulsively watchable and, ultimately, so moving.</p>
+                
+                <div class="cast-info">
+                    <strong>Created by:</strong> Adam Price<br>
+                    <strong>Starring:</strong> Sidse Babett Knudsen (Birgitte Nyborg), Birgitte Hjort Sørensen (Katrine Fønsmark), Pilou Asbæk (Kasper Juul), Søren Malling (Torben Friis)
+                </div>
+            </div>
+        </section>
 
-<p>Borgen arrived as Denmark's contribution to prestige political drama—the story of Birgitte Nyborg (Sidse Babett Knudsen), a minor party leader who becomes Denmark's first female prime minister through a combination of principle, pragmatism, and accident. Created by Adam Price, the series explored what happens when idealism confronts the machinery of democratic governance: the compromises, the betrayals, the moments when principle costs and when it saves.</p>
+        <section>
+            <h2>Why It Ranks</h2>
+            
+            <div class="dimension-block dim-characters">
+                <div class="dimension-header">
+                    <span class="dimension-title">👤 Characters</span>
+                    <span class="dimension-score high">7.8</span>
+                </div>
+                <div class="dimension-content">
+                    <p><em>Borgen</em> constructs its characters with the precision of a constitutional lawyer drafting coalition agreements—everything matters, everything has consequence. At the centre stands Birgitte Nyborg, one of television's most fully realised political protagonists. Sidse Babett Knudsen creates a woman who is neither saint nor sinner but something far more interesting: a competent politician navigating impossible choices. We watch her evolve from idealistic Moderate Party leader to seasoned PM, and finally to battle-scarred former politician struggling with relevance.</p>
+                    
+                    <p>The supporting ensemble matches this quality. Journalist Katrine Fønsmark's parallel journey—from ambitious reporter to recovering burnout to media executive—provides the essential outside-looking-in perspective. Her on-again, off-again romance with spin doctor Kasper Juul creates one of television's most adult relationships, messy with competing ambitions and mutual damage. Even secondary figures like the ethically compromised news editor Torben Friis and the various party leaders receive psychological depth.</p>
+                    
+                    <p>What keeps this from a higher score is occasional predictability in character arcs. Some figures, particularly the more cartoonish political opponents, serve narrative function over psychological truth. The show occasionally retreats to types—the oily conservative, the idealistic young socialist—when it should push for specificity. Nevertheless, when <em>Borgen</em> focuses on its core ensemble, particularly Birgitte's increasingly complex relationship with power and consequence, it achieves genuine dramatic richness.</p>
+                </div>
+            </div>
 
-<p>The experience of watching Borgen is one of intimate access to political life. The series captures the texture of democratic governance—coalition negotiations, media management, party factions, family pressures, the endless calculation of advantage and principle. Unlike The West Wing's idealized American presidency, Borgen shows a prime minister who can lose votes, who needs coalition partners, whose power is always constrained by political reality. The Danish system (proportional representation, coalition government, multiparty parliament) creates a political texture that American drama can't match.</p>
+            <div class="dimension-block dim-world">
+                <div class="dimension-header">
+                    <span class="dimension-title">🌍 World Building</span>
+                    <span class="dimension-score high">7.5</span>
+                </div>
+                <div class="dimension-content">
+                    <p>The world of <em>Borgen</em> is Denmark itself—or more precisely, the rarefied ecosystem of Christiansborg Palace where journalists, spin doctors, civil servants, and elected officials orbit each other in endless negotiation. Adam Price and his writers construct this environment with anthropological precision: the exact protocols of government formation, the pecking order of the parliamentary press corps, the geography of power from PM's office to canteen gossip.</p>
+                    
+                    <p>What distinguishes this world building is its dynamic quality. Danish politics evolves through the series—the rise of the far-right Freedom Party, the fragmenting media landscape, the changing nature of political communication. The 2022 revival season, <em>Borgen: Power & Glory</em>, brilliantly updates this world for the social media age, with Birgitte now as Foreign Minister navigating Arctic sovereignty disputes and TikTok diplomacy. The show understands that political institutions aren't static backdrops but living organisms adapting to technological and cultural change.</p>
+                    
+                    <p>The limitation lies in scope. <em>Borgen</em> is overwhelmingly focused on the political elite; ordinary Danish citizens appear mainly as polling numbers or protest crowds. We rarely see the communities whose lives these policies affect. This is arguably a deliberate choice—power centres are where decisions happen, and the show's project is demystification of that process—but it creates a somewhat insular bubble. The world is complete and coherent but not as expansive as the greatest political dramas.</p>
+                </div>
+            </div>
 
-<p>Sidse Babett Knudsen's Birgitte Nyborg is the series' center—a character whose political skill coexists with genuine idealism, whose personal life (divorce, a daughter with anxiety, a new relationship) complicates her public role without destroying it. The show neither heroizes nor cynicizes her; it shows her making decisions, sometimes succeeding, sometimes failing, always calculating the tradeoffs between purity and effectiveness. She's one of television's most fully realized political figures.</p>
+            <div class="dimension-block dim-cinema">
+                <div class="dimension-header">
+                    <span class="dimension-title">🎬 Cinematography</span>
+                    <span class="dimension-score high">7.5</span>
+                </div>
+                <div class="dimension-content">
+                    <p><em>Borgen</em> employs a clean, naturalistic visual style that serves its realist ambitions. The cinematography favours handheld camera work in crisis moments, steady observation in negotiation scenes, and warm amber lighting for domestic spaces that contrast with the cool fluorescence of government offices. It's functional, intelligent filmmaking that never draws attention to itself—but that's precisely the point. The camera serves the story rather than overwhelming it.</p>
+                    
+                    <p>The visual palette evolves subtly across seasons. Early episodes employ a slightly more saturated look; by the revival season, the imagery mirrors Birgitte's own aging with more muted tones and harsher shadows. The series makes excellent use of actual Danish government locations—the real Christiansborg Palace, the actual TV1 news studios—which grounds the fiction in documentary reality.</p>
+                    
+                    <p>Where the cinematography truly distinguishes itself is in its treatment of faces. Extreme close-ups during crucial political moments capture micro-expressions of calculation, doubt, and barely concealed rage. Birgitte's face becomes a landscape of power and its costs. Yet the show never achieves the visual poetry of the most aesthetically ambitious television. It's handsome and appropriate but rarely breathtaking—a choice, perhaps, given the subject matter, but one that caps the ceiling for this dimension.</p>
+                </div>
+            </div>
 
-<p>The series' secret weapon is its treatment of media. The subplot involving TV1's political coverage—particularly the competitive dynamic between anchors Katrine Fønsmark (Birgitte Hjort Sørensen) and Hanne Holm (Benedikte Thorsteinsson)—provides a parallel narrative about how political journalism shapes and is shaped by those it covers. The show understands that politics and media are symbiotic, each influencing the other in ways that determine what citizens know and believe.</p>
+            <div class="dimension-block dim-visual">
+                <div class="dimension-header">
+                    <span class="dimension-title">🎆 Visual Spectacle</span>
+                    <span class="dimension-score low">5.5</span>
+                </div>
+                <div class="dimension-content">
+                    <p>Let's be clear: nobody watches <em>Borgen</em> for visual spectacle. This is a show about people talking in rooms, and the production design reflects that fundamental reality. The "action" consists of press conferences, budget negotiations, and tense conversations across desks. When the show does venture into more cinematic territory—the Arctic sequences in the revival season, international summits—it handles them competently but without particular distinction.</p>
+                    
+                    <p>That said, the restraint is largely intentional and appropriate. <em>Borgen</em>'s subject matter doesn't demand spectacle; indeed, pyrotechnics would feel tonally wrong. The visual spectacle that does exist is of a subtler kind: the spectacle of power itself, the imposing architecture of Christiansborg, the choreography of parliamentary procedure. These provide their own aesthetic interest, but they won't satisfy viewers seeking traditional spectacle.</p>
+                    
+                    <p>The low score here isn't really a criticism—it's a category mismatch. <em>Borgen</em> knows exactly what it is and spends its budget on expert actors and research rather than effects. But judged against the full spectrum of television visual possibilities, from <em>Game of Thrones</em> to <em>Breaking Bad</em>, the show operates in deliberately narrow visual territory.</p>
+                </div>
+            </div>
 
-<h2>Why It Ranks #73</h2>
+            <div class="dimension-block dim-concept">
+                <div class="dimension-header">
+                    <span class="dimension-title">💡 Conceptual Density</span>
+                    <span class="dimension-score high">7.4</span>
+                </div>
+                <div class="dimension-content">
+                    <p><em>Borgen</em> is intellectually nourishing television that trusts its audience to understand proportional representation, coalition mathematics, and the distinction between parliamentary and presidential systems. Each episode layers multiple thematic concerns: the personal cost of ambition, the compromise of idealism, gender and power, media responsibility, the tension between leadership and democracy.</p>
+                    
+                    <p>The show's conceptual richness is most evident in its treatment of political philosophy. It's genuinely interested in questions of conviction versus pragmatism, exploring how Birgitte's Moderate Party ideology adapts (or degrades) under the pressures of governance. Episodes dealing with constitutional crises, military intervention dilemmas, or welfare state reforms engage seriously with the ethical complexity these situations entail.</p>
+                    
+                    <p>However, the series occasionally simplifies for narrative convenience. Complex policy debates sometimes resolve too neatly; ideological opponents can become straw men; the "right" answer occasionally emerges too clearly in a medium that should embrace uncertainty. The revival season's Arctic sovereignty plot, while topical, sometimes sacrifices nuance for thriller momentum. <em>Borgen</em> is smart television, certainly, but it plays within established conventions rather than fundamentally challenging them.</p>
+                </div>
+            </div>
 
-<h3>7-Dimension Algorithmic Analysis</h3>
+            <div class="dimension-block dim-narrative">
+                <div class="dimension-header">
+                    <span class="dimension-title">📖 Narrative Drive</span>
+                    <span class="dimension-score high">7.1</span>
+                </div>
+                <div class="dimension-content">
+                    <p>The narrative architecture of <em>Borgen</em> operates on multiple simultaneous tracks: the episodic crisis-of-the-week (a military deployment, a cabinet reshuffle, a media scandal), the seasonal arc (election campaigns, government formation, political survival), and the longitudinal character development spanning years of storytelling. This structure creates consistent forward momentum—there's always something urgent demanding attention—while building cumulative emotional weight.</p>
+                    
+                    <p>The show excels at the building and releasing of tension across episodes. A seemingly minor subplot in episode two becomes a major crisis by episode six. Information flows and power shifts are orchestrated with the precision of a heist film. The pacing respects both the immediacy of political emergency (news cycles move fast) and the glacial speed of institutional change (real reform takes years).</p>
+                    
+                    <p>The weakness emerges in longer arcs where the narrative sometimes strains credibility for dramatic effect. Coalitions collapse and reform with almost sitcom speed; political comebacks materialise with convenient timing; personal and professional crises occasionally coincide too neatly. The revival season struggles most here, compressing years of political evolution into single episodes. The narrative drive is consistently present but not always earned.</p>
+                </div>
+            </div>
 
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8.5</span>
-        <div>
-            <div class="dimension-name">Characters & Acting</div>
-            <div class="dimension-weight">Weight: 20% | Weighted Contribution: 1.70</div>
-        </div>
+            <div class="dimension-block dim-resolution">
+                <div class="dimension-header">
+                    <span class="dimension-title">✓ Resolution</span>
+                    <span class="dimension-score high">7.4</span>
+                </div>
+                <div class="dimension-content">
+                    <p><em>Borgen</em> understands that in politics, resolution is temporary and compromise is perpetual. The show resolves its individual episodes and seasons with appropriate ambiguity—elections are won and lost, governments fall and form, but the fundamental tensions between idealism and power remain. This is sophisticated resolution: answering immediate questions while maintaining the deeper problems that drive the drama.</p>
+                    
+                    <p>The original series conclusion (before the revival) offered a mature ending that acknowledged Birgitte's transformation without moralising about it. She had become a different person than the idealist who entered politics, but whether this constituted growth or corruption was left for viewers to determine. The 2022 revival, while artistically uneven, did provide additional closure on her political journey, offering a final act that felt earned after years of storytelling.</p>
+                    
+                    <p>Some character resolutions felt rushed—the Kasper/Katrine relationship arc, in particular, zigzagged in ways that suggested writer uncertainty rather than organic development. Certain political storylines ended with speeches when actions would have been more satisfying. But overall, <em>Borgen</em> demonstrates narrative discipline, knowing when to conclude threads and when to let them dangle unresolved, which is truer to life than tidy bows.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-score-section">
+            <h2>Final Assessment</h2>
+            <div class="final-score-display">
+                <div class="final-score-number">7.45</div>
+                <div class="score-label">Overall Score</div>
+            </div>
+            
+            <div class="score-breakdown">
+                <div class="breakdown-item">
+                    <span class="breakdown-name">Characters</span>
+                    <span class="breakdown-score">7.8</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-name">World Building</span>
+                    <span class="breakdown-score">7.5</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-name">Cinematography</span>
+                    <span class="breakdown-score">7.5</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-name">Visual Spectacle</span>
+                    <span class="breakdown-score">5.5</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-name">Conceptual Density</span>
+                    <span class="breakdown-score">7.4</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-name">Narrative Drive</span>
+                    <span class="breakdown-score">7.1</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-name">Resolution</span>
+                    <span class="breakdown-score">7.4</span>
+                </div>
+            </div>
+            
+            <div class="verdict">
+                <p><em>Borgen</em> stands as one of television's most intelligent examinations of power and compromise, distinguished by Sidse Babett Knudsen's extraordinary central performance and Adam Price's deep understanding of political mechanics. It sacrifices visual spectacle for psychological realism, and occasionally simplifies complex issues for narrative clarity, but these trade-offs serve its larger purpose: making the hidden machinery of democracy visible, human, and deeply compelling.</p>
+                <p style="margin-top: 15px;">For viewers weary of American political drama's tendency toward melodrama and hero-worship, <em>Borgen</em> offers something rarer: a celebration of competence, a meditation on the cost of conviction, and proof that watching competent people negotiate can be as thrilling as any explosion.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Analysis generated for TV Shows Ranked | Borgen (2010-2022)</p>
+            <p>Created by Adam Price |DR (Danish Broadcasting Corporation)</p>
+        </footer>
     </div>
-    <div class="dimension-content">
-        <p><strong>Birgitte Nyborg:</strong> Sidse Babett Knudsen created one of television's great political characters—a woman whose competence coexists with uncertainty, whose idealism is tested by compromise, whose family life intrudes on public performance. The character evolves across seasons: the initially idealistic newcomer becomes a seasoned operator, then a foreign minister in a later government, each transformation earned. Knudsen plays both the public performance and private doubt with equal conviction.</p>
-        
-        <p><strong>The Political Ensemble:</strong> The series builds a parliament of personalities—coalition partners whose support must be constantly managed, rivals within and outside Nyborg's own party, civil servants who alternately enable and constrain. Mikael Birkkjær's Troels Høxballe, Nyborg's sometimes-ally, sometimes-rival, represents the pragmatic left; Lars Knutzon's Bent Sejro, her mentor and later coalition partner, embodies the political old guard. Each relationship has specific political weight.</p>
-        
-        <p><strong>The Media World:</strong> Birgitte Hjort Sørensen's Katrine Fønsmark and Benedikte Thorsteinsson's Hanne Holm created the series' parallel narrative—political journalists competing for stories, navigating the line between access and independence. Sørensen evolves from ambitious reporter to anchor to communications director to journalist again, each shift revealing different aspects of the politics-media relationship.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The West Wing (8.5) built a comparable political ensemble. Borgen matches that character depth with more institutional realism.</p>
-        
-        <p><strong>Why 8.5:</strong> Exceptional ensemble anchored by one of television's great political performances. The characters feel like real people in real institutions.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7</span>
-        <div>
-            <div class="dimension-name">World Building</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.05</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Christiansborg:</strong> The series builds Denmark's parliament (Christiansborg) as a complete institution—the prime minister's office, the party rooms, the media center, the private apartments where deals are made. The architecture and geography of power become comprehensible; you understand where people are, what those spaces mean, how physical location affects political outcome.</p>
-        
-        <p><strong>The Danish System:</strong> Borgen's world-building extends to the Danish political system—coalition negotiations, the role of the monarchy, the relationship between government and press, the European Union dimension that affects Danish politics. For non-Danish viewers, the series functions as education in how parliamentary democracy actually operates. The procedural detail creates authenticity.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The Wire (9) built Baltimore's institutional landscape. Borgen achieves similar comprehensiveness for Danish parliamentary democracy.</p>
-        
-        <p><strong>Why 7:</strong> Strong institutional world-building that captures parliamentary democracy comprehensively. The system has genuine texture and rules.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7</span>
-        <div>
-            <div class="dimension-name">Cinematography</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.05</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Institutional Realism:</strong> Borgen's visual approach serves its political realism—clean, functional compositions that capture institutional spaces, handheld camera for immediacy during crisis moments, a visual vocabulary that suggests documentary without being documentary-style. The cinematography is invisible in the way good political filmmaking should be; it doesn't call attention to itself.</p>
-        
-        <p><strong>The Performance Capture:</strong> The camera serves the performances—close-ups during negotiations that capture shift in expression, two-shots during media interviews that capture the dance between politician and journalist, wide shots of parliament that capture the political landscape. The directing prioritizes performance over style.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The West Wing (7) achieved similar functional political cinematography. Borgen matches that standard without exceeding it.</p>
-        
-        <p><strong>Why 7:</strong> Professional cinematography that serves political drama without distinguishing itself. The visual approach is appropriate to the material.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">5</span>
-        <div>
-            <div class="dimension-name">Visual Spectacle</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.50</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Absence:</strong> Borgen is political drama without action—meetings, negotiations, media appearances, family conversations. There are no explosions, no chases, no visual set pieces. The drama is entirely procedural and interpersonal. Viewers seeking spectacle will find nothing; viewers seeking political process will find everything.</p>
-        
-        <p><strong>The Emotional Scale:</strong> The scale that exists is internal—Birgitte's face as she realizes she must compromise, Katrine's expression when she's scooped by a rival, the tension of a parliamentary vote. These are small-scale moments that feel large because we've invested in the characters and understand the stakes.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The West Wing (5) operates in comparable spectacle territory. Borgen's drama is entirely human-scaled.</p>
-        
-        <p><strong>Why 5:</strong> Deliberate absence of visual spectacle appropriate to the political-procedural format. The score reflects adequacy, not failure.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">Conceptual Density</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.20</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>How Democracy Works:</strong> Borgen's primary achievement is showing how parliamentary democracy actually functions—the coalition negotiations that determine government composition, the party discipline that constrains individual politicians, the media environment that shapes public perception, the European Union dimension that affects national decisions. The series is essentially a civics lesson in dramatic form.</p>
-        
-        <p><strong>Idealism vs. Pragmatism:</strong> The series examines the tension between political principle and practical governance. Birgitte enters with ideals; she learns that ideals have costs, that compromise isn't always betrayal, but that some compromises are. The show doesn't offer simple answers; it dramatizes the difficulty of the questions.</p>
-        
-        <p><strong>Gender and Power:</strong> Birgitte's position as Denmark's first female prime minister creates ongoing conceptual material—how she's treated differently, how she manages motherhood alongside leadership, how her appearance becomes political. The series addresses gender without being about gender.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The Wire (9) achieved similar institutional analysis. Borgen matches that depth with more optimism about democratic possibility.</p>
-        
-        <p><strong>Why 8:</strong> Rich conceptual material about democratic governance, political compromise, and the practice of power. The series teaches while it entertains.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">Narrative Drive</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.20</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Political Engine:</strong> Each season builds around political crises—coalition collapses, votes of no confidence, policy challenges, personal scandals. The parliamentary format creates inherent drama: governments can fall, coalitions can unravel, majority support is never guaranteed. The stakes are built into the system.</p>
-        
-        <p><strong>The Personal Thread:</strong> The series balances political drama with personal narrative—Birgitte's family, Katrine's relationships, the human cost of political life. These provide emotional investment that complements the institutional tension. The personal and political interweave naturally.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The West Wing (8) built similar political momentum. Borgen achieves comparable drive with more realistic parliamentary constraints.</p>
-        
-        <p><strong>Why 8:</strong> Strong narrative momentum from genuine political stakes. The parliamentary format creates inherent tension that sustains across episodes.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">Narrative Resolution</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.80</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Season Arcs:</strong> Each season provides resolution—governments formed or fall, crises resolved or managed, personal relationships reach turning points. The season structure creates satisfying stopping points while leaving doors open for continuation.</p>
-        
-        <p><strong>Series Conclusion:</strong> The original series (S1-3) concluded with Birgitte's evolution complete—she had been prime minister, she had lost power, she had found new roles. The 2022 revival (Borgen II: Power & Glory) extended the story into new territory (foreign minister, EU politics, Russian tension). The original ending was satisfying; the revival was quality continuation.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The West Wing (7) concluded its presidency run with mixed results. Borgen achieved cleaner seasonal and series resolution.</p>
-        
-        <p><strong>Why 8:</strong> Effective resolution across seasons and series. The format allows both satisfaction and continuation.</p>
-    </div>
-</div>
-
-<div class="final-score">
-    <div>FINAL SCORE</div>
-    <div class="final-score-value">7.50</div>
-    <div style="margin-top: 1rem; color: #888; font-size: 0.9rem;">
-        Characters: 1.70 + World: 1.05 + Cine: 1.05 + Spectacle: 0.50 + <br>
-        Concepts: 1.20 + Drive: 1.20 + Resolution: 0.80 = <strong>7.50</strong>
-    </div>
-    <div style="margin-top: 1.5rem; font-style: italic; color: #c0a050;">
-        Episode Multiplier: 1.0 (40 episodes + revival)<br>
-        Rank: #73 of 100
-    </div>
-</div>
-
-<p style="margin-top: 2rem; color: #666; font-size: 0.85rem; text-align: center;">
-    Scored: 2026-02-21 | Methodology: 7-Dimension Comparative Ranking System
-</p>
-
 </body>
 </html>
