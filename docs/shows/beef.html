@@ -347,7 +347,20 @@
                 gap: 10px;
             }
         }
-    </style>
+    .rankings-section { margin-bottom: 2rem; }
+.rankings-header { text-align: center; margin-bottom: 2.5rem; }
+.rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; }
+.rankings-subtitle { color: var(--text-dim); font-size: 1.1rem; }
+.dimension-grid { display: grid; gap: 1.5rem; }
+.dimension-block { background: rgba(30,30,30,0.8); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.1); display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; }
+.dimension-score { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-width: 100px; }
+.score-circle { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; position: relative; }
+.score-circle::before { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: conic-gradient(var(--primary) calc(var(--score) * 10%), var(--dark) 0); z-index: -1; }
+.score-circle::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: rgba(30,30,30,0.8); }
+.score-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+.dimension-content h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+
+</style>
 </head>
 <body>
     <div class="container">
@@ -382,16 +395,21 @@
             </div>
         </section>
 
-        <section class="section">
-            <h2 class="section-title">Why It Ranks</h2>
-            
-            <div class="dimension characters">
-                <div class="dimension-header">
-                    <span class="dimension-name">Characters</span>
-                    <span class="dimension-score high">7.9</span>
-                </div>
-                <div class="dimension-content">
-                    <p>Danny Cho and Amy Lau are two of the most fully realized television protagonists of recent years. Lee Sung Jin and his writers understand that truly compelling characters aren't likable—they're understandable. Danny's desperation seeps from every pore; his failed dreams of supporting his parents, his guilt over his brother Paul's stalled life, his religious failures as a lapsed Christian—all of it informs every choice he makes. He's a man convinced the world owes him something, and his slow realization that the debt may never be paid is devastating.</p>
+        <section class="rankings-section">
+    <div class="rankings-header">
+        <h2 class="rankings-title">🏆 Why It Ranks</h2>
+        <p class="rankings-subtitle">A detailed breakdown across seven key dimensions</p>
+    </div>
+    <div class="dimension-grid">
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">CHARACTERS</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Characters</h3>
+                <p>Danny Cho and Amy Lau are two of the most fully realized television protagonists of recent years. Lee Sung Jin and his writers understand that truly compelling characters aren't likable—they're understandable. Danny's desperation seeps from every pore; his failed dreams of supporting his parents, his guilt over his brother Paul's stalled life, his religious failures as a lapsed Christian—all of it informs every choice he makes. He's a man convinced the world owes him something, and his slow realization that the debt may never be paid is devastating.</p>
                     
                     <p>Amy, meanwhile, subverts every expectation of the "successful woman" archetype. Ali Wong brings layers of complexity to a character who could have been simple villainy. Her marriage to George (the excellent Joseph Lee) reveals the hollowness of her success—she has everything she thought she wanted and feels nothing. Her relationship with her mother-in-law, her struggles with postpartum anxiety, her compulsive need to win at any cost—all of it makes her frighteningly relatable despite her actions.</p>
                     
@@ -415,16 +433,17 @@
                             <li>The children's characterization is minimal (intentional but noticeable)</li>
                         </ul>
                     </div>
-                </div>
             </div>
+        </div>
 
-            <div class="dimension world">
-                <div class="dimension-header">
-                    <span class="dimension-name">World Building</span>
-                    <span class="dimension-score medium">6.0</span>
-                </div>
-                <div class="dimension-content">
-                    <p>BEEF's world is our world—the sprawl of Southern California, the unglamorous stretches of strip malls and residential neighborhoods that most Angelenos actually inhabit. Lee Sung Jin captures the texture of Korean-American church communities, the aspirational Instagram-ready homes of wealthy entrepreneurs, the cramped apartments of those barely getting by. This is a grounded, recognizable America.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 6.5;"><span>6.5</span></div>
+                <span class="score-label">WORLD BUILDING</span>
+            </div>
+            <div class="dimension-content">
+                <h3>World Building</h3>
+                <p>BEEF's world is our world—the sprawl of Southern California, the unglamorous stretches of strip malls and residential neighborhoods that most Angelenos actually inhabit. Lee Sung Jin captures the texture of Korean-American church communities, the aspirational Instagram-ready homes of wealthy entrepreneurs, the cramped apartments of those barely getting by. This is a grounded, recognizable America.</p>
                     
                     <p>However, the show doesn't aim for immersive universe-building in the traditional sense. We're not exploring new territories or learning complex lore; we're peering into the private lives of two families. The "world" here is intimate and domestic rather than expansive. The settings—Danny's landscaping jobs, Amy's houseplant empire, the various homes and workplaces—feel authentic but largely functional.</p>
                     
@@ -448,16 +467,17 @@
                             <li>No sense of the broader community's reaction to events</li>
                         </ul>
                     </div>
-                </div>
             </div>
+        </div>
 
-            <div class="dimension cinematography">
-                <div class="dimension-header">
-                    <span class="dimension-name">Cinematography</span>
-                    <span class="dimension-score medium">7.0</span>
-                </div>
-                <div class="dimension-content">
-                    <p>Larkin Seiple's cinematography on BEEF is unshowy but precise. The show employs a handheld, vérité style that keeps us uncomfortably close to the characters, often literally—extreme close-ups capture every micro-expression, every flicker of anger or hurt across Yeun and Wong's incredible faces. The camera feels restless, almost anxious, mirroring the characters' psychological states.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">CINEMATOGRAPHY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Cinematography</h3>
+                <p>Larkin Seiple's cinematography on BEEF is unshowy but precise. The show employs a handheld, vérité style that keeps us uncomfortably close to the characters, often literally—extreme close-ups capture every micro-expression, every flicker of anger or hurt across Yeun and Wong's incredible faces. The camera feels restless, almost anxious, mirroring the characters' psychological states.</p>
                     
                     <p>The color grading deserves special mention: a muted, slightly desaturated palette that evokes the hazy California light and the emotional numbness permeating the story. When color does pop—flames, blood, the artificial brightness of retail spaces—it carries impact because of the restraint elsewhere.</p>
                     
@@ -484,16 +504,17 @@
                             <li>Occasional over-reliance on shaky-cam can feel deliberate rather than organic</li>
                         </ul>
                     </div>
-                </div>
             </div>
+        </div>
 
-            <div class="dimension visual">
-                <div class="dimension-header">
-                    <span class="dimension-name">Visual Spectacle</span>
-                    <span class="dimension-score low">5.0</span>
-                </div>
-                <div class="dimension-content">
-                    <p>Let's be clear: BEEF is not interested in spectacle. This is a deliberately small, contained story about ordinary people in ordinary places. There are no sweeping vistas, no elaborate set pieces, no visual fireworks. The show's aesthetic is mundane by design—strip malls, tract homes, freeway overpasses, office parks.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 5;"><span>5.0</span></div>
+                <span class="score-label">VISUAL SPECTACLE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Visual Spectacle</h3>
+                <p>Let's be clear: BEEF is not interested in spectacle. This is a deliberately small, contained story about ordinary people in ordinary places. There are no sweeping vistas, no elaborate set pieces, no visual fireworks. The show's aesthetic is mundane by design—strip malls, tract homes, freeway overpasses, office parks.</p>
                     
                     <p>When spectacle does emerge, it comes as a rupture in the fabric of the show's visual language: the fire, the gunshots, the moments of violence that shatter the quotidian. These moments work precisely because they're rare and shocking.</p>
                     
@@ -516,16 +537,17 @@
                             <li>No memorable visual set pieces or iconic images</li>
                         </ul>
                     </div>
-                </div>
             </div>
+        </div>
 
-            <div class="dimension concept">
-                <div class="dimension-header">
-                    <span class="dimension-name">Conceptual Density</span>
-                    <span class="dimension-score high">7.5</span>
-                </div>
-                <div class="dimension-content">
-                    <p>At its surface, BEEF operates on a deceptively simple premise: road rage escalates. But Lee Sung Jin layers this setup with remarkable thematic complexity. This is a show about <span class="highlight">class warfare</span>, <span class="highlight">the American Dream's failures</span>, <span class="highlight">intergenerational trauma</span>, <span class="highlight">Asian-American identity</span>, <span class="highlight">capitalist alienation</span>, <span class="highlight">marital dissatisfaction</span>, <span class="highlight">the performance of success</span>, and perhaps most profoundly, <span class="highlight">the impossibility of being truly known</span>.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">CONCEPTUAL DENSITY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Conceptual Density</h3>
+                <p>At its surface, BEEF operates on a deceptively simple premise: road rage escalates. But Lee Sung Jin layers this setup with remarkable thematic complexity. This is a show about <span class="highlight">class warfare</span>, <span class="highlight">the American Dream's failures</span>, <span class="highlight">intergenerational trauma</span>, <span class="highlight">Asian-American identity</span>, <span class="highlight">capitalist alienation</span>, <span class="highlight">marital dissatisfaction</span>, <span class="highlight">the performance of success</span>, and perhaps most profoundly, <span class="highlight">the impossibility of being truly known</span>.</p>
                     
                     <p>The central metaphor is devastatingly effective: these two people see each other more clearly than anyone in their actual lives. Their feud becomes a strange kind of intimacy, a connection forged in mutual recognition of each other's damage. Only someone who hates you that much can understand you that well.</p>
                     
@@ -551,16 +573,17 @@
                             <li>The finale's thematic landing, while powerful, may not satisfy all viewers</li>
                         </ul>
                     </div>
-                </div>
             </div>
+        </div>
 
-            <div class="dimension narrative">
-                <div class="dimension-header">
-                    <span class="dimension-name">Narrative Drive</span>
-                    <span class="dimension-score high">7.5</span>
-                </div>
-                <div class="dimension-content">
-                    <p>BEEF's plotting is compulsively watchable, structured around an escalating series of confrontations and retaliations that keep you clicking "Next Episode" despite your better judgment. Lee Sung Jin understands that narrative momentum comes from character agency—Danny and Amy choose to escalate, choose to retaliate, choose to keep this feud alive. Their complicity in their own destruction makes the hurtling plot feel tragically inevitable rather than contrived.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 9;"><span>9.0</span></div>
+                <span class="score-label">NARRATIVE DRIVE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Narrative Drive</h3>
+                <p>BEEF's plotting is compulsively watchable, structured around an escalating series of confrontations and retaliations that keep you clicking "Next Episode" despite your better judgment. Lee Sung Jin understands that narrative momentum comes from character agency—Danny and Amy choose to escalate, choose to retaliate, choose to keep this feud alive. Their complicity in their own destruction makes the hurtling plot feel tragically inevitable rather than contrived.</p>
                     
                     <p>The show masterfully balances episodic escalation with long-term character development. Each half-hour installment raises the stakes while deepening our understanding of who these people are and why they can't let go. The narrative operates as a pressure cooker—tension builds, releases slightly, then builds higher.</p>
                     
@@ -587,16 +610,17 @@
                             <li>Pacing occasionally sacrifices breathing room for momentum</li>
                         </ul>
                     </div>
-                </div>
             </div>
+        </div>
 
-            <div class="dimension resolution">
-                <div class="dimension-header">
-                    <span class="dimension-name">Resolution</span>
-                    <span class="dimension-score high">8.0</span>
-                </div>
-                <div class="dimension-content">
-                    <p>BEEF's finale, "Figures of Light," delivers a stunning conclusion that transforms everything preceding it. After nine episodes of escalating hostility, Danny and Amy find themselves in a situation that strips away all pretense, all posturing, all the accumulated armor of their feud. The final episodes pivot from dark comedy to something approaching genuine tragedy—and then, somehow, find a note of grace.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 9;"><span>9.0</span></div>
+                <span class="score-label">RESOLUTION</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Resolution</h3>
+                <p>BEEF's finale, "Figures of Light," delivers a stunning conclusion that transforms everything preceding it. After nine episodes of escalating hostility, Danny and Amy find themselves in a situation that strips away all pretense, all posturing, all the accumulated armor of their feud. The final episodes pivot from dark comedy to something approaching genuine tragedy—and then, somehow, find a note of grace.</p>
                     
                     <p>The title takes on multiple meanings in the final stretch: biblical figures of light, the literal lights of the wilderness, the metaphorical light of understanding. Without spoiling specifics, the resolution refuses the easy catharsis of revenge or reconciliation. Instead, it offers something more complicated and more true: the possibility that two people who have done terrible things to each other might still recognize their shared humanity.</p>
                     
@@ -622,11 +646,98 @@
                             <li>The final third requires patience some viewers may not have</li>
                         </ul>
                     </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section class="final-score-block">
+<section class="rankings-section">
+    <div class="rankings-header">
+        <h2 class="rankings-title">🏆 Why It Ranks</h2>
+        <p class="rankings-subtitle">A detailed breakdown across seven key dimensions</p>
+    </div>
+    <div class="dimension-grid">
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">CHARACTERS</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Characters</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 6.5;"><span>6.5</span></div>
+                <span class="score-label">WORLD BUILDING</span>
+            </div>
+            <div class="dimension-content">
+                <h3>World Building</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">CINEMATOGRAPHY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Cinematography</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 5;"><span>5.0</span></div>
+                <span class="score-label">VISUAL SPECTACLE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Visual Spectacle</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">CONCEPTUAL DENSITY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Conceptual Density</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 9;"><span>9.0</span></div>
+                <span class="score-label">NARRATIVE DRIVE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Narrative Drive</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 9;"><span>9.0</span></div>
+                <span class="score-label">RESOLUTION</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Resolution</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="final-score-block">
             <div class="final-label">Final Score</div>
             <div class="final-score"><span>7</span>.49</div>
             <div class="score-bar">

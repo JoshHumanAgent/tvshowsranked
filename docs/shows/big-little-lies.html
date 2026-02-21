@@ -358,7 +358,20 @@
                 justify-content: center;
             }
         }
-    </style>
+    .rankings-section { margin-bottom: 2rem; }
+.rankings-header { text-align: center; margin-bottom: 2.5rem; }
+.rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; }
+.rankings-subtitle { color: var(--text-dim); font-size: 1.1rem; }
+.dimension-grid { display: grid; gap: 1.5rem; }
+.dimension-block { background: rgba(30,30,30,0.8); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.1); display: grid !important; grid-template-columns: auto 1fr !important; gap: 1.5rem; }
+.dimension-score { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-width: 100px; }
+.score-circle { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; position: relative; }
+.score-circle::before { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: conic-gradient(var(--primary) calc(var(--score) * 10%), var(--dark) 0); z-index: -1; }
+.score-circle::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: rgba(30,30,30,0.8); }
+.score-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+.dimension-content h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+
+</style>
 </head>
 <body>
     <div class="show-header">
@@ -441,152 +454,93 @@
             </div>
         </div>
 
-        <!-- Why It Ranks Section -->
-        <div class="section">
-            <div class="section-header">
-                <h2 class="section-title">Why It Ranks</h2>
+        <section class="rankings-section">
+    <div class="rankings-header">
+        <h2 class="rankings-title">🏆 Why It Ranks</h2>
+        <p class="rankings-subtitle">A detailed breakdown across seven key dimensions</p>
+    </div>
+    <div class="dimension-grid">
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7.5;"><span>7.5</span></div>
+                <span class="score-label">CHARACTERS</span>
             </div>
-            <div class="section-content">
-                <p>The following seven dimensions represent the criteria by which <em>Big Little Lies</em> is evaluated and ultimately assigned its composite score. Each dimension has been analyzed independently, considering the specific demands and expectations of prestige television in its era.</p>
-
-                <div class="dimension-grid">
-                    <!-- Dimension 1: Characters -->
-                    <div class="dimension-block high">
-                        <div class="dimension-header">
-                            <span class="dimension-name">1. Character Development & Portrayal</span>
-                            <span class="dimension-score high">7.5</span>
-                        </div>
-                        <div class="dimension-content">
-                            <p><em>Big Little Lies</em> is elevated considerably by its ensemble cast and the care taken in developing its five primary female leads. The series begins by establishing clear archetypes—the Type-A busybody (Madeline), the ethereal beauty hiding dark secrets (Celeste), the desperate climber (Renata), the outsider with a mysterious past (Jane), and the ethereal free spirit (Bonnie). Where lesser shows would have been content to let these archetypes carry the narrative, this series invests in expanding each woman's interiority until they become fully human.</p>
-                            
-                            <p>Nicole Kidman's portrayal of Celeste Wright earned deserved acclaim for its raw depiction of domestic abuse's psychological complexity. The show avoids simple victim narratives, instead exploring the twisted intimacy and attachment that complicate leaving an abuser. Similarly, Reese Witherspoon's Madeline evolves from comedic relief to embody the specific anxieties of professional women who redirected ambition into motherhood, only to find that channel equally constraining.</p>
-                            
-                            <p>The male characters receive less development—intentionally, as this is fundamentally a story about female experience—but this creates an imbalance that keeps the score from reaching higher. Ed, Nathan, Perry, and Gordon are sketches compared to their wives, serving more as foils than fully realized people. Season 2 attempts correction through Meryl Streep's Mary Louise, whose investigation into her son's death adds complexity, yet the focus remains uneven.</p>
-                            
-                            <p>Shailene Woodley's Jane brings authentic working-class perspective to the privileged setting, her trauma and single motherhood creating necessary friction with the other mothers. Zoe Kravitz's Bonnie, unfortunately, suffers from underdevelopment despite her climactic importance; we sense depths the show never fully explores until Season 2's rushed revelations about her childhood. Still, when this cast shares screen space—their chemistry elevates every scene, making their eventual solidarity earned and emotionally resonant.</p>
-                        </div>
-                    </div>
-
-                    <!-- Dimension 2: World Building -->
-                    <div class="dimension-block mid">
-                        <div class="dimension-header">
-                            <span class="dimension-name">2. World Building & Setting</span>
-                            <span class="dimension-score mid">7.0</span>
-                        </div>
-                        <div class="dimension-content">
-                            <p>The world of Monterey as presented in <em>Big Little Lies</em> is meticulously rendered, a sun-drenched paradise of privilege that functions simultaneously as alluring destination and suffocating prison. The production design team captured the specific aesthetic of California's central coast wealthy enclaves—where casual luxury competes with performative wellness, where outdoor lifestyles blur with aggressive status signaling, and where every social interaction carries the subtext of property values and networking opportunities.</p>
-                            
-                            <p>The show's understanding of elementary school parent politics is uncomfortably precise. The fundraising meetings, birthday party negotiations, gossip networks, and playground alliances all reflect authentic observations about how class anxiety reproduces itself through children. The Otter Bay Elementary setting becomes a microcosm of adult pathology, where children's achievements serve as proxy warfare for their parents' insecurities.</p>
-                            
-                            <p>Where the world building falters is in its narrow scope. Despite being ostensibly about a community, we see only the affluent bubble. Working-class Monterey exists primarily through Jane's character, but her poverty is presented as individual circumstance rather than structural reality. The show's California is almost entirely white and wealthy, a limitation that becomes more glaring as the narrative questions privilege without interrogating its own exclusionary gaze.</p>
-                            
-                            <p>The second season expands geographic scope somewhat but doubles down on the insularity. Mary Louise's arrival from Arizona introduces slight geographic contrast, yet the world remains stubbornly contained within its glass houses and ocean views. This works thematically—the wealthy literally live above the fog line, isolated from reality—but limits the series' sociological ambition.</p>
-                            
-                            <p>Atmosphere compensates for scope. The cinematography's love affair with location—Bixby Bridge at dusk, the Aquarium's ethereal lighting, coastal drives winding through cypress—creates immersion that transcends narrative limitations. Monterey becomes not just setting but emotional state, its beauty inseparable from its capacity to hide what lies beneath.</p>
-                        </div>
-                    </div>
-
-                    <!-- Dimension 3: Cinematography -->
-                    <div class="dimension-block high">
-                        <div class="dimension-header">
-                            <span class="dimension-name">3. Cinematography & Visual Storytelling</span>
-                            <span class="dimension-score high">8.0</span>
-                        </div>
-                        <div class="dimension-content">
-                            <p><em>Big Little Lies</em> represents some of the finest cinematography in television history, establishing visual templates that influenced prestige TV throughout the late 2010s. Director Jean-Marc Vallée and cinematographer Yves Bélanger crafted an aesthetic that merged European art film sensibilities with American television production values, creating a distinctive visual language that served narrative and thematic goals simultaneously.</p>
-                            
-                            <p>The show's signature technique involves the extensive use of natural light and practical sources, rejecting the flat illumination common to television for lighting that mimics how humans actually experience spaces. Interiors glow with the particular golden-hour magic of California coastal living; exteriors capture the dramatic interplay of Pacific fog and sudden sunbursts. The result is a show that looks like no other, its visual texture as memorable as its performances.</p>
-                            
-                            <p>Vallée's editing choices—heavy use of flash cuts, musical montage, and temporal fragmentation—initially seem like stylistic flourish but prove essential to storytelling. The non-linear structure, which withholds the identity of the deceased until the finale, is communicated through visual rather than verbal means. The editing mirrors traumatic memory: fragmented, intrusive, emotionally colored rather than chronologically ordered.</p>
-                            
-                            <p>Season 2, directed primarily by Andrea Arnold, maintains visual quality while introducing a grittier, more handheld aesthetic that suits the narrative's descent into consequence and confession. Where Season 1 floats, Season 2 grounds; the shift reflects psychological truth even if some viewers missed Vallée's dreamier touch.</p>
-                            
-                            <p>Particular sequences demonstrate mastery: the opening credits' oceanic imagery establishing mood; the first-season finale's gradual convergence of timelines visualized through gathering storm; Celeste's dissociative sequences where reality fractures; the climactic spiral staircase sequence that combines architectural grandeur with domestic terror. These aren't merely pretty pictures but visual storytelling of the highest order.</p>
-                            
-                            <p>Some criticism emerged regarding Season 2's increased reliance on tight close-ups, with detractors finding the proximity suffocating. This misses the intentionality: as the women's lies close in, so does the camera. The cinematography externalizes psychological states, making the visual language inseparable from character experience.</p>
-                        </div>
-                    </div>
-
-                    <!-- Dimension 4: Visual Spectacle -->
-                    <div class="dimension-block mid">
-                        <div class="dimension-header">
-                            <span class="dimension-name">4. Visual Spectacle & Production Value</span>
-                            <span class="dimension-score mid">7.0</span>
-                        </div>
-                        <div class="dimension-content">
-                            <p>As a production, <em>Big Little Lies</em> operates at the upper echelons of television capability, with HBO's resources supporting location filming, star salaries, and design elements that would bankrupt most productions. The spectacle here is not of the explosive blockbuster variety but of a subtler, more seductive kind: the spectacle of lifestyle aspiration turned queasy through context.</p>
-                            
-                            <p>The real estate porn element cannot be overstated. The houses—particularly Celeste and Perry's oceanfront modernist mansion and Renata's cliffside estate—are characters themselves. Production designer John Paino sourced or built spaces that communicated status with architectural specificity, making the homes extensions of their inhabitants' performed identities. The disparity between Jane's modest rental and these palaces visualizes class division without requiring dialogue.</p>
-                            
-                            <p>Costume design by Alix Friedberg deserves recognition for creating instantly iconic looks. Renata's precision-tailored power suits, Bonnie's flowing Bohemian chic, Madeline's preppy casualness, Celeste's carefully maintained glamour, Jane's outsider simplicity—each wardrobe choice characterizes while creating the distinctive visual language of affluent coastal motherhood. The Audrey and Elvis fundraiser sequence in Season 1 became instantly iconic, demonstrating how costume could serve both plot and aesthetic pleasure.</p>
-                            
-                            <p>The environmental spectacle of Monterey Bay—its marine layer, its cypress-lined drives, its dramatic cliffs—provides production value that no set could replicate. The decision to film on location rather than Vancouver stand-ins (common for California-set productions) gives authenticity that permeates every frame. When characters drive Highway 1, we feel the actual topography, the vertiginous relationship between civilization and wilderness.</p>
-                            
-                            <p>What prevents higher scoring is the show's fundamental modesty of scope. This isn't a spectacle-driven narrative; its pleasures are intimate rather than epic. No dragons descend, no wars erupt, no disasters strike (save those of human making). The "spectacle" is behavioral, dependent on performance rather than pyrotechnics. For viewers seeking transport through scale, Big Little Lies offers transport through detail—a legitimate but different mode of production value.</p>
-                        </div>
-                    </div>
-
-                    <!-- Dimension 5: Conceptual Density -->
-                    <div class="dimension-block mid">
-                        <div class="dimension-header">
-                            <span class="dimension-name">5. Conceptual Density & Thematic Complexity</span>
-                            <span class="dimension-score mid">7.0</span>
-                        </div>
-                        <div class="dimension-content">
-                            <p>The show operates on multiple thematic registers simultaneously: as domestic thriller, social satire, feminist critique, and Greek tragedy. Its source material by Liane Moriarty provided the scaffolding for David E. Kelley's adaptation to explore questions about female friendship, domestic violence, class anxiety, performative motherhood, and the violence encoded in supposedly civilized spaces.</p>
-                            
-                            <p>The central thematic tension concerns appearance versus reality—the "big little lies" of the title encompassing everything from white lies about cookie recipes to the grand deception of abusive marriage presented as perfect union. The show interrogates how women are socialized to maintain surfaces, to prioritize being liked over being honest, to smooth over conflicts that should erupt. The Monterey setting literalizes this: the coastal fog that obscures the sun becomes metaphor for what remains hidden in plain sight.</p>
-                            
-                            <p>Domestic violence receives unprecedented screen time and psychological complexity. Rather than reducing abuse to physical violence, the show explores coercive control, trauma bonding, the cognitive dissonance of loving an abuser, and the peculiar shame kept by victims in privileged circumstances. These portrayals earned praise from advocacy organizations for accuracy and responsible representation, contributing to cultural conversations about intimate partner violence.</p>
-                            
-                            <p>Where conceptual density thins is in the handling of race and class. While the primary narrative successfully explores gendered privilege, it largely ignores racial privilege despite featuring one woman of color (Bonnie) whose racialized experience is never acknowledged. Class critique remains focused on intra-elite anxiety rather than structural analysis—Jane's poverty is individual, not systemic. The show asks hard questions about women's complicity in their own oppression without extending the same scrutiny to its characters' racial and economic advantages.</p>
-                            
-                            <p>Season 2's legal thriller elements introduce themes of justice, maternal protection, and the inadequacy of legal systems to address domestic violence. Mary Louise's character interrogates cognitive dissonance regarding "good" sons who do monstrous things. These additions complicate without necessarily deepening; there's a sense of thematic repetition that prevents the second season from achieving the first's conceptual clarity.</p>
-                        </div>
-                    </div>
-
-                    <!-- Dimension 6: Narrative Drive -->
-                    <div class="dimension-block mid">
-                        <div class="dimension-header">
-                            <span class="dimension-name">6. Narrative Drive & Structure</span>
-                            <span class="dimension-score mid">7.0</span>
-                        </div>
-                        <div class="dimension-content">
-                            <p>The first season of <em>Big Little Lies</em> demonstrates near-perfect narrative architecture, adapting Liane Moriarty's novel with structural adjustments that served television's serial nature. The central mystery—who dies, and who kills them—propels seven episodes of escalating tension while allowing ample space for character development and thematic exploration. The finale's revelations reward careful viewing without requiring excessive puzzle-solving; the mystery serves character, not vice versa.</p>
-                            
-                            <p>The non-linear timeline, which intercuts the aftermath of the death with events leading up to it, creates immediate mystery while enabling thematic resonance between past and present. This structure, popularized by shows like <em>True Detective</em> and <em>Damages</em>, finds perhaps its most elegant application here. The audience knows someone dies from the opening frames; knowing who and why provides season-long momentum.</p>
-                            
-                            <p>Episode pacing varies deliberately, with certain installments (particularly Episode 3 and the finale) achieving near-perfect calibration between revelation and restraint. The show trusts its audience to attend to behavioral detail, to interpret silences and glances, creating engagement through implication rather than exposition. Much that happens remains unspoken, communicated through performance and visual storytelling.</p>
-                            
-                            <p>Season 2's narrative drive proves more uneven, lacking the first season's murder-mystery engine. The investigation into Perry's death and Mary Louise's custody threat provide structure, but these threads feel imposed rather than organic. The second season functions as extended denouement—necessary psychological aftermath for the first season's violent climax, but narratively thinner for having lost its central propulsion.</p>
-                            
-                            <p>Individual episodes in Season 2 contain powerful sequences, and the finale achieves genuine tragic weight. But the season's middle episodes meander, uncertain whether they're building toward resolution or merely extending the story past its natural endpoint. The abbreviated seven-episode order helps, yet one senses a complete story interrupted by audience demand for continuation.</p>
-                        </div>
-                    </div>
-
-                    <!-- Dimension 7: Resolution -->
-                    <div class="dimension-block high">
-                        <div class="dimension-header">
-                            <span class="dimension-name">7. Resolution & Emotional Closure</span>
-                            <span class="dimension-score high">8.0</span>
-                        </div>
-                        <div class="dimension-content">
-                            <p>The first season finale, "You Get What You Need," delivers one of television's most satisfying season conclusions, achieving near-perfect balance between revelation and restraint. The mystery's solution—the convergence of all five women's involvement in Perry's death, with Bonnie delivering the final push—rewards the season's investment in female solidarity while acknowledging complexity. These women don't merely unite; they're bound by shared violence and shared silence.</p>
-                            
-                            <p>The resolution works because it satisfies multiple narrative demands simultaneously. Genre convention requires the mystery solved; thematic investment requires the women's bond affirmed; psychological realism requires complication rather than catharsis. The closing moments—five women walking together on the beach, children playing, lies preserved—achieves haunting beauty precisely because we understand the cost of this apparent peace.</p>
-                            
-                            <p>Season 2's resolution, arriving after the series' cancellation, had the burden of providing both season and series closure. The finale "I Want to Know" succeeds admirably under constraint. Celeste's courtroom triumph, winning custody through Mary Louise's own history of violence, achieves poetic justice. The final sequence—women gathered on the beach, the lie becoming truth through repetition, "I love you" spoken openly—provides earned emotional release without falsely redeeming what these women did.</p>
-                            
-                            <p>What elevates the resolution above standard television fare is its embrace of moral ambiguity. The show refuses easy redemption or simple condemnation. Yes, Perry was abusive; yes, his death was arguably necessary; yes, the women are lying to protect each other. These truths coexist without the show forcing false synthesis. The ending trusts viewers to hold contradiction, to accept that these characters are neither heroes nor villains but women who made impossible choices.</p>
-                            
-                            <p>Some critics found the courtroom's triumph too neat, Celeste's victory over Mary Louise too dramatically convenient. This reading misses the cyclical nature: Mary Louise is revealed as her own kind of abuse survivor, her defense of Perry the same denial Celeste practiced. The victory is hollow even in winning, because it requires exposing another woman's pain. The show understands that such victories are never clean, never final.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="dimension-content">
+                <h3>Characters</h3>
+                <p>Content to be added.</p>
             </div>
         </div>
 
-        <!-- Final Score Section -->
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7;"><span>7.0</span></div>
+                <span class="score-label">WORLD BUILDING</span>
+            </div>
+            <div class="dimension-content">
+                <h3>World Building</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">CINEMATOGRAPHY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Cinematography</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7;"><span>7.0</span></div>
+                <span class="score-label">VISUAL SPECTACLE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Visual Spectacle</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7;"><span>7.0</span></div>
+                <span class="score-label">CONCEPTUAL DENSITY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Conceptual Density</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7;"><span>7.0</span></div>
+                <span class="score-label">NARRATIVE DRIVE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Narrative Drive</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">RESOLUTION</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Resolution</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final Score Section -->
         <div class="final-score-section">
             <div class="final-score-title">Final Composite Score</div>
             <div class="final-score-value">7.01</div>

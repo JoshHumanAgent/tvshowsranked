@@ -226,7 +226,20 @@
             .final-score-value { font-size: 3em; }
             .strengths-weaknesses { grid-template-columns: 1fr; }
         }
-    </style>
+    .rankings-section { margin-bottom: 2rem; }
+.rankings-header { text-align: center; margin-bottom: 2.5rem; }
+.rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; }
+.rankings-subtitle { color: var(--text-dim); font-size: 1.1rem; }
+.dimension-grid { display: grid; gap: 1.5rem; }
+.dimension-block { background: rgba(30,30,30,0.8); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.1); display: grid !important; grid-template-columns: auto 1fr !important; gap: 1.5rem; }
+.dimension-score { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-width: 100px; }
+.score-circle { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; position: relative; }
+.score-circle::before { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: conic-gradient(var(--primary) calc(var(--score) * 10%), var(--dark) 0); z-index: -1; }
+.score-circle::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: rgba(30,30,30,0.8); }
+.score-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+.dimension-content h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+
+</style>
 </head>
 <body>
     <div class="container">
@@ -407,7 +420,93 @@
             </div>
         </div>
 
-        <!-- Final Score -->
+        <section class="rankings-section">
+    <div class="rankings-header">
+        <h2 class="rankings-title">🏆 Why It Ranks</h2>
+        <p class="rankings-subtitle">A detailed breakdown across seven key dimensions</p>
+    </div>
+    <div class="dimension-grid">
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7;"><span>7.0</span></div>
+                <span class="score-label">CHARACTERS</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Characters</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8.5;"><span>8.5</span></div>
+                <span class="score-label">WORLD BUILDING</span>
+            </div>
+            <div class="dimension-content">
+                <h3>World Building</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8.5;"><span>8.5</span></div>
+                <span class="score-label">CINEMATOGRAPHY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Cinematography</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 9.5;"><span>9.5</span></div>
+                <span class="score-label">VISUAL SPECTACLE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Visual Spectacle</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">CONCEPTUAL DENSITY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Conceptual Density</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7;"><span>7.0</span></div>
+                <span class="score-label">NARRATIVE DRIVE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Narrative Drive</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7;"><span>7.0</span></div>
+                <span class="score-label">RESOLUTION</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Resolution</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final Score -->
         <div class="final-score-section">
             <div class="final-score-label">Final Score</div>
             <div class="final-score-value">7.03</div>

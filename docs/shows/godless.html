@@ -261,7 +261,20 @@
             .pros-cons { grid-template-columns: 1fr; }
             .score-display { font-size: 3em; }
         }
-    </style>
+    .rankings-section { margin-bottom: 2rem; }
+.rankings-header { text-align: center; margin-bottom: 2.5rem; }
+.rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; }
+.rankings-subtitle { color: var(--text-dim); font-size: 1.1rem; }
+.dimension-grid { display: grid; gap: 1.5rem; }
+.dimension-block { background: rgba(30,30,30,0.8); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.1); display: grid !important; grid-template-columns: auto 1fr !important; gap: 1.5rem; }
+.dimension-score { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-width: 100px; }
+.score-circle { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; position: relative; }
+.score-circle::before { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: conic-gradient(var(--primary) calc(var(--score) * 10%), var(--dark) 0); z-index: -1; }
+.score-circle::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: rgba(30,30,30,0.8); }
+.score-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+.dimension-content h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+
+</style>
 </head>
 <body>
     <div class="container">
@@ -308,107 +321,93 @@
             — Frank Griffin (Jeff Daniels)
         </p>
         
-        <section>
-            <h2>The Seven Dimensions</h2>
-            
-            <div class="dimension">
-                <div class="dimension-header">
-                    <span class="dimension-title">1. Characters & Performance</span>
-                    <span class="dimension-score">7.5/10</span>
-                </div>
-                <div class="dimension-content">
-                    <p><span class="highlight">Godless</span> presents a fascinating ensemble that subverts traditional Western archetypes. <span class="highlight">Jeff Daniels</span> delivers a career-defining performance as Frank Griffin, the charismatic yet terrifying outlaw who fuses religious fervor with ruthless violence. His portrayal creates one of television's most memorable antagonists—a villain who truly believes he's doing God's work while committing unspeakable atrocities.</p>
-                    
-                    <p>The women of <span class="highlight">La Belle</span> form the emotional core of the series. After a mining disaster claims nearly every man in town, the remaining women must forge their own society. Michelle Dockery's Alice Fletcher anchors the narrative with quiet strength, portraying a woman haunted by violence who refuses to be victimized again. Merritt Wever as Mary Agnes McNue delivers a breakout performance, commanding every scene she's in as a woman who takes up her late husband's boots and guns.</p>
-                    
-                    <p>However, Jack O'Connell's Roy Goode, while physically capable, feels underwritten compared to the rich complexity surrounding him. His character serves more as a catalyst for the women's stories rather than a fully realized protagonist. Some supporting characters, particularly among Griffin's gang, blend into a violent blur rather than standing as distinct personalities. The character development, while strong for the female ensemble, sometimes sacrifices depth for the sake of the sprawling narrative.</p>
-                </div>
+        <section class="rankings-section">
+    <div class="rankings-header">
+        <h2 class="rankings-title">🏆 Why It Ranks</h2>
+        <p class="rankings-subtitle">A detailed breakdown across seven key dimensions</p>
+    </div>
+    <div class="dimension-grid">
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7.5;"><span>7.5</span></div>
+                <span class="score-label">CHARACTERS</span>
             </div>
-            
-            <div class="dimension">
-                <div class="dimension-header">
-                    <span class="dimension-title">2. World Building & Setting</span>
-                    <span class="dimension-score">8.0/10</span>
-                </div>
-                <div class="dimension-content">
-                    <p>The fictional town of <span class="highlight">La Belle, New Mexico</span> emerges as a character unto itself—a mining town devastated by catastrophe, now populated almost entirely by women. Scott Frank and his production team have crafted a believable, lived-in world that feels authentic to the post-Civil War American frontier while introducing a fresh premise. The town's physical geography—the mine shaft looming over everything, the scattered homes, the makeshift infrastructure—speaks to a community desperately holding together against impossible odds.</p>
-                    
-                    <p>The world extends beyond La Belle to encompass Griffin's roving band of outlaws, Native American communities, ranch hands, and traveling salesmen. Each location carries distinct texture: the dusty saloons, the isolated ranches, the Native settlement where cultural tensions simmer beneath surface courtesy. The series doesn't shy away from the brutal realities of frontier life—disease, injury, lawlessness, and the constant threat of violence.</p>
-                    
-                    <p>The historical context feels meticulously researched, from costumes to weaponry to the social dynamics of a changing West. The concept of a town managed by women, while an inversion of traditional Western tropes, never feels contrived. Instead, it illuminates the unacknowledged labor and capability of women throughout history. The world building succeeds because it treats its premise seriously, exploring how such a community would actually function rather than using it merely as backdrop for shootouts.</p>
-                </div>
+            <div class="dimension-content">
+                <h3>Characters</h3>
+                <p>Content to be added.</p>
             </div>
-            
-            <div class="dimension">
-                <div class="dimension-header">
-                    <span class="dimension-title">3. Cinematography & Visual Language</span>
-                    <span class="dimension-score">9.0/10</span>
-                </div>
-                <div class="dimension-content">
-                    <p><span class="highlight">Godless</span> stands as one of the most visually striking television productions of its era, approaching cinematic quality in nearly every frame. <span class="highlight">Steven Meizler's</span> cinematography captures the American Southwest in all its brutal beauty—vast desert landscapes that swallow human figures, golden hour light that transforms dust into visual poetry, and intimate interiors where shadows pool like water. The series was shot on location in New Mexico, and the authentic landscape provides an irreplaceable foundation for the visual storytelling.</p>
-                    
-                    <p>The camera work demonstrates intentionality in every composition. Wide shots establish the emptiness of the frontier, making human settlements feel like fragile interruptions in an indifferent wilderness. Close-ups capture weathered faces, each line telling stories of hardship and endurance. Action sequences utilize the environment brilliantly—train robberies, horseback chases, and gunfights all feel grounded in the physical reality of the setting rather than constructed on soundstages.</p>
-                    
-                    <p>The color palette deserves special mention: warm earth tones dominate, punctuated by the deep red of blood, the blue of distant mountains, and the golden light that suffuses everything during magic hour. Costume design integrates seamlessly with cinematography—the practical clothing of frontier women, the theatrical menace of Griffin's gang, the dusty uniformity of his followers. Every visual element serves the narrative, from the recurring image of the empty mine to the way light streams through bullet holes in walls. This is cinematography as world-building, as character development, as emotional expression.</p>
-                </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">WORLD BUILDING</span>
             </div>
-            
-            <div class="dimension">
-                <div class="dimension-header">
-                    <span class="dimension-title">4. Visual Spectacle & Action</span>
-                    <span class="dimension-score">8.0/10</span>
-                </div>
-                <div class="dimension-content">
-                    <p>The action sequences in <span class="highlight">Godless</span> demonstrate a commitment to practical effects and grounded violence that sets it apart from more stylized Westerns. <span class="highlight">The train robbery</span> in the opening episode establishes the template: chaotic, messy, and genuinely dangerous. When bodies fall, they stay fallen. When bullets strike, they wound or kill without cinematic mercy. The violence carries weight because the consequences feel permanent.</p>
-                    
-                    <p>The climactic <span class="highlight">battle of La Belle</span> serves as the series' centerpiece, delivering on seven episodes of buildup with a sustained siege that tests the mettle of every character. The sequence leverages the town's geography—the mine, the buildings, the open spaces—to create tactical depth. Women and children fight alongside the few remaining men, and the sequence never loses sight of the stakes: these are civilians defending their homes, not professional soldiers, and the desperation makes every exchange of gunfire meaningful.</p>
-                    
-                    <p>Beyond action, the series delivers visual spectacle through its depiction of frontier life: cattle drives, campfires under endless stars, the terrifying beauty of prairie storms. The makeup and prosthetic work on injuries and corpses adds visceral realism that reminds viewers of medicine's limitations in this era. Some sequences, particularly Griffin's massacre of a rival town, are genuinely difficult to watch—a testament to their effectiveness. The spectacle serves story rather than overwhelming it, though occasionally the relentless grimness can feel exhausting rather than impactful.</p>
-                </div>
+            <div class="dimension-content">
+                <h3>World Building</h3>
+                <p>Content to be added.</p>
             </div>
-            
-            <div class="dimension">
-                <div class="dimension-header">
-                    <span class="dimension-title">5. Conceptual Density & Themes</span>
-                    <span class="dimension-score">7.0/10</span>
-                </div>
-                <div class="dimension-content">
-                    <p><span class="highlight">Godless</span> operates on multiple thematic levels, though it doesn't always weave them together seamlessly. At its core lies an exploration of <span class="highlight">gender and power</span>—what happens when women must assume roles traditionally denied them, and whether men will permit such autonomy. The town of La Belle represents a social experiment: can women build a functioning society without masculine authority? The series answers affirmatively while honestly acknowledging the external threats that persist.</p>
-                    
-                    <p>Religious hypocrisy emerges through Griffin, who quotes scripture while committing atrocities. The series interrogates how faith can serve as justification for violence, a theme with contemporary resonance. <span class="highlight">Family and inheritance</span> run through multiple storylines—Griffin's twisted father-son relationship with Roy, Alice's protection of her son, the Native American characters wrestling with cultural continuity. The Western genre traditionally concerned itself with Manifest Destiny and the closing frontier; Godless reframes these through marginalized perspectives without becoming preachy.</p>
-                    
-                    <p>However, the series sometimes struggles to balance its thematic ambitions with its genre obligations. The philosophical musings occasionally feel like interruptions to the plot rather than integrated elements. The Native American subplot, while sensitively handled, doesn't fully connect to the main narrative. The exploration of La Belle's social dynamics sometimes takes backseat to Griffin's rampage. The ideas are present and generally well-considered, but the execution occasionally prioritizes momentum over meditation.</p>
-                </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 9;"><span>9.0</span></div>
+                <span class="score-label">CINEMATOGRAPHY</span>
             </div>
-            
-            <div class="dimension">
-                <div class="dimension-header">
-                    <span class="dimension-title">6. Narrative Drive & Pacing</span>
-                    <span class="dimension-score">7.0/10</span>
-                </div>
-                <div class="dimension-content">
-                    <p>The seven-episode structure of <span class="highlight">Godless</span> provides ample room for both character development and escalating tension, though the pacing occasionally falters. The series opens with propulsive energy—the train robbery, Griffin's pursuit, Roy's arrival in La Belle—establishing immediate stakes. The middle episodes slow down to explore the town's dynamics, introducing its residents and their hopes for a peaceful future. This rhythm serves character development but can test the patience of viewers expecting constant action.</p>
-                    
-                    <p>The narrative interweaves multiple storylines: Griffin's pursuit across the territory, the preparations in La Belle, Roy's attempts to find redemption, and various subplots involving supporting characters. Most threads prove engaging, though some (the traveling photographer, certain members of Griffin's gang) feel like distractions rather than necessary components. The series benefits from its limited run—there's no padding for potential future seasons, just focused storytelling toward a predetermined conclusion.</p>
-                    
-                    <p>The final two episodes accelerate dramatically, delivering the promised confrontation with precision and intensity. However, some late-game revelations feel underdeveloped, and certain character arcs resolve too quickly after lengthy buildup. The pacing issues stem from ambition—the series wants to be both an intimate character study and a sweeping epic, and the balance isn't always perfect. When it works, the narrative creates genuine suspense; when it doesn't, episodes feel like necessary setup without standalone satisfaction.</p>
-                </div>
+            <div class="dimension-content">
+                <h3>Cinematography</h3>
+                <p>Content to be added.</p>
             </div>
-            
-            <div class="dimension">
-                <div class="dimension-header">
-                    <span class="dimension-title">7. Resolution & Emotional Impact</span>
-                    <span class="dimension-score">8.0/10</span>
-                </div>
-                <div class="dimension-content">
-                    <p>The conclusion of <span class="highlight">Godless</span> delivers on the promises made throughout its run, providing satisfying resolution to most character arcs while acknowledging the irreversible costs of violence. The <span class="highlight">final confrontation</span> between Griffin and the town earns its stakes through careful buildup—we understand exactly what's been lost and what remains to be defended. Victory comes at a price, and the series doesn't flinch from showing the dead and wounded who paid it.</p>
-                    
-                    <p>Roy Goode's arc finds completion in a way that honors the series' examination of masculine violence—his choice in the final moments feels earned rather than imposed by plot necessity. The women of La Belle emerge changed but unbroken, their community tested and confirmed. Merritt Wever's Mary Agnes receives perhaps the most emotionally satisfying conclusion, her transformation from grieving widow to capable leader complete. The epilogue provides closure without excessive tidiness—life continues, wounds heal slowly, and the frontier remains dangerous.</p>
-                    
-                    <p>The emotional impact derives from investment in characters we come to care about, and here the series largely succeeds. The losses hurt because the writing made these people feel real. The triumphs resonate because they were hard-won. Some viewers may find the resolution too neat or the body count insufficiently high for the preceding brutality, but the series maintains its conviction to the end. The final images—the town, the survivors, the land—linger in memory as a testament to resilience and survival in a world that offers no guarantees.</p>
-                </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">VISUAL SPECTACLE</span>
             </div>
-        </section>
+            <div class="dimension-content">
+                <h3>Visual Spectacle</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7;"><span>7.0</span></div>
+                <span class="score-label">CONCEPTUAL DENSITY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Conceptual Density</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7;"><span>7.0</span></div>
+                <span class="score-label">NARRATIVE DRIVE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Narrative Drive</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8;"><span>8.0</span></div>
+                <span class="score-label">RESOLUTION</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Resolution</h3>
+                <p>Content to be added.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
         
         <div class="verdict">
             <h2>Final Verdict</h2>
