@@ -3204,5 +3204,38 @@
             },
             "backdrop": "https://image.tmdb.org/t/p/w780/be6mDIMv7cg8duWkcYVnTB8rphO.jpg"
         },
+        {
+            "rank": 101,
+            "slug": "hill-street-blues",
+            "title": "Hill Street Blues",
+            "year": 1981,
+            "month": 1,
+            "genres": [
+                "drama",
+                "crime",
+                "cop-show"
+            ],
+            "final": 6.95,
+            "tmdbId": 4094,
+            "char": 7.5,
+            "world": 7,
+            "cine": 6,
+            "spect": 5,
+            "conc": 8,
+            "drive": 7,
+            "resol": 7,
+            "episodes": 146,
+            "poster": "https://image.tmdb.org/t/p/w500/tK6UtV5ahE6BTSklUH9Lz7KLuYI.jpg",
+            "streaming": {
+                "us": [
+                    "Hulu",
+                    "Peacock"
+                ],
+                "uk": [
+                    "BBC Two"
+                ]
+            },
+            "backdrop": "https://image.tmdb.org/t/p/w780/jvTQI5QToqvlLH0GJQTzSxMPt6y.jpg"
+        }
     ]
 }
