@@ -1,14 +1,191 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><title>The Last of Us - Dynamic Rank Engine</title>
-<style>body{font-family:'Source Sans Pro',sans-serif;line-height:1.6;color:#e0e0e0;background:#0d0d12;padding:2rem}h2{color:#ffd700;font-family:'Oranienbaum',serif;border-bottom:2px solid #2a2a35;padding-bottom:.5rem}.dimension-block{background:#1a1a24;padding:1.5rem;margin:1rem 0;border-radius:8px;border-left:4px solid #c0a050}.dimension-header{display:flex;align-items:center;gap:1rem}.dimension-score{font-size:1.5rem;color:#ffd700;font-weight:bold;min-width:60px}.dimension-name{font-size:1.2rem;color:#e0e0e0;font-weight:600}.dimension-weight{color:#888;font-size:.9rem}.final-score{background:linear-gradient(135deg,#1a1a24,#2a2a35);padding:2rem;border-radius:12px;text-align:center;margin-top:2rem;border:2px solid #ffd700}.final-score-value{font-size:3rem;color:#ffd700;font-weight:bold}</style></head>
-<body><h2>What It Feels Like to Watch</h2>
-<p>HBO's adaptation of the game is post-apocalyptic father-daughter story. Pedro Pascal's Joel and Bella Ramsey's Ellie cross the fungal apocalypse. The third episode—"Long, Long Time"—is among the best hours of television.</p>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Last of Us - Dynamic Rank Engine</title>
+    <style>
+        body { font-family: 'Source Sans Pro', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0d0d12; padding: 2rem; }
+        h2 { color: #ffd700; font-family: 'Oranienbaum', serif; border-bottom: 2px solid #2a2a35; padding-bottom: 0.5rem; }
+        h3 { color: #c0a050; font-family: 'Unna', serif; margin-top: 2rem; }
+        .dimension-block { background: #1a1a24; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #c0a050; }
+        .dimension-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; font-weight: bold; min-width: 60px; }
+        .dimension-name { font-size: 1.2rem; color: #e0e0e0; font-weight: 600; }
+        .dimension-weight { color: #888; font-size: 0.9rem; }
+        .dimension-content { color: #b0b0b0; line-height: 1.8; }
+        .final-score { background: linear-gradient(135deg, #1a1a24, #2a2a35); padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem; border: 2px solid #ffd700; }
+        .final-score-value { font-size: 3rem; color: #ffd700; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<h2>What It Feels Like to Watch</h2>
+
+<p>The Last of Us premiered on HBO on January 15, 2023, created by Craig Mazin and Neil Druckmann from Naughty Dog's acclaimed 2013 video game. The nine-episode first season follows Joel (Pedro Pascal), a smuggler tasked with escorting Ellie (Bella Ramsey), a teenage girl immune to the fungal infection that has destroyed civilization, across a post-apocalyptic America. The series represents the most successful video game adaptation in television history, achieving both critical acclaim and massive viewership.</p>
+
+<p>The series distinguishes itself from typical post-apocalyptic narratives through its focus on character relationships rather than action set pieces. While the infected (zombie-like creatures created by the Cordyceps fungus) provide horror and tension, the series is fundamentally about Joel and Ellie's evolving relationship—from reluctant protector and cargo, to surrogate father and daughter. The emotional beats land with devastating impact because the series invests in character development.</p>
+
+<p>Pedro Pascal's performance as Joel is a masterclass in understated grief. Joel has lost his daughter Sarah (played in the devastating opening episode by Nico Parker) in the outbreak's early hours, and twenty years later he is emotionally shut down, surviving rather than living. Pascal conveys Joel's pain through minimal dialogue and physical performance—his guardedness, his violence when necessary, his gradual softening toward Ellie. The performance earned Pascal an Emmy and established him as a leading man.</p>
+
+<p>Bella Ramsey's Ellie is equally remarkable—foul-mouthed, defiant, vulnerable, and brave. Ramsey captures Ellie's teenage bravado masking her fear, her grief over her own losses (her friend Riley, her guardian Marlene), and her growing attachment to Joel. The character's queerness (established in Episode 7 "Left Behind," which depicts Ellie's relationship with Riley) is handled with matter-of-fact authenticity. Ramsey's performance earned an Emmy and made Ellie an iconic character.</p>
+
+<p>The supporting cast creates a rich post-apocalyptic world: Gabriel Luna as Tommy, Joel's brother who has found purpose in a community; Anna Torv as Tess, Joel's partner who sacrifices herself to ensure Joel and Ellie can continue; Nick Offerman as Bill, the survivalist who finds love with Frank in a beautifully self-contained Episode 3 "Long, Long Time"; Murray Bartlett as Frank; Melanie Lynskey as Kathleen, the revolutionary leader whose grief has made her ruthless; Lamar Johnson as Henry and Keivonn Montreal Woodard as Sam, the brothers whose tragedy in Episode 5 "Endure and Survive" provides the season's most devastating moment; and Storm Reid as Riley in the flashback episode.</p>
+
+<p>Episode 3 "Long, Long Time" stands as one of television's finest hours—a self-contained love story between Bill and Frank that spans decades, from the outbreak's early days to their elderly years. Nick Offerman and Murray Bartlett deliver performances of extraordinary tenderness and grief. The episode's structure—depicting their life together in vignettes, culminating in their assisted suicide pact—provides emotional catharsis that resonates throughout the series. The episode demonstrates that The Last of Us is not merely a zombie show but a meditation on love, loss, and what we endure to survive.</p>
+
+<p>Episode 5 "Endure and Survive" provides the season's most devastating sequence—Henry and Sam's story, culminating in Henry's suicide after Sam (infected) attacks him. The episode's structure—building hope for the brothers' survival, then crushing it—demonstrates the series' willingness to devastate its audience. The performances by Lamar Johnson and Keivonn Montreal Woodard make the tragedy unbearable.</p>
+
+<p>Episode 7 "Left Behind" uses a flashback structure to depict Ellie's relationship with Riley (Storm Reid), her friend from the military school who is bitten alongside Ellie in an abandoned mall. The episode's structure—alternating between the past (Riley and Ellie's day together) and the present (Ellie trying to save Joel after he's injured)—creates emotional resonance between Ellie's past loss and her determination not to lose Joel. The depiction of teenage queer romance in the apocalypse is handled with authenticity and tenderness.</p>
+
+<p>The season finale "Look for the Light" brings Joel and Ellie's journey to its devastating conclusion. Joel's massacre of the Fireflies to save Ellie from the surgery that would kill her (and potentially create a cure) represents the series' central moral question: what do we owe to humanity versus what do we owe to those we love? Joel's choice—saving Ellie at the cost of humanity's hope—and his lie to Ellie about what happened, sets up the moral complexity that will drive future seasons. The finale's ambiguity—whether Joel's choice was right or wrong—is the series' strength.</p>
+
+<p>The series' engagement with video game adaptation is revolutionary. Previous game adaptations had largely failed critically, treating the source material as mere IP to be exploited. The Last of Us, with creator Neil Druckmann's involvement and Craig Mazin's writing (Chernobyl), treats the game as serious source material worthy of artistic adaptation. The series expands on the game's narrative, adding depth to supporting characters and creating episodes (like "Long, Long Time") that stand alone as artistic achievements.</p>
+
+<p>Critical reception was exceptional—the series holds 96% on Rotten Tomatoes, with critics praising the performances, writing, and emotional depth. It became HBO's most-watched debut since Boardwalk Empire and won numerous awards including Emmys for Outstanding Drama Series, Lead Actor (Pascal), and Guest Actor (Offerman). Critics noted that the series transcended its genre to become a profound meditation on love, loss, and survival.</p>
+
+<p>The series stands as the definitive video game adaptation and one of the finest television dramas of recent years. It proves that genre entertainment—zombies, post-apocalypse—can achieve the emotional depth of any prestige drama when treated with intelligence and respect. Pascal and Ramsey's performances, the exceptional writing, and the willingness to devastate its audience make The Last of Us essential viewing. It is television that respects its audience's intelligence and emotional capacity.</p>
+
 <h2>Why It Ranks #44</h2>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">8</span><div><div class="dimension-name">Characters & Acting</div><div class="dimension-weight">20% → 1.60</div></div></div><p>Pascal and Ramsey carry the show. Nick Offerman and Murray Bartlett's episode is devastating. Guest stars elevate.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">8</span><div><div class="dimension-name">World Building</div><div class="dimension-weight">15% → 1.20</div></div></div><p>Post-apocalyptic America rendered with budget. The fungal infection is coherent. Settlements have internal logic.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">8</span><div><div class="dimension-name">Cinematography</div><div class="dimension-weight">15% → 1.20</div></div></div><p>Post-apocalyptic beauty. The abandoned cities, the wilderness. Competent without innovation.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">8.5</span><div><div class="dimension-name">Visual Spectacle</div><div class="dimension-weight">10% → 0.85</div></div></div><p>Clickers, the infected, the abandoned cities. HBO budget on apocalypse.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">7.5</span><div><div class="dimension-name">Conceptual Density</div><div class="dimension-weight">15% → 1.13</div></div></div><p>Father-daughter bond as subject. The cost of survival. Game adaptation limits depth.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">8</span><div><div class="dimension-name">Narrative Drive</div><div class="dimension-weight">15% → 1.20</div></div></div><p>Episodic structure with throughline. The cross-country journey propels. Episode 3 is a standout.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">7</span><div><div class="dimension-name">Narrative Resolution</div><div class="dimension-weight">10% → 0.70</div></div></div><p>Season 1 ends with the game's ending—controversial, complete. Ongoing series.</p></div>
-<div class="final-score"><div>FINAL SCORE</div><div class="final-score-value">7.78</div><div style="color:#888">1.60+1.20+1.20+0.85+1.13+1.20+0.70 = <strong>7.88</strong></div></div></body></html>
+
+<h3>7-Dimension Algorithmic Analysis</h3>
+
+<div class="dimension-block">
+    <div class="dimension-header">
+        <span class="dimension-score">9</span>
+        <div>
+            <div class="dimension-name">Characters & Acting</div>
+            <div class="dimension-weight">Weight: 20% | Weighted Contribution: 1.80</div>
+        </div>
+    </div>
+    <div class="dimension-content">
+        <p><strong>Pedro Pascal:</strong> Pascal delivers a masterclass in understated grief as Joel, a man who lost his daughter in the outbreak and has spent twenty years emotionally shut down. Pascal conveys Joel's pain through minimal dialogue and physical performance—his guardedness, his violence when necessary, his gradual softening toward Ellie. The performance earned Pascal an Emmy and established him as a leading man capable of carrying a prestige drama.</p>
+        
+        <p><strong>Bella Ramsey:</strong> Ramsey's Ellie is foul-mouthed, defiant, vulnerable, and brave. She captures Ellie's teenage bravado masking her fear, her grief over her own losses, and her growing attachment to Joel. The character's queerness is handled with matter-of-fact authenticity. Ramsey's performance earned an Emmy and made Ellie an iconic character in television history.</p>
+        
+        <p><strong>The Ensemble:</strong> Nick Offerman and Murray Bartlett in Episode 3 "Long, Long Time" deliver performances of extraordinary tenderness as Bill and Frank. Anna Torv as Tess, Gabriel Luna as Tommy, Melanie Lynskey as Kathleen, Lamar Johnson and Keivonn Montreal Woodard as Henry and Sam in the devastating Episode 5, Storm Reid as Riley in Episode 7—each creates distinct humanity in the post-apocalyptic world.</p>
+        
+        <p><strong>Why 9:</strong> Exceptional performances across the ensemble, with career-defining work from Pascal and Ramsey. The limitation is some supporting roles in later episodes that receive less development.</p>
+    </div>
+</div>
+
+<div class="dimension-block">
+    <div class="dimension-header">
+        <span class="dimension-score">8.5</span>
+        <div>
+            <div class="dimension-name">World Building</div>
+            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.28</div>
+        </div>
+    </div>
+    <div class="dimension-content">
+        <p><strong>The Post-Apocalypse:</strong> The series creates a believable post-apocalyptic world through attention to detail—overgrown cities, quarantine zones, survivor communities, the Cordyceps infection's progression. The world feels lived-in and authentic, with the twenty-year time jump allowing for the development of new social structures.</p>
+        
+        <p><strong>The Infected:</strong> The Cordyceps-infected "zombies" are given biological plausibility and visual distinctiveness. The different stages of infection—runners, clickers, bloaters—create varied threats. The fungal growths, the hive mind behavior, the environmental storytelling of infected areas—all create a monster that feels fresh in a saturated genre.</p>
+        
+        <p><strong>The Communities:</strong> The series depicts various post-apocalyptic social structures—FEDRA's authoritarian quarantine zones, the Fireflies' resistance movement, Bill and Frank's isolated sanctuary, the Kansas City revolutionaries, the Wyoming commune. Each community represents different responses to societal collapse.</p>
+        
+        <p><strong>Why 8.5:</strong> Strong post-apocalyptic world-building with attention to detail and biological plausibility. The limitation is occasional familiarity—some post-apocalyptic tropes are present despite the fresh execution.</p>
+    </div>
+</div>
+
+<div class="dimension-block">
+    <div class="dimension-header">
+        <span class="dimension-score">8.5</span>
+        <div>
+            <div class="dimension-name">Cinematography</div>
+            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.28</div>
+        </div>
+    </div>
+    <div class="dimension-content">
+        <p><strong>Ksenia Sereda's Visual Language:</strong> Cinematographer Ksenia Sereda creates a distinctive visual style that combines naturalistic location shooting with carefully composed imagery. The series uses the full frame to create environmental storytelling—overgrown cityscapes, vast wilderness, intimate interiors. The color grading shifts between the cool blues of the quarantine zones and the warm golds of natural landscapes, creating visual contrast between civilization's decay and nature's persistence.</p>
+        
+        <p><strong>The Infected Sequences:</strong> The cinematography during infected encounters uses low lighting, practical effects, and careful choreography to create genuine tension. The clickers' introduction in the museum (Episode 2), the escape from the school (Episode 5), and the hospital infiltration (Episode 9) each use distinct visual approaches while maintaining the series' grounded aesthetic.</p>
+        
+        <p><strong>The Natural World:</strong> The series contrasts urban decay with natural beauty—sunsets over the wilderness, starry skies, the changing seasons. These moments of beauty provide respite from the horror while emphasizing what has been lost. The cinematography captures the American landscape in all its variety, from Boston's ruins to Wyoming's mountains.</p>
+        
+        <p><strong>Comparative Assessment:</strong> The cinematography matches the game's visual language while adapting it for live action. It exceeds most television and approaches feature film quality. The limitation is occasional over-reliance on golden-hour lighting that can feel repetitive.</p>
+        
+        <p><strong>Why 8.5:</strong> Exceptional cinematography that creates atmosphere and serves story. Among television's most visually accomplished works.</p>
+    </div>
+</div>
+
+<div class="dimension-block">
+    <div class="dimension-header">
+        <span class="dimension-score">8</span>
+        <div>
+            <div class="dimension-name">Visual Spectacle</div>
+            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.80</div>
+        </div>
+    </div>
+    <div class="dimension-content">
+        <p><strong>The Infected:</strong> The Cordyceps-infected creatures provide genuine horror through practical effects and makeup design. The different stages—runners, clickers, bloaters—create visual variety and escalating threat. The clickers' fungal growths, the hive mind behavior, the environmental storytelling of infected areas—all create memorable monsters.</p>
+        
+        <p><strong>Post-Apocalyptic Scale:</strong> The production recreates overgrown cities, collapsed infrastructure, and reclaimed wilderness with impressive scale. The Boston quarantine zone, the Kansas City ruins, the Wyoming commune—each location feels lived-in and authentic. The visual effects seamlessly blend with practical locations.</p>
+        
+        <p><strong>Why 8:</strong> Strong spectacle through creature design and post-apocalyptic world-building. The limitation is that spectacle serves character rather than dominating—this is not an action series.</p>
+    </div>
+</div>
+
+<div class="dimension-block">
+    <div class="dimension-header">
+        <span class="dimension-score">8</span>
+        <div>
+            <div class="dimension-name">Conceptual Density</div>
+            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.20</div>
+        </div>
+    </div>
+    <div class="dimension-content">
+        <p><strong>Surrogate Family:</strong> The series' central theme—the family we choose versus the family we lose. Joel's transformation from grieving father to surrogate parent, Ellie's need for connection after losing everyone, their gradual bonding across the journey. The series asks what family means after civilization's collapse.</p>
+        
+        <p><strong>The Greater Good:</strong> The series' central moral question—whether Ellie's life should be sacrificed for a potential cure. The Fireflies believe the answer is yes; Joel's choice to save Ellie suggests that individual human connection matters more than abstract humanity. The series refuses easy answers.</p>
+        
+        <p><strong>Trauma and Survival:</strong> The series explores how trauma shapes survivors—Joel's grief, Ellie's immunity as both gift and burden, the various characters' adaptations to the post-apocalyptic world. The infected represent one threat; the living represent another.</p>
+        
+        <p><strong>Why 8:</strong> Strong thematic exploration of family, sacrifice, and survival. The limitation is occasional familiarity—the themes are well-trodden in post-apocalyptic fiction.</p>
+    </div>
+</div>
+
+<div class="dimension-block">
+    <div class="dimension-header">
+        <span class="dimension-score">8.5</span>
+        <div>
+            <div class="dimension-name">Narrative Drive</div>
+            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.28</div>
+        </div>
+    </div>
+    <div class="dimension-content">
+        <p><strong>The Journey Structure:</strong> The series uses the road trip format to create narrative momentum—Joel and Ellie traveling from Boston to Wyoming to the Firefly hospital, encountering different communities and threats along the way. Each location provides self-contained stories while advancing the central relationship.</p>
+        
+        <p><strong>Pacing:</strong> The series balances action and character development—episodes like "Long, Long Time" are entirely character-focused, while episodes like "Endure and Survive" provide intense action. The pacing serves the emotional story rather than following genre conventions.</p>
+        
+        <p><strong>Why 8.5:</strong> Strong narrative construction with effective balance of action and character. The limitation is occasional predictability—the road trip structure follows familiar beats.</p>
+    </div>
+</div>
+
+<div class="dimension-block">
+    <div class="dimension-header">
+        <span class="dimension-score">8.5</span>
+        <div>
+            <div class="dimension-name">Narrative Resolution</div>
+            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.85</div>
+        </div>
+    </div>
+    <div class="dimension-content">
+        <p><strong>The Finale:</strong> "Look for the Light" brings Joel and Ellie's journey to its devastating conclusion. Joel's massacre of the Fireflies to save Ellie from the surgery that would kill her—and potentially create a cure—represents the series' central moral question. Joel's choice to save Ellie at the cost of humanity's hope, and his lie to Ellie about what happened, sets up the moral complexity that will drive future seasons.</p>
+        
+        <p><strong>The Ambiguity:</strong> The finale's refusal to provide easy answers—whether Joel's choice was right or wrong, whether Ellie believes his lie—is the series' strength. The ending is emotionally satisfying while being morally complex, setting up future seasons without feeling incomplete.</p>
+        
+        <p><strong>Why 8.5:</strong> A devastating conclusion that honors the series' themes. The limitation is the setup for future seasons—the ending is complete but clearly intended as part of a larger story.</p>
+    </div>
+</div>
+
+<div class="final-score">
+    <div>FINAL SCORE</div>
+    <div class="final-score-value">7.78</div>
+
+    <div style="color:#888; margin-top:1rem; font-size:0.9rem">
+        The final score of 7.78 reflects The Last of Us's exceptional achievement across all seven dimensions. Its combination of outstanding performances (Pedro Pascal and Bella Ramsey), emotional storytelling, and successful video game adaptation—culminating in one of television's most devastating finales—secures its place as one of the decade's finest series. The show proves that genre entertainment can achieve the emotional depth of any prestige drama when treated with intelligence and respect.
+    </div>
+</div>
+
+</body>
+</html>
