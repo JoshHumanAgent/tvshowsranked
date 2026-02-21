@@ -247,13 +247,8 @@
             font-style: normal;
         }
 
-        /* New dimension-block styles */
-        .rankings-section { margin-bottom: 2rem; }
-        .rankings-header { text-align: center; margin-bottom: 2.5rem; }
-        .rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; color: #e0e0e0; }
-        .rankings-subtitle { color: #a0aec0; font-size: 1.1rem; }
-        .dimension-grid-new { display: grid; gap: 1.5rem; }
-        .dimension-block-new {
+        /* Dimension block styles */
+        .dimension-block {
             background: rgba(30,30,30,0.8);
             border-radius: 12px;
             padding: 2rem;
@@ -261,8 +256,9 @@
             display: grid;
             grid-template-columns: auto 1fr;
             gap: 1.5rem;
+            margin-bottom: 1.5rem;
         }
-        .dimension-score-new {
+        .dimension-score {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -309,7 +305,7 @@
             color: #e0e0e0;
         }
         @media (max-width: 768px) {
-            .dimension-block-new { grid-template-columns: 1fr; }
+            .dimension-block { grid-template-columns: 1fr; }
         }
 
         .final-score-section {
@@ -504,8 +500,8 @@
                 </div>
             </div>
 
-            <div class="dimension-block-new">
-                <div class="dimension-score-new">
+            <div class="dimension-block">
+                <div class="dimension-score">
                     <div class="score-circle" style="--score: 81;"><span>8.1</span></div>
                     <span class="score-label">CHARACTERS</span>
                 </div>
@@ -523,8 +519,8 @@
                 </div>
             </div>
 
-            <div class="dimension-block-new">
-                <div class="dimension-score-new">
+            <div class="dimension-block">
+                <div class="dimension-score">
                     <div class="score-circle" style="--score: 75;"><span>7.5</span></div>
                     <span class="score-label">WORLD BUILDING</span>
                 </div>
@@ -542,8 +538,8 @@
                 </div>
             </div>
 
-            <div class="dimension-block-new">
-                <div class="dimension-score-new">
+            <div class="dimension-block">
+                <div class="dimension-score">
                     <div class="score-circle" style="--score: 80;"><span>8.0</span></div>
                     <span class="score-label">CINEMATOGRAPHY</span>
                 </div>
@@ -561,8 +557,8 @@
                 </div>
             </div>
 
-            <div class="dimension-block-new">
-                <div class="dimension-score-new">
+            <div class="dimension-block">
+                <div class="dimension-score">
                     <div class="score-circle" style="--score: 80;"><span>8.0</span></div>
                     <span class="score-label">VISUAL SPECTACLE</span>
                 </div>
@@ -580,8 +576,8 @@
                 </div>
             </div>
 
-            <div class="dimension-block-new">
-                <div class="dimension-score-new">
+            <div class="dimension-block">
+                <div class="dimension-score">
                     <div class="score-circle" style="--score: 77;"><span>7.7</span></div>
                     <span class="score-label">CONCEPTUAL DENSITY</span>
                 </div>
@@ -599,8 +595,8 @@
                 </div>
             </div>
 
-            <div class="dimension-block-new">
-                <div class="dimension-score-new">
+            <div class="dimension-block">
+                <div class="dimension-score">
                     <div class="score-circle" style="--score: 73;"><span>7.3</span></div>
                     <span class="score-label">NARRATIVE DRIVE</span>
                 </div>
@@ -618,8 +614,8 @@
                 </div>
             </div>
 
-            <div class="dimension-block-new">
-                <div class="dimension-score-new">
+            <div class="dimension-block">
+                <div class="dimension-score">
                     <div class="score-circle" style="--score: 77;"><span>7.7</span></div>
                     <span class="score-label">RESOLUTION</span>
                 </div>
