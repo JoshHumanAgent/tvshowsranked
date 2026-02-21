@@ -1,185 +1,460 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Godless - Dynamic Rank Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godless (2017) - Seven Dimension Analysis</title>
     <style>
-        body { font-family: 'Source Sans Pro', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0d0d12; padding: 2rem; }
-        h2 { color: #ffd700; font-family: 'Oranienbaum', serif; border-bottom: 2px solid #2a2a35; padding-bottom: 0.5rem; }
-        h3 { color: #c0a050; font-family: 'Unna', serif; margin-top: 2rem; }
-        .dimension-block { background: #1a1a24; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #c0a050; }
-        .dimension-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-        .dimension-score { font-size: 1.5rem; color: #ffd700; font-weight: bold; min-width: 60px; }
-        .dimension-name { font-size: 1.2rem; color: #e0e0e0; font-weight: 600; }
-        .dimension-weight { color: #888; font-size: 0.9rem; }
-        .dimension-content { color: #b0b0b0; line-height: 1.8; }
-        .final-score { background: linear-gradient(135deg, #1a1a24, #2a2a35); padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem; border: 2px solid #ffd700; }
-        .final-score-value { font-size: 3rem; color: #ffd700; font-weight: bold; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #1a1510 0%, #2d2418 50%, #1a1510 100%);
+            color: #e8dcc8;
+            line-height: 1.8;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(20, 15, 10, 0.85);
+            border: 2px solid #8b7355;
+            padding: 40px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.9);
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #8b7355;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            color: #c9a86c;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #a89070;
+            font-style: italic;
+        }
+        
+        .meta-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+            padding: 20px;
+            background: rgba(139, 115, 85, 0.15);
+            border-radius: 8px;
+        }
+        
+        .meta-item {
+            text-align: center;
+        }
+        
+        .meta-label {
+            font-size: 0.8em;
+            color: #8b7355;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .meta-value {
+            font-size: 1.1em;
+            color: #c9a86c;
+            font-weight: bold;
+        }
+        
+        .final-score {
+            background: linear-gradient(145deg, #3d3020, #2a2015);
+            border: 3px solid #c9a86c;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(201, 168, 108, 0.2);
+        }
+        
+        .score-display {
+            font-size: 4em;
+            color: #c9a86c;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(201, 168, 108, 0.5);
+        }
+        
+        .score-label {
+            font-size: 1.2em;
+            color: #a89070;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        
+        h2 {
+            color: #c9a86c;
+            font-size: 1.8em;
+            margin: 40px 0 20px 0;
+            border-left: 5px solid #8b7355;
+            padding-left: 15px;
+        }
+        
+        .dimension {
+            background: rgba(45, 36, 24, 0.6);
+            border: 1px solid #5a4a3a;
+            border-radius: 10px;
+            margin: 25px 0;
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .dimension:hover {
+            transform: translateX(5px);
+            border-color: #8b7355;
+        }
+        
+        .dimension-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .dimension-title {
+            font-size: 1.4em;
+            color: #c9a86c;
+            font-weight: bold;
+        }
+        
+        .dimension-score {
+            font-size: 1.8em;
+            color: #e8dcc8;
+            font-weight: bold;
+            background: rgba(201, 168, 108, 0.2);
+            border-radius: 50px;
+            padding: 5px 20px;
+        }
+        
+        .dimension-content {
+            color: #b8a890;
+            text-align: justify;
+            line-height: 1.9;
+        }
+        
+        .highlight {
+            color: #c9a86c;
+            font-weight: bold;
+        }
+        
+        .tagline {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.1em;
+            color: #9a8a70;
+            margin: 20px 0;
+            padding: 15px;
+            border-top: 1px dashed #5a4a3a;
+            border-bottom: 1px dashed #5a4a3a;
+        }
+        
+        .verdict {
+            background: linear-gradient(135deg, #3d3020, #1a1510);
+            border: 2px solid #c9a86c;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        
+        .verdict h2 {
+            text-align: center;
+            border-left: none;
+            margin-bottom: 20px;
+        }
+        
+        .verdict-content {
+            text-align: justify;
+            line-height: 2;
+            color: #d8ccc0;
+            font-size: 1.05em;
+        }
+        
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .pros, .cons {
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .pros {
+            background: rgba(76, 140, 74, 0.15);
+            border: 1px solid #4c8c4a;
+        }
+        
+        .cons {
+            background: rgba(140, 74, 74, 0.15);
+            border: 1px solid #8c4a4a;
+        }
+        
+        .pros h3, .cons h3 {
+            color: #c9a86c;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .pros h3 { color: #7cb87a; }
+        .cons h3 { color: #c98a7a; }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .pros li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #7cb87a;
+            font-weight: bold;
+        }
+        
+        .cons li::before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #c98a7a;
+            font-weight: bold;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #8b7355;
+            color: #8b7355;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            h1 { font-size: 2em; }
+            .pros-cons { grid-template-columns: 1fr; }
+            .score-display { font-size: 3em; }
+        }
     </style>
 </head>
 <body>
-
-<h2>What It Feels Like to Watch</h2>
-
-<p>Godless premiered on Netflix on November 22, 2017, created by Scott Frank (The Queen's Gambit). The seven-episode Western miniseries is set in the 1880s in La Belle, New Mexico—a town where most of the men died in a catastrophic mining accident, leaving a community run almost entirely by women. When ruthless outlaw Frank Griffin (Jeff Daniels) and his gang terrorize the region, the women of La Belle must unite to defend their town, aided by a mysterious stranger Roy Goode (Jack O'Connell) who arrives seeking shelter.</p>
-
-<p>The series is a stunning visual achievement, shot on location in New Mexico with cinematographer Steven Meizler capturing the vast, harsh beauty of the American West. The New Mexico landscapes—canyons, mesas, endless sky—provide breathtaking backdrop to the intimate human drama. Frank's direction and Meizler's photography create a Western that feels both epic in scope and deeply personal, reminiscent of classic American Westerns while offering fresh perspective through its focus on female characters.</p>
-
-<p>Michelle Dockery delivers a commanding performance as Alice Fletcher, a widow running a ranch on the outskirts of La Belle with her son and Native American mother-in-law. Dockery sheds her Downton Abbey elegance for a harder, more weathered character—a woman who has survived loss and built a life through sheer determination. Jack O'Connell as Roy Goode brings wounded stoicism to the role of the outlaw with a conscience, his character's backstory gradually revealed through flashbacks.</p>
-
-<p>Merritt Wever shines as Mary Agnes McNue, the town's defacto leader who wears pants, smokes cigars, and maintains a relationship with the local schoolteacher (Tantoo Cardinal). Wever's performance captures Mary's fierce independence and hidden vulnerability. Jeff Daniels is terrifying as Frank Griffin, a charismatic preacher-turned-outlaw who justifies his violence through twisted religious conviction. Daniels makes Frank dangerously seductive—you understand why his gang follows him, even as you fear his brutality.</p>
-
-<p>The supporting cast creates a rich community: Scoot McNairy as Sheriff Bill McNue, struggling with his inadequacy; Thomas Brodie-Sangster as Whitey Winn, a young deputy finding his courage; Kim Coates as Ed Logan, a rival sheriff; and the women of La Belle—Tess Frazer as Callie Dunne, the schoolteacher; Audrey Moore as Sarah Doyle; and many others who create a believable frontier community.</p>
-
-<p>The series' exploration of gender roles in the Old West feels organic rather than didactic—the women's competence and strength emerges naturally from circumstances. When the men are gone, the women step up, running businesses, enforcing law, building lives. The series suggests that frontier mythology has ignored women's contributions, that the West was tamed not just by gunslingers but by mothers, widows, and survivors.</p>
-
-<p>Cinematographer Steven Meizler, who would later work with Frank on The Queen's Gambit, creates stunning visuals that honor Western tradition while feeling fresh. The wide shots of New Mexico landscapes recall John Ford, while the intimate close-ups capture weathered faces and determined eyes. The color palette shifts between golden-hour warmth and harsh midday sun, creating visual variety that serves the story's emotional beats.</p>
-
-<p>The action sequences are brutal and realistic—gunfights are messy, mistakes are made, the violence has weight. The climactic battle at La Belle is both spectacular and grounded, showing both tactical competence and raw courage. The series doesn't shy away from the ugliness of Western violence while celebrating the heroism of those who stand against it.</p>
-
-<p>Critical reception was positive, with particular praise for the performances, cinematography, and the series' fresh take on Western conventions. It holds 86% on Rotten Tomatoes, with critics noting the strong female characters and visual beauty. While some found the pacing deliberate, most praised Frank's patient storytelling and the ensemble's performances.</p>
-
-<p>Godless stands as a worthy addition to the Western canon—a series that honors the genre's traditions while expanding its perspective, that delivers both visual spectacle and emotional depth, that proves the Western still has stories to tell. Scott Frank would go on to create The Queen's Gambit, but Godless established his ability to create period pieces with contemporary relevance, to combine genre entertainment with genuine artistry.</p>
-
-<h2>Why It Ranks #51</h2>
-
-<h3>7-Dimension Algorithmic Analysis</h3>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7.5</span>
-        <div>
-            <div class="dimension-name">Characters & Acting</div>
-            <div class="dimension-weight">Weight: 20% | Weighted Contribution: 1.50</div>
+    <div class="container">
+        <header class="header">
+            <h1>GODLESS</h1>
+            <p class="subtitle">A Revisionist Western Miniseries</p>
+            
+            <div class="meta-info">
+                <div class="meta-item">
+                    <div class="meta-label">Year</div>
+                    <div class="meta-value">2017</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Platform</div>
+                    <div class="meta-value">Netflix</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Genre</div>
+                    <div class="meta-value">Western</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Creator</div>
+                    <div class="meta-value">Scott Frank</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Episodes</div>
+                    <div class="meta-value">7</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Lead</div>
+                    <div class="meta-value">Jeff Daniels</div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="final-score">
+            <div class="score-label">Seven Dimension Score</div>
+            <div class="score-display">7.37</div>
+            <p style="color: #a89070; margin-top: 10px; font-style: italic;">A visually stunning Western with powerful moments</p>
+        </div>
+        
+        <p class="tagline">
+            "If I don't get the boy, I will kill every man, woman, and child in this valley."<br>
+            — Frank Griffin (Jeff Daniels)
+        </p>
+        
+        <section>
+            <h2>The Seven Dimensions</h2>
+            
+            <div class="dimension">
+                <div class="dimension-header">
+                    <span class="dimension-title">1. Characters & Performance</span>
+                    <span class="dimension-score">7.5/10</span>
+                </div>
+                <div class="dimension-content">
+                    <p><span class="highlight">Godless</span> presents a fascinating ensemble that subverts traditional Western archetypes. <span class="highlight">Jeff Daniels</span> delivers a career-defining performance as Frank Griffin, the charismatic yet terrifying outlaw who fuses religious fervor with ruthless violence. His portrayal creates one of television's most memorable antagonists—a villain who truly believes he's doing God's work while committing unspeakable atrocities.</p>
+                    
+                    <p>The women of <span class="highlight">La Belle</span> form the emotional core of the series. After a mining disaster claims nearly every man in town, the remaining women must forge their own society. Michelle Dockery's Alice Fletcher anchors the narrative with quiet strength, portraying a woman haunted by violence who refuses to be victimized again. Merritt Wever as Mary Agnes McNue delivers a breakout performance, commanding every scene she's in as a woman who takes up her late husband's boots and guns.</p>
+                    
+                    <p>However, Jack O'Connell's Roy Goode, while physically capable, feels underwritten compared to the rich complexity surrounding him. His character serves more as a catalyst for the women's stories rather than a fully realized protagonist. Some supporting characters, particularly among Griffin's gang, blend into a violent blur rather than standing as distinct personalities. The character development, while strong for the female ensemble, sometimes sacrifices depth for the sake of the sprawling narrative.</p>
+                </div>
+            </div>
+            
+            <div class="dimension">
+                <div class="dimension-header">
+                    <span class="dimension-title">2. World Building & Setting</span>
+                    <span class="dimension-score">8.0/10</span>
+                </div>
+                <div class="dimension-content">
+                    <p>The fictional town of <span class="highlight">La Belle, New Mexico</span> emerges as a character unto itself—a mining town devastated by catastrophe, now populated almost entirely by women. Scott Frank and his production team have crafted a believable, lived-in world that feels authentic to the post-Civil War American frontier while introducing a fresh premise. The town's physical geography—the mine shaft looming over everything, the scattered homes, the makeshift infrastructure—speaks to a community desperately holding together against impossible odds.</p>
+                    
+                    <p>The world extends beyond La Belle to encompass Griffin's roving band of outlaws, Native American communities, ranch hands, and traveling salesmen. Each location carries distinct texture: the dusty saloons, the isolated ranches, the Native settlement where cultural tensions simmer beneath surface courtesy. The series doesn't shy away from the brutal realities of frontier life—disease, injury, lawlessness, and the constant threat of violence.</p>
+                    
+                    <p>The historical context feels meticulously researched, from costumes to weaponry to the social dynamics of a changing West. The concept of a town managed by women, while an inversion of traditional Western tropes, never feels contrived. Instead, it illuminates the unacknowledged labor and capability of women throughout history. The world building succeeds because it treats its premise seriously, exploring how such a community would actually function rather than using it merely as backdrop for shootouts.</p>
+                </div>
+            </div>
+            
+            <div class="dimension">
+                <div class="dimension-header">
+                    <span class="dimension-title">3. Cinematography & Visual Language</span>
+                    <span class="dimension-score">9.0/10</span>
+                </div>
+                <div class="dimension-content">
+                    <p><span class="highlight">Godless</span> stands as one of the most visually striking television productions of its era, approaching cinematic quality in nearly every frame. <span class="highlight">Steven Meizler's</span> cinematography captures the American Southwest in all its brutal beauty—vast desert landscapes that swallow human figures, golden hour light that transforms dust into visual poetry, and intimate interiors where shadows pool like water. The series was shot on location in New Mexico, and the authentic landscape provides an irreplaceable foundation for the visual storytelling.</p>
+                    
+                    <p>The camera work demonstrates intentionality in every composition. Wide shots establish the emptiness of the frontier, making human settlements feel like fragile interruptions in an indifferent wilderness. Close-ups capture weathered faces, each line telling stories of hardship and endurance. Action sequences utilize the environment brilliantly—train robberies, horseback chases, and gunfights all feel grounded in the physical reality of the setting rather than constructed on soundstages.</p>
+                    
+                    <p>The color palette deserves special mention: warm earth tones dominate, punctuated by the deep red of blood, the blue of distant mountains, and the golden light that suffuses everything during magic hour. Costume design integrates seamlessly with cinematography—the practical clothing of frontier women, the theatrical menace of Griffin's gang, the dusty uniformity of his followers. Every visual element serves the narrative, from the recurring image of the empty mine to the way light streams through bullet holes in walls. This is cinematography as world-building, as character development, as emotional expression.</p>
+                </div>
+            </div>
+            
+            <div class="dimension">
+                <div class="dimension-header">
+                    <span class="dimension-title">4. Visual Spectacle & Action</span>
+                    <span class="dimension-score">8.0/10</span>
+                </div>
+                <div class="dimension-content">
+                    <p>The action sequences in <span class="highlight">Godless</span> demonstrate a commitment to practical effects and grounded violence that sets it apart from more stylized Westerns. <span class="highlight">The train robbery</span> in the opening episode establishes the template: chaotic, messy, and genuinely dangerous. When bodies fall, they stay fallen. When bullets strike, they wound or kill without cinematic mercy. The violence carries weight because the consequences feel permanent.</p>
+                    
+                    <p>The climactic <span class="highlight">battle of La Belle</span> serves as the series' centerpiece, delivering on seven episodes of buildup with a sustained siege that tests the mettle of every character. The sequence leverages the town's geography—the mine, the buildings, the open spaces—to create tactical depth. Women and children fight alongside the few remaining men, and the sequence never loses sight of the stakes: these are civilians defending their homes, not professional soldiers, and the desperation makes every exchange of gunfire meaningful.</p>
+                    
+                    <p>Beyond action, the series delivers visual spectacle through its depiction of frontier life: cattle drives, campfires under endless stars, the terrifying beauty of prairie storms. The makeup and prosthetic work on injuries and corpses adds visceral realism that reminds viewers of medicine's limitations in this era. Some sequences, particularly Griffin's massacre of a rival town, are genuinely difficult to watch—a testament to their effectiveness. The spectacle serves story rather than overwhelming it, though occasionally the relentless grimness can feel exhausting rather than impactful.</p>
+                </div>
+            </div>
+            
+            <div class="dimension">
+                <div class="dimension-header">
+                    <span class="dimension-title">5. Conceptual Density & Themes</span>
+                    <span class="dimension-score">7.0/10</span>
+                </div>
+                <div class="dimension-content">
+                    <p><span class="highlight">Godless</span> operates on multiple thematic levels, though it doesn't always weave them together seamlessly. At its core lies an exploration of <span class="highlight">gender and power</span>—what happens when women must assume roles traditionally denied them, and whether men will permit such autonomy. The town of La Belle represents a social experiment: can women build a functioning society without masculine authority? The series answers affirmatively while honestly acknowledging the external threats that persist.</p>
+                    
+                    <p>Religious hypocrisy emerges through Griffin, who quotes scripture while committing atrocities. The series interrogates how faith can serve as justification for violence, a theme with contemporary resonance. <span class="highlight">Family and inheritance</span> run through multiple storylines—Griffin's twisted father-son relationship with Roy, Alice's protection of her son, the Native American characters wrestling with cultural continuity. The Western genre traditionally concerned itself with Manifest Destiny and the closing frontier; Godless reframes these through marginalized perspectives without becoming preachy.</p>
+                    
+                    <p>However, the series sometimes struggles to balance its thematic ambitions with its genre obligations. The philosophical musings occasionally feel like interruptions to the plot rather than integrated elements. The Native American subplot, while sensitively handled, doesn't fully connect to the main narrative. The exploration of La Belle's social dynamics sometimes takes backseat to Griffin's rampage. The ideas are present and generally well-considered, but the execution occasionally prioritizes momentum over meditation.</p>
+                </div>
+            </div>
+            
+            <div class="dimension">
+                <div class="dimension-header">
+                    <span class="dimension-title">6. Narrative Drive & Pacing</span>
+                    <span class="dimension-score">7.0/10</span>
+                </div>
+                <div class="dimension-content">
+                    <p>The seven-episode structure of <span class="highlight">Godless</span> provides ample room for both character development and escalating tension, though the pacing occasionally falters. The series opens with propulsive energy—the train robbery, Griffin's pursuit, Roy's arrival in La Belle—establishing immediate stakes. The middle episodes slow down to explore the town's dynamics, introducing its residents and their hopes for a peaceful future. This rhythm serves character development but can test the patience of viewers expecting constant action.</p>
+                    
+                    <p>The narrative interweaves multiple storylines: Griffin's pursuit across the territory, the preparations in La Belle, Roy's attempts to find redemption, and various subplots involving supporting characters. Most threads prove engaging, though some (the traveling photographer, certain members of Griffin's gang) feel like distractions rather than necessary components. The series benefits from its limited run—there's no padding for potential future seasons, just focused storytelling toward a predetermined conclusion.</p>
+                    
+                    <p>The final two episodes accelerate dramatically, delivering the promised confrontation with precision and intensity. However, some late-game revelations feel underdeveloped, and certain character arcs resolve too quickly after lengthy buildup. The pacing issues stem from ambition—the series wants to be both an intimate character study and a sweeping epic, and the balance isn't always perfect. When it works, the narrative creates genuine suspense; when it doesn't, episodes feel like necessary setup without standalone satisfaction.</p>
+                </div>
+            </div>
+            
+            <div class="dimension">
+                <div class="dimension-header">
+                    <span class="dimension-title">7. Resolution & Emotional Impact</span>
+                    <span class="dimension-score">8.0/10</span>
+                </div>
+                <div class="dimension-content">
+                    <p>The conclusion of <span class="highlight">Godless</span> delivers on the promises made throughout its run, providing satisfying resolution to most character arcs while acknowledging the irreversible costs of violence. The <span class="highlight">final confrontation</span> between Griffin and the town earns its stakes through careful buildup—we understand exactly what's been lost and what remains to be defended. Victory comes at a price, and the series doesn't flinch from showing the dead and wounded who paid it.</p>
+                    
+                    <p>Roy Goode's arc finds completion in a way that honors the series' examination of masculine violence—his choice in the final moments feels earned rather than imposed by plot necessity. The women of La Belle emerge changed but unbroken, their community tested and confirmed. Merritt Wever's Mary Agnes receives perhaps the most emotionally satisfying conclusion, her transformation from grieving widow to capable leader complete. The epilogue provides closure without excessive tidiness—life continues, wounds heal slowly, and the frontier remains dangerous.</p>
+                    
+                    <p>The emotional impact derives from investment in characters we come to care about, and here the series largely succeeds. The losses hurt because the writing made these people feel real. The triumphs resonate because they were hard-won. Some viewers may find the resolution too neat or the body count insufficiently high for the preceding brutality, but the series maintains its conviction to the end. The final images—the town, the survivors, the land—linger in memory as a testament to resilience and survival in a world that offers no guarantees.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="verdict">
+            <h2>Final Verdict</h2>
+            <div class="verdict-content">
+                <p><span class="highlight">Godless</span> arrives as a <span class="highlight">Netflix prestige production</span> that largely justifies its cinematic ambitions through sheer visual splendor and committed performances. Scott Frank has crafted a Western that respects the genre's traditions while inverting its gender dynamics—a high-wire act that succeeds more often than it falters. The series works best when focusing on the women of La Belle, their struggles and triumphs providing emotional grounding for the broader narrative.</p>
+                
+                <p><span class="highlight">Jeff Daniels</span> towers over the production as Frank Griffin, creating a villain whose charisma nearly equals his menace. His pursuit of Roy Goode provides the engine that drives the plot, even as the series' true subject becomes the community that stands in his path. The cinematography and production design elevate every scene, making <em>Godless</em> worth watching even when the pacing flags or the writing stumbles.</p>
+                
+                <p>The seven-episode format proves wise—this is a story that knows its length and doesn't overstay its welcome. While some subplots feel underdeveloped and certain themes could be explored more deeply, the overall impact remains substantial. For viewers seeking a Western that looks magnificent, delivers genuine tension, and offers something fresh within a familiar framework, <em>Godless</em> earns its place among the genre's notable recent entries.</p>
+            </div>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>Strengths</h3>
+                    <ul>
+                        <li>Jeff Daniels' towering villainous performance</li>
+                        <li>Groundbreaking focus on women in Western genre</li>
+                        <li>Exceptional cinematography throughout</li>
+                        <li>Authentic period production design</li>
+                        <li>Satisfyingly brutal action sequences</li>
+                        <li>Strong ensemble female cast</li>
+                        <li>Perfectly paced at seven episodes</li>
+                        <li>Memorable final confrontation</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Weaknesses</h3>
+                    <ul>
+                        <li>Some supporting characters lack depth</li>
+                        <li>Middle episodes slow the momentum</li>
+                        <li>Roy Goode feels underwritten</li>
+                        <li>Native American subplot underdeveloped</li>
+                        <li>Occasionally heavy-handed theology</li>
+                        <li>Some plot conveniences in final act</li>
+                        <li>Violence sometimes feels excessive</li>
+                        <li>Could explore themes more deeply</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Seven Dimension Analysis Framework</p>
+            <p>Generated for TV Shows Ranked Project</p>
+            <p>© 2024 - All Rights Reserved</p>
         </div>
     </div>
-    <div class="dimension-content">
-        <p><strong>Michelle Dockery:</strong> Dockery delivers a commanding performance as Alice Fletcher, a widow running a ranch with her son and Native American mother-in-law. Shedding her Downton Abbey elegance, Dockery embodies a harder, more weathered character—a woman who has survived loss and built a life through sheer determination.</p>
-        
-        <p><strong>Merritt Wever:</strong> Wever shines as Mary Agnes McNue, the town's defacto leader who wears pants, smokes cigars, and maintains a relationship with the local schoolteacher. Wever captures Mary's fierce independence and hidden vulnerability with nuance and wit.</p>
-        
-        <p><strong>Jeff Daniels:</strong> Daniels is terrifying as Frank Griffin, a charismatic preacher-turned-outlaw who justifies his violence through twisted religious conviction. Daniels makes Frank dangerously seductive—you understand why his gang follows him, even as you fear his brutality. The performance earned Daniels an Emmy nomination.</p>
-
-        <p><strong>Jack O'Connell:</strong> O'Connell brings wounded stoicism to Roy Goode, the outlaw with a conscience. His character's backstory, gradually revealed through flashbacks, creates empathy without excusing his crimes.</p>
-        
-        <p><strong>Why 7.5:</strong> Strong performances across the ensemble with standout work from Dockery, Wever, and Daniels. The limitation is some supporting characters receive limited development in the seven-episode format.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">World Building</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.20</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>La Belle, New Mexico:</strong> The series creates a vivid portrait of an 1880s mining town, devastated by a disaster that killed most of the male population. The town's current reality—women running businesses, enforcing law, building lives—feels authentic rather than contrived from its tragic premise. The saloon, the sheriff's office, the homes, the surrounding ranchland all feel lived-in and real.</p>
-        
-        <p><strong>The Western Frontier:</strong> The series depicts the broader Western environment—the lawlessness, the isolation, the harsh landscape, the limited technology of the era. The world of outlaws, lawmen, ranchers, and pioneers is rendered with attention to historical detail and Western genre tradition.</p>
-        
-        <p><strong>Why 8:</strong> Strong world-building with authentic frontier detail. The limitation is the limited scope—seven episodes can't fully explore a world in the depth of longer series.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">9</span>
-        <div>
-            <div class="dimension-name">Cinematography</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.35</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Steven Meizler's Visual Poetry:</strong> Cinematographer Steven Meizler creates stunning visuals that honor Western tradition while feeling fresh. Shot on location in New Mexico, the series captures vast canyons, endless mesas, dramatic skies that recall John Ford's Monument Valley. The New Mexico landscapes provide breathtaking backdrop to the intimate human drama.</p>
-        
-        <p><strong>The Palette:</strong> The color palette shifts between golden-hour warmth and harsh midday sun, creating visual variety that serves the story's emotional beats. The nighttime scenes use firelight and moonlight effectively, creating atmospheric shadow and glow.</p>
-        
-        <p><strong>The Scope:</strong> The wide shots emphasize the characters' smallness against the vast landscape, while intimate close-ups capture weathered faces and determined eyes. The cinematography tells story without dialogue.</p>
-        
-        <p><strong>Why 9:</strong> Exceptional cinematography that rivals feature film quality. Among television's most visually beautiful Westerns.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">Visual Spectacle</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.80</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>New Mexico Locations:</strong> The New Mexico landscapes provide genuine spectacle—sweeping vistas, dramatic geological formations, the vastness of the Western sky. The natural environment is spectacular enough to carry significant visual weight.</p>
-        
-        <p><strong>The Action:</strong> The gunfights are messy, realistic, and brutal. The climactic battle at La Belle is both spectacular and grounded, showing tactical competence and raw courage. The action serves story rather than dominating it.</p>
-        
-        <p><strong>Why 8:</strong> Strong spectacle through landscape and action. The limitation is intimate scale—this is a character drama with Western elements, not an action epic.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7</span>
-        <div>
-            <div class="dimension-name">Conceptual Density</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.05</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Gender and the Frontier:</strong> The series' central theme—frontier mythology has ignored women's contributions. When the men are gone, the women step up and prove capable. The theme emerges organically from story rather than being imposed upon it.</p>
-        
-        <p><strong>Religious Fanaticism:</strong> Frank Griffin's violence is justified through twisted Christian theology, exploring how faith can be weaponized for evil. His charismatic leadership seduces men into following him down dark paths.</p>
-        
-        <p><strong>Redemption and Damnation:</strong> Roy Goode seeks redemption for his outlaw past; Frank Griffin embraces damnation. The series explores whether people can change, whether violence can be escaped, whether past crimes can be outrun.</p>
-        
-        <p><strong>Why 7:</strong> Solid thematic exploration of gender, religion, and redemption. The limitation is familiar Western themes—fresh perspective but not groundbreaking.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7</span>
-        <div>
-            <div class="dimension-name">Narrative Drive</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.05</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Structure:</strong> Seven episodes build toward the inevitable confrontation between Frank's gang and La Belle. The pacing is deliberate, character-focused rather than plot-driven. Flashbacks to Roy's past with Frank create parallel narrative threads.</p>
-        
-        <p><strong>The Build:</strong> The series takes its time establishing characters and world before the final confrontation. This patient approach serves character development but requires viewer investment.</p>
-        
-        <p><strong>Why 7:</strong> Solid narrative construction with satisfying build. The limitation is deliberate pacing that some may find slow, and the familiar Western structure (stranger rides into town, confrontation builds).</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">Narrative Resolution</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.80</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Finale:</strong> The climactic battle at La Belle provides satisfying resolution—Frank Griffin meets his fate, the town is defended, characters face their destinies. The resolution honors Western tradition while providing emotional payoff for character arcs.</p>
-        
-        <p><strong>The Aftermath:</strong> The final scenes show the survivors moving forward, changed by their experience but resilient. The ending acknowledges loss while affirming life, honor while recognizing the cost of violence.</p>
-        
-        <p><strong>Why 8:</strong> Satisfying conclusion that honors the genre and the characters. The limitation is predictability—the Western showdown is expected, though well-executed.</p>
-    </div>
-</div>
-
-<div class="final-score">
-    <div>FINAL SCORE</div>
-    <div class="final-score-value">7.37</div>
-
-    <div style="color:#888; margin-top:1rem; font-size:0.9rem">
-        The final score of 7.37 reflects Godless's strong achievement across all seven dimensions. Its combination of stunning New Mexico cinematography, strong ensemble performances (particularly Dockery, Wever, and Daniels), and fresh perspective on Western conventions—centering women's competence in a traditionally masculine genre—secures its place as a worthy addition to the Western canon. Scott Frank proves that the Western still has stories to tell, and that those stories can combine genre entertainment with genuine artistry.
-    </div>
-</div>
-
 </body>
 </html>
