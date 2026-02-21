@@ -103,67 +103,82 @@
         }
         
         .dimension-block {
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(30,30,30,0.8);
             border-radius: 12px;
-            padding: 25px;
+            padding: 2rem;
             margin-bottom: 25px;
-            border-left: 4px solid;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5rem;
         }
-        
-        .dimension-block:hover {
-            transform: translateX(5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-        }
-        
-        .dimension-block.characters { border-left-color: #ff6b6b; }
-        .dimension-block.worldbuilding { border-left-color: #4ecdc4; }
-        .dimension-block.cinematography { border-left-color: #95e1d3; }
-        .dimension-block.visuals { border-left-color: #f38181; }
-        .dimension-block.concept { border-left-color: #aa96da; }
-        .dimension-block.narrative { border-left-color: #fcbad3; }
-        .dimension-block.resolution { border-left-color: #a8d8ea; }
-        
-        .dimension-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        
-        .dimension-name {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #f0f0f0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .dimension-icon {
-            font-size: 1.6rem;
-        }
-        
+
         .dimension-score {
-            font-size: 1.8rem;
-            font-weight: bold;
-            padding: 8px 20px;
-            border-radius: 25px;
-            background: rgba(212, 175, 55, 0.2);
-            color: #d4af37;
-            border: 2px solid #d4af37;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 100px;
         }
-        
-        .dimension-analysis {
+
+        .score-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            position: relative;
+            color: #e0e0e0;
+        }
+
+        .score-circle::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: conic-gradient(#d4af37 calc(var(--score) * 1%), rgba(255,255,255,0.1) 0);
+            z-index: -1;
+        }
+
+        .score-circle::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: rgba(30,30,30,0.9);
+        }
+
+        .score-label {
+            font-size: 0.75rem;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .dimension-content {
             color: #c0c0c0;
             line-height: 1.9;
             font-size: 1.05rem;
         }
-        
-        .dimension-analysis p {
+
+        .dimension-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: #e0e0e0;
+        }
+
+        .dimension-content p {
             margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .dimension-block {
+                grid-template-columns: 1fr;
+            }
         }
         
         .cast-section {
@@ -301,7 +316,6 @@
             .show-title { font-size: 2.2rem; }
             .final-score-value { font-size: 3rem; }
             .section { padding: 25px 20px; }
-            .dimension-header { flex-direction: column; align-items: flex-start; }
         }
     </style>
 </head>
