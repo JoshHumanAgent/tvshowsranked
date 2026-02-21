@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justified (2010-2015) - TV Shows Ranked</title>
     <link rel="stylesheet" href="../../style.css">
+    <style>
+        /* Rankings Section */
+        .rankings-section { margin-bottom: 2rem; }
+        .rankings-header { text-align: center; margin-bottom: 2.5rem; }
+        .rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; color: var(--text-primary, #f5f5f5); }
+        .rankings-subtitle { color: var(--text-secondary, #8a8a9a); font-size: 1.1rem; }
+        .dimension-grid { display: grid; gap: 1.5rem; }
+        .dimension-block { background: rgba(30,30,30,0.8); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.1); display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; }
+        .dimension-score { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-width: 100px; }
+        .score-circle { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; position: relative; }
+        .score-circle::before { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: conic-gradient(var(--gold, #d4af37) calc(var(--score) * 10%), var(--bg-tertiary, #2d2d2d) 0); z-index: -1; }
+        .score-circle::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: rgba(30,30,30,0.8); }
+        .score-label { font-size: 0.75rem; color: var(--text-secondary, #8a8a9a); text-transform: uppercase; letter-spacing: 1px; }
+        .dimension-content h3 { font-size: 1.4rem; margin-bottom: 0.75rem; color: var(--text-primary, #f5f5f5); }
+        @media (max-width: 768px) { .dimension-block { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body class="show-page">
     <div class="show-header">
@@ -47,9 +63,20 @@
             <p>Over six seasons, <em>Justified</em> maintained an impressive consistency of quality, peaking in its second season with the indelible Mags Bennett storyline, and delivering a series finale that ranked among television's most satisfying conclusions. It is a show about consequences—the consequences of violence, of returning home, of the choices that define us. Ultimately, it argues that while we cannot escape where we come from, we can choose what kind of person we become within those constraints. That it delivers these weighty themes with such style, humor, and quotable dialogue makes it not just one of FX's finest hours, but one of the defining dramas of the 2010s.</p>
         </section>
 
-        <section class="dimension-card">
-            <div class="dimension-header">
-                <h2>Characters</h2>
+        <section class="rankings-section">
+            <div class="rankings-header">
+                <h2 class="rankings-title">🏆 Why It Ranks</h2>
+                <p class="rankings-subtitle">A seven-dimension analysis of what makes this show exceptional</p>
+            </div>
+            <div class="dimension-grid">
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 81;"><span>8.1</span></div>
+                <span class="score-label">CHARACTERS</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Complex Characters</h3>
                 <div class="dimension-score">
                     <span class="score-number">8.1</span>
                     <span class="score-outof">/10</span>
@@ -70,15 +97,15 @@
             </div>
         </section>
 
-        <section class="dimension-card">
-            <div class="dimension-header">
-                <h2>World Building</h2>
-                <div class="dimension-score">
-                    <span class="score-number">7.5</span>
-                    <span class="score-outof">/10</span>
-                </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 75;"><span>7.5</span></div>
+                <span class="score-label">WORLD BUILDING</span>
             </div>
             <div class="dimension-content">
+                <h3>The World of Harlan</h3>
                 <p><em>Justified</em> constructs a version of Eastern Kentucky that feels simultaneously specific and mythic, grounded in geographic and economic reality while operating with the heightened logic of Western folklore. Harlan County is not merely a setting but a character in its own right—a region with memory, with grievances, with specific codes of behavior inherited from coal-mining traditions and mountain isolation. The show's world building succeeds through accumulation of detail rather than exposition dumps: we learn about Harlan through who lives there, how they speak, what they value, and what constraints poverty and geography impose upon them.</p>
 
                 <p>The show's Kentucky operates as a closed system with its own history and power structures. The legacy of labor wars—particularly the Battle of Evarts and Harlan County's "Bloody Harlan" reputation—provides historical weight that explains both community solidarity and violent resistance to outside authority. The Bennett family's underground dominance, the Crowders' evolution from white supremacist compounds to criminal enterprises, and the various smaller operators (the Crowes, the various petty thieves and meth dealers) all map onto recognizable Appalachian economic patterns. The series understands that criminality in Harlan is often a rational response to limited legal opportunity, not merely individual moral failing.</p>
@@ -93,15 +120,15 @@
             </div>
         </section>
 
-        <section class="dimension-card">
-            <div class="dimension-header">
-                <h2>Cinematography</h2>
-                <div class="dimension-score">
-                    <span class="score-number">7.5</span>
-                    <span class="score-outof">/10</span>
-                </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 75;"><span>7.5</span></div>
+                <span class="score-label">CINEMATOGRAPHY</span>
             </div>
             <div class="dimension-content">
+                <h3>Western Visual Language</h3>
                 <p><em>Justified</em> presents a visual aesthetic that deliberately evokes Western iconography while grounding itself in the specific textures of contemporary Eastern Kentucky. The cinematography, primarily developed through the work of directors like Michael Dinner, Adam Arkin, and Jon Avnet across the series' run, understands that the show's primary visual language must serve two masters: the expectations of the Western genre and the reality of modern rural America. This balancing act produces a look that is simultaneously romantic and gritty, heroic and mundane.</p>
 
                 <p>The show's most iconic visual element—Raylan Givens in his Stetson hat—is emblematic of its larger visual strategy. The hat functions as a deliberate anachronism, a piece of costuming and cinematographic composition that recalls classical Western heroes while existing within a world of SUVs and FBI windbreakers. Directors consistently frame Olyphant to emphasize this visual continuity with Western tradition: silhouettes against mountain sunsets, low angles emphasizing his stature, the hat casting shadows across his face during interrogations. Yet the cinematography also undercuts this romantic presentation with counter-images—Raylan in fluorescent-lit government offices, Raylan's badge and gun on a motel nightstand, the hat increasingly battered as the series progresses.</p>
@@ -116,15 +143,15 @@
             </div>
         </section>
 
-        <section class="dimension-card">
-            <div class="dimension-header">
-                <h2>Visual Spectacle</h2>
-                <div class="dimension-score">
-                    <span class="score-number">6.5</span>
-                    <span class="score-outof">/10</span>
-                </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 65;"><span>6.5</span></div>
+                <span class="score-label">VISUAL SPECTACLE</span>
             </div>
             <div class="dimension-content">
+                <h3>Restrained Realism</h3>
                 <p><em>Justified</em> occupies an interesting position regarding visual spectacle, explicitly rejecting the bombastic action aesthetics of many contemporary crime dramas in favor of restrained, character-focused presentation. This is a series where violence arrives without warning and ends quickly, where set pieces are conversational rather than explosive, where the spectacle lies in performance and dialogue rather than visual effects or large-scale destruction. The 6.5 score reflects not a failure of execution but a deliberate demotion of spectacle in the show's priorities—a choice that serves the material well but limits the series' visual impact relative to more ostentatious productions.</p>
 
                 <p>The show's approach to violence exemplifies its restrained visual philosophy. Gunfights are brief, messy, and often awkward—characters miss shots, take cover behind inadequate protection, suffer injuries that have lasting consequences. Raylan's famous "quick draw" moments provide the closest approximation to traditional action spectacle, and these are handled with efficiency rather than stylization: sudden movement, muffled reports, bodies falling. The aftermath receives as much attention as the event itself—law enforcement procedures, emotional reactions, the cleanup of death. This anti-spectacle approach to violence reinforces the show's thematic seriousness; death matters here in ways that more spectacular presentations often undermine.</p>
@@ -139,15 +166,15 @@
             </div>
         </section>
 
-        <section class="dimension-card">
-            <div class="dimension-header">
-                <h2>Conceptual Density</h2>
-                <div class="dimension-score">
-                    <span class="score-number">7.8</span>
-                    <span class="score-outof">/10</span>
-                </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 78;"><span>7.8</span></div>
+                <span class="score-label">CONCEPTUAL DENSITY</span>
             </div>
             <div class="dimension-content">
+                <h3>Thematic Depth</h3>
                 <p><em>Justified</em> operates with surprising thematic richness beneath its entertaining surface, exploring questions of identity, determinism, institutional justice, and American regionalism through its six-season run. The show's conceptual density emerges organically from character and situation rather than through abstract philosophical dialogue, earning its 7.8 rating through consistent thematic intelligence rather than heavy-handed messaging. Creator Graham Yost and the writing staff understood that the strongest themes emerge from what characters do and what happens to them, not from what they say about abstract concepts.</p>
 
                 <p>The series' central thematic preoccupation concerns the possibility of escaping one's origins. Every major character grapples with this question: Raylan believes he has transcended his criminal father through law enforcement but repeatedly demonstrates Arlo's temper and moral shortcuts; Boyd attempts various transformations—preacher, businessman, legitimate entrepreneur—only to find violence and criminality his most reliable tools; Ava Crowder cycles through relationships and ambitions seeking stability that her circumstances and choices deny her. The show's ultimate answer is ambiguous: characters can make different choices, but they cannot fully escape who history and geography made them.</p>
@@ -164,15 +191,15 @@
             </div>
         </section>
 
-        <section class="dimension-card">
-            <div class="dimension-header">
-                <h2>Narrative Drive</h2>
-                <div class="dimension-score">
-                    <span class="score-number">7.8</span>
-                    <span class="score-outof">/10</span>
-                </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 78;"><span>7.8</span></div>
+                <span class="score-label">NARRATIVE DRIVE</span>
             </div>
             <div class="dimension-content">
+                <h3>Six Seasons of Tension</h3>
                 <p><em>Justified</em> constructs its narrative engine from the tension between episodic procedural satisfaction and serialized character development, maintaining momentum across six seasons through strategic deployment of both modes. The show's narrative drive derives primarily from the Raylan-Boyd relationship, which provides the series with its throughline and ultimate destination, but it sustains interest through seasonal reinvention, procedural cases of the week, and evolving criminal conspiracies that keep the Kentucky setting dynamic. The 7.8 score reflects sustained narrative competence with occasional lulls and detours.</p>
 
                 <p>The show's pilot establishes the narrative template efficiently: Miami Marshal Raylan Givens shoots a mobster, triggering reassignment to Kentucky, where he immediately encounters childhood acquaintance Boyd Crowder. This setup provides immediate stakes (will Raylan and Boyd kill each other?), ongoing investigation (Boyd's criminal activities), and emotional backstory (their shared history, Raylan's father). From this foundation, the series constructs season-long arcs built around specific criminal organizations or investigations, typically introducing new antagonists while maintaining ongoing development of established conflicts.</p>
@@ -191,15 +218,15 @@
             </div>
         </section>
 
-        <section class="dimension-card">
-            <div class="dimension-header">
-                <h2>Resolution</h2>
-                <div class="dimension-score">
-                    <span class="score-number">7.8</span>
-                    <span class="score-outof">/10</span>
-                </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 78;"><span>7.8</span></div>
+                <span class="score-label">RESOLUTION</span>
             </div>
             <div class="dimension-content">
+                <h3>A Satisfying Conclusion</h3>
                 <p>The final season and series conclusion of <em>Justified</em> represent one of television's more successful long-form endings, providing closure that feels earned by character history and thematically consistent with the series' concerns. The show had the advantage of knowing its sixth season would be its last, allowing deliberate preparation for conclusion rather than sudden cancellation or open-ended continuation. This foresight enabled a finale that resolves the Raylan-Boyd conflict, addresses ongoing narrative threads, and provides glimpses of characters' futures without excessive tidiness. The 7.8 score reflects genuinely impressive resolution with minor compromises.</p>
 
                 <p>The final season's primary achievement is its patience. Rather than accelerating toward maximum chaos, the season allows space for characters to make choices that reflect accumulated history. Boyd's final criminal scheme, Raylan's negotiation of professional and personal obligations, Ava's desperate bid for escape—all proceed with deliberation that trusts audience investment. The season understands that viewers don't need manufactured escalation; they need meaningful confrontation between characters whose relationships have developed over years.</p>
@@ -216,7 +243,8 @@
 
                 <p>The "Justified" of the title receives final thematic resonance. What justifies Raylan's violence? What justifies Boyd's criminality? What justifies Ava's betrayals? The series concludes that justification is always subjective, always partial, always contested. Characters act from complicated motives producing complicated results, and the show refuses final judgment. This intellectual humility, combined with emotional closure for invested viewers, makes <em>Justified</em>'s ending a model of how to conclude long-form television—with respect for audience intelligence, affection for characters, and courage to avoid maximum drama in favor of genuine emotion.</p>
             </div>
-        </section>
+    </div>
+</section>
 
         <section class="score-breakdown">
             <h2>Score Breakdown</h2>

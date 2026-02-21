@@ -15,6 +15,11 @@
             --gold: #c9a227;
             --denmark-red: #c60c30;
             --denmark-white: #ffffff;
+            --bg-secondary: #1a1a2e;
+            --bg-tertiary: #2d2d2d;
+            --text-primary: #eaeaea;
+            --text-secondary: #a0a0a0;
+            --border-color: rgba(201,162,39,0.2);
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -93,7 +98,7 @@
             align-items: center;
         }
         .dimension-name { font-size: 1.6rem; font-weight: 600; }
-        .dimension-score {
+        .dimension-score-display {
             background: var(--gold);
             color: var(--secondary);
             padding: 10px 25px;
@@ -193,6 +198,85 @@
             border-top: 1px solid rgba(201,162,39,0.3);
             margin-top: 50px;
         }
+        /* NEW STANDARD FORMAT STYLES */
+        .rankings-section { margin-bottom: 2rem; }
+        .rankings-header { text-align: center; margin-bottom: 2.5rem; }
+        .rankings-title { font-size: 2.2rem; font-weight: 800; color: var(--gold); }
+        .rankings-subtitle { color: var(--text-secondary); font-size: 1.1rem; }
+        .dimension-grid { display: grid; gap: 1.5rem; }
+        .dimension-block {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5rem;
+        }
+        .dimension-score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 100px;
+        }
+        .score-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 800;
+            position: relative;
+            background: var(--bg-secondary);
+        }
+        .score-circle::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: conic-gradient(var(--accent, #d4af37) calc(var(--score) * 10%), var(--bg-tertiary, #2d2d2d) 0);
+            z-index: -1;
+        }
+        .score-circle::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+        }
+        .score-circle span { position: relative; z-index: 1; color: var(--text); }
+        .score-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.75rem;
+        }
+        .dimension-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+        .dimension-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        @media (max-width: 768px) {
+            .dimension-block {
+                grid-template-columns: 1fr;
+            }
+            .dimension-score {
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 1rem;
+            }
+            .score-label {
+                margin-top: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -273,212 +357,214 @@
             </div>
         </section>
 
-        <!-- DIMENSION 1: Characters -->
-        <section class="section">
-            <div class="dimension-card">
-                <div class="dimension-header">
-                    <span class="dimension-name">1. Characters</span>
-                    <span class="dimension-score">7.8</span>
-                </div>
-                <div class="dimension-body">
-                    <p>
-                        Borgen's greatest strength lies in its central protagonist, <span class="highlight">Birgitte Nyborg</span>, portrayed with extraordinary nuance by Sidse Babett Knudsen. What begins as a familiar archetype—the principled outsider swept into power—evolves into something far more complex. Birgitte isn't a saint; she's a pragmatist who learns that holding power requires uncomfortable moral calculus. Her character arc across four seasons is one of television's most sophisticated portraits of political leadership.
-                    </p>
-                    <p>
-                        The supporting cast demonstrates similar depth. <strong>Kasper Juul</strong>, the young spin doctor with his own traumatic past, serves as both foil and mirror to Birgitte. His journey from idealistic (if manipulative) true believer to increasingly disillusioned operative reflects the show's broader themes about the corrupting nature of proximity to power. The relationship between Kasper and Katrine—professional, romantic, combative, supportive—forms the secondary heart of the series.
-                    </p>
-                    <p>
-                        Where the character work slightly falters is in the <span class="highlight">seasonal rotation</span> of supporting players. Because Danish political dramas follow the actual turnover of government, some excellent characters (and actors) inevitably depart. The third season's introduction of new power structures after Birgitte's party exits government creates narrative opportunities but also forces the audience to invest in entirely new political figures. These transitions are handled skillfully but create natural discontinuity.
-                    </p>
-                    <p>
-                        The fourth season (released nearly a decade after the third) attempts to age characters realistically, with mixed success. Birgitte's return to power as Foreign Minister brings compelling new dynamics, but some returning characters feel slightly frozen in time while others have changed dramatically off-screen. The new characters introduced—particularly the young, ambitious Signe Kragh—provide generational counterpoint but occasionally feel more like plot devices than fully realized individuals.
-                    </p>
-                    <p>
-                        The show deserves particular credit for its <span class="highlight">female characters</strong> beyond Birgitte. Katrine's evolution from plucky journalist to weary news director facing an industry in crisis feels authentic to media's digital disruption. The various female politicians who appear across seasons—from right-wing populists to environmental activists—are rarely reduced to stereotypes. Even characters who appear only briefly receive enough shading to suggest inner lives extending beyond their plot function.
-                    </p>
-                    <p>
-                        Family dynamics, particularly Birgitte's relationship with her children and ex-husband Philip, ground the political drama in relatable human stakes. The show doesn't shy away from showing her parental failures alongside her political triumphs. These relationships evolve believably over time, with her daughter Laura's struggles serving as particularly poignant subplot that highlights the impossibility of the work-life balance the public demands from female leaders.
-                    </p>
-                </div>
+        <!-- Why It Ranks - Standard Format Dimension Analysis -->
+        <section class="rankings-section">
+            <div class="rankings-header">
+                <h2 class="rankings-title">🏆 Why It Ranks</h2>
+                <p class="rankings-subtitle">A seven-dimension analysis of what makes this show exceptional</p>
             </div>
-        </section>
+            <div class="dimension-grid">
+                <!-- DIMENSION 1: Characters -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 7.8;"><span>7.8</span></div>
+                        <span class="score-label">Characters</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>A Masterclass in Political Character Study</h3>
+                        <p>
+                            Borgen's greatest strength lies in its central protagonist, <span class="highlight">Birgitte Nyborg</span>, portrayed with extraordinary nuance by Sidse Babett Knudsen. What begins as a familiar archetype—the principled outsider swept into power—evolves into something far more complex. Birgitte isn't a saint; she's a pragmatist who learns that holding power requires uncomfortable moral calculus. Her character arc across four seasons is one of television's most sophisticated portraits of political leadership.
+                        </p>
+                        <p>
+                            The supporting cast demonstrates similar depth. <strong>Kasper Juul</strong>, the young spin doctor with his own traumatic past, serves as both foil and mirror to Birgitte. His journey from idealistic (if manipulative) true believer to increasingly disillusioned operative reflects the show's broader themes about the corrupting nature of proximity to power. The relationship between Kasper and Katrine—professional, romantic, combative, supportive—forms the secondary heart of the series.
+                        </p>
+                        <p>
+                            Where the character work slightly falters is in the <span class="highlight">seasonal rotation</span> of supporting players. Because Danish political dramas follow the actual turnover of government, some excellent characters (and actors) inevitably depart. The third season's introduction of new power structures after Birgitte's party exits government creates narrative opportunities but also forces the audience to invest in entirely new political figures. These transitions are handled skillfully but create natural discontinuity.
+                        </p>
+                        <p>
+                            The fourth season (released nearly a decade after the third) attempts to age characters realistically, with mixed success. Birgitte's return to power as Foreign Minister brings compelling new dynamics, but some returning characters feel slightly frozen in time while others have changed dramatically off-screen. The new characters introduced—particularly the young, ambitious Signe Kragh—provide generational counterpoint but occasionally feel more like plot devices than fully realized individuals.
+                        </p>
+                        <p>
+                            The show deserves particular credit for its <span class="highlight">female characters</strong> beyond Birgitte. Katrine's evolution from plucky journalist to weary news director facing an industry in crisis feels authentic to media's digital disruption. The various female politicians who appear across seasons—from right-wing populists to environmental activists—are rarely reduced to stereotypes. Even characters who appear only briefly receive enough shading to suggest inner lives extending beyond their plot function.
+                        </p>
+                        <p>
+                            Family dynamics, particularly Birgitte's relationship with her children and ex-husband Philip, ground the political drama in relatable human stakes. The show doesn't shy away from showing her parental failures alongside her political triumphs. These relationships evolve believably over time, with her daughter Laura's struggles serving as particularly poignant subplot that highlights the impossibility of the work-life balance the public demands from female leaders.
+                        </p>
+                    </div>
+                </div>
 
-        <!-- DIMENSION 2: World Building -->
-        <section class="section">
-            <div class="dimension-card">
-                <div class="dimension-header">
-                    <span class="dimension-name">2. World Building</span>
-                    <span class="dimension-score">7.5</span>
+                <!-- DIMENSION 2: World Building -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 7.5;"><span>7.5</span></div>
+                        <span class="score-label">World Building</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>An Authentic Political Ecosystem</h3>
+                        <p>
+                            Borgen constructs an exceptionally detailed and <span class="highlight">authentic political ecosystem</span>. The show's title refers to Christiansborg Palace—"Borgen" in Danish—the building housing Denmark's Parliament, Prime Minister's Office, and Supreme Court. This physical space becomes almost a character itself, with its maze-like corridors, anonymous meeting rooms, and the constant hum of democratic machinery.
+                        </p>
+                        <p>
+                            The series benefits enormously from its creator Adam Price's extensive research and consultants drawn from actual Danish politics. The <strong>multiparty parliamentary system</strong> is explained organically through plot rather than exposition. Viewers unfamiliar with proportional representation or coalition negotiations gradually absorb these mechanics through observation. The constant horse-trading required to maintain governing alliances feels procedurally accurate without becoming tedious.
+                        </p>
+                        <p>
+                            The show creates a convincing pantheon of fictional parties that map onto real Danish political currents: Birgitte's centrist Moderates, the conservative Liberals, the left-wing Greens, the far-right Freedom Party, and various other groupings that shift across seasons. These aren't pure stand-ins for actual parties but rather plausible amalgams that allow narrative flexibility while maintaining realism.
+                        </p>
+                        <p>
+                            Where world building truly excels is in the <span class="highlight">intersection of media and politics</span>. The newsroom at fictional TV1 (and later Ekspres) is rendered with documentary-like attention to detail. The editorial meetings, the competition for scoops, the ethical debates about anonymous sources and story impact—all feel drawn from genuine journalistic practice. The show understands that in modern democracy, political reality and media representation are inseparable.
+                        </p>
+                        <p>
+                            The show's <strong>Danish specificity</strong> is both strength and potential barrier. References to Jutland versus Copenhagen, rural-urban divides, historical party allegiances, and national cultural touchstones assume familiarity that international viewers may lack. However, this specificity ultimately enriches rather than limits the viewing experience. Borgen is unapologetically Danish in a way that makes its universal themes about power and compromise more rather than less resonant.
+                        </p>
+                        <p>
+                            The fourth season's expansion into <span class="highlight">geopolitics</span>—with Birgitte as Foreign Minister navigating Arctic sovereignty disputes and oil extraction in Greenland—demonstrates both ambition and slight strain. These storylines require introducing complex international dynamics that occasionally overwhelm the intimate scale that made the original three seasons distinctive. However, they also illustrate how small-nation politics increasingly plays out on global stages, maintaining thematic relevance.
+                        </p>
+                    </div>
                 </div>
-                <div class="dimension-body">
-                    <p>
-                        Borgen constructs an exceptionally detailed and <span class="highlight">authentic political ecosystem</span>. The show's title refers to Christiansborg Palace—"Borgen" in Danish—the building housing Denmark's Parliament, Prime Minister's Office, and Supreme Court. This physical space becomes almost a character itself, with its maze-like corridors, anonymous meeting rooms, and the constant hum of democratic machinery.
-                    </p>
-                    <p>
-                        The series benefits enormously from its creator Adam Price's extensive research and consultants drawn from actual Danish politics. The <strong>multiparty parliamentary system</strong> is explained organically through plot rather than exposition. Viewers unfamiliar with proportional representation or coalition negotiations gradually absorb these mechanics through observation. The constant horse-trading required to maintain governing alliances feels procedurally accurate without becoming tedious.
-                    </p>
-                    <p>
-                        The show creates a convincing pantheon of fictional parties that map onto real Danish political currents: Birgitte's centrist Moderates, the conservative Liberals, the left-wing Greens, the far-right Freedom Party, and various other groupings that shift across seasons. These aren't pure stand-ins for actual parties but rather plausible amalgams that allow narrative flexibility while maintaining realism.
-                    </p>
-                    <p>
-                        Where world building truly excels is in the <span class="highlight">intersection of media and politics</span>. The newsroom at fictional TV1 (and later Ekspres) is rendered with documentary-like attention to detail. The editorial meetings, the competition for scoops, the ethical debates about anonymous sources and story impact—all feel drawn from genuine journalistic practice. The show understands that in modern democracy, political reality and media representation are inseparable.
-                    </p>
-                    <p>
-                        The show's <strong>Danish specificity</strong> is both strength and potential barrier. References to Jutland versus Copenhagen, rural-urban divides, historical party allegiances, and national cultural touchstones assume familiarity that international viewers may lack. However, this specificity ultimately enriches rather than limits the viewing experience. Borgen is unapologetically Danish in a way that makes its universal themes about power and compromise more rather than less resonant.
-                    </p>
-                    <p>
-                        The fourth season's expansion into <span class="highlight">geopolitics</span>—with Birgitte as Foreign Minister navigating Arctic sovereignty disputes and oil extraction in Greenland—demonstrates both ambition and slight strain. These storylines require introducing complex international dynamics that occasionally overwhelm the intimate scale that made the original three seasons distinctive. However, they also illustrate how small-nation politics increasingly plays out on global stages, maintaining thematic relevance.
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <!-- DIMENSION 3: Cinematography -->
-        <section class="section">
-            <div class="dimension-card">
-                <div class="dimension-header">
-                    <span class="dimension-name">3. Cinematography</span>
-                    <span class="dimension-score">7.5</span>
+                <!-- DIMENSION 3: Cinematography -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 7.5;"><span>7.5</span></div>
+                        <span class="score-label">Cinematography</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>Nordic Visual Storytelling</h3>
+                        <p>
+                            Borgen's visual palette strikes a careful balance between <span class="highlight">institutional coldness</span> and human warmth. The cinematography, led primarily by directors of photography Sebastian Blenkov and others across seasons, employs a distinctive Nordic aesthetic: clean lines, muted colors, shallow depth of field that isolates characters within their environments. Denmark's gray skies and Copenhagen's architectural mix of historic grandeur and modernist functionality provide natural visual texture.
+                        </p>
+                        <p>
+                            The show's approach to depicting <strong>institutional power</strong> is particularly effective. Christansborg Palace's interiors—marble hallways, wood-paneled meeting rooms, the semi-circular Parliament chamber—are filmed to emphasize both their grandeur and their constriction. Characters often appear small within these spaces, visually reinforcing democratic themes about individual leaders serving within larger systems. The camerawork is often static or moves deliberately, mirroring the slow, grinding nature of political process.
+                        </p>
+                        <p>
+                            Contrast comes in the <span class="highlight">domestic spaces</span>. Birgitte's apartment, her family's home, her eventual retreat to the countryside—these environments feature warmer lighting, more handheld camera work, and compositions suggesting genuine rather than performed intimacy. The visual distinction between public and private selves reinforces the show's thematic concerns about the performance of politics and what it costs.
+                        </p>
+                        <p>
+                            The newsroom environments at TV1 and Ekspres receive equally thoughtful treatment. These spaces buzz with different energy—monitors glow, deadlines loom, camera-ready lighting creates harsh contrasts. The visual language here borrows from broadcast journalism aesthetics while maintaining the show's overall cinematic approach. The interplay between the quiet political corridors and frenetic media spaces creates productive visual rhythm.
+                        </p>
+                        <p>
+                            The fourth season, filmed a decade later with evolved technology and new cinematographers, looks <span class="highlight">noticeably different</span>—sharper, more color-graded, occasionally glossier. This isn't necessarily a flaw, reflecting both the show's slightly grander scope (international locations, bigger set pieces) and broader changes in television production aesthetics. However, the visual continuity between seasons one through three creates a cohesive unit that season four slightly disrupts.
+                        </p>
+                        <p>
+                            The show's visual restraint serves its subject matter. There are no flashy sequences designed to showcase technique over story. Instead, the cinematography creates mood, emphasizes isolation or connection, and allows actors space to perform. It's accomplished work that prioritizes service to narrative over self-conscious style.
+                        </p>
+                    </div>
                 </div>
-                <div class="dimension-body">
-                    <p>
-                        Borgen's visual palette strikes a careful balance between <span class="highlight">institutional coldness</span> and human warmth. The cinematography, led primarily by directors of photography Sebastian Blenkov and others across seasons, employs a distinctive Nordic aesthetic: clean lines, muted colors, shallow depth of field that isolates characters within their environments. Denmark's gray skies and Copenhagen's architectural mix of historic grandeur and modernist functionality provide natural visual texture.
-                    </p>
-                    <p>
-                        The show's approach to depicting <strong>institutional power</strong> is particularly effective. Christansborg Palace's interiors—marble hallways, wood-paneled meeting rooms, the semi-circular Parliament chamber—are filmed to emphasize both their grandeur and their constriction. Characters often appear small within these spaces, visually reinforcing democratic themes about individual leaders serving within larger systems. The camerawork is often static or moves deliberately, mirroring the slow, grinding nature of political process.
-                    </p>
-                    <p>
-                        Contrast comes in the <span class="highlight">domestic spaces</span>. Birgitte's apartment, her family's home, her eventual retreat to the countryside—these environments feature warmer lighting, more handheld camera work, and compositions suggesting genuine rather than performed intimacy. The visual distinction between public and private selves reinforces the show's thematic concerns about the performance of politics and what it costs.
-                    </p>
-                    <p>
-                        The newsroom environments at TV1 and Ekspres receive equally thoughtful treatment. These spaces buzz with different energy—monitors glow, deadlines loom, camera-ready lighting creates harsh contrasts. The visual language here borrows from broadcast journalism aesthetics while maintaining the show's overall cinematic approach. The interplay between the quiet political corridors and frenetic media spaces creates productive visual rhythm.
-                    </p>
-                    <p>
-                        The fourth season, filmed a decade later with evolved technology and new cinematographers, looks <span class="highlight">noticeably different</span>—sharper, more color-graded, occasionally glossier. This isn't necessarily a flaw, reflecting both the show's slightly grander scope (international locations, bigger set pieces) and broader changes in television production aesthetics. However, the visual continuity between seasons one through three creates a cohesive unit that season four slightly disrupts.
-                    </p>
-                    <p>
-                        The show's visual restraint serves its subject matter. There are no flashy sequences designed to showcase technique over story. Instead, the cinematography creates mood, emphasizes isolation or connection, and allows actors space to perform. It's accomplished work that prioritizes service to narrative over self-conscious style.
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <!-- DIMENSION 4: Visual Spectacle -->
-        <section class="section">
-            <div class="dimension-card">
-                <div class="dimension-header">
-                    <span class="dimension-name">4. Visual Spectacle</span>
-                    <span class="dimension-score">5.5</span>
+                <!-- DIMENSION 4: Visual Spectacle -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 5.5;"><span>5.5</span></div>
+                        <span class="score-label">Visual Spectacle</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>Intellectual Drama Over Spectacle</h3>
+                        <p>
+                            Borgen makes no attempt at <span class="highlight">visual spectacle</span> in the conventional sense. This is deliberate and appropriate—its subject matter (coalition negotiations, parliamentary debates, campaign strategy sessions) doesn't lend itself to action set pieces or visual pyrotechnics. The show's "spectacle," such as it is, derives from the intellectual and emotional stakes rather than production value display.
+                        </p>
+                        <p>
+                            That said, there are moments of <strong>visual impact</strong>. The fourth season's foray into geopolitics takes characters to Greenland and the Arctic, providing sweeping landscape photography that contrasts with the urban confinement of Copenhagen. A state visit, a high-stakes summit, an oil rig—these locations provide production design opportunities that the show utilizes effectively if not extravagantly.
+                        </p>
+                        <p>
+                            The show's visual "spectacle" lies more in its <span class="highlight">attention to authentic detail</span>. The recreation of parliamentary procedures, the accuracy of news broadcast graphics, the verisimilitude of political rallies and press conferences—these details matter more than CGI or elaborate choreography. For viewers interested in political process, watching a confidence vote unfold with procedural accuracy carries its own fascination.
+                        </p>
+                        <p>
+                            The series occasionally stages <strong>public moments</strong>—election nights, speeches, demonstrations—that require crowd management and location shooting. These sequences are competently executed but never strive for the epic scale of comparable American political dramas. The most "spectacular" moments often involve simple reversals: Birgitte learning she's become Prime Minister, an election result shifting power, a press conference going off-script. These are human-scale spectacles.
+                        </p>
+                        <p>
+                            The fourth season includes a <span class="highlight">major disaster sequence</span> (avoiding spoilers) that represents the show's most ambitious visual undertaking. The execution is credible but reveals the production's limits compared to feature film or mega-budget television resources. This isn't a criticism—the show's restraint is its signature—but it confirms that Borgen occupies a different register than spectacle-driven entertainment.
+                        </p>
+                        <p>
+                            Ultimately, Borgen understands that its power lies precisely in what it <em>doesn't</em> spectacle-ize. The show trusts that parliamentary procedure, coalition negotiation, and media strategy are inherently dramatic without embellishment. This faith in the intrinsic interest of democratic process is itself a kind of aesthetic position—one that prioritizes understanding over sensation.
+                        </p>
+                    </div>
                 </div>
-                <div class="dimension-body">
-                    <p>
-                        Borgen makes no attempt at <span class="highlight">visual spectacle</span> in the conventional sense. This is deliberate and appropriate—its subject matter (coalition negotiations, parliamentary debates, campaign strategy sessions) doesn't lend itself to action set pieces or visual pyrotechnics. The show's "spectacle," such as it is, derives from the intellectual and emotional stakes rather than production value display.
-                    </p>
-                    <p>
-                        That said, there are moments of <strong>visual impact</strong>. The fourth season's foray into geopolitics takes characters to Greenland and the Arctic, providing sweeping landscape photography that contrasts with the urban confinement of Copenhagen. A state visit, a high-stakes summit, an oil rig—these locations provide production design opportunities that the show utilizes effectively if not extravagantly.
-                    </p>
-                    <p>
-                        The show's visual "spectacle" lies more in its <span class="highlight">attention to authentic detail</span>. The recreation of parliamentary procedures, the accuracy of news broadcast graphics, the verisimilitude of political rallies and press conferences—these details matter more than CGI or elaborate choreography. For viewers interested in political process, watching a confidence vote unfold with procedural accuracy carries its own fascination.
-                    </p>
-                    <p>
-                        The series occasionally stages <strong>public moments</strong>—election nights, speeches, demonstrations—that require crowd management and location shooting. These sequences are competently executed but never strive for the epic scale of comparable American political dramas. The most "spectacular" moments often involve simple reversals: Birgitte learning she's become Prime Minister, an election result shifting power, a press conference going off-script. These are human-scale spectacles.
-                    </p>
-                    <p>
-                        The fourth season includes a <span class="highlight">major disaster sequence</span> (avoiding spoilers) that represents the show's most ambitious visual undertaking. The execution is credible but reveals the production's limits compared to feature film or mega-budget television resources. This isn't a criticism—the show's restraint is its signature—but it confirms that Borgen occupies a different register than spectacle-driven entertainment.
-                    </p>
-                    <p>
-                        Ultimately, Borgen understands that its power lies precisely in what it <em>doesn't</em> spectacle-ize. The show trusts that parliamentary procedure, coalition negotiation, and media strategy are inherently dramatic without embellishment. This faith in the intrinsic interest of democratic process is itself a kind of aesthetic position—one that prioritizes understanding over sensation.
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <!-- DIMENSION 5: Conceptual Density -->
-        <section class="section">
-            <div class="dimension-card">
-                <div class="dimension-header">
-                    <span class="dimension-name">5. Conceptual Density</span>
-                    <span class="dimension-score">7.4</span>
+                <!-- DIMENSION 5: Conceptual Density -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 7.4;"><span>7.4</span></div>
+                        <span class="score-label">Conceptual Density</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>Intellectual Engagement at the Highest Level</h3>
+                        <p>
+                            Borgen operates at a remarkably high level of <span class="highlight">intellectual engagement</span>. The show assumes viewers can follow complex policy debates, parliamentary procedures, and coalition math without constant explanation. It respects its audience's capacity to understand proportional representation, ministerial portfolios, and the difference between legislative and executive functions in a parliamentary system.
+                        </p>
+                        <p>
+                            The series explores multiple <strong>thematic strands</strong> with sophistication: the ethics of political compromise, the relationship between media and democracy, gender and power, the personal costs of public service, generational conflict in political movements, the tension between idealism and pragmatism. None of these themes receives superficial treatment. The show presents genuine moral dilemmas without predetermined answers.
+                        </p>
+                        <p>
+                            Particularly rich is the show's examination of <span class="highlight">democratic legitimacy</span>. Birgitte takes power after an election where her party actually lost seats but finds itself kingmaker in a hung parliament. She later loses power through similar parliamentary maneuvering. The show asks: When does compromise become betrayal? How much of your platform can you sacrifice to maintain power? Is incremental progress better than principled opposition?
+                        </p>
+                        <p>
+                            The <strong>media politics</strong> dimension adds additional conceptual layers. Through Katrine's journalism and the various communications professionals, Borgen examines how democratic discourse gets mediated—how stories get selected, how narratives form, how public opinion shifts. The show understands that modern democracy operates simultaneously in parliamentary chambers and media ecosystems, and it explores this duality with nuance.
+                        </p>
+                        <p>
+                            The fourth season introduces <span class="highlight">geopolitical complexity</span> through climate change, Arctic sovereignty, and Greenland's relationship with Denmark. These themes carry contemporary urgency and expand the show's scope. However, they also occasionally risk didacticism—characters sometimes articulate positions more clearly than real politicians, serving thematic clarity over conversational realism.
+                        </p>
+                        <p>
+                            The show's greatest conceptual achievement may be its <strong>long-form character study</strong>. Across four seasons (with significant time gaps between three and four), we observe how power changes Birgitte—not through melodramatic corruption but through the gradual accumulation of difficult choices, each individually defensible but collectively transformative. This is subtle, demanding storytelling that rewards attentive viewing.
+                        </p>
+                    </div>
                 </div>
-                <div class="dimension-body">
-                    <p>
-                        Borgen operates at a remarkably high level of <span class="highlight">intellectual engagement</span>. The show assumes viewers can follow complex policy debates, parliamentary procedures, and coalition math without constant explanation. It respects its audience's capacity to understand proportional representation, ministerial portfolios, and the difference between legislative and executive functions in a parliamentary system.
-                    </p>
-                    <p>
-                        The series explores multiple <strong>thematic strands</strong> with sophistication: the ethics of political compromise, the relationship between media and democracy, gender and power, the personal costs of public service, generational conflict in political movements, the tension between idealism and pragmatism. None of these themes receives superficial treatment. The show presents genuine moral dilemmas without predetermined answers.
-                    </p>
-                    <p>
-                        Particularly rich is the show's examination of <span class="highlight">democratic legitimacy</span>. Birgitte takes power after an election where her party actually lost seats but finds itself kingmaker in a hung parliament. She later loses power through similar parliamentary maneuvering. The show asks: When does compromise become betrayal? How much of your platform can you sacrifice to maintain power? Is incremental progress better than principled opposition?
-                    </p>
-                    <p>
-                        The <strong>media politics</strong> dimension adds additional conceptual layers. Through Katrine's journalism and the various communications professionals, Borgen examines how democratic discourse gets mediated—how stories get selected, how narratives form, how public opinion shifts. The show understands that modern democracy operates simultaneously in parliamentary chambers and media ecosystems, and it explores this duality with nuance.
-                    </p>
-                    <p>
-                        The fourth season introduces <span class="highlight">geopolitical complexity</span> through climate change, Arctic sovereignty, and Greenland's relationship with Denmark. These themes carry contemporary urgency and expand the show's scope. However, they also occasionally risk didacticism—characters sometimes articulate positions more clearly than real politicians, serving thematic clarity over conversational realism.
-                    </p>
-                    <p>
-                        The show's greatest conceptual achievement may be its <strong>long-form character study</strong>. Across four seasons (with significant time gaps between three and four), we observe how power changes Birgitte—not through melodramatic corruption but through the gradual accumulation of difficult choices, each individually defensible but collectively transformative. This is subtle, demanding storytelling that rewards attentive viewing.
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <!-- DIMENSION 6: Narrative Drive -->
-        <section class="section">
-            <div class="dimension-card">
-                <div class="dimension-header">
-                    <span class="dimension-name">6. Narrative Drive</span>
-                    <span class="dimension-score">7.1</span>
+                <!-- DIMENSION 6: Narrative Drive -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 7.1;"><span>7.1</span></div>
+                        <span class="score-label">Narrative Drive</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>Procedural Suspense and Seasonal Arcs</h3>
+                        <p>
+                            Borgen generates narrative momentum through <span class="highlight">procedural suspense</span> rather than cliffhangers. Will the coalition hold? Will the bill pass? Will the journalist get the story? Will the scandal break? These questions may lack the immediate life-or-death stakes of thriller conventions, but the show makes them genuinely gripping through strong writing and invested performances.
+                        </p>
+                        <p>
+                            The series employs a <strong>seasonal arc structure</strong> familiar from prestige television, with each season tracking a major political cycle. Season One follows Birgitte's unexpected rise to Prime Minister and learning to govern. Season Two examines the costs of power and eventual defeat. Season Three charts life after power and attempts at comeback. Season Four returns her to office in changed circumstances. This structure provides satisfying shape while allowing for serialized storytelling.
+                        </p>
+                        <p>
+                            The show's <span class="highlight">pacing</span> is deliberate—some would say slow. Episodes often spend extended time in meetings, negotiations, and conversations. The editing resists rushing through plot points. This rhythm may challenge viewers accustomed to faster-paced political dramas, but it creates authenticity. Real politics proceeds through these accumulated conversations and small victories.
+                        </p>
+                        <p>
+                            <strong>Multiple storylines</strong> intersect productively across seasons. The political narrative (Birgitte's career), the media narrative (Katrine's journalism), and the personal narratives (relationships, family, health) weave together, each providing stakes that reinforce the others. When Birgitte faces a political crisis while her daughter faces a health crisis, the parallel pressures illuminate each other.
+                        </p>
+                        <p>
+                            The transition between <span class="highlight">Season Three and Four</span> presents narrative discontinuity that weakens overall drive. The decade-long real-world gap necessitated catch-up exposition and status resets. The fourth season's more fragmented structure—moving between multiple international locations while maintaining domestic political plots—sometimes sacrifices the concentrated tension of earlier seasons.
+                        </p>
+                        <p>
+                            Individual episodes often climax with <strong>parliamentary votes, press conferences, or election results</strong> rather than traditional action sequences. The show trusts that democratic drama carries sufficient stakes. When well-executed—and Borgen executes them well—these moments prove genuinely thrilling. The narrative drive comes from wanting to see how characters navigate impossible situations, not from external threat.
+                        </p>
+                    </div>
                 </div>
-                <div class="dimension-body">
-                    <p>
-                        Borgen generates narrative momentum through <span class="highlight">procedural suspense</span> rather than cliffhangers. Will the coalition hold? Will the bill pass? Will the journalist get the story? Will the scandal break? These questions may lack the immediate life-or-death stakes of thriller conventions, but the show makes them genuinely gripping through strong writing and invested performances.
-                    </p>
-                    <p>
-                        The series employs a <strong>seasonal arc structure</strong> familiar from prestige television, with each season tracking a major political cycle. Season One follows Birgitte's unexpected rise to Prime Minister and learning to govern. Season Two examines the costs of power and eventual defeat. Season Three charts life after power and attempts at comeback. Season Four returns her to office in changed circumstances. This structure provides satisfying shape while allowing for serialized storytelling.
-                    </p>
-                    <p>
-                        The show's <span class="highlight">pacing</span> is deliberate—some would say slow. Episodes often spend extended time in meetings, negotiations, and conversations. The editing resists rushing through plot points. This rhythm may challenge viewers accustomed to faster-paced political dramas, but it creates authenticity. Real politics proceeds through these accumulated conversations and small victories.
-                    </p>
-                    <p>
-                        <strong>Multiple storylines</strong> intersect productively across seasons. The political narrative (Birgitte's career), the media narrative (Katrine's journalism), and the personal narratives (relationships, family, health) weave together, each providing stakes that reinforce the others. When Birgitte faces a political crisis while her daughter faces a health crisis, the parallel pressures illuminate each other.
-                    </p>
-                    <p>
-                        The transition between <span class="highlight">Season Three and Four</span> presents narrative discontinuity that weakens overall drive. The decade-long real-world gap necessitated catch-up exposition and status resets. The fourth season's more fragmented structure—moving between multiple international locations while maintaining domestic political plots—sometimes sacrifices the concentrated tension of earlier seasons.
-                    </p>
-                    <p>
-                        Individual episodes often climax with <strong>parliamentary votes, press conferences, or election results</strong> rather than traditional action sequences. The show trusts that democratic drama carries sufficient stakes. When well-executed—and Borgen executes them well—these moments prove genuinely thrilling. The narrative drive comes from wanting to see how characters navigate impossible situations, not from external threat.
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <!-- DIMENSION 7: Resolution -->
-        <section class="section">
-            <div class="dimension-card">
-                <div class="dimension-header">
-                    <span class="dimension-name">7. Resolution</span>
-                    <span class="dimension-score">7.4</span>
-                </div>
-                <div class="dimension-body">
-                    <p>
-                        Borgen offers <span class="highlight">thoughtful, emotionally satisfying conclusions</span> at multiple levels. Individual seasons resolve their primary arcs while opening new directions. Season One's triumphant ascent transitions to Season Two's cost-of-power examination. Season Three's political exile sets up Season Four's return. This cyclical structure mirrors political reality—victory and defeat alternating, learning accumulating across both.
-                    </p>
-                    <p>
-                        The original trilogy (Seasons 1-3) concludes with particular <strong>elegance</strong>. Birgitte's departure from the Moderate Party and formation of a new party represents both failure and renewal. She loses the established institutional power she built but gains liberation from compromises that constrained her. The final episode of Season Three provides a fitting pause point—suggesting continuation without requiring it.
-                    </p>
-                    <p>
-                        The fourth season's <span class="highlight">reunion and resolution</span> works reasonably well given the decade gap. It acknowledges character aging, incorporates real-world changes (digital media transformation, climate crisis urgency), and provides Birgitte a new chapter appropriate to her experience. The season's major plot threads resolve with the mixture of triumph and compromise that characterizes the series.
-                    </p>
-                    <p>
-                        Character resolutions satisfy across the series. <strong>Kasper's</strong> journey from ambitious operative to something approaching self-awareness completes believably. <strong>Katrine's</strong> evolution from eager reporter to weary editor facing industry disruption feels true to journalism's real challenges. Supporting characters receive appropriate attention—neither abandoned nor artificially prolonged beyond their natural arcs.
-                    </p>
-                    <p>
-                        The show's <span class="highlight">thematic resolution</span> affirms its core insights: that democracy requires compromise, that power exacts personal costs, that idealism must negotiate with reality, that women in leadership face intensified scrutiny, that media and politics exist in symbiosis. These aren't "lessons" delivered heavy-handedly but understandings earned through years of storytelling.
-                    </p>
-                    <p>
-                        Some viewers may find the resolutions <strong>too compromised</strong>—Borgen rarely permits unambiguous triumph. Birgitte's victories are always partial, her defeats rarely total. This reflects the show's realism but may frustrate those seeking clearer catharsis. The series finale acknowledges this: political life continues, problems evolve rather than solve, and individuals persist through cycles rather than arriving at destinations.
-                    </p>
+                <!-- DIMENSION 7: Resolution -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 7.4;"><span>7.4</span></div>
+                        <span class="score-label">Resolution</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>Satisfying Conclusions Across Multiple Levels</h3>
+                        <p>
+                            Borgen offers <span class="highlight">thoughtful, emotionally satisfying conclusions</span> at multiple levels. Individual seasons resolve their primary arcs while opening new directions. Season One's triumphant ascent transitions to Season Two's cost-of-power examination. Season Three's political exile sets up Season Four's return. This cyclical structure mirrors political reality—victory and defeat alternating, learning accumulating across both.
+                        </p>
+                        <p>
+                            The original trilogy (Seasons 1-3) concludes with particular <strong>elegance</strong>. Birgitte's departure from the Moderate Party and formation of a new party represents both failure and renewal. She loses the established institutional power she built but gains liberation from compromises that constrained her. The final episode of Season Three provides a fitting pause point—suggesting continuation without requiring it.
+                        </p>
+                        <p>
+                            The fourth season's <span class="highlight">reunion and resolution</span> works reasonably well given the decade gap. It acknowledges character aging, incorporates real-world changes (digital media transformation, climate crisis urgency), and provides Birgitte a new chapter appropriate to her experience. The season's major plot threads resolve with the mixture of triumph and compromise that characterizes the series.
+                        </p>
+                        <p>
+                            Character resolutions satisfy across the series. <strong>Kasper's</strong> journey from ambitious operative to something approaching self-awareness completes believably. <strong>Katrine's</strong> evolution from eager reporter to weary editor facing industry disruption feels true to journalism's real challenges. Supporting characters receive appropriate attention—neither abandoned nor artificially prolonged beyond their natural arcs.
+                        </p>
+                        <p>
+                            The show's <span class="highlight">thematic resolution</span> affirms its core insights: that democracy requires compromise, that power exacts personal costs, that idealism must negotiate with reality, that women in leadership face intensified scrutiny, that media and politics exist in symbiosis. These aren't "lessons" delivered heavy-handedly but understandings earned through years of storytelling.
+                        </p>
+                        <p>
+                            Some viewers may find the resolutions <strong>too compromised</strong>—Borgen rarely permits unambiguous triumph. Birgitte's victories are always partial, her defeats rarely total. This reflects the show's realism but may frustrate those seeking clearer catharsis. The series finale acknowledges this: political life continues, problems evolve rather than solve, and individuals persist through cycles rather than arriving at destinations.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
