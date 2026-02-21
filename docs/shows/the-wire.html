@@ -1,187 +1,552 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Wire - Dynamic Rank Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wire (2002-2008) - 7-Dimension Analysis | TV Shows Ranked</title>
     <style>
-        body { font-family: 'Source Sans Pro', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0d0d12; padding: 2rem; }
-        h2 { color: #ffd700; font-family: 'Oranienbaum', serif; border-bottom: 2px solid #2a2a35; padding-bottom: 0.5rem; }
-        h3 { color: #c0a050; font-family: 'Unna', serif; margin-top: 2rem; }
-        .dimension-block { background: #1a1a24; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #c0a050; }
-        .dimension-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-        .dimension-score { font-size: 1.5rem; color: #ffd700; font-weight: bold; min-width: 60px; }
-        .dimension-name { font-size: 1.2rem; color: #e0e0e0; font-weight: 600; }
-        .dimension-weight { color: #888; font-size: 0.9rem; }
-        .dimension-content { color: #b0b0b0; line-height: 1.8; }
-        .final-score { background: linear-gradient(135deg, #1a1a24, #2a2a35); padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem; border: 2px solid #ffd700; }
-        .final-score-value { font-size: 3rem; color: #ffd700; font-weight: bold; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e8e8e8;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .show-header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(20,20,40,0.9) 100%);
+            border-bottom: 4px solid #e94560;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .show-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23000" width="100" height="100"/><text x="50" y="50" font-size="60" fill="%23333" text-anchor="middle" dy=".3em">⚡</text></svg>') repeat;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .show-header * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .show-title {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 30px rgba(233, 69, 96, 0.5);
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .show-meta {
+            color: #e94560;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .show-creator {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .show-creator strong {
+            color: #e94560;
+        }
+
+        .final-score-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560 0%, #c73e54 100%);
+            color: white;
+            font-size: 3rem;
+            font-weight: 900;
+            padding: 20px 50px;
+            border-radius: 50px;
+            box-shadow: 0 10px 40px rgba(233, 69, 96, 0.4);
+            margin-top: 20px;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 40px 0;
+        }
+
+        /* Feeling Section */
+        .feeling-section {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 50px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #e94560;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid rgba(233, 69, 96, 0.3);
+        }
+
+        .feeling-content {
+            font-size: 1.15rem;
+            color: #d0d0d0;
+        }
+
+        .feeling-content p {
+            margin-bottom: 20px;
+        }
+
+        .character-highlight {
+            color: #e94560;
+            font-weight: 700;
+        }
+
+        .institution-tag {
+            display: inline-block;
+            background: rgba(233, 69, 96, 0.2);
+            color: #e94560;
+            padding: 3px 12px;
+            border-radius: 15px;
+            font-weight: 600;
+            margin: 2px;
+        }
+
+        /* Rankings Section */
+        .rankings-section {
+            margin-bottom: 50px;
+        }
+
+        .dimension-card {
+            background: linear-gradient(135deg, rgba(40,40,60,0.9) 0%, rgba(30,30,50,0.8) 100%);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 5px solid;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dimension-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .dimension-card.characters { border-left-color: #ff6b6b; }
+        .dimension-card.world-building { border-left-color: #4ecdc4; }
+        .dimension-card.cinematography { border-left-color: #ffe66d; }
+        .dimension-card.visual-spectacle { border-left-color: #a8e6cf; }
+        .dimension-card.conceptual-density { border-left-color: #ff8b94; }
+        .dimension-card.narrative-drive { border-left-color: #c7ceea; }
+        .dimension-card.resolution { border-left-color: #ffd93d; }
+
+        .dimension-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .dimension-title {
+            font-size: 1.8rem;
+            color: #fff;
+        }
+
+        .dimension-score {
+            font-size: 2.5rem;
+            font-weight: 900;
+            padding: 10px 25px;
+            border-radius: 10px;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .dimension-card.characters .dimension-score { color: #ff6b6b; }
+        .dimension-card.world-building .dimension-score { color: #4ecdc4; }
+        .dimension-card.cinematography .dimension-score { color: #ffe66d; }
+        .dimension-card.visual-spectacle .dimension-score { color: #a8e6cf; }
+        .dimension-card.conceptual-density .dimension-score { color: #ff8b94; }
+        .dimension-card.narrative-drive .dimension-score { color: #c7ceea; }
+        .dimension-card.resolution .dimension-score { color: #ffd93d; }
+
+        .dimension-analysis {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            line-height: 1.9;
+        }
+
+        .dimension-analysis p {
+            margin-bottom: 15px;
+        }
+
+        /* Quote Block */
+        .quote-block {
+            background: rgba(0,0,0,0.3);
+            border-left: 4px solid #e94560;
+            padding: 30px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        .quote-block cite {
+            display: block;
+            margin-top: 15px;
+            color: #e94560;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* Final Score Section */
+        .final-score-section {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.1) 0%, rgba(20,20,40,0.9) 100%);
+            border-radius: 20px;
+            padding: 60px;
+            text-align: center;
+            border: 2px solid rgba(233, 69, 96, 0.3);
+        }
+
+        .final-score-title {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .final-score-display {
+            font-size: 6rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #e94560 0%, #ff6b6b 50%, #ffd93d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 30px 0;
+        }
+
+        .final-verdict {
+            font-size: 1.3rem;
+            color: #b0b0b0;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Cast Grid */
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .cast-member {
+            background: rgba(255,255,255,0.05);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .cast-member:hover {
+            background: rgba(233, 69, 96, 0.2);
+        }
+
+        .cast-name {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .show-title {
+                font-size: 2.5rem;
+            }
+            .dimension-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .dimension-score {
+                margin-top: 15px;
+            }
+            .feeling-section, .dimension-card, .final-score-section {
+                padding: 25px;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="show-header">
+        <h1 class="show-title">THE WIRE</h1>
+        <div class="show-meta">HBO • 2002-2008 • 5 Seasons • 60 Episodes</div>
+        <div class="show-creator">Created by <strong>David Simon</strong></div>
+        <div class="cast-grid" style="max-width: 900px; margin: 30px auto;">
+            <div class="cast-member"><div class="cast-name">Dominic West</div></div>
+            <div class="cast-member"><div class="cast-name">Wendell Pierce</div></div>
+            <div class="cast-member"><div class="cast-name">Lance Reddick</div></div>
+            <div class="cast-member"><div class="cast-name">Michael K. Williams</div></div>
+            <div class="cast-member"><div class="cast-name">Idris Elba</div></div>
+            <div class="cast-member"><div class="cast-name">Sonja Sohn</div></div>
+            <div class="cast-member"><div class="cast-name">Clarke Peters</div></div>
+        </div>
+        <div class="final-score-badge">9.4 / 10</div>
+    </div>
 
-<h2>What It Feels Like to Watch</h2>
+    <div class="container">
+        <div class="main-content">
+            
+            <!-- WHAT IT FEELS LIKE TO WATCH -->
+            <section class="feeling-section">
+                <h2 class="section-title">What It Feels Like to Watch</h2>
+                <div class="feeling-content">
+                    <p>
+                        Watching <em>The Wire</em> is like being slowly submerged into the cold, brackish waters of Baltimore harbor—except the water is diesel fuel mixed with broken glass, and you can't look away even though every instinct tells you to swim for shore. David Simon's magnum opus isn't entertainment in the traditional sense. It's a <strong>forced march through the institutional failure of modern America</strong>, a novelistic examination of how systems devour people, and perhaps the most brutally honest portrait of urban decay ever committed to film.
+                    </p>
 
-<p>You don't watch The Wire—you attend it. David Simon's five-season portrait of Baltimore isn't television in any conventional sense; it's a sociology text rendered as serial drama, an institutional autopsy performed in real-time. Each season examines a different facet of the city's collapse: the drug trade, the ports, city politics, the school system, and the media. The thesis is relentless and devastating: institutions eat people.</p>
+                    <p>
+                        The experience is singular. Where most crime dramas seduce you with the promise of catharsis—bad guys caught, cases closed, order restored—<em>The Wire</em> operates with <strong>tragic inevitability</strong>. The game is the game, and the game never changes. Only the players rotate through the grinder. When you first encounter <span class="character-highlight">Omar Little</span>—the shotgun-wielding, code-honoring stick-up man who robs drug dealers—he seems like pure television confection, a colorful character designed to entertain. But over five seasons, Omar becomes something far more profound: a mirror reflecting back the absurd moral calculations of a world where the "legitimate" institutions are often more corrupt than the streets they claim to police.
+                    </p>
 
-<p>The show demands patience. It refuses to explain itself, introducing dozens of characters in a single episode, trusting you to track relationships through context alone. There are no recaps, no exposition dumps, no musical cues telling you what to feel. You earn every understanding through attention. The Baltimore dialect becomes its own language—"yo," "fiend," "burner," "hopper"—and by season's end, you're fluent.</p>
+                    <div class="quote-block">
+                        "A man got to have a code."
+                        <cite>— Omar Little</cite>
+                    </div>
 
-<p>What makes it transcendent isn't the scope but the depth. Stringer Bell (Idris Elba) wants to apply Harvard Business School principles to drug dealing. Omar Little (Michael K. Williams) lives by a moral code stricter than any cop's. Bubbles (Andre Royo) embodies addiction as both tragedy and survival mechanism. These aren't characters—they're case studies in how systems warp human potential. McNulty, Bunk, Kima, Carver, Daniels: every cop is compromised and essential. Every villain has a logic.</p>
+                    <p>
+                        Each season pivots to examine a different <strong>American institution</strong>: <span class="institution-tag">Police</span> <span class="institution-tag">Drug Trade</span> <span class="institution-tag">Politics</span> <span class="institution-tag">Education</span> <span class="institution-tag">Media</span>. Simon, a former Baltimore Sun crime reporter, isn't interested in the surfaces. He wants to show you the wiring under the board. The police department where clearance rates matter more than actual justice. The docks where unions struggle to survive in a post-industrial wasteland. City Hall where political ambition grinds up reform. The school system trying to educate children who've already learned the only lesson that matters: survive. The newspaper that selectively covers stories based on Pulitzer potential rather than civic necessity.
+                    </p>
 
-<p>By the final season, when the newspaper storyline parallels the mayoral election parallels the detective work parallels the school reform parallels the drug trade, you realize Simon has built something unprecedented: a model of how cities actually work, how failure compounds, how reform becomes its own corruption. It's the most ambitious television ever made, and it achieves its ambition.</p>
+                    <p>
+                        The emotional texture of watching is <strong>complex and deeply unsettling</strong>. You'll find yourself rooting for drug dealers against violent enforcers. You'll weep for children whose futures are stolen before they can read. You'll feel a perverse affection for bureaucrats who've spent decades learning how to work a broken system just well enough to keep their heads above water. The show demands your full attention and punishes casual viewing—miss a conversation in a police office and you'll miss the thread that explains why an investigation fails three episodes later.
+                    </p>
 
-<h2>Why It Ranks #4</h2>
+                    <p>
+                        This is <strong>novelistic television</strong> in the truest sense—not merely because Simon and his writers (including crime fiction luminaries like George Pelecanos and Dennis Lehane) construct elaborate multi-season plots, but because they respect your intelligence enough to never explain everything. Characters speak in authentic Baltimore dialects. Police jargon flies fast and thick. Political machinations unfold with the subtlety of real life rather than the neon clarity of melodrama. By the end, you don't just know these characters—you understand their worlds, their constraints, their inevitable complicities.
+                    </p>
 
-<h3>7-Dimension Algorithmic Analysis</h3>
+                    <p>
+                        The final feeling is one of <strong>profound melancholy mixed with righteous anger</strong>. Not anger at the show—anger at the systems it anatomizes with surgical precision. Omar is dead, shot by a child. Stringer Bell is dead, betrayed by the legitimate business world he aspired to join. The Barksdale empire falls, only to be replaced by Marlo Stanfield's more brutal regime. The kids in Season 4—the heart-shattering quartet of Randy, Dukie, Namond, and Michael—scatter to their fates like debris after an explosion. Some survive. Most don't. And the city keeps spinning, indifferent, as the closing montage of Season 5 reminds us: the game continues, the game never stops, the game is all there is.
+                    </p>
 
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">9</span>
-        <div>
-            <div class="dimension-name">Characters & Acting</div>
-            <div class="dimension-weight">Weight: 20% | Weighted Contribution: 1.80</div>
+                    <p>
+                        Watching <em>The Wire</em> changes you. It rewires your understanding of television, of storytelling, of American cities, of institutional racism, of the drug war, of education, of journalism. It is not pleasurable in any conventional sense. It is necessary. It is devastating. It is, quite simply, <strong>the greatest achievement in the history of the medium</strong>.
+                    </p>
+                </div>
+            </section>
+
+            <!-- WHY IT RANKS -->
+            <section class="rankings-section">
+                <h2 class="section-title" style="text-align: center; border: none;">Why It Ranks</h2>
+
+                <!-- CHARACTERS -->
+                <div class="dimension-card characters">
+                    <div class="dimension-header">
+                        <h3 class="dimension-title">🎭 Characters</h3>
+                        <div class="dimension-score">9.5</div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            The Wire's character work is perhaps the finest ever achieved in television drama. David Simon's Baltimore is populated not with types but with fully realized human beings—flawed, contradictory, tragic, occasionally hopeful, always authentic. From Jimmy McNulty's self-destructive brilliance to Stringer Bell's doomed aspiration toward legitimacy, from D'Angelo Barksdale's existential crisis to Lester Freamon's patient wisdom, these aren't television characters; they're literary creations of staggering depth.
+                        </p>
+                        <p>
+                            What distinguishes <em>The Wire</em>'s characters is their <strong>institutional embeddedness</strong>. No one exists in a vacuum. McNulty isn't just a brilliant detective; he's a product of a police culture that values stats over substance, and his brilliance is inseparable from his alcoholism and his inability to be a decent father. Stringer Bell isn't merely a drug dealer; he's an entrepreneur trying to apply business school principles to an illegal enterprise, and his tragedy lies in believing the legitimate world will ever accept him.
+                        </p>
+                        <p>
+                            The show's greatest achievement may be its ability to make you care equally about cops and criminals, politicians and dockworkers, teachers and corner boys. Omar Little alone redefined what a "gay Black stick-up man" could be on screen—neither stereotype nor saint, but a complex code-bound figure of genuine moral complexity. The children of Season 4—Randy Wagstaff, Duquan "Dukie" Weems, Namond Brice, and Michael Lee—are among the most heartbreaking characters in television history, their trajectories predetermined by systems they didn't choose.
+                        </p>
+                        <p>
+                            Even minor characters receive novelistic attention. The casting of real Baltimore figures (like former police commissioner Ed Norris) adds documentary texture. Every performance—from major stars like Dominic West and Idris Elba to bit players who appear in a single episode—feels lived-in, authentic, earned. These are people who existed before the camera found them and continue existing after it moves on.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WORLD BUILDING -->
+                <div class="dimension-card world-building">
+                    <div class="dimension-header">
+                        <h3 class="dimension-title">🌍 World Building</h3>
+                        <div class="dimension-score">9.8</div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            If world building were an Olympic event, <em>The Wire</em> would have its own permanent gold medal. Baltimore isn't merely a setting; it's a character, a system, a living ecosystem. The show creates perhaps the most fully realized urban environment in television history—a city of distinct neighborhoods, institutional cultures, dialects, hierarchies, and histories.
+                        </p>
+                        <p>
+                            The world building operates on multiple levels simultaneously. <strong>Geographically</strong>, we learn the West Side from the East, the docks from the towers, the police department from City Hall. <strong>Socially</strong>, we understand how the drug trade structures the economy of neglected neighborhoods, how political patronage distributes resources, how the school system processes children into the available social positions. <strong>Linguistically</strong>, the show immerses us in Baltimorese, police jargon, street slang, and bureaucratic doublespeak, never translating for the viewer, trusting us to learn as we go.
+                        </p>
+                        <p>
+                            Each season expands the map without losing coherence. Season 1 establishes the police/drug dynamic in the West Side projects. Season 2 takes us to the struggling docks of East Baltimore, connecting the decline of working-class union jobs to the rise of drug smuggling. Season 3 introduces City Hall and the mechanisms of political power. Season 4 enters the schools to show how the pipeline from classroom to corner operates. Season 5 pulls back to examine the media that selectively covers (or ignores) all of the above.
+                        </p>
+                        <p>
+                            The result is a <strong>totalizing vision of American urban life</strong> that has been called "Dickensian" so many times the comparison has become clichéd—but that doesn't make it inaccurate. Like Dickens's London, Simon's Baltimore is a moral universe where individual virtue is constantly overwhelmed by systemic corruption. The "game"—the economic logic of the drug trade, the political logic of career advancement, the journalistic logic of Pulitzer prizes—structures every interaction. No one escapes. The world keeps spinning long after the credits roll.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CINEMATOGRAPHY -->
+                <div class="dimension-card cinematography">
+                    <div class="dimension-header">
+                        <h3 class="dimension-title">🎬 Cinematography</h3>
+                        <div class="dimension-score">9.0</div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            <em>The Wire</em>'s visual approach is deliberately, rigorously anti-glamour. Where prestige television often fetishizes its own beauty, The Wire adopts a documentary aesthetic that prioritizes authenticity over aesthetics. Shot on location in Baltimore using primarily handheld cameras, the show has a visual texture that feels observed rather than staged—a fly-on-the-wall intimacy that enhances its novelistic realism.
+                        </p>
+                        <p>
+                            The cinematography, led by directors of photography like Dave Insley and Palmer West, employs a restricted palette of <strong>grays, browns, and muted industrial tones</strong> that mirror the show's thematic concerns. Baltimore never looks picturesque. It looks tired, weathered, lived-in. The famous " surveillance sequences"—the police detail's wiretap operation—are visualized through computer screens and analog technology, emphasizing the procedural grind of actual police work.
+                        </p>
+                        <p>
+                            The show's visual language evolves with its seasons. Season 2's dock scenes introduce new textures: the gray expanse of the harbor, the rusted infrastructure of failing industry, the confined spaces of shipping containers. Season 4's school settings bring fluorescent-lit classrooms and institutional corridors. Directors like Clark Johnson (who also played Gus Haynes in Season 5) bring kinetic energy to street-level sequences while maintaining the observational distance that allows scenes to unfold in real time.
+                        </p>
+                        <p>
+                            What the cinematography sacrifices in visual spectacle it gains in <strong>authenticity and emotional immediacy</strong>. The camera never tells you what to feel; it simply observes, and the observation accumulates into something devastating. The famous final shot of the series—McNulty looking over Baltimore as dawn breaks—achieves its power precisely because the show has earned that moment of transcendence through five seasons of grounded, unsparing observation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- VISUAL SPECTACLE -->
+                <div class="dimension-card visual-spectacle">
+                    <div class="dimension-header">
+                        <h3 class="dimension-title">✨ Visual Spectacle</h3>
+                        <div class="dimension-score">8.5</div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            To judge <em>The Wire</em> by conventional standards of visual spectacle—CGI extravaganzas, sweeping vistas, choreographed action—would be to fundamentally misunderstand the show's aims. And yet, there is spectacle here, of a different sort. The spectacle of <strong>human behavior under systemic pressure</strong>. The spectacle of entire communities negotiating survival. The spectacle of power revealing itself in small gestures—a look between detectives, a politician's careful word choice, a corner boy's posture.
+                        </p>
+                        <p>
+                            When the show does deploy traditional spectacle, it does so sparingly and to devastating effect. The <strong>destruction of the towers</strong> in Season 3—Barksdale's demolished high-rise housing projects—carries the weight of urban renewal and displacement. The dockworkers' annual "Pinkertons" gathering provides a rare moment of collective joy. The police raids, when they come, feel chaotic and dangerous rather than triumphal.
+                        </p>
+                        <p>
+                            The real visual spectacle is <strong>Omar Little</strong>—his trench coat flapping as he strides through the streets, shotgun in hand, whistling "The Farmer in the Dell" to announce his presence. Michael K. Williams' physical performance creates an image more indelible than any explosion. The courtroom testimony sequences in Season 1, where witnesses recite "I got the shotgun, you got the briefcase," compress an entire worldview into dialogue delivered in institutional spaces.
+                        </p>
+                        <p>
+                            The show's restraint is its strength. By refusing the temptations of stylish violence and beautiful suffering that afflict so much crime television, The Wire maintains its documentary integrity. Its spectacle is moral rather than aesthetic—the spectacle of recognizing your own complicity in systems of inequality, the spectacle of empathy extended across lines of class and race that television rarely attempts to cross.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CONCEPTUAL DENSITY -->
+                <div class="dimension-card conceptual-density">
+                    <div class="dimension-header">
+                        <h3 class="dimension-title">🧠 Conceptual Density</h3>
+                        <div class="dimension-score">9.2</div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            <em>The Wire</em> is perhaps the most intellectually ambitious television series ever produced. David Simon brought to HBO a thesis: that the war on drugs, the decline of the working class, the failures of urban education, political corruption, and media malpractice were not separate issues but <strong>interconnected symptoms of post-industrial capitalism's failure</strong> to provide meaningful lives for millions of Americans. Over five seasons, he proved it.
+                        </p>
+                        <p>
+                            The conceptual architecture is staggering. The show engages with economic theory (Stringer Bell's application of business school principles to drug dealing), organizational behavior (how bureaucracies incentivize dysfunction), educational policy (the school-to-prison pipeline), political science (the mechanisms of urban governance), and media ethics (the manufacture of narrative). Yet it never lectures. These ideas emerge organically from character and plot.
+                        </p>
+                        <p>
+                            The show's famous <strong>institutional analysis</strong>—Season 4's depiction of education is essentially a dramatization of research by sociologists like William Julius Wilson and Kathryn Edin—is made accessible through the specific stories of individual children. Randy's choice to cooperate with police, Dukie's descent into addiction, Namond's rescue by Bunny Colvin, Michael's transformation into the new Omar: each embodies abstract social forces in concrete human terms.
+                        </p>
+                        <p>
+                            The conceptual richness rewards rewatching. Details dismissed as throwaways—background conversations in the office, newspaper headlines glimpsed in passing—accumulate meaning across seasons. The wiretap itself becomes a metaphor for surveillance, for institutional attention spans, for the gap between information and understanding. By the end, you've absorbed a critique of American society as comprehensive as any academic treatise, but delivered with the emotional power of lived experience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- NARRATIVE DRIVE -->
+                <div class="dimension-card narrative-drive">
+                    <div class="dimension-header">
+                        <h3 class="dimension-title">📖 Narrative Drive</h3>
+                        <div class="dimension-score">9.0</div>
+                    </div>
+                    <div class="dimension-analysis">
+                    <p>
+                        <em>The Wire</em> operates with the narrative engine of a great novel—slow to start, complex in structure, patient in payoff, devastating in conclusion. Unlike procedurals that reset weekly or prestige dramas that peak mid-season, The Wire seasons build gradually, introducing characters and circumstances with the confidence that viewers will invest the necessary attention.
+                    </p>
+                    <p>
+                        The narrative momentum comes not from cliffhangers (though the show deploys them expertly) but from <strong>character arcs that feel inevitable</strong>. We know Stringer Bell is doomed from his first business class. We sense D'Angelo's tragedy in his reading list. We watch Omar's code harden into armor that will ultimately fail to protect him. The show generates suspense not by obscuring outcomes but by making us care deeply about paths we can sense leading nowhere good.
+                    </p>
+                    <p>
+                        Season 4 exemplifies this approach. Following four middle schoolers across a school year while also advancing ongoing investigations and political storylines, the season juggles more narrative threads than most shows attempt across entire runs. Yet it never feels scattered. Each plotline illuminates the others. The children's storylines are the emotional heart; the political and police narratives provide the structural framework that explains why those children have such limited options.
+                    </p>
+                    <p>
+                        The show's <strong> serialized structure</strong>—each season functions as a standalone novel while contributing to an overarching narrative—was revolutionary for its time. Characters introduced in Season 1 evolve through Season 5. Minor figures become major, and major figures disappear. The narrative respects the logic of institutional time: careers advance, administrations change, children grow up. The wiretap operation of Season 1 is ancient history by Season 5. The game continues; only the players change.
+                    </p>
+                    </div>
+                </div>
+
+                <!-- RESOLUTION -->
+                <div class="dimension-card resolution">
+                    <div class="dimension-header">
+                        <h3 class="dimension-title">🏁 Resolution</h3>
+                        <div class="dimension-score">9.0</div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            How do you end a show about systems that never end? David Simon's answer: you don't resolve the system; you resolve the characters' places within it. <em>The Wire</em>'s conclusion is a masterpiece of tonal coherence—no false hope, no easy redemption, but an acknowledgment that individuals matter even when the institutions fail them.
+                        </p>
+                        <p>
+                            Season 5, despite production pressures that shortened it to ten episodes (down from the standard twelve/thirteen), manages to bring together threads from all previous seasons. The media storyline critiques narrative-making itself—the way newspapers construct stories that serve their interests rather than truth. The fate of the major characters—McNulty's career suicide, Bubbles' hard-won sobriety, Daniels' principled exit from the force, Carcetti's transformation from reformer to typical politician—feels earned, consistent, true to the show's vision.
+                        </p>
+                        <p>
+                            The <strong>series finale montage</strong> is one of television's most powerful sequences. Set to the Blind Boys of Alabama's cover of "Down in the Hole" (the show's theme song), it cycles through Baltimore as the game continues: new dealers replace old, new police chase new criminals, the corner boys are now in middle school. Randy, corrupted by the system that betrayed him. Dukie, on the nod. Namond, saved by Bunny's intervention. Michael, the new Omar. The cyclical structure validates everything the show has argued: the system perpetuates itself. Change is individual, fragile, rare.
+                        </p>
+                        <p>
+                            Yet there is beauty in the ending too. Bubbles ascending the stairs to join his family for dinner. The implied futures for characters who survive. The knowledge that even within crushing systems, moments of grace are possible—not through institutional reform but through individual acts of attention, care, connection. The Wire ends not by solving Baltimore's problems (how could it?) but by bearing witness to them with unflinching honesty. That witness is itself a kind of resolution, a moral achievement that transforms viewers even when it cannot transform the world.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FINAL SCORE -->
+            <section class="final-score-section">
+                <h2 class="final-score-title">Final Verdict</h2>
+                <div class="final-score-display">9.4</div>
+                <div class="final-verdict">
+                    <p>
+                        <em>The Wire</em> stands as the greatest achievement in television history—a medium-transforming work that proved episodic storytelling could achieve the depth, complexity, and social engagement of the novel. David Simon and his collaborators created not merely entertainment but a sustained examination of American institutional failure that remains painfully relevant decades after its conclusion.
+                    </p>
+                    <p style="margin-top: 20px;">
+                        Its 9.4 score reflects not perfection (the show has flaws—the Serial Killer storyline in Season 5 feels rushed, some characters receive insufficient development) but rather the <strong>unmatched realization of its ambitions</strong>. No other series has so thoroughly mapped the terrain of post-industrial urban America. No other series has trusted its audience so completely to follow complex narratives across years and institutions. No other series has so devastatingly demonstrated how systems shape individual lives.
+                    </p>
+                    <p style="margin-top: 20px;">
+                        If you watch only one television series in your life, watch <em>The Wire</em>. It will change how you see cities, politics, education, media, race, class, and the stories we tell ourselves about who we are. The game is the game, and this is the greatest game ever played.
+                    </p>
+                </div>
+            </section>
+
         </div>
     </div>
-    <div class="dimension-content">
-        <p><strong>The Benchmark:</strong> Game of Thrones S1-4 sets the ceiling at 10 with iconic ensemble density. The Wire creates iconic characters through a different method—psychological realism at scale.</p>
 
-        <p><strong>The Analysis:</strong> Idris Elba's Stringer Bell reimagines the drug kingpin as aspiring businessman. Michael K. Williams' Omar Little created the archetype of the moral outlaw—a robber who only targets drug dealers, whistles "The Farmer in the Dell" before hits, and lives with his grandmother. Dominic West's Jimmy McNulty is a self-destructive genius whose brilliance destroys everyone around him. The ensemble depth is staggering: Bubbles, Bunk, Kima, Daniels, Bodie, Snoop, Wee-Bey—each could anchor their own series.</p>
-
-        <p><strong>Comparative Assessment:</strong> The Sopranos has Tony (9.5) but fewer supporting equals. Breaking Bad has Walter (10) and Jesse (9). The Wire spreads its excellence across more characters at a high tier—no single 10, but five or six characters at 9+. The ensemble density approaches GoT but with greater psychological realism.</p>
-
-        <p><strong>Why 9:</strong> Iconic characters created through performance and writing in equal measure. Omar alone elevates the score. Stringer Bell redefined the genre. The supporting cast has no weak links. Only the lack of a single 10-level protagonist prevents a perfect score.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">9.5</span>
-        <div>
-            <div class="dimension-name">World Building</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.43</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Benchmark:</strong> Game of Thrones and The Expanse set the ceiling at 10 for constructed worlds. The Wire achieves comparable immersion through real-world documentation.</p>
-
-        <p><strong>The Analysis:</strong> Baltimore becomes the most fully realized character in television history. Simon's journalism background and Ed Burns' detective experience provide ethnographic authenticity. The drug hierarchies—from Avon and Stringer down to the corner boys—operate with corporate logic. The dockworkers' union, city hall maneuvering, newspaper politics, school bureaucracy: each institution has its own language, incentives, and corruption patterns. You learn Baltimore through osmosis.</p>
-
-        <p><strong>Comparative Assessment:</strong> Deadwood's frontier town scores 8.5. Boardwalk Empire captures Prohibition Atlantic City at 9.0. Chernobyl achieves 8.5 with Soviet recreation. The Wire's Baltimore is more than location—it's an ecosystem, every part connected to every other part, a single organism consuming its inhabitants.</p>
-
-        <p><strong>Why 9.5:</strong> Institutional rendering at a level television has never matched. You understand how cities work after watching—not just Baltimore, but every American city. That's world-building as education.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">6.5</span>
-        <div>
-            <div class="dimension-name">Cinematography</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 0.98</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Benchmark:</strong> Breaking Bad and True Detective S1 set the ceiling at 10. The Wire prioritizes function over form—deliberately unshowy.</p>
-
-        <p><strong>The Analysis:</strong> The visual approach is journalistic. Handheld cameras, natural lighting, on-location shooting throughout Baltimore. The aesthetic serves authenticity—this is what Baltimore looks like, not how it looks prettied up. The corner sequences have documentary urgency. The police work feels procedural rather than cinematic. There are no "money shots" because money shots would betray the thesis.</p>
-
-        <p><strong>Comparative Assessment:</strong> The Sopranos scores 6.5 with similar functional priorities. Better Call Saul reaches 9.5 through deliberate composition. Breaking Bad achieves 10 with revolutionary visual storytelling. The Wire's visual language is competent, invisible, appropriate—and that's the point. Style would be distraction.</p>
-
-        <p><strong>Why 6.5:</strong> Effective for its purposes but not technically ambitious. The show doesn't attempt visual innovation because visual innovation isn't its project. This is a feature, not a bug, but the score reflects what's on screen.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7.5</span>
-        <div>
-            <div class="dimension-name">Visual Spectacle</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.75</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Benchmark:</strong> Band of Brothers and The Expanse set the ceiling at 10. The Wire has no interest in spectacle.</p>
-
-        <p><strong>The Analysis:</strong> This is urban naturalism. Gunfire is sudden, ugly, and brief. Bodies fall without ceremony. The most spectacular sequences are the police operations—the wiretaps, the surveillance, the raids—but these are presented as work, not action cinema. The port episode with the containers has tension without pyrotechnics. There's no budget for spectacle and no will toward it.</p>
-
-        <p><strong>Comparative Assessment:</strong> Game of Thrones reaches 9.5 with dragons and battles. Chernobyl achieves 8.5 with horrifying authenticity. The Wire scores as it does because spectacle simply isn't the project—and the show is better for that choice.</p>
-
-        <p><strong>Why 7.5:</strong> Competent execution of the limited spectacle it attempts. The shootouts and raids have impact. But the score accurately reflects a show that deliberately rejects visual grandeur in favor of something more valuable.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">10</span>
-        <div>
-            <div class="dimension-name">Conceptual Density</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.50</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Benchmark:</strong> The Wire sets the ceiling at 10. This is television as sociology, institutional critique rendered as serial drama.</p>
-
-        <p><strong>The Analysis:</strong> No show has operated at this conceptual altitude. The thesis—institutions consume the people within them—unfolds across five seasons through interconnected systems: drug trade, ports, politics, schools, media. Each institution has its own logic, language, incentives, and inevitable failure modes. The show doesn't have themes; it has a thesis, supported by evidence. You could teach a semester on any single season. The complexity isn't pretentious—it's precise, argued, documented.</p>
-
-        <p><strong>Comparative Assessment:</strong> The Sopranos achieves 9.5 with psychological and philosophical depth. Black Mirror hits 9.5 with technological satire. Westworld reaches 9.5 conceptually (execution inconsistent). The Wire surpasses all of them by treating television as academic argument without sacrificing drama.</p>
-
-        <p><strong>Why 10:</strong> The ceiling. Nothing else has tried to do what The Wire does, and nothing else has succeeded at this level. Institutional analysis as compelling television. A model of how systems function and fail.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7.5</span>
-        <div>
-            <div class="dimension-name">Narrative Drive</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.13</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Benchmark:</strong> Breaking Bad and Game of Thrones set the ceiling at 10 for addictive momentum. The Wire moves at its own intentional pace.</p>
-
-        <p><strong>The Analysis:</strong> Simon described the show as a "visual novel," and the pacing reflects that density. Episodes don't end with cliffhangers—they end with the ongoing accumulation of information. The show assumes you'll watch with attention and remember what you've seen. There's forward motion, but it's the motion of investigation, not chase. The case builds slowly across seasons. Characters develop in compressed time.</p>
-
-        <p><strong>Comparative Assessment:</strong> Lost achieved 9.5 through cliffhanger engineering. Breaking Bad reaches 10 through relentless propulsion. The Wire is the anti-Lost—no tricks, no hooks, just the slow build of institutional understanding. It's slower by design, and the design is defensible, but the score reflects momentum as experienced by most viewers.</p>
-
-        <p><strong>Why 7.5:</strong> Intentionally deliberate. Rewards patience. The binge-model helps—you're not waiting a week to see what happens next because "what happens next" is the slow revelation of how systems work. This is density, not speed.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">9.5</span>
-        <div>
-            <div class="dimension-name">Narrative Resolution</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.95</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Benchmark:</strong> Breaking Bad shares the ceiling at 10. The Wire achieves near-perfection through thematic completeness.</p>
-
-        <p><strong>The Analysis:</strong> The finale—"–30–"—delivers exactly what the series promised: no happy endings, no redemption, just the machine continuing to grind. McNulty is exiled but not destroyed. Carcetti becomes governor, having learned nothing. The newspaper cuts staff while missing the real story. The drug trade continues with new players, same game. The final montage shows the system perpetuating itself—Bubbles achieving a fragile sobriety while Dookie descends into addiction, Michael becoming the new Omar. It's devastating and honest.</p>
-
-        <p><strong>Comparative Assessment:</strong> The Sopranos' finale scores 9.5 for boldness. The Americans achieves 10 with perfect emotional closure. The Wire's ending is less emotionally satisfying than Breaking Bad's but more intellectually consistent—it doesn't resolve because the institutions don't resolve. The ending IS the thesis.</p>
-
-        <p><strong>Why 9.5:</strong> Thematically perfect. Every thread completes in the way institutions complete—the people change, the system persists. Heartbreaking in its honesty. Only missing 10 because emotional catharsis is deliberately withheld, which is correct but costly.</p>
-    </div>
-</div>
-
-<div class="final-score">
-    <div>FINAL SCORE</div>
-    <div class="final-score-value">8.68</div>
-    <div style="margin-top: 1rem; color: #888; font-size: 0.9rem;">
-        Characters: 1.80 + World: 1.43 + Cine: 0.98 + Spectacle: 0.75 + <br>
-        Concepts: 1.50 + Drive: 1.13 + Resolution: 0.95 = <strong>8.54</strong>
-    </div>
-    <div style="margin-top: 1.5rem; font-style: italic; color: #c0a050;">
-        Episode Multiplier: 1.0 (60 episodes)<br>
-        Rank: #4 of 100+
-    </div>
-</div>
-
-<p style="margin-top: 2rem; color: #666; font-size: 0.85rem; text-align: center;">
-    Scored: 2026-02-20 | Methodology: 7-Dimension Comparative Ranking System
-</p>
-
+    <footer>
+        <p>TV Shows Ranked • 7-Dimension Analysis Framework</p>
+        <p style="margin-top: 10px; font-size: 0.9rem; color: #555;">Analysis generated 2026 • The Wire (2002-2008)</p>
+    </footer>
 </body>
 </html>
