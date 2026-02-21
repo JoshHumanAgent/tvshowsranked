@@ -90,93 +90,69 @@
         .feel-description p {
             margin-bottom: 20px;
         }
-        .dimension-grid {
-            display: grid;
-            gap: 25px;
-            margin-top: 30px;
-        }
-        .dimension-card {
-            background: rgba(255,255,255,0.05);
+        .rankings-section { margin-bottom: 2rem; }
+        .rankings-header { text-align: center; margin-bottom: 2.5rem; }
+        .rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; color: #e0e0e0; }
+        .rankings-subtitle { color: #a0aec0; font-size: 1.1rem; }
+        .dimension-grid { display: grid; gap: 1.5rem; }
+        .dimension-block {
+            background: rgba(30,30,30,0.8);
             border-radius: 12px;
-            padding: 25px;
-            border-left: 4px solid;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5rem;
         }
-        .dimension-card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        .dimension-header {
+        .dimension-score {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            margin-bottom: 15px;
+            justify-content: flex-start;
+            min-width: 100px;
         }
-        .dimension-name {
-            font-size: 1.3em;
-            font-weight: 500;
-            letter-spacing: 2px;
+        .score-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            position: relative;
+            color: #e0e0e0;
+        }
+        .score-circle::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: conic-gradient(#a8d5ff calc(var(--score) * 1%), rgba(255,255,255,0.1) 0);
+            z-index: -1;
+        }
+        .score-circle::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: rgba(30,30,30,0.9);
+        }
+        .score-label {
+            font-size: 0.75rem;
+            color: #a0aec0;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        .score-display {
-            display: flex;
-            align-items: center;
-            gap: 15px;
+        .dimension-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: #e0e0e0;
         }
-        .score-value {
-            font-size: 2em;
-            font-weight: 700;
-            padding: 5px 20px;
-            border-radius: 8px;
-            background: rgba(255,255,255,0.1);
+        @media (max-width: 768px) {
+            .dimension-block { grid-template-columns: 1fr; }
         }
-        .score-bar {
-            width: 150px;
-            height: 8px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        .score-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 1s ease;
-        }
-        .dimension-content {
-            color: #b0b0b0;
-            line-height: 1.85;
-            font-size: 1.02em;
-        }
-        .dimension-content p {
-            margin-bottom: 12px;
-        }
-        .characters { border-color: #ff6b6b; }
-        .characters .score-fill { background: linear-gradient(90deg, #ff6b6b, #ee5a5a); }
-        .characters .score-value { color: #ff6b6b; }
-        
-        .world-building { border-color: #4ecdc4; }
-        .world-building .score-fill { background: linear-gradient(90deg, #4ecdc4, #3dbbb3); }
-        .world-building .score-value { color: #4ecdc4; }
-        
-        .cinematography { border-color: #ffe66d; }
-        .cinematography .score-fill { background: linear-gradient(90deg, #ffe66d, #f4d03f); }
-        .cinematography .score-value { color: #ffe66d; }
-        
-        .visual-spectacle { border-color: #a29bfe; }
-        .visual-spectacle .score-fill { background: linear-gradient(90deg, #a29bfe, #b8b5ff); }
-        .visual-spectacle .score-value { color: #a29bfe; }
-        
-        .conceptual-density { border-color: #fd79a8; }
-        .conceptual-density .score-fill { background: linear-gradient(90deg, #fd79a8, #ff8db8); }
-        .conceptual-density .score-value { color: #fd79a8; }
-        
-        .narrative-drive { border-color: #00b894; }
-        .narrative-drive .score-fill { background: linear-gradient(90deg, #00b894, #00cec9); }
-        .narrative-drive .score-value { color: #00b894; }
-        
-        .resolution { border-color: #e17055; }
-        .resolution .score-fill { background: linear-gradient(90deg, #e17055, #ff7675); }
-        .resolution .score-value { color: #e17055; }
 
         .final-score-section {
             background: linear-gradient(135deg, rgba(168,213,255,0.15) 0%, rgba(255,255,255,0.05) 100%);
@@ -353,119 +329,91 @@
             <h2 class="section-title">Why It Ranks</h2>
             <div class="dimension-grid">
                 
-                <div class="dimension-card characters">
-                    <div class="dimension-header">
-                        <span class="dimension-name">Characters</span>
-                        <div class="score-display">
-                            <div class="score-bar">
-                                <div class="score-fill" style="width: 75%;"></div>
-                            </div>
-                            <span class="score-value">7.5</span>
-                        </div>
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 75;"><span>7.5</span></div>
+                        <span class="score-label">CHARACTERS</span>
                     </div>
                     <div class="dimension-content">
+                        <h3>Characters</h3>
                         <p>The character work in Broadchurch is exceptionally strong, built upon the foundation of two utterly compelling leads. <span class="highlight">Olivia Colman's Ellie Miller</span> represents the show's soul—a woman whose professional competence is matched only by her emotional investment in the community she's investigating. Her journey from supportive colleague to betrayed friend to determined survivor anchors the entire series. The complexity of her situation—forced to investigate people she's known her entire life while processing her own horror at the crime—creates a character of remarkable depth.</p>
                         <p><span class="highlight">David Tennant's Alec Hardy</span> is equally nuanced, a man haunted by his failure in the Sandbrook case that drives his obsessive pursuit of the truth in Broadchurch. Tennant sheds his Doctor Who persona entirely, inhabiting a character defined by physical frailty and psychological damage. The supporting cast is uniformly excellent, with <span class="highlight">Jodie Whittaker</span> delivering a heartbreaking performance as Beth Latimer and <span class="highlight">Andrew Buchan</span> capturing a father's devastating descent into grief and suspicion.</p>
                         <p>Where the show loses points is in the breadth of its characterization. While the leads are fully realized, some supporting characters in the large ensemble occasionally feel more like plot functions than fully dimensional people. Certain town residents remain archetypes—the suspicious loner, the gossipy neighbor, the troubled teen—though the stellar performances generally elevate even these roles beyond mere tropes.</p>
                     </div>
                 </div>
 
-                <div class="dimension-card world-building">
-                    <div class="dimension-header">
-                        <span class="dimension-name">World Building</span>
-                        <div class="score-display">
-                            <div class="score-bar">
-                                <div class="score-fill" style="width: 70%;"></div>
-                            </div>
-                            <span class="score-value">7.0</span>
-                        </div>
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 70;"><span>7.0</span></div>
+                        <span class="score-label">WORLD BUILDING</span>
                     </div>
                     <div class="dimension-content">
+                        <h3>World Building</h3>
                         <p>Broadchurch's world-building succeeds through specificity and atmosphere. The fictional Dorset town is rendered with intimate detail—every shop, every pub, every clifftop path feels authentic and lived-in. The coastal setting isn't merely backdrop; the town's dependence on tourism, its isolation from major cities, and its tight-knit social fabric all inform the narrative. <span class="highlight">The Jurassic Coast</span> locations (primarily Clevedon and West Bay) provide a character unto themselves—beautiful, ancient, indifferent to human suffering.</p>
                         <p>The show excels at depicting how a small community functions (and fractures) under pressure. The local newspaper, the church, the police station, the school—each institution feels real, with their own histories and politics. Series 2 expands the world meaningfully through courtroom drama and the parallel Sandbrook investigation, while Series 3 tackles sexual assault with similar geographic specificity.</p>
                         <p>The limitation comes from the intentionally narrow scope. This is one town, one close community, and while that's thematically appropriate, it doesn't offer the sprawling geography or multiple cultures of other prestige dramas. The world of Broadchurch is deep but not wide—a deliberate choice that serves the intimate storytelling but caps the score on pure world-building scale.</p>
                     </div>
                 </div>
 
-                <div class="dimension-card cinematography">
-                    <div class="dimension-header">
-                        <span class="dimension-name">Cinematography</span>
-                        <div class="score-display">
-                            <div class="score-bar">
-                                <div class="score-fill" style="width: 80%;"></div>
-                            </div>
-                            <span class="score-value">8.0</span>
-                        </div>
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 80;"><span>8.0</span></div>
+                        <span class="score-label">CINEMATOGRAPHY</span>
                     </div>
                     <div class="dimension-content">
+                        <h3>Cinematography</h3>
                         <p>The cinematography of Broadchurch is genuinely exceptional, elevating what could have been standard police procedural television into visual art. <span class="highlight">Director of Photography John Conroy</span> and the directorial team (including Euros Lyn and James Strong) create a distinctive visual language that mirrors the show's emotional landscape. The use of wide coastal shots juxtaposed with tight, claustrophobic interiors establishes a visual grammar of exposure versus concealment.</p>
                         <p>The <span class="highlight">color palette</span> is deliberately muted—steely blues, overcast greys, desaturated earth tones—with occasional bursts of warmth (sunlight through windows, firelight, the yellow police tape) that punctuate the gloom. The golden hour has rarely been used more effectively than in this series, where those brief moments of natural beauty underscore the darkness of the narrative. The camera work is patient, often holding on actors' faces for extended periods that force the audience to witness raw emotion without cuts or escape.</p>
                         <p>The <span class="highlight">aerial photography</span> of the cliffs and shoreline deserves special mention—those sweeping drone shots that establish the town's isolation and beauty have been widely imitated (including by the show's own remake, Gracepoint). The visual composition consistently reinforces themes: the characters small against the vast landscape, the church spire visible from everywhere (religion as omnipresent comfort and judgment), the beach as both playground and grave. This is cinematography that understands its thematic purpose.</p>
                     </div>
                 </div>
 
-                <div class="dimension-card visual-spectacle">
-                    <div class="dimension-header">
-                        <span class="dimension-name">Visual Spectacle</span>
-                        <div class="score-display">
-                            <div class="score-bar">
-                                <div class="score-fill" style="width: 60%;"></div>
-                            </div>
-                            <span class="score-value">6.0</span>
-                        </div>
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 60;"><span>6.0</span></div>
+                        <span class="score-label">VISUAL SPECTACLE</span>
                     </div>
                     <div class="dimension-content">
+                        <h3>Visual Spectacle</h3>
                         <p>Broadchurch is deliberately not a show of visual spectacle, and that's a conscious, appropriate artistic choice. There are no action sequences, no elaborate set pieces, no special effects of note. The "spectacle" here is entirely natural—the beauty of the Jurassic Coast, the drama of the English weather, the architectural character of the seaside town. In this context, spectacle is redefined as natural beauty rather than constructed showmanship.</p>
                         <p>What visual moments do exist are entirely organic to the story. The discovery of the body on the beach is devastating in its simplicity. The various vigils and memorials are affecting through human presence rather than production design. Courtroom scenes in Series 2 find drama in performance and tension rather than grand visual construction. The show trusts that <span class="highlight">human faces in emotional extremis</span> provide all the spectacle necessary.</p>
                         <p>The score reflects this restraint. While the cinematography is beautiful, the show never reaches for visual showiness that would betray its grounded, realistic tone. The limitations here are entirely appropriate—this shouldn't be an 8 or 9 because it would violate the show's fundamental aesthetic philosophy. A 6 acknowledges that Broadchurch offers natural beauty and careful composition but doesn't attempt to compete with the bombastic visual storytelling of genre television.</p>
                     </div>
                 </div>
 
-                <div class="dimension-card conceptual-density">
-                    <div class="dimension-header">
-                        <span class="dimension-name">Conceptual Density</span>
-                        <div class="score-display">
-                            <div class="score-bar">
-                                <div class="score-fill" style="width: 70%;"></div>
-                            </div>
-                            <span class="score-value">7.0</span>
-                        </div>
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 70;"><span>7.0</span></div>
+                        <span class="score-label">CONCEPTUAL DENSITY</span>
                     </div>
                     <div class="dimension-content">
+                        <h3>Conceptual Density</h3>
                         <p>Broadchurch engages meaningfully with substantial themes, positioning itself as more than simple entertainment. The show interrogates <span class="highlight">how communities respond to trauma</span>—the way suspicion spreads like infection, how grief isolates even in crowds, how secrets protect and destroy simultaneously. Each season introduces new thematic layers: the first examines the mystery of identity and the lies we tell ourselves; the second introduces questions of justice, media ethics, and the impossibility of closure; the third tackles sexual violence, consent, and institutional failure.</p>
                         <p>The <span class="highlight">interrogation of masculinity</span> runs throughout the series—from the fragile male ego of the killer to the various fathers struggling with powerlessness to the predatory behavior examined in Series 3. The show asks uncomfortable questions about who we trust and why, about the performance of innocence and guilt, about how quickly community becomes mob. Arthur Darvill's reverend character provides thoughtful engagement with faith in the face of senseless tragedy.</p>
                         <p>What prevents a higher score is that these themes, while present and thoughtfully explored, are ultimately in service of narrative momentum rather than philosophical depth. Broadchurch raises important questions but doesn't always linger on them—it's a mystery show first and foremost, and its primary obligation is to the plot. The conceptual work is meaningful but not revolutionary; it enriches the viewing experience without fundamentally challenging the viewer's worldview.</p>
                     </div>
                 </div>
 
-                <div class="dimension-card narrative-drive">
-                    <div class="dimension-header">
-                        <span class="dimension-name">Narrative Drive</span>
-                        <div class="score-display">
-                            <div class="score-bar">
-                                <div class="score-fill" style="width: 80%;"></div>
-                            </div>
-                            <span class="score-value">8.0</span>
-                        </div>
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 80;"><span>8.0</span></div>
+                        <span class="score-label">NARRATIVE DRIVE</span>
                     </div>
                     <div class="dimension-content">
+                        <h3>Narrative Drive</h3>
                         <p>The narrative drive of Broadchurch is relentless, hooking viewers from the devastating opening moments and maintaining tension across its run. <span class="highlight">Creator Chris Chibnall</span> structures the mystery with remarkable discipline, doling out revelations at precisely the right moments while maintaining a viable suspect pool until the final episodes. The show understands that whodunit satisfaction depends on the clues being present but misinterpreted—and it achieves this masterfully.</p>
                         <p>Season 1 functions as a nearly perfect mystery narrative, with each episode peeling back layers of the town's secrets while deepening the emotional stakes. The pacing is deliberate but never slow; time is spent on character development that pays off narratively. Season 2 takes a risk by extending the story beyond the killer's identity, using courtroom drama and the Sandbrook cold case to maintain momentum. Season 3 reboots with a new mystery while honoring the established character arcs.</p>
                         <p>The show earns its 8 through <span class="highlight">structural intelligence</span> and emotional payoff. Red herrings are deployed thoughtfully rather than cheaply. The cross-cutting between investigations, personal lives, and community reactions creates a dynamic rhythm. Perhaps most impressive is how the narrative sustains interest after the central mystery is solved—in Series 2 and 3, the show proves that answering "who" only opens the door to more compelling questions about "why" and "what happens now."</p>
                     </div>
                 </div>
 
-                <div class="dimension-card resolution">
-                    <div class="dimension-header">
-                        <span class="dimension-name">Resolution</span>
-                        <div class="score-display">
-                            <div class="score-bar">
-                                <div class="score-fill" style="width: 80%;"></div>
-                            </div>
-                            <span class="score-value">8.0</span>
-                        </div>
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 80;"><span>8.0</span></div>
+                        <span class="score-label">RESOLUTION</span>
                     </div>
                     <div class="dimension-content">
+                        <h3>Resolution</h3>
                         <p>Broadchurch's resolution across its three series demonstrates remarkable commitment to emotional truth over tidy endings. Season 1's revelation of the killer is devastating precisely because of the relationships involved—it's not a random stranger but someone woven into the community. The show resists the temptation to make the murderer a cartoon villain, instead presenting a <span class="highlight">tragic figure whose actions stem from recognizable human failure</span>. The aftermath doesn't offer easy catharsis; characters must learn to live with unbearable knowledge.</p>
                         <p>Season 2's courtroom resolution demonstrates nuance in how justice actually works—the gap between legal and moral truth, the performance of trials, the way evidence and narrative battle for jury belief. The parallel resolution of the Sandbrook case provides Hardy with redemption earned through persistence rather than sudden brilliance. <span class="highlight">Series 3</span> handles its sexual assault investigation with an 8-episode commitment to victim-centered storytelling, resolving not with a triumphant arrest but with validation of survivors' experiences.</p>
                         <p>The series finale provides satisfying closures for the central characters—Hardy and Miller's partnership solidified through shared trauma, Miller's family finding a path forward, Broadchurch itself changed but enduring. The show understands that resolution doesn't mean returning to the status quo; it means finding a way to continue. What keeps it from a higher score is the occasional sense that Series 2 and 3, while strong, never quite recapture the narrative perfection of that first season's construction.</p>

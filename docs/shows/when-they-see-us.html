@@ -87,74 +87,72 @@
             border: 1px solid rgba(201, 162, 39, 0.3);
         }
         
-        .dimension-grid {
-            display: grid;
-            gap: 30px;
-            margin: 40px 0;
-        }
+        .rankings-section { margin-bottom: 2rem; }
+        .rankings-header { text-align: center; margin-bottom: 2.5rem; }
+        .rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; color: #e0e0e0; }
+        .rankings-subtitle { color: #a0aec0; font-size: 1.1rem; }
+        .dimension-grid { display: grid; gap: 1.5rem; margin: 40px 0; }
         
-        .dimension-card {
-            background: linear-gradient(145deg, rgba(25,25,45,0.9) 0%, rgba(15,15,35,0.8) 100%);
-            padding: 35px;
+        .dimension-block {
+            background: rgba(30,30,30,0.8);
             border-radius: 12px;
-            border-left: 4px solid;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .dimension-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-        }
-        
-        .dimension-card.characters { border-left-color: #ff6b6b; }
-        .dimension-card.world { border-left-color: #4ecdc4; }
-        .dimension-card.cinematography { border-left-color: #95e1d3; }
-        .dimension-card.visual { border-left-color: #f38181; }
-        .dimension-card.conceptual { border-left-color: #aa96da; }
-        .dimension-card.narrative { border-left-color: #fcbad3; }
-        .dimension-card.resolution { border-left-color: #ffffd2; }
-        
-        .dimension-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        
-        .dimension-title {
-            font-size: 1.4em;
-            font-weight: 700;
-            color: #f5f5f5;
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5rem;
         }
         
         .dimension-score {
-            font-size: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 100px;
+        }
+        
+        .score-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
             font-weight: 800;
-            color: #c9a227;
-            text-shadow: 0 0 10px rgba(201, 162, 39, 0.3);
+            margin-bottom: 0.5rem;
+            position: relative;
+            color: #e0e0e0;
         }
-        
-        .score-bar {
-            height: 8px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 4px;
-            margin-bottom: 20px;
-            overflow: hidden;
+        .score-circle::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: conic-gradient(#c9a227 calc(var(--score) * 1%), rgba(255,255,255,0.1) 0);
+            z-index: -1;
         }
-        
-        .score-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 1s ease;
+        .score-circle::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: rgba(30,30,30,0.9);
         }
-        
-        .characters .score-fill { background: linear-gradient(90deg, #ff6b6b, #ee5a5a); width: 81%; }
-        .world .score-fill { background: linear-gradient(90deg, #4ecdc4, #44b3ab); width: 70%; }
-        .cinematography .score-fill { background: linear-gradient(90deg, #95e1d3, #7bcbb8); width: 70%; }
-        .visual .score-fill { background: linear-gradient(90deg, #f38181, #e07070); width: 60%; }
-        .conceptual .score-fill { background: linear-gradient(90deg, #aa96da, #9a7bc9); width: 77%; }
-        .narrative .score-fill { background: linear-gradient(90deg, #fcbad3, #e8a5c0); width: 73%; }
-        .resolution .score-fill { background: linear-gradient(90deg, #ffffd2, #e8e8b8); width: 77%; }
+        .score-label {
+            font-size: 0.75rem;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .dimension-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: #e0e0e0;
+        }
+        @media (max-width: 768px) {
+            .dimension-block { grid-template-columns: 1fr; }
+        }
         
         .cast-list {
             background: rgba(201, 162, 39, 0.1);
@@ -410,12 +408,13 @@
         <h2>Why It Ranks: The Seven Dimensions</h2>
         
         <div class="dimension-grid">
-            <div class="dimension-card characters">
-                <div class="dimension-header">
-                    <span class="dimension-title">Characters</span>
-                    <span class="dimension-score">8.1</span>
+            <div class="dimension-block">
+                <div class="dimension-score">
+                    <div class="score-circle" style="--score: 81;"><span>8.1</span></div>
+                    <span class="score-label">CHARACTERS</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="dimension-content">
+                    <h3>Characters</h3>
                 <p>The characterization in <em>When They See Us</em> represents Ava DuVernay's greatest triumph—the transformation of statistical victims into indelible human presences. Rather than treating the Central Park Five as a collective tragedy, the series painstakingly distinguishes each boy's personality, circumstances, and response to trauma. Young Raymond's artistic sensitivity, Antron's athletic dreams destroyed by his father's fear-based advice, Yusef's devout Muslim faith, Kevin's quiet resilience, and Korey's protective vulnerability—all emerge through specific, lived-in details.</p>
                 
                 <p>The casting strategy deserves particular recognition. DuVernay employed different actors for adolescent and adult versions of each character, creating distinct phases of identity while maintaining through-lines of essence. The young ensemble—Asante Blackk, Caleel Harris, Ethan Herisse, and Marquis Rodriguez—deliver performances of astonishing emotional transparency, navigating scenes of confusion, fear, and false bravado with complete authenticity.</p>
@@ -425,12 +424,13 @@
                 <p>The parental figures, particularly Niecy Nash as Korey's mother and Michael K. Williams as Bobby McCray, add generational depth. Their performances capture the specific agony of parents watching their children consumed by forces they cannot combat. Fairstein (Felicity Huffman) and the detectives embody systemic evil without cartoonish villainy—they believe themselves righteous, making their actions more disturbing. Every character, regardless of screen time, arrives fully dimensional, carrying histories we sense extend beyond the frame.</p>
             </div>
             
-            <div class="dimension-card world">
-                <div class="dimension-header">
-                    <span class="dimension-title">World Building</span>
-                    <span class="dimension-score">7.0</span>
+            <div class="dimension-block">
+                <div class="dimension-score">
+                    <div class="score-circle" style="--score: 70;"><span>7.0</span></div>
+                    <span class="score-label">WORLD BUILDING</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="dimension-content">
+                    <h3>World Building</h3>
                 <p>The world of <em>When They See Us</em> encompasses multiple interconnected systems—criminal justice infrastructure, media ecosystems, racial geography, and carceral architecture—each rendered with documentary precision. DuVernay and her production team reconstruct 1989 New York as a pressure cooker of racial anxiety and gentrification tensions, where the Central Park jogger case becomes a symbolic battleground for deeper societal conflicts.</p>
                 
                 <p>The series excels at depicting institutional spaces with anthropological accuracy. The 24th Precinct's interrogation rooms become theaters of psychological warfare, their utilitarian design—fluorescent lighting, institutional furniture, one-way mirrors—contributing to the dehumanization process. Courtroom scenes reveal the theater of legal proceedings, where procedural formalities mask systemic prejudice. The prison environments escalate across security classifications, from juvenile facilities to adult maximum-security units, each tier representing increasing brutality and isolation.</p>
@@ -440,12 +440,13 @@
                 <p>The world-building achieves its greatest resonance through temporal scope. By spanning nearly three decades, the series demonstrates how these systems perpetuate themselves across generations, consuming new victims while the machinery grinds on. The eventual DNA evidence that exonerates the Five arrives as both salvation and indictment—proof that justice systems can work, but only after destroying lives first.</p>
             </div>
             
-            <div class="dimension-card cinematography">
-                <div class="dimension-header">
-                    <span class="dimension-title">Cinematography</span>
-                    <span class="dimension-score">7.0</span>
+            <div class="dimension-block">
+                <div class="dimension-score">
+                    <div class="score-circle" style="--score: 70;"><span>7.0</span></div>
+                    <span class="score-label">CINEMATOGRAPHY</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="dimension-content">
+                    <h3>Cinematography</h3>
                 <p>Cinematographer Bradford Young, known for his work on <em>Selma</em> and <em>Arrival</em>, brings his signature aesthetic of shadows and golden tones to <em>When They See Us</em>. His visual approach prioritizes emotional truth over documentary realism, using chiaroscuro lighting to create emotional maps of darkness and revelation. The result is a series that looks unlike standard prestige television, favoring painterly composition and expressive darkness over conventional coverage.</p>
                 
                 <p>The color grading distinguishes temporal periods with subtle sophistication. The 1989 sequences carry warm, nostalgic tones that ironically contrast with the horrors unfolding. Incarceration sequences shift toward institutional grays and sickly fluorescents, the prison worlds drained of chromatic hope. Adult sequences in the 2000s introduce slightly desaturated palettes suggesting years of accumulated trauma. These shifts occur organically, guiding viewers through time without heavy-handed signposting.</p>
@@ -455,12 +456,13 @@
                 <p>The visual language grows more experimental in Part Four, where fantasy sequences—Korey's imagined conversations with his transgender sister, his mental escape to the Coney Island boardwalk—introduce surreal elements that externalize psychological interiority. These sequences risk tonal disruption but ultimately illuminate the coping mechanisms of long-term incarceration. The documentary footage integrated into the finale—archival media coverage, actual photographs—creates powerful juxtapositions between represented and real trauma.</p>
             </div>
             
-            <div class="dimension-card visual">
-                <div class="dimension-header">
-                    <span class="dimension-title">Visual Spectacle</span>
-                    <span class="dimension-score">6.0</span>
+            <div class="dimension-block">
+                <div class="dimension-score">
+                    <div class="score-circle" style="--score: 60;"><span>6.0</span></div>
+                    <span class="score-label">VISUAL SPECTACLE</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="dimension-content">
+                    <h3>Visual Spectacle</h3>
                 <p>Visual spectacle in <em>When They See Us</em> operates through inversion—its power derives from what it refuses to spectacularize rather than what it emphasizes. DuVernay deliberately eschews the aestheticized violence common to true crime entertainment, denying viewers the cathartic release of stylized brutality. Instead, the series finds visual power in restraint, in the spaces between actions where imagination produces horror more potent than depiction.</p>
                 
                 <p>The Central Park sequences—both the initial gathering of the boys and the location's reappearance throughout—carry symbolic weight through natural beauty. The park's autumn landscapes, photographed during magic hour, contrast with the violence occurring within them. These moments of aesthetic pleasure create cognitive dissonance, reminding viewers that atrocity occurs within ordinary spaces.</p>
@@ -472,12 +474,13 @@
                 <p>The finale's integration of real footage, photographs, and documentary materials creates a different form of spectacle—the collision between performed trauma and lived experience. When the actors stand beside their real-life counterparts in concluding shots, the illusion breaks in ways that transform spectacle into witness, demanding viewers confront that these horrors happened to actual human beings rather than narrative constructs.</p>
             </div>
             
-            <div class="dimension-card conceptual">
-                <div class="dimension-header">
-                    <span class="dimension-title">Conceptual Density</span>
-                    <span class="dimension-score">7.7</span>
+            <div class="dimension-block">
+                <div class="dimension-score">
+                    <div class="score-circle" style="--score: 77;"><span>7.7</span></div>
+                    <span class="score-label">CONCEPTUAL DENSITY</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="dimension-content">
+                    <h3>Conceptual Density</h3>
                 <p><em>When They See Us</em> operates as a thesis on systemic injustice, its four episodes exploring how racism, media sensationalism, prosecutorial overreach, and carceral expansion converge to destroy lives. The series resists reducing the Central Park Five case to individual villainy, instead revealing how ordinary people functioning within racist institutions produce extraordinary injustice.</p>
                 
                 <p>The interrogation sequences function as case studies in coerced confession, demonstrating psychological techniques—sleep deprivation, isolation, false promises, implied threats—that remain standard police practice. The boys' statements, contradicted by physical evidence and timeline impossibilities, expose how confession mythology overrides empirical truth in criminal proceedings. The series asks viewers to recognize how they participate in cultures that privilege narrative coherence over evidentiary rigor.</p>
@@ -489,12 +492,13 @@
                 <p>The concluding exoneration raises uncomfortable questions about justice and compensation. The eventual settlement—$41 million divided among five men for decades of lost life—cannot restore what was taken. The series asks what accountability looks like when systemic failures cannot be pinned to individual culpability, when society itself stands accused.</p>
             </div>
             
-            <div class="dimension-card narrative">
-                <div class="dimension-header">
-                    <span class="dimension-title">Narrative Drive</span>
-                    <span class="dimension-score">7.3</span>
+            <div class="dimension-block">
+                <div class="dimension-score">
+                    <div class="score-circle" style="--score: 73;"><span>7.3</span></div>
+                    <span class="score-label">NARRATIVE DRIVE</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="dimension-content">
+                    <h3>Narrative Drive</h3>
                 <p>The narrative architecture of <em>When They See Us</em> rejects conventional crime storytelling structures, refusing the procedural satisfactions of investigation, revelation, and resolution. Instead, DuVernay constructs a four-act tragedy where dramatic irony suffocates hope—viewers know from the outset that these boys are innocent, that their lives will be destroyed, that justice will arrive decades too late. This knowledge transforms viewing into witnessing, demanding emotional engagement despite predictable outcomes.</p>
                 
                 <p>The four-episode structure creates distinct movements: accusation (Part One), prosecution (Part Two), incarceration (Part Three), and survival (Part Four). Each episode employs different temporal strategies—the first compressed into hours, the second spanning months, the third covering years, the fourth focusing intensively on Korey's experience. This expansion and compression mirrors the psychological experience of incarceration, where time becomes elastic and unbearable.</p>
@@ -506,12 +510,13 @@
                 <p>The closing sequences—exoneration, settlement, documentary footage—offer not resolution but contemplation. The narrative ends not with triumph but with complicated grief and ongoing trauma. The title's transformation from "The Central Park Five" to "When They See Us"—referencing the moment when Korey's prison tormentors finally see his humanity—suggests that recognition, not justice, represents the available closure.</p>
             </div>
             
-            <div class="dimension-card resolution">
-                <div class="dimension-header">
-                    <span class="dimension-title">Resolution</span>
-                    <span class="dimension-score">7.7</span>
+            <div class="dimension-block">
+                <div class="dimension-score">
+                    <div class="score-circle" style="--score: 77;"><span>7.7</span></div>
+                    <span class="score-label">RESOLUTION</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="dimension-content">
+                    <h3>Resolution</h3>
                 <p>The finale of <em>When They See Us</em> resues resolution from the jaws of despair, offering something more valuable than happy endings: honest reckoning. After hours of systemic brutality, the concluding episode finds small victories in survival, family reconnection, and eventual exoneration. These moments arrive without sentimentality, their power deriving from recognition of what was lost in the decades between accusation and vindication.</p>
                 
                 <p>The resolution's structural brilliance lies in its refusal to separate redemption from trauma. When the men finally walk free, their freedom carries accumulated weight—the psychological damage, the lost years, the relationships destroyed. The series shows Raymond unable to enjoy simple pleasures without intrusive memories, Antron struggling to connect with the son who grew up without him, Korey still navigating disability and institutional damage. Resolution here means survival, not restoration.</p>

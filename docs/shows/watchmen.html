@@ -247,14 +247,70 @@
             font-style: normal;
         }
 
-        /* Score-specific colors */
-        .characters .score-fill { background: linear-gradient(90deg, #ffd700, #ff6b6b); width: 81%; }
-        .world-building .score-fill { background: linear-gradient(90deg, #4ecdc4, #44a3aa); width: 75%; }
-        .cinematography .score-fill { background: linear-gradient(90deg, #a8edea, #fed6e3); width: 80%; }
-        .visual-spectacle .score-fill { background: linear-gradient(90deg, #ff9a9e, #fecfef); width: 80%; }
-        .conceptual-density .score-fill { background: linear-gradient(90deg, #667eea, #764ba2); width: 77%; }
-        .narrative-drive .score-fill { background: linear-gradient(90deg, #f093fb, #f5576c); width: 73%; }
-        .resolution .score-fill { background: linear-gradient(90deg, #4facfe, #00f2fe); width: 77%; }
+        /* New dimension-block styles */
+        .rankings-section { margin-bottom: 2rem; }
+        .rankings-header { text-align: center; margin-bottom: 2.5rem; }
+        .rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; color: #e0e0e0; }
+        .rankings-subtitle { color: #a0aec0; font-size: 1.1rem; }
+        .dimension-grid-new { display: grid; gap: 1.5rem; }
+        .dimension-block-new {
+            background: rgba(30,30,30,0.8);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5rem;
+        }
+        .dimension-score-new {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 100px;
+        }
+        .score-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            position: relative;
+            color: #e0e0e0;
+        }
+        .score-circle::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: conic-gradient(#ffd700 calc(var(--score) * 1%), rgba(255,255,255,0.1) 0);
+            z-index: -1;
+        }
+        .score-circle::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: rgba(30,30,30,0.9);
+        }
+        .score-label {
+            font-size: 0.75rem;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .dimension-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: #e0e0e0;
+        }
+        @media (max-width: 768px) {
+            .dimension-block-new { grid-template-columns: 1fr; }
+        }
 
         .final-score-section {
             background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,107,107,0.1));
@@ -448,16 +504,13 @@
                 </div>
             </div>
 
-            <div class="dimension-card characters">
-                <div class="dimension-header">
-                    <div class="dimension-title">
-                        <div class="dimension-icon">👤</div>
-                        Characters
-                    </div>
-                    <div class="dimension-score">8.1</div>
+            <div class="dimension-block-new">
+                <div class="dimension-score-new">
+                    <div class="score-circle" style="--score: 81;"><span>8.1</span></div>
+                    <span class="score-label">CHARACTERS</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
                 <div class="dimension-content">
+                    <h3>Characters</h3>
                     <p>The character work in <strong>Watchmen</strong> operates on multiple temporal planes simultaneously. <strong>Regina King's Angela Abar/Sister Night</strong> anchors the series with a performance of remarkable physical and emotional precision. She embodies a character whose entire identity is performative—cop by day, masked vigilante by night, descendent of trauma survivors carrying generational weight. King makes Angela's contradictions feel organic rather than contrived; her confusion, rage, and eventual acceptance flow with devastating authenticity.</p>
 
                     <p><strong>Jeremy Irons as Adrian Veidt</strong> spends much of the series isolated in what appears to be a bizarre pastoral prison, delivering theatrical monologues to clone servants. It's a risky gambit that shouldn't work but absolutely does—his grandiose delivery masks a character reckoning with the consequences of his godlike hubris. The slow revelation of his circumstances provides some of the season's most darkly comic and ultimately tragic moments.</p>
@@ -470,16 +523,13 @@
                 </div>
             </div>
 
-            <div class="dimension-card world-building">
-                <div class="dimension-header">
-                    <div class="dimension-title">
-                        <div class="dimension-icon">🌍</div>
-                        World Building
-                    </div>
-                    <div class="dimension-score">7.5</div>
+            <div class="dimension-block-new">
+                <div class="dimension-score-new">
+                    <div class="score-circle" style="--score: 75;"><span>7.5</span></div>
+                    <span class="score-label">WORLD BUILDING</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
                 <div class="dimension-content">
+                    <h3>World Building</h3>
                     <p>Lindelof constructs an alternate America that feels simultaneously fantastical and uncomfortably plausible. The premise—that Robert Redford has served seven terms as president following Nixon, that reparations were paid to victims of racial violence ("Redfordations"), that Vietnam became the 51st state—creates a backdrop that invites both wish fulfillment and critical examination. This is world building as political argument, not mere escapism.</p>
 
                     <p><strong>Tulsa, Oklahoma</strong> emerges as more than setting; it's a character unto itself, burdened with historical trauma that the series refuses to let remain buried. The show's commitment to filming on location grounds its supernatural elements in brick-and-mortar reality. The police wear masks to protect their identities from reprisals; this simple inversion of superhero tropes creates an entire taxonomy of visible and invisible power.</p>
@@ -492,16 +542,13 @@
                 </div>
             </div>
 
-            <div class="dimension-card cinematography">
-                <div class="dimension-header">
-                    <div class="dimension-title">
-                        <div class="dimension-icon">🎥</div>
-                        Cinematography
-                    </div>
-                    <div class="dimension-score">8.0</div>
+            <div class="dimension-block-new">
+                <div class="dimension-score-new">
+                    <div class="score-circle" style="--score: 80;"><span>8.0</span></div>
+                    <span class="score-label">CINEMATOGRAPHY</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
                 <div class="dimension-content">
+                    <h3>Cinematography</h3>
                     <p>The visual language of <strong>Watchmen</strong> announces itself immediately. The series employs a palette of deep shadows and saturated neon that evokes noir tradition while updating it for the 21st century. <strong>Director Nicole Kassell and cinematographer Xavier Grobet</strong> establish a visual grammar that shifts between the harsh realities of Tulsa streets and the hyper-stylized world of costumed confrontation.</p>
 
                     <p><strong>Episode 6, "This Extraordinary Being,"</strong> stands as the cinematographic centerpiece. Shot predominantly in black and white with moments of selective color, it transforms the trauma of the Tulsa Race Massacre and its aftermath into visual poetry. The decision to desaturate Hooded Justice's origin story removes the distraction of period detail while amplifying the emotional horror. The use of archival footage integrated with stylized re-enactment creates a documentary-adjacent authenticity that makes the fantastical elements feel earned.</p>
@@ -514,16 +561,13 @@
                 </div>
             </div>
 
-            <div class="dimension-card visual-spectacle">
-                <div class="dimension-header">
-                    <div class="dimension-title">
-                        <div class="dimension-icon">✨</div>
-                        Visual Spectacle
-                    </div>
-                    <div class="dimension-score">8.0</n                </div>
+            <div class="dimension-block-new">
+                <div class="dimension-score-new">
+                    <div class="score-circle" style="--score: 80;"><span>8.0</span></div>
+                    <span class="score-label">VISUAL SPECTACLE</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
                 <div class="dimension-content">
+                    <h3>Visual Spectacle</h3>
                     <p>For a property rooted in superhero tradition, Watchmen demonstrates admirable restraint in its deployment of spectacle. When the show goes big, it <strong>earns every moment of visual wonder</strong> through careful narrative buildup. The Millennium Clock's activation, the Mars sequences' cosmic scope, and the finale's temporal fireworks all arrive with appropriate weight rather than numbing frequency.</p>
 
                     <p>The series understands that <strong>true spectacle resides in performance</strong>. Regina King's physical transformation into Sister Night—her combat prowess, her silhouette against the Tulsa skyline—creates iconic imagery without excessive CGI. The show's most visually arresting moments often involve simple compositions: Angela in her nun's habit, mask pulled down; Looking Glass' reflection staring back at himself; Doctor Manhattan's blue form standing motionless against the red Martian landscape.</p>
@@ -536,16 +580,13 @@
                 </div>
             </div>
 
-            <div class="dimension-card conceptual-density">
-                <div class="dimension-header">
-                    <div class="dimension-title">
-                        <div class="dimension-icon">🧠</div>
-                        Conceptual Density
-                    </div>
-                    <div class="dimension-score">7.7</div>
+            <div class="dimension-block-new">
+                <div class="dimension-score-new">
+                    <div class="score-circle" style="--score: 77;"><span>7.7</span></div>
+                    <span class="score-label">CONCEPTUAL DENSITY</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
                 <div class="dimension-content">
+                    <h3>Conceptual Density</h3>
                     <p>Watchmen operates at the intersection of multiple intellectual traditions: <strong>superhero mythology, African American history, quantum physics, and institutional critique</strong>. The series wears its influences openly—James Baldwin quotes sit alongside references to Ozymandias, the Tulsa Race Massacre shares narrative space with Doctor Manhattan's Martian exile. This density rewards attentive viewing while potentially overwhelming casual consumption.</p>
 
                     <p>The central conceit—<strong>what if the first masked vigilante was a Black man surviving the Tulsa Race Massacre?</strong>—recontextualizes the entire superhero genre through the lens of racialized violence. Hooded Justice's noose becomes symbol of both execution and resistance, the mask simultaneously protective and traumatized. This is superhero scholarship at its most incisive, using alternate history to interrogate the genre's implicit assumptions about justice and power.</p>
@@ -558,16 +599,13 @@
                 </div>
             </div>
 
-            <div class="dimension-card narrative-drive">
-                <div class="dimension-header">
-                    <div class="dimension-title">
-                        <div class="dimension-icon">📖</div>
-                        Narrative Drive
-                    </div>
-                    <div class="dimension-score">7.3</div>
+            <div class="dimension-block-new">
+                <div class="dimension-score-new">
+                    <div class="score-circle" style="--score: 73;"><span>7.3</span></div>
+                    <span class="score-label">NARRATIVE DRIVE</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
                 <div class="dimension-content">
+                    <h3>Narrative Drive</h3>
                     <p>The propulsive energy of <strong>Watchmen</strong> operates in distinct phases, each with varying degrees of urgency. The pilot establishes immediate stakes with Chief Crawford's murder and the Seventh Kavalry threat, creating conventional procedural momentum. However, Lindelof quickly complicates this forward motion with nonlinear storytelling, withholding crucial information to create mystery rather than merely advancing plot.</p>
 
                     <p>The middle episodes—particularly 4 through 6—represent the <strong>narrative high point</strong>. As Angela ingests her grandfather's Nostalgia pills, the series adopts her fragmented consciousness, forcing viewers to assemble chronology from memory shards. This formal experimentation sacrifices some narrative clarity for thematic resonance, but the urgency of Will Reeves' backstory provides sufficient momentum to carry through.</p>
@@ -580,16 +618,13 @@
                 </div>
             </div>
 
-            <div class="dimension-card resolution">
-                <div class="dimension-header">
-                    <div class="dimension-title">
-                        <div class="dimension-icon">🎯</div>
-                        Resolution
-                    </div>
-                    <div class="dimension-score">7.7</div>
+            <div class="dimension-block-new">
+                <div class="dimension-score-new">
+                    <div class="score-circle" style="--score: 77;"><span>7.7</span></div>
+                    <span class="score-label">RESOLUTION</span>
                 </div>
-                <div class="score-bar"><div class="score-fill"></div></div>
                 <div class="dimension-content">
+                    <h3>Resolution</h3>
                     <p>The finale, "See How They Fly," must accomplish multiple objectives: <strong>resolve the Seventh Kavalry threat, conclude Veidt's imprisonment, and provide emotional closure for Angela's arc</strong>. It succeeds more thoroughly on some fronts than others, delivering a conclusion that balances cosmic spectacle with intimate character moments while leaving certain questions deliberately unanswered.</p>
 
                     <p>The defeat of the Seventh Kavalry and Senator Keene's transformation plan resolves the season's immediate threat while commenting on the appropriation of power. Lady Trieu's intervention—her own bid for godhood—adds complexity to what could have been simple hero/villain confrontation. That Trieu and Angela represent different paths through intergenerational trauma provides thematic coherence to the action.</p>
