@@ -1,181 +1,450 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Twin Peaks: The Return - Dynamic Rank Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Peaks: The Return (2017) - 7-Dimension Analysis</title>
     <style>
-        body { font-family: 'Source Sans Pro', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0d0d12; padding: 2rem; }
-        h2 { color: #ffd700; font-family: 'Oranienbaum', serif; border-bottom: 2px solid #2a2a35; padding-bottom: 0.5rem; }
-        h3 { color: #c0a050; font-family: 'Unna', serif; margin-top: 2rem; }
-        .dimension-block { background: #1a1a24; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #c0a050; }
-        .dimension-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-        .dimension-score { font-size: 1.5rem; color: #ffd700; font-weight: bold; min-width: 60px; }
-        .dimension-name { font-size: 1.2rem; color: #e0e0e0; font-weight: 600; }
-        .dimension-weight { color: #888; font-size: 0.9rem; }
-        .dimension-content { color: #b0b0b0; line-height: 1.8; }
-        .final-score { background: linear-gradient(135deg, #1a1a24, #2a2a35); padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem; border: 2px solid #ffd700; }
-        .final-score-value { font-size: 3rem; color: #ffd700; font-weight: bold; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 30px;
+            background: linear-gradient(180deg, rgba(94, 23, 235, 0.3) 0%, rgba(0,0,0,0) 100%);
+            border-bottom: 2px solid #5e17eb;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(94, 23, 235, 0.8);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .meta {
+            color: #a0a0a0;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .meta span {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        .show-info {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #5e17eb;
+        }
+
+        .show-info h3 {
+            color: #5e17eb;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .show-info p {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .show-info strong {
+            color: #fff;
+        }
+
+        .section {
+            background: rgba(255,255,255,0.03);
+            border-radius: 15px;
+            padding: 35px;
+            margin: 35px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .section-title {
+            color: #5e17eb;
+            font-size: 1.9em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(94, 23, 235, 0.5);
+        }
+
+        .section-content {
+            color: #d0d0d0;
+            font-size: 1.05em;
+        }
+
+        .section-content p {
+            margin-bottom: 18px;
+        }
+
+        .dimension-block {
+            background: linear-gradient(145deg, rgba(30,30,60,0.8) 0%, rgba(20,20,40,0.9) 100%);
+            border-radius: 12px;
+            padding: 28px;
+            margin: 25px 0;
+            border-left: 5px solid;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dimension-block:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .dimension-block.characters { border-color: #ff6b6b; }
+        .dimension-block.world { border-color: #4ecdc4; }
+        .dimension-block.cinematography { border-color: #ffd93d; }
+        .dimension-block.visual { border-color: #6bcb77; }
+        .dimension-block.conceptual { border-color: #a855f7; }
+        .dimension-block.narrative { border-color: #3b82f6; }
+        .dimension-block.resolution { border-color: #f472b6; }
+
+        .dimension-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .dimension-title {
+            font-size: 1.4em;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .dimension-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .dimension-block.characters .dimension-score { color: #ff6b6b; }
+        .dimension-block.world .dimension-score { color: #4ecdc4; }
+        .dimension-block.cinematography .dimension-score { color: #ffd93d; }
+        .dimension-block.visual .dimension-score { color: #6bcb77; }
+        .dimension-block.conceptual .dimension-score { color: #a855f7; }
+        .dimension-block.narrative .dimension-score { color: #3b82f6; }
+        .dimension-block.resolution .dimension-score { color: #f472b6; }
+
+        .score-bar {
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+
+        .score-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 1s ease-out;
+        }
+
+        .characters .score-fill { background: #ff6b6b; width: 78%; }
+        .world .score-fill { background: #4ecdc4; width: 75%; }
+        .cinematography .score-fill { background: #ffd93d; width: 90%; }
+        .visual .score-fill { background: #6bcb77; width: 75%; }
+        .conceptual .score-fill { background: #a855f7; width: 80%; }
+        .narrative .score-fill { background: #3b82f6; width: 65%; }
+        .resolution .score-fill { background: #f472b6; width: 65%; }
+
+        .final-score-section {
+            background: linear-gradient(145deg, #5e17eb 0%, #3a0ca3 100%);
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .final-score-section h2 {
+            color: #fff;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .final-score {
+            font-size: 4em;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            margin: 20px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            color: rgba(255,255,255,0.8);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .highlight {
+            color: #5e17eb;
+            font-weight: 600;
+        }
+
+        .moment-callout {
+            background: rgba(94, 23, 235, 0.2);
+            border: 1px solid rgba(94, 23, 235, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .moment-callout h4 {
+            color: #ffd93d;
+            margin-bottom: 10px;
+        }
+
+        ul.analysis-list {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        ul.analysis-list li {
+            margin-bottom: 12px;
+            color: #c0c0c0;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .pros, .cons {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .pros h4 {
+            color: #6bcb77;
+            margin-bottom: 12px;
+        }
+
+        .cons h4 {
+            color: #ff6b6b;
+            margin-bottom: 12px;
+        }
+
+        .pros ul, .cons ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pros li::before {
+            content: "✓ ";
+            color: #6bcb77;
+        }
+
+        .cons li::before {
+            content: "✗ ";
+            color: #ff6b6b;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .pros-cons { grid-template-columns: 1fr; }
+            .dimension-header { flex-direction: column; gap: 10px; }
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>🎬 Twin Peaks: The Return</h1>
+            <div class="meta">
+                <span>Showtime • 2017</span>
+                <span>18 Episodes</span>
+                <span>Limited Series</span>
+            </div>
+        </header>
 
-<h2>What It Feels Like to Watch</h2>
-
-<p>Twin Peaks: The Return premiered on Showtime on May 21, 2017, created by David Lynch and Mark Frost as a continuation of the original Twin Peaks (1990-1991). The 18-episode limited series returns to the strange Pacific Northwest town 25 years after the original series, following FBI Agent Dale Cooper (Kyle MacLachlan) as he attempts to escape the Black Lodge and return to the real world, while a doppelganger Cooper wreaks havoc and a new murder mystery unfolds in Twin Peaks.</p>
-
-<p>The Return is not conventional television—it is an 18-hour film by David Lynch, a surrealist masterpiece that defies narrative expectations and challenges viewers to surrender to its dream logic. Lynch, given complete creative control by Showtime, creates a work of uncompromising artistic vision that is by turns terrifying, hilarious, heartbreaking, and incomprehensible. This is television as avant-garde art, a work that expands the medium's possibilities.</p>
-
-<p>Kyle MacLachlan's performance is extraordinary in its range—he plays not only the original Dale Cooper (trapped in the Black Lodge), but also the doppelganger Cooper (a violent criminal), Dougie Jones (a simple man whose body Cooper possesses), and various other iterations across dimensions. MacLachlan's ability to distinguish these characters while maintaining their connections is remarkable. The Dougie Jones storyline—Cooper trapped in a simpleton's body, slowly awakening—spans much of the series and is played by MacLachlan with minimal dialogue and maximum physical comedy.</p>
-
-<p>The supporting cast includes returning actors from the original series: Sherilyn Fenn as Audrey Horne, now a troubled woman in a loveless marriage; Mädchen Amick as Shelly Johnson, still working at the diner; Dana Ashbrook as Bobby Briggs, now a deputy; Kimmy Robertson as Lucy Brennan, still the receptionist; and Harry Goaz as Deputy Andy Brennan. These returning actors provide continuity while showing the passage of time.</p>
-
-<p>New cast members expand the Twin Peaks universe: Laura Dern as Diane Evans, Cooper's secretary who appears in person for the first time; Naomi Watts as Janey-E Jones, Dougie's wife; Tom Sizemore as Anthony Sinclair; Jim Belushi as Bradley Mitchum; Robert Knepper as Rodney Mitchum; Balthazar Getty as Detective Fusco; Tim Roth and Jennifer Jason Leigh as assassins; and many others in the sprawling cast.</p>
-
-<p>The series' structure defies conventional television. Episodes vary wildly in length (from roughly 50 minutes to over an hour), in narrative focus, and in tone. Episode 8 is a largely wordless experimental film depicting the birth of evil. Episodes spend significant time on seemingly tangential characters and storylines that may or may not connect to the main narrative. The series demands patience and surrender to Lynch's vision.</p>
-
-<p>The cinematography by Peter Deming creates a distinctive visual language that shifts between the mundane and the surreal. The Twin Peaks locations—the diner, the sheriff's station, the Great Northern Hotel—are shot with nostalgic warmth, while the Black Lodge sequences are abstract and terrifying. The series uses light and shadow, color and desaturation, to create emotional atmosphere.</p>
-
-<p>The sound design by Dean Hurley and the music by Angelo Badalamenti (returning from the original series) create an audio landscape of unease. The familiar Twin Peaks themes are present, but expanded with new compositions that range from jazz to ambient to experimental. The sound design uses silence, ambient noise, and sudden loud sounds to create tension and unease.</p>
-
-<p>The series' engagement with the original Twin Peaks is complex—The Return is not simply a revival but a deconstruction and reconstruction of the original. It answers some questions (the fate of Cooper, the identity of Judy) while raising new ones. It brings closure to some characters while leaving others in mystery. It is both a continuation and a standalone work, accessible to newcomers while rewarding to fans.</p>
-
-<p>Critical reception was overwhelmingly positive, with many critics calling The Return a masterpiece and one of the greatest achievements in television history. It holds 96% on Rotten Tomatoes and received numerous awards including the Golden Globe for Best Limited Series. Critics praised Lynch's uncompromising vision, the performances (particularly MacLachlan), and the series' expansion of television's artistic possibilities.</p>
-
-<p>The series stands as a landmark in television history—an 18-hour film by one of cinema's greatest artists, a work that expands the medium's possibilities and challenges viewers to engage with difficult, beautiful, mysterious art. Twin Peaks: The Return is not for everyone—it demands patience, surrender to dream logic, and tolerance for ambiguity—but for those willing to engage with it, it offers rewards unmatched in television. It is a masterpiece.</p>
-
-<h2>Why It Ranks #48</h2>
-
-<h3>7-Dimension Algorithmic Analysis</h3>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">9</span>
-        <div>
-            <div class="dimension-name">Characters & Acting</div>
-            <div class="dimension-weight">Weight: 20% | Weighted Contribution: 1.80</div>
+        <div class="show-info">
+            <h3>📺 Show Information</h3>
+            <p><strong>Created by:</strong> David Lynch & Mark Frost</p>
+            <p><strong>Starring:</strong> Kyle MacLachlan, Laura Dern, Naomi Watts, Michael Cera, Tim Roth, Harry Dean Stanton</p>
+            <p><strong>Premise:</strong> Agent Dale Cooper returns to Twin Peaks 25 years after the events of the original series, navigating a surreal landscape of alternate dimensions, doppelgangers, and existential dread in what many consider David Lynch's magnum opus.</p>
         </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Kyle MacLachlan:</strong> MacLachlan's performance is extraordinary in its range—he plays not only the original Dale Cooper (trapped in the Black Lodge), but also the doppelganger Cooper (a violent criminal), Dougie Jones (a simple man whose body Cooper possesses), and various other iterations across dimensions. MacLachlan's ability to distinguish these characters while maintaining their connections is remarkable. The Dougie Jones storyline—Cooper trapped in a simpleton's body, slowly awakening—spans much of the series and is played by MacLachlan with minimal dialogue and maximum physical comedy.</p>
-        
-        <p><strong>The Ensemble:</strong> The series features returning actors from the original series—Sherilyn Fenn as Audrey Horne, Mädchen Amick as Shelly Johnson, Dana Ashbrook as Bobby Briggs, Kimmy Robertson as Lucy Brennan—and new cast members including Laura Dern as Diane Evans, Naomi Watts as Janey-E Jones, and many others in the sprawling ensemble. Each actor contributes to the series' dreamlike atmosphere.</p>
-        
-        <p><strong>Why 9:</strong> Exceptional performances, particularly MacLachlan's multi-role tour de force. The limitation is some supporting roles that receive limited development in the sprawling narrative.</p>
-    </div>
-</div>
 
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8.5</span>
-        <div>
-            <div class="dimension-name">World Building</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.28</div>
+        <section class="section">
+            <h2 class="section-title">🌙 What It Feels Like to Watch</h2>
+            <div class="section-content">
+                <p>Watching <em>Twin Peaks: The Return</em> is like stepping into a fever dream that refuses to end—or like being gently submerged into dark water where time no longer moves in straight lines. David Lynch delivers his most uncompromising vision here, a <strong>18-hour cinematic odyssey</strong> that defies every convention of television storytelling.</p>
+                
+                <p>There's a hypnotic quality to the experience. Scenes stretch impossibly long—conversations that feel like they could go on forever, shots that linger on faces until they become landscapes, and soundscapes that crawl into your subconscious. You're simultaneously <span class="highlight">bored, terrified, and transfixed</span>.</p>
+
+                <div class="moment-callout">
+                    <h4>🎭 The Dougie Jones Era</h4>
+                    <p>For seven episodes, our hero Agent Cooper is trapped in the body of Dougie Jones—a barely-functional shell who can only repeat words he hears and stare blankly while the world moves around him. It's maddening. It's brilliant. It's Lynch forcing us to sit with discomfort, to question what we expect from our protagonists. The patience required is almost a dare.</p>
+                </div>
+
+                <div class="moment-callout">
+                    <h4>💥 Part 8: The Unspeakable Achievement</h4>
+                    <p>Episode 8 detonates any notion that this is "just TV." A 50-minute art film depicting the birth of evil, the atomic bomb as cosmic doorway, and creatures crawling through the static of existence itself. It contains virtually no dialogue, just pure audio-visual poetry—the Electric Lady Room, the Fireman's golden orb, the Woodsmen chanting "This is the water and this is the well." It's uncomfortable, unforgettable, and <em>completely unnecessary</em> to the plot in any conventional sense. Lynch doesn't care. Neither should you.</p>
+                </div>
+
+                <p>By the final episode, when that devastating line <strong>"What year is this?"</strong> drops, you realize you've been on a journey without a destination. The journey <em>is</em> the destination. The Return doesn't end—it dissolves into pure existential grief. Laura Palmer's scream echoes through dimensions, and so do you, forever changed and possibly damaged, wondering if any of it meant anything at all.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🏆 Why It Ranks: The Seven Dimensions</h2>
+            
+            <div class="dimension-block characters">
+                <div class="dimension-header">
+                    <span class="dimension-title">👥 Characters</span>
+                    <span class="dimension-score">7.8</span>
+                </div>
+                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="section-content">
+                    <p>Kyle MacLachlan delivers arguably his career-defining performance(s), playing not just Dougie but also the terrifying Mr. C and fragments of the original Cooper. The new faces—especially the melancholic presence of Harry Dean Stanton, the quiet desperation of Laura Dern's Diane, and the quirky menace of the hitman duo—add texture to Lynch's tapestry.</p>
+                    <p>However, the sheer sprawl means some characters exist only as impressions, and the fragmented structure deliberately keeps us at arm's length from emotional investment. Lynch wants us to feel <em>disconnected</em>, to recognize that we can never truly know anyone—not even Cooper.</p>
+                </div>
+            </div>
+
+            <div class="dimension-block world">
+                <div class="dimension-header">
+                    <span class="dimension-title">🌍 World Building</span>
+                    <span class="dimension-score">7.5</span>
+                </div>
+                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="section-content">
+                    <p>25 years later, Twin Peaks has changed—and so has the world around it. The series expands into Las Vegas, South Dakota, and beyond, creating a fractured America where small-town nostalgia collides with modern alienation. The Black Lodge mythology deepens significantly.</p>
+                    <p>The Red Room becomes more navigable yet more cryptic. We see the Dutchman's, the Fireman's fortress, and the terrifying convenience store where the Woodsmen dwell. Yet the world-building is intentionally incomplete—Lynch gives us puzzle pieces that may not form a picture, suggesting reality itself is too vast and strange to fully map.</p>
+                </div>
+            </div>
+
+            <div class="dimension-block cinematography">
+                <div class="dimension-header">
+                    <span class="dimension-title">🎥 Cinematography</span>
+                    <span class="dimension-score">9.0</span>
+                </div>
+                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="section-content">
+                    <p>This is <strong>cinema</strong>, shot on digital with an almost meditative patience that no other television series has attempted. Every frame is composed with painterly precision—from the desolate highways of the American West to the hyper-saturated colors of the Black Lodge.</p>
+                    <p>Part 8 alone represents a high watermark in visual storytelling, a tone poem rendered in images that burn themselves into your retinas. The camera doesn't just record; it observes, it waits, it witnesses. Long takes force us to sit with discomfort, with beauty, with nothingness. This is pure visual art operating at the peak of the medium.</p>
+                </div>
+            </div>
+
+            <div class="dimension-block visual">
+                <div class="dimension-header">
+                    <span class="dimension-title">✨ Visual Spectacle</span>
+                    <span class="dimension-score">7.5</span>
+                </div>
+                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="section-content">
+                    <p>When spectacle arrives, it detonates. The atomic test sequence, the Woodsmen's resurrection, Sarah Palmer's face removed, the Experiment in the glass box—these are images of genuine horror and beauty. The visual effects serve the surreal tone perfectly, never feeling out of place in Lynch's dream logic.</p>
+                    <p>Yet The Return withholds spectacle as often as it delivers it. Hours pass with small-scale character moments, deliberately grounding the viewer before the next descent into nightmare. It's a calculated choice, but one that occasionally tests patience beyond endurance.</p>
+                </div>
+            </div>
+
+            <div class="dimension-block conceptual">
+                <div class="dimension-header">
+                    <span class="dimension-title">🧠 Conceptual Density</span>
+                    <span class="dimension-score">8.0</span>
+                </div>
+                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="section-content">
+                    <p>Every scene is freighted with meaning—perhaps too much meaning. The Return grapples with <span class="highlight">time, identity, trauma, the nature of evil, the persistence of love</span>, and the inadequacy of words to capture experience. The atomic age birth of BOB, the Judy mythology, the alternate timeline where Laura never died—each concept is introduced and left to gestate.</p>
+                    <p>This is television as philosophical puzzle, demanding repeat viewings and endless analysis. Yet Lynch famously refuses to explain, leaving the density as something to swim through rather than solve. The concepts are rich, but their opacity keeps us from fully grasping them—a deliberate frustration that Lynch clearly enjoys inflicting.</p>
+                </div>
+            </div>
+
+            <div class="dimension-block narrative">
+                <div class="dimension-header">
+                    <span class="dimension-title">📖 Narrative Drive</span>
+                    <span class="dimension-score">6.5</span>
+                </div>
+                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="section-content">
+                    <p>This is where The Return becomes divisive. The narrative moves in fits and starts, with some episodes containing only fragmented scenes that barely connect. Dougie's coma-like existence stalls the momentum for hours. The Las Vegas mob storyline feels like another show entirely.</p>
+                    <p>Plot threads dangle, forgotten. Characters appear and vanish. When the narrative does coalesce—particularly in the final few episodes—the tension is genuinely unbearable. But getting there requires surrendering expectations. Lynch isn't interested in story in the conventional sense; he's interested in <em>mood</em>, in <em>atmosphere</em>, in <em>texture</em>. The narrative is a ghost that occasionally manifests.</p>
+                </div>
+            </div>
+
+            <div class="dimension-block resolution">
+                <div class="dimension-header">
+                    <span class="dimension-title">🔚 Resolution</span>
+                    <span class="dimension-score">6.5</span>
+                </div>
+                <div class="score-bar"><div class="score-fill"></div></div>
+                <div class="section-content">
+                    <p>The finale attempts to resolve and simultaneously destroys any hope of closure. Cooper moves through time to save Laura, only to find himself in an alternate reality where nothing makes sense. The famous final scene—"What year is this?" followed by Laura's scream—rejects resolution entirely.</p>
+                    <p>For some, this is profound: the trauma of Laura Palmer cannot be undone, evil persists across timelines, and our hero is lost in infinite regression. For others, it's maddening—a refusal to commit, a smirk at the audience's desire for meaning. Lynch has said there won't be more. This is the end. And it's not an ending at all.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">⚖️ Strengths & Weaknesses</h2>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>Strengths</h4>
+                    <ul>
+                        <li>Uncompromising artistic vision from a master</li>
+                        <li>Episode 8: a genuine experimental film</li>
+                        <li>Kyle MacLachlan's multi-role performance</li>
+                        <li>Haunting sound design and visual poetry</li>
+                        <li>Genuine moments of transcendent horror and beauty</li>
+                        <li>Rewards deep analysis and repeat viewing</li>
+                        <li>Challenges what television can be</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>Weaknesses</h4>
+                    <ul>
+                        <li>Deliberate narrative frustration</li>
+                        <li>Dougie's storyline lasts far too long</li>
+                        <li>Many plot threads abandoned</li>
+                        <li>Demands patience many viewers won't have</li>
+                        <li>Final episode feels like abrupt truncation</li>
+                        <li>Self-indulgence masquerading as depth</li>
+                        <li>Emotional detachment by design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="final-score-section">
+            <h2>Final Verdict</h2>
+            <div class="final-score">7.39</div>
+            <div class="score-label">Overall Score</div>
+            <p style="margin-top: 25px; font-size: 1.1em; color: rgba(255,255,255,0.9);">
+                A singular, maddening, essential work. Not for everyone—but impossible to forget.
+            </p>
         </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Black Lodge:</strong> The series expands the mythology of the Black Lodge and the White Lodge, the supernatural dimensions that exist alongside the physical world. The Red Room, the Man from Another Place, the Giant, Judy, the Woodsmen—these elements create a mythology that is both terrifying and compelling. The series suggests that evil is not merely human but cosmic.</p>
-        
-        <p><strong>Twin Peaks:</strong> The town of Twin Peaks is expanded and deepened—the familiar locations (the Double R Diner, the Sheriff's station, the Great Northern Hotel) are revisited 25 years later, showing the passage of time and the persistence of mystery. The town becomes a character in itself, a place where the ordinary and the supernatural coexist.</p>
-        
-        <p><strong>Why 8.5:</strong> Exceptional supernatural world-building that expands the original series' mythology. The limitation is deliberate ambiguity—Lynch refuses to explain the mythology fully, which may frustrate some viewers.</p>
-    </div>
-</div>
 
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">9.5</span>
-        <div>
-            <div class="dimension-name">Cinematography</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.43</div>
-        </div>
+        <footer style="text-align: center; padding: 40px 0; color: #666; font-size: 0.9em;">
+            <p>Generated by Cyberclaw TV Analysis System</p>
+            <p style="margin-top: 10px;">"The owls are not what they seem."</p>
+        </footer>
     </div>
-    <div class="dimension-content">
-        <p><strong>Peter Deming's Visual Poetry:</strong> Cinematographer Peter Deming creates a distinctive visual language that shifts between the mundane and the surreal. The Twin Peaks locations are shot with nostalgic warmth, while the Black Lodge sequences are abstract and terrifying. The series uses light and shadow, color and desaturation, to create emotional atmosphere. The visual language is patient, contemplative, and often inexplicable.</p>
-        
-        <p><strong>The Long Takes:</strong> The series features extended sequences shot in single takes—most famously, the opening of Episode 8, which depicts the birth of evil in a nuclear test, followed by the Woodsmen and the frog-moth creature. These sequences create immersive, hypnotic experiences that challenge conventional television pacing.</p>
-        
-        <p><strong>Why 9.5:</strong> Exceptional cinematography that creates atmosphere and challenges conventions. Among television's most visually adventurous works.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7</span>
-        <div>
-            <div class="dimension-name">Visual Spectacle</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.70</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Intimate Scale:</strong> The series operates on intimate scale—character-focused rather than spectacle-driven. The "spectacle" comes from visual experimentation and surreal imagery rather than production scale.</p>
-        
-        <p><strong>The Supernatural:</strong> The Black Lodge sequences and supernatural manifestations provide visual strangeness—abstract spaces, bizarre creatures, dreamlike imagery. These sequences achieve visual impact through surrealism rather than scale.</p>
-        
-        <p><strong>Why 7:</strong> Appropriate spectacle for intimate surrealist drama. The limitation is small scale—this is a character study, not an epic.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8.5</span>
-        <div>
-            <div class="dimension-name">Conceptual Density</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.28</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Good and Evil:</strong> The series explores the nature of good and evil through the Black Lodge mythology—the Man from Another Place, Bob, Judy, the Woodsmen. These supernatural entities represent cosmic forces that operate beyond human morality. The series suggests that evil is not merely human choice but a fundamental force of existence.</p>
-        
-        <p><strong>Identity and Duality:</strong> The series explores duality through the multiple Coopers—the original, the doppelganger, Dougie Jones. The question of identity—what makes us who we are—is central to the series. The doppelganger plot suggests that we all have shadow selves, dark potentials.</p>
-        
-        <p><strong>Time and Memory:</strong> The series plays with time—25 years have passed in the real world and in the story, characters have aged, memories have faded or been distorted. The supernatural elements operate outside normal time. The series suggests that the past is never truly past, that it continues to operate in the present.</p>
-        
-        <p><strong>Why 8.5:</strong> Exceptional thematic depth exploring good and evil, identity, and time. The limitation is deliberate obscurity—Lynch refuses to explain his themes explicitly, which may frustrate viewers seeking clarity.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7.5</span>
-        <div>
-            <div class="dimension-name">Narrative Drive</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.13</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Structure:</strong> The series defies conventional narrative structure—episodes vary wildly in length, focus, and tone. Multiple storylines unfold simultaneously across different locations and dimensions. The narrative is fragmented, dreamlike, and often inexplicable. This structure is deliberate—Lynch creates a viewing experience that mirrors the logic of dreams.</p>
-        
-        <p><strong>The Pacing:</strong> The series moves at its own pace—scenes extend far beyond narrative necessity, moments of silence are held for uncomfortable lengths, action is often elided in favor of atmosphere. The pacing requires patience and surrender to Lynch's rhythm.</p>
-        
-        <p><strong>Why 7.5:</strong> The narrative is deliberately challenging, which limits traditional "drive." The strength is atmospheric and thematic rather than plot-based.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7.5</span>
-        <div>
-            <div class="dimension-name">Narrative Resolution</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.75</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Finale:</strong> The series concludes with Episode 18, which provides some resolution while maintaining mystery. Cooper's attempt to save Laura Palmer in the past, the final scene's ambiguity, the unresolved questions—all are deliberate. Lynch refuses to provide easy answers, suggesting that some mysteries cannot be solved, that the search for meaning is itself the point.</p>
-        
-        <p><strong>The Unresolved:</strong> Many plot threads are left unresolved, many questions unanswered. This is intentional—Lynch is not interested in narrative closure but in creating a work that lingers in the mind, that continues to provoke questions long after viewing.</p>
-        
-        <p><strong>Why 7.5:</strong> The resolution is deliberately ambiguous, which satisfies Lynch's artistic intentions but may frustrate viewers seeking closure. The strength is thematic and atmospheric rather than narrative.</p>
-    </div>
-</div>
-
-<div class="final-score">
-    <div>FINAL SCORE</div>
-    <div class="final-score-value">7.75</div>
-
-    <div style="color:#888; margin-top:1rem; font-size:0.9rem">
-        The final score of 7.75 reflects Twin Peaks: The Return's exceptional artistic achievement across all seven dimensions. Its combination of David Lynch's uncompromising vision, Kyle MacLachlan's extraordinary performance, and the expansion of television's artistic possibilities—culminating in an 18-hour surrealist masterpiece—secures its place as one of the most important works in television history. The Return is not for everyone—it demands patience, surrender to dream logic, and tolerance for ambiguity—but for those willing to engage with it, it offers rewards unmatched in the medium. It is television as art, created by a master at the height of his powers.
-    </div>
-</div>
-
 </body>
 </html>
