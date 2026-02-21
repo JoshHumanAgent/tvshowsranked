@@ -213,7 +213,19 @@
             .sidebar { position: static; }
             .hero h1 { font-size: 2.5rem; }
         }
-    </style>
+    .rankings-section { margin-bottom: 2rem; }
+.rankings-header { text-align: center; margin-bottom: 2.5rem; }
+.rankings-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; }
+.rankings-subtitle { color: var(--text-dim); font-size: 1.1rem; }
+.dimension-grid { display: grid; gap: 1.5rem; }
+.dimension-block { background: rgba(30,30,30,0.8); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.1); display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; }
+.dimension-score { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-width: 100px; }
+.score-circle { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; position: relative; }
+.score-circle::before { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: conic-gradient(var(--primary) calc(var(--score) * 10%), var(--dark) 0); z-index: -1; }
+.score-circle::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: rgba(30,30,30,0.8); }
+.score-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+.dimension-content h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+</style>
 </head>
 <body>
     <div class="hero">
@@ -259,9 +271,21 @@
                     </div>
                 </div>
 
-                <h2 class="section-title">Character Analysis: Score 8.8/10</h2>
-                <div class="card">
-                    <p>The character work in Andor represents some of the most sophisticated writing in the entire Star Wars franchise. Diego Luna reprises his role as Cassian Andor with remarkable depth, transforming what was essentially a plot device in Rogue One into one of television's most compelling anti-heroes. His portrayal captures a man haunted by his past actions during the Clone Wars, carrying the weight of moral compromise while still harboring enough humanity to be moved toward sacrifice.</p>
+                <section class="rankings-section">
+    <div class="rankings-header">
+        <h2 class="rankings-title">🏆 Why It Ranks</h2>
+        <p class="rankings-subtitle">A detailed breakdown across seven key dimensions</p>
+    </div>
+    <div class="dimension-grid">
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7.5;" data-score="7.5"><span>7.5</span></div>
+                <span class="score-label">CHARACTERS</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Characters</h3>
+                <p>The character work in Andor represents some of the most sophisticated writing in the entire Star Wars franchise. Diego Luna reprises his role as Cassian Andor with remarkable depth, transforming what was essentially a plot device in Rogue One into one of television's most compelling anti-heroes. His portrayal captures a man haunted by his past actions during the Clone Wars, carrying the weight of moral compromise while still harboring enough humanity to be moved toward sacrifice.</p>
                     
                     <p>However, the true revelation is Stellan Skarsgård as Luthen Rael. Operating a covert antiquities gallery on Coruscant as his cover, Luthen represents the moral engine of the Rebellion—a man who has sacrificed his own soul for the cause. Skarsgård delivers a performance of controlled intensity, particularly in the <span class="highlight">"One Way Out"</span> speech that serves as the series' philosophical centerpiece. His monologue about burning his life "to make a sunrise that I know I'll never see" encapsulates the show's themes of anonymous sacrifice.</p>
 
@@ -303,10 +327,17 @@
                         <p>Unlike traditional Star Wars heroes who operate with moral clarity, Andor's characters exist in perpetual gray zones. Cassian has murdered in cold blood. Mon Mothma contemplates selling her own daughter into an arranged marriage to fund the Rebellion. Even ISB Supervisor Dedra Meero (Denise Gough) is portrayed with unsettling humanity—she genuinely believes in Imperial order and efficiency. This refusal to provide easy moral categorization elevates the series above typical genre fare.</p>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <h2 class="section-title">World-Building: Score 9.0/10</h2>
-                <div class="card">
-                    <p>The world-building in Andor operates on a granular, almost anthropological level. Production designer Luke Hull and his team have created a lived-in galaxy that feels simultaneously futuristic and grounded in material reality. Rather than focusing on the Senate chambers of Coruscant or Jedi temples, the show explores industrial settlements, corporate security precincts, and prison complexes that feel uncomfortably contemporary.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 9.0;" data-score="9.0"><span>9.0</span></div>
+                <span class="score-label">WORLD BUILDING</span>
+            </div>
+            <div class="dimension-content">
+                <h3>World Building</h3>
+                <p>The world-building in Andor operates on a granular, almost anthropological level. Production designer Luke Hull and his team have created a lived-in galaxy that feels simultaneously futuristic and grounded in material reality. Rather than focusing on the Senate chambers of Coruscant or Jedi temples, the show explores industrial settlements, corporate security precincts, and prison complexes that feel uncomfortably contemporary.</p>
 
                     <div class="quote">
                         "The Empire is a disease that thrives in darkness. It is never more alive than when we sleep."
@@ -359,10 +390,17 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+        </div>
 
-                <h2 class="section-title">Cinematography: Score 9.0/10</h2>
-                <div class="card">
-                    <p>Directors Benjamin Caron, Toby Haynes, and Susanna White bring cinematic scope to television formatting. The show employs practical locations, natural lighting, and deliberate pacing that distinguishes it from the artificial sheen of other Disney+ Star Wars productions. Shot on location in Scotland and the UK, Andor's vistas of industrial landscapes and coastal settlements ground the science fiction in physical reality.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8.0;" data-score="8.0"><span>8.0</span></div>
+                <span class="score-label">CINEMATOGRAPHY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Cinematography</h3>
+                <p>Directors Benjamin Caron, Toby Haynes, and Susanna White bring cinematic scope to television formatting. The show employs practical locations, natural lighting, and deliberate pacing that distinguishes it from the artificial sheen of other Disney+ Star Wars productions. Shot on location in Scotland and the UK, Andor's vistas of industrial landscapes and coastal settlements ground the science fiction in physical reality.</p>
 
                     <p>The visual approach deliberately evokes 1970s paranoid thrillers—particularly films like The Conversation and All the President's Men. Surveillance is a visual motif throughout, with recurring shots of security cameras, one-way mirrors, and observation decks. The color palette shifts between the cold blues and whites of Imperial facilities and the warm amber tones of Rebel safe houses.</p>
 
@@ -379,38 +417,69 @@
 
                     <p>Nicholas Britell's score deserves special mention—a departure from Star Wars' traditional orchestral bombast. Britell (known for Succession and Moonlight) creates a soundscape that blends electronic textures with restrained orchestral elements. The unsettling synth pulses that accompany ISB scenes create tonal dread, while the mournful strings of Luthen's theme convey sacrifice.</p>
                 </div>
+            </div>
+        </div>
 
-                <h2 class="section-title">Spectacle: Score 7.5/10</h2>
-                <div class="card">
-                    <p>Andor deliberately restrains its spectacle quotient compared to other Star Wars productions, which may disappoint viewers seeking constant action. The show's "setpieces" are more often conversations than explosions, though when violence does erupt, it carries genuine weight. The Aldhani heist sequence represents the season's primary action centerpiece—a meticulously planned operation that goes wrong in ways that feel earned rather than contrived.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 9.0;" data-score="9.0"><span>9.0</span></div>
+                <span class="score-label">VISUAL SPECTACLE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Visual Spectacle</h3>
+                <p>The character work in Andor represents some of the most sophisticated writing in the entire Star Wars franchise. Diego Luna reprises his role as Cassian Andor with remarkable depth, transforming what was essentially a plot device in Rogue One into one of television's most compelling anti-heroes. His portrayal captures a man haunted by his past actions during the Clone Wars, carrying the weight of moral compromise while still harboring enough humanity to be moved toward sacrifice.</p>
+                    
+                    <p>However, the true revelation is Stellan Skarsgård as Luthen Rael. Operating a covert antiquities gallery on Coruscant as his cover, Luthen represents the moral engine of the Rebellion—a man who has sacrificed his own soul for the cause. Skarsgård delivers a performance of controlled intensity, particularly in the <span class="highlight">"One Way Out"</span> speech that serves as the series' philosophical centerpiece. His monologue about burning his life "to make a sunrise that I know I'll never see" encapsulates the show's themes of anonymous sacrifice.</p>
 
-                    <p>The prison break on Narkina 5 provides the most sustained action sequence, with floor flooding creating claustrophobic tension. These sequences work because Gilroy and his writers understand that restraint amplifies impact. When a Star Destroyer does appear above Ferrix, its presence feels earned and terrifying.</p>
-
-                    <div class="pros-cons">
-                        <div class="pros">
-                            <h3 style="color: #4caf50; margin-bottom: 15px;">Effective Spectacle</h3>
-                            <ul>
-                                <li>Practical location shooting</li>
-                                <li>Realistic space physics</li>
-                                <li>Tactical combat sequences</li>
-                                <li>Atmospheric dread</li>
-                            </ul>
+                    <div class="character-grid">
+                        <div class="character-card">
+                            <div class="character-name">Cassian Andor / Clem Andor</div>
+                            <div class="actor-name">Diego Luna</div>
+                            <p style="font-size: 0.9rem; margin: 10px 0 0;">A cynical thief dragged into rebellion. His arc from self-preservation to revolutionary commitment forms the narrative spine of the series.</p>
                         </div>
-                        <div class="cons">
-                            <h3 style="color: var(--secondary); margin-bottom: 15px;">Limited Scale</h3>
-                            <ul>
-                                <li>No lightsaber duels</li>
-                                <li>Minimal space battles</li>
-                                <li>Few alien species</li>
-                                <li>CG restraint limits wow factor</li>
-                            </ul>
+                        <div class="character-card">
+                            <div class="character-name">Luthen Rael</div>
+                            <div class="actor-name">Stellan Skarsgård</div>
+                            <p style="font-size: 0.9rem; margin: 10px 0 0;">A spy master operating behind an antiquities dealer facade. The moral architect of the Rebel Alliance willing to sacrifice everything.</p>
+                        </div>
+                        <div class="character-card">
+                            <div class="character-name">Senator Mon Mothma</div>
+                            <div class="actor-name">Genevieve O'Reilly</div>
+                            <p style="font-size: 0.9rem; margin: 10px 0 0;">A closeted revolutionary navigating Imperial bureaucracy while funding the Rebellion through increasingly desperate means.</p>
+                        </div>
+                        <div class="character-card">
+                            <character-name>Skeen</div>
+                            <div class="actor-name">Gershon</div>
+                            <p style="font-size: 0.9rem; margin: 10px 0 0;">A Aldhani heist crew member whose death profoundly impacts Cassian's understanding of sacrifice.</p>
+                        </div>
+                        <div class="character-card">
+                            <div class="character-name">Syril Karn</div>
+                            <div class="actor-name">Kyle Soller</div>
+                            <p style="font-size: 0.9rem; margin: 10px 0 0;">An Imperial corporate security officer whose ambition and insecurity make him a terrifying antagonist.</p>
+                        </div>
+                        <div class="character-card">
+                            <div class="character-name">Kino Loy</div>
+                            <div class="actor-name">Andy Serkis</div>
+                            <p style="font-size: 0.9rem; margin: 10px 0 0;">A prison floor manager who becomes an unlikely revolutionary leader during the Narkina 5 arc.</p>
                         </div>
                     </div>
-                </div>
 
-                <h2 class="section-title">Concept & Themes: Score 9.2/10</h2>
-                <div class="card">
-                    <p>Andor's conceptual framework is where the series achieves genuine artistic distinction. Tony Gilroy uses the Star Wars galaxy to interrogate real-world authoritarianism, surveillance capitalism, and revolutionary ethics. The show asks uncomfortable questions about how liberation movements justify violence, the cost of collective action, and whether meaningful resistance is even possible within totalitarian systems.</p>
+                    <div class="analysis-box">
+                        <h3 style="color: var(--primary); margin-bottom: 15px;">Character Complexity Analysis</h3>
+                        <p>Unlike traditional Star Wars heroes who operate with moral clarity, Andor's characters exist in perpetual gray zones. Cassian has murdered in cold blood. Mon Mothma contemplates selling her own daughter into an arranged marriage to fund the Rebellion. Even ISB Supervisor Dedra Meero (Denise Gough) is portrayed with unsettling humanity—she genuinely believes in Imperial order and efficiency. This refusal to provide easy moral categorization elevates the series above typical genre fare.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8.0;" data-score="8.0"><span>8.0</span></div>
+                <span class="score-label">CONCEPTUAL DENSITY</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Conceptual Density</h3>
+                <p>Andor's conceptual framework is where the series achieves genuine artistic distinction. Tony Gilroy uses the Star Wars galaxy to interrogate real-world authoritarianism, surveillance capitalism, and revolutionary ethics. The show asks uncomfortable questions about how liberation movements justify violence, the cost of collective action, and whether meaningful resistance is even possible within totalitarian systems.</p>
 
                     <div class="quote">
                         "Freedom is a purely human need. No other creature requires it."
@@ -424,10 +493,17 @@
 
                     <p><strong>Carceral Capitalism:</b> The Narkina 5 prison arc functions as explicit critique of prison labor exploitation. The revelation that prisoners are building parts for the Death Star they will never see completed—a weapon that will destroy them—constitutes the show's most devastating irony.</p>
                 </div>
+            </div>
+        </div>
 
-                <h2 class="section-title">Narrative Drive: Score 9.0/10</h2>
-                <div class="card">
-                    <p>Andor employs a deliberately slow-burn narrative structure that trusts its audience to pay attention. The series utilizes multiple storylines—Cassian's journey, Mon Mothma's political maneuvering, the ISB investigation, and later the prison break—that gradually intersect. This mosaic approach requires patience but rewards careful viewing with thematic resonance.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 7.5;" data-score="7.5"><span>7.5</span></div>
+                <span class="score-label">NARRATIVE DRIVE</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Narrative Drive</h3>
+                <p>Andor employs a deliberately slow-burn narrative structure that trusts its audience to pay attention. The series utilizes multiple storylines—Cassian's journey, Mon Mothma's political maneuvering, the ISB investigation, and later the prison break—that gradually intersect. This mosaic approach requires patience but rewards careful viewing with thematic resonance.</p>
 
                     <p>The Aldhani heist episode ("The Eye") represents the season's structural centerpiece, providing a three-episode arc of sustained tension. The heist structure allows Gilroy to demonstrate how meticulous preparation and human variables create dramatic stakes. When things inevitably go wrong, the consequences feel earned because the audience understands the operational parameters.</p>
 
@@ -454,10 +530,17 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <h2 class="section-title">Resolution & Payoff: Score 8.5/10</h2>
-                <div class="card">
-                    <p>The first season concludes with Ferrix's funeral and Cassian's commitment to the Rebellion, providing emotional closure while setting up the four-year time jump of Season Two. The finale weaves together all narrative threads—the corporate takeover, the ISB crackdown, and Cassian's personal reckoning—into a coherent statement about sacrifice and community.</p>
+        <div class="dimension-block">
+            <div class="dimension-score">
+                <div class="score-circle" style="--score: 8.0;" data-score="8.0"><span>8.0</span></div>
+                <span class="score-label">RESOLUTION</span>
+            </div>
+            <div class="dimension-content">
+                <h3>Resolution</h3>
+                <p>The first season concludes with Ferrix's funeral and Cassian's commitment to the Rebellion, providing emotional closure while setting up the four-year time jump of Season Two. The finale weaves together all narrative threads—the corporate takeover, the ISB crackdown, and Cassian's personal reckoning—into a coherent statement about sacrifice and community.</p>
 
                     <p>The second and final season (2025) accelerates the timeline, compressing four years into twelve episodes through seasonal time jumps. While some character development feels rushed in this format, the season delivers devastating payoffs, particularly in its depiction of the Ghorman Massacre and Cassian's final transformation into the man who will steal the Death Star plans.</p>
 
@@ -466,8 +549,12 @@
                         <p>Perhaps Andor's greatest narrative achievement is making Cassian's fate in Rogue One feel inevitable rather than predetermined. By the series' end, we understand exactly why this man is willing to sacrifice everything. The tragedy of knowing how Cassian's story ends only amplifies the emotional weight of his choices.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <h2 class="section-title">Final Verdict: 8.8/10</h2>
+<h2 class="section-title">Final Verdict: 8.8/10</h2>
                 <div class="card">
                     <p>Andor represents the maturation of Star Wars as a narrative medium capable of sustaining serious dramatic television. Tony Gilroy and his collaborators have crafted something genuinely unique—a spy thriller, a prison drama, a political procedural, and a character study woven into a cohesive exploration of revolutionary sacrifice.</p>
 
