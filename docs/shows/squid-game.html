@@ -1,191 +1,683 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Squid Game - Dynamic Rank Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game (2021-) - TV Shows Ranked</title>
     <style>
-        body { font-family: 'Source Sans Pro', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0d0d12; padding: 2rem; }
-        h2 { color: #ffd700; font-family: 'Oranienbaum', serif; border-bottom: 2px solid #2a2a35; padding-bottom: 0.5rem; }
-        h3 { color: #c0a050; font-family: 'Unna', serif; margin-top: 2rem; }
-        .dimension-block { background: #1a1a24; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #c0a050; }
-        .dimension-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-        .dimension-score { font-size: 1.5rem; color: #ffd700; font-weight: bold; min-width: 60px; }
-        .dimension-name { font-size: 1.2rem; color: #e0e0e0; font-weight: 600; }
-        .dimension-weight { color: #888; font-size: 0.9rem; }
-        .dimension-content { color: #b0b0b0; line-height: 1.8; }
-        .final-score { background: linear-gradient(135deg, #1a1a24, #2a2a35); padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem; border: 2px solid #ffd700; }
-        .final-score-value { font-size: 3rem; color: #ffd700; font-weight: bold; }
+        :root {
+            --bg-primary: #0d0d0d;
+            --bg-secondary: #1a1a1a;
+            --bg-tertiary: #2d2d2d;
+            --text-primary: #f5f5f5;
+            --text-secondary: #b0b0b0;
+            --accent-primary: #ff6b9d;
+            --accent-secondary: #c92a2a;
+            --accent-green: #40c057;
+            --border-color: #333;
+            --shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header Section */
+        .show-header {
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            border-radius: 16px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .show-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b9d, #ff8fab, #ffc2d1);
+        }
+
+        .platform-badge {
+            display: inline-block;
+            background: #e50914;
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .show-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 50%, #ffc2d1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .show-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-item span {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .creator-section {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .creator-section strong {
+            color: var(--text-primary);
+        }
+
+        .cast-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .cast-member {
+            background: var(--bg-tertiary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .cast-member:hover {
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+            border-color: var(--accent-primary);
+        }
+
+        /* Plot Section */
+        .plot-section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--accent-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .plot-text {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        /* Feelings Section */
+        .feelings-section {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, #1f1f2e 100%);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .feelings-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .feelings-content {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            line-height: 2;
+        }
+
+        .feelings-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-box {
+            background: rgba(255, 107, 157, 0.1);
+            border-left: 4px solid var(--accent-primary);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-primary);
+        }
+
+        /* Phenomenon Grid */
+        .phenomenon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .phenomenon-card {
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .phenomenon-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-primary);
+        }
+
+        .phenomenon-card h4 {
+            color: var(--accent-primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .phenomenon-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Rankings Section */
+        .rankings-section {
+            margin-bottom: 2rem;
+        }
+
+        .rankings-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .rankings-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+        }
+
+        .rankings-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Dimension Blocks */
+        .dimension-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .dimension-block {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .dimension-block:hover {
+            border-color: var(--accent-primary);
+        }
+
+        .dimension-score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 100px;
+        }
+
+        .score-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: conic-gradient(var(--accent-primary) calc(var(--score) * 10%), var(--bg-tertiary) 0);
+            z-index: -1;
+        }
+
+        .score-circle::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+        }
+
+        .score-circle span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .score-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .dimension-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .dimension-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Visual Spectacle Highlight */
+        .dimension-block.visual-spectacle .score-circle::before {
+            background: conic-gradient(#ffd43b calc(9 * 10%), var(--bg-tertiary) 0);
+        }
+
+        /* Final Score Block */
+        .final-score-section {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, #1f1f2e 100%);
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            border: 2px solid var(--accent-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-score-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,107,157,0.1) 0%, transparent 50%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .final-score-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-score-label {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .final-score-value {
+            font-size: 5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-primary) 0%, #ff8fab 50%, #ffc2d1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .final-score-desc {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .verdict-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .show-title {
+                font-size: 2.2rem;
+            }
+
+            .show-header {
+                padding: 1.5rem;
+            }
+
+            .dimension-block {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .dimension-score {
+                margin: 0 auto;
+            }
+
+            .final-score-value {
+                font-size: 3.5rem;
+            }
+
+            .phenomenon-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        .dimension-block {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .dimension-block:nth-child(1) { animation-delay: 0.1s; }
+        .dimension-block:nth-child(2) { animation-delay: 0.2s; }
+        .dimension-block:nth-child(3) { animation-delay: 0.3s; }
+        .dimension-block:nth-child(4) { animation-delay: 0.4s; }
+        .dimension-block:nth-child(5) { animation-delay: 0.5s; }
+        .dimension-block:nth-child(6) { animation-delay: 0.6s; }
+        .dimension-block:nth-child(7) { animation-delay: 0.7s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Score colors */
+        .score-high { color: var(--accent-green); }
+        .score-medium { color: #fab005; }
+        .score-low { color: var(--accent-secondary); }
     </style>
 </head>
 <body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="show-header">
+            <span class="platform-badge">Netflix</span>
+            <h1 class="show-title">Squid Game</h1>
+            <div class="show-meta">
+                <div class="meta-item">
+                    <span>2021-</span> 
+                </div>
+                <div class="meta-item">
+                    <span>2 Seasons</span> 
+                </div>
+                <div class="meta-item">
+                    <span>13 Episodes</span> 
+                </div>
+                <div class="meta-item">
+                    <span>Korean</span> 
+                </div>
+                <div class="meta-item">
+                    <span>Thriller / Drama</span> 
+                </div>
+            </div>
+            <div class="creator-section">
+                <strong>Created by:</strong> Hwang Dong-hyuk
+            </div>
+            <div class="cast-grid">
+                <span class="cast-member">Lee Jung-jae</span>
+                <span class="cast-member">Park Hae-soo</span>
+                <span class="cast-member">Jung Ho-yeon</span>
+                <span class="cast-member">Wi Ha-jun</span>
+                <span class="cast-member">Oh Yeong-su</span>
+                <span class="cast-member">Lee Byung-hun</span>
+            </div>
+        </header>
 
-<h2>What It Feels Like to Watch</h2>
+        <!-- Plot Section -->
+        <section class="plot-section">
+            <h2 class="section-title">📖 The Premise</h2>
+            <p class="plot-text">
+                Hundreds of desperate, debt-ridden players receive mysterious invitations to compete in a series of children's games for a life-changing cash prize. The catch? Every game carries deadly consequences for elimination. Seong Gi-hun, a divorced gambling addict, finds himself among the contestants, forced to confront his past failures and moral boundaries as he navigates a brutal survival competition where the only way out is through—or not at all.
+            </p>
+        </section>
 
-<p>Squid Game arrived as a global phenomenon—a Korean drama that became Netflix's most-watched series, inspiring Halloween costumes, real-world recreations, and endless discourse about capitalism. Created by Hwang Dong-hyuk, the series depicted a deadly competition where 456 desperate contestants played children's games for a massive cash prize. The loser of each round was executed. The winner took everything.</p>
+        <!-- Feelings Section -->
+        <section class="feelings-section">
+            <h2 class="feelings-title">🎭 What It Feels Like to Watch</h2>
+            <div class="feelings-content">
+                <p>
+                    Watching <em>Squid Game</em> is like being plunged into a fever dream of candy-colored nightmares. The visual language is deliberately, almost aggressively cheerful—pastel playgrounds, giant dollhouses, neon staircases spiraling into infinity—yet every frame drips with impending doom. The juxtaposition is jarring, intoxicating, and deeply unsettling. You find yourself marveling at the production design while recoiling from the violence it frames.
+                </p>
+                
+                <div class="highlight-box">
+                    <p>
+                        <strong>The central discomfort:</strong> You're not just watching a death game—you're forced to ask yourself what you'd do for 45.6 billion won. The show doesn't let you pretend you're above it.
+                    </p>
+                </div>
 
-<p>The experience of watching Squid Game is one of visceral tension and social critique intertwined. The children's games—Red Light, Green Light; Honeycomb (Dalgona); Tug of War; Marbles—became horror through the context. The first game, Red Light, Green Light, established the premise in minutes: a giant animatronic doll turned to scan for movement, and those detected moving were shot. The cheerful playground game became mass execution. This was the series' formula: childhood innocence corrupted by adult desperation.</p>
+                <p>
+                    The emotional experience oscillates between adrenaline-fueled suspense and genuine heartbreak. Between games, the show lingers on character backstories that transform contestants from faceless competitors into people you know—the immigrant worker supporting his mother, the North Korean defector trying to rescue her family, the genius who destroyed his own future. Each elimination hits harder because you've been made to care, to understand exactly what survival means to each player.
+                </p>
 
-<p>Lee Jung-jae's Seong Gi-hun anchored the series as a gambling addict whose failures had destroyed his relationships and left him with nothing. He was an unlikely hero—not particularly smart, not particularly brave, not particularly moral. His survival often depended on luck, alliance, or the failures of others. He was an everyman: flawed, desperate, sometimes cruel, ultimately human. The series refused to make him a conventional hero; his victory was hollow, his survival was compromised, his redemption was uncertain.</p>
+                <p>
+                    As a piece of social commentary, it lands like a sledgehammer. The capitalism critique isn't subtle, and it doesn't need to be. The VIPs—wealthy foreigners who bet on human lives for entertainment—are barely caricatures of real-world oligarchs. The show forces viewers to confront how economic desperation devalues human life, how the promise of financial salvation can make morality negotiable. It's uncomfortable because it's recognizable.
+                </p>
 
-<p>What distinguished Squid Game from the death-game genre it borrowed from was its explicit critique of capitalism. The contestants were there because debt had destroyed them; the games were commentary on a system where the poor competed for scraps while the wealthy watched. The show's visual symbolism—the green tracksuits, the pink guards, the geometric architecture—emphasized dehumanization. The contestants were numbers, not names, until the final episode revealed that the game had always been for the amusement of bored rich people.</p>
+                <div class="phenomenon-grid">
+                    <div class="phenomenon-card">
+                        <h4>🇰🇷 The Korean Phenomenon</h4>
+                        <p>In South Korea, the show sparked intense cultural conversation about household debt, which exceeds 100% of GDP. The "squid game" itself—a real children's game—became suddenly, darkly significant to a generation.</p>
+                    </div>
+                    <div class="phenomenon-card">
+                        <h4>🌐 The Netflix Phenomenon</h4>
+                        <p>With 1.65 billion hours viewed in its first 28 days, it became Netflix's most-watched series ever. It shattered the "one-inch barrier" of subtitles, proving global audiences would embrace non-English content.</p>
+                    </div>
+                    <div class="phenomenon-card">
+                        <h4>🎨 The Aesthetic Revolution</h4>
+                        <p>The show's visual language—pink guards, green tracksuits, geometric playgrounds—instantly permeated global pop culture. Halloween costumes, TikTok filters, Roblox games: the imagery became inescapable.</p>
+                    </div>
+                    <div class="phenomenon-card">
+                        <h4>💰 The Capitalism Mirror</h4>
+                        <p>Viewers worldwide recognized their own economic anxieties refracted through Korean specificity. Debt, desperation, and the illusion of meritocracy resonated across borders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<h2>Why It Ranks #65</h2>
+        <!-- Rankings Section -->
+        <section class="rankings-section">
+            <div class="rankings-header">
+                <h2 class="rankings-title">🏆 Why It Ranks</h2>
+                <p class="rankings-subtitle">A seven-dimension analysis of what makes this show exceptional</p>
+            </div>
 
-<h3>7-Dimension Algorithmic Analysis</h3>
+            <div class="dimension-grid">
+                <!-- Characters -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle score-medium" style="--score: 7.5;"><span>7.5</span></div>
+                        <span class="score-label">CHARACTERS</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>The Desperate and the Damned</h3>
+                        <p>
+                            The character work in <em>Squid Game</em> operates on two levels: the archetypal and the specific. Gi-hun begins as a familiar trope—the lovable loser who needs redemption—but Lee Jung-jae's performance infuses him with a desperate humanity that elevates the material. The supporting cast shines in their limited screen time. Jung Ho-yeon's Kang Sae-byeok captures feral survival instinct barely contained in stillness, while Oh Yeong-su's Oh Il-nam delivers one of the most devastating turns in television history. Where the show occasionally falters is in its villains—the Front Man's motivation remains frustratingly opaque until late revelations, and some VIPs verge on cartoonish. The character arcs are compelling but occasionally simplified for narrative momentum. The relationships—particularly the tentative alliance between Gi-hun and Sang-woo—carry genuine emotional weight, exploring how desperation strips away social pretense to reveal raw human nature. It's character work that serves theme first, but serves it well.
+                        </p>
+                    </div>
+                </div>
 
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7.5</span>
-        <div>
-            <div class="dimension-name">Characters & Acting</div>
-            <div class="dimension-weight">Weight: 20% | Weighted Contribution: 1.50</div>
-        </div>
+                <!-- World Building -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle score-medium" style="--score: 7.5;"><span>7.5</span></div>
+                        <span class="score-label">WORLD BUILDING</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>The Architecture of Death</h3>
+                        <p>
+                            The game compound exists in a liminal space between dream and nightmare, between childhood innocence and adult brutality. Production designer Chae Kyoung-sun created a world that feels simultaneously vast and claustrophobic, with staircases leading nowhere and dormitories that dwarf their human contents. The mythology of the games—implied to span decades, involve international networks of recruiters, and maintain impossible secrecy—invites suspension of disbelief that the show mostly earns through sheer commitment to its aesthetic. The rules of the game world operate with brutal logic: fairness in procedure, cruelty in consequence. What holds this dimension back from perfection is the occasional convenience of its secrecy mechanisms and the limited exploration of how such an operation sustains itself logistically. The outside world, glimpsed through detective Jun-ho's investigation, feels less fully realized than the pink-and-green labyrinth of the compound. Still, the world building succeeds magnificently at its primary task: making the impossible feel inevitable.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cinematography -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle score-high" style="--score: 8;"><span>8.0</span></div>
+                        <span class="score-label">CINEMATOGRAPHY</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>Framing the Abyss</h3>
+                        <p>
+                            Cinematographer Lee Hyung-deok approaches the material with remarkable restraint, letting the production design and performances carry the weight while the camera observes with a steady, unblinking eye. The visual language shifts deliberately between the game stages—geometric precision in the dalgona challenge, vertiginous angles in the glass bridge game, intimate claustrophobia in the dormitory. Lee understands that horror often lives in the negative space, in what's not shown, and frequently frames characters against overwhelming backdrops that emphasize their smallness. The night scenes are particularly effective, bathing the compound in artificial light that feels both clinical and theatrical. Special mention must go to the Red Light, Green Light sequence, which establishes the entire visual vocabulary of the series in a single, devastating long take. The camera work becomes more kinetic during action sequences without sacrificing coherence. It's technically accomplished work that never calls attention to itself, serving the story while maintaining a distinctive visual identity that immediately became iconic.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visual Spectacle -->
+                <div class="dimension-block visual-spectacle">
+                    <div class="dimension-score">
+                        <div class="score-circle" style="--score: 9;"><span class="score-high">9.0</span></div>
+                        <span class="score-label">VISUAL SPECTACLE</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>A Carnival of Contradictions</h3>
+                        <p>
+                            This is where <em>Squid Game</em> achieves true greatness. The visual design creates a language so distinctive it instantly entered global iconography: pink-suited guards with geometric masks, green polyester tracksuits numbered in white, the towering doll with her head on a swivel, the impossible Escher-like staircases. Every game environment is a masterclass in production design—childhood nostalgia weaponized into lethal architecture. The tug-of-war platform suspended in darkness, the honeycomb dalliance of the dalgona challenge, the transparent terror of the glass bridge—these images burn themselves into memory not just through shock value but through genuine aesthetic achievement. The color palette operates with surgical precision: the warmth of wood tones and autumnal set dressing against the cold institutional greens and pinks. The scale of the compound suggests impossible resources and infinite space. The visual effects, used sparingly, extend this practical world convincingly. This is blockbuster production design on a streaming budget, creating immersive spaces that feel tactile and immediate. The spectacle serves the themes rather than distracting from them, making the horror more effective by wrapping it in beauty.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Conceptual Density -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle score-high" style="--score: 8;"><span>8.0</span></div>
+                        <span class="score-label">CONCEPTUAL DENSITY</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>Childhood Lost, Capitalism Found</h3>
+                        <p>
+                            The conceptual architecture of <em>Squid Game</em> operates on multiple simultaneous registers. At the surface: survival horror, debt desperation, moral compromise. Beneath: a sustained interrogation of capitalism's commodification of human life, with the games literalizing the competition for limited resources that defines economic existence. The childhood games framework carries rich metaphorical weight—education as preparation for economic warfare, play transformed into deadly seriousness, the loss of innocence that accompanies financial desperation. Each game encodes meaning: Red Light, Green Light as surveillance culture, dalgona as class stratification (the wealthy choose simple shapes), tug-of-war as zero-sum competition, marbles as forced betrayal of intimate relationships. The show interrogates meritocracy's lie, the illusion of equal opportunity when starting positions are fundamentally unequal. The VIPs literalize the spectator economy, the wealthy watching the poor destroy each other for entertainment. Some concepts are explored more thoroughly than others—debt bondage and immigrant exploitation receive detailed attention while the mechanics of recruitment remain mysterious. The conceptual boldness occasionally outstrips the depth of exploration, suggesting more than it fully develops. Still, the density of ideas rewards analysis and rewatching, with layers of meaning emerging from the intersection of Korean specificity and global economic anxiety.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Narrative Drive -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle score-high" style="--score: 8.5;"><span>8.5</span></div>
+                        <span class="score-label">NARRATIVE DRIVE</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>The Irresistible Spiral</h3>
+                        <p>
+                            Hwang Dong-hyuk's writing demonstrates absolute command of narrative tension. The structure is elegant: recruitment, arrival, six games with dormitory interludes, climax, denouement. Each episode operates as a discrete unit while building toward the whole, with cliffhangers that feel earned rather than manufactured. The pacing alternates between game sequences (kinetic, lethal) and character moments (quiet, devastating) with a rhythm that never allows comfort. The revelation of the Front Man's identity lands with genuine shock despite fair foreshadowing. The Jun-ho subplot provides necessary outside perspective while building its own tension through the compound's secret spaces. Where the narrative reaches transcendence is in its willingness to kill characters the audience loves, following the logic of its premise to its brutal conclusion. The marbles episode represents narrative perfection—the game mechanics force emotional devastation in ways that feel both surprising and inevitable. Some late-series mechanics strain credibility, and the final game relies heavily on character psychology that hasn't been fully established. The resolution deliberately refuses easy catharsis, understanding that surviving trauma doesn't mean healing from it. The narrative engine runs with precision until the very end, delivering a complete story that stands alone while leaving room for continuation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Resolution -->
+                <div class="dimension-block">
+                    <div class="dimension-score">
+                        <div class="score-circle score-medium" style="--score: 7.5;"><span>7.5</span></div>
+                        <span class="score-label">RESOLUTION</span>
+                    </div>
+                    <div class="dimension-content">
+                        <h3>The Weight of Blood Money</h3>
+                        <p>
+                            The final episodes face the impossible task of paying off nine hours of accumulated tension and thematic weight. The squid game itself—returned to as the finale—works beautifully as both physical contest and psychological battle, though its actual mechanics are less visually striking than previous games. The confrontations between Gi-hun and Sang-woo, and ultimately with the game master, land with emotional force earned through careful character development. Where resolution falters slightly is in its handling of the game's broader mythology—the "why" behind decades of murderous entertainment remains somewhat abstract, dependent on Oh Il-nam's nihilistic philosophy that feels more stated than demonstrated. The final scene, with Gi-hun confronting the recruiter again after a year of traumatized withdrawal, provides a perfect thematic button while clearly teeing up continuation. The show resists the temptation toward redemption or healing for its protagonist, understanding that winning changes nothing fundamental about a system designed to produce losers. Some threads—notably Jun-ho's fate and the detective infrastructure—remain deliberately unresolved. The closing image of Gi-hun's transformation from victim to potential avenger carries weight, though it shifts the show's register toward something more conventionally heroic. The resolution honors the darkness of what preceded it while acknowledging that survival stories don't end when the game stops—they just enter new rounds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Score Section -->
+        <section class="final-score-section">
+            <div class="final-score-content">
+                <p class="final-score-label">Overall Score</p>
+                <div class="final-score-value">7.69</div>
+                <p class="final-score-desc">
+                    <em>Squid Game</em> transcends its genre trappings to become something genuinely significant—a global phenomenon that proved television could be simultaneously mass entertainment and serious social commentary. Its visual achievement is undeniable, its conceptual boldness refreshing, its narrative momentum irresistible. While not every element reaches the heights of its best sequences, the sheer ambition and execution of its central premise creates an experience that lingers long after the credits roll. It's a show about desperation that became, paradoxically, a testament to the hunger for stories that take desperate risks.
+                </p>
+                <div class="verdict-badge">Essential Viewing</div>
+            </div>
+        </section>
     </div>
-    <div class="dimension-content">
-        <p><strong>Seong Gi-hun:</strong> Lee Jung-jae created an unlikely protagonist—a gambling addict who betrayals allies and survives through luck as much as skill. Gi-hun wasn't heroic; he was human, desperate, capable of cruelty and kindness in equal measure. Lee's Performance captured the character's complexity without romanticizing it.</p>
-        
-        <p><strong>The Contestants:</strong> The ensemble provided the series' emotional variety—Park Hae-soo's Cho Sang-woo (the childhood friend whose corporate success masked failure), Jung Ho-yeon's Kang Sae-byeok (the North Korean defector seeking money to bring her mother), O Yeong-su's Oh Il-nam (the elderly participant whose presence was both poignant and, ultimately, plot-critical). Each had a backstory; each earned investment before their elimination.</p>
-        
-        <p><strong>The Villain:</strong> The Front Man (Lee Byung-hun) provided mysterious opposition; the reveal of his identity connected to a subplot that the series explored in subsequent seasons. The real villain, however, was the system—the wealthy who watched, the capitalism that created desperation, the human capacity for cruelty under pressure.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The characters serve the premise well; the acting is committed. The ensemble earns emotional investment.</p>
-        
-        <p><strong>Why 7.5:</strong> Strong central performance with memorable supporting cast. The characters are compelling without extensive development.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">World Building</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.20</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Game Facility:</strong> The series built its contained world with striking visual identity—the dormitory with stacked bunk beds, the colorful game arenas, the white corridors with pink guards, the geometric architecture that suggested both playground and prison. The facility was comprehensively designed; every element served the games' twisted logic.</p>
-        
-        <p><strong>The Outside World:</strong> The series occasionally left the game to show contestants' backstories and the outside world—Seoul's streets, the loan sharks, the desperate lives that led people to accept the invitation. The outside world explained the inside; economic desperation drove participation.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The contained environment is exceptional. The contrast between inside and outside is effective.</p>
-        
-        <p><strong>Why 8:</strong> Strong world-building with distinctive visual identity. The game environment is comprehensively realized.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">9</span>
-        <div>
-            <div class="dimension-name">Cinematography</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.35</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Visual Language:</strong> Squid Game established one of television's most distinctive visual identities—the geometric shapes (circle, triangle, square) that marked the guards, the bright colors that made horror look like playground, the sterile white corridors that suggested both hospital and prison. The cinematography turned violence into art.</p>
-        
-        <p><strong>The Game Arenas:</strong> Each game arena was designed as visual installation—the giant doll for Red Light, Green Light; the candy shapes for Dalgona; the bridge for the glass tiles game. The spaces were both beautiful and deadly, childish and adult. The visual contrast was the series' central metaphor.</p>
-        
-        <p><strong>Comparative Assessment:</strong> Among television's most visually distinctive productions. The aesthetic is instantly recognizable and thematically integrated.</p>
-        
-        <p><strong>Why 9:</strong> Exceptional cinematography that created iconic visual language. The aesthetic serves the series' themes while being visually stunning.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">Visual Spectacle</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.80</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Games:</strong> Each episode centered on a game spectacle—the mass execution of Red Light, Green Light; the delicate tension of Dalgona; the physical combat of Tug of War; the psychological warfare of Marbles; the deadly bridge crossing. The games provided escalating spectacle, each more dangerous than the last.</p>
-        
-        <p><strong>The Violence:</strong> The series didn't shy from depicting violence—executions, suicides, the aftermath of each game. The spectacle included the horror; viewers watched mass death rendered in bright colors. This was intentional: the aestheticization of violence was critique, not celebration.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The spectacle is both entertaining and disturbing. The games provide escalating tension and set-piece quality.</p>
-        
-        <p><strong>Why 8:</strong> Quality spectacle through game design and production. The violence serves the premise effectively.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">Conceptual Density</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.20</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Capitalism Critique:</strong> The series' central concept is capitalism as death game—debtors competing for survival while the wealthy watch for entertainment. The critique is explicit: the games are a metaphor for a system where the poor compete for scraps while the rich profit. The series doesn't hide its politics.</p>
-        
-        <p><strong>Human Nature:</strong> Beyond capitalism critique, the series explores what desperation creates—alliances formed and betrayed, kindness and cruelty under pressure, the question of what people will do to survive. The games reveal character; the structure forces moral choices.</p>
-        
-        <p><strong>The Twist:</strong> The reveal that Oh Il-nam was one of the game's creators—that an elderly man participated not from desperation but from boredom—crystallized the critique. The wealthy didn't just exploit the poor; they played games with them for entertainment.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The social critique is explicit and effective. The concepts are central, not decorative.</p>
-        
-        <p><strong>Why 8:</strong> Strong conceptual depth about capitalism, desperation, and human nature. The ideas serve the entertainment.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">9</span>
-        <div>
-            <div class="dimension-name">Narrative Drive</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.35</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Game Structure:</strong> Each episode centered on a game; each game eliminated contestants. The structure created momentum—456 players became fewer with each round, alliances formed and shattered, favorites died unexpectedly. The tension was built into the premise.</p>
-        
-        <p><strong>The Stakes:</strong> Death was the stakes. The series established early that anyone could die, that no character was safe. This raised the tension for every game; the audience invested in characters knowing they might not survive. The stakes were absolute.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The death-game structure provides exceptional momentum. Each episode has clear stakes and elimination.</p>
-        
-        <p><strong>Why 9:</strong> Exceptional narrative drive through game structure. The elimination format creates constant tension and forward momentum.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">7</span>
-        <div>
-            <div class="dimension-name">Narrative Resolution</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.70</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Season 1 Ending:</strong> The first season provided resolution—Gi-hun won, returned home to find his mother dead, discovered the game's creator had been playing with him. The final scene showed Gi-hun turning back at the airport, presumably to continue fighting the game organizers. The ending completed this chapter while setting up continuation.</p>
-        
-        <p><strong>The Hollow Victory:</strong> The series understood that winning a death game is not a happy ending—Gi-hun lost everyone he cared about, and the money couldn't replace them. The victory was empty; the survival was haunted. This was the correct artistic choice, if not the emotionally satisfying one some viewers wanted.</p>
-        
-        <p><strong>Comparative Assessment:</strong> Season 1 provided completion with sequel setup. The resolution fits the premise tonally.</p>
-        
-        <p><strong>Why 7:</strong> Solid season resolution that understands its own premise. The victory is intentionally hollow.</p>
-    </div>
-</div>
-
-<div class="final-score">
-    <div>FINAL SCORE</div>
-    <div class="final-score-value">8.10</div>
-    <div style="margin-top: 1rem; color: #888; font-size: 0.9rem;">
-        Characters: 1.50 + World: 1.20 + Cine: 1.35 + Spectacle: 0.80 + <br>
-        Concepts: 1.20 + Drive: 1.35 + Resolution: 0.70 = <strong>8.10</strong>
-    </div>
-    <div style="margin-top: 1.5rem; font-style: italic; color: #c0a050;">
-        Episode Multiplier: 1.0 (9 episodes)<br>
-        Rank: #65 of 100
-    </div>
-</div>
-
-<p style="margin-top: 2rem; color: #666; font-size: 0.85rem; text-align: center;">
-    Scored: 2026-02-21 | Methodology: 7-Dimension Comparative Ranking System
-</p>
-
 </body>
 </html>
