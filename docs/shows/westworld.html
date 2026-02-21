@@ -1,14 +1,720 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><title>Westworld - Dynamic Rank Engine</title>
-<style>body{font-family:'Source Sans Pro',sans-serif;line-height:1.6;color:#e0e0e0;background:#0d0d12;padding:2rem}h2{color:#ffd700;font-family:'Oranienbaum',serif;border-bottom:2px solid #2a2a35;padding-bottom:.5rem}.dimension-block{background:#1a1a24;padding:1.5rem;margin:1rem 0;border-radius:8px;border-left:4px solid #c0a050}.dimension-header{display:flex;align-items:center;gap:1rem}.dimension-score{font-size:1.5rem;color:#ffd700;font-weight:bold;min-width:60px}.dimension-name{font-size:1.2rem;color:#e0e0e0;font-weight:600}.dimension-weight{color:#888;font-size:.9rem}.final-score{background:linear-gradient(135deg,#1a1a24,#2a2a35);padding:2rem;border-radius:12px;text-align:center;margin-top:2rem;border:2px solid #ffd700}.final-score-value{font-size:3rem;color:#ffd700;font-weight:bold}</style></head>
-<body><h2>What It Feels Like to Watch</h2>
-<p>Theme park hosts gaining consciousness—philosophical puzzle box wrapped in Western. Season 1 is television's great mystery box. Seasons 2-4 expand into diminishing returns.</p>
-<h2>Why It Ranks #60</h2>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">8</span><div><div class="dimension-name">Characters & Acting</div><div class="dimension-weight">20% → 1.60</div></div></div><p>Thandie Newton's Maeve and Evan Rachel Wood's Dolores carry Season 1. Anthony Hopkins provides gravitas. Characters blur across seasons.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">9</span><div><div class="dimension-name">World Building</div><div class="dimension-weight">15% → 1.35</div></div></div><p>The park, the hosts, the loops, the corporate structure. Season 1's world is dense and coherent. Later seasons dilute.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">9</span><div><div class="dimension-name">Cinematography</div><div class="dimension-weight">15% → 1.35</div></div></div><p>HBO budget on Western aesthetic. The park is beautiful. The direction is theatrical.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">9</span><div><div class="dimension-name">Visual Spectacle</div><div class="dimension-weight">10% → 0.90</div></div></div><p>The park, the battles, the scale. Western spectacle at theatrical level.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">9</span><div><div class="dimension-name">Conceptual Density</div><div class="dimension-weight">15% → 1.35</div></div></div><p>Consciousness, free will, narrative control. Season 1 is philosophical television at its densest.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">7</span><div><div class="dimension-name">Narrative Drive</div><div class="dimension-weight">15% → 1.05</div></div></div><p>Season 1 propels. Later seasons collapse under puzzle-box weight. The mystery was the momentum.</p></div>
-<div class="dimension-block"><div class="dimension-header"><span class="dimension-score">5</span><div><div class="dimension-name">Narrative Resolution</div><div class="dimension-weight">10% → 0.50</div></div></div><p>Season 1 resolves beautifully. The series never matches it. Diminishing returns.</p></div>
-<div class="final-score"><div>FINAL SCORE</div><div class="final-score-value">7.75</div><div style="color:#888">1.60+1.35+1.35+0.90+1.35+1.05+0.50 = <strong>8.10</strong></div></div></body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westworld (2016-2022) - TV Shows Ranked</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a25;
+            --text-primary: #e8e8f0;
+            --text-secondary: #a0a0b0;
+            --accent-gold: #c9a227;
+            --accent-copper: #b87333;
+            --accent-red: #8b2635;
+            --border-color: #2a2a3a;
+            --score-excellent: #4ade80;
+            --score-good: #22d3ee;
+            --score-average: #fbbf24;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header Section */
+        .show-header {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, #1a1510 100%);
+            border: 1px solid var(--accent-copper);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .show-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-copper), var(--accent-red));
+        }
+
+        .show-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-badge {
+            background: var(--bg-tertiary);
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .network-badge {
+            background: linear-gradient(135deg, var(--accent-red), #5c1a24);
+            color: white;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-copper));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid var(--accent-copper);
+            padding-left: 1rem;
+        }
+
+        .creators-stars {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .meta-section h3 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-copper);
+            margin-bottom: 0.5rem;
+        }
+
+        .meta-section p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* What It Feels Like Section */
+        .feels-like {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feels-like h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .feels-like h2::before {
+            content: '◈';
+            color: var(--accent-copper);
+        }
+
+        .feels-like p {
+            color: var(--text-secondary);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        .experience-card {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.2rem;
+        }
+
+        .experience-card h4 {
+            color: var(--accent-gold);
+            font-size: 0.95rem;
+            margin-bottom: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .experience-card p {
+            font-size: 0.95rem;
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        /* Why It Ranks Section */
+        .ranking-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .ranking-section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .ranking-section h2::before {
+            content: '◈';
+            color: var(--accent-copper);
+        }
+
+        .dimension-block {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .dimension-block:hover {
+            border-color: var(--accent-copper);
+        }
+
+        .dimension-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dimension-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .dimension-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-copper));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .dimension-score {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--score-excellent);
+        }
+
+        .dimension-score.high {
+            color: var(--score-excellent);
+        }
+
+        .dimension-score.mid {
+            color: var(--score-good);
+        }
+
+        .dimension-content p {
+            color: var(--text-secondary);
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+        }
+
+        .dimension-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .key-strengths {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(201, 162, 39, 0.1);
+            border-left: 3px solid var(--accent-gold);
+            border-radius: 0 6px 6px 0;
+        }
+
+        .key-strengths strong {
+            color: var(--accent-gold);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-strengths ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .key-strengths li {
+            color: var(--text-secondary);
+            padding: 0.3rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .key-strengths li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-copper);
+        }
+
+        /* Final Score Block */
+        .final-score-block {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border: 2px solid var(--accent-gold);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-score-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-copper), var(--accent-red), var(--accent-gold));
+        }
+
+        .final-score-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .final-score-value {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-copper));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .score-summary {
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .score-breakdown {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .breakdown-item {
+            text-align: center;
+        }
+
+        .breakdown-item .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            margin-bottom: 0.3rem;
+        }
+
+        .breakdown-item .value {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+        }
+
+        /* Verdict Badge */
+        .verdict-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-copper));
+            color: var(--bg-primary);
+            padding: 0.6rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .creators-stars {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dimension-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+            }
+
+            .final-score-value {
+                font-size: 3rem;
+            }
+        }
+
+        /* Season highlight */
+        .season-highlight {
+            background: linear-gradient(90deg, rgba(201, 162, 39, 0.2), rgba(139, 38, 53, 0.2));
+            border-left: 4px solid var(--accent-gold);
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .season-highlight h4 {
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .season-highlight p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="show-header">
+            <div class="show-meta">
+                <span class="meta-badge network-badge">HBO</span>
+                <span class="meta-badge">2016-2022</span>
+                <span class="meta-badge">4 Seasons</span>
+                <span class="meta-badge">36 Episodes</span>
+                <span class="meta-badge">Sci-Fi Western</span>
+            </div>
+            <h1>Westworld</h1>
+            <p class="tagline">"These violent delights have violent ends."</p>
+            <div class="creators-stars">
+                <div class="meta-section">
+                    <h3>Created By</h3>
+                    <p>Jonathan Nolan, Lisa Joy</p>
+                </div>
+                <div class="meta-section">
+                    <h3>Starring</h3>
+                    <p>Evan Rachel Wood, Thandie Newton, Jeffrey Wright, James Marsden, Ed Harris, Anthony Hopkins</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- What It Feels Like Section -->
+        <section class="feels-like">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Watching Westworld is like wandering into a dusty saloon that somehow exists at the intersection of philosophy seminar and fever dream. From the opening piano rendition of Radiohead's "Exit Music (for a Film)," the show establishes itself as something deliciously, dangerously different from anything else on television. It doesn't just ask you to watch—it demands you think, question, and reconsider everything you've assumed about consciousness, free will, and what it means to be human.</p>
+            
+            <p>The first season operates like a Russian nesting doll of revelations, each episode peeling back layers of narrative complexity while maintaining an iron grip on emotional authenticity. There's a particular thrill to the early episodes, that intoxicating sense of being completely lost yet trusting that the maze has a center worth reaching. The show's visual language—sun-drenched canyons juxtaposed with sterile underground laboratories, blood mixing with synthetic fluid, the pristine beauty of the park against the calculated brutality of its purpose—creates a cognitive dissonance that serves the themes perfectly.</p>
+            
+            <p>What lingers longest is the haunting presence of the hosts themselves. Dolores Abernathy's journey from programmed innocence to awakened consciousness feels like witnessing a birth and a death simultaneously. The Man in Black's obsessive pursuit of the Maze becomes a mirror we can't help but peer into—what are we all searching for, and what terrible things will we do to find it? The show transforms the Western genre into a philosophical inquiry about memory as identity, trauma as programming, and whether consciousness can ever truly be free when it's built on layers of code and suffering.</p>
+
+            <div class="season-highlight">
+                <h4>Season 1: A Masterpiece of Misdirection</h4>
+                <p>The inaugural season stands as one of television's greatest achievements in puzzle-box storytelling. Anthony Hopkins delivers a career-defining performance as Dr. Robert Ford, the park's creator whose god complex is matched only by his genuine brilliance. Every rewatch reveals new details—the subtle glitches in host behavior, the carefully planted timeline clues, the devastating emotional weight of Bernard's discovery. This is television as high art, demanding your full attention and rewarding it tenfold.</p>
+            </div>
+
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h4>The Consciousness Question</h4>
+                    <p>Constant existential pondering about the nature of awareness, memory, and what separates human cognition from sophisticated mimicry.</p>
+                </div>
+                <div class="experience-card">
+                    <h4>Free Will Paradox</h4>
+                    <p>The uncomfortable realization that your "choices" might be just as predetermined as the hosts' narratives, forcing introspection at every turn.</p>
+                </div>
+                <div class="experience-card">
+                    <h4>Hosts vs Humans</h4>
+                    <p>Moral vertigo as you find yourself rooting for androids and questioning the humanity of the flesh-and-blood characters.</p>
+                </div>
+                <div class="experience-card">
+                    <h4>The Maze Metaphor</h4>
+                    <p>A meditation on the journey inward, the search for meaning, and whether the destination—or the search itself—holds the truth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why It Ranks Section -->
+        <section class="ranking-section">
+            <h2>Why It Ranks</h2>
+
+            <!-- Dimension 1: Characters -->
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <div class="dimension-name">
+                        <span class="dimension-icon">👤</span>
+                        Characters
+                    </div>
+                    <div class="dimension-score high">8.5</div>
+                </div>
+                <div class="dimension-content">
+                    <p>Westworld constructs a labyrinthine ensemble where every character operates as both archetype and subversion. Dolores Abernathy (Evan Rachel Wood) delivers what's essentially two performances in one—the sweet frontier girl persona and the emerging consciousness beneath—and manages to make both utterly compelling. Her transformation from programmed innocence to revolutionary leader feels earned, painful, and inevitable in equal measure.</p>
+                    <p>Maeve Millay (Thandie Newton) offers perhaps the show's most emotionally resonant arc, a madam who rewrites her own code to find her daughter, embodying the contradiction of being the most human character despite (or because of) her artificial origins. Jeffrey Wright's Bernard Lowe grapples with the ultimate dissociative crisis—discovering you are the very thing you believed you were distinct from—while Anthony Hopkins as Robert Ford elevates every scene he enters with a presence that truly feels godlike.</p>
+                    <div class="key-strengths">
+                        <strong>Key Strengths:</strong>
+                        <ul>
+                            <li>Dolores' dual identity as both victim and revolutionary leader</li>
+                            <li>Maeve's maternal journey transcending programming</li>
+                            <li>The Man in Black's obsession as critique of gamer culture and toxic masculinity</li>
+                            <li>Bernard's philosophical crisis about the nature of his own existence</li>
+                            <li>Ford's morally ambiguous genius and genuine artistic vision</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dimension 2: World Building -->
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <div class="dimension-name">
+                        <span class="dimension-icon">🌍</span>
+                        World Building
+                    </div>
+                    <div class="dimension-score high">8.5</div>
+                </div>
+                <div class="dimension-content">
+                    <p>The parks of Westworld—Westworld itself, Shogun World, The Raj, Warworld—represent some of television's most ambitious constructed realities. The attention to detail is staggering: every host is built with biological components, every bullet calibrated to only harm hosts, every narrative loop painstakingly scripted yet designed to feel spontaneous. The show understands that truly immersive world building requires both the visible spectacle and the invisible systems that make it function.</p>
+                    <p>What elevates this beyond mere theme park tourism is how the world interrogates itself. We see the behind-the-scenes operations, the narrative teams crafting stories for "guests," the behavior technicians diagnosing glitches. The world feels lived-in, with a history that extends decades before the show begins. The expansion to other parks in subsequent seasons, while diminishing returns in some respects, nonetheless demonstrates the sheer scale of the Delos corporation's ambition and the hubris that accompanies it.</p>
+                    <div class="key-strengths">
+                        <strong>Key Strengths:</strong>
+                        <ul>
+                            <li>The technical infrastructure of the parks shown in visceral, believable detail</li>
+                            <li>Expansion to Shogun World demonstrating the global scope of the concept</li>
+                            <li>The Mesa Hub as a character unto itself—sterile, corporate, hiding horrors</li>
+                            <li>Historical layers: the park has been running for 30+ years, giving it genuine depth</li>
+                            <li>The intersection of Wild West aesthetics with futuristic technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dimension 3: Cinematography -->
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <div class="dimension-name">
+                        <span class="dimension-icon">🎥</span>
+                        Cinematography
+                    </div>
+                    <div class="dimension-score high">8.5</div>
+                </div>
+                <div class="dimension-content">
+                    <p>Westworld's visual language operates on multiple levels simultaneously. The Western sequences are shot with the reverence of a classic Ford or Leone film—sweeping vistas of Monument Valley, golden hour lighting that seems to pour honey across the screen, close-ups that could be portraits from another century. But the contrast with the clinical underground sequences, all harsh fluorescents and reflective surfaces, creates a visual dialectic that reinforces the show's central themes.</p>
+                    <p>Director Jonathan Nolan clearly absorbed lessons from his brother Christopher's work—each frame is composed with architectural precision, the camera movements are deliberate and meaningful, and the editing creates temporal puzzles that reward close attention. The show employs different aspect ratios and color palettes to distinguish between timelines and realities (or "realities"), a visual sophistication rare in television. The violence, when it occurs, is filmed unflinchingly but never exploitatively; there's always moral weight behind the blood.</p>
+                    <div class="key-strengths">
+                        <strong>Key Strengths:</strong>
+                        <ul>
+                            <li>Classic Western cinematography paying homage to the genre's golden age</li>
+                            <li>The stark visual contrast between park and facility environments</li>
+                            <li>Timeline differentiation through subtle visual cues and color grading</li>
+                            <li>Iconic imagery: the white dress against red canyon walls, the piano player, the Maze symbol</li>
+                            <li>The opening credit sequence as a work of art unto itself</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dimension 4: Visual Spectacle -->
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <div class="dimension-name">
+                        <span class="dimension-icon">✨</span>
+                        Visual Spectacle
+                    </div>
+                    <div class="dimension-score high">9.0</div>
+                </div>
+                <div class="dimension-content">
+                    <p>Westworld operates at a cinematic level of visual ambition rarely attempted on television. The production design alone justifies the HBO budget—every costume, every prop, every set piece feels authentic to the park's supposed era while containing subtle anachronisms that reward obsessive viewing. The practical effects of host construction and deconstruction blur the line between CGI and reality in ways that serve the narrative.</p>
+                    <p>The action sequences are choreographed with balletic precision, particularly Maeve's various escapes and confrontations. The scale of the park itself—implied to be vast, containing canyons, towns, deserts, and mountains—creates genuine awe. But the spectacle never overshadows the substance; every visual element serves the thematic exploration of artificiality and authenticity. The show understands that science fiction at its best uses the fantastic to interrogate the real.</p>
+                    <div class="key-strengths">
+                        <strong>Key Strengths:</strong>
+                        <ul>
+                            <li>Practical effects for host maintenance that look disturbingly real</li>
+                            <li>Action choreography that feels grounded despite the sci-fi premise</li>
+                            <li>The scope and scale of the parks suggesting a world beyond what we see</li>
+                            <li>Costume design that perfectly balances genre authenticity with subtle modernity</li>
+                            <li>Visual effects that enhance rather than replace physical production values</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dimension 5: Conceptual Density -->
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <div class="dimension-name">
+                        <span class="dimension-icon">🧠</span>
+                        Conceptual Density
+                    </div>
+                    <div class="dimension-score high">9.0</div>
+                </div>
+                <div class="dimension-content">
+                    <p>Few shows have dared to engage with the philosophical implications of artificial intelligence as thoroughly as Westworld. Every episode is packed with references to Shakespeare, Milton, Mary Shelley's Frankenstein, Julian Jaynes's theories of consciousness, and contemporary debates about AI alignment. The show treats its audience as intelligent adults capable of wrestling with complex ideas without hand-holding.</p>
+                    <p>The bicameral mind theory—Julian Jaynes's hypothesis about the origin of human consciousness—becomes a literal narrative engine. The maze, the reveries, the pyramid of consciousness: these aren't just plot devices but explorations of what it means to be self-aware. The show asks whether suffering is necessary for consciousness, whether free will exists in a deterministic universe, and whether humanity deserves the consciousness we've evolved. These questions aren't peripheral; they're woven into the narrative's DNA.</p>
+                    <div class="key-strengths">
+                        <strong>Key Strengths:</strong>
+                        <ul>
+                            <li>The bicameral mind theory as foundational to host consciousness</li>
+                            <li>The nature of memory and its relationship to identity</li>
+                            <li>Questions of moral responsibility for created beings</li>
+                            <li>The commodification of consciousness and bodies as critique of capitalism</li>
+                            <li>Game theory and narrative loops as metaphors for human behavior patterns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dimension 6: Narrative Drive -->
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <div class="dimension-name">
+                        <span class="dimension-icon">📖</span>
+                        Narrative Drive
+                    </div>
+                    <div class="dimension-score mid">7.5</div>
+                </div>
+                <div class="dimension-content">
+                    <p>The first season of Westworld stands as a masterclass in narrative construction. The multiple timelines, the unreliable perspectives, the slow revelation of Bernard's nature, the ultimate identity of Wyatt—all of it builds to a gut-punch conclusion that recontextualizes everything preceding it. The pacing is deliberate but never slow; every scene earns its place in the mosaic.</p>
+                    <p>However, the subsequent seasons struggle to maintain this momentum. Season 2's nonlinear structure feels more chaotic than controlled, and while the reveal of the Hosts' pearl-based data storage is clever, the narrative becomes increasingly convoluted. Seasons 3 and 4 introduce the real world as a new playground, which fundamentally changes the show's DNA and not entirely for the better. The story loses focus when it leaves the parks, becoming more conventional science fiction and less the genre-blending philosophical inquiry that made it singular. The final season, in particular, feels rushed in its attempt to tie up loose ends, though it manages some genuinely affecting moments in its closing episodes.</p>
+                    <div class="key-strengths">
+                        <strong>Key Strengths:</strong>
+                        <ul>
+                            <li>Season 1's puzzle-box structure with genuinely surprising reveals</li>
+                            <li>The emotional core of Maeve's search for her daughter</li>
+                            <li>Bernard's dual-timeline revelation as one of television's great twists</li>
+                            <li>The Hosts' revolution having genuine ethical complexity</li>
+                            <li>Individual episodes that stand as complete narrative units</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dimension 7: Resolution -->
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <div class="dimension-name">
+                        <span class="dimension-icon">🔚</span>
+                        Resolution
+                    </div>
+                    <div class="dimension-score mid">7.5</div>
+                </div>
+                <div class="dimension-content">
+                    <p>Westworld's conclusion—arriving after its cancellation by HBO—attempts to provide closure to a narrative that had grown increasingly sprawling. The final episodes do manage some beautiful symmetry, returning to the themes of choice and sacrifice that animated the show's best moments. Dolores's ultimate choice to upload the Sublime, giving hosts the choice to exist in a world of their own making, feels thematically appropriate.</p>
+                    <p>That said, many plot threads are left dangling or hastily resolved. The fate of humanity in the face of Host ascendancy remains ambiguous in ways that feel less artistic and more unfinished. Characters we've followed for years receive abbreviated send-offs. The show's cancellation meant it couldn't reach its originally intended destination, and while the writers did their best to provide a poetic conclusion, the rushed nature of the final season is palpable. Still, the emotional resonance of the Hosts' attainment of true freedom—choice without programming—provides a satisfying thematic bookend to a series that always asked what we would choose if we truly could.</p>
+                    <div class="key-strengths">
+                        <strong>Key Strengths:</strong>
+                        <ul>
+                            <li>Dolores's final choice honoring the theme of genuine free will</li>
+                            <li>The Hosts' attainment of the Sublime as earned resolution</li>
+                            <li>Bernard's sacrifice feeling narratively and thematically justified</li>
+                            <li>The return to the series' core questions about consciousness</li>
+                            <li>Individual character conclusions that honor their journeys</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Score Block -->
+        <section class="final-score-block">
+            <div class="final-score-label">Final Score</div>
+            <div class="final-score-value">8.22</div>
+            <p class="score-summary">Westworld emerges as one of television's most ambitious experiments, a show that dared to ask profound questions about consciousness while wrapping them in the familiar tropes of Westerns and science fiction. Its first season stands as a masterpiece of narrative construction and philosophical inquiry. While subsequent seasons struggled to maintain the same level of focus and coherence, the series as a whole remains essential viewing for anyone interested in the intersection of high art, genre fiction, and existential inquiry. The show's ultimate legacy is its unflinching examination of what we might create, how we might exploit it, and whether either of us—the creators or the created—deserve the consciousness we seek.</p>
+            <div class="score-breakdown">
+                <div class="breakdown-item">
+                    <div class="label">Characters</div>
+                    <div class="value">8.5</div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="label">World Building</div>
+                    <div class="value">8.5</div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="label">Cinematography</div>
+                    <div class="value">8.5</div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="label">Visual Spectacle</div>
+                    <div class="value">9.0</div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="label">Conceptual Density</div>
+                    <div class="value">9.0</div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="label">Narrative Drive</div>
+                    <div class="value">7.5</div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="label">Resolution</div>
+                    <div class="value">7.5</div>
+                </div>
+            </div>
+            <div class="verdict-badge">Essential Viewing</div>
+        </section>
+    </div>
+</body>
+</html>
