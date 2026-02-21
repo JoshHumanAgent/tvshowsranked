@@ -1,191 +1,560 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Last of Us - Dynamic Rank Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - 7-Dimension Analysis | TV Shows Ranked</title>
     <style>
-        body { font-family: 'Source Sans Pro', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0d0d12; padding: 2rem; }
-        h2 { color: #ffd700; font-family: 'Oranienbaum', serif; border-bottom: 2px solid #2a2a35; padding-bottom: 0.5rem; }
-        h3 { color: #c0a050; font-family: 'Unna', serif; margin-top: 2rem; }
-        .dimension-block { background: #1a1a24; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #c0a050; }
-        .dimension-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-        .dimension-score { font-size: 1.5rem; color: #ffd700; font-weight: bold; min-width: 60px; }
-        .dimension-name { font-size: 1.2rem; color: #e0e0e0; font-weight: 600; }
-        .dimension-weight { color: #888; font-size: 0.9rem; }
-        .dimension-content { color: #b0b0b0; line-height: 1.8; }
-        .final-score { background: linear-gradient(135deg, #1a1a24, #2a2a35); padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem; border: 2px solid #ffd700; }
-        .final-score-value { font-size: 3rem; color: #ffd700; font-weight: bold; }
+        :root {
+            --spore-green: #4a5d23;
+            --fungal-glow: #7d8f3c;
+            --decay-brown: #3d3120;
+            --mold-gray: #5c5648;
+            --infected-red: #8b3a3a;
+            --survivor-cream: #d4cbb3;
+            --dark-basement: #1a1814;
+            --cordyceps-orange: #a6682e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-basement);
+            color: var(--survivor-cream);
+            line-height: 1.7;
+            background-image: 
+                radial-gradient(ellipse at 20% 80%, rgba(74, 93, 35, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(166, 104, 46, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(61, 49, 32, 0.3) 0%, transparent 70%);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid var(--spore-green);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        header::after {
+            content: "🍄";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
+            background: var(--dark-basement);
+            padding: 0 1rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: var(--fungal-glow);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 20px rgba(125, 143, 60, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--mold-gray);
+            font-style: italic;
+        }
+        
+        .meta-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(74, 93, 35, 0.1);
+            border: 1px solid var(--spore-green);
+            border-radius: 4px;
+        }
+        
+        .meta-item {
+            text-align: center;
+        }
+        
+        .meta-label {
+            font-size: 0.75rem;
+            color: var(--mold-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .meta-value {
+            font-size: 1rem;
+            color: var(--fungal-glow);
+            font-weight: 600;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--cordyceps-orange);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--decay-brown);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            color: var(--fungal-glow);
+            margin: 2rem 0 1rem 0;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+        
+        .feels-like {
+            background: linear-gradient(135deg, rgba(74, 93, 35, 0.1) 0%, rgba(61, 49, 32, 0.2) 100%);
+            padding: 2rem;
+            border-left: 4px solid var(--spore-green);
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 2rem;
+        }
+        
+        .feels-like p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+        }
+        
+        .highlight {
+            color: var(--fungal-glow);
+            font-weight: 600;
+        }
+        
+        .dimension-block {
+            background: rgba(61, 49, 32, 0.3);
+            border: 1px solid var(--decay-brown);
+            border-radius: 6px;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .dimension-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(74, 93, 35, 0.2);
+        }
+        
+        .dimension-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--decay-brown);
+        }
+        
+        .dimension-title {
+            font-size: 1.2rem;
+            color: var(--survivor-cream);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .dimension-score {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--fungal-glow);
+        }
+        
+        .dimension-content {
+            color: var(--survivor-cream);
+            opacity: 0.9;
+        }
+        
+        .dimension-content p {
+            margin-bottom: 0.8rem;
+            text-align: left;
+        }
+        
+        .final-score-block {
+            background: linear-gradient(135deg, rgba(74, 93, 35, 0.2) 0%, rgba(61, 49, 32, 0.4) 100%);
+            border: 2px solid var(--fungal-glow);
+            border-radius: 8px;
+            padding: 2.5rem;
+            text-align: center;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-score-block::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--spore-green), var(--fungal-glow), var(--cordyceps-orange), var(--fungal-glow), var(--spore-green));
+        }
+        
+        .final-label {
+            font-size: 1rem;
+            color: var(--mold-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+        }
+        
+        .final-score {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--fungal-glow);
+            text-shadow: 0 0 30px rgba(125, 143, 60, 0.4);
+        }
+        
+        .score-breakdown {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--decay-brown);
+            font-size: 0.9rem;
+            color: var(--mold-gray);
+        }
+        
+        .quote-box {
+            background: rgba(139, 58, 58, 0.1);
+            border-left: 3px solid var(--infected-red);
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .quote-box .attribution {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--mold-gray);
+            font-style: normal;
+        }
+        
+        .cast-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1rem 0;
+        }
+        
+        .cast-member {
+            background: rgba(74, 93, 35, 0.2);
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--survivor-cream);
+            border: 1px solid var(--spore-green);
+        }
+        
+        .episode-highlight {
+            background: rgba(166, 104, 46, 0.1);
+            border: 1px solid var(--cordyceps-orange);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+        }
+        
+        .episode-highlight h4 {
+            color: var(--cordyceps-orange);
+            margin-bottom: 0.75rem;
+        }
+        
+        .spore-divider {
+            text-align: center;
+            margin: 2rem 0;
+            opacity: 0.3;
+            font-size: 1.5rem;
+            letter-spacing: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid var(--decay-brown);
+            font-size: 0.85rem;
+            color: var(--mold-gray);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .meta-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .dimension-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
     </style>
 </head>
 <body>
-
-<h2>What It Feels Like to Watch</h2>
-
-<p>The Last of Us premiered on HBO on January 15, 2023, created by Craig Mazin and Neil Druckmann from Naughty Dog's acclaimed 2013 video game. The nine-episode first season follows Joel (Pedro Pascal), a smuggler tasked with escorting Ellie (Bella Ramsey), a teenage girl immune to the fungal infection that has destroyed civilization, across a post-apocalyptic America. The series represents the most successful video game adaptation in television history, achieving both critical acclaim and massive viewership.</p>
-
-<p>The series distinguishes itself from typical post-apocalyptic narratives through its focus on character relationships rather than action set pieces. While the infected (zombie-like creatures created by the Cordyceps fungus) provide horror and tension, the series is fundamentally about Joel and Ellie's evolving relationship—from reluctant protector and cargo, to surrogate father and daughter. The emotional beats land with devastating impact because the series invests in character development.</p>
-
-<p>Pedro Pascal's performance as Joel is a masterclass in understated grief. Joel has lost his daughter Sarah (played in the devastating opening episode by Nico Parker) in the outbreak's early hours, and twenty years later he is emotionally shut down, surviving rather than living. Pascal conveys Joel's pain through minimal dialogue and physical performance—his guardedness, his violence when necessary, his gradual softening toward Ellie. The performance earned Pascal an Emmy and established him as a leading man.</p>
-
-<p>Bella Ramsey's Ellie is equally remarkable—foul-mouthed, defiant, vulnerable, and brave. Ramsey captures Ellie's teenage bravado masking her fear, her grief over her own losses (her friend Riley, her guardian Marlene), and her growing attachment to Joel. The character's queerness (established in Episode 7 "Left Behind," which depicts Ellie's relationship with Riley) is handled with matter-of-fact authenticity. Ramsey's performance earned an Emmy and made Ellie an iconic character.</p>
-
-<p>The supporting cast creates a rich post-apocalyptic world: Gabriel Luna as Tommy, Joel's brother who has found purpose in a community; Anna Torv as Tess, Joel's partner who sacrifices herself to ensure Joel and Ellie can continue; Nick Offerman as Bill, the survivalist who finds love with Frank in a beautifully self-contained Episode 3 "Long, Long Time"; Murray Bartlett as Frank; Melanie Lynskey as Kathleen, the revolutionary leader whose grief has made her ruthless; Lamar Johnson as Henry and Keivonn Montreal Woodard as Sam, the brothers whose tragedy in Episode 5 "Endure and Survive" provides the season's most devastating moment; and Storm Reid as Riley in the flashback episode.</p>
-
-<p>Episode 3 "Long, Long Time" stands as one of television's finest hours—a self-contained love story between Bill and Frank that spans decades, from the outbreak's early days to their elderly years. Nick Offerman and Murray Bartlett deliver performances of extraordinary tenderness and grief. The episode's structure—depicting their life together in vignettes, culminating in their assisted suicide pact—provides emotional catharsis that resonates throughout the series. The episode demonstrates that The Last of Us is not merely a zombie show but a meditation on love, loss, and what we endure to survive.</p>
-
-<p>Episode 5 "Endure and Survive" provides the season's most devastating sequence—Henry and Sam's story, culminating in Henry's suicide after Sam (infected) attacks him. The episode's structure—building hope for the brothers' survival, then crushing it—demonstrates the series' willingness to devastate its audience. The performances by Lamar Johnson and Keivonn Montreal Woodard make the tragedy unbearable.</p>
-
-<p>Episode 7 "Left Behind" uses a flashback structure to depict Ellie's relationship with Riley (Storm Reid), her friend from the military school who is bitten alongside Ellie in an abandoned mall. The episode's structure—alternating between the past (Riley and Ellie's day together) and the present (Ellie trying to save Joel after he's injured)—creates emotional resonance between Ellie's past loss and her determination not to lose Joel. The depiction of teenage queer romance in the apocalypse is handled with authenticity and tenderness.</p>
-
-<p>The season finale "Look for the Light" brings Joel and Ellie's journey to its devastating conclusion. Joel's massacre of the Fireflies to save Ellie from the surgery that would kill her (and potentially create a cure) represents the series' central moral question: what do we owe to humanity versus what do we owe to those we love? Joel's choice—saving Ellie at the cost of humanity's hope—and his lie to Ellie about what happened, sets up the moral complexity that will drive future seasons. The finale's ambiguity—whether Joel's choice was right or wrong—is the series' strength.</p>
-
-<p>The series' engagement with video game adaptation is revolutionary. Previous game adaptations had largely failed critically, treating the source material as mere IP to be exploited. The Last of Us, with creator Neil Druckmann's involvement and Craig Mazin's writing (Chernobyl), treats the game as serious source material worthy of artistic adaptation. The series expands on the game's narrative, adding depth to supporting characters and creating episodes (like "Long, Long Time") that stand alone as artistic achievements.</p>
-
-<p>Critical reception was exceptional—the series holds 96% on Rotten Tomatoes, with critics praising the performances, writing, and emotional depth. It became HBO's most-watched debut since Boardwalk Empire and won numerous awards including Emmys for Outstanding Drama Series, Lead Actor (Pascal), and Guest Actor (Offerman). Critics noted that the series transcended its genre to become a profound meditation on love, loss, and survival.</p>
-
-<p>The series stands as the definitive video game adaptation and one of the finest television dramas of recent years. It proves that genre entertainment—zombies, post-apocalypse—can achieve the emotional depth of any prestige drama when treated with intelligence and respect. Pascal and Ramsey's performances, the exceptional writing, and the willingness to devastate its audience make The Last of Us essential viewing. It is television that respects its audience's intelligence and emotional capacity.</p>
-
-<h2>Why It Ranks #44</h2>
-
-<h3>7-Dimension Algorithmic Analysis</h3>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">9</span>
-        <div>
-            <div class="dimension-name">Characters & Acting</div>
-            <div class="dimension-weight">Weight: 20% | Weighted Contribution: 1.80</div>
+    <div class="container">
+        <header>
+            <h1>The Last of Us</h1>
+            <p class="subtitle">HBO's fungal apocalypse masterpiece</p>
+        </header>
+        
+        <div class="meta-info">
+            <div class="meta-item">
+                <div class="meta-label">Created By</div>
+                <div class="meta-value">Craig Mazin & Neil Druckmann</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Based On</div>
+                <div class="meta-value">Naughty Dog Video Game</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Seasons</div>
+                <div class="meta-value">2 (16 Episodes)</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Network</div>
+                <div class="meta-value">HBO (2023-)</div>
+            </div>
         </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Pedro Pascal:</strong> Pascal delivers a masterclass in understated grief as Joel, a man who lost his daughter in the outbreak and has spent twenty years emotionally shut down. Pascal conveys Joel's pain through minimal dialogue and physical performance—his guardedness, his violence when necessary, his gradual softening toward Ellie. The performance earned Pascal an Emmy and established him as a leading man capable of carrying a prestige drama.</p>
         
-        <p><strong>Bella Ramsey:</strong> Ramsey's Ellie is foul-mouthed, defiant, vulnerable, and brave. She captures Ellie's teenage bravado masking her fear, her grief over her own losses, and her growing attachment to Joel. The character's queerness is handled with matter-of-fact authenticity. Ramsey's performance earned an Emmy and made Ellie an iconic character in television history.</p>
-        
-        <p><strong>The Ensemble:</strong> Nick Offerman and Murray Bartlett in Episode 3 "Long, Long Time" deliver performances of extraordinary tenderness as Bill and Frank. Anna Torv as Tess, Gabriel Luna as Tommy, Melanie Lynskey as Kathleen, Lamar Johnson and Keivonn Montreal Woodard as Henry and Sam in the devastating Episode 5, Storm Reid as Riley in Episode 7—each creates distinct humanity in the post-apocalyptic world.</p>
-        
-        <p><strong>Why 9:</strong> Exceptional performances across the ensemble, with career-defining work from Pascal and Ramsey. The limitation is some supporting roles in later episodes that receive less development.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8.5</span>
-        <div>
-            <div class="dimension-name">World Building</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.28</div>
+        <div class="cast-list">
+            <span class="cast-member">Pedro Pascal</span>
+            <span class="cast-member">Bella Ramsey</span>
+            <span class="cast-member">Gabriel Luna</span>
+            <span class="cast-member">Merle Dandridge</span>
+            <span class="cast-member">Nick Offerman</span>
+            <span class="cast-member">Murray Bartlett</span>
         </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Post-Apocalypse:</strong> The series creates a believable post-apocalyptic world through attention to detail—overgrown cities, quarantine zones, survivor communities, the Cordyceps infection's progression. The world feels lived-in and authentic, with the twenty-year time jump allowing for the development of new social structures.</p>
         
-        <p><strong>The Infected:</strong> The Cordyceps-infected "zombies" are given biological plausibility and visual distinctiveness. The different stages of infection—runners, clickers, bloaters—create varied threats. The fungal growths, the hive mind behavior, the environmental storytelling of infected areas—all create a monster that feels fresh in a saturated genre.</p>
+        <section id="feels-like">
+            <h2>🍄 What It Feels Like to Watch</h2>
+            <div class="feels-like">
+                <p>
+                    Watching <strong>The Last of Us</strong> feels like crawling through a dimly lit basement with a flickering flashlight, knowing something terrible waits in the darkness but unable to stop moving forward. It's the heavy, suffocating dread of Pedro Pascal's stoic silence—his weathered face carrying the weight of a man who's lost everything and is terrified to feel again. The Clickers don't just attack; they <em>vibrate</em> with fungal horror, their echolocation clicks echoing through abandoned corridors like the sound of death itself learning your location.
+                </p>
+                <p>
+                    The show excels at making the apocalypse feel personal. This isn't CG zombie hordes; it's intimate, practical horror. The fungal tendrils crawling through collapsed buildings, spore-filled rooms bathed in sickly green light, and the guttural, inhuman sounds of the infected—these elements create a tactile, breathing nightmare that seeps under your skin.
+                </p>
+                
+                <div class="episode-highlight">
+                    <h4>"Long, Long Time" — Episode 3</h4>
+                    <p>A complete departure from the expected zombie-killing formula, this episode delivers emotional devastation of the highest order. Nick Offerman and Murray Bartlett as Bill and Frank create a self-contained love story set against the apocalypse that is devastatingly beautiful. It's a masterclass in emotional storytelling that proves this show understands something rare: the apocalypse doesn't just create monsters; it reveals the depth of human connection when everything else is stripped away. You'll need tissues. Many, many tissues.</p>
+                </div>
+                
+                <p>
+                    This is the <span class="highlight">video game adaptation done right</span>—not by slavishly copying every beat, but by understanding the soul of the source material. It captures the game's essence: the brutal juxtaposition of tender human moments against unimaginable horror. When Joel and Ellie bond over a moment of normalcy in a world gone mad, it hits harder than any jump scare because you feel how fragile that happiness is.
+                </p>
+                <p>
+                    The show feels like <strong>survival in its purest form</strong>—not just physical, but emotional. It's about what we become when survival is all we have left, and what we're willing to do for the people we love. By the end, you're emotionally bruised, deeply invested, and somehow grateful for the experience.
+                </p>
+            </div>
+        </section>
         
-        <p><strong>The Communities:</strong> The series depicts various post-apocalyptic social structures—FEDRA's authoritarian quarantine zones, the Fireflies' resistance movement, Bill and Frank's isolated sanctuary, the Kansas City revolutionaries, the Wyoming commune. Each community represents different responses to societal collapse.</p>
+        <div class="spore-divider">◈ ◈ ◈</div>
         
-        <p><strong>Why 8.5:</strong> Strong post-apocalyptic world-building with attention to detail and biological plausibility. The limitation is occasional familiarity—some post-apocalyptic tropes are present despite the fresh execution.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8.5</span>
-        <div>
-            <div class="dimension-name">Cinematography</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.28</div>
+        <section id="why-it-ranks">
+            <h2>📊 Why It Ranks — The 7 Dimensions</h2>
+            
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <span class="dimension-title">👤 Characters</span>
+                    <span class="dimension-score">7.8<span style="font-size:0.6em;opacity:0.7">/10</span></span>
+                </div>
+                <div class="dimension-content">
+                    <p>
+                        The character work in The Last of Us is exceptional, particularly the central father-daughter dynamic that develops between Joel and Ellie. Pedro Pascal delivers a masterclass in restrained performance—his Joel is a man of few words, but every glance, every hesitation speaks volumes. He's not the action hero trope; he's a broken man learning to feel again, and Pascal's weathered, soulful eyes carry decades of pain.
+                    </p>
+                    <p>
+                        Bella Ramsey's Ellie is equally compelling—a foul-mouthed, fiercely independent teenager hiding vulnerability beneath layers of bravado. Their chemistry evolves naturally, never forced, creating a bond that feels earned through shared trauma and small moments of connection.
+                    </p>
+                    <p>
+                        The supporting cast shines in memorable guest appearances. The aforementioned Bill and Frank episode stands as a highlight, but every character—even those with limited screen time—feels fully realized. Merle Dandridge brings gravitas to Marlene, and Gabriel Luna's Tommy carries the weight of a man who tried to rebuild.
+                    </p>
+                    <p>
+                        <em>Why not higher?</em> Some antagonists in Season 2 feel slightly underdeveloped, and certain character motivations in the source material's more morally ambiguous moments don't translate as cleanly to screen. The density of characters in later episodes occasionally sacrifices depth for breadth.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <span class="dimension-title">🌍 World Building</span>
+                    <span class="dimension-score">8.0<span style="font-size:0.6em;opacity:0.7">/10</span></span>
+                </div>
+                <div class="dimension-content">
+                    <p>
+                        The world of The Last of Us is a <strong>triumph of environmental storytelling</strong>. Every abandoned location tells a story—overgrown suburbs reclaiming concrete, desperate last stands frozen in time, quarantine zones cracking under authoritarian pressure. The production design team has created one of the most believable post-apocalyptic visions ever committed to screen.
+                    </p>
+                    <p>
+                        The show wisely expands the timeline glimpsed in the game, giving us the devastating initial outbreak through Sarah's eyes—a gut-punch of an opening that grounds the entire series in personal loss. The evolution from panic to QZ (Quarantine Zone) life to the lawless territories beyond feels historically textured, like we're watching actual history unfold.
+                    </p>
+                    <p>
+                        The FEDRA/Firefly political dynamics add layers of complexity. This isn't just zombies vs. survivors; it's competing visions of what civilization should look like after the fall. The Boston QZ's oppression, the Jackson commune's hopeful reconstruction, the scattered settlements each with their own rules—all of it creates a lived-in world that extends far beyond what we see on screen.
+                    </p>
+                    <p>
+                        The fungal infection itself is brilliantly realized—the scientific explanation (cordyceps adapted to humans) gives the horror a grounding in believable biology. Spore clouds, fungal tendril networks connecting the infected, the grotesque physical transformations—this is world-building that understands its monster.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <span class="dimension-title">🎥 Cinematography</span>
+                    <span class="dimension-score">8.0<span style="font-size:0.6em;opacity:0.7">/10</span></span>
+                </div>
+                <div class="dimension-content">
+                    <p>
+                        Ksenia Sereda's cinematography crafts a visual language that's simultaneously beautiful and unsettling. The show employs a <strong>muted, desaturated palette</strong> that evokes decay—ochres, desaturated greens, browns, and the sickly phosphorescent glow of fungal growth. It's post-apocalyptic noir, and it's stunning.
+                    </p>
+                    <p>
+                        The camera work alternates between intimate, handheld proximity during character moments and sweeping, mournful wide shots of abandoned America. The contrast is deliberate—humanity in close-up, nature reclaiming civilization in the background. The use of practical lighting (flashlights, fires, bioluminescent fungus) creates atmosphere that CGI could never replicate.
+                    </p>
+                    <p>
+                        Standout sequences include the museum infiltration bathed in moonlight and spore-glow, the Kansas City hotel's claustrophobic corridors, and the heartbreaking beauty of "Long, Long Time" with its golden-hour domesticity juxtaposed against isolation. Each episode feels visually distinct while maintaining cohesive aesthetic unity.
+                    </p>
+                    <p>
+                        The show also knows when to simply let frames breathe—static shots of overgrown nature, fungal tendrils spreading like neural networks, the geometry of abandoned urban decay. It's contemplative cinema disguised as genre television.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <span class="dimension-title">✨ Visual Spectacle</span>
+                    <span class="dimension-score">7.5<span style="font-size:0.6em;opacity:0.7">/10</span></span>
+                </div>
+                <div class="dimension-content">
+                    <p>
+                        The Last of Us understands that spectacle doesn't require explosion-filled set pieces. Its visual power comes from <strong>atmospheric dread and practical horror</strong>—the grotesque beauty of the infected, the scale of abandoned civilization, the visceral impact of practical effects.
+                    </p>
+                    <p>
+                        The Clicker designs are nightmarish—human forms twisted by fungal growth, faceplates of hardened mycelium, the way they move with jerky, unnatural precision. These aren't just monsters; they're evolutionary art, and seeing them in live-action surpasses the game's graphical limitations.
+                    </p>
+                    <p>
+                        The Bloater—a hulking mass of fungus and rage—is a triumph of creature design, its reveal a holy-shit moment of practical effects mastery. The infected make-up, the spore effects, the environmental decay—every visual element has been crafted with obsessive attention.
+                    </p>
+                    <p>
+                        <em>The restraint:</em> This isn't a show about constant action. Spectacle comes in bursts, which makes it more impactful when it arrives. Some viewers may find the pacing too measured, but this is deliberate—the horror means more when you've spent time with the characters. The budget is clearly substantial, but it's spent on atmosphere and detail rather than endless CGI carnage.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <span class="dimension-title">🧠 Conceptual Density</span>
+                    <span class="dimension-score">7.4<span style="font-size:0.6em;opacity:0.7">/10</span></span>
+                </div>
+                <div class="dimension-content">
+                    <p>
+                        Beneath its genre surface, The Last of_us grapples with <strong>profound questions about humanity, ethics, and survival</strong>. What does family mean when biological bonds are severed? How do we maintain morality when the structures that enforce it have collapsed? What would you sacrifice for someone you love?
+                    </p>
+                    <p>
+                        The show explores the trolley problem in human terms—Joel's actions in the finale aren't presented as heroic or villainous but as human, messy, and devastatingly understandable. It asks whether the greater good can ever justify sacrificing an individual who never consented to be sacrificed.
+                    </p>
+                    <p>
+                        The nature of the virus-as-metaphor (connection, fungal networks echoing human communities) adds thematic richness. The infected aren't just monsters; they're what we become when connection goes wrong, when the bonds between us become parasitic rather than supportive.
+                    </p>
+                    <p>
+                        <em>Limitations:</em> While emotionally resonant, the philosophical exploration sometimes takes a backseat to survival narrative momentum. The show trusts viewers to find meaning rather than explicitly articulating themes. This rewards attentive viewing but may leave some wanting more overt intellectual engagement.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <span class="dimension-title">📖 Narrative Drive</span>
+                    <span class="dimension-score">8.0<span style="font-size:0.6em;opacity:0.7">/10</span></span>
+                </div>
+                <div class="dimension-content">
+                    <p>
+                        The narrative structure—Joel escorting Ellie across America on a desperate quest for a potential cure—provides <strong>inherent momentum</strong> that carries through both seasons. It's episodic in the best way, each chapter a self-contained story that advances the larger journey.
+                    </p>
+                    <p>
+                        The pacing is deliberate, luxuriating in character moments that other shows would rush. This confidence pays off—we care about Joel and Ellie because we've spent time with them, not because the plot demands it. The show isn't afraid of quiet, of stillness, of conversation over confrontation.
+                    </p>
+                    <p>
+                        Season 1's structure builds to an inevitable, devastating conclusion that recontextualizes everything before it. Season 2 expands the scope, introducing new perspectives (Abby's storyline) that complicate the established narrative in fascinating, morally challenging ways.
+                    </p>
+                    <p>
+                        The adaptation from game to screen is instructive—certain sequences are expanded (the Bill/Frank episode), others condensed, but the narrative maintains its essential emotional architecture. The result feels simultaneously faithful and fresh, a difficult balancing act that succeeds admirably.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="dimension-block">
+                <div class="dimension-header">
+                    <span class="dimension-title">🔚 Resolution</span>
+                    <span class="dimension-score">7.4<span style="font-size:0.6em;opacity:0.7">/10</span></span>
+                </div>
+                <div class="dimension-content">
+                    <p>
+                        The season finales (of both seasons released so far) deliver <strong>emotionally wrenching, morally ambiguous conclusions</strong> that refuse easy answers. Season 1's finale is particularly audacious—what Joel does isn't presented as triumphant but as deeply human and deeply problematic.
+                    </p>
+                    <p>
+                        The show has the courage to sit with discomfort. We're not given tidy redemption arcs or clear-cut heroes. Instead, we have people making impossible choices and living with the consequences. The camera lingers on faces in the aftermath, letting us witness the weight of decisions rather than rushing to the next plot point.
+                    </p>
+                    <p>
+                        Season 2's resolution expands the scope in ways that promise a more complex narrative ahead, though some viewers may find its structural choices challenging. The decision to split perspectives and make us empathize with what could easily be considered "the antagonist" is narratively brave, if occasionally frustrating.
+                    </p>
+                    <p>
+                        <em>Caveat:</em> With the series ongoing, true resolution remains pending. The current endings serve as chapter breaks rather than definitive conclusions. This ambiguity is thematically appropriate for a show about ongoing survival, but may leave some viewers unsatisfied compared to complete, self-contained narratives.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="final-score-block">
+            <div class="final-label">Final Composite Score</div>
+            <div class="final-score">7.39</div>
+            <p style="color: var(--mold-gray); margin-top: 1rem; font-size: 1rem;">
+                A haunting, beautifully crafted adaptation that honors its source material while standing as its own achievement. The rare video game adaptation that transcends its origins to become essential television.
+            </p>
+            <div class="score-breakdown">
+                Characters 7.8 | World Building 8.0 | Cinematography 8.0 | Visual Spectacle 7.5 | Conceptual Density 7.4 | Narrative Drive 8.0 | Resolution 7.4
+            </div>
         </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Ksenia Sereda's Visual Language:</strong> Cinematographer Ksenia Sereda creates a distinctive visual style that combines naturalistic location shooting with carefully composed imagery. The series uses the full frame to create environmental storytelling—overgrown cityscapes, vast wilderness, intimate interiors. The color grading shifts between the cool blues of the quarantine zones and the warm golds of natural landscapes, creating visual contrast between civilization's decay and nature's persistence.</p>
         
-        <p><strong>The Infected Sequences:</strong> The cinematography during infected encounters uses low lighting, practical effects, and careful choreography to create genuine tension. The clickers' introduction in the museum (Episode 2), the escape from the school (Episode 5), and the hospital infiltration (Episode 9) each use distinct visual approaches while maintaining the series' grounded aesthetic.</p>
-        
-        <p><strong>The Natural World:</strong> The series contrasts urban decay with natural beauty—sunsets over the wilderness, starry skies, the changing seasons. These moments of beauty provide respite from the horror while emphasizing what has been lost. The cinematography captures the American landscape in all its variety, from Boston's ruins to Wyoming's mountains.</p>
-        
-        <p><strong>Comparative Assessment:</strong> The cinematography matches the game's visual language while adapting it for live action. It exceeds most television and approaches feature film quality. The limitation is occasional over-reliance on golden-hour lighting that can feel repetitive.</p>
-        
-        <p><strong>Why 8.5:</strong> Exceptional cinematography that creates atmosphere and serves story. Among television's most visually accomplished works.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">Visual Spectacle</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.80</div>
+        <div class="quote-box">
+            "After all we've been through. Everything that I've done. It can't be for nothing."
+            <span class="attribution">— Joel Miller</span>
         </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Infected:</strong> The Cordyceps-infected creatures provide genuine horror through practical effects and makeup design. The different stages—runners, clickers, bloaters—create visual variety and escalating threat. The clickers' fungal growths, the hive mind behavior, the environmental storytelling of infected areas—all create memorable monsters.</p>
         
-        <p><strong>Post-Apocalyptic Scale:</strong> The production recreates overgrown cities, collapsed infrastructure, and reclaimed wilderness with impressive scale. The Boston quarantine zone, the Kansas City ruins, the Wyoming commune—each location feels lived-in and authentic. The visual effects seamlessly blend with practical locations.</p>
-        
-        <p><strong>Why 8:</strong> Strong spectacle through creature design and post-apocalyptic world-building. The limitation is that spectacle serves character rather than dominating—this is not an action series.</p>
+        <footer>
+            <p>TV Shows Ranked • 7-Dimension Analysis Framework</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Analysis based on Seasons 1-2 (2023-2025)</p>
+        </footer>
     </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8</span>
-        <div>
-            <div class="dimension-name">Conceptual Density</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.20</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>Surrogate Family:</strong> The series' central theme—the family we choose versus the family we lose. Joel's transformation from grieving father to surrogate parent, Ellie's need for connection after losing everyone, their gradual bonding across the journey. The series asks what family means after civilization's collapse.</p>
-        
-        <p><strong>The Greater Good:</strong> The series' central moral question—whether Ellie's life should be sacrificed for a potential cure. The Fireflies believe the answer is yes; Joel's choice to save Ellie suggests that individual human connection matters more than abstract humanity. The series refuses easy answers.</p>
-        
-        <p><strong>Trauma and Survival:</strong> The series explores how trauma shapes survivors—Joel's grief, Ellie's immunity as both gift and burden, the various characters' adaptations to the post-apocalyptic world. The infected represent one threat; the living represent another.</p>
-        
-        <p><strong>Why 8:</strong> Strong thematic exploration of family, sacrifice, and survival. The limitation is occasional familiarity—the themes are well-trodden in post-apocalyptic fiction.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8.5</span>
-        <div>
-            <div class="dimension-name">Narrative Drive</div>
-            <div class="dimension-weight">Weight: 15% | Weighted Contribution: 1.28</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Journey Structure:</strong> The series uses the road trip format to create narrative momentum—Joel and Ellie traveling from Boston to Wyoming to the Firefly hospital, encountering different communities and threats along the way. Each location provides self-contained stories while advancing the central relationship.</p>
-        
-        <p><strong>Pacing:</strong> The series balances action and character development—episodes like "Long, Long Time" are entirely character-focused, while episodes like "Endure and Survive" provide intense action. The pacing serves the emotional story rather than following genre conventions.</p>
-        
-        <p><strong>Why 8.5:</strong> Strong narrative construction with effective balance of action and character. The limitation is occasional predictability—the road trip structure follows familiar beats.</p>
-    </div>
-</div>
-
-<div class="dimension-block">
-    <div class="dimension-header">
-        <span class="dimension-score">8.5</span>
-        <div>
-            <div class="dimension-name">Narrative Resolution</div>
-            <div class="dimension-weight">Weight: 10% | Weighted Contribution: 0.85</div>
-        </div>
-    </div>
-    <div class="dimension-content">
-        <p><strong>The Finale:</strong> "Look for the Light" brings Joel and Ellie's journey to its devastating conclusion. Joel's massacre of the Fireflies to save Ellie from the surgery that would kill her—and potentially create a cure—represents the series' central moral question. Joel's choice to save Ellie at the cost of humanity's hope, and his lie to Ellie about what happened, sets up the moral complexity that will drive future seasons.</p>
-        
-        <p><strong>The Ambiguity:</strong> The finale's refusal to provide easy answers—whether Joel's choice was right or wrong, whether Ellie believes his lie—is the series' strength. The ending is emotionally satisfying while being morally complex, setting up future seasons without feeling incomplete.</p>
-        
-        <p><strong>Why 8.5:</strong> A devastating conclusion that honors the series' themes. The limitation is the setup for future seasons—the ending is complete but clearly intended as part of a larger story.</p>
-    </div>
-</div>
-
-<div class="final-score">
-    <div>FINAL SCORE</div>
-    <div class="final-score-value">7.78</div>
-
-    <div style="color:#888; margin-top:1rem; font-size:0.9rem">
-        The final score of 7.78 reflects The Last of Us's exceptional achievement across all seven dimensions. Its combination of outstanding performances (Pedro Pascal and Bella Ramsey), emotional storytelling, and successful video game adaptation—culminating in one of television's most devastating finales—secures its place as one of the decade's finest series. The show proves that genre entertainment can achieve the emotional depth of any prestige drama when treated with intelligence and respect.
-    </div>
-</div>
-
 </body>
 </html>

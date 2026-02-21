@@ -4,30 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shōgun (2024) - 7-Dimension Analysis | TV Shows Ranked</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --crimson: #8B0000;
+            --deep-red: #5C0000;
+            --gold: #C9A227;
+            --pale-gold: #D4AF37;
+            --ink-black: #1a1a1a;
+            --charcoal: #2d2d2d;
+            --parchment: #f5f0e6;
+            --cream: #faf8f3;
+            --bamboo: #8B7355;
+            --jade: #2d5a4a;
+            --stone: #8a8a8a;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        :root {
-            --primary: #1a1a2e;
-            --secondary: #16213e;
-            --accent: #e94560;
-            --gold: #d4af37;
-            --text: #eaeaea;
-            --text-muted: #a0a0a0;
-            --card-bg: #0f3460;
-            --border: #2d3748;
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: linear-gradient(135deg, var(--ink-black) 0%, var(--charcoal) 50%, #1a2a1a 100%);
+            color: var(--parchment);
+            line-height: 1.8;
+            min-height: 100vh;
+            background-attachment: fixed;
+            position: relative;
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: var(--text);
-            line-height: 1.7;
-            min-height: 100vh;
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(139, 0, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.08) 0%, transparent 50%),
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30L30 0z' fill='%23C9A227' fill-opacity='0.02'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: -1;
         }
 
         .container {
@@ -36,826 +57,900 @@
             padding: 2rem;
         }
 
-        header {
+        /* Header Section */
+        .show-header {
             text-align: center;
-            padding: 3rem 0;
-            border-bottom: 3px solid var(--gold);
+            padding: 4rem 2rem;
+            position: relative;
+            border-bottom: 3px double var(--gold);
             margin-bottom: 3rem;
-            background: linear-gradient(to bottom, rgba(212, 175, 55, 0.1), transparent);
         }
 
-        .show-title {
-            font-size: 3.5rem;
+        .show-header::before {
+            content: '将軍';
+            position: absolute;
+            top: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Noto Serif JP', serif;
+            font-size: 4rem;
+            color: var(--gold);
+            opacity: 0.15;
+            letter-spacing: 1rem;
+        }
+
+        .title-main {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
             font-weight: 700;
-            background: linear-gradient(135deg, var(--gold) 0%, #f4e4ba 50%, var(--gold) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
             margin-bottom: 0.5rem;
-            letter-spacing: 2px;
+            letter-spacing: 0.3rem;
         }
 
-        .show-meta {
-            color: var(--text-muted);
-            font-size: 1.1rem;
+        .title-year {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--stone);
             margin-bottom: 1rem;
         }
 
-        .quick-stats {
+        .meta-info {
             display: flex;
             justify-content: center;
             gap: 2rem;
             flex-wrap: wrap;
             margin-top: 1.5rem;
+            font-size: 0.95rem;
         }
 
-        .stat-pill {
-            background: var(--card-bg);
-            padding: 0.6rem 1.2rem;
-            border-radius: 25px;
+        .meta-item {
+            background: rgba(139, 0, 0, 0.3);
             border: 1px solid var(--gold);
-            font-size: 0.9rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            color: var(--pale-gold);
         }
 
-        .stat-pill span {
-            color: var(--gold);
-            font-weight: 600;
+        .meta-label {
+            color: var(--stone);
+            margin-right: 0.5rem;
         }
 
         /* Final Score Badge */
-        .final-score-section {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(233, 69, 96, 0.1));
-            border: 2px solid var(--gold);
-            border-radius: 20px;
-            padding: 2.5rem;
-            margin: 3rem 0;
+        .final-score-container {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
             text-align: center;
-            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
         }
 
-        .score-label {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 0.5rem;
+        .final-score-badge {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, var(--crimson) 0%, var(--deep-red) 100%);
+            border: 3px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 30px rgba(201, 162, 39, 0.3);
         }
 
-        .final-score {
-            font-size: 5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--gold), #fff, var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1;
-        }
-
-        .score-verdict {
-            font-size: 1.3rem;
+        .final-score-value {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
             color: var(--gold);
-            margin-top: 1rem;
-            font-style: italic;
+        }
+
+        .final-score-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            color: var(--parchment);
         }
 
         /* Section Styling */
         .section {
-            background: var(--card-bg);
-            border-radius: 15px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            border: 1px solid var(--border);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            background: rgba(26, 26, 26, 0.7);
+            border: 1px solid var(--bamboo);
+            border-radius: 8px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
         }
 
         .section-title {
-            font-size: 2rem;
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
             color: var(--gold);
             margin-bottom: 1.5rem;
             padding-bottom: 0.8rem;
-            border-bottom: 2px solid var(--accent);
+            border-bottom: 1px solid var(--bamboo);
             display: flex;
             align-items: center;
             gap: 1rem;
         }
 
-        .section-icon {
-            font-size: 1.5rem;
+        .section-title::before {
+            content: '◆';
+            color: var(--crimson);
+        }
+
+        .section-content {
+            font-size: 1.05rem;
+            line-height: 2;
+            color: var(--parchment);
         }
 
         /* What It Feels Like Section */
-        .feels-like {
-            background: linear-gradient(135deg, var(--card-bg), rgba(212, 175, 55, 0.05));
-            border-left: 5px solid var(--gold);
-        }
-
-        .atmosphere-grid {
+        .feels-like-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
         }
 
-        .atmosphere-card {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 1.5rem;
-            border-radius: 10px;
-            border: 1px solid var(--border);
-        }
-
-        .atmosphere-card h4 {
-            color: var(--gold);
-            margin-bottom: 0.8rem;
+        .feels-text {
             font-size: 1.1rem;
+            line-height: 2;
+        }
+
+        .feels-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .feels-highlight {
+            background: rgba(201, 162, 39, 0.15);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+
+        .feels-stats {
+            background: rgba(139, 0, 0, 0.2);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--bamboo);
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(139, 115, 85, 0.3);
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: var(--stone);
+        }
+
+        .stat-value {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Cast Display */
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .cast-member {
+            background: rgba(45, 45, 45, 0.8);
+            border: 1px solid var(--bamboo);
+            padding: 1rem;
+            text-align: center;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .cast-member:hover {
+            border-color: var(--gold);
+            box-shadow: 0 0 15px rgba(201, 162, 39, 0.2);
+        }
+
+        .cast-name {
+            color: var(--pale-gold);
+            font-weight: 600;
+            font-size: 0.95rem;
         }
 
         /* Dimension Blocks */
         .dimension-grid {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
 
         .dimension-block {
-            background: linear-gradient(135deg, rgba(15, 52, 96, 0.8), rgba(22, 33, 62, 0.9));
-            border-radius: 15px;
-            padding: 2rem;
-            border: 1px solid var(--border);
+            background: linear-gradient(135deg, rgba(45, 45, 45, 0.9), rgba(26, 26, 26, 0.9));
+            border: 1px solid var(--bamboo);
+            border-radius: 8px;
+            padding: 1.8rem;
             position: relative;
-            overflow: hidden;
+            transition: all 0.3s ease;
         }
 
-        .dimension-block::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--gold), var(--accent));
+        .dimension-block:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
         }
 
         .dimension-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid rgba(139, 115, 85, 0.3);
         }
 
-        .dimension-title {
-            font-size: 1.5rem;
+        .dimension-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
             color: var(--gold);
             display: flex;
             align-items: center;
             gap: 0.8rem;
         }
 
-        .dimension-number {
-            background: var(--accent);
-            color: white;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 0.9rem;
+        .dimension-icon {
+            font-size: 1.4rem;
         }
 
         .dimension-score {
-            font-size: 2.5rem;
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
             font-weight: 700;
-            color: var(--gold);
+            color: var(--pale-gold);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
 
-        .score-bar {
-            width: 100%;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            margin-bottom: 1.5rem;
+        .dimension-bar {
+            height: 6px;
+            background: var(--charcoal);
+            border-radius: 3px;
+            margin: 1rem 0;
             overflow: hidden;
         }
 
-        .score-fill {
+        .dimension-fill {
             height: 100%;
-            background: linear-gradient(90deg, var(--gold), var(--accent));
-            border-radius: 4px;
-            transition: width 1s ease;
+            background: linear-gradient(90deg, var(--crimson), var(--gold));
+            border-radius: 3px;
+            transition: width 1s ease-out;
         }
 
-        .dimension-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+        .dimension-analysis {
+            font-size: 0.98rem;
+            line-height: 1.9;
+            color: #c0c0c0;
         }
 
-        @media (max-width: 768px) {
-            .dimension-content {
-                grid-template-columns: 1fr;
-            }
+        .dimension-analysis strong {
+            color: var(--pale-gold);
         }
 
-        .content-col h4 {
-            color: var(--accent);
-            margin-bottom: 0.8rem;
-            font-size: 1.1rem;
-        }
-
-        .content-col p {
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        .highlight-box {
-            background: rgba(212, 175, 55, 0.1);
-            border-left: 3px solid var(--gold);
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .strength-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .strength-list li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
+        /* Final Summary Block */
+        .final-summary {
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.3), rgba(45, 90, 74, 0.2));
+            border: 3px double var(--gold);
+            border-radius: 12px;
+            padding: 3rem;
+            text-align: center;
             position: relative;
         }
 
-        .strength-list li::before {
-            content: '✓';
+        .final-summary::before {
+            content: '◈ ◈ ◈';
             position: absolute;
-            left: 0;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--ink-black);
+            padding: 0 1rem;
             color: var(--gold);
-            font-weight: bold;
+            letter-spacing: 0.5rem;
         }
 
-        .weakness-list li::before {
-            content: '✗';
-            color: var(--accent);
-        }
-
-        /* Summary Box */
-        .summary-box {
-            background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(212, 175, 55, 0.1));
-            border: 2px solid var(--accent);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-
-        .summary-title {
-            font-size: 1.5rem;
-            color: var(--accent);
+        .final-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
             margin-bottom: 1rem;
-            text-align: center;
         }
 
-        .summary-text {
-            font-size: 1.1rem;
-            line-height: 1.9;
-            text-align: center;
-            color: var(--text);
-        }
-
-        /* Cast Section */
-        .cast-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .cast-card {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 1.5rem;
-            border-radius: 10px;
-            text-align: center;
-            border: 1px solid var(--border);
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .cast-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--gold);
-        }
-
-        .cast-name {
-            color: var(--gold);
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-
-        .cast-role {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-top: 0.3rem;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 3rem 0;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border);
-            margin-top: 3rem;
+        .final-verdict {
+            font-size: 1.2rem;
+            line-height: 2;
+            max-width: 800px;
+            margin: 0 auto 2rem;
         }
 
         .score-breakdown {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 2rem;
+            gap: 1.5rem;
             margin: 2rem 0;
-            padding: 1.5rem;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
         }
 
-        .breakdown-item {
+        .score-item {
             text-align: center;
+            padding: 1rem 1.5rem;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--bamboo);
+            border-radius: 4px;
         }
 
-        .breakdown-label {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .breakdown-score {
+        .score-item-value {
+            font-family: 'Cinzel', serif;
             font-size: 1.5rem;
             color: var(--gold);
-            font-weight: 600;
         }
 
-        /* Responsive */
+        .score-item-label {
+            font-size: 0.8rem;
+            color: var(--stone);
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+        }
+
+        .final-giant-score {
+            font-family: 'Cinzel', serif;
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-shadow: 0 0 40px rgba(201, 162, 39, 0.5);
+            margin-top: 1rem;
+        }
+
+        .final-score-text {
+            font-size: 1rem;
+            color: var(--stone);
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Japanese Decorative Elements */
+        .kamon {
+            position: absolute;
+            font-family: 'Noto Serif JP', serif;
+            font-size: 8rem;
+            color: var(--gold);
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+        .kamon-1 { top: 10%; left: 5%; }
+        .kamon-2 { bottom: 10%; right: 5%; transform: rotate(180deg); }
+
+        /* Quotes */
+        .quote-block {
+            border-left: 4px solid var(--crimson);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: var(--pale-gold);
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .show-title {
-                font-size: 2rem;
-            }
-            
-            .final-score {
-                font-size: 3.5rem;
-            }
-            
-            .section {
-                padding: 1.5rem;
-            }
-            
             .container {
                 padding: 1rem;
             }
+
+            .title-main {
+                font-size: 2.5rem;
+            }
+
+            .feels-like-content {
+                grid-template-columns: 1fr;
+            }
+
+            .final-score-container {
+                position: static;
+                margin: 1.5rem auto;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .dimension-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .final-giant-score {
+                font-size: 3.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--ink-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--bamboo);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold);
         }
     </style>
 </head>
 <body>
+    <div class="kamon kamon-1">将</div>
+    <div class="kamon kamon-2">軍</div>
+
     <div class="container">
-        <header>
-            <h1 class="show-title">SHŌGUN</h1>
-            <p class="show-meta">FX Historical Epic | 2024 | Season 1 | 10 Episodes</p>
-            <p class="show-meta">Based on the novel by James Clavell</p>
-            
-            <div class="quick-stats">
-                <div class="stat-pill"><span>Genre:</span> Historical Drama</div>
-                <div class="stat-pill"><span>Created by:</span> Rachel Kondo & Justin Marks</div>
-                <div class="stat-pill"><span>Rotten Tomatoes:</span> 99%</div>
-                <div class="stat-pill"><span>Setting:</span> Feudal Japan, 1600</div>
+        <!-- Header Section -->
+        <header class="show-header">
+            <div class="final-score-container">
+                <div class="final-score-badge">
+                    <span class="final-score-value">7.8</span>
+                    <span class="final-score-label">Final Score</span>
+                </div>
+            </div>
+            <h1 class="title-main">SHŌGUN</h1>
+            <div class="title-year">2024 FX Historical Epic</div>
+            <div class="meta-info">
+                <div class="meta-item">
+                    <span class="meta-label">Based on:</span>James Clavell's Novel
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Seasons:</span>1
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Episodes:</span>10
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Network:</span>FX / Hulu
+                </div>
             </div>
         </header>
 
-        <!-- Final Score Block -->
-        <div class="final-score-section">
-            <div class="score-label">Weighted Average Score</div>
-            <div class="final-score">7.48</div>
-            <div class="score-verdict">"A Masterclass in Historical Storytelling"</div>
-            
-            <div class="score-breakdown">
-                <div class="breakdown-item">
-                    <div class="breakdown-score">7.9</div>
-                    <div class="breakdown-label">Characters</div>
-                </div>
-                <div class="breakdown-item">
-                    <div class="breakdown-score">8.5</div>
-                    <div class="breakdown-label">World Building</div>
-                </div>
-                <div class="breakdown-item">
-                    <div class="breakdown-score">8.5</div>
-                    <div class="breakdown-label">Cinematography</div>
-                </div>
-                <div class="breakdown-item">
-                    <div class="breakdown-score">8.0</div>
-                    <div class="breakdown-label">Visual Spectacle</div>
-                </div>
-                <div class="breakdown-item">
-                    <div class="breakdown-score">7.5</div>
-                    <div class="breakdown-label">Conceptual Density</div>
-                </div>
-                <div class="breakdown-item">
-                    <div class="breakdown-score">7.1</div>
-                    <div class="breakdown-label">Narrative Drive</div>
-                </div>
-                <div class="breakdown-item">
-                    <div class="breakdown-score">7.5</div>
-                    <div class="breakdown-label">Resolution</div>
-                </div>
-            </div>
-        </div>
-
         <!-- What It Feels Like to Watch -->
-        <section class="section feels-like">
-            <h2 class="section-title">
-                <span class="section-icon">🎭</span>
-                What It Feels Like to Watch
-            </h2>
-            
-            <p style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 1.5rem;">
-                Watching <strong>Shōgun</strong> is like stepping through a portal into 17th-century Japan and finding yourself immediately immersed in a world where every gesture carries weight, every silence speaks volumes, and every decision could mean death. The series doesn't merely depict feudal Japan—it envelops you in it, surrounding you with intricate political machinations, breathtaking landscapes, and cultural codes so meticulously rendered that you feel the foreignness of John Blackthorne's experience in your bones.
-            </p>
-            
-            <p style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 1.5rem;">
-                This is television as immersive art installation. The production transports viewers to a Japan on the brink of civil war, where Lord Yoshii Toranaga (a magnetic Hiroyuki Sanada) maneuvers through the treacherous waters of regent politics while an English sailor named John Blackthorne (Cosmo Jarvis) becomes an unwitting pawn in a game he barely comprehends. The series demands your attention—not through explosive action, but through the slow-building tension of whispered conversations, the poetry of ritual suicide preparations, and the absolute authority of a world governed by honor, duty, and death.
-            </p>
+        <section class="section">
+            <h2 class="section-title">What It Feels Like to Watch</h2>
+            <div class="feels-like-content">
+                <div class="feels-text">
+                    <p>
+                        Watching <strong>Shōgun</strong> is like stepping through a sliding paper door into a world 
+                        where every breath carries political weight and every glance could be a death sentence. The 
+                        series transports you to <strong>1600 Japan</strong> with such immersive authenticity that you 
+                        can almost smell the tatami mats and feel the weight of a katana in your hands.
+                    </p>
+                    
+                    <div class="feels-highlight">
+                        "This is television as a meditation on power, culture, and the price of ambition—a 
+                        masterclass in slow-burn storytelling that rewards patience with profound emotional 
+                        and philosophical dividends."
+                    </div>
 
-            <div class="atmosphere-grid">
-                <div class="atmosphere-card">
-                    <h4>🏯 Feudal Authenticity</h4>
-                    <p>The series achieves a level of historical authenticity rarely seen on television. From the architecture of Osaka castle to the clothing, language, and customs, every frame feels researched, respected, and rendered with obsessive attention to detail. Japanese dialogue dominates, subtitled for Western audiences—a bold choice that immediately establishes the show's commitment to authenticity over accessibility.</p>
+                    <p>
+                        The cultural clash between the rigid, honor-bound world of feudal Japan and the brash 
+                        English sailor <strong>John Blackthorne</strong> (Cosmo Jarvis) creates a fascinating 
+                        tension that drives the narrative. Meanwhile, <strong>Lord Toranaga</strong> (Hiroyuki Sanada) 
+                        moves through his enemies like a master chess player, each calculated move revealing 
+                        layers of political intrigue that would make Machiavelli weep with envy.
+                    </p>
+
+                    <p>
+                        The <strong>99% Rotten Tomatoes score</strong> isn't hyperbole—this is prestige television 
+                        at its absolute peak. Episodes unfold with the precision of a ritual seppuku: deliberate, 
+                        meaningful, and impossible to look away from. When characters enter tatami rooms, the 
+                        space itself becomes a character—every bow, every seating position, every pause loaded 
+                        with centuries of protocol and meaning.
+                    </p>
                 </div>
-                
-                <div class="atmosphere-card">
-                    <h4>⚔️ Political Intrigue</h4>
-                    <p>The chess game of samurai politics unfolds with Shakespearean complexity. Five regents vie for control of Japan, and Toranaga must navigate alliances, betrayals, and the constant threat of assassination. The tension is cerebral and intimate—power demonstrated through presence rather than proclamation.</p>
-                </div>
-                
-                <div class="atmosphere-card">
-                    <h4>🌊 Cultural Clash</h4>
-                    <p>Blackthorne's journey from barbarian outsider to valued retainer is the show's beating heart. His struggle to understand bushido, his horror at ritual suicide, and his gradual transformation create a narrative bridge for Western audiences while never simplifying the culture it portrays.</p>
-                </div>
-                
-                <div class="atmosphere-card">
-                    <h4>🎋 Cinematic Poetry</h4>
-                    <p>Each episode feels like a feature film. Director Rachel Kondo crafts images of aching beauty—mist rolling over mountains, cherry blossoms on the wind, the rigid discipline of samurai training. This is prestige television in its purest form.</p>
+
+                <div class="feels-stats">
+                    <h3 style="color: var(--gold); margin-bottom: 1rem; font-family: 'Cinzel', serif;">Show Statistics</h3>
+                    <div class="stat-row">
+                        <span class="stat-label">Rotten Tomatoes</span>
+                        <span class="stat-value">99%</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">IMDb Rating</span>
+                        <span class="stat-value">8.6/10</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Genre</span>
+                        <span class="stat-value">Historical Drama</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Setting</span>
+                        <span class="stat-value">Japan, 1600</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Language</span>
+                        <span class="stat-value">Japanese / English</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Subtitles</span>
+                        <span class="stat-value">~70% of dialogue</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Creator</span>
+                        <span class="stat-value">Rachel Kondo & Justin Marks</span>
+                    </div>
+
+                    <h3 style="color: var(--gold); margin: 1.5rem 0 1rem; font-family: 'Cinzel', serif;">Principal Cast</h3>
+                    <div class="cast-grid">
+                        <div class="cast-member">
+                            <div class="cast-name">Hiroyuki Sanada</div>
+                            <small style="color: var(--stone);">Lord Toranaga</small>
+                        </div>
+                        <div class="cast-member">
+                            <div class="cast-name">Cosmo Jarvis</div>
+                            <small style="color: var(--stone);">John Blackthorne</small>
+                        </div>
+                        <div class="cast-member">
+                            <div class="cast-name">Anna Sawai</div>
+                            <small style="color: var(--stone);">Lady Mariko</small>
+                        </div>
+                        <div class="cast-member">
+                            <div class="cast-name">Tadanobu Asano</div>
+                            <small style="color: var(--stone);">Kashigi Yabu</small>
+                        </div>
+                        <div class="cast-member">
+                            <div class="cast-name">Takehiro Hira</div>
+                            <small style="color: var(--stone);">Ishido Kazunari</small>
+                        </div>
+                        <div class="cast-member">
+                            <div class="cast-name">Fumi Nikaido</div>
+                            <small style="color: var(--stone);">Ochiba no Kata</small>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="highlight-box" style="margin-top: 2rem;">
-                <p style="font-style: italic; font-size: 1.1rem;">
-                    "Hiroyuki Sanada's Toranaga is a study in controlled power—every glance, every measured pause, every subtle shift in expression conveying the burden of leadership in a world where weakness means death. It's a performance of such commanding presence that you understand immediately why men would follow him into war."
+        <!-- Why It Ranks - 7 Dimension Analysis -->
+        <section class="section">
+            <h2 class="section-title">Why It Ranks: The Seven Dimensions</h2>
+            
+            <div class="dimension-grid">
+                <!-- Characters -->
+                <div class="dimension-block">
+                    <div class="dimension-header">
+                        <div class="dimension-name">
+                            <span class="dimension-icon">👤</span>
+                            Characters
+                        </div>
+                        <div class="dimension-score">7.9</div>
+                    </div>
+                    <div class="dimension-bar">
+                        <div class="dimension-fill" style="width: 79%"></div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            The ensemble cast delivers performances of remarkable nuance. <strong>Hiroyuki Sanada</strong> 
+                            inhabits Lord Toranaga with a gravity that fills every room he enters—a man whose 
+                            stillness speaks volumes. <strong>Cosmo Jarvis</strong> transforms Blackthorne from 
+                            typical "foreigner in strange land" trope into a complex figure wrestling with his 
+                            own identity and prejudices.
+                        </p>
+                        <p>
+                            <strong>Anna Sawai's Lady Mariko</strong> is the emotional heart—a translator torn 
+                            between cultures, carrying trauma with devastating dignity. The supporting cast 
+                            creates a living, breathing feudal society where even minor characters feel fully 
+                            realized. Point deductions only for some archetypal moments in early episodes 
+                            as characters establish their positions in the political chessboard.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- World Building -->
+                <div class="dimension-block">
+                    <div class="dimension-header">
+                        <div class="dimension-name">
+                            <span class="dimension-icon">🏯</span>
+                            World Building
+                        </div>
+                        <div class="dimension-score">8.5</div>
+                    </div>
+                    <div class="dimension-bar">
+                        <div class="dimension-fill" style="width: 85%"></div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            <strong>Exceptional.</strong> The production team recreated 1600 Japan with 
+                            obsessive attention to detail—from the architecture of Osaka Castle to the 
+                            textiles of period-accurate kimono. Every frame educates as it entertains, 
+                            showing (not telling) the complex social hierarchies, religious beliefs, 
+                            and cultural practices of the Sengoku period.
+                        </p>
+                        <p>
+                            The decision to have Japanese characters speak in their native language 
+                            (with subtitles) immerses viewers in Blackthorne's disorientation while 
+                            honoring authenticity. The world feels lived-in, ancient, and terrifyingly 
+                            indifferent to individual lives—a society where ritual suicide is honorable 
+                            and mercy is weakness.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cinematography -->
+                <div class="dimension-block">
+                    <div class="dimension-header">
+                        <div class="dimension-name">
+                            <span class="dimension-icon">🎥</span>
+                            Cinematography
+                        </div>
+                        <div class="dimension-score">8.5</div>
+                    </div>
+                    <div class="dimension-bar">
+                        <div class="dimension-fill" style="width: 85%"></div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            <strong>Breathtaking.</strong> Every shot could hang in a gallery. The 
+                            cinematography by Christopher Ross and others employs natural light to 
+                            create compositions that evoke Japanese woodblock prints—misty mountains, 
+                            blood-red sunsets, rain-slicked stone. The camera moves with purpose: 
+                            gliding through corridors to emphasize confinement, pulling back to 
+                            reveal the vastness of power, closing in for intimate moments of human 
+                            vulnerability.
+                        </p>
+                        <p>
+                            The visual language borrows from Kurosawa and Ozu, finding beauty in 
+                            stillness and dread in emptiness. Color palettes shift with emotional 
+                            temperature—warm golds for moments of connection, cold blues for political 
+                            maneuvering, stark whites for moments of death or revelation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visual Spectacle -->
+                <div class="dimension-block">
+                    <div class="dimension-header">
+                        <div class="dimension-name">
+                            <span class="dimension-icon">⚔️</span>
+                            Visual Spectacle
+                        </div>
+                        <div class="dimension-score">8.0</div>
+                    </div>
+                    <div class="dimension-bar">
+                        <div class="dimension-fill" style="width: 80%"></div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            When Shōgun commits to spectacle, it <strong>delivers</strong>. The naval 
+                            battles, though sparse, carry visceral weight. The siege sequences blend 
+                            practical effects with CGI seamlessly. The costume design alone is worth 
+                            the watch—every lord's armor tells a story of clan and status.
+                        </p>
+                        <p>
+                            However, this is not a show about constant action. The spectacle is 
+                            <em>earned</em> through patience, making the explosive moments (the 
+                            earthquake sequence, the climactic battles) land with greater impact. 
+                            The restraint is deliberate—violence here is rarely beautiful, usually 
+                            brutal and brief, emphasizing mortality over martial glorification.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Conceptual Density -->
+                <div class="dimension-block">
+                    <div class="dimension-header">
+                        <div class="dimension-name">
+                            <span class="dimension-icon">🧠</span>
+                            Conceptual Density
+                        </div>
+                        <div class="dimension-score">7.5</div>
+                    </div>
+                    <div class="dimension-bar">
+                        <div class="dimension-fill" style="width: 75%"></div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            Shōgun explores <strong>profound themes</strong>: the nature of power, 
+                            cultural imperialism, the tension between duty and desire, the cost of 
+                            survival in a world that demands sacrifice. The show trusts viewers to 
+                            engage with complex philosophical questions without hand-holding.
+                        </p>
+                        <p>
+                            The density emerges through dialogue loaded with subtext and the 
+                            constant negotiation between giri (duty) and ninjo (human feeling). 
+                            However, some viewers may find the political maneuvering occasionally 
+                            opaque, requiring multiple episodes to fully grasp factional loyalties. 
+                            The density rewards attention but demands it—this is homework television 
+                            in the best sense.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Narrative Drive -->
+                <div class="dimension-block">
+                    <div class="dimension-header">
+                        <div class="dimension-name">
+                            <span class="dimension-icon">📖</span>
+                            Narrative Drive
+                        </div>
+                        <div class="dimension-score">7.1</div>
+                    </div>
+                    <div class="dimension-bar">
+                        <div class="dimension-fill" style="width: 71%"></div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            This is where Shōgun will <strong>divide audiences</strong>. The pacing 
+                            is deliberately methodical—often glacial. Episodes may advance the core 
+                            political conflict only incrementally, spending time on atmosphere, 
+                            character study, and cultural exploration.
+                        </p>
+                        <p>
+                            For patient viewers, this is immersive storytelling. For those seeking 
+                            propulsive plot, frustration may set in. The narrative rewards those 
+                            willing to sit in discomfort and ambiguity. The tension builds through 
+                            conversation, not confrontation—every quiet scene of tea ceremony 
+                            conceals life-or-death stakes. The slow burn eventually ignites, but 
+                            you'll need to trust the process.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Resolution -->
+                <div class="dimension-block">
+                    <div class="dimension-header">
+                        <div class="dimension-name">
+                            <span class="dimension-icon">🎯</span>
+                            Resolution
+                        </div>
+                        <div class="dimension-score">7.5</div>
+                    </div>
+                    <div class="dimension-bar">
+                        <div class="dimension-fill" style="width: 75%"></div>
+                    </div>
+                    <div class="dimension-analysis">
+                        <p>
+                            The season finale ("A Dream of a Dream") provides <strong>satisfying 
+                            emotional closure</strong> while leaving the door open for future conflict. 
+                            The fates of key characters resolve in ways that feel earned by their 
+                            previous choices—there are no cheap twists here, only inevitable 
+                            consequences rippling outward from decisions made ten episodes prior.
+                        </p>
+                        <p>
+                            The resolution honors the source material while adapting for modern 
+                            television pacing. Some threads remain deliberately loose (this is, 
+                            after all, the story of how Toranaga became Shōgun), but the emotional 
+                            arcs complete elegantly. The final images linger with you—beautiful, 
+                            heartbreaking, and fully realized.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Score Section -->
+        <section class="final-summary">
+            <h2 class="final-title">Final Verdict</h2>
+            
+            <div class="final-verdict">
+                <p>
+                    <strong>Shōgun (2024)</strong> is a triumph of prestige television—a meticulously crafted 
+                    historical epic that respects its audience's intelligence while delivering visual and 
+                    emotional spectacle. It stands as proof that the limited series format can achieve 
+                    cinematic grandeur while exploring complex themes with novelistic depth.
+                </p>
+                <p>
+                    This is not television for multitasking. It demands your full attention, rewards close 
+                    viewing with layered meaning, and leaves you changed. The fusion of Japanese and Western 
+                    storytelling traditions creates something singular: a show that feels authentically of 
+                    its setting while speaking to universal human experiences of power, loyalty, and survival.
                 </p>
             </div>
 
-            <p style="font-size: 1.15rem; line-height: 1.9; margin-top: 1.5rem;">
-                The critical reception has been euphoric—a <strong>99% Rotten Tomatoes score</strong> reflecting near-universal acclaim. Critics have praised its patient storytelling, visual splendor, and the way it respects both its source material and its audience's intelligence. This isn't television designed for second-screen viewing; it demands full attention, rewarding viewers with a rich tapestry of political drama, cultural exploration, and human emotion that lingers long after the credits roll.
-            </p>
-        </section>
-
-        <!-- Cast Section -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">⭐</span>
-                Principal Cast
-            </h2>
-            
-            <div class="cast-grid">
-                <div class="cast-card">
-                    <div class="cast-name">Hiroyuki Sanada</div>
-                    <div class="cast-role">Lord Yoshii Toranaga</div>
+            <div class="score-breakdown">
+                <div class="score-item">
+                    <div class="score-item-value">7.9</div>
+                    <div class="score-item-label">Characters</div>
                 </div>
-                <div class="cast-card">
-                    <div class="cast-name">Cosmo Jarvis</div>
-                    <div class="cast-role">John Blackthorne</div>
+                <div class="score-item">
+                    <div class="score-item-value">8.5</div>
+                    <div class="score-item-label">World Building</div>
                 </div>
-                <div class="cast-card">
-                    <div class="cast-name">Anna Sawai</div>
-                    <div class="cast-role">Toda Mariko</div>
+                <div class="score-item">
+                    <div class="score-item-value">8.5</div>
+                    <div class="score-item-label">Cinematography</div>
                 </div>
-                <div class="cast-card">
-                    <div class="cast-name">Tadanobu Asano</div>
-                    <div class="cast-role">Kashigi Yabushige</div>
+                <div class="score-item">
+                    <div class="score-item-value">8.0</div>
+                    <div class="score-item-label">Visual Spectacle</div>
                 </div>
-                <div class="cast-card">
-                    <div class="cast-name">Takehiro Hira</div>
-                    <div class="cast-role">Ishido Kazunari</div>
+                <div class="score-item">
+                    <div class="score-item-value">7.5</div>
+                    <div class="score-item-label">Conceptual Density</div>
                 </div>
-                <div class="cast-card">
-                    <div class="cast-name">Fumi Nikaido</div>
-                    <div class="cast-role">Ochiba no Kata</div>
+                <div class="score-item">
+                    <div class="score-item-value">7.1</div>
+                    <div class="score-item-label">Narrative Drive</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-item-value">7.5</div>
+                    <div class="score-item-label">Resolution</div>
                 </div>
             </div>
-        </section>
 
-        <!-- Why It Ranks - 7 Dimensions -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">📊</span>
-                Why It Ranks: The Seven Dimensions
-            </h2>
+            <div class="final-giant-score">7.8</div>
+            <div class="final-score-text">Out of 10</div>
 
-            <div class="dimension-grid">
-                
-                <!-- Dimension 1: Characters -->
-                <div class="dimension-block">
-                    <div class="dimension-header">
-                        <h3 class="dimension-title">
-                            <span class="dimension-number">1</span>
-                            Characters
-                        </h3>
-                        <div class="dimension-score">7.9/10</div>
-                    </div>
-                    <div class="score-bar">
-                        <div class="score-fill" style="width: 79%"></div>
-                    </div>
-                    
-                    <div class="dimension-content">
-                        <div class="content-col">
-                            <h4>What Works</h4>
-                            <ul class="strength-list">
-                                <li><strong>Toranaga (Hiroyuki Sanada):</strong> A towering achievement in restrained performance. Sanada conveys decades of political warfare through micro-expressions and strategic silence. His presence elevates every scene he inhabits.</li>
-                                <li><strong>Mariko (Anna Sawai):</strong> The show's emotional anchor—a Christian convert navigating impossible loyalties. Sawai brings heartbreaking vulnerability and quiet strength to a character caught between worlds.</li>
-                                <li><strong>Yabushige (Tadanobu Asano):</strong> A scene-stealing turn as the opportunistic lord. Asano balances sardonic wit with genuine menace, creating one of television's most compelling wild cards.</li>
-                                <li>Cultural authenticity in portrayal—Japanese characters written with interiority and complexity, not exoticized</li>
-                                <li>Blackthorne's evolution from arrogant sailor to respectful student feels earned through experience</li>
-                            </ul>
-                        </div>
-                        <div class="content-col">
-                            <h4>Areas of Limitation</h4>
-                            <ul class="strength-list weakness-list">
-                                <li>Some supporting regents remain underdeveloped archetypes rather than fully realized characters</li>
-                                <li>Ochiba no Kata's motivations occasionally feel opaque, serving plot more than psychology</li>
-                                <li>Female characters beyond Mariko get limited screen time to develop complexity</li>
-                                <li>Certain antagonists lack the dimensionality of the protagonist faction</li>
-                            </ul>
-                            
-                            <div class="highlight-box">
-                                <strong>Key Insight:</strong> The character work shines brightest in the spaces between dialogue—the loaded silences, the unspoken understandings, the weight of decisions made without words. This is character development as haiku rather than novel.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dimension 2: World Building -->
-                <div class="dimension-block">
-                    <div class="dimension-header">
-                        <h3 class="dimension-title">
-                            <span class="dimension-number">2</span>
-                            World Building
-                        </h3>
-                        <div class="dimension-score">8.5/10</div>
-                    </div>
-                    <div class="score-bar">
-                        <div class="score-fill" style="width: 85%"></div>
-                    </div>
-                    
-                    <div class="dimension-content">
-                        <div class="content-col">
-                            <h4>What Works</h4>
-                            <ul class="strength-list">
-                                <li><strong>Language Authenticity:</strong> Approximately 70% of dialogue is in Japanese, creating genuine immersion. The show trusts audiences to read subtitles rather than defaulting to accented English.</li>
-                                <li><strong>Political Complexity:</strong> The Council of Regents system, the power vacuum following Taiko's death, and the intricate web of alliances and betrayals are rendered with clarity that respects viewer intelligence.</li>
-                                <li><strong>Cultural Detail:</strong> From tea ceremony to seppuku preparation, from samurai armor to village life, every aspect of Japanese culture is depicted with evident research and respect.</li>
-                                <li><strong>Historical Context:</strong> The series captures the precise moment when Japan stood at a crossroads—isolation or engagement with the wider world. The arrival of Europeans adds fascinating texture.</li>
-                                <li>Sensory world-building: You can feel the cold of the castles, smell the gunpowder, hear the wind through bamboo</li>
-                            </ul>
-                        </div>
-                        <div class="content-col">
-                            <h4>Areas of Limitation</h4>
-                            <ul class="strength-list weakness-list">
-                                <li>Some viewers may find the political intricacies occasionally dense, requiring careful attention</li>
-                                <li>Certain aspects of Christian missionary influence could be explored with more depth</li>
-                                <li>The scale of Japan beyond the immediate political centers is sometimes limited by budget constraints</li>
-                            </ul>
-                            
-                            <div class="highlight-box">
-                                <strong>Standout Achievement:</strong> The series makes a foreign culture feel lived-in rather than observed. This isn't tourism television—it's an invitation into a complete worldview with its own internal logic and beauty.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dimension 3: Cinematography -->
-                <div class="dimension-block">
-                    <div class="dimension-header">
-                        <h3 class="dimension-title">
-                            <span class="dimension-number">3</span>
-                            Cinematography
-                        </h3>
-                        <div class="dimension-score">8.5/10</div>
-                    </div>
-                    <div class="score-bar">
-                        <div class="score-fill" style="width: 85%"></div>
-                    </div>
-                    
-                    <div class="dimension-content">
-                        <div class="content-col">
-                            <h4>What Works</h4>
-                            <ul class="strength-list">
-                                <li><strong>Visual Composition:</strong> Every frame could be a painting. The show employs classical Japanese aesthetic principles—negative space, asymmetrical balance, the beauty of impermanence.</li>
-                                <li><strong>Natural Light:</strong> Extensive use of candlelight, firelight, and natural sources creates period-appropriate atmosphere and visual warmth that distinguishes it from over-lit historical dramas.</li>
-                                <li><strong>Camera Movement:</strong> Patient, deliberate camera work that mirrors the show's thematic concerns. Long takes, slow pans, and meditative shots reward careful viewing.</li>
-                                <li><strong>Color Palette:</strong> Rich earth tones, crimson reds of samurai armor, the gold of sunset—colors that evoke woodblock prints and classical Japanese art.</li>
-                                <li>Interior cinematography masters confined spaces, making castle rooms feel simultaneously intimate and oppressive</li>
-                                <li>Landscape shots capture Japan's natural beauty with genuine reverence</li>
-                            </ul>
-                        </div>
-                        <div class="content-col">
-                            <h4>Areas of Limitation</h4>
-                            <ul class="strength-list weakness-list">
-                                <li>Occasional darkness in night scenes may challenge viewers with less optimal viewing setups</li>
-                                <li>Some action sequences sacrifice clarity for atmosphere</li>
-                                <li>Certain episodes show slight inconsistency in visual approach between different directors</li>
-                            </ul>
-                            
-                            <div class="highlight-box">
-                                <strong>Cinematic Highlight:</strong> The opening sequence of Episode 1, following Blackthorne from shipwreck to shore, establishes the visual language immediately—mist, water, the alien shore, all rendered with painterly reverence.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dimension 4: Visual Spectacle -->
-                <div class="dimension-block">
-                    <div class="dimension-header">
-                        <h3 class="dimension-title">
-                            <span class="dimension-number">4</span>
-                            Visual Spectacle
-                        </h3>
-                        <div class="dimension-score">8.0/10</div>
-                    </div>
-                    <div class="score-bar">
-                        <div class="score-fill" style="width: 80%"></div>
-                    </div>
-                    
-                    <div class="dimension-content">
-                        <div class="content-col">
-                            <h4>What Works</h4>
-                            <ul class="strength-list">
-                                <li><strong>Production Design:</strong> Castle sets, village reconstructions, and ship designs demonstrate massive budget allocation and historical research. The physical world feels tangible and expensive.</li>
-                                <li><strong>Costume Design:</strong> Samurai armor, kimono, and period clothing are exquisite in detail. Every costume tells a story about status, loyalty, and character.</li>
-                                <li><strong>Set Pieces:</strong> Key sequences—formal audiences, battles, seppuku ceremonies—are staged with epic scope and emotional weight.</li>
-                                <li><strong>Natural Elements:</strong> The show uses weather, landscape, and environment as spectacle. Storms, fires, and the changing seasons become characters themselves.</li>
-                                <li>Siege sequences demonstrate impressive scale and tactical detail</li>
-                                <li>The contrast between European and Japanese aesthetics creates visual interest</li>
-                            </ul>
-                        </div>
-                        <div class="content-col">
-                            <h4>Areas of Limitation</h4>
-                            <ul class="strength-list weakness-list">
-                                <li>Budget constraints mean large-scale battles are relatively rare, with more focus on political than military spectacle</li>
-                                <li>Some CGI backgrounds in wide shots lack the polish of practical elements</li>
-                                <li>Occasional reliance on intimate spaces limits opportunities for grand spectacle</li>
-                            </ul>
-                            
-                            <div class="highlight-box">
-                                <strong>Spectacle Philosophy:</strong> Unlike many historical epics that mistake chaos for excitement, Shōgun finds spectacle in precision—the perfectly choreographed tea ceremony, the synchronized movement of samurai, the controlled violence of a duel.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dimension 5: Conceptual Density -->
-                <div class="dimension-block">
-                    <div class="dimension-header">
-                        <h3 class="dimension-title">
-                            <span class="dimension-number">5</span>
-                            Conceptual Density
-                        </h3>
-                        <div class="dimension-score">7.5/10</div>
-                    </div>
-                    <div class="score-bar">
-                        <div class="score-fill" style="width: 75%"></div>
-                    </div>
-                    
-                    <div class="dimension-content">
-                        <div class="content-col">
-                            <h4>Intellectual Layers</h4>
-                            <ul class="strength-list">
-                                <li><strong>Cultural Relativism:</strong> The series explores how different cultures view honor, death, power, and religion without privileging one worldview over another. Both Japanese and English perspectives receive fair examination.</li>
-                                <li><strong>Political Philosophy:</strong> Machiavellian strategy meets bushido ethics. The show interrogates what leadership requires, what loyalty demands, and how power can be maintained without losing one's soul.</li>
-                                <li><strong>Religious Conflict:</strong> Christianity versus Buddhism/Shinto, the role of missionaries as political agents, and personal faith versus public religion all receive thoughtful treatment.</li>
-                                <li><strong>Gender and Power:</strong> Through characters like Mariko and Ochiba, the show examines how women navigate and wield power in patriarchal systems.</li>
-                                <li>Colonialism examined from multiple angles—economic, religious, cultural</li>
-                                <li>The concept of "face" and social obligation as binding forces</li>
-                            </ul>
-                        </div>
-                        <div class="content-col">
-                            <h4>Thematic Exploration</h4>
-                            <ul class="strength-list">
-                                <li><strong>Honor vs. Survival:</strong> The central tension facing every character—can one remain honorable while navigating a world that demands compromise?</li>
-                                <li><strong>Translation and Understanding:</strong> Language as barrier and bridge; the difficulty of truly understanding another culture</li>
-                                <li><strong>Change and Tradition:</strong> Japan on the cusp of transformation, resistant to outside influence yet inevitably changed by it</li>
-                                <li><strong>Individual vs. Collective:</strong> Western individualism confronting Eastern collectivism</li>
-                            </ul>
-                            
-                            <div class="highlight-box">
-                                <strong>Conceptual Strength:</strong> The show doesn't simplify its themes for easy consumption. Ideas about honor, loyalty, and power remain complex and contradictory, just as they are in life.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dimension 6: Narrative Drive -->
-                <div class="dimension-block">
-                    <div class="dimension-header">
-                        <h3 class="dimension-title">
-                            <span class="dimension-number">6</span>
-                            Narrative Drive
-                        </h3>
-                        <div class="dimension-score">7.1/10</div>
-                    </div>
-                    <div class="score-bar">
-                        <div class="score-fill" style="width: 71%"></div>
-                    </div>
-                    
-                    <div class="dimension-content">
-                        <div class="content-col">
-                            <h4>Structure and Pacing</h4>
-                            <ul class="strength-list">
-                                <li><strong>Deliberate Pacing:</strong> The show rejects modern television's rush for constant incident. Scenes breathe, conversations take time, and tension builds through accumulation rather than acceleration.</li>
-                                <li><strong>Multiple Viewpoints:</strong> The narrative rotates through perspectives—Toranaga's strategic mind, Blackthorne's confused journey, Mariko's divided loyalty—creating a rich tapestry of experience.</li>
-                                <li><strong>Episode Architecture:</strong> Individual episodes function as complete narratives while advancing the larger story. Several episodes are masterpieces of contained storytelling.</li>
-                                <li><strong>Cliffhangers and Revelations:</strong> When the show does accelerate, it does so effectively. Major revelations land with genuine impact.</li>
-                                <li>The slow burn pays off in later episodes when accumulated tensions finally explode</li>
-                            </ul>
-                        </div>
-                        <div class="content-col">
-                            <h4>Pacing Considerations</h4>
-                            <ul class="strength-list weakness-list">
-                                <li>Early episodes may challenge viewers accustomed to faster-paced storytelling</li>
-                                <li>Some middle episodes feel slightly stretched, with subplots that don't fully justify their screen time</li>
-                                <li>The political complexity occasionally slows momentum as characters explain alliances and motivations</li>
-                                <li>Blackthorne's initial confusion mirrors the viewer's, which is intentional but potentially alienating</li>
-                            </ul>
-                            
-                            <div class="highlight-box">
-                                <strong>Narrative Philosophy:</strong> This is patient television for patient viewers. The show believes in the power of gradual immersion over immediate gratification, trusting that audiences will invest in a world that reveals itself slowly.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dimension 7: Resolution -->
-                <div class="dimension-block">
-                    <div class="dimension-header">
-                        <h3 class="dimension-title">
-                            <span class="dimension-number">7</span>
-                            Resolution
-                        </h3>
-                        <div class="dimension-score">7.5/10</div>
-                    </div>
-                    <div class="score-bar">
-                        <div class="score-fill" style="width: 75%"></div>
-                    </div>
-                    
-                    <div class="dimension-content">
-                        <div class="content-col">
-                            <h4>Season Conclusion</h4>
-                            <ul class="strength-list">
-                                <li><strong>Emotional Payoff:</strong> Character arcs reach satisfying milestones. Blackthorne's transformation, Mariko's sacrifice, and Toranaga's strategic triumph all feel earned by the storytelling.</li>
-                                <li><strong>Thematic Resolution:</strong> The finale addresses the season's central questions about loyalty, honor, and cultural understanding while leaving space for future exploration.</li>
-                                <li><strong>Setup for Season 2:</strong> A promising renewal has been confirmed, and the finale positions characters for future conflicts without feeling incomplete.</li>
-                                <li><strong>Standalone Satisfaction:</strong> Despite being part of a larger story, Season 1 functions as a complete narrative with identifiable beginning, middle, and end.</li>
-                                <li>Major character deaths land with appropriate weight and narrative purpose</li>
-                            </ul>
-                        </div>
-                        <div class="content-col">
-                            <h4>Unfinished Business</h4>
-                            <ul class="strength-list weakness-list">
-                                <li>The political situation remains unresolved by design—this is a chapter, not the complete story</li>
-                                <li>Some supporting character arcs feel truncated rather than concluded</li>
-                                <li>The finale's pacing rushes through certain developments that earlier episodes luxuriated in</li>
-                                <li>Viewers unfamiliar with Japanese history may not understand the full significance of certain outcomes</li>
-                            </ul>
-                            
-                            <div class="highlight-box">
-                                <strong>Resolution Verdict:</strong> The season succeeds in telling a complete story while acknowledging it's part of something larger. The finale satisfies while creating appetite for more—a delicate balance achieved with confidence.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="quote-block" style="margin-top: 2rem; text-align: left; max-width: 700px; margin-left: auto; margin-right: auto;">
+                "Only by learning to live like the Japanese could Blackthorne hope to survive—and only by 
+                understanding him could Toranaga hope to use him. In this mutual incomprehension and gradual 
+                comprehension lies the show's genius."
             </div>
         </section>
-
-        <!-- Final Analysis Summary -->
-        <div class="summary-box">
-            <h3 class="summary-title">Final Assessment</h3>
-            <p class="summary-text">
-                <strong>Shōgun (2024)</strong> represents prestige television at its most ambitious and accomplished. With a weighted average of <strong>7.48/10</strong>, it stands as one of the finest historical dramas ever produced for television, a work that respects its audience's intelligence while delivering genuine emotional impact. The series succeeds through sheer craft—performances of extraordinary depth, visuals of breathtaking beauty, and storytelling that trusts viewers to engage with complexity rather than demanding simplification. While its deliberate pacing and narrative density may challenge those seeking more immediate gratification, patient viewers will find a richly rewarding experience that lingers in memory long after viewing. Hiroyuki Sanada's commanding presence anchors a remarkable ensemble, while the production's commitment to cultural authenticity sets a new standard for historical drama. This is television as art, entertainment as education, and drama as immersive experience. For viewers willing to meet it on its own terms, Shōgun offers something increasingly rare: the genuine transport to another time and place, rendered with craft, care, and profound respect for both subject and audience.
-            </p>
-        </div>
 
         <!-- Footer -->
-        <footer>
-            <p>TV Shows Ranked • Seven-Dimension Analysis Framework</p>
-            <p style="margin-top: 1rem; font-size: 0.9rem;">Analysis generated: February 2026 • Shōgun Season 1 (2024)</p>
+        <footer style="text-align: center; padding: 2rem; color: var(--stone); font-size: 0.9rem; border-top: 1px solid var(--bamboo); margin-top: 2rem;">
+            <p>Analysis generated for TV Shows Ranked</p>
+            <p style="margin-top: 0.5rem; font-family: 'Noto Serif JP', serif; color: var(--gold); opacity: 0.6;">将軍 · Shōgun · 2024</p>
         </footer>
     </div>
+
+    <script>
+        // Animate dimension bars on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const bars = document.querySelectorAll('.dimension-fill');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target;
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 100);
+                        observer.unobserve(bar);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            bars.forEach(bar => observer.observe(bar));
+        });
+    </script>
 </body>
 </html>
