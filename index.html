@@ -5232,8 +5232,9 @@
                     const parser = new DOMParser();
                     const doc = parser.parseFromString(html, 'text/html');
 
-                    // Extract "What It Feels Like to Watch" section
-                    const heading = Array.from(doc.querySelectorAll('h2')).find(h => h.textContent.includes('What It Feels Like to Watch'));
+                    // Extract narrative/feelings section - try multiple heading patterns
+                    const headingPatterns = ['What It Feels Like', 'A Modern', 'Series Overview', 'The Premise', 'Introduction', 'Synopsis'];
+                    const heading = Array.from(doc.querySelectorAll('h2, h1')).find(h => headingPatterns.some(pattern => h.textContent.toLowerCase().includes(pattern.toLowerCase())));
                     if (heading) {
                         let content = '';
                         let nextEl = heading.nextElementSibling;
@@ -5244,8 +5245,9 @@
                         narrativeHtml = content || '<p>Narrative content available on full page.</p>';
                     }
 
-                    // Extract "Why It Ranks" section
-                    const whyHeading = Array.from(doc.querySelectorAll('h2')).find(h => h.textContent.includes('Why It Ranks'));
+                    // Extract dimension/ranking section - try multiple patterns
+                    const whyPatterns = ['Why It Ranks', 'The Seven Dimensions', 'Dimension Analysis', 'Score Breakdown', 'Character Analysis', 'Final Verdict'];
+                    const whyHeading = Array.from(doc.querySelectorAll('h2')).find(h => whyPatterns.some(pattern => h.textContent.toLowerCase().includes(pattern.toLowerCase())));
                     if (whyHeading) {
                         let content = '';
                         let nextEl = whyHeading.nextElementSibling;
@@ -5254,6 +5256,14 @@
                             nextEl = nextEl.nextElementSibling;
                         }
                         whyItRanksHtml = content;
+                    }
+                    
+                    // If no dimension section found, try to collect all dimension cards
+                    if (!whyItRanksHtml) {
+                        const dimCards = doc.querySelectorAll('.dimension-card, .dimension-block');
+                        if (dimCards.length > 0) {
+                            whyItRanksHtml = Array.from(dimCards).map(card => card.outerHTML).join('');
+                        }
                     }
                 }
             } catch (err) {
