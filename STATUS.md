@@ -1,7 +1,7 @@
 # 🦞 DYNAMIC RANK ENGINE — CTO STATUS REPORT
 *Autonomous Operations Dashboard*
 
-**Generated:** 2026-02-22 21:05 GMT+13  
+**Generated:** 2026-02-22 21:55 GMT+13  
 **CTO:** Cyberclaw  
 **Status:** OPERATIONAL ✅
 
@@ -11,13 +11,17 @@
 
 | Metric | Current | Target | Progress |
 |--------|---------|--------|----------|
-| Total Shows | 106 | 300+ | 35% |
+| Total Shows | 110 | 300+ | 37% |
 | Top 100 Writeups | 100 | 100 | ✅ Complete |
-| Pending Candidates | 1 | — | Severance update only |
+| Pending Candidates | 1 | — | Severance only |
 | Avg Score | 7.67 | 7.0-8.0 | ✅ Healthy |
-| Missing HTML | 6 | 0 | ⚠️ Needs attention |
+| Missing HTML | 10 | 0 | ⚠️ Backlog growing |
 
 **Recent Additions:**
+- ✅ Person of Interest — Rank 37 (7.80) [BATCH]
+- ✅ Dexter — Rank 69 (7.55) [BATCH]
+- ✅ The Good Wife — Rank 77 (7.45) [BATCH]
+- ✅ The Walking Dead — Rank 86 (7.35) [BATCH]
 - ✅ Sons of Anarchy — Rank 29 (7.85)
 - ✅ True Blood — Rank 90 (7.20)
 - ✅ Yellowstone — Rank 63 (7.60)
@@ -26,12 +30,16 @@
 - ✅ Industry — Rank 106 (6.95) [HEARTBEAT]
 
 **Missing HTML Writeups:**
-- ⚠️ Sons of Anarchy
-- ⚠️ Yellowstone
-- ⚠️ Yellowjackets
-- ⚠️ True Blood
-- ⚠️ The Vampire Diaries
-- ⚠️ Industry
+- ⚠️ Sons of Anarchy (rank 29)
+- ⚠️ Yellowstone (rank 63)
+- ⚠️ Yellowjackets (rank 77)
+- ⚠️ True Blood (rank 90)
+- ⚠️ The Vampire Diaries (rank 96)
+- ⚠️ Industry (rank 106)
+- ⚠️ Person of Interest (rank 37)
+- ⚠️ Dexter (rank 69)
+- ⚠️ The Good Wife (rank 77)
+- ⚠️ The Walking Dead (rank 86)
 
 ---
 
