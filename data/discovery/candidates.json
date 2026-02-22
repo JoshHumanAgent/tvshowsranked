@@ -1,120 +1,148 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Discovery Candidates",
-  "description": "TV dramas discovered but not yet fully evaluated and added to the pool",
-  "lastUpdated": "2026-02-22",
+  "title": "Discovery Candidates - FRESH QUEUE (2026-02-23)",
+  "description": "TV dramas to score - ORGANIZED BY MOST RECENT",
+  "lastUpdated": "2026-02-23T01:15",
   "candidates": [
     {
-      "title": "True Blood",
-      "year": 2008,
-      "status": "scored",
-      "priority": "high",
-      "reason": "Major HBO drama, vampire genre, 7 seasons, significant cultural impact",
-      "discoveredAt": "2026-02-22",
-      "tmdbId": 10545,
-      "finalScore": 7.20,
-      "rank": 90,
-      "notes": "Scored via subagent. Strong world-building (8.0) and drive (8.5), penalized for finale (resol 5.5)."
+      "title": "A Knight of the Seven Kingdoms",
+      "year": 2026,
+      "status": "pending",
+      "priority": "CRITICAL",
+      "reason": "GoT spinoff, 8.536 TMDB, just premiered Jan 2025",
+      "discoveredAt": "2026-02-23",
+      "tmdbId": 224372,
+      "notes": "Dunk & Egg story. High anticipation. Check if already indexed."
     },
     {
-      "title": "Sons of Anarchy",
-      "year": 2008,
-      "status": "scored",
+      "title": "The Day of the Jackal",
+      "year": 2024,
+      "status": "pending",
       "priority": "high",
-      "reason": "Major FX drama, crime genre, 7 seasons, strong following",
-      "discoveredAt": "2026-02-22",
-      "tmdbId": 1409,
-      "finalScore": 7.85,
-      "notes": "Scored via subagent. Strong characters (8.5) and world-building (8.5). 'Hamlet on Harleys' with real Hell's Angels advisors."
+      "reason": "British spy thriller, 8.163 TMDB, Eddie Redmayne",
+      "discoveredAt": "2026-02-23",
+      "tmdbId": 222766,
+      "notes": "Cat-and-mouse assassin chase. Critical acclaim."
     },
     {
-      "title": "The Vampire Diaries",
-      "year": 2009,
-      "status": "scored",
+      "title": "Like Water for Chocolate",
+      "year": 2024,
+      "status": "pending",
       "priority": "medium",
-      "reason": "Popular CW drama, 8 seasons, supernatural genre",
-      "discoveredAt": "2026-02-22",
-      "tmdbId": 18165,
-      "finalScore": 7.18,
-      "rank": 96,
-      "notes": "Scored. Peak seasons 1-3 strong (drive 8.0), later seasons declined. 171 episodes total."
+      "reason": "Mexican magical realism, 8.2 TMDB",
+      "discoveredAt": "2026-02-23",
+      "tmdbId": 235635,
+      "notes": "Based on famous novel. Spanish language."
     },
     {
-      "title": "Yellowstone",
-      "year": 2018,
-      "status": "scored",
+      "title": "Paradise",
+      "year": 2025,
+      "status": "pending",
+      "priority": "medium",
+      "reason": "Murder mystery in wealthy community, 7.5 TMDB",
+      "discoveredAt": "2026-02-23",
+      "tmdbId": 245927,
+      "notes": "Sterling K. Brown. Hulu/Disney+."
+    },
+    {
+      "title": "When Life Gives You Tangerines",
+      "year": 2025,
+      "status": "pending",
       "priority": "high",
-      "reason": "Major contemporary drama, Western genre, huge viewership",
-      "discoveredAt": "2026-02-22",
-      "tmdbId": 73586,
-      "finalScore": 7.60,
-      "rank": 63,
-      "notes": "Scored. Costner's performance, authentic world-building (8.5). Taylor Sheridan's signature series."
+      "reason": "Korean drama, 8.723 TMDB, Netflix hit",
+      "discoveredAt": "2026-02-23",
+      "tmdbId": 219246,
+      "notes": "Jeju Island romance. Strong ratings."
     },
     {
-      "title": "Yellowjackets",
+      "title": "House of David",
+      "year": 2025,
+      "status": "pending",
+      "priority": "medium",
+      "reason": "Biblical epic, 7.988 TMDB, Amazon",
+      "discoveredAt": "2026-02-23",
+      "tmdbId": 243881,
+      "notes": "King Saul to David story. Religious drama."
+    }
+  ],
+  "alreadyIndexed": [
+    "The Pitt (rank 22, 7.95)",
+    "Landman (rank 21, 7.95)",
+    "MobLand (rank 30, 7.88)",
+    "High Potential (rank 83, 7.45)",
+    "IT: Welcome to Derry (rank 67, 7.65)",
+    "Daredevil: Born Again (rank 62, 7.72)"
+  ],
+  "skipped": [
+    "Dinastía Casillas - Spanish crime, lower priority",
+    "Doménica Montero - Telenovela",
+    "Heated Rivalry - Sports romance",
+    "Pluribus - Comedy",
+    "Gachiakuta - Anime",
+    "Revenged Love - BL drama",
+    "The First Frost - Chinese romance",
+    "The Jewel of Section E - Filipino comedy"
+  ],
+  "pendingDiscovery": [
+    {
+      "title": "White Lotus",
       "year": 2021,
-      "status": "scored",
       "priority": "high",
-      "reason": "Acclaimed recent drama, survival/thriller, Showtime",
-      "discoveredAt": "2026-02-22",
-      "tmdbId": 117488,
-      "finalScore": 7.42,
-      "rank": 77,
-      "notes": "Scored. Dual timeline survival horror. Strong conceptual density (8.0). Season 3 just concluded."
+      "reason": "HBO anthology, Mike White, S3 airing 2025"
     },
     {
-      "title": "The Bear",
+      "title": "1923",
       "year": 2022,
-      "status": "completed",
       "priority": "medium",
-      "reason": "Already in index but may need quality review",
-      "discoveredAt": "2026-02-22",
-      "tmdbId": 136315,
-      "notes": "HTML writeup exists (23KB). Full content verified."
+      "reason": "Yellowstone prequel, Harrison Ford"
     },
     {
-      "title": "Industry",
-      "year": 2020,
-      "status": "scored",
+      "title": "1883",
+      "year": 2021,
       "priority": "medium",
-      "reason": "HBO drama, finance world, 3 seasons",
-      "discoveredAt": "2026-02-22",
-      "tmdbId": 90812,
-      "finalScore": 6.95,
-      "rank": 106,
-      "notes": "Scored during heartbeat. Authentic finance world, strong world-building (7.5). TMDB: 6.78."
+      "reason": "Yellowstone prequel, Tim McGraw"
     },
     {
-      "title": "Severance",
+      "title": "Lioness",
+      "year": 2023,
+      "priority": "high",
+      "reason": "Zoe Saldana CIA thriller, Taylor Sheridan"
+    },
+    {
+      "title": "Tulsa King",
       "year": 2022,
-      "status": "indexed",
-      "priority": "low",
-      "reason": "Already in top 100, check writeup quality",
-      "discoveredAt": "2026-02-22",
-      "tmdbId": null,
-      "notes": "Season 2 recently aired - update needed"
+      "priority": "medium",
+      "reason": "Sylvester Stallone, Taylor Sheridan"
+    },
+    {
+      "title": "Mayor of Kingstown",
+      "year": 2021,
+      "priority": "medium",
+      "reason": "Jeremy Renner, prison town drama"
+    },
+    {
+      "title": "Shrinking",
+      "year": 2023,
+      "priority": "medium",
+      "reason": "Jason Segel therapist comedy-drama, Harrison Ford"
+    },
+    {
+      "title": "For All Mankind",
+      "year": 2019,
+      "priority": "medium",
+      "reason": "Apple space alt-history, S4 complete"
     }
   ],
   "discoveryLog": [
     {
-      "date": "2026-02-22",
-      "action": "Initial candidate list created from user suggestions and known gaps"
+      "date": "2026-02-23T01:10",
+      "action": "CLEANUP: Removed all scored/completed shows",
+      "notes": "Reorganized queue by recency and priority"
     },
     {
-      "date": "2026-02-22T15:20",
-      "action": "True Blood scored (7.20) and added to pool at rank 90",
-      "notes": "Subagent research completed. Peak quality basis (S1-3)."
-    },
-    {
-      "date": "2026-02-22T16:35",
-      "action": "Batch scored 3 shows: Yellowstone (7.60), Yellowjackets (7.42), Vampire Diaries (7.18)",
-      "notes": "All added to pool. 105 total shows indexed."
-    },
-    {
-      "date": "2026-02-22T21:05",
-      "action": "HEARTBEAT: Scored Industry (6.95) and added to pool at rank 106",
-      "notes": "Pool now 106 shows. 5 shows pending HTML writeups."
+      "date": "2026-02-23T01:15",
+      "action": "TMDB SCAN: Discovered 6 new prestige dramas from 2024-2025",
+      "notes": "111 total results, filtered to Western prestige focus"
     }
   ]
 }
