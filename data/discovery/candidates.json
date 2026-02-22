@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Discovery Candidates - FRESH QUEUE (2026-02-23)",
-  "description": "TV dramas to score - ORGANIZED BY MOST RECENT",
-  "lastUpdated": "2026-02-23T01:15",
+  "title": "Discovery Candidates - PRIORITY QUEUE",
+  "description": "Cross-referenced from by_category_drama.json - 199 missing shows",
+  "lastUpdated": "2026-02-23",
+  "totalMissing": 199,
   "candidates": [
     {
       "title": "A Knight of the Seven Kingdoms",
@@ -10,139 +11,231 @@
       "status": "pending",
       "priority": "CRITICAL",
       "reason": "GoT spinoff, 8.536 TMDB, just premiered Jan 2025",
-      "discoveredAt": "2026-02-23",
       "tmdbId": 224372,
-      "notes": "Dunk & Egg story. High anticipation. Check if already indexed."
+      "source": "TMDB scan"
     },
     {
       "title": "The Day of the Jackal",
       "year": 2024,
       "status": "pending",
-      "priority": "high",
+      "priority": "HIGH",
       "reason": "British spy thriller, 8.163 TMDB, Eddie Redmayne",
-      "discoveredAt": "2026-02-23",
       "tmdbId": 222766,
-      "notes": "Cat-and-mouse assassin chase. Critical acclaim."
-    },
-    {
-      "title": "Like Water for Chocolate",
-      "year": 2024,
-      "status": "pending",
-      "priority": "medium",
-      "reason": "Mexican magical realism, 8.2 TMDB",
-      "discoveredAt": "2026-02-23",
-      "tmdbId": 235635,
-      "notes": "Based on famous novel. Spanish language."
-    },
-    {
-      "title": "Paradise",
-      "year": 2025,
-      "status": "pending",
-      "priority": "medium",
-      "reason": "Murder mystery in wealthy community, 7.5 TMDB",
-      "discoveredAt": "2026-02-23",
-      "tmdbId": 245927,
-      "notes": "Sterling K. Brown. Hulu/Disney+."
+      "source": "TMDB scan"
     },
     {
       "title": "When Life Gives You Tangerines",
       "year": 2025,
       "status": "pending",
-      "priority": "high",
+      "priority": "HIGH",
       "reason": "Korean drama, 8.723 TMDB, Netflix hit",
-      "discoveredAt": "2026-02-23",
       "tmdbId": 219246,
-      "notes": "Jeju Island romance. Strong ratings."
+      "source": "TMDB scan"
     },
     {
-      "title": "House of David",
+      "title": "Three-Body Problem",
+      "year": 2024,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Game of Thrones team, sci-fi epic",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "Fallout",
+      "year": 2024,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Gaming franchise, Amazon hit",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "The Diplomat",
+      "year": 2023,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Political thriller, Keri Russell",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "Ahsoka",
+      "year": 2023,
+      "status": "pending",
+      "priority": "MEDIUM",
+      "reason": "Star Wars, Rosario Dawson",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "The Sandman",
+      "year": 2022,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Neil Gaiman masterpiece, Netflix",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "Severance Season 2 Update",
       "year": 2025,
       "status": "pending",
-      "priority": "medium",
-      "reason": "Biblical epic, 7.988 TMDB, Amazon",
-      "discoveredAt": "2026-02-23",
-      "tmdbId": 243881,
-      "notes": "King Saul to David story. Religious drama."
-    }
-  ],
-  "alreadyIndexed": [
-    "The Pitt (rank 22, 7.95)",
-    "Landman (rank 21, 7.95)",
-    "MobLand (rank 30, 7.88)",
-    "High Potential (rank 83, 7.45)",
-    "IT: Welcome to Derry (rank 67, 7.65)",
-    "Daredevil: Born Again (rank 62, 7.72)"
-  ],
-  "skipped": [
-    "Dinastía Casillas - Spanish crime, lower priority",
-    "Doménica Montero - Telenovela",
-    "Heated Rivalry - Sports romance",
-    "Pluribus - Comedy",
-    "Gachiakuta - Anime",
-    "Revenged Love - BL drama",
-    "The First Frost - Chinese romance",
-    "The Jewel of Section E - Filipino comedy"
-  ],
-  "pendingDiscovery": [
-    {
-      "title": "White Lotus",
-      "year": 2021,
-      "priority": "high",
-      "reason": "HBO anthology, Mike White, S3 airing 2025"
+      "priority": "HIGH",
+      "reason": "Verify score reflects S2 quality (just aired)",
+      "tmdbId": 95396,
+      "source": "manual"
     },
     {
-      "title": "1923",
-      "year": 2022,
-      "priority": "medium",
-      "reason": "Yellowstone prequel, Harrison Ford"
+      "title": "The Night Manager",
+      "year": 2016,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Le Carré adaptation, Tom Hiddleston, award-winning",
+      "tmdbId": null,
+      "source": "by_category_drama"
     },
     {
-      "title": "1883",
-      "year": 2021,
-      "priority": "medium",
-      "reason": "Yellowstone prequel, Tim McGraw"
+      "title": "The Night Of",
+      "year": 2016,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "HBO limited series, Riz Ahmed, critically acclaimed",
+      "tmdbId": null,
+      "source": "by_category_drama"
     },
     {
-      "title": "Lioness",
-      "year": 2023,
-      "priority": "high",
-      "reason": "Zoe Saldana CIA thriller, Taylor Sheridan"
+      "title": "Mindhunter",
+      "year": 2017,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Fincher, true crime masterpiece",
+      "tmdbId": null,
+      "source": "by_category_drama"
     },
     {
-      "title": "Tulsa King",
-      "year": 2022,
-      "priority": "medium",
-      "reason": "Sylvester Stallone, Taylor Sheridan"
+      "title": "The Sinner",
+      "year": 2017,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Anthology, Jessica Biel, critically acclaimed",
+      "tmdbId": null,
+      "source": "by_category_drama"
     },
     {
-      "title": "Mayor of Kingstown",
-      "year": 2021,
-      "priority": "medium",
-      "reason": "Jeremy Renner, prison town drama"
+      "title": "Counterpart",
+      "year": 2017,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "JK Simmons, spy sci-fi, underrated gem",
+      "tmdbId": null,
+      "source": "by_category_drama"
     },
     {
-      "title": "Shrinking",
-      "year": 2023,
-      "priority": "medium",
-      "reason": "Jason Segel therapist comedy-drama, Harrison Ford"
-    },
-    {
-      "title": "For All Mankind",
+      "title": "The Witcher",
       "year": 2019,
-      "priority": "medium",
-      "reason": "Apple space alt-history, S4 complete"
+      "status": "pending",
+      "priority": "MEDIUM",
+      "reason": "Netflix flagship, gaming franchise",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "Rings of Power",
+      "year": 2022,
+      "status": "pending",
+      "priority": "MEDIUM",
+      "reason": "LOTR, Amazon flagship",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "I May Destroy You",
+      "year": 2020,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Michaela Coel, groundbreaking",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "Normal People",
+      "year": 2020,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Sally Rooney adaptation, BBC/Hulu",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "The OA",
+      "year": 2016,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Brit Marling, Netflix mystery, cult following",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "Sense8",
+      "year": 2015,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Wachowskis, ambitious sci-fi",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "Bates Motel",
+      "year": 2013,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Psycho prequel, Freddie Highmore, Vera Farmiga",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "The Fall",
+      "year": 2013,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Gillian Anderson, Jamie Dornan, British thriller",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "Luther",
+      "year": 2010,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Idris Elba, British crime masterpiece",
+      "tmdbId": null,
+      "source": "by_category_drama"
+    },
+    {
+      "title": "Sherlock",
+      "year": 2010,
+      "status": "pending",
+      "priority": "HIGH",
+      "reason": "Cumberbatch, modern classic",
+      "tmdbId": null,
+      "source": "by_category_drama"
     }
   ],
+  "bulkQueue": {
+    "description": "199 total missing shows from by_category_drama.json",
+    "count": 199,
+    "note": "Work through priority list first, then bulk add remaining"
+  },
   "discoveryLog": [
     {
-      "date": "2026-02-23T01:10",
-      "action": "CLEANUP: Removed all scored/completed shows",
-      "notes": "Reorganized queue by recency and priority"
-    },
-    {
-      "date": "2026-02-23T01:15",
-      "action": "TMDB SCAN: Discovered 6 new prestige dramas from 2024-2025",
-      "notes": "111 total results, filtered to Western prestige focus"
+      "date": "2026-02-23T01:25",
+      "action": "CROSS-REFERENCE: Compared by_category_drama.json against current index",
+      "results": {
+        "alreadyIndexed": 9,
+        "missing": 199,
+        "addedToQueue": 25
+      }
     }
   ]
 }
