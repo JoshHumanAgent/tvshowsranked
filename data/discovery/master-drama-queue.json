@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MASTER DRAMA QUEUE",
+  "description": "Complete list of dramas to score - SORTED BY YEAR (newest first). Updated 2026-02-23",
+  "total": 190,
+  "workflow": "Work 5 shows at a time from top. Check for new releases monthly.",
+  "candidates": [
+    {"title": "Revolution 9", "year": 2024, "priority": "LOW", "confidence": "low", "genres": ["thriller", "drama"]},
+    {"title": "Fallout", "year": 2024, "priority": "HIGH", "confidence": "high", "genres": ["sci-fi", "action"]},
+    {"title": "Three-Body Problem", "year": 2024, "priority": "HIGH", "confidence": "high", "genres": ["sci-fi", "drama"]},
+    {"title": "One Day", "year": 2024, "priority": "MEDIUM", "confidence": "medium", "genres": ["romance", "drama"]},
+    {"title": "Shardlake", "year": 2024, "priority": "LOW", "confidence": "low", "genres": ["drama", "historical"]},
+    {"title": "Tales of the Empire", "year": 2024, "priority": "LOW", "confidence": "low", "genres": ["animation", "sci-fi"]},
+    {"title": "The New Look", "year": 2024, "priority": "MEDIUM", "confidence": "medium", "genres": ["drama", "historical"]},
+    {"title": "Skeleton Crew", "year": 2024, "priority": "MEDIUM", "confidence": "medium", "genres": ["sci-fi", "adventure"]},
+    {"title": "The Regime", "year": 2024, "priority": "MEDIUM", "confidence": "medium", "genres": ["drama", "satire"]},
+    {"title": "Acolyte", "year": 2024, "priority": "MEDIUM", "confidence": "medium", "genres": ["sci-fi", "fantasy"]},
+    {"title": "Masters of the Universe", "year": 2024, "priority": "LOW", "confidence": "low", "genres": ["action", "fantasy"]},
+    {"title": "3 Body Problem", "year": 2024, "priority": "HIGH", "confidence": "high", "genres": ["sci-fi", "drama"]},
+    {"title": "Love & Mercy", "year": 2024, "priority": "LOW", "confidence": "low", "genres": ["drama"]},
+    {"title": "Money Motor", "year": 2024, "priority": "LOW", "confidence": "low", "genres": ["crime", "thriller"]},
+    {"title": "True Detective: Night Country", "year": 2024, "priority": "MEDIUM", "confidence": "medium", "genres": ["crime", "mystery"]}
+  ],
+  "top5": [
+    "Fallout (2024) - HIGH",
+    "Three-Body Problem (2024) - HIGH", 
+    "One Day (2024) - MEDIUM",
+    "The New Look (2024) - MEDIUM",
+    "The Regime (2024) - MEDIUM"
+  ]
+}
