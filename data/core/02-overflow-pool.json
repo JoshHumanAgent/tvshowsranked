@@ -1,0 +1,1052 @@
+﻿{
+    "shows":  [
+                  {
+                      "rank":  101,
+                      "slug":  "big-little-lies",
+                      "title":  "Big Little Lies",
+                      "year":  2017,
+                      "month":  2,
+                      "genres":  [
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.35,
+                      "tmdbId":  66292,
+                      "char":  7.5,
+                      "world":  7,
+                      "cine":  8,
+                      "spect":  7,
+                      "conc":  7,
+                      "drive":  7,
+                      "resol":  8,
+                      "episodes":  14,
+                      "poster":  "https://image.tmdb.org/t/p/w500/b4HNJOc2N6SGyEhf2RagdpAKBK6.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "HBO Max"
+                                               ],
+                                        "uk":  [
+                                                   "Sky Atlantic"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/8Wo2Pqjxn7Xmd7p2dxRMIJtyMV7.jpg"
+                  },
+                  {
+                      "rank":  102,
+                      "slug":  "twin-peaks",
+                      "title":  "Twin Peaks",
+                      "year":  1990,
+                      "month":  4,
+                      "genres":  [
+                                     "mystery",
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "final":  7.35,
+                      "tmdbId":  1920,
+                      "char":  7.5,
+                      "world":  8,
+                      "cine":  8,
+                      "spect":  7,
+                      "conc":  9,
+                      "drive":  6,
+                      "resol":  6,
+                      "episodes":  30,
+                      "poster":  "https://image.tmdb.org/t/p/w500/lA9CNSdo50iQPZ8A2fyVpMvJZAf.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Showtime",
+                                                   "Paramount+"
+                                               ],
+                                        "uk":  [
+                                                   "BBC Two"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/dZklTql88IDOmkC3JAYQSTgyK6f.jpg"
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+                      "world":  8.5,
+                      "conc":  7,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/rAOjnEFTuNysY7bot8zonhImGMh.jpg",
+                      "title":  "The Walking Dead",
+                      "rank":  103,
+                      "char":  7.5,
+                      "spect":  7.5,
+                      "episodes":  177,
+                      "genres":  [
+                                     "drama",
+                                     "horror",
+                                     "thriller"
+                                 ],
+                      "drive":  8,
+                      "final":  7.35,
+                      "tmdbId":  1402,
+                      "cine":  7,
+                      "month":  10,
+                      "slug":  "the-walking-dead",
+                      "resol":  6.5,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Netflix",
+                                                   "AMC Plus"
+                                               ],
+                                        "uk":  [
+                                                   "Disney Plus",
+                                                   "Netflix"
+                                               ]
+                                    },
+                      "year":  2010
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/bowEbW8Q3Oc02BvHBKTL5gWv9Nx.jpg",
+                      "world":  7,
+                      "conc":  7.5,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/lAsz5DYQpXcOONSVuZdZIrtZoIv.jpg",
+                      "title":  "Damages",
+                      "rank":  104,
+                      "char":  8.5,
+                      "spect":  6,
+                      "episodes":  59,
+                      "genres":  [
+                                     "drama",
+                                     "thriller"
+                                 ],
+                      "drive":  8,
+                      "final":  7.35,
+                      "tmdbId":  4920,
+                      "cine":  6.5,
+                      "month":  7,
+                      "slug":  "damages",
+                      "resol":  7,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Hulu"
+                                               ],
+                                        "uk":  [
+                                                   "Amazon Prime"
+                                               ]
+                                    },
+                      "year":  2007
+                  },
+                  {
+                      "rank":  105,
+                      "slug":  "true-detective-s3",
+                      "title":  "True Detective S3",
+                      "year":  2019,
+                      "month":  1,
+                      "genres":  [
+                                     "crime",
+                                     "mystery",
+                                     "thriller"
+                                 ],
+                      "final":  7.32,
+                      "tmdbId":  46648,
+                      "char":  7.5,
+                      "world":  7.5,
+                      "cine":  8,
+                      "spect":  6,
+                      "conc":  7,
+                      "drive":  7,
+                      "resol":  8,
+                      "episodes":  8,
+                      "poster":  "https://image.tmdb.org/t/p/w500/qnD7ExuaBF4QdcgxlB1B1HyLxXA.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "HBO Max"
+                                               ],
+                                        "uk":  [
+                                                   "Sky Atlantic"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/bPLRjO2pcBx0WL73WUPzuNzQ3YN.jpg"
+                  },
+                  {
+                      "rank":  106,
+                      "slug":  "the-bear",
+                      "title":  "The Bear",
+                      "year":  2022,
+                      "month":  6,
+                      "genres":  [
+                                     "drama",
+                                     "comedy"
+                                 ],
+                      "final":  7.28,
+                      "tmdbId":  136315,
+                      "char":  7.5,
+                      "world":  6.5,
+                      "cine":  9,
+                      "spect":  6,
+                      "conc":  7,
+                      "drive":  8,
+                      "resol":  7,
+                      "episodes":  28,
+                      "poster":  "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Hulu",
+                                                   "FX"
+                                               ],
+                                        "uk":  [
+                                                   "Disney+"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/wHNwlE6ftEpgjVbdhLXOtv1hLs0.jpg"
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/lasNCd45fpPLirlA7QxkuopWro.jpg",
+                      "world":  7,
+                      "conc":  7,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/uinrziSwEmS6s8VvGBad5sed7bF.jpg",
+                      "title":  "The Good Wife",
+                      "rank":  107,
+                      "char":  8,
+                      "spect":  5.5,
+                      "episodes":  156,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "drive":  7.5,
+                      "final":  7.28,
+                      "tmdbId":  1435,
+                      "cine":  6.5,
+                      "month":  9,
+                      "slug":  "the-good-wife",
+                      "resol":  7,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Paramount Plus"
+                                               ],
+                                        "uk":  [
+                                                   "Netflix"
+                                               ]
+                                    },
+                      "year":  2009
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
+                      "world":  7,
+                      "conc":  6.5,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/nn3SuLTO4hum8yAxaY4ql8h6kRk.jpg",
+                      "title":  "NCIS",
+                      "rank":  108,
+                      "char":  7.5,
+                      "spect":  6,
+                      "episodes":  500,
+                      "genres":  [
+                                     "drama",
+                                     "crime",
+                                     "action"
+                                 ],
+                      "drive":  7.5,
+                      "final":  7.25,
+                      "tmdbId":  4614,
+                      "cine":  6,
+                      "month":  9,
+                      "slug":  "ncis",
+                      "resol":  8,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Paramount Plus",
+                                                   "Netflix"
+                                               ],
+                                        "uk":  [
+                                                   "Disney Plus"
+                                               ]
+                                    },
+                      "year":  2003
+                  },
+                  {
+                      "rank":  109,
+                      "slug":  "the-marvelous-mrs-maisel",
+                      "title":  "The Marvelous Mrs. Maisel",
+                      "year":  2017,
+                      "month":  3,
+                      "genres":  [
+                                     "drama",
+                                     "comedy",
+                                     "historical"
+                                 ],
+                      "final":  7.25,
+                      "tmdbId":  70785,
+                      "char":  7,
+                      "world":  7,
+                      "cine":  8,
+                      "spect":  7,
+                      "conc":  7,
+                      "drive":  7,
+                      "resol":  8,
+                      "episodes":  43,
+                      "poster":  "https://image.tmdb.org/t/p/w500/zS7fQiOZiKCVH2vlYSiIsFWW8hh.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Prime Video"
+                                               ],
+                                        "uk":  [
+                                                   "Amazon Prime Video"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/ywQtHG17LZhAFZyZtBflhtFMtJ7.jpg"
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/flj41WynQKea6DVHgRbbPSWOB1t.jpg",
+                      "world":  8,
+                      "conc":  7,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/wjWyxg8bJATeYOUkNE2aUdYE0eh.jpg",
+                      "title":  "Southland",
+                      "rank":  110,
+                      "char":  7.5,
+                      "spect":  6.5,
+                      "episodes":  43,
+                      "genres":  [
+                                     "drama",
+                                     "crime"
+                                 ],
+                      "drive":  7.5,
+                      "final":  7.25,
+                      "tmdbId":  17611,
+                      "cine":  7.5,
+                      "month":  4,
+                      "slug":  "southland",
+                      "resol":  7,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Max"
+                                               ],
+                                        "uk":  [
+                                                   "Amazon Prime"
+                                               ]
+                                    },
+                      "year":  2009
+                  },
+                  {
+                      "rank":  111,
+                      "slug":  "homeland",
+                      "title":  "Homeland",
+                      "year":  2011,
+                      "month":  10,
+                      "genres":  [
+                                     "drama",
+                                     "thriller",
+                                     "action"
+                                 ],
+                      "final":  7.25,
+                      "tmdbId":  1407,
+                      "char":  8,
+                      "world":  7,
+                      "cine":  7,
+                      "spect":  6,
+                      "conc":  7,
+                      "drive":  8,
+                      "resol":  7,
+                      "episodes":  96,
+                      "poster":  "https://image.tmdb.org/t/p/w500/6GAvS2e6VIRsms9FpVt33PsCoEW.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Showtime",
+                                                   "Prime Video"
+                                               ],
+                                        "uk":  [
+                                                   "Channel 4",
+                                                   "Prime Video"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/391ixi0wVbFtFLQnOy8ZncWv2io.jpg"
+                  },
+                  {
+                      "rank":  112,
+                      "slug":  "slow-horses",
+                      "title":  "Slow Horses",
+                      "year":  2022,
+                      "month":  4,
+                      "genres":  [
+                                     "thriller",
+                                     "drama",
+                                     "action"
+                                 ],
+                      "final":  7.25,
+                      "tmdbId":  95480,
+                      "char":  8,
+                      "world":  7,
+                      "cine":  7,
+                      "spect":  6,
+                      "conc":  7,
+                      "drive":  8,
+                      "resol":  7,
+                      "episodes":  18,
+                      "poster":  "https://image.tmdb.org/t/p/w500/dnpatlJrEPiDSn5fzgzvxtiSnMo.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Apple TV+"
+                                               ],
+                                        "uk":  [
+                                                   "Apple TV+"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/bDfboQUb45Cv9MYyVBDZw8M8xSM.jpg"
+                  },
+                  {
+                      "rank":  113,
+                      "slug":  "the-day-of-the-jackal",
+                      "title":  "The Day of the Jackal",
+                      "year":  2024,
+                      "month":  11,
+                      "genres":  [
+                                     "thriller",
+                                     "drama",
+                                     "action"
+                                 ],
+                      "final":  7.25,
+                      "tmdbId":  222766,
+                      "char":  7.5,
+                      "world":  7,
+                      "cine":  8,
+                      "spect":  6,
+                      "conc":  7,
+                      "drive":  8,
+                      "resol":  7,
+                      "episodes":  8,
+                      "poster":  "https://image.tmdb.org/t/p/w500/tYLecM3WSEjlkKhkGiH5G68Dprm.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Peacock"
+                                               ],
+                                        "uk":  [
+                                                   "Sky Atlantic"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/enVrO8TRkdT8dmYXTfI4sEjR5Kp.jpg"
+                  },
+                  {
+                      "rank":  114,
+                      "slug":  "friday-night-lights",
+                      "title":  "Friday Night Lights",
+                      "year":  2006,
+                      "month":  10,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "final":  7.22,
+                      "tmdbId":  4278,
+                      "char":  8,
+                      "world":  7.5,
+                      "cine":  7,
+                      "spect":  5,
+                      "conc":  7,
+                      "drive":  7,
+                      "resol":  8,
+                      "episodes":  76,
+                      "poster":  "https://image.tmdb.org/t/p/w500/Eu7MzZY1DldJ683z7vLkILHNRD.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Peacock",
+                                                   "Amazon Prime Video"
+                                               ],
+                                        "uk":  [
+                                                   "BBC iPlayer"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/dzHSMD1IY6RriYxkS3T2ysFdvdp.jpg"
+                  },
+                  {
+                      "rank":  115,
+                      "slug":  "line-of-duty",
+                      "title":  "Line of Duty",
+                      "year":  2012,
+                      "month":  3,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "thriller",
+                                     "cop-show"
+                                 ],
+                      "final":  7.2,
+                      "tmdbId":  43982,
+                      "char":  7.5,
+                      "world":  7,
+                      "cine":  7,
+                      "spect":  5,
+                      "conc":  7,
+                      "drive":  9,
+                      "resol":  7,
+                      "episodes":  37,
+                      "poster":  "https://image.tmdb.org/t/p/w500/ysGUKnnR1pGYIndjXWcjupGbWpS.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "HBO Max",
+                                                   "Amazon Prime Video"
+                                               ],
+                                        "uk":  [
+                                                   "BBC One"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/5ZLEFPayOJr3KhXPoAnLWdVQJem.jpg"
+                  },
+                  {
+                      "rank":  116,
+                      "slug":  "downton-abbey",
+                      "title":  "Downton Abbey",
+                      "year":  2010,
+                      "month":  9,
+                      "genres":  [
+                                     "drama",
+                                     "historical"
+                                 ],
+                      "final":  7.2,
+                      "tmdbId":  33907,
+                      "char":  7,
+                      "world":  8,
+                      "cine":  8,
+                      "spect":  8,
+                      "conc":  6,
+                      "drive":  7,
+                      "resol":  7,
+                      "episodes":  52,
+                      "poster":  "https://image.tmdb.org/t/p/w500/7HgDYRYjym4BwbhKaqTQq771SKb.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "PBS",
+                                                   "Amazon Prime Video"
+                                               ],
+                                        "uk":  [
+                                                   "ITV",
+                                                   "Britbox"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/1wgqpYNtQDn7TDkyQ2jsIAqxorW.jpg"
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/ktEp6fzL4xzCWsSVtrcH8JaQNQy.jpg",
+                      "world":  8,
+                      "conc":  8,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/nGhC6P0lgcrY57NRB9nweu4nWaK.jpg",
+                      "title":  "True Blood",
+                      "rank":  117,
+                      "char":  7.5,
+                      "spect":  7.5,
+                      "episodes":  80,
+                      "genres":  [
+                                     "drama",
+                                     "fantasy",
+                                     "horror"
+                                 ],
+                      "drive":  8.5,
+                      "final":  7.2,
+                      "tmdbId":  10545,
+                      "cine":  6.5,
+                      "month":  9,
+                      "slug":  "true-blood",
+                      "resol":  5.5,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Max",
+                                                   "Hulu",
+                                                   "HBO Max Amazon Channel",
+                                                   "Apple TV",
+                                                   "Amazon Prime Video"
+                                               ],
+                                        "uk":  [
+                                                   "Now TV",
+                                                   "Sky Store",
+                                                   "Apple TV",
+                                                   "Amazon Prime Video",
+                                                   "Rakuten TV"
+                                               ]
+                                    },
+                      "year":  2008
+                  },
+                  {
+                      "rank":  118,
+                      "slug":  "the-killing-dk",
+                      "title":  "The Killing (DK)",
+                      "year":  2007,
+                      "month":  1,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "mystery",
+                                     "cop-show"
+                                 ],
+                      "final":  7.2,
+                      "tmdbId":  34410,
+                      "char":  7.5,
+                      "world":  7,
+                      "cine":  7,
+                      "spect":  5,
+                      "conc":  7,
+                      "drive":  8,
+                      "resol":  8,
+                      "episodes":  40,
+                      "poster":  "https://image.tmdb.org/t/p/w500/iLvnc1aK2b2PNQhbyn4IVpDcmcX.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Netflix",
+                                                   "AMC+"
+                                               ],
+                                        "uk":  [
+                                                   "BBC iPlayer"
+                                               ]
+                                    },
+                      "backdrop":  ""
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/b3vl6wV1W8PBezFfntKTrhrehCY.jpg",
+                      "world":  7,
+                      "conc":  7,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/cJYLon9ejKJV7ua03ab8Tj9u067.jpg",
+                      "title":  "The Vampire Diaries",
+                      "rank":  119,
+                      "char":  7.5,
+                      "spect":  6.5,
+                      "episodes":  171,
+                      "genres":  [
+                                     "drama",
+                                     "fantasy",
+                                     "supernatural"
+                                 ],
+                      "drive":  8,
+                      "final":  7.18,
+                      "tmdbId":  18165,
+                      "cine":  6.5,
+                      "month":  9,
+                      "slug":  "the-vampire-diaries",
+                      "resol":  6.5,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Max",
+                                                   "Netflix"
+                                               ],
+                                        "uk":  [
+                                                   "Netflix",
+                                                   "BBC iPlayer"
+                                               ]
+                                    },
+                      "year":  2009
+                  },
+                  {
+                      "rank":  120,
+                      "slug":  "gomorrah",
+                      "title":  "Gomorrah",
+                      "year":  2014,
+                      "month":  4,
+                      "genres":  [
+                                     "crime",
+                                     "drama"
+                                 ],
+                      "final":  7.15,
+                      "tmdbId":  61068,
+                      "char":  7,
+                      "world":  8,
+                      "cine":  8,
+                      "spect":  6,
+                      "conc":  7,
+                      "drive":  7,
+                      "resol":  7,
+                      "episodes":  58,
+                      "poster":  "https://image.tmdb.org/t/p/w500/cXsagSyQQki9vTbV3TTxRCGIIlQ.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "HBO Max",
+                                                   "Netflix"
+                                               ],
+                                        "uk":  [
+                                                   "BBC iPlayer"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/qVyqPzx6wD3Wm3HD4iy3PrJYxGX.jpg"
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/yZevl2vHQgmosfwUdVNzviIfaWS.jpg",
+                      "world":  7.5,
+                      "conc":  6.5,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/gFkHcIh7iE5G0oVOgpmY8ONQjhl.jpg",
+                      "title":  "The Flash",
+                      "rank":  121,
+                      "char":  7.5,
+                      "spect":  7.5,
+                      "episodes":  184,
+                      "genres":  [
+                                     "drama",
+                                     "superhero",
+                                     "sci-fi"
+                                 ],
+                      "drive":  7,
+                      "final":  7.15,
+                      "tmdbId":  60735,
+                      "cine":  6.5,
+                      "month":  10,
+                      "slug":  "the-flash",
+                      "resol":  7,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Netflix"
+                                               ],
+                                        "uk":  [
+                                                   "Netflix"
+                                               ]
+                                    },
+                      "year":  2014
+                  },
+                  {
+                      "rank":  122,
+                      "slug":  "lost",
+                      "title":  "Lost",
+                      "year":  2004,
+                      "month":  9,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama",
+                                     "mystery"
+                                 ],
+                      "final":  7.13,
+                      "tmdbId":  4607,
+                      "char":  9,
+                      "world":  8,
+                      "cine":  7.5,
+                      "spect":  7.5,
+                      "conc":  7,
+                      "drive":  9.5,
+                      "resol":  1,
+                      "episodes":  121,
+                      "poster":  "https://image.tmdb.org/t/p/w500/og6S0aTZU6YUJAbqxeKjCa3kY1E.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Hulu",
+                                                   "Amazon Prime Video"
+                                               ],
+                                        "uk":  [
+                                                   "Sky One"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/yUOFocKDW7MCC5isx4FK8A68QFp.jpg"
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
+                      "world":  6.5,
+                      "conc":  6.5,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/5C5cMYUlmX6BU5YxBqhp7ZpSd3Q.jpg",
+                      "title":  "Tracker",
+                      "rank":  123,
+                      "char":  7,
+                      "spect":  6,
+                      "episodes":  44,
+                      "genres":  [
+                                     "drama",
+                                     "crime"
+                                 ],
+                      "drive":  8,
+                      "final":  7.12,
+                      "tmdbId":  211288,
+                      "cine":  6.5,
+                      "month":  2,
+                      "slug":  "tracker",
+                      "resol":  7.5,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Paramount Plus"
+                                               ],
+                                        "uk":  [
+                                                   "Disney Plus"
+                                               ]
+                                    },
+                      "year":  2024
+                  },
+                  {
+                      "rank":  124,
+                      "slug":  "battlestar-galactica",
+                      "title":  "Battlestar Galactica",
+                      "year":  2004,
+                      "month":  10,
+                      "genres":  [
+                                     "sci-fi",
+                                     "drama",
+                                     "action"
+                                 ],
+                      "final":  7.1,
+                      "tmdbId":  1972,
+                      "char":  7,
+                      "world":  7,
+                      "cine":  7,
+                      "spect":  8,
+                      "conc":  8,
+                      "drive":  7,
+                      "resol":  6,
+                      "episodes":  75,
+                      "poster":  "https://image.tmdb.org/t/p/w500/99PJSbcO2LeM10uOGWeFihNp77j.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Amazon Prime Video"
+                                               ],
+                                        "uk":  [
+                                                   "Amazon Prime Video"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/sEjNaoENrqIZONKNn1iLFB0Us9k.jpg"
+                  },
+                  {
+                      "rank":  125,
+                      "slug":  "barry",
+                      "title":  "Barry",
+                      "year":  2018,
+                      "month":  3,
+                      "genres":  [
+                                     "crime",
+                                     "drama",
+                                     "comedy"
+                                 ],
+                      "final":  7.1,
+                      "tmdbId":  73107,
+                      "char":  7.5,
+                      "world":  6,
+                      "cine":  8,
+                      "spect":  6,
+                      "conc":  7,
+                      "drive":  8,
+                      "resol":  7,
+                      "episodes":  32,
+                      "poster":  "https://image.tmdb.org/t/p/w500/j1XpwD11f0BAEI7pX6UdMhUVX2F.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "HBO Max"
+                                               ],
+                                        "uk":  [
+                                                   "Sky Atlantic"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/cj0zZiJfFj3xn9p0K3kx8qHSyng.jpg"
+                  },
+                  {
+                      "rank":  126,
+                      "slug":  "killing-eve",
+                      "title":  "Killing Eve",
+                      "year":  2018,
+                      "month":  4,
+                      "genres":  [
+                                     "thriller",
+                                     "action",
+                                     "drama"
+                                 ],
+                      "final":  7.08,
+                      "tmdbId":  72750,
+                      "char":  7,
+                      "world":  6.5,
+                      "cine":  7,
+                      "spect":  7,
+                      "conc":  7,
+                      "drive":  8,
+                      "resol":  7,
+                      "episodes":  32,
+                      "poster":  "https://image.tmdb.org/t/p/w500/4wKhTVw8aGq5AZMa0Q1spERdi7n.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Hulu",
+                                                   "BBC America"
+                                               ],
+                                        "uk":  [
+                                                   "BBC One",
+                                                   "iPlayer"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/2eR0H27Us1tvbjd95oW7WhiKioC.jpg"
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/lf0TcOkheYUZKpeh7c8lqJHNk5O.jpg",
+                      "world":  7.5,
+                      "conc":  7,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/zoetbPF7jYY0jjY5js3x6r1QjSW.jpg",
+                      "title":  "Heroes",
+                      "rank":  127,
+                      "char":  7.5,
+                      "spect":  7.5,
+                      "episodes":  78,
+                      "genres":  [
+                                     "drama",
+                                     "sci-fi",
+                                     "superhero"
+                                 ],
+                      "drive":  7.5,
+                      "final":  7.05,
+                      "tmdbId":  1639,
+                      "cine":  7,
+                      "month":  9,
+                      "slug":  "heroes",
+                      "resol":  5.5,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Netflix",
+                                                   "Peacock"
+                                               ],
+                                        "uk":  [
+                                                   "Netflix"
+                                               ]
+                                    },
+                      "year":  2006
+                  },
+                  {
+                      "rank":  128,
+                      "slug":  "oz",
+                      "title":  "Oz",
+                      "year":  1997,
+                      "month":  7,
+                      "genres":  [
+                                     "crime",
+                                     "drama"
+                                 ],
+                      "final":  7.02,
+                      "tmdbId":  3322,
+                      "char":  7.5,
+                      "world":  7.5,
+                      "cine":  6,
+                      "spect":  5,
+                      "conc":  8,
+                      "drive":  7,
+                      "resol":  7,
+                      "episodes":  56,
+                      "poster":  "https://image.tmdb.org/t/p/w500/oTQ9PUnCgf9CimYeWuDGp8iaT07.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "HBO Max",
+                                                   "Amazon Prime Video"
+                                               ],
+                                        "uk":  [
+                                                   "Sky Atlantic"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/7C7OEM3NFRraDDnOaUHgDPou3NG.jpg"
+                  },
+                  {
+                      "rank":  129,
+                      "slug":  "the-x-files",
+                      "title":  "The X-Files",
+                      "year":  1993,
+                      "month":  9,
+                      "genres":  [
+                                     "sci-fi",
+                                     "mystery",
+                                     "thriller"
+                                 ],
+                      "final":  7.02,
+                      "tmdbId":  4087,
+                      "char":  7.5,
+                      "world":  7.5,
+                      "cine":  7,
+                      "spect":  7,
+                      "conc":  7,
+                      "drive":  7,
+                      "resol":  6,
+                      "episodes":  218,
+                      "poster":  "https://image.tmdb.org/t/p/w500/rcBx0p8h51LHceyhquYMxbspJQu.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Netflix",
+                                                   "Hulu"
+                                               ],
+                                        "uk":  [
+                                                   "Amazon Prime Video"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/w00lfexrsOeR25dO4hsWhbcUnmD.jpg"
+                  },
+                  {
+                      "rank":  130,
+                      "slug":  "24",
+                      "title":  "24",
+                      "year":  2001,
+                      "month":  11,
+                      "genres":  [
+                                     "action",
+                                     "drama",
+                                     "thriller",
+                                     "cop-show"
+                                 ],
+                      "final":  6.97,
+                      "tmdbId":  1973,
+                      "char":  7,
+                      "world":  6,
+                      "cine":  6,
+                      "spect":  7,
+                      "conc":  6,
+                      "drive":  9.5,
+                      "resol":  7,
+                      "episodes":  192,
+                      "poster":  "https://image.tmdb.org/t/p/w500/iq6yrZ5LEDXf1ArCOYLq8PIUBpV.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Hulu",
+                                                   "Fox"
+                                               ],
+                                        "uk":  [
+                                                   "Amazon Prime Video"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/be6mDIMv7cg8duWkcYVnTB8rphO.jpg"
+                  },
+                  {
+                      "rank":  131,
+                      "slug":  "hill-street-blues",
+                      "title":  "Hill Street Blues",
+                      "year":  1981,
+                      "month":  1,
+                      "genres":  [
+                                     "drama",
+                                     "crime",
+                                     "cop-show"
+                                 ],
+                      "final":  6.95,
+                      "tmdbId":  4094,
+                      "char":  7.5,
+                      "world":  7,
+                      "cine":  6,
+                      "spect":  5,
+                      "conc":  8,
+                      "drive":  7,
+                      "resol":  7,
+                      "episodes":  146,
+                      "poster":  "https://image.tmdb.org/t/p/w500/tK6UtV5ahE6BTSklUH9Lz7KLuYI.jpg",
+                      "streaming":  {
+                                        "us":  [
+                                                   "Hulu",
+                                                   "Peacock"
+                                               ],
+                                        "uk":  [
+                                                   "BBC Two"
+                                               ]
+                                    },
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/jvTQI5QToqvlLH0GJQTzSxMPt6y.jpg"
+                  },
+                  {
+                      "poster":  "https://image.tmdb.org/t/p/w500/mZ7YFEOxAKfjXJKWm0sYFXQ8n8A.jpg",
+                      "world":  7.5,
+                      "conc":  7,
+                      "backdrop":  "https://image.tmdb.org/t/p/w780/qcV7ebwtZcoRxBufUmXQl0KKdht.jpg",
+                      "title":  "Industry",
+                      "rank":  132,
+                      "char":  6.5,
+                      "spect":  5.5,
+                      "episodes":  32,
+                      "genres":  [
+                                     "drama"
+                                 ],
+                      "drive":  7,
+                      "final":  6.95,
+                      "tmdbId":  90812,
+                      "cine":  6.5,
+                      "month":  11,
+                      "slug":  "industry",
+                      "resol":  6,
+                      "streaming":  {
+                                        "us":  [
+                                                   "Max"
+                                               ],
+                                        "uk":  [
+                                                   "BBC iPlayer"
+                                               ]
+                                    },
+                      "year":  2020
+                  }
+              ],
+    "description":  "OVERFLOW - Ranked shows below Top 100",
+    "lastUpdated":  "2026-02-23T01:36",
+    "version":  "1.0",
+    "count":  32
+}
