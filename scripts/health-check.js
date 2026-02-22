@@ -40,18 +40,26 @@ function warn(name, message) {
   results.checks.push({ name, status: 'WARN', details: message });
 }
 
+// Helper to read JSON with BOM handling
+function readJson(filePath) {
+  const content = fs.readFileSync(filePath, 'utf8');
+  // Remove BOM if present
+  const clean = content.replace(/^\uFEFF/, '');
+  return JSON.parse(clean);
+}
+
 // Check 1: Index file exists and is valid JSON
 check('Index File', () => {
   const indexPath = path.join(DATA_DIR, 'index.json');
   if (!fs.existsSync(indexPath)) throw new Error('index.json not found');
-  const index = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+  const index = readJson(indexPath);
   if (!index.shows || !Array.isArray(index.shows)) throw new Error('Invalid index structure');
   return `${index.shows.length} shows in index`;
 });
 
 // Check 2: All indexed shows have HTML files
 check('HTML Coverage', () => {
-  const index = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'index.json'), 'utf8'));
+  const index = readJson(path.join(DATA_DIR, 'index.json'));
   const slugs = index.shows.map(s => s.slug);
   const missing = [];
   
@@ -76,7 +84,7 @@ check('Discovery Files', () => {
   if (!fs.existsSync(candidatesPath)) throw new Error('candidates.json not found');
   if (!fs.existsSync(rejectedPath)) throw new Error('rejected.json not found');
   
-  const candidates = JSON.parse(fs.readFileSync(candidatesPath, 'utf8'));
+  const candidates = readJson(candidatesPath);
   return `${candidates.candidates?.length || 0} candidates in queue`;
 });
 
@@ -101,7 +109,7 @@ check('HTML Quality', () => {
 
 // Check 5: Score distribution is reasonable
 check('Score Distribution', () => {
-  const index = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'index.json'), 'utf8'));
+  const index = readJson(path.join(DATA_DIR, 'index.json'));
   const scores = index.shows.map(s => s.final);
   
   const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
