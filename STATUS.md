@@ -1,7 +1,7 @@
 # 🦞 DYNAMIC RANK ENGINE — CTO STATUS REPORT
 *Autonomous Operations Dashboard*
 
-**Generated:** 2026-02-22 16:40 GMT+13  
+**Generated:** 2026-02-22 21:05 GMT+13  
 **CTO:** Cyberclaw  
 **Status:** OPERATIONAL ✅
 
@@ -11,10 +11,11 @@
 
 | Metric | Current | Target | Progress |
 |--------|---------|--------|----------|
-| Total Shows | 105 | 300+ | 35% |
+| Total Shows | 106 | 300+ | 35% |
 | Top 100 Writeups | 100 | 100 | ✅ Complete |
-| Pending Candidates | 3 | — | Active |
-| Avg Score | 7.68 | 7.0-8.0 | ✅ Healthy |
+| Pending Candidates | 1 | — | Severance update only |
+| Avg Score | 7.67 | 7.0-8.0 | ✅ Healthy |
+| Missing HTML | 6 | 0 | ⚠️ Needs attention |
 
 **Recent Additions:**
 - ✅ Sons of Anarchy — Rank 29 (7.85)
@@ -22,10 +23,15 @@
 - ✅ Yellowstone — Rank 63 (7.60)
 - ✅ Yellowjackets — Rank 77 (7.42)
 - ✅ The Vampire Diaries — Rank 96 (7.18)
+- ✅ Industry — Rank 106 (6.95) [HEARTBEAT]
 
-**In Progress:**
-- 🔄 Industry — Next candidate to score
-- 🔄 The Bear — Verify writeup exists
+**Missing HTML Writeups:**
+- ⚠️ Sons of Anarchy
+- ⚠️ Yellowstone
+- ⚠️ Yellowjackets
+- ⚠️ True Blood
+- ⚠️ The Vampire Diaries
+- ⚠️ Industry
 
 ---
 
