@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovery Candidates",
+  "description": "TV dramas discovered but not yet fully evaluated and added to the pool",
+  "lastUpdated": "2026-02-22",
+  "candidates": [
+    {
+      "title": "True Blood",
+      "year": 2008,
+      "status": "pending",
+      "priority": "high",
+      "reason": "Major HBO drama, vampire genre, 7 seasons, significant cultural impact",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": null,
+      "notes": "User mentioned as missing from current list"
+    },
+    {
+      "title": "Sons of Anarchy",
+      "year": 2008,
+      "status": "pending",
+      "priority": "high",
+      "reason": "Major FX drama, crime genre, 7 seasons, strong following",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": null,
+      "notes": "User mentioned as missing from current list"
+    },
+    {
+      "title": "The Vampire Diaries",
+      "year": 2009,
+      "status": "pending",
+      "priority": "medium",
+      "reason": "Popular CW drama, 8 seasons, supernatural genre",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": null,
+      "notes": ""
+    },
+    {
+      "title": "Yellowstone",
+      "year": 2018,
+      "status": "pending",
+      "priority": "high",
+      "reason": "Major contemporary drama, Western genre, huge viewership",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": null,
+      "notes": ""
+    },
+    {
+      "title": "Yellowjackets",
+      "year": 2021,
+      "status": "pending",
+      "priority": "high",
+      "reason": "Acclaimed recent drama, survival/thriller, Showtime",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": null,
+      "notes": ""
+    },
+    {
+      "title": "The Bear",
+      "year": 2022,
+      "status": "pending",
+      "priority": "medium",
+      "reason": "Already in index but may need quality review",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": null,
+      "notes": "Check if full writeup exists"
+    },
+    {
+      "title": "Industry",
+      "year": 2020,
+      "status": "pending",
+      "priority": "medium",
+      "reason": "HBO drama, finance world, 3 seasons",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": null,
+      "notes": ""
+    },
+    {
+      "title": "Severance",
+      "year": 2022,
+      "status": "indexed",
+      "priority": "low",
+      "reason": "Already in top 100, check writeup quality",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": null,
+      "notes": "Season 2 recently aired - update needed"
+    }
+  ],
+  "discoveryLog": [
+    {
+      "date": "2026-02-22",
+      "action": "Initial candidate list created from user suggestions and known gaps"
+    }
+  ]
+}
