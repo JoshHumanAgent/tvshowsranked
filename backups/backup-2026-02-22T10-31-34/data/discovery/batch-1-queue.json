@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "High Priority Discovery Queue",
+  "description": "Next batch of shows to score for the pool",
+  "lastUpdated": "2026-02-22",
+  "batch": [
+    {
+      "title": "The Walking Dead",
+      "year": 2010,
+      "tmdbId": 1402,
+      "priority": "high",
+      "reason": "Massive cultural impact, 11 seasons, zombie genre elevated to prestige",
+      "notes": "Score based on peak (seasons 1-5), decline in later seasons"
+    },
+    {
+      "title": "Dexter",
+      "year": 2006,
+      "tmdbId": 1405,
+      "priority": "high",
+      "reason": "Showtime flagship, Michael C. Hall's iconic performance",
+      "notes": "Peak seasons 1-4, notorious finale penalty"
+    },
+    {
+      "title": "House",
+      "year": 2004,
+      "tmdbId": 1408,
+      "priority": "medium",
+      "reason": "Medical procedural elevated by Hugh Laurie's performance",
+      "notes": "Strong character work, formulaic but executed brilliantly"
+    },
+    {
+      "title": "Fringe",
+      "year": 2008,
+      "tmdbId": 1538,
+      "priority": "medium",
+      "reason": "JJ Abrams sci-fi mystery, strong mythology",
+      "notes": "Similar to X-Files, strong conceptual density"
+    },
+    {
+      "title": "Person of Interest",
+      "year": 2011,
+      "tmdbId": 1411,
+      "priority": "high",
+      "reason": "Jonathan Nolan pre-Westworld, AI surveillance themes",
+      "notes": "Underrated gem, strong narrative payoff"
+    },
+    {
+      "title": "The Good Wife",
+      "year": 2009,
+      "tmdbId": 1435,
+      "priority": "high",
+      "reason": "Acclaimed legal drama, 7 seasons, Emmy winner",
+      "notes": "Strong ensemble, procedural but serialized"
+    },
+    {
+      "title": "Damages",
+      "year": 2007,
+      "tmdbId": 1482,
+      "priority": "medium",
+      "reason": "Glenn Close vs Rose Byrne, legal thriller",
+      "notes": "Tight storytelling, non-linear narrative"
+    },
+    {
+      "title": "Southland",
+      "year": 2009,
+      "tmdbId": 1621,
+      "priority": "medium",
+      "reason": "Underappreciated cop drama, authentic",
+      "notes": "Gritty realism, ensemble cast"
+    },
+    {
+      "title": "Doctor Who",
+      "year": 2005,
+      "tmdbId": 57243,
+      "priority": "medium",
+      "reason": "Modern revival, major cultural franchise",
+      "notes": "Consider RTD era vs Moffat era vs Chibnall"
+    },
+    {
+      "title": "Suits",
+      "year": 2011,
+      "tmdbId": 37680,
+      "priority": "low",
+      "reason": "Popular legal drama, strong characters",
+      "notes": "Mainstream appeal, declining quality"
+    }
+  ]
+}

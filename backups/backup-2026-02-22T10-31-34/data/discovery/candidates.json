@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovery Candidates",
+  "description": "TV dramas discovered but not yet fully evaluated and added to the pool",
+  "lastUpdated": "2026-02-22",
+  "candidates": [
+    {
+      "title": "True Blood",
+      "year": 2008,
+      "status": "scored",
+      "priority": "high",
+      "reason": "Major HBO drama, vampire genre, 7 seasons, significant cultural impact",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": 10545,
+      "finalScore": 7.20,
+      "rank": 90,
+      "notes": "Scored via subagent. Strong world-building (8.0) and drive (8.5), penalized for finale (resol 5.5)."
+    },
+    {
+      "title": "Sons of Anarchy",
+      "year": 2008,
+      "status": "scored",
+      "priority": "high",
+      "reason": "Major FX drama, crime genre, 7 seasons, strong following",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": 1409,
+      "finalScore": 7.85,
+      "notes": "Scored via subagent. Strong characters (8.5) and world-building (8.5). 'Hamlet on Harleys' with real Hell's Angels advisors."
+    },
+    {
+      "title": "The Vampire Diaries",
+      "year": 2009,
+      "status": "scored",
+      "priority": "medium",
+      "reason": "Popular CW drama, 8 seasons, supernatural genre",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": 18165,
+      "finalScore": 7.18,
+      "rank": 96,
+      "notes": "Scored. Peak seasons 1-3 strong (drive 8.0), later seasons declined. 171 episodes total."
+    },
+    {
+      "title": "Yellowstone",
+      "year": 2018,
+      "status": "scored",
+      "priority": "high",
+      "reason": "Major contemporary drama, Western genre, huge viewership",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": 73586,
+      "finalScore": 7.60,
+      "rank": 63,
+      "notes": "Scored. Costner's performance, authentic world-building (8.5). Taylor Sheridan's signature series."
+    },
+    {
+      "title": "Yellowjackets",
+      "year": 2021,
+      "status": "scored",
+      "priority": "high",
+      "reason": "Acclaimed recent drama, survival/thriller, Showtime",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": 117488,
+      "finalScore": 7.42,
+      "rank": 77,
+      "notes": "Scored. Dual timeline survival horror. Strong conceptual density (8.0). Season 3 just concluded."
+    },
+    {
+      "title": "The Bear",
+      "year": 2022,
+      "status": "completed",
+      "priority": "medium",
+      "reason": "Already in index but may need quality review",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": 136315,
+      "notes": "HTML writeup exists (23KB). Full content verified."
+    },
+    {
+      "title": "Industry",
+      "year": 2020,
+      "status": "scored",
+      "priority": "medium",
+      "reason": "HBO drama, finance world, 3 seasons",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": 90812,
+      "finalScore": 6.95,
+      "rank": 106,
+      "notes": "Scored during heartbeat. Authentic finance world, strong world-building (7.5). TMDB: 6.78."
+    },
+    {
+      "title": "Severance",
+      "year": 2022,
+      "status": "indexed",
+      "priority": "low",
+      "reason": "Already in top 100, check writeup quality",
+      "discoveredAt": "2026-02-22",
+      "tmdbId": null,
+      "notes": "Season 2 recently aired - update needed"
+    }
+  ],
+  "discoveryLog": [
+    {
+      "date": "2026-02-22",
+      "action": "Initial candidate list created from user suggestions and known gaps"
+    },
+    {
+      "date": "2026-02-22T15:20",
+      "action": "True Blood scored (7.20) and added to pool at rank 90",
+      "notes": "Subagent research completed. Peak quality basis (S1-3)."
+    },
+    {
+      "date": "2026-02-22T16:35",
+      "action": "Batch scored 3 shows: Yellowstone (7.60), Yellowjackets (7.42), Vampire Diaries (7.18)",
+      "notes": "All added to pool. 105 total shows indexed."
+    },
+    {
+      "date": "2026-02-22T21:05",
+      "action": "HEARTBEAT: Scored Industry (6.95) and added to pool at rank 106",
+      "notes": "Pool now 106 shows. 5 shows pending HTML writeups."
+    }
+  ]
+}

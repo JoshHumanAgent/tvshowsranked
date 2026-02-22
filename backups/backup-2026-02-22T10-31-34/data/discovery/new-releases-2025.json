@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "2024-2025 NEW RELEASES - Prestige Queue",
+  "description": "Latest high-quality Western dramas for immediate scoring",
+  "lastUpdated": "2026-02-22",
+  "newReleases": [
+    {
+      "title": "The Pitt",
+      "tmdbId": 250307,
+      "year": 2025,
+      "priority": "CRITICAL",
+      "reason": "8.689 TMDB - Pittsburgh ER drama, real-time format, acclaimed",
+      "notes": "Max prestige medical drama. 1 season so far."
+    },
+    {
+      "title": "Landman",
+      "tmdbId": 157741,
+      "year": 2024,
+      "priority": "HIGH",
+      "reason": "8.036 TMDB - Taylor Sheridan's new oil boom drama",
+      "notes": "Similar to Yellowstone but modern Texas. Billy Bob Thornton."
+    },
+    {
+      "title": "MobLand",
+      "tmdbId": 247718,
+      "year": 2025,
+      "priority": "HIGH",
+      "reason": "8.331 TMDB - British mob family war",
+      "notes": "Tom Hardy starring. Crime saga."
+    },
+    {
+      "title": "IT: Welcome to Derry",
+      "tmdbId": 200875,
+      "year": 2025,
+      "priority": "HIGH",
+      "reason": "8.228 TMDB - Stephen King horror prequel",
+      "notes": "HBO prestige horror. 1962 setting."
+    },
+    {
+      "title": "Daredevil: Born Again",
+      "tmdbId": 202555,
+      "year": 2025,
+      "priority": "MEDIUM",
+      "reason": "7.958 TMDB - Marvel prestige revival",
+      "notes": "Charlie Cox returns. Darker than MCU."
+    },
+    {
+      "title": "High Potential",
+      "tmdbId": 226637,
+      "year": 2024,
+      "priority": "MEDIUM",
+      "reason": "8.017 TMDB - Single mom crime solver",
+      "notes": "ABC procedural but acclaimed."
+    },
+    {
+      "title": "Tracker",
+      "tmdbId": 211288,
+      "year": 2024,
+      "priority": "MEDIUM",
+      "reason": "7.532 TMDB - Lone wolf reward seeker",
+      "notes": "Based on Jeffery Deaver novel. CBS hit."
+    },
+    {
+      "title": "Cross",
+      "tmdbId": 213306,
+      "year": 2024,
+      "priority": "LOW",
+      "reason": "7.0 TMDB - James Patterson adaptation",
+      "notes": "Aldis Hodge as Alex Cross. Amazon."
+    }
+  ],
+  "notes": "Filtered from 339 results. Removed Thai BL dramas, anime, and telenovelas. Focus: Western prestige TV."
+}
