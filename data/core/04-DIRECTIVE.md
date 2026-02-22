@@ -336,13 +336,35 @@ function readJSON(path) {
 - Restore from git: `git checkout <commit> -- file.json`
 - Verify poster/backdrop URLs after any change
 
-### Pre-Deploy Checklist
-- [ ] Changes committed locally
-- [ ] No duplicate slugs in Top 100
-- [ ] True Detective S1 data intact
-- [ ] Posters/backdrop URLs valid
-- [ ] Git push successful
-- [ ] Site hard-refreshed to verify
+### Pre-Deploy Checklist (REQUIRED)
+```bash
+# 1. Run validation
+node scripts/validate.js
+
+# 2. If validation passes, commit and push
+git add .
+git commit -m "description"
+git push origin master
+
+# 3. Verify on live site (hard refresh)
+```
+
+**Automated Validation Checks:**
+1. ✓ True Detective S1 exists with all required fields
+2. ✓ Severance position unchanged (unless intentional)
+3. ✓ No duplicate slugs across all files
+4. ✓ Rank numbers match score order
+5. ✓ Poster/Backdrop URLs valid (tmdb.org)
+6. ✓ Compare with git to detect unintended changes
+
+**Run validation BEFORE every deploy:**
+```bash
+node scripts/validate.js
+```
+
+**Exit codes:**
+- 0 = Safe to deploy
+- 1 = Critical errors - DO NOT DEPLOY
 
 ---
 
