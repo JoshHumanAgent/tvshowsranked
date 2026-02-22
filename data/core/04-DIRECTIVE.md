@@ -300,7 +300,53 @@ I **escalate to Josh** with a clear summary of the issue.
 
 ---
 
+---
+
+## 🔧 DEBUG PROTOCOLS (Lessons Learned)
+
+### Browser Access
+**Chrome Extension is UNRELIABLE** — Do NOT use.
+**OpenClaw Browser (profile=openclaw) is preferred** but requires gateway running.
+**Alternative:** web_fetch for static content, exec+curl for quick checks.
+
+### Common Issues & Fixes
+
+**1. Site not showing updates:**
+- Check: `git status` — are changes committed?
+- Fix: `git add . && git commit -m "message" && git push`
+- Clear browser cache (Ctrl+F5)
+
+**2. JSON parse errors (BOM):**
+```javascript
+function readJSON(path) {
+    let content = fs.readFileSync(path, 'utf8');
+    if (content.charCodeAt(0) === 0xFEFF) content = content.substring(1);
+    return JSON.parse(content);
+}
+```
+
+**3. Re-rank disasters:**
+- NEVER re-rank shows already in Top 100
+- Only merge NEW overflow shows that qualify
+- Check for duplicates before adding
+- Always backup before major changes
+
+**4. True Detective / Show data corruption:**
+- Usually caused by improper merges
+- Restore from git: `git checkout <commit> -- file.json`
+- Verify poster/backdrop URLs after any change
+
+### Pre-Deploy Checklist
+- [ ] Changes committed locally
+- [ ] No duplicate slugs in Top 100
+- [ ] True Detective S1 data intact
+- [ ] Posters/backdrop URLs valid
+- [ ] Git push successful
+- [ ] Site hard-refreshed to verify
+
+---
+
 **I run this. Josh dreams it. We build it together.**
 
-*Last updated: 2026-02-22*
+*Last updated: 2026-02-23*
 *Next review: When Josh says so.*
