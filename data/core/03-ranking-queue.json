@@ -16,51 +16,6 @@
                            "status":  "pending"
                        },
                        {
-                           "confidence":  "high",
-                           "why":  [
-                                       "gaming-franchise",
-                                       "amazon"
-                                   ],
-                           "year":  2024,
-                           "priority":  "CRITICAL",
-                           "genres":  [
-                                          "sci-fi",
-                                          "action"
-                                      ],
-                           "title":  "Fallout",
-                           "status":  "pending"
-                       },
-                       {
-                           "confidence":  "high",
-                           "why":  [
-                                       "game-of-thrones-team",
-                                       "ambitious"
-                                   ],
-                           "year":  2024,
-                           "priority":  "CRITICAL",
-                           "genres":  [
-                                          "sci-fi",
-                                          "drama"
-                                      ],
-                           "title":  "Three-Body Problem",
-                           "status":  "pending"
-                       },
-                       {
-                           "confidence":  "medium",
-                           "why":  [
-                                       "bbc",
-                                       "david-nicholls"
-                                   ],
-                           "year":  2024,
-                           "priority":  "CRITICAL",
-                           "genres":  [
-                                          "romance",
-                                          "drama"
-                                      ],
-                           "title":  "One Day",
-                           "status":  "pending"
-                       },
-                       {
                            "confidence":  "low",
                            "why":  [
                                        "british",
@@ -93,21 +48,6 @@
                        {
                            "confidence":  "medium",
                            "why":  [
-                                       "fashion",
-                                       "dior"
-                                   ],
-                           "year":  2024,
-                           "priority":  "CRITICAL",
-                           "genres":  [
-                                          "drama",
-                                          "historical"
-                                      ],
-                           "title":  "The New Look",
-                           "status":  "pending"
-                       },
-                       {
-                           "confidence":  "medium",
-                           "why":  [
                                        "star-wars",
                                        "nostalgia"
                                    ],
@@ -118,21 +58,6 @@
                                           "adventure"
                                       ],
                            "title":  "Skeleton Crew",
-                           "status":  "pending"
-                       },
-                       {
-                           "confidence":  "medium",
-                           "why":  [
-                                       "kate-winslet",
-                                       "political-satire"
-                                   ],
-                           "year":  2024,
-                           "priority":  "CRITICAL",
-                           "genres":  [
-                                          "drama",
-                                          "satire"
-                                      ],
-                           "title":  "The Regime",
                            "status":  "pending"
                        },
                        {
@@ -2804,7 +2729,7 @@
                        }
                    ],
     "description":  "Complete list of dramas to score - SORTED BY YEAR (newest first). Updated 2026-02-23",
-    "total":  190,
+    "total":  185,
     "workflow":  "Work 5 shows at a time from top. Check for new releases monthly.",
     "title":  "MASTER DRAMA QUEUE",
     "$schema":  "https://json-schema.org/draft/2020-12/schema"
