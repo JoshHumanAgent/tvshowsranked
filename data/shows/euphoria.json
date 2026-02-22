@@ -1,58 +1,24 @@
-﻿{
-    "slug":  "euphoria",
-    "title":  "Euphoria",
-    "year":  2019,
-    "month":  6,
-    "status":  "ongoing",
-    "seasons":  3,
-    "episodes":  26,
-    "runtime":  "45-60",
-    "country":  "United States",
-    "genres":  [
-                   "drama"
-               ],
-    "creator":  "Sam Levinson",
-    "network":  "HBO",
-    "tmdbId":  85552,
-    "external_ratings":  {
-                             "imdb":  {
-                                          "score":  7.3,
-                                          "scale":  10,
-                                          "count":  "280000",
-                                          "date_accessed":  "2026-02-15",
-                                          "url":  "https://www.imdb.com/title/tt8772296/"
-                                      },
-                             "rotten_tomatoes":  {
-                                                     "score":  81,
-                                                     "scale":  100,
-                                                     "date_accessed":  "2026-02-15",
-                                                     "url":  "https://www.rottentomatoes.com/tv/euphoria"
-                                                 },
-                             "metacritic":  {
-                                                "score":  68,
-                                                "scale":  100,
-                                                "date_accessed":  "2026-02-15",
-                                                "url":  "https://www.metacritic.com/tv/euphoria"
-                                            }
-                         },
-    "consensus_highlights":  "A group of high school students navigate relationships, addiction, and identity in a fictional California town.",
-    "ranking_system":  {
-                           "conc":  8,
-                           "resol":  7,
-                           "drive":  8,
-                           "cine":  9.5,
-                           "spect":  8.5,
-                           "final":  7.9,
-                           "world":  7,
-                           "char":  8
-                       },
-    "notes":  "",
-    "streaming":  {
-                      "us":  [
-                                 "HBO Max"
-                             ],
-                      "uk":  [
-                                 "Sky Atlantic"
-                             ]
-                  }
+{
+  "slug": "euphoria",
+  "title": "Euphoria",
+  "year": 2019,
+  "month": 6,
+  "genres": ["drama"],
+  "final": 7.95,
+  "tmdbId": 85552,
+  "char": 8.5,
+  "world": 8.0,
+  "cine": 9.0,
+  "spect": 8.0,
+  "conc": 7.5,
+  "drive": 7.5,
+  "resol": 7.0,
+  "episodes": 24,
+  "poster": "https://image.tmdb.org/t/p/w500/3Q0hd3heuWwDWpwcDkhQOA6TYWI.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/w780/9KnIzPCv9XpWA0MqmwiKBZvV1Sj.jpg",
+  "streaming": {"us": ["Max"], "uk": ["Now TV", "Sky Atlantic"]},
+  "creators": ["Sam Levinson"],
+  "network": "HBO",
+  "status": "ongoing",
+  "scoring_notes": "HBO teen drama phenomenon. Exceptional cinematography (9.0) — visually groundbreaking. Zendaya Emmy winner. S1: 7.5, S2: 7.7 (improving), S3: 2026. 8.284 TMDB. Resolution penalized for ongoing status and Sam Levinson delays."
 }
