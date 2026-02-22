@@ -48,10 +48,30 @@ Every TV drama worth watching should be:
 
 ## 📁 THE 4-FILE WORKFLOW
 
+### **CARDINAL RULE: NEVER RE-RANK EXISTING SHOWS**
+
+**Once a show is ranked in the Top 100, it STAYS at that rank/score unless Josh explicitly says otherwise.**
+
+This means:
+- ❌ NO automatic re-sorting of existing Top 100
+- ❌ NO updating scores for shows already ranked
+- ❌ NO moving shows up/down based on new information
+- ✅ Only add NEW shows from overflow
+- ✅ Only remove shows if explicitly instructed
+- ✅ If a show needs re-ranking, WAIT for Josh's instruction
+
+**Why:** The Top 100 represents the site's authoritative rankings. Changing them without permission breaks user trust and site integrity.
+
+---
+
 ### **01-current-index.json** (TOP 100)
 - **What:** The 100 shows currently live on the website
-- **When to update:** Every time you add a new show
-- **Process:** Take highest-ranked shows from overflow, add to current
+- **When to update:** Only when adding NEW shows from overflow
+- **Process:** 
+  1. Check for NEW overflow shows that qualify (score >= #100 threshold)
+  2. Add ONLY those new shows to Top 100
+  3. Re-sort to assign correct rank numbers
+  4. DO NOT change scores or positions of existing shows
 
 ### **02-overflow-pool.json** (RANKED SHOWS 101+)
 - **What:** Shows already scored, ranked, ready to surface

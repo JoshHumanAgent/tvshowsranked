@@ -132,8 +132,8 @@ if (urlErrors === 0) {
 }
 
 console.log();
-console.log(C + '── CHECK 6: Existing Top 100 Preservation ───────────────────' + X);
-console.log(C + '    (Compare with git to detect unintended changes)' + X);
+console.log(C + '── CHECK 6: CARDINAL RULE - No Re-Ranking Existing Shows ────' + X);
+console.log(C + '    (Existing Top 100 shows must stay at original score/rank)' + X);
 const { execSync } = require('child_process');
 try {
     const gitShow = execSync('git show HEAD:data/core/01-current-index.json', { encoding: 'utf8', cwd: '.' });
