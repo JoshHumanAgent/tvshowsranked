@@ -30,32 +30,38 @@
     {
       "title": "The Vampire Diaries",
       "year": 2009,
-      "status": "pending",
+      "status": "scored",
       "priority": "medium",
       "reason": "Popular CW drama, 8 seasons, supernatural genre",
       "discoveredAt": "2026-02-22",
-      "tmdbId": null,
-      "notes": ""
+      "tmdbId": 18165,
+      "finalScore": 7.18,
+      "rank": 96,
+      "notes": "Scored. Peak seasons 1-3 strong (drive 8.0), later seasons declined. 171 episodes total."
     },
     {
       "title": "Yellowstone",
       "year": 2018,
-      "status": "pending",
+      "status": "scored",
       "priority": "high",
       "reason": "Major contemporary drama, Western genre, huge viewership",
       "discoveredAt": "2026-02-22",
-      "tmdbId": null,
-      "notes": ""
+      "tmdbId": 73586,
+      "finalScore": 7.60,
+      "rank": 63,
+      "notes": "Scored. Costner's performance, authentic world-building (8.5). Taylor Sheridan's signature series."
     },
     {
       "title": "Yellowjackets",
       "year": 2021,
-      "status": "pending",
+      "status": "scored",
       "priority": "high",
       "reason": "Acclaimed recent drama, survival/thriller, Showtime",
       "discoveredAt": "2026-02-22",
-      "tmdbId": null,
-      "notes": ""
+      "tmdbId": 117488,
+      "finalScore": 7.42,
+      "rank": 77,
+      "notes": "Scored. Dual timeline survival horror. Strong conceptual density (8.0). Season 3 just concluded."
     },
     {
       "title": "The Bear",
@@ -97,6 +103,11 @@
       "date": "2026-02-22T15:20",
       "action": "True Blood scored (7.20) and added to pool at rank 90",
       "notes": "Subagent research completed. Peak quality basis (S1-3)."
+    },
+    {
+      "date": "2026-02-22T16:35",
+      "action": "Batch scored 3 shows: Yellowstone (7.60), Yellowjackets (7.42), Vampire Diaries (7.18)",
+      "notes": "All added to pool. 105 total shows indexed."
     }
   ]
 }
