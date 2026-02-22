@@ -63,11 +63,11 @@ run(`git commit -m "${message}"`);
 
 // Push
 console.log('\n🚀 Pushing to origin...');
-const pushResult = run('git push origin master', { allowFail: true });
-
-if (pushResult === null) {
+try {
+  run('git push origin master');
+  console.log('\n✅ Sync complete!');
+} catch (error) {
   console.log('⚠️ Push failed - will retry later');
+  console.log(`Error: ${error.message}`);
   process.exit(1);
 }
-
-console.log('\n✅ Sync complete!');
