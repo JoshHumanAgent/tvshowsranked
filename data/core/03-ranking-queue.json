@@ -46,36 +46,6 @@
                            "status":  "pending"
                        },
                        {
-                           "confidence":  "medium",
-                           "why":  [
-                                       "star-wars",
-                                       "nostalgia"
-                                   ],
-                           "year":  2024,
-                           "priority":  "CRITICAL",
-                           "genres":  [
-                                          "sci-fi",
-                                          "adventure"
-                                      ],
-                           "title":  "Skeleton Crew",
-                           "status":  "pending"
-                       },
-                       {
-                           "confidence":  "medium",
-                           "why":  [
-                                       "star-wars",
-                                       "new-era"
-                                   ],
-                           "year":  2024,
-                           "priority":  "CRITICAL",
-                           "genres":  [
-                                          "sci-fi",
-                                          "fantasy"
-                                      ],
-                           "title":  "Acolyte",
-                           "status":  "pending"
-                       },
-                       {
                            "confidence":  "low",
                            "why":  [
                                        "netflix",
@@ -2729,7 +2699,7 @@
                        }
                    ],
     "description":  "Complete list of dramas to score - SORTED BY YEAR (newest first). Updated 2026-02-23",
-    "total":  185,
+    "total":  183,
     "workflow":  "Work 5 shows at a time from top. Check for new releases monthly.",
     "title":  "MASTER DRAMA QUEUE",
     "$schema":  "https://json-schema.org/draft/2020-12/schema"
