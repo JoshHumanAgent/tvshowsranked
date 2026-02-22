@@ -76,12 +76,14 @@
     {
       "title": "Industry",
       "year": 2020,
-      "status": "pending",
+      "status": "scored",
       "priority": "medium",
       "reason": "HBO drama, finance world, 3 seasons",
       "discoveredAt": "2026-02-22",
-      "tmdbId": null,
-      "notes": ""
+      "tmdbId": 90812,
+      "finalScore": 6.95,
+      "rank": 106,
+      "notes": "Scored during heartbeat. Authentic finance world, strong world-building (7.5). TMDB: 6.78."
     },
     {
       "title": "Severance",
@@ -108,6 +110,11 @@
       "date": "2026-02-22T16:35",
       "action": "Batch scored 3 shows: Yellowstone (7.60), Yellowjackets (7.42), Vampire Diaries (7.18)",
       "notes": "All added to pool. 105 total shows indexed."
+    },
+    {
+      "date": "2026-02-22T21:05",
+      "action": "HEARTBEAT: Scored Industry (6.95) and added to pool at rank 106",
+      "notes": "Pool now 106 shows. 5 shows pending HTML writeups."
     }
   ]
 }
