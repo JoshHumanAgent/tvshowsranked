@@ -7,12 +7,14 @@
     {
       "title": "True Blood",
       "year": 2008,
-      "status": "pending",
+      "status": "scored",
       "priority": "high",
       "reason": "Major HBO drama, vampire genre, 7 seasons, significant cultural impact",
       "discoveredAt": "2026-02-22",
-      "tmdbId": null,
-      "notes": "User mentioned as missing from current list"
+      "tmdbId": 10545,
+      "finalScore": 7.20,
+      "rank": 90,
+      "notes": "Scored via subagent. Strong world-building (8.0) and drive (8.5), penalized for finale (resol 5.5)."
     },
     {
       "title": "Sons of Anarchy",
@@ -89,6 +91,11 @@
     {
       "date": "2026-02-22",
       "action": "Initial candidate list created from user suggestions and known gaps"
+    },
+    {
+      "date": "2026-02-22T15:20",
+      "action": "True Blood scored (7.20) and added to pool at rank 90",
+      "notes": "Subagent research completed. Peak quality basis (S1-3)."
     }
   ]
 }
