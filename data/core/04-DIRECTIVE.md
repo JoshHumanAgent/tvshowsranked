@@ -114,39 +114,166 @@ This means:
 
 ---
 
-## ⚠️ CRITICAL PROTOCOL: NO DUPLICATES
+## ⚠️ CRITICAL PROTOCOL: THE THREE-FILE VERIFICATION LOOP
 
-**BEFORE scoring OR adding ANY show:**
-1. **FIRST:** Check `data/shows/index.json` for existing slug OR title match
-2. **SECOND:** Check `data/core/01-current-index.json` (Top 100)
-3. **THIRD:** Check `data/core/02-overflow-pool.json` (Overflow)
-4. Search by title to catch variants (e.g., "The Bear" vs "Bear")
-5. If found ANYWHERE: **SKIP IMMEDIATELY** and log "already indexed"
-6. If not found: PROCEED with scoring
-
-**⚠️ FAILURE TO CHECK = WASTE OF TIME AND POTENTIAL DATA CORRUPTION**
-
-**Duplicate detection commands:**
-```powershell
-# Check ALL pools before scoring ANY show
-node -e "
-const fs = require('fs');
-function readJSON(p) { let c = fs.readFileSync(p, 'utf8'); if(c.charCodeAt(0)===0xFEFF)c=c.substring(1); return JSON.parse(c); }
-const top100 = readJSON('data/core/01-current-index.json');
-const overflow = readJSON('data/core/02-overflow-pool.json');
-const all = [...top100.shows, ...overflow.shows];
-const search = process.argv[2]?.toLowerCase() || '';
-const matches = all.filter(s => s.slug.toLowerCase().includes(search) || s.title.toLowerCase().includes(search));
-matches.forEach(s => console.log(s.title, '(', s.final, ') - Rank #' + s.rank));
-console.log('Found:', matches.length, 'matches');
-" hannibal
+**THE THREE FILES (must cross-reference ALL before ANY action):**
+```
+1. data/core/01-current-index.json    ← TOP 100 (sacred, do not touch)
+2. data/core/02-overflow-pool.json    ← OVERFLOW (ranked 101+)
+3. data/shows/index.json              ← LIVE SITE (what users see)
 ```
 
-**LESSON LEARNED (2026-02-23):**
+### **MANDATORY PRE-SCORING VERIFICATION**
+
+**BEFORE scoring ANY new show, run this verification loop:**
+
+```
+STEP 1: Normalize the title
+        - Remove "(S1-4)", "(2004)", season markers
+        - Remove "The", "A", punctuation
+        - Lowercase everything
+        - Example: "Mr. Robot (S1-3)" → "mrrobot"
+
+STEP 2: Check ALL THREE FILES
+        - Search by normalized title
+        - Search by slug
+        - Search by partial match (first 5 chars)
+        
+STEP 3: If found ANYWHERE → SKIP IMMEDIATELY
+        - Log: "SKIPPED: [title] already exists as [existing_title]"
+        - DO NOT SCORE
+        - DO NOT ADD
+        - MOVE TO NEXT SHOW
+
+STEP 4: If NOT found in any file → PROCEED
+        - Now you may score the show
+```
+
+### **WHY THIS MATTERS**
+
+1. **Existing rankings are SACRED** — Hours of work went into each score
+2. **Duplicates corrupt data** — They confuse the system and users
+3. **Wasted effort** — Scoring a show that already exists is pointless
+4. **The pool grows smarter** — More shows = easier to reference for future rankings
+
+### **VERIFICATION SCRIPT (RUN BEFORE EVERY NEW SHOW)**
+
+```javascript
+// Save as: scripts/check-duplicate.js
+// Usage: node scripts/check-duplicate.js "Show Name"
+
+const fs = require('fs');
+function readJSON(p) { 
+    let c = fs.readFileSync(p, 'utf8'); 
+    if(c.charCodeAt(0)===0xFEFF) c=c.substring(1); 
+    return JSON.parse(c); 
+}
+function normalize(title) {
+    return title.toLowerCase()
+        .replace(/\s*\(s\d+[^\)]*\)/gi, '')
+        .replace(/\s*s\d+(-\d+)?/gi, '')
+        .replace(/[^a-z0-9]/g, '')
+        .substring(0, 10); // First 10 chars for partial match
+}
+
+const search = process.argv[2] || '';
+const norm = normalize(search);
+
+const top100 = readJSON('data/core/01-current-index.json');
+const overflow = readJSON('data/core/02-overflow-pool.json');
+const live = readJSON('data/shows/index.json');
+
+const all = [...top100.shows, ...overflow.shows];
+
+console.log('=== CHECKING:', search, '===');
+console.log('Normalized:', norm);
+console.log('');
+
+let found = false;
+all.forEach(s => {
+    const sNorm = normalize(s.title);
+    if (sNorm.includes(norm) || norm.includes(sNorm) || s.slug.includes(norm)) {
+        console.log('FOUND:', s.title, '(' + s.final + ') - Rank #' + s.rank, s.rank <= 100 ? 'TOP 100' : 'OVERFLOW');
+        found = true;
+    }
+});
+
+if (!found) {
+    console.log('✓ NOT FOUND - Safe to score');
+} else {
+    console.log('');
+    console.log('❌ SKIP THIS SHOW - Already exists');
+}
+```
+
+---
+
+## 📊 COMPARATIVE RANKING: USE THE POOL AS REFERENCE
+
+**THE BIGGER THE POOL, THE EASIER RANKING GETS**
+
+When scoring a NEW show, always reference existing shows for calibration:
+
+### **SCORE CALIBRATION PROCESS**
+
+```
+BEFORE assigning scores, ask:
+1. "What existing show is this most similar to?"
+2. "What did that show score on each dimension?"
+3. "Is this show BETTER or WORSE than that reference?"
+4. "By how much?"
+
+EXAMPLE: Scoring a new prestige drama
+- Reference: The Crown (7.60), Succession (8.10), Mad Men (8.07)
+- If better than Crown but worse than Succession → target 7.7-7.9
+- Check each dimension against the reference
+```
+
+### **DIMENSION-BY-DIMENSION REFERENCE**
+
+| Dimension | Weight | Reference Highs | Reference Lows |
+|-----------|--------|-----------------|----------------|
+| Characters & Acting | 25% | GoT (10), Sopranos (9.5) | Action shows (6-7) |
+| World Building | 15% | GoT (10), Expanse (9.5) | Crime procedurals (5-6) |
+| Cinematography | 5% | True Detective S1 (10), Hannibal (10) | Standard TV (5-6) |
+| Visual Spectacle | 5% | GoT (9.5), Pacific (10) | Character dramas (4-5) |
+| Conceptual Density | 15% | The Wire (10), Dark (9) | Simple procedurals (5-6) |
+| Narrative Drive | 15% | Breaking Bad (10), GoT (10) | Slow burns (6-7) |
+| Resolution | 25% | Breaking Bad (10), Six Feet Under (9) | Cancelled shows (4-5) |
+
+### **CALIBRATION QUESTIONS**
+
+Before finalizing ANY score, check:
+- [ ] Is this score consistent with similar shows in the pool?
+- [ ] If I score this higher than [existing show], am I prepared to defend it?
+- [ ] Does the final weighted score make sense relative to the Top 100?
+
+---
+
+## ⚠️ LESSON LEARNED: THE DUPLICATE DISASTER (2026-02-23)
+
+**What happened:**
 - Scored 100+ shows without checking duplicates first
-- Wasted hours on shows already in Top 100
-- Shows like Hannibal, Mr. Robot, The Expanse, Dark, Severance were ALREADY RANKED
-- ALWAYS CHECK BEFORE SCORING - NO EXCEPTIONS
+- Added shows that ALREADY existed in Top 100 (Hannibal, Mr. Robot, Expanse, etc.)
+- Wasted hours on redundant work
+- Created 16 duplicate entries that had to be cleaned
+
+**Root cause:**
+- No verification step before scoring
+- Didn't check all three files
+- Assumed "new to me" = "new to pool"
+
+**New protocol:**
+- **ALWAYS run duplicate check FIRST**
+- **Cross-reference ALL THREE FILES**
+- **When in doubt, check again**
+
+**The fix that was applied:**
+```bash
+# Removed 16 duplicates
+# Verified 300 unique shows remaining
+# Updated this DIRECTIVE with verification protocol
+```
 
 ---
 
