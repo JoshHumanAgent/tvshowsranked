@@ -3985,6 +3985,8 @@
                 const response = await fetch('data/shows/index.json');
                 const data = await response.json();
                 shows = data.shows;
+                // Coerce any string finals to numbers (prevents .toFixed() crash)
+                shows.forEach(show => { if (typeof show.final === 'string') show.final = parseFloat(show.final); });
                 console.log(`Loaded ${shows.length} shows from JSON`);
             } catch (error) {
                 console.error('Failed to load shows from JSON, using fallback:', error);
