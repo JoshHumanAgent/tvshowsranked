@@ -314,7 +314,41 @@ REPEAT
 - ✅ 5 shows at a time, full quality
 - ✅ Update master queue after each batch
 
-### ⚠️ ANIME/ANIMATION EXCLUSION
+#---
+
+## 🖼️ POSTERS & BACKDROPS (Visual Requirements)
+
+**Every show MUST have:**
+- `poster`: TMDB poster URL (`https://image.tmdb.org/t/p/w500/...`)
+- `backdrop`: TMDB backdrop URL (`https://image.tmdb.org/t/p/w780/...`)
+
+**Process for adding missing images:**
+```javascript
+// Fetch from TMDB
+const TMDB_API_KEY = 'ca9b21cb89de2d1debed1050f603d7ad';
+const searchUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(title)}`;
+// Then fetch details for backdrop
+const detailsUrl = `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${TMDB_API_KEY}`;
+```
+
+**Priority order:**
+1. Top 100 shows missing backdrops
+2. Top 100 shows missing posters
+3. Overflow shows missing both
+
+**Check command:**
+```bash
+node -e "
+const shows = require('./data/shows/index.json').shows;
+const missing = shows.filter(s => !s.poster || !s.backdrop);
+console.log(missing.length, 'shows missing images');
+"
+```
+
+---
+
+## ⚠️ ANIME/ANIMATION EXCLUSION
+
 **Anime and animation are a SEPARATE CATEGORY. Do not add to drama pool.**
 
 This includes:
@@ -323,7 +357,7 @@ This includes:
 - Love, Death & Robots, Tales of the Empire
 - Any show with `animation` or `anime` in genres
 
-**Exception:** If an anime is already in Top 100 (e.g., Invincible), it stays per Cardinal Rule unless Josh explicitly says otherwise.
+**Current exception:** Invincible is at #22 in Top 100. Per Cardinal Rule, it stays until Josh explicitly approves removal.
 
 ---
 
