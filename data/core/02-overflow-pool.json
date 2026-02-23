@@ -8208,10 +8208,47 @@
       },
       "poster": "https://image.tmdb.org/t/p/w500/Muev370hN3vdjGsC1ip1HcWqbT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/jHF1ys6WjpKpgj3JPTCP65pN96v.jpg"
+    },
+    {
+      "slug": "mildred-pierce",
+      "title": "Mildred Pierce",
+      "year": 2011,
+      "month": 3,
+      "genres": [
+        "drama",
+        "period"
+      ],
+      "tmdbId": 39468,
+      "episodes": 5,
+      "status": "ended",
+      "network": "HBO",
+      "creators": [
+        "Todd Haynes"
+      ],
+      "char": 8.5,
+      "world": 8,
+      "cine": 9,
+      "spect": 5,
+      "conc": 7.5,
+      "drive": 7.5,
+      "resol": 8,
+      "final": 7.73,
+      "scoring_notes": "Winslet masterpiece. Haynes depression era. HBO miniseries.",
+      "streaming": {
+        "us": [
+          "HBO Max"
+        ],
+        "uk": [
+          "Sky Atlantic"
+        ]
+      },
+      "rank": 326,
+      "poster": "https://image.tmdb.org/t/p/w500/eZ7TUocetldADAXZfnMSEVl7SbJ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/nYGVRE2VVJZ71gqsm1AYAjO0C1G.jpg"
     }
   ],
   "description": "OVERFLOW - Ranked shows 101-230",
   "lastUpdated": "2026-02-23T09:28:39.123Z",
   "version": "3.1",
-  "count": 225
+  "count": 226
 }
