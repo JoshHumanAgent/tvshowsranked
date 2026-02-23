@@ -3988,13 +3988,18 @@
                 // Coerce any string finals to numbers (prevents .toFixed() crash)
                 shows.forEach(show => { if (typeof show.final === 'string') show.final = parseFloat(show.final); });
                 console.log(`Loaded ${shows.length} shows from JSON`);
+                console.log('First show:', shows[0] ? shows[0].title : 'none');
+                console.log('First show final type:', shows[0] ? typeof shows[0].final : 'none');
             } catch (error) {
                 console.error('Failed to load shows from JSON, using fallback:', error);
                 shows = FALLBACK_SHOWS;
             }
             // Always runs regardless of fetch success/failure:
+            console.log('initScoreSystem called with', shows.length, 'shows');
             initScoreSystem();
+            console.log('initScoreSystem completed');
             showsReady = true;
+            console.log('About to call renderShows, currentUser =', currentUser);
             // If the user was already resolved by Firebase before shows loaded,
             // apply their preferences now. Otherwise just render guest state.
             if (currentUser) {
@@ -4527,6 +4532,7 @@
         }
 
         function renderShows() {
+            console.log('renderShows called, shows.length =', shows.length);
             let filtered = shows.filter(show => {
                 const matchesSearch = show.title.toLowerCase().includes(searchTerm.toLowerCase());
                 const matchesScore = show.final >= minScore;
