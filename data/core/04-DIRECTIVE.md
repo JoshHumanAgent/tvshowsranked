@@ -314,6 +314,17 @@ REPEAT
 - ✅ 5 shows at a time, full quality
 - ✅ Update master queue after each batch
 
+### ⚠️ ANIME/ANIMATION EXCLUSION
+**Anime and animation are a SEPARATE CATEGORY. Do not add to drama pool.**
+
+This includes:
+- Arcane, Avatar: The Last Airbender, Blue Eye Samurai
+- Invincible, Scavengers Reign, BoJack Horseman
+- Love, Death & Robots, Tales of the Empire
+- Any show with `animation` or `anime` in genres
+
+**Exception:** If an anime is already in Top 100 (e.g., Invincible), it stays per Cardinal Rule unless Josh explicitly says otherwise.
+
 ---
 
 ## 🔄 THE WORKFLOW (Never-Ending)

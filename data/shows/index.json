@@ -3243,155 +3243,6 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/66ieYewiusGZsUAbJGuefdo1GpS.jpg"
     },
     {
-      "slug": "arcane",
-      "title": "Arcane",
-      "year": 2021,
-      "month": 11,
-      "genres": [
-        "animation",
-        "fantasy",
-        "drama"
-      ],
-      "tmdbId": 94605,
-      "episodes": 9,
-      "status": "ongoing",
-      "network": "Netflix",
-      "creators": [
-        "Alex Yee",
-        "Christian Linke"
-      ],
-      "char": 9,
-      "world": 9.5,
-      "cine": 10,
-      "spect": 9,
-      "conc": 8,
-      "drive": 8.5,
-      "resol": 8,
-      "final": 8.58,
-      "rank": 101,
-      "scoring_notes": "League of Legends adaptation that transcends source. Visual style revolutionary. Powder/Jinx story is heartbreaking. S1 complete arc, S2 announced. Animation's new gold standard.",
-      "streaming": {
-        "us": [
-          "Netflix"
-        ],
-        "uk": [
-          "Netflix"
-        ]
-      }
-    },
-    {
-      "slug": "avatar-the-last-airbender",
-      "title": "Avatar: The Last Airbender",
-      "year": 2005,
-      "month": 2,
-      "genres": [
-        "animation",
-        "fantasy",
-        "action"
-      ],
-      "tmdbId": 246,
-      "episodes": 61,
-      "status": "ended",
-      "network": "Nickelodeon",
-      "creators": [
-        "Michael Dante DiMartino",
-        "Bryan Konietzko"
-      ],
-      "char": 9,
-      "world": 9,
-      "cine": 8.5,
-      "spect": 8,
-      "conc": 8.5,
-      "drive": 9,
-      "resol": 9.5,
-      "final": 8.48,
-      "rank": 102,
-      "scoring_notes": "Animation masterpiece. Aang's journey is complete storytelling. S3 Zuko redemption arc is peerless. For all ages but never childish. Complete series with perfect ending.",
-      "streaming": {
-        "us": [
-          "Netflix",
-          "Paramount Plus"
-        ],
-        "uk": [
-          "Netflix"
-        ]
-      }
-    },
-    {
-      "slug": "scavengers-reign",
-      "title": "Scavengers Reign",
-      "year": 2023,
-      "month": 10,
-      "genres": [
-        "animation",
-        "sci-fi",
-        "drama"
-      ],
-      "tmdbId": 119895,
-      "episodes": 12,
-      "status": "ended",
-      "network": "Max",
-      "creators": [
-        "Joe Bennett",
-        "Charles Huettner"
-      ],
-      "char": 8,
-      "world": 10,
-      "cine": 9.5,
-      "spect": 9,
-      "conc": 8.5,
-      "drive": 7.5,
-      "resol": 8,
-      "final": 8.28,
-      "rank": 103,
-      "scoring_notes": "Alien ecosystem masterpiece. Biological horror and beauty. Visual storytelling at its finest. Complete season. Cancelled but perfect as-is. Sci-fi animation essential viewing.",
-      "streaming": {
-        "us": [
-          "Max"
-        ],
-        "uk": [
-          "Channel 4"
-        ]
-      }
-    },
-    {
-      "slug": "blue-eye-samurai",
-      "title": "Blue Eye Samurai",
-      "year": 2023,
-      "month": 11,
-      "genres": [
-        "animation",
-        "action",
-        "drama"
-      ],
-      "tmdbId": 210244,
-      "episodes": 8,
-      "status": "ongoing",
-      "network": "Netflix",
-      "creators": [
-        "Michael Green",
-        "Amber Noizumi"
-      ],
-      "char": 8.5,
-      "world": 9,
-      "cine": 9.5,
-      "spect": 8.5,
-      "conc": 8,
-      "drive": 9,
-      "resol": 7.5,
-      "final": 8.25,
-      "rank": 104,
-      "scoring_notes": "Edo-period revenge tale. Mizu's journey is brutal and beautiful. Animation stunning. Action choreography exceptional. S1 complete, S2 announced. Netflix's best animation since Arcane.",
-      "streaming": {
-        "us": [
-          "Netflix"
-        ],
-        "uk": [
-          "Netflix"
-        ]
-      }
-    },
-    {
       "slug": "my-brilliant-friend",
       "title": "My Brilliant Friend",
       "year": 2018,
@@ -3425,7 +3276,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 105
+      "rank": 101
     },
     {
       "slug": "i-may-destroy-you",
@@ -3460,7 +3311,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 106
+      "rank": 102
     },
     {
       "slug": "fleabag",
@@ -3494,7 +3345,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 107
+      "rank": 103
     },
     {
       "slug": "battlestar-galactica-2004",
@@ -3521,7 +3372,7 @@
       "drive": 9,
       "resol": 6.5,
       "final": 7.95,
-      "rank": 108,
+      "rank": 104,
       "scoring_notes": "Reimagined space opera. S1-2 are peak sci-fi TV. Political allegory, religious themes. S3-4 decline but finish strong. Olmos and McDonnell anchor. Complete series.",
       "streaming": {
         "us": [
@@ -3566,7 +3417,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 109
+      "rank": 105
     },
     {
       "slug": "the-good-place",
@@ -3602,7 +3453,7 @@
           "Netflix"
         ]
       },
-      "rank": 110
+      "rank": 106
     },
     {
       "slug": "barry-s1-3",
@@ -3638,7 +3489,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 111
+      "rank": 107
     },
     {
       "slug": "unbelievable",
@@ -3673,43 +3524,7 @@
           "Netflix"
         ]
       },
-      "rank": 112
-    },
-    {
-      "slug": "bojack-horseman-s1-5",
-      "title": "BoJack Horseman (S1-5)",
-      "year": 2014,
-      "month": 8,
-      "genres": [
-        "animation",
-        "drama",
-        "comedy-drama"
-      ],
-      "tmdbId": 61222,
-      "episodes": 61,
-      "status": "ended",
-      "network": "Netflix",
-      "creators": [
-        "Raphael Bob-Waksberg"
-      ],
-      "char": 9,
-      "world": 8,
-      "cine": 8,
-      "spect": 6,
-      "conc": 8.5,
-      "drive": 8,
-      "resol": 7.5,
-      "final": 7.88,
-      "rank": 113,
-      "scoring_notes": "Hollywoo satire meets depression portrait. 'Fish Out of Water' is perfect. S1-5 peak before decline. Animation enables surreal depth. Will Arnett's best role. Complete series.",
-      "streaming": {
-        "us": [
-          "Netflix"
-        ],
-        "uk": [
-          "Netflix"
-        ]
-      }
+      "rank": 108
     },
     {
       "slug": "outlander-s1-3",
@@ -3746,7 +3561,7 @@
           "Netflix"
         ]
       },
-      "rank": 114
+      "rank": 109
     },
     {
       "slug": "unorthodox",
@@ -3781,7 +3596,7 @@
           "Netflix"
         ]
       },
-      "rank": 115
+      "rank": 110
     },
     {
       "slug": "the-oa",
@@ -3809,7 +3624,7 @@
       "drive": 8.5,
       "resol": 5,
       "final": 7.83,
-      "rank": 116,
+      "rank": 111,
       "scoring_notes": "Marling's dimension-hopping mystery. S1 finale divides. S2 expands beautifully. Cancelled on cliffhanger. What exists is remarkable. For patient, curious viewers. Unique TV.",
       "streaming": {
         "us": [
@@ -3854,7 +3669,7 @@
           "Netflix"
         ]
       },
-      "rank": 117
+      "rank": 112
     },
     {
       "slug": "atlanta",
@@ -3889,7 +3704,7 @@
           "Disney Plus"
         ]
       },
-      "rank": 118
+      "rank": 113
     },
     {
       "slug": "twin-peaks-s1-2",
@@ -3917,7 +3732,7 @@
       "drive": 7.5,
       "resol": 6.5,
       "final": 7.8,
-      "rank": 119,
+      "rank": 114,
       "scoring_notes": "Who killed Laura Palmer? Lynch changed TV forever. S1 perfect, S2 uneven. Cooper is iconic. Surreal humor and genuine dread. The Return (S3) is superior but S1-2 started it.",
       "streaming": {
         "us": [
@@ -3965,7 +3780,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 120
+      "rank": 115
     },
     {
       "slug": "the-deuce",
@@ -4002,7 +3817,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 121
+      "rank": 116
     },
     {
       "slug": "the-night-of",
@@ -4038,7 +3853,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 122
+      "rank": 117
     },
     {
       "slug": "tabula-rasa",
@@ -4066,7 +3881,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 7.73,
-      "rank": 123,
+      "rank": 118,
       "scoring_notes": "Belgian psychological thriller. Veerle Baetens stars as amnesiac woman suspected of missing man's disappearance. Nonlinear narrative reveals layers of trauma and mystery. Atmospheric and unsettling. Complete limited series with satisfying conclusion.",
       "streaming": {
         "us": [
@@ -4103,7 +3918,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 7.73,
-      "rank": 124,
+      "rank": 119,
       "scoring_notes": "King brothers' supernatural procedural. Katja Herbers, Mike Colter, Aasif Mandvi investigate possessions and miracles. Balances skepticism and faith brilliantly. Four seasons of increasing weirdness. Michael Emerson's villain is spectacular. Complete series, satisfying conclusion.",
       "streaming": {
         "us": [
@@ -4138,7 +3953,7 @@
       "drive": 7.5,
       "resol": 8,
       "final": 7.73,
-      "rank": 125,
+      "rank": 120,
       "scoring_notes": "Vampire roommates in Staten Island mockumentary. Kayvan Novak, Matt Berry, Natasia Demetriou, Harvey Guillén perfect ensemble. Five seasons of supernatural absurdity. Complete series with satisfying finale. Consistently hilarious, surprisingly heartfelt.",
       "streaming": {
         "us": [
@@ -4174,7 +3989,7 @@
       "drive": 9,
       "resol": 7.5,
       "final": 7.73,
-      "rank": 126,
+      "rank": 121,
       "scoring_notes": "Sorkin's idealistic White House drama. S1-4 are masterpieces (Sorkin era). Walk-and-talk dialogue perfection. Peak TV political drama. Complete series with declining final seasons.",
       "streaming": {
         "us": [
@@ -4220,7 +4035,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 127
+      "rank": 122
     },
     {
       "slug": "mildred-pierce",
@@ -4255,7 +4070,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 128
+      "rank": 123
     },
     {
       "slug": "12-monkeys",
@@ -4292,7 +4107,7 @@
           "Netflix"
         ]
       },
-      "rank": 129
+      "rank": 124
     },
     {
       "slug": "show-me-a-hero",
@@ -4328,7 +4143,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 130
+      "rank": 125
     },
     {
       "slug": "buffy-the-vampire-slayer",
@@ -4364,7 +4179,7 @@
           "Disney Plus"
         ]
       },
-      "rank": 131
+      "rank": 126
     },
     {
       "slug": "the-third-day",
@@ -4392,7 +4207,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.68,
-      "rank": 132,
+      "rank": 127,
       "scoring_notes": "HBO folk horror. Jude Law and Naomie Harris in separate stories. Immersive theatrical 'Summer' and 'Winter' halves. Innovative live 'Autumn' episode. Visually stunning but narratively opaque.",
       "streaming": {
         "us": [
@@ -4427,7 +4242,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.68,
-      "rank": 133,
+      "rank": 128,
       "scoring_notes": "Jennifer Aniston and Reese Witherspoon in cutthroat morning news drama. Started with #MeToo reckoning, evolved into broader media critique. Strong ensemble including Steve Carell, Billy Crudup. S3 loses some focus but performances remain compelling. Four seasons, ongoing.",
       "streaming": {
         "us": [
@@ -4464,7 +4279,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 7.68,
-      "rank": 134,
+      "rank": 129,
       "scoring_notes": "Steve Martin, Martin Short, Selena Gomez as true crime podcasters solving murders in their NYC apartment building. Perfect chemistry between leads. Four seasons of cozy mystery with genuine heart. Witty writing, great guest stars. Ongoing but consistently delightful.",
       "streaming": {
         "us": [
@@ -4500,7 +4315,7 @@
       "drive": 7.5,
       "resol": 6,
       "final": 7.68,
-      "rank": 135,
+      "rank": 130,
       "scoring_notes": "Fincher's serial killer birth. FBI behavioral science unit. S1-2 exceptional. Cancelled too soon. McCallany and Groff perfect. Fincher's best TV work. Incomplete but essential.",
       "streaming": {
         "us": [
@@ -4546,7 +4361,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 136
+      "rank": 131
     },
     {
       "slug": "mindhunter",
@@ -4582,7 +4397,7 @@
           "Netflix"
         ]
       },
-      "rank": 137
+      "rank": 132
     },
     {
       "slug": "john-adams",
@@ -4618,7 +4433,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 138
+      "rank": 133
     },
     {
       "slug": "tales-from-the-loop",
@@ -4645,7 +4460,7 @@
       "drive": 6.5,
       "resol": 7,
       "final": 7.63,
-      "rank": 139,
+      "rank": 134,
       "scoring_notes": "Amazon sci-fi anthology based on Simon Stålenhag art. Slow, contemplative, stunningly beautiful. Each episode standalone but connected by small town and mysterious underground machine. Less about plot, more about mood and human moments. Polarizing pacing but visually unmatched.",
       "streaming": {
         "us": [
@@ -4683,7 +4498,7 @@
       "drive": 8,
       "resol": 8,
       "final": 7.63,
-      "rank": 140,
+      "rank": 135,
       "scoring_notes": "Alia Shawkat as narcissistic millennial searching for missing college acquaintance. Satirical mystery evolves into something much darker. Five seasons of tonal shifts executed brilliantly. Sharp writing on privilege and self-obsession. Complete series with audacious finale.",
       "streaming": {
         "us": [
@@ -4719,7 +4534,7 @@
       "drive": 9,
       "resol": 6,
       "final": 7.63,
-      "rank": 141,
+      "rank": 136,
       "scoring_notes": "Spacey's Frank Underwood breaks fourth wall. S1-2 are political thriller perfection. Later seasons decline, final season disaster. Score for peak S1-2. Wright dominates.",
       "streaming": {
         "us": [
@@ -4764,7 +4579,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 142
+      "rank": 137
     },
     {
       "slug": "big-little-lies-s1",
@@ -4799,7 +4614,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 143
+      "rank": 138
     },
     {
       "slug": "we-own-this-city",
@@ -4836,7 +4651,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 144
+      "rank": 139
     },
     {
       "slug": "my-so-called-life",
@@ -4872,7 +4687,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 145
+      "rank": 140
     },
     {
       "slug": "bordertown",
@@ -4899,7 +4714,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 7.58,
-      "rank": 146,
+      "rank": 141,
       "scoring_notes": "Finnish crime series. Ville Virtanen as detective in town bordering Russia. Nordic noir with unique borderland setting. Explores human trafficking and cross-border crime. Three seasons with complete resolution. Solid procedural with atmospheric location work.",
       "streaming": {
         "us": [
@@ -4935,7 +4750,7 @@
       "drive": 8,
       "resol": 8,
       "final": 7.58,
-      "rank": 147,
+      "rank": 142,
       "scoring_notes": "Nicola Walker (then Sanjeev Bhaskar) leads cold case unit. Each season excavates decades-old murder with devastating impact on suspects' present lives. Intimate character studies disguised as procedural. Five seasons of exceptional quality. Complete series with emotional farewell.",
       "streaming": {
         "us": [
@@ -4982,7 +4797,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 148
+      "rank": 143
     },
     {
       "slug": "arrested-development-s1-3",
@@ -5017,7 +4832,7 @@
           "Netflix"
         ]
       },
-      "rank": 149
+      "rank": 144
     },
     {
       "slug": "maid",
@@ -5051,7 +4866,7 @@
           "Netflix"
         ]
       },
-      "rank": 150
+      "rank": 145
     },
     {
       "slug": "the-returned-2012",
@@ -5079,7 +4894,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.55,
-      "rank": 151,
+      "rank": 146,
       "scoring_notes": "French supernatural masterpiece. Deceased residents return to small Alpine village unchanged. Moody, atmospheric, deeply emotional. Mogwai score is haunting. Slow-burn mystery that prioritizes character over answers. Two seasons, complete story.",
       "streaming": {
         "us": [
@@ -5116,7 +4931,7 @@
       "drive": 7.5,
       "resol": 7.5,
       "final": 7.55,
-      "rank": 152,
+      "rank": 147,
       "scoring_notes": "Kenneth Branagh as Henning Mankell's troubled Swedish detective. Bleak, atmospheric Swedish landscapes mirror Wallander's depression. Branagh's nuanced performance across four seasons. Morally complex cases. Complete series with definitive ending. Superior to other adaptations.",
       "streaming": {
         "us": [
@@ -5152,7 +4967,7 @@
       "drive": 7.5,
       "resol": 7.5,
       "final": 7.55,
-      "rank": 153,
+      "rank": 148,
       "scoring_notes": "Stellan Skarsgård as detective seeing dead people after partner's murder. Psychological crime with supernatural elements. Nicola Walker's presence haunts throughout. Abi Morgan's writing is character-focused and melancholic. One perfect season, complete story. Underrated gem.",
       "streaming": {
         "us": [
@@ -5188,7 +5003,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.55,
-      "rank": 154,
+      "rank": 149,
       "scoring_notes": "BBC zombie drama with unique angle: Partially Deceased Syndrome sufferers reintegrate into society. Luke Newberry as Kieren Walker deals with guilt and discrimination. Two seasons exploring prejudice and redemption. CANCELED but relatively complete. Powerful allegory, memorable characters.",
       "streaming": {
         "us": [
@@ -5223,7 +5038,7 @@
       "drive": 7,
       "resol": 7,
       "final": 7.55,
-      "rank": 155,
+      "rank": 150,
       "scoring_notes": "Julian Fellowes' American Downton Abbey. 1880s New York moneyed class. Christine Baranski and Carrie Coon lead rival families. Lavish costumes and sets. HBO prestige comfort viewing.",
       "streaming": {
         "us": [
@@ -5267,7 +5082,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 156
+      "rank": 151
     },
     {
       "slug": "luther",
@@ -5303,7 +5118,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 157
+      "rank": 152
     },
     {
       "slug": "the-killing-us",
@@ -5330,7 +5145,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.53,
-      "rank": 158,
+      "rank": 153,
       "scoring_notes": "US adaptation of Danish series. Mireille Enos and Joel Kinnaman as Seattle detectives. Rain-soaked atmosphere, moody cinematography. Rosie Larsen case across two seasons, then new cases. CANCELED twice, revived twice. Watch Danish original (Forbrydelsen) for purist version.",
       "streaming": {
         "us": [
@@ -5376,7 +5191,7 @@
           "Netflix"
         ]
       },
-      "rank": 159
+      "rank": 154
     },
     {
       "slug": "the-tunnel",
@@ -5403,7 +5218,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 7.48,
-      "rank": 160,
+      "rank": 155,
       "scoring_notes": "Anglo-French adaptation of Bron/Broen. Stephen Dillane and Clemence Poesy as detectives from UK and France. Channel Tunnel setting creates unique cross-border dynamic. Three seasons with complete resolution. Solid but overshadowed by Swedish original and US remake.",
       "streaming": {
         "us": [
@@ -5439,7 +5254,7 @@
       "drive": 8,
       "resol": 6.5,
       "final": 7.48,
-      "rank": 161,
+      "rank": 156,
       "scoring_notes": "Harold Perrineau leads trapped town mystery. Residents can't escape, night creatures hunt them. LOST-style mystery with horror elements. Three seasons of deepening mythology. Character work strong, answers coming slowly. MGM+ sleeper hit, cult following.",
       "streaming": {
         "us": [
@@ -5474,7 +5289,7 @@
       "drive": 8.5,
       "resol": 7.5,
       "final": 7.48,
-      "rank": 162,
+      "rank": 157,
       "scoring_notes": "Medical drama gold standard. Clooney, Wyle, Edwards era was peak. 15 seasons of varying quality but S1-5 are exceptional. Fast-paced, emotional, influential. Complete series.",
       "streaming": {
         "us": [
@@ -5511,7 +5326,7 @@
       "drive": 8.5,
       "resol": 5,
       "final": 7.48,
-      "rank": 163,
+      "rank": 158,
       "scoring_notes": "Space western cancelled too soon. Whedon's best ensemble. 14 episodes of perfection. Serenity movie completes story. Fox scheduling killed it. Cult following deserved.",
       "streaming": {
         "us": [
@@ -5557,7 +5372,7 @@
           "Netflix"
         ]
       },
-      "rank": 164
+      "rank": 159
     },
     {
       "slug": "narcos-mexico",
@@ -5594,7 +5409,7 @@
           "Netflix"
         ]
       },
-      "rank": 165
+      "rank": 160
     },
     {
       "slug": "the-stranger",
@@ -5621,7 +5436,7 @@
       "drive": 8.5,
       "resol": 7.5,
       "final": 7.45,
-      "rank": 166,
+      "rank": 161,
       "scoring_notes": "Harlan Coben adaptation. Richard Armitage's suburban life unravels by mysterious stranger. Fast-paced mystery with multiple plot threads. Some twists strain credibility but entertaining throughout. Limited series.",
       "streaming": {
         "us": [
@@ -5657,7 +5472,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.45,
-      "rank": 167,
+      "rank": 162,
       "scoring_notes": "Anna Friel as detective with dissociative fugue investigating serial killers. Nordic noir by The Bridge creator. Friel's unhinged performance carries the show. Plot becomes increasingly convoluted across three seasons. Stylish but emotionally draining.",
       "streaming": {
         "us": [
@@ -5695,7 +5510,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.45,
-      "rank": 168,
+      "rank": 163,
       "scoring_notes": "Jason Segel as grieving therapist who stops holding back. Harrison Ford steals scenes as fellow therapist with Parkinson's. Warm, funny, emotionally honest. Ted Lasso creative team brings similar heart. Two seasons, ongoing. Therapy as comedy works surprisingly well.",
       "streaming": {
         "us": [
@@ -5729,7 +5544,7 @@
       "drive": 7.5,
       "resol": 7.5,
       "final": 7.45,
-      "rank": 169,
+      "rank": 164,
       "scoring_notes": "Quinta Brunson's mockumentary about Philadelphia public school teachers. Warm, funny, socially conscious without being preachy. Sheryl Lee Ralph and Janelle James steal scenes. Four seasons, ongoing. Mockumentary format feels fresh. Network sitcom at its best.",
       "streaming": {
         "us": [
@@ -5766,7 +5581,7 @@
       "drive": 7,
       "resol": 7.5,
       "final": 7.45,
-      "rank": 170,
+      "rank": 165,
       "scoring_notes": "Anthology series about immigrant experiences in America. Kumail Nanjiani and Emily V. Gordon's passion project. Two seasons of heartfelt, human stories. Complete series. Authentic and moving.",
       "streaming": {
         "us": [
@@ -5802,7 +5617,7 @@
       "drive": 7.5,
       "resol": 6,
       "final": 7.45,
-      "rank": 171,
+      "rank": 166,
       "scoring_notes": "Apatow and Feig's high school masterpiece. Rogen, Franco, Segel, Cardellini before fame. 1980 Michigan authenticity. Cancelled after 18 episodes. Complete cult classic.",
       "streaming": {
         "us": [
@@ -5847,7 +5662,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 172
+      "rank": 167
     },
     {
       "slug": "gilmore-girls",
@@ -5882,7 +5697,7 @@
           "Netflix"
         ]
       },
-      "rank": 173
+      "rank": 168
     },
     {
       "slug": "the-night-agent",
@@ -5909,7 +5724,7 @@
       "drive": 8.5,
       "resol": 7,
       "final": 7.43,
-      "rank": 174,
+      "rank": 169,
       "scoring_notes": "Netflix political thriller. Gabriel Basso as FBI agent pulled into conspiracy. Fast-paced, propulsive narrative. Action sequences well-executed. Pure popcorn entertainment done well.",
       "streaming": {
         "us": [
@@ -5955,7 +5770,7 @@
           "Netflix"
         ]
       },
-      "rank": 175
+      "rank": 170
     },
     {
       "slug": "the-newsroom",
@@ -5990,10 +5805,10 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 176
+      "rank": 171
     },
     {
-      "rank": 177,
+      "rank": 172,
       "slug": "interview-with-the-vampire",
       "title": "Interview with the Vampire",
       "year": 2022,
@@ -6026,7 +5841,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/r5RoeEWuslP6svlZsHsCKo7TZs7.jpg"
     },
     {
-      "rank": 178,
+      "rank": 173,
       "slug": "six-feet-under",
       "title": "Six Feet Under",
       "year": 2001,
@@ -6057,7 +5872,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/5NOQNDMVXe8t5wIuY6r6b6iUXcc.jpg"
     },
     {
-      "rank": 179,
+      "rank": 174,
       "slug": "watchmen-2019",
       "title": "Watchmen (2019)",
       "year": 2019,
@@ -6114,7 +5929,7 @@
       "drive": 7.5,
       "resol": 7.5,
       "final": 7.38,
-      "rank": 180,
+      "rank": 175,
       "scoring_notes": "Canadian crime series. Billy Campbell as troubled detective John Cardinal in frozen Northern Ontario. Atmospheric winter setting is character itself. Four seasons based on Giles Blunt novels. Methodical pacing, strong character work. Complete series with satisfying arc.",
       "streaming": {
         "us": [
@@ -6150,7 +5965,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.38,
-      "rank": 181,
+      "rank": 176,
       "scoring_notes": "Damian Lewis vs Paul Giamatti as hedge fund king vs US Attorney. Sharp dialogue on wealth and power. Seven seasons, complete. Showtime's premium soap opera. Consistently entertaining if diminishing returns.",
       "streaming": {
         "us": [
@@ -6187,7 +6002,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.38,
-      "rank": 182,
+      "rank": 177,
       "scoring_notes": "CJ Sansom adaptation. Arthur Hughes as hunchback lawyer in Tudor England. Historical mystery with political intrigue. Four-episode limited series. Well-crafted but niche appeal.",
       "streaming": {
         "us": [
@@ -6225,7 +6040,7 @@
       "drive": 8.5,
       "resol": 6,
       "final": 7.38,
-      "rank": 183,
+      "rank": 178,
       "scoring_notes": "Kyle Chandler in Florida Keys family drama. S1 is masterful slow-burn. S2-3 decline. 'We're not bad people... but we did a bad thing.' Mendelsohn is Danny Rayburn.",
       "streaming": {
         "us": [
@@ -6271,7 +6086,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 184
+      "rank": 179
     },
     {
       "slug": "the-walking-dead",
@@ -6295,7 +6110,7 @@
       "drive": 8,
       "resol": 6.5,
       "final": 7.35,
-      "rank": 185,
+      "rank": 180,
       "poster": "https://image.tmdb.org/t/p/w500/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
       "streaming": {
         "us": [
@@ -6330,7 +6145,7 @@
       "drive": 6,
       "resol": 6,
       "final": 7.35,
-      "rank": 186,
+      "rank": 181,
       "poster": "https://image.tmdb.org/t/p/w500/lA9CNSdo50iQPZ8A2fyVpMvJZAf.jpg",
       "streaming": {
         "us": [
@@ -6363,7 +6178,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.35,
-      "rank": 187,
+      "rank": 182,
       "poster": "https://image.tmdb.org/t/p/w500/bowEbW8Q3Oc02BvHBKTL5gWv9Nx.jpg",
       "streaming": {
         "us": [
@@ -6398,7 +6213,7 @@
       "drive": 7,
       "resol": 7,
       "final": 7.35,
-      "rank": 188,
+      "rank": 183,
       "poster": "https://image.tmdb.org/t/p/w500/aQBpF8VmEIgow41OL9h4nU4WN6v.jpg",
       "scoring_notes": "Apple fashion drama. Dior/Chanel story.",
       "streaming": {
@@ -6431,7 +6246,7 @@
       "drive": 7,
       "resol": 8,
       "final": 7.35,
-      "rank": 189,
+      "rank": 184,
       "poster": "https://image.tmdb.org/t/p/w500/b4HNJOc2N6SGyEhf2RagdpAKBK6.jpg",
       "streaming": {
         "us": [
@@ -6467,7 +6282,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.35,
-      "rank": 190,
+      "rank": 185,
       "scoring_notes": "British supernatural thriller. Lydia Wilson as cellist investigating her past. Folk horror elements in Welsh setting. Atmospheric but pacing drags. Ambiguous ending divided audiences.",
       "streaming": {
         "us": [
@@ -6503,7 +6318,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.35,
-      "rank": 191,
+      "rank": 186,
       "scoring_notes": "Ben Miller as eccentric criminology professor assisting police. Belgian original is superior, but ITV remake finds its own charm. Miller's OCD and brilliant deductions drive the show. Three seasons. Light procedural with academic twist. Watch Belgian version for darker take.",
       "streaming": {
         "us": [
@@ -6549,7 +6364,7 @@
           "Disney Plus"
         ]
       },
-      "rank": 192
+      "rank": 187
     },
     {
       "slug": "bodyguard",
@@ -6584,7 +6399,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 193
+      "rank": 188
     },
     {
       "slug": "treme",
@@ -6620,7 +6435,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 194
+      "rank": 189
     },
     {
       "slug": "angel",
@@ -6657,7 +6472,7 @@
           "Disney Plus"
         ]
       },
-      "rank": 195
+      "rank": 190
     },
     {
       "slug": "mythic-quest",
@@ -6684,7 +6499,7 @@
       "drive": 7.5,
       "resol": 7.5,
       "final": 7.33,
-      "rank": 196,
+      "rank": 191,
       "scoring_notes": "Rob McElhenney leads video game studio comedy. Always Sunny team brings similar energy but more heart. Three seasons. Industry satire with genuine character growth. Apple's most underrated comedy.",
       "streaming": {
         "us": [
@@ -6729,7 +6544,7 @@
           "Netflix"
         ]
       },
-      "rank": 197
+      "rank": 192
     },
     {
       "slug": "the-comeback",
@@ -6765,7 +6580,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 198
+      "rank": 193
     },
     {
       "slug": "the-bear",
@@ -6788,7 +6603,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.28,
-      "rank": 199,
+      "rank": 194,
       "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
       "streaming": {
         "us": [
@@ -6820,7 +6635,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.28,
-      "rank": 200,
+      "rank": 195,
       "poster": "https://image.tmdb.org/t/p/w500/lasNCd45fpPLirlA7QxkuopWro.jpg",
       "streaming": {
         "us": [
@@ -6856,7 +6671,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 7.28,
-      "rank": 201,
+      "rank": 196,
       "scoring_notes": "Harlan Coben adaptation. Michael C. Hall as widowed surgeon searching for missing daughter. Gated community secrets. Formulaic but competently executed. Twist-heavy narrative keeps engagement.",
       "streaming": {
         "us": [
@@ -6892,7 +6707,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.28,
-      "rank": 202,
+      "rank": 197,
       "scoring_notes": "Morven Christie as family liaison officer in Morecambe. Lancashire coastal setting adds atmosphere. Family secrets and community ties. Four seasons with cast changes. Solid procedural with emotional stakes. Not groundbreaking but reliably compelling.",
       "streaming": {
         "us": [
@@ -6930,7 +6745,7 @@
       "drive": 7.5,
       "resol": 6,
       "final": 7.28,
-      "rank": 203,
+      "rank": 198,
       "scoring_notes": "Adaptation of Gregory David Roberts' novel. Charlie Hunnam as escaped convict in 1980s Bombay. Epic scope, beautiful Mumbai locations. CANCELED after one season despite potential. Books fans divided on adaptation. Atmospheric but incomplete story.",
       "streaming": {
         "us": [
@@ -6940,43 +6755,6 @@
           "Apple TV+"
         ]
       }
-    },
-    {
-      "slug": "love-death-robots",
-      "title": "Love, Death & Robots",
-      "year": 2019,
-      "month": 3,
-      "genres": [
-        "animation",
-        "sci-fi",
-        "anthology"
-      ],
-      "tmdbId": 87739,
-      "episodes": 35,
-      "status": "ongoing",
-      "network": "Netflix",
-      "creators": [
-        "Tim Miller",
-        "David Fincher"
-      ],
-      "char": 7,
-      "world": 8,
-      "cine": 9,
-      "spect": 9,
-      "conc": 7,
-      "drive": 7,
-      "resol": 6.5,
-      "final": 7.28,
-      "scoring_notes": "Animated anthology. Shorts excellence. Variable quality. Visual experimentation. Jibaro is art. Adult animation.",
-      "streaming": {
-        "us": [
-          "Netflix"
-        ],
-        "uk": [
-          "Netflix"
-        ]
-      },
-      "rank": 204
     },
     {
       "slug": "the-righteous-gemstones",
@@ -7011,7 +6789,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 205
+      "rank": 199
     },
     {
       "slug": "enlightened",
@@ -7047,7 +6825,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 206
+      "rank": 200
     },
     {
       "slug": "homeland",
@@ -7071,7 +6849,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.25,
-      "rank": 207,
+      "rank": 201,
       "poster": "https://image.tmdb.org/t/p/w500/6GAvS2e6VIRsms9FpVt33PsCoEW.jpg",
       "streaming": {
         "us": [
@@ -7106,7 +6884,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.25,
-      "rank": 208,
+      "rank": 202,
       "poster": "https://image.tmdb.org/t/p/w500/dnpatlJrEPiDSn5fzgzvxtiSnMo.jpg",
       "streaming": {
         "us": [
@@ -7139,7 +6917,7 @@
       "drive": 7,
       "resol": 8,
       "final": 7.25,
-      "rank": 209,
+      "rank": 203,
       "poster": "https://image.tmdb.org/t/p/w500/zS7fQiOZiKCVH2vlYSiIsFWW8hh.jpg",
       "streaming": {
         "us": [
@@ -7172,7 +6950,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.25,
-      "rank": 210,
+      "rank": 204,
       "poster": "https://image.tmdb.org/t/p/w500/tYLecM3WSEjlkKhkGiH5G68Dprm.jpg",
       "streaming": {
         "us": [
@@ -7205,7 +6983,7 @@
       "drive": 7.5,
       "resol": 8,
       "final": 7.25,
-      "rank": 211,
+      "rank": 205,
       "poster": "https://image.tmdb.org/t/p/w500/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
       "streaming": {
         "us": [
@@ -7238,7 +7016,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.25,
-      "rank": 212,
+      "rank": 206,
       "poster": "https://image.tmdb.org/t/p/w500/flj41WynQKea6DVHgRbbPSWOB1t.jpg",
       "streaming": {
         "us": [
@@ -7274,7 +7052,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.25,
-      "rank": 213,
+      "rank": 207,
       "scoring_notes": "Harlan Coben adaptation. Cush Jumbo and James Nesbitt in intersecting mysteries. Northern England setting. Solid performances elevate familiar material. Less impactful than Coben's best.",
       "streaming": {
         "us": [
@@ -7311,7 +7089,7 @@
       "drive": 8,
       "resol": 6.5,
       "final": 7.25,
-      "rank": 214,
+      "rank": 208,
       "scoring_notes": "US adaptation of Danish/Swedish Bron. Diane Kruger and Demian Bichir as detectives from El Paso and Juarez. US-Mexico border setting is compelling. Two seasons with complete arc. Watch original Bron/Broen for superior version, but this stands on its own.",
       "streaming": {
         "us": [
@@ -7347,7 +7125,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.25,
-      "rank": 215,
+      "rank": 209,
       "scoring_notes": "Nicola Walker as DI Annika Strandhed leading Marine Homicide Unit in Scotland. Breaking fourth wall direct to camera is divisive. Boat-based investigations unique. Walker's charm carries the show. Three seasons, ongoing. Light entertainment more than hard crime.",
       "streaming": {
         "us": [
@@ -7383,7 +7161,7 @@
       "drive": 7.5,
       "resol": 7.5,
       "final": 7.25,
-      "rank": 216,
+      "rank": 210,
       "scoring_notes": "Rose Byrne as 1980s San Diego housewife with eating disorder discovers aerobics. Dark comedy about body image and ambition. Three seasons, complete. Byrne's voiceover is sharp. Period detail excellent.",
       "streaming": {
         "us": [
@@ -7429,7 +7207,7 @@
           "Netflix"
         ]
       },
-      "rank": 217
+      "rank": 211
     },
     {
       "slug": "ripper-street",
@@ -7465,7 +7243,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 218
+      "rank": 212
     },
     {
       "slug": "carnivale",
@@ -7501,7 +7279,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 219
+      "rank": 213
     },
     {
       "slug": "the-100-s1-5",
@@ -7537,7 +7315,7 @@
           "Netflix"
         ]
       },
-      "rank": 220
+      "rank": 214
     },
     {
       "slug": "travelers",
@@ -7573,7 +7351,7 @@
           "Netflix"
         ]
       },
-      "rank": 221
+      "rank": 215
     },
     {
       "slug": "parks-and-recreation",
@@ -7610,7 +7388,7 @@
           "Netflix"
         ]
       },
-      "rank": 222
+      "rank": 216
     },
     {
       "slug": "the-office-uk",
@@ -7647,7 +7425,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 223
+      "rank": 217
     },
     {
       "slug": "in-treatment",
@@ -7682,7 +7460,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 224
+      "rank": 218
     },
     {
       "slug": "friday-night-lights",
@@ -7704,7 +7482,7 @@
       "drive": 7,
       "resol": 8,
       "final": 7.22,
-      "rank": 225,
+      "rank": 219,
       "poster": "https://image.tmdb.org/t/p/w500/Eu7MzZY1DldJ683z7vLkILHNRD.jpg",
       "streaming": {
         "us": [
@@ -7738,7 +7516,7 @@
       "drive": 8.5,
       "resol": 5.5,
       "final": 7.2,
-      "rank": 226,
+      "rank": 220,
       "poster": "https://image.tmdb.org/t/p/w500/ktEp6fzL4xzCWsSVtrcH8JaQNQy.jpg",
       "streaming": {
         "us": [
@@ -7773,7 +7551,7 @@
       "drive": 8,
       "resol": 8,
       "final": 7.2,
-      "rank": 227,
+      "rank": 221,
       "poster": "https://image.tmdb.org/t/p/w500/iLvnc1aK2b2PNQhbyn4IVpDcmcX.jpg",
       "streaming": {
         "us": [
@@ -7806,7 +7584,7 @@
       "drive": 7,
       "resol": 7,
       "final": 7.2,
-      "rank": 228,
+      "rank": 222,
       "poster": "https://image.tmdb.org/t/p/w500/7HgDYRYjym4BwbhKaqTQq771SKb.jpg",
       "streaming": {
         "us": [
@@ -7841,7 +7619,7 @@
       "drive": 9,
       "resol": 7,
       "final": 7.2,
-      "rank": 229,
+      "rank": 223,
       "poster": "https://image.tmdb.org/t/p/w500/ysGUKnnR1pGYIndjXWcjupGbWpS.jpg",
       "streaming": {
         "us": [
@@ -7879,7 +7657,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.2,
-      "rank": 230,
+      "rank": 224,
       "scoring_notes": "Australian returned-from-dead mystery. Small town police officer deals with wife and others returning. Unique outback setting. Character-driven with supernatural elements. Three seasons with complete resolution. Solid if not groundbreaking.",
       "streaming": {
         "us": [
@@ -7915,7 +7693,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.2,
-      "rank": 231,
+      "rank": 225,
       "scoring_notes": "Bryan Cranston as judge covering up son's hit-and-run. S1 strong with moral descent. S2 unnecessary continuation weakens impact. Watch S1 only for complete story.",
       "streaming": {
         "us": [
@@ -7960,7 +7738,7 @@
           "Disney Plus"
         ]
       },
-      "rank": 232
+      "rank": 226
     },
     {
       "slug": "looking",
@@ -7995,7 +7773,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 233
+      "rank": 227
     },
     {
       "slug": "the-vampire-diaries",
@@ -8019,7 +7797,7 @@
       "drive": 8,
       "resol": 6.5,
       "final": 7.18,
-      "rank": 234,
+      "rank": 228,
       "poster": "https://image.tmdb.org/t/p/w500/b3vl6wV1W8PBezFfntKTrhrehCY.jpg",
       "streaming": {
         "us": [
@@ -8057,7 +7835,7 @@
       "drive": 7.5,
       "resol": 7.5,
       "final": 7.18,
-      "rank": 235,
+      "rank": 229,
       "scoring_notes": "Molly McCarthy as forensic scientist in Dundee SIFA lab. Based on Val McDermid's characters. Technical detail on forensics is authentic. Two seasons, complete arc. Martin Compston adds presence. Solid but unexceptional procedural.",
       "streaming": {
         "us": [
@@ -8094,7 +7872,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.18,
-      "rank": 236,
+      "rank": 230,
       "scoring_notes": "Chris Evans and Michelle Dockery as parents whose son is accused of murder. Jaeden Martell excels as accused teen. Limited series based on William Landay novel. Atmospheric but pacing drags. Ambiguous ending faithful to source. Single season complete.",
       "streaming": {
         "us": [
@@ -8131,7 +7909,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.18,
-      "rank": 237,
+      "rank": 231,
       "scoring_notes": "Young girl journalist solves cold case in small town. Based on real-life journalist Hilde Lysiak. Two seasons, complete. Family-friendly mystery with genuine heart.",
       "streaming": {
         "us": [
@@ -8176,7 +7954,7 @@
           "Disney Plus"
         ]
       },
-      "rank": 238
+      "rank": 232
     },
     {
       "slug": "the-killing",
@@ -8212,7 +7990,7 @@
           "Netflix"
         ]
       },
-      "rank": 239
+      "rank": 233
     },
     {
       "slug": "gomorrah",
@@ -8235,7 +8013,7 @@
       "drive": 7,
       "resol": 7,
       "final": 7.15,
-      "rank": 240,
+      "rank": 234,
       "poster": "https://image.tmdb.org/t/p/w500/cXsagSyQQki9vTbV3TTxRCGIIlQ.jpg",
       "streaming": {
         "us": [
@@ -8269,7 +8047,7 @@
       "drive": 7,
       "resol": 7,
       "final": 7.15,
-      "rank": 241,
+      "rank": 235,
       "poster": "https://image.tmdb.org/t/p/w500/yZevl2vHQgmosfwUdVNzviIfaWS.jpg",
       "streaming": {
         "us": [
@@ -8305,7 +8083,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.15,
-      "rank": 242,
+      "rank": 236,
       "scoring_notes": "Kevin Bacon as corrupt FBI agent in 1990s Boston. Aldis Hodge as straight-laced DA partner. Three seasons of crime and corruption. Complete series. Solid but unexceptional.",
       "streaming": {
         "us": [
@@ -8339,7 +8117,7 @@
       "drive": 9.5,
       "resol": 1,
       "final": 7.13,
-      "rank": 243,
+      "rank": 237,
       "poster": "https://image.tmdb.org/t/p/w500/og6S0aTZU6YUJAbqxeKjCa3kY1E.jpg",
       "streaming": {
         "us": [
@@ -8376,7 +8154,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.13,
-      "rank": 244,
+      "rank": 238,
       "scoring_notes": "Netflix psychological thriller. Simona Brown and Eve Hewson in twisty affair/mystery. Bonkers third act twist that divides audiences. Trashy but compelling. Character psychology strains credibility but keeps you watching. Limited series.",
       "streaming": {
         "us": [
@@ -8412,7 +8190,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.13,
-      "rank": 245,
+      "rank": 239,
       "scoring_notes": "Octavia Spencer as podcaster investigating old case she may have gotten wrong. Aaron Paul as convicted murderer. S1 is strongest, later seasons decline. Three seasons total. Solid but unexceptional thriller. Apple TV+ early catalog filler.",
       "streaming": {
         "us": [
@@ -8457,7 +8235,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 246
+      "rank": 240
     },
     {
       "slug": "curb-your-enthusiasm",
@@ -8492,7 +8270,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 247
+      "rank": 241
     },
     {
       "slug": "tracker",
@@ -8515,7 +8293,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 7.12,
-      "rank": 248,
+      "rank": 242,
       "poster": "https://image.tmdb.org/t/p/w500/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
       "streaming": {
         "us": [
@@ -8548,7 +8326,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.1,
-      "rank": 249,
+      "rank": 243,
       "poster": "https://image.tmdb.org/t/p/w500/j1XpwD11f0BAEI7pX6UdMhUVX2F.jpg",
       "streaming": {
         "us": [
@@ -8581,7 +8359,7 @@
       "drive": 7,
       "resol": 6,
       "final": 7.1,
-      "rank": 250,
+      "rank": 244,
       "poster": "https://image.tmdb.org/t/p/w500/99PJSbcO2LeM10uOGWeFihNp77j.jpg",
       "streaming": {
         "us": [
@@ -8625,7 +8403,7 @@
           "Channel 4"
         ]
       },
-      "rank": 251
+      "rank": 245
     },
     {
       "slug": "everwood",
@@ -8660,7 +8438,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 252
+      "rank": 246
     },
     {
       "slug": "killing-eve",
@@ -8684,7 +8462,7 @@
       "drive": 8,
       "resol": 7,
       "final": 7.08,
-      "rank": 253,
+      "rank": 247,
       "poster": "https://image.tmdb.org/t/p/w500/4wKhTVw8aGq5AZMa0Q1spERdi7n.jpg",
       "streaming": {
         "us": [
@@ -8722,7 +8500,7 @@
       "drive": 7.5,
       "resol": 6.5,
       "final": 7.08,
-      "rank": 254,
+      "rank": 248,
       "scoring_notes": "British supernatural comedy. Amy and Raquel hunt demons in Bristol. Tone mixes Buffy-style humor with darker elements. CANCELED after one season on cliffhanger. Fun chemistry between leads but limited impact. Six episodes, cult following.",
       "streaming": {
         "us": [
@@ -8767,7 +8545,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 255
+      "rank": 249
     },
     {
       "slug": "eureka",
@@ -8804,7 +8582,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 256
+      "rank": 250
     },
     {
       "slug": "the-librarians",
@@ -8840,7 +8618,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 257
+      "rank": 251
     },
     {
       "slug": "continuum",
@@ -8876,7 +8654,7 @@
           "Netflix"
         ]
       },
-      "rank": 258
+      "rank": 252
     },
     {
       "slug": "the-office-us",
@@ -8912,7 +8690,7 @@
           "Netflix"
         ]
       },
-      "rank": 259
+      "rank": 253
     },
     {
       "slug": "heroes",
@@ -8936,7 +8714,7 @@
       "drive": 7.5,
       "resol": 5.5,
       "final": 7.05,
-      "rank": 260,
+      "rank": 254,
       "poster": "https://image.tmdb.org/t/p/w500/lf0TcOkheYUZKpeh7c8lqJHNk5O.jpg",
       "streaming": {
         "us": [
@@ -8982,7 +8760,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 261
+      "rank": 255
     },
     {
       "slug": "young-wallander",
@@ -9009,7 +8787,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 7.03,
-      "rank": 262,
+      "rank": 256,
       "scoring_notes": "Netflix prequel to Wallander. Kristoffer Nyholm plays younger Kurt. English-language despite Swedish setting feels awkward. Origin story approach diminishes mystery. Two seasons but lacks depth of Branagh version. Watch original instead.",
       "streaming": {
         "us": [
@@ -9017,42 +8795,6 @@
         ],
         "uk": [
           "Netflix"
-        ]
-      }
-    },
-    {
-      "slug": "tales-of-the-empire",
-      "title": "Tales of the Empire",
-      "year": 2024,
-      "month": 5,
-      "genres": [
-        "animation",
-        "sci-fi",
-        "action"
-      ],
-      "tmdbId": 229240,
-      "episodes": 6,
-      "status": "ended",
-      "network": "Disney+",
-      "creators": [
-        "Dave Filoni"
-      ],
-      "char": 6.5,
-      "world": 8,
-      "cine": 7.5,
-      "spect": 7.5,
-      "conc": 6.5,
-      "drive": 7,
-      "resol": 6.5,
-      "final": 7.03,
-      "rank": 263,
-      "scoring_notes": "Star Wars anthology focused on Imperial characters. Morgan Elsbeth and Barriss Offee stories. Animation quality high but limited character depth. For completists only.",
-      "streaming": {
-        "us": [
-          "Disney Plus"
-        ],
-        "uk": [
-          "Disney Plus"
         ]
       }
     },
@@ -9091,7 +8833,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 264
+      "rank": 257
     },
     {
       "slug": "brassic",
@@ -9127,7 +8869,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 265
+      "rank": 258
     },
     {
       "slug": "the-x-files",
@@ -9151,7 +8893,7 @@
       "drive": 7,
       "resol": 6,
       "final": 7.02,
-      "rank": 266,
+      "rank": 259,
       "poster": "https://image.tmdb.org/t/p/w500/rcBx0p8h51LHceyhquYMxbspJQu.jpg",
       "streaming": {
         "us": [
@@ -9198,7 +8940,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 267
+      "rank": 260
     },
     {
       "slug": "mr-show",
@@ -9234,7 +8976,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 268
+      "rank": 261
     },
     {
       "slug": "doctor-who-2005",
@@ -9271,7 +9013,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 269
+      "rank": 262
     },
     {
       "slug": "togetherness",
@@ -9307,7 +9049,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 270
+      "rank": 263
     },
     {
       "slug": "surface",
@@ -9334,7 +9076,7 @@
       "drive": 7.5,
       "resol": 6.5,
       "final": 6.93,
-      "rank": 271,
+      "rank": 264,
       "scoring_notes": "Gugu Mbatha-Raw as woman with amnesia piecing together her past. San Francisco setting is glossy but hollow. Psychological thriller that thinks it's smarter than it is. Two seasons, ongoing. Surface-level character work despite Mbatha-Raw's efforts. Disappointing.",
       "streaming": {
         "us": [
@@ -9379,7 +9121,7 @@
           "Channel 4"
         ]
       },
-      "rank": 272
+      "rank": 265
     },
     {
       "slug": "the-oc",
@@ -9414,7 +9156,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 273
+      "rank": 266
     },
     {
       "slug": "smallville",
@@ -9451,7 +9193,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 274
+      "rank": 267
     },
     {
       "slug": "extrapolations",
@@ -9478,7 +9220,7 @@
       "drive": 6.5,
       "resol": 6.5,
       "final": 6.88,
-      "rank": 275,
+      "rank": 268,
       "scoring_notes": "Climate change anthology with A-list cast. Meryl Streep, Kit Harington, Sienna Miller among ensemble. Well-intentioned but preachy and disjointed. Future scenarios lack urgency despite subject matter. Limited series, complete but underwhelming. Missed opportunity.",
       "streaming": {
         "us": [
@@ -9514,7 +9256,7 @@
       "drive": 6.5,
       "resol": 6,
       "final": 6.88,
-      "rank": 276,
+      "rank": 269,
       "scoring_notes": "LaKeith Stanfield as father in dark fairy tale about parenthood. Atmospheric horror with social commentary. Pacing issues but visuals striking. Ongoing.",
       "streaming": {
         "us": [
@@ -9550,7 +9292,7 @@
       "drive": 7.5,
       "resol": 6.5,
       "final": 6.88,
-      "rank": 277,
+      "rank": 270,
       "scoring_notes": "BBC satire thriller. Corporate dystopia with dark humor. Limited scope but sharp writing. For fans of Black Mirror adjacent content.",
       "streaming": {
         "us": [
@@ -9586,7 +9328,7 @@
       "drive": 8,
       "resol": 7,
       "final": 6.88,
-      "rank": 278,
+      "rank": 271,
       "scoring_notes": "Kemper's wide-eyed optimist. Fey's 30 Rock DNA. Not drama but comedy excellence. Complete. Titus Andromedon is iconic.",
       "streaming": {
         "us": [
@@ -9632,7 +9374,7 @@
           "Netflix"
         ]
       },
-      "rank": 279
+      "rank": 272
     },
     {
       "slug": "its-always-sunny-s1-8",
@@ -9667,7 +9409,7 @@
           "Netflix"
         ]
       },
-      "rank": 280
+      "rank": 273
     },
     {
       "slug": "peep-show",
@@ -9703,7 +9445,7 @@
           "Channel 4"
         ]
       },
-      "rank": 281
+      "rank": 274
     },
     {
       "slug": "torchwood",
@@ -9738,7 +9480,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 282
+      "rank": 275
     },
     {
       "slug": "let-the-right-one-in",
@@ -9765,7 +9507,7 @@
       "drive": 7,
       "resol": 5.5,
       "final": 6.83,
-      "rank": 283,
+      "rank": 276,
       "scoring_notes": "Showtime vampire series based on Swedish film. CANCELED after one season. Atmospheric but fails to capture original's magic. Watch the original film instead.",
       "streaming": {
         "us": [
@@ -9814,7 +9556,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 284
+      "rank": 277
     },
     {
       "slug": "echo-3",
@@ -9841,7 +9583,7 @@
       "drive": 7,
       "resol": 6.5,
       "final": 6.78,
-      "rank": 285,
+      "rank": 278,
       "scoring_notes": "Mark Boal (Hurt Locker) creates hostage rescue thriller. Luke Evans and Michiel Huisman as brothers-in-law saving scientist in Colombia. Action sequences are solid but characters are thin. CANCELED after one season. Watchable but forgettable military thriller.",
       "streaming": {
         "us": [
@@ -9886,7 +9628,7 @@
           "Netflix"
         ]
       },
-      "rank": 286
+      "rank": 279
     },
     {
       "slug": "lost-girl",
@@ -9922,7 +9664,7 @@
           "Netflix"
         ]
       },
-      "rank": 287
+      "rank": 280
     },
     {
       "slug": "resurrection-2014",
@@ -9949,7 +9691,7 @@
       "drive": 7.5,
       "resol": 5,
       "final": 6.73,
-      "rank": 288,
+      "rank": 281,
       "scoring_notes": "US adaptation of The Returned concept. Dead Missouri residents return home. Omar Epps leads. Lacks atmosphere and depth of French original. CANCELED after 2 seasons without resolution. Watch Les Revenants instead.",
       "streaming": {
         "us": [
@@ -9994,7 +9736,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 289
+      "rank": 282
     },
     {
       "slug": "the-inbetweeners",
@@ -10030,7 +9772,7 @@
           "Channel 4"
         ]
       },
-      "rank": 290
+      "rank": 283
     },
     {
       "slug": "felicity",
@@ -10066,7 +9808,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 291
+      "rank": 284
     },
     {
       "slug": "party-of-five",
@@ -10102,7 +9844,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 292
+      "rank": 285
     },
     {
       "slug": "dear-edward",
@@ -10127,7 +9869,7 @@
       "drive": 6.5,
       "resol": 6.5,
       "final": 6.68,
-      "rank": 293,
+      "rank": 286,
       "scoring_notes": "Jason Katims (Friday Night Lights) adapts Ann Napolitano novel. Young boy sole survivor of plane crash. Grief and connection stories among victim families. Tender but overly sentimental. CANCELED after one season. Connie Britton adds presence. Manipulative emotion.",
       "streaming": {
         "us": [
@@ -10171,7 +9913,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 294
+      "rank": 287
     },
     {
       "slug": "undeclared",
@@ -10206,7 +9948,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 295
+      "rank": 288
     },
     {
       "slug": "one-tree-hill",
@@ -10241,7 +9983,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 296
+      "rank": 289
     },
     {
       "slug": "last-thing-he-told-me",
@@ -10269,7 +10011,7 @@
       "drive": 7,
       "resol": 6.5,
       "final": 6.55,
-      "rank": 297,
+      "rank": 290,
       "scoring_notes": "Jennifer Garner as woman searching for missing husband. Based on popular novel but adaptation lacks tension. Aisha Tyler and Angourie Rice add support. Limited series, complete. Thriller that forgets to thrill. Apple's weaker drama offerings.",
       "streaming": {
         "us": [
@@ -10304,7 +10046,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 6.25,
-      "rank": 298,
+      "rank": 291,
       "scoring_notes": "Fab Five transformation. Emotional reality TV. Not drama but cultural impact. Brown, France, Van Ness, Berk, Porowski. Better than it has any right to be.",
       "streaming": {
         "us": [
@@ -10349,7 +10091,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 299
+      "rank": 292
     },
     {
       "slug": "the-i-land",
@@ -10377,7 +10119,7 @@
       "drive": 6.5,
       "resol": 5.5,
       "final": 5.93,
-      "rank": 300,
+      "rank": 293,
       "scoring_notes": "Netflix sci-fi misfire. Kate Bosworth in Lost-meets-Black Mirror premise. Poor writing, weak character development. Notable for how thoroughly it misses the mark. Mercifully short.",
       "streaming": {
         "us": [
@@ -10389,7 +10131,7 @@
       }
     }
   ],
-  "count": 300,
-  "lastUpdated": "2026-02-23T01:29:31.522Z",
-  "version": "2.2"
+  "count": 293,
+  "lastUpdated": "2026-02-23T01:40:34.201Z",
+  "version": "2.3"
 }
