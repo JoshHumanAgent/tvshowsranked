@@ -274,37 +274,41 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/iIYR1FuBD5ma2L2KjbHHWYgFu6Y.jpg"
     },
     {
-      "poster": "https://image.tmdb.org/t/p/w500/2zmTngn1tYC1AvfnrFLhxeD82hz.jpg",
-      "world": 8.5,
-      "conc": 8.5,
-      "backdrop": "https://image.tmdb.org/t/p/w780/czffzEgaBko4mXW84B1J1EnQBzo.jpg",
-      "title": "The Boys",
-      "rank": 9,
-      "char": 8.5,
-      "spect": 8.5,
-      "episodes": 40,
+      "slug": "i-may-destroy-you",
+      "title": "I May Destroy You",
+      "year": 2020,
+      "month": 6,
       "genres": [
         "drama",
-        "sci-fi",
-        "superhero",
-        "action"
+        "comedy-drama"
       ],
-      "drive": 8,
-      "final": 8.15,
-      "tmdbId": 76479,
+      "tmdbId": 100276,
+      "episodes": 12,
+      "status": "ended",
+      "network": "BBC/HBO",
+      "creators": [
+        "Michaela Coel"
+      ],
+      "char": 9,
+      "world": 8,
       "cine": 8,
-      "month": 7,
-      "slug": "the-boys",
-      "resol": 7.5,
+      "spect": 5,
+      "conc": 8.5,
+      "drive": 8,
+      "resol": 9,
+      "final": 8.15,
+      "scoring_notes": "Coel masterpiece. Sexual consent exploration. Chewing Gum creator. BBC/HBO.",
       "streaming": {
         "us": [
-          "Amazon Prime Video"
+          "HBO Max"
         ],
         "uk": [
-          "Amazon Prime Video"
+          "BBC iPlayer"
         ]
       },
-      "year": 2019
+      "rank": 9,
+      "poster": "https://image.tmdb.org/t/p/w500/lCAcRhinZIz51ZvHG9a3em1K3iH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/jSLzoZ2pLqoqjkjUCLNhV7B3fhi.jpg"
     },
     {
       "rank": 10,
@@ -3249,7 +3253,7 @@
     }
   ],
   "description": "TOP 100 - Live on website (Corrected 2026-02-23)",
-  "lastUpdated": "2026-02-23T01:58:37.486Z",
+  "lastUpdated": "2026-02-23T02:15:28.079Z",
   "version": "2.2",
   "count": 100
 }
