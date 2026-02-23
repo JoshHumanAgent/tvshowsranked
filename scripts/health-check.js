@@ -10,7 +10,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const CORE_DIR = path.join(ROOT, 'data', 'core');
-const DOCS_DIR = path.join(ROOT, 'docs', 'shows');
+const HTML_DIR = path.join(ROOT, 'data', 'shows', 'html');
 
 const results = {
   timestamp: new Date().toISOString(),
@@ -115,7 +115,7 @@ check('HTML Coverage (Top 100)', () => {
   const missing = [];
   
   for (const slug of slugs) {
-    const htmlPath = path.join(DOCS_DIR, `${slug}.html`);
+    const htmlPath = path.join(HTML_DIR, `${slug}.html`);
     if (!fs.existsSync(htmlPath)) {
       missing.push(slug);
     }
