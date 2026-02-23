@@ -71,45 +71,74 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg"
     },
     {
-      "slug": "goblin",
-      "title": "Goblin",
-      "year": 2016,
-      "month": 12,
+      "rank": 3,
+      "slug": "the-wire",
+      "title": "The Wire",
+      "year": 2002,
+      "month": 6,
       "genres": [
+        "crime",
         "drama",
-        "fantasy",
-        "romance"
+        "cop-show"
       ],
-      "tmdbId": 67915,
-      "episodes": 16,
-      "status": "Ended",
-      "network": "tvN",
-      "creators": [
-        "Kim Eun-sook"
-      ],
+      "final": 8.6,
+      "tmdbId": 1438,
       "char": 9,
-      "world": 9,
-      "cine": 8.5,
-      "spect": 8.5,
-      "conc": 7.5,
-      "drive": 8.5,
-      "resol": 7.5,
-      "poster": "https://image.tmdb.org/t/p/w500/sPkxHNw5BFvuCFGWw825TS7n6X3.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/smSbK5cd8T9XHcxEUcems23BDEF.jpg",
+      "world": 9.5,
+      "cine": 6.5,
+      "spect": 8,
+      "conc": 10,
+      "drive": 7.5,
+      "resol": 9.5,
+      "episodes": 60,
+      "poster": "https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
       "streaming": {
         "us": [
-          "Viki",
-          "Netflix"
+          "Max",
+          "Peacock"
         ],
         "uk": [
-          "Netflix"
+          "Sky",
+          "Now TV"
         ]
       },
-      "final": "8.72",
-      "rank": 3
+      "backdrop": "https://image.tmdb.org/t/p/w780/layPSOJGckJv3PXZDIVluMq69mn.jpg"
     },
     {
       "rank": 4,
+      "slug": "the-sopranos",
+      "title": "The Sopranos",
+      "year": 1999,
+      "month": 1,
+      "genres": [
+        "crime",
+        "drama",
+        "cop-show"
+      ],
+      "final": 8.55,
+      "tmdbId": 1398,
+      "char": 9.5,
+      "world": 8,
+      "cine": 6.5,
+      "spect": 5,
+      "conc": 9.5,
+      "drive": 8,
+      "resol": 9.5,
+      "episodes": 86,
+      "poster": "https://image.tmdb.org/t/p/w500/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg",
+      "streaming": {
+        "us": [
+          "Max"
+        ],
+        "uk": [
+          "Now TV",
+          "Sky"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg"
+    },
+    {
+      "rank": 5,
       "slug": "band-of-brothers",
       "title": "Band of Brothers",
       "year": 2001,
@@ -119,7 +148,7 @@
         "historical",
         "war"
       ],
-      "final": 8.7,
+      "final": 8.45,
       "tmdbId": 4613,
       "char": 7.5,
       "world": 9,
@@ -175,152 +204,11 @@
           "Sky"
         ]
       },
-      "final": "8.55",
-      "rank": 5
-    },
-    {
-      "slug": "a-knight-of-the-seven-kingdoms",
-      "title": "A Knight of the Seven Kingdoms",
-      "year": 2026,
-      "month": 1,
-      "genres": [
-        "drama",
-        "fantasy",
-        "adventure"
-      ],
-      "tmdbId": 224372,
-      "episodes": 6,
-      "status": "Returning Series",
-      "network": "HBO",
-      "creators": [
-        "George R.R. Martin"
-      ],
-      "char": 8.5,
-      "world": 9.5,
-      "cine": 8.5,
-      "spect": 9,
-      "conc": 8,
-      "drive": 8.5,
-      "resol": 6,
-      "final": 8.4,
-      "poster": "https://image.tmdb.org/t/p/w500/k8yARbD9iYn2nRX2HvsopfKDN2r.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/7mkUu1F2hVUNgz24xO8HPx0D6mK.jpg",
-      "streaming": {
-        "us": [
-          "HBO Max"
-        ],
-        "uk": [
-          "HBO Max"
-        ]
-      },
+      "final": 8.35,
       "rank": 6
     },
     {
-      "slug": "treme",
-      "title": "Tremé",
-      "year": 2010,
-      "month": 4,
-      "genres": [
-        "drama",
-        "music"
-      ],
-      "tmdbId": 17967,
-      "episodes": 38,
-      "status": "Ended",
-      "network": "HBO",
-      "creators": [
-        "David Simon",
-        "Eric Overmyer"
-      ],
-      "char": 8.5,
-      "world": 9,
-      "cine": 7.5,
-      "spect": 5,
-      "conc": 8,
-      "drive": 7,
-      "resol": 8,
-      "poster": "https://image.tmdb.org/t/p/w500/k4pV1FUccFmmbz9DwUON7KWT0gi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/f1Zj0KJpaead6cUoOkpWZblMyET.jpg",
-      "streaming": {
-        "us": [
-          "Max"
-        ],
-        "uk": [
-          "Sky"
-        ]
-      },
-      "final": "8.35",
-      "rank": 7
-    },
-    {
-      "rank": 8,
-      "slug": "the-wire",
-      "title": "The Wire",
-      "year": 2002,
-      "month": 6,
-      "genres": [
-        "crime",
-        "drama",
-        "cop-show"
-      ],
-      "final": 8.33,
-      "tmdbId": 1438,
-      "char": 9,
-      "world": 9.5,
-      "cine": 6.5,
-      "spect": 8,
-      "conc": 10,
-      "drive": 7.5,
-      "resol": 9.5,
-      "episodes": 60,
-      "poster": "https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
-      "streaming": {
-        "us": [
-          "Max",
-          "Peacock"
-        ],
-        "uk": [
-          "Sky",
-          "Now TV"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/layPSOJGckJv3PXZDIVluMq69mn.jpg"
-    },
-    {
-      "rank": 9,
-      "slug": "the-sopranos",
-      "title": "The Sopranos",
-      "year": 1999,
-      "month": 1,
-      "genres": [
-        "crime",
-        "drama",
-        "cop-show"
-      ],
-      "final": 8.3,
-      "tmdbId": 1398,
-      "char": 9.5,
-      "world": 8,
-      "cine": 6.5,
-      "spect": 5,
-      "conc": 9.5,
-      "drive": 8,
-      "resol": 9.5,
-      "episodes": 86,
-      "poster": "https://image.tmdb.org/t/p/w500/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg",
-      "streaming": {
-        "us": [
-          "Max"
-        ],
-        "uk": [
-          "Now TV",
-          "Sky"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg"
-    },
-    {
-      "rank": 10,
+      "rank": 7,
       "slug": "boardwalk-empire",
       "title": "Boardwalk Empire",
       "year": 2010,
@@ -358,7 +246,7 @@
       "conc": 7.5,
       "backdrop": "https://image.tmdb.org/t/p/w780/9zcbqSxdsRMZWHYtyCd1nXPr2xq.jpg",
       "title": "The Mandalorian",
-      "rank": 11,
+      "rank": 8,
       "char": 8,
       "spect": 8.5,
       "episodes": 24,
@@ -417,7 +305,7 @@
         "uk": []
       },
       "final": "8.22",
-      "rank": 12
+      "rank": 9
     },
     {
       "slug": "my-brilliant-friend",
@@ -453,7 +341,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 13,
+      "rank": 10,
       "poster": "https://image.tmdb.org/t/p/w500/73JsZG2jXe5yYZ5k49HP8oPh7rq.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/iIYR1FuBD5ma2L2KjbHHWYgFu6Y.jpg"
     },
@@ -492,7 +380,7 @@
         ]
       },
       "final": "8.18",
-      "rank": 14
+      "rank": 11
     },
     {
       "slug": "i-may-destroy-you",
@@ -527,12 +415,12 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 15,
+      "rank": 12,
       "poster": "https://image.tmdb.org/t/p/w500/lCAcRhinZIz51ZvHG9a3em1K3iH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/jSLzoZ2pLqoqjkjUCLNhV7B3fhi.jpg"
     },
     {
-      "rank": 16,
+      "rank": 13,
       "slug": "chernobyl",
       "title": "Chernobyl",
       "year": 2019,
@@ -565,7 +453,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/3URK0z9PzpVNJrGE7XOuyy6KFzk.jpg"
     },
     {
-      "rank": 17,
+      "rank": 14,
       "slug": "deadwood",
       "title": "Deadwood",
       "year": 2004,
@@ -597,7 +485,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/dGzPJnh8YcUS4J10sNunohaXMVn.jpg"
     },
     {
-      "rank": 18,
+      "rank": 15,
       "slug": "succession",
       "title": "Succession",
       "year": 2018,
@@ -628,7 +516,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/bcdUYUFk8GdpZJPiSAas9UeocLH.jpg"
     },
     {
-      "rank": 19,
+      "rank": 16,
       "slug": "the-expanse",
       "title": "The Expanse",
       "year": 2015,
@@ -660,7 +548,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/7yKtaRij2giAj0s09F6gmB8XIje.jpg"
     },
     {
-      "rank": 20,
+      "rank": 17,
       "slug": "mad-men",
       "title": "Mad Men",
       "year": 2007,
@@ -723,7 +611,7 @@
         "uk": []
       },
       "final": "8.07",
-      "rank": 21
+      "rank": 18
     },
     {
       "slug": "fleabag",
@@ -757,12 +645,12 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 22,
+      "rank": 19,
       "poster": "https://image.tmdb.org/t/p/w500/27vEYsRKa3eAniwmoccOoluEXQ1.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/52FrqXobnTvkt5otdkcWcToIReH.jpg"
     },
     {
-      "rank": 23,
+      "rank": 20,
       "slug": "dark",
       "title": "Dark",
       "year": 2017,
@@ -794,7 +682,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/2VpSajCTI26zddsp5cSjqfCBKEa.jpg"
     },
     {
-      "rank": 24,
+      "rank": 21,
       "slug": "true-detective-s1",
       "title": "True Detective S1",
       "year": 2014,
@@ -829,7 +717,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/bPLRjO2pcBx0WL73WUPzuNzQ3YN.jpg"
     },
     {
-      "rank": 25,
+      "rank": 22,
       "slug": "the-leftovers",
       "title": "The Leftovers",
       "year": 2014,
@@ -862,7 +750,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/rK9D7R4nzG3YGBktQY7VD5tGdtb.jpg"
     },
     {
-      "rank": 26,
+      "rank": 23,
       "slug": "the-americans",
       "title": "The Americans",
       "year": 2013,
@@ -895,7 +783,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/7RrcmIQ7e37M3vMkUNAKCEA6uEy.jpg"
     },
     {
-      "rank": 27,
+      "rank": 24,
       "slug": "shogun-2024",
       "title": "Shogun (2024)",
       "year": 2024,
@@ -963,7 +851,7 @@
           "Netflix"
         ]
       },
-      "rank": 28
+      "rank": 25
     },
     {
       "poster": "https://image.tmdb.org/t/p/w500/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
@@ -971,7 +859,7 @@
       "conc": 8,
       "backdrop": "https://image.tmdb.org/t/p/w780/q1z0W19F4T5Xs2qka3xJSmFjv9a.jpg",
       "title": "The Pitt",
-      "rank": 29,
+      "rank": 26,
       "char": 8,
       "spect": 7,
       "episodes": 30,
@@ -1003,7 +891,7 @@
       "conc": 7.5,
       "backdrop": "https://image.tmdb.org/t/p/w780/9KnIzPCv9XpWA0MqmwiKBZvV1Sj.jpg",
       "title": "Euphoria",
-      "rank": 30,
+      "rank": 27,
       "char": 8.5,
       "spect": 8,
       "episodes": 24,
@@ -1034,7 +922,7 @@
       "conc": 7.5,
       "backdrop": "https://image.tmdb.org/t/p/w780/q71au2YjcwXBMZKNzNgjK7RZ3Hs.jpg",
       "title": "Landman",
-      "rank": 31,
+      "rank": 28,
       "char": 8,
       "spect": 7,
       "episodes": 20,
@@ -1059,7 +947,7 @@
       "year": 2024
     },
     {
-      "rank": 32,
+      "rank": 29,
       "slug": "babylon-berlin",
       "title": "Babylon Berlin",
       "year": 2017,
@@ -1129,7 +1017,7 @@
       "cine": 8,
       "network": "Prime Video",
       "tmdbId": 106379,
-      "rank": 33
+      "rank": 30
     },
     {
       "slug": "battlestar-galactica-2004",
@@ -1156,7 +1044,7 @@
       "drive": 9,
       "resol": 6.5,
       "final": 7.95,
-      "rank": 34,
+      "rank": 31,
       "scoring_notes": "Reimagined space opera. S1-2 are peak sci-fi TV. Political allegory, religious themes. S3-4 decline but finish strong. Olmos and McDonnell anchor. Complete series.",
       "streaming": {
         "us": [
@@ -1203,7 +1091,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 35,
+      "rank": 32,
       "poster": "https://image.tmdb.org/t/p/w500/dAliWVczNZgvuyaYAuciCfN9HV4.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/wVPpsueV1xuOjgey3bWmLfs3ERr.jpg"
     },
@@ -1244,10 +1132,10 @@
         ]
       },
       "final": "7.93",
-      "rank": 36
+      "rank": 33
     },
     {
-      "rank": 37,
+      "rank": 34,
       "slug": "the-knick",
       "title": "The Knick",
       "year": 2014,
@@ -1278,7 +1166,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/9VKoWUd81e8NRi2PxC0BlVoUO7V.jpg"
     },
     {
-      "rank": 38,
+      "rank": 35,
       "slug": "house-of-the-dragon",
       "title": "House of the Dragon",
       "year": 2022,
@@ -1311,7 +1199,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/2xGcSLyTAzConiHAByWqhfLiatT.jpg"
     },
     {
-      "rank": 39,
+      "rank": 36,
       "slug": "penny-dreadful",
       "title": "Penny Dreadful",
       "year": 2014,
@@ -1374,10 +1262,47 @@
         "uk": []
       },
       "final": "7.92",
-      "rank": 40
+      "rank": 37
     },
     {
-      "rank": 41,
+      "slug": "treme",
+      "title": "Tremé",
+      "year": 2010,
+      "month": 4,
+      "genres": [
+        "drama",
+        "music"
+      ],
+      "tmdbId": 17967,
+      "episodes": 38,
+      "status": "Ended",
+      "network": "HBO",
+      "creators": [
+        "David Simon",
+        "Eric Overmyer"
+      ],
+      "char": 8.5,
+      "world": 9,
+      "cine": 7.5,
+      "spect": 5,
+      "conc": 8,
+      "drive": 7,
+      "resol": 8,
+      "poster": "https://image.tmdb.org/t/p/w500/k4pV1FUccFmmbz9DwUON7KWT0gi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/f1Zj0KJpaead6cUoOkpWZblMyET.jpg",
+      "streaming": {
+        "us": [
+          "Max"
+        ],
+        "uk": [
+          "Sky"
+        ]
+      },
+      "final": 7.9,
+      "rank": 38
+    },
+    {
+      "rank": 39,
       "slug": "angels-in-america",
       "title": "Angels in America",
       "year": 2003,
@@ -1407,7 +1332,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/ijs6Ilt8B2xHyZeePXZivQI15Cc.jpg"
     },
     {
-      "rank": 42,
+      "rank": 40,
       "slug": "silo",
       "title": "Silo",
       "year": 2023,
@@ -1439,7 +1364,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg"
     },
     {
-      "rank": 43,
+      "rank": 41,
       "slug": "station-eleven",
       "title": "Station Eleven",
       "year": 2021,
@@ -1503,7 +1428,7 @@
           "Netflix"
         ]
       },
-      "rank": 44,
+      "rank": 42,
       "poster": "https://image.tmdb.org/t/p/w500/qIhsuhoIYR5yTnDta0IL4senbeN.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/tZmlWeFEMvxrjJhBJJcLNXpSRiG.jpg"
     },
@@ -1541,7 +1466,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 45,
+      "rank": 43,
       "poster": "https://image.tmdb.org/t/p/w500/qhcwrnnCnN8NE1N6XXKHFmveJR9.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/gHJhN9AJV4PmJ7YpLFa9ldDWuG8.jpg"
     },
@@ -1578,12 +1503,12 @@
           "Netflix"
         ]
       },
-      "rank": 46,
+      "rank": 44,
       "poster": "https://image.tmdb.org/t/p/w500/jHOrNJNM03Lsjdw7nsw7TlqBOhd.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/AhFEqj8PFvvNDQ3Ouv39kNfTraI.jpg"
     },
     {
-      "rank": 47,
+      "rank": 45,
       "slug": "hannibal",
       "title": "Hannibal",
       "year": 2013,
@@ -1617,7 +1542,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/vlG182ZY2WMzD5bjFZNnhyvv5V4.jpg"
     },
     {
-      "rank": 48,
+      "rank": 46,
       "slug": "ozark",
       "title": "Ozark",
       "year": 2017,
@@ -1655,7 +1580,7 @@
       "conc": 7.5,
       "backdrop": "https://image.tmdb.org/t/p/w780/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
       "title": "MobLand",
-      "rank": 49,
+      "rank": 47,
       "char": 8.5,
       "spect": 7,
       "episodes": 10,
@@ -1681,7 +1606,7 @@
       "year": 2025
     },
     {
-      "rank": 50,
+      "rank": 48,
       "slug": "severance",
       "title": "Severance",
       "year": 2022,
@@ -1743,7 +1668,7 @@
         "uk": []
       },
       "final": "7.88",
-      "rank": 51
+      "rank": 49
     },
     {
       "slug": "the-practice",
@@ -1775,7 +1700,7 @@
         "uk": []
       },
       "final": "7.88",
-      "rank": 52
+      "rank": 50
     },
     {
       "poster": "https://image.tmdb.org/t/p/w500/kiy8BHtIHAslh81rvFcZ4wbNGdY.jpg",
@@ -1783,7 +1708,7 @@
       "conc": 8,
       "backdrop": "https://image.tmdb.org/t/p/w780/dk2AwvW3VyKHCWAdED0sJzD0NYQ.jpg",
       "title": "Sons of Anarchy",
-      "rank": 53,
+      "rank": 51,
       "char": 8.5,
       "spect": 6.5,
       "episodes": 92,
@@ -1815,7 +1740,7 @@
       "conc": 8,
       "backdrop": "https://image.tmdb.org/t/p/w780/gzOIymABxmetAECXtazEYCpMmfb.jpg",
       "title": "You",
-      "rank": 54,
+      "rank": 52,
       "char": 8.5,
       "spect": 6.5,
       "episodes": 50,
@@ -1842,7 +1767,7 @@
       "year": 2018
     },
     {
-      "rank": 55,
+      "rank": 53,
       "slug": "adolescence",
       "title": "Adolescence",
       "year": 2025,
@@ -1873,7 +1798,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/llZodlkVKRkTdUsiRxvn8h80hhx.jpg"
     },
     {
-      "rank": 56,
+      "rank": 54,
       "slug": "rome",
       "title": "Rome",
       "year": 2005,
@@ -1906,7 +1831,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/b2fhZk0xB2TgMsDXT6goR28PoHX.jpg"
     },
     {
-      "rank": 57,
+      "rank": 55,
       "slug": "wolf-hall",
       "title": "Wolf Hall",
       "year": 2015,
@@ -1939,7 +1864,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/3kLMdv1eTIYRsCLknMG6WBbvvb9.jpg"
     },
     {
-      "rank": 58,
+      "rank": 56,
       "slug": "the-penguin",
       "title": "The Penguin",
       "year": 2024,
@@ -2005,7 +1930,7 @@
           "Netflix"
         ]
       },
-      "rank": 59,
+      "rank": 57,
       "poster": "https://image.tmdb.org/t/p/w500/hXWGDEwPiEWqFesF5gZGImtPIWh.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/nf3Vlxm3C9U1aKUUQHmKFZmxPSc.jpg"
     },
@@ -2042,7 +1967,7 @@
           "Netflix"
         ]
       },
-      "rank": 60,
+      "rank": 58,
       "poster": "https://image.tmdb.org/t/p/w500/tzCcYBtiyTkKQwsVyZuNE4F9oUw.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/8Czs5ituRaAQu7BTRPbSkwF2pTr.jpg"
     },
@@ -2078,10 +2003,10 @@
         "uk": []
       },
       "final": "7.85",
-      "rank": 61
+      "rank": 59
     },
     {
-      "rank": 62,
+      "rank": 60,
       "slug": "the-haunting-of-hill-house",
       "title": "The Haunting of Hill House",
       "year": 2018,
@@ -2113,7 +2038,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/sNtNXwtEbdw4LaCFxFQwL2Jv4yW.jpg"
     },
     {
-      "rank": 63,
+      "rank": 61,
       "slug": "better-call-saul",
       "title": "Better Call Saul",
       "year": 2015,
@@ -2172,7 +2097,7 @@
       "drive": 8.5,
       "resol": 5,
       "final": 7.83,
-      "rank": 64,
+      "rank": 62,
       "scoring_notes": "Marling's dimension-hopping mystery. S1 finale divides. S2 expands beautifully. Cancelled on cliffhanger. What exists is remarkable. For patient, curious viewers. Unique TV.",
       "streaming": {
         "us": [
@@ -2219,7 +2144,7 @@
           "Netflix"
         ]
       },
-      "rank": 65,
+      "rank": 63,
       "poster": "https://image.tmdb.org/t/p/w500/iUjzx6qCPFBCoMA0YtEONew9NUE.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/kNgvL4met2JoLAZDVoGaWXXti16.jpg"
     },
@@ -2256,12 +2181,12 @@
           "Disney Plus"
         ]
       },
-      "rank": 66,
+      "rank": 64,
       "poster": "https://image.tmdb.org/t/p/w500/8HZyGMnPLVVb00rmrh6A2SbK9NX.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/vN84JlTvOZvZzxi0D2SJQNFvtjS.jpg"
     },
     {
-      "rank": 67,
+      "rank": 65,
       "slug": "mr-robot",
       "title": "Mr. Robot",
       "year": 2015,
@@ -2297,7 +2222,7 @@
       "conc": 7.5,
       "backdrop": "https://image.tmdb.org/t/p/w780/r0Q6eeN9L1ORL9QsV0Sg8ZV3vnv.jpg",
       "title": "House",
-      "rank": 68,
+      "rank": 66,
       "char": 9,
       "spect": 6,
       "episodes": 176,
@@ -2325,7 +2250,45 @@
       "year": 2004
     },
     {
-      "rank": 69,
+      "slug": "goblin",
+      "title": "Goblin",
+      "year": 2016,
+      "month": 12,
+      "genres": [
+        "drama",
+        "fantasy",
+        "romance"
+      ],
+      "tmdbId": 67915,
+      "episodes": 16,
+      "status": "Ended",
+      "network": "tvN",
+      "creators": [
+        "Kim Eun-sook"
+      ],
+      "char": 9,
+      "world": 9,
+      "cine": 8.5,
+      "spect": 8.5,
+      "conc": 7.5,
+      "drive": 8.5,
+      "resol": 7.5,
+      "poster": "https://image.tmdb.org/t/p/w500/sPkxHNw5BFvuCFGWw825TS7n6X3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/smSbK5cd8T9XHcxEUcems23BDEF.jpg",
+      "streaming": {
+        "us": [
+          "Viki",
+          "Netflix"
+        ],
+        "uk": [
+          "Netflix"
+        ]
+      },
+      "final": 7.8,
+      "rank": 67
+    },
+    {
+      "rank": 68,
       "slug": "its-a-sin",
       "title": "It's a Sin",
       "year": 2021,
@@ -2356,7 +2319,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/rrZKfEVvC6itMIaEfDHwWRYaULw.jpg"
     },
     {
-      "rank": 70,
+      "rank": 69,
       "slug": "rectify",
       "title": "Rectify",
       "year": 2013,
@@ -2387,7 +2350,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/qiUnDMMH3D8thZ4QR3NzBEvTFKN.jpg"
     },
     {
-      "rank": 71,
+      "rank": 70,
       "slug": "the-underground-railroad",
       "title": "The Underground Railroad",
       "year": 2021,
@@ -2444,7 +2407,7 @@
       "drive": 7.5,
       "resol": 6.5,
       "final": 7.8,
-      "rank": 72,
+      "rank": 71,
       "scoring_notes": "Who killed Laura Palmer? Lynch changed TV forever. S1 perfect, S2 uneven. Cooper is iconic. Surreal humor and genuine dread. The Return (S3) is superior but S1-2 started it.",
       "streaming": {
         "us": [
@@ -2494,12 +2457,12 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 73,
+      "rank": 72,
       "poster": "https://image.tmdb.org/t/p/w500/om1wVOuEtwH3krHutIWO9sJzkS5.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/gder6NtVlBIpenWWMOwpbQK05Uc.jpg"
     },
     {
-      "rank": 74,
+      "rank": 73,
       "slug": "black-mirror",
       "title": "Black Mirror",
       "year": 2011,
@@ -2531,7 +2494,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/dg3OindVAGZBjlT3xYKqIAdukPL.jpg"
     },
     {
-      "rank": 75,
+      "rank": 74,
       "slug": "the-last-of-us",
       "title": "The Last of Us",
       "year": 2023,
@@ -2564,7 +2527,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg"
     },
     {
-      "rank": 76,
+      "rank": 75,
       "slug": "sharp-objects",
       "title": "Sharp Objects",
       "year": 2018,
@@ -2596,7 +2559,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/b9cCIwtT0gD42wEMMZwMdY8zfgS.jpg"
     },
     {
-      "rank": 77,
+      "rank": 76,
       "slug": "halt-and-catch-fire",
       "title": "Halt and Catch Fire",
       "year": 2014,
@@ -2627,7 +2590,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/o35U5p9J3eDsqrgfCpYUOO2lsuG.jpg"
     },
     {
-      "rank": 78,
+      "rank": 77,
       "slug": "peaky-blinders",
       "title": "Peaky Blinders",
       "year": 2013,
@@ -2661,7 +2624,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/l8v3gJDlASN0lNn51gR8zQJsu5O.jpg"
     },
     {
-      "rank": 79,
+      "rank": 78,
       "slug": "foundation",
       "title": "Foundation",
       "year": 2021,
@@ -2692,7 +2655,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/7NNNXo0qG2SqH4JoG7GPvJ2hzes.jpg"
     },
     {
-      "rank": 80,
+      "rank": 79,
       "slug": "beef",
       "title": "Beef",
       "year": 2023,
@@ -2723,7 +2686,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/6dErjmx17e8kZn5zHAqLrbcTesV.jpg"
     },
     {
-      "rank": 81,
+      "rank": 80,
       "slug": "utopia-uk",
       "title": "Utopia (UK)",
       "year": 2013,
@@ -2789,7 +2752,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 82,
+      "rank": 81,
       "poster": "https://image.tmdb.org/t/p/w500/eGUT7j3n3rn5yGihlCgwUnD70HV.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/atb20IUkdYcZISq3DJ769nc3h1G.jpg"
     },
@@ -2799,7 +2762,7 @@
       "conc": 7.5,
       "backdrop": "https://image.tmdb.org/t/p/w780/gHJhN9AJV4PmJ7YpLFa9ldDWuG8.jpg",
       "title": "The Umbrella Academy",
-      "rank": 83,
+      "rank": 82,
       "char": 8,
       "spect": 7.5,
       "episodes": 36,
@@ -2827,7 +2790,7 @@
       "year": 2019
     },
     {
-      "rank": 84,
+      "rank": 83,
       "slug": "patrick-melrose",
       "title": "Patrick Melrose",
       "year": 2018,
@@ -2858,7 +2821,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/u2D2NlCGWi5HwNOJqDMdsvxT2ud.jpg"
     },
     {
-      "rank": 85,
+      "rank": 84,
       "slug": "the-shield",
       "title": "The Shield",
       "year": 2002,
@@ -2896,7 +2859,7 @@
       "conc": 8,
       "backdrop": "https://image.tmdb.org/t/p/w780/eGYnmsEs5cutoPQKf2QUlT4RgCH.jpg",
       "title": "Heartstopper",
-      "rank": 86,
+      "rank": 85,
       "char": 8.5,
       "spect": 6,
       "episodes": 24,
@@ -2922,7 +2885,7 @@
       "year": 2022
     },
     {
-      "rank": 87,
+      "rank": 86,
       "slug": "twin-peaks-the-return",
       "title": "Twin Peaks: The Return",
       "year": 2017,
@@ -2988,7 +2951,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 88,
+      "rank": 87,
       "poster": "https://image.tmdb.org/t/p/w500/jstAPmvx1svgp29g32rg7Ez1Woe.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/tL7ARI3bkzYbhsGWHyE38gDVtCs.jpg"
     },
@@ -3018,7 +2981,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 7.73,
-      "rank": 89,
+      "rank": 88,
       "scoring_notes": "Belgian psychological thriller. Veerle Baetens stars as amnesiac woman suspected of missing man's disappearance. Nonlinear narrative reveals layers of trauma and mystery. Atmospheric and unsettling. Complete limited series with satisfying conclusion.",
       "streaming": {
         "us": [
@@ -3057,7 +3020,7 @@
       "drive": 8,
       "resol": 7.5,
       "final": 7.73,
-      "rank": 90,
+      "rank": 89,
       "scoring_notes": "King brothers' supernatural procedural. Katja Herbers, Mike Colter, Aasif Mandvi investigate possessions and miracles. Balances skepticism and faith brilliantly. Four seasons of increasing weirdness. Michael Emerson's villain is spectacular. Complete series, satisfying conclusion.",
       "streaming": {
         "us": [
@@ -3094,7 +3057,7 @@
       "drive": 7.5,
       "resol": 8,
       "final": 7.73,
-      "rank": 91,
+      "rank": 90,
       "scoring_notes": "Vampire roommates in Staten Island mockumentary. Kayvan Novak, Matt Berry, Natasia Demetriou, Harvey Guillén perfect ensemble. Five seasons of supernatural absurdity. Complete series with satisfying finale. Consistently hilarious, surprisingly heartfelt.",
       "streaming": {
         "us": [
@@ -3132,7 +3095,7 @@
       "drive": 9,
       "resol": 7.5,
       "final": 7.73,
-      "rank": 92,
+      "rank": 91,
       "scoring_notes": "Sorkin's idealistic White House drama. S1-4 are masterpieces (Sorkin era). Walk-and-talk dialogue perfection. Peak TV political drama. Complete series with declining final seasons.",
       "streaming": {
         "us": [
@@ -3180,7 +3143,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 93,
+      "rank": 92,
       "poster": "https://image.tmdb.org/t/p/w500/5nXFiz8Rn8eezVjSTZBd7HmnF1G.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/cwosIp9M9B6TcLnv0bBg86s0WUx.jpg"
     },
@@ -3217,7 +3180,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 94,
+      "rank": 93,
       "poster": "https://image.tmdb.org/t/p/w500/eZ7TUocetldADAXZfnMSEVl7SbJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/nYGVRE2VVJZ71gqsm1AYAjO0C1G.jpg"
     },
@@ -3227,7 +3190,7 @@
       "conc": 8.5,
       "backdrop": "https://image.tmdb.org/t/p/w780/ksmcQlCQc7XFGpXpIFZzF5twRSr.jpg",
       "title": "Person of Interest",
-      "rank": 95,
+      "rank": 94,
       "char": 8,
       "spect": 6.5,
       "episodes": 103,
@@ -3254,7 +3217,7 @@
       "year": 2011
     },
     {
-      "rank": 96,
+      "rank": 95,
       "slug": "for-all-mankind",
       "title": "For All Mankind",
       "year": 2019,
@@ -3290,7 +3253,7 @@
       "conc": 7.5,
       "backdrop": "https://image.tmdb.org/t/p/w780/qHCpG49qxs4owLgmhh0T62ErUZv.jpg",
       "title": "Daredevil: Born Again",
-      "rank": 97,
+      "rank": 96,
       "char": 8.5,
       "spect": 7,
       "episodes": 17,
@@ -3350,7 +3313,7 @@
           "Disney Plus"
         ]
       },
-      "rank": 98,
+      "rank": 97,
       "poster": "https://image.tmdb.org/t/p/w500/y7fVZkyheCEQHDUEHwNmYENGfT2.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/q4CbisNArigphVn608Faxijdw8N.jpg"
     },
@@ -3388,7 +3351,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 99,
+      "rank": 98,
       "poster": "https://image.tmdb.org/t/p/w500/dDxqWY5Qpcy6Smf7SGvGRlf7u6e.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/en3Hfg9r1JS5KDb9HY2BaMT3FRo.jpg"
     },
@@ -3427,9 +3390,46 @@
           "Netflix"
         ]
       },
-      "rank": 100,
+      "rank": 99,
       "poster": "https://image.tmdb.org/t/p/w500/w5u1PqBYfDyfrlkxADTA38jYG3I.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/oReDAVfMTBi1J543aKg7LpeecPv.jpg"
+    },
+    {
+      "slug": "a-knight-of-the-seven-kingdoms",
+      "title": "A Knight of the Seven Kingdoms",
+      "year": 2026,
+      "month": 1,
+      "genres": [
+        "drama",
+        "fantasy",
+        "adventure"
+      ],
+      "tmdbId": 224372,
+      "episodes": 6,
+      "status": "Returning Series",
+      "network": "HBO",
+      "creators": [
+        "George R.R. Martin"
+      ],
+      "char": 8.5,
+      "world": 9.5,
+      "cine": 8.5,
+      "spect": 9,
+      "conc": 8,
+      "drive": 8.5,
+      "resol": 6,
+      "final": 7.5,
+      "poster": "https://image.tmdb.org/t/p/w500/k8yARbD9iYn2nRX2HvsopfKDN2r.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/7mkUu1F2hVUNgz24xO8HPx0D6mK.jpg",
+      "streaming": {
+        "us": [
+          "HBO Max"
+        ],
+        "uk": [
+          "HBO Max"
+        ]
+      },
+      "rank": 100
     },
     {
       "rank": 101,
@@ -11391,6 +11391,6 @@
     }
   ],
   "count": 318,
-  "lastUpdated": "2026-02-23T10:59:29.139Z",
-  "version": "3.3"
+  "lastUpdated": "2026-02-23T11:14:21.575Z",
+  "version": "3.4"
 }
