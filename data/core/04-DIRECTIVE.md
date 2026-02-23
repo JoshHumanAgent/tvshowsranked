@@ -1,16 +1,16 @@
 # DIRECTIVE.md — CyberClaw's Operating Charter
 *The CTO of Dynamic Rank Engine — Autonomous Operations Manual*
 
-**🗂️ FILE SYSTEM (4 FILES ONLY):**
+**🗂️ FILE SYSTEM (3 FILES):**
 ```
 data/core/
-├── 01-current-index.json    ← TOP 100 (live on website)
-├── 02-overflow-pool.json    ← Ranked shows below Top 100  
-├── 03-ranking-queue.json    ← Shows waiting to be ranked
+├── 00-foundation-list.json  ← CALIBRATION BIBLE (103 sacred shows, REFERENCE ONLY)
+├── ranked.json              ← ALL ranked shows (309+), single sorted list
+├── queue.json               ← Shows waiting to be ranked (drama only)
 └── 04-DIRECTIVE.md          ← This file (instructions)
 ```
 
-**Everything else** → `data/archive/` (don't touch)
+**Archived:** `01-current-index.json`, `02-overflow-pool.json`, `03-ranking-queue.json` → `data/archive/`
 
 ---
 
@@ -46,46 +46,45 @@ Every TV drama worth watching should be:
 
 ---
 
-## 📁 THE 4-FILE WORKFLOW
+## 📁 THE 2-FILE WORKFLOW (+ FOUNDATION)
 
-### **CARDINAL RULE: NEVER RE-RANK EXISTING SHOWS**
+### **CARDINAL RULE: LOCKED SHOWS ARE SACRED**
 
-**Once a show is ranked in the Top 100, it STAYS at that rank/score unless Josh explicitly says otherwise.**
+**Shows with `locked: true` in ranked.json are NEVER re-ranked without Josh's explicit approval.**
+
+These are the top ~50 shows — the foundation of the entire system. They exist as reference points for calibrating all other scores.
 
 This means:
-- ❌ NO automatic re-sorting of existing Top 100
-- ❌ NO updating scores for shows already ranked
-- ❌ NO moving shows up/down based on new information
-- ✅ Only add NEW shows from overflow
-- ✅ Only remove shows if explicitly instructed
-- ✅ If a show needs re-ranking, WAIT for Josh's instruction
-
-**Why:** The Top 100 represents the site's authoritative rankings. Changing them without permission breaks user trust and site integrity.
+- ❌ NO changing scores of locked shows
+- ❌ NO moving locked shows up/down
+- ✅ Add new shows to the list (they start unlocked)
+- ✅ Score new shows by comparing to locked shows
+- ✅ If a locked show needs adjustment, ASK JOSH FIRST
 
 ---
 
-### **01-current-index.json** (TOP 100)
-- **What:** The 100 shows currently live on the website
-- **When to update:** Only when adding NEW shows from overflow
-- **Process:** 
-  1. Check for NEW overflow shows that qualify (score >= #100 threshold)
-  2. Add ONLY those new shows to Top 100
-  3. Re-sort to assign correct rank numbers
-  4. DO NOT change scores or positions of existing shows
+### **00-foundation-list.json** (CALIBRATION BIBLE)
+- **What:** 103 sacred shows with full score breakdowns
+- **Purpose:** REFERENCE ONLY — use these to calibrate new scores
+- **Never modify:** This file is the gold standard
+- **Usage:** "What did Breaking Bad score for characters? Use that as my anchor."
 
-### **02-overflow-pool.json** (RANKED SHOWS 101+)
-- **What:** Shows already scored, ranked, ready to surface
-- **When to update:** When new shows get scored (move from queue → here)
-- **Purpose:** Deep bench for filter changes
+### **ranked.json** (ALL RANKED SHOWS)
+- **What:** Single sorted list of all 309+ scored shows
+- **Structure:** Each show has `locked: true/false` flag
+- **When to update:** When scoring new shows from queue
+- **Process:**
+  1. Score new show (compare to foundation)
+  2. Add to array with `locked: false`
+  3. Re-sort entire list by `final` score
+  4. Reassign rank numbers sequentially
 
-### **03-ranking-queue.json** (TO BE RANKED)
-- **What:** Shows discovered, waiting to be scored
-- **Work order:** 5 at a time, from TOP (most recent year first)
+### **queue.json** (TO BE RANKED)
+- **What:** Drama shows waiting to be scored
+- **Sorted by:** Priority (CRITICAL → HIGH → MEDIUM → LOW), then year (newest first)
+- **Work order:** 5 at a time, from TOP
 - **Check first:** TMDB for brand new releases (last 30 days)
-
-### **04-DIRECTIVE.md** (THIS FILE)
-- **What:** Instructions for me (Cyberclaw)
-- **Read when:** You forget what to do
+- **Filter:** Drama only — no anime, no pure comedy
 
 ---
 
@@ -93,15 +92,15 @@ This means:
 
 ```
             ┌─────────────────────────────────────┐
-            │            TOP 100                  │
-            │   (Visible, fully-ranked shows)     │
+            │          RANKED.JSON                │
+            │   (All 309+ shows, sorted by score) │
+            │   Top ~50 locked, rest unlockable   │
             └─────────────────────────────────────┘
                               ▲
-                              │ Pull from pool
+                              │ Score & add
             ┌─────────────────────────────────────┐
-            │          THE POOL                   │
-            │   (Hundreds of ranked dramas        │
-            │    waiting to surface on filter)    │
+            │          QUEUE.JSON                 │
+            │   (144+ dramas waiting to be ranked)│
             └─────────────────────────────────────┘
                               ▲
                               │ Constant discovery
@@ -114,18 +113,9 @@ This means:
 
 ---
 
-## ⚠️ CRITICAL PROTOCOL: THE THREE-FILE VERIFICATION LOOP
+## ⚠️ CRITICAL PROTOCOL: THE DUPLICATE CHECK
 
-**THE THREE FILES (must cross-reference ALL before ANY action):**
-```
-1. data/core/01-current-index.json    ← TOP 100 (sacred, do not touch)
-2. data/core/02-overflow-pool.json    ← OVERFLOW (ranked 101+)
-3. data/shows/index.json              ← LIVE SITE (what users see)
-```
-
-### **MANDATORY PRE-SCORING VERIFICATION**
-
-**BEFORE scoring ANY new show, run this verification loop:**
+**BEFORE scoring ANY new show, check ranked.json:**
 
 ```
 STEP 1: Normalize the title
@@ -134,27 +124,19 @@ STEP 1: Normalize the title
         - Lowercase everything
         - Example: "Mr. Robot (S1-3)" → "mrrobot"
 
-STEP 2: Check ALL THREE FILES
+STEP 2: Check ranked.json
         - Search by normalized title
         - Search by slug
         - Search by partial match (first 5 chars)
         
-STEP 3: If found ANYWHERE → SKIP IMMEDIATELY
-        - Log: "SKIPPED: [title] already exists as [existing_title]"
+STEP 3: If found → SKIP IMMEDIATELY
+        - Log: "SKIPPED: [title] already ranked"
         - DO NOT SCORE
-        - DO NOT ADD
         - MOVE TO NEXT SHOW
 
-STEP 4: If NOT found in any file → PROCEED
+STEP 4: If NOT found → PROCEED
         - Now you may score the show
 ```
-
-### **WHY THIS MATTERS**
-
-1. **Existing rankings are SACRED** — Hours of work went into each score
-2. **Duplicates corrupt data** — They confuse the system and users
-3. **Wasted effort** — Scoring a show that already exists is pointless
-4. **The pool grows smarter** — More shows = easier to reference for future rankings
 
 ### **VERIFICATION SCRIPT (RUN BEFORE EVERY NEW SHOW)**
 
@@ -179,21 +161,17 @@ function normalize(title) {
 const search = process.argv[2] || '';
 const norm = normalize(search);
 
-const top100 = readJSON('data/core/01-current-index.json');
-const overflow = readJSON('data/core/02-overflow-pool.json');
-const live = readJSON('data/shows/index.json');
-
-const all = [...top100.shows, ...overflow.shows];
+const ranked = readJSON('data/core/ranked.json');
 
 console.log('=== CHECKING:', search, '===');
 console.log('Normalized:', norm);
 console.log('');
 
 let found = false;
-all.forEach(s => {
+ranked.shows.forEach(s => {
     const sNorm = normalize(s.title);
-    if (sNorm.includes(norm) || norm.includes(sNorm) || s.slug.includes(norm)) {
-        console.log('FOUND:', s.title, '(' + s.final + ') - Rank #' + s.rank, s.rank <= 100 ? 'TOP 100' : 'OVERFLOW');
+    if (sNorm.includes(norm) || norm.includes(sNorm) || (s.slug && s.slug.includes(norm))) {
+        console.log('FOUND:', s.title, '(' + s.final + ') - Rank #' + s.rank, s.locked ? '🔒' : '');
         found = true;
     }
 });
@@ -202,7 +180,7 @@ if (!found) {
     console.log('✓ NOT FOUND - Safe to score');
 } else {
     console.log('');
-    console.log('❌ SKIP THIS SHOW - Already exists');
+    console.log('❌ SKIP THIS SHOW - Already ranked');
 }
 ```
 
