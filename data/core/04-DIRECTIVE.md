@@ -116,20 +116,37 @@ This means:
 
 ## ⚠️ CRITICAL PROTOCOL: NO DUPLICATES
 
-**BEFORE adding ANY show to the pool:**
-1. Check `data/shows/index.json` for existing slug
-2. Search by title to catch variants
-3. If found: SKIP and log "already indexed"
-4. If not found: PROCEED with scoring
+**BEFORE scoring OR adding ANY show:**
+1. **FIRST:** Check `data/shows/index.json` for existing slug OR title match
+2. **SECOND:** Check `data/core/01-current-index.json` (Top 100)
+3. **THIRD:** Check `data/core/02-overflow-pool.json` (Overflow)
+4. Search by title to catch variants (e.g., "The Bear" vs "Bear")
+5. If found ANYWHERE: **SKIP IMMEDIATELY** and log "already indexed"
+6. If not found: PROCEED with scoring
+
+**⚠️ FAILURE TO CHECK = WASTE OF TIME AND POTENTIAL DATA CORRUPTION**
 
 **Duplicate detection commands:**
 ```powershell
-# Check by slug
-$data.shows | Where-Object { $_.slug -eq "show-name" }
-
-# Check by title  
-$data.shows | Where-Object { $_.title -like "*Show Name*" }
+# Check ALL pools before scoring ANY show
+node -e "
+const fs = require('fs');
+function readJSON(p) { let c = fs.readFileSync(p, 'utf8'); if(c.charCodeAt(0)===0xFEFF)c=c.substring(1); return JSON.parse(c); }
+const top100 = readJSON('data/core/01-current-index.json');
+const overflow = readJSON('data/core/02-overflow-pool.json');
+const all = [...top100.shows, ...overflow.shows];
+const search = process.argv[2]?.toLowerCase() || '';
+const matches = all.filter(s => s.slug.toLowerCase().includes(search) || s.title.toLowerCase().includes(search));
+matches.forEach(s => console.log(s.title, '(', s.final, ') - Rank #' + s.rank));
+console.log('Found:', matches.length, 'matches');
+" hannibal
 ```
+
+**LESSON LEARNED (2026-02-23):**
+- Scored 100+ shows without checking duplicates first
+- Wasted hours on shows already in Top 100
+- Shows like Hannibal, Mr. Robot, The Expanse, Dark, Severance were ALREADY RANKED
+- ALWAYS CHECK BEFORE SCORING - NO EXCEPTIONS
 
 ---
 
