@@ -1,84 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 106,
+    "total": 101,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "high",
-      "why": [
-        "king-adaptation",
-        "cbbc"
-      ],
-      "year": 2020,
-      "priority": "HIGH",
-      "genres": [
-        "horror",
-        "drama"
-      ],
-      "title": "The Outsider",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "gaming-franchise",
-        "netflix-flagship"
-      ],
-      "year": 2019,
-      "priority": "HIGH",
-      "genres": [
-        "fantasy",
-        "drama"
-      ],
-      "title": "The Witcher",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "korean",
-        "popular"
-      ],
-      "year": 2019,
-      "priority": "HIGH",
-      "genres": [
-        "romance",
-        "drama"
-      ],
-      "title": "Crash Landing on You",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "australian",
-        "cult"
-      ],
-      "year": 2018,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "Mr. Inbetween",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "spin-off-excellence"
-      ],
-      "year": 2017,
-      "priority": "HIGH",
-      "genres": [
-        "drama",
-        "legal"
-      ],
-      "title": "The Good Fight",
-      "status": "pending"
-    },
     {
       "confidence": "high",
       "why": [
