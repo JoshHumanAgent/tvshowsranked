@@ -1,97 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 55,
+    "total": 49,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "franchise-revival"
-      ],
-      "year": 2021,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "Law & Order: Organized Crime",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "french",
-        "netflix"
-      ],
-      "year": 2021,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "thriller"
-      ],
-      "title": "Lupin",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "amazon-flagship",
-        "fantasy-epic"
-      ],
-      "year": 2021,
-      "priority": "MEDIUM",
-      "genres": [
-        "fantasy",
-        "drama"
-      ],
-      "title": "Wheel of Time",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "netflix",
-        "comic-adaptation"
-      ],
-      "year": 2021,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama",
-        "fantasy"
-      ],
-      "title": "Sweet Tooth",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "mcu"
-      ],
-      "year": 2021,
-      "priority": "MEDIUM",
-      "genres": [
-        "action",
-        "drama"
-      ],
-      "title": "The Falcon and the Winter Soldier",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "revival"
-      ],
-      "year": 2021,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "thriller"
-      ],
-      "title": "Dexter: New Blood",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [
