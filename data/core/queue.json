@@ -1,85 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 101,
+    "total": 96,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "high",
-      "why": [
-        "underrated",
-        "spy-sci-fi"
-      ],
-      "year": 2017,
-      "priority": "HIGH",
-      "genres": [
-        "sci-fi",
-        "thriller"
-      ],
-      "title": "Counterpart",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "anthology",
-        "critically-acclaimed"
-      ],
-      "year": 2017,
-      "priority": "HIGH",
-      "genres": [
-        "drama",
-        "thriller"
-      ],
-      "title": "The Sinner",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "global-phenomenon",
-        "spanish"
-      ],
-      "year": 2017,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "thriller"
-      ],
-      "title": "Money Heist",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "gaiman",
-        "starz"
-      ],
-      "year": 2017,
-      "priority": "HIGH",
-      "genres": [
-        "fantasy",
-        "drama"
-      ],
-      "title": "American Gods",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "mcu-netflix",
-        "antihero"
-      ],
-      "year": 2017,
-      "priority": "HIGH",
-      "genres": [
-        "action",
-        "drama"
-      ],
-      "title": "The Punisher",
-      "status": "pending"
-    },
     {
       "confidence": "high",
       "why": [
