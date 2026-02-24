@@ -1,25 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 81,
+    "total": 78,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "high",
-      "why": [
-        "french",
-        "cult"
-      ],
-      "year": 2005,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "Spiral",
-      "status": "pending"
-    },
     {
       "confidence": "high",
       "why": [
@@ -38,21 +23,6 @@
     {
       "confidence": "high",
       "why": [
-        "cultural-phenomenon",
-        "procedural"
-      ],
-      "year": 2000,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "CSI: Crime Scene Investigation",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
         "long-running",
         "cultural"
       ],
@@ -63,21 +33,6 @@
         "drama"
       ],
       "title": "Law & Order: SVU",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "british",
-        "robert-carlyle"
-      ],
-      "year": 1995,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "Cracker",
       "status": "pending"
     },
     {
