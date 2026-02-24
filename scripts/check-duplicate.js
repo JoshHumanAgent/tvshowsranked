@@ -32,9 +32,22 @@ function checkDuplicate(searchTitle) {
     const basePath = path.join(__dirname, '..');
     
     // Load all three files
-    const top100 = readJSON(path.join(basePath, 'data/core/01-current-index.json'));
-    const overflow = readJSON(path.join(basePath, 'data/core/02-overflow-pool.json'));
-    const live = readJSON(path.join(basePath, 'data/shows/index.json'));
+    let top100, overflow, live;
+    try {
+        top100 = readJSON(path.join(basePath, 'data/core/01-current-index.json'));
+    } catch (e) {
+        top100 = { shows: [] };
+    }
+    try {
+        overflow = readJSON(path.join(basePath, 'data/core/02-overflow-pool.json'));
+    } catch (e) {
+        overflow = { shows: [] };
+    }
+    try {
+        live = readJSON(path.join(basePath, 'data/shows/index.json'));
+    } catch (e) {
+        live = { shows: [] };
+    }
     
     const all = [...top100.shows, ...overflow.shows];
     const norm = normalize(searchTitle);
