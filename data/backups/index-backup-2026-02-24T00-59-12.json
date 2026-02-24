@@ -335,6 +335,39 @@
     },
     {
       "rank": 11,
+      "slug": "ozark",
+      "title": "Ozark",
+      "year": 2017,
+      "month": 7,
+      "genres": [
+        "crime",
+        "drama",
+        "thriller",
+        "cop-show"
+      ],
+      "final": 8.1,
+      "tmdbId": 69740,
+      "char": 8.5,
+      "world": 7,
+      "cine": 8.5,
+      "spect": 6,
+      "conc": 8.5,
+      "drive": 8,
+      "resol": 8,
+      "episodes": 44,
+      "poster": "https://image.tmdb.org/t/p/w500/pCGyPVrI9Fzw6rE1Pvi4BIXF6ET.jpg",
+      "streaming": {
+        "us": [
+          "Netflix"
+        ],
+        "uk": [
+          "Netflix"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/aatG9iVAUL7U7OyFEmupESpOrD2.jpg"
+    },
+    {
+      "rank": 12,
       "slug": "the-expanse",
       "title": "The Expanse",
       "year": 2015,
@@ -366,7 +399,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/7yKtaRij2giAj0s09F6gmB8XIje.jpg"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "slug": "mad-men",
       "title": "Mad Men",
       "year": 2007,
@@ -398,7 +431,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/A5lVyejMsP5G7rAJBwU9ug3Wzou.jpg"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "slug": "andor",
       "title": "Andor",
       "year": 2022,
@@ -430,7 +463,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/kCGwvjpqM1owt9kI4pkYPJWJLvc.jpg"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "slug": "dark",
       "title": "Dark",
       "year": 2017,
@@ -462,7 +495,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/2VpSajCTI26zddsp5cSjqfCBKEa.jpg"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "slug": "true-detective-s1",
       "title": "True Detective S1",
       "year": 2014,
@@ -497,7 +530,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/bPLRjO2pcBx0WL73WUPzuNzQ3YN.jpg"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "slug": "the-leftovers",
       "title": "The Leftovers",
       "year": 2014,
@@ -530,7 +563,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/rK9D7R4nzG3YGBktQY7VD5tGdtb.jpg"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "slug": "the-americans",
       "title": "The Americans",
       "year": 2013,
@@ -563,7 +596,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/7RrcmIQ7e37M3vMkUNAKCEA6uEy.jpg"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "slug": "shogun-2024",
       "title": "Shogun (2024)",
       "year": 2024,
@@ -596,7 +629,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/bwSmgmd90hCWwqOKQYTEraeOZhJ.jpg"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "slug": "babylon-berlin",
       "title": "Babylon Berlin",
       "year": 2017,
@@ -628,39 +661,6 @@
         ]
       },
       "backdrop": "https://image.tmdb.org/t/p/w780/7hezSIqkDjhP7MNGFN9vRkyWgO9.jpg"
-    },
-    {
-      "rank": 20,
-      "slug": "ozark",
-      "title": "Ozark",
-      "year": 2017,
-      "month": 7,
-      "genres": [
-        "crime",
-        "drama",
-        "thriller",
-        "cop-show"
-      ],
-      "final": 7.93,
-      "tmdbId": 69740,
-      "char": 8,
-      "world": 6.5,
-      "cine": 8,
-      "spect": 6,
-      "conc": 8,
-      "drive": 8,
-      "resol": 8,
-      "episodes": 44,
-      "poster": "https://image.tmdb.org/t/p/w500/pCGyPVrI9Fzw6rE1Pvi4BIXF6ET.jpg",
-      "streaming": {
-        "us": [
-          "Netflix"
-        ],
-        "uk": [
-          "Netflix"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/aatG9iVAUL7U7OyFEmupESpOrD2.jpg"
     },
     {
       "rank": 21,
