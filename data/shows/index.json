@@ -1,7 +1,7 @@
 ﻿{
   "meta": {
-    "generated": "2026-02-24T06:07:01.771Z",
-    "total": 387,
+    "generated": "2026-02-24T06:35:37.461Z",
+    "total": 391,
     "lockedCount": 96,
     "description": "All ranked shows, sorted by weighted score. Shows with locked=true are sacred - never re-rank without explicit approval."
   },
@@ -12234,6 +12234,32 @@
       "rank": 351
     },
     {
+      "title": "The Judge from Hell",
+      "slug": "the-judge-from-hell",
+      "year": 2024,
+      "tmdbId": 235577,
+      "episodes": 14,
+      "genres": [
+        "drama",
+        "fantasy",
+        "crime",
+        "mystery"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/9vhLHbUiiP9HiXfJw5OUC7KoaJG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 7,
+      "world": 7,
+      "cine": 7,
+      "spect": 5,
+      "conc": 7,
+      "drive": 7.5,
+      "resol": 7,
+      "final": 6.53,
+      "locked": false,
+      "rank": 352
+    },
+    {
       "title": "The Peripheral",
       "slug": "the-peripheral",
       "year": 2022,
@@ -12255,7 +12281,7 @@
       "resol": 4,
       "final": 6.53,
       "locked": false,
-      "rank": 352
+      "rank": 353
     },
     {
       "title": "Berlin Station",
@@ -12279,7 +12305,7 @@
       "resol": 7,
       "final": 6.5,
       "locked": false,
-      "rank": 353
+      "rank": 354
     },
     {
       "title": "Marvel's Luke Cage",
@@ -12304,7 +12330,7 @@
       "resol": 5,
       "final": 6.5,
       "locked": false,
-      "rank": 354
+      "rank": 355
     },
     {
       "title": "The Diplomat",
@@ -12327,7 +12353,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/v6f9FUDDQfGIv8MLRQwlL0zvRjI.jpg",
       "final": 6.5,
       "locked": false,
-      "rank": 355
+      "rank": 356
     },
     {
       "title": "The Responder",
@@ -12351,7 +12377,7 @@
       "resol": 5,
       "final": 6.5,
       "locked": false,
-      "rank": 356
+      "rank": 357
     },
     {
       "title": "Fear the Walking Dead",
@@ -12376,7 +12402,7 @@
       "resol": 6.5,
       "final": 6.48,
       "locked": false,
-      "rank": 357
+      "rank": 358
     },
     {
       "title": "McMafia",
@@ -12400,7 +12426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/8uJPiVNMjjVUHgnCb3de1nSv0L5.jpg",
       "final": 6.48,
       "locked": false,
-      "rank": 358
+      "rank": 359
     },
     {
       "title": "WeCrashed",
@@ -12423,7 +12449,7 @@
       "resol": 7,
       "final": 6.48,
       "locked": false,
-      "rank": 359
+      "rank": 360
     },
     {
       "slug": "togetherness",
@@ -12459,7 +12485,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 360,
+      "rank": 361,
       "poster": "https://image.tmdb.org/t/p/w500/efMjjsthjr7UDsc3ab7DVUZNY3N.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/pFsKc5goGgPkUT8uFH9jIJsvipC.jpg",
       "locked": false
@@ -12485,7 +12511,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/tldMHeR7UnihV5ffrxxM8cDhbtT.jpg",
       "final": 6.41,
       "locked": false,
-      "rank": 361
+      "rank": 362
     },
     {
       "slug": "dear-edward",
@@ -12510,7 +12536,7 @@
       "drive": 6.5,
       "resol": 6.5,
       "final": 6.38,
-      "rank": 362,
+      "rank": 363,
       "scoring_notes": "Jason Katims (Friday Night Lights) adapts Ann Napolitano novel. Young boy sole survivor of plane crash. Grief and connection stories among victim families. Tender but overly sentimental. CANCELED after one season. Connie Britton adds presence. Manipulative emotion.",
       "streaming": {
         "us": [
@@ -12546,7 +12572,7 @@
       "resol": 7,
       "final": 6.35,
       "locked": false,
-      "rank": 363
+      "rank": 364
     },
     {
       "slug": "mr-show",
@@ -12582,7 +12608,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 364,
+      "rank": 365,
       "poster": "https://image.tmdb.org/t/p/w500/gC8PDx7tfbXS9BqxBgj0YXKDIoW.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/A2qdFRq9oJDC5E7fbgSS4POUMDF.jpg",
       "locked": false
@@ -12609,7 +12635,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/31GIcUUcdQPRkVtmdqgQWJMhXj1.jpg",
       "locked": false,
       "final": 6.34,
-      "rank": 365
+      "rank": 366
     },
     {
       "title": "Obi-Wan Kenobi",
@@ -12634,7 +12660,7 @@
       "resol": 6.5,
       "final": 6.34,
       "locked": false,
-      "rank": 366
+      "rank": 367
     },
     {
       "title": "The Flight Attendant",
@@ -12659,7 +12685,7 @@
       "resol": 6.5,
       "final": 6.34,
       "locked": false,
-      "rank": 367
+      "rank": 368
     },
     {
       "title": "NCIS: Los Angeles",
@@ -12684,7 +12710,7 @@
       "resol": 7,
       "final": 6.3,
       "locked": false,
-      "rank": 368
+      "rank": 369
     },
     {
       "title": "Ms. Marvel",
@@ -12709,7 +12735,7 @@
       "resol": 6.5,
       "final": 6.29,
       "locked": false,
-      "rank": 369
+      "rank": 370
     },
     {
       "slug": "last-thing-he-told-me",
@@ -12737,7 +12763,7 @@
       "drive": 7,
       "resol": 6.5,
       "final": 6.29,
-      "rank": 370,
+      "rank": 371,
       "scoring_notes": "Jennifer Garner as woman searching for missing husband. Based on popular novel but adaptation lacks tension. Aisha Tyler and Angourie Rice add support. Limited series, complete. Thriller that forgets to thrill. Apple's weaker drama offerings.",
       "streaming": {
         "us": [
@@ -12773,7 +12799,7 @@
       "resol": 4.5,
       "final": 6.25,
       "locked": false,
-      "rank": 371
+      "rank": 372
     },
     {
       "slug": "this-country",
@@ -12809,7 +12835,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 372,
+      "rank": 373,
       "poster": "https://image.tmdb.org/t/p/w500/iUjzx6qCPFBCoMA0YtEONew9NUE.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/2U9KE5jq2qwu8DPPvF65Wdim7y9.jpg",
       "locked": false
@@ -12848,7 +12874,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 373,
+      "rank": 374,
       "poster": "https://image.tmdb.org/t/p/w500/g5fuPFo7YSJH0AT5hqyO3ATXAQ6.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/9izsJTGZx8y63HmtsnxjduBcft1.jpg",
       "locked": false
@@ -12875,7 +12901,7 @@
       "resol": 5,
       "final": 6.22,
       "locked": false,
-      "rank": 374
+      "rank": 375
     },
     {
       "slug": "tell-me-you-love-me",
@@ -12910,7 +12936,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 375,
+      "rank": 376,
       "poster": "https://image.tmdb.org/t/p/w500/pPdoG5kNcQmsIne4Hq8SoLunpJX.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/rowPlHjX7RvcKQD6GYwskF9R82c.jpg",
       "locked": false
@@ -12949,7 +12975,7 @@
           "Channel 4"
         ]
       },
-      "rank": 376,
+      "rank": 377,
       "poster": "https://image.tmdb.org/t/p/w500/qNmcaXDndOkY6v9QiJjnxQD09GJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/zOnLMRD3PIhwO5KZmWMVEnLokMo.jpg",
       "locked": false
@@ -12976,7 +13002,56 @@
       "resol": 4,
       "final": 6.22,
       "locked": false,
-      "rank": 377
+      "rank": 378
+    },
+    {
+      "title": "When Life Gives You Tangerines",
+      "slug": "when-life-gives-you-tangerines",
+      "year": 2025,
+      "tmdbId": 219246,
+      "episodes": 16,
+      "genres": [
+        "drama",
+        "romance"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/1VC3sEFxYXYDqQUCAnvWfUsYg1s.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 7,
+      "world": 6.5,
+      "cine": 7,
+      "spect": 4,
+      "conc": 6,
+      "drive": 7,
+      "resol": 7.5,
+      "final": 6.2,
+      "locked": false,
+      "rank": 379
+    },
+    {
+      "title": "Lovely Runner",
+      "slug": "lovely-runner",
+      "year": 2024,
+      "tmdbId": 230923,
+      "episodes": 16,
+      "genres": [
+        "drama",
+        "romance",
+        "fantasy"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/xJQyrif5M4UMoVBrBlwUabtaRxB.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 7,
+      "world": 6.5,
+      "cine": 6.5,
+      "spect": 5,
+      "conc": 5.5,
+      "drive": 7.5,
+      "resol": 7,
+      "final": 6.18,
+      "locked": false,
+      "rank": 380
     },
     {
       "title": "The Lincoln Lawyer",
@@ -13001,7 +13076,7 @@
       "resol": 5.5,
       "final": 6.17,
       "locked": false,
-      "rank": 378
+      "rank": 381
     },
     {
       "title": "CSI: NY",
@@ -13026,7 +13101,7 @@
       "resol": 6.5,
       "final": 6.15,
       "locked": false,
-      "rank": 379
+      "rank": 382
     },
     {
       "title": "The Witcher: Blood Origin",
@@ -13050,7 +13125,7 @@
       "poster": "https://image.tmdb.org/t/p/w500/vpfJK9F0UJNcAIIeC42oJyKMnZQ.jpg",
       "backdrop": null,
       "locked": false,
-      "rank": 380
+      "rank": 383
     },
     {
       "title": "CSI: Miami",
@@ -13075,7 +13150,7 @@
       "resol": 6.5,
       "final": 6.04,
       "locked": false,
-      "rank": 381
+      "rank": 384
     },
     {
       "title": "Marvel's Iron Fist",
@@ -13100,7 +13175,7 @@
       "resol": 5,
       "final": 5.99,
       "locked": false,
-      "rank": 382
+      "rank": 385
     },
     {
       "slug": "undeclared",
@@ -13135,7 +13210,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 383,
+      "rank": 386,
       "poster": "https://image.tmdb.org/t/p/w500/cCCy0WYZvMxoz3LC2kyHX4Vy6eT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/uinrziSwEmS6s8VvGBad5sed7bF.jpg",
       "locked": false
@@ -13163,7 +13238,7 @@
       "resol": 5,
       "final": 5.87,
       "locked": false,
-      "rank": 384
+      "rank": 387
     },
     {
       "slug": "the-i-land",
@@ -13191,7 +13266,7 @@
       "drive": 6.5,
       "resol": 5.5,
       "final": 5.71,
-      "rank": 385,
+      "rank": 388,
       "scoring_notes": "Netflix sci-fi misfire. Kate Bosworth in Lost-meets-Black Mirror premise. Poor writing, weak character development. Notable for how thoroughly it misses the mark. Mercifully short.",
       "streaming": {
         "us": [
@@ -13227,7 +13302,32 @@
       "resol": 5,
       "final": 5.7,
       "locked": false,
-      "rank": 386
+      "rank": 389
+    },
+    {
+      "title": "High School Return of a Gangster",
+      "slug": "high-school-return-of-a-gangster",
+      "year": 2024,
+      "tmdbId": 224030,
+      "episodes": 8,
+      "genres": [
+        "drama",
+        "fantasy",
+        "comedy"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/bK5kGsWq9vGALbDgPmNiLFNFVI1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 6.5,
+      "world": 5.5,
+      "cine": 6,
+      "spect": 4,
+      "conc": 5,
+      "drive": 7,
+      "resol": 6.5,
+      "final": 5.64,
+      "locked": false,
+      "rank": 390
     },
     {
       "title": "Chicago Justice",
@@ -13252,7 +13352,7 @@
       "resol": 4,
       "final": 5.23,
       "locked": false,
-      "rank": 387
+      "rank": 391
     }
   ]
 }
