@@ -1,7 +1,7 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T09:35:31.963Z",
-    "total": 447,
+    "total": 451,
     "source": "Dynamic Rank Engine - Master Export",
     "adminExport": true
   },
@@ -13182,6 +13182,50 @@
       "rank": 446
     },
     {
+      "title": "Museum of Innocence",
+      "slug": "museum-of-innocence",
+      "year": 2026,
+      "tmdbId": 280123,
+      "episodes": 8,
+      "genres": [
+        "drama"
+      ],
+      "status": "Returning Series",
+      "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
+      "char": 5.5,
+      "world": 5.5,
+      "cine": 6,
+      "spect": 4,
+      "conc": 5,
+      "drive": 5.5,
+      "resol": 4.5,
+      "final": 5.04,
+      "locked": false,
+      "rank": 447
+    },
+    {
+      "title": "Esrefs Dream",
+      "slug": "esrefs-dream",
+      "year": 2025,
+      "tmdbId": 289789,
+      "episodes": 10,
+      "genres": [
+        "drama"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
+      "char": 5.5,
+      "world": 5.5,
+      "cine": 5.5,
+      "spect": 4,
+      "conc": 5,
+      "drive": 5.5,
+      "resol": 5,
+      "final": 5.02,
+      "locked": false,
+      "rank": 448
+    },
+    {
       "title": "Pluribus",
       "slug": "pluribus",
       "year": 2025,
@@ -13201,7 +13245,52 @@
       "resol": 4.5,
       "final": 4.97,
       "locked": false,
-      "rank": 447
+      "rank": 449
+    },
+    {
+      "title": "The Art of Sarah",
+      "slug": "the-art-of-sarah",
+      "year": 2025,
+      "tmdbId": 307327,
+      "episodes": 8,
+      "genres": [
+        "drama"
+      ],
+      "status": "Returning Series",
+      "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
+      "char": 5.5,
+      "world": 5.5,
+      "cine": 5.5,
+      "spect": 4,
+      "conc": 5,
+      "drive": 5.5,
+      "resol": 4.5,
+      "final": 4.97,
+      "locked": false,
+      "rank": 450
+    },
+    {
+      "title": "Speed and Love",
+      "slug": "speed-and-love",
+      "year": 2025,
+      "tmdbId": 289456,
+      "episodes": 12,
+      "genres": [
+        "drama",
+        "romance"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
+      "char": 5.5,
+      "world": 5,
+      "cine": 5.5,
+      "spect": 4,
+      "conc": 5,
+      "drive": 6,
+      "resol": 5,
+      "final": 4.96,
+      "locked": false,
+      "rank": 451
     }
   ]
 }
