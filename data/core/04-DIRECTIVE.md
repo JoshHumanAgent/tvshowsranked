@@ -327,6 +327,57 @@ console.log(missing.length, 'shows missing images');
 
 ---
 
+## ⚠️ SERIALIZED VS EPISODIC (CRITICAL DISTINCTION)
+
+**TVShowsRanked is for SERIALIZED NARRATIVE DRAMAS ONLY.**
+
+**Serialized (INCLUDE):**
+- Story continues episode to episode, season to season
+- Each episode builds on the last
+- Character arcs span the entire series
+- Examples: Breaking Bad, The Wire, Game of Thrones, Succession, Better Call Saul
+
+**Episodic (EXCLUDE):**
+- Reset button each episode
+- "Patient/case/problem of the week" structure
+- Self-contained stories with minimal arc progression
+- Examples: House, Law & Order, CSI, NCIS, The West Wing
+
+**Why this matters:**
+A show like House may be brilliant television, but it's a procedural drama—not a serialized narrative. It doesn't belong in a ranking of shows where story progression is the primary metric.
+
+**Episodic shows currently in rankings (TO BE REVIEWED):**
+- House — Medical procedural
+- The West Wing — Political procedural with some serialization
+- Law & Order, CSI, NCIS — Pure procedurals
+- Medical dramas (Grey's Anatomy) — Varies, need case-by-case review
+
+**Action required:**
+1. Audit current rankings for episodic/procedural shows
+2. Flag for removal or downranking
+3. Move to separate "Procedural Hall of Fame" (future feature)
+
+---
+
+## ⚠️ REGIONAL SCOPE (Updated 2026-02-25)
+
+**INCLUDED:**
+- ✅ Western productions (USA, UK, Canada, Australia, NZ)
+- ✅ European productions (Spain, France, Germany, Scandinavia, etc.)
+- ✅ Korean dramas (Goblin, Squid Game, Crash Landing on You, etc.)
+- ✅ Japanese productions (Shogun, Alice in Borderland, etc.)
+- ✅ Western productions filmed anywhere (Narcos, etc.)
+
+**EXCLUDED:**
+- ❌ Indian dramas (archived separately in `archived-indian.json`)
+- ❌ Chinese/Taiwanese dramas (if any found)
+- ❌ Thai/Philippine/other Southeast Asian (if any found)
+
+**Archive files:**
+- `archived-indian.json` — Indian dramas preserved for potential future use
+
+---
+
 ## ⚠️ ANIME/ANIMATION EXCLUSION
 
 **Anime and animation are a SEPARATE CATEGORY. Do not add to drama pool.**
