@@ -1,7 +1,7 @@
 ﻿{
   "meta": {
-    "generated": "2026-02-24T06:35:37.461Z",
-    "total": 391,
+    "generated": "2026-02-24T06:37:46.839Z",
+    "total": 392,
     "lockedCount": 96,
     "description": "All ranked shows, sorted by weighted score. Shows with locked=true are sacred - never re-rank without explicit approval."
   },
@@ -13330,6 +13330,31 @@
       "rank": 390
     },
     {
+      "title": "Can This Love Be Translated?",
+      "slug": "can-this-love-be-translated",
+      "year": 2026,
+      "tmdbId": 229891,
+      "episodes": 12,
+      "genres": [
+        "drama",
+        "romance",
+        "comedy"
+      ],
+      "status": "In Production",
+      "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 6.5,
+      "world": 6,
+      "cine": 6.5,
+      "spect": 4,
+      "conc": 5.5,
+      "drive": 6,
+      "resol": 5,
+      "final": 5.51,
+      "locked": false,
+      "rank": 391
+    },
+    {
       "title": "Chicago Justice",
       "slug": "chicago-justice",
       "year": 2017,
@@ -13352,7 +13377,7 @@
       "resol": 4,
       "final": 5.23,
       "locked": false,
-      "rank": 391
+      "rank": 392
     }
   ]
 }
