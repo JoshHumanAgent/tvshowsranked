@@ -1,7 +1,7 @@
-﻿{
+{
   "meta": {
-    "generated": "2026-02-24T09:35:31.963Z",
-    "total": 451,
+    "generated": "2026-02-24T11:29:36.111Z",
+    "total": 454,
     "source": "Dynamic Rank Engine - Master Export",
     "adminExport": true
   },
@@ -9093,6 +9093,39 @@
     },
     {
       "rank": 295,
+      "slug": "when-the-phone-rings",
+      "title": "When the Phone Rings",
+      "year": 2024,
+      "month": 11,
+      "genres": [
+        "drama",
+        "mystery",
+        "crime"
+      ],
+      "final": 7,
+      "tmdbId": 253905,
+      "char": 7.5,
+      "world": 6.5,
+      "cine": 6,
+      "spect": 4,
+      "conc": 7,
+      "drive": 8,
+      "resol": 7,
+      "episodes": 12,
+      "locked": false,
+      "poster": "https://image.tmdb.org/t/p/w500/glWP5Y7CVeqrOjJpLckQjuLFjQJ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/2vtI9xzD6qpDzY9m8kV67QY0qfM.jpg",
+      "streaming": {
+        "us": [
+          "Netflix"
+        ],
+        "uk": [
+          "Netflix"
+        ]
+      }
+    },
+    {
+      "rank": 296,
       "slug": "the-blacklist",
       "title": "The Blacklist",
       "year": 2013,
@@ -9117,7 +9150,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 296,
+      "rank": 297,
       "slug": "big-little-lies",
       "title": "Big Little Lies",
       "year": 2017,
@@ -9148,7 +9181,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/8Wo2Pqjxn7Xmd7p2dxRMIJtyMV7.jpg"
     },
     {
-      "rank": 297,
+      "rank": 298,
       "slug": "glitch",
       "title": "Glitch",
       "year": 2015,
@@ -9180,7 +9213,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/soIancCX0rpvB2STEvJAyFzGUBu.jpg"
     },
     {
-      "rank": 298,
+      "rank": 299,
       "slug": "happy-valley",
       "title": "Happy Valley",
       "year": 2014,
@@ -9214,7 +9247,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/cNrfVxCSspILxvU3na2Tv8pUOkI.jpg"
     },
     {
-      "rank": 299,
+      "rank": 300,
       "slug": "stay-close",
       "title": "Stay Close",
       "year": 2021,
@@ -9246,7 +9279,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/aJuzMo6v3xB62BHWTB0c2YB7h8Z.jpg"
     },
     {
-      "rank": 300,
+      "rank": 301,
       "slug": "the-boy-s-word-blood-on-the-asphalt",
       "title": "The Boy's Word: Blood on the Asphalt",
       "year": 2023,
@@ -9270,7 +9303,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 301,
+      "rank": 302,
       "slug": "looking",
       "title": "Looking",
       "year": 2014,
@@ -9301,7 +9334,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/yRY2gTr32YjaOxNNHClOfo7u6qP.jpg"
     },
     {
-      "rank": 302,
+      "rank": 303,
       "slug": "nikita-2010",
       "title": "Nikita",
       "year": 2010,
@@ -9326,7 +9359,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 303,
+      "rank": 304,
       "slug": "rubicon",
       "title": "Rubicon",
       "year": 2010,
@@ -9358,7 +9391,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/kW5sUszUWpaj0M3bfBShFGqQpex.jpg"
     },
     {
-      "rank": 304,
+      "rank": 305,
       "slug": "the-new-look",
       "title": "The New Look",
       "year": 2024,
@@ -9389,7 +9422,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/maeYVcecFyMcvOf3GISqGodgTXG.jpg"
     },
     {
-      "rank": 305,
+      "rank": 306,
       "slug": "misfits",
       "title": "Misfits",
       "year": 2009,
@@ -9420,7 +9453,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/y5oDHhdNng3ff3KQzcX6qpzBuMU.jpg"
     },
     {
-      "rank": 306,
+      "rank": 307,
       "slug": "defending-jacob",
       "title": "Defending Jacob",
       "year": 2020,
@@ -9452,7 +9485,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/3dV7pWAdwIPKR2lMIACMfObXdgK.jpg"
     },
     {
-      "rank": 307,
+      "rank": 308,
       "slug": "the-comeback",
       "title": "The Comeback",
       "year": 2005,
@@ -9483,7 +9516,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/fULhMfanUmL06WiEsz3H1NW9h6s.jpg"
     },
     {
-      "rank": 308,
+      "rank": 309,
       "slug": "truth-be-told",
       "title": "Truth Be Told",
       "year": 2019,
@@ -9515,7 +9548,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/bfM2ib0uOULFmc9PflrVYlcDsaZ.jpg"
     },
     {
-      "rank": 309,
+      "rank": 310,
       "slug": "the-sinner",
       "title": "The Sinner",
       "year": 2017,
@@ -9540,7 +9573,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/lVWku9LX2qdJTtAbRzaCDhhWeTK.jpg"
     },
     {
-      "rank": 310,
+      "rank": 311,
       "slug": "annika",
       "title": "Annika",
       "year": 2021,
@@ -9573,7 +9606,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/e9vUuy3y69vfzjuMWPCauhXs8Kq.jpg"
     },
     {
-      "rank": 311,
+      "rank": 312,
       "slug": "behind-her-eyes",
       "title": "Behind Her Eyes",
       "year": 2021,
@@ -9605,7 +9638,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/mGbJ2qmfmlWU9vSTbOExJC14WRW.jpg"
     },
     {
-      "rank": 312,
+      "rank": 313,
       "slug": "enlightened",
       "title": "Enlightened",
       "year": 2011,
@@ -9636,7 +9669,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/8fSUE5rwCivSdGnXaQJkuZ8B87t.jpg"
     },
     {
-      "rank": 313,
+      "rank": 314,
       "slug": "kurulus-osman",
       "title": "Kurulus: Osman",
       "year": 2019,
@@ -9661,7 +9694,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 314,
+      "rank": 315,
       "slug": "safe",
       "title": "Safe",
       "year": 2018,
@@ -9693,7 +9726,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/76vCf5TAoKBi2ZZdZILgg6RCdpj.jpg"
     },
     {
-      "rank": 315,
+      "rank": 316,
       "slug": "vincenzo",
       "title": "Vincenzo",
       "year": 2021,
@@ -9718,7 +9751,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 316,
+      "rank": 317,
       "slug": "black-doves",
       "title": "Black Doves",
       "year": 2024,
@@ -9750,7 +9783,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/hP5pMJfxbY9p72LgEY6j9qGidtE.jpg"
     },
     {
-      "rank": 317,
+      "rank": 318,
       "slug": "moon-knight",
       "title": "Moon Knight",
       "year": 2022,
@@ -9775,7 +9808,7 @@
       "backdrop": null
     },
     {
-      "rank": 318,
+      "rank": 319,
       "slug": "slow-horses",
       "title": "Slow Horses",
       "year": 2022,
@@ -9807,7 +9840,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/bDfboQUb45Cv9MYyVBDZw8M8xSM.jpg"
     },
     {
-      "rank": 319,
+      "rank": 320,
       "slug": "the-fall-of-the-house-of-usher",
       "title": "The Fall of the House of Usher",
       "year": 2023,
@@ -9831,7 +9864,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/4qDlkEAKFb4pgIUbeJMLyHX2Xym.jpg"
     },
     {
-      "rank": 320,
+      "rank": 321,
       "slug": "the-good-bad-mother",
       "title": "The Good Bad Mother",
       "year": 2023,
@@ -9855,7 +9888,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 321,
+      "rank": 322,
       "slug": "sanctuary",
       "title": "Sanctuary",
       "year": 2008,
@@ -9887,7 +9920,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/gTyZ24A6H4YgdYzmJ2VWoYoGTzs.jpg"
     },
     {
-      "rank": 322,
+      "rank": 323,
       "slug": "the-oc",
       "title": "The O.C.",
       "year": 2003,
@@ -9918,7 +9951,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/mMrvQYChkmznJ67OIemwENURe2o.jpg"
     },
     {
-      "rank": 323,
+      "rank": 324,
       "slug": "home-before-dark",
       "title": "Home Before Dark",
       "year": 2020,
@@ -9950,7 +9983,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/mr8wTuLBbF4n6eGd3xHADUufo0c.jpg"
     },
     {
-      "rank": 324,
+      "rank": 325,
       "slug": "moving",
       "title": "Moving",
       "year": 2023,
@@ -9975,7 +10008,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/29jWaRhKtey1efp5G7Fu97NAmzz.jpg"
     },
     {
-      "rank": 325,
+      "rank": 326,
       "slug": "traces",
       "title": "Traces",
       "year": 2019,
@@ -10008,7 +10041,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/bD9vRtuTPgP3OEBFBcLNWg62GiG.jpg"
     },
     {
-      "rank": 326,
+      "rank": 327,
       "slug": "your-honor",
       "title": "Your Honor",
       "year": 2020,
@@ -10041,7 +10074,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/nYxqUQaYGUv3pgMfe9BQ2WtUMQu.jpg"
     },
     {
-      "rank": 327,
+      "rank": 328,
       "slug": "brand-new-cherry-flavor",
       "title": "Brand New Cherry Flavor",
       "year": 2021,
@@ -10066,7 +10099,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 328,
+      "rank": 329,
       "slug": "counterpart",
       "title": "Counterpart",
       "year": 2017,
@@ -10091,7 +10124,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/z2Q4lX7E76BuZMOOZrq4trz91j8.jpg"
     },
     {
-      "rank": 329,
+      "rank": 330,
       "slug": "crazyhead",
       "title": "Crazyhead",
       "year": 2016,
@@ -10123,7 +10156,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/asyFsuedj8sWLONHrt6f3ZZxhlo.jpg"
     },
     {
-      "rank": 330,
+      "rank": 331,
       "slug": "gracepoint",
       "title": "Gracepoint",
       "year": 2014,
@@ -10155,7 +10188,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/vo6HAMvBi53yRlpvxD4DwReIuhd.jpg"
     },
     {
-      "rank": 331,
+      "rank": 332,
       "slug": "mr-queen",
       "title": "Mr. Queen",
       "year": 2020,
@@ -10180,7 +10213,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 332,
+      "rank": 333,
       "slug": "queer-eye",
       "title": "Queer Eye (2018)",
       "year": 2018,
@@ -10211,7 +10244,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/7pCQzxyOOB4lyUuffvVzWOAqlYJ.jpg"
     },
     {
-      "rank": 333,
+      "rank": 334,
       "slug": "the-fall",
       "title": "The Fall",
       "year": 2013,
@@ -10235,7 +10268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/vunaJ5k1cG8T4ROUGDZ05IhNXkP.jpg"
     },
     {
-      "rank": 334,
+      "rank": 335,
       "slug": "agent-carter",
       "title": "Marvel's Agent Carter",
       "year": 2015,
@@ -10260,7 +10293,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 335,
+      "rank": 336,
       "slug": "the-offer",
       "title": "The Offer",
       "year": 2022,
@@ -10283,7 +10316,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/HymZHeOUxDT7QWCgdRsYVcdK7I.jpg"
     },
     {
-      "rank": 336,
+      "rank": 337,
       "slug": "dawsons-creek",
       "title": "Dawsons Creek",
       "year": 1998,
@@ -10315,7 +10348,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/o71YkJOb26pHlyVXf2Yjjat0Zjd.jpg"
     },
     {
-      "rank": 337,
+      "rank": 338,
       "slug": "superman-lois",
       "title": "Superman & Lois",
       "year": 2021,
@@ -10340,7 +10373,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 338,
+      "rank": 339,
       "slug": "tulsa-king",
       "title": "Tulsa King",
       "year": 2022,
@@ -10364,7 +10397,41 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 339,
+      "slug": "paradise-2025",
+      "title": "Paradise",
+      "year": 2025,
+      "month": 1,
+      "genres": [
+        "drama",
+        "crime",
+        "thriller"
+      ],
+      "final": 6.8,
+      "tmdbId": 245927,
+      "char": 7,
+      "world": 6.5,
+      "cine": 6.5,
+      "spect": 5,
+      "conc": 7,
+      "drive": 7,
+      "resol": 6,
+      "episodes": 8,
+      "locked": false,
+      "poster": "https://image.tmdb.org/t/p/w500/5QsLvWh8J1mXl1W05wNJknMmhzR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/5QsLvWh8J1mXl1W05wNJknMmhzR.jpg",
+      "streaming": {
+        "us": [
+          "Hulu"
+        ],
+        "uk": [
+          "Disney+"
+        ]
+      },
+      "notes": "Ongoing - provisional score capped per rules",
+      "rank": 340
+    },
+    {
+      "rank": 341,
       "slug": "archive-81",
       "title": "Archive 81",
       "year": 2022,
@@ -10389,7 +10456,7 @@
       "backdrop": null
     },
     {
-      "rank": 340,
+      "rank": 342,
       "slug": "castle-rock",
       "title": "Castle Rock",
       "year": 2018,
@@ -10414,7 +10481,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/gNIdzV3qWogP4DwVvCf8O9fQSYi.jpg"
     },
     {
-      "rank": 341,
+      "rank": 343,
       "slug": "gyeongseong-creature",
       "title": "Gyeongseong Creature",
       "year": 2023,
@@ -10439,7 +10506,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/peVe0NQNdZMXwtTohnv8iwJQb2d.jpg"
     },
     {
-      "rank": 342,
+      "rank": 344,
       "slug": "dickinson",
       "title": "Dickinson",
       "year": 2019,
@@ -10463,7 +10530,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 343,
+      "rank": 345,
       "slug": "peep-show",
       "title": "Peep Show",
       "year": 2003,
@@ -10494,7 +10561,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/nO7EzksrBzlNpAg5rgv8HzaBIkx.jpg"
     },
     {
-      "rank": 344,
+      "rank": 346,
       "slug": "snowdrop",
       "title": "Snowdrop",
       "year": 2021,
@@ -10518,7 +10585,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 345,
+      "rank": 347,
       "slug": "party-of-five",
       "title": "Party of Five",
       "year": 1994,
@@ -10549,7 +10616,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/tMRdEsMg9MyXAkcufK9YJEeIaNW.jpg"
     },
     {
-      "rank": 346,
+      "rank": 348,
       "slug": "felicity",
       "title": "Felicity",
       "year": 1998,
@@ -10580,7 +10647,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/4KUMCCjykGqgzeUpubxlwABm6ok.jpg"
     },
     {
-      "rank": 347,
+      "rank": 349,
       "slug": "young-wallander",
       "title": "Young Wallander",
       "year": 2020,
@@ -10612,7 +10679,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/yOcNDSOVgImo0uBEPVReE9dLMO9.jpg"
     },
     {
-      "rank": 348,
+      "rank": 350,
       "slug": "this-is-going-to-hurt",
       "title": "This Is Going to Hurt",
       "year": 2022,
@@ -10636,7 +10703,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/icgOrvpT7ANec2rBdzZQPwB7Ykj.jpg"
     },
     {
-      "rank": 349,
+      "rank": 351,
       "slug": "the-office-us",
       "title": "The Office US",
       "year": 2005,
@@ -10668,7 +10735,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg"
     },
     {
-      "rank": 350,
+      "rank": 352,
       "slug": "extrapolations",
       "title": "Extrapolations",
       "year": 2023,
@@ -10700,7 +10767,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/cSlwoQCSgYryqC9yQLdtFpuDnfR.jpg"
     },
     {
-      "rank": 351,
+      "rank": 353,
       "slug": "lioness",
       "title": "Lioness",
       "year": 2023,
@@ -10725,7 +10792,7 @@
       "backdrop": null
     },
     {
-      "rank": 352,
+      "rank": 354,
       "slug": "presumed-innocent-2024",
       "title": "Presumed Innocent (2024)",
       "year": 2024,
@@ -10757,7 +10824,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/dzsg5Akwfw1lsVoaPmvLcLSrKkh.jpg"
     },
     {
-      "rank": 353,
+      "rank": 355,
       "slug": "the-long-season",
       "title": "The Long Season",
       "year": 2023,
@@ -10782,7 +10849,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 354,
+      "rank": 356,
       "slug": "the-punisher",
       "title": "The Punisher",
       "year": 2017,
@@ -10807,7 +10874,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/jBGjbSDRxOEudW9rmQbWDzJUKq9.jpg"
     },
     {
-      "rank": 355,
+      "rank": 357,
       "slug": "all-of-us-are-dead",
       "title": "All of Us Are Dead",
       "year": 2022,
@@ -10832,7 +10899,7 @@
       "backdrop": null
     },
     {
-      "rank": 356,
+      "rank": 358,
       "slug": "one-tree-hill",
       "title": "One Tree Hill",
       "year": 2003,
@@ -10863,7 +10930,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/gvEisYtZ0iBMjnO3zqFU2oM26oM.jpg"
     },
     {
-      "rank": 357,
+      "rank": 359,
       "slug": "twinkling-watermelon",
       "title": "Twinkling Watermelon",
       "year": 2023,
@@ -10887,7 +10954,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 358,
+      "rank": 360,
       "slug": "boss",
       "title": "Boss",
       "year": 2011,
@@ -10916,7 +10983,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/sV20Sh8FvK3MKTujag3eGK8Gsxh.jpg"
     },
     {
-      "rank": 359,
+      "rank": 361,
       "slug": "revolution-9-2024",
       "title": "Revolution 9",
       "year": 2024,
@@ -10948,7 +11015,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/lKrUlNSpTmFQd82lt4wwrTB3mR2.jpg"
     },
     {
-      "rank": 360,
+      "rank": 362,
       "slug": "surface",
       "title": "Surface",
       "year": 2022,
@@ -10980,7 +11047,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/wg4OsmDDA1VxUc4oqiWCPct6IKs.jpg"
     },
     {
-      "rank": 361,
+      "rank": 363,
       "slug": "the-changeling",
       "title": "The Changeling",
       "year": 2023,
@@ -11032,10 +11099,10 @@
       "resol": 7,
       "final": 6.63,
       "locked": false,
-      "rank": 362
+      "rank": 364
     },
     {
-      "rank": 363,
+      "rank": 365,
       "slug": "echo-3",
       "title": "Echo 3",
       "year": 2022,
@@ -11067,7 +11134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/hTGqvVsvvCQGMOKUfNZ6n371QHG.jpg"
     },
     {
-      "rank": 364,
+      "rank": 366,
       "slug": "shanty-town",
       "title": "Shanty Town",
       "year": 2023,
@@ -11091,7 +11158,7 @@
       "backdrop": null
     },
     {
-      "rank": 365,
+      "rank": 367,
       "slug": "let-the-right-one-in",
       "title": "Let the Right One In",
       "year": 2022,
@@ -11124,7 +11191,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/iS7ZhboZegUrUcbFeaoZ9ZSBFGQ.jpg"
     },
     {
-      "rank": 366,
+      "rank": 368,
       "slug": "my-so-called-life",
       "title": "My So-Called Life",
       "year": 1994,
@@ -11156,7 +11223,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/tqubNA9ZtI6CW64JXhqXw9fAgPT.jpg"
     },
     {
-      "rank": 367,
+      "rank": 369,
       "slug": "navillera",
       "title": "Navillera",
       "year": 2021,
@@ -11179,7 +11246,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 368,
+      "rank": 370,
       "slug": "the-office-uk",
       "title": "The Office (UK)",
       "year": 2001,
@@ -11211,7 +11278,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/k1UpU2cfa4PbDUBnJtr43TpdNBg.jpg"
     },
     {
-      "rank": 369,
+      "rank": 371,
       "slug": "resurrection-2014",
       "title": "Resurrection",
       "year": 2014,
@@ -11243,7 +11310,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/nnunKGQjGusYsCaT7mTTlfexnw4.jpg"
     },
     {
-      "rank": 370,
+      "rank": 372,
       "slug": "law-and-order-svu",
       "title": "Law & Order: SVU",
       "year": 1999,
@@ -11268,7 +11335,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/1jCJD8A9zLxLZDuU8D5jKELeNUf.jpg"
     },
     {
-      "rank": 371,
+      "rank": 373,
       "slug": "high-maintenance",
       "title": "High Maintenance",
       "year": 2016,
@@ -11300,7 +11367,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/2HXCNnNRDPaM6PFGZOOyNs4nPVL.jpg"
     },
     {
-      "rank": 372,
+      "rank": 374,
       "slug": "the-empress",
       "title": "The Empress",
       "year": 2022,
@@ -11324,7 +11391,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/lnPf1rCmSgcowbhMPH4M1avSApm.jpg"
     },
     {
-      "rank": 373,
+      "rank": 375,
       "slug": "the-judge-from-hell",
       "title": "The Judge from Hell",
       "year": 2024,
@@ -11350,7 +11417,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 374,
+      "rank": 376,
       "slug": "the-peripheral",
       "title": "The Peripheral",
       "year": 2022,
@@ -11374,7 +11441,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/hIZFG7MK4leU4axRFKJWqrjhmxZ.jpg"
     },
     {
-      "rank": 375,
+      "rank": 377,
       "slug": "the-trauma-code-heroes-on-call",
       "title": "The Trauma Code: Heroes on Call",
       "year": 2025,
@@ -11398,7 +11465,7 @@
       "backdrop": null
     },
     {
-      "rank": 376,
+      "rank": 378,
       "slug": "berlin-station",
       "title": "Berlin Station",
       "year": 2016,
@@ -11422,7 +11489,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/nEAnoMHXb1qeePbaxE1Kmv7gvh2.jpg"
     },
     {
-      "rank": 377,
+      "rank": 379,
       "slug": "luke-cage",
       "title": "Marvel's Luke Cage",
       "year": 2016,
@@ -11447,7 +11514,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 378,
+      "rank": 380,
       "slug": "the-diplomat",
       "title": "The Diplomat",
       "year": 2023,
@@ -11471,7 +11538,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/v6f9FUDDQfGIv8MLRQwlL0zvRjI.jpg"
     },
     {
-      "rank": 379,
+      "rank": 381,
       "slug": "the-responder",
       "title": "The Responder",
       "year": 2022,
@@ -11495,7 +11562,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/9TEWo6dVn9cHGuegR2gXkf3J7jI.jpg"
     },
     {
-      "rank": 380,
+      "rank": 382,
       "slug": "fear-the-walking-dead",
       "title": "Fear the Walking Dead",
       "year": 2015,
@@ -11520,7 +11587,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 381,
+      "rank": 383,
       "slug": "light-shop",
       "title": "Light Shop",
       "year": 2024,
@@ -11544,7 +11611,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 382,
+      "rank": 384,
       "slug": "mcmafia",
       "title": "McMafia",
       "year": 2018,
@@ -11569,7 +11636,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/8uJPiVNMjjVUHgnCb3de1nSv0L5.jpg"
     },
     {
-      "rank": 383,
+      "rank": 385,
       "slug": "wecrashed",
       "title": "WeCrashed",
       "year": 2022,
@@ -11592,7 +11659,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/aQfJ1v9M8mvSSIFydpPd1qeDOV0.jpg"
     },
     {
-      "rank": 384,
+      "rank": 386,
       "slug": "togetherness",
       "title": "Togetherness",
       "year": 2015,
@@ -11642,10 +11709,10 @@
       "resol": 7,
       "final": 6.43,
       "locked": false,
-      "rank": 385
+      "rank": 387
     },
     {
-      "rank": 386,
+      "rank": 388,
       "slug": "gen-v",
       "title": "Gen V",
       "year": 2023,
@@ -11669,7 +11736,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/tldMHeR7UnihV5ffrxxM8cDhbtT.jpg"
     },
     {
-      "rank": 387,
+      "rank": 389,
       "slug": "marry-my-husband",
       "title": "Marry My Husband",
       "year": 2024,
@@ -11694,7 +11761,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 388,
+      "rank": 390,
       "slug": "dear-edward",
       "title": "Dear Edward",
       "year": 2023,
@@ -11724,7 +11791,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/4HfS2iCJ8CviAkYftPijXCgF0Jz.jpg"
     },
     {
-      "rank": 389,
+      "rank": 391,
       "slug": "friendly-rivalry",
       "title": "Friendly Rivalry",
       "year": 2025,
@@ -11748,7 +11815,7 @@
       "backdrop": null
     },
     {
-      "rank": 390,
+      "rank": 392,
       "slug": "like-water-for-chocolate",
       "title": "Like Water for Chocolate",
       "year": 2024,
@@ -11772,7 +11839,7 @@
       "backdrop": null
     },
     {
-      "rank": 391,
+      "rank": 393,
       "slug": "blue-bloods",
       "title": "Blue Bloods",
       "year": 2010,
@@ -11796,7 +11863,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 392,
+      "rank": 394,
       "slug": "mr-show",
       "title": "Mr. Show",
       "year": 1995,
@@ -11827,7 +11894,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/A2qdFRq9oJDC5E7fbgSS4POUMDF.jpg"
     },
     {
-      "rank": 393,
+      "rank": 395,
       "slug": "ahsoka",
       "title": "Ahsoka",
       "year": 2023,
@@ -11852,7 +11919,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/31GIcUUcdQPRkVtmdqgQWJMhXj1.jpg"
     },
     {
-      "rank": 394,
+      "rank": 396,
       "slug": "obi-wan-kenobi",
       "title": "Obi-Wan Kenobi",
       "year": 2022,
@@ -11877,7 +11944,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/p3Jmm6d1ShUrJEuU3DYD2K19c66.jpg"
     },
     {
-      "rank": 395,
+      "rank": 397,
       "slug": "the-flight-attendant",
       "title": "The Flight Attendant",
       "year": 2020,
@@ -11922,10 +11989,10 @@
       "resol": 6.5,
       "final": 6.33,
       "locked": false,
-      "rank": 396
+      "rank": 398
     },
     {
-      "rank": 397,
+      "rank": 399,
       "slug": "cross-2024",
       "title": "Cross",
       "year": 2024,
@@ -11950,7 +12017,7 @@
       "backdrop": null
     },
     {
-      "rank": 398,
+      "rank": 400,
       "slug": "good-boy-2025",
       "title": "Good Boy",
       "year": 2025,
@@ -11975,7 +12042,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 399,
+      "rank": 401,
       "slug": "ncis-los-angeles",
       "title": "NCIS: Los Angeles",
       "year": 2009,
@@ -12000,7 +12067,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 400,
+      "rank": 402,
       "slug": "ms-marvel",
       "title": "Ms. Marvel",
       "year": 2022,
@@ -12025,7 +12092,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/mfcLUWASJghU8MTNK38eYktfE83.jpg"
     },
     {
-      "rank": 401,
+      "rank": 403,
       "slug": "last-thing-he-told-me",
       "title": "The Last Thing He Told Me",
       "year": 2023,
@@ -12057,7 +12124,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/r5RoeEWuslP6svlZsHsCKo7TZs7.jpg"
     },
     {
-      "rank": 402,
+      "rank": 404,
       "slug": "the-old-man",
       "title": "The Old Man",
       "year": 2022,
@@ -12081,7 +12148,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/x5VGLsI5Hgc1UgbQUCYIS6SIfYf.jpg"
     },
     {
-      "rank": 403,
+      "rank": 405,
       "slug": "this-country",
       "title": "This Country",
       "year": 2017,
@@ -12112,7 +12179,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/2U9KE5jq2qwu8DPPvF65Wdim7y9.jpg"
     },
     {
-      "rank": 404,
+      "rank": 406,
       "slug": "frankie-boyle",
       "title": "Frankie Boyles New World Order",
       "year": 2020,
@@ -12144,7 +12211,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/9izsJTGZx8y63HmtsnxjduBcft1.jpg"
     },
     {
-      "rank": 405,
+      "rank": 407,
       "slug": "law-order-organized-crime",
       "title": "Law & Order: Organized Crime",
       "year": 2021,
@@ -12168,7 +12235,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 406,
+      "rank": 408,
       "slug": "tell-me-you-love-me",
       "title": "Tell Me You Love Me",
       "year": 2007,
@@ -12199,7 +12266,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/rowPlHjX7RvcKQD6GYwskF9R82c.jpg"
     },
     {
-      "rank": 407,
+      "rank": 409,
       "slug": "the-inbetweeners",
       "title": "The Inbetweeners",
       "year": 2008,
@@ -12230,7 +12297,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/zOnLMRD3PIhwO5KZmWMVEnLokMo.jpg"
     },
     {
-      "rank": 408,
+      "rank": 410,
       "slug": "the-man-who-fell-to-earth",
       "title": "The Man Who Fell to Earth",
       "year": 2022,
@@ -12275,10 +12342,10 @@
       "resol": 5.5,
       "final": 6.21,
       "locked": false,
-      "rank": 409
+      "rank": 411
     },
     {
-      "rank": 410,
+      "rank": 412,
       "slug": "when-life-gives-you-tangerines",
       "title": "When Life Gives You Tangerines",
       "year": 2025,
@@ -12302,7 +12369,40 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 411,
+      "slug": "in-the-mud",
+      "title": "In the Mud",
+      "year": 2025,
+      "month": 8,
+      "genres": [
+        "drama",
+        "crime"
+      ],
+      "final": 6.2,
+      "tmdbId": 258462,
+      "char": 6.5,
+      "world": 6,
+      "cine": 6,
+      "spect": 4,
+      "conc": 6.5,
+      "drive": 6.5,
+      "resol": 6,
+      "episodes": 8,
+      "locked": false,
+      "poster": "https://image.tmdb.org/t/p/w500/bxPELhUZNgbFUN31EZTBC99wOHD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/bxPELhUZNgbFUN31EZTBC99wOHD.jpg",
+      "streaming": {
+        "us": [
+          "Netflix"
+        ],
+        "uk": [
+          "Netflix"
+        ]
+      },
+      "notes": "Spanish crime drama - solid but not standout",
+      "rank": 413
+    },
+    {
+      "rank": 414,
       "slug": "lovely-runner",
       "title": "Lovely Runner",
       "year": 2024,
@@ -12327,7 +12427,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 412,
+      "rank": 415,
       "slug": "the-lincoln-lawyer",
       "title": "The Lincoln Lawyer",
       "year": 2022,
@@ -12373,10 +12473,10 @@
       "resol": 5.5,
       "final": 6.16,
       "locked": false,
-      "rank": 413
+      "rank": 416
     },
     {
-      "rank": 414,
+      "rank": 417,
       "slug": "bon-appetit-your-majesty",
       "title": "Bon Appétit, Your Majesty",
       "year": 2025,
@@ -12400,7 +12500,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 415,
+      "rank": 418,
       "slug": "csi-ny",
       "title": "CSI: NY",
       "year": 2004,
@@ -12425,7 +12525,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 416,
+      "rank": 419,
       "slug": "my-demon",
       "title": "My Demon",
       "year": 2023,
@@ -12450,7 +12550,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 417,
+      "rank": 420,
       "slug": "the-witcher-blood-origin",
       "title": "The Witcher: Blood Origin",
       "year": 2022,
@@ -12475,7 +12575,7 @@
       "backdrop": null
     },
     {
-      "rank": 418,
+      "rank": 421,
       "slug": "the-loyal-pin",
       "title": "The Loyal Pin",
       "year": 2024,
@@ -12519,10 +12619,10 @@
       "resol": 6,
       "final": 6.09,
       "locked": false,
-      "rank": 419
+      "rank": 422
     },
     {
-      "rank": 420,
+      "rank": 423,
       "slug": "golden-boy-2022",
       "title": "Golden Boy",
       "year": 2022,
@@ -12545,7 +12645,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 421,
+      "rank": 424,
       "slug": "the-pendragon-cycle",
       "title": "The Pendragon Cycle: Rise of the Merlin",
       "year": 2026,
@@ -12569,7 +12669,7 @@
       "backdrop": null
     },
     {
-      "rank": 422,
+      "rank": 425,
       "slug": "csi-miami",
       "title": "CSI: Miami",
       "year": 2002,
@@ -12594,7 +12694,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 423,
+      "rank": 426,
       "slug": "hidden-love",
       "title": "Hidden Love",
       "year": 2023,
@@ -12639,7 +12739,7 @@
       "resol": 6,
       "final": 6.03,
       "locked": false,
-      "rank": 424
+      "rank": 427
     },
     {
       "title": "Midsomer Murders",
@@ -12663,10 +12763,10 @@
       "resol": 6,
       "final": 6.03,
       "locked": false,
-      "rank": 425
+      "rank": 428
     },
     {
-      "rank": 426,
+      "rank": 429,
       "slug": "head-over-heels-2025",
       "title": "Head Over Heels",
       "year": 2025,
@@ -12710,10 +12810,10 @@
       "resol": 6.5,
       "final": 6,
       "locked": false,
-      "rank": 427
+      "rank": 430
     },
     {
-      "rank": 428,
+      "rank": 431,
       "slug": "iron-fist",
       "title": "Marvel's Iron Fist",
       "year": 2017,
@@ -12758,10 +12858,10 @@
       "resol": 6,
       "final": 5.98,
       "locked": false,
-      "rank": 429
+      "rank": 432
     },
     {
-      "rank": 430,
+      "rank": 433,
       "slug": "memory-of-a-killer",
       "title": "Memory of a Killer",
       "year": 2026,
@@ -12805,10 +12905,10 @@
       "resol": 6,
       "final": 5.91,
       "locked": false,
-      "rank": 431
+      "rank": 434
     },
     {
-      "rank": 432,
+      "rank": 435,
       "slug": "undeclared",
       "title": "Undeclared",
       "year": 2001,
@@ -12839,7 +12939,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/uinrziSwEmS6s8VvGBad5sed7bF.jpg"
     },
     {
-      "rank": 433,
+      "rank": 436,
       "slug": "from-dusk-till-dawn-the-series",
       "title": "From Dusk Till Dawn: The Series",
       "year": 2014,
@@ -12885,10 +12985,10 @@
       "resol": 6,
       "final": 5.84,
       "locked": false,
-      "rank": 434
+      "rank": 437
     },
     {
-      "rank": 435,
+      "rank": 438,
       "slug": "heated-rivalry",
       "title": "Heated Rivalry",
       "year": 2025,
@@ -12911,7 +13011,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 436,
+      "rank": 439,
       "slug": "no-gain-no-love",
       "title": "No Gain No Love",
       "year": 2024,
@@ -12936,7 +13036,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 437,
+      "rank": 440,
       "slug": "no-one-will-miss-us",
       "title": "No One Will Miss Us",
       "year": 2024,
@@ -12960,7 +13060,7 @@
       "backdrop": null
     },
     {
-      "rank": 438,
+      "rank": 441,
       "slug": "the-i-land",
       "title": "The I-Land",
       "year": 2019,
@@ -12992,7 +13092,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/jHF1ys6WjpKpgj3JPTCP65pN96v.jpg"
     },
     {
-      "rank": 439,
+      "rank": 442,
       "slug": "prime-suspect-us",
       "title": "Prime Suspect (US)",
       "year": 2011,
@@ -13016,7 +13116,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 440,
+      "rank": 443,
       "slug": "high-school-return-of-a-gangster",
       "title": "High School Return of a Gangster",
       "year": 2024,
@@ -13041,7 +13141,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
-      "rank": 441,
+      "rank": 444,
       "slug": "dinastia-casillas",
       "title": "Dinastía Casillas",
       "year": 2025,
@@ -13085,10 +13185,10 @@
       "resol": 5.5,
       "final": 5.53,
       "locked": false,
-      "rank": 442
+      "rank": 445
     },
     {
-      "rank": 443,
+      "rank": 446,
       "slug": "can-this-love-be-translated",
       "title": "Can This Love Be Translated?",
       "year": 2026,
@@ -13132,10 +13232,10 @@
       "resol": 5,
       "final": 5.33,
       "locked": false,
-      "rank": 444
+      "rank": 447
     },
     {
-      "rank": 445,
+      "rank": 448,
       "slug": "chicago-justice",
       "title": "Chicago Justice",
       "year": 2017,
@@ -13179,7 +13279,7 @@
       "resol": 5,
       "final": 5.09,
       "locked": false,
-      "rank": 446
+      "rank": 449
     },
     {
       "title": "Museum of Innocence",
@@ -13201,7 +13301,7 @@
       "resol": 4.5,
       "final": 5.04,
       "locked": false,
-      "rank": 447
+      "rank": 450
     },
     {
       "title": "Esrefs Dream",
@@ -13223,7 +13323,7 @@
       "resol": 5,
       "final": 5.02,
       "locked": false,
-      "rank": 448
+      "rank": 451
     },
     {
       "title": "Pluribus",
@@ -13245,7 +13345,7 @@
       "resol": 4.5,
       "final": 4.97,
       "locked": false,
-      "rank": 449
+      "rank": 452
     },
     {
       "title": "The Art of Sarah",
@@ -13267,7 +13367,7 @@
       "resol": 4.5,
       "final": 4.97,
       "locked": false,
-      "rank": 450
+      "rank": 453
     },
     {
       "title": "Speed and Love",
@@ -13290,7 +13390,7 @@
       "resol": 5,
       "final": 4.96,
       "locked": false,
-      "rank": 451
+      "rank": 454
     }
   ]
 }

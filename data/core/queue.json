@@ -1,6 +1,8 @@
-﻿{
+{
   "meta": {
-    "total": 18
+    "total": 10,
+    "updated": "2026-02-25T00:30:00.000Z",
+    "note": "Scored: When the Phone Rings, Paradise, In the Mud. Rejected anime. Flagged unreleased."
   },
   "candidates": [
     {
@@ -9,7 +11,8 @@
       "year": "2026",
       "vote": 10,
       "count": 1,
-      "tmdbId": 306215
+      "tmdbId": 306215,
+      "status": "insufficient_votes"
     },
     {
       "title": "Takopi's Original Sin",
@@ -17,15 +20,18 @@
       "year": "2025",
       "vote": 8.844,
       "count": 141,
-      "tmdbId": 284445
+      "tmdbId": 284445,
+      "status": "rejected",
+      "reason": "anime"
     },
     {
-      "title": "Bon Appétit, Your Majesty",
-      "slug": "bon-app-tit-your-majesty",
+      "title": "Bon Appetit, Your Majesty",
+      "slug": "bon-appetit-your-majesty",
       "year": "2025",
       "vote": 8.84,
       "count": 194,
-      "tmdbId": 280945
+      "tmdbId": 280945,
+      "status": "pending"
     },
     {
       "title": "Good Boy",
@@ -33,7 +39,9 @@
       "year": "2025",
       "vote": 8.7,
       "count": 140,
-      "tmdbId": 231280
+      "tmdbId": 231280,
+      "status": "duplicate",
+      "notes": "Already in pool at #399"
     },
     {
       "title": "The Fragrant Flower Blooms with Dignity",
@@ -41,7 +49,9 @@
       "year": "2025",
       "vote": 8.652,
       "count": 164,
-      "tmdbId": 271607
+      "tmdbId": 271607,
+      "status": "rejected",
+      "reason": "anime"
     },
     {
       "title": "Hazbin Hotel",
@@ -49,7 +59,9 @@
       "year": "2024",
       "vote": 8.6,
       "count": 1521,
-      "tmdbId": 94954
+      "tmdbId": 94954,
+      "status": "rejected",
+      "reason": "animation"
     },
     {
       "title": "Gachiakuta",
@@ -57,7 +69,9 @@
       "year": "2025",
       "vote": 8.596,
       "count": 213,
-      "tmdbId": 256721
+      "tmdbId": 256721,
+      "status": "rejected",
+      "reason": "anime"
     },
     {
       "title": "The Pendragon Cycle: Rise of the Merlin",
@@ -65,7 +79,8 @@
       "year": "2026",
       "vote": 8.518,
       "count": 28,
-      "tmdbId": 235685
+      "tmdbId": 235685,
+      "status": "insufficient_votes"
     },
     {
       "title": "Dexter: Resurrection",
@@ -73,31 +88,9 @@
       "year": "2025",
       "vote": 8.508,
       "count": 417,
-      "tmdbId": 259909
-    },
-    {
-      "title": "Shōgun",
-      "slug": "sh-gun",
-      "year": "2024",
-      "vote": 8.4,
-      "count": 1635,
-      "tmdbId": 126308
-    },
-    {
-      "title": "When the Phone Rings",
-      "slug": "when-the-phone-rings",
-      "year": "2024",
-      "vote": 8.386,
-      "count": 276,
-      "tmdbId": 253905
-    },
-    {
-      "title": "Dinastía Casillas",
-      "slug": "dinast-a-casillas",
-      "year": "2025",
-      "vote": 8.257,
-      "count": 300,
-      "tmdbId": 302463
+      "tmdbId": 259909,
+      "status": "not_released",
+      "notes": "Airs July 2025 - cannot score"
     },
     {
       "title": "Museum of Innocence",
@@ -105,7 +98,8 @@
       "year": "2026",
       "vote": 7.955,
       "count": 11,
-      "tmdbId": 310239
+      "tmdbId": 310239,
+      "status": "insufficient_votes"
     },
     {
       "title": "The Art of Sarah",
@@ -113,23 +107,8 @@
       "year": "2026",
       "vote": 7.625,
       "count": 24,
-      "tmdbId": 273977
-    },
-    {
-      "title": "Paradise",
-      "slug": "paradise",
-      "year": "2025",
-      "vote": 7.4,
-      "count": 322,
-      "tmdbId": 245927
-    },
-    {
-      "title": "In the Mud",
-      "slug": "in-the-mud",
-      "year": "2025",
-      "vote": 7.353,
-      "count": 112,
-      "tmdbId": 258462
+      "tmdbId": 273977,
+      "status": "insufficient_votes"
     },
     {
       "title": "Speed and Love",
@@ -137,15 +116,17 @@
       "year": "2025",
       "vote": 7.262,
       "count": 21,
-      "tmdbId": 279041
+      "tmdbId": 279041,
+      "status": "insufficient_votes"
     },
     {
       "title": "Esref's Dream",
-      "slug": "esref-s-dream",
+      "slug": "esrefs-dream",
       "year": "2025",
       "vote": 7.2,
       "count": 26,
-      "tmdbId": 283123
+      "tmdbId": 283123,
+      "status": "insufficient_votes"
     }
   ]
 }
