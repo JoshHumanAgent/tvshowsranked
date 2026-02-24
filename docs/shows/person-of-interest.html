@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person of Interest - The Machine Sees Everything | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #2d3748; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #2d3748, #1a202c); color: #48bb78; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; border: 2px solid #48bb78; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #48bb78; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(45,55,72,0.8), rgba(0,0,0,0.9)); border: 3px solid #48bb78; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #48bb78; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #48bb78; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #48bb78; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(72,187,120,0.1); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #48bb78; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #48bb78; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #12</div>
+            <h1>Person of Interest</h1>
+            <p class="subtitle">"You Are Being Watched"</p>
+            <div class="score-badge">
+                <span class="score-value">7.98</span>
+                <span class="score-label">Final Score</span>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2011-2016</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">103</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">CBS</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Jonathan Nolan</div></div>
+        </div>
+
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Person of Interest started as a CBS procedural—a number-of-the-week show about a reclusive billionaire and a former CIA operative preventing crimes before they happened. But Jonathan Nolan was building something far more ambitious: a five-season slow burn about artificial intelligence, surveillance, and what it means to be free.</p>
+            <p>By season 4, it had transformed into something almost unrecognizable—a serialized techno-thriller about an AI war that felt like 24 meets Terminator meets The X-Files. Reese and Finch's relationship evolved from employer-employee to genuine family. The supporting cast—Root, Shaw, Fusco—became essential. Sarah Shahi's Sameen Shaw is one of television's great action heroes.</p>
+            <p>The show predicted our current reality. Mass surveillance, predictive policing, the erosion of privacy in the name of security—Person of Interest explored all of it when it still felt like science fiction. Now it plays like documentary.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8.5</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8.5</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">6.5</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">5</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8.5</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">8</div><div class="dimension-weight">25% weight</div></div>
+            </div>
+            <p style="margin-top:1.5rem"><strong>Conceptual Density (9):</strong> The show's treatment of AI—two competing machines, the ethics of surveillance, the question of whether free will exists when algorithms predict your choices—is shockingly sophisticated for network TV. It makes Westworld look shallow.</p>
+            <p><strong>World Building (8.5):</strong> The Machine and Samaritan feel real. The show's mythology—decima, the relevant numbers, the irrelevant numbers—creates a fully realized universe that grows with each season.</p>
+            <p><strong>Resolution (8):</strong> The final season compressed into 13 episodes, but the ending works. Finch gets his family back. Root becomes the voice of The Machine. Some sacrifices stick.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"The Crossing" (S3E9)</strong> — Carter's death. A gut-punch that redefined the show's stakes. Taraji P. Henson's final performance here is devastating.</p>
+            <p><strong>"If-Then-Else" (S4E11)</strong> — The simulation episode. Shaw plays through the same scenario repeatedly, trying to save everyone. One of TV's best hour of action.</p>
+            <p><strong>"return 0" (S5E13)</strong> — The series finale. A proper ending that honors every character. The Machine's final monologue gives us hope.</p>
+        </div>
+    </div>
+</body>
+</html>
