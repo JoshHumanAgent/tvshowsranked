@@ -365,16 +365,20 @@ A show like House may be brilliant television, but it's a procedural drama—not
 - ✅ Western productions (USA, UK, Canada, Australia, NZ)
 - ✅ European productions (Spain, France, Germany, Scandinavia, etc.)
 - ✅ Korean dramas (Goblin, Squid Game, Crash Landing on You, etc.)
-- ✅ Japanese productions (Shogun, Alice in Borderland, etc.)
-- ✅ Western productions filmed anywhere (Narcos, etc.)
+- ✅ Western productions filmed anywhere (Narcos, Shogun, etc.)
 
 **EXCLUDED:**
-- ❌ Indian dramas (archived separately in `archived-indian.json`)
-- ❌ Chinese/Taiwanese dramas (if any found)
-- ❌ Thai/Philippine/other Southeast Asian (if any found)
+- ❌ Indian dramas → `archived-asian.json`
+- ❌ Japanese dramas → `archived-asian.json`
+- ❌ Chinese dramas → `archived-asian.json`
+- ❌ Thai/Philippine/other Southeast Asian → `archived-asian.json`
+- ❌ Episodic/procedural shows → `archived-procedural.json`
 
 **Archive files:**
-- `archived-indian.json` — Indian dramas preserved for potential future use
+- `archived-asian.json` — Non-Korean Asian content (Indian, Japanese, Chinese, etc.)
+- `archived-procedural.json` — Episodic/procedural shows (House, NCIS, CSI, etc.)
+
+**Current count:** 427 serialized dramas (after filtering)
 
 ---
 

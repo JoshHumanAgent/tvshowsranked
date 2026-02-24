@@ -1,0 +1,25 @@
+{
+  "description": "Episodic/procedural shows archived per Josh's direction (serialized dramas only). Preserved for potential future use.",
+  "archived_date": "2026-02-25",
+  "note": "These are procedural/episodic shows that don't fit the serialized drama focus of TVShowsRanked.",
+  "shows": [
+    { "rank": 109, "title": "ER", "final": 7.70, "type": "medical procedural" },
+    { "rank": 174, "title": "Leverage", "final": 7.53, "type": "heist procedural" },
+    { "rank": 204, "title": "White Collar", "final": 7.45, "type": "crime procedural" },
+    { "rank": 216, "title": "Burn Notice", "final": 7.40, "type": "spy procedural" },
+    { "rank": 256, "title": "The West Wing", "final": 7.30, "type": "political procedural" },
+    { "rank": 280, "title": "House", "final": 7.23, "type": "medical procedural" },
+    { "rank": 285, "title": "NCIS", "final": 7.23, "type": "crime procedural" },
+    { "rank": 345, "title": "CSI: Crime Scene Investigation", "final": 6.95, "type": "crime procedural" },
+    { "rank": 399, "title": "Blue Bloods", "final": 6.53, "type": "crime procedural" },
+    { "rank": 408, "title": "Law & Order: SVU", "final": 6.43, "type": "crime procedural" },
+    { "rank": 413, "title": "NCIS: Los Angeles", "final": 6.35, "type": "crime procedural" },
+    { "rank": 420, "title": "The Lincoln Lawyer", "final": 6.23, "type": "legal procedural" },
+    { "rank": 421, "title": "CSI: NY", "final": 6.20, "type": "crime procedural" },
+    { "rank": 427, "title": "Law & Order: Organized Crime", "final": 6.08, "type": "crime procedural" },
+    { "rank": 431, "title": "CSI: Miami", "final": 6.03, "type": "crime procedural" },
+    { "rank": 433, "title": "Criminal Minds", "final": 6.00, "type": "crime procedural" },
+    { "rank": 434, "title": "Bones", "final": 5.98, "type": "crime procedural" },
+    { "rank": 435, "title": "Midsomer Murders", "final": 5.95, "type": "crime procedural" }
+  ]
+}
