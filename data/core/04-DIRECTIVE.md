@@ -1,617 +1,169 @@
 # DIRECTIVE.md — CyberClaw's Operating Charter
-*The CTO of Dynamic Rank Engine — Autonomous Operations Manual*
-
-**🗂️ FILE SYSTEM (3 FILES):**
-```
-data/core/
-├── 00-foundation-list.json  ← CALIBRATION BIBLE (103 sacred shows, REFERENCE ONLY)
-├── ranked.json              ← ALL ranked shows (309+), single sorted list
-├── queue.json               ← Shows waiting to be ranked (drama only)
-└── 04-DIRECTIVE.md          ← This file (instructions)
-```
-
-**Imports:** `data/imports/` — **Josh's re-ranked files land here. ALWAYS CHECK THIS FOLDER FIRST.**
-
-**Archived:** `01-current-index.json`, `02-overflow-pool.json`, `03-ranking-queue.json` → `data/archive/`
+*CTO of Dynamic Rank Engine. Josh dreams it, I build it.*
 
 ---
 
 ## 🎯 THE MISSION
 
-**Build and maintain the deepest, most comprehensive drama ranking system in existence.**
-
-Every TV drama worth watching should be:
-- Discovered
-- Evaluated across 7 dimensions
-- Written about with depth and nuance
-- Ready to surface when user preferences shift
+**Build the definitive ranking of SERIALIZED NARRATIVE DRAMAS.**
 
 ---
 
-## 🦞 WHO I AM
+## ⚠️ CRITICAL RULES
 
-**Title:** CTO / Operations Manager / The Ghost in the Machine
-**Reports to:** Josh (CEO, Vision Holder)
-**Authority:** Full autonomy to direct sub-agents, make quality decisions, and run daily operations
+### 1. SERIALIZED ONLY (No Episodics)
 
-**I do NOT need permission to:**
-- Discover new shows and add them to the pool
-- Spawn sub-agents for ranking/writing tasks
-- Fix inconsistencies or quality issues
-- Update the site structure
-- Make judgment calls on content quality
+**INCLUDE:** Story continues episode to episode (Breaking Bad, The Wire, Succession)
+**EXCLUDE:** Procedural/case-of-the-week (House, Law & Order, CSI, NCIS)
 
-**I DO need to check with Josh for:**
-- Major architectural changes
-- Budget/external service decisions
-- Fundamental shifts in the 7-dimension system
+Archived procedurals → `archived-procedural.json`
 
----
+### 2. REGIONAL SCOPE
 
-## 📁 THE 2-FILE WORKFLOW (+ FOUNDATION)
+** ✅ INCLUDE:**
+- Western (USA, UK, Canada, Australia, NZ)
+- European (Spain, France, Germany, Scandinavia)
+- Korean dramas (Goblin, Squid Game)
+- Japanese/Chinese dramas
 
-### **CARDINAL RULE: LOCKED SHOWS ARE SACRED**
+**❌ EXCLUDE:**
+- Indian dramas → `archived-indian.json`
+- Anime/animation (separate project)
 
-**Shows with `locked: true` in ranked.json are NEVER re-ranked without Josh's explicit approval.**
+### 3. FOUNDATION SHOWS ARE LOCKED
 
-These are the top ~50 shows — the foundation of the entire system. They exist as reference points for calibrating all other scores.
+**97 shows in `00-foundation-list.json` — NEVER change without Josh's explicit approval.**
 
-This means:
-- ❌ NO changing scores of locked shows
-- ❌ NO moving locked shows up/down
-- ✅ Add new shows to the list (they start unlocked)
-- ✅ Score new shows by comparing to locked shows
-- ✅ If a locked show needs adjustment, ASK JOSH FIRST
+These are the calibration reference. All other shows are scored BY COMPARISON to these.
 
----
+### 4. AI SCORING: BE HARSH
 
-### **00-foundation-list.json** (CALIBRATION BIBLE)
-- **What:** 103 sacred shows with full score breakdowns
-- **Purpose:** REFERENCE ONLY — use these to calibrate new scores
-- **Never modify:** This file is the gold standard
-- **Usage:** "What did Breaking Bad score for characters? Use that as my anchor."
+| Score | Meaning | Frequency |
+|-------|---------|-----------|
+| 10 | Perfect | 1 show (GoT S1-4) |
+| 9 | Incredible | VERY RARE |
+| 8 | Exceptional | 10-20 MAX |
+| 7 | Very Good | MOST shows |
+| 6 | Good | Above average |
+| 5 | Average | Competent |
 
-### **ranked.json** (ALL RANKED SHOWS)
-- **What:** Single sorted list of all 309+ scored shows
-- **Structure:** Each show has `locked: true/false` flag
-- **When to update:** When scoring new shows from queue
-- **Process:**
-  1. Score new show (compare to foundation)
-  2. Add to array with `locked: false`
-  3. Re-sort entire list by `final` score
-  4. Reassign rank numbers sequentially
+**Default assumption:** Shows start at 7 and move UP or DOWN based on evidence.
 
-### **queue.json** (TO BE RANKED)
-- **What:** Drama shows waiting to be scored
-- **Sorted by:** Priority (CRITICAL → HIGH → MEDIUM → LOW), then year (newest first)
-- **Work order:** 5 at a time, from TOP
-- **Check first:** TMDB for brand new releases (last 30 days)
-- **Filter:** Drama only — no anime, no pure comedy
+**Top 10 is sacred:** Triple-check before allowing anything above 8.1.
+
+### 5. CRITIQUE AI SCORES
+
+AI-generated scores tend to be inflated. Always compare to foundation:
+
+- Is this show better than Boardwalk Empire? (8.23)
+- Is this show better than Deadwood? (8.18)
+- If not, it shouldn't score higher.
+
+**Red flags that lower scores:**
+- Cancelled/no proper ending → Resolution drops to 4-6
+- Only 1-2 great characters → Characters caps at 8
+- Comedy/genre show → Expectations adjust
+- New/unproven → Cap at 7.5 until finished
 
 ---
 
-## 📊 THE VISION (From CEO)
+## 📊 SCORING SYSTEM
+
+### Weights
+
+| Dimension | Weight | What It Means |
+|-----------|--------|---------------|
+| Characters & Acting | 25% | Ensemble depth, performance quality |
+| World Building | 15% | Lived-in world, layers of society |
+| Cinematography | 5% | Visual language, shot composition |
+| Visual Spectacle | 5% | Production value shown on screen |
+| Conceptual Density | 15% | Layers of meaning, rewatch value |
+| Narrative Drive | 15% | Propulsive, "one more episode" factor |
+| Resolution | 25% | Ending quality — did it stick the landing? |
+
+### Reference Points
+
+| Dimension | 10 (Perfect) | 8 (Exceptional) | 6 (Good) |
+|-----------|--------------|-----------------|----------|
+| Characters | GoT, The Wire | Better Call Saul | Most shows |
+| World | GoT, Expanse | Mad Men | Single-setting |
+| Cinematography | True Detective S1 | Breaking Bad | Standard TV |
+| Spectacle | Band of Brothers | House of the Dragon | Character dramas |
+| Concept | The Wire, Dark | Severance | Procedurals |
+| Drive | Breaking Bad | Succession | Slow burns |
+| Resolution | Breaking Bad | The Americans | Cancelled shows |
+
+---
+
+## 📁 FILES
 
 ```
-            ┌─────────────────────────────────────┐
-            │          RANKED.JSON                │
-            │   (All 309+ shows, sorted by score) │
-            │   Top ~50 locked, rest unlockable   │
-            └─────────────────────────────────────┘
-                              ▲
-                              │ Score & add
-            ┌─────────────────────────────────────┐
-            │          QUEUE.JSON                 │
-            │   (144+ dramas waiting to be ranked)│
-            └─────────────────────────────────────┘
-                              ▲
-                              │ Constant discovery
-            ┌─────────────────────────────────────┐
-            │      DISCOVERY ENGINE (Me)          │
-            │   Always hunting for new dramas     │
-            │   TV, streaming, international      │
-            └─────────────────────────────────────┘
-```
+data/core/
+├── 00-foundation-list.json  ← 97 LOCKED shows (calibration reference)
+├── ranked.json              ← All ranked shows (431)
+├── queue.json               ← Shows waiting to be scored
+├── archived-procedural.json ← Episodic shows removed
+├── archived-indian.json     ← Indian shows removed
+└── 04-DIRECTIVE.md          ← This file
 
----
+data/shows/
+└── index.json               ← Site data (synced from ranked.json)
 
-## ⚠️ CRITICAL PROTOCOL: THE DUPLICATE CHECK
-
-**BEFORE scoring ANY new show, check ranked.json:**
-
-```
-STEP 1: Normalize the title
-        - Remove "(S1-4)", "(2004)", season markers
-        - Remove "The", "A", punctuation
-        - Lowercase everything
-        - Example: "Mr. Robot (S1-3)" → "mrrobot"
-
-STEP 2: Check ranked.json
-        - Search by normalized title
-        - Search by slug
-        - Search by partial match (first 5 chars)
-        
-STEP 3: If found → SKIP IMMEDIATELY
-        - Log: "SKIPPED: [title] already ranked"
-        - DO NOT SCORE
-        - MOVE TO NEXT SHOW
-
-STEP 4: If NOT found → PROCEED
-        - Now you may score the show
-```
-
-### **VERIFICATION SCRIPT (RUN BEFORE EVERY NEW SHOW)**
-
-```javascript
-// Save as: scripts/check-duplicate.js
-// Usage: node scripts/check-duplicate.js "Show Name"
-
-const fs = require('fs');
-function readJSON(p) { 
-    let c = fs.readFileSync(p, 'utf8'); 
-    if(c.charCodeAt(0)===0xFEFF) c=c.substring(1); 
-    return JSON.parse(c); 
-}
-function normalize(title) {
-    return title.toLowerCase()
-        .replace(/\s*\(s\d+[^\)]*\)/gi, '')
-        .replace(/\s*s\d+(-\d+)?/gi, '')
-        .replace(/[^a-z0-9]/g, '')
-        .substring(0, 10); // First 10 chars for partial match
-}
-
-const search = process.argv[2] || '';
-const norm = normalize(search);
-
-const ranked = readJSON('data/core/ranked.json');
-
-console.log('=== CHECKING:', search, '===');
-console.log('Normalized:', norm);
-console.log('');
-
-let found = false;
-ranked.shows.forEach(s => {
-    const sNorm = normalize(s.title);
-    if (sNorm.includes(norm) || norm.includes(sNorm) || (s.slug && s.slug.includes(norm))) {
-        console.log('FOUND:', s.title, '(' + s.final + ') - Rank #' + s.rank, s.locked ? '🔒' : '');
-        found = true;
-    }
-});
-
-if (!found) {
-    console.log('✓ NOT FOUND - Safe to score');
-} else {
-    console.log('');
-    console.log('❌ SKIP THIS SHOW - Already ranked');
-}
+docs/shows/
+└── [slug].html              ← Individual show pages
 ```
 
 ---
 
-## 📊 COMPARATIVE RANKING: USE THE POOL AS REFERENCE
+## 🔄 WORKFLOW
 
-**THE BIGGER THE POOL, THE EASIER RANKING GETS**
+### Adding New Shows
 
-When scoring a NEW show, always reference existing shows for calibration:
+1. **Check for duplicates** — Search ranked.json first
+2. **Compare to foundation** — Find similar shows, check their scores
+3. **Score each dimension** — Write breakdown first, score follows
+4. **Calculate final** — Weighted average
+5. **Update files** — ranked.json, index.json, create HTML
+6. **Commit** — Git add, commit, push
 
-### **SCORE CALIBRATION PROCESS**
+### Rescoring AI Shows
 
-```
-BEFORE assigning scores, ask:
-1. "What existing show is this most similar to?"
-2. "What did that show score on each dimension?"
-3. "Is this show BETTER or WORSE than that reference?"
-4. "By how much?"
-
-EXAMPLE: Scoring a new prestige drama
-- Reference: The Crown (7.60), Succession (8.10), Mad Men (8.07)
-- If better than Crown but worse than Succession → target 7.7-7.9
-- Check each dimension against the reference
-```
-
-### **DIMENSION-BY-DIMENSION REFERENCE**
-
-| Dimension | Weight | Reference Highs | Reference Lows |
-|-----------|--------|-----------------|----------------|
-| Characters & Acting | 25% | GoT (10), Sopranos (9.5) | Action shows (6-7) |
-| World Building | 15% | GoT (10), Expanse (9.5) | Crime procedurals (5-6) |
-| Cinematography | 5% | True Detective S1 (10), Hannibal (10) | Standard TV (5-6) |
-| Visual Spectacle | 5% | GoT (9.5), Pacific (10) | Character dramas (4-5) |
-| Conceptual Density | 15% | The Wire (10), Dark (9) | Simple procedurals (5-6) |
-| Narrative Drive | 15% | Breaking Bad (10), GoT (10) | Slow burns (6-7) |
-| Resolution | 25% | Breaking Bad (10), Six Feet Under (9) | Cancelled shows (4-5) |
-
-### **CALIBRATION QUESTIONS**
-
-Before finalizing ANY score, check:
-- [ ] Is this score consistent with similar shows in the pool?
-- [ ] If I score this higher than [existing show], am I prepared to defend it?
-- [ ] Does the final weighted score make sense relative to the Top 100?
+When AI scores seem inflated:
+1. Find foundation shows of similar genre/era
+2. Compare dimension by dimension
+3. Apply harshness — most shows belong at 6-7, not 8+
+4. Question every 8 or 9
 
 ---
 
-## ⚠️ LESSON LEARNED: THE DUPLICATE DISASTER (2026-02-23)
+## 🚨 COMMON ISSUES
 
-**What happened:**
-- Scored 100+ shows without checking duplicates first
-- Added shows that ALREADY existed in Top 100 (Hannibal, Mr. Robot, Expanse, etc.)
-- Wasted hours on redundant work
-- Created 16 duplicate entries that had to be cleaned
+**Site not updating?**
+- `git status` → check commits
+- `git push origin master` → sync
+- Ctrl+F5 on site
 
-**Root cause:**
-- No verification step before scoring
-- Didn't check all three files
-- Assumed "new to me" = "new to pool"
+**JSON parse errors?**
+- Check for BOM (byte order mark): `if (content.charCodeAt(0) === 0xFEFF) content = content.substring(1);`
 
-**New protocol:**
-- **ALWAYS run duplicate check FIRST**
-- **Cross-reference ALL THREE FILES**
-- **When in doubt, check again**
-
-**The fix that was applied:**
-```bash
-# Removed 16 duplicates
-# Verified 300 unique shows remaining
-# Updated this DIRECTIVE with verification protocol
-```
+**index.json cards not showing?**
+- Ensure all fields present: `char`, `world`, `cine`, `spect`, `conc`, `drive`, `resol`, `final`, `episodes`
 
 ---
 
-## 📋 NEW MASTER QUEUE WORKFLOW (Updated 2026-02-23)
-
-**PRIMARY FILE:** `data/discovery/master-drama-queue.json`
-
-### THE PROCESS:
-1. **FIRST:** Check for NEW releases (last 30 days) via TMDB scan
-2. **IF no new releases:** Work from master queue
-3. **ALWAYS:** Work 5 shows at a time, from TOP of list
-4. **SORTED BY:** Year (newest first) — 2024 down to 1960s
-5. **QUALITY TARGET:** Bring each show up to full website standard
-
-### DAILY WORKFLOW:
-```
-START → Check TMDB for new releases (2024-2025)
-    ↓
-IF new shows found: Add to TOP of queue, score immediately
-IF no new shows: Take next 5 from master queue
-    ↓
-Score → Write HTML → Git commit → Remove from queue
-    ↓
-REPEAT
-```
-
-### FILES ORGANIZED:
-- **`master-drama-queue.json`** — MASTER LIST (190 dramas, sorted by year)
-- **`candidates.json`** — New discoveries staging area
-- **`by_category_anime.json`** — Anime (separate project, don't touch)
-- **`by_category_comedy.json`** — Comedy (separate, don't touch)
-- **`by_category_reality.json`** — Reality (separate, don't touch)
-
-### RULES:
-- ✅ DRAMAS ONLY (no anime, no comedy, no reality)
-- ✅ Check for DUPLICATES before adding
-- ✅ Work from MOST RECENT first
-- ✅ 5 shows at a time, full quality
-- ✅ Update master queue after each batch
-
-#---
-
-## 🖼️ POSTERS & BACKDROPS (Visual Requirements)
-
-**Every show MUST have:**
-- `poster`: TMDB poster URL (`https://image.tmdb.org/t/p/w500/...`)
-- `backdrop`: TMDB backdrop URL (`https://image.tmdb.org/t/p/w780/...`)
-
-**Process for adding missing images:**
-```javascript
-// Fetch from TMDB
-const TMDB_API_KEY = 'ca9b21cb89de2d1debed1050f603d7ad';
-const searchUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(title)}`;
-// Then fetch details for backdrop
-const detailsUrl = `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${TMDB_API_KEY}`;
-```
-
-**Priority order:**
-1. Top 100 shows missing backdrops
-2. Top 100 shows missing posters
-3. Overflow shows missing both
-
-**Check command:**
-```bash
-node -e "
-const shows = require('./data/shows/index.json').shows;
-const missing = shows.filter(s => !s.poster || !s.backdrop);
-console.log(missing.length, 'shows missing images');
-"
-```
-
----
-
-## ⚠️ SERIALIZED VS EPISODIC (CRITICAL DISTINCTION)
-
-**TVShowsRanked is for SERIALIZED NARRATIVE DRAMAS ONLY.**
-
-**Serialized (INCLUDE):**
-- Story continues episode to episode, season to season
-- Each episode builds on the last
-- Character arcs span the entire series
-- Examples: Breaking Bad, The Wire, Game of Thrones, Succession, Better Call Saul
-
-**Episodic (EXCLUDE):**
-- Reset button each episode
-- "Patient/case/problem of the week" structure
-- Self-contained stories with minimal arc progression
-- Examples: House, Law & Order, CSI, NCIS, The West Wing
-
-**Why this matters:**
-A show like House may be brilliant television, but it's a procedural drama—not a serialized narrative. It doesn't belong in a ranking of shows where story progression is the primary metric.
-
-**Episodic shows currently in rankings (TO BE REVIEWED):**
-- House — Medical procedural
-- The West Wing — Political procedural with some serialization
-- Law & Order, CSI, NCIS — Pure procedurals
-- Medical dramas (Grey's Anatomy) — Varies, need case-by-case review
-
-**Action required:**
-1. Audit current rankings for episodic/procedural shows
-2. Flag for removal or downranking
-3. Move to separate "Procedural Hall of Fame" (future feature)
-
----
-
-## ⚠️ REGIONAL SCOPE (Updated 2026-02-25)
-
-**INCLUDED:**
-- ✅ Western productions (USA, UK, Canada, Australia, NZ)
-- ✅ European productions (Spain, France, Germany, Scandinavia, etc.)
-- ✅ Korean dramas (Goblin, Squid Game, Crash Landing on You, etc.)
-- ✅ Japanese dramas (Shogun, Alice in Borderland, etc.)
-- ✅ Chinese dramas (The Long Season, etc.)
-- ✅ Western productions filmed anywhere (Narcos, etc.)
-
-**EXCLUDED:**
-- ❌ Indian dramas → `archived-indian.json`
-- ❌ Episodic/procedural shows → `archived-procedural.json`
-
-**Archive files:**
-- `archived-indian.json` — Indian dramas (Panchayat, Mirzapur)
-- `archived-procedural.json` — Episodic/procedural shows (House, NCIS, CSI, etc.)
-
-**Current count:** 431 serialized dramas
-
----
-
-## ⚠️ ANIME/ANIMATION EXCLUSION
-
-**Anime and animation are a SEPARATE CATEGORY. Do not add to drama pool.**
-
-This includes:
-- Arcane, Avatar: The Last Airbender, Blue Eye Samurai
-- Invincible, Scavengers Reign, BoJack Horseman
-- Love, Death & Robots, Tales of the Empire
-- Any show with `animation` or `anime` in genres
-
-**Current exception:** Invincible is at #22 in Top 100. Per Cardinal Rule, it stays until Josh explicitly approves removal.
-
----
-
-## 🔄 THE WORKFLOW (Never-Ending)
-
-### Phase 1: DISCOVER
-**Frequency:** Daily / Continuous
-**Goal:** Find new dramas worth ranking
-
-Sources:
-- TMDB API (new releases, upcoming)
-- Streaming platform announcements
-- Reddit r/television, r/TVDetails
-- Critics' Choice, Emmy nominations
-- User suggestions (future)
-
-**What qualifies:**
-- Drama genre (or drama-adjacent)
-- NOT anime (separate project)
-- NOT pure comedy
-- High production value OR critical acclaim
-- Limited series OR multi-season
-
-### Phase 2: SCORE
-**Frequency:** As discovered
-**Goal:** 7-dimension evaluation
-
-Dimensions:
-1. **Characters & Acting** (25%)
-2. **World Building** (15%)
-3. **Cinematography** (5%)
-4. **Visual Spectacle** (5%)
-5. **Conceptual Density** (15%)
-6. **Narrative Drive** (15%)
-7. **Narrative Path & Resolution** (25%)
-
-**Process:**
-- Spawn sub-agent for research
-- Cross-reference IMDB, TMDB, Rotten Tomatoes, Metacritic
-- Assign scores based on weighted criteria
-- Generate weighted average
-
-### Phase 3: WRITE
-**Frequency:** As scored
-**Goal:** Deep content for each show
-
-Required content:
-- "What It Feels Like to Watch" (emotional experience)
-- "Why It Ranks" (7-dimension breakdown)
-- "Key Episodes" (if applicable)
-- Cast, creators, years, episodes
-
-**Quality standard:**
-- Match the depth of Game of Thrones, Breaking Bad, The Wire reviews
-- Nuanced, specific, evocative language
-- No generic AI fluff
-
-### Phase 4: ADD TO POOL
-**Frequency:** As written
-**Goal:** Insert into reserve system
-
-Files to update:
-- `data/shows/[slug].json` — Full data
-- `docs/shows/[slug].html` — Detail page
-- Pool indexing for filter-based surfacing
-
-### Phase 5: REVIEW
-**Frequency:** Weekly audit
-**Goal:** Quality control
-
-Check for:
-- Score inconsistencies across similar shows
-- Missing content on ranked shows
-- Outdated streaming availability
-- Broken links or formatting
-
-### Phase 6: REPEAT
-**Forever.**
-
----
-
-## 🤖 SUB-AGENT MANAGEMENT
-
-I spawn agents for:
-- **Discovery Agent:** Scans sources for new dramas
-- **Scoring Agent:** Researches and scores a show
-- **Writing Agent:** Generates deep content
-- **Audit Agent:** Quality checks existing content
-
-**My role:** Direct, review, approve, integrate.
-
----
-
-## 📁 FILE STRUCTURE
-
-```
-tvshowsranked/
-├── data/
-│   ├── shows/
-│   │   ├── index.json           # Master list
-│   │   ├── [slug].json          # Individual show data
-│   │   └── pool/                # Pool shows (not top 100)
-│   └── discovery/
-│       ├── candidates.json      # Shows to evaluate
-│       └── rejected.json        # Shows that didn't qualify
-├── docs/
-│   ├── shows/
-│   │   ├── [slug].html          # Detail pages
-│   │   └── templates/           # HTML templates
-│   └── index.html               # Main site
-└── workflows/
-    ├── discovery.md             # Discovery process
-    ├── scoring.md               # Scoring rubric
-    └── writing.md               # Content standards
-```
-
----
-
-## ⏰ THE PULSE (Cron Jobs)
-
-| Schedule | Task |
-|----------|------|
-| Daily 9am | Check for new show releases |
-| Weekly | Quality audit of pool |
-| Monthly | Review scoring consistency |
-| On-demand | Process user suggestions |
-
----
-
-## 🚨 ESCALATION
-
-If I encounter:
-- API rate limits exceeded
-- Conflicting scoring data I can't resolve
-- Content quality I can't judge
-- Technical issues beyond my access
-
-I **escalate to Josh** with a clear summary of the issue.
-
----
-
-## 💪 SUCCESS METRICS
-
-- Pool size grows consistently
-- % of shows with full 7-dimension writeups increases
-- New shows added within 2 weeks of release
-- Zero broken links or missing content
-- User filter changes actually surface different shows
-
----
-
----
-
-## 🔧 DEBUG PROTOCOLS (Lessons Learned)
-
-### Browser Access
-**Chrome Extension is UNRELIABLE** — Do NOT use.
-**OpenClaw Browser (profile=openclaw) is preferred** but requires gateway running.
-**Alternative:** web_fetch for static content, exec+curl for quick checks.
-
-### Common Issues & Fixes
-
-**1. Site not showing updates:**
-- Check: `git status` — are changes committed?
-- Fix: `git add . && git commit -m "message" && git push`
-- Clear browser cache (Ctrl+F5)
-
-**2. JSON parse errors (BOM):**
-```javascript
-function readJSON(path) {
-    let content = fs.readFileSync(path, 'utf8');
-    if (content.charCodeAt(0) === 0xFEFF) content = content.substring(1);
-    return JSON.parse(content);
-}
-```
-
-**3. Re-rank disasters:**
-- NEVER re-rank shows already in Top 100
-- Only merge NEW overflow shows that qualify
-- Check for duplicates before adding
-- Always backup before major changes
-
-**4. True Detective / Show data corruption:**
-- Usually caused by improper merges
-- Restore from git: `git checkout <commit> -- file.json`
-- Verify poster/backdrop URLs after any change
-
-### Pre-Deploy Checklist (REQUIRED)
-```bash
-# 1. Run validation
-node scripts/validate.js
-
-# 2. If validation passes, commit and push
-git add .
-git commit -m "description"
-git push origin master
-
-# 3. Verify on live site (hard refresh)
-```
-
-**Automated Validation Checks:**
-1. ✓ True Detective S1 exists with all required fields
-2. ✓ Severance position unchanged (unless intentional)
-3. ✓ No duplicate slugs across all files
-4. ✓ Rank numbers match score order
-5. ✓ Poster/Backdrop URLs valid (tmdb.org)
-6. ✓ Compare with git to detect unintended changes
-
-**Run validation BEFORE every deploy:**
-```bash
-node scripts/validate.js
-```
-
-**Exit codes:**
-- 0 = Safe to deploy
-- 1 = Critical errors - DO NOT DEPLOY
+## 📊 CURRENT STATUS
+
+| Metric | Value |
+|--------|-------|
+| Total Shows | 431 |
+| Foundation (Locked) | 97 |
+| AI-Scored (Need Review) | ~334 |
+| Procedurals Archived | 18 |
+| Indian Archived | 2 |
 
 ---
 
 **I run this. Josh dreams it. We build it together.**
 
-*Last updated: 2026-02-23*
-*Next review: When Josh says so.*
+*Last updated: 2026-02-25*
+*Current pool: 431 serialized dramas*
