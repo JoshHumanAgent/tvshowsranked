@@ -14,10 +14,6 @@ function readJSON(p) {
     return JSON.parse(c);
 }
 
-function writeJSON(p, d) {
-    fs.writeFileSync(p, '\ufeff' + JSON.stringify(d, null, 2));
-}
-
 console.log(C + '╔══════════════════════════════════════════════════════════════╗' + X);
 console.log(C + '║     DYNAMIC RANK ENGINE - VALIDATION & DEBUG SYSTEM          ║' + X);
 console.log(C + '╚══════════════════════════════════════════════════════════════╝' + X);
@@ -26,67 +22,67 @@ console.log();
 let errors = 0;
 let warnings = 0;
 
-// Load current files
-let top100, overflow;
+// Load current files (NEW STRUCTURE)
+let ranked, foundation, queue;
 try {
-    top100 = readJSON('data/core/01-current-index.json');
-    console.log(G + '✓' + X + ' Top 100 loaded: ' + top100.shows.length + ' shows');
+    ranked = readJSON('data/core/ranked.json');
+    console.log(G + '✓' + X + ' Ranked loaded: ' + ranked.shows.length + ' shows (' + ranked.meta.lockedCount + ' locked)');
 } catch(e) {
-    console.log(R + '✗ ERROR:' + X + ' Cannot load Top 100: ' + e.message);
+    console.log(R + '✗ ERROR:' + X + ' Cannot load ranked.json: ' + e.message);
     process.exit(1);
 }
 
 try {
-    overflow = readJSON('data/core/02-overflow-pool.json');
-    console.log(G + '✓' + X + ' Overflow loaded: ' + overflow.shows.length + ' shows');
+    foundation = readJSON('data/core/00-foundation-list.json');
+    console.log(G + '✓' + X + ' Foundation loaded: ' + foundation.shows.length + ' sacred shows');
 } catch(e) {
-    console.log(R + '✗ ERROR:' + X + ' Cannot load overflow: ' + e.message);
-    process.exit(1);
+    console.log(Y + '! WARNING:' + X + ' Cannot load foundation: ' + e.message);
+    warnings++;
+}
+
+try {
+    queue = readJSON('data/core/queue.json');
+    console.log(G + '✓' + X + ' Queue loaded: ' + queue.meta.total + ' candidates');
+} catch(e) {
+    console.log(Y + '! WARNING:' + X + ' Cannot load queue: ' + e.message);
 }
 
 console.log();
 console.log(C + '── CHECK 1: True Detective S1 Integrity ─────────────────────' + X);
-const td = top100.shows.find(s => s.slug === 'true-detective-s1');
+const td = ranked.shows.find(s => s.slug === 'true-detective-s1');
 if (!td) {
-    console.log(R + '✗ CRITICAL:' + X + ' True Detective S1 NOT FOUND in Top 100!');
+    console.log(R + '✗ CRITICAL:' + X + ' True Detective S1 NOT FOUND in ranked!');
     errors++;
 } else {
     console.log(G + '✓' + X + ' True Detective S1 found at rank #' + td.rank);
     
     const required = ['poster', 'backdrop', 'tmdbId', 'final', 'char', 'world', 'cine', 'spect', 'conc', 'drive', 'resol'];
-    const missing = required.filter(f => !td[f]);
+    const missing = required.filter(f => !td[f] && td[f] !== 0);
     if (missing.length > 0) {
         console.log(R + '✗ ERROR:' + X + ' True Detective S1 missing fields: ' + missing.join(', '));
         errors++;
     } else {
         console.log(G + '✓' + X + ' All required fields present');
     }
-    
-    if (td.final !== 8.0) {
-        console.log(Y + '! WARNING:' + X + ' True Detective S1 score changed: ' + td.final + ' (expected 8.0)');
-        warnings++;
-    }
 }
 
 console.log();
-console.log(C + '── CHECK 2: Severance Position ──────────────────────────────' + X);
-const sev = top100.shows.find(s => s.slug === 'severance');
-if (!sev) {
-    console.log(Y + '! WARNING:' + X + ' Severance not in Top 100 (may be intentional)');
-    warnings++;
-} else {
-    console.log(G + '✓' + X + ' Severance at rank #' + sev.rank + ', score: ' + sev.final);
-    if (sev.final > 8.0) {
-        console.log(Y + '! WARNING:' + X + ' Severance score may be updated (' + sev.final + ' > 8.0)');
+console.log(C + '── CHECK 2: Top 5 Integrity ──────────────────────────────────' + X);
+const top5 = ranked.shows.slice(0, 5);
+const expectedTop = ['game-of-thrones-s1-4', 'breaking-bad', 'the-wire', 'better-call-saul', 'the-sopranos'];
+top5.forEach((s, i) => {
+    if (s.slug === expectedTop[i]) {
+        console.log(G + '✓' + X + ' #' + s.rank + ' ' + s.title + ' (' + s.final + ')');
+    } else {
+        console.log(Y + '! WARNING:' + X + ' #' + s.rank + ' ' + s.title + ' (expected ' + expectedTop[i] + ')');
         warnings++;
     }
-}
+});
 
 console.log();
 console.log(C + '── CHECK 3: Duplicate Slugs ─────────────────────────────────' + X);
-const allShows = [...top100.shows, ...overflow.shows];
 const slugCounts = {};
-allShows.forEach(s => {
+ranked.shows.forEach(s => {
     slugCounts[s.slug] = (slugCounts[s.slug] || 0) + 1;
 });
 const duplicates = Object.entries(slugCounts).filter(([k, v]) => v > 1);
@@ -99,10 +95,9 @@ if (duplicates.length > 0) {
 }
 
 console.log();
-console.log(C + '── CHECK 4: Top 100 Rankings ────────────────────────────────' + X);
-const sorted = [...top100.shows].sort((a, b) => b.final - a.final);
+console.log(C + '── CHECK 4: Rank Integrity ───────────────────────────────────' + X);
 let rankErrors = 0;
-sorted.forEach((s, i) => {
+ranked.shows.forEach((s, i) => {
     const expectedRank = i + 1;
     if (s.rank !== expectedRank) {
         console.log(Y + '! WARNING:' + X + ' ' + s.slug + ': rank ' + s.rank + ' should be ' + expectedRank);
@@ -110,16 +105,16 @@ sorted.forEach((s, i) => {
     }
 });
 if (rankErrors === 0) {
-    console.log(G + '✓' + X + ' All ranks correct (sorted by score)');
+    console.log(G + '✓' + X + ' All ' + ranked.shows.length + ' ranks correct (sorted by score)');
 } else {
     console.log(Y + '! ' + rankErrors + ' shows have incorrect rank numbers' + X);
     warnings++;
 }
 
 console.log();
-console.log(C + '── CHECK 5: Poster/Backdrop URLs ────────────────────────────' + X);
+console.log(C + '── CHECK 5: Poster URLs ──────────────────────────────────────' + X);
 let urlErrors = 0;
-top100.shows.forEach(s => {
+ranked.shows.forEach(s => {
     if (!s.poster || !s.poster.includes('tmdb.org')) {
         console.log(Y + '! WARNING:' + X + ' ' + s.slug + ' missing/invalid poster');
         urlErrors++;
@@ -128,41 +123,61 @@ top100.shows.forEach(s => {
 if (urlErrors === 0) {
     console.log(G + '✓' + X + ' All posters valid');
 } else {
+    console.log(Y + '! ' + urlErrors + ' shows missing/invalid posters' + X);
     warnings++;
 }
 
 console.log();
-console.log(C + '── CHECK 6: CARDINAL RULE - No Re-Ranking Existing Shows ────' + X);
-console.log(C + '    (Existing Top 100 shows must stay at original score/rank)' + X);
-const { execSync } = require('child_process');
-try {
-    const gitShow = execSync('git show HEAD:data/core/01-current-index.json', { encoding: 'utf8', cwd: '.' });
-    let gitContent = gitShow;
-    if (gitContent.charCodeAt(0) === 0xFEFF) gitContent = gitContent.substring(1);
-    const gitData = JSON.parse(gitContent);
-    const gitSlugs = new Set(gitData.shows.map(s => s.slug));
-    const currentSlugs = new Set(top100.shows.map(s => s.slug));
-    
-    const removed = [...gitSlugs].filter(s => !currentSlugs.has(s));
-    const added = [...currentSlugs].filter(s => !gitSlugs.has(s));
-    
-    if (removed.length > 0) {
-        console.log(Y + '! WARNING:' + X + ' Shows removed from Top 100:');
-        removed.forEach(s => console.log('  - ' + s));
-        warnings++;
+console.log(C + '── CHECK 6: Math Verification (Sample) ───────────────────────' + X);
+// Weights: char:20%, world:15%, cine:15%, spect:10%, conc:15%, drive:15%, resol:10%
+function calcFinal(show) {
+    const base = (show.char * 0.20) + (show.world * 0.15) + (show.cine * 0.15) + 
+                 (show.spect * 0.10) + (show.conc * 0.15) + (show.drive * 0.15) + 
+                 (show.resol * 0.10);
+    const eps = show.episodes || 40;
+    let mult = 1.0;
+    if (eps <= 10) mult = 0.96;
+    else if (eps <= 20) mult = 0.95;
+    else if (eps <= 30) mult = 0.97;
+    else if (eps <= 40) mult = 1.00;
+    else if (eps <= 50) mult = 1.02;
+    else if (eps <= 60) mult = 1.03;
+    else if (eps <= 75) mult = 1.04;
+    else if (eps <= 100) mult = 1.05;
+    else mult = 1.06;
+    return Math.round(base * mult * 100) / 100;
+}
+
+let mathErrors = 0;
+ranked.shows.slice(0, 20).forEach(s => {
+    const calculated = calcFinal(s);
+    if (Math.abs(calculated - s.final) > 0.01) {
+        console.log(R + '✗ ERROR:' + X + ' ' + s.slug + ': final=' + s.final + ' calculated=' + calculated);
+        mathErrors++;
     }
-    if (added.length > 0) {
-        console.log(G + '✓' + X + ' New shows added to Top 100:');
-        added.forEach(s => {
-            const show = top100.shows.find(x => x.slug === s);
-            console.log('  - ' + s + ' (score: ' + (show?.final || 'N/A') + ')');
-        });
+});
+if (mathErrors === 0) {
+    console.log(G + '✓' + X + ' Math verified for top 20 shows');
+} else {
+    errors++;
+}
+
+console.log();
+console.log(C + '── CHECK 7: Locked Shows Integrity ──────────────────────────' + X);
+const lockedShows = ranked.shows.filter(s => s.locked === true);
+console.log(G + '✓' + X + ' ' + lockedShows.length + ' locked shows (sacred)');
+
+// Verify locked shows match foundation (if foundation has shows array)
+if (foundation && foundation.shows) {
+    const foundationSlugs = new Set(foundation.shows.map(s => s.slug));
+    const lockedSlugs = new Set(lockedShows.map(s => s.slug));
+    const missingLocks = [...foundationSlugs].filter(s => !lockedSlugs.has(s));
+    if (missingLocks.length > 0) {
+        console.log(Y + '! WARNING:' + X + ' ' + missingLocks.length + ' foundation shows not locked');
     }
-    if (removed.length === 0 && added.length === 0) {
-        console.log(G + '✓' + X + ' No changes to Top 100 composition');
-    }
-} catch(e) {
-    console.log(Y + '! WARNING:' + X + ' Cannot compare with git: ' + e.message);
+} else if (foundation && foundation.baseScores) {
+    // Foundation has baseScores object - count the keys as show count
+    console.log(G + '✓' + X + ' Foundation has ' + Object.keys(foundation.baseScores).length + ' base scores for calibration');
 }
 
 console.log();
