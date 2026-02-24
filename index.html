@@ -3917,6 +3917,7 @@
             <span class="modified-count" id="modified-count">0 shows modified</span>
             <button class="save-btn" id="save-scores-btn">Save to localStorage</button>
             <button class="export-btn" id="export-scores-btn">Download JSON</button>
+            <button class="export-btn master-export-btn" id="master-export-btn" style="display:none;background:linear-gradient(135deg,#d4af37 0%,#b8962e 100%);color:#0a0a0f;font-weight:600;">⬇ Master Export</button>
             <button class="import-btn" id="import-scores-btn">Import</button>
             <input type="file" id="import-scores-file" accept=".json" style="display:none;">
             <button class="reset-btn" id="reset-scores-btn">Reset All</button>
@@ -3974,6 +3975,7 @@
             }
         });
         let currentUser = null;
+        const ADMIN_UID = 'wdGsVfPu27OPx8hq7CSiIf0OUfG3'; // Josh's UID - Master Export access
         let showsReady = false;        // true once loadShowsData completes
         let initialAuthFired = false;   // distinguishes page-load auth from live login/logout
 
@@ -5619,6 +5621,59 @@
             URL.revokeObjectURL(url);
         });
 
+        // Master Export - Admin only, outputs ranked.json format
+        document.getElementById('master-export-btn')?.addEventListener('click', () => {
+            if (!currentUser || currentUser.uid !== ADMIN_UID) {
+                alert('Master Export is only available to the admin.');
+                return;
+            }
+            
+            // Build ranked.json format - include all fields from shows
+            const rankedShows = shows.map(s => ({
+                rank: s.rank,
+                slug: s.slug,
+                title: s.title,
+                year: s.year,
+                month: s.month || null,
+                genres: s.genres || [],
+                final: s.final,
+                tmdbId: s.tmdbId || null,
+                char: s.char,
+                world: s.world,
+                cine: s.cine,
+                spect: s.spect,
+                conc: s.conc,
+                drive: s.drive,
+                resol: s.resol,
+                episodes: s.episodes || null,
+                poster: s.poster || null,
+                streaming: s.streaming || null,
+                backdrop: s.backdrop || null
+            }));
+            
+            const masterData = {
+                meta: {
+                    generated: new Date().toISOString(),
+                    total: rankedShows.length,
+                    source: 'Dynamic Rank Engine - Master Export',
+                    adminExport: true
+                },
+                shows: rankedShows
+            };
+            
+            const blob = new Blob([JSON.stringify(masterData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            const ts = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+            a.href = url;
+            a.download = `ranked-master-${ts}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+            
+            console.log('[Master Export] Exported', rankedShows.length, 'shows to ranked-master-' + ts + '.json');
+            alert('Master Export complete! ' + rankedShows.length + ' shows exported.\n\nGive this file to CyberClaw to update ranked.json');
+        });
+
         document.getElementById('import-scores-btn')?.addEventListener('click', () => {
             document.getElementById('import-scores-file').click();
         });
@@ -6031,6 +6086,12 @@
         auth.onAuthStateChanged(user => {
             currentUser = user;
             updateAuthUI(user);
+
+            // Show Master Export button only for admin
+            const masterExportBtn = document.getElementById('master-export-btn');
+            if (masterExportBtn) {
+                masterExportBtn.style.display = (user && user.uid === ADMIN_UID) ? 'inline-block' : 'none';
+            }
 
             const isFirstFire = !initialAuthFired;
             initialAuthFired = true;
