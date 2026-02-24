@@ -1,7 +1,7 @@
 ﻿{
   "meta": {
-    "generated": "2026-02-24T06:03:10.784Z",
-    "total": 381,
+    "generated": "2026-02-24T06:04:43.619Z",
+    "total": 386,
     "lockedCount": 96,
     "description": "All ranked shows, sorted by weighted score. Shows with locked=true are sacred - never re-rank without explicit approval."
   },
@@ -12500,6 +12500,30 @@
       "locked": false
     },
     {
+      "title": "Blue Bloods",
+      "slug": "blue-bloods",
+      "year": 2010,
+      "tmdbId": 32692,
+      "episodes": 293,
+      "genres": [
+        "crime",
+        "drama"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/q1WlrxnCvNhBjJ4N7V0JQXjnIBN.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 7,
+      "world": 6.5,
+      "cine": 6,
+      "spect": 3,
+      "conc": 6.5,
+      "drive": 6.5,
+      "resol": 7,
+      "final": 6.35,
+      "locked": false,
+      "rank": 362
+    },
+    {
       "slug": "mr-show",
       "title": "Mr. Show",
       "year": 1995,
@@ -12533,7 +12557,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 362,
+      "rank": 363,
       "poster": "https://image.tmdb.org/t/p/w500/gC8PDx7tfbXS9BqxBgj0YXKDIoW.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/A2qdFRq9oJDC5E7fbgSS4POUMDF.jpg",
       "locked": false
@@ -12560,7 +12584,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/31GIcUUcdQPRkVtmdqgQWJMhXj1.jpg",
       "locked": false,
       "final": 6.34,
-      "rank": 363
+      "rank": 364
     },
     {
       "title": "Obi-Wan Kenobi",
@@ -12585,7 +12609,7 @@
       "resol": 6.5,
       "final": 6.34,
       "locked": false,
-      "rank": 364
+      "rank": 365
     },
     {
       "title": "The Flight Attendant",
@@ -12610,7 +12634,32 @@
       "resol": 6.5,
       "final": 6.34,
       "locked": false,
-      "rank": 365
+      "rank": 366
+    },
+    {
+      "title": "NCIS: Los Angeles",
+      "slug": "ncis-los-angeles",
+      "year": 2009,
+      "tmdbId": 17610,
+      "episodes": 323,
+      "genres": [
+        "action",
+        "crime",
+        "drama"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/TIIgcznwNfNr3KOZvxn26eKV99.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 6.5,
+      "world": 6,
+      "cine": 6,
+      "spect": 5,
+      "conc": 6,
+      "drive": 6.5,
+      "resol": 7,
+      "final": 6.3,
+      "locked": false,
+      "rank": 367
     },
     {
       "title": "Ms. Marvel",
@@ -12635,7 +12684,7 @@
       "resol": 6.5,
       "final": 6.29,
       "locked": false,
-      "rank": 366
+      "rank": 368
     },
     {
       "slug": "last-thing-he-told-me",
@@ -12663,7 +12712,7 @@
       "drive": 7,
       "resol": 6.5,
       "final": 6.29,
-      "rank": 367,
+      "rank": 369,
       "scoring_notes": "Jennifer Garner as woman searching for missing husband. Based on popular novel but adaptation lacks tension. Aisha Tyler and Angourie Rice add support. Limited series, complete. Thriller that forgets to thrill. Apple's weaker drama offerings.",
       "streaming": {
         "us": [
@@ -12699,7 +12748,7 @@
       "resol": 4.5,
       "final": 6.25,
       "locked": false,
-      "rank": 368
+      "rank": 370
     },
     {
       "slug": "this-country",
@@ -12735,7 +12784,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 369,
+      "rank": 371,
       "poster": "https://image.tmdb.org/t/p/w500/iUjzx6qCPFBCoMA0YtEONew9NUE.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/2U9KE5jq2qwu8DPPvF65Wdim7y9.jpg",
       "locked": false
@@ -12774,7 +12823,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 370,
+      "rank": 372,
       "poster": "https://image.tmdb.org/t/p/w500/g5fuPFo7YSJH0AT5hqyO3ATXAQ6.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/9izsJTGZx8y63HmtsnxjduBcft1.jpg",
       "locked": false
@@ -12801,7 +12850,7 @@
       "resol": 5,
       "final": 6.22,
       "locked": false,
-      "rank": 371
+      "rank": 373
     },
     {
       "slug": "tell-me-you-love-me",
@@ -12836,7 +12885,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 372,
+      "rank": 374,
       "poster": "https://image.tmdb.org/t/p/w500/pPdoG5kNcQmsIne4Hq8SoLunpJX.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/rowPlHjX7RvcKQD6GYwskF9R82c.jpg",
       "locked": false
@@ -12875,7 +12924,7 @@
           "Channel 4"
         ]
       },
-      "rank": 373,
+      "rank": 375,
       "poster": "https://image.tmdb.org/t/p/w500/qNmcaXDndOkY6v9QiJjnxQD09GJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/zOnLMRD3PIhwO5KZmWMVEnLokMo.jpg",
       "locked": false
@@ -12902,7 +12951,7 @@
       "resol": 4,
       "final": 6.22,
       "locked": false,
-      "rank": 374
+      "rank": 376
     },
     {
       "title": "The Lincoln Lawyer",
@@ -12927,7 +12976,32 @@
       "resol": 5.5,
       "final": 6.17,
       "locked": false,
-      "rank": 375
+      "rank": 377
+    },
+    {
+      "title": "CSI: NY",
+      "slug": "csi-ny",
+      "year": 2004,
+      "tmdbId": 2458,
+      "episodes": 197,
+      "genres": [
+        "crime",
+        "drama",
+        "mystery"
+      ],
+      "status": "Canceled",
+      "poster": "https://image.tmdb.org/t/p/w500/4TGV4Bb3OPay4cHkQRlfwghv3vC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 6.5,
+      "world": 6,
+      "cine": 6,
+      "spect": 4,
+      "conc": 6,
+      "drive": 6.5,
+      "resol": 6.5,
+      "final": 6.15,
+      "locked": false,
+      "rank": 378
     },
     {
       "title": "The Witcher: Blood Origin",
@@ -12951,7 +13025,32 @@
       "poster": "https://image.tmdb.org/t/p/w500/vpfJK9F0UJNcAIIeC42oJyKMnZQ.jpg",
       "backdrop": null,
       "locked": false,
-      "rank": 376
+      "rank": 379
+    },
+    {
+      "title": "CSI: Miami",
+      "slug": "csi-miami",
+      "year": 2002,
+      "tmdbId": 1620,
+      "episodes": 232,
+      "genres": [
+        "crime",
+        "drama",
+        "mystery"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/pNW64pjaHvf6purNaFhq4SHYRfl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 6,
+      "world": 6,
+      "cine": 6.5,
+      "spect": 4,
+      "conc": 5.5,
+      "drive": 6.5,
+      "resol": 6.5,
+      "final": 6.04,
+      "locked": false,
+      "rank": 380
     },
     {
       "title": "Marvel's Iron Fist",
@@ -12976,7 +13075,7 @@
       "resol": 5,
       "final": 5.99,
       "locked": false,
-      "rank": 377
+      "rank": 381
     },
     {
       "slug": "undeclared",
@@ -13011,7 +13110,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 378,
+      "rank": 382,
       "poster": "https://image.tmdb.org/t/p/w500/cCCy0WYZvMxoz3LC2kyHX4Vy6eT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/uinrziSwEmS6s8VvGBad5sed7bF.jpg",
       "locked": false
@@ -13039,7 +13138,7 @@
       "resol": 5,
       "final": 5.87,
       "locked": false,
-      "rank": 379
+      "rank": 383
     },
     {
       "slug": "the-i-land",
@@ -13067,7 +13166,7 @@
       "drive": 6.5,
       "resol": 5.5,
       "final": 5.71,
-      "rank": 380,
+      "rank": 384,
       "scoring_notes": "Netflix sci-fi misfire. Kate Bosworth in Lost-meets-Black Mirror premise. Poor writing, weak character development. Notable for how thoroughly it misses the mark. Mercifully short.",
       "streaming": {
         "us": [
@@ -13080,6 +13179,30 @@
       "poster": "https://image.tmdb.org/t/p/w500/Muev370hN3vdjGsC1ip1HcWqbT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/jHF1ys6WjpKpgj3JPTCP65pN96v.jpg",
       "locked": false
+    },
+    {
+      "title": "Prime Suspect (US)",
+      "slug": "prime-suspect-us",
+      "year": 2011,
+      "tmdbId": 39684,
+      "episodes": 13,
+      "genres": [
+        "crime",
+        "drama"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/gT6CX14E83hd4JSR00iQOHukc0j.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 6.5,
+      "world": 6,
+      "cine": 6.5,
+      "spect": 3,
+      "conc": 6.5,
+      "drive": 7,
+      "resol": 5,
+      "final": 5.7,
+      "locked": false,
+      "rank": 385
     },
     {
       "title": "Chicago Justice",
@@ -13104,7 +13227,7 @@
       "resol": 4,
       "final": 5.23,
       "locked": false,
-      "rank": 381
+      "rank": 386
     }
   ]
 }
