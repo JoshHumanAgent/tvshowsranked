@@ -1,97 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 19,
+    "total": 13,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "argentinian",
-        "netflix"
-      ],
-      "year": 2015,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "El Marginal",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "mcu",
-        "period-piece"
-      ],
-      "year": 2015,
-      "priority": "MEDIUM",
-      "genres": [
-        "action",
-        "drama"
-      ],
-      "title": "Agent Carter",
-      "status": "pending"
-    },
-    {
-      "confidence": "low",
-      "why": [
-        "cult",
-        "genre"
-      ],
-      "year": 2014,
-      "priority": "MEDIUM",
-      "genres": [
-        "horror",
-        "drama"
-      ],
-      "title": "From Dusk Till Dawn: The Series",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "chicago-franchise"
-      ],
-      "year": 2014,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "Chicago P.D.",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "popular",
-        "long-running"
-      ],
-      "year": 2013,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "thriller"
-      ],
-      "title": "The Blacklist",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "chicago-franchise"
-      ],
-      "year": 2012,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama"
-      ],
-      "title": "Chicago Fire",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [
