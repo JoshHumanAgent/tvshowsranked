@@ -5816,10 +5816,11 @@
             const btn = document.getElementById('login-bar-btn');
             if (!btn) return;
 
-            // Master Export button - only for admin
+            // Master Export button - show when logged in (admin check in click handler)
             const masterExportBtn = document.getElementById('master-export-btn');
             if (masterExportBtn) {
-                masterExportBtn.style.display = (user && user.uid === ADMIN_UID) ? 'inline-block' : 'none';
+                masterExportBtn.style.display = user ? 'inline-block' : 'none';
+                console.log('[Master Export] Button visibility:', user ? 'visible' : 'hidden', user ? 'uid=' + user.uid : '');
             }
 
             if (user) {
