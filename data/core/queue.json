@@ -1,106 +1,67 @@
 ﻿{
   "meta": {
-    "total": 24,
-    "generated": "2026-02-24T06:39:46.278Z"
+    "total": 10,
+    "generated": "2026-02-24T07:02:36.738Z"
   },
   "candidates": [
-    {
-      "title": "The Loyal Pin",
-      "slug": "the-loyal-pin",
-      "year": 2024,
-      "tmdbId": 238754,
-      "vote": 9.506,
-      "count": 83,
-      "poster": "/N6S8OSnihCpuDWMpeaT9gAo7SJ.jpg"
-    },
-    {
-      "title": "Takopi's Original Sin",
-      "slug": "takopi-s-original-sin",
-      "year": 2025,
-      "tmdbId": 284445,
-      "vote": 8.844,
-      "count": 141,
-      "poster": "/xPXDVhVKt0XM34ihoUVMHtLYTw8.jpg"
-    },
     {
       "title": "Bon Appétit, Your Majesty",
       "slug": "bon-app-tit-your-majesty",
       "year": 2025,
       "tmdbId": 280945,
+      "eps": 12,
       "vote": 8.84,
       "count": 194,
+      "status": "Ended",
+      "genres": "drama, sci-fi & fantasy",
       "poster": "/bzYSIw9FTzQXUcWsnDSwlcwok3C.jpg"
-    },
-    {
-      "title": "Heated Rivalry",
-      "slug": "heated-rivalry",
-      "year": 2025,
-      "tmdbId": 301507,
-      "vote": 8.738,
-      "count": 313,
-      "poster": "/3YCKbtAkYWCMDLHvkUjGhG7eWoS.jpg"
-    },
-    {
-      "title": "Good Boy",
-      "slug": "good-boy",
-      "year": 2025,
-      "tmdbId": 231280,
-      "vote": 8.7,
-      "count": 140,
-      "poster": "/59MAdHaHepsz3uDCU1LyoNQcLlT.jpg"
     },
     {
       "title": "Head Over Heels",
       "slug": "head-over-heels",
       "year": 2025,
       "tmdbId": 258025,
+      "eps": 12,
       "vote": 8.7,
       "count": 94,
+      "status": "Ended",
+      "genres": "sci-fi & fantasy, drama, comedy",
       "poster": "/kL42DhVhqjO3NxlB0oNg2Z4TAWP.jpg"
     },
     {
-      "title": "The Fragrant Flower Blooms with Dignity",
-      "slug": "the-fragrant-flower-blooms-with-dignity",
+      "title": "Good Boy",
+      "slug": "good-boy",
       "year": 2025,
-      "tmdbId": 271607,
-      "vote": 8.652,
-      "count": 164,
-      "poster": "/g1sYAQt0OeCxzyfagSEqxUlsLnt.jpg"
+      "tmdbId": 231280,
+      "eps": 16,
+      "vote": 8.7,
+      "count": 140,
+      "status": "Ended",
+      "genres": "crime, comedy, action & adventure, drama",
+      "poster": "/59MAdHaHepsz3uDCU1LyoNQcLlT.jpg"
     },
     {
       "title": "Friendly Rivalry",
       "slug": "friendly-rivalry",
       "year": 2025,
       "tmdbId": 259288,
+      "eps": 16,
       "vote": 8.6,
       "count": 90,
+      "status": "Ended",
+      "genres": "mystery, drama",
       "poster": "/eRwNhjpizV7up8KrCmiI94is1bl.jpg"
-    },
-    {
-      "title": "Hazbin Hotel",
-      "slug": "hazbin-hotel",
-      "year": 2024,
-      "tmdbId": 94954,
-      "vote": 8.6,
-      "count": 1521,
-      "poster": "/aVYHMW8pdzJ9qG1OGRMKyGy9xor.jpg"
-    },
-    {
-      "title": "Gachiakuta",
-      "slug": "gachiakuta",
-      "year": 2025,
-      "tmdbId": 256721,
-      "vote": 8.596,
-      "count": 213,
-      "poster": "/jH78nLFrTU6aP7hY7KO6DZHFLoX.jpg"
     },
     {
       "title": "No One Will Miss Us",
       "slug": "no-one-will-miss-us",
       "year": 2024,
       "tmdbId": 259666,
+      "eps": 8,
       "vote": 8.546,
       "count": 280,
+      "status": "Returning Series",
+      "genres": "drama, comedy",
       "poster": "/py0s87C9214KRbZ4kWLQfgsE9ET.jpg"
     },
     {
@@ -108,8 +69,11 @@
       "slug": "the-trauma-code-heroes-on-call",
       "year": 2025,
       "tmdbId": 217553,
+      "eps": 8,
       "vote": 8.543,
       "count": 129,
+      "status": "Ended",
+      "genres": "drama, comedy",
       "poster": "/y8h2RwUZM5chv9tuaKVwSPoo3KE.jpg"
     },
     {
@@ -117,26 +81,23 @@
       "slug": "the-pendragon-cycle-rise-of-the-merlin",
       "year": 2026,
       "tmdbId": 235685,
+      "eps": 7,
       "vote": 8.518,
       "count": 28,
+      "status": "Returning Series",
+      "genres": "sci-fi & fantasy, action & adventure, family, drama",
       "poster": "/jJfk8NXauN4UgFQ1qn9lFzEk7ib.jpg"
-    },
-    {
-      "title": "Nina the Starry Bride",
-      "slug": "nina-the-starry-bride",
-      "year": 2024,
-      "tmdbId": 240641,
-      "vote": 8.5,
-      "count": 50,
-      "poster": "/goE7QiiaRkzVLnwaODRNKarWljv.jpg"
     },
     {
       "title": "Dinastía Casillas",
       "slug": "dinast-a-casillas",
       "year": 2025,
       "tmdbId": 302463,
+      "eps": 92,
       "vote": 8.257,
       "count": 300,
+      "status": "Returning Series",
+      "genres": "drama, action & adventure, mystery",
       "poster": "/5xFzmTTC4ITaFkiwzohTK1UUNX3.jpg"
     },
     {
@@ -144,8 +105,11 @@
       "slug": "memory-of-a-killer",
       "year": 2026,
       "tmdbId": 291339,
+      "eps": 10,
       "vote": 7.65,
       "count": 20,
+      "status": "Returning Series",
+      "genres": "crime, drama",
       "poster": "/3kpXrWW6gmlngwgSa52IhBpjPuz.jpg"
     },
     {
@@ -153,72 +117,12 @@
       "slug": "the-art-of-sarah",
       "year": 2026,
       "tmdbId": 273977,
+      "eps": 8,
       "vote": 7.625,
       "count": 24,
+      "status": "Ended",
+      "genres": "crime, mystery, drama",
       "poster": "/nP2PRGSmLdbZtQtoXPPppcDAsNw.jpg"
-    },
-    {
-      "title": "Paradise",
-      "slug": "paradise",
-      "year": 2025,
-      "tmdbId": 245927,
-      "vote": 7.4,
-      "count": 322,
-      "poster": "/l8RqfhqEk04W5sSOjQ9zeWU1DyM.jpg"
-    },
-    {
-      "title": "In the Mud",
-      "slug": "in-the-mud",
-      "year": 2025,
-      "tmdbId": 258462,
-      "vote": 7.353,
-      "count": 112,
-      "poster": "/9JWQYB7FkGtg47wFO7GOrUDgYrx.jpg"
-    },
-    {
-      "title": "Speed and Love",
-      "slug": "speed-and-love",
-      "year": 2025,
-      "tmdbId": 279041,
-      "vote": 7.262,
-      "count": 21,
-      "poster": "/tnN7OcVOfIhJATSquVzvMoxLPoR.jpg"
-    },
-    {
-      "title": "Esref's Dream",
-      "slug": "esref-s-dream",
-      "year": 2025,
-      "tmdbId": 283123,
-      "vote": 7.2,
-      "count": 26,
-      "poster": "/eeFYLgiRFaG3bKx1qLyC7YOdHJz.jpg"
-    },
-    {
-      "title": "Spartacus: House of Ashur",
-      "slug": "spartacus-house-of-ashur",
-      "year": 2025,
-      "tmdbId": 240459,
-      "vote": 6.814,
-      "count": 202,
-      "poster": "/vNByuzy60v31nmUVPMA8oAtneUK.jpg"
-    },
-    {
-      "title": "The Beauty",
-      "slug": "the-beauty",
-      "year": 2026,
-      "tmdbId": 273160,
-      "vote": 6.097,
-      "count": 62,
-      "poster": "/tZTG2PPAukzksPkiQV9c4suIQXk.jpg"
-    },
-    {
-      "title": "56 Days",
-      "slug": "56-days",
-      "year": 2026,
-      "tmdbId": 241372,
-      "vote": 5,
-      "count": 30,
-      "poster": "/sdJLbucggwGj8NdX0UN2zt1Vwmn.jpg"
     }
   ]
 }
