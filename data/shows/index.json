@@ -1,7 +1,7 @@
 ﻿{
   "meta": {
-    "generated": "2026-02-24T05:34:22.969Z",
-    "total": 371,
+    "generated": "2026-02-24T05:35:51.374Z",
+    "total": 372,
     "lockedCount": 96,
     "description": "All ranked shows, sorted by weighted score. Shows with locked=true are sacred - never re-rank without explicit approval."
   },
@@ -11240,6 +11240,31 @@
       "rank": 321
     },
     {
+      "title": "Castle Rock",
+      "slug": "castle-rock",
+      "year": 2018,
+      "tmdbId": 71116,
+      "episodes": 20,
+      "genres": [
+        "horror",
+        "thriller",
+        "drama"
+      ],
+      "status": "Canceled",
+      "poster": "https://image.tmdb.org/t/p/w500/7AFPH4VmDKAtMpVq7JLVAJjsGxj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/gNIdzV3qWogP4DwVvCf8O9fQSYi.jpg",
+      "char": 7,
+      "world": 8.5,
+      "cine": 8,
+      "spect": 6,
+      "conc": 7,
+      "drive": 7.5,
+      "resol": 5,
+      "final": 6.79,
+      "locked": false,
+      "rank": 322
+    },
+    {
       "title": "Gyeongseong Creature",
       "slug": "gyeongseong-creature",
       "year": 2023,
@@ -11261,7 +11286,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/peVe0NQNdZMXwtTohnv8iwJQb2d.jpg",
       "locked": false,
       "final": 6.79,
-      "rank": 322
+      "rank": 323
     },
     {
       "slug": "peep-show",
@@ -11297,7 +11322,7 @@
           "Channel 4"
         ]
       },
-      "rank": 323,
+      "rank": 324,
       "poster": "https://image.tmdb.org/t/p/w500/6rdoQ0cTjsEQLIwEjhBV8U98oUm.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/nO7EzksrBzlNpAg5rgv8HzaBIkx.jpg",
       "locked": false
@@ -11336,7 +11361,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 324,
+      "rank": 325,
       "poster": "https://image.tmdb.org/t/p/w500/5LZgFeMynMeeKX8Bn9s1RWe9n9S.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/tMRdEsMg9MyXAkcufK9YJEeIaNW.jpg",
       "locked": false
@@ -11375,7 +11400,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 325,
+      "rank": 326,
       "poster": "https://image.tmdb.org/t/p/w500/i6gZ7fVpLBK3l5FkxCzMtEtT7Bz.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/4KUMCCjykGqgzeUpubxlwABm6ok.jpg",
       "locked": false
@@ -11405,7 +11430,7 @@
       "drive": 7.5,
       "resol": 7,
       "final": 6.75,
-      "rank": 326,
+      "rank": 327,
       "scoring_notes": "Netflix prequel to Wallander. Kristoffer Nyholm plays younger Kurt. English-language despite Swedish setting feels awkward. Origin story approach diminishes mystery. Two seasons but lacks depth of Branagh version. Watch original instead.",
       "streaming": {
         "us": [
@@ -11441,7 +11466,7 @@
       "resol": 7.5,
       "final": 6.74,
       "locked": false,
-      "rank": 327
+      "rank": 328
     },
     {
       "slug": "the-office-us",
@@ -11477,7 +11502,7 @@
           "Netflix"
         ]
       },
-      "rank": 328,
+      "rank": 329,
       "poster": "https://image.tmdb.org/t/p/w500/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg",
       "locked": false
@@ -11507,7 +11532,7 @@
       "drive": 6.5,
       "resol": 6.5,
       "final": 6.72,
-      "rank": 329,
+      "rank": 330,
       "scoring_notes": "Climate change anthology with A-list cast. Meryl Streep, Kit Harington, Sienna Miller among ensemble. Well-intentioned but preachy and disjointed. Future scenarios lack urgency despite subject matter. Limited series, complete but underwhelming. Missed opportunity.",
       "streaming": {
         "us": [
@@ -11556,7 +11581,7 @@
           "Apple TV+"
         ]
       },
-      "rank": 330,
+      "rank": 331,
       "locked": false
     },
     {
@@ -11582,7 +11607,7 @@
       "resol": 5,
       "final": 6.72,
       "locked": false,
-      "rank": 331
+      "rank": 332
     },
     {
       "title": "All of Us Are Dead",
@@ -11606,7 +11631,7 @@
       "poster": "https://image.tmdb.org/t/p/w500/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
       "backdrop": null,
       "locked": false,
-      "rank": 332
+      "rank": 333
     },
     {
       "slug": "one-tree-hill",
@@ -11641,7 +11666,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 333,
+      "rank": 334,
       "poster": "https://image.tmdb.org/t/p/w500/sOrelBaAhp7DZbPTivDwKEyPslC.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/gvEisYtZ0iBMjnO3zqFU2oM26oM.jpg",
       "locked": false
@@ -11678,7 +11703,7 @@
         "uk": []
       },
       "final": 6.67,
-      "rank": 334,
+      "rank": 335,
       "locked": false
     },
     {
@@ -11706,7 +11731,7 @@
       "drive": 7.5,
       "resol": 6.5,
       "final": 6.67,
-      "rank": 335,
+      "rank": 336,
       "scoring_notes": "BBC satire thriller. Corporate dystopia with dark humor. Limited scope but sharp writing. For fans of Black Mirror adjacent content.",
       "streaming": {
         "us": [
@@ -11745,7 +11770,7 @@
       "drive": 7.5,
       "resol": 6.5,
       "final": 6.65,
-      "rank": 336,
+      "rank": 337,
       "scoring_notes": "Gugu Mbatha-Raw as woman with amnesia piecing together her past. San Francisco setting is glossy but hollow. Psychological thriller that thinks it's smarter than it is. Two seasons, ongoing. Surface-level character work despite Mbatha-Raw's efforts. Disappointing.",
       "streaming": {
         "us": [
@@ -11784,7 +11809,7 @@
       "drive": 6.5,
       "resol": 6,
       "final": 6.65,
-      "rank": 337,
+      "rank": 338,
       "scoring_notes": "LaKeith Stanfield as father in dark fairy tale about parenthood. Atmospheric horror with social commentary. Pacing issues but visuals striking. Ongoing.",
       "streaming": {
         "us": [
@@ -11823,7 +11848,7 @@
       "drive": 7,
       "resol": 6.5,
       "final": 6.62,
-      "rank": 338,
+      "rank": 339,
       "scoring_notes": "Mark Boal (Hurt Locker) creates hostage rescue thriller. Luke Evans and Michiel Huisman as brothers-in-law saving scientist in Colombia. Action sequences are solid but characters are thin. CANCELED after one season. Watchable but forgettable military thriller.",
       "streaming": {
         "us": [
@@ -11862,7 +11887,7 @@
       "drive": 7,
       "resol": 5.5,
       "final": 6.6,
-      "rank": 339,
+      "rank": 340,
       "scoring_notes": "Showtime vampire series based on Swedish film. CANCELED after one season. Atmospheric but fails to capture original's magic. Watch the original film instead.",
       "streaming": {
         "us": [
@@ -11911,7 +11936,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 340,
+      "rank": 341,
       "poster": "https://image.tmdb.org/t/p/w500/kuyxEBpuAYdfHqfzip2Y6UYRI2C.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/tqubNA9ZtI6CW64JXhqXw9fAgPT.jpg",
       "locked": false
@@ -11951,7 +11976,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 341,
+      "rank": 342,
       "poster": "https://image.tmdb.org/t/p/w500/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/k1UpU2cfa4PbDUBnJtr43TpdNBg.jpg",
       "locked": false
@@ -11981,7 +12006,7 @@
       "drive": 7.5,
       "resol": 5,
       "final": 6.57,
-      "rank": 342,
+      "rank": 343,
       "scoring_notes": "US adaptation of The Returned concept. Dead Missouri residents return home. Omar Epps leads. Lacks atmosphere and depth of French original. CANCELED after 2 seasons without resolution. Watch Les Revenants instead.",
       "streaming": {
         "us": [
@@ -12018,7 +12043,7 @@
       "resol": 5,
       "final": 6.55,
       "locked": false,
-      "rank": 343
+      "rank": 344
     },
     {
       "slug": "high-maintenance",
@@ -12055,7 +12080,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 344,
+      "rank": 345,
       "poster": "https://image.tmdb.org/t/p/w500/qmYqwOW0QTkJy1UGUsM2t0Kowpu.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/2HXCNnNRDPaM6PFGZOOyNs4nPVL.jpg",
       "locked": false
@@ -12082,7 +12107,7 @@
       "resol": 5.5,
       "final": 6.53,
       "locked": false,
-      "rank": 345
+      "rank": 346
     },
     {
       "title": "The Peripheral",
@@ -12106,7 +12131,7 @@
       "resol": 4,
       "final": 6.53,
       "locked": false,
-      "rank": 346
+      "rank": 347
     },
     {
       "title": "Berlin Station",
@@ -12130,7 +12155,7 @@
       "resol": 7,
       "final": 6.5,
       "locked": false,
-      "rank": 347
+      "rank": 348
     },
     {
       "title": "The Diplomat",
@@ -12153,7 +12178,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/v6f9FUDDQfGIv8MLRQwlL0zvRjI.jpg",
       "final": 6.5,
       "locked": false,
-      "rank": 348
+      "rank": 349
     },
     {
       "title": "The Responder",
@@ -12177,7 +12202,7 @@
       "resol": 5,
       "final": 6.5,
       "locked": false,
-      "rank": 349
+      "rank": 350
     },
     {
       "title": "McMafia",
@@ -12201,7 +12226,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/8uJPiVNMjjVUHgnCb3de1nSv0L5.jpg",
       "final": 6.48,
       "locked": false,
-      "rank": 350
+      "rank": 351
     },
     {
       "title": "WeCrashed",
@@ -12224,7 +12249,7 @@
       "resol": 7,
       "final": 6.48,
       "locked": false,
-      "rank": 351
+      "rank": 352
     },
     {
       "slug": "togetherness",
@@ -12260,7 +12285,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 352,
+      "rank": 353,
       "poster": "https://image.tmdb.org/t/p/w500/efMjjsthjr7UDsc3ab7DVUZNY3N.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/pFsKc5goGgPkUT8uFH9jIJsvipC.jpg",
       "locked": false
@@ -12286,7 +12311,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/tldMHeR7UnihV5ffrxxM8cDhbtT.jpg",
       "final": 6.41,
       "locked": false,
-      "rank": 353
+      "rank": 354
     },
     {
       "slug": "dear-edward",
@@ -12311,7 +12336,7 @@
       "drive": 6.5,
       "resol": 6.5,
       "final": 6.38,
-      "rank": 354,
+      "rank": 355,
       "scoring_notes": "Jason Katims (Friday Night Lights) adapts Ann Napolitano novel. Young boy sole survivor of plane crash. Grief and connection stories among victim families. Tender but overly sentimental. CANCELED after one season. Connie Britton adds presence. Manipulative emotion.",
       "streaming": {
         "us": [
@@ -12359,7 +12384,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 355,
+      "rank": 356,
       "poster": "https://image.tmdb.org/t/p/w500/gC8PDx7tfbXS9BqxBgj0YXKDIoW.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/A2qdFRq9oJDC5E7fbgSS4POUMDF.jpg",
       "locked": false
@@ -12386,7 +12411,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/31GIcUUcdQPRkVtmdqgQWJMhXj1.jpg",
       "locked": false,
       "final": 6.34,
-      "rank": 356
+      "rank": 357
     },
     {
       "title": "Obi-Wan Kenobi",
@@ -12411,7 +12436,7 @@
       "resol": 6.5,
       "final": 6.34,
       "locked": false,
-      "rank": 357
+      "rank": 358
     },
     {
       "title": "The Flight Attendant",
@@ -12436,7 +12461,7 @@
       "resol": 6.5,
       "final": 6.34,
       "locked": false,
-      "rank": 358
+      "rank": 359
     },
     {
       "title": "Ms. Marvel",
@@ -12461,7 +12486,7 @@
       "resol": 6.5,
       "final": 6.29,
       "locked": false,
-      "rank": 359
+      "rank": 360
     },
     {
       "slug": "last-thing-he-told-me",
@@ -12489,7 +12514,7 @@
       "drive": 7,
       "resol": 6.5,
       "final": 6.29,
-      "rank": 360,
+      "rank": 361,
       "scoring_notes": "Jennifer Garner as woman searching for missing husband. Based on popular novel but adaptation lacks tension. Aisha Tyler and Angourie Rice add support. Limited series, complete. Thriller that forgets to thrill. Apple's weaker drama offerings.",
       "streaming": {
         "us": [
@@ -12525,7 +12550,7 @@
       "resol": 4.5,
       "final": 6.25,
       "locked": false,
-      "rank": 361
+      "rank": 362
     },
     {
       "slug": "this-country",
@@ -12561,7 +12586,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 362,
+      "rank": 363,
       "poster": "https://image.tmdb.org/t/p/w500/iUjzx6qCPFBCoMA0YtEONew9NUE.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/2U9KE5jq2qwu8DPPvF65Wdim7y9.jpg",
       "locked": false
@@ -12600,7 +12625,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 363,
+      "rank": 364,
       "poster": "https://image.tmdb.org/t/p/w500/g5fuPFo7YSJH0AT5hqyO3ATXAQ6.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/9izsJTGZx8y63HmtsnxjduBcft1.jpg",
       "locked": false
@@ -12627,7 +12652,7 @@
       "resol": 5,
       "final": 6.22,
       "locked": false,
-      "rank": 364
+      "rank": 365
     },
     {
       "slug": "tell-me-you-love-me",
@@ -12662,7 +12687,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 365,
+      "rank": 366,
       "poster": "https://image.tmdb.org/t/p/w500/pPdoG5kNcQmsIne4Hq8SoLunpJX.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/rowPlHjX7RvcKQD6GYwskF9R82c.jpg",
       "locked": false
@@ -12701,7 +12726,7 @@
           "Channel 4"
         ]
       },
-      "rank": 366,
+      "rank": 367,
       "poster": "https://image.tmdb.org/t/p/w500/qNmcaXDndOkY6v9QiJjnxQD09GJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/zOnLMRD3PIhwO5KZmWMVEnLokMo.jpg",
       "locked": false
@@ -12728,7 +12753,7 @@
       "resol": 4,
       "final": 6.22,
       "locked": false,
-      "rank": 367
+      "rank": 368
     },
     {
       "title": "The Lincoln Lawyer",
@@ -12753,7 +12778,7 @@
       "resol": 5.5,
       "final": 6.17,
       "locked": false,
-      "rank": 368
+      "rank": 369
     },
     {
       "title": "The Witcher: Blood Origin",
@@ -12777,7 +12802,7 @@
       "poster": "https://image.tmdb.org/t/p/w500/vpfJK9F0UJNcAIIeC42oJyKMnZQ.jpg",
       "backdrop": null,
       "locked": false,
-      "rank": 369
+      "rank": 370
     },
     {
       "slug": "undeclared",
@@ -12812,7 +12837,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 370,
+      "rank": 371,
       "poster": "https://image.tmdb.org/t/p/w500/cCCy0WYZvMxoz3LC2kyHX4Vy6eT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/uinrziSwEmS6s8VvGBad5sed7bF.jpg",
       "locked": false
@@ -12843,7 +12868,7 @@
       "drive": 6.5,
       "resol": 5.5,
       "final": 5.71,
-      "rank": 371,
+      "rank": 372,
       "scoring_notes": "Netflix sci-fi misfire. Kate Bosworth in Lost-meets-Black Mirror premise. Poor writing, weak character development. Notable for how thoroughly it misses the mark. Mercifully short.",
       "streaming": {
         "us": [

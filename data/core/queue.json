@@ -1,96 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 43,
+    "total": 37,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "modern-revival"
-      ],
-      "year": 2019,
-      "priority": "MEDIUM",
-      "genres": [
-        "sci-fi",
-        "anthology"
-      ],
-      "title": "The Twilight Zone (2019)",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "international",
-        "anthology"
-      ],
-      "year": 2019,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "Criminal",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "anthology",
-        "british"
-      ],
-      "year": 2019,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "Criminal: UK",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "king-universe"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "horror",
-        "thriller"
-      ],
-      "title": "Castle Rock",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "british",
-        "journalism"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama"
-      ],
-      "title": "Press",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "medical-drama"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama",
-        "medical"
-      ],
-      "title": "The Resident",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [
