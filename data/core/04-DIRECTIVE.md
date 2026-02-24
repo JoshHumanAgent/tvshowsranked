@@ -10,6 +10,8 @@ data/core/
 └── 04-DIRECTIVE.md          ← This file (instructions)
 ```
 
+**Imports:** `data/imports/` — **Josh's re-ranked files land here. ALWAYS CHECK THIS FOLDER FIRST.**
+
 **Archived:** `01-current-index.json`, `02-overflow-pool.json`, `03-ranking-queue.json` → `data/archive/`
 
 ---
