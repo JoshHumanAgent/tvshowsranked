@@ -1,81 +1,10 @@
 ﻿{
   "meta": {
-    "generated": "2026-02-24T02:45:01.617Z",
-    "total": 121,
+    "generated": "2026-02-24T03:00:28.771Z",
+    "total": 116,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "limited",
-        "adam-curve"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "drama"
-      ],
-      "title": "WeCrashed",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "medical",
-        "bbc"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "drama"
-      ],
-      "title": "This Is Going to Hurt",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "star-wars"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "sci-fi",
-        "action"
-      ],
-      "title": "Obi-Wan Kenobi",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "mcu",
-        "diverse"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "action",
-        "drama"
-      ],
-      "title": "Ms. Marvel",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "charlie-brooker"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "sci-fi",
-        "drama"
-      ],
-      "title": "The Man Who Fell to Earth",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [

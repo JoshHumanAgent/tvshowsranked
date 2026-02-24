@@ -1,7 +1,7 @@
 ﻿{
   "meta": {
-    "generated": "2026-02-24T02:43:08.168Z",
-    "total": 321,
+    "generated": "2026-02-24T02:59:41.772Z",
+    "total": 326,
     "lockedCount": 96,
     "description": "All ranked shows, sorted by weighted score. Shows with locked=true are sacred - never re-rank without explicit approval."
   },
@@ -2158,7 +2158,31 @@
       "locked": false
     },
     {
-      "rank": 61,
+      "title": "The Sandman",
+      "slug": "the-sandman",
+      "year": 2022,
+      "tmdbId": 90802,
+      "episodes": 23,
+      "genres": [
+        "fantasy",
+        "drama",
+        "action"
+      ],
+      "char": 8,
+      "world": 8.5,
+      "cine": 8.5,
+      "spect": 7.5,
+      "conc": 8,
+      "drive": 7.5,
+      "resol": 8,
+      "poster": "https://image.tmdb.org/t/p/w500/q54qEgagGOYCq5D1903eBVMNkbo.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/i8taDLjpF8cCbp53N8kOFt1LSkW.jpg",
+      "locked": false,
+      "final": 7.78,
+      "rank": 61
+    },
+    {
+      "rank": 62,
       "slug": "true-detective-s1",
       "title": "True Detective S1",
       "year": 2014,
@@ -2192,30 +2216,6 @@
       },
       "backdrop": "https://image.tmdb.org/t/p/w780/bPLRjO2pcBx0WL73WUPzuNzQ3YN.jpg",
       "locked": true
-    },
-    {
-      "title": "The Sandman",
-      "slug": "the-sandman",
-      "year": 2022,
-      "tmdbId": 90802,
-      "episodes": 23,
-      "genres": [
-        "fantasy",
-        "drama",
-        "action"
-      ],
-      "char": 8,
-      "world": 8.5,
-      "cine": 8.5,
-      "spect": 7.5,
-      "conc": 8,
-      "drive": 7.5,
-      "resol": 8,
-      "poster": "https://image.tmdb.org/t/p/w500/q54qEgagGOYCq5D1903eBVMNkbo.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/i8taDLjpF8cCbp53N8kOFt1LSkW.jpg",
-      "locked": false,
-      "final": 7.78,
-      "rank": 62
     },
     {
       "slug": "billions",
@@ -9899,6 +9899,30 @@
       "locked": false
     },
     {
+      "title": "Moon Knight",
+      "slug": "moon-knight",
+      "year": 2022,
+      "tmdbId": 92749,
+      "episodes": 6,
+      "genres": [
+        "action",
+        "fantasy",
+        "mystery"
+      ],
+      "char": 7.5,
+      "world": 7,
+      "cine": 7.5,
+      "spect": 7.5,
+      "conc": 7,
+      "drive": 7,
+      "resol": 6.5,
+      "final": 6.89,
+      "poster": "https://image.tmdb.org/t/p/w500/vKDUmKO6F9bSKKyHhg7YGbgcEeF.jpg",
+      "backdrop": null,
+      "locked": false,
+      "rank": 273
+    },
+    {
       "slug": "slow-horses",
       "title": "Slow Horses",
       "year": 2022,
@@ -9920,7 +9944,7 @@
       "drive": 8,
       "resol": 7,
       "final": 6.89,
-      "rank": 273,
+      "rank": 274,
       "poster": "https://image.tmdb.org/t/p/w500/dnpatlJrEPiDSn5fzgzvxtiSnMo.jpg",
       "streaming": {
         "us": [
@@ -9953,30 +9977,6 @@
       "poster": "https://image.tmdb.org/t/p/w500/2rl04pRCaGfz91lwfWdDQmOiGJp.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/4qDlkEAKFb4pgIUbeJMLyHX2Xym.jpg",
       "final": 6.89,
-      "locked": false,
-      "rank": 274
-    },
-    {
-      "title": "Moon Knight",
-      "slug": "moon-knight",
-      "year": 2022,
-      "tmdbId": 92749,
-      "episodes": 6,
-      "genres": [
-        "action",
-        "fantasy",
-        "mystery"
-      ],
-      "char": 7.5,
-      "world": 7,
-      "cine": 7.5,
-      "spect": 7.5,
-      "conc": 7,
-      "drive": 7,
-      "resol": 6.5,
-      "final": 6.89,
-      "poster": "https://image.tmdb.org/t/p/w500/vKDUmKO6F9bSKKyHhg7YGbgcEeF.jpg",
-      "backdrop": null,
       "locked": false,
       "rank": 275
     },
@@ -10098,6 +10098,30 @@
       "locked": false
     },
     {
+      "title": "Moving",
+      "slug": "moving",
+      "year": 2023,
+      "tmdbId": 126485,
+      "episodes": 20,
+      "genres": [
+        "drama",
+        "action",
+        "mystery"
+      ],
+      "char": 7.5,
+      "world": 7,
+      "cine": 7.5,
+      "spect": 7,
+      "conc": 7.5,
+      "drive": 7.5,
+      "resol": 6,
+      "poster": "https://image.tmdb.org/t/p/w500/vf9SNXNAFqzKBGksFwrXhkg9cb7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/29jWaRhKtey1efp5G7Fu97NAmzz.jpg",
+      "locked": false,
+      "final": 6.86,
+      "rank": 279
+    },
+    {
       "slug": "traces",
       "title": "Traces",
       "year": 2019,
@@ -10122,7 +10146,7 @@
       "drive": 7.5,
       "resol": 7.5,
       "final": 6.86,
-      "rank": 279,
+      "rank": 280,
       "scoring_notes": "Molly McCarthy as forensic scientist in Dundee SIFA lab. Based on Val McDermid's characters. Technical detail on forensics is authentic. Two seasons, complete arc. Martin Compston adds presence. Solid but unexceptional procedural.",
       "streaming": {
         "us": [
@@ -10162,7 +10186,7 @@
       "drive": 8,
       "resol": 7,
       "final": 6.86,
-      "rank": 280,
+      "rank": 281,
       "scoring_notes": "Bryan Cranston as judge covering up son's hit-and-run. S1 strong with moral descent. S2 unnecessary continuation weakens impact. Watch S1 only for complete story.",
       "streaming": {
         "us": [
@@ -10176,30 +10200,6 @@
       "poster": "https://image.tmdb.org/t/p/w500/1rWWgTEDFdV330aLgCoaq7I56lk.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/nYxqUQaYGUv3pgMfe9BQ2WtUMQu.jpg",
       "locked": false
-    },
-    {
-      "title": "Moving",
-      "slug": "moving",
-      "year": 2023,
-      "tmdbId": 126485,
-      "episodes": 20,
-      "genres": [
-        "drama",
-        "action",
-        "mystery"
-      ],
-      "char": 7.5,
-      "world": 7,
-      "cine": 7.5,
-      "spect": 7,
-      "conc": 7.5,
-      "drive": 7.5,
-      "resol": 6,
-      "poster": "https://image.tmdb.org/t/p/w500/vf9SNXNAFqzKBGksFwrXhkg9cb7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/29jWaRhKtey1efp5G7Fu97NAmzz.jpg",
-      "locked": false,
-      "final": 6.86,
-      "rank": 281
     },
     {
       "slug": "crazyhead",
@@ -10357,30 +10357,6 @@
       "locked": false
     },
     {
-      "title": "Gyeongseong Creature",
-      "slug": "gyeongseong-creature",
-      "year": 2023,
-      "tmdbId": 135238,
-      "episodes": 17,
-      "genres": [
-        "horror",
-        "thriller",
-        "drama"
-      ],
-      "char": 7,
-      "world": 7.5,
-      "cine": 7.5,
-      "spect": 6.5,
-      "conc": 7,
-      "drive": 7,
-      "resol": 7.5,
-      "poster": "https://image.tmdb.org/t/p/w500/5wliFAD8Pjjj0YYSmupqjOldnWt.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/peVe0NQNdZMXwtTohnv8iwJQb2d.jpg",
-      "locked": false,
-      "final": 6.79,
-      "rank": 286
-    },
-    {
       "title": "Archive 81",
       "slug": "archive-81",
       "year": 2022,
@@ -10402,6 +10378,30 @@
       "poster": "https://image.tmdb.org/t/p/w500/l1jeSEm6a88GFcLzlHQr60D0dOi.jpg",
       "backdrop": null,
       "locked": false,
+      "rank": 286
+    },
+    {
+      "title": "Gyeongseong Creature",
+      "slug": "gyeongseong-creature",
+      "year": 2023,
+      "tmdbId": 135238,
+      "episodes": 17,
+      "genres": [
+        "horror",
+        "thriller",
+        "drama"
+      ],
+      "char": 7,
+      "world": 7.5,
+      "cine": 7.5,
+      "spect": 6.5,
+      "conc": 7,
+      "drive": 7,
+      "resol": 7.5,
+      "poster": "https://image.tmdb.org/t/p/w500/5wliFAD8Pjjj0YYSmupqjOldnWt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/peVe0NQNdZMXwtTohnv8iwJQb2d.jpg",
+      "locked": false,
+      "final": 6.79,
       "rank": 287
     },
     {
@@ -10561,6 +10561,30 @@
       "locked": false
     },
     {
+      "title": "This Is Going to Hurt",
+      "slug": "this-is-going-to-hurt",
+      "year": 2022,
+      "tmdbId": 154359,
+      "episodes": 7,
+      "genres": [
+        "drama",
+        "medical"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/pzr43c48eKRTfHCkspWia2J35Fw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/icgOrvpT7ANec2rBdzZQPwB7Ykj.jpg",
+      "char": 8,
+      "world": 6,
+      "cine": 7,
+      "spect": 4,
+      "conc": 7.5,
+      "drive": 8,
+      "resol": 7.5,
+      "final": 6.74,
+      "locked": false,
+      "rank": 292
+    },
+    {
       "slug": "the-office-us",
       "title": "The Office US",
       "year": 2005,
@@ -10594,7 +10618,7 @@
           "Netflix"
         ]
       },
-      "rank": 292,
+      "rank": 293,
       "poster": "https://image.tmdb.org/t/p/w500/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg",
       "locked": false
@@ -10624,7 +10648,7 @@
       "drive": 6.5,
       "resol": 6.5,
       "final": 6.72,
-      "rank": 293,
+      "rank": 294,
       "scoring_notes": "Climate change anthology with A-list cast. Meryl Streep, Kit Harington, Sienna Miller among ensemble. Well-intentioned but preachy and disjointed. Future scenarios lack urgency despite subject matter. Limited series, complete but underwhelming. Missed opportunity.",
       "streaming": {
         "us": [
@@ -10673,8 +10697,32 @@
           "Apple TV+"
         ]
       },
-      "rank": 294,
+      "rank": 295,
       "locked": false
+    },
+    {
+      "title": "All of Us Are Dead",
+      "slug": "all-of-us-are-dead",
+      "year": 2022,
+      "tmdbId": 99966,
+      "episodes": 12,
+      "genres": [
+        "horror",
+        "action",
+        "drama"
+      ],
+      "char": 7,
+      "world": 7,
+      "cine": 7.5,
+      "spect": 7,
+      "conc": 6.5,
+      "drive": 8,
+      "resol": 6,
+      "final": 6.7,
+      "poster": "https://image.tmdb.org/t/p/w500/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
+      "backdrop": null,
+      "locked": false,
+      "rank": 296
     },
     {
       "slug": "one-tree-hill",
@@ -10709,34 +10757,10 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 295,
+      "rank": 297,
       "poster": "https://image.tmdb.org/t/p/w500/sOrelBaAhp7DZbPTivDwKEyPslC.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/gvEisYtZ0iBMjnO3zqFU2oM26oM.jpg",
       "locked": false
-    },
-    {
-      "title": "All of Us Are Dead",
-      "slug": "all-of-us-are-dead",
-      "year": 2022,
-      "tmdbId": 99966,
-      "episodes": 12,
-      "genres": [
-        "horror",
-        "action",
-        "drama"
-      ],
-      "char": 7,
-      "world": 7,
-      "cine": 7.5,
-      "spect": 7,
-      "conc": 6.5,
-      "drive": 8,
-      "resol": 6,
-      "final": 6.7,
-      "poster": "https://image.tmdb.org/t/p/w500/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
-      "backdrop": null,
-      "locked": false,
-      "rank": 296
     },
     {
       "slug": "boss",
@@ -10770,7 +10794,7 @@
         "uk": []
       },
       "final": 6.67,
-      "rank": 297,
+      "rank": 298,
       "locked": false
     },
     {
@@ -10798,7 +10822,7 @@
       "drive": 7.5,
       "resol": 6.5,
       "final": 6.67,
-      "rank": 298,
+      "rank": 299,
       "scoring_notes": "BBC satire thriller. Corporate dystopia with dark humor. Limited scope but sharp writing. For fans of Black Mirror adjacent content.",
       "streaming": {
         "us": [
@@ -10837,7 +10861,7 @@
       "drive": 7.5,
       "resol": 6.5,
       "final": 6.65,
-      "rank": 299,
+      "rank": 300,
       "scoring_notes": "Gugu Mbatha-Raw as woman with amnesia piecing together her past. San Francisco setting is glossy but hollow. Psychological thriller that thinks it's smarter than it is. Two seasons, ongoing. Surface-level character work despite Mbatha-Raw's efforts. Disappointing.",
       "streaming": {
         "us": [
@@ -10876,7 +10900,7 @@
       "drive": 6.5,
       "resol": 6,
       "final": 6.65,
-      "rank": 300,
+      "rank": 301,
       "scoring_notes": "LaKeith Stanfield as father in dark fairy tale about parenthood. Atmospheric horror with social commentary. Pacing issues but visuals striking. Ongoing.",
       "streaming": {
         "us": [
@@ -10915,7 +10939,7 @@
       "drive": 7,
       "resol": 6.5,
       "final": 6.62,
-      "rank": 301,
+      "rank": 302,
       "scoring_notes": "Mark Boal (Hurt Locker) creates hostage rescue thriller. Luke Evans and Michiel Huisman as brothers-in-law saving scientist in Colombia. Action sequences are solid but characters are thin. CANCELED after one season. Watchable but forgettable military thriller.",
       "streaming": {
         "us": [
@@ -10954,7 +10978,7 @@
       "drive": 7,
       "resol": 5.5,
       "final": 6.6,
-      "rank": 302,
+      "rank": 303,
       "scoring_notes": "Showtime vampire series based on Swedish film. CANCELED after one season. Atmospheric but fails to capture original's magic. Watch the original film instead.",
       "streaming": {
         "us": [
@@ -11003,7 +11027,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 303,
+      "rank": 304,
       "poster": "https://image.tmdb.org/t/p/w500/kuyxEBpuAYdfHqfzip2Y6UYRI2C.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/tqubNA9ZtI6CW64JXhqXw9fAgPT.jpg",
       "locked": false
@@ -11043,7 +11067,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 304,
+      "rank": 305,
       "poster": "https://image.tmdb.org/t/p/w500/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/k1UpU2cfa4PbDUBnJtr43TpdNBg.jpg",
       "locked": false
@@ -11073,7 +11097,7 @@
       "drive": 7.5,
       "resol": 5,
       "final": 6.57,
-      "rank": 305,
+      "rank": 306,
       "scoring_notes": "US adaptation of The Returned concept. Dead Missouri residents return home. Omar Epps leads. Lacks atmosphere and depth of French original. CANCELED after 2 seasons without resolution. Watch Les Revenants instead.",
       "streaming": {
         "us": [
@@ -11122,7 +11146,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 306,
+      "rank": 307,
       "poster": "https://image.tmdb.org/t/p/w500/qmYqwOW0QTkJy1UGUsM2t0Kowpu.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/2HXCNnNRDPaM6PFGZOOyNs4nPVL.jpg",
       "locked": false
@@ -11148,7 +11172,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/v6f9FUDDQfGIv8MLRQwlL0zvRjI.jpg",
       "final": 6.5,
       "locked": false,
-      "rank": 307
+      "rank": 308
     },
     {
       "title": "McMafia",
@@ -11172,7 +11196,30 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/8uJPiVNMjjVUHgnCb3de1nSv0L5.jpg",
       "final": 6.48,
       "locked": false,
-      "rank": 308
+      "rank": 309
+    },
+    {
+      "title": "WeCrashed",
+      "slug": "wecrashed",
+      "year": 2022,
+      "tmdbId": 117821,
+      "episodes": 8,
+      "genres": [
+        "drama"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/rFlYeo84b5YtzNkN0IonN6ZCPic.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/aQfJ1v9M8mvSSIFydpPd1qeDOV0.jpg",
+      "char": 7.5,
+      "world": 6.5,
+      "cine": 7,
+      "spect": 5,
+      "conc": 6.5,
+      "drive": 7,
+      "resol": 7,
+      "final": 6.48,
+      "locked": false,
+      "rank": 310
     },
     {
       "slug": "togetherness",
@@ -11208,7 +11255,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 309,
+      "rank": 311,
       "poster": "https://image.tmdb.org/t/p/w500/efMjjsthjr7UDsc3ab7DVUZNY3N.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/pFsKc5goGgPkUT8uFH9jIJsvipC.jpg",
       "locked": false
@@ -11234,7 +11281,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/tldMHeR7UnihV5ffrxxM8cDhbtT.jpg",
       "final": 6.41,
       "locked": false,
-      "rank": 310
+      "rank": 312
     },
     {
       "slug": "dear-edward",
@@ -11259,7 +11306,7 @@
       "drive": 6.5,
       "resol": 6.5,
       "final": 6.38,
-      "rank": 311,
+      "rank": 313,
       "scoring_notes": "Jason Katims (Friday Night Lights) adapts Ann Napolitano novel. Young boy sole survivor of plane crash. Grief and connection stories among victim families. Tender but overly sentimental. CANCELED after one season. Connie Britton adds presence. Manipulative emotion.",
       "streaming": {
         "us": [
@@ -11307,7 +11354,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 312,
+      "rank": 314,
       "poster": "https://image.tmdb.org/t/p/w500/gC8PDx7tfbXS9BqxBgj0YXKDIoW.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/A2qdFRq9oJDC5E7fbgSS4POUMDF.jpg",
       "locked": false
@@ -11334,7 +11381,57 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/31GIcUUcdQPRkVtmdqgQWJMhXj1.jpg",
       "locked": false,
       "final": 6.34,
-      "rank": 313
+      "rank": 315
+    },
+    {
+      "title": "Obi-Wan Kenobi",
+      "slug": "obi-wan-kenobi",
+      "year": 2022,
+      "tmdbId": 92830,
+      "episodes": 6,
+      "genres": [
+        "sci-fi",
+        "action",
+        "drama"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/4Lok3HBSfbQxibQZBygoVCwKKrZ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/p3Jmm6d1ShUrJEuU3DYD2K19c66.jpg",
+      "char": 6.5,
+      "world": 8,
+      "cine": 7,
+      "spect": 7.5,
+      "conc": 5,
+      "drive": 6,
+      "resol": 6.5,
+      "final": 6.34,
+      "locked": false,
+      "rank": 316
+    },
+    {
+      "title": "Ms. Marvel",
+      "slug": "ms-marvel",
+      "year": 2022,
+      "tmdbId": 92782,
+      "episodes": 6,
+      "genres": [
+        "action",
+        "drama",
+        "superhero"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/mfcLUWASJghU8MTNK38eYktfE83.jpg",
+      "char": 7,
+      "world": 7.5,
+      "cine": 6.5,
+      "spect": 6,
+      "conc": 5.5,
+      "drive": 6.5,
+      "resol": 6.5,
+      "final": 6.29,
+      "locked": false,
+      "rank": 317
     },
     {
       "slug": "last-thing-he-told-me",
@@ -11362,7 +11459,7 @@
       "drive": 7,
       "resol": 6.5,
       "final": 6.29,
-      "rank": 314,
+      "rank": 318,
       "scoring_notes": "Jennifer Garner as woman searching for missing husband. Based on popular novel but adaptation lacks tension. Aisha Tyler and Angourie Rice add support. Limited series, complete. Thriller that forgets to thrill. Apple's weaker drama offerings.",
       "streaming": {
         "us": [
@@ -11410,7 +11507,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 315,
+      "rank": 319,
       "poster": "https://image.tmdb.org/t/p/w500/iUjzx6qCPFBCoMA0YtEONew9NUE.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/2U9KE5jq2qwu8DPPvF65Wdim7y9.jpg",
       "locked": false
@@ -11449,7 +11546,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 316,
+      "rank": 320,
       "poster": "https://image.tmdb.org/t/p/w500/g5fuPFo7YSJH0AT5hqyO3ATXAQ6.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/9izsJTGZx8y63HmtsnxjduBcft1.jpg",
       "locked": false
@@ -11487,7 +11584,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 317,
+      "rank": 321,
       "poster": "https://image.tmdb.org/t/p/w500/pPdoG5kNcQmsIne4Hq8SoLunpJX.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/rowPlHjX7RvcKQD6GYwskF9R82c.jpg",
       "locked": false
@@ -11526,10 +11623,34 @@
           "Channel 4"
         ]
       },
-      "rank": 318,
+      "rank": 322,
       "poster": "https://image.tmdb.org/t/p/w500/qNmcaXDndOkY6v9QiJjnxQD09GJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/zOnLMRD3PIhwO5KZmWMVEnLokMo.jpg",
       "locked": false
+    },
+    {
+      "title": "The Man Who Fell to Earth",
+      "slug": "the-man-who-fell-to-earth",
+      "year": 2022,
+      "tmdbId": 118663,
+      "episodes": 10,
+      "genres": [
+        "sci-fi",
+        "drama"
+      ],
+      "status": "Canceled",
+      "poster": "https://image.tmdb.org/t/p/w500/p1aBjGkyG25ADy4xu69joNMV3eQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/xio3AqrtsEERoVghgl8WWG0mXMu.jpg",
+      "char": 7,
+      "world": 7,
+      "cine": 7,
+      "spect": 5.5,
+      "conc": 7,
+      "drive": 6.5,
+      "resol": 4,
+      "final": 6.22,
+      "locked": false,
+      "rank": 323
     },
     {
       "title": "The Witcher: Blood Origin",
@@ -11553,7 +11674,7 @@
       "poster": "https://image.tmdb.org/t/p/w500/vpfJK9F0UJNcAIIeC42oJyKMnZQ.jpg",
       "backdrop": null,
       "locked": false,
-      "rank": 319
+      "rank": 324
     },
     {
       "slug": "undeclared",
@@ -11588,7 +11709,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 320,
+      "rank": 325,
       "poster": "https://image.tmdb.org/t/p/w500/cCCy0WYZvMxoz3LC2kyHX4Vy6eT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/uinrziSwEmS6s8VvGBad5sed7bF.jpg",
       "locked": false
@@ -11619,7 +11740,7 @@
       "drive": 6.5,
       "resol": 5.5,
       "final": 5.71,
-      "rank": 321,
+      "rank": 326,
       "scoring_notes": "Netflix sci-fi misfire. Kate Bosworth in Lost-meets-Black Mirror premise. Poor writing, weak character development. Notable for how thoroughly it misses the mark. Mercifully short.",
       "streaming": {
         "us": [
