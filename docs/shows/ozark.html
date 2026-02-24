@@ -4,462 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ozark - TV Shows Ranked</title>
-    <style>
-        :root {
-            --bg-primary: #0d1117;
-            --bg-secondary: #161b22;
-            --bg-tertiary: #21262d;
-            --text-primary: #c9d1d9;
-            --text-secondary: #8b949e;
-            --accent-blue: #58a6ff;
-            --accent-cyan: #39c5cf;
-            --score-high: #238636;
-            --score-medium: #e3b341;
-            --border-color: #30363d;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 3rem 1.5rem;
-        }
-
-        /* Header Section */
-        .show-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        .show-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.02em;
-        }
-
-        .show-meta {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .creators {
-            color: var(--text-secondary);
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        .synopsis {
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            font-size: 1.1rem;
-            color: var(--text-primary);
-            padding: 1.5rem;
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            border-left: 4px solid var(--accent-cyan);
-        }
-
-        .cast-list {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-
-        .cast-list strong {
-            color: var(--accent-cyan);
-        }
-
-        /* Feeling Section */
-        .feeling-section {
-            background: linear-gradient(145deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
-            padding: 2.5rem;
-            border-radius: 16px;
-            margin-bottom: 3rem;
-            border: 1px solid var(--border-color);
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            color: var(--accent-cyan);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .section-title::before {
-            content: '';
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background: var(--accent-cyan);
-            border-radius: 50%;
-        }
-
-        .feeling-content p {
-            margin-bottom: 1.25rem;
-            color: var(--text-primary);
-            font-size: 1.05rem;
-        }
-
-        .feeling-content p:last-child {
-            margin-bottom: 0;
-        }
-
-        .noir-highlight {
-            color: var(--accent-blue);
-            font-weight: 600;
-        }
-
-        .character-name {
-            color: var(--accent-cyan);
-            font-weight: 600;
-        }
-
-        /* Dimensions Section */
-        .dimensions-section {
-            margin-bottom: 3rem;
-        }
-
-        .dimensions-header {
-            text-align: center;
-            margin-bottom: 2.5rem;
-        }
-
-        .dimensions-header h2 {
-            font-size: 2rem;
-            color: var(--text-primary);
-        }
-
-        .dimension-block {
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid var(--border-color);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .dimension-block:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-        }
-
-        .dimension-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .dimension-name {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-
-        .dimension-score {
-            font-size: 1.5rem;
-            font-weight: 800;
-            padding: 0.25rem 1rem;
-            border-radius: 8px;
-            background: var(--score-high);
-            color: white;
-        }
-
-        .dimension-analysis {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.8;
-        }
-
-        .dimension-analysis p {
-            margin-bottom: 1rem;
-        }
-
-        .dimension-analysis p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Final Score Block */
-        .final-score-section {
-            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 50%, var(--bg-secondary) 100%);
-            border: 2px solid var(--accent-cyan);
-            border-radius: 16px;
-            padding: 3rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .final-score-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan), var(--accent-blue));
-        }
-
-        .final-label {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            margin-bottom: 1rem;
-        }
-
-        .final-score {
-            font-size: 5rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1;
-        }
-
-        .score-verdict {
-            margin-top: 1.5rem;
-            font-size: 1.1rem;
-            color: var(--text-primary);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                padding: 2rem 1rem;
-            }
-
-            .show-title {
-                font-size: 2.5rem;
-            }
-
-            .final-score {
-                font-size: 4rem;
-            }
-
-            .feeling-section,
-            .dimension-block,
-            .final-score-section {
-                padding: 1.5rem;
-            }
-
-            .dimension-header {
-                flex-direction: column;
-                gap: 0.75rem;
-                align-items: flex-start;
-            }
-        }
-
-        /* Score bar visualization */
-        .score-bar-container {
-            width: 100%;
-            height: 8px;
-            background: var(--bg-tertiary);
-            border-radius: 4px;
-            margin-top: 0.5rem;
-            overflow: hidden;
-        }
-
-        .score-bar {
-            height: 100%;
-            background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
-            border-radius: 4px;
-            transition: width 0.5s ease;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/show-page.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
+    <nav class="breadcrumb">
+        <a href="../../index.html">Home</a> &gt; <span>Ozark</span>
+    </nav>
+
+    <article class="show-page">
         <header class="show-header">
-            <h1 class="show-title">Ozark</h1>
-            <div class="show-meta">Netflix Crime Thriller | 2017-2022 | 4 Seasons | 44 Episodes</div>
-            <div class="creators">Created by Bill Dubuque & Mark Williams</div>
-            
-            <div class="synopsis">
-                Financial advisor Marty Byrde makes a desperate decision to uproot his family from Chicago and relocate to the Missouri Ozarks after a money laundering scheme goes disastrously wrong. Forced to launder millions for a deadly Mexican drug cartel, Marty must navigate treacherous local politics, dangerous criminals, and his own family's moral erosion while trying to keep everyone alive.
-            </div>
-            
-            <div class="cast-list">
-                <strong>Starring:</strong> Jason Bateman, Laura Linney, Julia Garner, Tom Pelphrey, Sofia Hublitz, Skylar Gaertner
+            <img src="https://image.tmdb.org/t/p/w200/y3Z5C5d5m5Z3v7P9j7J5L4Y6k3J.jpg" alt="Ozark Poster" class="show-poster">
+            <div class="show-info">
+                <h1>Ozark</h1>
+                <p class="show-meta">2017 - 2022 • Netflix • 44 Episodes</p>
+                <div class="score-badge">Score: 7.18</div>
+                <div class="genres">Crime, Thriller</div>
             </div>
         </header>
 
-        <!-- What It Feels Like to Watch -->
-        <section class="feeling-section">
-            <h2 class="section-title">What It Feels Like to Watch</h2>
-            <div class="feeling-content">
-                <p>Watching <span class="noir-highlight">Ozark</span> is like being slowly pulled into icy, dark water. The show wraps you in a suffocating atmosphere of dread that never truly lifts—the perpetual blue-gray color grading, the unrelenting tension, the sinking feeling that things are only going to get worse. This is not comfortable television; it's an anxiety-inducing descent into moral darkness that grips you and refuses to let go.</p>
+        <section class="deep-content">
+            <h2>What It Feels Like</h2>
+            <p class="vibe-text">
+                Marty Byrde is a financial advisor who launders money for a Mexican cartel. When his partner steals, Marty must move his family to the Ozarks and launder $500 million in five years. Jason Bateman is Marty—calm, calculating, increasingly desperate. Laura Linney is Wendy, his wife who becomes more dangerous than he is. Breaking Bad meets better spouses: ordinary people becoming criminals.
+            </p>
 
-                <p>The <span class="noir-highlight">Byrde family descent</span> is the brutal heart of the series. What begins as Marty's desperate attempt to save his family gradually transforms into something far more disturbing—a family that becomes progressively desensitized to violence and criminality. We watch Wendy Byrde evolve from a reluctant accomplice into a calculating mastermind who may be even more dangerous than her husband. The children, Charlotte and Jonah, lose their innocence in real-time, with Jonah's trajectory particularly haunting. It's a slow-motion tragedy of a family sacrificing their souls for survival.</p>
+            <h2>The 7-Dimension Analysis</h2>
 
-                <p>The show's <span class="noir-highlight">blue-tinted noir visual palette</span> is immediately distinctive and deeply immersive. Every frame feels soaked in cold water and moonlight, creating an aesthetic that's simultaneously beautiful and oppressive. The cinematography transforms the Ozarks into a character itself—deceptively peaceful lakes hiding dark depths, shadowy forests concealing criminal enterprises, and small-town streets where looks can kill. This isn't just visual style; it's emotional storytelling through color.</p>
+            <div class="dimension">
+                <h3>Characters & Acting (9/10)</h3>
+                <p>Jason Bateman as Marty is controlled panic—his face barely moves but you feel the terror. Laura Linney as Wendy is the revelation: the housewife who discovers she's better at crime than her husband. Julia Garner as Ruth is iconic—the local who becomes family. The ensemble is excellent; Linney and Garner are Emmy-winners.</p>
+            </div>
 
-                <p>Then there's <span class="character-name">Ruth Langmore</span>. Played with volcanic ferocity by Julia Garner, Ruth is one of television's most compelling characters—a foul-mouthed, fiercely intelligent young woman from a family of criminals who dreams of something better while being pulled back by blood obligations. Her journey from petty thief to unlikely business prodigy to tragic figure anchors the entire series. Every scene with Ruth crackles with unpredictable energy; you never know if she's going to outsmart everyone or implode spectacularly. Her relationship with Marty—a twisted mentor-student dynamic filled with mutual respect and constant danger—is television alchemy.</p>
+            <div class="dimension">
+                <h3>World Building (9/10)</h3>
+                <p>The Ozarks: lakeside resorts, local criminals, cartel enforcers, FBI surveillance. The world expands across seasons—the Kansas City mob, the Navarro cartel, the local crime families. The lake is character; Missouri is mapped.</p>
+            </div>
 
-                <p>Comparisons to <span class="noir-highlight">Breaking Bad</span> are inevitable but ultimately incomplete. Where Breaking Bad traced a man's transformation from Mr. Chips to Scarface, Ozark is more interested in systemic corruption—how institutions, families, and entire communities bend under the weight of criminal enterprise. Marty Byrde is already compromised when we meet him; the show isn't about his moral fall but about how far he'll drag others down with him. The stakes feel different too—Bran was a genius chemist, but Marty is a numbers man trying to solve human problems with spreadsheets and desperate negotiations. The show's pace is more deliberate, its violence more sudden and shocking, its worldview bleaker.</p>
+            <div class="dimension">
+                <h3>Cinematography (8/10)</h3>
+                <p>Netflix production: the lake is beautiful, the violence is brutal, the tension is visual. The style is muted—greys and blues—reflecting the moral decay. The direction (Bateman directs many episodes) is controlled.</p>
+            </div>
 
-                <p>What makes Ozark truly unforgettable is its refusal to provide easy catharsis. There are no heroes here, only survivors of varying moral flexibility. Every victory is pyrrhic, every alliance temporary, every moment of happiness undercut by the knowledge of what's coming. By the final season, you realize you've been holding your breath for hours. The show doesn't entertain you—it haunts you.</p>
+            <div class="dimension">
+                <h3>Visual Spectacle (6/10)</h3>
+                <p>The spectacle is the lake and the violence: boat chases, cartel executions, desperate transactions. The "spectacle" is watching ordinary people become monsters. The production value is high; the ambition is character.</p>
+            </div>
+
+            <div class="dimension">
+                <h3>Conceptual Density (7/10)</h3>
+                <p>Family as justification, whether we become our choices, the American Dream as criminal enterprise. The show explores how good people justify evil when their family is threatened. The themes deepen across seasons.</p>
+            </div>
+
+            <div class="dimension">
+                <h3>Narrative Drive (9/10)</h3>
+                <p>Marty must launder money to survive. Each season has new threats: cartels, FBI, local criminals. The drive is constant—Marty is always one mistake from death. The pacing is propulsive; the tension is relentless.</p>
+            </div>
+
+            <div class="dimension">
+                <h3>Narrative Path & Resolution (8/10)</h3>
+                <p>Four seasons with definitive ending. The finale resolves the Byrde family's story with appropriate darkness. The ending is controversial—some found it fitting, others wanted more consequence. Complete.</p>
             </div>
         </section>
 
-        <!-- Why It Ranks -->
-        <section class="dimensions-section">
-            <div class="dimensions-header">
-                <h2>Why It Ranks: The Seven Dimensions</h2>
-            </div>
-
-            <!-- Characters -->
-            <div class="dimension-block">
-                <div class="dimension-header">
-                    <div class="dimension-name">👤 Characters</div>
-                    <div class="dimension-score">8.5</div>
-                </div>
-                <div class="score-bar-container">
-                    <div class="score-bar" style="width: 85%;"></div>
-                </div>
-                <div class="dimension-analysis">
-                    <p>Ozark boasts one of television's most morally complex ensembles. The Byrde family dynamic—particularly the partnership-turned-rivalry between Marty and Wendy—evolves with devastating credibility. Laura Linney's transformation from supportive wife to power-hungry player is masterfully subtle, while Jason Bateman subverts his comedic persona to deliver a performance of tightly wound desperation.</p>
-                    <p>The supporting cast elevates every scene. Julia Garner's Ruth Langmore deservedly dominated awards conversations, creating a character of Shakespearean dimensions—trapped by birth, bound by loyalty, and destroyed by ambition. Tom Pelphrey's brief but explosive arc as Wendy's brother Ben delivered one of the most heartbreaking performances in the series, a man whose mental illness becomes collateral damage in the Byrdes' war. Even smaller roles like Darlene Snell (Lisa Emery), Omar Navarro (Felix Solis), and Maya Miller (Jessica Frances Dukes) arrive fully realized.</p>
-                    <p>The deduction from a perfect score comes from occasional underdevelopment of certain cartel figures and some supporting Langmore family members who serve more as plot devices than fully dimensional people. Certain antagonists, while menacing, lack the psychological depth of the protagonists.</p>
-                </div>
-            </div>
-
-            <!-- World Building -->
-            <div class="dimension-block">
-                <div class="dimension-header">
-                    <div class="dimension-name">🌍 World Building</div>
-                    <div class="dimension-score">9.0</div>
-                </div>
-                <div class="score-bar-container">
-                    <div class="score-bar" style="width: 90%;"></div>
-                </div>
-                <div class="dimension-analysis">
-                    <p>The Missouri Ozarks emerges as a fully realized ecosystem of criminal enterprise, small-town politics, and centuries-old family feuds. The show constructs an intricate web of relationships between the Byrdes, the Langmore crime family, the Snell heroin empire, the Kansas City mafia, and the Mexican cartel—each with their own history, territory, and code of conduct.</p>
-                    <p>What elevates the world building is its attention to institutional detail. We see how money laundering actually works—the placement, layering, and integration of illicit funds through legitimate businesses. The casino operation, the hotel acquisitions, the political campaign financing—all grounded in real-world criminal methodology. The show understands that laundering isn't glamorous; it's spreadsheets, shell companies, and endless paranoid vigilance.</p>
-                    <p>The Ozarks themselves become a character—an isolated region with its own customs, prejudices, and secrets. The juxtaposition of idyllic lake homes with underground criminal empires creates a compelling visual metaphor for American inequality and hidden corruption. Local politics, law enforcement relationships, and community dynamics all feel researched and authentic.</p>
-                </div>
-            </div>
-
-            <!-- Cinematography -->
-            <div class="dimension-block">
-                <div class="dimension-header">
-                    <div class="dimension-name">🎥 Cinematography</div>
-                    <div class="dimension-score">8.8</div>
-                </div>
-                <div class="score-bar-container">
-                    <div class="score-bar" style="width: 88%;"></div>
-                </div>
-                <div class="dimension-analysis">
-                    <p>Ozark's visual identity is instantly iconic. The desaturated blue-green color palette creates an atmosphere of perpetual twilight, as if the sun never quite rises over the lake. This isn't mere aesthetic choice—it's narrative philosophy. The world of Ozark is cold, wet, and threatening; the cinematography ensures you feel it in your bones.</p>
-                    <p>The camera work favors measured, deliberate movements and patient compositions. Directors frequently employ wide shots that isolate characters in vast landscapes, emphasizing their smallness against the enormity of their problems. Underwater sequences, drone shots of the lake, and shadowy interior scenes all contribute to a visual language of submerged secrets and hidden depths.</p>
-                    <p>Particularly effective is the show's use of darkness and silhouette. Key moments unfold in near-blackness, figures emerging from shadow like the secrets they conceal. The visual restraint mirrors Marty's own emotional suppression—everything controlled, calculated, and carefully hidden. Jason Bateman's direction of several episodes demonstrates sophisticated visual storytelling that enhances rather than distracts.</p>
-                </div>
-            </div>
-
-            <!-- Visual Spectacle -->
-            <div class="dimension-block">
-                <div class="dimension-header">
-                    <div class="dimension-name">✨ Visual Spectacle</div>
-                    <div class="dimension-score">8.5</div>
-                </div>
-                <div class="score-bar-container">
-                    <div class="score-bar" style="width: 85%;"></div>
-                </div>
-                <div class="dimension-analysis">
-                    <p>Ozark delivers spectacle through moments of shocking violence interspersed with eerie beauty. The show understands that true visual impact comes from contrast—the peaceful lake surface disturbed by a sinking body, the elegant casino interior splattered with blood, the pristine family dinner interrupted by armed intruders.</p>
-                    <p>The action sequences, when they arrive, are brutal and unglamorous. Shootouts unfold with messy desperation rather than choreographed cool. The show's most spectacular visual moments often involve nature—the lake swallowing evidence, fire consuming a building, storm clouds gathering over desperate negotiations. These elemental forces remind viewers that human schemes pale before natural power.</p>
-                    <p>The casino and hotel sets provide sleek visual variety against the rural Ozark backdrop, creating effective contrasts between old money crime and new money ambition. However, the show's visual restraint means it rarely indulges in pure spectacle for its own sake. TheOzark prioritizes atmosphere over action, which may leave viewers seeking high-octaine thrills occasionally wanting.</p>
-                </div>
-            </div>
-
-            <!-- Conceptual Density -->
-            <div class="dimension-block">
-                <div class="dimension-header">
-                    <div class="dimension-name">🧠 Conceptual Density</div>
-                    <div class="dimension-score">8.8</div>
-                </div>
-                <div class="score-bar-container">
-                    <div class="score-bar" style="width: 88%;"></div>
-                </div>
-                <div class="dimension-analysis">
-                    <p>Ozark operates on multiple thematic levels simultaneously. At its surface, it's a crime thriller about laundering money and surviving cartel violence. Dig deeper and it's an examination of American capitalism's moral compromises—the legitimate business world's complicity with criminal enterprise, the way wealth corrupts absolutely, the price of the American Dream.</p>
-                    <p>The show interrogates family loyalty with uncomfortable rigor. How far should parents go to protect their children? What happens when protection becomes indoctrination? The Byrdes' parenting is a case study in moral erosion, as survival instincts gradually override ethical boundaries. The series asks whether love can exist in conditions of constant deception.</p>
-                    <p>Gender and power dynamics receive thoughtful exploration, particularly through Wendy's transformation and Ruth's navigation of a criminal world that constantly underestimates her. Class warfare simmers beneath every interaction—the wealthy Byrdes exploiting impoverished locals, old criminal families defending territory against corporate intrusion. The show's concepts aren't preached but embodied in character choices and consequences.</p>
-                </div>
-            </div>
-
-            <!-- Narrative Drive -->
-            <div class="dimension-block">
-                <div class="dimension-header">
-                    <div class="dimension-name">📖 Narrative Drive</div>
-                    <div class="dimension-score">9.2</div>
-                </div>
-                <div class="score-bar-container">
-                    <div class="score-bar" style="width: 92%;"></div>
-                </div>
-                <div class="dimension-analysis">
-                    <p>This is where Ozark truly excels. The show maintains relentless narrative momentum across four seasons, each episode ending with propulsive cliffhangers that demand immediate continuation. The writers understand escalating stakes, constantly introducing new threats before resolving old ones, creating a perpetual motion machine of tension.</p>
-                    <p>The plotting is intricate without becoming incomprehensible. Multiple storylines—Marty's laundering operations, Wendy's political ambitions, Ruth's criminal education, the cartel's demands, FBI investigations—weave together with increasing complexity. Cause and effect operate ruthlessly; characters face consequences for their actions, often devastating ones.</p>
-                    <p>The season-long arcs build with methodical precision, each episode adding new complications while advancing character development. The show's structure mirrors Marty's own spreadsheets—seemingly disparate elements connecting in unexpected ways. Even when the plot becomes Byzantine, the emotional throughlines remain clear. We understand why characters make terrible decisions because we've watched their desperation build.</p>
-                </div>
-            </div>
-
-            <!-- Resolution -->
-            <div class="dimension-block">
-                <div class="dimension-header">
-                    <div class="dimension-name">🏁 Resolution</div>
-                    <div class="dimension-score">8.5</div>
-                </div>
-                <div class="score-bar-container">
-                    <div class="score-bar" style="width: 85%;"></div>
-                </div>
-                <div class="dimension-analysis">
-                    <p>Ozark's final season delivers a conclusion that is both satisfying and appropriately bleak. The show refuses the easy redemption that lesser series might have provided; instead, it offers something more honest—a resolution that feels earned by the narrative's moral logic. Characters receive endings consistent with their arcs, for better and worse.</p>
-                    <p>The final episodes accelerate the pace while maintaining the show's characteristic deliberateness. Major storylines resolve with shocking finality, and the body count rises appropriately. The ultimate fate of the Byrde family sparks debate—and rightfully so. The ending challenges viewers to consider what "winning" means in a game where everyone loses something essential.</p>
-                    <p>Certain character arcs conclude more satisfyingly than others. Ruth's final chapter is devastating perfection—a logical endpoint to her impossible situation. Some cartel machinations feel slightly rushed in the final stretch, and a few supporting character threads could have used more definitive closure. But the series' final image lingers, haunting viewers with uncomfortable questions about culpability, complicity, and whether true escape is ever possible.</p>
-                </div>
-            </div>
+        <section class="streaming-info">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Netflix</p>
+            <p><strong>UK:</strong> Netflix</p>
         </section>
 
-        <!-- Final Score -->
-        <section class="final-score-section">
-            <div class="final-label">Final Composite Score</div>
-            <div class="final-score">8.8</div>
-            <div class="score-verdict">
-                <strong>Masterpiece Tier Television</strong><br><br>
-                Ozark stands among the finest crime dramas ever produced, earning its place alongside Breaking Bad, The Sopranos, and The Wire through sheer creative ambition and execution. Its 8.8 composite score reflects exceptional achievement across all seven dimensions—particularly its powerhouse narrative drive and sophisticated conceptual exploration. This is bleak, breathtaking television that transforms the crime genre through patient character development and unflinching moral inquiry. The series rewards close attention with layers of meaning while delivering the suspense and spectacle that keep viewers addicted. For fans of intense, intelligent drama willing to confront uncomfortable truths, Ozark delivers an unforgettable descent into darkness.
-            </div>
-        </section>
-    </div>
+        <footer class="show-footer">
+            <a href="../../index.html">← Back to Rankings</a>
+        </footer>
+    </article>
 </body>
 </html>

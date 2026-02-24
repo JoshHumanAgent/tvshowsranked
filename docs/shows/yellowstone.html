@@ -1,83 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yellowstone - Empire in Dust | Dynamic Rank Engine</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #975a16; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #975a16, #744210); color: #fefcbf; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ecc94b; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
-        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(151,90,22,0.5), rgba(0,0,0,0.9)); border: 3px solid #975a16; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #ecc94b; }
-        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #975a16; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ecc94b; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
-        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
-        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(151,90,22,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #ecc94b; margin-bottom: 0.3rem; }
-        .dimension-score { font-size: 1.5rem; color: #ffd700; }
-        .dimension-weight { font-size: 0.8rem; color: #666; }
-        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
-        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
-        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #ecc94b; font-weight: 700; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="hero">
-            <div class="rank-badge">Rank #46</div>
-            <h1>Yellowstone</h1>
-            <p class="subtitle">"The Duttons Don't Lose"</p>
-            <div class="score-badge">
-                <span class="score-value">7.38</span>
-                <span class="score-label">Final Score</span>
-            </div>
-        </div>
-
-        <div class="info-grid">
-            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2018-2024</div></div>
-            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">67</div></div>
-            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Paramount</div></div>
-            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Taylor Sheridan</div></div>
-        </div>
-
-        <div class="section">
-            <h2>What It Feels Like to Watch</h2>
-            <p>Yellowstone is Succession in cowboy hats. Kevin Costner's John Dutton owns the largest ranch in Montana, and he'll do anything—including murder—to keep it. Developers want his land. The tribal chairman wants justice. His own children want their inheritance. Everyone wants something, and John Dutton gives nothing.</p>
-            <p>The show is a soap opera with magnificent scenery. Montana's vistas are shot like a tourism ad, but the violence is Tarantino-level brutal. Taylor Sheridan writes cowboys the way they actually are: rich, connected, and capable of shocking violence. The romantic myth of the American West gets stripped away and replaced with something uglier.</p>
-            <p>Costner's gravitas carries the show, but the ensemble—especially Kelly Reilly as the feral Beth Dutton and Cole Hauser as the terrifying Rip—makes it work. Beth is one of television's great monsters: loyal only to her father, cruel to everyone else, somehow magnetic despite it all.</p>
-        </div>
-
-        <div class="section">
-            <h2>Why It Ranks</h2>
-            <div class="dimension-grid">
-                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8</div><div class="dimension-weight">25% weight</div></div>
-                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">7.5</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8.5</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">5.5</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">7.5</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">6</div><div class="dimension-weight">25% weight</div></div>
-            </div>
-            <p style="margin-top:1.5rem"><strong>Cinematography (8.5):</strong> Montana has never looked better. The aerial shots of the ranch, the rivers, the mountains—this is cinema-quality landscape photography in service of a soap opera.</p>
-            <p><strong>Characters & Acting (8):</strong> Costner is Costner—stoic, commanding, sometimes sleepwalking. But Kelly Reilly's Beth is a force of nature, and Cole Hauser's Rip is terrifying in his loyalty.</p>
-            <p><strong>Resolution (6):</strong> The show's ending was rushed and unsatisfying, complicated by Costner's departure. The final season doesn't deliver on years of tension.</p>
-        </div>
-
-        <div class="section">
-            <h2>Key Episodes</h2>
-            <p><strong>"Daybreak" (S1E1)</strong> — The pilot. Cattle, conflict, and a body on the side of the road. The Dutton family dynamic established in one episode.</p>
-            <p><strong>"The Unraveling: Pt. 2" (S2E10)</strong> — The Beck brothers attack. Beth's survival, Rip's loyalty, and the Duttons at war.</p>
-            <p><strong>"I Killed a Captain Today" (S3E10)</strong> — The season 3 finale. Coordinated attacks hit the Duttons. One of TV's great cliffhangers.</p>
-        </div>
-    </div>
-</body>
-</html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Yellowstone - TV Shows Ranked</title><link rel="stylesheet" href="../css/show-page.css"></head>
+<body><nav class="breadcrumb"><a href="../../index.html">Home</a> &gt; <span>Yellowstone</span></nav>
+<article class="show-page"><header class="show-header"><img src="https://image.tmdb.org/t/p/w200/6Yy6K9n9M2pS4tV8wX3xZ8qL.jpg" alt="Yellowstone Poster" class="show-poster"><div class="show-info"><h1>Yellowstone</h1><p class="show-meta">2018 - 2024 • Paramount • 53 Episodes</p><div class="score-badge">Score: 7.40</div><div class="genres">Western, Drama</div></div></header>
+<section class="deep-content"><h2>What It Feels Like</h2><p class="vibe-text">John Dutton owns the largest ranch in Montana. Developers want it. His children fight over it. Kevin Costner is Dutton: the patriarch who will do anything to protect his land. Taylor Sheridan created the modern Western: succession in the American West.</p>
+<h2>The 7-Dimension Analysis</h2>
+<div class="dimension"><h3>Characters & Acting (8/10)</h3><p>Kevin Costner as John Dutton: the patriarch, the protector, the immovable object. Luke Grimes, Kelly Reilly, Wes Bentley as the children. The performances embrace the Western genre.</p></div>
+<div class="dimension"><h3>World Building (9/10)</h3><p>Montana ranching: the reservation, the developers, the land, the politics. The world is the American West as battleground—ranching vs. development vs. tribal sovereignty.</p></div>
+<div class="dimension"><h3>Cinematography (9/10)</h3><p>Paramount production: Montana photographed with grandeur, the ranch as kingdom, the West as character. The style is epic—the land is the point.</p></div>
+<div class="dimension"><h3>Visual Spectacle (8/10)</h3><p>The spectacle is the land: the mountains, the cattle, the ranch. This is Western cinema on television budget. The landscape is the star.</p></div>
+<div class="dimension"><h3>Conceptual Density (7/10)</h3><p>Land ownership, what we inherit, the West as myth and reality, development vs. preservation, what fathers owe children. The show explores through family drama.</p></div>
+<div class="dimension"><h3>Narrative Drive (8/10)</h3><p>Protect the ranch. Each season brings new threats: developers, politicians, family. The structure is Western siege—the land must be defended.</p></div>
+<div class="dimension"><h3>Narrative Path & Resolution (6/10)</h3><p>Five partial seasons. Costner left; the ending is in production. The show continues with the Dutton saga. The resolution is pending.</p></div></section>
+<section class="streaming-info"><h2>Where to Watch</h2><p><strong>US:</strong> Peacock, Paramount+</p><p><strong>UK:</strong> Paramount+</p></section>
+<footer class="show-footer"><a href="../../index.html">← Back to Rankings</a></footer></article></body></html>

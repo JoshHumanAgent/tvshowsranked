@@ -3,81 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fringe - The X-Files' Weirder Sibling | Dynamic Rank Engine</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #553c9a; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #553c9a, #44337a); color: #b794f4; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #b794f4; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
-        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(85,60,154,0.5), rgba(0,0,0,0.9)); border: 3px solid #553c9a; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #b794f4; }
-        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #553c9a; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #b794f4; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
-        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
-        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(85,60,154,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #b794f4; margin-bottom: 0.3rem; }
-        .dimension-score { font-size: 1.5rem; color: #ffd700; }
-        .dimension-weight { font-size: 0.8rem; color: #666; }
-        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
-        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
-        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #b794f4; font-weight: 700; }
-    </style>
+    <title>Fringe - TV Shows Ranked</title>
+    <link rel="stylesheet" href="../css/show-page.css">
 </head>
 <body>
-    <div class="container">
-        <div class="hero">
-            <div class="rank-badge">Rank #15</div>
-            <h1>Fringe</h1>
-            <p class="subtitle">"Imagine the Impossibilities"</p>
-            <div class="score-badge">
-                <span class="score-value">7.93</span>
-                <span class="score-label">Final Score</span>
+    <nav class="breadcrumb">
+        <a href="../../index.html">Home</a> &gt; <span>Fringe</span>
+    </nav>
+
+    <article class="show-page">
+        <header class="show-header">
+            <img src="https://image.tmdb.org/t/p/w200/wK2V8R5m9P3qL7nX4vY6tW8zS0.jpg" alt="Fringe Poster" class="show-poster">
+            <div class="show-info">
+                <h1>Fringe</h1>
+                <p class="show-meta">2008 - 2013 • Fox • 100 Episodes</p>
+                <div class="score-badge">Score: 7.18</div>
+                <div class="genres">Sci-Fi, Mystery</div>
             </div>
-        </div>
+        </header>
 
-        <div class="info-grid">
-            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2008-2013</div></div>
-            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">100</div></div>
-            <div class="info-item"><div class="info-label">Network</div><div class="info-value">FOX</div></div>
-            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">J.J. Abrams</div></div>
-        </div>
+        <section class="deep-content">
+            <h2>What It Feels Like</h2>
+            <p class="vibe-text">
+                FBI agent Olivia Dunham investigates "fringe science"—cases involving parallel universes, shapeshifters, and phenomena on the edge of reality. She recruits Dr. Walter Bishop, a brilliant scientist institutionalized for 17 years. His son Peter helps manage him. JJ Abrams, Alex Kurtzman, and Roberto Orci created X-Files for the 21st century: episode-of-the-week plus serialized mythology.
+            </p>
 
-        <div class="section">
-            <h2>What It Feels Like to Watch</h2>
-            <p>Fringe is what happens when someone dares to ask: what if The X-Files, but actually good? Harsh, maybe, but Fringe took the monster-of-the-week format and added something its predecessor never had: a genuinely satisfying myth-arc that paid off.</p>
-            <p>Anna Torv's Olivia Dunham is the heart of the show—a career FBI agent drawn into "fringe science" investigations who discovers she's been conditioned since childhood by the very people running the program. John Noble's Walter Bishop is television's most lovable mad scientist, a man who fried enough brain cells to forget his own crimes but still remembers how to open a door to another universe.</p>
-            <p>And that's the magic. Alternate universes. Doppelgangers with different moral codes. Observers who exist outside time. The show builds a mythology so intricate that revisiting early episodes reveals clues you couldn't possibly understand the first time.</p>
-        </div>
+            <h2>The 7-Dimension Analysis</h2>
 
-        <div class="section">
-            <h2>Why It Ranks</h2>
-            <div class="dimension-grid">
-                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8.5</div><div class="dimension-weight">25% weight</div></div>
-                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">6</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">8.5</div><div class="dimension-weight">25% weight</div></div>
+            <div class="dimension">
+                <h3>Characters & Acting (8/10)</h3>
+                <p>Anna Torv as Olivia Dunham is the center: grounded, determined, increasingly strange. John Noble as Walter Bishop is the soul: brilliant, damaged, funny, tragic. Joshua Jackson as Peter provides the normal. The trio creates one of TV's best ensembles. Multiple versions of characters across universes showcase the range.</p>
             </div>
-            <p style="margin-top:1.5rem"><strong>World Building (9):</strong> The parallel universe concept isn't just a gimmick—it's fully realized with its own history, technology, and geography. The Observer invasion in season 5 creates a dystopian future that feels earned.</p>
-            <p><strong>Conceptual Density (9):</strong> This show rewards rewatching. Every Observer appearance in seasons 1-4 makes sense once you know. The white tulip becomes a symbol of hope and forgiveness across timelines.</p>
-            <p><strong>Resolution (8.5):</strong> The fifth season is essentially an epilogue—a 13-episode invasion story that wraps up everything. Walter's sacrifice, September's humanity, the reset of the timeline. It sticks the landing.</p>
-        </div>
 
-        <div class="section">
-            <h2>Key Episodes</h2>
-            <p><strong>"Peter" (S2E15)</strong> — The origin story. Walter crosses universes to save his son. The tragedy at the heart of everything.</p>
-            <p><strong>"Entrada" (S3E8)</strong> — Olivia trapped on the other side, Fauxlivia exposed. The parallel universe storytelling peaks.</p>
-            <p><strong>"An Enemy of Fate" (S5E13)</strong> — The series finale. Walter's final act. The white tulip. Perfect closure.</p>
-        </div>
-    </div>
+            <div class="dimension">
+                <h3>World Building (9/10)</h3>
+                <p>Two universes at war, the Observers, the Pattern, the Cortexiphan trials. The mythology expands across seasons—parallel universes, time travel, dystopic futures. The world is built with care and consistency.</p>
+            </div>
+
+            <div class="dimension">
+                <h3>Cinematography (7/10)</h3>
+                <p>Fox production with JJ Abrams style: lens flares, blue tint, the fringe cases rendered with budget. The parallel universe is distinguished through subtle visual differences. The style is atmospheric.</p>
+            </div>
+
+            <div class="dimension">
+                <h3>Visual Spectacle (7/10)</h3>
+                <p>Fringe science: transformations, alternate universes, time manipulation, the Observers' abilities. The spectacle is TV-budget sci-fi, deployed creatively. The monsters-of-the-week are memorable.</p>
+            </div>
+
+            <div class="dimension">
+                <h3>Conceptual Density (9/10)</h3>
+                <p>Parallel universes, the cost of scientific progress, father-son dynamics, identity across realities, whether we can change fate. The show explores its sci-fi concepts philosophically. Walter's past haunts the present.</p>
+            </div>
+
+            <div class="dimension">
+                <h3>Narrative Drive (8/10)</h3>
+                <p>The Pattern drives early seasons. The parallel universe drives the middle. The Observers drive the end. The structure balances monster-of-the-week with serialized mythology. The drive is constant.</p>
+            </div>
+
+            <div class="dimension">
+                <h3>Narrative Path & Resolution (8/10)</h3>
+                <p>Five seasons with planned ending. The final season jumps to the Observer-controlled future; the finale provides resolution. The ending completes the arc. Focused and complete.</p>
+            </div>
+        </section>
+
+        <section class="streaming-info">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Amazon Prime Video, Max</p>
+            <p><strong>UK:</strong> Amazon Prime Video, Sky/Now TV</p>
+        </section>
+
+        <footer class="show-footer">
+            <a href="../../index.html">← Back to Rankings</a>
+        </footer>
+    </article>
 </body>
 </html>
