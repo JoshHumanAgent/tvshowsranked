@@ -1,7 +1,7 @@
 ﻿{
   "meta": {
-    "generated": "2026-02-24T05:37:22.446Z",
-    "total": 373,
+    "generated": "2026-02-24T05:58:47.644Z",
+    "total": 375,
     "lockedCount": 96,
     "description": "All ranked shows, sorted by weighted score. Shows with locked=true are sacred - never re-rank without explicit approval."
   },
@@ -12830,6 +12830,31 @@
       "rank": 371
     },
     {
+      "title": "Marvel's Iron Fist",
+      "slug": "iron-fist",
+      "year": 2017,
+      "tmdbId": 62127,
+      "episodes": 23,
+      "genres": [
+        "action",
+        "drama",
+        "superhero"
+      ],
+      "status": "Canceled",
+      "poster": "https://image.tmdb.org/t/p/w500/4l6KD9HhtD6nCDEfg10Lp6C6zah.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 6,
+      "world": 7,
+      "cine": 6.5,
+      "spect": 6.5,
+      "conc": 6,
+      "drive": 6,
+      "resol": 5,
+      "final": 5.99,
+      "locked": false,
+      "rank": 372
+    },
+    {
       "slug": "undeclared",
       "title": "Undeclared",
       "year": 2001,
@@ -12862,7 +12887,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 372,
+      "rank": 373,
       "poster": "https://image.tmdb.org/t/p/w500/cCCy0WYZvMxoz3LC2kyHX4Vy6eT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/uinrziSwEmS6s8VvGBad5sed7bF.jpg",
       "locked": false
@@ -12893,7 +12918,7 @@
       "drive": 6.5,
       "resol": 5.5,
       "final": 5.71,
-      "rank": 373,
+      "rank": 374,
       "scoring_notes": "Netflix sci-fi misfire. Kate Bosworth in Lost-meets-Black Mirror premise. Poor writing, weak character development. Notable for how thoroughly it misses the mark. Mercifully short.",
       "streaming": {
         "us": [
@@ -12906,6 +12931,31 @@
       "poster": "https://image.tmdb.org/t/p/w500/Muev370hN3vdjGsC1ip1HcWqbT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/jHF1ys6WjpKpgj3JPTCP65pN96v.jpg",
       "locked": false
+    },
+    {
+      "title": "Chicago Justice",
+      "slug": "chicago-justice",
+      "year": 2017,
+      "tmdbId": 67993,
+      "episodes": 13,
+      "genres": [
+        "crime",
+        "drama",
+        "legal"
+      ],
+      "status": "Canceled",
+      "poster": "https://image.tmdb.org/t/p/w500/hZ76A8l1JoONy2NoL0BF4AU2g3c.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 6,
+      "world": 5.5,
+      "cine": 6,
+      "spect": 3,
+      "conc": 6,
+      "drive": 6.5,
+      "resol": 4,
+      "final": 5.23,
+      "locked": false,
+      "rank": 375
     }
   ]
 }

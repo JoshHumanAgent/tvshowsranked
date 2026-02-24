@@ -1,97 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 31,
+    "total": 25,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "medical-drama"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama",
-        "medical"
-      ],
-      "title": "New Amsterdam",
-      "status": "pending"
-    },
-    {
-      "confidence": "low",
-      "why": [
-        "chicago-franchise"
-      ],
-      "year": 2017,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama",
-        "legal"
-      ],
-      "title": "Chicago Justice",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "star-trek",
-        "new-era"
-      ],
-      "year": 2017,
-      "priority": "MEDIUM",
-      "genres": [
-        "sci-fi",
-        "drama"
-      ],
-      "title": "Star Trek: Discovery",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "spanish-language",
-        "popular"
-      ],
-      "year": 2017,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "El Chapo",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "historical",
-        "knights"
-      ],
-      "year": 2017,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama",
-        "historical"
-      ],
-      "title": "Knightfall",
-      "status": "pending"
-    },
-    {
-      "confidence": "low",
-      "why": [
-        "mcu-netflix"
-      ],
-      "year": 2017,
-      "priority": "MEDIUM",
-      "genres": [
-        "action",
-        "drama"
-      ],
-      "title": "Iron Fist",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [
