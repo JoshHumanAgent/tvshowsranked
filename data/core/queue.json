@@ -1,100 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 49,
+    "total": 43,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "bizarre",
-        "limited"
-      ],
-      "year": 2021,
-      "priority": "MEDIUM",
-      "genres": [
-        "horror",
-        "thriller"
-      ],
-      "title": "Brand New Cherry Flavor",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "japanese",
-        "netflix"
-      ],
-      "year": 2020,
-      "priority": "MEDIUM",
-      "genres": [
-        "thriller",
-        "sci-fi"
-      ],
-      "title": "Alice in Borderland",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "star-trek",
-        "patrick-stewart"
-      ],
-      "year": 2020,
-      "priority": "MEDIUM",
-      "genres": [
-        "sci-fi",
-        "drama"
-      ],
-      "title": "Star Trek: Picard",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "limited",
-        "star-power"
-      ],
-      "year": 2020,
-      "priority": "MEDIUM",
-      "genres": [
-        "thriller",
-        "drama"
-      ],
-      "title": "The Undoing",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "limited",
-        "innovative"
-      ],
-      "year": 2020,
-      "priority": "MEDIUM",
-      "genres": [
-        "thriller",
-        "drama"
-      ],
-      "title": "The Flight Attendant",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "korean",
-        "monster"
-      ],
-      "year": 2019,
-      "priority": "MEDIUM",
-      "genres": [
-        "horror",
-        "thriller"
-      ],
-      "title": "Sweet Home",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [
