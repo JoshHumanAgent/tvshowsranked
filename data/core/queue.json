@@ -1,55 +1,112 @@
 ﻿{
   "meta": {
-    "total": 6
+    "total": 15
   },
   "candidates": [
     {
-      "title": "KinnPorsche: The Series",
-      "slug": "kinnporsche-the-series",
-      "year": 2022,
-      "tmdbId": 117067,
-      "eps": 14,
-      "vote": 8.673
+      "title": "Game of Thrones",
+      "slug": "game-of-thrones",
+      "tmdbId": 1399,
+      "vote": 8.459,
+      "count": 26320
     },
     {
-      "title": "The Rookie",
-      "slug": "the-rookie",
-      "year": 2018,
-      "tmdbId": 79744,
-      "eps": 144,
-      "vote": 8.532
+      "title": "The Good Doctor",
+      "slug": "the-good-doctor",
+      "tmdbId": 71712,
+      "vote": 8.463,
+      "count": 12737
     },
     {
-      "title": "Dexter: Resurrection",
-      "slug": "dexter-resurrection",
-      "year": 2025,
-      "tmdbId": 259909,
-      "eps": 10,
-      "vote": 8.508
+      "title": "Grey's Anatomy",
+      "slug": "grey-s-anatomy",
+      "tmdbId": 1416,
+      "vote": 8.21,
+      "count": 10776
     },
     {
-      "title": "Girl from Nowhere",
-      "slug": "girl-from-nowhere",
-      "year": 2018,
-      "tmdbId": 83639,
-      "eps": 21,
-      "vote": 8.5
+      "title": "Supernatural",
+      "slug": "supernatural",
+      "tmdbId": 1622,
+      "vote": 8.3,
+      "count": 8237
     },
     {
-      "title": "The Untamed",
-      "slug": "the-untamed",
-      "year": 2019,
-      "tmdbId": 90761,
-      "eps": 50,
-      "vote": 8.56
+      "title": "Vikings",
+      "slug": "vikings",
+      "tmdbId": 44217,
+      "vote": 8.093,
+      "count": 7488
     },
     {
-      "title": "Riverdale",
-      "slug": "riverdale",
-      "year": 2017,
-      "tmdbId": 69050,
-      "eps": 137,
-      "vote": 8.4
+      "title": "The Mentalist",
+      "slug": "the-mentalist",
+      "tmdbId": 5920,
+      "vote": 8.352,
+      "count": 4159
+    },
+    {
+      "title": "Law & Order: Special Victims Unit",
+      "slug": "law-order-special-victims-unit",
+      "tmdbId": 2734,
+      "vote": 7.9,
+      "count": 4129
+    },
+    {
+      "title": "Criminal Minds",
+      "slug": "criminal-minds",
+      "tmdbId": 4057,
+      "vote": 8.297,
+      "count": 4005
+    },
+    {
+      "title": "Bones",
+      "slug": "bones",
+      "tmdbId": 1911,
+      "vote": 8.198,
+      "count": 3401
+    },
+    {
+      "title": "Shameless",
+      "slug": "shameless",
+      "tmdbId": 34307,
+      "vote": 8.169,
+      "count": 3198
+    },
+    {
+      "title": "Frieren: Beyond Journey's End",
+      "slug": "frieren-beyond-journey-s-end",
+      "tmdbId": 209867,
+      "vote": 8.77,
+      "count": 704
+    },
+    {
+      "title": "Law & Order",
+      "slug": "law-order",
+      "tmdbId": 549,
+      "vote": 7.337,
+      "count": 667
+    },
+    {
+      "title": "Midsomer Murders",
+      "slug": "midsomer-murders",
+      "tmdbId": 764,
+      "vote": 7.519,
+      "count": 342
+    },
+    {
+      "title": "In the Mud",
+      "slug": "in-the-mud",
+      "tmdbId": 258462,
+      "vote": 7.353,
+      "count": 112
+    },
+    {
+      "title": "The Art of Sarah",
+      "slug": "the-art-of-sarah",
+      "tmdbId": 273977,
+      "vote": 7.625,
+      "count": 24
     }
   ]
 }
