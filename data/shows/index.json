@@ -1,7 +1,7 @@
 ﻿{
   "meta": {
-    "generated": "2026-02-24T05:58:47.644Z",
-    "total": 375,
+    "generated": "2026-02-24T06:01:11.946Z",
+    "total": 377,
     "lockedCount": 96,
     "description": "All ranked shows, sorted by weighted score. Shows with locked=true are sacred - never re-rank without explicit approval."
   },
@@ -12183,6 +12183,31 @@
       "rank": 349
     },
     {
+      "title": "Marvel's Luke Cage",
+      "slug": "luke-cage",
+      "year": 2016,
+      "tmdbId": 62126,
+      "episodes": 26,
+      "genres": [
+        "action",
+        "drama",
+        "superhero"
+      ],
+      "status": "Canceled",
+      "poster": "https://image.tmdb.org/t/p/w500/yzM1hMB3PUJqbISX0f421b3xOjB.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 7,
+      "world": 7.5,
+      "cine": 7.5,
+      "spect": 6,
+      "conc": 6.5,
+      "drive": 6.5,
+      "resol": 5,
+      "final": 6.5,
+      "locked": false,
+      "rank": 350
+    },
+    {
       "title": "The Diplomat",
       "slug": "the-diplomat",
       "year": 2023,
@@ -12203,7 +12228,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/v6f9FUDDQfGIv8MLRQwlL0zvRjI.jpg",
       "final": 6.5,
       "locked": false,
-      "rank": 350
+      "rank": 351
     },
     {
       "title": "The Responder",
@@ -12227,7 +12252,32 @@
       "resol": 5,
       "final": 6.5,
       "locked": false,
-      "rank": 351
+      "rank": 352
+    },
+    {
+      "title": "Fear the Walking Dead",
+      "slug": "fear-the-walking-dead",
+      "year": 2015,
+      "tmdbId": 62286,
+      "episodes": 113,
+      "genres": [
+        "horror",
+        "drama",
+        "thriller"
+      ],
+      "status": "Ended",
+      "poster": "https://image.tmdb.org/t/p/w500/l7N9aS6VyYvjelKoCB2eZge0Qky.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
+      "char": 6.5,
+      "world": 7,
+      "cine": 6.5,
+      "spect": 5,
+      "conc": 6,
+      "drive": 6.5,
+      "resol": 6.5,
+      "final": 6.48,
+      "locked": false,
+      "rank": 353
     },
     {
       "title": "McMafia",
@@ -12251,7 +12301,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/8uJPiVNMjjVUHgnCb3de1nSv0L5.jpg",
       "final": 6.48,
       "locked": false,
-      "rank": 352
+      "rank": 354
     },
     {
       "title": "WeCrashed",
@@ -12274,7 +12324,7 @@
       "resol": 7,
       "final": 6.48,
       "locked": false,
-      "rank": 353
+      "rank": 355
     },
     {
       "slug": "togetherness",
@@ -12310,7 +12360,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 354,
+      "rank": 356,
       "poster": "https://image.tmdb.org/t/p/w500/efMjjsthjr7UDsc3ab7DVUZNY3N.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/pFsKc5goGgPkUT8uFH9jIJsvipC.jpg",
       "locked": false
@@ -12336,7 +12386,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/tldMHeR7UnihV5ffrxxM8cDhbtT.jpg",
       "final": 6.41,
       "locked": false,
-      "rank": 355
+      "rank": 357
     },
     {
       "slug": "dear-edward",
@@ -12361,7 +12411,7 @@
       "drive": 6.5,
       "resol": 6.5,
       "final": 6.38,
-      "rank": 356,
+      "rank": 358,
       "scoring_notes": "Jason Katims (Friday Night Lights) adapts Ann Napolitano novel. Young boy sole survivor of plane crash. Grief and connection stories among victim families. Tender but overly sentimental. CANCELED after one season. Connie Britton adds presence. Manipulative emotion.",
       "streaming": {
         "us": [
@@ -12409,7 +12459,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 357,
+      "rank": 359,
       "poster": "https://image.tmdb.org/t/p/w500/gC8PDx7tfbXS9BqxBgj0YXKDIoW.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/A2qdFRq9oJDC5E7fbgSS4POUMDF.jpg",
       "locked": false
@@ -12436,7 +12486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/31GIcUUcdQPRkVtmdqgQWJMhXj1.jpg",
       "locked": false,
       "final": 6.34,
-      "rank": 358
+      "rank": 360
     },
     {
       "title": "Obi-Wan Kenobi",
@@ -12461,7 +12511,7 @@
       "resol": 6.5,
       "final": 6.34,
       "locked": false,
-      "rank": 359
+      "rank": 361
     },
     {
       "title": "The Flight Attendant",
@@ -12486,7 +12536,7 @@
       "resol": 6.5,
       "final": 6.34,
       "locked": false,
-      "rank": 360
+      "rank": 362
     },
     {
       "title": "Ms. Marvel",
@@ -12511,7 +12561,7 @@
       "resol": 6.5,
       "final": 6.29,
       "locked": false,
-      "rank": 361
+      "rank": 363
     },
     {
       "slug": "last-thing-he-told-me",
@@ -12539,7 +12589,7 @@
       "drive": 7,
       "resol": 6.5,
       "final": 6.29,
-      "rank": 362,
+      "rank": 364,
       "scoring_notes": "Jennifer Garner as woman searching for missing husband. Based on popular novel but adaptation lacks tension. Aisha Tyler and Angourie Rice add support. Limited series, complete. Thriller that forgets to thrill. Apple's weaker drama offerings.",
       "streaming": {
         "us": [
@@ -12575,7 +12625,7 @@
       "resol": 4.5,
       "final": 6.25,
       "locked": false,
-      "rank": 363
+      "rank": 365
     },
     {
       "slug": "this-country",
@@ -12611,7 +12661,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 364,
+      "rank": 366,
       "poster": "https://image.tmdb.org/t/p/w500/iUjzx6qCPFBCoMA0YtEONew9NUE.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/2U9KE5jq2qwu8DPPvF65Wdim7y9.jpg",
       "locked": false
@@ -12650,7 +12700,7 @@
           "BBC iPlayer"
         ]
       },
-      "rank": 365,
+      "rank": 367,
       "poster": "https://image.tmdb.org/t/p/w500/g5fuPFo7YSJH0AT5hqyO3ATXAQ6.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/9izsJTGZx8y63HmtsnxjduBcft1.jpg",
       "locked": false
@@ -12677,7 +12727,7 @@
       "resol": 5,
       "final": 6.22,
       "locked": false,
-      "rank": 366
+      "rank": 368
     },
     {
       "slug": "tell-me-you-love-me",
@@ -12712,7 +12762,7 @@
           "Sky Atlantic"
         ]
       },
-      "rank": 367,
+      "rank": 369,
       "poster": "https://image.tmdb.org/t/p/w500/pPdoG5kNcQmsIne4Hq8SoLunpJX.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/rowPlHjX7RvcKQD6GYwskF9R82c.jpg",
       "locked": false
@@ -12751,7 +12801,7 @@
           "Channel 4"
         ]
       },
-      "rank": 368,
+      "rank": 370,
       "poster": "https://image.tmdb.org/t/p/w500/qNmcaXDndOkY6v9QiJjnxQD09GJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/zOnLMRD3PIhwO5KZmWMVEnLokMo.jpg",
       "locked": false
@@ -12778,7 +12828,7 @@
       "resol": 4,
       "final": 6.22,
       "locked": false,
-      "rank": 369
+      "rank": 371
     },
     {
       "title": "The Lincoln Lawyer",
@@ -12803,7 +12853,7 @@
       "resol": 5.5,
       "final": 6.17,
       "locked": false,
-      "rank": 370
+      "rank": 372
     },
     {
       "title": "The Witcher: Blood Origin",
@@ -12827,7 +12877,7 @@
       "poster": "https://image.tmdb.org/t/p/w500/vpfJK9F0UJNcAIIeC42oJyKMnZQ.jpg",
       "backdrop": null,
       "locked": false,
-      "rank": 371
+      "rank": 373
     },
     {
       "title": "Marvel's Iron Fist",
@@ -12852,7 +12902,7 @@
       "resol": 5,
       "final": 5.99,
       "locked": false,
-      "rank": 372
+      "rank": 374
     },
     {
       "slug": "undeclared",
@@ -12887,7 +12937,7 @@
           "Amazon Prime Video"
         ]
       },
-      "rank": 373,
+      "rank": 375,
       "poster": "https://image.tmdb.org/t/p/w500/cCCy0WYZvMxoz3LC2kyHX4Vy6eT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/uinrziSwEmS6s8VvGBad5sed7bF.jpg",
       "locked": false
@@ -12918,7 +12968,7 @@
       "drive": 6.5,
       "resol": 5.5,
       "final": 5.71,
-      "rank": 374,
+      "rank": 376,
       "scoring_notes": "Netflix sci-fi misfire. Kate Bosworth in Lost-meets-Black Mirror premise. Poor writing, weak character development. Notable for how thoroughly it misses the mark. Mercifully short.",
       "streaming": {
         "us": [
@@ -12955,7 +13005,7 @@
       "resol": 4,
       "final": 5.23,
       "locked": false,
-      "rank": 375
+      "rank": 377
     }
   ]
 }

@@ -1,99 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 25,
+    "total": 19,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "autistic-lead",
-        "remake"
-      ],
-      "year": 2017,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama",
-        "medical"
-      ],
-      "title": "The Good Doctor",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "mcu-netflix",
-        "blaxploitation"
-      ],
-      "year": 2016,
-      "priority": "MEDIUM",
-      "genres": [
-        "action",
-        "drama"
-      ],
-      "title": "Luke Cage",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "comic-adaptation",
-        "cult"
-      ],
-      "year": 2016,
-      "priority": "MEDIUM",
-      "genres": [
-        "fantasy",
-        "drama"
-      ],
-      "title": "Preacher",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "chicago-franchise"
-      ],
-      "year": 2015,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama",
-        "medical"
-      ],
-      "title": "Chicago Med",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "norwegian",
-        "political-thriller"
-      ],
-      "year": 2015,
-      "priority": "MEDIUM",
-      "genres": [
-        "thriller",
-        "political"
-      ],
-      "title": "Occupied",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "spinoff",
-        "zombie"
-      ],
-      "year": 2015,
-      "priority": "MEDIUM",
-      "genres": [
-        "horror",
-        "drama"
-      ],
-      "title": "Fear the Walking Dead",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [
