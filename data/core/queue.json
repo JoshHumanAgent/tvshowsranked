@@ -1,85 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 86,
+    "total": 81,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "high",
-      "why": [
-        "british",
-        "netflix-revival"
-      ],
-      "year": 2013,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "Top Boy: Summerhouse",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "prequel",
-        "british"
-      ],
-      "year": 2012,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "mystery"
-      ],
-      "title": "Endeavour",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "anthology",
-        "cultural-phenomenon"
-      ],
-      "year": 2011,
-      "priority": "HIGH",
-      "genres": [
-        "horror",
-        "thriller"
-      ],
-      "title": "American Horror Story",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "nordic-noir",
-        "scandinavian"
-      ],
-      "year": 2011,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "mystery"
-      ],
-      "title": "The Bridge",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "british-institution",
-        "long-running"
-      ],
-      "year": 2005,
-      "priority": "HIGH",
-      "genres": [
-        "sci-fi",
-        "adventure"
-      ],
-      "title": "Doctor Who",
-      "status": "pending"
-    },
     {
       "confidence": "high",
       "why": [
