@@ -1,83 +1,10 @@
-{
+﻿{
   "meta": {
-    "generated": "2026-02-23T23:13:29.463Z",
-    "total": 144,
+    "generated": "2026-02-24T02:45:01.617Z",
+    "total": 121,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "supernatural",
-        "netflix"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "horror",
-        "thriller"
-      ],
-      "title": "Archive 81",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "witcher-prequel"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "fantasy",
-        "drama"
-      ],
-      "title": "The Witcher: Blood Origin",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "lotr",
-        "amazon"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "fantasy",
-        "drama"
-      ],
-      "title": "Rings of Power",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "korean",
-        "zombie"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "horror",
-        "thriller"
-      ],
-      "title": "All of Us Are Dead",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "mcu"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "action",
-        "fantasy"
-      ],
-      "title": "Moon Knight",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [
