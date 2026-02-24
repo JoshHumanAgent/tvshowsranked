@@ -1,83 +1,10 @@
 ﻿{
   "meta": {
-    "generated": "2026-02-24T03:00:28.771Z",
-    "total": 116,
+    "generated": "2026-02-24T03:31:02.475Z",
+    "total": 111,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "godfather-making-of"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "drama"
-      ],
-      "title": "The Offer",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "legal-thriller",
-        "popular"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "drama",
-        "legal"
-      ],
-      "title": "The Lincoln Lawyer",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "period",
-        "netflix"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "drama",
-        "historical"
-      ],
-      "title": "The Empress",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "star-trek",
-        "classic-style"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "sci-fi",
-        "drama"
-      ],
-      "title": "Star Trek: Strange New Worlds",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "british",
-        "martin-freeman"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "drama",
-        "crime"
-      ],
-      "title": "The Responder",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [
