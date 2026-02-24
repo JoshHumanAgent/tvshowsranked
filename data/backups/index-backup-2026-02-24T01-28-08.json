@@ -335,6 +335,39 @@
     },
     {
       "rank": 11,
+      "slug": "ozark",
+      "title": "Ozark",
+      "year": 2017,
+      "month": 7,
+      "genres": [
+        "crime",
+        "drama",
+        "thriller",
+        "cop-show"
+      ],
+      "final": 8.1,
+      "tmdbId": 69740,
+      "char": 8.5,
+      "world": 7,
+      "cine": 8.5,
+      "spect": 6,
+      "conc": 8.5,
+      "drive": 8,
+      "resol": 8,
+      "episodes": 44,
+      "poster": "https://image.tmdb.org/t/p/w500/pCGyPVrI9Fzw6rE1Pvi4BIXF6ET.jpg",
+      "streaming": {
+        "us": [
+          "Netflix"
+        ],
+        "uk": [
+          "Netflix"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/aatG9iVAUL7U7OyFEmupESpOrD2.jpg"
+    },
+    {
+      "rank": 12,
       "slug": "the-expanse",
       "title": "The Expanse",
       "year": 2015,
@@ -366,7 +399,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/7yKtaRij2giAj0s09F6gmB8XIje.jpg"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "slug": "mad-men",
       "title": "Mad Men",
       "year": 2007,
@@ -398,7 +431,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/A5lVyejMsP5G7rAJBwU9ug3Wzou.jpg"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "slug": "andor",
       "title": "Andor",
       "year": 2022,
@@ -428,37 +461,6 @@
         ]
       },
       "backdrop": "https://image.tmdb.org/t/p/w780/kCGwvjpqM1owt9kI4pkYPJWJLvc.jpg"
-    },
-    {
-      "rank": 14,
-      "slug": "the-crown",
-      "title": "The Crown",
-      "year": 2016,
-      "month": 11,
-      "genres": [
-        "drama",
-        "historical"
-      ],
-      "final": 8.03,
-      "tmdbId": 65494,
-      "char": 8.5,
-      "world": 8,
-      "cine": 9,
-      "spect": 8.5,
-      "conc": 7,
-      "drive": 7,
-      "resol": 7,
-      "episodes": 60,
-      "poster": "https://image.tmdb.org/t/p/w500/1DDE0Z2Y805rqfkEjPbZsMLyPwa.jpg",
-      "streaming": {
-        "us": [
-          "Netflix"
-        ],
-        "uk": [
-          "Netflix"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/8VXhcrl5z2I1zEU9X3pkkNrZlD.jpg"
     },
     {
       "rank": 15,
@@ -662,39 +664,6 @@
     },
     {
       "rank": 21,
-      "slug": "ozark",
-      "title": "Ozark",
-      "year": 2017,
-      "month": 7,
-      "genres": [
-        "crime",
-        "drama",
-        "thriller",
-        "cop-show"
-      ],
-      "final": 7.93,
-      "tmdbId": 69740,
-      "char": 8,
-      "world": 6.5,
-      "cine": 8,
-      "spect": 6,
-      "conc": 8,
-      "drive": 8,
-      "resol": 8,
-      "episodes": 44,
-      "poster": "https://image.tmdb.org/t/p/w500/pCGyPVrI9Fzw6rE1Pvi4BIXF6ET.jpg",
-      "streaming": {
-        "us": [
-          "Netflix"
-        ],
-        "uk": [
-          "Netflix"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/aatG9iVAUL7U7OyFEmupESpOrD2.jpg"
-    },
-    {
-      "rank": 22,
       "slug": "the-knick",
       "title": "The Knick",
       "year": 2014,
@@ -725,7 +694,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/9VKoWUd81e8NRi2PxC0BlVoUO7V.jpg"
     },
     {
-      "rank": 23,
+      "rank": 22,
       "slug": "house-of-the-dragon",
       "title": "House of the Dragon",
       "year": 2022,
@@ -758,7 +727,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/2xGcSLyTAzConiHAByWqhfLiatT.jpg"
     },
     {
-      "rank": 24,
+      "rank": 23,
       "slug": "penny-dreadful",
       "title": "Penny Dreadful",
       "year": 2014,
@@ -791,7 +760,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/3bViM60LioKQJwsExm5oyLRYagC.jpg"
     },
     {
-      "rank": 25,
+      "rank": 24,
       "slug": "euphoria",
       "title": "Euphoria",
       "year": 2019,
@@ -822,7 +791,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/9KnIzPCv9XpWA0MqmwiKBZvV1Sj.jpg"
     },
     {
-      "rank": 26,
+      "rank": 25,
       "slug": "angels-in-america",
       "title": "Angels in America",
       "year": 2003,
@@ -852,7 +821,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/ijs6Ilt8B2xHyZeePXZivQI15Cc.jpg"
     },
     {
-      "rank": 27,
+      "rank": 26,
       "slug": "silo",
       "title": "Silo",
       "year": 2023,
@@ -884,7 +853,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg"
     },
     {
-      "rank": 28,
+      "rank": 27,
       "slug": "station-eleven",
       "title": "Station Eleven",
       "year": 2021,
@@ -915,7 +884,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/kiiPOuzjyIe793tgGsM5j5DaRxb.jpg"
     },
     {
-      "rank": 29,
+      "rank": 28,
       "slug": "hannibal",
       "title": "Hannibal",
       "year": 2013,
@@ -949,39 +918,39 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/vlG182ZY2WMzD5bjFZNnhyvv5V4.jpg"
     },
     {
-      "rank": 30,
-      "slug": "stranger-things",
-      "title": "Stranger Things",
-      "year": 2016,
-      "month": 7,
+      "rank": 29,
+      "slug": "severance",
+      "title": "Severance",
+      "year": 2022,
+      "month": 2,
       "genres": [
         "sci-fi",
-        "horror",
-        "drama"
+        "drama",
+        "thriller"
       ],
       "final": 7.88,
-      "tmdbId": 66732,
-      "char": 8,
-      "world": 9,
-      "cine": 8,
-      "spect": 8,
-      "conc": 7,
-      "drive": 8.5,
-      "resol": 7,
-      "episodes": 42,
-      "poster": "https://image.tmdb.org/t/p/w500/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
+      "tmdbId": 95396,
+      "char": 7.5,
+      "world": 8.5,
+      "cine": 8.5,
+      "spect": 6.5,
+      "conc": 9,
+      "drive": 9,
+      "resol": 6,
+      "episodes": 19,
+      "poster": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
       "streaming": {
         "us": [
-          "Netflix"
+          "Apple TV+"
         ],
         "uk": [
-          "Netflix"
+          "Apple TV+"
         ]
       },
-      "backdrop": "https://image.tmdb.org/t/p/w780/8zbAoryWbtH0DKdev8abFAjdufy.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w780/ixgFmf1X59PUZam2qbAfskx2gQr.jpg"
     },
     {
-      "rank": 31,
+      "rank": 30,
       "slug": "adolescence",
       "title": "Adolescence",
       "year": 2025,
@@ -1012,7 +981,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/llZodlkVKRkTdUsiRxvn8h80hhx.jpg"
     },
     {
-      "rank": 32,
+      "rank": 31,
       "slug": "rome",
       "title": "Rome",
       "year": 2005,
@@ -1045,7 +1014,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/b2fhZk0xB2TgMsDXT6goR28PoHX.jpg"
     },
     {
-      "rank": 33,
+      "rank": 32,
       "slug": "wolf-hall",
       "title": "Wolf Hall",
       "year": 2015,
@@ -1078,7 +1047,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/3kLMdv1eTIYRsCLknMG6WBbvvb9.jpg"
     },
     {
-      "rank": 34,
+      "rank": 33,
       "slug": "the-penguin",
       "title": "The Penguin",
       "year": 2024,
@@ -1110,7 +1079,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/4TdmuuwiIiKw3JOjIuhdgYxRXnN.jpg"
     },
     {
-      "rank": 35,
+      "rank": 34,
       "slug": "the-haunting-of-hill-house",
       "title": "The Haunting of Hill House",
       "year": 2018,
@@ -1142,7 +1111,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/sNtNXwtEbdw4LaCFxFQwL2Jv4yW.jpg"
     },
     {
-      "rank": 36,
+      "rank": 35,
       "slug": "mr-robot",
       "title": "Mr. Robot",
       "year": 2015,
@@ -1173,7 +1142,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/hZOuVkhAWX9viLJuaIsMh8cM3Jz.jpg"
     },
     {
-      "rank": 37,
+      "rank": 36,
       "slug": "its-a-sin",
       "title": "It's a Sin",
       "year": 2021,
@@ -1204,7 +1173,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/rrZKfEVvC6itMIaEfDHwWRYaULw.jpg"
     },
     {
-      "rank": 38,
+      "rank": 37,
       "slug": "rectify",
       "title": "Rectify",
       "year": 2013,
@@ -1235,7 +1204,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/qiUnDMMH3D8thZ4QR3NzBEvTFKN.jpg"
     },
     {
-      "rank": 39,
+      "rank": 38,
       "slug": "the-underground-railroad",
       "title": "The Underground Railroad",
       "year": 2021,
@@ -1267,7 +1236,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/pZcS7g2wsGWqWvleu3f9JS288QT.jpg"
     },
     {
-      "rank": 40,
+      "rank": 39,
       "slug": "black-mirror",
       "title": "Black Mirror",
       "year": 2011,
@@ -1299,7 +1268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/dg3OindVAGZBjlT3xYKqIAdukPL.jpg"
     },
     {
-      "rank": 41,
+      "rank": 40,
       "slug": "the-last-of-us",
       "title": "The Last of Us",
       "year": 2023,
@@ -1332,7 +1301,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg"
     },
     {
-      "rank": 42,
+      "rank": 41,
       "slug": "sharp-objects",
       "title": "Sharp Objects",
       "year": 2018,
@@ -1364,7 +1333,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/b9cCIwtT0gD42wEMMZwMdY8zfgS.jpg"
     },
     {
-      "rank": 43,
+      "rank": 42,
       "slug": "halt-and-catch-fire",
       "title": "Halt and Catch Fire",
       "year": 2014,
@@ -1395,7 +1364,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/o35U5p9J3eDsqrgfCpYUOO2lsuG.jpg"
     },
     {
-      "rank": 44,
+      "rank": 43,
       "slug": "peaky-blinders",
       "title": "Peaky Blinders",
       "year": 2013,
@@ -1429,7 +1398,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/l8v3gJDlASN0lNn51gR8zQJsu5O.jpg"
     },
     {
-      "rank": 45,
+      "rank": 44,
       "slug": "foundation",
       "title": "Foundation",
       "year": 2021,
@@ -1458,6 +1427,37 @@
         ]
       },
       "backdrop": "https://image.tmdb.org/t/p/w780/7NNNXo0qG2SqH4JoG7GPvJ2hzes.jpg"
+    },
+    {
+      "rank": 45,
+      "slug": "beef",
+      "title": "Beef",
+      "year": 2023,
+      "month": 4,
+      "genres": [
+        "drama",
+        "comedy"
+      ],
+      "final": 7.78,
+      "tmdbId": 155309,
+      "char": 8,
+      "world": 6.5,
+      "cine": 8,
+      "spect": 5,
+      "conc": 8,
+      "drive": 9,
+      "resol": 9,
+      "episodes": 10,
+      "poster": "https://image.tmdb.org/t/p/w500/4b4v7RnPhNyPEaVGFarEuo74r8W.jpg",
+      "streaming": {
+        "us": [
+          "Netflix"
+        ],
+        "uk": [
+          "Netflix"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/6dErjmx17e8kZn5zHAqLrbcTesV.jpg"
     },
     {
       "rank": 46,
@@ -1590,38 +1590,6 @@
     },
     {
       "rank": 50,
-      "slug": "westworld",
-      "title": "Westworld",
-      "year": 2016,
-      "month": 10,
-      "genres": [
-        "sci-fi",
-        "western",
-        "drama"
-      ],
-      "final": 7.75,
-      "tmdbId": 63247,
-      "char": 7.5,
-      "world": 8.5,
-      "cine": 8.5,
-      "spect": 9,
-      "conc": 10,
-      "drive": 6.5,
-      "resol": 5,
-      "episodes": 36,
-      "poster": "https://image.tmdb.org/t/p/w500/8MfgyFHf7XEboZJPZXCIDqqiz6e.jpg",
-      "streaming": {
-        "us": [
-          "HBO Max"
-        ],
-        "uk": [
-          "Sky Atlantic"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/rX5hvSRB2k4YoIvRg6Zky52rWk0.jpg"
-    },
-    {
-      "rank": 51,
       "slug": "for-all-mankind",
       "title": "For All Mankind",
       "year": 2019,
@@ -1652,7 +1620,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/9OQ5BIITkJwRJo9JA6AlCfJIGBQ.jpg"
     },
     {
-      "rank": 52,
+      "rank": 51,
       "slug": "generation-kill",
       "title": "Generation Kill",
       "year": 2008,
@@ -1685,7 +1653,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/wAEOFMX407pMVdtVriRpIZE9Iaw.jpg"
     },
     {
-      "rank": 53,
+      "rank": 52,
       "slug": "midnight-mass",
       "title": "Midnight Mass",
       "year": 2021,
@@ -1717,7 +1685,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/YauN3gyvgqktYhze4gXPWuoZBY.jpg"
     },
     {
-      "rank": 54,
+      "rank": 53,
       "slug": "girls",
       "title": "Girls",
       "year": 2012,
@@ -1749,7 +1717,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/9O2k1lfAMes2UgrWzHVvpMJHjw.jpg"
     },
     {
-      "rank": 55,
+      "rank": 54,
       "slug": "godless",
       "title": "Godless",
       "year": 2017,
@@ -1780,7 +1748,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/3CdnJBsEm2hZffF23wOJtfC0EIq.jpg"
     },
     {
-      "rank": 56,
+      "rank": 55,
       "slug": "the-white-lotus",
       "title": "The White Lotus",
       "year": 2021,
@@ -1811,7 +1779,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/rCTLaPwuApDx8vLGjYZ9pRl7zRB.jpg"
     },
     {
-      "rank": 57,
+      "rank": 56,
       "slug": "the-queens-gambit",
       "title": "The Queen's Gambit",
       "year": 2020,
@@ -1841,7 +1809,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/5N5dSOrysuquExvn8Gpp5jMEf6u.jpg"
     },
     {
-      "rank": 58,
+      "rank": 57,
       "slug": "fargo",
       "title": "Fargo",
       "year": 2014,
@@ -1874,7 +1842,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/4jrSbRpLqpvYJtLKncaxZVC47EW.jpg"
     },
     {
-      "rank": 59,
+      "rank": 58,
       "slug": "when-they-see-us",
       "title": "When They See Us",
       "year": 2019,
@@ -1902,6 +1870,38 @@
         ]
       },
       "backdrop": "https://image.tmdb.org/t/p/w780/5IIg0PhE764qVuKICgmSAE0Jotx.jpg"
+    },
+    {
+      "rank": 59,
+      "slug": "westworld",
+      "title": "Westworld",
+      "year": 2016,
+      "month": 10,
+      "genres": [
+        "sci-fi",
+        "western",
+        "drama"
+      ],
+      "final": 7.67,
+      "tmdbId": 63247,
+      "char": 7.5,
+      "world": 8.5,
+      "cine": 8.5,
+      "spect": 9,
+      "conc": 9.5,
+      "drive": 6.5,
+      "resol": 5,
+      "episodes": 36,
+      "poster": "https://image.tmdb.org/t/p/w500/8MfgyFHf7XEboZJPZXCIDqqiz6e.jpg",
+      "streaming": {
+        "us": [
+          "HBO Max"
+        ],
+        "uk": [
+          "Sky Atlantic"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/rX5hvSRB2k4YoIvRg6Zky52rWk0.jpg"
     },
     {
       "rank": 60,
@@ -1936,35 +1936,34 @@
     },
     {
       "rank": 61,
-      "slug": "severance",
-      "title": "Severance",
-      "year": 2022,
-      "month": 2,
+      "slug": "the-crown",
+      "title": "The Crown",
+      "year": 2016,
+      "month": 11,
       "genres": [
-        "sci-fi",
         "drama",
-        "thriller"
+        "historical"
       ],
-      "final": 7.63,
-      "tmdbId": 95396,
+      "final": 7.6,
+      "tmdbId": 65494,
       "char": 7.5,
-      "world": 8.5,
-      "cine": 8.5,
-      "spect": 7,
-      "conc": 9.5,
-      "drive": 8.5,
+      "world": 8,
+      "cine": 9,
+      "spect": 8.5,
+      "conc": 7,
+      "drive": 7,
       "resol": 7,
-      "episodes": 19,
-      "poster": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+      "episodes": 60,
+      "poster": "https://image.tmdb.org/t/p/w500/1DDE0Z2Y805rqfkEjPbZsMLyPwa.jpg",
       "streaming": {
         "us": [
-          "Apple TV+"
+          "Netflix"
         ],
         "uk": [
-          "Apple TV+"
+          "Netflix"
         ]
       },
-      "backdrop": "https://image.tmdb.org/t/p/w780/ixgFmf1X59PUZam2qbAfskx2gQr.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w780/8VXhcrl5z2I1zEU9X3pkkNrZlD.jpg"
     },
     {
       "rank": 62,
@@ -2001,6 +2000,39 @@
     },
     {
       "rank": 63,
+      "slug": "the-pacific",
+      "title": "The Pacific",
+      "year": 2010,
+      "month": 3,
+      "genres": [
+        "drama",
+        "war",
+        "historical"
+      ],
+      "final": 7.6,
+      "tmdbId": 16997,
+      "char": 7,
+      "world": 8,
+      "cine": 8,
+      "spect": 9,
+      "conc": 7,
+      "drive": 7,
+      "resol": 8,
+      "episodes": 10,
+      "poster": "https://image.tmdb.org/t/p/w500/x9Y1IMFdY8Ma222KcQadFEau0EB.jpg",
+      "streaming": {
+        "us": [
+          "HBO Max",
+          "Amazon Prime Video"
+        ],
+        "uk": [
+          "BBC Two"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/nWfpVLgioDXQsAbfL6UJxYz6d3d.jpg"
+    },
+    {
+      "rank": 64,
       "slug": "squid-game",
       "title": "Squid Game",
       "year": 2021,
@@ -2032,7 +2064,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/2meX1nMdScFOoV4370rqHWKmXhY.jpg"
     },
     {
-      "rank": 64,
+      "rank": 65,
       "slug": "the-plot-against-america",
       "title": "The Plot Against America",
       "year": 2020,
@@ -2064,7 +2096,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/5bbXx8oopd6a6ZeG7uuxQK6JFRp.jpg"
     },
     {
-      "rank": 65,
+      "rank": 66,
       "slug": "escape-at-dannemora",
       "title": "Escape at Dannemora",
       "year": 2018,
@@ -2097,7 +2129,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/chu6bVjN5viCdfmzBcx5R3xYfTj.jpg"
     },
     {
-      "rank": 66,
+      "rank": 67,
       "slug": "the-bureau",
       "title": "The Bureau",
       "year": 2015,
@@ -2128,7 +2160,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/op9asj5tw6iRxza2VklzdOp7rj2.jpg"
     },
     {
-      "rank": 67,
+      "rank": 68,
       "slug": "mare-of-easttown",
       "title": "Mare of Easttown",
       "year": 2021,
@@ -2161,7 +2193,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/7X1IGIl1JMJ9YFzJymCVoqZbvTR.jpg"
     },
     {
-      "rank": 68,
+      "rank": 69,
       "slug": "my-brilliant-friend",
       "title": "My Brilliant Friend",
       "year": 2018,
@@ -2193,7 +2225,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/iIYR1FuBD5ma2L2KjbHHWYgFu6Y.jpg"
     },
     {
-      "rank": 69,
+      "rank": 70,
       "slug": "dopesick",
       "title": "Dopesick",
       "year": 2021,
@@ -2223,7 +2255,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/uJxG5mIb6gUuFt9OGUUCVikserY.jpg"
     },
     {
-      "rank": 70,
+      "rank": 71,
       "slug": "narcos",
       "title": "Narcos",
       "year": 2015,
@@ -2253,39 +2285,6 @@
         ]
       },
       "backdrop": "https://image.tmdb.org/t/p/w780/qx8XQund44cecIJiX2Yb4SUeiT.jpg"
-    },
-    {
-      "rank": 71,
-      "slug": "the-boys",
-      "title": "The Boys",
-      "year": 2019,
-      "month": 7,
-      "genres": [
-        "drama",
-        "sci-fi",
-        "superhero",
-        "action"
-      ],
-      "final": 7.48,
-      "tmdbId": 76479,
-      "char": 7,
-      "world": 7,
-      "cine": 7,
-      "spect": 8,
-      "conc": 6.5,
-      "drive": 7,
-      "resol": 7,
-      "episodes": 40,
-      "poster": "https://image.tmdb.org/t/p/w500/2zmTngn1tYC1AvfnrFLhxeD82hz.jpg",
-      "streaming": {
-        "us": [
-          "Amazon Prime Video"
-        ],
-        "uk": [
-          "Amazon Prime Video"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/czffzEgaBko4mXW84B1J1EnQBzo.jpg"
     },
     {
       "rank": 72,
@@ -2425,6 +2424,38 @@
     },
     {
       "rank": 76,
+      "slug": "stranger-things",
+      "title": "Stranger Things",
+      "year": 2016,
+      "month": 7,
+      "genres": [
+        "sci-fi",
+        "horror",
+        "drama"
+      ],
+      "final": 7.38,
+      "tmdbId": 66732,
+      "char": 7,
+      "world": 8.5,
+      "cine": 8,
+      "spect": 8,
+      "conc": 6.5,
+      "drive": 8.5,
+      "resol": 7,
+      "episodes": 42,
+      "poster": "https://image.tmdb.org/t/p/w500/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
+      "streaming": {
+        "us": [
+          "Netflix"
+        ],
+        "uk": [
+          "Netflix"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/8zbAoryWbtH0DKdev8abFAjdufy.jpg"
+    },
+    {
+      "rank": 77,
       "slug": "interview-with-the-vampire",
       "title": "Interview with the Vampire",
       "year": 2022,
@@ -2457,7 +2488,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/r5RoeEWuslP6svlZsHsCKo7TZs7.jpg"
     },
     {
-      "rank": 77,
+      "rank": 78,
       "slug": "six-feet-under",
       "title": "Six Feet Under",
       "year": 2001,
@@ -2488,7 +2519,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/5NOQNDMVXe8t5wIuY6r6b6iUXcc.jpg"
     },
     {
-      "rank": 78,
+      "rank": 79,
       "slug": "watchmen-2019",
       "title": "Watchmen (2019)",
       "year": 2019,
@@ -2521,71 +2552,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/zP5CexkKKbFlIh6sFKFj3sK1MXZ.jpg"
     },
     {
-      "rank": 79,
-      "slug": "beef",
-      "title": "Beef",
-      "year": 2023,
-      "month": 4,
-      "genres": [
-        "drama",
-        "comedy"
-      ],
-      "final": 7.37,
-      "tmdbId": 155309,
-      "char": 7.5,
-      "world": 6.5,
-      "cine": 8,
-      "spect": 5,
-      "conc": 8,
-      "drive": 9,
-      "resol": 9,
-      "episodes": 10,
-      "poster": "https://image.tmdb.org/t/p/w500/4b4v7RnPhNyPEaVGFarEuo74r8W.jpg",
-      "streaming": {
-        "us": [
-          "Netflix"
-        ],
-        "uk": [
-          "Netflix"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/6dErjmx17e8kZn5zHAqLrbcTesV.jpg"
-    },
-    {
       "rank": 80,
-      "slug": "the-pacific",
-      "title": "The Pacific",
-      "year": 2010,
-      "month": 3,
-      "genres": [
-        "drama",
-        "war",
-        "historical"
-      ],
-      "final": 7.37,
-      "tmdbId": 16997,
-      "char": 7,
-      "world": 8.5,
-      "cine": 8,
-      "spect": 9,
-      "conc": 7,
-      "drive": 7,
-      "resol": 8,
-      "episodes": 10,
-      "poster": "https://image.tmdb.org/t/p/w500/x9Y1IMFdY8Ma222KcQadFEau0EB.jpg",
-      "streaming": {
-        "us": [
-          "HBO Max",
-          "Amazon Prime Video"
-        ],
-        "uk": [
-          "BBC Two"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/nWfpVLgioDXQsAbfL6UJxYz6d3d.jpg"
-    },
-    {
-      "rank": 81,
       "slug": "twin-peaks",
       "title": "Twin Peaks",
       "year": 1990,
@@ -2618,7 +2585,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/dZklTql88IDOmkC3JAYQSTgyK6f.jpg"
     },
     {
-      "rank": 82,
+      "rank": 81,
       "slug": "big-little-lies",
       "title": "Big Little Lies",
       "year": 2017,
@@ -2649,7 +2616,72 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/8Wo2Pqjxn7Xmd7p2dxRMIJtyMV7.jpg"
     },
     {
+      "rank": 82,
+      "slug": "the-boys",
+      "title": "The Boys",
+      "year": 2019,
+      "month": 7,
+      "genres": [
+        "drama",
+        "sci-fi",
+        "superhero",
+        "action"
+      ],
+      "final": 7.33,
+      "tmdbId": 76479,
+      "char": 7,
+      "world": 7,
+      "cine": 7,
+      "spect": 8,
+      "conc": 6.5,
+      "drive": 7,
+      "resol": 5.5,
+      "episodes": 40,
+      "poster": "https://image.tmdb.org/t/p/w500/2zmTngn1tYC1AvfnrFLhxeD82hz.jpg",
+      "streaming": {
+        "us": [
+          "Amazon Prime Video"
+        ],
+        "uk": [
+          "Amazon Prime Video"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/czffzEgaBko4mXW84B1J1EnQBzo.jpg"
+    },
+    {
       "rank": 83,
+      "slug": "the-mandalorian",
+      "title": "The Mandalorian",
+      "year": 2019,
+      "month": 11,
+      "genres": [
+        "sci-fi",
+        "action",
+        "drama"
+      ],
+      "final": 7.3,
+      "tmdbId": 82856,
+      "char": 8,
+      "world": 9,
+      "cine": 8.5,
+      "spect": 8.5,
+      "conc": 7.5,
+      "drive": 8,
+      "resol": 7,
+      "episodes": 24,
+      "poster": "https://image.tmdb.org/t/p/w500/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
+      "streaming": {
+        "us": [
+          "Disney Plus"
+        ],
+        "uk": [
+          "Disney Plus"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/9zcbqSxdsRMZWHYtyCd1nXPr2xq.jpg"
+    },
+    {
+      "rank": 84,
       "slug": "homeland",
       "title": "Homeland",
       "year": 2011,
@@ -2683,7 +2715,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/391ixi0wVbFtFLQnOy8ZncWv2io.jpg"
     },
     {
-      "rank": 84,
+      "rank": 85,
       "slug": "slow-horses",
       "title": "Slow Horses",
       "year": 2022,
@@ -2715,7 +2747,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/bDfboQUb45Cv9MYyVBDZw8M8xSM.jpg"
     },
     {
-      "rank": 85,
+      "rank": 86,
       "slug": "the-marvelous-mrs-maisel",
       "title": "The Marvelous Mrs. Maisel",
       "year": 2017,
@@ -2747,7 +2779,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/ywQtHG17LZhAFZyZtBflhtFMtJ7.jpg"
     },
     {
-      "rank": 86,
+      "rank": 87,
       "slug": "the-day-of-the-jackal",
       "title": "The Day of the Jackal",
       "year": 2024,
@@ -2777,38 +2809,6 @@
         ]
       },
       "backdrop": "https://image.tmdb.org/t/p/w780/enVrO8TRkdT8dmYXTfI4sEjR5Kp.jpg"
-    },
-    {
-      "rank": 87,
-      "slug": "the-mandalorian",
-      "title": "The Mandalorian",
-      "year": 2019,
-      "month": 11,
-      "genres": [
-        "sci-fi",
-        "action",
-        "drama"
-      ],
-      "final": 7.23,
-      "tmdbId": 82856,
-      "char": 8,
-      "world": 9,
-      "cine": 8.5,
-      "spect": 9.5,
-      "conc": 7.5,
-      "drive": 8,
-      "resol": 7.5,
-      "episodes": 24,
-      "poster": "https://image.tmdb.org/t/p/w500/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
-      "streaming": {
-        "us": [
-          "Disney Plus"
-        ],
-        "uk": [
-          "Disney Plus"
-        ]
-      },
-      "backdrop": "https://image.tmdb.org/t/p/w780/9zcbqSxdsRMZWHYtyCd1nXPr2xq.jpg"
     },
     {
       "rank": 88,
