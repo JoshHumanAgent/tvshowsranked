@@ -1,85 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 96,
+    "total": 91,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "high",
-      "why": [
-        "le-carre",
-        "spy"
-      ],
-      "year": 2016,
-      "priority": "HIGH",
-      "genres": [
-        "thriller",
-        "drama"
-      ],
-      "title": "Berlin Station",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "british",
-        "award-winning"
-      ],
-      "year": 2016,
-      "priority": "HIGH",
-      "genres": [
-        "drama",
-        "thriller"
-      ],
-      "title": "The Night Manager",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "mcu-netflix",
-        "critical-acclaim"
-      ],
-      "year": 2015,
-      "priority": "HIGH",
-      "genres": [
-        "action",
-        "drama"
-      ],
-      "title": "Daredevil",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "mcu-netflix",
-        "metoo-themes"
-      ],
-      "year": 2015,
-      "priority": "HIGH",
-      "genres": [
-        "action",
-        "drama"
-      ],
-      "title": "Jessica Jones",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "ambitious",
-        "wachowski"
-      ],
-      "year": 2015,
-      "priority": "HIGH",
-      "genres": [
-        "sci-fi",
-        "drama"
-      ],
-      "title": "Sense8",
-      "status": "pending"
-    },
     {
       "confidence": "high",
       "why": [
