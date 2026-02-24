@@ -1,168 +1,71 @@
 ﻿{
   "meta": {
-    "total": 23
+    "total": 8
   },
   "candidates": [
     {
-      "title": "Invincible",
-      "slug": "invincible",
-      "tmdbId": 95557,
-      "vote": 8.615,
-      "count": 5282
-    },
-    {
       "title": "It's Okay to Not Be Okay",
       "slug": "it-s-okay-to-not-be-okay",
+      "year": 2020,
       "tmdbId": 96462,
-      "vote": 8.519,
-      "count": 1447
+      "eps": 16,
+      "vote": 8.519
     },
     {
       "title": "Sherlock",
       "slug": "sherlock",
+      "year": 2010,
       "tmdbId": 19885,
-      "vote": 8.513,
-      "count": 6219
-    },
-    {
-      "title": "Scarlet Heart: Ryeo",
-      "slug": "scarlet-heart-ryeo",
-      "tmdbId": 66433,
-      "vote": 8.512,
-      "count": 559
+      "eps": 12,
+      "vote": 8.513
     },
     {
       "title": "Dexter: Resurrection",
       "slug": "dexter-resurrection",
+      "year": 2025,
       "tmdbId": 259909,
-      "vote": 8.508,
-      "count": 417
-    },
-    {
-      "title": "The Rising of the Shield Hero",
-      "slug": "the-rising-of-the-shield-hero",
-      "tmdbId": 83095,
-      "vote": 8.507,
-      "count": 1520
-    },
-    {
-      "title": "Golden Time",
-      "slug": "golden-time",
-      "tmdbId": 67389,
-      "vote": 8.5,
-      "count": 569
-    },
-    {
-      "title": "Yuri!!! on Ice",
-      "slug": "yuri-on-ice",
-      "tmdbId": 68129,
-      "vote": 8.5,
-      "count": 646
-    },
-    {
-      "title": "Real Girl",
-      "slug": "real-girl",
-      "tmdbId": 77721,
-      "vote": 8.5,
-      "count": 454
-    },
-    {
-      "title": "Vinland Saga",
-      "slug": "vinland-saga",
-      "tmdbId": 88803,
-      "vote": 8.5,
-      "count": 898
-    },
-    {
-      "title": "Cyberpunk: Edgerunners",
-      "slug": "cyberpunk-edgerunners",
-      "tmdbId": 105248,
-      "vote": 8.5,
-      "count": 1702
-    },
-    {
-      "title": "ORESUKI Are you the only one who loves me?",
-      "slug": "oresuki-are-you-the-only-one-who-loves-me",
-      "tmdbId": 93019,
-      "vote": 8.5,
-      "count": 279
-    },
-    {
-      "title": "Extraordinary Attorney Woo",
-      "slug": "extraordinary-attorney-woo",
-      "tmdbId": 197067,
-      "vote": 8.5,
-      "count": 902
-    },
-    {
-      "title": "Meteor Garden",
-      "slug": "meteor-garden",
-      "tmdbId": 79818,
-      "vote": 8.5,
-      "count": 605
-    },
-    {
-      "title": "Violet Evergarden",
-      "slug": "violet-evergarden",
-      "tmdbId": 75214,
-      "vote": 8.476,
-      "count": 925
-    },
-    {
-      "title": "Teen Wolf",
-      "slug": "teen-wolf",
-      "tmdbId": 34524,
-      "vote": 8.461,
-      "count": 4631
+      "eps": 10,
+      "vote": 8.508
     },
     {
       "title": "The Queen's Gambit",
       "slug": "the-queen-s-gambit",
+      "year": 2020,
       "tmdbId": 87739,
-      "vote": 8.446,
-      "count": 5323
-    },
-    {
-      "title": "Suits",
-      "slug": "suits",
-      "tmdbId": 37680,
-      "vote": 8.218,
-      "count": 5540
+      "eps": 7,
+      "vote": 8.446
     },
     {
       "title": "Marvel's Daredevil",
       "slug": "marvel-s-daredevil",
+      "year": 2015,
       "tmdbId": 61889,
-      "vote": 8.158,
-      "count": 5015
-    },
-    {
-      "title": "The Act",
-      "slug": "the-act",
-      "tmdbId": 82883,
-      "vote": 7.563,
-      "count": 5158
+      "eps": 39,
+      "vote": 8.158
     },
     {
       "title": "13 Reasons Why",
       "slug": "13-reasons-why",
+      "year": 2017,
       "tmdbId": 66788,
-      "vote": 7.552,
-      "count": 4469
+      "eps": 49,
+      "vote": 7.552
     },
     {
       "title": "Dark Desire",
       "slug": "dark-desire",
+      "year": 2020,
       "tmdbId": 105214,
-      "vote": 7.31,
-      "count": 4257
+      "eps": 33,
+      "vote": 7.31
     },
     {
       "title": "Supergirl",
       "slug": "supergirl",
+      "year": 2015,
       "tmdbId": 62688,
-      "vote": 7.283,
-      "count": 4332
+      "eps": 126,
+      "vote": 7.283
     }
   ]
 }
