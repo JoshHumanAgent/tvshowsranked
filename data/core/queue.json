@@ -1,223 +1,119 @@
 ﻿{
   "meta": {
-    "total": 27
+    "total": 16
   },
   "candidates": [
     {
-      "title": "The Glory",
-      "slug": "the-glory",
-      "year": 2022,
-      "tmdbId": 136283,
-      "eps": 16,
-      "vote": 8.466
+      "title": "Game of Thrones",
+      "slug": "game-of-thrones",
+      "tmdbId": 1399,
+      "vote": 8.459,
+      "count": 26320
     },
     {
-      "title": "My Holo Love",
-      "slug": "my-holo-love",
-      "year": 2020,
-      "tmdbId": 96160,
-      "eps": 12,
-      "vote": 8.464
+      "title": "The Good Doctor",
+      "slug": "the-good-doctor",
+      "tmdbId": 71712,
+      "vote": 8.463,
+      "count": 12737
     },
     {
-      "title": "The Queen's Gambit",
-      "slug": "the-queen-s-gambit",
-      "year": 2020,
-      "tmdbId": 87739,
-      "eps": 7,
-      "vote": 8.446
+      "title": "Grey's Anatomy",
+      "slug": "grey-s-anatomy",
+      "tmdbId": 1416,
+      "vote": 8.21,
+      "count": 10776
     },
     {
-      "title": "Tomorrow",
-      "slug": "tomorrow",
-      "year": 2022,
-      "tmdbId": 136369,
-      "eps": 16,
-      "vote": 8.402
-    },
-    {
-      "title": "Club de Cuervos",
-      "slug": "club-de-cuervos",
-      "year": 2015,
-      "tmdbId": 63314,
-      "eps": 45,
-      "vote": 8.4
-    },
-    {
-      "title": "Rigo",
-      "slug": "rigo",
-      "year": 2023,
-      "tmdbId": 236873,
-      "eps": 99,
-      "vote": 8.379
-    },
-    {
-      "title": "Ted Lasso",
-      "slug": "ted-lasso",
-      "year": 2020,
-      "tmdbId": 97546,
-      "eps": 34,
-      "vote": 8.349
-    },
-    {
-      "title": "Maxton Hall – The World Between Us",
-      "slug": "maxton-hall-the-world-between-us",
-      "year": 2024,
-      "tmdbId": 250670,
-      "eps": 12,
-      "vote": 8.278
-    },
-    {
-      "title": "Lessons in Chemistry",
-      "slug": "lessons-in-chemistry",
-      "year": 2023,
-      "tmdbId": 117303,
-      "eps": 8,
-      "vote": 8.273
-    },
-    {
-      "title": "Panchayat",
-      "slug": "panchayat",
-      "year": 2020,
-      "tmdbId": 101352,
-      "eps": 32,
-      "vote": 8.203
-    },
-    {
-      "title": "The Summer I Turned Pretty",
-      "slug": "the-summer-i-turned-pretty",
-      "year": 2022,
-      "tmdbId": 194766,
-      "eps": 26,
-      "vote": 8.115
+      "title": "Supernatural",
+      "slug": "supernatural",
+      "tmdbId": 1622,
+      "vote": 8.3,
+      "count": 8237
     },
     {
       "title": "Vikings",
       "slug": "vikings",
-      "year": 2013,
       "tmdbId": 44217,
-      "eps": 89,
-      "vote": 8.093
+      "vote": 8.093,
+      "count": 7488
     },
     {
-      "title": "See",
-      "slug": "see",
-      "year": 2019,
-      "tmdbId": 80752,
-      "eps": 24,
-      "vote": 8.084
+      "title": "The Mentalist",
+      "slug": "the-mentalist",
+      "tmdbId": 5920,
+      "vote": 8.352,
+      "count": 4159
     },
     {
-      "title": "Black Bird",
-      "slug": "black-bird",
-      "year": 2022,
-      "tmdbId": 155537,
-      "eps": 6,
-      "vote": 8.064
+      "title": "Law & Order: Special Victims Unit",
+      "slug": "law-order-special-victims-unit",
+      "tmdbId": 2734,
+      "vote": 7.9,
+      "count": 4129
     },
     {
-      "title": "Mirzapur",
-      "slug": "mirzapur",
-      "year": 2018,
-      "tmdbId": 84105,
-      "eps": 29,
-      "vote": 8.017
+      "title": "Criminal Minds",
+      "slug": "criminal-minds",
+      "tmdbId": 4057,
+      "vote": 8.297,
+      "count": 4005
     },
     {
-      "title": "Good Omens",
-      "slug": "good-omens",
-      "year": 2019,
-      "tmdbId": 71915,
-      "eps": 12,
-      "vote": 8.002
+      "title": "Bones",
+      "slug": "bones",
+      "tmdbId": 1911,
+      "vote": 8.198,
+      "count": 3401
     },
     {
-      "title": "Paradise City",
-      "slug": "paradise-city",
-      "year": 2021,
-      "tmdbId": 5768,
-      "eps": 8,
-      "vote": 8
+      "title": "Shameless",
+      "slug": "shameless",
+      "tmdbId": 34307,
+      "vote": 8.169,
+      "count": 3198
     },
     {
-      "title": "House of David",
-      "slug": "house-of-david",
-      "year": 2025,
-      "tmdbId": 243881,
-      "eps": 16,
-      "vote": 7.988
+      "title": "The Rookie",
+      "slug": "the-rookie",
+      "tmdbId": 79744,
+      "vote": 8.532,
+      "count": 2975
     },
     {
-      "title": "Daisy Jones & the Six",
-      "slug": "daisy-jones-the-six",
-      "year": 2023,
-      "tmdbId": 95555,
-      "eps": 10,
-      "vote": 7.995
+      "title": "Frieren: Beyond Journey's End",
+      "slug": "frieren-beyond-journey-s-end",
+      "tmdbId": 209867,
+      "vote": 8.77,
+      "count": 704
     },
     {
-      "title": "The Terminal List",
-      "slug": "the-terminal-list",
-      "year": 2022,
-      "tmdbId": 120911,
-      "eps": 8,
-      "vote": 7.965
+      "title": "Law & Order",
+      "slug": "law-order",
+      "tmdbId": 549,
+      "vote": 7.337,
+      "count": 667
     },
     {
-      "title": "Bosch: Legacy",
-      "slug": "bosch-legacy",
-      "year": 2022,
-      "tmdbId": 153657,
-      "eps": 30,
-      "vote": 7.939
+      "title": "Midsomer Murders",
+      "slug": "midsomer-murders",
+      "tmdbId": 764,
+      "vote": 7.519,
+      "count": 342
     },
     {
-      "title": "Pluribus",
-      "slug": "pluribus",
-      "year": 2025,
-      "tmdbId": 225171,
-      "eps": 9,
-      "vote": 7.919
+      "title": "In the Mud",
+      "slug": "in-the-mud",
+      "tmdbId": 258462,
+      "vote": 7.353,
+      "count": 112
     },
     {
-      "title": "Pachinko",
-      "slug": "pachinko",
-      "year": 2022,
-      "tmdbId": 110382,
-      "eps": 16,
-      "vote": 7.881
-    },
-    {
-      "title": "Presumed Innocent",
-      "slug": "presumed-innocent",
-      "year": 2024,
-      "tmdbId": 156933,
-      "eps": 8,
-      "vote": 7.861
-    },
-    {
-      "title": "Swagger",
-      "slug": "swagger",
-      "year": 2021,
-      "tmdbId": 94245,
-      "eps": 18,
-      "vote": 7.793
-    },
-    {
-      "title": "Masters of the Air",
-      "slug": "masters-of-the-air",
-      "year": 2024,
-      "tmdbId": 46518,
-      "eps": 9,
-      "vote": 7.764
-    },
-    {
-      "title": "Monarch: Legacy of Monsters",
-      "slug": "monarch-legacy-of-monsters",
-      "year": 2023,
-      "tmdbId": 202411,
-      "eps": 20,
-      "vote": 7.717
+      "title": "The Art of Sarah",
+      "slug": "the-art-of-sarah",
+      "tmdbId": 273977,
+      "vote": 7.625,
+      "count": 24
     }
   ]
 }
