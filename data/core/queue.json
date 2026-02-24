@@ -1,105 +1,9 @@
 ﻿{
   "meta": {
-    "total": 10,
-    "generated": "2026-02-24T08:02:22.167Z"
+    "total": 5,
+    "generated": "2026-02-24T08:04:52.106Z"
   },
   "candidates": [
-    {
-      "title": "The Good Bad Mother",
-      "slug": "the-good-bad-mother",
-      "year": 2023,
-      "tmdbId": 214999,
-      "eps": 14,
-      "vote": 8.939,
-      "count": 179,
-      "status": "Ended",
-      "genres": "drama, comedy",
-      "poster": "/vtDLhvpTk1xcaBCKubSH0if575G.jpg"
-    },
-    {
-      "title": "The Long Season",
-      "slug": "the-long-season",
-      "year": 2023,
-      "tmdbId": 225008,
-      "eps": 12,
-      "vote": 8.869,
-      "count": 108,
-      "status": "Ended",
-      "genres": "drama, mystery, crime",
-      "poster": "/rM5Y0ziZbmpkqW1db2HK3xrzTXj.jpg"
-    },
-    {
-      "title": "Twinkling Watermelon",
-      "slug": "twinkling-watermelon",
-      "year": 2023,
-      "tmdbId": 212204,
-      "eps": 16,
-      "vote": 8.8,
-      "count": 130,
-      "status": "Ended",
-      "genres": "sci-fi & fantasy, drama",
-      "poster": "/bwTzW1wTgUxUOQruhT8DvinUYgR.jpg"
-    },
-    {
-      "title": "The Boy's Word: Blood on the Asphalt",
-      "slug": "the-boy-s-word-blood-on-the-asphalt",
-      "year": 2023,
-      "tmdbId": 234763,
-      "eps": 8,
-      "vote": 8.7,
-      "count": 205,
-      "status": "Ended",
-      "genres": "drama, crime",
-      "poster": "/fmJ2vVzaSAPvCqB79H70uMHSNr4.jpg"
-    },
-    {
-      "title": "Marry My Husband",
-      "slug": "marry-my-husband",
-      "year": 2024,
-      "tmdbId": 221851,
-      "eps": 16,
-      "vote": 8.5,
-      "count": 645,
-      "status": "Ended",
-      "genres": "drama, sci-fi & fantasy, comedy",
-      "poster": "/899KcBqooj8nEyPcAEU3h7AdfUo.jpg"
-    },
-    {
-      "title": "Hidden Love",
-      "slug": "hidden-love",
-      "year": 2023,
-      "tmdbId": 210733,
-      "eps": 25,
-      "vote": 8.466,
-      "count": 221,
-      "status": "Ended",
-      "genres": "drama",
-      "poster": "/riGzESa9N9toumP9OhMmg0QvFPD.jpg"
-    },
-    {
-      "title": "My Demon",
-      "slug": "my-demon",
-      "year": 2023,
-      "tmdbId": 218539,
-      "eps": 16,
-      "vote": 8.454,
-      "count": 624,
-      "status": "Ended",
-      "genres": "drama, comedy",
-      "poster": "/xBnscv5BrJREKVSvh0le61y4KDk.jpg"
-    },
-    {
-      "title": "No Gain No Love",
-      "slug": "no-gain-no-love",
-      "year": 2024,
-      "tmdbId": 229480,
-      "eps": 12,
-      "vote": 8.438,
-      "count": 259,
-      "status": "Ended",
-      "genres": "drama, comedy",
-      "poster": "/jiGxkMP3lzPDaPw4F0EZAEiTSgL.jpg"
-    },
     {
       "title": "Shōgun",
       "slug": "sh-gun",
@@ -113,16 +17,52 @@
       "poster": "/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg"
     },
     {
-      "title": "Light Shop",
-      "slug": "light-shop",
+      "title": "Shanty Town",
+      "slug": "shanty-town",
+      "year": 2023,
+      "tmdbId": 217460,
+      "eps": 6,
+      "vote": 8.4,
+      "count": 113,
+      "status": "Returning Series",
+      "genres": "crime, drama",
+      "poster": "/a7jRDMea7ADCtPphb9nOMp2dkgK.jpg"
+    },
+    {
+      "title": "Like Water for Chocolate",
+      "slug": "like-water-for-chocolate",
       "year": 2024,
-      "tmdbId": 226529,
-      "eps": 8,
-      "vote": 8.43,
-      "count": 235,
-      "status": "Ended",
-      "genres": "mystery, drama",
-      "poster": "/iRgH73xibpeNZ8zzPDkIpxuoKgC.jpg"
+      "tmdbId": 235635,
+      "eps": 12,
+      "vote": 8.244,
+      "count": 203,
+      "status": "Returning Series",
+      "genres": "drama",
+      "poster": "/pXNcd4z8eBihLO9I7bIVoK4mtQt.jpg"
+    },
+    {
+      "title": "Lioness",
+      "slug": "lioness",
+      "year": 2023,
+      "tmdbId": 113962,
+      "eps": 16,
+      "vote": 7.999,
+      "count": 1130,
+      "status": "Returning Series",
+      "genres": "drama, war & politics",
+      "poster": "/ajaXSmdAlYYhnvx1EIsvpfN949y.jpg"
+    },
+    {
+      "title": "Cross",
+      "slug": "cross",
+      "year": 2024,
+      "tmdbId": 213306,
+      "eps": 16,
+      "vote": 7,
+      "count": 249,
+      "status": "Returning Series",
+      "genres": "crime, drama, mystery",
+      "poster": "/6hhKdavCEZi8d584ZtIrQIrBvZI.jpg"
     }
   ]
 }
