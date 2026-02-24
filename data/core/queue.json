@@ -1,24 +1,8 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 1,
+    "total": 0,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
-  "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "spy-action",
-        "reboot"
-      ],
-      "year": 2010,
-      "priority": "MEDIUM",
-      "genres": [
-        "action",
-        "thriller"
-      ],
-      "title": "Nikita",
-      "status": "pending"
-    }
-  ]
+  "candidates": []
 }
