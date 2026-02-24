@@ -1,25 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 91,
+    "total": 86,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "high",
-      "why": [
-        "british",
-        "spy"
-      ],
-      "year": 2014,
-      "priority": "HIGH",
-      "genres": [
-        "thriller",
-        "drama"
-      ],
-      "title": "The Honourable Woman",
-      "status": "pending"
-    },
     {
       "confidence": "high",
       "why": [
@@ -38,51 +23,6 @@
     {
       "confidence": "high",
       "why": [
-        "psychological",
-        "prequel"
-      ],
-      "year": 2013,
-      "priority": "HIGH",
-      "genres": [
-        "thriller",
-        "drama"
-      ],
-      "title": "Bates Motel",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "british",
-        "villain-perspective"
-      ],
-      "year": 2013,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "thriller"
-      ],
-      "title": "The Fall",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "british",
-        "island-mystery"
-      ],
-      "year": 2013,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "mystery"
-      ],
-      "title": "Shetland",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
         "prequel",
         "british"
       ],
@@ -93,21 +33,6 @@
         "mystery"
       ],
       "title": "Endeavour",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "british",
-        "urban"
-      ],
-      "year": 2011,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "Top Boy",
       "status": "pending"
     },
     {
