@@ -90,12 +90,40 @@ function main() {
     const masterMap = new Map(master.shows.map(s => [s.slug, s]));
     const rankedMap = new Map(ranked.shows.map(s => [s.slug, s]));
 
+    // Check for shows to delete (all scores = 0)
+    const toDelete = new Set();
+    master.shows.forEach(masterShow => {
+        if (masterShow.char === 0 && masterShow.world === 0 && masterShow.cine === 0 &&
+            masterShow.spect === 0 && masterShow.conc === 0 && masterShow.drive === 0 && 
+            masterShow.resol === 0) {
+            toDelete.add(masterShow.slug);
+            console.log('  FLAGGED FOR DELETION (all 0):', masterShow.title);
+        }
+    });
+    
+    if (toDelete.size > 0) {
+        console.log('');
+        console.log(`Found ${toDelete.size} shows marked for deletion (all scores = 0)`);
+    }
+
     // Update ranked.json
     console.log('Updating ranked.json...');
     let updatedRanked = 0;
     let newShows = 0;
+    let deletedShows = 0;
+    
+    // Remove flagged shows from ranked
+    const beforeCount = ranked.shows.length;
+    ranked.shows = ranked.shows.filter(s => !toDelete.has(s.slug));
+    deletedShows = beforeCount - ranked.shows.length;
+    if (deletedShows > 0) {
+        console.log(`  Removed ${deletedShows} shows from ranked.json`);
+    }
     
     master.shows.forEach(masterShow => {
+        // Skip shows marked for deletion
+        if (toDelete.has(masterShow.slug)) return;
+        
         const rankedShow = rankedMap.get(masterShow.slug);
         if (rankedShow) {
             // Update existing show
@@ -134,8 +162,20 @@ function main() {
     // Update index.json
     console.log('Updating index.json...');
     let updatedIndex = 0;
+    let deletedFromIndex = 0;
+    
+    // Remove flagged shows from index
+    const beforeIndexCount = index.shows.length;
+    index.shows = index.shows.filter(s => !toDelete.has(s.slug));
+    deletedFromIndex = beforeIndexCount - index.shows.length;
+    if (deletedFromIndex > 0) {
+        console.log(`  Removed ${deletedFromIndex} shows from index.json`);
+    }
     
     master.shows.forEach(masterShow => {
+        // Skip shows marked for deletion
+        if (toDelete.has(masterShow.slug)) return;
+        
         const indexShow = index.shows.find(s => s.slug === masterShow.slug);
         if (indexShow) {
             indexShow.rank = masterShow.rank;
@@ -170,7 +210,9 @@ function main() {
     console.log('=== COMPLETE ===');
     console.log(`Updated ${updatedRanked} shows in ranked.json`);
     console.log(`Added ${newShows} new shows to ranked.json`);
+    console.log(`Deleted ${deletedShows} shows from ranked.json`);
     console.log(`Updated ${updatedIndex} shows in index.json`);
+    console.log(`Deleted ${deletedFromIndex} shows from index.json`);
     console.log('');
     console.log('Next steps:');
     console.log('  1. Review changes in ranked.json and index.json');
