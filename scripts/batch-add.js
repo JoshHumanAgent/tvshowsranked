@@ -3,6 +3,28 @@ const path = require('path');
 
 const newShows = [
   {
+    slug: 'bon-appetit-your-majesty',
+    title: 'Bon Appétit, Your Majesty',
+    year: 2025,
+    month: 8,
+    genres: ['drama', 'fantasy', 'romance'],
+    final: 6.8,
+    tmdbId: 280945,
+    char: 7,
+    world: 7,
+    cine: 6.5,
+    spect: 5,
+    conc: 6.5,
+    drive: 7.5,
+    resol: 7,
+    episodes: 12,
+    locked: false,
+    poster: 'https://image.tmdb.org/t/p/w500/ttbmzTZHTzqDK4JniKonMrsQath.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/w780/ttbmzTZHTzqDK4JniKonMrsQath.jpg',
+    streaming: { us: ['Viki'], uk: ['Viki'] },
+    notes: 'K-drama historical romance with fantasy - solid but niche'
+  },
+  {
     slug: 'paradise-2025',
     title: 'Paradise',
     year: 2025,
