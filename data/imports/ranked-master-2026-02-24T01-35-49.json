@@ -1,4 +1,10 @@
 {
+  "meta": {
+    "generated": "2026-02-24T01:35:49.542Z",
+    "total": 309,
+    "source": "Dynamic Rank Engine - Master Export",
+    "adminExport": true
+  },
   "shows": [
     {
       "rank": 1,
@@ -3180,7 +3186,7 @@
         "historical"
       ],
       "final": 7,
-      "tmdbId": 75191,
+      "tmdbId": 72638,
       "char": 8,
       "world": 9,
       "cine": 9,
@@ -3189,7 +3195,7 @@
       "drive": 8,
       "resol": 7.5,
       "episodes": 10,
-      "poster": "https://image.tmdb.org/t/p/w500/bKkOcso0YuCBK7dixkn3VSd0dUr.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/dAliWVczNZgvuyaYAuciCfN9HV4.jpg",
       "streaming": {
         "us": [
           "Hulu"
@@ -9812,9 +9818,38 @@
         ]
       },
       "backdrop": "https://image.tmdb.org/t/p/w780/7mkUu1F2hVUNgz24xO8HPx0D6mK.jpg"
+    },
+    {
+      "rank": 309,
+      "slug": "battlestar-galactica-2004",
+      "title": "Battlestar Galactica (2004)",
+      "year": 2004,
+      "month": 10,
+      "genres": [
+        "sci-fi",
+        "drama",
+        "war"
+      ],
+      "final": -1.27,
+      "tmdbId": 1972,
+      "char": 0,
+      "world": 0,
+      "cine": 0,
+      "spect": 0,
+      "conc": 0,
+      "drive": 0,
+      "resol": 0,
+      "episodes": 75,
+      "poster": "https://image.tmdb.org/t/p/w500/99PJSbcO2LeM10uOGWeFihNp77j.jpg",
+      "streaming": {
+        "us": [
+          "Peacock"
+        ],
+        "uk": [
+          "Netflix"
+        ]
+      },
+      "backdrop": "https://image.tmdb.org/t/p/w780/sEjNaoENrqIZONKNn1iLFB0Us9k.jpg"
     }
-  ],
-  "count": 309,
-  "lastUpdated": "2026-02-24T01:14:04.786Z",
-  "version": "2.0"
+  ]
 }
