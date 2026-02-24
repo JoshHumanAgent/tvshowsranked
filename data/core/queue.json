@@ -1,100 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 37,
+    "total": 31,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "spanish",
-        "netflix"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "thriller",
-        "drama"
-      ],
-      "title": "Elite",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "british",
-        "period-crime"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "crime",
-        "drama"
-      ],
-      "title": "The Great Train Robbery",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "le-carre",
-        "british"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "drama",
-        "thriller"
-      ],
-      "title": "The Little Drummer Girl",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "tom-clancy",
-        "popular"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "thriller",
-        "action"
-      ],
-      "title": "Jack Ryan",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "spin-off",
-        "remake"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "action",
-        "crime"
-      ],
-      "title": "Magnum P.I.",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "dc",
-        "popular"
-      ],
-      "year": 2018,
-      "priority": "MEDIUM",
-      "genres": [
-        "action",
-        "drama"
-      ],
-      "title": "Titans",
-      "status": "pending"
-    },
     {
       "confidence": "medium",
       "why": [
