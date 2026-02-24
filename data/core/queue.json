@@ -1,19 +1,32 @@
 ﻿{
   "meta": {
-    "total": 5
+    "total": 12,
+    "generated": "2026-02-24T08:36:27.457Z"
   },
   "candidates": [
     {
-      "title": "The Chosen",
-      "slug": "the-chosen",
-      "year": 2019,
-      "tmdbId": 85077,
-      "eps": 40,
-      "vote": 8.671,
-      "count": 756,
-      "status": "Returning Series",
-      "genres": "drama, family, action & adventure",
-      "poster": "/dqVUFuNrMFWt7uGNWlpo91VKYOI.jpg"
+      "title": "Good Boy",
+      "slug": "good-boy",
+      "year": 2025,
+      "tmdbId": 231280,
+      "eps": 16,
+      "vote": 8.7,
+      "count": 140,
+      "status": "Ended",
+      "genres": "crime, comedy, action & adventure, drama",
+      "poster": "/59MAdHaHepsz3uDCU1LyoNQcLlT.jpg"
+    },
+    {
+      "title": "KinnPorsche: The Series",
+      "slug": "kinnporsche-the-series",
+      "year": 2022,
+      "tmdbId": 117067,
+      "eps": 14,
+      "vote": 8.673,
+      "count": 153,
+      "status": "Ended",
+      "genres": "action & adventure, crime, drama",
+      "poster": "/hdPLe50HbZHsETXQRcIP8gw7cKz.jpg"
     },
     {
       "title": "It's Okay to Not Be Okay",
@@ -28,6 +41,78 @@
       "poster": "/8XSJfLeImX8NszDUFnK1lbseCi8.jpg"
     },
     {
+      "title": "Dexter: Resurrection",
+      "slug": "dexter-resurrection",
+      "year": 2025,
+      "tmdbId": 259909,
+      "eps": 10,
+      "vote": 8.508,
+      "count": 417,
+      "status": "Returning Series",
+      "genres": "crime, drama, mystery",
+      "poster": "/hIawSocuwqgNeRf3JuKuxgMHmSC.jpg"
+    },
+    {
+      "title": "Beyond Evil",
+      "slug": "beyond-evil",
+      "year": 2021,
+      "tmdbId": 116612,
+      "eps": 16,
+      "vote": 8.5,
+      "count": 178,
+      "status": "Ended",
+      "genres": "drama, crime, mystery",
+      "poster": "/qvR2V6BlXrJ7VTuhEfnXc4rTJTR.jpg"
+    },
+    {
+      "title": "When the Phone Rings",
+      "slug": "when-the-phone-rings",
+      "year": 2024,
+      "tmdbId": 253905,
+      "eps": 12,
+      "vote": 8.386,
+      "count": 276,
+      "status": "Ended",
+      "genres": "drama, mystery, crime",
+      "poster": "/glWP5Y7CVeqrOjJpLckQjuLFjQJ.jpg"
+    },
+    {
+      "title": "Scam 1992: The Harshad Mehta Story",
+      "slug": "scam-1992-the-harshad-mehta-story",
+      "year": 2020,
+      "tmdbId": 111188,
+      "eps": 10,
+      "vote": 8.337,
+      "count": 132,
+      "status": "Ended",
+      "genres": "crime, drama",
+      "poster": "/fiimZ9Xt5cPTPHNrbS4QautBXpU.jpg"
+    },
+    {
+      "title": "Power Book IV: Force",
+      "slug": "power-book-iv-force",
+      "year": 2022,
+      "tmdbId": 119845,
+      "eps": 30,
+      "vote": 8.325,
+      "count": 206,
+      "status": "Ended",
+      "genres": "crime, drama",
+      "poster": "/cR0ursLXoT0zfX9XDGAzQRAnK0W.jpg"
+    },
+    {
+      "title": "Bloodhounds",
+      "slug": "bloodhounds",
+      "year": 2023,
+      "tmdbId": 127529,
+      "eps": 8,
+      "vote": 8.313,
+      "count": 493,
+      "status": "Returning Series",
+      "genres": "drama, action & adventure, crime",
+      "poster": "/3uflkuhQUh2pnT2V8YgsDkjMfrT.jpg"
+    },
+    {
       "title": "Golden Boy",
       "slug": "golden-boy",
       "year": 2022,
@@ -40,28 +125,28 @@
       "poster": "/yTHaFClgAktpHwlAJzZGftep2ok.jpg"
     },
     {
-      "title": "Bridgerton",
-      "slug": "bridgerton",
-      "year": 2020,
-      "tmdbId": 91239,
-      "eps": 32,
-      "vote": 8.068,
-      "count": 3156,
-      "status": "Returning Series",
-      "genres": "drama",
-      "poster": "/uXTg565ahu9RwonCX1V2Hex1NU6.jpg"
+      "title": "Big Mouth",
+      "slug": "big-mouth",
+      "year": 2022,
+      "tmdbId": 155226,
+      "eps": 16,
+      "vote": 8.291,
+      "count": 321,
+      "status": "Ended",
+      "genres": "mystery, drama, crime",
+      "poster": "/gJDvYUJcPEDJzB3SnQokifPUtRF.jpg"
     },
     {
-      "title": "Kuruluş Osman",
-      "slug": "kurulu-osman",
-      "year": 2019,
-      "tmdbId": 95603,
-      "eps": 194,
-      "vote": 7.9,
-      "count": 292,
+      "title": "Dinastía Casillas",
+      "slug": "dinast-a-casillas",
+      "year": 2025,
+      "tmdbId": 302463,
+      "eps": 92,
+      "vote": 8.257,
+      "count": 300,
       "status": "Returning Series",
-      "genres": "war & politics, action & adventure, drama",
-      "poster": "/tu4BWsGFHcYDWulZwHxylA91vo0.jpg"
+      "genres": "drama, action & adventure, mystery",
+      "poster": "/5xFzmTTC4ITaFkiwzohTK1UUNX3.jpg"
     }
   ]
 }
