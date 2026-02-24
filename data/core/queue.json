@@ -1,43 +1,55 @@
 ﻿{
   "meta": {
-    "total": 4
+    "total": 6
   },
   "candidates": [
     {
-      "title": "Anne with an E",
-      "slug": "anne-with-an-e",
-      "year": 2017,
-      "tmdbId": 70785,
-      "eps": 27,
-      "vote": 8.652,
-      "status": "Canceled"
+      "title": "KinnPorsche: The Series",
+      "slug": "kinnporsche-the-series",
+      "year": 2022,
+      "tmdbId": 117067,
+      "eps": 14,
+      "vote": 8.673
     },
     {
-      "title": "Merlí",
-      "slug": "merl",
-      "year": 2015,
-      "tmdbId": 62914,
-      "eps": 40,
-      "vote": 8.59,
-      "status": "Ended"
+      "title": "The Rookie",
+      "slug": "the-rookie",
+      "year": 2018,
+      "tmdbId": 79744,
+      "eps": 144,
+      "vote": 8.532
     },
     {
-      "title": "Sex Education",
-      "slug": "sex-education",
+      "title": "Dexter: Resurrection",
+      "slug": "dexter-resurrection",
+      "year": 2025,
+      "tmdbId": 259909,
+      "eps": 10,
+      "vote": 8.508
+    },
+    {
+      "title": "Girl from Nowhere",
+      "slug": "girl-from-nowhere",
+      "year": 2018,
+      "tmdbId": 83639,
+      "eps": 21,
+      "vote": 8.5
+    },
+    {
+      "title": "The Untamed",
+      "slug": "the-untamed",
       "year": 2019,
-      "tmdbId": 81356,
-      "eps": 32,
-      "vote": 8.214,
-      "status": "Ended"
+      "tmdbId": 90761,
+      "eps": 50,
+      "vote": 8.56
     },
     {
-      "title": "All Creatures Great & Small",
-      "slug": "all-creatures-great-small",
-      "year": 2020,
-      "tmdbId": 108255,
-      "eps": 42,
-      "vote": 8.145,
-      "status": "Returning Series"
+      "title": "Riverdale",
+      "slug": "riverdale",
+      "year": 2017,
+      "tmdbId": 69050,
+      "eps": 137,
+      "vote": 8.4
     }
   ]
 }
