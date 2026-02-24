@@ -5816,6 +5816,12 @@
             const btn = document.getElementById('login-bar-btn');
             if (!btn) return;
 
+            // Master Export button - only for admin
+            const masterExportBtn = document.getElementById('master-export-btn');
+            if (masterExportBtn) {
+                masterExportBtn.style.display = (user && user.uid === ADMIN_UID) ? 'inline-block' : 'none';
+            }
+
             if (user) {
                 const displayName = user.displayName || user.email.split('@')[0];
                 const photoHTML = user.photoURL
@@ -6086,12 +6092,6 @@
         auth.onAuthStateChanged(user => {
             currentUser = user;
             updateAuthUI(user);
-
-            // Show Master Export button only for admin
-            const masterExportBtn = document.getElementById('master-export-btn');
-            if (masterExportBtn) {
-                masterExportBtn.style.display = (user && user.uid === ADMIN_UID) ? 'inline-block' : 'none';
-            }
 
             const isFirstFire = !initialAuthFired;
             initialAuthFired = true;
