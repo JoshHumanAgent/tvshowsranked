@@ -1,83 +1,10 @@
 ﻿{
   "meta": {
     "generated": "2026-02-24T03:31:02.475Z",
-    "total": 111,
+    "total": 106,
     "description": "Shows waiting to be ranked. Sorted by priority then year (newest first). Drama genre only."
   },
   "candidates": [
-    {
-      "confidence": "medium",
-      "why": [
-        "john-liss"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "thriller",
-        "drama"
-      ],
-      "title": "The Old Man",
-      "status": "pending"
-    },
-    {
-      "confidence": "medium",
-      "why": [
-        "gibson-adaptation"
-      ],
-      "year": 2022,
-      "priority": "HIGH",
-      "genres": [
-        "sci-fi",
-        "thriller"
-      ],
-      "title": "The Peripheral",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "bbc-hulu",
-        "daisy-jones"
-      ],
-      "year": 2020,
-      "priority": "HIGH",
-      "genres": [
-        "drama",
-        "romance"
-      ],
-      "title": "Normal People",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "true-crime",
-        "british"
-      ],
-      "year": 2020,
-      "priority": "HIGH",
-      "genres": [
-        "crime",
-        "thriller"
-      ],
-      "title": "The Serpent",
-      "status": "pending"
-    },
-    {
-      "confidence": "high",
-      "why": [
-        "steve-mcqueen",
-        "british"
-      ],
-      "year": 2020,
-      "priority": "HIGH",
-      "genres": [
-        "drama",
-        "anthology"
-      ],
-      "title": "Small Axe",
-      "status": "pending"
-    },
     {
       "confidence": "high",
       "why": [
