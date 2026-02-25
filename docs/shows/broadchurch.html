@@ -1,16 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Broadchurch - TV Shows Ranked</title><link rel="stylesheet" href="../css/show-page.css"></head>
-<body><nav class="breadcrumb"><a href="../../index.html">Home</a> &gt; <span>Broadchurch</span></nav>
-<article class="show-page"><header class="show-header"><img src="https://image.tmdb.org/t/p/w200/2Zz2K9n9M2pS4tV8wX3xZ8qL.jpg" alt="Broadchurch Poster" class="show-poster"><div class="show-info"><h1>Broadchurch</h1><p class="show-meta">2013 - 2017 • ITV • 24 Episodes</p><div class="score-badge">Score: 7.85</div><div class="genres">Crime, Drama</div></div></header>
-<section class="deep-content"><h2>What It Feels Like</h2><p class="vibe-text">A boy is murdered in a small coastal town. Everyone is a suspect. David Tennant is the damaged detective; Olivia Colman is the local who knows everyone. Chris Chibnall's mystery: the community tearing apart, the secrets revealed, the coast as Greek chorus.</p>
-<h2>The 7-Dimension Analysis</h2>
-<div class="dimension"><h3>Characters & Acting (10/10)</h3><p>David Tennant as Alec Hardy: the outsider with secrets. Olivia Colman as Ellie Miller: the local whose life is destroyed. Jodie Whittaker, Andrew Buchan, Arthur Darvill—the town is fully cast. The performances are British drama at its best.</p></div>
-<div class="dimension"><h3>World Building (9/10)</h3><p>Broadchurch, Dorset: the cliffs, the beach, the community. The world is small-town Britain—everyone knows everyone, everyone has secrets. The location is character.</p></div>
-<div class="dimension"><h3>Cinematography (9/10)</h3><p>ITV production: the Dorset coast photographed with gothic beauty, the cliffs as omen. The style is observational—watching a community fall apart.</p></div>
-<div class="dimension"><h3>Visual Spectacle (3/10)</h3><p>No spectacle. This is murder investigation: interviews, secrets, the town unraveling. The "spectacle" is emotional—watching a community confront what it's hiding.</p></div>
-<div class="dimension"><h3>Conceptual Density (9/10)</h3><p>Grief, community, whether we can ever know anyone, the cost of secrets, how murder destroys more than the victim. The show explores these with depth.</p></div>
-<div class="dimension"><h3>Narrative Drive (10/10)</h3><p>Who killed the boy? Each episode reveals more secrets, narrows suspects, deepens the tragedy. The structure is mystery—impossible to stop watching.</p></div>
-<div class="dimension"><h3>Narrative Path & Resolution (8/10)</h3><p>Three seasons. Season 1 is the boy's murder—perfect. Season 2 is the trial—divisive but complete. Season 3 is a new case—strong. The first season is the classic.</p></div></section>
-<section class="streaming-info"><h2>Where to Watch</h2><p><strong>US:</strong> Amazon Prime Video, Hulu</p><p><strong>UK:</strong> ITVX, Amazon Prime Video</p></section>
-<footer class="show-footer"><a href="../../index.html">← Back to Rankings</a></footer></article></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadchurch - "The Beach" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #4169e1; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #4169e1, #233876); color: #add8e6; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #87ceeb; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(65,105,225,0.3), rgba(0,0,0,0.9)); border: 3px solid #4169e1; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #87ceeb; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #4169e1; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #87ceeb; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(65,105,225,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #87ceeb; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #87ceeb; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #154</div>
+            <h1>Broadchurch</h1>
+            <p class="subtitle">"The Beach"</p>
+            <div class="score-badge">
+                <span class="score-value">7.48</span>
+                <span class="score-label">Final Score</span>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2013-2017</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">24</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">ITV</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Chris Chibnall</div></div>
+        </div>
+
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Broadchurch is what happens when a murder mystery takes place in a small town where everyone knows everyone. A boy is found dead on the beach. Two detectives with very different styles must find his killer. But this isn't about the puzzle—it's about what a murder does to a community that thought it was safe.</p>
+            <p>David Tennant plays DI Alec Hardy, a damaged big-city detective transferred to the coast after a failed case. Olivia Colman plays DS Ellie Miller, a local who knows everyone, whose son was the victim's best friend. Their partnership is the show's engine: Hardy is abrasive and hiding something; Miller is warm and shattered by a crime she never expected in her town.</p>
+            <p>The Dorset coast is rendered in golden light and stark cliffs—the show is beautiful even as it's devastating. The town itself becomes a character: the newsagent, the priest, the hotel owner, the teacher. Everyone has secrets. Everyone is a suspect. The whodunit structure keeps you guessing, but the real story is what suspicion does to relationships.</p>
+            <p>The first season is a complete story—the investigation of Danny Latimer's death. The second season deals with the trial and the aftermath. The third season jumps forward years to a new case—a sexual assault that exposes different fissures in the community. Each season uses crime to explore something larger: grief, justice, trauma.</p>
+            <p>Olivia Colman's performance is the heart. Her Miller is decent, human, trying to hold it together when everything she believed about her town and her life falls apart. When she finally learns the truth about the killer, her reaction is devastating because it's so real—no histrionics, just a woman broken by betrayal.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">6</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">8</div><div class="dimension-weight">20% weight</div></div>
+            </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> David Tennant and Olivia Colman are perfect together. The supporting cast—Jodie Whittaker, Andrew Buchan, Arthur Darvill—fills out a community that feels real.</p>
+            <p><strong>World Building (9):</strong> Broadchurch exists. The town, the beach, the cliffs, the relationships—all of it breathes. You understand why people stay even after tragedy.</p>
+            <p><strong>Resolution (8):</strong> The first season's reveal is earned. The subsequent seasons build on rather than diminish the original story. The trilogy completes satisfactorily.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Episode 1" (S1E1)</strong> — The body on the beach. The town's world breaks. Investigation begins.</p>
+            <p><strong>"Episode 8" (S1E8)</strong> — The killer revealed. A community destroyed. A woman broken.</p>
+            <p><strong>"Episode 8" (S3E8)</strong> — The final case concludes. The town moves on. The beach remains.</p>
+        </div>
+
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Netflix, Prime Video</p>
+            <p><strong>UK:</strong> ITVX</p>
+        </div>
+    </div>
+</body>
+</html>
