@@ -7296,7 +7296,16 @@
         "action"
       ],
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
-      "streaming": null
+      "streaming": {
+        "us": [
+          null,
+          null
+        ],
+        "uk": [
+          null,
+          null
+        ]
+      }
     },
     {
       "rank": 376,
@@ -7400,7 +7409,14 @@
         "star-wars"
       ],
       "poster": "https://image.tmdb.org/t/p/w500/gNbdjDi1HamTCrfvM9JeA94bNi2.jpg",
-      "streaming": {}
+      "streaming": {
+        "us": [
+          null
+        ],
+        "uk": [
+          null
+        ]
+      }
     },
     {
       "rank": 382,
@@ -7806,7 +7822,15 @@
         "crime"
       ],
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
-      "streaming": null
+      "streaming": {
+        "us": [
+          null,
+          null
+        ],
+        "uk": [
+          null
+        ]
+      }
     },
     {
       "rank": 406,
