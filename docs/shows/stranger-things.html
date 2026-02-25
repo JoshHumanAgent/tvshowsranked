@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stranger Things - "The Upside Down" | Dynamic Rank Engine</title>
+    <title>Stranger Things - "Friends Don't Lie" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #c62828; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #c62828, #8e0000); color: #ffcdd2; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ef5350; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #e91e63; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #e91e63, #880e4f); color: #fce4ec; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #f48fb1; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(198,40,40,0.3), rgba(0,0,0,0.9)); border: 3px solid #c62828; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #ef5350; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(233,30,99,0.3), rgba(0,0,0,0.9)); border: 3px solid #e91e63; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #f48fb1; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #c62828; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ef5350; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #e91e63; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #f48fb1; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(198,40,40,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #ef5350; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(233,30,99,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #f48fb1; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #ef5350; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #f48fb1; font-weight: 700; }
     </style>
 </head>
 <body>
@@ -35,26 +35,26 @@
         <div class="hero">
             <div class="rank-badge">Rank #22</div>
             <h1>Stranger Things</h1>
-            <p class="subtitle">"The Upside Down"</p>
+            <p class="subtitle">"Friends Don't Lie"</p>
             <div class="score-badge">
-                <span class="score-value">8.10</span>
+                <span class="score-value">8.15</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
 
         <div class="info-grid">
-            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2016-</div></div>
-            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">34</div></div>
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2016-2025</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">42</div></div>
             <div class="info-item"><div class="info-label">Network</div><div class="info-value">Netflix</div></div>
             <div class="info-item"><div class="info-label">Creator</div><div class="info-value">The Duffer Brothers</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Stranger Things is nostalgia distilled into television. Set in 1980s Indiana, the show opens with a boy vanishing and a girl with telekinetic powers appearing. Eleven (Millie Bobby Brown) escaped from a government lab where she was experimented on. Will Byers (Noah Schnapp) is trapped in another dimension—the Upside Down, a dark mirror of our world filled with monsters. His mother Joyce (Winona Ryder) will tear reality apart to save him. His friends will ride their bikes into danger because that's what friends do.</p>
-            <p>The show is built from references: ET, The Goonies, Stephen King, John Carpenter, Dungeons and Dragons. It wears its influences on its sleeve, and that's its strength and weakness. The first season feels fresh despite being entirely familiar—the Duffer Brothers understand that nostalgia isn't just repetition, it's emotional memory. We remember being twelve, believing our friends would face monsters for us, riding bikes into endless summer nights.</p>
-            <p>Thecast is extraordinary. Millie Bobby Brown became a star without speaking most of season one—her eyes convey everything. Winona Ryder is a hurricane of maternal desperation. David Harbour's Chief Hopper is the wounded father figure every 80s movie needed. The kids—Finn Wolfhard, Gaten Matarazzo, Caleb McLaughlin—grew up on screen, their friendship becoming the show's heart. Season four added Sadie Sink as Max, and her battle with Vecna in "Dear Billy" produced one of the show's best sequences.</p>
-            <p>Four seasons, thirty-four episodes, with a fifth and final season promised. The show's quality dipped in seasons two and three, recovered in four, but never matched the perfection of season one. The Upside Down remains mysterious, the mythology increasingly convoluted, the stakes apocalyptic. But the heart endures: a group of friends facing the darkness together. "Friends don't lie," Eleven learns. Stranger Things believes that friendship can save the world. It's corny, it's sincere, it's exactly what television should be sometimes.</p>
+            <p>Stranger Things is Spielberg by way of King—an 1980s nostalgia bomb that somehow transcends pastiche. The Duffer Brothers created a world where Dungeons & Dragons is mythology, walkie-talkies are lifelines, and the monster under the bed is real. Eleven (Millie Bobby Brown) escapes from a government lab, meets a group of boys searching for their missing friend, and a pop culture phenomenon is born.</p>
+            <p>The show's power is its ensemble. Mike (Finn Wolfhard), Dustin (Gaten Matarazzo), Lucas (Caleb McLaughlin), and Will (Noah Schnapp) areactual children playing children—their friendship feels earned, their dialogue improvised. Joyce Byers (Winona Ryder) is a mother whose belief in her son is absolute, even when everyone thinks she's crazy. Chief Hopper (David Harbour) is the broken protector who finds purpose. Steve Harrington (Joe Keery) starts as a jerk and becomes the babysitter we all need. The show loves its characters, and we love them back.</p>
+            <p>The Upside Down is genuinely ominous—a mirror dimension of rot and cold and monsters. The Demogorgon, the Mind Flayer, Vecna—each season introduces a new threat, and the stakes escalate. The production design is meticulous: every poster, every toy, every song is period-appropriate. The synth score by Kyle Dixon and Michael Stein is iconic. By season four, the show had become Netflix's crown jewel—a global event that broke streaming records.</p>
+            <p>Four seasons, forty-two episodes (season five forthcoming). The show has grown with its audience—the child actors are adults, the tone is darker, the runtime is feature-length. Not every season lands perfectly (season two drags, season three is pure summer blockbuster), but the best episodes are among television's most thrilling. "Friends don't lie," Eleven says. Stranger Things doesn't either—it's a love letter to a decade that never existed, rendered with absolute sincerity.</p>
         </div>
 
         <div class="section">
@@ -63,27 +63,27 @@
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">6</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">6</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">7</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>World Building (9):</strong> The Upside Down is a complete alternate dimension. 1980s Hawkins, Indiana feels lived-in and real.</p>
-            <p><strong>Visual Spectacle (9):</strong> The Demogorgon, the Mind Flayer, Vecna. Monster design is top-tier. The season four effects are cinema-quality.</p>
-            <p><strong>Resolution (6):</strong> Incomplete. Season five will determine the final score. The show needs a strong ending.</p>
+            <p style="margin-top:1.5rem"><strong>Visual Spectacle (10):</strong> The Upside Down is television's most distinctive horror landscape. Monsters, powers, alternate dimensions—gorgeously rendered.</p>
+            <p><strong>Characters & Acting (9):</strong> The child ensemble is perfect. Millie Bobby Brown is a star. Steve Harrington's redemption arc is legendary.</p>
+            <p><strong>World Building (9):</strong> 1980s Hawkins, Indiana rendered in obsessive detail. D&D as mythology. The Upside Down as dark mirror.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Chapter One: The Vanishing of Will Byers" (S1E1)</strong> — The introduction. The Upside Down. "Something's coming."</p>
-            <p><strong>(Chapter Eight: The Upside Down" (S1E8)</strong> — Season one finale. The rescue. "See you on the other side."</p>
-            <p><strong>"Dear Billy" (S4E4)</strong> — Running Up That Hill. Max's escape. One of the show's peak moments.</p>
+            <p><strong>"Chapter One: The Vanishing of Will Byers" (S1E1)</strong> — The introduction. The dice roll. "Something's coming."</p>
+            <p><strong>(Chapter Seven: The Bathtub" (S1E7)</strong> — Eleven in the pool. The Demogorgon revealed.</p>
+            <p><strong>"Chapter Four: Dear Billy" (S4E4)</strong> — Max's curse. "Running Up That Hill." Television's most iconic music moment.</p>
+            <p><strong>"Chapter Nine: The Piggyback" (S4E9)</strong> — Season four finale. Two hours. Every storyline pays off.</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US:</strong> Netflix</p>
-            <p><strong>UK:</strong> Netflix</p>
+            <p><strong>US/UK:</strong> Netflix</p>
         </div>
     </div>
 </body>
