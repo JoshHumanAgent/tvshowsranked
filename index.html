@@ -4393,7 +4393,25 @@
         // Check if a show falls within a specific time-based era
         function showInTimeEra(show, era) {
             const now = new Date();
-            const showDate = new Date(show.year, (show.month || 1) - 1, 15);
+            const currentYear = now.getFullYear();
+            
+            // If no month data, use year-based approximation for recent shows
+            if (!show.month) {
+                // For shows from current or previous year without month,
+                // assume they're recent enough for broad filters
+                const isRecentYear = show.year >= currentYear - 1;
+                switch(era) {
+                    case 'last3mo': 
+                    case 'last6mo': 
+                        return isRecentYear && show.year >= currentYear; // Current year only for tight filters
+                    case 'thisYear': 
+                        return isRecentYear;
+                    default: return false;
+                }
+            }
+            
+            // Precise calculation when month is available
+            const showDate = new Date(show.year, show.month - 1, 15);
             
             const threeMonthsAgo = new Date(now);
             threeMonthsAgo.setMonth(now.getMonth() - 3);
