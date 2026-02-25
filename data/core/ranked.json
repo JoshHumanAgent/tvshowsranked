@@ -13082,7 +13082,10 @@
       "resol": 5,
       "episodes": 30,
       "poster": "https://image.tmdb.org/t/p/w500/pAfTOb7lHvRlTa86jw99nM8iU3K.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Available on TMDB",
+        "GB": "Available on TMDB"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
@@ -13163,7 +13166,10 @@
       "resol": 5,
       "episodes": 12,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
@@ -13212,7 +13218,10 @@
       "resol": 4,
       "episodes": 13,
       "poster": "https://image.tmdb.org/t/p/w500/hZ76A8l1JoONy2NoL0BF4AU2g3c.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Available on TMDB",
+        "GB": "Available on TMDB"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {

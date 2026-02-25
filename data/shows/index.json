@@ -12533,7 +12533,10 @@
       ],
       "poster": "https://image.tmdb.org/t/p/w500/pAfTOb7lHvRlTa86jw99nM8iU3K.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
-      "streaming": {}
+      "streaming": {
+        "US": "Available on TMDB",
+        "GB": "Available on TMDB"
+      }
     },
     {
       "rank": 432,
@@ -12611,7 +12614,10 @@
       ],
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
-      "streaming": {}
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      }
     },
     {
       "rank": 435,
@@ -12658,7 +12664,10 @@
       ],
       "poster": "https://image.tmdb.org/t/p/w500/hZ76A8l1JoONy2NoL0BF4AU2g3c.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg",
-      "streaming": {}
+      "streaming": {
+        "US": "Available on TMDB",
+        "GB": "Available on TMDB"
+      }
     },
     {
       "rank": 437,
