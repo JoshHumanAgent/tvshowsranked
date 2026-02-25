@@ -3,78 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloodline - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>Bloodline - "We're Not Bad People" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #4169e1; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #4169e1, #2a4580); color: #b0c4de; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #6495ed; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(65,105,225,0.3), rgba(0,0,0,0.9)); border: 3px solid #4169e1; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #6495ed; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #4169e1; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #6495ed; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(65,105,225,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #6495ed; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #6495ed; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>Bloodline</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w500/jmCtwN1K9tnD1JiQRMW7U2P6F62.jpg" alt="Bloodline Poster" class="show-poster">
-            <div class="show-info">
-                <h1>Bloodline</h1>
-                <p class="show-meta">2015 - 2017 • Netflix • 33 Episodes</p>
-                <div class="score-badge">Score: 7.60</div>
-                <div class="genres">Drama, Thriller, Family Saga</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #95</div>
+            <h1>Bloodline</h1>
+            <p class="subtitle">"We're Not Bad People"</p>
+            <div class="score-badge">
+                <span class="score-value">7.63</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
-            <h2>What It Feels Like</h2>
-            <p class="vibe-text">
-                Florida forever—the Keys, where blue water meets blue sky and something is rotting underneath. A family gathering at a beachside resort, everyone smiling, everyone hiding. The black sheep returns, and the past comes with him. You're watching a drowning in slow motion, salt water filling lungs while tourists sunbathe nearby. It's Revenge of the Nerds if the nerds became Florida hoteliers and one of them was a drug dealer.
-            </p>
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2015-2017</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">33</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Netflix</div></div>
+            <div class="info-item"><div class="info-label">Creators</div><div class="info-value">Todd A. Kessler, Glenn Kessler, Daniel Zelman</div></div>
+        </div>
 
-            <h2>The 7-Dimension Analysis</h2>
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Bloodline is a Florida Keys noir about a family with secrets that destroy them. The Rayburns run a beachside hotel, look respectable, and have buried something terrible in their past. When the eldest son Danny (Ben Mendelsohn) returns for a family celebration, decades of resentment, manipulation, and crime begin to surface.</p>
+            <p>Kyle Chandler plays John Rayburn, the responsible son, a detective who's spent his life cleaning up his family's messes. Linda Cardellini is Meg, the youngest, a lawyer who thinks she can control the damage. Norbert Leo Butz is Kevin, the volatile middle child who inherited nothing but anger. Sam Shepard and Sissy Spacek are the parents, whose decisions created the catastrophe.</p>
+            <p>But the show belongs to Ben Mendelsohn as Danny. He's a chaos agent, a black sheep who returns not to reconcile but to expose. He knows what the family did, and he wants his share. But Danny isn't a simple villain—he's a victim who became a monster, and Mendelsohn plays him with such wounded, manipulative complexity that you understand why the family fears him even as you sympathize with his grievances.</p>
+            <p>The structure is masterful. The first season begins with the aftermath—John standing over Danny's body on the beach—then flashes back to show how we got there. We know from the first frame that this ends badly. The tension isn't in what happens but in watching decent people decide, step by step, that they have no choice but to become criminals.</p>
+            <p>The Florida Keys setting is perfect—paradise that feels like a trap, all water and heat and isolation. The Rayburns' hotel is beautiful, but it's built on foundation that's rotting, just like the family. By the time you understand what they've hidden, you understand why the show is called Bloodline.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Characters & Acting (8/10)</h3>
-                <p>The Rayburns are Shakespearean—each damaged in their own way. Kyle Chandler anchors as John, the "good brother" who isn't. Ben Mendelsohn as Danny is electric: the addict, the failure, the trigger that sets everything in motion. Sissy Spacek and Sam Shepard bring gravitas as the parents with secrets. Linda Cardellini, Norbert Leo Butz, Jacinda Barrett—the ensemble is deep and committed. This is actor heaven.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">6</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Ben Mendelsohn's Danny Rayburn is one of television's great performances. The entire ensemble is excellent, but he's the reason to watch.</p>
+            <p><strong>Narrative Drive (9):</strong> Knowing the ending from the start makes every scene tense. The flashback structure is masterful, building dread as choices accumulate.</p>
+            <p><strong>Resolution (6):</strong> Season one is perfect. Seasons two and three continue the story but can't match the first season's tight construction.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (7/10)</h3>
-                <p>The Florida Keys become a character—the heat, the water, the tourism economy, the drug routes. The Rayburn House is a kingdom under siege. Around it: a police department, a local community, a Mexican cartel operation. The world is intimate but complete. You feel the humidity, smell the salt air, understand the isolation that breeds secrets.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Part 1" (S1E1)</strong> — The aftermath. Danny's return. The secret buried.</p>
+            <p><strong>"Part 8" (S1E8)</strong> — The turning point. Choices that can't be undone.</p>
+            <p><strong>"Part 13" (S1E13)</strong> — Season one finale. The beach. Everything that led here.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (7/10)</h3>
-                <p>Netflix's first prestige drama looked the part. Wide shots of azure water, close-ups of sweating faces, the interplay of light and shadow suited to moral ambiguity. The visual language is Florida noir—bright surfaces hiding dark depths. The hurricane episode is particularly effective, the storm outside matching the chaos within.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (5/10)</h3>
-                <p>This isn't spectacle television. The spectacle is emotional—a body being moved, a confession at gunpoint, a sibling betrayal. The setting provides natural beauty, but the show isn't about visual grandeur. It's about people in rooms, hurting each other. The spectacle is psychological.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Density (7/10)</h3>
-                <p>Family as cage. The sins of the father. The lie that becomes truth. Bloodline explores how trauma passes through generations, how "good people" become monsters one decision at a time. The show asks: what would you do to protect your family? What have you already done? The themes are classical, executed with modern psychological precision.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (7/10)</h3>
-                <p>Season 1 is propulsive—the flash-forwards to Danny's fate create irresistible tension. Seasons 2-3 lose momentum as consequences unfold. The show burns slow, which works in the beginning but drags as resolutions postpone. This is a story that needed to be tighter, a tragedy that could've been two seasons instead of three.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (6/10)</h3>
-                <p>Season 1's ending is devastating. Seasons 2-3 are aftermath—watching consequences play out without the original engine of tension. Netflix canceled it before the creators planned, forcing a compressed conclusion. The ending works but doesn't soar. What began as Shakespeare ends as competent tragedy, not King Lear.</p>
-            </div>
-        </section>
-
-        <section class="streaming-info">
+        <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US:</strong> Netflix</p>
-            <p><strong>UK:</strong> Netflix</p>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+            <p><strong>US/UK:</strong> Netflix</p>
+        </div>
+    </div>
 </body>
 </html>
