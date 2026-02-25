@@ -9,6 +9,7 @@
 
 
 NEVER USE THE CHROME EXTENTION FOR BROWSERS. ITS TERRIBLE!!
+don't open too many tabs. close old tabs.
 ---
 
 Before you start go to the site physically, open a browser and look, when you see something log the bug/improvement, the focus on that.

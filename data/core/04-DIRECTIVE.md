@@ -11,6 +11,8 @@
 
 ## ⚠️ CRITICAL RULES
 
+NEVER USE THE CHROME EXTENTION FOR BROWSERS. ITS TERRIBLE!!
+
 ### 1. SERIALIZED ONLY (No Episodics)
 
 **INCLUDE:** Story continues episode to episode (Breaking Bad, The Wire, Succession)
