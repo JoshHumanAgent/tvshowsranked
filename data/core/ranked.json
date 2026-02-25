@@ -8254,7 +8254,10 @@
       "resol": 7.5,
       "episodes": 32,
       "poster": "https://image.tmdb.org/t/p/w500/rmibFGdqOe0kKKhPls0jVOdZCWw.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/lVWku9LX2qdJTtAbRzaCDhhWeTK.jpg"
     },
     {
@@ -8281,7 +8284,10 @@
       "tmdbId": 106651,
       "tmdbVote": 7.339,
       "tmdbCount": 973,
-      "streaming": {},
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "final": 7.15,
       "rank": 266
     },
@@ -8527,7 +8533,10 @@
       "tmdbId": 70785,
       "tmdbVote": 8.653,
       "tmdbCount": 4883,
-      "streaming": {},
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "rank": 274
     },
     {
@@ -8585,7 +8594,10 @@
       "resol": 6,
       "episodes": 20,
       "poster": "https://image.tmdb.org/t/p/w500/vf9SNXNAFqzKBGksFwrXhkg9cb7.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Disney Plus, Hulu",
+        "GB": "Disney Plus"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/29jWaRhKtey1efp5G7Fu97NAmzz.jpg"
     },
     {
@@ -8610,7 +8622,9 @@
       "resol": 4.5,
       "episodes": 20,
       "poster": "https://image.tmdb.org/t/p/w500/fVTpkoTkl7LJSoVCnuoHRPJvS4o.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Available on TMDB"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/z2Q4lX7E76BuZMOOZrq4trz91j8.jpg"
     },
     {
@@ -8723,7 +8737,10 @@
       "tmdbId": 90669,
       "tmdbVote": 7.487,
       "tmdbCount": 1453,
-      "streaming": {},
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "final": 7.1,
       "rank": 281
     },
@@ -8749,7 +8766,10 @@
       "resol": 7,
       "episodes": 8,
       "poster": "https://image.tmdb.org/t/p/w500/k2I1sBp9LafKJFXNCGVXfxVUPLH.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
@@ -8873,7 +8893,10 @@
       "tmdbId": 138501,
       "tmdbVote": 7.5,
       "tmdbCount": 912,
-      "streaming": {},
+      "streaming": {
+        "US": "Disney Plus",
+        "GB": "Disney Plus"
+      },
       "final": 7.08,
       "rank": 286
     },
@@ -8898,7 +8921,10 @@
       "resol": 4,
       "episodes": 26,
       "poster": "https://image.tmdb.org/t/p/w500/3KCAZaKHmoMIN9dHutqaMtubQqD.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Available on TMDB",
+        "GB": "Amazon Prime Video, Amazon Prime Video with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/uY3MJohUpY7UMMTK90BIhX5txEs.jpg"
     },
     {
@@ -8922,7 +8948,10 @@
       "resol": 5.5,
       "episodes": 30,
       "poster": "https://image.tmdb.org/t/p/w500/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Paramount Plus Apple TV Channel , Paramount+ Amazon Channel, Paramount+ Roku Premium Channel, Paramount Plus Essential, Paramount Plus Premium",
+        "GB": "Paramount Plus, Paramount+ Amazon Channel, Paramount Plus Apple TV Channel , ITVX Premium, Paramount Plus Premium, Paramount Plus Basic with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg"
     },
     {
@@ -8947,7 +8976,10 @@
       "resol": 6.5,
       "episodes": 6,
       "poster": "https://image.tmdb.org/t/p/w500/vKDUmKO6F9bSKKyHhg7YGbgcEeF.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Disney Plus",
+        "GB": "Disney Plus"
+      },
       "backdrop": "https://image.tmdb.org/t/p/original/1uegR4uAxRxiMyX4nQnpzbXhrTw.jpg"
     },
     {
@@ -9098,7 +9130,10 @@
       "resol": 6.5,
       "episodes": 218,
       "poster": "https://image.tmdb.org/t/p/w500/4HTfd1PhgFUenJxVuBDNdLmdr0c.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Now TV"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
@@ -9156,7 +9191,10 @@
       "resol": 6,
       "episodes": 32,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Apple TV, Apple TV Amazon Channel",
+        "GB": "Apple TV, Apple TV Amazon Channel"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
@@ -9397,7 +9435,10 @@
       "tmdbId": 198102,
       "tmdbVote": 7.609,
       "tmdbCount": 717,
-      "streaming": {},
+      "streaming": {
+        "US": "Apple TV, Apple TV Amazon Channel",
+        "GB": "Apple TV, Apple TV Amazon Channel"
+      },
       "final": 7,
       "rank": 304
     },
@@ -9424,7 +9465,10 @@
       "tmdbId": 80335,
       "tmdbVote": 6.963,
       "tmdbCount": 339,
-      "streaming": {},
+      "streaming": {
+        "US": "Amazon Prime Video, Amazon Prime Video with Ads",
+        "GB": "Amazon Prime Video, Amazon Prime Video with Ads"
+      },
       "final": 7,
       "rank": 305
     },
@@ -9452,7 +9496,10 @@
       "tmdbVote": 7.844,
       "tmdbCount": 450,
       "final": 7,
-      "streaming": {},
+      "streaming": {
+        "US": "Available on TMDB",
+        "GB": "Available on TMDB"
+      },
       "rank": 306
     },
     {
@@ -9483,7 +9530,11 @@
       ],
       "tmdbId": 110316,
       "tmdbVote": 8.114,
-      "tmdbCount": 2611
+      "tmdbCount": 2611,
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      }
     },
     {
       "rank": 308,
@@ -9602,7 +9653,10 @@
       "resol": 7,
       "episodes": 14,
       "poster": "https://image.tmdb.org/t/p/w500/9vhLHbUiiP9HiXfJw5OUC7KoaJG.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Hulu",
+        "GB": "Disney Plus"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
@@ -9657,7 +9711,10 @@
       "resol": 6.5,
       "episodes": 32,
       "poster": "https://image.tmdb.org/t/p/w500/iBqgEMnbleoeLqdadlvBGDxVvKb.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/kagPjHfDQNOfthADcSfBhQKsXb2.jpg",
       "ai_rescored": true
     },
@@ -9683,7 +9740,10 @@
       "resol": 5,
       "episodes": 18,
       "poster": "https://image.tmdb.org/t/p/w500/fe79VYyLp5ZBstpJ4oukpuUT3B.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Disney Plus",
+        "GB": "Disney Plus"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
@@ -9708,7 +9768,10 @@
       "resol": 5.5,
       "episodes": 32,
       "poster": "https://image.tmdb.org/t/p/w500/AoGsDM02UVt0npBA8OvpDcZbaMi.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/foGkPxpw9h8zln81j63mix5B7m8.jpg"
     },
     {
@@ -9846,7 +9909,10 @@
       "resol": 7,
       "episodes": 73,
       "poster": "https://image.tmdb.org/t/p/w500/rYsZGB1m6jLQpqYrsAnBmfdrSC.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Available on TMDB",
+        "GB": "Available on TMDB"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
@@ -9935,7 +10001,10 @@
       "resol": 5,
       "episodes": 20,
       "poster": "https://image.tmdb.org/t/p/w500/7AFPH4VmDKAtMpVq7JLVAJjsGxj.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Netflix, Hulu, Netflix Standard with Ads",
+        "GB": "Available on TMDB"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/gNIdzV3qWogP4DwVvCf8O9fQSYi.jpg"
     },
     {
@@ -9960,7 +10029,10 @@
       "resol": 6,
       "episodes": 12,
       "poster": "https://image.tmdb.org/t/p/w500/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/original/8hp2CuGnw1iP5dLBVMAPUv23swx.jpg"
     },
     {
@@ -10042,7 +10114,10 @@
       "tmdbId": 14956,
       "tmdbVote": 7.215,
       "tmdbCount": 479,
-      "streaming": {},
+      "streaming": {
+        "US": "Available on TMDB",
+        "GB": "Available on TMDB"
+      },
       "final": 6.9,
       "rank": 327
     },
@@ -10132,7 +10207,10 @@
       "resol": 7,
       "episodes": 8,
       "poster": "https://image.tmdb.org/t/p/w500/rFlYeo84b5YtzNkN0IonN6ZCPic.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Apple TV, Apple TV Amazon Channel",
+        "GB": "Apple TV, Apple TV Amazon Channel"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/aQfJ1v9M8mvSSIFydpPd1qeDOV0.jpg"
     },
     {
@@ -10188,7 +10266,10 @@
       "resol": 6,
       "episodes": 132,
       "poster": "https://image.tmdb.org/t/p/w500/x2c3AvZeTyNehRZXabTojAxfDuR.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Amazon Prime Video, Hulu, Amazon Prime Video with Ads",
+        "GB": "Disney Plus"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/oCHG3Lz2Gx7VrM2rHCLvbWpuJze.jpg"
     },
     {
@@ -10212,7 +10293,10 @@
       "resol": 7,
       "episodes": 29,
       "poster": "https://image.tmdb.org/t/p/w500/5MhMKbjff4tm9G46dJN7TnQj9WQ.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Available on TMDB",
+        "GB": "ITVX Premium"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/nEAnoMHXb1qeePbaxE1Kmv7gvh2.jpg"
     },
     {
@@ -10265,7 +10349,11 @@
         "drama",
         "mystery",
         "crime"
-      ]
+      ],
+      "streaming": {
+        "US": "Amazon Prime Video, Amazon Prime Video with Ads",
+        "GB": "Amazon Prime Video, Amazon Prime Video with Ads"
+      }
     },
     {
       "rank": 336,
@@ -10288,7 +10376,10 @@
       "resol": 7,
       "episodes": 12,
       "poster": "https://image.tmdb.org/t/p/w500/6X9fkXvUeNOhE4V57n7nLvJBrLp.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Amazon Prime Video, Amazon Prime Video with Ads",
+        "GB": "Amazon Prime Video, Amazon Prime Video with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/2vAOdruqvx9GojXxKi3xVsZZvKU.jpg",
       "ai_rescored": true
     },
@@ -10314,7 +10405,10 @@
       "resol": 5,
       "episodes": 8,
       "poster": "https://image.tmdb.org/t/p/w500/l1jeSEm6a88GFcLzlHQr60D0dOi.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Netflix, Netflix Standard with Ads",
+        "GB": "Netflix, Netflix Standard with Ads"
+      },
       "backdrop": "https://image.tmdb.org/t/p/original/7TYMho2TM6ZcqSv6YaEjlNIyhXn.jpg"
     },
     {
@@ -10365,7 +10459,10 @@
       "tmdbId": 2566,
       "tmdbVote": 7.652,
       "tmdbCount": 479,
-      "streaming": {},
+      "streaming": {
+        "US": "Amazon Prime Video, Amazon Prime Video with Ads",
+        "GB": "Amazon Prime Video, Amazon Prime Video with Ads"
+      },
       "final": 6.83,
       "rank": 339
     },
@@ -10423,7 +10520,10 @@
       "resol": 5,
       "episodes": 26,
       "poster": "https://image.tmdb.org/t/p/w500/tM6xqRKXoloH9UchaJEyyRE9O1w.jpg",
-      "streaming": null,
+      "streaming": {
+        "US": "Disney Plus",
+        "GB": "Disney Plus"
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/jBGjbSDRxOEudW9rmQbWDzJUKq9.jpg"
     },
     {
