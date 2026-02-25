@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Big Little Lies - TV Shows Ranked</title><link rel="stylesheet" href="../css/show-page.css"></head>
-<body><nav class="breadcrumb"><a href="../../index.html">Home</a> &gt; <span>Big Little Lies</span></nav>
-<article class="show-page"><header class="show-header"><img src="https://image.tmdb.org/t/p/w200/5Yy1K9n9M2pS4tV8wX3xZ8qL.jpg" alt="Big Little Lies Poster" class="show-poster"><div class="show-info"><h1>Big Little Lies</h1><p class="show-meta">2017 - 2019 • HBO • 14 Episodes</p><div class="score-badge">Score: 7.75</div><div class="genres">Drama, Mystery</div></div></header>
-<section class="deep-content"><h2>What It Feels Like</h2><p class="vibe-text">Monterey, California. Wealthy mothers, perfect lives, hidden bruises. Someone dies at school trivia night. Liane Moriarty's novel adapted by David E. Kelley: the mothers' secrets, the husbands' violence, the children who witness everything. Reese Witherspoon, Nicole Kidman, Shailene Woodley lead.</p>
-<h2>The 7-Dimension Analysis</h2>
-<div class="dimension"><h3>Characters & Acting (10/10)</h3><p>Reese Witherspoon as Madeline: the organizer, the meddler. Nicole Kidman as Celeste: the abused wife who doesn't see it. Shailene Woodley as Jane: the single mother with a secret. Laura Dern as Renata. The ensemble is HBO prestige at its finest.</p></div>
-<div class="dimension"><h3>World Building (9/10)</h3><p>Monterey: the beautiful houses, the ocean, the perfect schools, the violence behind closed doors. The world is wealth as prison—everything looks right, nothing is.</p></div>
-<div class="dimension"><h3>Cinematography (9/10)</h3><p>HBO production: Monterey photographed as paradise, the houses, the ocean, the school. The style is beautiful surfaces hiding ugly truths.</p></div>
-<div class="dimension"><h3>Visual Spectacle (4/10)</h3><p>The spectacle is the wealth: the houses, the clothes, the lifestyle. The "spectacle" is the truth emerging—watching perfect lives shatter.</p></div>
-<div class="dimension"><h3>Conceptual Density (9/10)</h3><p>Domestic violence, female friendship, protecting children, the lies we tell to keep up appearances, what happens when women support each other. The show explores these with depth.</p></div>
-<div class="dimension"><h3>Narrative Drive (9/10)</h3><p>Someone died: the investigation reveals the secrets. Each episode is told through interview flash-forwards. The structure is mystery—who died, and why?</p></div>
-<div class="dimension"><h3>Narrative Path & Resolution (8/10)</h3>
-<p>Season 1 is complete perfection. Season 2 (with Meryl Streep) expands but feels unnecessary. The first season is the show. The death is revealed; the women unite.</p></div></section>
-<section class="streaming-info"><h2>Where to Watch</h2><p><strong>US:</strong> Max, Hulu</p><p><strong>UK:</strong> Sky/Now TV</p></section>
-<footer class="show-footer"><a href="../../index.html">← Back to Rankings</a></footer></article></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Little Lies - "Monterey Secrets" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #20b2aa; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #20b2aa, #147a75); color: #e0ffff; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #5f9ea0; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(32,178,170,0.3), rgba(0,0,0,0.9)); border: 3px solid #20b2aa; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #5f9ea0; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #20b2aa; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #5f9ea0; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(32,178,170,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #5f9ea0; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #5f9ea0; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #189</div>
+            <h1>Big Little Lies</h1>
+            <p class="subtitle">"Monterey Secrets"</p>
+            <div class="score-badge">
+                <span class="score-value">7.38</span>
+                <span class="score-label">Final Score</span>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2017-2019</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">14</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">HBO</div></div>
+            <div class="info-item"><div class="info-label">Developer</div><div class="info-value">David E. Kelley</div></div>
+        </div>
+
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Big Little Lies is prestige television at its most bingeable—a murder mystery where the victim is revealed in the first episode, but the perpetrator and the motive unspool over seven episodes through the intertwined lives of mothers in Monterey, California. The show is based on Liane Moriarty's novel, adapted by David E. Kelley, directed by Jean-Marc Vallée.</p>
+            <p>Madeline Martha Mackenzie (Reese Witherspoon) is the busybody, the queen bee whose marriage is less perfect than it seems. Celeste Wright (Nicole Kidman) is the beautiful retired lawyer married to a younger man whose violence she excuses until she can't. Jane Chapman (Shailene Woodley) is the young single mother who just moved to town, carrying trauma she hasn't processed.</p>
+            <p>The show uses interrogation flash-forwards—witnesses being questioned by police after a school trivia night where someone died—to build suspense. Who died? Who killed them? The present-day story shows the tensions building: Madeline vs. Renata (Laura Dern) over a school incident, Celeste and her husband Perry (Alexander Skarsgård), Jane and her son Ziggy.</p>
+            <p>The female friendships are the show's heart. These women are competitive, gossipy, sometimes cruel—but when one is threatened, the others close ranks. The final scene, set to "Can't Help Falling in Love," is the most cathartic moment on recent television.</p>
+            <p>Season two, with Meryl Streep as Celeste's mother-in-law, was unnecessary but elevated by Streep's performance. The first season is perfect—tight, devastating, beautifully acted. Kidman won an Oscar; she should have won another for this.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">6</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">9</div><div class="dimension-weight">20% weight</div></div>
+            </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Witherspoon, Kidman, Dern, Woodley, Kravitz—all delivering career-best work. Streep in season two adds another tier.</p>
+            <p><strong>Narrative Drive (9):</strong> The murder mystery structure creates constant forward momentum. Each revelation reshapes what we thought we knew.</p>
+            <p><strong>Resolution (9):</strong> Season one's finale is perfect. Season two was unnecessary but didn't damage what came before.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Somebody's Dead" (S1E1)</strong> — The school run. The incident. Something happened at trivia night.</p>
+            <p><strong>"Once Bitten" (S1E6)</strong> — Celeste's testimony. The therapist. The truth emerges.</p>
+            <p><strong>"You Get What You Need" (S1E7)</strong> — Trivia night. The death. The women together.</p>
+        </div>
+
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Max</p>
+            <p><strong>UK:</strong> Sky Go, NOW</p>
+        </div>
+    </div>
+</body>
+</html>
