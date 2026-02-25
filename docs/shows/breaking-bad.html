@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breaking Bad - "Say My Name" | Dynamic Rank Engine</title>
+    <title>Breaking Bad - "I am the danger" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #4a148c; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #4a148c, #311b92); color: #ede7f6; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #b39ddb; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #2e7d32; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #2e7d32, #1b5e20); color: #c8e6c9; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #a5d6a7; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(74,20,140,0.3), rgba(0,0,0,0.9)); border: 3px solid #4a148c; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #b39ddb; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(46,125,50,0.3), rgba(0,0,0,0.9)); border: 3px solid #2e7d32; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #a5d6a7; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #4a148c; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #b39ddb; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #2e7d32; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #a5d6a7; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(74,20,140,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #b39ddb; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(46,125,50,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #a5d6a7; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #b39ddb; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #a5d6a7; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #1</div>
+            <div class="rank-badge">Rank #2</div>
             <h1>Breaking Bad</h1>
-            <p class="subtitle">"Say My Name"</p>
+            <p class="subtitle">"I am the danger"</p>
             <div class="score-badge">
-                <span class="score-value">8.80</span>
+                <span class="score-value">8.60</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -51,10 +51,10 @@
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Breaking Bad is the answer to every question about television's potential. Vince Gilligan's premise—a high school chemistry teacher diagnosed with lung cancer starts cooking methamphetamine to leave money for his family—sounds like a concept in search of a punchline. Instead, it becomes a62-episode study of transformation, power, and the lies we tell ourselves. Walter White (Bryan Cranston) doesn't just break bad; he reveals that the decent man he appeared to be was always a performance.</p>
-            <p>The show's structural ambition is unmatched. Each season tightens the screws, introduces new antagonists, forces Walt into increasingly impossible situations. Jesse Pinkman (Aaron Paul) starts as a comic relief burnout and becomes the show's moral center—the innocent corrupted, the sinner seeking redemption. Their partnership is television's great dysfunctional relationship: father and son, teacher and student, addict and enabler. "You're the only one who can understand," Walt tells him. He's right, and that's the tragedy.</p>
-            <p>The Albuquerque setting becomes a character—desert landscapes, strip malls, beige stucco houses. The cinematography creates visual signatures: the RV in the desert, the superlab, the train heist. Each episode feels precision-engineered, with callbacks and foreshadowing that reward close watching. The "Ozymandias" episode—in which everything Walt built collapses in real time—is one of the finest hours of television ever made. "I did it for me," Walt finally admits. "I liked it. I was good at it." The confession is liberation and damnation.</p>
-            <p>Five seasons, sixty-two episodes, a finale that actually sticks the landing. "Baby Blue" plays as Walt dies surrounded by the equipment that gave him purpose. Breaking Bad never faltered; it escalated perfectly, maintained its themes, and delivered an ending that felt inevitable rather than forced. It's the gold standard for serialized drama: a character study that turned into a crime epic, a tragedy that earned every moment. Television's best.</p>
+            <p>Breaking Bad is about a high school chemistry teacher who starts cooking methafter being diagnosed with terminal lung cancer. Walter White (Bryan Cranston) has a pregnant wife, a disabled son, and $737,000 in medical debt. "I have spent my whole life terrified," he tells his family. "I am awake." The transformation from Mr. Chips to Scarface is the show's engine. "I am the one who knocks," Walt says. He becomes Heisenberg.</p>
+            <p>Jesse Pinkman (Aaron Paul) is Walt's former student and partner. He's a small-time dealer, a screw-up, a junkie. But he's also the show's moral center—the only character who consistently feels guilt for what they've done. The relationship between Walt and Jesse is tragic: a father-son dynamic that destroys them both. Walt saves Jesse, manipulates Jesse, poisons Jesse's girlfriend's son, and finally rescues Jesse in the end. "You're the smartest guy I ever met," Jesse says. "And you're too stupid to see he made up his mind ten minutes ago."</p>
+            <p>The show's construction is perfect. Every season escalates: from an RV in the desert to a superlab under a laundry, to a drug empire with international distribution. The villains are escalating threats: Krazy-8, Tuco Salamanca, Gus Fring, the cousins, Uncle Jack. Gus (Giancarlo Esposito) is the standout—a fast-food franchise owner who runs the Southwest's major meth operation. His death, half-face blown off, is the show's most iconic image.</p>
+            <p>Five seasons, sixty-two episodes, complete. Breaking Bad is the most tightly plotted show ever made. Every detail pays off. The finale resolves everything: Walt admits, "I did it for me," and dies in a meth lab. Jesse escapes. The money goes to his children. "I won." He did. The tragedy is complete. The show is perfect.</p>
         </div>
 
         <div class="section">
@@ -62,28 +62,28 @@
             <div class="dimension-grid">
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">10</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Bryan Cranston and Aaron Paul gave career-defining performances. Every supporting role is cast perfectly.</p>
-            <p><strong>Narrative Drive (10):</strong> The tension never stops. Each episode escalates. "Ozymandias" is peak television.</p>
-            <p><strong>Resolution (10):</strong> "Baby Blue." Walt dies as he lived—in the lab. Perfect closure for every character.</p>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Bryan Cranston and Aaron Paul defined a decade. Giancarlo Esposito's Gus is legendary. Every performance is perfect.</p>
+            <p><strong>Narrative Drive (10):</strong> The tightest plotting in television history. Every episode escalates. No filler.</p>
+            <p><strong>Resolution (10):</strong> "Felina" resolves everything. "I did it for me." Perfect.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Pilot" (S1E1)</strong> — The diagnosis. The RV. "Chemistry is the study of change."</p>
-            <p><strong>(One Minute" (S3E7)</strong> — Hank vs The Cousins. Three minutes of perfect tension.</p>
-            <p><strong>"Ozymandias" (S5E14)</strong> — Everything collapses. "I did it for me." Television's best hour.</p>
-            <p><strong>"Felina" (S5E16)</strong> — Series finale. "Baby Blue." Walt dies with purpose.</p>
+            <p><strong>"Pilot" (S1E1)</strong> — The introduction. Walt's diagnosis. The RV. "Chemistry is the study of change."</p>
+            <p><strong>"One Minute" (S3E7)</strong> — Hank vs. the twins. The shootout. Three minutes of pure tension.</p>
+            <p><strong>"Face Off" (S4E13)</strong> — Gus dies. The bomb. The half-face. "I won."</p>
+            <p><strong>("Felina" (S5E16)</strong> — Series finale. Walt's admission. Jesse's freedom. "Baby Blue."</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US:</strong> Netflix, AMC+</p>
+            <p><strong>US:</strong> Netflix</p>
             <p><strong>UK:</strong> Netflix</p>
         </div>
     </div>
