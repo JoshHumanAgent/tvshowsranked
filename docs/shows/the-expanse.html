@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Expanse - "Space Opera Perfected" | Dynamic Rank Engine</title>
+    <title>The Expanse - "The stars are better off without us" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #050510 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #00008b; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #00008b, #000066); color: #e0e0ff; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #4169e1; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #1e88e5; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #1e88e5, #0d47a1); color: #bbdefb; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #64b5f6; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(0,0,139,0.3), rgba(0,0,0,0.9)); border: 3px solid #00008b; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #4169e1; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(30,136,229,0.3), rgba(0,0,0,0.9)); border: 3px solid #1e88e5; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #64b5f6; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #00008b; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #4169e1; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #1e88e5; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #64b5f6; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(0,0,139,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #4169e1; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(30,136,229,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #64b5f6; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #4169e1; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #64b5f6; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #25</div>
+            <div class="rank-badge">Rank #8</div>
             <h1>The Expanse</h1>
-            <p class="subtitle">"Space Opera Perfected"</p>
+            <p class="subtitle">"The stars are better off without us"</p>
             <div class="score-badge">
-                <span class="score-value">8.05</span>
+                <span class="score-value">8.33</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -45,40 +45,40 @@
         <div class="info-grid">
             <div class="info-item"><div class="info-label">Years</div><div class="info-value">2015-2022</div></div>
             <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">62</div></div>
-            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Syfy/Amazon</div></div>
-            <div class="info-item"><div class="info-label">Developers</div><div class="info-value">Mark Fergus, Hawk Ostby</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Syfy/Amazon Prime</div></div>
+            <div class="info-item"><div class="info-label">Creators</div><div class="info-value">Mark Fergus, Hawk Ostby</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>The Expanse is the science fiction series that Trekkies, Browncoats, and BSG fans had been waiting for—a show with rigorous physics, adult storytelling, and a universe that feels genuinely lived-in. Based on James S.A. Corey's novels, it spans centuries and solar systems while keeping its focus on the people caught between Earth, Mars, and the Belt.</p>
-            <p>The story begins with a missing girl and a mystery, then expands into interplanetary war, alien protomolecules, and humanity's first contact with something beyond comprehension. The crew of the Rocinante—James Holden (Steven Strait), Naomi Nagata (Dominique Tipper), Amos Burton (Wes Chatham), and Alex Kamal (Cas Anvar)—become a family forged in crisis, the only people who keep seeing the bigger picture when everyone else is fighting over resources and old grudges.</p>
-            <p>What makes The Expanse special is its attention to detail. Gravity is handled realistically—thrust creates "gravity," and when ships stop accelerating, people float. Belters are taller and thinner from growing up in low gravity. Martian marines are stronger from training in Earth-normal gravity. The politics are nuanced: Earth is overcrowded and declining, Mars is militaristic and ambitious, the Belt is exploited and revolutionary. No one is purely good or evil; everyone has legitimate grievances.</p>
-            <p>Six seasons, with the final arc rushed but satisfying. The protomolecule mystery evolves into something cosmic. The Ring gates open doors to a thousand worlds. Chrisjen Avasarala (Shohreh Aghdashloo) swears magnificently while managing geopolitics. Amos Burton becomes one of television's most fascinating characters—a mechanic with no moral compass except those he adopts from people he respects.</p>
-            <p>This is science fiction that respects both science and fiction. The hardware is functional. The stakes are human. The universe is bigger than we imagined.</p>
+            <p>The Expanse is hard science fiction as political thriller—a solar system divided: Earth, Mars, the Belt. Three hundred years from now, humanity has spread but not unified. Earth is overpopulated, governed by the UN, draining resources from the Belt. Mars is militarized, terraforming project spanning generations, independent and proud. The Belt is the frontier—miners, laborers, exploited by both planets, brewing revolution. "The stars are better off without us," a Belter says. The show asks: can humanity survive itself?</p>
+            <p>The story begins with a missing girl and a mysterious attack. Detective Josephus Miller (Thomas Jane), a Belter cop, searches for Julie Mao—a rich girl who joined the revolution. The crew of the Canterbury—an ice hauler—responds to a distress signal and watches their ship destroyed by stealth fighters. James Holden (Steven Strait), the Canterbury's executive officer, becomes a reluctant revolutionary, broadcasting truth across the system. The threads converge: Julie Mao's fate, the Canterbury's destruction, a conspiracy involving protomolecule—a substance that shouldn't exist, created by aliens millions of years ago, now weaponized.</p>
+            <p>The show's thesis: power corrupts, information is weaponized, and the truth barely matters. Holden broadcasts everything—the idealist approach—and his transparency endangers more than it saves. The political players—Chrisjen Avasarala (Shohreh Aghdashloo), UN diplomat, brilliant, profane, calculating; Fred Johnson, former Marine turned Belter leader; Jules-Pierre Mao, industrialist whose daughter died in his experiment—pursue their interests. The protomolecule grows, building something ancient and terrible. "We're not alone," the characters realize. But first contact might be extinction.</p>
+            <p>Six seasons, sixty-two episodes, complete. The Expanse was rescued by Amazon after Syfy cancellation; fans campaigned with planes flying banners. It earned the loyalty: novelistic scope, scientific accuracy, political complexity. The cast expansion—Camina Drummer (Cara Gee), the Belter commander; Bobbie Draper (Frankie Adams), the Martian marine—deepens the world. The protomolecule gates open new worlds. The final season is rushed (six episodes), but the ending earns closure. "The stars are better off without us," someone said. The show refuses cynicism—humanity might deserve the stars.</p>
         </div>
 
         <div class="section">
             <h2>Why It Ranks</h2>
             <div class="dimension-grid">
-                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">7</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">8</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> Belters have their own language (Belta), culture, and physiology. The physics are accurate. The politics feel real.</p>
-            <p><strong>Characters & Acting (9):</strong> Shohreh Aghdashloo's Avasarala is legendary. The Roci crew chemistry is perfect. Amos Burton is unforgettable.</p>
-            <p><strong>Resolution (7):</strong> Six seasons with a conclusion, but the final arc was compressed. The books continue further.</p>
+            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> Solar system as political map. Hard science. Belter creole. Zero-G physics. Most immersive sci-fi world on television.</p>
+            <p><strong>Conceptual Density (9):</strong> Politics, economics, first contact, post-humanism. Dense with ideas yet never overwhelming.</p>
+            <p><strong>Visual Spectacle (9):</strong> Space battles, alien structures, Belter stations. Budget used brilliantly.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Dulcinea" (S1E1)</strong> — The Canterbury. The distress call. The beginning.</p>
-            <p><strong>"Leviathan Wakes" (S1E10)</strong> — Season one finale. The protomolecule revealed. The stakes become clear.</p>
-            <p><strong>"Babylon's Ashes" (S6E6)</strong> — Series finale. The Ring. The future. The end of one story.</p>
+            <p><strong>("Dulcinea" (S1E1)</strong> — The introduction. Miller's case. Canterbury destroyed. "Welcome to the future."</p>
+            <p><strong>("Leviathan Wakes" (S1E10)</strong> — Eros incident. Protomolecule revealed. "It's not over."</p>
+            <p><strong>("Delta-V" (S3E6)</strong> — The Ring. Human expansion. "We're going through."</p>
+            <p><strong>("Babylon's Ashes" (S6E6)</strong> — Series finale. The resolution. "I'd rather be lucky than good."</p>
         </div>
 
         <div class="section">
