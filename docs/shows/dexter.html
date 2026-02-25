@@ -3,78 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dexter - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>Dexter - "A Beautiful Monster" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #8b0000; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #8b0000, #4a0000); color: #ffe4e1; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #cd5c5c; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(139,0,0,0.3), rgba(0,0,0,0.9)); border: 3px solid #8b0000; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #cd5c5c; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #8b0000; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #cd5c5c; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(139,0,0,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #cd5c5c; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #cd5c5c; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>Dexter</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w200/v9HbXvJ7P5X9Bd9K3J7Wv5R9kQm.jpg" alt="Dexter Poster" class="show-poster">
-            <div class="show-info">
-                <h1>Dexter</h1>
-                <p class="show-meta">2006 - 2013 • Showtime • 96 Episodes</p>
-                <div class="score-badge">Score: 7.18</div>
-                <div class="genres">Crime, Thriller</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #163</div>
+            <h1>Dexter</h1>
+            <p class="subtitle">"A Beautiful Monster"</p>
+            <div class="score-badge">
+                <span class="score-value">7.45</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
-            <h2>What It Feels Like</h2>
-            <p class="vibe-text">
-                Dexter Morgan is a blood spatter analyst for Miami Metro Homicide. He's also a serial killer who only kills other killers. His adoptive father recognized his dark impulses and taught him to channel them. Michael C. Hall created one of television's greatest antiheroes: the monster we root for, the killer with a code.
-            </p>
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2006-2013, 2021-22</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">96 + Special</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Showtime</div></div>
+            <div class="info-item"><div class="info-label">Developer</div><div class="info-value">James Manos Jr.</div></div>
+        </div>
 
-            <h2>The 7-Dimension Analysis</h2>
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Dexter Morgan (Michael C. Hall) is a blood spatter analyst for Miami Metro Homicide. He's also a serial killer—but only other killers. His adoptive father, a cop, recognized Dexter's violent impulses early and taught him a code: only kill those who deserve it, never get caught, never have feelings. Dexter follows the code meticulously, narrating his own life with dark humor and self-awareness about what he is.</p>
+            <p>The show's genius is making us root for a monster. Dexter kills people who've evaded justice—pedophiles, murderers, predators. He's doing what the system can't. But the show never lets us forget that he's also a sociopath incapable of genuine human connection. His relationships are performances. His girlfriend Rita (Julie Benz) and her children become the mask he wears to seem normal.</p>
+            <p>The first four seasons are among television's best thrillers. Each season features a "big bad"—the Ice Truck Killer, Lila, the Skinner, Trinity—each one testing Dexter's code in different ways. Season four is the peak: John Lithgow as Arthur Mitchell, the Trinity Killer, a serial killer who's been operating for decades while maintaining a family. Dexter tries to learn from him, discovers what lurks beneath the normal facade, and the season ends with one of television's most shocking cliffhangers.</p>
+            <p>Seasons five through eight are a decline—the show lost its way, kept Dexter alive when narrative logic demanded consequences, and ended with the infamous lumberjack finale that satisfied no one. The 2021 limited series Dexter: New Blood attempted to fix the ending, with mixed results. But the show's peak remains untouchable: a perfect premise executed with dark wit and moral complexity.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Characters & Acting (9/10)</h3>
-                <p>Michael C. Hall as Dexter is extraordinary: the blankness that becomes personality, the violence beneath the charm, the journey from sociopath to something like human. Jennifer Carpenter as Debra provides the emotional heart. The supporting cast (Julie Benz, David Zayas, James Remar) creates Miami's homicide world. Hall's narration is iconic.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">4</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Michael C. Hall's Dexter is iconic—charming, chilling, sympathetic and terrifying in the same moment.</p>
+            <p><strong>Narrative Drive (8):</strong> Seasons 1-4 are relentless. Each season builds to inevitable confrontation. Dexter always gets his man.</p>
+            <p><strong>Resolution (4):</strong> The original finale is infamous for its disappointment. New Blood improved it but couldn't fully redeem.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (8/10)</h3>
-                <p>Miami homicide: the department, the crime scenes, the nightlife where Dexter hunts. The world expands across seasons: other serial killers, the Triad, religious cults. The Miami setting provides heat and moral decay.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Crocodile" (S1E2)</strong> — The first kill. The code in action. Who Dexter is.</p>
+            <p><strong>"Born Free" (S1E12)</strong> — The Ice Truck Killer revealed. His brother. The choice.</p>
+            <p><strong>"The Getaway" (S4E12)</strong> — Trinity's end. The bathtub. The loss.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (7/10)</h3>
-                <p>Showtime production: Miami photographed as both paradise and hunting ground. The kill room is its own aesthetic—clean, clinical, theatrical. The style serves Dexter's perspective.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (6/10)</h3>
-                <p>The spectacle is the ritual: the kill rooms, the plastic wrap, the instruments, the trophies. Dexter's kills are staged as art. The violence is intimate rather than grand.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Density (8/10)</h3>
-                <p>Nature vs. nurture, the possibility of redemption for the irredeemable, whether the code is morality or control, the meaning of family. The show explores what happens when a sociopath tries to become human. The themes are present in Dexter's journey.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (8/10)</h3>
-                <p>Each season has a Big Bad: the Ice Truck Killer, Lila, the Trinity Killer. The drive is Dexter's double life—the investigation, the kills, the close calls. Seasons 1 and 4 are peak; others vary. The structure provides momentum.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (5/10)</h3>
-                <p>Eight seasons with one of television's most reviled finales. Season 4's Trinity Killer storyline is among TV's best; the later seasons declined. The finale betrayed fan expectations so badly it spawned a revival (Dexter: New Blood) years later. The ending defines the conversation.</p>
-            </div>
-        </section>
-
-        <section class="streaming-info">
+        <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US:</strong> Paramount+, Amazon Prime Video</p>
-            <p><strong>UK:</strong> Sky/Now TV, Amazon Prime Video</p>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+            <p><strong>US:</strong> Paramount+, Showtime</p>
+            <p><strong>UK:</strong> Paramount+</p>
+        </div>
+    </div>
 </body>
 </html>
