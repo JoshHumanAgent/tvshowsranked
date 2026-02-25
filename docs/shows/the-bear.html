@@ -9,75 +9,76 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #2e7d32; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #2e7d32, #1b5e20); color: #e8f5e9; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #66bb6a; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #ff5722; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #ff5722, #e64a19); color: #fbe9e7; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffab91; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(46,125,50,0.3), rgba(0,0,0,0.9)); border: 3px solid #2e7d32; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #66bb6a; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(255,87,34,0.3), rgba(0,0,0,0.9)); border: 3px solid #ff5722; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ffab91; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #2e7d32; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #66bb6a; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #ff5722; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffab91; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(46,125,50,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #66bb6a; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(255,87,34,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ffab91; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #66bb6a; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #ffab91; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #22</div>
+            <div class="rank-badge">Rank #57</div>
             <h1>The Bear</h1>
             <p class="subtitle">"Yes, Chef"</p>
             <div class="score-badge">
-                <span class="score-value">8.14</span>
+                <span class="score-value">7.60</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
 
         <div class="info-grid">
             <div class="info-item"><div class="info-label">Years</div><div class="info-value">2022-</div></div>
-            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">18+</div></div>
-            <div class="info-item"><div class="info-label">Network</div><div class="info-value">FX/Hulu</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">18</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Hulu/FX</div></div>
             <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Christopher Storer</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>The Bear is the most stressful comedy ever made. Carmen "Carmy" Berzatto (Jeremy Allen White) returns to Chicago to run his family's sandwich shop after his brother's suicide. He's a classically trained chef who worked at Noma and Eleven Madison Park; the shop is chaos, debt, and grief. His sister is angry, his cousin is useless, his staff resist every change. The kitchen is cramped, loud, and falling apart. And Carmy is trying to hold it together while falling apart himself.</p>
-            <p>The show's directing is extraordinary. Episodes are shot in long takes, cameras weaving through the kitchen, characters shouting over each other, orders piling up, tickets printing, pans clattering. Episode seven of season one, "Review," is a masterpiece of sustained tension—a single continuous shot of a kitchen falling apart, mistakes compounding, anger exploding. You're not watching a show about stress; you're experiencing it.</p>
-            <p>But The Bear is also about love—love for food, for family, for the craft. Carmy finds a team: Sydney (Ayo Edebiri), a brilliant young chef who believes in what the restaurant could be; Richie (Ebon Moss-Bachrach), the cousin who evolves from obstacle to ally; Marcus (Lionel Boyce), the pastry cook who finds purpose in excellence. They don't always like each other, but they show up, they cook, they try. "Yes, chef" becomes more than a phrase—it becomes a commitment to something bigger than ego.</p>
-            <p>Season two transforms the sandwich shop into a fine dining restaurant, and the show transforms with it. The characters go to culinary school, stage at restaurants, learn to lead. The finale, "Forks," follows Richie through a single day at a Michelin-starred restaurant and is one of the best hours of television in years. The Bear is about work—the brutality of it, the beauty of it, the way it can save you or destroy you. Sometimes both.</p>
+            <p>The Bear is about a fine-dining chef who inherits his family's Chicago sandwich shop after his brother's suicide. Carmen "Carmy" Berzatto (Jeremy Allen White) was aJames Beard Award winner running a Michelin-star kitchen in New York. Now he's back in Chicago, trying to save The Original Beef of Chicagoland from bankruptcy, addiction, and neglect. The show is about grief, work, family, and the particular madness of restaurant kitchens.</p>
+            <p>The restaurant is chaos: orders pile up, tickets get lost, equipment breaks, and the staff—cousin Richie (Ebon Moss-Bachrach), baker Marcus (Lionel Boyce), sous chef Sydney (Ayo Edebiri), and the rest—don't trust Carmy's fine-dining instincts. "You think you're better than us?" Richie asks. Carmy doesn't. He's just trying to survive. The show's thesis: work is a way to avoid grief, but grief finds you anyway. Carmy's brother Michael (Jon Bernthal, in flashbacks) haunts every episode—the suicide we never see, the pain we never understand.</p>
+            <p>The show's signature is its pace: kitchen scenes are shot like action sequences, with rapid cuts, overlapping dialogue, blaring music, and mounting panic. The seventh episode of season one, "Review," is a single-take masterpiece of escalating disaster: the pre-orders are wrong, the system is broken, and everything falls apart. It's anxiety as television. The relief only comes when the work is done—but the work is never done.</p>
+            <p>Two seasons (as of 2024), eighteen episodes, ongoing. The Bear is about obsession: the need to make something perfect, to prove yourself, to honor the dead by feeding the living. "Every second counts," Carmy says. It does. The show captures the particular intensity of restaurant work—the adrenaline, the abuse, the camaraderie, the exhaustion. "Yes, Chef" is both submission and rebellion. The kitchen is hell. But it's also home.</p>
         </div>
 
         <div class="section">
             <h2>Why It Ranks</h2>
             <div class="dimension-grid">
-                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
-                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">7</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">6</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Jeremy Allen White, Ayo Edebiri, Ebon Moss-Bachrach—career-best performances. The ensemble is perfect.</p>
-            <p><strong>Cinematography (10):</strong> The kitchen sequences are among the most dynamic ever filmed. Episode seven is a technical marvel.</p>
-            <p><strong>Narrative Drive (10):</strong> Eight episodes per season, zero filler. Every scene propels. The momentum is relentless.</p>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Jeremy Allen White and Ayo Edebiri are extraordinary. The ensemble is note-perfect. Emmy wins deserved.</p>
+            <p><strong>Narrative Drive (9):</strong> Kitchen chaos drives every episode. "What's next?" never relaxes. The pace is relentless.</p>
+            <p><strong>Cinematography (9):</strong> "Review" is a single-take masterpiece. Kitchen scenes are shot like action. Visceral.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Review" (S1E7)</strong> — The single take. The spiral. Stress as art form.</p>
-            <p><strong>"Forks" (S2E7)</strong> — Richie's day. The excellence. "Every second counts."</p>
-            <p><strong>"Bear" (S2E6)</strong> — The family dinner. The past. The trauma.</p>
+            <p><strong>"Pilot" (S1E1)</strong> — The introduction. Carmy arrives. The sandwich shop reveals its chaos.</p>
+            <p><strong>"Review" (S1E7)</strong> — The single-take episode. Everything goes wrong. Perfection.</p>
+            <p><strong>"Forks" (S1E8)</strong> — Richie's redemption. "Every second counts."</p>
+            <p><strong>"Omelette" (S2E7)</strong> — The family dinner. Marcus's donuts. Sydney's birthday.</p>
         </div>
 
         <div class="section">
