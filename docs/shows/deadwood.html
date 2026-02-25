@@ -3,60 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deadwood - "God Rest His Soul" | Dynamic Rank Engine</title>
+    <title>Deadwood - "God Is a Bastard" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #8b4513; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #8b4513, #5c2d0a); color: #f0e68c; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #daa520; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #8d6e63; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #8d6e63, #5d4037); color: #efebe9; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #bcaaa4; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(139,69,19,0.3), rgba(0,0,0,0.9)); border: 3px solid #8b4513; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #daa520; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(141,110,99,0.3), rgba(0,0,0,0.9)); border: 3px solid #8d6e63; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #bcaaa4; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #8b4513; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #daa520; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #8d6e63; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #bcaaa4; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(139,69,19,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #daa520; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(141,110,99,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #bcaaa4; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #daa520; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #bcaaa4; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #10</div>
+            <div class="rank-badge">Rank #19</div>
             <h1>Deadwood</h1>
-            <p class="subtitle">"God Rest His Soul"</p>
+            <p class="subtitle">"God Is a Bastard"</p>
             <div class="score-badge">
-                <span class="score-value">8.18</span>
+                <span class="score-value">8.16</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
 
         <div class="info-grid">
-            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2004-2006 (2019)</div></div>
-            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">36 + Film</div></div>
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2004-2006</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">36</div></div>
             <div class="info-item"><div class="info-label">Network</div><div class="info-value">HBO</div></div>
             <div class="info-item"><div class="info-label">Creator</div><div class="info-value">David Milch</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Deadwood is Shakespeare in the mud. David Milch took one of America's mythologized spaces—the lawless frontier town—and populated it with characters who speak in iambic pentameter disguised as profanity. The language is the show's miracle: elaborate, poetic, obscene, precise. Every "cocksucker" is placed with the care of a poet choosing rhyme.</p>
-            <p>The town of Deadwood exists in the Black Hills of South Dakota, 1876, outside U.S. jurisdiction. Gold has been found. People have come. What follows is an experiment in civilization—how order emerges from chaos when there's no government to impose it. The show watches this process through three centers of power: Al Swearengen, the saloon owner and de facto ruler; Seth Bullock, the hardware man who becomes sheriff; and Cy Tolliver, the rival who brings a darker vision of civilization.</p>
-            <p>Ian McShane's Swearengen is television's great antihero, predating Walter White and Tony Soprano in complexity if not in fame. He murders, schemes, and whores—and he also protects the weak, builds community, and becomes the closest thing Deadwood has to a father. He is corrupt and noble, violent and gentle, selfish and selfless, often in the same scene. McShane plays him with a coiled menace that can explode into tenderness without warning.</p>
-            <p>Timothy Olyphant's Bullock is the opposite force—law trying to emerge from nowhere. His struggle is internal: the violence he barely contains, the anger that drives him toward righteousness and away from it. His partnership with Sol Star (John Hawkes) provides the show's moral center, two men trying to do business in a place where business means violence.</p>
-            <p>And then there are the women. Deadwood takes seriously the women of the frontier—Joanie Stubbs (Kim Dickens), the madam trying to build something independent; Trixie (Paula Malcomson), the prostitute whose relationship with Swearengen is the show's strangest romance; Alma Garret (Molly Parker), the widow who finds strength in opium and gold. They're not victims or decoration. They're builders, survivors, architects of their own fates.</p>
-            <p>The 2019 film provides the coda the series was denied. Characters return older, changed, facing the end of the era they helped create. It's elegiac and perfect, proof that Milch knew where this story was going all along.</p>
+            <p>Deadwood is Shakespeare in the mud. David Milch's revisionist Western is set in a South Dakota mining camp in 1876, legally outside the United States and operating by its own rules. There's no law except what people enforce themselves. Gold has been discovered, and everyone—miners, prostitutes, businessmen, criminals—is trying to get rich without getting killed. It's a laboratory of human behavior: civilization emerging from chaos, order imposed on wilderness.</p>
+            <p>The language is legendary. Milch created a poetic vernacular that blends Elizabethan rhythms with frontier profanity—characters speak in elaborate, compound sentences punctuated with "cocksucker" and "motherfucker." It shouldn't work. It does. The dialogue becomes a kind of music, character revealed through syntax. Al Swearengen (Ian McShane), the camp's criminal kingpin, is a tyrant, a murderer, a pimp—and also the closest thing Deadwood has to a protector. His monologues, delivered to the severed head of a Sioux chief he keeps in a box, are among television's most extraordinary writing.</p>
+            <p>The ensemble is massive—over twenty regular characters—and every one feels essential. Timothy Olyphant's Seth Bullock is the lawman who resists his own violence. Molly Parker's Alma Garret is the widow who finds strength in addiction and enterprise. Robin Weigert's Calamity Jane is a drunk who can't stop caring. Brad Dourif's Doc Cochran is a healer haunted by the bodies he's seen. Everyone carries damage. Everyone is trying to survive.</p>
+            <p>Three seasons, thirty-six episodes, canceled too soon. The 2019 movie wrapped the story, thirteen years later, but nothing could recapture the original's density and rhythm. Deadwood is about the founding of America—the greed, the violence, the desperate attempts to create community in a world without rules. It's ugly, beautiful, and unlike anything else in television history.</p>
         </div>
 
         <div class="section">
@@ -67,27 +65,25 @@
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">9</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">7</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Ian McShane gives one of television's great performances. Timothy Olyphant matches him. The ensemble—from Brad Dourif's dying doctor to W. Earl Brown's heartbreaking Dan Dority—has no weak links.</p>
-            <p><strong>World Building (10):</strong> Deadwood exists. The Gem, the Bella Union, the hardware store, the hotel—Milch built a functioning town. The economy, politics, social hierarchies all feel authentic and observed.</p>
-            <p><strong>Conceptual Density (10):</strong> Civilization emerging from chaos. Order without government. The cost of progress. The compromises required to build community. The show explores these through action, never exposition.</p>
-            <p><strong>Resolution (9):</strong> The 2019 film closes the story beautifully. Everything Milch couldn't finish in 2006 finds its ending. It's worth the thirteen-year wait.</p>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Ian McShane's Swearengen is one of TV's greatest characters. The ensemble is staggering.</p>
+            <p><strong>World Building (10):</strong> Deadwood, South Dakota, 1876. A complete universe of mud, gold, and ambition.</p>
+            <p><strong>Conceptual Density (10):</strong> The language alone is literary art. Every scene contains volumes of meaning.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Jewel's Boot Is Made for Walking" (S1E4)</strong> — The show finds its voice. Swearengen delivers one of television's great monologues while getting a blowjob.</p>
-            <p><strong>"Sold Under Sin" (S1E12)</strong> — The season one finale. Everything converges. Bullock and Swearengen face each other.</p>
-            <p><strong>"Boy-the-Earth-Talked-To" (S2E9)</strong> — Francis Wolcott's rampage. The show's darkest hour, handled with terrible beauty.</p>
-            <p><strong>"Deadwood: The Movie" (2019)</strong> — The conclusion. Cohan comes back. Swearengen faces his end. The town's story completes.</p>
+            <p><strong>"Deadwood" (S1E1)</strong> — The pilot. Swearengen, Bullock, the camp. A world established in an hour.</p>
+            <p><strong>"Sold Under Sin" (S1E12)</strong> — Season one finale. The plague. The prayer. Swearengen at his best.</p>
+            <p><strong>"Tell Him Something Pretty" (S3E12)</strong> — Season three finale. The election. The ending that wasn't supposed to be.</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
             <p><strong>US:</strong> Max</p>
-            <p><strong>UK:</strong> Sky Go, Now TV</p>
+            <p><strong>UK:</strong> Sky Go, NOW</p>
         </div>
     </div>
 </body>
