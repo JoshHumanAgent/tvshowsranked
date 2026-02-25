@@ -3,77 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Bear - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>The Bear - "Kitchen Pressure" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #ff6b35; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #ff6b35, #cc4400); color: #fff5e6; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffa500; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(255,107,53,0.3), rgba(0,0,0,0.9)); border: 3px solid #ff6b35; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ffa500; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #ff6b35; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffa500; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(255,107,53,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ffa500; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #ffa500; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>The Bear</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w200/placeholder.jpg" alt="The Bear Poster" class="show-poster">
-            <div class="show-info">
-                <h1>The Bear</h1>
-                <p class="show-meta">2022 • Drama Comedy | 29 Episodes</p>
-                <div class="score-badge">Score: 8.58</div>
-                <div class="genres">Drama, Comedy</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #234</div>
+            <h1>The Bear</h1>
+            <p class="subtitle">"Kitchen Pressure"</p>
+            <div class="score-badge">
+                <span class="score-value">7.28</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2022-</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">18+</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">FX/Hulu</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Christopher Storer</div></div>
+        </div>
+
+        <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p class="vibe-text">The Bear is a show about a chef who inherits his family's failing Chicago sandwich shop, and its genius is in making kitchen chaos feel like combat. Carmen Berzatto, called Carmy, trained in fine dining before his brother's suicide pulled him back to the Original Beef. What follows is three seasons of trying to transform a greasy spoon into something worthy of his training while the training itself—years of Michelin-star kitchens—is both his greatest asset and source of damage. The show understands that professional kitchens are beautiful and brutal in equal measure.</p>
+            <p>The Bear captures kitchen chaos better than anything on television. Carmen "Carmy" Berzatto (Jeremy Allen White) is a Michelin-star chef who returns to Chicago to run his family's sandwich shop after his brother's suicide. The Original Beef of Chicagoland is chaos—orders flying, tickets piling, family debt, a staff that doesn't respect him, and grief buried under constant motion.</p>
+            <p>Jeremy Allen White's Carmy is brilliant at food and terrible at everything else—relationships, communication, self-care. He transforms the kitchen into a fine-dining operation while alienating the staff who made the place work. His cousin Richie (Ebon Moss-Bachrach) resents every change. Sydney (Ayo Edebiri) is the young chef who sees what Carmy could be, if he could get out of his own way.</p>
+            <p>The show's direction is visceral—camera shaking, cuts coming fast, overlapping dialogue, the constant roar of tickets being called. Episode seven of season two, "Forks," is a masterpiece: Richie's journey through a week of staging at a fine-dining restaurant, transforming from bitter screw-up to someone with purpose. It's one of television's great hours.</p>
+            <p>The Bear isn't really about food. It's about trauma, work, family, and whether you can save something that was already broken. The kitchen is therapy through pressure. The service is the only time everything makes sense.</p>
+            <p>Season two opens the new restaurant, The Bear. Season three interrogates success—what happens when you get what you wanted and it's still not enough. The show keeps evolving, refusing to repeat itself.</p>
+        </div>
 
-            <p>Jeremy Allen White plays Carmy with intensity that never lets up, but the show's real achievement is in the ensemble: the kitchen staff who become family, the family who can't stay away, the Chicago neighborhood that provides context for change and continuity. The first season is largely kitchen chaos, with quick cutting that captures the pressure of service. The second season opens up—Carmy works to build a new restaurant, and the show explores what transformation costs from each character's perspective. By the third, the ambition has grown even further, without losing the intensity.</p>
-
-            <p>What makes The Bear exceptional is its formal experimentation. Episodes range from half-hour tension to feature-length examinations. The editing creates a rhythm that matches kitchen service—quick cuts during rush, longer takes during prep, silences that speak to grief and exhaustion. The show treats food as love language and destruction mechanism interchangeably, understanding that culinary excellence requires sacrifice and that sacrifice leaves marks. This is about working, about the impossibility of separating craft from dysfunction, about what it means to turn pain into something others can taste.</p>
-
-            <h2>Why It Ranks Here</h2>
-            <p>The Bear earns its elite ranking through formal innovation, a lead performance that defines the character, and writing that captures kitchen work without romanticization. The score reflects a show that's operating at the highest level of television.</p>
-
-            <h2>The 7-Dimension Analysis</h2>
-
-            <div class="dimension">
-                <h3>Characters & Acting (9/10)</h3>
-                <p>Every performance is defining. Jeremy Allen White makes anxiety visible in posture and breath. Ayo Edebiri as Sydney provides necessary counterweight—ambitious without damage. Ebon Moss-Bachrach as Richie shows redemption earned through work. The family dynamics are specific and painful; the kitchen dynamics are professional and personal inextricably.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">6</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Jeremy Allen White, Ayo Edebiri, and Ebon Moss-Bachrach are perfect. Every performance is raw and real.</p>
+            <p><strong>Cinematography (9):</strong> The kitchen chaos is captured like nothing else. Episode seven's single-take feeling is stunning.</p>
+            <p><strong>Narrative Drive (9):</strong> Every episode builds pressure. The pace is relentless, the release cathartic.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (8.5/10)</h3>
-                <p>Chicago feels present in the way that cities in television rarely do. The neighborhood, the suppliers, the regulars create context. The kitchen is rendered with professional precision—stations, mise en place, the physical demands of cooking. This is what working kitchens look like, sound like, smell like.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Review" (S1E7)</strong> — The review. The spiral. Everything breaking at once.</p>
+            <p><strong>"Forks" (S2E7)</strong> — Richie's week staging. Transformation. Perfection.</p>
+            <p><strong>"Forever" (S3E1)</strong> — Season three opening. The menu. The philosophy.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (8.5/10)</h3>
-                <p>The editing is central to the show's effect—kitchen chaos cuts fast, personal moments hold longer, the rhythm creates meaning. Close-ups capture detail without being gratuitous. The direction creates urgency through style rather than story manipulation.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (4/10)</h3>
-                <p>The spectacle is in watching skilled work: food prepared quickly and correctly, service performed under pressure. There are no effects sequences. This is observational filmmaking in confined spaces.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Depth (8/10)</h3>
-                <p>This is work-as-life made visible. The show explores craft obsession, the cost of excellence, family legacy and debt, grief expressed through action. The kitchen becomes a space where people work out their damage in ways that are both productive and destructive.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (8/10)</h3>
-                <p>Service provides natural episode structure—prep, service, clean, repeat. The transformation from Original Beef to The Bear creates seasonal momentum. The show maintains tension across episodes without manufacturing drama; the work itself is drama enough.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (7.5/10)</h3>
-                <p>Each season builds to service that serves as climax, but the show resists easy resolution. The third season especially rejects clean endings—the restaurant opens, but relationships fracture, and success creates new problems. This is ongoing work rather than triumph narrative, which is the point.</p>
-            </div>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Hulu, FX</p>
+            <p><strong>UK:</strong> Disney+</p>
+        </div>
+    </div>
 </body>
 </html>
