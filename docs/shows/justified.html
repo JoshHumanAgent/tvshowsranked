@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justified - "Draw" | Dynamic Rank Engine</title>
+    <title>Justified - "Fire in the Hole" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #4a5d23; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #4a5d23, #2d3a15); color: #adff2f; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #9acd32; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #5d4037; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #5d4037, #3e2723); color: #efebe9; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #a1887f; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(74,93,35,0.3), rgba(0,0,0,0.9)); border: 3px solid #4a5d23; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #9acd32; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(93,64,55,0.3), rgba(0,0,0,0.9)); border: 3px solid #5d4037; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #a1887f; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #4a5d23; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #9acd32; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #5d4037; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #a1887f; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(74,93,35,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #9acd32; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(93,64,55,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #a1887f; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #9acd32; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #a1887f; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #89</div>
+            <div class="rank-badge">Rank #37</div>
             <h1>Justified</h1>
-            <p class="subtitle">"Draw"</p>
+            <p class="subtitle">"Fire in the Hole"</p>
             <div class="score-badge">
-                <span class="score-value">7.65</span>
+                <span class="score-value">7.88</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -51,40 +51,39 @@
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Justified is a modern Western set in Kentucky coal country. Deputy U.S. Marshal Raylan Givens (Timothy Olyphant) is a lawman from another era—polite, laconic, quick to draw, and utterly unwilling to back down from anyone. He gets reassigned from Miami to Kentucky after a "justified" shooting, and finds himself back in the place he escaped, among people he'd rather forget.</p>
-            <p>The show is based on Elmore Leonard's work, and Leonard's voice runs through every scene. Dialogue is snappy, oblique, funny in ways that take a second to land. Characters don't explain themselves—they hint, deflect, and let you figure it out. The rhythm is distinctive: casual conversations that suddenly turn violent, threats delivered with a smile, negotiations that spiral into chaos.</p>
-            <p>Boyd Crowder (Walton Goggins) is Raylan's foil. They grew up together, they dug coal together, and now they're on opposite sides of the law—except Boyd keeps shifting. He starts as a white supremacist, becomes a born-again preacher, then a legitimate businessman, then a crime boss. He's always evolving, always one step ahead of everyone except Raylan. Their relationship is the show's engine: two men who understand each other completely, who might be friends in another life, who keep trying to kill each other.</p>
-            <p>The supporting cast creates a Kentucky that feels authentic. Harlan County has its own rules, its own families, its own justice. The Crowders, the Bennetts, the Crowes—each season introduces a new criminal family with distinct dynamics. The marshals' office provides structure and procedural elements, but the heart is always Raylan's personal history in Kentucky.</p>
-            <p>Six seasons, one complete story, a perfect ending. The show knows when to stop. Raylan's final confrontation with Boyd is inevitable and surprising, inevitable because the whole show built toward it, surprising because neither man ends up where you expect. The West has been modernized, but some lawmen still settle things the old way.</p>
+            <p>Justified is a modern Western disguised as a Kentucky crime drama. Deputy U.S. Marshal Raylan Givens (Timothy Olyphant) is an old-school lawman in a modern world—he wears a cowboy hat, drinks bourbon, and shoots first when threatened. After an "incident" in Miami, he's reassigned to his home district in eastern Kentucky, where he knows everyone and everyone knows him. Some are happy to see him. Most aren't.</p>
+            <p>Based on an Elmore Leonard story, the show captures Leonard's voice better than almost any adaptation: the casually witty dialogue, the criminals who are neither stupid nor cartoonishly evil, the sense that violence can erupt at any moment but usually comes after a lot of talking. Raylan is good at his job, but he's also damaged—his father was a criminal, his ex-wife can't quit him, and he keeps getting into situations that require shooting people. He's not corrupt, but he's not clean either.</p>
+            <p>The heart of the show is Raylan's relationship with Boyd Crowder (Walton Goggins), a coal miner turned criminal who became something more. Boyd is a preacher, a explosives expert, a philosopher, a true believer. He quotes scripture and Nietzsche, runs criminal enterprises with genuine loyalty, and considers Raylan a friend even as they point guns at each other. The series could have turned Boyd into a villain of the week; instead, it made him one of television's great antiheroes.</p>
+            <p>Six seasons, seventy-eight episodes. Each season built a complete crime story while advancing the larger arc of Raylan and Boyd, ending with a finale that understood what the show had always been about: two men shaped by the same mountains, choosing different paths, bound together anyway. "We dug coal together," Boyd says at the end. That was the whole story.</p>
         </div>
 
         <div class="section">
             <h2>Why It Ranks</h2>
             <div class="dimension-grid">
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
-                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">6</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">9</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">10</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Timothy Olyphant IS Raylan Givens. Walton Goggins creates one of television's great villains-turned-something-else. The supporting cast matches them.</p>
-            <p><strong>Resolution (9):</strong> Six seasons, perfect ending. Raylan and Boyd's final confrontation is inevitable and satisfying.</p>
-            <p><strong>World Building (8):</strong> Harlan County feels real—the families, the grudges, the coal town poverty and pride.</p>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Olyphant and Goggins are perfect. The supporting cast—Damon Herriman, Joelle Carter, Jacob Pitts—never hits a wrong note.</p>
+            <p><strong>Resolution (10):</strong> Six seasons, perfect ending. "We dug coal together." Not a false note in the finale.</p>
+            <p><strong>World Building (9):</strong> Harlan County rendered with deep specificity. The accents, the history, the grudges that span generations.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Fire in the Hole" (S1E1)</strong> — Raylan returns to Kentucky. Boyd Crowder introduced. The dynamic established.</p>
-            <p><strong>"Bloody Harlan" (S2E13)</strong> — Season two finale. The Bennett clan. A showdown that defines the show's stakes.</p>
-            <p><strong>"The Promise" (S6E13)</strong> — Series finale. Raylan and Boyd, one last time. The perfect ending.</p>
+            <p><strong>"Fire in the Hole" (S1E1)</strong> — The pilot. Raylan's return to Kentucky. The first shootout.</p>
+            <p><strong>"Bulletville" (S1E13)</strong> — Season one finale. The bodies pile up. Everything shifts.</p>
+            <p><strong>"The Promise" (S6E13)</strong> — Series finale. The final confrontation. "We dug coal together."</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
             <p><strong>US:</strong> Hulu</p>
-            <p><strong>UK:</strong> Disney+</p>
+            <p><strong>UK:</strong> Disney+, Amazon Prime</p>
         </div>
     </div>
 </body>
