@@ -3,87 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fargo - "A Cooper Story" | Dynamic Rank Engine</title>
+    <title>Fargo - "Okay Then" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #4a5568; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #4a5568, #2d3748); color: #e2e8f0; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #a0aec0; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #455a64; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #455a64, #263238); color: #cfd8dc; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #78909c; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(74,85,104,0.3), rgba(0,0,0,0.9)); border: 3px solid #4a5568; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #a0aec0; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(69,90,100,0.3), rgba(0,0,0,0.9)); border: 3px solid #455a64; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #78909c; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #4a5568; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #a0aec0; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #455a64; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #78909c; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(74,85,104,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #a0aec0; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(69,90,100,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #78909c; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #a0aec0; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #78909c; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #38</div>
+            <div class="rank-badge">Rank #28</div>
             <h1>Fargo</h1>
-            <p class="subtitle">"A Cooper Story"</p>
+            <p class="subtitle">"Okay Then"</p>
             <div class="score-badge">
-                <span class="score-value">7.88</span>
+                <span class="score-value">8.05</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
 
         <div class="info-grid">
-            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2014-</div></div>
-            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">51+</div></div>
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2014-2024</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">51</div></div>
             <div class="info-item"><div class="info-label">Network</div><div class="info-value">FX</div></div>
             <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Noah Hawley</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Fargo is a television miracle—an anthology series based on a Coen Brothers film that doesn't just honor the original but expands its universe. Each season is a self-contained story set in the upper Midwest, exploring the collision between ordinary people and extraordinary violence, all filtered through the Coens' sensibility: absurdist, moral, and deeply weird.</p>
-            <p>Season one follows Lester Nygaard (Martin Freeman), a pathetic insurance salesman who, through a series of accidents and bad decisions, becomes entangled with a hitman named Lorne Malvo (Billy Bob Thornton). The season captures the film's tone perfectly—snowbound Minnesota, cheerful people doing terrible things, violence erupting from mundane frustrations. Allison Tolman plays Molly Solverson, a police officer investigating crimes that keep getting stranger. Thornton's Malvo is a mystery—part trickster god, part force of nature, spreading chaos wherever he goes.</p>
-            <p>Season two goes back in time to 1979, exploring the Sioux Falls incident referenced in season one. It's even more ambitious—a crime epic involving a crime family, a hairdresser, a state trooper, and a UFO. Yes, a UFO. The show commits to its weirdness without ever losing its emotional core. Season three features Ewan McGregor playing twins and Carrie Coon as a police chief investigating a tangled web of murder and fraud. Season four goes back further, to 1950s Kansas City, exploring gang wars between Italian and Black crime families.</p>
-            <p>Each season is distinct, but they share DNA: ordinary people making bad choices, violence that's both brutal and darkly funny, landscapes that feel like purgatory. Noah Hawley proved that you can adapt a masterpiece without copying it—to understand what makes the original work and extend that logic into new territory.</p>
+            <p>Fargo is an anthology series inspired by the Coen Brothers' 1996 film, set in the same universe of Minnesota niceness hiding Midwestern malice. Each season is a self-contained story of ordinary people making catastrophic choices, murderers who don't look like murderers, and law enforcement officers trying to make sense of chaos. The show captures the Coens' voice—dark comedy, existential dread, violence that's both brutal and absurd—while expanding their world into something uniquely its own.</p>
+            <p>Season one is the closest to the film. Lorne Malvo (Billy Bob Thornton) arrives in Minnesota like a demon testing humanity's weakness, manipulating a put-upon insurance salesman (Martin Freeman) into murder. Allison Tolman's Molly Solverson is the audience surrogate, a smart cop who sees what others miss. Season two goes wider—1979, a crime family at war with a syndicate, a young Lou Solverson (Patrick Wilson) caught in the middle. Season three is about siblings and identity, starring Ewan McGregor in dual roles. Season four goes to Kansas City, 1950, where crime families compete for territory.</p>
+            <p>The show's visual language is distinctive: split screens, chapter titles, overhead shots of snowy landscapes, a color palette of whites and grays and occasional shocking red. The violence is sudden and extreme, but the tone is philosophical. Characters debate the nature of truth, the randomness of the universe, whether God exists and whether He cares. The Coen Brothers' themes—fate, randomness, the absurdity of human plans—are expanded into theological inquiry.</p>
+            <p>Five seasons, fifty-one episodes, each self-contained. Season one is near-perfect television; season two matches it; three and four are ambitious but uneven. The anthology format allows risk-taking—if a story doesn't work, the next season starts fresh. But the show's consistency is remarkable: "okay then" as a philosophy of acceptance in a universe that refuses to make sense.</p>
         </div>
 
         <div class="section">
             <h2>Why It Ranks</h2>
             <div class="dimension-grid">
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
-                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">8</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Billy Bob Thornton, Martin Freeman, Carrie Coon, Ewan McGregor—each season is an acting masterclass.</p>
-            <p><strong>Cinematography (9):</strong> Snow-drenched landscapes, split screens, compositions that feel like paintings. Each season is visually distinct.</p>
-            <p><strong>Narrative Drive (9):</strong> The anthology format keeps it fresh. Each season propels forward with Coen-esque tension and dark humor.</p>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Billy Bob Thornton's Malvo is iconic. The anthology format allows remarkable casting flexibility.</p>
+            <p><strong>Conceptual Density (9):</strong> Fate, randomness, theology. "This is a true story" as philosophy.</p>
+            <p><strong>Cinematography (9):</strong> Split screens, overhead shots, a visual language that matches the Coens' aesthetic.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"The Crocodile's Dilemma" (S1E1)</strong> — Lester meets Malvo. The beginning of everything.</p>
-            <p><strong>"Morton's Fork" (S2E10)</strong> — Season two finale. Sioux Falls. Everything converges.</p>
-            <p><strong>"The Law of Vacant Places" (S3E1)</strong> — The twins. The stamp. The beginning of another mess.</p>
+            <p><strong>"The Crocodile's Dilemma" (S1E1)</strong> — The arrival. The blackmail. "I'm not here to judge."</p>
+            <p><strong>"A Fox, a Rabbit, and a Cabbage" (S1E9)</strong> — The confrontation. Malvo's true nature revealed.</p>
+            <p><strong>"Palindrome" (S2E10)</strong> — Season two finale. The ship. The end of an era. Perfect.</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
             <p><strong>US:</strong> Hulu</p>
-            <p><strong>UK:</strong> Channel 4, Netflix</p>
+            <p><strong>UK:</strong> Channel 4</p>
         </div>
     </div>
 </body>
