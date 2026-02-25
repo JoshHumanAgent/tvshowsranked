@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>True Detective - "Time Is a Flat Circle" | Dynamic Rank Engine</title>
+    <title>True Detective - "We're not supposed to get here" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #ff6f00; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #ff6f00, #e65100); color: #fff3e0; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffb74d; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #ffb300; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #ffb300, #ff8f00); color: #3e2723; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffe082; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(255,111,0,0.3), rgba(0,0,0,0.9)); border: 3px solid #ff6f00; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #ffb74d; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(255,179,0,0.3), rgba(0,0,0,0.9)); border: 3px solid #ffb300; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ffe082; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #ff6f00; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffb74d; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #ffb300; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffe082; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(255,111,0,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #ffb74d; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(255,179,0,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ffe082; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #ffb74d; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #ffe082; font-weight: 700; }
     </style>
 </head>
 <body>
@@ -35,26 +35,26 @@
         <div class="hero">
             <div class="rank-badge">Rank #15</div>
             <h1>True Detective</h1>
-            <p class="subtitle">"Time Is a Flat Circle"</p>
+            <p class="subtitle">"We're not supposed to get here"</p>
             <div class="score-badge">
-                <span class="score-value">8.30</span>
+                <span class="score-value">8.15</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
 
         <div class="info-grid">
-            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2014-2024</div></div>
-            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">38</div></div>
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2014-</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">39</div></div>
             <div class="info-item"><div class="info-label">Network</div><div class="info-value">HBO</div></div>
             <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Nic Pizzolatto</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>True Detective season one is perfect television. Rust Cohle (Matthew McConaughey) and Marty Hart (Woody Harrelson) are detectives investigating a ritual murder in Louisiana. The show spans seventeen years—the initial investigation, the case going cold, and their testimony about it years later. Something doesn't add up. The structure is a puzzle, and the pieces don't fit until they do.</p>
-            <p>McConaughey's Rust is philosophical nihilism given form—"time is a flat circle," he says, "everything we've ever done or will do, we're gonna do over and over again." He's a brilliant detective, a terrible partner, and a man who's seen too much. Marty is his opposite—conventional, family man, hypocrite, cheater. Their partnership is television's great dysfunctional duo, and watching them circle each other across decades is the show's engine.</p>
-            <p>The six-minute tracking shot in "Who Goes There" (S1E4) became instant legend—a raid on a housing project filmed in a single unbroken take. But thewhole season is visually distinctive: Louisiana rendered as a Gothic nightmare, bayous and refineries and religious iconography. The Yellow King, Carcosa, cults within cults—the horror is both literal and metaphorical. "If the only thing keeping a person decent is expecting a reward in the afterlife, then that person is a piece of shit," Rust says. He's not wrong.</p>
-            <p>Seasons two through four are... different. Season two tried to capture lightning twice andfailed. Season three recovered somewhat. Season four ("Night Country") was a supernatural departure. But season one remains—eight episodes of perfect television, a complete story, performances for the ages. "Once there was only dark," Rust says in the finale. "If you ask me, the light's winning." For eight episodes, darkness and light wrestled. Television won.</p>
+            <p>True Detective is an anthology—each season, different story, different characters, different setting. But season one is legendary: Matthew McConaughey and Woody Harrelson as Detectives Rust Cohle and Marty Hart, investigating a ritual murder in Louisiana across seventeen years. The show is Southern Gothic, noir, and metaphysical philosophy. Rust is a nihilist: "Time is a flat circle," he says. "Everything we've ever done or will do, we're gonna do over and over again." He's also a brilliant detective and a wreck of a human being.</p>
+            <p>The structure is daring: multiple timelines, 1995 and 2012, as Rust and Marty are interviewed separately about a case they thought was solved. The murder investigation leads to a cult, to powerful men, to crimes that have been covered up. Rust's philosophy—pessimistic, haunted, possibly correct—clashes with Marty's conventional morality. Marty cheats on his wife, but he believes in normal life. Rust has no such faith. "I think consciousness is a tragic misstep in evolution," he says. He'd rather not exist.</p>
+            <p>Season one is a masterpiece: the six-minute tracking shot in "Who Goes There" is famous; the performances are career-defining. Season two collapsed under its own weight—a convoluted noir in LA that couldn't follow season one's perfection. Season three recovered partially: Mahershala Ali as a detective across three timelines, searching for a missing child and, later, the truth. Season four ("Night Country") moved to Alaska, withJodie Foster investigating scientists who vanished. The seasons are uneven. But season one is among the best television ever made.</p>
+            <p>Four seasons, thirty-nine episodes, ongoing. True Detective proves that anthology works—and that lightning in a bottle is rare. Rust Cohle's philosophy is bleak: "If the only thing keeping a person decent is the reward of heaven, then that person is a piece of shit." But in the finale, he sees a vision—a cosmic joke, maybe, or real grace. "Once there was only dark," he says. "If you ask me, the light's winning." After all the darkness, that's almost hope.</p>
         </div>
 
         <div class="section">
@@ -65,25 +65,25 @@
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">9</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> McConaughey and Harrelson are career-best. Rust Cohle is an iconic character. Their chemistry drives everything.</p>
-            <p><strong>Cinematography (10):</strong> The six-minute tracking shot is legendary. Louisiana as Gothic nightmare. Every frame is composed.</p>
-            <p><strong>Conceptual Density (9):</strong> Time is a flat circle. Philosophical pessimism as detective story. The Yellow King as cosmic horror.</p>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> McConaughey and Harrelson are legendary. Rust Cohle is one of TV's great characters. Mahershala Ali in S3 is also excellent.</p>
+            <p><strong>Cinematography (10):</strong> The six-minute tracking shot. The Louisiana swamps. The Alaskan darkness. Visual poetry.</p>
+            <p><strong>Conceptual Density (9):</strong> Nihilism as detective philosophy. "Time is a flat circle." Metaphysics as crime drama.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"The Long Bright Dark" (S1E1)</strong> — The introduction. "This is a world where nothing is solved."</p>
-            <p><strong>(Who Goes There" (S1E4)</strong> — The tracking shot. Six minutes. Perfection.</p>
-            <p><strong>"After You've Gone" (S1E7)</strong> — The pieces fit. Rust figures it out. Everything connects.</p>
-            <p><strong>"Form and Void" (S1E8)</strong> — Season finale. Carcosa. "The light's winning."</p>
+            <p><strong>"The Long Bright Dark" (S1E1)</strong> — The introduction. The body. "This is a world where nothing is solved."</p>
+            <p><strong>"Who Goes There" (S1E4)</strong> — The tracking shot. Six minutes. Television history.</p>
+            <p><strong>"Form and Void" (S1E8)</strong> — Season one finale. The Yellow King. "The light's winning."</p>
+            <p><strong>"Now Am Found" (S3E8)</strong> — Season three finale. The truth revealed. Grace.</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US:</strong> Max</p>
+            <p><strong>US:</strong> HBO Max</p>
             <p><strong>UK:</strong> Sky Go, NOW</p>
         </div>
     </div>
