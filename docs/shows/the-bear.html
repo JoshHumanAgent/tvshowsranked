@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Bear - "Yes, Chef" | Dynamic Rank Engine</title>
+    <title>The Bear - "Let it rip" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #ff5722; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #ff5722, #e64a19); color: #fbe9e7; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffab91; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #d32f2f; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #d32f2f, #b71c1c); color: #ffcdd2; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ef9a9a; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(255,87,34,0.3), rgba(0,0,0,0.9)); border: 3px solid #ff5722; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #ffab91; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(211,47,47,0.3), rgba(0,0,0,0.9)); border: 3px solid #d32f2f; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ef9a9a; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #ff5722; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffab91; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #d32f2f; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ef9a9a; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(255,87,34,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #ffab91; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(211,47,47,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ef9a9a; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #ffab91; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #ef9a9a; font-weight: 700; }
     </style>
 </head>
 <body>
@@ -35,26 +35,26 @@
         <div class="hero">
             <div class="rank-badge">Rank #57</div>
             <h1>The Bear</h1>
-            <p class="subtitle">"Yes, Chef"</p>
+            <p class="subtitle">"Let it rip"</p>
             <div class="score-badge">
-                <span class="score-value">7.60</span>
+                <span class="score-value">7.85</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
 
         <div class="info-grid">
             <div class="info-item"><div class="info-label">Years</div><div class="info-value">2022-</div></div>
-            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">18</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">29</div></div>
             <div class="info-item"><div class="info-label">Network</div><div class="info-value">Hulu/FX</div></div>
             <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Christopher Storer</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>The Bear is about a fine-dining chef who inherits his family's Chicago sandwich shop after his brother's suicide. Carmen "Carmy" Berzatto (Jeremy Allen White) was aJames Beard Award winner running a Michelin-star kitchen in New York. Now he's back in Chicago, trying to save The Original Beef of Chicagoland from bankruptcy, addiction, and neglect. The show is about grief, work, family, and the particular madness of restaurant kitchens.</p>
-            <p>The restaurant is chaos: orders pile up, tickets get lost, equipment breaks, and the staff—cousin Richie (Ebon Moss-Bachrach), baker Marcus (Lionel Boyce), sous chef Sydney (Ayo Edebiri), and the rest—don't trust Carmy's fine-dining instincts. "You think you're better than us?" Richie asks. Carmy doesn't. He's just trying to survive. The show's thesis: work is a way to avoid grief, but grief finds you anyway. Carmy's brother Michael (Jon Bernthal, in flashbacks) haunts every episode—the suicide we never see, the pain we never understand.</p>
-            <p>The show's signature is its pace: kitchen scenes are shot like action sequences, with rapid cuts, overlapping dialogue, blaring music, and mounting panic. The seventh episode of season one, "Review," is a single-take masterpiece of escalating disaster: the pre-orders are wrong, the system is broken, and everything falls apart. It's anxiety as television. The relief only comes when the work is done—but the work is never done.</p>
-            <p>Two seasons (as of 2024), eighteen episodes, ongoing. The Bear is about obsession: the need to make something perfect, to prove yourself, to honor the dead by feeding the living. "Every second counts," Carmy says. It does. The show captures the particular intensity of restaurant work—the adrenaline, the abuse, the camaraderie, the exhaustion. "Yes, Chef" is both submission and rebellion. The kitchen is hell. But it's also home.</p>
+            <p>The Bear is about a chef who inherits a chaotic family restaurant. Carmen "Carmy" Berzatto (Jeremy Allen White) was a fine-dining chef in New York, working at the world's best restaurant, when his brother Mikey died by suicide and left him The Original Beef of Chicagoland. It's a disaster: the kitchen is disorganized, the staff is hostile, the finances are ruinous. Carmy tries to apply fine-dining discipline to a sandwich shop. The staff resists. The chaos increases. The grief accumulates.</p>
+            <p>The show captures restaurant work like nothing else on television: the noise, the stress, the "behind," "corner," "heard" vocabulary, the way a kitchen can become a symphony or a war zone. Sydney (Ayo Edebiri) is aculinary school grad who wants to learn; Richie (Ebon Moss-Bachrach) is Mikey's best friend, a fixture who resists all change; Marcus (Lionel Boyce) is the pastry chef who makes donuts and finds purpose; Tina (Liza Colón-Zayas) is the veteran line cook who eventually trains under Sydney. They're family—dysfunctional, fighting, but bound together by thework.</p>
+            <p>Season one is survival: keeping the restaurant open, paying the debt Mikey hid, discovering his brother's secret. Season two is transformation: opening a new restaurant, The Bear, in the sandwich shop's place. The episode "Fishes" is a masterpiece of family horror—a Christmas dinner flashback showing how the Berzatto family's love and damage are inseparable. Jamie Lee Curtis as their mother, Bob Odenkirk as their uncle, chaos and tenderness and alcohol and screaming.</p>
+            <p>Three seasons, twenty-nine episodes, ongoing. The Bear is about work as obsession, family as wound and cure, and the possibility that doing something well might save you. "Let it rip," Carmy says in therapy. He's learning: you can't control everything. Sometimes you have to trust the people around you. The kitchen is chaos. The food is love. The restaurant might kill you. It might also save you.</p>
         </div>
 
         <div class="section">
@@ -63,22 +63,22 @@
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">6</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">6</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">7</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Jeremy Allen White and Ayo Edebiri are extraordinary. The ensemble is note-perfect. Emmy wins deserved.</p>
-            <p><strong>Narrative Drive (9):</strong> Kitchen chaos drives every episode. "What's next?" never relaxes. The pace is relentless.</p>
-            <p><strong>Cinematography (9):</strong> "Review" is a single-take masterpiece. Kitchen scenes are shot like action. Visceral.</p>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Jeremy Allen White is transformed. Ayo Edebiri is a star. The ensemble captures restaurant life perfectly.</p>
+            <p><strong>Narrative Drive (9):</strong> Each season builds tension masterfully. The opening ofThe Bear. The review. The family dinner.</p>
+            <p><strong>Cinematography (9):</strong> Kitchen sequences are visceral—handheld, close, frantic. "Fishes" is a masterwork of controlled chaos.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Pilot" (S1E1)</strong> — The introduction. Carmy arrives. The sandwich shop reveals its chaos.</p>
-            <p><strong>"Review" (S1E7)</strong> — The single-take episode. Everything goes wrong. Perfection.</p>
-            <p><strong>"Forks" (S1E8)</strong> — Richie's redemption. "Every second counts."</p>
-            <p><strong>"Omelette" (S2E7)</strong> — The family dinner. Marcus's donuts. Sydney's birthday.</p>
+            <p><strong>("Pilot" (S1E1)</strong> — The introduction. "Behind." "Heard." Restaurant chaos.</p>
+            <p><strong>("Review" (S1E7)</strong> — The review arrives. Everything goes wrong. One continuous shot.</p>
+            <p><strong>"Fishes" (S2E6)</strong> — Family Christmas. Jamie Lee Curtis. Bob Odenkirk. Masterpiece.</p>
+            <p><strong>"Tomorrow" (S3E1)</strong> — Carmy's past. The dinner. "Every second counts."</p>
         </div>
 
         <div class="section">
