@@ -1,16 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Severance - TV Shows Ranked</title><link rel="stylesheet" href="../css/show-page.css"></head>
-<body><nav class="breadcrumb"><a href="../../index.html">Home</a> &gt; <span>Severance</span></nav>
-<article class="show-page"><header class="show-header"><img src="https://image.tmdb.org/t/p/w200/9Zz3K9n9M2pS4tV8wX3xZ8qL.jpg" alt="Severance Poster"class="show-poster"><div class="show-info"><h1>Severance</h1><p class="show-meta">2022 - Present • Apple TV+ • Ongoing</p><div class="score-badge">Score: 8.10</div><div class="genres">Sci-Fi, Thriller</div></div></header>
-<section class="deep-content"><h2>What It Feels Like</h2><p class="vibe-text">Lumon Industries has a procedure: severance. Your work memories are separated from your outside memories. You are two people. Mark leads a team of severed workers. Then he finds a clue from the outside. Ben Stiller directs the sci-fi thriller about work-life balance made literal horror.</p>
-<h2>The 7-Dimension Analysis</h2>
-<div class="dimension"><h3>Characters & Acting (9/10)</h3><p>Adam Scott as Mark: the innie and the outie. Patricia Arquette as Harmony: the manager. John Turturro, Christopher Walken, Britt Lower. The performances capture the dissociation—two selves in one body.</p></div>
-<div class="dimension"><h3>World Building (10/10)</h3><p>Lumon: the office, the severed floor, the outside, the departments that don't know each other. The world is corporate horror—work separated from life, literally. Every detail matters.</p></div>
-<div class="dimension"><h3>Cinematography (9/10)</h3><p>Apple TV+ production: the office as liminal space, the corridors, the weird geometry. The style is Kubrickian—symmetry, unease, beauty made unsettling.</p></div>
-<div class="dimension"><h3>Visual Spectacle (6/10)</h3><p>The spectacle is the office: the corridors, the break room, the mysterious departments. The "spectacle" is the concept—watching two selves in one body.</p></div>
-<div class="dimension"><h3>Conceptual Density (10/10)</h3><p>Work-life balance made literal, whether we can escape ourselves, what corporations own, the self as property, identity as division. The show explores these through sci-fi horror.</p></div>
-<div class="dimension"><h3>Narrative Drive (10/10)</h3><p>What is Lumon hiding? What happens on the severed floor? Who are the outies? The structure is mystery—every episode reveals more. The drive is relentless.</p></div>
-<div class="dimension"><h3>Narrative Path & Resolution (5/10)</h3><p>Ongoing. Season 1 ends on cliffhanger; season 2 in production. The mystery is unresolved. The journey is spectacular; the destination is pending.</p></div></section>
-<section class="streaming-info"><h2>Where to Watch</h2><p><strong>US:</strong> Apple TV+</p><p><strong>UK:</strong> Apple TV+</p></section>
-<footer class="show-footer"><a href="../../index.html">← Back to Rankings</a></footer></article></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Severance - "Who Are You?" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #00a8e8; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #00a8e8, #005a7a); color: #fff; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #00d4ff; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(0,168,232,0.3), rgba(0,0,0,0.9)); border: 3px solid #00a8e8; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #00d4ff; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #00a8e8; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #00d4ff; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(0,168,232,0.1); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #00d4ff; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #00d4ff; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #17</div>
+            <h1>Severance</h1>
+            <p class="subtitle">"Who Are You?"</p>
+            <div class="score-badge">
+                <span class="score-value">8.03</span>
+                <span class="score-label">Final Score</span>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2022-</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">19</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Apple TV+</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Dan Erickson</div></div>
+        </div>
+
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Severance is the best workplace thriller ever made. That sounds like faint praise until you watch it. The premise is high-concept science fiction: a procedure exists that separates your work memories from your personal memories. You arrive at the office, your "innie" takes over, you work eight hours, you leave, your "outie" resumes—not one second of work remembered. It's sold as a benefit: true work-life balance. In practice, it's something far darker.</p>
+            <p>Mark Scout (Adam Scott) works in Macrodata Refinement on the severed floor of Lumon Industries. He sorts numbers into bins, though he has no idea what the numbers mean or what purpose the bins serve. His department consists of Dylan (Zach Cherry), Irving (John Turturro), and the recently departed Petey. His supervisor is Harmony Cobel (Patricia Arquette), whose corporate maternalism radiates menace. His former boss was Kier Eagan, founder of Lumon, whose bizarre corporate philosophy functions as religion.</p>
+            <p>The show works on multiple levels simultaneously. It's a paranoid thriller about corporate control. It's a philosophical inquiry into identity—if you cut someone in half, which half is the real one? It's a workplace satire gone cosmic. It's a meditation on grief, as Mark's outie mourns his dead wife while his innie knows nothing about her. The two Marks are different people, and both are Adam Scott.</p>
+            <p>The visual design is staggering. The severed floor is all corridors and stark offices, shot to feel like a maze that might not have an exit. The ceiling lights buzz with malevolence. The break room exists for punishment. There's a wellness center, a painting of Kier Eaga's anatomy, a goat barn, rooms within rooms within rooms. Every frame is composed for maximum unease.</p>
+            <p>The writing is equally precise. Each episode peels back a layer, revealing new questions before answering old ones. The season one finale "The We We Are" is among the most tense hours of television ever aired—all momentum, all revelation, all cliffhanger. Season two expands the world while deepening the mystery, paying off setup while setting up new terrors.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">7</div><div class="dimension-weight">20% weight</div></div>
+            </div>
+            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> Lumon Industries exists in full. The architecture, the corporate cult of Kier Eagan, the severed floor's labyrinthine layout—every detail adds to the dread. It's the best realized corporate hellscape since the office in Brazil.</p>
+            <p><strong>Cinematography (10):</strong> Every frame is intentional. The geometry of corridors, the harshness of lighting, the corporate aesthetic made sinister. This is visual storytelling at its finest.</p>
+            <p><strong>Conceptual Density (10):</strong> Identity, corporate power, free will, memory, grief, the self divided. The show explores these without ever becoming a lecture. The philosophy emerges from the characters and their impossible situation.</p>
+            <p><strong>Narrative Drive (10):</strong> The show is pure momentum. From the first scene to the last, it pulls you forward. The season finales are masterclasses in sustained tension.</p>
+            <p><strong>Resolution (7):</strong> Ongoing series. Season two continues the story without sacrificing the mystery. The finale remains to be seen, but the journey so far justifies the ranking.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Half Loop" (S1E4)</strong> — The reveal of what happened to Mark's predecessor. The show's mythology deepens.</p>
+            <p><strong>"The We We Are" (S1E9)</strong> — The season one finale. Everything peaks at once. Among television's best cliffhangers.</p>
+            <p><strong>"Defiant Jazz" (S2E7)</strong> — The team pushes back. Corporate horror meets worker solidarity. The show expands its scope.</p>
+        </div>
+
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Apple TV+</p>
+            <p><strong>UK:</strong> Apple TV+</p>
+        </div>
+    </div>
+</body>
+</html>

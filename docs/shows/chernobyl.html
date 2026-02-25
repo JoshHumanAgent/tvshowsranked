@@ -1,16 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chernobyl - TV Shows Ranked</title><link rel="stylesheet" href="../css/show-page.css"></head>
-<body><nav class="breadcrumb"><a href="../../index.html">Home</a> &gt; <span>Chernobyl</span></nav>
-<article class="show-page"><header class="show-header"><img src="https://image.tmdb.org/t/p/w200/5Yy5K9n9M2pS4tV8wX3xZ8qL.jpg" alt="Chernobyl Poster" class="show-poster"><div class="show-info"><h1>Chernobyl</h1><p class="show-meta">2019 • HBO • 5 Episodes</p><div class="score-badge">Score: 8.85</div><div class="genres">Historical, Drama</div></div></header>
-<section class="deep-content"><h2>What It Feels Like</h2><p class="vibe-text">April 1986. Reactor 4 at Chernobyl explodes. The Soviet state tries to hide it. Scientists race to prevent worse. Craig Mazin's miniseries: the cost of lies, the heroism of ordinary people, catastrophe as human failure. Nuclear horror as documentary.</p>
-<h2>The 7-Dimension Analysis</h2>
-<div class="dimension"><h3>Characters & Acting (10/10)</h3><p>Jared Harris as Valery Legasov: the scientist who tells the truth. Stellan Skarsgård as Boris Shcherbina: the bureaucrat who learns to listen. Emily Watson as Ulana Khomyuk: the composite scientist representing truth-seekers. The performances are devastating.</p></div>
-<div class="dimension"><h3>World Building (10/10)</h3><p>1986 Soviet Union: the reactor, the control room, Pripyat, the evacuation, the trial. The world is recreated with documentary precision. Every detail is researched. The radiation is invisible but present in every frame.</p></div>
-<div class="dimension"><h3>Cinematography (10/10)</h3><p>HBO production at its finest: the reactor explosion, the evacuation, the miners, the liquidators. The style is clinical horror—the camera observes catastrophe. The Geiger counter is the soundtrack.</p></div>
-<div class="dimension"><h3>Visual Spectacle (8/10)</h3><p>The spectacle is radiation made visible: the glowing core, the burning graphite, the bodies failing. The spectacle serves the truth—this is what happened.</p></div>
-<div class="dimension"><h3>Conceptual Density (10/10)</h3><p>The cost of lies, state denial vs. scientific truth, what we owe to each other, heroism as duty, whether truth can survive power. The show is a thesis on denial and its consequences.</p></div>
-<div class="dimension"><h3>Narrative Drive (10/10)</h3><p>The disaster unfolds, the cover-up fails, the truth emerges, the consequences mount. Each episode is escalation. The structure is countdown—the worst must be prevented.</p></div>
-<div class="dimension"><h3>Narrative Path & Resolution (10/10)</h3><p>Five episodes, perfect. The trial provides the structure. Legasov's testimony is the climax. The ending is devastating and complete. Essential television.</p></div></section>
-<section class="streaming-info"><h2>Where to Watch</h2><p><strong>US:</strong> Max, Hulu</p><p><strong>UK:</strong> Sky/Now TV, Amazon Prime Video</p></section>
-<footer class="show-footer"><a href="../../index.html">← Back to Rankings</a></footer></article></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chernobyl - "What Is the Cost of Lies?" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #ff6600; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #ff6600, #993d00); color: #fff; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ff6600; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(255,102,0,0.3), rgba(0,0,0,0.9)); border: 3px solid #ff6600; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ff6600; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #ff6600; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ff6600; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(255,102,0,0.1); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ff6600; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #ff6600; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #12</div>
+            <h1>Chernobyl</h1>
+            <p class="subtitle">"What Is the Cost of Lies?"</p>
+            <div class="score-badge">
+                <span class="score-value">8.08</span>
+                <span class="score-label">Final Score</span>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Year</div><div class="info-value">2019</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">5</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">HBO</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Craig Mazin</div></div>
+        </div>
+
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Chernobyl is horror without monsters. The miniseries tells the story of the 1986 nuclear disaster, not as a thriller about atomic energy, but as a study in how systems fail. It's about what happens when ideology meets physics and loses—when a state built on the impossibility of error confronts an error so colossal it cannot be denied.</p>
+            <p>Jared Harris plays Valery Legasov, the nuclear physicist who understands immediately that Reactor 4 has exploded and who spends the rest of the series trying to limit the damage. Harris is perfect: a man of science facing a catastrophe caused by men who thought science served ideology. His testimony in the final episode is one of television's great monologues—quiet, devastating, a summation of everything the show has been saying about truth and consequence.</p>
+            <p>Stellan Skarsgård plays Boris Shcherbina, the Soviet apparatchik sent to manage the crisis. His transformation from party loyalist to someone who understands what's at stake mirrors the viewer's journey. He begins by dismissing Legasov, ends by defending him. The bureaucracy that made him powerful becomes the bureaucracy he must fight.</p>
+            <p>Emily Watson plays Ulana Khomyuk, a fictional composite of the Soviet scientists who worked to understand and contain the disaster. She's our proxy—the investigator who refuses to accept official explanations, who tracks down witnesses, who pieces together what really happened in the control room. Watson plays her with fierce intelligence and moral clarity.</p>
+            <p>The show's most remarkable achievement is making radiation visible. The Geiger counter clicks become a soundtrack of dread. The increasing numbers on dosimeters become a countdown. We see the hospital rooms where firefighters' skin sloughs off, the forests where animals are shot on sight, the tunnel that must be dug beneath the reactor. It's not gratuitous—it's the truth of what happened, presented with unflinching restraint.</p>
+            <p>And through it all runs the question: What is the cost of lies? Every Soviet official who covered up earlier problems, every engineer who stayed silent to protect a career, every bureaucrat who chose the easy answer—they all contributed to the moment when control rods became graphite tips and the core became a bomb. The show is an argument that truth matters, that the cost of ignoring it accumulates, that physics doesn't negotiate.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">10</div><div class="dimension-weight">20% weight</div></div>
+            </div>
+            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> The Soviet Union in 1986 recreated with meticulous authenticity. The sets, costumes, language (English with accents), bureaucracy—everything feels right. The reactor itself becomes a character, something malevolent and indifferent.</p>
+            <p><strong>Conceptual Density (10):</strong> The show explains nuclear physics, Soviet bureaucracy, the nature of truth, the cost of lies. It's educational without being didactic. Every piece of information serves the story.</p>
+            <p><strong>Narrative Drive (10):</strong> Five episodes, no filler. Every scene matters. The countdown to the potential steam explosion, the race to drain the tanks, the miners tunneling beneath the core—each sequence builds tension without manipulation.</p>
+            <p><strong>Resolution (10):</strong> The trial in the final episode provides closure without false triumph. Legasov's testimony devastates. His fate is sealed. The cost of truth is measured against the cost of lies.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"1:23:45" (S1E1)</strong> — The explosion. The immediate aftermath. The denial that makes everything worse.</p>
+            <p><strong>"Open Wide, O Earth" (S1E3)</strong> — The liquidation. Three men drain the tanks. The divers become heroes.</p>
+            <p><strong>"Vichnaya Pamyat" (S1E5)</strong> — The trial. Legasov's testimony. The cost of truth made visible.</p>
+        </div>
+
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Max</p>
+            <p><strong>UK:</strong> Sky Go, Now TV</p>
+        </div>
+    </div>
+</body>
+</html>
