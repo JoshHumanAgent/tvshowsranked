@@ -1,16 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mare of Easttown - TV Shows Ranked</title><link rel="stylesheet" href="../css/show-page.css"></head>
-<body><nav class="breadcrumb"><a href="../../index.html">Home</a> &gt; <span>Mare of Easttown</span></nav>
-<article class="show-page"><header class="show-header"><img src="https://image.tmdb.org/t/p/w200/4Yy7K9n9M2pS4tV8wX3xZ8qL.jpg" alt="Mare of Easttown Poster" class="show-poster"><div class="show-info"><h1>Mare of Easttown</h1><p class="show-meta">2021 • HBO • 7 Episodes</p><div class="score-badge">Score: 7.85</div><div class="genres">Crime, Drama</div></div></header>
-<section class="deep-content"><h2>What It Feels Like</h2><p class="vibe-text">Mare Sheehan is a detective in a small Pennsylvania town investigating a murder while her life falls apart. Her son died. Her ex-husband is remarrying. Her mother is in her house. Kate Winslet is Mare: exhausted, competent, barely holding on. Small-town crime as family tragedy.</p>
-<h2>The 7-Dimension Analysis</h2>
-<div class="dimension"><h3>Characters & Acting (10/10)</h3><p>Kate Winslet as Mare: disappearing into the role—accent, exhaustion, the weight of everything. Julianne Nicholson as her best friend. Jean Smart as her mother. The ensemble creates the Pennsylvania town with specificity.</p></div>
-<div class="dimension"><h3>World Building (9/10)</h3><p>Delaware County, Pennsylvania: the bars, the houses, the Wawa references, the community struggling after industry left. The world is specific—this is working-class Pennsylvania rendered with detail.</p></div>
-<div class="dimension"><h3>Cinematography (8/10)</h3><p>HBO production: the Pennsylvania winter, the small-town claustrophobia, everyone knows everyone's business. The style serves the exhaustion—this is a town that's tired.</p></div>
-<div class="dimension"><h3>Visual Spectacle (2/10)</h3><p>No spectacle. This is a murder investigation in a small town: interviews, family dinners, lives examined. The "spectacle" is watching Winslet hold everything together.</p></div>
-<div class="dimension"><h3>Conceptual Density (9/10)</h3><p>Grief, community, whether we can move on, what we owe to the dead, generational trauma in dying towns. The show explores these through the investigation and Mare's family.</p></div>
-<div class="dimension"><h3>Narrative Drive (9/10)</h3><p>Who killed the girl? Each episode reveals secrets, narrows suspects, deepens the family drama. The structure is mystery—everyone has something to hide.</p></div>
-<div class="dimension"><h3>Narrative Path & Resolution (9/10)</h3><p>Complete miniseries. The murder solves; the grief doesn't. The ending is earned—Mare finds a way forward. Perfect limited series.</p></div></section>
-<section class="streaming-info"><h2>Where to Watch</h2><p><strong>US:</strong> Max</p><p><strong>UK:</strong> Sky/Now TV</p></section>
-<footer class="show-footer"><a href="../../index.html">← Back to Rankings</a></footer></article></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mare of Easttown - "Miss Lady Hawk Herself" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #4a5568; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #4a5568, #2d3748); color: #e2e8f0; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #a0aec0; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(74,85,104,0.3), rgba(0,0,0,0.9)); border: 3px solid #4a5568; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #a0aec0; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #4a5568; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #a0aec0; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(74,85,104,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #a0aec0; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #a0aec0; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #54</div>
+            <h1>Mare of Easttown</h1>
+            <p class="subtitle">"Miss Lady Hawk Herself"</p>
+            <div class="score-badge">
+                <span class="score-value">7.78</span>
+                <span class="score-label">Final Score</span>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Year</div><div class="info-value">2021</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">7</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">HBO</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Brad Ingelsby</div></div>
+        </div>
+
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Mare of Easttown is a murder mystery that's actually about grief. Kate Winslet plays Mare Sheehan, a detective in a Pennsylvania town where everyone knows everyone, where the local hero high school basketball star is now a chain-smoking divorcée investigating a murder while her own life falls apart. The show uses the whodunit structure to explore what happens when you can't move on.</p>
+            <p>Easttown is Delaware County, Pennsylvania—working class, Catholic, insular. Everyone went to high school together. Everyone knows Mare's history: her basketball glory days, her son's suicide, her failed marriage, her grandson living with her because her daughter-in-law is a recovering addict. The town remembers everything. Mare carries it all.</p>
+            <p>When a young mother is murdered, the investigation opens old wounds. One year earlier, another girl disappeared and Mare couldn't solve it. The town has lost faith in her. Now she has a chance to redeem herself, but the case keeps connecting to people she knows, people she grew up with, people whose families are intertwined with hers.</p>
+            <p>Winslet is astonishing. Her accent—Delco, specific and strange to outsiders—never slips. Her posture, her walk, her exhaustion, all of it feels lived in. She's playing someone who has been slowly crushed by life but refuses to stop moving. When she finally breaks, it's devastating because she's been holding it together for so long.</p>
+            <p>The supporting cast is uniformly excellent. Jean Smart plays Mare's mother with perfect comic timing that never undermines the drama. Julianne Nicholson is Mare's best friend, carrying a secret that could end their friendship. Evan Peters is the county detective assigned to help, a fish-out-of-water whose fresh perspective is exactly what Mare doesn't want.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">5</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">9</div><div class="dimension-weight">20% weight</div></div>
+            </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Kate Winslet delivers one of the great television performances. The ensemble—Jean Smart, Julianne Nicholson, Evan Peters, Guy Pearce—matches her level. Every character feels specific, real, fully lived.</p>
+            <p><strong>World Building (9):</strong> Easttown exists. The Delco accent, the Wawa references, the Catholic guilt, the high school glory that defines adulthood—it's a fully realized place with its own rules and history.</p>
+            <p><strong>Resolution (9):</strong> The mystery resolves in a way that honors everything that came before. The solution isn't a cheat; it emerges from character. And the final scene—Mare finally entering her son's room—is perfect.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Father's Day" (S1E1)</strong> — Mare's introduction. The town, the case, the weight she carries. Everything established in one hour.</p>
+            <p><strong>"Illusions" (S1E4)</strong> — The investigation deepens. Old secrets surface. Mare's family life fractures further.</p>
+            <p><strong>"Sacrament" (S1E7)</strong> — The finale. The killer revealed. The grief confronted. A woman finally allowed to mourn.</p>
+        </div>
+
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Max</p>
+            <p><strong>UK:</strong> Sky Go, Now TV</p>
+        </div>
+    </div>
+</body>
+</html>
