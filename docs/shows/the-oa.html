@@ -3,78 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The OA - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>The OA - "Dimensions of Belief" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #9370db; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #9370db, #6a5acd); color: #f0e6ff; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #b19cd9; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(147,112,219,0.3), rgba(0,0,0,0.9)); border: 3px solid #9370db; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #b19cd9; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #9370db; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #b19cd9; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(147,112,219,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #b19cd9; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #b19cd9; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>The OA</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w500/8ZTVwLLwZ6dNFrr9F6YhH4Gf8mW.jpg" alt="The OA Poster" class="show-poster">
-            <div class="show-info">
-                <h1>The OA</h1>
-                <p class="show-meta">2016 - 2019 • Netflix • 16 Episodes</p>
-                <div class="score-badge">Score: 7.48</div>
-                <div class="genres">Sci-Fi, Fantasy, Mystery</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #277</div>
+            <h1>The OA</h1>
+            <p class="subtitle">"Dimensions of Belief"</p>
+            <div class="score-badge">
+                <span class="score-value">7.24</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
-            <h2>What It Feels Like</h2>
-            <p class="vibe-text">
-                Prairie Johnson returns home after seven years missing. She was blind; now she can see. She gathers five people in an abandoned house and tells them her story: abduction, dimension-hopping, a near-death experience that gave her knowledge. Is she telling the truth? Is she delusional? Brit Marling and Zal Batmanglij created television's most ambitious mystery: part sci-fi, part fantasy, part character study, entirely unlike anything else.
-            </p>
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2016-2019</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">16</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Netflix</div></div>
+            <div class="info-item"><div class="info-label">Creators</div><div class="info-value">Brit Marling, Zal Batmanglij</div></div>
+        </div>
 
-            <h2>The 7-Dimension Analysis</h2>
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>The OA is a puzzle wrapped in a mystery wrapped in a metaphysical inquiry. Prairie Johnson (Brit Marling) returns home after disappearing for seven years. She was blind when she vanished; now she can see. She refuses to tell her parents what happened. Instead, she gathers a small group of locals—a high school teacher, a troubled teenager, a transgender boy, a drug dealer, a bully—and tells them her story.</p>
+            <p>What follows is a narrative within a narrative: Prairie's account of being held captive by a scientist studying near-death experiences, along with four other prisoners. They died and came back, each time bringing something from the other side. Together, they learned a system of movements—dance-like gestures—that could open portals between dimensions.</p>
+            <p>Is Prairie telling the truth? Is she mentally ill? Is she running a con? The show refuses to answer definitively. Each interpretation is supported by evidence, and each interpretation undermines the others. The first season builds to a school shooting that the group attempts to prevent using the movements—then ends on a shot that could be proof of interdimensional travel or proof of Prairie's delusion.</p>
+            <p>Season two expands the scope: San Francisco, a rose window, a game of clue-hunting that leads to another dimension. The production design is dreamlike. The story is genuinely unpredictable. Brit Marling co-created, co-wrote, and stars, and her vision is singular—nothing else on television looks or feels like this.</p>
+            <p>Cancelled after two seasons, The OA is incomplete but essential. The journey is the point. The questions matter more than the answers.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Characters & Acting (8/10)</h3>
-                <p>Brit Marling as Prairie/OA is the center: mysterious, wounded, possibly unreliable. The five people she gathers (including Jason Isaacs as her abductor, in flashbacks) create a community of skeptics becoming believers. Emory Cohen, Brendan Meyer, Brandon Perea—the ensemble is committed. The performances sell the impossible.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">4</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>Conceptual Density (10):</strong> Multiverse theory, near-death experiences, identity, faith—the show is dense with ideas.</p>
+            <p><strong>World Building (9):</strong> Multiple dimensions, each with distinct rules. The puzzle is intricate.</p>
+            <p><strong>Resolution (4):</strong> Cancelled after two seasons. The story is incomplete. #SaveTheOA campaign continues.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (9/10)</h3>
-                <p>Multiple dimensions, near-death experiences, the movements that open doors, the science that sounds like magic. The show builds a complete cosmology: there are other dimensions, some people can travel between them, the method requires sacrifice and belief. The world expands across seasons, each revelation deepening the mystery.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Pilot" (S1E1)</strong> — Prairie returns. The gathering. The story begins.</p>
+            <p><strong>"Forking Paths" (S1E6)</strong> — Homer's NDE. The movements. The escape attempt.</p>
+            <p><strong>"Overview" (S2E8)</strong> — Season two finale. The dimension jump. The cliffhanger.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (8/10)</h3>
-                <p>Distinctive visual language: the gold mine where Prairie was held, the suburban houses where she gathers her followers, the dimension-hopping sequences. The style is dreamlike without being obscure. Each dimension has its own visual identity. Beautiful and strange.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (7/10)</h3>
-                <p>The movements are the spectacle: choreographed gestures that supposedly open dimensional doors. The NDE sequences, the dimension-hopping, the prison-like facility. The spectacle is conceptual—watching people perform strange movements and wondering if it matters.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Density (9/10)</h3>
-                <p>Near-death experience as science and spirituality, the multiverse as belief system, the nature of storytelling itself. The show asks whether stories can be true even when they're impossible, whether faith is justified by outcomes. Dense with meaning, resistant to simple interpretation. Television as puzzle and poem.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (8/10)</h3>
-                <p>Each episode peels back a layer: what happened to Prairie, what is she asking people to believe, what are the movements, what are the dimensions. The second season expands into new territory. The drive comes from needing to understand. Binge television designed for obsession.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (4/10)</h3>
-                <p>Cancelled after two seasons. The second season ends on a cliffhanger that suggests a third season that will never come. The mystery was designed to continue; the cancellation truncates it. The existing material is brilliant; the lack of resolution is devastating. Incomplete.</p>
-            </div>
-        </section>
-
-        <section class="streaming-info">
+        <div class="section">
             <h2>Where to Watch</h2>
             <p><strong>US:</strong> Netflix</p>
             <p><strong>UK:</strong> Netflix</p>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+        </div>
+    </div>
 </body>
 </html>
