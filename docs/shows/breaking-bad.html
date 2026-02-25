@@ -3,77 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breaking Bad - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>Breaking Bad - "Chemistry of Corruption" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #228b22; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #228b22, #145a14); color: #f0fff0; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #32cd32; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(34,139,34,0.3), rgba(0,0,0,0.9)); border: 3px solid #228b22; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #32cd32; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #228b22; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #32cd32; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(34,139,34,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #32cd32; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #32cd32; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>Breaking Bad</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w200/placeholder.jpg" alt="Breaking Bad Poster" class="show-poster">
-            <div class="show-info">
-                <h1>Breaking Bad</h1>
-                <p class="show-meta">2008 • Crime Drama | 62 Episodes</p>
-                <div class="score-badge">Score: 9.25</div>
-                <div class="genres">Crime, Drama, Thriller</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #1</div>
+            <h1>Breaking Bad</h1>
+            <p class="subtitle">"Chemistry of Corruption"</p>
+            <div class="score-badge">
+                <span class="score-value">8.73</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2008-2013</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">62</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">AMC</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Vince Gilligan</div></div>
+        </div>
+
+        <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p class="vibe-text">Breaking Bad is the story of Walter White, a high school chemistry teacher diagnosed with terminal cancer who decides to manufacture methamphetamine to leave money for his family. Over five seasons, that premise transforms into something more ambitious: a portrait of a man who discovers, late in life, that he has capacity for evil—and that capacity feels like freedom. Bryan Cranston's performance charts this transformation in microscopic detail, showing us each small decision that made the next one easier.</p>
+            <p>Breaking Bad is the most perfectly structured television drama ever made. Sixty-two episodes trace the complete transformation of Walter White (Bryan Cranston) from mild-mannered chemistry teacher to drug kingpin. There's no filler, no wheel-spinning, no seasons that don't matter. Every episode builds toward a conclusion that feels inevitable in retrospect and shocking in the moment.</p>
+            <p>Walter White is diagnosed with terminal lung cancer and decides to secure his family's financial future by cooking methamphetamine. His partner is Jesse Pinkman (Aaron Paul), a former student who knows the street side of the business. Together, they build an empire. Along the way, Walter lies to everyone—his wife Skyler (Anna Gunn), his DEA agent brother-in-law Hank (Dean Norris), his son, himself. The lies become truth: Walter becomes Heisenberg, the most feared meth cook in the Southwest.</p>
+            <p>What makes Breaking Bad special is the propulsion. Vince Gilligan described the concept as "Mr. Chips becomes Scarface," and every episode advances that transformation. Walter makes choices, and choices have consequences. Sometimes he escapes; sometimes he doesn't. The tension is relentless. The show creates suspense from ordinary situations—a fly in the lab, a turtle crossing the road, a pizza on a roof—and pays it off with spectacular set pieces.</p>
+            <p>Albuquerque becomes a character: the desert, the RV, the underground superlab, the car wash, the chicken restaurant that fronts a drug operation. Giancarlo Esposito's Gus Fring is one of television's great villains—polite, precise, utterly ruthless. The final season brings everything together in a cascade of consequences that is both devastating and satisfying.</p>
+            <p>Sixty-two episodes. Zero wasted. The show that proved TV could have the structure of a novel.</p>
+        </div>
 
-            <p>The show's structure is escalation. Each season raises stakes that seemed impossible in the previous: from cooking in a camper to running an empire, from hiding money from his wife to hiding bodies from drug cartels, from a man trying to protect his family to a man who has destroyed everyone around him. The genius is in making every step feel motivated by Walter's circumstances while never letting us forget that we're watching someone choose to become a monster. Aaron Paul's Jesse Pinkman becomes the show's moral center—a damaged young man whose capacity for suffering makes visible the cost that Walter refuses to count.</p>
-
-            <p>Breaking Bad is often described as cinematic television, and the description fits. The New Mexico landscape becomes a character, the camera work creates tension without dialogue, the editing compresses time in ways that make 62 episodes feel like a single long exhale. The show's humor is as crucial as its violence—the black comedy of drug dealers bickering over minutiae while death surrounds them. What makes Breaking Bad canonical isn't its quality alone—it's that it completed its story on its own terms, with an ending that honored everything that came before.</p>
-
-            <h2>Why It Ranks Here</h2>
-            <p>Breaking Bad earns top ranking through Bryan Cranston's transformation, Aaron Paul's heart, writing that never wasted a moment, and a finale that landed everything. This is one of the greatest television achievements ever.</p>
-
-            <h2>The 7-Dimension Analysis</h2>
-
-            <div class="dimension">
-                <h3>Characters & Acting (9.5/10)</h3>
-                <p>Bryan Cranston's Walter White is the defining television performance of its era—we watch goodness erode in real time. Aaron Paul's Jesse Pinkman provides the human cost that Walter ignores. The supporting cast creates a world: Anna Gunn's Skyler as the wife whose moral qualms become obstacles, Giancarlo Esposito's Gus as the terrifying face of professional crime, Dean Norris as the DEA agent whose decency is weaponized.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">10</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Bryan Cranston and Aaron Paul created two of TV's most iconic characters. Every performance is pitch-perfect.</p>
+            <p><strong>Narrative Drive (10):</strong>Zero filler. Every scene matters. The momentum builds across all 62 episodes.</p>
+            <p><strong>Resolution (10):</strong> "Felina" is the perfect finale. Every thread resolved. Walter's ending is definitive and earned.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (8.5/10)</h3>
-                <p>Albuquerque becomes fully realized—the desert as both hideout and metaphor, the suburban houses that conceal criminal activity, the drug trade as an industry with hierarchies and economics. The show builds a criminal ecosystem that feels complete, from street-level dealers to international cartels.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Pilot" (S1E1)</strong> — The diagnosis. The RV.The first cook. The transformation begins.</p>
+            <p><strong>"One Minute" (S3E7)</strong> — Hank vs. the Cousins. The parking lot. Four minutes of pure tension.</p>
+            <p><strong>"Ozymandias" (S5E14)</strong> — The empire falls. The desert. The confession. Often cited as TV's greatest episode.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (9/10)</h3>
-                <p>Every frame is composed with attention: time-lapse sequences, point-of-view shots that put us inside dangerous situations, the vast desert that makes human activity feel small. The visual style creates dread without relying on traditional thriller techniques. This is television with cinematic ambition and execution.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (7/10)</h3>
-                <p>The spectacle is in escalation: explosions that matter because we understand why they're happening, violence that has consequence. There are action sequences, but they serve story rather than providing empty thrills. The desert landscape provides natural spectacle.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Depth (9/10)</h3>
-                <p>The show explores what happens when someone discovers competence late, when pride combines with desperation, when providing for family becomes an excuse for power. Walter's famous admission—that he did it for himself—is the show's thesis stated explicitly: this was never about family; it was about feeling alive.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (9.5/10)</h3>
-                <p>Each episode builds tension that makes the next episode necessary. The plotting is dense without being confusing, with callbacks that reward attention. The show's engine is Walter's constant need to solve increasingly impossible problems, each solution creating the next problem.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (9.5/10)</h3>
-                <p>The finale is legendary for a reason: every character gets an ending that feels earned, every loose thread is addressed, but nothing is easy. Walter dies having admitted his motivations; Jesse escapes but traumatized. The conclusion satisfies without forgiving, which is exactly what the show always promised.</p>
-            </div>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Netflix</p>
+            <p><strong>UK:</strong> Netflix</p>
+        </div>
+    </div>
 </body>
 </html>
