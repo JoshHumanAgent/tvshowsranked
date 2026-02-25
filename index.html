@@ -3984,7 +3984,7 @@
 
         async function loadShowsData() {
             try {
-                const response = await fetch('data/shows/index.json');
+                const response = await fetch('data/shows/index.json?v=' + Date.now());
                 const data = await response.json();
                 shows = data.shows;
                 // Coerce any string finals to numbers (prevents .toFixed() crash)
