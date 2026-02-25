@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mad Men - "The Wheel" | Dynamic Rank Engine</title>
+    <title>Mad Men - "The Carousel" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #b71c1c; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #b71c1c, #7f0000); color: #ffcdd2; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #e53935; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #b8860b; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #b8860b, #8b6508); color: #fff8e1; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffd54f; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(183,28,28,0.3), rgba(0,0,0,0.9)); border: 3px solid #b71c1c; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #e53935; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(184,134,11,0.3), rgba(0,0,0,0.9)); border: 3px solid #b8860b; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ffd54f; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #b71c1c; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #e53935; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #b8860b; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffd54f; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(183,28,28,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #e53935; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(184,134,11,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ffd54f; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #e53935; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #ffd54f; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #4</div>
+            <div class="rank-badge">Rank #3</div>
             <h1>Mad Men</h1>
-            <p class="subtitle">"The Wheel"</p>
+            <p class="subtitle">"The Carousel"</p>
             <div class="score-badge">
-                <span class="score-value">8.57</span>
+                <span class="score-value">8.58</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -51,10 +51,10 @@
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Mad Men is television as literature. Matthew Weiner's portrait of 1960s advertising executives and the women who orbit them is a novel in moving pictures—patient, layered, committed to the messiness of human behavior. Don Draper (Jon Hamm) is a creative director with a secret past, a perfect suit, and an emptiness he can't fill. He's also the engine that drives the show, a man who reinvented himself and now can't figure out who he is.</p>
-            <p>The series begins in 1960 and ends in 1970, tracing a decade of American transformation through the lens of a single advertising agency. The historical detail is obsessive—every brand, every outfit, every ashtray is period-accurate—but the real history is internal. Peggy Olson (Elisabeth Moss) rises from secretary to copy chief, learning to survive in a world designed to exclude her. Joan Holloway (Christina Hendricks) builds power through charm and calculation, then discovers that power has limits. Roger Sterling (John Slattery) drinks and quips and slowly erodes. Pete Campbell (Vincent Kartheiser) schemes and fails and grows, against all expectations, into a person.</p>
-            <p>The show's emotional intelligence is staggering. It depicts racism, sexism, homophobia, anti-Semitism not as problems to be solved but as facts of the era, absorbed into characters' bones. It allows characters to be contradictory, unlikable, self-destructive, and still compelling. It builds to moments of devastating simplicity: Don pitching the Kodak carousel, Betty shooting pigeons, Lane's tragedy, Peggy's walk through the office in darkness. "The Wheel," season one's finale, contains one of television's most perfect monologues about nostalgia, memory, and pain.</p>
-            <p>Seven seasons, ninety-two episodes, perfect from start to finish. The finale brings Don to a retreat where he learns to meditate, then cuts to the 1971 Coke commercial. "I'd like to teach the world to sing." It's ironic, sincere, beautiful, and possibly the only ending that could contain everything the show was about. The wheel turns.</p>
+            <p>Mad Men takes place in the advertising world of 1960s New York, but it's really about the invention of modern identity. Don Draper (Jon Hamm) is a creative director with a secret—he's not Don Draper at all. He stole a dead man's identity during the Korean War, deserted the army, and built an entirely new life. He's selling himself, selling products, selling an American dream that's as constructed as his name.</p>
+            <p>The show uses its period setting to examine themes that feel modern: gender, race, sexuality, class, the performance of self. Betty Draper (January Jones) is a perfect housewife who's quietly suffocating. Peggy Olson (Elisabeth Moss) is a secretary who rises to copywriter while navigating a world that doesn't want her. Joan Harris (Christina Hendricks) uses her sexuality as power and is punished for it. The office is a pressure cooker of ambition, resentment, and desire.</p>
+            <p>Don Draper is one of television's great enigmas—a womanizer who can't connect, a genius who doubts himself, a self-made man who doesn't exist. His therapy sessions, his flashbacks to childhood, his desperate marriages—they all circle the same question: can you invent yourself into happiness? The show's answer is no, but you can keep trying. The carousel pitch, the most famous scene in the series, is Don selling nostalgia as a way home, but he has no home to return to.</p>
+            <p>Seven seasons, ninety-two episodes, one of television's great endings. Don ends up at a retreat, chanting, finding peace—and then cutting to the famous Coke ad. Did he create it? The show refuses to say. The ending is perfect: the product is happiness, the ad is life, and Don Draper might have finally learned to sell something he feels.</p>
         </div>
 
         <div class="section">
@@ -63,27 +63,27 @@
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">10</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Jon Hamm's Don Draper is iconic. The ensemble—Moss, Hendricks, Slattery, Kartheiser—is perfect.</p>
-            <p><strong>World Building (10):</strong> 1960s New York, recreated in obsessive detail. Every cigarette, every dress, every social code.</p>
-            <p><strong>Resolution (10):</strong> The Coke commercial. The perfect ending. "I'd like to teach the world to sing."</p>
+            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> 1960s America in stunning detail. Every object, every cigarette, every line of dialogue is period-perfect.</p>
+            <p><strong>Conceptual Density (10):</strong> Identity, advertising as philosophy, the American dream as self-invention. The show has more to say per scene than most do per season.</p>
+            <p><strong>Resolution (10):</strong> The Coke ad. "I'd like to buy the world a Coke." Don's journey ends exactly where it had to—in advertising.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Smoke Gets in Your Eyes" (S1E1)</strong> — The introduction. The meeting. "What you call love was invented by guys like me."</p>
-            <p><strong>"The Wheel" (S1E13)</strong> — The Kodak pitch. Nostalgia. "It's a twinge in your heart, far more powerful than memory alone."</p>
-            <p><strong>("Person to Person" (S7E14)</strong> — Series finale. The retreat. The Coke commercial. Perfection.</p>
+            <p><strong>"Smoke Gets in Your Eyes" (S1E1)</strong> — The introduction. The secret. "What you call love was invented by guys like me."</p>
+            <p><strong>("The Wheel" (S1E13)</strong> — The carousel pitch. "Nostalgia—it's delicate, but potent." Television's most famous scene.</p>
+            <p><strong>"Person to Person" (S7E14)</strong> — Series finale. The retreat. The Coke ad. Perfect.</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
             <p><strong>US:</strong> AMC+, Netflix</p>
-            <p><strong>UK:</strong> Sky Go, Netflix</p>
+            <p><strong>UK:</strong> Sky Go, NOW</p>
         </div>
     </div>
 </body>
