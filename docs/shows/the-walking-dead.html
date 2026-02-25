@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Walking Dead - "Survive Together" | Dynamic Rank Engine</title>
+    <title>The Walking Dead - "Fight the Dead" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #556b2f; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #556b2f, #2f3f1f); color: #9acd32; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #9acd32; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #4e342e; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #4e342e, #260e04); color: #d7ccc8; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #a1887f; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(85,107,47,0.3), rgba(0,0,0,0.9)); border: 3px solid #556b2f; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #9acd32; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(78,52,46,0.3), rgba(0,0,0,0.9)); border: 3px solid #4e342e; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #a1887f; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #556b2f; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #9acd32; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #4e342e; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #a1887f; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(85,107,47,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #9acd32; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(78,52,46,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #a1887f; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #9acd32; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #a1887f; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #172</div>
+            <div class="rank-badge">Rank #67</div>
             <h1>The Walking Dead</h1>
-            <p class="subtitle">"Survive Together"</p>
+            <p class="subtitle">"Fight the Dead"</p>
             <div class="score-badge">
-                <span class="score-value">7.43</span>
+                <span class="score-value">7.60</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -46,45 +46,44 @@
             <div class="info-item"><div class="info-label">Years</div><div class="info-value">2010-2022</div></div>
             <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">177</div></div>
             <div class="info-item"><div class="info-label">Network</div><div class="info-value">AMC</div></div>
-            <div class="info-item"><div class="info-label">Developer</div><div class="info-value">Frank Darabont</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Frank Darabont</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>The Walking Dead was a cultural phenomenon—zombie apocalypse television that ran for eleven seasons and launched a franchise. Deputy Sheriff Rick Grimes (Andrew Lincoln) wakes from a coma to find the world ended. The dead walk. His family is gone. He sets out to find them, eventually joining a group of survivors trying to hold onto humanity while losing pieces of themselves.</p>
-            <p>The show's best seasons (1-5, roughly) understood that zombies weren't the point. The walkers were environmental—dangerous, ever-present, but not interesting. The drama came from how people survive together. Who leads? Who follows? Who sacrifices? Who betrays? When civilization falls, what rules still apply?</p>
-            <p>The Governor (David Morrissey) introduced the first human antagonist—a man who built a sanctuary and ruled it through fear. Negan (Jeffrey Dean Morgan) escalated with the Saviors, a network of communities extorted into submission. The confrontation between Rick's group and Negan became the show's defining conflict, culminating in one of television's most brutal episodes.</p>
-            <p>The show struggled with its length. Characters stayed because actors stayed, not because stories demanded it. Beloved cast members left or were killed, and new arrivals rarely matched what was lost. Season 7-8 fatigue was real. Seasons 9-11, with Angela Kang running things, recovered quality but lost audience.</p>
-            <p>But at its peak, The Walking Dead was appointment television—graphically violent, emotionally devastating, unafraid to kill anyone. It proved horror could work on TV, that audiences would watch the bleakest content if it earned its darkness.</p>
+            <p>The Walking Dead was a cultural phenomenon. Based on Robert Kirkman's comic series, it debuted in 2010 as a zombie apocalypse drama unlike anything on television. Rick Grimes (Andrew Lincoln), a sheriff's deputy, wakes from a coma to find the world overrun by the walking dead. He searches for his family, finds them with a group of survivors outside Atlanta, and gradually becomes the leader they need—cold, ruthless, willing to do anything to protect his people.</p>
+            <p>The first season, written and directed largely by Frank Darabont (The Shawshank Redemption), is a lean six episodes that feel like genuine horror cinema. TheCDC episode, the search for Sophia, the reveal that everyone is infected—it's taut, terrifying, character-driven. Season two expands the scope: a farm, a pregnancy, a missing child, the discovery that death doesn't require a bite. The show asks what happens to civilization when it collapses. The zombies are dangerous, but other humans are worse. "We're the walking dead," Rick says later. He's right.</p>
+            <p>The show's peak is seasons four and five, when the group discovers a community called Terminus—only to find it's a cannibal cult. The action is brutal, the stakes apocalyptic, the character work surprising. But the show couldn't sustain its momentum. Years of repetitive cycles—find a community, lose it, find another, lose it—eroded audience goodwill. Characters died and were replaced by similar characters. The showrunners kept the zombie mythology vague because they never had answers.</p>
+            <p>Eleven seasons, 177 episodes, and multiple spin-offs. The Walking Dead outstayed its welcome—seasons eight through eleven are uneven, sometimes unwatchable. But for a few years, it was appointment television, the highest-rated drama on cable, a show that proved horror could work as a long-form narrative. "Fight the dead. Fear the living." The slogan was accurate. The walking dead were never the real threat.</p>
         </div>
 
         <div class="section">
             <h2>Why It Ranks</h2>
             <div class="dimension-grid">
-                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">7</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">6</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">6</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">5</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">6</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>World Building (8):</strong> 11 seasons created a sprawling post-apocalyptic world with communities, politics, and rules.</p>
-            <p><strong>Characters & Acting (7):</strong> Strong ensemble at its peak, but the constant cast churn diluted impact over time.</p>
-            <p><strong>Resolution (5):</strong> The show ran too long. The finale was serviceable but couldn't match earlier heights.</p>
+            <p style="margin-top:1.5rem"><strong>World Building (8):</strong> The zombie apocalypse as a lived-in world. Survival mechanics feel real and brutal.</p>
+            <p><strong>Characters & Acting (8):</strong> Andrew Lincoln's Rick Grimes is a compelling protagonist. The ensemble, especially Norman Reedus as Daryl, is strong.</p>
+            <p><strong>Resolution (6):</strong> The ending exists but feels incomplete. Spin-offs and movies dilute the closure.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Days Gone Bye" (S1E1)</strong> — Rick wakes. The world ended. Genre-defining pilot.</p>
-            <p><strong>"No Sanctuary" (S5E1)</strong> — Terminus. The escape. Peak intensity.</p>
-            <p><strong>"The Day Will Come When You Won't Be" (S7E1)</strong> — The lineup. Negan's bat. The death that broke everyone.</p>
+            <p><strong>"Days Gone Bye" (S1E1)</strong> — The hospital. The bicycle zombie. "Wake up."</p>
+            <p><strong>(No Sanctuary" (S5E1)</strong> — Terminus. The escape. Peak Walking Dead.</p>
+            <p><strong>"The Grove" (S4E14)</strong> — Lizzie and Mika. The tragedy of children in the apocalypse. Devastating.</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
             <p><strong>US:</strong> Netflix, AMC+</p>
-            <p><strong>UK:</strong> Disney+, Amazon Prime</p>
+            <p><strong>UK:</strong> Disney+</p>
         </div>
     </div>
 </body>
