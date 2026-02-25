@@ -3,77 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Crown - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>The Crown - "The Weight of the Crown" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #ffd700; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #ffd700, #b8860b); color: #1a1a1a; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffd700; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(255,215,0,0.3), rgba(0,0,0,0.9)); border: 3px solid #ffd700; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ffd700; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #ffd700; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffd700; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(255,215,0,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ffd700; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #ffd700; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>The Crown</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w200/placeholder.jpg" alt="The Crown Poster" class="show-poster">
-            <div class="show-info">
-                <h1>The Crown</h1>
-                <p class="show-meta">2016 • Historical Drama | 60 Episodes</p>
-                <div class="score-badge">Score: 8.35</div>
-                <div class="genres">History, Drama, Biography</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #75</div>
+            <h1>The Crown</h1>
+            <p class="subtitle">"The Weight of the Crown"</p>
+            <div class="score-badge">
+                <span class="score-value">7.68</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2016-2023</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">60</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Netflix</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Peter Morgan</div></div>
+        </div>
+
+        <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p class="vibe-text">The Crown is a historical drama about Queen Elizabeth II's reign from 1947 to the present, dramatizing the intersection of private life and public duty. Each season covers roughly a decade, with the queen played by different actors as she ages: Claire Foy (seasons 1-2), Olivia Colman (seasons 3-4), and Imelda Staunton (seasons 5-6). Peter Morgan's script balances historical record with dramatic invention, creating scenes that feel psychologically truthful even when they must be imagined.</p>
+            <p>The Crown is a decades-spanning saga about a job you can't quit. Queen Elizabeth II inherited the throne at 25 and reigned for 70 years. Peter Morgan's series follows her from wedding to funeral, showing how the crown shaped everyone it touched—her, her husband, her children, her prime ministers, her country.</p>
+            <p>The show is structured around recasting. Every two seasons, the actors change. Claire Foy plays young Elizabeth, learning the job while her husband Philip (Matt Smith) resents his reduced role. Olivia Colman plays middle-aged Elizabeth, watching her children's marriages collapse and her government change. Imelda Staunton plays elderly Elizabeth, the only monarch most Britons have ever known, confronting the twilight of her reign.</p>
+            <p>This could be gimmicky, but it works. The new actors bring new interpretations while the character remains recognizably herself. You see how a 25-year-old became a 90-year-old—how duty calcified into habit, how restraint became armor. Elizabeth is never cruel, never petty, never herself. She is the crown, and the crown has no personality.</p>
+            <p>The supporting characters provide the drama Elizabeth cannot. Margaret (Vanessa Kirby, then Helena Bonham Carter, then Lesley Manville) is the sister who had to give up love. Charles (Josh O'Connor, then Dominic West) is the heir who never wanted to wait. Diana (Emma Corrin, then Elizabeth Debicki) is the outsider destroyed by the institution. The show is at its best when showing how the royal family's rigid structures damage the people inside them.</p>
+            <p>Six seasons cover 70 years: the early reign, the Wilson years, the Diana era, the Blair years, and finally the William-Kate period and Elizabeth's death. The production is lavish—palaces, costumes, state occasions rendered in detail. But the show's real power is in quiet moments: Elizabeth watching news footage, Philip wondering what his life could have been, Charles trapped between his mother and his wife.</p>
+        </div>
 
-            <p>The show's subject is power and its costs. Elizabeth becomes queen at twenty-five, and the series follows her learning what monarchy means: that the crown is office as much as person, that duty supersedes desire, that having power is not the same as exercising it. Her relationships—with her husband Prince Philip, her sister Princess Margaret, her children, her prime ministers—are all complicated by her position. The show finds drama in constraint: a woman whose every word matters, whose silence is as significant as speech, who must be careful even with family.</p>
-
-            <p>What The Crown achieves against odds is making the monarchy interesting to audiences who may not particularly support it. The production values are lavish, the performances precise, the historical context well-researched. The fifth and sixth seasons, covering modern periods that viewers remember, lose some freedom because more is known, but the show maintains its focus on the tension between person and institution. This is history made personal, and person made historical.</p>
-
-            <h2>Why It Ranks Here</h2>
-            <p>The Crown earns its ranking through production values that match its subject, performances that dignify the history, and writing that finds human drama in public office. The score reflects prestige television at its most polished.</p>
-
-            <h2>The 7-Dimension Analysis</h2>
-
-            <div class="dimension">
-                <h3>Characters & Acting (8.5/10)</h3>
-                <p>The three queens create continuity across sixty years—Foy's steel beneath softness, Colman's weight of accumulated duty, Staunton's final-season reckoning. Supporting performances are equally strong: Matt Smith and Jonathan Pryce as Philip, John Lithgow as Churchill, Gillian Anderson as Thatcher. Every prime minister is fully realized.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">8</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Six seasons, three casts, all excellent. Claire Foy, Olivia Colman, Imelda Staunton create a coherent Elizabeth. The supporting casts match them.</p>
+            <p><strong>Visual Spectacle (10):</strong> Palaces, state occasions, period detail—all rendered with Netflix money. It looks as expensive as royalty should.</p>
+            <p><strong>Narrative Drive (7):</strong> By nature episodic. Decades of reign don't build to a climax—they just accumulate. The Diana seasons are the most propulsive.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (8.5/10)</h3>
-                <p>Decades of British history recreated with production values that match feature films: Buckingham Palace interiors, royal estates, period-accurate costumes and sets. The scale is impressive, the attention to detail convincing. The world feels inhabited rather than visited.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Wolferton Splash" (S1E1)</strong> — Elizabeth's wedding. The beginning. The crown awaits.</p>
+            <p><strong>"Fairytale" (S4E3)</strong> — Charles and Diana's wedding. The fairy tale that wasn't.</p>
+            <p><strong>"Ritz" (S6E10)</strong> — Princess Margaret's end. One of television's most beautiful death scenes.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (8/10)</h3>
-                <p>Every frame looks expensive. The direction alternates between intimate conversation and ceremonial grandeur. Some episodes are visually stunning; all are competent. The scale of the subject is matched by scale of visual approach.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (5/10)</h3>
-                <p>The spectacle is production design—the palaces, the ceremonies, royal events as television events. This isn't effects or action spectacle; it's pageantry and period detail. The coronation, the weddings, the state funerals are rendered with appropriate scale.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Depth (7/10)</h3>
-                <p>The show genuinely explores duty, the costs of position, the tension between public role and private desire. Elizabeth's dilemma—crown first, family second—is recurring and real. History provides the story; drama finds the human beneath the institutional.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (7/10)</h3>
-                <p>Seasonal structures follow Elizabeth through decades, with prime ministers and family crises providing episodic focus. The show can feel episodic rather than cumulative—each season resets with new decade, new cast, new politics. Some seasons move better than others.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (7/10)</h3>
-                <p>The six seasons cover Elizabeth's life to its end, stopping at Charles's ascension rather than continuing. The conclusion feels appropriate to the subject—the queen's death, the transition to her son. History provides structure; the show provides dramatic interpretation.</p>
-            </div>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US/UK:</strong> Netflix</p>
+        </div>
+    </div>
 </body>
 </html>
