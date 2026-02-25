@@ -3,78 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Six Feet Under - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>Six Feet Under - "Everyone's Waiting" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #2d4a2d; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #2d4a2d, #1a2d1a); color: #90ee90; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #98fb98; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(45,74,45,0.3), rgba(0,0,0,0.9)); border: 3px solid #2d4a2d; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #98fb98; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #2d4a2d; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #98fb98; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(45,74,45,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #98fb98; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #98fb98; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>Six Feet Under</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w200/8G7H6j5K4z2B8M3fK9xL5vP7nW.jpg" alt="Six Feet Under Poster" class="show-poster">
-            <div class="show-info">
-                <h1>Six Feet Under</h1>
-                <p class="show-meta">2001 - 2005 • HBO • 63 Episodes</p>
-                <div class="score-badge">Score: 7.18</div>
-                <div class="genres">Drama, Family</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #82</div>
+            <h1>Six Feet Under</h1>
+            <p class="subtitle">"Everyone's Waiting"</p>
+            <div class="score-badge">
+                <span class="score-value">7.68</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
-            <h2>What It Feels Like</h2>
-            <p class="vibe-text">
-                The Fisher family runs a funeral home in Los Angeles. Nathaniel Fisher dies; his sons Nate and David must run the business. Each episode begins with a death—the client they'll serve. Alan Ball created television's most honest show about mortality: the family, the business, the grief, the life that continues. The finale is legendary.
-            </p>
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2001-2005</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">63</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">HBO</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Alan Ball</div></div>
+        </div>
 
-            <h2>The 7-Dimension Analysis</h2>
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Six Feet Under is about a family that runs a funeral home, which means it's about death every week. But it's really about life—how we avoid it, how we face it, how we pretend it won't happen to us. Each episode opens with a death: some random, some expected, some absurd. Then we follow the.body to Fisher & Sons, where the Fisher family will prepare it while their own lives fall apart.</p>
+            <p>Nate Fisher (Peter Krause) returns home when his father dies, planning to leave but getting pulled back into the family business. David (Michael C. Hall) is the closeted gay son who stayed, running the funeral home with rigid precision. Claire (Lauren Ambrose) is the artistic youngest child, lost and angry. Ruth (Frances Conroy) is their mother, widowed and suddenly free, trying to figure out who she is after decades of being a wife.</p>
+            <p>The show is funny in ways HBO hadn't been before. It's dark comedy—conversations with corpses, hallucinated debates with dead fathers, funeral mishaps—but it's also deeply sad. These are people who can't connect, who want to be known and are terrified of being known. Nate runs from commitment. David runs from himself. Claire runs from everything. Ruth doesn't know how to run, so she just hurts.</p>
+            <p>The series finale is often cited as the best in television history. "Everyone's Waiting" shows each character's death—not in a flash-forward, but in a montage that plays as Sia's "Breathe Me" builds. We see how they die, when they die, and we understand that death is not tragedy but completion. The show that began every episode with a death ends by showing us everyone's death, and it feels like a gift.</p>
+            <p>This is a show about acceptance. Accepting mortality. Accepting family. Accepting yourself. It's also about funeral directing, embalming, grief counseling, and the business of death. The Fishers are good at their jobs because they can't manage their own lives—but they're learning.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Characters & Acting (9/10)</h3>
-                <p>Peter Krause as Nate, Michael C. Hall as David, Frances Conroy as Ruth, Lauren Ambrose as Claire—the Fisher family is among television's most real. The supporting cast (Rachel Griffiths, Mathew St. Patrick, Jeremy Sisto) creates a community. The performances are HBO-quality: raw, committed, specific.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">5</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">10</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> The Fisher family is one of television's great ensembles. Peter Krause, Michael C. Hall, Frances Conroy, Lauren Ambrose—each creates a character you know completely.</p>
+            <p><strong>Resolution (10):</strong> The finale is perfect. The death montage. The acceptance. The completion. It's the standard against which all finales are measured.</p>
+            <p><strong>Conceptual Density (8):</strong> Death, grief, family, sexuality, mental illness—the show tackles everything with intelligence and dark humor.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (8/10)</h3>
-                <p>The Fisher & Sons funeral home: the residence above, the embalming room below, the family dynamics everywhere. The world is specific to place and profession. Death is the business; life is the complication.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Pilot" (S1E1)</strong> — The father dies. Nate returns. The family business begins.</p>
+            <p><strong>"That's My Dog" (S4E5)</strong> — David's carjacking. A trauma that defines his recovery.</p>
+            <p><strong>"Everyone's Waiting" (S5E12)</strong> — The finale. Everyone's death. The best ending in television.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (7/10)</h3>
-                <p>HBO production early 2000s: functional, observational, the funeral home as character. The style serves the intimacy. The death sequences at the start of each episode are distinctive.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (2/10)</h3>
-                <p>No spectacle. This is death and family: bodies, grief, arguments, love. The "spectacle" is emotional—watching people confront mortality. The most unspectacular spectacular show.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Density (10/10)</h3>
-                <p>Death, grief, family, sexuality, mental health, purpose, what we leave behind. The show explores mortality without sentimentality. Each death is a meditation; each episode is philosophy through character. Among television's most thoughtful shows.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (7/10)</h3>
-                <p>Each episode has a death and a funeral; the serialized arcs follow the family. Nate's relationships, David's sexuality, Ruth's late-life reinvention, Claire's art. The drive is life—messy, complicated, continuing.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (10/10)</h3>
-                <p>Five seasons with the greatest finale in television history. The last ten minutes show every character's death—what happens to them, when, how. The ending is devastating and beautiful. Complete and perfect.</p>
-            </div>
-        </section>
-
-        <section class="streaming-info">
+        <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US:</strong> Max, Amazon Prime Video</p>
-            <p><strong>UK:</strong> Sky/Now TV, Amazon Prime Video</p>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+            <p><strong>US:</strong> Max</p>
+            <p><strong>UK:</strong> Sky Go</p>
+        </div>
+    </div>
 </body>
 </html>
