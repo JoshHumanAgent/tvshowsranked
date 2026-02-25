@@ -3,77 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>American Horror Story - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>American Horror Story - "Terror never ends" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #150515 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #7b1fa2; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #7b1fa2, #4a148c); color: #e1bee7; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ce93d8; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(123,31,162,0.3), rgba(0,0,0,0.9)); border: 3px solid #7b1fa2; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ce93d8; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #7b1fa2; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ce93d8; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(123,31,162,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ce93d8; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #ce93d8; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>American Horror Story</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w200/placeholder.jpg" alt="American Horror Story Poster" class="show-poster">
-            <div class="show-info">
-                <h1>American Horror Story</h1>
-                <p class="show-meta">2011 • Horror Anthology | Ongoing</p>
-                <div class="score-badge">Score: 7.15</div>
-                <div class="genres">Horror, Drama, Anthology</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #93</div>
+            <h1>American Horror Story</h1>
+            <p class="subtitle">"Terror never ends"</p>
+            <div class="score-badge">
+                <span class="score-value">7.13</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2011-</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">136</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">FX</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Ryan Murphy, Brad Falchuk</div></div>
+        </div>
+
+        <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p class="vibe-text">American Horror Story reinvented television horror by treating each season as a self-contained story with recurring actors playing different roles. The anthology format freed creators Ryan Murphy and Brad Falchuk from the sustainability problem that plagues horror series—how do you maintain scares across years? Instead, each season offers a fresh nightmare: a haunted house, an asylum, a witch coven, a freak show, a haunted hotel. Some seasons work better than others, but the format keeps the concept alive long after a traditional horror series would have exhausted itself.</p>
+            <p>American Horror Story is anthology horror as television event. Each season: a new story, new characters, same actors in new roles. The concept allows reinvention—Murder House (haunted house), Asylum (mental institution), Coven (witches), Freak Show (circus), Hotel (vampires), Roanoke (lost colony), Cult (politics), Apocalypse (end of the world), 1984 (slasher), Double Feature (aliens/vampires), NYC (serial killer). The quality varies wildly: Asylum and Coven are heights; Freak Show and Hotel are valleys; Roanoke surprises; Cult polarizes.</p>
+            <p>The show's strength is its performers. Jessica Lange was the original queen—Constance in Murder House, Sister Jude in Asylum, Fiona in Coven, Elsa in Freak Show. When she left, Sarah Paulson continued: Bette and Dot in Freak Show, Sally in Hotel, Ally in Cult, Cordelia in Apocalypse. Evan Peters does everything: ghost, serial killer, cult leader, alien. Angela Bassett, Kathy Bates, Denis O'Hare—the repertory company commits fully, no matter how ridiculous the material becomes.</p>
+            <p>Ryan Murphy's aesthetic is camp horror: excessive, stylish, self-aware. The scares are genuine, but so is the absurdity. The show's thesis: horror is flexible. It can be ghosts, demons, aliens, serial killers, politics itself. The anthology format allows experimentation: documentary style in Roanoke, found footage in 1984, meta-commentary throughout. Some seasons collapse under their own weight (Apocalypse tried to connect previous seasons, with mixed results); others sustain perfectly (Asylum remains the gold standard).</p>
+            <p>Twelve seasons, 136 episodes, ongoing. American Horror Story invented modern anthology television—American Crime Story, Feud, and others followed its model. It's uneven, occasionally brilliant, always watchable. "Horror never dies," Murphy seems to say. Each season is a new nightmare. Some are genuinely frightening; some are just fun. All are committed. The actors return because it's a playground. The audience returns because anything can happen.</p>
+        </div>
 
-            <p>The show's aesthetic is Baroque horror: elaborate production design, theatrical performances, violence that borders on the operatic. Jessica Lange became the series' signature across her four seasons, bringing theatrical gravitas to roles that could have been simple genre exercises. Sarah Paulson has appeared in every season, a chameleon who embodies each new victim or villain with complete commitment. The ensemble approach creates a repertory company feel—actors return each season in fresh configurations, and the pleasure is in watching them transform.</p>
-
-            <p>What makes American Horror Story work when it works is its commitment to excess. The horror isn't subtle; it's overwhelming, designed to create an affective response through accumulation. A season might begin with haunted house tropes but expand to include Nazi experiments, alien abduction, religious fanaticism, and serial killers—the kitchen sink approach that can feel exhausting or liberating depending on your tolerance. When the seasons fail, it's usually because the excess overwhelms the story; when they succeed, it's because the excess becomes a kind of visual poetry.</p>
-
-            <h2>Why It Ranks Here</h2>
-            <p>American Horror Story earns its ranking through formal innovation and high production values, but inconsistent quality across seasons prevents higher placement. Some seasons are masterpieces; others are messes. The score reflects a show that pioneered anthology horror on television.</p>
-
-            <h2>The 7-Dimension Analysis</h2>
-
-            <div class="dimension">
-                <h3>Characters & Acting (7.5/10)</h3>
-                <p>The repertory company approach creates continuity across seasons while allowing transformation. Jessica Lange's theatrical intensity, Sarah Paulson's chameleon commitment, Evan Peters' versatility—these performances transcend the genre material. Quality varies by season, but the acting is rarely the problem.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">7</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (8):</strong> Repertory company of excellent actors. Jessica Lange, Sarah Paulson, Evan Peters deliver iconic performances.</p>
+            <p><strong>Cinematography (8):</strong> Murphy's stylish aesthetic. Each season has distinct visual identity. Horror as art direction.</p>
+            <p><strong>Resolution (7):</strong> Each season concludes, but quality varies. Asylum nails it; others fumble. Anthology format means no series arc needed.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (8/10)</h3>
-                <p>Each season builds a distinct world with elaborate production design. The Murder House, Briarcliff Manor, Miss Robichaux's Academy, the Freak Show camp—each location is rendered with attention to period detail and atmospheric menace. The worlds are fully realized if sometimes overstuffed.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>Asylum (Season 2)</strong> — The gold standard. Sister Jude's fall, Bloody Face, the aliens. Jessica Lange at her peak.</p>
+            <p><strong>Coven (Season 3)</strong> — Witches in New Orleans. Fiona Goode is iconic. Fun, stylish, less scary.</p>
+            <p><strong>Murder House (Season 1)</strong> — The introduction. Haunted house done right. Violet's discovery. The basement.</p>
+            <p><strong>Roanoke (Season 6)</strong> — The surprise. Documentary format. The Twisties. Meta-horror done well.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (7/10)</h3>
-                <p>The show has a distinctive visual style: saturated colors, dramatic lighting, compositions that emphasize theatricality over realism. The direction serves the heightened aesthetic. Some seasons look better than others, but the visual identity is consistent.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (7/10)</h3>
-                <p>Horror as spectacle: elaborate killings, supernatural manifestations, grotesque imagery that pushes television limits. The effects work is impressive for television budgets. The spectacle can overwhelm story, but it's undeniably present.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Depth (5/10)</h3>
-                <p>Themes vary by season—trauma, marginalization, American history's darkness—but the excess often overwhelms the ideas. The show is more interested in affect than meaning. When it connects, it's because the surface creates genuine unease rather than intellectual engagement.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (6.5/10)</h3>
-                <p>Individual seasons have clear momentum, but the plotting often accelerates toward endings that feel rushed. The anthology format means each season must establish and resolve in limited episodes, sometimes leading to structural cramming. Quality varies significantly between seasons.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (6/10)</h3>
-                <p>Season finales tend toward the apocalyptic—everyone dies, or nothing matters, or revelations undo what came before. The nihilistic endings fit the horror but can feel unearned. Some seasons resolve successfully; others collapse under accumulated excess.</p>
-            </div>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Hulu, FX</p>
+            <p><strong>UK:</strong> Disney+</p>
+        </div>
+    </div>
 </body>
 </html>
