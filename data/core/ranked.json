@@ -2353,7 +2353,15 @@
       "spect": 8,
       "conc": 7.5,
       "drive": 7.5,
-      "resol": 7
+      "resol": 7,
+      "genres": [
+        "drama",
+        "war",
+        "historical"
+      ],
+      "tmdbId": 126308,
+      "tmdbVote": 8.4,
+      "tmdbCount": 1635
     },
     {
       "rank": 75,
@@ -7465,7 +7473,7 @@
       "episodes": 16,
       "poster": "https://image.tmdb.org/t/p/w500/kf5Hz70tjNAHg4swGDzOr9BfoZ1.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/NNC08YmJFFlLi1prBkK8quk3dp.jpg"
     },
     {
       "rank": 243,
@@ -8813,7 +8821,7 @@
       "episodes": 6,
       "poster": "https://image.tmdb.org/t/p/w500/vKDUmKO6F9bSKKyHhg7YGbgcEeF.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/1uegR4uAxRxiMyX4nQnpzbXhrTw.jpg"
     },
     {
       "rank": 290,
@@ -9339,7 +9347,16 @@
       "spect": 6,
       "conc": 7.5,
       "drive": 8,
-      "resol": 6
+      "resol": 6,
+      "genres": [
+        "mystery",
+        "drama",
+        "action",
+        "thriller"
+      ],
+      "tmdbId": 110316,
+      "tmdbVote": 8.114,
+      "tmdbCount": 2611
     },
     {
       "rank": 308,
@@ -9678,7 +9695,7 @@
       "episodes": 6,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/aMdyIlsYTcX3DwxczTGsHh0dTre.jpg"
     },
     {
       "rank": 320,
@@ -9817,7 +9834,7 @@
       "episodes": 12,
       "poster": "https://image.tmdb.org/t/p/w500/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/8hp2CuGnw1iP5dLBVMAPUv23swx.jpg"
     },
     {
       "rank": 325,
@@ -10116,7 +10133,12 @@
       "resol": 7,
       "tmdbId": 225008,
       "tmdbVote": 8.869,
-      "tmdbCount": 108
+      "tmdbCount": 108,
+      "genres": [
+        "drama",
+        "mystery",
+        "crime"
+      ]
     },
     {
       "rank": 336,
@@ -10166,7 +10188,7 @@
       "episodes": 8,
       "poster": "https://image.tmdb.org/t/p/w500/l1jeSEm6a88GFcLzlHQr60D0dOi.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/7TYMho2TM6ZcqSv6YaEjlNIyhXn.jpg"
     },
     {
       "rank": 338,
@@ -10354,7 +10376,7 @@
       "episodes": 8,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/qbVVkks3T96RtSZwsLt3ml3XaaO.jpg"
     },
     {
       "rank": 345,
@@ -12078,7 +12100,7 @@
       "episodes": 30,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/wHNwlE6ftEpgjVbdhLXOtv1hLs0.jpg"
     },
     {
       "rank": 407,
@@ -12134,7 +12156,7 @@
       "episodes": 10,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/iEEVilWsAW6z2I8aJxbuMNJP4UC.jpg"
     },
     {
       "rank": 409,
@@ -12266,7 +12288,7 @@
       "episodes": 4,
       "poster": "https://image.tmdb.org/t/p/w500/vpfJK9F0UJNcAIIeC42oJyKMnZQ.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/hoVuI69nygLQBJ4FqgRKnukDeKt.jpg"
     },
     {
       "rank": 414,
@@ -12436,7 +12458,7 @@
       "episodes": 12,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/9GDAhMVrLow2Bpe7cmekDu4cCMY.jpg"
     },
     {
       "slug": "sanctuary",
@@ -12459,7 +12481,11 @@
       "resol": 5.5,
       "tmdbId": 210269,
       "tmdbVote": 7.728,
-      "tmdbCount": 57
+      "tmdbCount": 57,
+      "genres": [
+        "drama",
+        "sports"
+      ]
     },
     {
       "rank": 421,
@@ -12538,7 +12564,7 @@
       "episodes": 10,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/hEWZyCrzbVIqyMVUPimBDvyRMN8.jpg"
     },
     {
       "rank": 424,
@@ -12595,7 +12621,7 @@
       "episodes": 45,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/op9asj5tw6iRxza2VklzdOp7rj2.jpg"
     },
     {
       "rank": 426,
@@ -12619,7 +12645,7 @@
       "episodes": 8,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/bf1ap2AHmdxeijs2QBeK6Uyo4v.jpg"
     },
     {
       "rank": 427,
@@ -12894,7 +12920,7 @@
       "episodes": 8,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/pj030udP1Y8GLuGnwC3oE6w4u9S.jpg"
     },
     {
       "rank": 438,
@@ -12964,7 +12990,7 @@
       "episodes": 12,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
       "streaming": null,
-      "backdrop": null
+      "backdrop": "https://image.tmdb.org/t/p/original/kDfJAKWJIjrRmTjxU6KM9S0wlt1.jpg"
     },
     {
       "rank": 441,
