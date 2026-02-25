@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yellowstone - "Train Station" | Dynamic Rank Engine</title>
+    <title>Yellowstone - "The Ranch" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #bf360c; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #bf360c, #6d1a00); color: #ffccbc; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ff8a65; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #5d4037; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #5d4037, #3e2723); color: #efebe9; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #a1887f; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(191,54,12,0.3), rgba(0,0,0,0.9)); border: 3px solid #bf360c; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #ff8a65; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(93,64,55,0.3), rgba(0,0,0,0.9)); border: 3px solid #5d4037; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #a1887f; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #bf360c; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ff8a65; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #5d4037; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #a1887f; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(191,54,12,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #ff8a65; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(93,64,55,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #a1887f; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #ff8a65; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #a1887f; font-weight: 700; }
     </style>
 </head>
 <body>
@@ -35,9 +35,9 @@
         <div class="hero">
             <div class="rank-badge">Rank #63</div>
             <h1>Yellowstone</h1>
-            <p class="subtitle">"Train Station"</p>
+            <p class="subtitle">"The Ranch"</p>
             <div class="score-badge">
-                <span class="score-value">7.68</span>
+                <span class="score-value">7.65</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -51,33 +51,33 @@
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Yellowstone is a modern Western with Shakespearean ambitions. Kevin Costner plays John Dutton, patriarch of the largest ranch in Montana, a man who will do anything—legal or illegal—to protect his land from developers, Native American claims, and government interference. The show is a study in power: who has it, who wants it, what people will sacrifice to keep it.</p>
-            <p>The Dutton family is a collection of damaged warriors. There's Beth (Kelly Reilly), the daughter who's never recovered from her mother's death and channels her rage into corporate warfare. There's Kayce (Luke Grimes), the former Navy SEAL who married a Native woman and lives on the reservation. There's Jamie (Wes Bentley), the adopted son and Harvard-educated lawyer who's never good enough. And there's Rip (Cole Hauser), the foreman who's been raised as a son and serves as the ranch's enforcer. They love each other viciously, betray each other constantly, and close ranks against any outside threat.</p>
-            <p>Taylor Sheridan writes the West as it wishes it was: rugged, honorable, violent. The show's politics are conservative in the old sense—suspicious of government, protective of tradition, convinced that the world is changing for the worse. But it's also surprisingly critical of its own characters. The Duttons are monsters by any reasonable standard. They have people killed. They manipulate elections. They use the legal system as a weapon. And yet the show asks: what would you sacrifice for your home?</p>
-            <p>Five seasons, currently ongoing. The show became a cultural phenomenon, spawning prequels (1883, 1923) and making "train station" a euphemism for murder. It's soap opera for people who think they hate soap operas—melodrama in cowboy hats, with beautiful scenery and brutal violence. Costner's departure in season five created chaos both on and off screen, but the show's power remains: a vision of America that the country tells itself, even as it falls apart.</p>
+            <p>Yellowstone is a modern western about the Dutton family, who control the largest contiguous ranch in the United States. John Dutton (Kevin Costner) is the patriarch—part land baron, part crime boss, part feudal lord. He'll do anything to protect his land from developers, politicians, and the Broken Rock Indian Reservation that borders it. "I make my own rules," he says, and he means it. Murder, blackmail, corruption—the Duttons use every tool available to hold their kingdom.</p>
+            <p>The show is a blend of family drama and western noir. John's children are his lieutenants: Jamie (Wes Bentley), the Harvard-educated lawyer who desperately seeks his father's approval; Beth (Kelly Reilly), the ruthless businesswoman who's also a hurricane of self-destruction; Kayce (Luke Grimes), the former Navy SEAL torn between the ranch and his wife's people on the reservation. The family dynamics are Shakespearean—betrayal, loyalty, power struggles, and the question of succession that hangs over everything.</p>
+            <p>Taylor Sheridan writes about the American West with both romanticism and clarity. The landscape is breathtaking—the Montana mountains, the river valleys, the endless sky—but Sheridan doesn't pretend this is a simpler time. The Duttons are the last of their kind, holding back a tide of development and modernity. Whether they're heroes or villains depends on your perspective. The show is a western, but it's also about America: who owns the land, who belongs, what we're willing to do to protect what's ours.</p>
+            <p>Five seasons, fifty-three episodes, a massive hit that spawned multiple spin-offs. Kevin Costner left before the final episodes, creating an awkward ending—John Dutton dies off-screen, and the focus shifts to Beth and Kayce. The show isn't perfect: it's melodramatic, politically loaded, and sometimes silly. But the scale is ambitious, the performances are committed (especially Reilly as Beth), and the images are gorgeous. It's a soap opera in cowboy boots, and millions of viewers couldn't look away.</p>
         </div>
 
         <div class="section">
             <h2>Why It Ranks</h2>
             <div class="dimension-grid">
-                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">6</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">6</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Kelly Reilly's Beth is one of TV's most magnetic villains. Costner is iconic even when phoning it in.</p>
-            <p><strong>Cinematography (9):</strong> Montana photographed like a cathedral. Every frame is a postcard.</p>
-            <p><strong>Resolution (6):</strong> Ongoing. Costner's departure created uncertainty. The ending remains unclear.</p>
+            <p style="margin-top:1.5rem"><strong>World Building (9):</strong> The Yellowstone Dutton Ranch is a complete, lived-in world. Montana becomes a character in itself.</p>
+            <p><strong>Cinematography (10):</strong> Montana never looked better. Every frame is postcard-quality. The landscape is the show's secret weapon.</p>
+            <p><strong>Characters & Acting (8):</strong> Kevin Costner is perfectly cast. Kelly Reilly's Beth isunforgettable—fierce, damaged, impossible to ignore.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Daybreak" (S1E1)</strong> — The fence. The horses. "I'm not a good man."</p>
-            <p><strong>("The Unraveling: Part 2" (S2E10)</strong> — The Beck brothers. The standoff. Rip's loyalty.</p>
-            <p><strong>"The World Is Purple" (S3E10)</strong> — The attacks. The bombs. "This is war."</p>
+            <p><strong>"Daybreak" (S1E1)</strong> — The introduction. The land. "I'm the opposite ofprogress."</p>
+            <p><strong>(The Unraveling: Part 1" (S2E9)</strong> — The attack on the ranch. Beth's survival. Everything escalates.</p>
+            <p><strong>"Meaner Than Evil" (S3E7)</strong> — The diner scene. Beth destroys a corporate foe. Iconic.</p>
         </div>
 
         <div class="section">
