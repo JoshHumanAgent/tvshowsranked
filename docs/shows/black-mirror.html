@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Mirror - "I'm Not a Person Now" | Dynamic Rank Engine</title>
+    <title>Black Mirror - "Be right back" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #37474f; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #37474f, #263238); color: #cfd8dc; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #90a4ae; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #424242; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #424242, #212121); color: #e0e0e0; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #bdbdbd; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(55,71,79,0.3), rgba(0,0,0,0.9)); border: 3px solid #37474f; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #90a4ae; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(66,66,66,0.3), rgba(0,0,0,0.9)); border: 3px solid #424242; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #bdbdbd; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #37474f; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #90a4ae; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #424242; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #bdbdbd; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(55,71,79,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #90a4ae; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(66,66,66,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #bdbdbd; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #90a4ae; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #bdbdbd; font-weight: 700; }
     </style>
 </head>
 <body>
@@ -35,26 +35,26 @@
         <div class="hero">
             <div class="rank-badge">Rank #17</div>
             <h1>Black Mirror</h1>
-            <p class="subtitle">"I'm Not a Person Now"</p>
+            <p class="subtitle">"Be right back"</p>
             <div class="score-badge">
-                <span class="score-value">8.25</span>
+                <span class="score-value">8.15</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
 
         <div class="info-grid">
             <div class="info-item"><div class="info-label">Years</div><div class="info-value">2011-</div></div>
-            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">34</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">27</div></div>
             <div class="info-item"><div class="info-label">Network</div><div class="info-value">Netflix</div></div>
             <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Charlie Brooker</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Black Mirror is The Twilight Zone for the digital age—an anthology where technology is the monster. Each episode is a self-contained story exploring our relationship with phones, social media, artificial intelligence, Surveillance, and the commodification of human experience. The title refers to the dark screen of your phone when it's off: a black mirror reflecting your face.</p>
-            <p>The first two seasons aired on Channel 4 in Britain and established the template: "Fifteen Million Merits" (cycling prisoners earning merits to buy digital upgrades), "The Entire History of You" (a recording implant that lets you replay memories, destroying relationships in the process), "Be Right Back" (a grieving woman commissions an AI recreation of her dead boyfriend). TheNetflix era expanded the scale—"USS Callister" (a toxic tech bro traps digital clones in a Star Trek-like game), "San Junipero" (two women find love in a digital afterlife), "Nosedive" (a social credit dystopia where ratings determine everything).</p>
-            <p>Not every episode lands—the show's hit rate declined in later seasons—but the best episodes are among the finest science fiction ever televised. The genius is taking current technology one step further and watching society break. "I'm not a person now," a character says in "White Christmas," realizing she's been digitally blocked. The show keeps asking: What does technology make of us?</p>
-            <p>Seven seasons (as of 2024), thirty-four episodes, with more planned. The show's strength is its flexibility—comedy, horror, romance, thriller, all under one banner. "San Junipero" won Emmys. "USS Callister" spawned a sequel. "Bandersnatch" was interactive. Black Mirror is a delivery system for anxiety about our digital future. It's essential viewing for anyone who's ever felt their phone was watching them.</p>
+            <p>Black Mirror is a technology Twilight Zone—each episode a standalone story about how our devices destroy us. "The black mirror" is the screen you see when your phone goes dark: yourself, reflected. The show's thesis: technology amplifies human nature—our cruelty, our vanity, our loneliness. It makes us more of what we already are. Usually, that's worse.</p>
+            <p>The episodes vary wildly: " Fifteen Million Merits" is a dystopia where people earn credits by cycling and spend them on entertainment; "The Entire History of You" imagines eye implants that record everything, enabling perfect memory—and destroying relationships. "Be Right Back" asks if an AI clone of a dead lover can ever be enough. "White Bear" traps a woman in a terrifying game of cat and mouse that turns out to be justice as entertainment. "San Junipero" lets the dead upload their consciousness to a digital afterlife—and love each other there. It's the show's most hopeful episode, which only makes the others feel darker.</p>
+            <p>Charlie Brooker creates each episode as a miniature film—different casts, different settings, different genres. Quality varies: seasons four and five had misses alongside hits. But the best episodes—"San Junipero," "USS Callister," "Shut Up and Dance," "Nosedive"—are among television's most thought-provoking hours. The show predicted deepfakes, social credit systems, and algorithm-driven society. It also captured the feeling of living online: observed, ranked, anxious.</p>
+            <p>Seven seasons, twenty-seven episodes, ongoing. Black Mirror is essential viewing for the social media age. It's not anti-technology; it's anti-blithe optimism. "The thing about technology is: everything that's created can be used for good or bad," Brooker says. The show asks: what happens when we build something we don't understand? We usually find out too late.</p>
         </div>
 
         <div class="section">
@@ -68,17 +68,17 @@
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">8</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Conceptual Density (10):</strong> Each episode is a philosophical thought experiment. Technology as horror. Deeply relevant, constantly prescient.</p>
-            <p><strong>World Building (9):</strong> Each episode creates a complete world. The anthology format allows wild variation.</p>
-            <p><strong>Resolution (8):</strong> Anthology means no overarching resolution—but individual episodes stick landings ("San Junipero," "USS Callister").</p>
+            <p style="margin-top:1.5rem"><strong>Conceptual Density (10):</strong> The best science fiction on TV. Every episode asks: what does this technology do to us? Profound.</p>
+            <p><strong>World Building (9):</strong> Each episode a complete universe. "San Junipero," "USS Callister," "Nosedive"—distinct, believable, terrifying.</p>
+            <p><strong>Resolution (8):</strong> Anthology format means each episode ends itself. "San Junipero" ends perfectly. Others leave scars.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"San Junipero" (S3E4)</strong> — Two women find love in a digital afterlife. The show's most hopeful hour.</p>
-            <p><strong>(USS Callister" (S4E1)</strong> — Toxic masculinity meets Star Trek. Darkly funny, visually stunning.</p>
-            <p><strong>"White Bear" (S2E2)</strong> — A woman wakes with amnesia. The twist is devastating.</p>
-            <p><strong>"The Entire History of You" (S1E3)</strong> — Perfect marriages destroyed by perfect memory. Unbearable tension.</p>
+            <p><strong>"Fifteen Million Merits" (S1E2)</strong> — The cycling dystopia. Talent as commodity. Heartbreaking.</p>
+            <p><strong>"White Bear" (S2E2)</strong> — The game. The twist. Justice as entertainment.</p>
+            <p><strong>"San Junipero" (S3E4)</strong> — The afterlife. The love story. The hope. Emmy winner.</p>
+            <p><strong>"USS Callister" (S4E1)</strong> — Star Trek riff. Toxic fandom. Digital clones. Emmy winner.</p>
         </div>
 
         <div class="section">
