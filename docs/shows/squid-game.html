@@ -3,77 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squid Game - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>Squid Game - "Red Light, Green Light" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #e91e63; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #e91e63, #880e4f); color: #fce4ec; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #f48fb1; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(233,30,99,0.3), rgba(0,0,0,0.9)); border: 3px solid #e91e63; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #f48fb1; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #e91e63; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #f48fb1; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(233,30,99,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #f48fb1; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #f48fb1; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>Squid Game</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w200/placeholder.jpg" alt="Squid Game Poster" class="show-poster">
-            <div class="show-info">
-                <h1>Squid Game</h1>
-                <p class="show-meta">2021 • Korean Thriller • 9 Episodes</p>
-                <div class="score-badge">Score: 8.45</div>
-                <div class="genres">Thriller, Drama</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #130</div>
+            <h1>Squid Game</h1>
+            <p class="subtitle">"Red Light, Green Light"</p>
+            <div class="score-badge">
+                <span class="score-value">7.53</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Year</div><div class="info-value">2021</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">9</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Netflix</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Hwang Dong-hyuk</div></div>
+        </div>
+
+        <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p class="vibe-text">Squid Game is a Korean thriller about 456 people so desperate for money that they agree to play children's games for a massive cash prize, where losing means death. It became a global phenomenon because it understood something fundamental about late capitalism: the desperation isn't just financial—it's existential. These people aren't playing for luxury; they're playing for survival in a system that has already decided they're disposable.</p>
+            <p>Squid Game is South Korean survival drama that became a global phenomenon. 456 people in desperate financial circumstances are invited to play children's games. The prize is 45.6 billion won (about $38 million). The catch: if you lose, you die. The games are simple—Red Light Green Light, tug of war, marbles—but the stakes transform them into horrors.</p>
+            <p>Seong Gi-hun (Lee Jung-jae) is our protagonist—a gambling addict who owes money to loan sharks, can't pay his daughter's birthday party, and lives with his mother. He's not a hero; he's a failure who keeps failing. He joins the game because he has nothing left, and his journey through the games reveals both the worst and best of human nature.</p>
+            <p>The players wear green tracksuits, numbered 001-456. The guards wear pink jumpsuits with black masks showing a circle, triangle, or square indicating rank. The front man oversees it all from a modernist viewing room while VIPs watch from behind screens. The design is striking—bright colors, geometric shapes, playground aesthetics contrasted with industrial violence.</p>
+            <p>Each game eliminates players in batches—239 dead in Red Light Green Light alone. The survivors must decide whether to continue or take their chances in the outside world where their debts are waiting. Most return because the game offers something the real world doesn't: a chance, however small, at a different life.</p>
+            <p>The show's success came from its timing—a pandemic world watching a story about desperate people making desperate choices—and from its clarity. The games are simple to understand. The social commentary—capitalism's cruelty, inequality's consequences—is direct. The performances are committed. It's Korean cinema's tendency toward extreme emotion applied to a survival game format.</p>
+        </div>
 
-            <p>The games are Korean childhood contests—Red Light, Green Light; marbles; tug-of-war—transformed into death matches by the addition of automatic weapons. The juxtaposition is the show's signature: innocence weaponized, nostalgia turned into murder. Each game tests something different: reaction time, teamwork, willingness to sacrifice others, willingness to sacrifice yourself. The games are metaphors for what capitalism demands, made literal and bloody.</p>
-
-            <p>What elevates Squid Game beyond exploitation cinema is its willingness to let characters be complicated. Gi-hun, played by Lee Jung-jae, is a gambling addict whose choices have hurt everyone he loves; his desperation is real and partially self-created. Cho Sang-woo is a businessman whose criminal decisions have destroyed his future; he's intelligent, kind, and capable of betrayal. The show creates sympathy without excusing, understanding that people in desperate situations have made desperate choices. The second season expands the narrative while maintaining the core insight: the problem isn't the game, it's the world that makes the game seem like salvation.</p>
-
-            <h2>Why It Ranks Here</h2>
-            <p>Squid Game earns its elite ranking through conceptual brilliance, execution that matches concept, and performances that find humanity in extreme circumstances. The score reflects global relevance and sustained quality across two seasons.</p>
-
-            <h2>The 7-Dimension Analysis</h2>
-
-            <div class="dimension">
-                <h3>Characters & Acting (8.5/10)</h3>
-                <p>The ensemble creates distinct people with specific reasons for desperation. Lee Jung-jae makes Gi-hun's goodness feel earned rather than inherent; Park Hae-soo's Sang-woo makes intelligence terrifying. The supporting cast includes characters whose backstories justify choices that initially seem villainous. No one is pure; everyone is understandable.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">7</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>Narrative Drive (10):</strong> Relentless. Every episode ends with stakes. The game structure creates natural tension escalation.</p>
+            <p><strong>Visual Spectacle (9):</strong> The design is iconic—green tracksuits, pink guards, playground sets. Every frame is composed for maximum impact.</p>
+            <p><strong>Cinematography (9):</strong> Bright, saturated, stylized. The contrast between childish aesthetics and brutal violence is visually striking.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (8.5/10)</h3>
-                <p>The game facility is rendered with attention to both function and symbolism: pastel colors masking death, geometric patterns suggesting order in chaos. The outside world is shown just enough to establish the desperation that drives players back. The organization behind the games is glimpsed in ways that expand without over-explaining.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Red Light, Green Light" (S1E1)</strong> — The first game. The first death. What they signed up for.</p>
+            <p><strong>"Gganbu" (S1E6)</strong> — Marbles. Partners. Betrayal. The game that breaks everyone.</p>
+            <p><strong>"One Lucky Day" (S1E9)</strong> — The final game. The winner. What surviving costs.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (8/10)</h3>
-                <p>Visual contrast defines the aesthetic: candy colors and concrete death, playground innocence and industrial scale. The games are shot for clarity and horror—long takes that show entire fields of players, close-ups that capture moments of realization. The direction creates dread through contrast.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (7/10)</h3>
-                <p>The games themselves provide spectacle at scale: hundreds of players in identical tracksuits, massive sets designed for children but built for death. The production design makes each game visually distinct while maintaining aesthetic coherence.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Depth (8.5/10)</h3>
-                <p>This is capitalism made visible: games where losing means elimination, where players are told they can leave but choose desperation over freedom, where solidarity is rewarded and then punished. The show isn't subtle, but subtlety isn't the goal—it's making visible what the real economy makes deniable.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (9/10)</h3>
-                <p>Game structure creates momentum: each round eliminates players, each elimination creates new relationships and betrayals, each game tests something different about human nature. The pacing is relentless without feeling rushed; each death matters because we know the person who died.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (8/10)</h3>
-                <p>The first season resolves its game with appropriate consequence. The second season expands the narrative into the organization while maintaining the core insight. Both seasons end at points that feel complete while setting up continuation without desperation.</p>
-            </div>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US/UK:</strong> Netflix</p>
+        </div>
+    </div>
 </body>
 </html>
