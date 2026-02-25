@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Heist (La Casa de Papel) - "Bella Ciao" | Dynamic Rank Engine</title>
+    <title>Money Heist - "Bella Ciao" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #dc143c; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #dc143c, #8b0000); color: #ffb6c1; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ff6b6b; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #c62828; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #c62828, #b71c1c); color: #ffcdd2; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ef9a9a; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(220,20,60,0.3), rgba(0,0,0,0.9)); border: 3px solid #dc143c; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #ff6b6b; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(198,40,40,0.3), rgba(0,0,0,0.9)); border: 3px solid #c62828; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ef9a9a; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #dc143c; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ff6b6b; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #c62828; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ef9a9a; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(220,20,60,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #ff6b6b; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(198,40,40,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ef9a9a; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #ff6b6b; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #ef9a9a; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #106</div>
+            <div class="rank-badge">Rank #49</div>
             <h1>Money Heist</h1>
             <p class="subtitle">"Bella Ciao"</p>
             <div class="score-badge">
-                <span class="score-value">7.60</span>
+                <span class="score-value">7.70</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -51,11 +51,10 @@
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Money Heist (La Casa de Papel) is Spanish heist television at its most addictive. A mysterious man called the Professor recruits eight criminals to break into the Royal Mint of Spain and print billions of euros. They have a plan for everything—the police, the hostages, the media, the government. What they don't have a plan for is each other.</p>
-            <p>The Professor (Álvaro Morte) is the mastermind, a man who's spent years preparing for this moment. The robbers take city names as aliases—Tokyo (Úrsula Corberó), Berlin (Pedro Alonso), Nairobi (Alba Flores), Rio (Miguel Herrán)—and wear red jumpsuits and Salvador Dalí masks that become global symbols of resistance. Inside the Mint, they must manage hostages, maintain discipline, and execute the plan. Outside, the Professor plays cat-and-mouse with police negotiator Raquel Murillo (Itziar Ituño).</p>
-            <p>The first two parts are tight—nine episodes each, the heist expanding in unexpected directions, relationships forming between captors and captives. The robbers aren't simple villains; they have code, personality, and tragic backstories. Berlin is charismatic but dangerous. Nairobi brings warmth and leadership. Tokyo is chaos, narrating the story with hindsight that warns you nothing goes as planned.</p>
-            <p>Parts three through five return for a second heist—this time the Bank of Spain—with higher stakes, global attention, and mounting casualties. The formula stretches, but the emotional investment in the characters keeps you watching. The show knows how to make you care, how to make you feel every loss, every betrayal.</p>
-            <p>"Bella Ciao," the Italian resistance song, becomes the show's anthem. It plays when characters are about to die, about to risk everything. The show understands what heist stories are really about—not the money, but the people and what they're willing to sacrifice.</p>
+            <p>Money Heist (La Casa de Papel) is a Spanish heist thriller about a criminal mastermind called The Professor who recruits eight people to rob the Royal Mint of Spain. The plan: print 2.4 billion euros over eleven days. They take 67 hostages. They wear Salvador Dalí masks. They sing "Bella Ciao," an Italian anti-fascist resistance song. The show was a flop on Spanish television. Netflix bought international rights. It became a global phenomenon.</p>
+            <p>The Professor (Álvaro Morte) is the show's engine—a chess player who anticipates every move. Histeam is named after cities: Tokyo (the narrator, volatile), Berlin (the field commander, psychopathic), Nairobi (theforger, maternal), Rio (the hacker, young), Denver (the muscle, impulsive), Helsinki and Oslo (Serbian thugs), and Moscow (Denver's father). They're criminals, not heroes, but the show makes us root for them. The police are the antagonists, and Inspector Raquel Murillo (Itziar Ituño) is the Professor's worthy opponent—and eventual love interest.</p>
+            <p>The show's structure is cat-and-mouse: every police move has a countermove, every crisis has a contingency. "I'm not a thief," the Professor says. "I'm a man with a plan." The first two parts (the Mint heist) are tight, tense, and brilliant. Parts three through five (the Bank of Spain heist) are messier—more soap opera, more melodrama, more dead characters miraculously returning. The logic frays. The spectacle expands.</p>
+            <p>Five parts, forty-eight episodes, complete. Money Heist is pop entertainment at its most addictive: ridiculous, emotional, thrilling, and weirdly political. The Professor becomes a symbol of resistance. "Bella Ciao" becomes a global anthem. The Dalí mask becomes Halloween costume. The show's message: the system is rigged, the banks are thieves, and sometimes you have to break the law to find justice. It's not profound. But it's fun.</p>
         </div>
 
         <div class="section">
@@ -64,21 +63,22 @@
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">8</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">6</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">7</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Narrative Drive (9):</strong> Relentless tension. Every episode ends on a cliffhanger. The show knows how to keep you watching.</p>
-            <p><strong>Characters & Acting (8):</strong> The Professor, Tokyo, Berlin, Nairobi—distinct, memorable characters. You care about them even when they're criminals.</p>
-            <p><strong>Visual Spectacle (8):</strong> The red jumpsuits and Dalí masks became iconic. The heist set pieces are spectacular.</p>
+            <p style="margin-top:1.5rem"><strong>Narrative Drive (9):</strong> Every episode is a cliffhanger. The pacing is relentless. "One more episode" guaranteed.</p>
+            <p><strong>Characters & Acting (8):</strong> The Professor is iconic. The ensemble is engaging. Tokyo's narration is polarizing but effective.</p>
+            <p><strong>Cinematography (8):</strong> The heists are spectacularly staged. Red jumpsuits and Dalí masks are iconic imagery.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Episode 1" (S1E1)</strong> — The plan begins. The team assembled. The Mint breached.</p>
-            <p><strong>"Episode 9" (S1E9)</strong> — Part one finale. The stakes escalate. Nothing goes as planned.</p>
-            <p><strong>"The End of the Road" (S5E10)</strong> — Series finale. The last heist. The price of freedom.</p>
+            <p><strong>("E1" (S1E1)</strong> — The introduction. The plan revealed. "Bella Ciao."</p>
+            <p><strong>"La Casa de Papel" (S1E9)</strong> — Part one finale. The mint escape. Or not.</p>
+            <p><strong>"Hacienda Pública" (S3E8)</strong> — The Bank of Spain begins. Nairobi's fate.</p>
+            <p><strong>"El Valor Económico" (S5E10)</strong> — Series finale. The Professor escapes. "Bella Ciao."</p>
         </div>
 
         <div class="section">
