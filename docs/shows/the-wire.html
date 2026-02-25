@@ -9,35 +9,35 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #4a4a4a; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #4a4a4a, #2a2a2a); color: #e0e0e0; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #c0c0c0; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #455a64; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #455a64, #263238); color: #cfd8dc; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #78909c; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(74,74,74,0.3), rgba(0,0,0,0.9)); border: 3px solid #4a4a4a; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #c0c0c0; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(69,90,100,0.3), rgba(0,0,0,0.9)); border: 3px solid #455a64; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #78909c; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #4a4a4a; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #c0c0c0; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #455a64; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #78909c; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(74,74,74,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #c0c0c0; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(69,90,100,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #78909c; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #c0c0c0; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #78909c; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #3</div>
+            <div class="rank-badge">Rank #2</div>
             <h1>The Wire</h1>
             <p class="subtitle">"All the Pieces Matter"</p>
             <div class="score-badge">
-                <span class="score-value">8.53</span>
+                <span class="score-value">8.60</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -51,11 +51,10 @@
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>The Wire is often called the greatest television drama ever made. It's not an unreasonable claim. Over five seasons and sixty episodes, David Simon and his collaborators built a portrait of an American city—Baltimore—that doubles as a portrait of American institutions failing everyone they're supposed to serve.</p>
-            <p>Each season focuses on a different institution: the drug trade (season one), the port and unions (season two), city politics (season three), the school system (season four), and the media (season five). Characters recur, storylines cross-pollinate, and by the end you understand that everything is connected—the corner, the police department, city hall, the newspaper, the schools. No one escapes complicity.</p>
-            <p>The show's genius is its refusal to simplify. The drug dealers are not monsters; the police are not heroes. Both are doing jobs within systems that corrupt everyone who touches them. Detective Jimmy McNulty (Dominic West) is a brilliant investigator who destroys everyone around him. Omar Little (Michael K. Williams) robs drug dealers at gunpoint but lives by a strict moral code. Stringer Bell (Idris Elba) runs the drug operation like a corporation, taking business classes and plotting legit exits that never come.</p>
-            <p>Nothing ends cleanly. Victories are temporary, defeats are structural. At the end of season three, a police major legalizes drugs in his district—it works, reducing violence and crime—and is destroyed for it. At the end of season four, a brilliant teacher reaches one student while others fall through the cracks. The system is too big to change. But individuals resist, adapt, survive. Sometimes.</p>
-            <p>Sixty episodes. No filler. A novel for television, written by a man who covered crime for the Baltimore Sun and knew exactly what he was documenting.</p>
+            <p>The Wire isn't just a television show—it's a sociological study of an American city. Set in Baltimore, each of its five seasons examines a different institution: the illegal drug trade, the port and unions, city government and politics, the school system, and the media. Creator David Simon was a police reporter for the Baltimore Sun, and he brings a journalist's eye for bureaucracy, systems, and how institutions destroy the people they're meant to serve.</p>
+            <p>The show begins with a detective, Jimmy McNulty (Dominic West), who forces his superiors to investigate a drug organization by going over their heads. The investigation brings together a team: Lester Freamon (Clarke Peters), a detective who was exiled to pawn shop duty for refusing to follow orders; Bunk Moreland (Wendell Pierce), McNulty's partner and moral center; and a rotating cast of officers, some competent, some not. The target is Avon Barksdale (Wood Harris) and his organization, including Stringer Bell (Idris Elba), who takes business classes and runs the empire like a corporation.</p>
+            <p>What makes The Wire unlike any other show is that it refuses easy heroes and villains. The drug dealers have codes, dreams, humanity. The police are often incompetent, corrupt, or indifferent. The politicians are calculating, but not always wrong. The journalists want truth but are forced to chase metrics. Everyone is trapped in systems larger than themselves, doing what they must to survive. The show's famous line—"All the pieces matter"—means that every element connects, that no one is innocent, that the system is the villain.</p>
+            <p>Five seasons, sixty episodes, often called the greatest television drama ever made. The finale shows the machinery of Baltimore grinding on: new players replace old, nothing changes, everything changes. The show's thesis is devastating but not nihilistic: systems persist, but people matter. D'Angelo Barksdale's line— "The game is rigged, but you cannot lose if you do not play"—is both wisdom and tragedy. Everyone's already playing.</p>
         </div>
 
         <div class="section">
@@ -63,22 +62,22 @@
             <div class="dimension-grid">
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">5</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">6</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">10</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">9</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> Baltimore becomes a character. Every corner, every institution, every system is rendered in meticulous detail.</p>
-            <p><strong>Conceptual Density (10):</strong> Five institutions, interlocking stories, moral complexity without easy answers. The most intellectually ambitious TV drama.</p>
-            <p><strong>Resolution (10):</strong> Five seasons, complete story. The ending is inevitable and devastating. Nothing left hanging.</p>
+            <p style="margin-top:1.5rem"><strong>Conceptual Density (10):</strong> Institutions, systems, bureaucracy. A sociology degree disguised as a crime drama.</p>
+            <p><strong>World Building (10):</strong> Baltimore as a complete ecosystem. Every street, every corner, every institution connects.</p>
+            <p><strong>Characters & Acting (10):</strong> Dozens of characters, all memorable. Omar Little became television's most iconic outlaw.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"The Target" (S1E1)</strong> — The introduction. The wire. The world of Baltimore corners.</p>
-            <p><strong>"Middle Ground" (S3E11)</strong> — Stringer and Avon. The roof. The betrayal. Business vs. loyalty.</p>
-            <p><strong>"-30-" (S5E10)</strong> — Series finale. The newspaper. The statistics. The system survives.</p>
+            <p><strong>"The Target" (S1E1)</strong> — The introduction. "All the pieces matter." Snoop Buys the nail gun.</p>
+            <p><strong>("Middle Ground" (S3E11)</strong> — Stringer and Avon. "I wasn't made to play the game."</p>
+            <p><strong>"-30-" (S5E10)</strong> — Series finale. The system grinds on. Nothing changes. Everything changes.</p>
         </div>
 
         <div class="section">
