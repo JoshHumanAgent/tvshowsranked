@@ -4381,35 +4381,35 @@
 
         function getEra(year, month) {
             const now = new Date();
-            const currentYear = now.getFullYear();
-            const currentMonth = now.getMonth() + 1; // 1-12
-
-            // This year (current year)
-            if (year === currentYear) return 'thisYear';
-
-            // Last 3 months: current year if we're in Jan-Mar, or previous year
-            if (currentMonth <= 3) {
-                // In Jan-Mar 2026, last 3 months = shows from 2025 or 2026
-                if (year === currentYear || year === currentYear - 1) return 'last3mo';
-            } else {
-                // After March, last 3 months means shows from this year
-                if (year === currentYear && month >= currentMonth - 2) return 'last3mo';
-            }
-
-            // Last 6 months: current year if we're in Jan-Jun, or previous year
-            if (currentMonth <= 6) {
-                // In Jan-Jun 2026, last 6 months = shows from 2025 or 2026
-                if (year === currentYear || year === currentYear - 1) return 'last6mo';
-            } else {
-                // After June, last 6 months means shows from this year
-                if (year === currentYear && month >= currentMonth - 5) return 'last6mo';
-            }
-
-            // Decades
+            const showDate = new Date(year, (month || 1) - 1, 15);
+            
+            // Decades only (for era assignment)
             if (year >= 2020) return '2020s';
             if (year >= 2010) return '2010s';
             if (year >= 2000) return '2000s';
             return 'pre2000';
+        }
+        
+        // Check if a show falls within a specific time-based era
+        function showInTimeEra(show, era) {
+            const now = new Date();
+            const showDate = new Date(show.year, (show.month || 1) - 1, 15);
+            
+            const threeMonthsAgo = new Date(now);
+            threeMonthsAgo.setMonth(now.getMonth() - 3);
+            
+            const sixMonthsAgo = new Date(now);
+            sixMonthsAgo.setMonth(now.getMonth() - 6);
+            
+            const oneYearAgo = new Date(now);
+            oneYearAgo.setFullYear(now.getFullYear() - 1);
+            
+            switch(era) {
+                case 'last3mo': return showDate >= threeMonthsAgo;
+                case 'last6mo': return showDate >= sixMonthsAgo;
+                case 'thisYear': return showDate >= oneYearAgo;
+                default: return false;
+            }
         }
 
         function getTier(score) {
@@ -4538,7 +4538,19 @@
             let filtered = shows.filter(show => {
                 const matchesSearch = show.title.toLowerCase().includes(searchTerm.toLowerCase());
                 const matchesScore = show.final >= minScore;
-                const matchesEra = currentEras.length === 0 || currentEras.includes(getEra(show.year, show.month));
+                
+                // Era filtering: handle time-based (overlapping) and decade-based separately
+                let matchesEra = true;
+                if (currentEras.length > 0) {
+                    matchesEra = currentEras.some(era => {
+                        // Time-based eras (overlapping)
+                        if (['last3mo', 'last6mo', 'thisYear'].includes(era)) {
+                            return showInTimeEra(show, era);
+                        }
+                        // Decade eras (exact match)
+                        return getEra(show.year, show.month) === era;
+                    });
+                }
 
                 let matchesGenre = true;
                 if (!currentGenres.includes('all')) {
