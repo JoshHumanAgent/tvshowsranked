@@ -7,7 +7,14 @@
 
 **We have 440+ shows. Stop adding. Start polishing.**
 
+
+NEVER USE THE CHROME EXTENTION FOR BROWSERS. ITS TERRIBLE!!
 ---
+
+Before you start go to the site physically, open a browser and look, when you see something log the bug/improvement, the focus on that.
+If you cant see anything to fix open each show and check they all have good internal data, eg. What It Feels Like to Watch, Why It Ranks #1 7-Dimension Algorithmic Analysis at least. every show needs a big breakdown on why it gets the ranks it gets. 
+Next check the filters, try different combos of filters to try find bugs. the more you find the less the users will find.
+Log everything down to remember what you've done and fixed.
 
 ## 🔧 THE WORK
 
