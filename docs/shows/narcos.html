@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narcos - "The King of Coke" | Dynamic Rank Engine</title>
+    <title>Narcos - "Kingpin Chronicle" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #ffd700; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #ffd700, #b8860b); color: #1a1a1a; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffd700; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #228b22; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #228b22, #145a14); color: #f0fff0; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #32cd32; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(255,215,0,0.3), rgba(0,0,0,0.9)); border: 3px solid #ffd700; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #ffd700; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(34,139,34,0.3), rgba(0,0,0,0.9)); border: 3px solid #228b22; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #32cd32; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #ffd700; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffd700; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #228b22; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #32cd32; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(255,215,0,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #ffd700; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(34,139,34,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #32cd32; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #ffd700; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #32cd32; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #151</div>
+            <div class="rank-badge">Rank #56</div>
             <h1>Narcos</h1>
-            <p class="subtitle">"The King of Coke"</p>
+            <p class="subtitle">"Kingpin Chronicle"</p>
             <div class="score-badge">
-                <span class="score-value">7.48</span>
+                <span class="score-value">7.78</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -46,16 +46,16 @@
             <div class="info-item"><div class="info-label">Years</div><div class="info-value">2015-2017</div></div>
             <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">30</div></div>
             <div class="info-item"><div class="info-label">Network</div><div class="info-value">Netflix</div></div>
-            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Chris Brancato, Carlo Bernard, Doug Miro</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Chris Brancato, Carlo Bernard</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Narcos chronicles the rise and fall of Pablo Escobar (Wagner Moura), the Colombian drug lord who became one of the richest criminals in history. The show mixes archival footage with dramatization, narrated by DEA agent Steve Murphy (Boyd Holbrook) who was there when the United States decided to make drug enforcement its business in Latin America.</p>
-            <p>Escobar starts small—smuggling cigarettes, running rackets—but cocaine changes everything. By the 1980s, his Medellín Cartel is supplying 80% of America's cocaine, earning billions, and Escobar is building an empire. He runs for Congress, builds a prison shaped like a resort (La Catedral, where he "served" his sentence on his own terms), and declares war on the Colombian state when they try to extradite him.</p>
-            <p>The show captures Escobar's charisma and brutality—Moura's portrayal is terrifying because Escobar was terrifying. He ordered assassinations of judges, ministers, presidential candidates. He blew up an airplane. He held Colombia hostage. But he also built housing for the poor, which made him loved by the desperate. The show doesn't glorify him, but it doesn't caricature him either.</p>
-            <p>Javier Peña (Pedro Pascal) is Murphy's partner, the Colombian expert who understands the landscape better. Together they coordinate the hunt, but the show makes clear that the Americans were often obstacles—arrogant, slow, politically compromised. The real work was done by Colombian police, by the Search Bloc, by vigilantes who'd lost family to Escobar.</p>
-            <p>The first two seasons cover Escobar's story. Season three shifts to the Cali Cartel—the sophisticated operators who made Escobar look like a thug. The show remained compelling because the drug war remained compelling—endless, evolving, impossible to win.</p>
+            <p>Narcos is the definitive story of Pablo Escobar and the rise of the Colombian drug trade. Wagner Moura plays Escobar not as a criminal mastermind, but as a man—charismatic, ruthless, family-oriented, paranoid, and ultimately mortal. The show spans his rise from small-time smuggler to the world's richest criminal, his war with the Colombian government, and his eventual death on a rooftop in Medellín.</p>
+            <p>The series is anchored by DEA agents Steve Murphy (Boyd Holbrook) and Javier Peña (Pedro Pascal), who provide the American perspective on the drug war. But Escobar is the gravitational center. The show doesn't glorify him—it shows his brutality, his bombing campaigns, his ordering of assassinations—but it does humanize him. We see him with his family, playing soccer, worrying about his children. The cognitive dissonance is the point.</p>
+            <p>Seasons one and two chronicle Escobar's reign and fall. Season three shifts focus to the Cali Cartel—the sophisticated, corporate cocaine operation that took over after Escobar's death. Without Escobar, the show transforms into something different: less personal, more geopolitical, following the DEA's pursuit of the Rodriguez Orejuela brothers.</p>
+            <p>The production is cinematic, shot on location in Colombia with Spanish dialogue throughout. The pacing is propulsive. The violence is visceral. The politics are complicated—the DEA isn't heroic, the Colombian government is compromised, and the drug war has no clean winners.</p>
+            <p>Narcos: Mexico (a companion series) continues the story across the border, but the original Narcos stands as a complete chronicle of Colombia's cocaine wars and the man who started it all.</p>
         </div>
 
         <div class="section">
@@ -64,26 +64,27 @@
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">8</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Wagner Moura's Escobar is one of the great TV villains—charming, terrifying, human.</p>
-            <p><strong>World Building (9):</strong> 1980s Colombia feels alive—the politics, the corruption, the violence, the poverty.</p>
-            <p><strong>Narrative Drive (9):</strong> The hunt creates momentum. Each season builds to inevitable, violent conclusions.</p>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Wagner Moura's Escobar is towering. Pedro Pascal's Peña became a star. The ensemble is excellent.</p>
+            <p><strong>World Building (9):</strong> Colombia in the 1980s. The cartels, the politics, the CIA, the violence—fully realized.</p>
+            <p><strong>Narrative Drive (9):</strong> Each season builds momentum. The hunt is relentless. Escobar's fall is inevitable and gripping.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Descenso" (S1E1)</strong> — The beginning. Escobar's rise. The DEA arrives.</p>
-            <p><strong>"La Gran Estafa" (S2E4)</strong> — Escape from La Catedral. The war begins.</p>
-            <p><strong>"Al Fin Cayó!" (S2E10)</strong> — The end of Escobar. Rooftops in Medellín.</p>
+            <p><strong>"Descenso" (S1E1)</strong> — The introduction. Escobar's rise begins. Murphy arrives in Colombia.</p>
+            <p><strong>"La Gran Mentira" (S2E3)</strong> — Escobar's prison escape. La Catedral. The manhunt begins.</p>
+            <p><strong>"Al Fin Cayó!" (S2E10)</strong> — Escobar's death. The rooftop. The end of an era.</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US/UK:</strong> Netflix</p>
+            <p><strong>US:</strong> Netflix</p>
+            <p><strong>UK:</strong> Netflix</p>
         </div>
     </div>
 </body>
