@@ -2370,7 +2370,8 @@
       "streaming": {
         "US": "Hulu",
         "GB": "Disney Plus"
-      }
+      },
+      "episodes": 10
     },
     {
       "rank": 75,
@@ -9525,7 +9526,8 @@
       "streaming": {
         "US": "Netflix, Netflix Standard with Ads",
         "GB": "Netflix, Netflix Standard with Ads"
-      }
+      },
+      "episodes": 22
     },
     {
       "rank": 308,
@@ -10344,7 +10346,8 @@
       "streaming": {
         "US": "Amazon Prime Video, Amazon Prime Video with Ads",
         "GB": "Amazon Prime Video, Amazon Prime Video with Ads"
-      }
+      },
+      "episodes": 12
     },
     {
       "rank": 336,
@@ -11508,7 +11511,16 @@
       "resol": 5,
       "episodes": 194,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
-      "streaming": null,
+      "streaming": {
+        "us": [
+          null,
+          null
+        ],
+        "uk": [
+          null,
+          null
+        ]
+      },
       "backdrop": "https://image.tmdb.org/t/p/w780/placeholder.jpg"
     },
     {
@@ -11682,7 +11694,14 @@
       "tmdbVote": 7.501,
       "tmdbCount": 2897,
       "final": 6.6,
-      "streaming": {},
+      "streaming": {
+        "us": [
+          null
+        ],
+        "uk": [
+          null
+        ]
+      },
       "rank": 381
     },
     {
@@ -12363,7 +12382,15 @@
       "resol": 6,
       "episodes": 30,
       "poster": "https://image.tmdb.org/t/p/w500/placeholder.jpg",
-      "streaming": null,
+      "streaming": {
+        "us": [
+          null,
+          null
+        ],
+        "uk": [
+          null
+        ]
+      },
       "backdrop": "https://image.tmdb.org/t/p/original/wHNwlE6ftEpgjVbdhLXOtv1hLs0.jpg"
     },
     {
@@ -12764,7 +12791,8 @@
       "streaming": {
         "US": "Netflix, Netflix Standard with Ads",
         "GB": "Netflix, Netflix Standard with Ads"
-      }
+      },
+      "episodes": 8
     },
     {
       "rank": 420,
