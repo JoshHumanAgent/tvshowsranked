@@ -1,16 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Fleabag - TV Shows Ranked</title><link rel="stylesheet" href="../css/show-page.css"></head>
-<body><nav class="breadcrumb"><a href="../../index.html">Home</a> &gt; <span>Fleabag</span></nav>
-<article class="show-page"><header class="show-header"><img src="https://image.tmdb.org/t/p/w200/4Yy4K9n9M2pS4tV8wX3xZ8qL.jpg" alt="Fleabag Poster" class="show-poster"><div class="show-info"><h1>Fleabag</h1><p class="show-meta">2016 - 2019 • BBC • 12 Episodes</p><div class="score-badge">Score: 8.20</div><div class="genres">Comedy, Drama</div></div></header>
-<section class="deep-content"><h2>What It Feels Like</h2><p class="vibe-text">A woman navigates London after her best friend's suicide. She's angry, horny, grieving. She breaks the fourth wall to let us in. Phoebe Waller-Bridge wrote and stars in the adaptation of her one-woman show: grief as comedy, guilt as performance, connection as impossibility.</p>
-<h2>The 7-Dimension Analysis</h2>
-<div class="dimension"><h3>Characters & Acting (10/10)</h3><p>Phoebe Waller-Bridge as Fleabag: the audience is her confidant, her co-conspirator, her judge. Olivia Colman as the godmother: passive aggression perfected. Andrew Scott as the Hot Priest in season 2. The performances are among comedy's best.</p></div>
-<div class="dimension"><h3>World Building (7/10)</h3><p>London: the café, the family, the failed relationships. The world is intimate—this is one woman's inner life externalized. The fourth wall makes us part of her world.</p></div>
-<div class="dimension"><h3>Cinematography (7/10)</h3><p>BBC production: the direct address to camera, the observational comedy, the moments of stillness. The style serves the intimacy—Fleabag looks at us, and we can't look away.</p></div>
-<div class="dimension"><h3>Visual Spectacle (1/10)</h3><p>No spectacle. This is one woman's life: café, relationships, family dinners. The "spectacle" is emotional—watching grief transformed into comedy.</p></div>
-<div class="dimension"><h3>Conceptual Density (10/10)</h3><p>Grief, guilt, female desire, self-sabotage, whether we can ever really know each other, what we hide vs. what we show. The show breaks television's rules to explore these.</p></div>
-<div class="dimension"><h3>Narrative Drive (8/10)</h3><p>What happened to Boo? Can Fleabag forgive herself? The mystery deepens into grief. Season 2 adds: can she love and be loved? The drive is emotional.</p></div>
-<div class="dimension"><h3>Narrative Path & Resolution (10/10)</h3><p>Two seasons, perfect. The ending of season 2 is among television's best—the goodbye to the camera, the choice to live. Complete and essential.</p></div></section>
-<section class="streaming-info"><h2>Where to Watch</h2><p><strong>US:</strong> Amazon Prime Video</p><p><strong>UK:</strong> BBC iPlayer, Amazon Prime Video</p></section>
-<footer class="show-footer"><a href="../../index.html">← Back to Rankings</a></footer></article></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleabag - "This Is a Love Story" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #ff69b4; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #ff69b4, #c71585); color: #fff; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffb6c1; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(255,105,180,0.3), rgba(0,0,0,0.9)); border: 3px solid #ff69b4; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ffb6c1; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #ff69b4; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffb6c1; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(255,105,180,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ffb6c1; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #ffb6c1; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #348</div>
+            <h1>Fleabag</h1>
+            <p class="subtitle">"This Is a Love Story"</p>
+            <div class="score-badge">
+                <span class="score-value">6.78</span>
+                <span class="score-label">Final Score</span>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2016-2019</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">12</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">BBC Three / Amazon</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Phoebe Waller-Bridge</div></div>
+        </div>
+
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Fleabag is a comedy about a woman who can't stop self-destructing. Phoebe Waller-Bridge created and stars in this adaptation of her one-woman show, and the result is one of the most influential television series of the past decade. It's funny, devastating, formally innovative, and emotionally honest in ways that most shows never attempt.</p>
+            <p>The show's central device is the fourth-wall break. Fleabag talks directly to the camera constantly—commenting on the action, mocking the other characters, sharing jokes with us. We're her confidants, her co-conspirators, her only real friends. The device is playful until it isn't. By the second season, you realize that breaking the fourth wall is Fleabag's defense mechanism. She performs intimacy without risking it. She tells us everything because she can't tell the people in her life anything.</p>
+            <p>Season one follows Fleabag as she navigates London after her best friend's death. She's broke, her café is failing, her family is dysfunctional, and she's having terrible sex with terrible men. The show makes all of this hilarious—Waller-Bridge's timing and delivery are flawless—even as it accumulates a weight of sadness that pays off in a devastating finale.</p>
+            <p>Season two introduces the Hot Priest (Andrew Scott), a love interest who sees through Fleabag's performance. The fourth-wall breaks change: now someone is watching her watch us. The dynamic shifts. The season ends with a kiss, a choice, and a goodbye that recontextualizes everything that came before.</p>
+            <p>This is a show about grief, guilt, and the impossibility of connection. It's also about Catholicism, sisters, terrible dinner parties, and a guinea pig named Hilary. It ends perfectly, saying everything it needs to say in twelve episodes.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">10</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">4</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">10</div><div class="dimension-weight">20% weight</div></div>
+            </div>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (10):</strong> Phoebe Waller-Bridge is a force. Her performance is a masterclass in timing, emotional range, and audience manipulation. Andrew Scott, Sian Clifford, Olivia Colman—all perfect.</p>
+            <p><strong>Resolution (10):</strong> The ending is perfect. Twelve episodes, two seasons, complete. It says everything it needs to say and stops. No continuation possible, no continuation needed.</p>
+            <p><strong>Conceptual Density (8):</strong> Grief, guilt, religion, family, self-destruction, female desire. The show packs enormous themes into thirty-minute episodes without ever feeling heavy.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Episode 1" (S1E1)</strong> — The introduction. The fourth-wall break. The guinea pig. The sadness underneath the jokes.</p>
+            <p><strong>"Episode 6" (S1E6)</strong> — The reveal. Everything snaps into focus. The comedy becomes tragedy becomes something else entirely.</p>
+            <p><strong>"Episode 6" (S2E6)</strong> — The finale. The fox. The ending. "I love you." "It'll pass." Perfect.</p>
+        </div>
+
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Prime Video</p>
+            <p><strong>UK:</strong> BBC iPlayer</p>
+        </div>
+    </div>
+</body>
+</html>
