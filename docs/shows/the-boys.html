@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Boys - "Never Compete with a God" | Dynamic Rank Engine</title>
+    <title>The Boys - "Supes Are the Villains" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #8b0000; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #8b0000, #4a0000); color: #fff; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #cd5c5c; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #dc143c; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #dc143c, #8b0000); color: #fff0f5; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ff6b6b; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(139,0,0,0.3), rgba(0,0,0,0.9)); border: 3px solid #8b0000; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #cd5c5c; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(220,20,60,0.3), rgba(0,0,0,0.9)); border: 3px solid #dc143c; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ff6b6b; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #8b0000; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #cd5c5c; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #dc143c; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ff6b6b; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(139,0,0,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #cd5c5c; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(220,20,60,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ff6b6b; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #cd5c5c; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #ff6b6b; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #308</div>
+            <div class="rank-badge">Rank #59</div>
             <h1>The Boys</h1>
-            <p class="subtitle">"Never Compete with a God"</p>
+            <p class="subtitle">"Supes Are the Villains"</p>
             <div class="score-badge">
-                <span class="score-value">6.98</span>
+                <span class="score-value">7.76</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -45,17 +45,17 @@
         <div class="info-grid">
             <div class="info-item"><div class="info-label">Years</div><div class="info-value">2019-</div></div>
             <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">32+</div></div>
-            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Prime Video</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Amazon Prime</div></div>
             <div class="info-item"><div class="info-label">Developer</div><div class="info-value">Eric Kripke</div></div>
         </div>
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>The Boys is what happens when superheroes are corporate products and the corporation doesn't care about collateral damage. Based on Garth Ennis's comic, the show imagines a world where "Supes" are owned by Vought International, a media conglomerate that monetizes heroism through movies, merchandise, and theme parks. The Seven—Vought's premier superhero team—are celebrities with brand deals and PR teams. They're also, mostly, terrible people.</p>
-            <p>Billy Butcher leads a small group of vigilantes trying to expose Vought and take down the Supes. His wife was violated by Homelander, the Superman-analogue who leads the Seven—narcissistic, sociopathic, and powerful enough to destroy the world. Butcher is played by Karl Urban with a Cockney accent and a bottomless capacity for violence. Hughie (Jack Quaid) is the audience surrogate whose girlfriend is killed in the pilot, launching him into Butcher's war. The Boys fight dirty because the Supes fight lethal.</p>
-            <p>The show is spectacularly violent. Heads explode. People are dismembered. Blood sprays across rooms. The gore is played for shock and comedy—this isn't prestige television gravity, it's gonzo satire. But the violence has a point: power without accountability corrupts absolutely, and corporate power is just as dangerous as superpower.</p>
-            <p>The satire cuts deep. Vought's media manipulation, the superhero "cinematic universe," the way outrage is manufactured and deployed—it's all recognizable from our world. Homelander is what happens when you combine Superman's power with a fragile ego and corporate backing. He's not a villain with a plan; he's a tantrum with nukes.</p>
-            <p>Antony Starr's Homelander is the show's defining performance. He's terrifying not because he's evil in a complicated way, but because he's evil in a comprehensible way: a man-child with unlimited power who just wants to be loved. The supporting cast—especially Aya Cash as Stormfront, a Nazi Supe with influencer vibes, and Giancarlo Esposito as Vought CEO Stan Edgar—builds out a world where capitalism and superpowers are equally dangerous.</p>
+            <p>The Boys takes the superhero genre and turns it inside out. What if superheroes were real, corporate, and corrupt? What if the most powerful beings on Earth were also the most entitled, predatory, and dangerous? That's Vought International's business model: manage superheroes as celebrities, monetize their image, cover up their crimes.</p>
+            <p>The Seven is Vought's premier team, led by Homelander (Antony Starr)—a Superman analogue who is, in fact, a narcissistic sociopath with a god complex. He can't be killed. He can do whatever he wants. And he wants to be loved, worshipped, and feared in equal measure. Antony Starr plays him with a terrifying emptiness; Homelander is a god-sized toddler with laser eyes.</p>
+            <p>The Boys are the resistance: Billy Butcher (Karl Urban), a British ex-CIA operative whose hatred for supes is personal; Hughie Campbell (Jack Quaid), a regular guy whose girlfriend was killed by a speedster; Mother's Milk (Laz Alonso), Frenchie (Tomer Capone), and Kimiko (Karen Fukuhara)—each with their own reasons to fight. They have no powers. They have cigarettes, explosives, and rage.</p>
+            <p>The show is violently, graphically anti-corporate. Vought treats superheroes as products, scandals as PR problems, and collateral damage as a cost of doing business. The satire cuts deep: the military-industrial complex, media consolidation, celebrity culture, political manipulation—all filtered through superhero action.</p>
+            <p>Four seasons in, the scope keeps expanding. We learn where superheroes come from. We meet new supes with new pathologies. We watch Homelander become more openly fascist. And the body count keeps rising. It's brutal, funny, angry, and somehow still hopeful—because someone is always fighting back.</p>
         </div>
 
         <div class="section">
@@ -63,27 +63,28 @@
             <div class="dimension-grid">
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">7</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">N/A</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">8</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">6</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Antony Starr's Homelander is one of television's great villains. Karl Urban's Butcher is ferocious. The ensemble—Jack Quaid, Erin Moriarty, Aya Cash—balances the show's absurdity with actual stakes.</p>
-            <p><strong>World Building (9):</strong> The corporate superhero world is fully realized. Vought, The Seven, the spinoffs, the merchandise—it's satire but also prophecy.</p>
-            <p><strong>Resolution (N/A):</strong> Still ongoing. The story continues to escalate. Final judgment depends on how it ends.</p>
+            <p style="margin-top:1.5rem"><strong>Characters & Acting (9):</strong> Antony Starr's Homelander is iconic. Karl Urban's Butcher is perfect. The ensemble is strong across the board.</p>
+            <p><strong>World Building (9):</strong> Vought International is a complete corporate dystopia. The supe mythology is detailed and expanding.</p>
+            <p><strong>Resolution (6):</strong> Ongoing. Four seasons with more planned. The endgame is approaching but not yet reached.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"The Big Ride" (S1E1)</strong> — Hughie's girlfriend dies. Butcher recruits him. The war begins.</p>
-            <p><strong>"The Self-Preservation Society" (S1E7)</strong> — The Boys and The Seven finally clash. Secrets revealed.</p>
-            <p><strong>"What I Know" (S3E8)</strong> — Soldier Boy revealed. Homelander's vulnerability exposed. The stakes escalate.</p>
+            <p><strong>"The Big Ride" (S1E1)</strong> — Hughie's girlfriend. The introduction. The first kill.</p>
+            <p><strong>"You Found Me" (S1E8)</strong> — Season one finale. The revelation. The showdown.</p>
+            <p><strong>"The Instant White-Hot Wild" (S3E8)</strong> — Season three finale. Herogasm fallout. Soldier Boy. Homelander's son.</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US/UK:</strong> Prime Video</p>
+            <p><strong>US:</strong> Amazon Prime</p>
+            <p><strong>UK:</strong> Amazon Prime</p>
         </div>
     </div>
 </body>
