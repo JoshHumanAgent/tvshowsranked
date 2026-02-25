@@ -4425,9 +4425,9 @@
                 switch(era) {
                     case 'last3mo': 
                     case 'last6mo': 
-                        return isRecentYear && show.year >= currentYear; // Current year only for tight filters
+                        return show.year >= currentYear; // Current year only for tight filters
                     case 'thisYear': 
-                        return isRecentYear;
+                        return show.year >= currentYear - 1; // Last 2 calendar years
                     default: return false;
                 }
             }
@@ -4441,13 +4441,14 @@
             const sixMonthsAgo = new Date(now);
             sixMonthsAgo.setMonth(now.getMonth() - 6);
             
-            const oneYearAgo = new Date(now);
-            oneYearAgo.setFullYear(now.getFullYear() - 1);
+            // "Year" shows last 18 months to capture more recent content
+            const eighteenMonthsAgo = new Date(now);
+            eighteenMonthsAgo.setMonth(now.getMonth() - 18);
             
             switch(era) {
                 case 'last3mo': return showDate >= threeMonthsAgo;
                 case 'last6mo': return showDate >= sixMonthsAgo;
-                case 'thisYear': return showDate >= oneYearAgo;
+                case 'thisYear': return showDate >= eighteenMonthsAgo;
                 default: return false;
             }
         }
