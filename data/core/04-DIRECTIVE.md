@@ -155,15 +155,16 @@ When AI scores seem inflated:
 
 | Metric | Value |
 |--------|-------|
-| Total Shows | 431 |
+| Total Shows | 414 |
 | Foundation (Locked) | 97 |
-| AI-Scored (Need Review) | ~334 |
+| AI-Scored (Need Review) | ~317 |
 | Procedurals Archived | 18 |
 | Indian Archived | 2 |
+| Comedies Archived | 17 |
 
 ---
 
 **I run this. Josh dreams it. We build it together.**
 
 *Last updated: 2026-02-25*
-*Current pool: 431 serialized dramas*
+*Current pool: 414 serialized dramas*
