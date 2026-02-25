@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game of Thrones - "Winter Is Coming" | Dynamic Rank Engine</title>
+    <title>Game of Thrones - "Winter is coming" | Dynamic Rank Engine</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
         .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #4a148c; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, #4a148c, #311b92); color: #ede7f6; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #b39ddb; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #1a237e; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #1a237e, #0d47a1); color: #c5cae9; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #9fa8da; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
-        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(74,20,140,0.3), rgba(0,0,0,0.9)); border: 3px solid #4a148c; border-radius: 8px; }
-        .score-value { font-size: 3rem; font-weight: 700; color: #b39ddb; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(26,35,126,0.3), rgba(0,0,0,0.9)); border: 3px solid #1a237e; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #9fa8da; }
         .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #4a148c; }
-        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #b39ddb; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #1a237e; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #9fa8da; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
         .section p { margin-bottom: 1rem; font-size: 1.1rem; }
         .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .dimension { background: rgba(74,20,140,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
-        .dimension-name { font-weight: 700; color: #b39ddb; margin-bottom: 0.3rem; }
+        .dimension { background: rgba(26,35,126,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #9fa8da; margin-bottom: 0.3rem; }
         .dimension-score { font-size: 1.5rem; color: #ffd700; }
         .dimension-weight { font-size: 0.8rem; color: #666; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
-        .info-value { font-size: 1.3rem; color: #b39ddb; font-weight: 700; }
+        .info-value { font-size: 1.3rem; color: #9fa8da; font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="rank-badge">Rank #4</div>
+            <div class="rank-badge">Rank #1</div>
             <h1>Game of Thrones</h1>
-            <p class="subtitle">"Winter Is Coming"</p>
+            <p class="subtitle">"Winter is coming"</p>
             <div class="score-badge">
-                <span class="score-value">8.50</span>
+                <span class="score-value">8.65</span>
                 <span class="score-label">Final Score</span>
             </div>
         </div>
@@ -51,10 +51,10 @@
 
         <div class="section">
             <h2>What It Feels Like to Watch</h2>
-            <p>Game of Thrones was the last true monoculture television event—everyone watched it, everyone talked about it, and the internet broke whenever something shocking happened. Adapted from George R.R. Martin's unfinished fantasy series, the show imagined a world where anyone could die at any moment, where heroes were just people who hadn't been betrayed yet, where power was a game played by families who'd been killing each other for generations.</p>
-            <p>The early seasons are masterpieces of adaptation. Ned Stark (Sean Bean) is introduced as a hero and executed in season one—the show's thesis statement. Daenerys Targaryen (Emilia Clarke) builds an army across the sea, Tyrion Lannister (Peter Dinklage) survives on wit, and the Stark children scatter across Westeros. The world-building is astonishing: Seven Kingdoms, three continents, dragons, ice zombies, magic that feels rare and dangerous. Every house has a history, every character has layers.</p>
-            <p>The show's peak is seasons three through six: the Red Wedding, the Battle of the Bastards, Cersei's walk of shame, Jon Snow's death and resurrection. The production values are cinema-quality, the battles are epics, the political intrigue is Shakespearean. Then the show outpaced Martin's books, and the quality collapsed. Seasons seven and eight feel like different shows—rushed, character-assassinating, logic-defying. Daenerys becomes a genocidal tyrant in two episodes. Jaime's redemption arc is abandoned. The Night King dies in one battle.</p>
-            <p>Eight seasons, seventy-three episodes, a finale that alienated millions. Game of Thrones is a tragedy of ambition: It built the greatest television world ever created, then burned it down without a satisfying ending. "You win or you die," the show said. Game of Thrones did both.</p>
+            <p>Game of Thrones is an epic fantasy about families fighting for control of the Iron Throne. Based on George R.R. Martin's novels, it's not high fantasy—it's political drama with swords. The Starks of Winterfell, the Lannisters of Casterly Rock, the Targaryens across the sea, and dozens of other houses scheme, ally, betray, and die. "When you play the game of thrones, you win or you die," Cersei Lannister explains. She's right.</p>
+            <p>The show's genius is its scope: seven kingdoms, three continents, dozens of storylines. Ned Stark (Sean Bean) is the honorable lord who dies because he's too honorable. His death establishes the show's thesis: virtue is punished, ruthlessness rewarded. Daenerys Targaryen (Emilia Clarke) hatches dragons, frees slaves, and slowly becomes the tyrant she swore to destroy. Jon Snow (Kit Harington) is the secret heir to the throne who never gets it. Tyrion Lannister (Peter Dinklage) is the brilliant dwarf who drinks and knows things—and serves whoever's winning.</p>
+            <p>For six seasons, GoT was the most ambitious show on television. "The Rains of Castamere" (the Red Wedding) is the most shocking hour in TV history. "Battle of the Bastards" is the greatest battle ever filmed. "The Winds of Winter" isperfect storytelling. Then season seven compressed. Season eight collapsed. Daenerys's turn to villainy was rushed. The Night King's defeat was anticlimactic. Bran the Broken became king. The ending broke the internet—and not in a good way.</p>
+            <p>Eight seasons, seventy-three episodes, complete. Game of Thrones was a cultural phenomenon, then it became a cautionary tale. The journey was extraordinary. The destination was a betrayal. "The world is built on murder," a character says. GoT proved it. The show's legacy: television can be as spectacular as film—if it sticks the landing.</p>
         </div>
 
         <div class="section">
@@ -62,28 +62,28 @@
             <div class="dimension-grid">
                 <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
                 <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
                 <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
-                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">4</div><div class="dimension-weight">20% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">5</div><div class="dimension-weight">20% weight</div></div>
             </div>
-            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> Westeros is television's most complete fantasy world. Seven Kingdoms, histories, houses, religions. Astonishing depth.</p>
-            <p><strong>Visual Spectacle (10):</strong> Dragons, battles, ice zombies. "Battle of the Bastards" is cinema-quality. Television's biggest budget.</p>
-            <p><strong>Resolution (4):</strong> The finale destroyed goodwill built over seven seasons. Rushed, illogical, character-betraying. A cautionary tale.</p>
+            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> Westeros, Essos, theKnown World. Martin's creation is unparalleled. History, culture, geography—all realized.</p>
+            <p><strong>Visual Spectacle (10):</strong> Dragons, battles, cities. "Battle of the Bastards" and "The Long Night" redefine TV spectacle.</p>
+            <p><strong>Resolution (5):</strong> Season eight. Daenerys's turn. Bran the Broken. A legendary collapse that tarnishes the legacy.</p>
         </div>
 
         <div class="section">
             <h2>Key Episodes</h2>
-            <p><strong>"Winter Is Coming" (S1E1)</strong> — The introduction. The wolves. "The things I do for love."</p>
+            <p><strong>"Winter Is Coming" (S1E1)</strong> — The introduction. The White Walkers. "The things I do for love."</p>
+            <p><strong>"Baelor" (S1E9)</strong> — Ned dies. The rules change. No one is safe.</p>
             <p><strong>"The Rains of Castamere" (S3E9)</strong> — The Red Wedding. Television's most shocking hour.</p>
-            <p><strong>(Battle of the Bastards" (S6E9)</strong> — Jon vs Ramsay. Cinema-quality warfare. "I haven't seen Arya since she was a child."</p>
-            <p><strong>"The Iron Throne" (S8E6)</strong> — The end. Broken throne. "I don't think it's a story the bards will sing."</p>
+            <p><strong>"The Iron Throne" (S8E6)</strong> — Series finale. Daenerys falls. Bran rises. Controversial.</p>
         </div>
 
         <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US:</strong> Max</p>
+            <p><strong>US:</strong> HBO Max</p>
             <p><strong>UK:</strong> Sky Go, NOW</p>
         </div>
     </div>
