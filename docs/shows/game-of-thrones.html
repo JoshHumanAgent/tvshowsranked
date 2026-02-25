@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones - "Winter Is Coming" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #1e3a5f; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #1e3a5f, #0d1f33); color: #a0c4ff; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #4a90d9; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(30,58,95,0.3), rgba(0,0,0,0.9)); border: 3px solid #1e3a5f; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #4a90d9; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #1e3a5f; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #4a90d9; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(30,58,95,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #4a90d9; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #4a90d9; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #14</div>
+            <h1>Game of Thrones</h1>
+            <p class="subtitle">"Winter Is Coming"</p>
+            <div class="score-badge">
+                <span class="score-value">8.20</span>
+                <span class="score-label">Final Score</span>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Years</div><div class="info-value">2011-2019</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">73</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">HBO</div></div>
+            <div class="info-item"><div class="info-label">Creators</div><div class="info-value">David Benioff, D.B. Weiss</div></div>
+        </div>
+
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Game of Thrones was a cultural phenomenon—the last show that truly united television audiences across the world. For eight seasons, it combined political intrigue, fantasy world-building, and cinematic production values into something that felt like nothing else on TV. Then the ending happened, and the phenomenon curdled into controversy.</p>
+            <p>Based on George R.R. Martin's unfinished novels, the show follows noble families warring for control of the Iron Throne while an ancient threat gathers beyond the Wall. The Starks are honorable and doomed. The Lannisters are wealthy, beautiful, and vicious. The Targaryens are exiled conquerors with dragons. The Night King is coming with an army of the dead. Everyone wants power. Almost everyone dies.</p>
+            <p>What made the show special in its early seasons was unpredictability. Main characters died. Moral certainty was punished. The world operated on brutal, consistent logic: those who played by the rules were destroyed by those who didn't. The Red Wedding (season three) became the defining moment—a massacre that proved no one was safe.</p>
+            <p>Seasons one through four are masterpieces. Seasons five and six are good but show cracks—the source material ran out, and the showrunners began simplifying. Seasons seven and eight are where it collapsed: major character arcs rushed to conclusions, logic abandoned for spectacle, the Night King defeated in a single episode, Daenerys's descent into madness compressed into two episodes of screen time. The finale was widely panned.</p>
+            <p>But for a while, it was the best show on television. Peter Dinklage's Tyrion, Lena Headey's Cersei, Emilia Clarke's Daenerys, Kit Harington's Jon Snow—these were iconic performances. The production was unprecedented. The excitement was real. And then it was over, and the ending was a lesson: sometimes the journey matters more than the destination.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">9</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">10</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">9</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">4</div><div class="dimension-weight">20% weight</div></div>
+            </div>
+            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> Westeros, Essos, the Free Cities, the Wall—complete fantasy geography with distinct cultures, histories, and politics.</p>
+            <p><strong>Visual Spectacle (10):</strong> Dragons, battles, ice zombies, castle sieges—feature film production values on television.</p>
+            <p><strong>Resolution (4):</strong> The finale is widely considered one of the most disappointing in TV history. Character arcs were rushed, logic abandoned.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Winter Is Coming" (S1E1)</strong> — The introduction. The Starks. The Wall. The white walkers.</p>
+            <p><strong>"The Rains of Castamere" (S3E9)</strong> — The Red Wedding. Television's most shocking hour.</p>
+            <p><strong>"Battle of the Bastards" (S6E9)</strong> — Jon vs. Ramsay. One of TV's greatest battle sequences.</p>
+        </div>
+
+        <div class="section">
+            <h2>Where to Watch</h2>
+            <p><strong>US:</strong> Max</p>
+            <p><strong>UK:</strong> Sky Go, NOW</p>
+        </div>
+    </div>
+</body>
+</html>
