@@ -3,78 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firefly - TV Shows Ranked</title>
-    <link rel="stylesheet" href="../css/show-page.css">
+    <title>Firefly - "You Can't Take the Sky from Me" | Dynamic Rank Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Crimson Text', Georgia, serif; line-height: 1.7; color: #d4d4d4; background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #0a0a0f 100%); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,15,0.95)); border-bottom: 3px solid #daa520; }
+        .rank-badge { display: inline-block; background: linear-gradient(135deg, #daa520, #8b6914); color: #1a1a1a; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; color: #ffd700; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.3rem; color: #a0aec0; font-style: italic; margin-bottom: 1.5rem; }
+        .score-badge { display: inline-flex; flex-direction: column; align-items: center; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(218,165,32,0.3), rgba(0,0,0,0.9)); border: 3px solid #daa520; border-radius: 8px; }
+        .score-value { font-size: 3rem; font-weight: 700; color: #ffd700; }
+        .score-label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .section { margin: 3rem 0; padding: 2rem; background: rgba(0,0,0,0.3); border-radius: 8px; border-left: 4px solid #daa520; }
+        .section h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #ffd700; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .dimension { background: rgba(218,165,32,0.15); padding: 1rem; border-radius: 8px; text-align: center; }
+        .dimension-name { font-weight: 700; color: #ffd700; margin-bottom: 0.3rem; }
+        .dimension-score { font-size: 1.5rem; color: #ffd700; }
+        .dimension-weight { font-size: 0.8rem; color: #666; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .info-item { text-align: center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; }
+        .info-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .info-value { font-size: 1.3rem; color: #ffd700; font-weight: 700; }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <span>Firefly</span>
-    </nav>
-
-    <article class="show-page">
-        <header class="show-header">
-            <img src="https://image.tmdb.org/t/p/w500/1X5O6Qrj7KdVTz5RZcMPi7Y4uWp.jpg" alt="Firefly Poster" class="show-poster">
-            <div class="show-info">
-                <h1>Firefly</h1>
-                <p class="show-meta">2002 • Fox • 14 Episodes</p>
-                <div class="score-badge">Score: 7.63</div>
-                <div class="genres">Sci-Fi, Western</div>
+    <div class="container">
+        <div class="hero">
+            <div class="rank-badge">Rank #94</div>
+            <h1>Firefly</h1>
+            <p class="subtitle">"You Can't Take the Sky from Me"</p>
+            <div class="score-badge">
+                <span class="score-value">7.63</span>
+                <span class="score-label">Final Score</span>
             </div>
-        </header>
+        </div>
 
-        <section class="deep-content">
-            <h2>What It Feels Like</h2>
-            <p class="vibe-text">
-                Space as frontier. A spaceship crew taking odd jobs at the edge of civilization, staying one step ahead of the law and the horrors they left behind. Nathan Fillion is Mal Reynolds, former soldier, current cynic, reluctant hero. Joss Whedon's cancelled-too-soon masterpiece: Western tropes in sci-fi setting, Chinese cursing, horses on spaceships, the Alliance as federal government, the Reavers as the frontier's dark heart. Fourteen episodes, a movie, and an eternal cult.
-            </p>
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">Year</div><div class="info-value">2002</div></div>
+            <div class="info-item"><div class="info-label">Episodes</div><div class="info-value">14</div></div>
+            <div class="info-item"><div class="info-label">Network</div><div class="info-value">Fox</div></div>
+            <div class="info-item"><div class="info-label">Creator</div><div class="info-value">Joss Whedon</div></div>
+        </div>
 
-            <h2>The 7-Dimension Analysis</h2>
+        <div class="section">
+            <h2>What It Feels Like to Watch</h2>
+            <p>Firefly is a space Western that aired for eleven episodes before Fox cancelled it. What followed was one of the most remarkable afterlives in television history—a fan campaign that led to a theatrical movie, a culture that kept growing for decades, and a reputation that far exceeded its brief run. But watching it now, it's easy to see why people refused to let it go.</p>
+            <p>The premise: five hundred years in the future, humanity has colonized a new star system. The central planets are civilized and wealthy; the outer planets are frontier territories, lawless and poor. Malcolm Reynolds (Nathan Fillion) fought on the losing side of a civil war, and now he captain a firefly-class transport ship called Serenity, taking whatever jobs he can get—legal or not.</p>
+            <p>His crew is a found family: Zoe (Gina Torres), his war buddy and first mate; Wash (Alan Tudyk), her pilot husband; Kaylee (Jewel Staite), the mechanic who talks to the engine; Jayne (Adam Baldwin), the mercenary who's only loyal to money and sometimes not even that; Inara (Morena Baccarin), a companion who rents one of the ship's shuttles; Simon (Sean Maher), a doctor on the run; and River (Summer Glau), his damaged prodigy sister.</p>
+            <p>The show's genius is in its collision of genres. This is science fiction that feels like a Western—horses on frontier planets, six-shooters that shoot lasers, train robberies in space. But it's also about the aftermath of war, the people who lost and have to live with it, the question of what honor means when you're on the wrong side of history.</p>
+            <p>Whedon's dialogue is at its peak here—casual, funny, specific. The characters speak a mixture of English and Mandarin, a future where China and America merged culturally. They curse in Chinese. They use frontier slang. They feel like real people from a specific place and time, even if that place and time don't exist.</p>
+            <p>Fourteen episodes. That's all we got. The movie Serenity wrapped up some storylines, but the show's abrupt ending means we'll never know what it could have become. What we have is perfect, brief, and infinitely rewatchable.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Characters & Acting (8/10)</h3>
-                <p>Nathan Fillion's Mal Reynolds defines the show: cranky, loyal, principled beneath the sarcasm. The ensemble—Gina Torres, Alan Tudyk, Morena Baccarin, Adam Baldwin, Jewel Staite, Sean Maher, Summer Glau—creates a complete family. Each character has distinct voice and history. Fourteen episodes aren't enough for all of them to develop fully, but the foundation is extraordinary.</p>
+        <div class="section">
+            <h2>Why It Ranks</h2>
+            <div class="dimension-grid">
+                <div class="dimension"><div class="dimension-name">Characters & Acting</div><div class="dimension-score">9</div><div class="dimension-weight">25% weight</div></div>
+                <div class="dimension"><div class="dimension-name">World Building</div><div class="dimension-score">10</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Cinematography</div><div class="dimension-score">7</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Visual Spectacle</div><div class="dimension-score">6</div><div class="dimension-weight">5% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Conceptual Density</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Narrative Drive</div><div class="dimension-score">8</div><div class="dimension-weight">15% weight</div></div>
+                <div class="dimension"><div class="dimension-name">Resolution</div><div class="dimension-score">5</div><div class="dimension-weight">20% weight</div></div>
             </div>
+            <p style="margin-top:1.5rem"><strong>World Building (10):</strong> The Alliance vs. the outer planets, the Chinese-American cultural fusion, the technology and poverty—it's a complete universe in fourteen episodes.</p>
+            <p><strong>Characters & Acting (9):</strong> Nathan Fillion's Mal Reynolds is one of television's great captains. The ensemble creates instant chemistry that usually takes seasons to develop.</p>
+            <p><strong>Resolution (5):</strong> Cancelled after eleven episodes. The movie Serenity provides closure, but the show deserved years.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>World Building (8/10)</h3>
-                <p>A complete universe in fourteen episodes: the Alliance's core worlds, the frontier planets, the Reavers on the edge, the history of the war, the economics of smuggling. The show establishes its world through action rather than exposition. The blend of Western and sci-fi is seamless—this is what frontier expansion looks like with FTL travel.</p>
-            </div>
+        <div class="section">
+            <h2>Key Episodes</h2>
+            <p><strong>"Serenity" (S1E1/Serenity pilot)</strong> — The crew assembled. The war background. The first job.</p>
+            <p><strong>"Out of Gas" (S1E8)</strong> — Mal dying, the ship failing, flashbacks to how the crew came together. The show's best episode.</p>
+            <p><strong>"Objects in Space" (S1E14)</strong> — River's perspective. A bounty hunter. Existential Western in space.</p>
+        </div>
 
-            <div class="dimension">
-                <h3>Cinematography (6/10)</h3>
-                <p>Early-2000s TV production: handheld cameras, visible budget limitations, but clear geography and coherent action. The space sequences are competent; the western sequences feel authentic to the genre. The style is functional, elevated by strong direction and editing.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Visual Spectacle (5/10)</h3>
-                <p>The spectacle is limited by budget and era. Space battles, planetary landscapes, the occasional shootout—the show does what it can with what it has. The spectacle is in concept rather than execution: the idea of horses on a spaceship, the vision of frontier justice in the black.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Conceptual Density (7/10)</h3>
-                <p>The defeated soldier, the found family, the resistance to central authority. Firefly explores what happens after the losing side—how veterans live with defeat, how principles persist without institution. The show is anti-authoritarian without being simple; the Alliance isn't evil, just controlling. Themes of freedom, loyalty, survival.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Drive (8/10)</h3>
-                <p>Episodic adventures with serialized elements: River's secret, the Alliance's pursuit, Shepherd Book's mysterious past. Each episode is complete, but the larger threat accumulates. The short season means no filler—every episode advances something. The drive is constant; the cancellation still hurts.</p>
-            </div>
-
-            <div class="dimension">
-                <h3>Narrative Path & Resolution (4/10)</h3>
-                <p>Cancelled before completion. The movie Serenity provides some closure, but the television series ends mid-story. River's secrets are partially revealed; Book's backstory remains mysterious; the crew's future is uncertain. The ranking reflects what exists: fourteen perfect episodes, an incomplete arc. What might have been haunts what is.</p>
-            </div>
-        </section>
-
-        <section class="streaming-info">
+        <div class="section">
             <h2>Where to Watch</h2>
-            <p><strong>US:</strong> Hulu, Amazon Prime Video</p>
-            <p><strong>UK:</strong> Amazon Prime Video, Disney+</p>
-        </section>
-
-        <footer class="show-footer">
-            <a href="../../index.html">← Back to Rankings</a>
-        </footer>
-    </article>
+            <p><strong>US:</strong> Hulu, Disney+</p>
+            <p><strong>UK:</strong> Disney+</p>
+        </div>
+    </div>
 </body>
 </html>
