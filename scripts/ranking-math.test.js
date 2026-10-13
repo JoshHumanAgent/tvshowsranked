@@ -7,12 +7,12 @@ const math = require('../ranking-math');
 const catalogue = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/shows/index.json'), 'utf8').replace(/^\uFEFF/, '')).shows;
 const accountWeights = { char: 20, world: 15, cine: 15, spect: 10, conc: 15, drive: 15, resol: 10 };
 
-// Independent integer oracle: category hundredths, whole percent weights and multiplier percentages.
+// Independent rational oracle: category hundredths and whole percent weights.
+// The optional bonus advances 1/18000 per episode after ten, for at most 90 steps.
 function reference(show, weights, bonus) {
-    const limits = [[10, 96], [20, 95], [30, 97], [40, 100], [50, 102], [60, 103], [75, 104], [100, 105], [Infinity, 106]];
-    const percent = bonus ? limits.find(([limit]) => show.episodes <= limit)[1] : 100;
-    const numerator = math.KEYS.reduce((sum, key) => sum + BigInt(Math.round(show[key] * 100)) * BigInt(weights[key]), 0n) * BigInt(percent);
-    return Number((numerator + 5000n) / 10000n) / 100;
+    const steps = bonus ? BigInt(Math.min(90, Math.max(0, show.episodes - 10))) : 0n;
+    const numerator = math.KEYS.reduce((sum, key) => sum + BigInt(Math.round(show[key] * 100)) * BigInt(weights[key]), 0n) * (18000n + steps);
+    return Number((numerator + 900000n) / 1800000n) / 100;
 }
 
 test('all 442 shows agree with an independent exact-decimal oracle, with both weight sets and bonus states', () => {
@@ -23,18 +23,30 @@ test('all 442 shows agree with an independent exact-decimal oracle, with both we
     }
 });
 
-test('episode boundaries apply exactly one adjustment', () => {
-    const expected = [[1,.96],[10,.96],[11,.95],[20,.95],[21,.97],[30,.97],[31,1],[40,1],[41,1.02],[50,1.02],[51,1.03],[60,1.03],[61,1.04],[75,1.04],[76,1.05],[100,1.05],[101,1.06]];
-    for (const [episodes, multiplier] of expected) assert.equal(math.episodeMultiplier(episodes), multiplier);
+test('optional duration preference is monotonic, penalty-free and capped at half a percent', () => {
+    const expected = [[1,1],[10,1],[55,1.0025],[100,1.005],[101,1.005],[10000,1.005]];
+    for (const [episodes,multiplier] of expected) assert.equal(math.episodeMultiplier(episodes),multiplier);
+    for (let episodes=2; episodes<=1000; episodes++) {
+        const previous=math.episodeMultiplier(episodes-1), current=math.episodeMultiplier(episodes);
+        assert.ok(current>=previous && current>=1 && current<=1.005);
+        assert.ok(current-previous<=1/18000+1e-12, 'No boundary cliff');
+    }
     const perfect = Object.fromEntries(math.KEYS.map(key => [key, 10]));
-    assert.equal(math.calculateFinal({ ...perfect, episodes: 101 }, math.DEFAULT_WEIGHTS, true), 10.6);
+    assert.equal(math.calculateFinal({ ...perfect, episodes:101 }),10);
+    assert.equal(math.calculateFinal({ ...perfect, episodes:101 }, math.DEFAULT_WEIGHTS, true),10.05);
+    const eight=Object.fromEntries(math.KEYS.map(key=>[key,8]));
+    assert.equal(math.calculateFinal({ ...eight, episodes:10000 }, math.DEFAULT_WEIGHTS, true),8.04);
+    for (const show of catalogue) {
+        const difference=math.calculateFinal(show,undefined,true)-math.calculateFinal(show,undefined,false);
+        assert.ok(difference>=-1e-10 && difference<=0.05+1e-10,show.title);
+    }
 });
 
 test('half-cent rounding and calculated totals do not depend on cached finals', () => {
     const boardwalk = catalogue.find(show => show.title === 'Boardwalk Empire');
     assert.equal(math.calculateFinal(boardwalk, math.DEFAULT_WEIGHTS, false), 8.23);
     const bb = catalogue.find(show => show.title === 'Breaking Bad');
-    assert.equal(math.calculateFinal({ ...bb, final: 999, _final: -99 }, math.DEFAULT_WEIGHTS, true), 9.31);
+    assert.equal(math.calculateFinal({ ...bb, final: 999, _final: -99 }, math.DEFAULT_WEIGHTS, true), 8.98);
 });
 
 test('invalid weights, category values and episode counts cannot produce rankings', () => {

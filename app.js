@@ -11,6 +11,7 @@
     let registering = false, toastTimer, undoSnapshot = null, routing = false, sdkUnavailable = false, editingRatings = false;
     const reviewCache = new Map();
     const points = number => Number(number.toFixed(4)).toString();
+    const multiplierText = number => Number(number.toFixed(5)).toString();
     const scoreText = show => show.pending ? 'Awaiting assessment' : show.final.toFixed(2);
     const rankText = show => show.pending ? 'Not ranked' : 'Rank ' + show.rank;
     // Preserve the original medal scale, with brighter colours for the dark surface.
@@ -108,13 +109,13 @@
                     </div>
                     <div class="card-genres" aria-label="Genres">${show.genres.map(g => '<span>' + escape(g) + '</span>').join('')}</div>
                     ${show.pending ? '<p class="card-pending">A fresh assessment is needed. The old ratings are preserved but do not determine a score or rank.</p>' : `<div class="card-ratings-heading"><span>Seven dimensions</span><span>Ratings / 10</span></div><dl class="card-ratings">${cats.map(c => `<div class="card-rating" data-category="${c.key}" style="--rating-color:${ratingColor(show[c.key])}"><dt id="rating-${show.slug}-${c.key}">${c.name}</dt><dd><span class="card-bar" role="meter" aria-labelledby="rating-${show.slug}-${c.key}" aria-valuemin="0" aria-valuemax="10" aria-valuenow="${show[c.key]}"><span class="card-bar-fill" style="width:${show[c.key] * 10}%"></span></span><span class="card-rating-value" aria-hidden="true">${show[c.key]}</span></dd></div>`).join('')}</dl>`}
-                    <div class="card-footer"><div>${breakdown ? `<p class="card-calculation">${points(breakdown.weighted)} quality <span>× ${breakdown.multiplier.toFixed(2)} ${model.prefs.multiplierEnabled ? 'length' : 'length off'}</span></p>` : ''}${show.assessment?.provisional ? '<p class="card-assessment-note">Research assessment · provisional</p>' : ''}</div><button class="card-pin" data-pin="${show.slug}" data-card-action="pin" data-edit aria-label="${pinned ? 'Remove' : 'Add'} ${escape(show.title)} ${pinned ? 'from' : 'to'} shortlist" aria-pressed="${pinned}"><span aria-hidden="true">${pinned ? '★' : '☆'}</span> ${pinned ? 'Shortlisted' : 'Shortlist'}</button></div>
+                    <div class="card-footer"><div>${breakdown ? `<p class="card-calculation">${points(breakdown.weighted)} quality <span>× ${multiplierText(breakdown.multiplier)} ${model.prefs.multiplierEnabled ? 'length' : 'length off'}</span></p>` : ''}${show.assessment?.provisional ? '<p class="card-assessment-note">Research assessment · provisional</p>' : ''}</div><button class="card-pin" data-pin="${show.slug}" data-card-action="pin" data-edit aria-label="${pinned ? 'Remove' : 'Add'} ${escape(show.title)} ${pinned ? 'from' : 'to'} shortlist" aria-pressed="${pinned}"><span aria-hidden="true">${pinned ? '★' : '☆'}</span> ${pinned ? 'Shortlisted' : 'Shortlist'}</button></div>
                 </div>
             </article>`;
         }).join('');
         $('results-count').textContent = `${shown.length} of ${results.length} ${results.length === 1 ? 'show' : 'shows'}${results.length !== model.shows.length ? ' · ' + model.shows.length + ' in catalogue' : ''}`;
         $('list-label').textContent = onlyPinned ? 'Your shortlist' : currentUser || model.modifiedCount ? 'Your rankings' : 'The rankings';
-        $('ranking-context').textContent = `${model.ranked.length} ranked · ${model.pending.length} awaiting assessment · ${model.prefs.multiplierEnabled ? 'Length adjustment on' : 'Quality scores only'}`;
+        $('ranking-context').textContent = `${model.ranked.length} ranked · ${model.pending.length} awaiting assessment · ${model.prefs.multiplierEnabled ? 'Small length bonus on' : 'Quality scores only'}`;
         $('empty-state').hidden = results.length > 0;
         $('load-more').hidden = shown.length >= results.length;
         $('load-more').textContent = `Show ${Math.min(30, results.length - shown.length)} more`;
@@ -289,7 +290,9 @@
         $('detail-score').textContent = b.final.toFixed(2);
         $('detail-rank').textContent = 'Rank ' + show.rank;
         $('detail-score-label').textContent = personal ? 'Your ratings · your formula' : baseline.assessment?.basis === 'research' ? 'Research ratings · your formula' : 'Starting ratings · your formula';
-        $('detail-calculation').textContent = `${points(b.weighted)} weighted × ${b.multiplier.toFixed(2)} length · rounded once`;
+        $('detail-calculation').textContent = model.prefs.multiplierEnabled
+            ? `${points(b.weighted)} weighted × ${multiplierText(b.multiplier)} length · rounded once`
+            : `${points(b.weighted)} weighted quality · rounded once`;
         const delta = Math.round((show.final - show.withoutLengthScore) * 100) / 100;
         $('detail-length-effect').textContent = model.prefs.multiplierEnabled
             ? `Without length: ${show.withoutLengthScore.toFixed(2)} · rank ${show.withoutLengthRank}. ${delta === 0 ? 'Same displayed score.' : 'Displayed effect: ' + (delta > 0 ? '+' : '−') + Math.abs(delta).toFixed(2) + ' points.'}`
@@ -368,7 +371,7 @@
     }
     function methodology() {
         $('methodology-categories').innerHTML = cats.map(c => `<div class="method-category"><h3>${c.name}<span>${model?.prefs.weights[c.key] ?? RankingMath.DEFAULT_WEIGHTS[c.key]}%</span></h3><p>${c.description}</p></div>`).join('');
-        $('multiplier-table').innerHTML = [[1,'1–10'],[11,'11–20'],[21,'21–30'],[31,'31–40'],[41,'41–50'],[51,'51–60'],[61,'61–75'],[76,'76–100'],[101,'101+']].map(([episodes,label]) => `<tr><td>${label}</td><td>×${RankingMath.episodeMultiplier(episodes).toFixed(2)}</td></tr>`).join('');
+        $('multiplier-table').innerHTML = [[10,'1–10'],[25,'25'],[50,'50'],[75,'75'],[100,'100+']].map(([episodes,label]) => `<tr><td>${label}</td><td>×${multiplierText(RankingMath.episodeMultiplier(episodes))}</td></tr>`).join('');
         openDialog('methodology-dialog');
     }
     on('open-methodology','click',methodology); on('formula-explain','click',methodology);
@@ -376,7 +379,7 @@
     on('open-library','click',() => { updateLibrary(); openDialog('library-dialog'); });
     on('compare-shortlist','click',() => {
         const selected = model.shows.filter(s => model.prefs.pinnedShows.includes(s.title));
-        $('comparison-body').innerHTML = `<table><caption>Your current formula. Awaiting assessments have no score or rank.</caption><thead><tr><th scope="col">Dimension</th>${selected.map(s => `<th scope="col">${escape(s.title)}</th>`).join('')}</tr></thead><tbody>${[{name:'Assessed run',key:'scope'},{name:'Rank',key:'rank'}, ...cats, {name:'Weighted quality',key:'quality'},{name:'Length adjustment',key:'length'},{name:'Final score',key:'final'}].map(c => `<tr><th scope="row">${c.name}</th>${selected.map(s => `<td>${c.key === 'scope' ? escape(s.assessment?.scope.label || 'Not recorded') : s.pending ? '—' : c.key === 'rank' ? '#' + s.rank : c.key === 'final' ? s.final.toFixed(2) : c.key === 'quality' ? points(RankingMath.breakdown(s,model.prefs.weights,false).weighted) : c.key === 'length' ? '×' + (model.prefs.multiplierEnabled ? RankingMath.episodeMultiplier(s.episodes) : 1).toFixed(2) : s[c.key]}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+        $('comparison-body').innerHTML = `<table><caption>Your current formula. Awaiting assessments have no score or rank.</caption><thead><tr><th scope="col">Dimension</th>${selected.map(s => `<th scope="col">${escape(s.title)}</th>`).join('')}</tr></thead><tbody>${[{name:'Assessed run',key:'scope'},{name:'Rank',key:'rank'}, ...cats, {name:'Weighted quality',key:'quality'},{name:'Length adjustment',key:'length'},{name:'Final score',key:'final'}].map(c => `<tr><th scope="row">${c.name}</th>${selected.map(s => `<td>${c.key === 'scope' ? escape(s.assessment?.scope.label || 'Not recorded') : s.pending ? '—' : c.key === 'rank' ? '#' + s.rank : c.key === 'final' ? s.final.toFixed(2) : c.key === 'quality' ? points(RankingMath.breakdown(s,model.prefs.weights,false).weighted) : c.key === 'length' ? '×' + multiplierText(model.prefs.multiplierEnabled ? RankingMath.episodeMultiplier(s.episodes) : 1) : s[c.key]}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
         openDialog('compare-dialog');
     });
 

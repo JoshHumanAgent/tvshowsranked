@@ -25,18 +25,13 @@
 
     function episodeMultiplier(episodes) {
         if (!Number.isInteger(episodes) || episodes < 1) throw new Error('Episode count must be a positive whole number.');
-        if (episodes <= 10) return 0.96;
-        if (episodes <= 20) return 0.95;
-        if (episodes <= 30) return 0.97;
-        if (episodes <= 40) return 1;
-        if (episodes <= 50) return 1.02;
-        if (episodes <= 60) return 1.03;
-        if (episodes <= 75) return 1.04;
-        if (episodes <= 100) return 1.05;
-        return 1.06;
+        // An optional preference for duration, never a short-run penalty.
+        // Grow smoothly from no bonus at 10 episodes to +0.5% at 100, then stop.
+        const progress = Math.min(1, Math.max(0, (episodes - 10) / 90));
+        return 1 + progress * 0.005;
     }
 
-    function breakdown(show, weights = DEFAULT_WEIGHTS, bonusEnabled = true) {
+    function breakdown(show, weights = DEFAULT_WEIGHTS, bonusEnabled = false) {
         if (!validWeights(weights)) throw new Error('Category weights must total 100%.');
         validateScores(show);
         const weighted = KEYS.reduce((sum, key) => sum + show[key] * weights[key], 0) / 100;

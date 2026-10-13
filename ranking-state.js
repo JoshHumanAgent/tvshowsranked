@@ -5,13 +5,13 @@
 })(typeof globalThis === 'object' ? globalThis : this, function (math) {
     'use strict';
     const CATEGORIES = Object.freeze([
-        { key: 'char', name: 'Characters & acting', short: 'Characters', description: 'People with agency, inner lives and consistent motivations, embodied by the whole ensemble. A great lead alone does not make a perfect cast.' },
-        { key: 'world', name: 'World building', short: 'World', description: 'A lived-in world with coherent rules, cultures and institutions that exist beyond the plot. Ordinary social worlds count as much as invented ones.' },
+        { key: 'char', name: 'Characters & acting', short: 'Characters', description: 'Believable people with distinct motives, agency and inner lives, expressed through convincing performances. Judge how many substantial roles sustain that standard across the assessed run, including weaker links; one great lead or a large cast is not enough.' },
+        { key: 'world', name: 'World building', short: 'World', description: 'A credible social world with consistent rules, material constraints and institutions that exist beyond the plot. Behaviour and consequences must fit that world. Ordinary communities count as much as invented settings.' },
         { key: 'cine', name: 'Cinematography', short: 'Camera', description: 'How framing, light, composition and movement communicate meaning. Judge how the camera shows a world, separately from the scale of what it shows.' },
         { key: 'spect', name: 'Visual spectacle', short: 'Spectacle', description: 'The impact, variety and ambition of what we see: unfamiliar lives and systems as well as spectacular environments. Effects and spending are not prerequisites.' },
         { key: 'conc', name: 'Conceptual density', short: 'Ideas', description: 'Distinct, independent ideas dramatised through choices and consequences, and how those ideas interact. Serious tone or a list of themes is not enough.' },
-        { key: 'drive', name: 'Narrative drive', short: 'Momentum', description: 'Purposeful progression that sustains curiosity, tension or consequence. Quiet scenes and patient pacing can score highly; stalling is the problem.' },
-        { key: 'resol', name: 'Narrative path & resolution', short: 'Payoff', description: 'Promises developed and paid off within the assessed run. Coherent ambiguity can be satisfying; an ongoing series is not automatically a failed ending.' }
+        { key: 'drive', name: 'Narrative drive', short: 'Momentum', description: 'Purposeful progression driven by credible choices, causes and lasting consequences. Quiet scenes can build tension or understanding; repeated resets, contrivances and manufactured cliffhangers weaken the writing.' },
+        { key: 'resol', name: 'Narrative path & resolution', short: 'Payoff', description: 'Promises developed and earned across the assessed run, with coherent setups, character choices and consequences. Judge the whole journey, not just its final twist. Ambiguity can be satisfying; an ongoing series is not automatically a failed ending.' }
     ]);
     const ERAS = Object.freeze(['last3mo', 'last6mo', 'thisYear', '2020s', '2010s', '2000s', 'pre2000']);
     const SORTS = Object.freeze(['rank', 'score-desc', 'score-asc', 'title', 'year-desc', 'year-asc']);
@@ -58,7 +58,7 @@
     }
 
     function defaults() {
-        return { weights: { ...math.DEFAULT_WEIGHTS }, multiplierEnabled: true, currentGenres: ['all'],
+        return { weights: { ...math.DEFAULT_WEIGHTS }, multiplierEnabled: false, currentGenres: ['all'],
             currentEras: [], sortBy: 'rank', filtersCollapsed: true, pinnedShows: [], scoreOverrides: {} };
     }
 

@@ -16,7 +16,7 @@ See [LOCAL-DEVELOPMENT.md](LOCAL-DEVELOPMENT.md) for startup, storage, testing a
 | `index.html` | Semantic page, panels and native dialogs |
 | `styles.css` | Responsive presentation, focus states and reduced-motion behaviour |
 | `app.js` | Browser interactions, rendering, backups, authentication and archive loading |
-| `ranking-math.js` | Authoritative scoring formula, rounding, weights and episode table |
+| `ranking-math.js` | Authoritative scoring formula, rounding, weights and capped optional duration preference |
 | `ranking-state.js` | Validated preferences, catalogue model, filters, duplicate aliases |
 | `account-sync.js` | Bounded reads, ordered writes, acknowledgement and account ownership |
 | `firebase-config.js` | Public Firebase web configuration; not an authorization boundary |
@@ -28,6 +28,10 @@ See [LOCAL-DEVELOPMENT.md](LOCAL-DEVELOPMENT.md) for startup, storage, testing a
 `data/core/00-foundation-list.json` is a historical baseline, not the live calculation. The browser ignores stored `final` and account `_final` caches and calculates from category ratings, applied weights and episode settings.
 
 ## Assessment improvements — 13 October 2026
+
+Following the [critical ranking audit](docs/ranking-calibration-review-2026-10-13.md), Josh clarified the preference for realistic, serious drama assessed through believable performances, substantial characters and disciplined writing. The [assessment standard](docs/ASSESSMENTS.md) records the concrete criteria. Quality alone is now the default. The optional duration bonus grows smoothly from zero at ten episodes to at most 0.5% at 100 episodes, with no short-run penalty. It adds at most 0.04 to an 8/10 score. Existing explicit personal toggle choices remain saved; reset uses the new off default. Category ratings and weights are unchanged by this policy update. Earlier audits, stored totals and verification notes below describe their own historical revisions.
+
+Verification of the revised duration policy: 51 tests pass and the validator is healthy. The independent rational oracle covers every preserved record under both weight sets and both bonus states. The optional bonus now moves entries by 2.22 places on average, with 48 of the quality-only top 50 retained. Local browser checks confirm the displayed bonus, its explanation and reload persistence. Josh's account received server confirmation for switching the bonus off; its seven weights and 26 personal-rating count survived reload.
 
 The [first five reassessments](docs/first-five-reassessments-2026-10-13.md) now replace the wrong-programme assessments with 35 sourced reasons and explicit episode coverage. They are provisional research judgments; complete runs were not watched for this pass. The original prose remains withheld. The other 434 ranked entries retain their legacy ratings. Current verification: 50 tests pass, the full validator is healthy, all five new totals were checked in the local browser, and a guest personal edit survived reload and reset. The migration notes below record the preceding state.
 
@@ -94,7 +98,7 @@ The archived Golden Boy, Esrefs Dream and The Art of Sarah reviews describe prem
 
 1. **Verify the editorial content.** Reassess the three flagged shows, then audit original summaries and category ratings against dated sources. The repaired arithmetic cannot establish whether an editorial score is justified.
 2. **Version the data and cloud access rules.** Add per-entry assessment scope, date and evidence. Export the actual deployed Firestore rules into the repo and test owner-versus-other-account permissions in an emulator before a public release.
-3. **Reconsider the length adjustment.** The preserved optional table rewards longevity but has an odd 10-to-11-episode discontinuity. Keep existing account choices intact; a future simpler default could compare quality without length bias and offer episode count only as a browsing filter.
+3. **Apply the clarified assessment standard.** Quality-only defaults and the capped duration preference are implemented. Next, reassess the critical-audit candidates with credible character behaviour, ensemble breadth, causal writing and scope-specific evidence, without targeting predetermined ranks.
 4. **Publish reviewed changes.** GitHub Pages serves the root of `master` at the existing domain. `.nojekyll` keeps this buildless site and its evidence files unprocessed. Run the documented checks, commit the intended changes, then push to `master` only when publication is authorized. Confirm the Pages deployment and public version; a successful push alone is not proof of a live release.
 
 The recovered documents `RECOVERY.md`, `WORKFLOWS.md`, `DIRECTIVE.md` and most batch scripts describe older workflows. Use the current README, local guide and `scripts/README.md` for active maintenance.

@@ -15,11 +15,11 @@
     <meta name="twitter:card" content="summary">
     <link rel="preconnect" href="https://image.tmdb.org">
     <link rel="stylesheet" href="styles.css?v=full-cards-2">
-    <script defer src="ranking-math.js?v=reassessments-1"></script>
-    <script defer src="ranking-state.js?v=reassessments-1"></script>
+    <script defer src="ranking-math.js?v=quality-first-1"></script>
+    <script defer src="ranking-state.js?v=quality-first-1"></script>
     <script defer src="account-sync.js"></script>
     <script defer src="firebase-config.js"></script>
-    <script defer src="app.js?v=full-cards-2"></script>
+    <script defer src="app.js?v=quality-first-1"></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to rankings</a>
@@ -48,7 +48,7 @@
                 <div class="panel-heading"><div><p class="eyebrow">The things you value</p><h2 id="weights-title">Your formula</h2></div><button class="text-button" id="reset-weights" data-edit>Use default weights</button></div>
                 <p class="muted">Move a weight to change its importance. The others balance automatically to keep the total at 100%.</p>
                 <fieldset id="weight-sliders" class="weight-grid" data-edit><legend class="sr-only">Category importance</legend></fieldset>
-                <div class="formula-footer"><label class="check-label"><input id="multiplier-toggle" type="checkbox" checked data-edit> Value sustained quality</label><span class="muted">Apply the original length adjustment. Each show reveals its effect.</span><button class="text-button" id="formula-explain">See the calculation</button></div>
+                <div class="formula-footer"><label class="check-label"><input id="multiplier-toggle" type="checkbox" data-edit> Small length bonus</label><span class="muted">Off by default. At most +0.5%: just +0.04 on an 8/10 score.</span><button class="text-button" id="formula-explain">See the calculation</button></div>
             </section>
             <div class="list-heading">
                 <div><p class="eyebrow" id="list-label">The rankings</p><p id="results-count" role="status" aria-live="polite">Loading the catalogue…</p></div>
@@ -69,11 +69,11 @@
     <dialog id="show-dialog" aria-labelledby="show-title"><div class="dialog-top"><span class="eyebrow">Inside the ranking</span><button class="icon-button" data-close aria-label="Close show details">×</button></div><div id="show-detail-body"></div></dialog>
     <dialog id="methodology-dialog" aria-labelledby="methodology-title">
         <div class="dialog-top"><span class="eyebrow">Transparent by design</span><button class="icon-button" data-close aria-label="Close methodology">×</button></div>
-        <h2 id="methodology-title">Taste, made visible.</h2><p>Seven dimensions describe the experience of watching a show. Your weights decide how much each matters. Change a rating when you disagree with an assessment; change a weight when you value something differently.</p>
+        <h2 id="methodology-title">Taste, made visible.</h2><p>Our editorial standard favours grounded, serious drama: believable characters, convincing performances and disciplined writing. Realism means credible behaviour and consequences, including in imagined worlds. Reputation, budget and a serious tone alone do not earn points.</p><p>Seven dimensions make that judgment explicit. Your weights decide how much each matters. Change a rating when you disagree with an assessment; change a weight when you value something differently.</p>
         <div class="rating-scale" aria-label="Rating scale"><span><b>5</b> Average</span><span><b>6</b> Good</span><span><b>7</b> Very good</span><span><b>8</b> Exceptional</span><span><b>9</b> Almost perfect</span><span><b>10</b> The benchmark</span></div>
-        <div class="equation">Σ (rating × weight ÷ 100) × length adjustment</div>
+        <div class="equation">Quality = Σ (rating × weight ÷ 100)</div>
         <p>We round once, at the end, to two decimal places. Equal scores are ordered alphabetically. Ranks always refer to the full catalogue, even when you filter the list.</p><div id="methodology-categories"></div>
-        <details class="disclosure"><summary>Length adjustment</summary><p>This optional legacy rule favours longer runs. It is a preference, not a measure of quality. It can take a final score above 10; turning it off uses ×1.00 for every show.</p><p>The original table is intentionally preserved. It is not smooth: an 11-episode series receives a slightly lower multiplier than a 10-episode series.</p><table><caption>Multiplier by episode count</caption><thead><tr><th>Episodes</th><th>Multiplier</th></tr></thead><tbody id="multiplier-table"></tbody></table></details>
+        <details class="disclosure"><summary>Small length bonus · optional</summary><p>Off by default: the ranking uses quality alone. If enabled, a small duration preference adds at most 0.5% to that quality score—0.04 points on an 8/10. More episodes do not establish better acting or writing.</p><p>There is no bonus through 10 episodes. It increases smoothly to the maximum at 100 episodes, then stops. Short runs are never penalised. Quality stays on a ten-point scale; the optional adjusted total can reach 10.05.</p><table><caption>Example multipliers, shown rounded</caption><thead><tr><th>Episodes</th><th>Multiplier</th></tr></thead><tbody id="multiplier-table"></tbody></table></details>
         <details class="disclosure"><summary>What counts as an assessment?</summary><p>Ratings, reasons and episode counts must refer to the same run. A selected-season entry excludes later material. Where the original season cutoff was not recorded, we say so.</p><p>Starting ratings are subjective, AI-assisted editorial judgments. New research assessments identify their scope, sources and evidence limits; they are provisional interpretations, not claims of complete viewing. Historical notes are labelled separately from current ratings; a matching number alone does not verify a review. Known wrong-programme assessments stay searchable and can be shortlisted, but receive no score or rank until reassessed.</p><p>Ongoing stories are judged by the promises developed within the assessed run. A future ending is unknown, not automatically bad. Purposeful quiet scenes, grounded worlds and coherent ambiguity can all earn high ratings.</p></details>
     </dialog>
     <dialog id="account-dialog" class="narrow-dialog" aria-labelledby="account-title">

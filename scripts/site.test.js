@@ -6,6 +6,26 @@ const { Model, balanceWeights, matchesEra } = require('../ranking-state');
 const math = require('../ranking-math');
 const catalogue = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/shows/index.json'),'utf8').replace(/^\uFEFF/,'')).shows;
 
+test('quality alone is the default and reset, while a saved length opt-in survives a round trip', () => {
+    const model=new Model(catalogue);
+    assert.equal(model.prefs.multiplierEnabled,false);
+    for (const show of model.ranked) {
+        assert.equal(show.final,show.withoutLengthScore);
+        assert.equal(show.rank,show.withoutLengthRank);
+    }
+    assert.equal(model.bySlug.get('boardwalk-empire').rank,10);
+    assert.equal(model.bySlug.get('buffy-the-vampire-slayer').rank,51);
+    model.apply({multiplierEnabled:true,scoreOverrides:{'Breaking Bad':{char:9.25}},pinnedShows:['Breaking Bad']});
+    const saved=model.snapshot(), copy=new Model(catalogue); copy.apply(saved);
+    assert.equal(copy.prefs.multiplierEnabled,true);
+    assert.deepEqual(copy.snapshot(),saved);
+    copy.apply({});
+    assert.equal(copy.prefs.multiplierEnabled,false);
+    const olderBackup=new Model(catalogue); olderBackup.apply({scoreOverrides:saved.scoreOverrides});
+    assert.equal(olderBackup.prefs.multiplierEnabled,false);
+    assert.equal(olderBackup.bySlug.get('breaking-bad').char,9.25);
+});
+
 test('all catalogue records remain reachable, including low scores and ranks after 100', () => {
     const model = new Model(catalogue);
     assert.equal(model.results().length,439);
@@ -56,12 +76,12 @@ test('moving one weight retains the proportions of the others, apart from whole-
 test('rating, reset and reloaded account totals agree; catalogue baselines are immutable', () => {
     const before = JSON.stringify(catalogue), model = new Model(catalogue);
     const bb = () => model.bySlug.get('breaking-bad');
-    assert.equal(bb().final,9.31);
+    assert.equal(bb().final,8.95);
     model.setScore('Breaking Bad','char',10);
-    assert.equal(bb().final,9.57); assert.equal(bb().rank,1); assert.equal(model.modifiedCount,1);
+    assert.equal(bb().final,9.20); assert.equal(bb().rank,2); assert.equal(model.modifiedCount,1);
     const copy = new Model(catalogue); copy.apply(model.snapshot());
-    assert.equal(copy.bySlug.get('breaking-bad').final,9.57);
-    model.resetShow('Breaking Bad'); assert.equal(bb().final,9.31); assert.equal(model.modifiedCount,0);
+    assert.equal(copy.bySlug.get('breaking-bad').final,9.20);
+    model.resetShow('Breaking Bad'); assert.equal(bb().final,8.95); assert.equal(model.modifiedCount,0);
     assert.equal(JSON.stringify(catalogue),before);
 });
 test('legacy backups keep precise category inputs and ignore obsolete cached totals', () => {

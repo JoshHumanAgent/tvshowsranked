@@ -8,11 +8,11 @@ const read = file => JSON.parse(fs.readFileSync(path.join(__dirname,'..',file),'
 const catalogue = read('data/shows/index.json').shows;
 const historical = read('docs/ranking-ledger/show-ledger.json');
 const revised = {
-    'when-life-gives-you-tangerines': { scores:[9,8.5,8,7.5,8,8,9], episodes:16, final:8.08 },
-    pluribus: { scores:[8.5,8,9,7.5,8.5,8,7.5], episodes:9, final:7.80 },
-    'golden-boy-2022': { scores:[6.5,6.5,6.5,6,6,5,5.5], episodes:101, final:6.33 },
-    'esrefs-dream': { scores:[7,6.5,7,6.5,6,6.5,6.5], episodes:47, final:6.71 },
-    'the-art-of-sarah': { scores:[7.5,6.5,7,6,7,7,6.5], episodes:8, final:6.62 }
+    'when-life-gives-you-tangerines': { scores:[9,8.5,8,7.5,8,8,9], episodes:16, final:8.50, historicalFinal:8.08 },
+    pluribus: { scores:[8.5,8,9,7.5,8.5,8,7.5], episodes:9, final:8.13, historicalFinal:7.80 },
+    'golden-boy-2022': { scores:[6.5,6.5,6.5,6,6,5,5.5], episodes:101, final:5.98, historicalFinal:6.33 },
+    'esrefs-dream': { scores:[7,6.5,7,6.5,6,6.5,6.5], episodes:47, final:6.58, historicalFinal:6.71 },
+    'the-art-of-sarah': { scores:[7.5,6.5,7,6,7,7,6.5], episodes:8, final:6.90, historicalFinal:6.62 }
 };
 const revisedSlugs = Object.keys(revised).sort();
 // Keep the quarantine regression after the first five records have been rehabilitated.
@@ -30,7 +30,7 @@ test('only the five deliberately revised input vectors differ from the preserved
         if (update) {
             assert.equal(show.episodes,update.episodes);
             assert.equal(math.calculateFinal(show),update.final);
-            assert.equal(show.final,update.final);
+            assert.equal(show.final,update.historicalFinal);
             assert.deepEqual(show.assessment.supersedes.ratings,before.get(show.slug));
         }
     }
@@ -137,7 +137,7 @@ test('saved personal inputs survive reassessment and reset restores the new base
     assert.equal(copy.bySlug.get('pluribus').char,9.25);
     copy.resetShow('Pluribus');
     assert.equal(copy.bySlug.get('pluribus').char,8.5);
-    assert.equal(copy.bySlug.get('pluribus').final,7.8);
+    assert.equal(copy.bySlug.get('pluribus').final,8.13);
     assert.equal(copy.bySlug.get('pluribus').assessment.dimensions.char.reason,before);
     assert.deepEqual(copy.prefs.pinnedShows,['Pluribus']);
 });
@@ -150,6 +150,7 @@ test('contributions explain the full weighted score without extra rounding or hi
 });
 test('length comparison recalculates the whole ranked population using current personal inputs', () => {
     const model = new Model(catalogue);
+    model.apply({multiplierEnabled:true});
     const qualityOrder = model.shows.map(s=>({...s,final:math.calculateFinal(s,undefined,false)})).sort(math.compareScores);
     qualityOrder.forEach((s,i)=>assert.equal(model.bySlug.get(s.slug).withoutLengthRank,i+1));
     model.setScore('Breaking Bad','char',9.37); model.setWeight('resol',0);
@@ -162,9 +163,11 @@ test('length comparison recalculates the whole ranked population using current p
     }
 });
 test('equal displayed scores reveal their tie group, while alphabetical positions remain stable', () => {
-    const model = new Model(catalogue), a = model.bySlug.get('buffy-the-vampire-slayer'), b = model.bySlug.get('girls');
-    assert.equal(a.final,b.final); assert.equal(a.tieCount,2); assert.equal(b.tieCount,2);
-    assert.equal(a.rank+1,b.rank);
+    const model = new Model(catalogue);
+    const group=model.ranked.filter(s=>s.final===8.05);
+    assert.deepEqual(group.map(s=>s.title),['Dark','Halt and Catch Fire','Mad Men','The Leftovers']);
+    assert.ok(group.every(s=>s.tieCount===4));
+    assert.deepEqual(group.map(s=>s.rank),[15,16,17,18]);
 });
 test('museum count repair is sourced, and the existing seven scores and multiplier are preserved', () => {
     const museum = catalogue.find(s=>s.slug==='museum-of-innocence');
