@@ -8,21 +8,31 @@ const read = file => JSON.parse(fs.readFileSync(path.join(__dirname,'..',file),'
 const catalogue = read('data/shows/index.json').shows;
 const historical = read('docs/ranking-ledger/show-ledger.json');
 const revised = {
-    'when-life-gives-you-tangerines': { scores:[9,8.5,8,7.5,8,8,9], episodes:16, final:8.50, historicalFinal:8.08 },
-    pluribus: { scores:[8.5,8,9,7.5,8.5,8,7.5], episodes:9, final:8.13, historicalFinal:7.80 },
-    'golden-boy-2022': { scores:[6.5,6.5,6.5,6,6,5,5.5], episodes:101, final:5.98, historicalFinal:6.33 },
-    'esrefs-dream': { scores:[7,6.5,7,6.5,6,6.5,6.5], episodes:47, final:6.58, historicalFinal:6.71 },
-    'the-art-of-sarah': { scores:[7.5,6.5,7,6,7,7,6.5], episodes:8, final:6.90, historicalFinal:6.62 }
+    'when-life-gives-you-tangerines': { scores:[9,8.5,8,7.5,8,8,9], episodes:16, final:8.50, historicalFinal:8.08, withheld:true },
+    pluribus: { scores:[8.5,8,9,7.5,8.5,8,7.5], episodes:9, final:8.13, historicalFinal:7.80, withheld:true },
+    'golden-boy-2022': { scores:[6.5,6.5,6.5,6,6,5,5.5], episodes:101, final:5.98, historicalFinal:6.33, withheld:true },
+    'esrefs-dream': { scores:[7,6.5,7,6.5,6,6.5,6.5], episodes:47, final:6.58, historicalFinal:6.71, withheld:true },
+    'the-art-of-sarah': { scores:[7.5,6.5,7,6,7,7,6.5], episodes:8, final:6.90, historicalFinal:6.62, withheld:true },
+    'buffy-the-vampire-slayer': { scores:[7.5,6.5,7.5,6,7.5,6.5,7], episodes:144, final:7.03, historicalFinal:7.78, withheld:false },
+    'the-walking-dead': { scores:[7,7,7,7.5,6.5,5.5,5.5], episodes:177, final:6.43, historicalFinal:7.43, withheld:false },
+    'boston-legal': { scores:[7.5,6,7,5,6.5,6.5,7.5], episodes:101, final:6.83, historicalFinal:7.58, withheld:true },
+    'the-practice': { scores:[7.5,7.5,7,5,7.5,7,6.5], episodes:168, final:7.08, historicalFinal:7.53, withheld:false },
+    'shameless-us': { scores:[8,7,7,5,7,5.5,6], episodes:134, final:6.73, historicalFinal:7.60, withheld:true },
+    fleabag: { scores:[8.5,6.5,8,5,7.5,8.5,9], episodes:12, final:7.95, historicalFinal:6.78, withheld:false },
+    'i-may-destroy-you': { scores:[8.5,7.5,8,5.5,8.5,8,8.5], episodes:12, final:8.10, historicalFinal:7.33, withheld:true },
+    'the-pitt': { scores:[8.5,8.5,8,6.5,7.5,8.5,8], episodes:30, final:8.13, historicalFinal:6.10, withheld:true },
+    fallout: { scores:[7.5,7.5,8,8.5,7,7,7.5], episodes:8, final:7.43, historicalFinal:6.45, withheld:true }
 };
 const revisedSlugs = Object.keys(revised).sort();
+const originalQuarantine = ['when-life-gives-you-tangerines','pluribus','golden-boy-2022','esrefs-dream','the-art-of-sarah'].sort();
 // Keep the quarantine regression after the first five records have been rehabilitated.
 const pendingFixture = () => catalogue.map(original => {
     const show = structuredClone(original);
-    if (revised[show.slug]) { show.assessment.status='withheld'; show.reviewStatus='premise-mismatch'; }
+    if (originalQuarantine.includes(show.slug)) { show.assessment.status='withheld'; show.reviewStatus='premise-mismatch'; }
     return show;
 });
 
-test('only the five deliberately revised input vectors differ from the preserved audit', () => {
+test('only the explicitly reassessed input vectors differ from the preserved audit', () => {
     const before = new Map(historical.map(s=>[s.slug,s.scores]));
     for (const show of catalogue) {
         const update = revised[show.slug];
@@ -60,7 +70,7 @@ test('wrong-programme assessments remain discoverable without a score or ordinal
     const model = new Model(pendingFixture());
     assert.equal(model.shows.length,439);
     assert.equal(model.ranked.length,434);
-    assert.deepEqual(model.pending.map(s=>s.slug).sort(),revisedSlugs);
+    assert.deepEqual(model.pending.map(s=>s.slug).sort(),originalQuarantine);
     assert.deepEqual(model.ranked.map(s=>s.rank),Array.from({length:434},(_,i)=>i+1));
     for (const show of model.pending) {
         assert.equal(show.final,null); assert.equal(show.rank,null);
@@ -71,7 +81,7 @@ test('wrong-programme assessments remain discoverable without a score or ordinal
     assert.ok(model.results()[0].final > 0);
     assert.ok(model.results().slice(-5).every(s=>s.pending));
 });
-test('the five research assessments have complete evidence and rejoin the calculated ranking', () => {
+test('the fourteen research assessments have complete evidence and calculated rankings', () => {
     const model = new Model(catalogue);
     assert.equal(model.ranked.length,439);
     assert.equal(model.pending.length,0);
@@ -81,7 +91,7 @@ test('the five research assessments have complete evidence and rejoin the calcul
         const show=model.bySlug.get(slug), a=show.assessment;
         assert.equal(a.basis,'research'); assert.equal(a.provisional,true);
         assert.equal(a.reviewedAt,'2026-10-13'); assert.equal(a.scope.episodes,show.episodes);
-        assert.equal(a.review.status,'withheld'); assert.equal(show.reviewStatus,undefined);
+        assert.equal(a.review.status,revised[slug].withheld ? 'withheld' : 'archived'); assert.equal(show.reviewStatus,undefined);
         assert.ok(a.limitations.length>100);
         const ids=new Set(a.sources.map(s=>s.id));
         for (const key of math.KEYS) assert.ok(a.dimensions[key].sourceRefs.every(id=>ids.has(id)));
@@ -89,7 +99,7 @@ test('the five research assessments have complete evidence and rejoin the calcul
         assert.ok(Number.isInteger(show.rank));
         const archive=fs.readFileSync(path.join(__dirname,'..',a.review.path),'utf8');
         assert.match(archive,/superseded by a new research assessment/);
-        assert.match(archive,/name="robots" content="noindex, follow"/);
+        assert.equal(/name="robots" content="noindex, follow"/.test(archive),revised[slug].withheld);
     }
 });
 test('malformed or misbound assessment evidence cannot quietly enter the live catalogue', () => {
@@ -128,18 +138,21 @@ test('a saved personal override cannot silently resurrect a disputed assessment,
     assert.equal(copy.bySlug.get('pluribus').rank,null);
 });
 test('saved personal inputs survive reassessment and reset restores the new baseline without rewriting reasons', () => {
-    const model=new Model(catalogue), before=model.base.get('Pluribus').assessment.dimensions.char.reason;
-    model.apply({scoreOverrides:{Pluribus:{char:9.25,drive:8}},pinnedShows:['Pluribus']});
-    assert.equal(model.bySlug.get('pluribus').char,9.25);
-    assert.equal(model.base.get('Pluribus').char,8.5);
-    assert.equal(model.bySlug.get('pluribus').assessment.dimensions.char.reason,before);
-    const copy=new Model(catalogue); copy.apply(model.snapshot());
-    assert.equal(copy.bySlug.get('pluribus').char,9.25);
-    copy.resetShow('Pluribus');
-    assert.equal(copy.bySlug.get('pluribus').char,8.5);
-    assert.equal(copy.bySlug.get('pluribus').final,8.13);
-    assert.equal(copy.bySlug.get('pluribus').assessment.dimensions.char.reason,before);
-    assert.deepEqual(copy.prefs.pinnedShows,['Pluribus']);
+    for (const slug of ['pluribus','buffy-the-vampire-slayer']) {
+        const model=new Model(catalogue), {title,assessment}=model.bySlug.get(slug), before=structuredClone(assessment);
+        model.apply({scoreOverrides:{[title]:{char:9.25}},pinnedShows:[title]});
+        assert.equal(model.bySlug.get(slug).char,9.25);
+        assert.equal(model.base.get(title).char,revised[slug].scores[0]);
+        assert.equal(model.bySlug.get(slug).drive,revised[slug].scores[5]);
+        assert.deepEqual(model.bySlug.get(slug).assessment,before);
+        const copy=new Model(catalogue); copy.apply(model.snapshot());
+        assert.equal(copy.bySlug.get(slug).char,9.25);
+        copy.resetShow(title);
+        assert.equal(copy.bySlug.get(slug).char,revised[slug].scores[0]);
+        assert.equal(copy.bySlug.get(slug).final,revised[slug].final);
+        assert.deepEqual(copy.bySlug.get(slug).assessment,before);
+        assert.deepEqual(copy.prefs.pinnedShows,[title]);
+    }
 });
 test('contributions explain the full weighted score without extra rounding or hidden adjustments', () => {
     for (const show of catalogue) {
@@ -167,7 +180,7 @@ test('equal displayed scores reveal their tie group, while alphabetical position
     const group=model.ranked.filter(s=>s.final===8.05);
     assert.deepEqual(group.map(s=>s.title),['Dark','Halt and Catch Fire','Mad Men','The Leftovers']);
     assert.ok(group.every(s=>s.tieCount===4));
-    assert.deepEqual(group.map(s=>s.rank),[15,16,17,18]);
+    assert.deepEqual(group.map(s=>s.rank),group.map((_,i)=>group[0].rank+i));
 });
 test('museum count repair is sourced, and the existing seven scores and multiplier are preserved', () => {
     const museum = catalogue.find(s=>s.slug==='museum-of-innocence');

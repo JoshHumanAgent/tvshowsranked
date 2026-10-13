@@ -21,11 +21,11 @@ See the file map and scored review in [README.md](README.md). UI, styles, state 
 
 `final = round(sum(category rating × weight) / 100 × episode adjustment, 2)`
 
-Defaults are 25/15/5/5/15/15/20 for characters/world/camera/spectacle/ideas/drive/resolution. Weight edits redistribute the remainder proportionally and use largest remainders to total exactly 100%. Category ratings range from 0 to 10. The optional legacy episode adjustment can put a final score above 10. Equal displayed scores sort alphabetically.
+Defaults are 25/15/5/5/15/15/20 for characters/world/camera/spectacle/ideas/drive/resolution. Weight edits redistribute the remainder proportionally and use largest remainders to total exactly 100%. Category ratings range from 0 to 10. Length adjustment is off by default; the optional bonus is capped at 0.5% and can put a perfect final score at 10.05. Equal displayed scores sort alphabetically.
 
 Historical JSON `final` and saved `_final` values are never calculation inputs. The validator reports stored totals that differ from the current default calculation as historical drift, not silently used live data.
 
-The catalogue retains 442 original records. The app displays 439 ranked programmes after duplicate handling and identity quarantine. Five now have provisional research reassessments; the other 434 retain legacy judgments. Any future pending entries have null derived score/rank, remain searchable and pinnable, and never become zero-valued lowest scores. Existing overrides remain exportable but do not reinstate a disputed assessment.
+The catalogue retains 442 original records. The app displays 439 ranked programmes after duplicate handling and identity quarantine. Fourteen now have provisional research reassessments; the other 425 retain legacy judgments. Any future pending entries have null derived score/rank, remain searchable and pinnable, and never become zero-valued lowest scores. Existing overrides remain exportable but do not reinstate a disputed assessment.
 
 `data/shows/index.json` is the authoritative assessment record. Its seven top-level ratings are the only starting-score inputs. The nested `assessment` binds scope, historical notes, source ratings and review status to the record. See [assessment authoring](docs/ASSESSMENTS.md). Metadata repairs and sources remain in `data/catalogue-corrections.json`.
 

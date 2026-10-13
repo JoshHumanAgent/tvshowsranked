@@ -14,7 +14,7 @@ Realism means credible psychology, social behaviour, material constraints and ca
 - **Writing and plot:** use narrative drive for credible cause and effect, necessary scenes, accumulation and progression. Use path/resolution for setups, earned turns, fulfilled promises and consequences across the selected run. Distinguish purposeful patience from stalling, and consequential recurrence from a reset. A surprise is not automatically a good development. Explain separate effects before penalising the same flaw in multiple categories.
 - **Ideas and visual craft:** retain the independent conceptual-density, camera and spectacle definitions. Demonstrate interacting ideas rather than listing serious themes. Explain what framing and design accomplish rather than equating cost, prettiness or darkness with quality.
 
-For every changed score, provide representative evidence, meaningful counterevidence and an explanation of the boundary to the next half-point. Compare the same property against reference works, not target ranks. Five is average, six good, seven very good, eight exceptional, nine almost perfect and ten effectively unimprovable. Scope, date and research limitations remain mandatory. This clarification does not retroactively certify or rescore the 434 legacy assessments.
+For every changed score, provide representative evidence, meaningful counterevidence and an explanation of the boundary to the next half-point. Compare the same property against reference works, not target ranks. Five is average, six good, seven very good, eight exceptional, nine almost perfect and ten effectively unimprovable. Scope, date and research limitations remain mandatory. Fourteen entries have now been deliberately reassessed; this does not retroactively certify or rescore the remaining 425 ranked legacy assessments.
 
 ## Duration preference — revised after the critical audit
 
@@ -26,7 +26,7 @@ The earlier critical-audit files and first-five reassessment totals are historic
 
 ## The migration
 
-The 13 October 2026 migration preserved every subjective rating. It created `assessment.version: 1` records with rubric version `2026-10`, a catalogue source date, an evidence organisation date, scope, review status, seven dimension records and relevant audit findings. These dates do not claim fresh verification of every review fact. A subsequent, explicit five-record reassessment is described below; other entries still retain that migration state.
+The 13 October 2026 migration preserved every subjective rating. It created `assessment.version: 1` records with rubric version `2026-10`, a catalogue source date, an evidence organisation date, scope, review status, seven dimension records and relevant audit findings. These dates do not claim fresh verification of every review fact. Subsequent explicit passes revised five and then nine assessments, as described below; other entries still retain that migration state.
 
 Each `dimensions[key]` contains a current `reason` (initially null) and an `archive` containing the ratings actually found beside the historical excerpt. Null reasons are deliberate. A matching number does not establish that old prose is correct, applies to the same seasons, or supports the present judgment.
 
@@ -34,13 +34,13 @@ The interface shows current input, weight and contribution. Expanding a dimensio
 
 ## Scope and withheld material
 
-`scope.status: named` means the selected range was recorded in the title. It does not independently verify every episode count. `unrecorded` means the original assessment did not identify its season cutoff. Do not interpret an episode count as a complete-series assessment.
+`scope.status: named` means the selected range is explicit. Legacy named scopes came from titles; reviewed records state the included seasons, episode count and source references in the assessment itself. A legacy label does not independently verify every episode count. `unrecorded` means the original assessment did not identify its season cutoff. Do not interpret an episode count alone as a complete-series assessment.
 
 Ongoing stories are judged against promises developed in the assessed run. Cancellation, an unknown endpoint, quiet scenes, ordinary locations and ambiguity are not automatic penalties. Active definitions in `ranking-state.js` are shared by the methodology and detail views.
 
 The migration withheld five established wrong-programme assessments: Pluribus, When Life Gives You Tangerines, Golden Boy, Esrefs Dream and The Art of Sarah. Version 2 now replaces these with explicitly provisional research assessments, restoring calculated scores and ranks. The original wrong-programme prose remains withheld. For any future `assessment.status: withheld` record, derived `final` and `rank` are null; it remains searchable and shortlistable, and personal inputs stay exportable but cannot silently restore a rank.
 
-Fifteen more records have `review.status: withheld` for unresolved factual or adaptation conflicts. Their scores remain recovered starting judgments. This commentary restriction does not claim an external check disproved all fifteen programmes. The twenty withheld archives are noindex and absent from the sitemap. Revolution 9's separate identity quarantine and duplicate aliases are unchanged.
+Fifteen further legacy records have `review.status: withheld` for unresolved factual or adaptation conflicts. Their scores remain recovered starting judgments. The nine-entry critical pass additionally withholds five superseded reviews with specific errors or scope conflicts: Boston Legal, Shameless (US), I May Destroy You, The Pitt and Fallout. Those five now have new ratings and reasons. There are twenty-five withheld original reviews in total, all noindex and absent from the sitemap. Withholding commentary is distinct from withholding an assessment: it does not automatically remove a valid new score. Revolution 9's separate identity quarantine and duplicate aliases are unchanged.
 
 ## Revising an assessment
 
@@ -62,7 +62,11 @@ Version 2 reviewed records require a review date, a summary, limitations, named 
 
 The canonical seven numeric fields remain the only current input vector. Sources do not award or certify these numerical scores. Default weights and length rules were unchanged during that first-five reassessment; the subsequent duration revision above now governs live totals. The two Turkish complete-series entries use original broadcast counts (101 and 47), excluding shorter international recuts. Saved personal ratings remain separate and take precedence in that person's ranking; reset restores the newly researched baseline.
 
-The regression guard now allows only these five specified input vectors to differ from the frozen ledger. It also checks source binding, scope drift, provisional labels, archive withholding, preference round trips and the still-supported pending-assessment behaviour. The other 434 ranked programmes remain unreassessed legacy judgments.
+## Critical reassessment pass
+
+The [nine-entry reassessment record](critical-reassessments-2026-10-13.md) applies the clarified standard to Buffy, The Walking Dead, Boston Legal, The Practice, Shameless (US), Fleabag, I May Destroy You, The Pitt and Fallout. All 63 dimension reasons have sources, strengths, limitations and an adjacent half-point boundary. Scope is the complete series for seven entries, seasons one and two for The Pitt, and season one only for Fallout. Existing episode counts were retained after checking that coverage.
+
+The regression guard allows only the fourteen explicitly specified input vectors to differ from the frozen ledger. It checks source binding, scope drift, provisional labels, appropriate archive withholding, preference round trips and the still-supported original five-entry quarantine. Personal scores survive the new baseline and reset restores it. The other 425 ranked programmes remain unreassessed legacy judgments; large rank changes against them do not establish a definitive all-time ordering.
 
 ## Calculation
 

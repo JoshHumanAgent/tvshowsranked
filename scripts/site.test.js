@@ -13,8 +13,9 @@ test('quality alone is the default and reset, while a saved length opt-in surviv
         assert.equal(show.final,show.withoutLengthScore);
         assert.equal(show.rank,show.withoutLengthRank);
     }
-    assert.equal(model.bySlug.get('boardwalk-empire').rank,10);
-    assert.equal(model.bySlug.get('buffy-the-vampire-slayer').rank,51);
+    assert.equal(model.bySlug.get('boardwalk-empire').final,8.23);
+    assert.equal(model.bySlug.get('buffy-the-vampire-slayer').final,7.03);
+    assert.ok(model.bySlug.get('boardwalk-empire').rank < model.bySlug.get('buffy-the-vampire-slayer').rank);
     model.apply({multiplierEnabled:true,scoreOverrides:{'Breaking Bad':{char:9.25}},pinnedShows:['Breaking Bad']});
     const saved=model.snapshot(), copy=new Model(catalogue); copy.apply(saved);
     assert.equal(copy.prefs.multiplierEnabled,true);

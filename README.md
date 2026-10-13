@@ -5,7 +5,7 @@ A small, static television ranking app. No framework, package install or build s
 - Public site: <https://dynamicrankengine.com/> (GitHub Pages, `master`).
 - Local work: `D:\DynamicRankEngine`, branch `codex/local-development`.
 - Preview: <http://localhost:4173/>. Local editing and publication are separate steps.
-- 439 ranked entries, including five provisional research reassessments, with all 442 original records preserved. Two duplicate aliases and one unidentified entry are excluded from the displayed catalogue.
+- 439 ranked entries, including fourteen provisional research reassessments and 425 legacy assessments, with all 442 original records preserved. Two duplicate aliases and one unidentified entry are excluded from the displayed catalogue.
 
 ## Work on the site
 
@@ -29,17 +29,21 @@ See [LOCAL-DEVELOPMENT.md](LOCAL-DEVELOPMENT.md) for startup, storage, testing a
 
 ## Assessment improvements — 13 October 2026
 
+The [critical reassessment pass](docs/critical-reassessments-2026-10-13.md) revises Buffy, The Walking Dead, Boston Legal, The Practice, Shameless (US), Fleabag, I May Destroy You, The Pitt and Fallout. All nine have seven new reasons, explicit season coverage and sources. The changes include justified increases as well as decreases; no target ranks were chosen. Scores are provisional research judgments, not complete-viewing assessments. Personal overrides remain separate. The other 425 ranked entries still need calibration against the same standard.
+
+Current verification: all 51 tests pass and the full site validator is healthy. All nine browser-rendered totals and all 63 sourced reasons match the canonical data. A guest edit survived reload and reset to the new baseline. All 433 other preserved records and the original review prose were verified unchanged; regenerated archive context is idempotent. The sitemap contains 415 existing, indexable URLs.
+
 Following the [critical ranking audit](docs/ranking-calibration-review-2026-10-13.md), Josh clarified the preference for realistic, serious drama assessed through believable performances, substantial characters and disciplined writing. The [assessment standard](docs/ASSESSMENTS.md) records the concrete criteria. Quality alone is now the default. The optional duration bonus grows smoothly from zero at ten episodes to at most 0.5% at 100 episodes, with no short-run penalty. It adds at most 0.04 to an 8/10 score. Existing explicit personal toggle choices remain saved; reset uses the new off default. Category ratings and weights are unchanged by this policy update. Earlier audits, stored totals and verification notes below describe their own historical revisions.
 
 Verification of the revised duration policy: 51 tests pass and the validator is healthy. The independent rational oracle covers every preserved record under both weight sets and both bonus states. The optional bonus now moves entries by 2.22 places on average, with 48 of the quality-only top 50 retained. Local browser checks confirm the displayed bonus, its explanation and reload persistence. Josh's account received server confirmation for switching the bonus off; its seven weights and 26 personal-rating count survived reload.
 
-The [first five reassessments](docs/first-five-reassessments-2026-10-13.md) now replace the wrong-programme assessments with 35 sourced reasons and explicit episode coverage. They are provisional research judgments; complete runs were not watched for this pass. The original prose remains withheld. The other 434 ranked entries retain their legacy ratings. Current verification: 50 tests pass, the full validator is healthy, all five new totals were checked in the local browser, and a guest personal edit survived reload and reset. The migration notes below record the preceding state.
+The earlier [first five reassessments](docs/first-five-reassessments-2026-10-13.md) replaced the wrong-programme assessments with 35 sourced reasons and explicit episode coverage. They are provisional research judgments; complete runs were not watched for that pass. The original prose remains withheld. At that revision, the other 434 ranked entries retained their legacy ratings. Verification then: 50 tests passed, the full validator was healthy, all five new totals were checked in the local browser, and a guest personal edit survived reload and reset. The migration notes below record the preceding state.
 
 The [design audit](docs/ranking-ledger/README.md) now informs the interface. Each show explains its seven weighted contributions, score and rank without length adjustment, and equal-score ties. Rating controls open on demand with exact decimal entry. The rubric restores purposeful quiet scenes, grounded visual worlds and earned ambiguity to their original meanings.
 
 Every catalogue record carries versioned scope and seven historical evidence records. Conflicting archive numbers are labelled; missing reasons remain missing. This migration is not a fresh critical assessment of 442 programmes.
 
-Five wrong-programme assessments—Pluribus, When Life Gives You Tangerines, Golden Boy, Esrefs Dream and The Art of Sarah—remain searchable and pinnable but have no score or rank. Existing personal inputs survive backups; editing these entries is paused pending reassessment. Fifteen further reviews with unresolved factual concerns are withheld as commentary, without assuming their numerical inputs are wrong. All twenty withheld reviews are noindex and omitted from the sitemap.
+At the migration revision, five wrong-programme assessments—Pluribus, When Life Gives You Tangerines, Golden Boy, Esrefs Dream and The Art of Sarah—remained searchable and pinnable but had no score or rank. Existing personal inputs survived backups; editing these entries was paused pending reassessment. Fifteen further reviews with unresolved factual concerns were withheld as commentary, without assuming their numerical inputs were wrong. All twenty withheld reviews were noindex and omitted from the sitemap. The subsequent passes above replace fourteen assessments and now withhold twenty-five original reviews.
 
 All 3,094 category inputs and existing weights/length policy are preserved. Museum of Innocence's count was corrected from eight to nine using Netflix's announcement; its multiplier is unchanged. See [assessment authoring](docs/ASSESSMENTS.md).
 
@@ -96,9 +100,9 @@ The archived Golden Boy, Esrefs Dream and The Art of Sarah reviews describe prem
 
 ## What would improve it next
 
-1. **Verify the editorial content.** Reassess the three flagged shows, then audit original summaries and category ratings against dated sources. The repaired arithmetic cannot establish whether an editorial score is justified.
-2. **Version the data and cloud access rules.** Add per-entry assessment scope, date and evidence. Export the actual deployed Firestore rules into the repo and test owner-versus-other-account permissions in an emulator before a public release.
-3. **Apply the clarified assessment standard.** Quality-only defaults and the capped duration preference are implemented. Next, reassess the critical-audit candidates with credible character behaviour, ensemble breadth, causal writing and scope-specific evidence, without targeting predetermined ranks.
+1. **Continue editorial calibration.** Fourteen entries now have sourced research assessments; the other 425 active entries still carry legacy judgments. Apply the same standard to reference shows and remaining audit candidates before interpreting ordinal positions as a settled hierarchy.
+2. **Verify cloud access rules.** Per-entry assessment scope, date and evidence are implemented. Export the actual deployed Firestore rules into the repo and test owner-versus-other-account permissions in an emulator.
+3. **Strengthen viewing evidence.** Research identifies concrete strengths and weaknesses, but complete-run viewing and scene-level checks would improve the provisional assessments, especially their less sampled middle seasons and visual judgments.
 4. **Publish reviewed changes.** GitHub Pages serves the root of `master` at the existing domain. `.nojekyll` keeps this buildless site and its evidence files unprocessed. Run the documented checks, commit the intended changes, then push to `master` only when publication is authorized. Confirm the Pages deployment and public version; a successful push alone is not proof of a live release.
 
 The recovered documents `RECOVERY.md`, `WORKFLOWS.md`, `DIRECTIVE.md` and most batch scripts describe older workflows. Use the current README, local guide and `scripts/README.md` for active maintenance.

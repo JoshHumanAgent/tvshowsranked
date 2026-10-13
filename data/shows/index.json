@@ -5932,13 +5932,13 @@
       "year": 1997,
       "episodes": 144,
       "final": 7.78,
-      "char": 8.5,
-      "world": 8,
-      "cine": 6.5,
+      "char": 7.5,
+      "world": 6.5,
+      "cine": 7.5,
       "spect": 6,
       "conc": 7.5,
-      "drive": 8,
-      "resol": 7.5,
+      "drive": 6.5,
+      "resol": 7,
       "genres": [
         "drama",
         "fantasy",
@@ -5956,87 +5956,189 @@
       },
       "month": 3,
       "assessment": {
-        "version": 1,
+        "version": 2,
         "rubricVersion": "2026-10",
-        "status": "legacy",
+        "status": "reviewed",
         "evidenceCheckedAt": "2026-10-13",
         "scope": {
-          "label": "Recorded episode run",
-          "status": "unrecorded"
+          "label": "Complete original series · seasons 1–7 · 144 episodes",
+          "status": "named",
+          "coverage": "complete-series",
+          "seasons": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "episodes": 144,
+          "episodeBasis": "Original television run through Chosen; excludes Angel, comics and any later continuation",
+          "sourceRefs": [
+            "retrospective",
+            "season-five",
+            "finale"
+          ]
         },
         "review": {
           "path": "docs/shows/buffy-the-vampire-slayer.html",
           "status": "archived",
-          "note": "Historical notes have not been reverified. They may describe different ratings or seasons.",
-          "sources": []
+          "note": "Superseded by the current research assessment. The original prose remains a historical archive, not evidence for the revised ratings.",
+          "sources": [
+            "https://www.wired.com/2017/03/buffy-the-vampire-slayer-20-years-later/",
+            "https://www.dvdtalk.com/reviews/8523/buffy-the-vampire-slayer-the-complete-fifth-season/",
+            "https://www.thereviewgeek.com/buffy-s7review/",
+            "https://thebuffyrewatch.wordpress.com/2014/04/08/robins-review-s7-e22-chosen/"
+          ]
         },
         "dimensions": {
           "char": {
-            "reason": null,
+            "reason": "Gellar makes Buffy’s grief and obligation convincing; Willow, Giles and Spike sustain recognisable conflicts beyond helping the lead. The ensemble has real depth. However, exaggerated antagonists and less developed late additions make that depth uneven across the complete run. This supports a very strong assessment, below the next half-point’s expectation of a more consistently substantial ensemble.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "Characters & Acting (8): Sarah Michelle Gellar is iconic. Ensemble chemistry is perfect. Willow's arc is television's bestwitch transformation."
-            }
+            },
+            "sourceRefs": [
+              "season-five",
+              "season-seven"
+            ]
           },
           "world": {
-            "reason": null,
+            "reason": "The Watchers’ authority constrains Buffy, and Dawn’s origin changes family obligations rather than merely adding lore. Those are real strengths. But supernatural permissions, threat levels and last-minute tools bend around the required outcome, particularly in the final battle. A higher half-point would require more dependable constraints; the problem is internal credibility, not the existence of vampires.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "season-five",
+              "finale"
+            ]
           },
           "cine": {
-            "reason": null,
+            "reason": "The Body uses restricted framing and an observed, partly inaudible exchange to make grief immediate. Hush also gives visual communication unusual dramatic responsibility. These achievements justify raising the camera judgment. They coexist with more routine coverage, so the full run falls below an exceptional score; a greatest-episodes selection would answer a different question.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "season-five",
+              "retrospective"
+            ]
           },
           "spect": {
-            "reason": null,
+            "reason": "Creature encounters, physical combat and the final Hellmouth battle offer visible invention beyond ordinary settings. Their impact is uneven: the season-five snake and some digital transformations visibly weaken the illusion, while recurring environments restrict variety. Retain a good score; the next half-point would require stronger integration of the effects across the run, not a larger budget.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "season-five",
+              "season-seven"
+            ]
           },
           "conc": {
-            "reason": null,
+            "reason": "Chosen duty competes with ordinary adulthood, while the eventual distribution of Slayer power challenges the original hierarchy. Family identity and control add substance. These are interacting questions, but individual monster metaphors are often simplified illustrations rather than independently developed arguments. Retain a strong score below the next half-point; cultural influence supplies no extra conceptual credit.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "Conceptual Density (8): High school as hell. Every monster is metaphor. Influenced all genre television that followed."
-            }
+            },
+            "sourceRefs": [
+              "retrospective",
+              "season-five",
+              "finale"
+            ]
           },
           "drive": {
-            "reason": null,
+            "reason": "Family discoveries and several seasonal conflicts produce consequential progression. Conversely, repeated Glory encounters delay movement, and the final campaign devotes substantial time to positioning characters before its decisive mechanisms arrive. That is a causal and structural weakness, not a penalty for quiet episodes. The next half-point needs less postponement between meaningful decisions across all seven seasons.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "season-five",
+              "finale",
+              "season-seven"
+            ]
           },
           "resol": {
-            "reason": null,
+            "reason": "Sharing power completes Buffy’s struggle with solitary obligation, and Spike’s sacrifice gives the ending emotional weight. Earlier family losses also have lasting effects. Yet the late amulet supplies too much of the final solution with too little preparation. The next half-point would require the mechanics of victory to be as well earned as the thematic conclusion.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "Resolution (8): Complete story. Buffy's sacrifice reversed. Potentials activated. \"Every girl who could have power, will have power.\""
-            }
+            },
+            "sourceRefs": [
+              "finale",
+              "season-five",
+              "season-seven"
+            ]
           }
         },
         "issues": [],
-        "catalogueAsOf": "2026-02-25"
+        "catalogueAsOf": "2026-02-25",
+        "basis": "research",
+        "provisional": true,
+        "reviewedAt": "2026-10-13",
+        "summary": "Strong central relationships and exceptional individual episodes sit inside a less disciplined seven-season run. The lower assessment concerns uneven character depth, flexible rules and prolonged setup; the inventive camera work receives more credit than before.",
+        "limitations": "Research assessment using a full-run retrospective, detailed season-five criticism and contrasting accounts of season seven. The complete 144-episode run was not watched for this reassessment. Peak episodes are better documented than routine instalments; acting and consistency judgments remain provisional.",
+        "sources": [
+          {
+            "id": "retrospective",
+            "title": "WIRED · Charlie Jane Anders on the complete run",
+            "url": "https://www.wired.com/2017/03/buffy-the-vampire-slayer-20-years-later/",
+            "coverage": "Retrospective: 144 episodes, changing responsibilities, formal experiments and the chosen-one premise. Influence is not a scoring input."
+          },
+          {
+            "id": "season-five",
+            "title": "DVD Talk · detailed season-five assessment",
+            "url": "https://www.dvdtalk.com/reviews/8523/buffy-the-vampire-slayer-the-complete-fifth-season/",
+            "coverage": "Episode-specific strengths and objections, including The Body, family relationships, framing and repeated Glory scenes."
+          },
+          {
+            "id": "season-seven",
+            "title": "The Review Geek · a positive reading of season seven",
+            "url": "https://www.thereviewgeek.com/buffy-s7review/",
+            "coverage": "Counterevidence: Spike, the final conflict and the last 22 episodes. The critic’s numeric rating is not used."
+          },
+          {
+            "id": "finale",
+            "title": "The Buffy Rewatch · Chosen, strengths and causal objections",
+            "url": "https://thebuffyrewatch.wordpress.com/2014/04/08/robins-review-s7-e22-chosen/",
+            "coverage": "Episode-level fan criticism: shared power, the late amulet and uneven preparation for the final battle."
+          }
+        ],
+        "supersedes": {
+          "version": 1,
+          "episodes": 144,
+          "scope": {
+            "label": "Recorded episode run",
+            "status": "unrecorded"
+          },
+          "ratings": {
+            "char": 8.5,
+            "world": 8,
+            "cine": 6.5,
+            "spect": 6,
+            "conc": 7.5,
+            "drive": 8,
+            "resol": 7.5
+          },
+          "note": "Reassessed under the stricter character credibility, causal writing and whole-run consistency standard on 2026-10-13. Historical caches and archive excerpts remain unchanged."
+        }
       }
     },
     {
@@ -12380,13 +12482,13 @@
       "year": 2011,
       "episodes": 134,
       "final": 7.6,
-      "char": 8.5,
+      "char": 8,
       "world": 7,
       "cine": 7,
       "spect": 5,
-      "conc": 7.5,
-      "drive": 8,
-      "resol": 7.5,
+      "conc": 7,
+      "drive": 5.5,
+      "resol": 6,
       "genres": [
         "drama",
         "comedy",
@@ -12405,87 +12507,207 @@
       },
       "month": 1,
       "assessment": {
-        "version": 1,
+        "version": 2,
         "rubricVersion": "2026-10",
-        "status": "legacy",
+        "status": "reviewed",
         "evidenceCheckedAt": "2026-10-13",
         "scope": {
-          "label": "Recorded episode run",
-          "status": "unrecorded"
+          "label": "Complete US series · seasons 1–11 · 134 episodes",
+          "status": "named",
+          "coverage": "complete-series",
+          "seasons": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "episodes": 134,
+          "episodeBasis": "US dramatic episodes through Father Frank, Full of Grace; excludes the UK series and Hall of Shame retrospective specials",
+          "sourceRefs": [
+            "episodes",
+            "whole-run",
+            "ending"
+          ]
         },
         "review": {
           "path": "docs/shows/shameless-us.html",
-          "status": "archived",
-          "note": "Historical notes have not been reverified. They may describe different ratings or seasons.",
-          "sources": []
+          "status": "withheld",
+          "note": "The original prose contains factual and scope weaknesses, including describing Carl as becoming a soldier instead of distinguishing military school from his later police work. It remains withheld after this reassessment.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Shameless_(American_TV_series)_episodes",
+            "https://dvdcorner.net/2025/03/28/shameless-the-complete-series-dvd-review/",
+            "https://www.dvdtalk.com/reviews/52647/shameless-the-complete-first-season/",
+            "https://www.denofgeek.com/tv/shameless-season-finale-review-love-songs-in-the-key-of-gallagher-emmy-rossum-ian-mickey-debbie/",
+            "https://www.tvline.com/interviews/shameless-recap-season-11-episode-12-series-finale-frank-dies-1234659006/"
+          ]
         },
         "dimensions": {
           "char": {
-            "reason": null,
+            "reason": "Fiona’s care and resentment, Lip’s self-sabotage and Ian’s struggle for stability provide several substantial inner lives. Rossum, White and Monaghan make incompatible wants credible rather than merely loud. Frank and some later plots lean more heavily on caricature. The next half-point needs steadier psychological continuity across the weaker roles; a strong central family still earns an exceptional score.",
             "archive": {
               "ratings": [
                 9
               ],
               "excerpt": "Characters & Acting (9): Emmy Rossum's Fiona is one of television's great performances. William H. Macy makes Frank frustratingly human. The siblings grow into distinct, believable adults."
-            }
+            },
+            "sourceRefs": [
+              "whole-run",
+              "middle-run"
+            ]
           },
           "world": {
-            "reason": null,
+            "reason": "Housing, work, addiction and shared childcare materially constrain the family’s options, and neighbours form a support network rather than scenery. Retain a very good world score. Sensational schemes sometimes loosen those constraints whenever another crisis is needed. The next half-point requires more dependable economic and social consequences across the full run, rather than treating poverty itself as proof of realism.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "whole-run",
+              "ending"
+            ]
           },
           "cine": {
-            "reason": null,
+            "reason": "The muted neighbourhood palette and close attention to crowded domestic space make the family’s circumstances tangible. Retain the very good rating, separately from how much sympathy the story earns. Much of the presentation remains straightforward coverage of escalating incidents; the next half-point would require a more consistently expressive visual organisation beyond this effective everyday texture.",
             "archive": {
               "ratings": [
                 6
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "visuals",
+              "whole-run"
+            ],
+            "evidenceNote": "The specific visual source is an early-season review, including its indexed description of the Midwestern palette. The unchanged full-run camera rating remains provisional; later framing was not exhaustively checked."
           },
           "spect": {
-            "reason": null,
+            "reason": "Shared rooms, workplaces and the neighbourhood make ordinary life visible without presenting a particularly broad range of unfamiliar activities. Retain the midpoint for what is actually shown. Sexual explicitness and outrageous incidents do not automatically increase visual ambition; the next half-point requires more material variety or discovery in the environments, rather than more provocation.",
             "archive": {
               "ratings": [
                 5
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "visuals",
+              "whole-run"
+            ]
           },
           "conc": {
-            "reason": null,
+            "reason": "Fiona’s responsibility and Lip’s frustrated potential connect family loyalty to constrained opportunity; Ian’s relationships add questions of care and autonomy. These are substantive interactions. Yet repeated misconduct often returns to the same conflict without revising its implications. The next half-point needs more sustained development across those ideas, rather than credit for every social problem the household encounters.",
             "archive": {
               "ratings": [
                 6
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "whole-run",
+              "middle-run",
+              "ending"
+            ]
           },
           "drive": {
-            "reason": null,
+            "reason": "The strongest stretches make one person’s choice impose costs on another, as the season-five family conflicts demonstrate. But recurring recoveries, collapses and fresh romantic crises too often restore a usable situation for the next incident. The next half-point needs more consequential accumulation across the complete run. The concern is manufactured recurrence, not that poor or addicted people must improve in a straight line.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "Narrative Drive (8): Eleven seasons of escalating chaos. The show keeps finding new crises, new messes, new ways forward."
-            }
+            },
+            "sourceRefs": [
+              "whole-run",
+              "middle-run"
+            ]
           },
           "resol": {
-            "reason": null,
+            "reason": "Frank’s end acknowledges bodily consequences, and Ian and Mickey achieve a meaningful continuing relationship. An open future is appropriate here. However, the house decision and several siblings’ central commitments remain thinly developed at departure, while Fiona’s importance receives inadequate integration. The next half-point needs firmer follow-through on those established stakes, not a happier or fully closed ending.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "Resolution (8): The series finale lets everyone move forward. It's not a triumph, but it's progress—the most honest ending for this family."
-            }
+            },
+            "sourceRefs": [
+              "ending",
+              "whole-run"
+            ]
           }
         },
-        "issues": [],
-        "catalogueAsOf": "2026-02-25"
+        "issues": [
+          {
+            "id": "R2-shameless-us",
+            "kind": "superseded-archive",
+            "note": "The original prose contains factual and scope weaknesses, including describing Carl as becoming a soldier instead of distinguishing military school from his later police work. It remains withheld after this reassessment.",
+            "status": "resolved",
+            "resolution": "Current reasons and named scope replace the old commentary; the historical page is withheld and noindex."
+          }
+        ],
+        "catalogueAsOf": "2026-02-25",
+        "basis": "research",
+        "provisional": true,
+        "reviewedAt": "2026-10-13",
+        "summary": "Fiona, Lip and Ian support a strong character score, and the household’s material pressures matter. The major downgrade is in writing consistency: escalating incidents too often substitute for cumulative change, and several central commitments receive weak follow-through.",
+        "limitations": "Research-based whole-run interpretation using contemporary and retrospective criticism, an episode index and John Wells’s finale interview. The full US series was not watched for this assessment. Early visual evidence is stronger than later coverage, and no claim is made that every setback is an unrealistic reset.",
+        "sources": [
+          {
+            "id": "episodes",
+            "title": "Shameless US · episode index",
+            "url": "https://en.wikipedia.org/wiki/List_of_Shameless_(American_TV_series)_episodes",
+            "coverage": "134 episodes in 11 seasons and the separate retrospective specials."
+          },
+          {
+            "id": "whole-run",
+            "title": "DVD Corner · complete US series assessment",
+            "url": "https://dvdcorner.net/2025/03/28/shameless-the-complete-series-dvd-review/",
+            "coverage": "Whole-run character development, late decline, sensationalism and Carl’s military-school/police distinction."
+          },
+          {
+            "id": "visuals",
+            "title": "DVD Talk · US season-one review",
+            "url": "https://www.dvdtalk.com/reviews/52647/shameless-the-complete-first-season/",
+            "coverage": "Early family dynamics and muted Midwestern visual atmosphere; not evidence of the UK adaptation."
+          },
+          {
+            "id": "middle-run",
+            "title": "Den of Geek · season-five finale",
+            "url": "https://www.denofgeek.com/tv/shameless-season-finale-review-love-songs-in-the-key-of-gallagher-emmy-rossum-ian-mickey-debbie/",
+            "coverage": "Counterevidence: credible emotional consequences for Ian, Mickey, Fiona and Debbie inside an uneven season."
+          },
+          {
+            "id": "ending",
+            "title": "TVLine · John Wells on the series ending",
+            "url": "https://www.tvline.com/interviews/shameless-recap-season-11-episode-12-series-finale-frank-dies-1234659006/",
+            "coverage": "Primary interview on Frank’s death, deliberate ambiguity and unrealised plans for the other characters."
+          }
+        ],
+        "supersedes": {
+          "version": 1,
+          "episodes": 134,
+          "scope": {
+            "label": "Recorded episode run",
+            "status": "unrecorded"
+          },
+          "ratings": {
+            "char": 8.5,
+            "world": 7,
+            "cine": 7,
+            "spect": 5,
+            "conc": 7.5,
+            "drive": 8,
+            "resol": 7.5
+          },
+          "note": "Reassessed under the stricter character credibility, causal writing and whole-run consistency standard on 2026-10-13. Historical caches and archive excerpts remain unchanged."
+        }
       }
     },
     {
@@ -13746,13 +13968,13 @@
       "year": 2004,
       "episodes": 101,
       "final": 7.58,
-      "char": 8.5,
-      "world": 7.5,
+      "char": 7.5,
+      "world": 6,
       "cine": 7,
       "spect": 5,
-      "conc": 7.5,
-      "drive": 8,
-      "resol": 7,
+      "conc": 6.5,
+      "drive": 6.5,
+      "resol": 7.5,
       "genres": [
         "drama",
         "legal",
@@ -13766,87 +13988,192 @@
       },
       "month": 10,
       "assessment": {
-        "version": 1,
+        "version": 2,
         "rubricVersion": "2026-10",
-        "status": "legacy",
+        "status": "reviewed",
         "evidenceCheckedAt": "2026-10-13",
         "scope": {
-          "label": "Recorded episode run",
-          "status": "unrecorded"
+          "label": "Complete series · seasons 1–5 · 101 episodes",
+          "status": "named",
+          "coverage": "complete-series",
+          "seasons": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "episodes": 101,
+          "episodeBasis": "Original ABC episodes through Last Call; excludes The Practice",
+          "sourceRefs": [
+            "episodes",
+            "last-season"
+          ]
         },
         "review": {
           "path": "docs/shows/boston-legal.html",
-          "status": "archived",
-          "note": "Historical notes have not been reverified. They may describe different ratings or seasons.",
-          "sources": []
+          "status": "withheld",
+          "note": "The original review mislabels key episodes, including calling Let Sales Ring the pilot. It is superseded and withheld; current ratings and reasons refer to the full five-season run.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Boston_Legal_episodes",
+            "https://www.dvdreview.com/2006/05/boston-legal-season-one/",
+            "https://sitcomsonline.com/blog/2009/05/blog-dvd-review-boston-legal-season.html",
+            "https://theseriesfinale.substack.com/p/boston-legal"
+          ]
         },
         "dimensions": {
           "char": {
-            "reason": null,
+            "reason": "Spader’s evasiveness and Shatner’s vulnerability beneath bravado make Alan and Denny more than a comic pairing; Shirley adds a substantial counterweight. Several colleagues remain comparatively thin or defined by a recurring eccentricity. A high ensemble judgment survives, but the next half-point needs more evenly developed supporting inner lives, rather than treating the leads’ chemistry as universal excellence.",
             "archive": {
               "ratings": [
                 8.5
               ],
               "excerpt": "Characters & Acting (8.5): Shatner and Spader are an all-time great duo. The supporting cast—Candice Bergen, Rene Auberjonois, Julie Bowen—elevate every scene. This is ensemble comedy-drama at its finest."
-            }
+            },
+            "sourceRefs": [
+              "first-season",
+              "last-season"
+            ]
           },
           "world": {
-            "reason": null,
+            "reason": "Professional hierarchy and Denny’s declining capacity place real pressure on the firm. Nevertheless, opponents and courts frequently serve as a stage for exceptional speeches; the finale even centres an appeal on special treatment for one man. That weakens the sense of an institution operating independently of its heroes. The next half-point needs more credible resistance and durable professional constraints.",
             "archive": {
               "ratings": [
                 7.5
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "first-season",
+              "finale"
+            ]
           },
           "cine": {
-            "reason": null,
+            "reason": "Handheld proximity and close framing make verbal combat immediate, with tighter compositions giving courtroom exchanges pressure. Retain the very good camera score for that purposeful approach. The visual language remains repetitive around testimony, offices and conversations; the next half-point requires more sustained spatial or visual storytelling beyond efficiently presenting the performers.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "first-season",
+              "last-season"
+            ]
           },
           "spect": {
-            "reason": null,
+            "reason": "Offices, courtrooms and the balcony establish readable environments, while occasional travel changes the setting. They provide an adequate visual world without much unusual material activity or spatial variety. Retain the ordinary-setting midpoint. The next half-point would need more of the profession or surrounding society made visually tangible; eloquent dialogue belongs in other dimensions.",
             "archive": {
               "ratings": [
                 5
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "first-season",
+              "last-season"
+            ]
           },
           "conc": {
-            "reason": null,
+            "reason": "Friendship, autonomy, illness and professional responsibility genuinely collide in Alan’s commitment to Denny. The case format also raises ethical questions. But presenting numerous controversies is not the same as developing independent ideas: many scenes resolve into a persuasive closing position. The next half-point needs more sustained interrogation of competing claims, beyond topical breadth and the speaker’s confidence.",
             "archive": {
               "ratings": [
                 7.5
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "last-season",
+              "first-season",
+              "finale"
+            ]
           },
           "drive": {
-            "reason": null,
+            "reason": "Individual cases can build cleanly, and the firm’s sale and Denny’s deterioration give the final season direction. Across the whole series, recurring provocation, rebuttal and balcony reflection also preserve the same dynamic. Episodic structure is legitimate, but novelty of topic cannot alone establish progress. The next half-point requires more accumulated consequences across those repeated patterns.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "Narrative Drive (8): Cases of the week merge with character arcs seamlessly. The show never drags because there's always a new argument to win, a new absurdity to navigate."
-            }
+            },
+            "sourceRefs": [
+              "first-season",
+              "last-season"
+            ]
           },
           "resol": {
-            "reason": null,
+            "reason": "Alan accepting responsibility for Denny translates their long friendship into a consequential commitment. This deserves more credit than the old ending score allowed. The surrounding pairings and conveniently shaped legal solution are tidier than the preceding world warrants. The next half-point needs similarly earned outcomes across the ensemble, while the core relationship already supplies a strong payoff.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": "Resolution (7): The finale is genuinely moving—Denny and Alan getting married for tax/pension purposes, two friends facing the end together. It's perfect for the show's sensibility."
-            }
+            },
+            "sourceRefs": [
+              "last-season",
+              "finale"
+            ]
           }
         },
-        "issues": [],
-        "catalogueAsOf": "2026-02-25"
+        "issues": [
+          {
+            "id": "R2-boston-legal",
+            "kind": "superseded-archive",
+            "note": "The original review mislabels key episodes, including calling Let Sales Ring the pilot. It is superseded and withheld; current ratings and reasons refer to the full five-season run.",
+            "status": "resolved",
+            "resolution": "Current reasons and named scope replace the old commentary; the historical page is withheld and noindex."
+          }
+        ],
+        "catalogueAsOf": "2026-02-25",
+        "basis": "research",
+        "provisional": true,
+        "reviewedAt": "2026-10-13",
+        "summary": "The central friendship earns its emotional payoff, but two magnetic leads cannot stand in for an equally convincing ensemble or legal world. The reassessment gives less credit to repeated courtroom speeches and more precise credit to the ending.",
+        "limitations": "Research interpretation of opening- and final-season criticism and the episode index, not a complete viewing of all 101 episodes. Middle-season performance consistency and visual craft are less fully sampled. The Series Finale author watched only the finale; that account supports episode events, not whole-run judgments. Institutional credibility is a dramatic judgment, not a professional audit of legal procedure.",
+        "sources": [
+          {
+            "id": "episodes",
+            "title": "Boston Legal · episode index",
+            "url": "https://en.wikipedia.org/wiki/List_of_Boston_Legal_episodes",
+            "coverage": "Scope and episode identity: 101 episodes in five seasons; Head Cases is the pilot and Last Call the finale."
+          },
+          {
+            "id": "first-season",
+            "title": "DVD Review · Gabriel Garza on season one",
+            "url": "https://www.dvdreview.com/2006/05/boston-legal-season-one/",
+            "coverage": "Detailed performance, supporting-character, handheld-camera and case analysis, including Death Be Not Proud."
+          },
+          {
+            "id": "last-season",
+            "title": "Sitcoms Online · season-five review",
+            "url": "https://sitcomsonline.com/blog/2009/05/blog-dvd-review-boston-legal-season.html",
+            "coverage": "Denny’s deterioration, Alan’s commitment, supporting relationships and the firm’s sale."
+          },
+          {
+            "id": "finale",
+            "title": "The Series Finale · Boston Legal",
+            "url": "https://theseriesfinale.substack.com/p/boston-legal",
+            "coverage": "Finale account, including the personalised Supreme Court appeal; used to test dramatic institutional credibility, not to adopt its rating."
+          }
+        ],
+        "supersedes": {
+          "version": 1,
+          "episodes": 101,
+          "scope": {
+            "label": "Recorded episode run",
+            "status": "unrecorded"
+          },
+          "ratings": {
+            "char": 8.5,
+            "world": 7.5,
+            "cine": 7,
+            "spect": 5,
+            "conc": 7.5,
+            "drive": 8,
+            "resol": 7
+          },
+          "note": "Reassessed under the stricter character credibility, causal writing and whole-run consistency standard on 2026-10-13. Historical caches and archive excerpts remain unchanged."
+        }
       }
     },
     {
@@ -15219,13 +15546,13 @@
       "year": 1997,
       "episodes": 168,
       "final": 7.53,
-      "char": 8,
+      "char": 7.5,
       "world": 7.5,
       "cine": 7,
       "spect": 5,
-      "conc": 8,
-      "drive": 8,
-      "resol": 7,
+      "conc": 7.5,
+      "drive": 7,
+      "resol": 6.5,
       "genres": [
         "drama",
         "legal"
@@ -15238,87 +15565,192 @@
       },
       "month": 3,
       "assessment": {
-        "version": 1,
+        "version": 2,
         "rubricVersion": "2026-10",
-        "status": "legacy",
+        "status": "reviewed",
         "evidenceCheckedAt": "2026-10-13",
         "scope": {
-          "label": "Recorded episode run",
-          "status": "unrecorded"
+          "label": "Complete series · seasons 1–8 · 168 episodes",
+          "status": "named",
+          "coverage": "complete-series",
+          "seasons": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "episodes": 168,
+          "episodeBasis": "Original series through its eighth-season finale; excludes Boston Legal",
+          "sourceRefs": [
+            "early-run",
+            "last-season",
+            "ending"
+          ]
         },
         "review": {
           "path": "docs/shows/the-practice.html",
           "status": "archived",
-          "note": "Historical notes have not been reverified. They may describe different ratings or seasons.",
-          "sources": []
+          "note": "Superseded by the current research assessment. The original prose remains a historical archive, not evidence for the revised ratings.",
+          "sources": [
+            "https://www.dvdtalk.com/reviews/28802/practice-volume-one-the/",
+            "https://crimespreemag.com/dvd-review-the-practice-volume-one/",
+            "https://mediamikes.com/2014/04/dvd-review-the-practice-the-final-season/",
+            "https://thetvdb.com/series/the-practice/episodes/110291"
+          ]
         },
         "dimensions": {
           "char": {
-            "reason": null,
+            "reason": "Bobby, Ellenor, Eugene and Lindsay embody different compromises rather than one interchangeable lawyer. Their professional disagreements and personal vulnerabilities give the ensemble substance; Alan later adds a forceful opposing temperament. Yet speech-driven characterisation and the late shift of attention narrow that breadth. The next half-point needs greater continuity of inner lives across the complete eight-season ensemble.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "Characters & Acting (8): McDermott burns with intensity. The ensemble is one of the strongest of any legal drama. Kelley wrote for actors, giving them speeches that become showpieces."
-            }
+            },
+            "sourceRefs": [
+              "early-run",
+              "early-counterpart",
+              "last-season"
+            ]
           },
           "world": {
-            "reason": null,
+            "reason": "Fees, rent, difficult clients and relationships with prosecutors connect the firm’s ideals to material pressure. This is stronger institutional grounding than a sequence of impressive courtroom victories. However, unusually concentrated crises and repeated exceptional lawyers keep the wider system subordinate to the firm. Retain the strong score; the next half-point needs more independently developed institutional consequences.",
             "archive": {
               "ratings": [
                 7.5
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "early-run",
+              "early-counterpart",
+              "last-season"
+            ]
           },
           "cine": {
-            "reason": null,
+            "reason": "The courtroom exchanges are organised around testimony and competing reactions, while modest workspaces keep the firm’s practical circumstances visible. Retain the existing very-good judgment provisionally. This predominantly dialogue-led approach does not yet justify the next half-point for sustained expressive framing; dated disc transfers are not a reason to lower the programme’s cinematography.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "early-run",
+              "early-counterpart"
+            ],
+            "evidenceNote": "Retained provisional judgment based on published descriptions of the scenes and their visual context. No shot-by-shot viewing of the eight-season run was performed."
           },
           "spect": {
-            "reason": null,
+            "reason": "The firm and courtroom provide a credible, readily understood physical arena. Most of what is shown remains familiar rooms and conversations; the difficult legal problems are principally verbal. Retain the average spectacle anchor. The next half-point would need more unfamiliar processes or environments rendered visually, not simply a more serious case or a larger supporting cast.",
             "archive": {
               "ratings": [
                 5
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "early-run",
+              "last-season"
+            ]
           },
           "conc": {
-            "reason": null,
+            "reason": "Defending a guilty client tests the difference between truth and procedural duty, while keeping the firm solvent adds a separate competing obligation. Those tensions interact in decisions rather than merely in theme labels. Repeated moral confrontations can nevertheless restate the same dilemma. The next half-point needs more cumulative development of the argument across the run.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "Conceptual Density (8): The ethical complexity here is ahead of its time. Guilty clients, compromised lawyers, systemic failures—The Practice grapples with issues television still avoids."
-            }
+            },
+            "sourceRefs": [
+              "early-run",
+              "early-counterpart",
+              "last-season"
+            ]
           },
           "drive": {
-            "reason": null,
+            "reason": "Cases generate decisions with understandable professional stakes, and Alan’s methods actively threaten the surviving firm. Those are genuine causes and consequences. But the later replacement of the dramatic centre partly restarts the show instead of fully developing the original ensemble’s momentum. The next half-point needs a more continuous chain between cases, character choices and the changing firm.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "early-run",
+              "last-season",
+              "ending"
+            ]
           },
           "resol": {
-            "reason": null,
+            "reason": "Closing the firm and giving its partners different futures does complete the original workplace story. However, the final season devotes substantial preparation to Alan’s next series, leaving several long-established relationships less developed at departure. The next half-point requires fuller payoff for the original ensemble. The deduction concerns displaced preparation and follow-through, not cancellation or an obligation to close every future possibility.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": "Resolution (7): The show lost its way in later seasons (budget cuts forced cast changes), but the early seasons are as good as television legal drama gets. The ending is bittersweet but not a betrayal."
-            }
+            },
+            "sourceRefs": [
+              "last-season",
+              "ending"
+            ]
           }
         },
         "issues": [],
-        "catalogueAsOf": "2026-02-25"
+        "catalogueAsOf": "2026-02-25",
+        "basis": "research",
+        "provisional": true,
+        "reviewedAt": "2026-10-13",
+        "summary": "The defence team’s competing obligations make this the stronger institutional drama of the two legal shows reviewed here. Its complete-run score still falls: repeated ethical confrontations and a late change of dramatic centre weaken continuity and payoff.",
+        "limitations": "Research assessment using early-run analysis, the final-season release and finale accounts. The complete 168-episode series was not watched for this pass; intermediate seasons and shot-level craft remain less well evidenced. The camera rating is retained provisionally, rather than reduced because the research is incomplete.",
+        "sources": [
+          {
+            "id": "early-run",
+            "title": "DVD Talk · The Practice, Volume One",
+            "url": "https://www.dvdtalk.com/reviews/28802/practice-volume-one-the/",
+            "coverage": "168-episode series count and detailed early cases, financial constraints, ensemble relationships and ethical compromises. Transfer-quality complaints are not camera-quality evidence."
+          },
+          {
+            "id": "early-counterpart",
+            "title": "Crimespree · early Practice review",
+            "url": "https://crimespreemag.com/dvd-review-the-practice-volume-one/",
+            "coverage": "Bobby’s commercial and moral pressures and distinctive guest roles. Covers the first 13 episodes, not two complete seasons."
+          },
+          {
+            "id": "last-season",
+            "title": "MediaMikes · the eighth and final season",
+            "url": "https://mediamikes.com/2014/04/dvd-review-the-practice-the-final-season/",
+            "coverage": "Positive counterevidence on the Alan Shore transition, remaining partners and the 22-episode final season."
+          },
+          {
+            "id": "ending",
+            "title": "TheTVDB · Cheers / Adjourned",
+            "url": "https://thetvdb.com/series/the-practice/episodes/110291",
+            "coverage": "Finale identity and factual destinations of the partners; community-maintained episode record, not a quality verdict."
+          }
+        ],
+        "supersedes": {
+          "version": 1,
+          "episodes": 168,
+          "scope": {
+            "label": "Recorded episode run",
+            "status": "unrecorded"
+          },
+          "ratings": {
+            "char": 8,
+            "world": 7.5,
+            "cine": 7,
+            "spect": 5,
+            "conc": 8,
+            "drive": 8,
+            "resol": 7
+          },
+          "note": "Reassessed under the stricter character credibility, causal writing and whole-run consistency standard on 2026-10-13. Historical caches and archive excerpts remain unchanged."
+        }
       }
     },
     {
@@ -19595,13 +20027,13 @@
       "year": 2010,
       "episodes": 177,
       "final": 7.43,
-      "char": 7.5,
-      "world": 8.5,
+      "char": 7,
+      "world": 7,
       "cine": 7,
       "spect": 7.5,
-      "conc": 7,
-      "drive": 8,
-      "resol": 6.5,
+      "conc": 6.5,
+      "drive": 5.5,
+      "resol": 5.5,
       "genres": [
         "drama",
         "horror",
@@ -19621,87 +20053,190 @@
       },
       "month": 10,
       "assessment": {
-        "version": 1,
+        "version": 2,
         "rubricVersion": "2026-10",
-        "status": "legacy",
+        "status": "reviewed",
         "evidenceCheckedAt": "2026-10-13",
         "scope": {
-          "label": "Recorded episode run",
-          "status": "unrecorded"
+          "label": "Complete main series · seasons 1–11 · 177 episodes",
+          "status": "named",
+          "coverage": "complete-series",
+          "seasons": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "episodes": 177,
+          "episodeBasis": "Main AMC series through Rest in Peace; excludes all spin-offs and their later resolutions",
+          "sourceRefs": [
+            "retrospective",
+            "finale"
+          ]
         },
         "review": {
           "path": "docs/shows/the-walking-dead.html",
           "status": "archived",
-          "note": "Historical notes have not been reverified. They may describe different ratings or seasons.",
-          "sources": []
+          "note": "Superseded by the current research assessment. The original prose remains a historical archive, not evidence for the revised ratings.",
+          "sources": [
+            "https://www.theringer.com/2022/11/21/tv/the-walking-dead-series-finale-season-11-zombies-spinoffs",
+            "https://www.dga.org/craft/dgaq/issues/1502-spring-2015/on-the-air-the-walking-dead",
+            "https://www.denofgeek.com/tv/the-walking-dead-season-6-episode-16-review-last-day-on-earth/",
+            "https://www.denofgeek.com/tv/the-walking-dead-season-11-episode-24-review-rest-in-peace/"
+          ]
         },
         "dimensions": {
           "char": {
-            "reason": null,
+            "reason": "Rick, Carol, Daryl and several later survivors have distinguishable loyalties and accumulated loss; the farewell scenes also give Rosita and Eugene convincing emotional specificity. But a large roster does not sustain that depth evenly, and experienced survivors repeatedly become careless to enable danger. The next half-point would require more stable motivation and agency beyond the strongest roles.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "Characters & Acting (8): Andrew Lincoln carried the show. Melissa McBride and Norman Reedus became fan favorites. Strong ensemble."
-            }
+            },
+            "sourceRefs": [
+              "retrospective",
+              "finale"
+            ]
           },
           "world": {
-            "reason": null,
+            "reason": "Different settlements organise security, status and resources differently, giving rebuilding a social dimension. The Commonwealth’s protected elite makes those incentives visible. However, walker capabilities and survivors’ competence vary when a set piece needs jeopardy. Retain credit for a developed society under pressure, but the next half-point needs more consistent rules; numerous named communities alone cannot justify near-perfect world building.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "World Building (8): The apocalypse feels real. Communities like Alexandria, Hilltop, the Kingdom—distinct, believable."
-            }
+            },
+            "sourceRefs": [
+              "retrospective",
+              "finale"
+            ]
           },
           "cine": {
-            "reason": null,
+            "reason": "Natural light, restrained movement and the early film texture make bodies and ruined environments tangible. Tyreese’s subjective sequence shows that the camera can also convey an inner state. Retain a very good score: recurring coverage and occasionally blunt visual effects do not sustain the same expressive precision everywhere. The next half-point requires more consistent meaning in the framing.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "craft",
+              "cliffhanger"
+            ]
           },
           "spect": {
-            "reason": null,
+            "reason": "Practical walkers, the prison siege and dense crowds against the finale’s hospital glass give the threat physical weight. This is a substantial visual achievement, independent of the plot’s weaknesses. Repeated gore and some implausibly staged escapes reduce its freshness and credibility. Retain the strong score; the next half-point needs more consistently inventive action, not simply more bodies.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "craft",
+              "finale"
+            ]
           },
           "conc": {
-            "reason": null,
+            "reason": "Survival, legitimate authority and the cost of rebuilding conflict in the communities’ choices. The Commonwealth makes inequality part of that argument. Yet successive tyrants repeatedly restate the danger posed by other people instead of deepening it. The next half-point would require more development between these political models; bleakness and the number of conflicts do not establish conceptual density.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "retrospective",
+              "finale"
+            ]
           },
           "drive": {
-            "reason": null,
+            "reason": "The Saviors’ roadblocks create effective, escalating pressure, so the show is capable of strong momentum. But delaying the victim reveal manufactures a wait after the decisive action, while repeated sanctuary-and-collapse cycles often replace development. Across the full run this sits only modestly above average. The next half-point needs sustained causal progress beyond periodic bursts of tension.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "cliffhanger",
+              "retrospective"
+            ]
           },
           "resol": {
-            "reason": null,
+            "reason": "Rosita’s farewell and the community’s survival provide meaningful local completion. However, the main series repeatedly postpones consequences and leaves its foundational Rick and Michonne journey for another programme. This judges promises made inside the selected 177 episodes, not the mere existence of sequels. The next half-point requires firmer completion of those central obligations alongside the supporting cast’s send-offs.",
             "archive": {
               "ratings": [
                 6
               ],
               "excerpt": "Resolution (6): Final season was rushed. Long-running shows rarely end well. It ended. That's something."
-            }
+            },
+            "sourceRefs": [
+              "finale",
+              "retrospective",
+              "cliffhanger"
+            ]
           }
         },
         "issues": [],
-        "catalogueAsOf": "2026-02-25"
+        "catalogueAsOf": "2026-02-25",
+        "basis": "research",
+        "provisional": true,
+        "reviewedAt": "2026-10-13",
+        "summary": "The actors, physical environments and horror craft remain substantial strengths. Across the complete main series, repetitive conflicts, inconsistent survival behaviour and deferred central journeys make the previous exceptional momentum score untenable.",
+        "limitations": "Research assessment from a complete-series retrospective, contemporary episode criticism and directors’ accounts. The 177 episodes were not watched in full for this pass. The craft interview covers the early and middle run; later visual judgments rely on finale criticism. Spin-off endings are outside scope.",
+        "sources": [
+          {
+            "id": "retrospective",
+            "title": "The Ringer · Ben Lindbergh on the complete series",
+            "url": "https://www.theringer.com/2022/11/21/tv/the-walking-dead-series-finale-season-11-zombies-spinoffs",
+            "coverage": "177-episode scope, recurring plotting and concrete inconsistencies in walker threats and survival behaviour."
+          },
+          {
+            "id": "craft",
+            "title": "Directors Guild of America · directing The Walking Dead",
+            "url": "https://www.dga.org/craft/dgaq/issues/1502-spring-2015/on-the-air-the-walking-dead",
+            "coverage": "Primary craft interviews: naturalistic camera, material environments, prison siege and Tyreese’s subjective imagery."
+          },
+          {
+            "id": "cliffhanger",
+            "title": "Den of Geek · Last Day on Earth",
+            "url": "https://www.denofgeek.com/tv/the-walking-dead-season-6-episode-16-review-last-day-on-earth/",
+            "coverage": "Contemporary evidence of effective suspense and an unnecessarily withheld outcome."
+          },
+          {
+            "id": "finale",
+            "title": "Den of Geek · Rest in Peace",
+            "url": "https://www.denofgeek.com/tv/the-walking-dead-season-11-episode-24-review-rest-in-peace/",
+            "coverage": "Positive counterevidence on farewell performances and visual staging, alongside repeated devices and continuation hooks."
+          }
+        ],
+        "supersedes": {
+          "version": 1,
+          "episodes": 177,
+          "scope": {
+            "label": "Recorded episode run",
+            "status": "unrecorded"
+          },
+          "ratings": {
+            "char": 7.5,
+            "world": 8.5,
+            "cine": 7,
+            "spect": 7.5,
+            "conc": 7,
+            "drive": 8,
+            "resol": 6.5
+          },
+          "note": "Reassessed under the stricter character credibility, causal writing and whole-run consistency standard on 2026-10-13. Historical caches and archive excerpts remain unchanged."
+        }
       }
     },
     {
@@ -24143,13 +24678,13 @@
       "year": 2020,
       "episodes": 12,
       "final": 7.33,
-      "char": 7.5,
-      "world": 6.5,
-      "cine": 7,
-      "spect": 4,
-      "conc": 8,
-      "drive": 7.5,
-      "resol": 8,
+      "char": 8.5,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 5.5,
+      "conc": 8.5,
+      "drive": 8,
+      "resol": 8.5,
       "genres": [
         "drama",
         "comedy-drama"
@@ -24166,87 +24701,202 @@
       },
       "month": 6,
       "assessment": {
-        "version": 1,
+        "version": 2,
         "rubricVersion": "2026-10",
-        "status": "legacy",
+        "status": "reviewed",
         "evidenceCheckedAt": "2026-10-13",
         "scope": {
-          "label": "Recorded episode run",
-          "status": "unrecorded"
+          "label": "Complete limited series · 12 episodes",
+          "status": "named",
+          "coverage": "limited-series",
+          "seasons": [
+            1
+          ],
+          "episodes": 12,
+          "episodeBasis": "Original BBC/HBO twelve-episode limited series through Ego Death",
+          "sourceRefs": [
+            "hbo",
+            "ending"
+          ]
         },
         "review": {
           "path": "docs/shows/i-may-destroy-you.html",
-          "status": "archived",
-          "note": "Historical notes have not been reverified. They may describe different ratings or seasons.",
-          "sources": []
+          "status": "withheld",
+          "note": "The old review’s claim that Emmy voters ignored Coel is contradicted by the Television Academy’s record. Its unsourced perfect-character judgment is also superseded. The prose remains withheld; awards add no quality points.",
+          "sources": [
+            "https://www.hbomaxlapress.com/programming/mini-series/443",
+            "https://time.com/5844881/i-may-destroy-you-hbo-review/",
+            "https://time.com/5882412/i-may-destroy-you-ending-explained/",
+            "https://www.backstage.com/uk/magazine/article/how-i-may-destroy-you-got-made-73447/",
+            "https://en.wikipedia.org/wiki/I_May_Destroy_You",
+            "https://www.televisionacademy.com/shows/i-may-destroy-you"
+          ]
         },
         "dimensions": {
           "char": {
-            "reason": null,
+            "reason": "Arabella can be generous, avoidant and self-absorbed without those contradictions erasing her suffering. Terry and Kwame have their own vulnerabilities and choices, supported by distinct performances rather than merely reflecting the lead. Some peripheral figures serve a specific argument more than an independent life. The next half-point needs comparable depth beyond the central trio, not an additional award or more suffering.",
             "archive": {
               "ratings": [
                 10
               ],
               "excerpt": "Characters & Acting (10): Michaela Coel gives one of the great television performances. Weruche Opia and Paapa Essiedu match her."
-            }
+            },
+            "sourceRefs": [
+              "criticism",
+              "production"
+            ]
           },
           "world": {
-            "reason": null,
+            "reason": "Police reporting, publishing deadlines, precarious creative work and friendship networks impose different pressures on the same people. The setting therefore shapes choices beyond supplying a fashionable London backdrop. Institutional perspectives remain selective and largely mediated through the protagonists. The next half-point would require those systems to develop more independently; retain a strong score for the convincing connections already present.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "episodes",
+              "production"
+            ]
           },
           "cine": {
-            "reason": null,
+            "reason": "Close-ups make uncertain recognition and changing reactions consequential, while shifts between recollection and present experience place the viewer inside an unstable perspective. The direct visual approach earns exceptional credit without requiring decorative beauty. The next half-point needs more consistently distinctive visual organisation beyond these dominant devices; formal ambition alone cannot establish near-perfect execution.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "production",
+              "episodes"
+            ]
           },
           "spect": {
-            "reason": null,
+            "reason": "London’s social spaces, the Italian trip and the contrast between public presentation and private aftermath offer slightly more material variety than the ordinary-room anchor. Much of the drama still rests on conversation and interior experience. The next half-point would need a richer range of unfamiliar environments or visible processes, rather than treating emotional intensity as spectacle.",
             "archive": {
               "ratings": [
                 6
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "production",
+              "episodes"
+            ]
           },
           "conc": {
-            "reason": null,
+            "reason": "Consent is tested through different kinds of deception, while unreliable self-narration, friendship loyalty and the incentives of public exposure complicate the response. Those questions can conflict rather than converging on one slogan. This supports an unusually dense assessment. The next half-point needs fuller development of the peripheral positions that sometimes function as illustrations within Arabella’s argument.",
             "archive": {
               "ratings": [
                 9
               ],
               "excerpt": "Conceptual Density (9): Consent, memory, trauma, friendship—the show explores big ideas without preaching."
-            }
+            },
+            "sourceRefs": [
+              "episodes",
+              "criticism"
+            ]
           },
           "drive": {
-            "reason": null,
+            "reason": "The return to earlier experiences changes what present relationships mean, and the difficulty finishing the book turns reflection into a practical obstacle. The structure is purposeful even when it leaves linear investigation behind. Some diversions suspend the central relationships before reconnecting. The next half-point needs tighter integration of those passages; quiet reflection is not the weakness being scored.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "episodes",
+              "criticism",
+              "ending"
+            ]
           },
           "resol": {
-            "reason": null,
+            "reason": "The imagined endings test incompatible responses before Arabella reclaims authorship of her life. That completes a developed inner conflict without pretending trauma has a neat cure. The final argument concentrates on her, leaving the supporting relationships less fully developed at departure. The next half-point needs similarly strong follow-through there; neither ambiguity nor the absence of a legal victory is itself a deduction.",
             "archive": {
               "ratings": [
                 9
               ],
               "excerpt": "Resolution (9): The multiple endings are a creative triumph. They don't resolve trauma—they show how we learn to live with it."
-            }
+            },
+            "sourceRefs": [
+              "ending",
+              "episodes"
+            ]
           }
         },
-        "issues": [],
-        "catalogueAsOf": "2026-02-25"
+        "issues": [
+          {
+            "id": "R2-i-may-destroy-you",
+            "kind": "superseded-archive",
+            "note": "The old review’s claim that Emmy voters ignored Coel is contradicted by the Television Academy’s record. Its unsourced perfect-character judgment is also superseded. The prose remains withheld; awards add no quality points.",
+            "status": "resolved",
+            "resolution": "Current reasons and named scope replace the old commentary; the historical page is withheld and noindex."
+          }
+        ],
+        "catalogueAsOf": "2026-02-25",
+        "basis": "research",
+        "provisional": true,
+        "reviewedAt": "2026-10-13",
+        "summary": "A credible central trio and a demanding treatment of agency support a higher score. The revisions distinguish several interacting questions from a general claim of importance, while preserving limits on spectacle and on how completely supporting perspectives are developed.",
+        "limitations": "Research-based interpretation of the programme guide, criticism and production accounts; the full twelve episodes were not watched for this pass. The numerical judgments are editorial inferences, not critic averages. The camera judgment uses documented visual intentions and scene analysis rather than a complete shot survey.",
+        "sources": [
+          {
+            "id": "hbo",
+            "title": "HBO · programme and cast",
+            "url": "https://www.hbomaxlapress.com/programming/mini-series/443",
+            "coverage": "Primary identity, 12-episode limited-series scope and central cast."
+          },
+          {
+            "id": "criticism",
+            "title": "TIME · Judy Berman’s series assessment",
+            "url": "https://time.com/5844881/i-may-destroy-you-hbo-review/",
+            "coverage": "Character complexity, childhood memory, social context and differing experiences of consent."
+          },
+          {
+            "id": "ending",
+            "title": "TIME · Ego Death analysis",
+            "url": "https://time.com/5882412/i-may-destroy-you-ending-explained/",
+            "coverage": "Alternate imagined responses and the ending’s shift toward agency; a critical interpretation rather than literal alternate plot outcomes."
+          },
+          {
+            "id": "production",
+            "title": "Backstage · production and performance account",
+            "url": "https://www.backstage.com/uk/magazine/article/how-i-may-destroy-you-got-made-73447/",
+            "coverage": "Cast relationships, London/Italy settings, close-up-led visual approach and costume collaboration."
+          },
+          {
+            "id": "episodes",
+            "title": "I May Destroy You · episode summaries",
+            "url": "https://en.wikipedia.org/wiki/I_May_Destroy_You",
+            "coverage": "Supplementary scene and episode references across the whole limited series."
+          },
+          {
+            "id": "awards-record",
+            "title": "Television Academy · programme record",
+            "url": "https://www.televisionacademy.com/shows/i-may-destroy-you",
+            "coverage": "Fact-check only: two Emmy wins, including writing. No scoring credit for awards."
+          }
+        ],
+        "supersedes": {
+          "version": 1,
+          "episodes": 12,
+          "scope": {
+            "label": "Recorded episode run",
+            "status": "unrecorded"
+          },
+          "ratings": {
+            "char": 7.5,
+            "world": 6.5,
+            "cine": 7,
+            "spect": 4,
+            "conc": 8,
+            "drive": 7.5,
+            "resol": 8
+          },
+          "note": "Reassessed under the stricter character credibility, causal writing and whole-run consistency standard on 2026-10-13. Historical caches and archive excerpts remain unchanged."
+        }
       }
     },
     {
@@ -39393,13 +40043,13 @@
       "year": 2016,
       "episodes": 12,
       "final": 6.78,
-      "char": 7.5,
-      "world": 5,
-      "cine": 6.5,
-      "spect": 3,
-      "conc": 7,
-      "drive": 7.5,
-      "resol": 7.5,
+      "char": 8.5,
+      "world": 6.5,
+      "cine": 8,
+      "spect": 5,
+      "conc": 7.5,
+      "drive": 8.5,
+      "resol": 9,
       "genres": [
         "comedy-drama"
       ],
@@ -39415,87 +40065,172 @@
       },
       "month": 7,
       "assessment": {
-        "version": 1,
+        "version": 2,
         "rubricVersion": "2026-10",
-        "status": "legacy",
+        "status": "reviewed",
         "evidenceCheckedAt": "2026-10-13",
         "scope": {
-          "label": "Recorded episode run",
-          "status": "unrecorded"
+          "label": "Complete series · seasons 1–2 · 12 episodes",
+          "status": "named",
+          "coverage": "complete-series",
+          "seasons": [
+            1,
+            2
+          ],
+          "episodes": 12,
+          "episodeBasis": "Both six-episode television series; excludes the one-person stage production",
+          "sourceRefs": [
+            "criticism",
+            "craft"
+          ]
         },
         "review": {
           "path": "docs/shows/fleabag.html",
           "status": "archived",
-          "note": "Historical notes have not been reverified. They may describe different ratings or seasons.",
-          "sources": []
+          "note": "Superseded by the current research assessment. The original prose remains a historical archive, not evidence for the revised ratings.",
+          "sources": [
+            "https://www.theringer.com/2019/05/20/tv/fleabag-season-2",
+            "https://www.motionpictures.org/2019/08/fleabags-emmy-nominated-cinematographer-on-crafting-a-nearly-flawless-second-season-2/",
+            "https://www.buzzsprout.com/547408/episodes/1813150-jonathan-paul-green-production-designer-interview"
+          ]
         },
         "dimensions": {
           "char": {
-            "reason": null,
+            "reason": "Fleabag, Claire, their father and the Priest each have competing desires that emerge through hesitation and reactions as well as speech. The ensemble is substantial despite its size. Martin and the Godmother remain more broadly drawn, especially through the protagonist’s hostile perspective. The next half-point needs comparable psychological freedom for those roles; it does not need more characters.",
             "archive": {
               "ratings": [
                 10
               ],
               "excerpt": "Characters & Acting (10): Phoebe Waller-Bridge's performance is a masterclass. Andrew Scott's Hot Priest became an instant icon."
-            }
+            },
+            "sourceRefs": [
+              "criticism",
+              "craft"
+            ]
           },
           "world": {
-            "reason": null,
+            "reason": "The cafe’s precarious viability, Claire’s work and the family’s social rituals exert recognisable pressure. That is genuine world building in an ordinary setting. The surrounding society remains selectively developed through one woman’s experience, with limited independent institutional life. The next half-point requires more of that external structure; the old near-minimum judgment confused a small setting with an empty one.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "criticism",
+              "design"
+            ]
           },
           "cine": {
-            "reason": null,
+            "reason": "At the dinner table, camera proximity and lighting organise concealed reactions; direct address makes the viewer part of Fleabag’s defences. These are functions of framing, not merely clever dialogue. An exceptional score is justified. The next half-point would require similarly rich visual decisions beyond the dominant intimate style; the narrative payoff of that device is assessed separately.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "craft"
+            ]
           },
           "spect": {
-            "reason": null,
+            "reason": "The cafe, restaurant, church and domestic interiors provide an adequate, legible material world. The richer second-series design helps those places register without turning them into extraordinary visual experiences. Restore the ordinary-rooms midpoint. The next half-point would require greater visual variety or discovery in what is shown; accomplished lighting belongs to the camera score rather than being counted twice.",
             "archive": {
               "ratings": [
                 5
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "design",
+              "craft"
+            ]
           },
           "conc": {
-            "reason": null,
+            "reason": "Guilt, grief, desire and belief intersect in the conflict between wanting intimacy and controlling how others see you. The Priest’s commitment makes those values collide rather than forming a list of themes. The argument remains deliberately concentrated, with some supporting roles simplified. The next half-point needs more independent conceptual development; intimacy does not imply simplicity, but neither does it guarantee maximal density.",
             "archive": {
               "ratings": [
                 9
               ],
               "excerpt": "Conceptual Density (9): Every scene has layers. The fourth-wall breaking is a commentary on performance itself."
-            }
+            },
+            "sourceRefs": [
+              "criticism",
+              "craft"
+            ]
           },
           "drive": {
-            "reason": null,
+            "reason": "The first series’ withheld guilt and the second’s developing relationship change the meaning of earlier exchanges. Short scenes repeatedly alter trust, so conversation itself supplies momentum. Some comic antagonists and engineered social collisions make the progression feel unusually convenient. The next half-point needs fewer such shortcuts; brevity alone earns no points, but this compression is purposeful.",
             "archive": {
               "ratings": [
                 9
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "criticism",
+              "craft"
+            ]
           },
           "resol": {
-            "reason": null,
+            "reason": "The final refusal to keep the camera as a companion completes the story’s movement from defensive performance toward connection. The romance’s outcome leaves pain without undoing that development. This earns a near-perfect payoff assessment. The next half-point would require the more schematic supporting relationships to receive equally nuanced completion; ending after two series is not itself evidence of perfection.",
             "archive": {
               "ratings": [
                 10
               ],
               "excerpt": "Resolution (10): Two perfect seasons. The ending is definitive. No season three needed or wanted."
-            }
+            },
+            "sourceRefs": [
+              "criticism",
+              "craft"
+            ]
           }
         },
         "issues": [],
-        "catalogueAsOf": "2026-02-25"
+        "catalogueAsOf": "2026-02-25",
+        "basis": "research",
+        "provisional": true,
+        "reviewedAt": "2026-10-13",
+        "summary": "The former score undervalued tightly observed performance, purposeful camera work and a completed emotional journey. Its intimate scale still limits spectacle and the breadth of its social world, but those limits do not erase its craft.",
+        "limitations": "Provisional interpretation of published criticism and Tony Miller’s account of the visual design, rather than a new viewing of all twelve episodes. The evidence is richest for the second series. The archive’s perfect scores are not restored, and acclaimed status does not determine this vector.",
+        "sources": [
+          {
+            "id": "criticism",
+            "title": "The Ringer · Alison Herman on the two-part story",
+            "url": "https://www.theringer.com/2019/05/20/tv/fleabag-season-2",
+            "coverage": "Twelve-part scope, first-series guilt, expanded ensemble and the final separation from the audience."
+          },
+          {
+            "id": "craft",
+            "title": "The Credits · cinematographer Tony Miller",
+            "url": "https://www.motionpictures.org/2019/08/fleabags-emmy-nominated-cinematographer-on-crafting-a-nearly-flawless-second-season-2/",
+            "coverage": "Primary interview on the dinner scene, visual intimacy, Boo’s scenes and emotionally motivated lighting."
+          },
+          {
+            "id": "design",
+            "title": "Production designer Jonathan Paul Green · interview",
+            "url": "https://www.buzzsprout.com/547408/episodes/1813150-jonathan-paul-green-production-designer-interview",
+            "coverage": "Primary production-design account: practical locations, the cafe and richer second-series interiors; not a quality verdict."
+          }
+        ],
+        "supersedes": {
+          "version": 1,
+          "episodes": 12,
+          "scope": {
+            "label": "Recorded episode run",
+            "status": "unrecorded"
+          },
+          "ratings": {
+            "char": 7.5,
+            "world": 5,
+            "cine": 6.5,
+            "spect": 3,
+            "conc": 7,
+            "drive": 7.5,
+            "resol": 7.5
+          },
+          "note": "Reassessed under the stricter character credibility, causal writing and whole-run consistency standard on 2026-10-13. Historical caches and archive excerpts remain unchanged."
+        }
       }
     },
     {
@@ -45108,13 +45843,13 @@
       "year": 2024,
       "episodes": 8,
       "final": 6.45,
-      "char": 6.5,
-      "world": 7,
-      "cine": 7,
-      "spect": 7,
-      "conc": 6,
-      "drive": 6.5,
-      "resol": 6,
+      "char": 7.5,
+      "world": 7.5,
+      "cine": 8,
+      "spect": 8.5,
+      "conc": 7,
+      "drive": 7,
+      "resol": 7.5,
       "genres": [
         "sci-fi",
         "action",
@@ -45132,87 +45867,190 @@
       },
       "month": 4,
       "assessment": {
-        "version": 1,
+        "version": 2,
         "rubricVersion": "2026-10",
-        "status": "legacy",
+        "status": "reviewed",
         "evidenceCheckedAt": "2026-10-13",
         "scope": {
-          "label": "Recorded episode run",
-          "status": "unrecorded"
+          "label": "Season 1 only · 8 episodes",
+          "status": "named",
+          "coverage": "season",
+          "seasons": [
+            1
+          ],
+          "episodes": 8,
+          "episodeBasis": "Original first-season episodes through The Beginning; season two is outside this assessment",
+          "sourceRefs": [
+            "amazon",
+            "ending"
+          ]
         },
         "review": {
           "path": "docs/shows/fallout.html",
-          "status": "archived",
-          "note": "Historical notes have not been reverified. They may describe different ratings or seasons.",
-          "sources": []
+          "status": "withheld",
+          "note": "The old review incorrectly calls the season-one finale The Head. The current assessment explicitly covers eight episodes ending with The Beginning; the superseded prose remains withheld.",
+          "sources": [
+            "https://www.aboutamazon.com/news/entertainment/fallout-tv-series-cast",
+            "https://theasc.com/video/clubhouse-conversations-fallout/",
+            "https://www.episodicmedium.tv/review-fallout-the-beginning-season/",
+            "https://www.thecrimson.com/article/2024/4/23/fallout-finale-review/"
+          ]
         },
         "dimensions": {
           "char": {
-            "reason": null,
+            "reason": "Lucy’s learned optimism, Maximus’s insecurity and the Ghoul’s hardened survivalism create three distinct responses to the same world. Goggins’s pre-war and present-day contrast adds an inner life beyond the makeup. Several supporting figures remain broad comic or ideological types. The next half-point needs more consistently credible development around the leads, not merely another charismatic performance.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "amazon",
+              "criticism"
+            ]
           },
           "world": {
-            "reason": null,
+            "reason": "Vault governance, Brotherhood hierarchy and the surface economy give the factions incompatible incentives and material conditions. Those differences affect the protagonists’ choices. The corporate scheme and conveniently connected histories also simplify how power operates. The next half-point needs greater institutional credibility at those joins; familiarity with the games cannot substitute for what the season actually establishes.",
             "archive": {
               "ratings": [
                 8.5
               ],
               "excerpt": "World Building (8.5): The Fallout universe rendered faithfully. Every vault, every faction, every irradiated nightmare feels authentic."
-            }
+            },
+            "sourceRefs": [
+              "ending",
+              "criticism"
+            ]
           },
           "cine": {
-            "reason": null,
+            "reason": "The contrast between ordered vault interiors, the pre-war public image and exposed wasteland gives each perspective a clear visual identity. Framing and lighting make the advertised promise of safety legible against its consequences. The next half-point needs more consistently expressive staging beyond those strong contrasts; the scale and detail of the sets are credited separately under spectacle.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "craft",
+              "amazon",
+              "criticism"
+            ]
           },
           "spect": {
-            "reason": null,
+            "reason": "Vault spaces, ruined landscapes, creatures and power-armoured bodies create a varied material world with striking differences of scale. Practical texture helps the bizarre feel physically present. Some encounters still resemble discrete attractions rather than a continuous environment. The next half-point requires more seamless integration of those sights; the score rewards their screen impact, not their accuracy to a game.",
             "archive": {
               "ratings": [
                 8.5
               ],
               "excerpt": "Visual Spectacle (8.5): Production design that matches the games. The power armor alone is worth the price of admission."
-            }
+            },
+            "sourceRefs": [
+              "amazon",
+              "craft",
+              "criticism"
+            ]
           },
           "conc": {
-            "reason": null,
+            "reason": "Lucy’s reciprocity, the Brotherhood’s obedience and the Ghoul’s survival logic test different moral rules against corporate control. That supplies several interacting ideas rather than one apocalypse theme. The satire sometimes resolves complexity into conspicuously good or bad actors. The next half-point needs more unresolved tension inside those competing systems, rather than a louder statement about greed.",
             "archive": {
               "ratings": [
                 7.5
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "amazon",
+              "ending",
+              "criticism"
+            ]
           },
           "drive": {
-            "reason": null,
+            "reason": "The shared pursuit gives the three strands direction, and side journeys develop Lucy’s changing trust rather than merely filling time. Maximus escaping execution by redirecting the Brotherhood is a useful counterexample: it advances the plot through a conveniently timed reprieve. The next half-point needs more consistently earned transitions. A lively pace and successful local episodes support a very good score, but do not alone establish disciplined progression.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": null
-            }
+            },
+            "sourceRefs": [
+              "ending"
+            ]
           },
           "resol": {
-            "reason": null,
+            "reason": "The first season answers central questions about Lucy’s father and vault control, turning the rescue premise into a changed understanding of home. Those are real payoffs even though new journeys begin. Heavy explanatory delivery makes some revelations less earned in action. The next half-point needs smoother preparation and discovery; leaving the wider series open is not itself a flaw.",
             "archive": {
               "ratings": [
                 7.5
               ],
               "excerpt": "Resolution (7.5): Season 1 ends with reveals and cliffhangers. Ongoing series—too early for final judgment."
-            }
+            },
+            "sourceRefs": [
+              "ending",
+              "amazon",
+              "criticism"
+            ]
           }
         },
-        "issues": [],
-        "catalogueAsOf": "2026-02-25"
+        "issues": [
+          {
+            "id": "R2-fallout",
+            "kind": "superseded-archive",
+            "note": "The old review incorrectly calls the season-one finale The Head. The current assessment explicitly covers eight episodes ending with The Beginning; the superseded prose remains withheld.",
+            "status": "resolved",
+            "resolution": "Current reasons and named scope replace the old commentary; the historical page is withheld and noindex."
+          }
+        ],
+        "catalogueAsOf": "2026-02-25",
+        "basis": "research",
+        "provisional": true,
+        "reviewedAt": "2026-10-13",
+        "summary": "The first season earns stronger credit for its three contrasting leads, physical world and fulfilled local mysteries. Its heightened satire and some convenient plotting still limit psychological and institutional credibility. Game accuracy is not a scoring category.",
+        "limitations": "Research assessment of season one from cast/craft accounts, episode analysis and finale criticism; the eight episodes were not rewatched in full. Later seasons and game-only lore are excluded. Visual claims rely on documented production choices and published scene analysis, not a complete shot-level inspection.",
+        "sources": [
+          {
+            "id": "amazon",
+            "title": "Amazon · season-one cast and production discussion",
+            "url": "https://www.aboutamazon.com/news/entertainment/fallout-tv-series-cast",
+            "coverage": "Primary cast accounts, Lucy’s values, the Ghoul’s humanity and explicit eight-episode season-one scope."
+          },
+          {
+            "id": "craft",
+            "title": "American Cinematographer · Fallout craft discussion",
+            "url": "https://theasc.com/video/clubhouse-conversations-fallout/",
+            "coverage": "Published introduction to Stuart Dryburgh’s season-one interview, including retrofuturistic visual design; the full video was not viewed."
+          },
+          {
+            "id": "ending",
+            "title": "Episodic Medium · The Beginning",
+            "url": "https://www.episodicmedium.tv/review-fallout-the-beginning-season/",
+            "coverage": "Episode identity and how the family, vault and pre-war strands meet at the season ending."
+          },
+          {
+            "id": "criticism",
+            "title": "The Harvard Crimson · season-one finale",
+            "url": "https://www.thecrimson.com/article/2024/4/23/fallout-finale-review/",
+            "coverage": "Performance, action and corporate-power interpretation; approximate timeline wording in the article is not adopted."
+          }
+        ],
+        "supersedes": {
+          "version": 1,
+          "episodes": 8,
+          "scope": {
+            "label": "Recorded episode run",
+            "status": "unrecorded"
+          },
+          "ratings": {
+            "char": 6.5,
+            "world": 7,
+            "cine": 7,
+            "spect": 7,
+            "conc": 6,
+            "drive": 6.5,
+            "resol": 6
+          },
+          "note": "Reassessed under the stricter character credibility, causal writing and whole-run consistency standard on 2026-10-13. Historical caches and archive excerpts remain unchanged."
+        }
       }
     },
     {
@@ -47887,13 +48725,13 @@
       "year": 2025,
       "episodes": 30,
       "final": 6.1,
-      "char": 6.5,
-      "world": 6,
-      "cine": 6,
-      "spect": 4,
-      "conc": 6,
-      "drive": 6.5,
-      "resol": 6,
+      "char": 8.5,
+      "world": 8.5,
+      "cine": 8,
+      "spect": 6.5,
+      "conc": 7.5,
+      "drive": 8.5,
+      "resol": 8,
       "genres": [
         "drama",
         "medical"
@@ -47911,93 +48749,196 @@
       },
       "month": 1,
       "assessment": {
-        "version": 1,
+        "version": 2,
         "rubricVersion": "2026-10",
-        "status": "legacy",
+        "status": "reviewed",
         "evidenceCheckedAt": "2026-10-13",
         "scope": {
-          "label": "Recorded episode run",
-          "status": "unrecorded"
+          "label": "Seasons 1–2 · 30 episodes",
+          "status": "named",
+          "coverage": "season",
+          "seasons": [
+            1,
+            2
+          ],
+          "episodes": 30,
+          "episodeBasis": "Two completed fifteen-episode shifts, through the second-season finale; no prediction about season three",
+          "sourceRefs": [
+            "craft",
+            "second-season",
+            "ending"
+          ]
         },
         "review": {
           "path": "docs/shows/the-pitt.html",
-          "status": "archived",
-          "note": "Historical notes have not been reverified. They may describe different ratings or seasons.",
-          "sources": []
+          "status": "withheld",
+          "note": "The old prose discussed only the first fifteen-hour shift while the catalogue counted thirty episodes. It is withheld as support for the current two-season assessment; its original text and ratings are preserved.",
+          "sources": [
+            "https://www.fdtimes.com/2025/01/27/johanna-coelho-the-pitt/",
+            "https://comicon.com/2025/03/10/talking-the-pitt-with-production-designer-nina-ruscio/",
+            "https://au.variety.com/2026/tv/reviews/the-pitt-season-2-review-hbo-max-31624/",
+            "https://www.theatlantic.com/culture/2026/04/the-pitt-season-2-finale-robby/686838/"
+          ]
         },
         "dimensions": {
           "char": {
-            "reason": null,
+            "reason": "Robby, Dana, Langdon, Santos and the trainees respond differently to pressure; clinical competence does not remove pride, resentment or fear. Subtle changes between shifts make development visible in behaviour. Some patient roles are necessarily compressed into a presenting problem. The next half-point needs more consistent depth in those brief encounters; a large cast alone would not earn this score.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": "Noah Wyle anchors as Dr. Michael \"Robby\" Robinavitch—a senior attending with the thousand-yard stare of someone who's seen too much. The supporting ensemble is younger, hungrier, still developing. The show focuses on the job rather than personalities, which is honest but limits emotional investment. Acting is strong but the character work is still in progress."
-            }
+            },
+            "sourceRefs": [
+              "second-season",
+              "ending"
+            ]
           },
           "world": {
-            "reason": null,
+            "reason": "Triage, nursing, training, psychiatric care and insurance constraints affect one another instead of existing as background departments. That makes the hospital a convincing institution whose limits drive decisions. The emergency-room lens compresses the wider healthcare system into selected encounters. The next half-point requires richer independent development outside that lens; the existing institutional specificity still merits a high score.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": "One hospital, rendered in forensic detail. The ER becomes a machine with moving parts: triage, imaging, surgery, psych, social work. The Pitt feels like a real place—the nurses' station, the break room, the parking garage where people go to scream. Each department has its own culture, its own rules. This is institutional television at its most specific."
-            }
+            },
+            "sourceRefs": [
+              "second-season",
+              "design"
+            ]
           },
           "cine": {
-            "reason": null,
+            "reason": "The moving camera carries attention between connected treatment spaces while staying close enough to register reactions; changing daylight preserves the accumulating shift. These choices make pressure spatially legible. The next half-point would require greater expressive differentiation beyond the dominant observational mode. The previous low score undervalued functional precision by confusing cinematography with picturesque locations.",
             "archive": {
               "ratings": [
                 6
               ],
               "excerpt": "Real-time format imposes visual constraints: long takes, handheld cameras, the chaos of emergency care. The style is documentary-adjacent—functional rather than beautiful. But there's power in the unadorned approach. When the camera lingers, it means something. The filmmaking serves the realism."
-            }
+            },
+            "sourceRefs": [
+              "craft",
+              "design"
+            ]
           },
           "spect": {
-            "reason": null,
+            "reason": "Procedures, coordinated emergency work and the movement of patients through a functioning department make an unfamiliar system visible. That earns more than the ordinary-rooms anchor. Repeated treatment spaces and similar kinds of physical crisis limit the range. The next half-point would need more sustained visual discovery; neither graphic injury nor a high case count automatically earns it.",
             "archive": {
               "ratings": [
                 5
               ],
               "excerpt": "The spectacle is medical—procedures rendered with gruesome authenticity. This isn't about explosions or chases; it's about chest compressions, intubation, the mechanics of keeping people alive. The \"spectacle\" is the system functioning under pressure, which is compelling in its own way but visually muted."
-            }
+            },
+            "sourceRefs": [
+              "design",
+              "craft"
+            ]
           },
           "conc": {
-            "reason": null,
+            "reason": "Duty to patients competes with staff wellbeing, institutional capacity and the costs of access. Training and technology introduce further tensions rather than just topical references. However, some cases arrive as relatively explicit demonstrations of a social problem. The next half-point needs more sustained interaction between these arguments; realistic subject matter alone cannot supply exceptional conceptual density.",
             "archive": {
               "ratings": [
                 6
               ],
               "excerpt": "The real-time conceit is the hook: 15 episodes, one hour each, covering one shift. This isn't revolutionary (24 did it), but applied to medicine, it creates unique tension. The show explores burnout, healthcare system dysfunction, the impossibility of doing everything. Themes are present but not yet fully developed."
-            }
+            },
+            "sourceRefs": [
+              "second-season"
+            ]
           },
           "drive": {
-            "reason": null,
+            "reason": "Limited staff and time make each task affect the next, while the second shift carries forward altered professional relationships. The procedural activity therefore produces accumulation, not just bustle. Repeated deferrals of Robby’s departure and concentrated case loads reveal some structural machinery. The next half-point needs fewer such conveniences within an otherwise strongly motivated progression.",
             "archive": {
               "ratings": [
                 8
               ],
               "excerpt": "The clock is the villain. Each episode covers one hour of a 15-hour shift, and the format creates relentless momentum. Patients arrive, crises escalate, staffing problems compound. The real-time structure makes every delay meaningful, every intervention urgent. It's exhausting by design—and addictive for the same reason."
-            }
+            },
+            "sourceRefs": [
+              "second-season",
+              "ending",
+              "craft"
+            ]
           },
           "resol": {
-            "reason": null,
+            "reason": "The first shift’s strain persists into the next, and Robby’s eventual admission of his distress changes the meaning of his threatened departure. This fulfils an immediate character promise without claiming he is cured. Some colleagues receive less developed conclusions. The next half-point needs more even follow-through across those threads; an ongoing third season is not a deduction.",
             "archive": {
               "ratings": [
                 7
               ],
               "excerpt": "Ongoing. The show is still finding itself, but the first season delivers a complete arc: the shift ends, the doctors survive (mostly), the day is done. Resolutions are provisional, as they are in real hospitals. The ending honors the premise. Whether the show can sustain beyond its gimmick remains to be seen."
-            }
+            },
+            "sourceRefs": [
+              "ending",
+              "second-season"
+            ]
           }
         },
         "issues": [
           {
             "id": "E14",
             "kind": "completion-policy-inconsistency",
-            "note": "Some completed seasonal stories receive credit despite cancellation/continuation; other similarly described units are marked down chiefly for lacking a series endpoint."
+            "note": "Some completed seasonal stories receive credit despite cancellation/continuation; other similarly described units are marked down chiefly for lacking a series endpoint.",
+            "status": "resolved",
+            "resolution": "Version 2 assesses the two completed seasonal arcs on their own promises, without an automatic ongoing-series penalty."
+          },
+          {
+            "id": "R2-the-pitt",
+            "kind": "superseded-archive",
+            "note": "The old prose discussed only the first fifteen-hour shift while the catalogue counted thirty episodes. It is withheld as support for the current two-season assessment; its original text and ratings are preserved.",
+            "status": "resolved",
+            "resolution": "Current reasons and named scope replace the old commentary; the historical page is withheld and noindex."
           }
         ],
-        "catalogueAsOf": "2026-02-25"
+        "catalogueAsOf": "2026-02-25",
+        "basis": "research",
+        "provisional": true,
+        "reviewedAt": "2026-10-13",
+        "summary": "The old assessment missed how much character, institution and purposeful movement emerge from the work itself. The revised scope includes both completed seasons. The score rises substantially, while case compression and occasionally explicit issue-setting keep it below the strongest anchors.",
+        "limitations": "Provisional research assessment of both completed seasons using craft interviews, season-two criticism and a post-finale account. Thirty episodes were not watched in full for this review. The early-season reviews are not treated as evidence for the second-season ending; the separate finale source supplies that coverage.",
+        "sources": [
+          {
+            "id": "craft",
+            "title": "Film and Digital Times · Johanna Coelho interview",
+            "url": "https://www.fdtimes.com/2025/01/27/johanna-coelho-the-pitt/",
+            "coverage": "Primary account of the first 15-episode shift, handheld proximity and progressive daylight."
+          },
+          {
+            "id": "design",
+            "title": "COMICON · production designer Nina Ruscio",
+            "url": "https://comicon.com/2025/03/10/talking-the-pitt-with-production-designer-nina-ruscio/",
+            "coverage": "Primary account of connected treatment spaces and the material design supporting continuous movement."
+          },
+          {
+            "id": "second-season",
+            "title": "Variety · second-season assessment",
+            "url": "https://au.variety.com/2026/tv/reviews/the-pitt-season-2-review-hbo-max-31624/",
+            "coverage": "Character continuity, clinical and administrative roles, social pressures and criticism of compressed crises; advance-season coverage."
+          },
+          {
+            "id": "ending",
+            "title": "The Atlantic · second-season finale assessment",
+            "url": "https://www.theatlantic.com/culture/2026/04/the-pitt-season-2-finale-robby/686838/",
+            "coverage": "Completed 15-episode second shift, Robby’s confession, ordinary cumulative pressure and the deliberately unresolved future."
+          }
+        ],
+        "supersedes": {
+          "version": 1,
+          "episodes": 30,
+          "scope": {
+            "label": "Recorded episode run",
+            "status": "unrecorded"
+          },
+          "ratings": {
+            "char": 6.5,
+            "world": 6,
+            "cine": 6,
+            "spect": 4,
+            "conc": 6,
+            "drive": 6.5,
+            "resol": 6
+          },
+          "note": "Reassessed under the stricter character credibility, causal writing and whole-run consistency standard on 2026-10-13. Historical caches and archive excerpts remain unchanged."
+        }
       }
     },
     {
