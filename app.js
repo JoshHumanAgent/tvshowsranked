@@ -39,10 +39,10 @@
         else if (!writeLocal(GUEST_KEY, model.snapshot())) toast('Changes are in this tab only. Download a backup to keep them.');
         updateLibrary();
     }
-    function safePoster(url) {
+    function safePoster(url, size = 'w185') {
         try {
             const parsed = new URL(url);
-            if (parsed.protocol === 'https:' && parsed.hostname === 'image.tmdb.org') return parsed.href.replace('/w500/', '/w185/');
+            if (parsed.protocol === 'https:' && parsed.hostname === 'image.tmdb.org') return parsed.href.replace(/\/(?:w\d+|original)\//, '/' + size + '/');
         } catch {}
         return 'assets/film-reel.svg';
     }
@@ -61,6 +61,7 @@
     });
     document.addEventListener('error', event => {
         if (event.target instanceof HTMLImageElement && !event.target.dataset.fallback) {
+            event.target.closest('picture')?.querySelectorAll('source').forEach(source => source.remove());
             event.target.dataset.fallback = 'true'; event.target.src = 'assets/film-reel.svg';
         }
     }, true);
@@ -87,18 +88,26 @@
     function renderList() {
         if (!model) return;
         const focused = document.activeElement;
-        const focusSlug = focused?.closest('.show-row')?.dataset.slug;
-        const focusType = focused?.hasAttribute('data-pin') ? 'pin' : focused?.hasAttribute('data-show') ? 'show' : null;
+        const focusSlug = focused?.closest('.show-card')?.dataset.slug;
+        const focusAction = focused?.dataset.cardAction;
         const results = model.results({ query, onlyPinned }), shown = results.slice(0, limit);
         $('rankings').innerHTML = shown.map((show, index) => {
             const personal = Object.hasOwn(model.prefs.scoreOverrides, show.title);
             const pinned = model.prefs.pinnedShows.includes(show.title);
-            return `<article class="show-row" data-slug="${show.slug}" data-top="${!show.pending && show.rank <= 3}">
-                <span class="row-rank" aria-label="${rankText(show)}">${show.pending ? '—' : String(show.rank).padStart(2,'0')}</span>
-                <img class="poster" src="${escape(safePoster(show.poster))}" alt="" width="62" height="88" loading="${index < 3 ? 'eager' : 'lazy'}" decoding="async">
-                <div class="show-main"><a class="show-title" href="#show=${show.slug}" data-show="${show.slug}">${escape(show.title)}</a>${personal && !show.pending ? '<span class="personal-label">Your rating</span>' : ''}${show.pending ? '<span class="personal-label">Awaiting assessment</span>' : ''}<div class="show-meta"><span>${show.year}</span><span>${show.episodes} episodes</span><span class="show-genres">${show.genres.slice(0,3).map(escape).join(' · ')}</span></div></div>
-                <button class="score-button" data-show="${show.slug}" aria-label="${show.pending ? 'View assessment status for' : 'Explain score for'} ${escape(show.title)}${show.pending ? '' : ', ' + scoreText(show)}"><span class="score-number">${show.pending ? '—' : scoreText(show)}</span><span class="score-caption">${show.pending ? 'View status' : 'Why this rank'}</span></button>
-                <button class="icon-button pin-button" data-pin="${show.slug}" data-edit aria-label="${pinned ? 'Remove' : 'Add'} ${escape(show.title)} ${pinned ? 'from' : 'to'} shortlist" aria-pressed="${pinned}">${pinned ? '★' : '☆'}</button>
+            const breakdown = show.pending ? null : RankingMath.breakdown(show, model.prefs.weights, model.prefs.multiplierEnabled);
+            return `<article class="show-card" data-slug="${show.slug}" data-top="${!show.pending && show.rank <= 3}" aria-labelledby="card-title-${show.slug}">
+                <a class="card-media" href="#show=${show.slug}" data-show="${show.slug}" data-card-action="poster" aria-label="View ${escape(show.title)}, ${rankText(show).toLowerCase()}">
+                    <picture><source media="(max-width: 640px)" srcset="${escape(safePoster(show.backdrop || show.poster,'w780'))}"><img class="card-poster" src="${escape(safePoster(show.poster,'w500'))}" alt="" width="200" height="300" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async"></picture>
+                    <span class="card-rank"><span>${show.pending ? 'Awaiting assessment' : 'Rank'}</span><strong>${show.pending ? '—' : String(show.rank).padStart(2,'0')}</strong></span>
+                </a>
+                <div class="card-body">
+                    <div class="card-heading"><div class="show-main"><h2 class="card-title" id="card-title-${show.slug}"><a class="show-title" href="#show=${show.slug}" data-show="${show.slug}" data-card-action="title">${escape(show.title)}</a></h2><div class="show-meta"><span>${show.year}</span><span>${show.episodes} episodes</span>${personal && !show.pending ? '<span class="personal-label">Your ratings</span>' : ''}</div></div>
+                        <button class="score-button" data-show="${show.slug}" data-card-action="score" aria-label="${show.pending ? 'View assessment status for' : 'Explain score for'} ${escape(show.title)}${show.pending ? '' : ', ' + scoreText(show)}"><span class="score-number">${show.pending ? '—' : scoreText(show)}</span><span class="score-caption">${show.pending ? 'View status' : 'Score & review ↗'}</span></button>
+                    </div>
+                    <div class="card-genres" aria-label="Genres">${show.genres.map(g => '<span>' + escape(g) + '</span>').join('')}</div>
+                    ${show.pending ? '<p class="card-pending">A fresh assessment is needed. The old ratings are preserved but do not determine a score or rank.</p>' : `<div class="card-ratings-heading"><span>Seven dimensions</span><span>Ratings / 10</span></div><dl class="card-ratings">${cats.map(c => `<div class="card-rating" data-category="${c.key}"><dt id="rating-${show.slug}-${c.key}">${c.name}</dt><dd><span class="card-bar" role="meter" aria-labelledby="rating-${show.slug}-${c.key}" aria-valuemin="0" aria-valuemax="10" aria-valuenow="${show[c.key]}"><span class="card-bar-fill" style="width:${show[c.key] * 10}%;--bar-color:${show[c.key] >= 9 ? '#cfbd89' : show[c.key] >= 7 ? '#acbd98' : show[c.key] >= 5 ? '#87977e' : '#b28a80'}"></span></span><span class="card-rating-value" aria-hidden="true">${show[c.key]}</span></dd></div>`).join('')}</dl>`}
+                    <div class="card-footer"><div>${breakdown ? `<p class="card-calculation">${points(breakdown.weighted)} quality <span>× ${breakdown.multiplier.toFixed(2)} ${model.prefs.multiplierEnabled ? 'length' : 'length off'}</span></p>` : ''}${show.assessment?.provisional ? '<p class="card-assessment-note">Research assessment · provisional</p>' : ''}</div><button class="card-pin" data-pin="${show.slug}" data-card-action="pin" data-edit aria-label="${pinned ? 'Remove' : 'Add'} ${escape(show.title)} ${pinned ? 'from' : 'to'} shortlist" aria-pressed="${pinned}"><span aria-hidden="true">${pinned ? '★' : '☆'}</span> ${pinned ? 'Shortlisted' : 'Shortlist'}</button></div>
+                </div>
             </article>`;
         }).join('');
         $('results-count').textContent = `${shown.length} of ${results.length} ${results.length === 1 ? 'show' : 'shows'}${results.length !== model.shows.length ? ' · ' + model.shows.length + ' in catalogue' : ''}`;
@@ -119,7 +128,7 @@
         // Escape text and attributes; user search is never executable markup.
         $('active-filters').innerHTML = filters.map(f => `<button data-remove-filter="${f.type}" data-value="${escape(f.value)}" aria-label="Remove ${escape(f.label)} filter">${escape(f.label)} <span aria-hidden="true">×</span></button>`).join('');
         editingAvailability();
-        if (focusSlug && focusType) $('rankings').querySelector(`[data-slug="${focusSlug}"] [data-${focusType}]`)?.focus({ preventScroll:true });
+        if (focusSlug && focusAction) $('rankings').querySelector(`[data-slug="${focusSlug}"] [data-card-action="${focusAction}"]`)?.focus({ preventScroll:true });
     }
     function renderAll() { renderFilters(); renderList(); updateLibrary(); if (openSlug) renderDetail(openSlug); }
     function updateLibrary() {
@@ -158,7 +167,7 @@
     on('load-more','click',() => {
         const firstNew = model.results({query,onlyPinned})[limit]?.slug;
         limit += 30; renderList();
-        if (firstNew) $('rankings').querySelector(`[data-show="${firstNew}"]`)?.focus({ preventScroll:true });
+        if (firstNew) $('rankings').querySelector(`[data-slug="${firstNew}"] .show-title`)?.focus({ preventScroll:true });
     });
     on('sort-select','change',event => { if (!editable()) return; model.prefs.sortBy = event.target.value; limit = 30; renderList(); persist(); });
     function clearFilters(clearQuery = false) {
