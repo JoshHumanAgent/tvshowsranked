@@ -2,6 +2,7 @@
 const { runHealthCheck } = require('./health-check');
 const { auditRankingMath } = require('./audit-ranking-math');
 const { auditSite } = require('./audit-site');
+const { auditCatalogueMaintenance } = require('./audit-catalogue-maintenance');
 
 const health = runHealthCheck();
 let rankingMath;
@@ -12,8 +13,10 @@ try {
 }
 let site;
 try { site = auditSite(); } catch (error) { site = { errors:[error.message] }; }
-const status = health.status === 'HEALTHY' && !rankingMath.errors.length && !site.errors.length ? 'HEALTHY' : 'UNHEALTHY';
-console.log(JSON.stringify({ status, health, site, rankingMath: {
+let maintenance;
+try { maintenance = auditCatalogueMaintenance(); } catch (error) { maintenance = { errors:[error.message] }; }
+const status = health.status === 'HEALTHY' && !rankingMath.errors.length && !site.errors.length && !maintenance.errors.length ? 'HEALTHY' : 'UNHEALTHY';
+console.log(JSON.stringify({ status, health, site, maintenance, rankingMath: {
     ...rankingMath,
     differences: rankingMath.differences?.slice(0, 8)
 } }, null, 2));

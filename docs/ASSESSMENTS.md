@@ -41,6 +41,14 @@ The multiplier is `1 + 0.005 × clamp((episodes − 10) / 90, 0, 1)`: no bonus t
 
 The earlier critical-audit files and first-five reassessment totals are historical snapshots of the former rule. Do not rewrite them or their preserved score caches to simulate having used the new policy. The runtime derives current scores from the same category inputs.
 
+## New catalogue intake
+
+The [13 October release sweep](catalogue-update-2026-10-13.md) adds 130 programmes, including nine new provisional research assessments; 121 await adequate evidence. The original fourteen reassessments and 425 ranked legacy judgments are preserved. Discovery freshness is not a review date.
+
+New records use `origin: new`, start at version 1, and have `review.status: none` with a null path. A pending new record has null scores and reasons, an unassessed scope, identity sources and a concrete next action. It remains searchable and shortlistable. Its absence of evidence is never converted to zero. New researched records require the same seven sourced reasons, scope and limitations as a reassessment, plus named critical authors, ending coverage and calibration.
+
+`release` metadata describes dated releases separately from the episode input bound to the score. More released episodes do not enlarge assessment scope automatically. Recently added sorting mixes assessed and pending intake chronologically; score sorting still places pending entries last.
+
 ## The migration
 
 The 13 October 2026 migration preserved every subjective rating. It created `assessment.version: 1` records with rubric version `2026-10`, a catalogue source date, an evidence organisation date, scope, review status, seven dimension records and relevant audit findings. These dates do not claim fresh verification of every review fact. Subsequent explicit passes revised five and then nine assessments, as described below; other entries still retain that migration state.

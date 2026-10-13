@@ -5,7 +5,7 @@ A small, static television ranking app. No framework, package install or build s
 - Public site: <https://dynamicrankengine.com/> (GitHub Pages, `master`).
 - Local work: `D:\DynamicRankEngine`, branch `codex/local-development`.
 - Preview: <http://localhost:4173/>. Local editing and publication are separate steps.
-- 439 ranked entries, including fourteen provisional research reassessments and 425 legacy assessments, with all 442 original records preserved. Two duplicate aliases and one unidentified entry are excluded from the displayed catalogue.
+- 569 visible shows: 448 ranked (23 provisional research assessments and 425 legacy assessments) and 121 awaiting assessment. All 442 original records are preserved, plus 130 additions. Two duplicate aliases and one unidentified entry are excluded from display.
 
 ## Work on the site
 
@@ -27,13 +27,17 @@ See [LOCAL-DEVELOPMENT.md](LOCAL-DEVELOPMENT.md) for startup, storage, testing a
 
 `data/core/00-foundation-list.json` is a historical baseline, not the live calculation. The browser ignores stored `final` and account `_final` caches and calculates from category ratings, applied weights and episode settings.
 
+## Catalogue maintenance — 13 October 2026
+
+The [release ledger](docs/catalogue-update-2026-10-13.md) records 130 additions, nine new research assessments and 34 existing release checks. Discovery is checked through 13 October; pending entries have no invented score. [Maintenance rules](docs/CATALOGUE-MAINTENANCE.md) preserve the editorial standard and separate released episodes from assessed scope. Historical verification notes below describe their own releases.
+
 ## Assessment improvements — 13 October 2026
 
 The [assessment standard](docs/ASSESSMENTS.md#audience-affinity-messages-and-source-independence) now explicitly separates craft from audience affinity, agreement with a message and critical acclaim. The [I May Destroy You source audit](docs/critical-reassessments-2026-10-13.md#follow-up-source-audit) identifies clustered critical evidence and incomplete comparative calibration. This clarification changes the editorial procedure; it does not apply an ideological bonus or penalty, or alter current scores.
 
 The [critical reassessment pass](docs/critical-reassessments-2026-10-13.md) revises Buffy, The Walking Dead, Boston Legal, The Practice, Shameless (US), Fleabag, I May Destroy You, The Pitt and Fallout. All nine have seven new reasons, explicit season coverage and sources. The changes include justified increases as well as decreases; no target ranks were chosen. Scores are provisional research judgments, not complete-viewing assessments. Personal overrides remain separate. The other 425 ranked entries still need calibration against the same standard.
 
-Current verification: all 51 tests pass and the full site validator is healthy. All nine browser-rendered totals and all 63 sourced reasons match the canonical data. A guest edit survived reload and reset to the new baseline. All 433 other preserved records and the original review prose were verified unchanged; regenerated archive context is idempotent. The sitemap contains 415 existing, indexable URLs.
+Verification of the preceding reassessment release: all 51 tests pass and the full site validator is healthy. All nine browser-rendered totals and all 63 sourced reasons match the canonical data. A guest edit survived reload and reset to the new baseline. All 433 other preserved records and the original review prose were verified unchanged; regenerated archive context is idempotent. The sitemap contains 415 existing, indexable URLs.
 
 Following the [critical ranking audit](docs/ranking-calibration-review-2026-10-13.md), Josh clarified the preference for realistic, serious drama assessed through believable performances, substantial characters and disciplined writing. The [assessment standard](docs/ASSESSMENTS.md) records the concrete criteria. Quality alone is now the default. The optional duration bonus grows smoothly from zero at ten episodes to at most 0.5% at 100 episodes, with no short-run penalty. It adds at most 0.04 to an 8/10 score. Existing explicit personal toggle choices remain saved; reset uses the new off default. Category ratings and weights are unchanged by this policy update. Earlier audits, stored totals and verification notes below describe their own historical revisions.
 

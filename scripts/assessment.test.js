@@ -5,7 +5,8 @@ const path = require('node:path');
 const { Model, CATEGORIES } = require('../ranking-state');
 const math = require('../ranking-math');
 const read = file => JSON.parse(fs.readFileSync(path.join(__dirname,'..',file),'utf8').replace(/^\uFEFF/,''));
-const catalogue = read('data/shows/index.json').shows;
+// Frozen-baseline regressions cover the original records. The maintenance suite covers new intake.
+const catalogue = read('data/shows/index.json').shows.filter(show => show.assessment?.origin !== 'new');
 const historical = read('docs/ranking-ledger/show-ledger.json');
 const revised = {
     'when-life-gives-you-tangerines': { scores:[9,8.5,8,7.5,8,8,9], episodes:16, final:8.50, historicalFinal:8.08, withheld:true },

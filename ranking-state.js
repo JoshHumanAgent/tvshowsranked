@@ -14,7 +14,7 @@
         { key: 'resol', name: 'Narrative path & resolution', short: 'Payoff', description: 'Promises developed and earned across the assessed run, with coherent setups, character choices and consequences. Judge the whole journey, not just its final twist. Ambiguity can be satisfying; an ongoing series is not automatically a failed ending.' }
     ]);
     const ERAS = Object.freeze(['last3mo', 'last6mo', 'thisYear', '2020s', '2010s', '2000s', 'pre2000']);
-    const SORTS = Object.freeze(['rank', 'score-desc', 'score-asc', 'title', 'year-desc', 'year-asc']);
+    const SORTS = Object.freeze(['rank', 'score-desc', 'score-asc', 'title', 'year-desc', 'year-asc', 'added-desc']);
     const record = value => value && typeof value === 'object' && !Array.isArray(value);
     const clone = value => JSON.parse(JSON.stringify(value));
     const normalizeText = text => String(text).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -24,9 +24,10 @@
         if (a === undefined) return; // Older catalogues and account backups remain readable.
         const text = value => typeof value === 'string' && value.trim().length > 0;
         if (!record(a) || !Number.isInteger(a.version) || a.version < 1 || a.rubricVersion !== '2026-10' ||
-            !['legacy','reviewed','withheld'].includes(a.status) || !record(a.scope) || !text(a.scope.label) ||
-            !['named','unrecorded'].includes(a.scope.status) || !record(a.review) ||
-            a.review.path !== 'docs/shows/' + show.slug + '.html' || !['archived','withheld'].includes(a.review.status) ||
+            !['legacy','reviewed','withheld','pending'].includes(a.status) || !record(a.scope) || !text(a.scope.label) ||
+            !['named','unrecorded','unassessed'].includes(a.scope.status) || !record(a.review) ||
+            (a.origin === 'new' ? a.review.path !== null || a.review.status !== 'none' :
+                a.review.path !== 'docs/shows/' + show.slug + '.html' || !['archived','withheld'].includes(a.review.status)) ||
             !text(a.review.note) || !Array.isArray(a.review.sources) || a.review.sources.some(url => {
                 try { return new URL(url).protocol !== 'https:'; } catch { return true; }
             }) || !Array.isArray(a.issues) || a.issues.some(issue => !record(issue) || !text(issue.note)) ||
@@ -36,11 +37,15 @@
                     !Array.isArray(archive.ratings) || archive.ratings.some(n => !Number.isFinite(n) || n < 0 || n > 10) ||
                     (archive.excerpt !== null && !text(archive.excerpt));
             })) throw new Error('Invalid assessment evidence for ' + show.title);
+        if (a.status === 'pending' && (a.origin !== 'new' || a.scope.status !== 'unassessed' ||
+            !text(a.nextAction) || !a.review.sources.length || math.KEYS.some(key => show[key] !== null || a.dimensions[key].reason !== null))) {
+            throw new Error('Invalid pending assessment for ' + show.title);
+        }
         if (a.status === 'reviewed') {
             const sources = a.sources;
             const ids = new Set(Array.isArray(sources) ? sources.map(s => s?.id) : []);
             const references = refs => Array.isArray(refs) && refs.length > 0 && refs.every(id => ids.has(id));
-            if (a.version < 2 || show.reviewStatus || !['research','viewing'].includes(a.basis) ||
+            if ((a.version < 2 && a.origin !== 'new') || show.reviewStatus || !['research','viewing'].includes(a.basis) ||
                 typeof a.provisional !== 'boolean' || (a.basis === 'research' && !a.provisional) ||
                 !/^\d{4}-\d{2}-\d{2}$/.test(a.reviewedAt || '') || !text(a.summary) || !text(a.limitations) ||
                 a.scope.status !== 'named' || a.scope.episodes !== show.episodes || !text(a.scope.episodeBasis) ||
@@ -121,12 +126,22 @@
         return show.year >= Number(era.slice(0, 4)) && show.year < Number(era.slice(0, 4)) + 10;
     }
 
+    function releaseGap(show) {
+        if (!show.release) return null;
+        const a = show.assessment;
+        if (a?.status === 'pending' || a?.status === 'withheld') return 'pending';
+        if (a?.status !== 'reviewed') return 'unscoped';
+        const selected = new Set(a.scope.seasons);
+        return show.release.seasons.some(s => !selected.has(s.season)) ||
+            show.release.episodes > a.scope.episodes ? 'newer' : 'covered';
+    }
+
     class Model {
         constructor(catalogue) {
             if (!Array.isArray(catalogue) || !catalogue.length) throw new Error('The catalogue is empty.');
             const titles = new Set(), slugs = new Set();
             for (const show of catalogue) {
-                math.validateScores(show);
+                if (show.assessment?.status !== 'pending') math.validateScores(show);
                 math.episodeMultiplier(show.episodes);
                 validateAssessment(show);
                 if (!show.title || typeof show.title !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(show.slug) ||
@@ -163,7 +178,7 @@
                 const result = { ...show, ...scores };
                 // A wrong-programme assessment is missing evidence, not evidence of poor quality.
                 // Keep the record and personal inputs recoverable, without publishing a false rank.
-                result.pending = show.assessment?.status === 'withheld' || !!show.reviewStatus;
+                result.pending = ['pending','withheld'].includes(show.assessment?.status) || !!show.reviewStatus;
                 result.final = result.pending ? null : math.calculateFinal(result, this.prefs.weights, this.prefs.multiplierEnabled);
                 result.rank = null;
                 return result;
@@ -219,12 +234,13 @@
                 (!onlyPinned || p.pinnedShows.includes(s.title)));
             const alpha = (a, b) => a.title.localeCompare(b.title, 'en');
             const sorters = { title: alpha, 'score-asc': (a,b) => a.final - b.final || alpha(a,b),
+                'added-desc': (a,b) => (b.addedAt || '').localeCompare(a.addedAt || '') || b.year - a.year || b.month - a.month || alpha(a,b),
                 'year-desc': (a,b) => b.year - a.year || b.month - a.month || a.rank - b.rank,
                 'year-asc': (a,b) => a.year - b.year || a.month - b.month || a.rank - b.rank };
             // Pending entries remain searchable and pinnable, but never become "lowest score" zeroes.
-            return result.sort((a,b) => Number(a.pending) - Number(b.pending) ||
+            return result.sort((a,b) => (p.sortBy === 'added-desc' ? 0 : Number(a.pending) - Number(b.pending)) ||
                 (sorters[p.sortBy] || ((a,b) => a.rank - b.rank || alpha(a,b)))(a,b));
         }
     }
-    return Object.freeze({ CATEGORIES, ERAS, SORTS, defaults, normalizePreferences, balanceWeights, matchesEra, Model });
+    return Object.freeze({ CATEGORIES, ERAS, SORTS, defaults, normalizePreferences, balanceWeights, matchesEra, releaseGap, Model });
 });

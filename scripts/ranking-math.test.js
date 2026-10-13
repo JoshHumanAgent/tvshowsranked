@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const math = require('../ranking-math');
-const catalogue = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/shows/index.json'), 'utf8').replace(/^\uFEFF/, '')).shows;
+const catalogue = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/shows/index.json'), 'utf8').replace(/^\uFEFF/, '')).shows.filter(show => show.assessment?.status !== 'pending');
 const accountWeights = { char: 20, world: 15, cine: 15, spect: 10, conc: 15, drive: 15, resol: 10 };
 
 // Independent rational oracle: category hundredths and whole percent weights.
@@ -15,7 +15,7 @@ function reference(show, weights, bonus) {
     return Number((numerator + 900000n) / 1800000n) / 100;
 }
 
-test('all 442 shows agree with an independent exact-decimal oracle, with both weight sets and bonus states', () => {
+test('every assessed record agrees with an independent exact-decimal oracle under both weight sets and bonus states', () => {
     for (const weights of [math.DEFAULT_WEIGHTS, accountWeights]) {
         for (const bonus of [true, false]) for (const show of catalogue) {
             assert.equal(math.calculateFinal(show, weights, bonus), reference(show, weights, bonus), show.title);

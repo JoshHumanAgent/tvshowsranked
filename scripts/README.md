@@ -2,7 +2,8 @@
 
 Supported, read-only checks:
 
-- `validate.js`: the health check, mathematical audit and site/archive audit.
+- `validate.js`: health, mathematics, site/archive and catalogue-maintenance audits.
+- `audit-catalogue-maintenance.js`: original-record digest, explicit new vectors, source independence, release dates, scope and compatibility parity. Read-only; passing does not certify artistic quality.
 - `health-check.js`: catalogue shape, live/authoring parity, queue and review coverage.
 - `audit-ranking-math.js`: current totals versus historical caches; `--json` includes every difference.
 - `audit-ranking-calibration.js`: JSON diagnostic comparing the current optional duration preference with quality-only order, evidence coverage and recovered edit provenance. It reads files and writes only to stdout. Dated audit JSON/Markdown documents are snapshots; do not overwrite them with a newer policy's output.

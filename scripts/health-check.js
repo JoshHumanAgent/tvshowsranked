@@ -43,12 +43,17 @@ function validateShows(data) {
         if (typeof show.title !== 'string' || !show.title.trim()) issues.push(label + ': missing title');
         if (titles.has(show.title)) issues.push(label + ': duplicate title');
         titles.add(show.title);
-        if (show.rank !== index + 1) issues.push(label + ': rank must be ' + (index + 1));
+        const fresh = show.assessment?.origin === 'new';
+        if (fresh ? show.rank !== null : show.rank !== index + 1) issues.push(label + ': invalid stored historical rank');
         if (!Array.isArray(show.genres) || !show.genres.length ||
             show.genres.some(genre => typeof genre !== 'string' || !genre.trim())) {
             issues.push(label + ': invalid genres');
         }
         for (const key of ['final', ...SCORE_KEYS]) {
+            if (fresh && (key === 'final' || show.assessment.status === 'pending')) {
+                if (show[key] !== null) issues.push(label + ': ' + key + ' must remain null until calculated or assessed');
+                continue;
+            }
             if (typeof show[key] !== 'number' || !Number.isFinite(show[key]) || show[key] < 0 || show[key] > 10) {
                 issues.push(label + ': ' + key + ' must be a number from 0 to 10');
             }
@@ -138,16 +143,17 @@ function runHealthCheck(root = path.resolve(__dirname, '..')) {
     });
     if (live) check('Review coverage', () => {
         const missingTop = [], missingOther = [];
-        for (const show of live.shows) {
+        const archived = live.shows.filter(show => show.assessment?.review.status !== 'none');
+        for (const show of archived) {
             const review = filename('docs/shows/' + show.slug + '.html');
             if (!fs.existsSync(review) || !fs.statSync(review).isFile() || !fs.readFileSync(review, 'utf8').trim()) {
                 (show.rank <= 100 ? missingTop : missingOther).push(show.slug);
             }
         }
-        results.stats.reviews = live.shows.length - missingTop.length - missingOther.length;
+        results.stats.reviews = archived.length - missingTop.length - missingOther.length;
         if (missingTop.length) throw new Error('Missing or empty Top 100 reviews: ' + summarize(missingTop));
         if (missingOther.length) warn('Overflow reviews', missingOther.length + ' missing: ' + summarize(missingOther));
-        return results.stats.reviews + '/' + live.shows.length + ' reviews in docs/shows; individual show JSON files are optional';
+        return results.stats.reviews + '/' + archived.length + ' historical reviews in docs/shows; new assessments do not invent archived reviews';
     });
     check('Git checkout', () => {
         if (!fs.existsSync(filename('.git'))) throw new Error('No .git directory or worktree file');

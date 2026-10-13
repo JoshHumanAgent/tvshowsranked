@@ -7,15 +7,17 @@ function auditRankingMath(root = path.resolve(__dirname, '..')) {
     const catalogue = JSON.parse(fs.readFileSync(path.join(root, 'data/shows/index.json'), 'utf8').replace(/^\uFEFF/, ''));
     const differences = [], errors = [];
     for (const show of catalogue.shows) {
+        if (show.assessment?.status === 'pending') continue;
         try {
             const withBonus = math.calculateFinal(show, math.DEFAULT_WEIGHTS, true);
             const withoutBonus = math.calculateFinal(show, math.DEFAULT_WEIGHTS, false);
-            if (show.final !== withBonus) differences.push({ title: show.title, stored: show.final, withBonus, withoutBonus });
+            if (show.assessment?.origin !== 'new' && show.final !== withBonus) differences.push({ title: show.title, stored: show.final, withBonus, withoutBonus });
         } catch (error) {
             errors.push({ title: show.title, error: error.message });
         }
     }
-    return { total: catalogue.shows.length, validInputs: catalogue.shows.length - errors.length,
+    const pending = catalogue.shows.filter(show => show.assessment?.status === 'pending').length;
+    return { total: catalogue.shows.length, pending, validInputs: catalogue.shows.length - pending - errors.length,
         weights: math.DEFAULT_WEIGHTS, storedFinalDifferences: differences.length,
         note: 'The browser calculates totals from category inputs and current settings. Stored finals are historical catalogue values and are not used as calculation inputs.',
         errors, differences };

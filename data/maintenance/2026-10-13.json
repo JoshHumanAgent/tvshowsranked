@@ -1,0 +1,1782 @@
+{
+  "version": 1,
+  "cutoff": "2026-10-13",
+  "timezone": "Pacific/Auckland",
+  "baselineCommit": "6c078d345fc8b8b6c8319ef88376e189eadea359",
+  "coverage": "Selected serialized live-action releases from 2025 through 13 October 2026, two late-2024 omissions and major returning series. Not an exhaustive global census or a revalidation of all legacy scores.",
+  "discoverySources": [
+    {
+      "url": "https://www.tvline.com/2056194/2026-new-tv-shows/",
+      "purpose": "Cross-platform US release discovery; imports and returning seasons require separate checks."
+    },
+    {
+      "url": "https://www.netflix.com/tudum/articles/new-shows-on-netflix-2026",
+      "purpose": "Netflix global slate; announcements cross-checked against dated episodes."
+    },
+    {
+      "url": "https://www.apple.com/tv-pr/originals/series/",
+      "purpose": "Apple programme identity directory."
+    },
+    {
+      "url": "https://www.aboutamazon.in/news/entertainment/prime-video-lineup-2026-new-shows-movies",
+      "purpose": "Indian discovery; a scheduled title alone is not a confirmed release."
+    },
+    {
+      "url": "https://www.tvmaze.com/api",
+      "purpose": "Programme identity and dated regular episodes; no rating or summary imported."
+    },
+    {
+      "url": "https://www.primevideo.com/detail/0NU8T0IBSKNM4URECC0CAKT8GZ",
+      "purpose": "Primary confirmation of eight released Matka King episodes; TVmaze record incomplete."
+    }
+  ],
+  "added": [
+    {
+      "slug": "lanterns",
+      "title": "Lanterns",
+      "tvmazeId": 44776,
+      "premiered": "2026-08-16",
+      "status": "reviewed",
+      "scoreVector": [
+        8,
+        7,
+        7.5,
+        7.5,
+        7,
+        6.5,
+        7
+      ],
+      "episodes": 8,
+      "scope": "Season 1 only · 8 episodes",
+      "final": 7.23,
+      "assessmentVersion": 1
+    },
+    {
+      "slug": "the-testaments",
+      "title": "The Testaments",
+      "tvmazeId": 45531,
+      "premiered": "2026-04-08",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "carrie",
+      "title": "Carrie",
+      "tvmazeId": 45562,
+      "premiered": "2026-10-07",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "alien-earth",
+      "title": "Alien: Earth",
+      "tvmazeId": 52336,
+      "premiered": "2025-08-12",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "love-story",
+      "title": "Love Story",
+      "tvmazeId": 56862,
+      "premiered": "2026-02-12",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 9,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "star-trek-starfleet-academy",
+      "title": "Star Trek: Starfleet Academy",
+      "tvmazeId": 60302,
+      "premiered": "2026-01-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "wonder-man",
+      "title": "Wonder Man",
+      "tvmazeId": 62569,
+      "premiered": "2026-01-27",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "dtf-st-louis",
+      "title": "DTF St. Louis",
+      "tvmazeId": 63268,
+      "premiered": "2026-03-01",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 7,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "dope-thief",
+      "title": "Dope Thief",
+      "tvmazeId": 64028,
+      "premiered": "2025-03-14",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-abandons",
+      "title": "The Abandons",
+      "tvmazeId": 64627,
+      "premiered": "2025-12-04",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 7,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "black-rabbit",
+      "title": "Black Rabbit",
+      "tvmazeId": 64835,
+      "premiered": "2025-09-18",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "american-primeval",
+      "title": "American Primeval",
+      "tvmazeId": 65577,
+      "premiered": "2025-01-09",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "fightland",
+      "title": "Fightland",
+      "tvmazeId": 65782,
+      "premiered": "2026-07-31",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-agency",
+      "title": "The Agency",
+      "tvmazeId": 66840,
+      "premiered": "2024-11-29",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 20,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "scarpetta",
+      "title": "Scarpetta",
+      "tvmazeId": 67323,
+      "premiered": "2026-03-11",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "man-on-fire",
+      "title": "Man on Fire",
+      "tvmazeId": 67765,
+      "premiered": "2026-04-30",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 7,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "wayward",
+      "title": "Wayward",
+      "tvmazeId": 67919,
+      "premiered": "2025-09-25",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-shards",
+      "title": "The Shards",
+      "tvmazeId": 68193,
+      "premiered": "2026-08-05",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 9,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-boroughs",
+      "title": "The Boroughs",
+      "tvmazeId": 68237,
+      "premiered": "2026-05-21",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "lord-of-the-flies",
+      "title": "Lord of the Flies",
+      "tvmazeId": 68242,
+      "premiered": "2026-02-08",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 4,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "dept-q",
+      "title": "Dept. Q",
+      "tvmazeId": 68408,
+      "premiered": "2025-05-29",
+      "status": "reviewed",
+      "scoreVector": [
+        7.5,
+        7,
+        7.5,
+        6,
+        6.5,
+        7,
+        6.5
+      ],
+      "episodes": 9,
+      "scope": "Season 1 only · 9 episodes",
+      "final": 6.93,
+      "assessmentVersion": 1
+    },
+    {
+      "slug": "brothers",
+      "title": "Brothers",
+      "tvmazeId": 68625,
+      "premiered": "2026-09-23",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 4,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-eternaut",
+      "title": "The Eternaut",
+      "tvmazeId": 68723,
+      "premiered": "2025-04-30",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-stolen-girl",
+      "title": "The Stolen Girl",
+      "tvmazeId": 69580,
+      "premiered": "2025-04-16",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 5,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-bombing-of-pan-am-103",
+      "title": "The Bombing of Pan Am 103",
+      "tvmazeId": 70259,
+      "premiered": "2025-05-18",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-hunting-wives",
+      "title": "The Hunting Wives",
+      "tvmazeId": 72427,
+      "premiered": "2025-07-21",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-narrow-road-to-the-deep-north",
+      "title": "The Narrow Road to the Deep North",
+      "tvmazeId": 72816,
+      "premiered": "2025-04-18",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 5,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-death-of-bunny-munro",
+      "title": "The Death of Bunny Munro",
+      "tvmazeId": 73056,
+      "premiered": "2025-11-20",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-madison",
+      "title": "The Madison",
+      "tvmazeId": 73127,
+      "premiered": "2026-03-14",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "dying-for-sex",
+      "title": "Dying for Sex",
+      "tvmazeId": 73213,
+      "premiered": "2025-04-04",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "56-days",
+      "title": "56 Days",
+      "tvmazeId": 73371,
+      "premiered": "2026-02-18",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "mercy-for-none",
+      "title": "Mercy for None",
+      "tvmazeId": 73689,
+      "premiered": "2025-06-06",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 7,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "run-away",
+      "title": "Run Away",
+      "tvmazeId": 74210,
+      "premiered": "2026-01-01",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "long-bright-river",
+      "title": "Long Bright River",
+      "tvmazeId": 74271,
+      "premiered": "2025-03-13",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "death-by-lightning",
+      "title": "Death by Lightning",
+      "tvmazeId": 74416,
+      "premiered": "2025-11-06",
+      "status": "reviewed",
+      "scoreVector": [
+        7.5,
+        7,
+        6.5,
+        6.5,
+        7,
+        6,
+        6.5
+      ],
+      "episodes": 4,
+      "scope": "Limited series · 4 episodes",
+      "final": 6.83,
+      "assessmentVersion": 1
+    },
+    {
+      "slug": "margos-got-money-troubles",
+      "title": "Margo's Got Money Troubles",
+      "tvmazeId": 74442,
+      "premiered": "2026-04-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "all-her-fault",
+      "title": "All Her Fault",
+      "tvmazeId": 74670,
+      "premiered": "2025-11-06",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "when-no-one-sees-us",
+      "title": "When No One Sees Us",
+      "tvmazeId": 74695,
+      "premiered": "2025-03-07",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "half-man",
+      "title": "Half Man",
+      "tvmazeId": 74839,
+      "premiered": "2026-04-23",
+      "status": "reviewed",
+      "scoreVector": [
+        8,
+        7,
+        7.5,
+        6,
+        7.5,
+        6.5,
+        7
+      ],
+      "episodes": 6,
+      "scope": "Season 1 only · 6 episodes",
+      "final": 7.23,
+      "assessmentVersion": 1
+    },
+    {
+      "slug": "mint",
+      "title": "Mint",
+      "tvmazeId": 74840,
+      "premiered": "2026-04-20",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "paradise",
+      "title": "Paradise",
+      "tvmazeId": 75030,
+      "premiered": "2025-01-26",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 16,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "untamed",
+      "title": "Untamed",
+      "tvmazeId": 75342,
+      "premiered": "2025-07-17",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "daldal",
+      "title": "Daldal",
+      "tvmazeId": 75481,
+      "premiered": "2026-01-30",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 7,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "house-of-guinness",
+      "title": "House of Guinness",
+      "tvmazeId": 75496,
+      "premiered": "2025-09-25",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-miniature-wife",
+      "title": "The Miniature Wife",
+      "tvmazeId": 75600,
+      "premiered": "2026-04-09",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-studio",
+      "title": "The Studio",
+      "tvmazeId": 75605,
+      "premiered": "2025-03-26",
+      "status": "reviewed",
+      "scoreVector": [
+        7.5,
+        7.5,
+        8.5,
+        7,
+        7,
+        7.5,
+        7
+      ],
+      "episodes": 10,
+      "scope": "Season 1 only · 10 episodes",
+      "final": 7.35,
+      "assessmentVersion": 1
+    },
+    {
+      "slug": "imperfect-women",
+      "title": "Imperfect Women",
+      "tvmazeId": 75637,
+      "premiered": "2026-03-18",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-beast-in-me",
+      "title": "The Beast in Me",
+      "tvmazeId": 75701,
+      "premiered": "2025-11-13",
+      "status": "reviewed",
+      "scoreVector": [
+        8,
+        7,
+        8,
+        6.5,
+        7,
+        7.5,
+        7.5
+      ],
+      "episodes": 8,
+      "scope": "Season 1 only · 8 episodes",
+      "final": 7.45,
+      "assessmentVersion": 1
+    },
+    {
+      "slug": "the-chair-company",
+      "title": "The Chair Company",
+      "tvmazeId": 75852,
+      "premiered": "2025-10-12",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "how-to-get-to-heaven-from-belfast",
+      "title": "How to Get to Heaven from Belfast",
+      "tvmazeId": 76004,
+      "premiered": "2026-02-12",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "down-cemetery-road",
+      "title": "Down Cemetery Road",
+      "tvmazeId": 76165,
+      "premiered": "2025-10-29",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "star-city",
+      "title": "Star City",
+      "tvmazeId": 76191,
+      "premiered": "2026-05-29",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-girlfriend",
+      "title": "The Girlfriend",
+      "tvmazeId": 76565,
+      "premiered": "2025-09-10",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "spider-noir",
+      "title": "Spider-Noir",
+      "tvmazeId": 77003,
+      "premiered": "2026-05-25",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "elle",
+      "title": "Elle",
+      "tvmazeId": 77011,
+      "premiered": "2026-07-01",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-hawk",
+      "title": "The Hawk",
+      "tvmazeId": 77059,
+      "premiered": "2026-07-16",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "when-the-phone-rings",
+      "title": "When the Phone Rings",
+      "tvmazeId": 77148,
+      "premiered": "2024-11-22",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 12,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-last-anniversary",
+      "title": "The Last Anniversary",
+      "tvmazeId": 77327,
+      "premiered": "2025-03-27",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "young-sherlock",
+      "title": "Young Sherlock",
+      "tvmazeId": 77427,
+      "premiered": "2026-03-04",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "seven-dials",
+      "title": "Seven Dials",
+      "tvmazeId": 77725,
+      "premiered": "2026-01-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 3,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "last-seen",
+      "title": "Last Seen",
+      "tvmazeId": 78183,
+      "premiered": "2026-09-09",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-gray-house",
+      "title": "The Gray House",
+      "tvmazeId": 78322,
+      "premiered": "2026-02-26",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "something-very-bad-is-going-to-happen",
+      "title": "Something Very Bad Is Going to Happen",
+      "tvmazeId": 78442,
+      "premiered": "2026-03-26",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "his-hers",
+      "title": "His & Hers",
+      "tvmazeId": 78610,
+      "premiered": "2026-01-08",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "every-year-after",
+      "title": "Every Year After",
+      "tvmazeId": 78706,
+      "premiered": "2026-06-10",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "trespasses",
+      "title": "Trespasses",
+      "tvmazeId": 78727,
+      "premiered": "2025-11-09",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 4,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "tempest",
+      "title": "Tempest",
+      "tvmazeId": 78880,
+      "premiered": "2025-09-10",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 9,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "under-salt-marsh",
+      "title": "Under Salt Marsh",
+      "tvmazeId": 79089,
+      "premiered": "2026-01-30",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-assassin",
+      "title": "The Assassin",
+      "tvmazeId": 79107,
+      "premiered": "2025-07-25",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "m-i-a",
+      "title": "M.I.A.",
+      "tvmazeId": 79127,
+      "premiered": "2026-05-07",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 9,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "high-value-target-the-hunt-for-saddam",
+      "title": "High Value Target: The Hunt for Saddam",
+      "tvmazeId": 79132,
+      "premiered": "2026-09-13",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "ponies",
+      "title": "PONIES",
+      "tvmazeId": 79185,
+      "premiered": "2026-01-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-glass-dome",
+      "title": "The Glass Dome",
+      "tvmazeId": 79326,
+      "premiered": "2025-04-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "widows-bay",
+      "title": "Widow's Bay",
+      "tvmazeId": 79390,
+      "premiered": "2026-04-29",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "east-of-eden",
+      "title": "East of Eden",
+      "tvmazeId": 79399,
+      "premiered": "2026-10-01",
+      "status": "reviewed",
+      "scoreVector": [
+        8,
+        7.5,
+        8,
+        7.5,
+        7.5,
+        7,
+        7.5
+      ],
+      "episodes": 7,
+      "scope": "Season 1 only · 7 episodes",
+      "final": 7.58,
+      "assessmentVersion": 1
+    },
+    {
+      "slug": "the-burbs",
+      "title": "The 'Burbs",
+      "tvmazeId": 79408,
+      "premiered": "2026-02-08",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-beauty",
+      "title": "The Beauty",
+      "tvmazeId": 79916,
+      "premiered": "2026-01-21",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 11,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "off-campus",
+      "title": "Off Campus",
+      "tvmazeId": 79932,
+      "premiered": "2026-05-13",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-price-of-confession",
+      "title": "The Price of Confession",
+      "tvmazeId": 80054,
+      "premiered": "2025-12-05",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 12,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-other-bennet-sister",
+      "title": "The Other Bennet Sister",
+      "tvmazeId": 80059,
+      "premiered": "2026-03-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-wonderfools",
+      "title": "The WONDERfools",
+      "tvmazeId": 80609,
+      "premiered": "2026-05-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "task",
+      "title": "Task",
+      "tvmazeId": 80725,
+      "premiered": "2025-09-07",
+      "status": "reviewed",
+      "scoreVector": [
+        8,
+        7.5,
+        7.5,
+        6.5,
+        7.5,
+        7,
+        7.5
+      ],
+      "episodes": 7,
+      "scope": "Season 1 only · 7 episodes",
+      "final": 7.5,
+      "assessmentVersion": 1
+    },
+    {
+      "slug": "cape-fear",
+      "title": "Cape Fear",
+      "tvmazeId": 80946,
+      "premiered": "2026-06-05",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "unchosen",
+      "title": "Unchosen",
+      "tvmazeId": 81032,
+      "premiered": "2026-04-21",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "i-will-find-you",
+      "title": "I Will Find You",
+      "tvmazeId": 81110,
+      "premiered": "2026-06-18",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "lucky",
+      "title": "Lucky",
+      "tvmazeId": 81228,
+      "premiered": "2026-07-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 7,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-seduction",
+      "title": "The Seduction",
+      "tvmazeId": 81296,
+      "premiered": "2025-11-14",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "nine-puzzles",
+      "title": "Nine Puzzles",
+      "tvmazeId": 81529,
+      "premiered": "2025-05-21",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 11,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "black-warrant",
+      "title": "Black Warrant",
+      "tvmazeId": 81584,
+      "premiered": "2025-01-10",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 7,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "playing-gracie-darling",
+      "title": "Playing Gracie Darling",
+      "tvmazeId": 82041,
+      "premiered": "2025-08-14",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-five-star-weekend",
+      "title": "The Five Star Weekend",
+      "tvmazeId": 82297,
+      "premiered": "2026-07-09",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "little-house-on-the-prairie",
+      "title": "Little House on the Prairie",
+      "tvmazeId": 82345,
+      "premiered": "2026-07-09",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "neagley",
+      "title": "Neagley",
+      "tvmazeId": 82707,
+      "premiered": "2026-09-16",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-copenhagen-test",
+      "title": "The Copenhagen Test",
+      "tvmazeId": 82738,
+      "premiered": "2025-12-27",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "sterling-point",
+      "title": "Sterling Point",
+      "tvmazeId": 82911,
+      "premiered": "2026-08-05",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "maximum-pleasure-guaranteed",
+      "title": "Maximum Pleasure Guaranteed",
+      "tvmazeId": 82915,
+      "premiered": "2026-05-20",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "nemesis",
+      "title": "Nemesis",
+      "tvmazeId": 83053,
+      "premiered": "2026-05-14",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "vladimir",
+      "title": "Vladimir",
+      "tvmazeId": 83065,
+      "premiered": "2026-03-05",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "ballard",
+      "title": "Ballard",
+      "tvmazeId": 83270,
+      "premiered": "2025-07-09",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-westies",
+      "title": "The Westies",
+      "tvmazeId": 83331,
+      "premiered": "2026-07-12",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "our-unwritten-seoul",
+      "title": "Our Unwritten Seoul",
+      "tvmazeId": 84106,
+      "premiered": "2025-05-24",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 12,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "american-hostage",
+      "title": "American Hostage",
+      "tvmazeId": 84262,
+      "premiered": "2026-09-20",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 5,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "vanished",
+      "title": "Vanished",
+      "tvmazeId": 84524,
+      "premiered": "2026-02-01",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 4,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "dutton-ranch",
+      "title": "Dutton Ranch",
+      "tvmazeId": 84539,
+      "premiered": "2026-05-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 9,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-faithful",
+      "title": "The Faithful",
+      "tvmazeId": 84564,
+      "premiered": "2026-03-22",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-survivors",
+      "title": "The Survivors",
+      "tvmazeId": 84598,
+      "premiered": "2025-06-06",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-lowdown",
+      "title": "The Lowdown",
+      "tvmazeId": 84641,
+      "premiered": "2025-09-23",
+      "status": "reviewed",
+      "scoreVector": [
+        8,
+        8,
+        8,
+        7.5,
+        7.5,
+        7,
+        7.5
+      ],
+      "episodes": 8,
+      "scope": "Season 1 only · 8 episodes",
+      "final": 7.65,
+      "assessmentVersion": 1
+    },
+    {
+      "slug": "the-manipulated",
+      "title": "The Manipulated",
+      "tvmazeId": 84807,
+      "premiered": "2025-11-05",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 12,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "as-you-stood-by",
+      "title": "As You Stood By",
+      "tvmazeId": 85482,
+      "premiered": "2025-11-07",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "in-the-mud",
+      "title": "In the Mud",
+      "tvmazeId": 85817,
+      "premiered": "2025-08-14",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 16,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-monster-of-florence",
+      "title": "The Monster of Florence",
+      "tvmazeId": 85847,
+      "premiered": "2025-10-22",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 4,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "big-mistakes",
+      "title": "Big Mistakes",
+      "tvmazeId": 86488,
+      "premiered": "2026-04-09",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "war",
+      "title": "War",
+      "tvmazeId": 86587,
+      "premiered": "2026-10-01",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 2,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "crew-girl",
+      "title": "Crew Girl",
+      "tvmazeId": 86983,
+      "premiered": "2026-09-10",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "a-tale-of-two-cities",
+      "title": "A Tale of Two Cities",
+      "tvmazeId": 87187,
+      "premiered": "2026-09-06",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 4,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "dynamite-kiss",
+      "title": "Dynamite Kiss",
+      "tvmazeId": 87661,
+      "premiered": "2025-11-12",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 14,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "furious",
+      "title": "Furious",
+      "tvmazeId": 87753,
+      "premiered": "2026-07-27",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "steal",
+      "title": "Steal",
+      "tvmazeId": 88441,
+      "premiered": "2026-01-21",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "rooster",
+      "title": "Rooster",
+      "tvmazeId": 88862,
+      "premiered": "2026-03-08",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "boyfriend-on-demand",
+      "title": "Boyfriend on Demand",
+      "tvmazeId": 89678,
+      "premiered": "2026-03-06",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 10,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-audacity",
+      "title": "The Audacity",
+      "tvmazeId": 89708,
+      "premiered": "2026-04-12",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "bait",
+      "title": "Bait",
+      "tvmazeId": 89995,
+      "premiered": "2026-03-25",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-scandal",
+      "title": "The Scandal",
+      "tvmazeId": 91016,
+      "premiered": "2026-09-18",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "legends",
+      "title": "Legends",
+      "tvmazeId": 91311,
+      "premiered": "2026-05-07",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "ride-or-die",
+      "title": "Ride or Die",
+      "tvmazeId": 91854,
+      "premiered": "2026-07-15",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "the-drop-a-snowfall-saga",
+      "title": "The Drop: A Snowfall Saga",
+      "tvmazeId": 92751,
+      "premiered": "2026-09-08",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 5,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "below",
+      "title": "Below",
+      "tvmazeId": 93115,
+      "premiered": "2026-10-08",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 6,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "youth",
+      "title": "Youth",
+      "tvmazeId": 93792,
+      "premiered": "2026-09-20",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 5,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "route-187",
+      "title": "Route 187",
+      "tvmazeId": 93997,
+      "premiered": "2026-09-16",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 4,
+      "scope": "Not yet assessed"
+    },
+    {
+      "slug": "matka-king",
+      "title": "Matka King",
+      "tvmazeId": 75480,
+      "premiered": "2026-04-17",
+      "status": "pending",
+      "scoreVector": null,
+      "episodes": 8,
+      "scope": "Not yet assessed"
+    }
+  ],
+  "releaseChecks": [
+    {
+      "slug": "the-night-manager",
+      "tvmazeId": 2285,
+      "storedEpisodes": 12,
+      "releasedEpisodes": 12,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "stranger-things",
+      "tvmazeId": 2993,
+      "storedEpisodes": 42,
+      "releasedEpisodes": 42,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-boys",
+      "tvmazeId": 15299,
+      "storedEpisodes": 40,
+      "releasedEpisodes": 40,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-handmaids-tale",
+      "tvmazeId": 16579,
+      "storedEpisodes": 56,
+      "releasedEpisodes": 66,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "euphoria",
+      "tvmazeId": 28826,
+      "storedEpisodes": 24,
+      "releasedEpisodes": 24,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-gilded-age",
+      "tvmazeId": 34685,
+      "storedEpisodes": 17,
+      "releasedEpisodes": 25,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "foundation",
+      "tvmazeId": 35951,
+      "storedEpisodes": 30,
+      "releasedEpisodes": 30,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "silo",
+      "tvmazeId": 38052,
+      "storedEpisodes": 20,
+      "releasedEpisodes": 30,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "for-all-mankind",
+      "tvmazeId": 41414,
+      "storedEpisodes": 40,
+      "releasedEpisodes": 50,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "bridgerton",
+      "tvmazeId": 42966,
+      "storedEpisodes": 32,
+      "releasedEpisodes": 32,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "squid-game",
+      "tvmazeId": 43687,
+      "storedEpisodes": 18,
+      "releasedEpisodes": 22,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "house-of-the-dragon",
+      "tvmazeId": 44778,
+      "storedEpisodes": 18,
+      "releasedEpisodes": 26,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "severance",
+      "tvmazeId": 44933,
+      "storedEpisodes": 19,
+      "releasedEpisodes": 19,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "slow-horses",
+      "tvmazeId": 45039,
+      "storedEpisodes": 18,
+      "releasedEpisodes": 34,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "industry",
+      "tvmazeId": 45501,
+      "storedEpisodes": 16,
+      "releasedEpisodes": 32,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-last-of-us",
+      "tvmazeId": 46562,
+      "storedEpisodes": 16,
+      "releasedEpisodes": 16,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "only-murders-in-the-building",
+      "tvmazeId": 48830,
+      "storedEpisodes": 34,
+      "releasedEpisodes": 50,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "fallout",
+      "tvmazeId": 49041,
+      "storedEpisodes": 8,
+      "releasedEpisodes": 16,
+      "assessedScope": "Season 1 only · 8 episodes",
+      "scopeStatus": "named",
+      "nextAction": "Assess later released material separately; current ratings keep their named scope."
+    },
+    {
+      "slug": "the-white-lotus",
+      "tvmazeId": 51394,
+      "storedEpisodes": 21,
+      "releasedEpisodes": 21,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "andor",
+      "tvmazeId": 52341,
+      "storedEpisodes": 12,
+      "releasedEpisodes": 24,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-bear",
+      "tvmazeId": 54198,
+      "storedEpisodes": 28,
+      "releasedEpisodes": 46,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "beef",
+      "tvmazeId": 54285,
+      "storedEpisodes": 10,
+      "releasedEpisodes": 18,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "from",
+      "tvmazeId": 54723,
+      "storedEpisodes": 30,
+      "releasedEpisodes": 40,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "hacks",
+      "tvmazeId": 54914,
+      "storedEpisodes": 28,
+      "releasedEpisodes": 47,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-night-agent",
+      "tvmazeId": 56512,
+      "storedEpisodes": 20,
+      "releasedEpisodes": 30,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "shrinking",
+      "tvmazeId": 58323,
+      "storedEpisodes": 22,
+      "releasedEpisodes": 34,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "monarch-legacy-of-monsters",
+      "tvmazeId": 60090,
+      "storedEpisodes": 10,
+      "releasedEpisodes": 20,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-diplomat",
+      "tvmazeId": 60213,
+      "storedEpisodes": 8,
+      "releasedEpisodes": 22,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "daredevil-born-again",
+      "tvmazeId": 63234,
+      "storedEpisodes": 17,
+      "releasedEpisodes": 17,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "cross-2024",
+      "tvmazeId": 64834,
+      "storedEpisodes": 16,
+      "releasedEpisodes": 16,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-day-of-the-jackal",
+      "tvmazeId": 64977,
+      "storedEpisodes": 8,
+      "releasedEpisodes": 10,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-trauma-code-heroes-on-call",
+      "tvmazeId": 73789,
+      "storedEpisodes": 8,
+      "releasedEpisodes": 8,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    },
+    {
+      "slug": "the-pitt",
+      "tvmazeId": 75632,
+      "storedEpisodes": 30,
+      "releasedEpisodes": 30,
+      "assessedScope": "Seasons 1–2 · 30 episodes",
+      "scopeStatus": "named",
+      "nextAction": "No expanded run identified by this listing."
+    },
+    {
+      "slug": "adolescence",
+      "tvmazeId": 78570,
+      "storedEpisodes": 4,
+      "releasedEpisodes": 4,
+      "assessedScope": "Recorded episode run",
+      "scopeStatus": "unrecorded",
+      "nextAction": "Establish assessed cutoff before expanding or changing scores."
+    }
+  ],
+  "deferred": [
+    {
+      "title": "The Dream Lands",
+      "reason": "No confirmed dated release in the checked listing."
+    },
+    {
+      "title": "Prisoner of War",
+      "reason": "Ambiguous title; no confirmed programme identity."
+    },
+    {
+      "title": "The Capture",
+      "reason": "Older omission outside this recent-premiere intake; candidate for a separate whole-run assessment.",
+      "source": "https://www.tvmaze.com/shows/35512/the-capture"
+    }
+  ],
+  "gaps": [
+    "Discovery is not exhaustive for Japanese, Chinese, Turkish and smaller European broadcasters.",
+    "Legacy assessments without named seasons still need scope reconciliation.",
+    "An episode calendar establishes release metadata, not artistic quality.",
+    "Unassessed completed runs remain pending until seven supported reasons are ready."
+  ],
+  "policy": {
+    "weights": {
+      "char": 25,
+      "world": 15,
+      "cine": 5,
+      "spect": 5,
+      "conc": 15,
+      "drive": 15,
+      "resol": 20
+    },
+    "lengthDefault": false,
+    "maxLengthMultiplier": 1.005,
+    "rubricVersion": "2026-10"
+  },
+  "metadataAttribution": {
+    "provider": "TVmaze",
+    "url": "https://www.tvmaze.com/",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Selected factual identity fields and regular episode dates; reduced to counts per season. Editorial scores and reasons are separate original work."
+  },
+  "preservedCount": 442,
+  "preservedDigest": "fb2cb46db2a9e9d11e17d2ebc44ae9ce234b6d27e32dcec16545427528efcbd1",
+  "nextPriorities": [
+    "Reconcile Fallout season two and Andor season two without inheriting prior ratings.",
+    "Finish specific evidence gaps on the researched pending shortlist before further bulk discovery.",
+    "Audit international omissions using locally informed criticism; do not treat language or nationality as a score."
+  ]
+}

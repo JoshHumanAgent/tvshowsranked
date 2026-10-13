@@ -6,6 +6,7 @@ const data = JSON.parse(fs.readFileSync(path.join(root,'data/shows/index.json'),
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let updated = 0;
 for (const show of data.shows) {
+    if (show.assessment?.review.status === 'none') continue;
     const filename = path.join(root,'docs/shows',show.slug + '.html');
     let html = fs.readFileSync(filename,'utf8');
     const target = show.duplicateOf || show.slug;

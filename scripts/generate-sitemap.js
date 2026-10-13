@@ -16,7 +16,7 @@ let xml = `<?xml version="1.0" encoding="UTF-8"?>
 `;
 
 // Reviews live in docs/shows, not /shows. Exclude duplicate and unverified archives.
-const published = shows.filter(show => !show.duplicateOf && show.verificationStatus !== 'unverified' && !show.reviewStatus && show.assessment?.review.status !== 'withheld');
+const published = shows.filter(show => !show.duplicateOf && show.verificationStatus !== 'unverified' && !show.reviewStatus && !['withheld','none'].includes(show.assessment?.review.status));
 published.forEach(show => {
   const reviewPath = path.join(__dirname, '../docs/shows', show.slug + '.html');
   if (!fs.existsSync(reviewPath)) throw new Error('Missing review: ' + show.slug);

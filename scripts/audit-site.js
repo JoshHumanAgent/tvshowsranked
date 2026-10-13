@@ -25,6 +25,7 @@ function auditSite(root = path.resolve(__dirname,'..')) {
     }
     for(const show of catalogue.shows){
         if(!show.assessment)errors.push('Missing versioned assessment: '+show.slug);
+        if(show.assessment?.review.status==='none')continue;
         const review=read('docs/shows/'+show.slug+'.html');
         if(!review.includes('archive-notice:start'))errors.push('Review lacks historical context: '+show.slug);
         if((show.reviewStatus||show.verificationStatus==='unverified'||show.assessment?.review.status==='withheld')&&!review.includes('content="noindex, follow"'))errors.push('Unverified review is indexable: '+show.slug);
@@ -36,7 +37,7 @@ function auditSite(root = path.resolve(__dirname,'..')) {
     const quarantined=catalogue.shows.filter(s=>s.verificationStatus==='unverified');
     const withheld=catalogue.shows.filter(s=>s.assessment?.review.status==='withheld');
     if(quarantined.length)warnings.push(quarantined.length+' unverified catalogue entry is preserved outside the active ranking.');
-    if(withheld.length)warnings.push(withheld.length+' original reviews are withheld; '+model.pending.length+' wrong-programme assessments are excluded from ranking.');
+    if(withheld.length)warnings.push(withheld.length+' original reviews are withheld; '+model.pending.length+' entries await assessment and are excluded from ranking.');
     return {status:errors.length?'FAIL':'PASS',activeShows:model.shows.length,rankedShows:model.ranked.length,pendingAssessments:model.pending.length,preservedRecords:catalogue.shows.length,
         sitemapUrls:links.length,identityCorrections:corrections.identityCorrections,seasonCountCorrections:corrections.seasonCountCorrections,errors,warnings};
 }

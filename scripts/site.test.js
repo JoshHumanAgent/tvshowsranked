@@ -29,7 +29,7 @@ test('quality alone is the default and reset, while a saved length opt-in surviv
 
 test('all catalogue records remain reachable, including low scores and ranks after 100', () => {
     const model = new Model(catalogue);
-    assert.equal(model.results().length,439);
+    assert.equal(model.results().length,catalogue.filter(s => !s.duplicateOf && s.verificationStatus !== 'unverified').length);
     model.prefs.sortBy = 'score-asc';
     assert.ok(model.results()[0].final < 6.5);
     const last = model.shows.at(-1);
@@ -41,7 +41,7 @@ test('search tolerates accents, case, spaces and punctuation without treating te
     assert.ok(model.results({query:'bon appetit'}).length > 0);
     assert.equal(model.results({query:'<img src=x onerror=alert(1)>'}).length,0);
 });
-test('all 50 catalogue genres can be selected and combined; filter does not relabel global ranks', () => {
+test('all catalogue genres can be selected and combined; filter does not relabel global ranks', () => {
     const model = new Model(catalogue);
     for (const genre of model.genres) {
         model.prefs.currentGenres = [genre];
