@@ -29,6 +29,8 @@ See [LOCAL-DEVELOPMENT.md](LOCAL-DEVELOPMENT.md) for startup, storage, testing a
 
 ## Assessment improvements — 13 October 2026
 
+The [assessment standard](docs/ASSESSMENTS.md#audience-affinity-messages-and-source-independence) now explicitly separates craft from audience affinity, agreement with a message and critical acclaim. The [I May Destroy You source audit](docs/critical-reassessments-2026-10-13.md#follow-up-source-audit) identifies clustered critical evidence and incomplete comparative calibration. This clarification changes the editorial procedure; it does not apply an ideological bonus or penalty, or alter current scores.
+
 The [critical reassessment pass](docs/critical-reassessments-2026-10-13.md) revises Buffy, The Walking Dead, Boston Legal, The Practice, Shameless (US), Fleabag, I May Destroy You, The Pitt and Fallout. All nine have seven new reasons, explicit season coverage and sources. The changes include justified increases as well as decreases; no target ranks were chosen. Scores are provisional research judgments, not complete-viewing assessments. Personal overrides remain separate. The other 425 ranked entries still need calibration against the same standard.
 
 Current verification: all 51 tests pass and the full site validator is healthy. All nine browser-rendered totals and all 63 sourced reasons match the canonical data. A guest edit survived reload and reset to the new baseline. All 433 other preserved records and the original review prose were verified unchanged; regenerated archive context is idempotent. The sitemap contains 415 existing, indexable URLs.
