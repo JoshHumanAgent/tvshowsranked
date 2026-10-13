@@ -13,6 +13,8 @@
     const points = number => Number(number.toFixed(4)).toString();
     const scoreText = show => show.pending ? 'Awaiting assessment' : show.final.toFixed(2);
     const rankText = show => show.pending ? 'Not ranked' : 'Rank ' + show.rank;
+    // Preserve the original medal scale, with brighter colours for the dark surface.
+    const ratingColor = score => score === 10 ? '#f0c554' : score >= 9 ? '#cbd3e1' : score >= 8 ? '#d39b62' : score >= 7 ? '#c98350' : score >= 6 ? '#d76c73' : score >= 5 ? '#bd7988' : '#a87585';
 
     function toast(message) {
         $('toast').textContent = message; $('toast').hidden = false;
@@ -97,7 +99,7 @@
             const breakdown = show.pending ? null : RankingMath.breakdown(show, model.prefs.weights, model.prefs.multiplierEnabled);
             return `<article class="show-card" data-slug="${show.slug}" data-top="${!show.pending && show.rank <= 3}" aria-labelledby="card-title-${show.slug}">
                 <a class="card-media" href="#show=${show.slug}" data-show="${show.slug}" data-card-action="poster" aria-label="View ${escape(show.title)}, ${rankText(show).toLowerCase()}">
-                    <picture><source media="(max-width: 640px)" srcset="${escape(safePoster(show.backdrop || show.poster,'w780'))}"><img class="card-poster" src="${escape(safePoster(show.poster,'w500'))}" alt="" width="200" height="300" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async"></picture>
+                    <picture><source media="(max-width: 800px)" srcset="${escape(safePoster(show.backdrop || show.poster,'w780'))}"><img class="card-poster" src="${escape(safePoster(show.poster,'w500'))}" alt="" width="200" height="300" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async"></picture>
                     <span class="card-rank"><span>${show.pending ? 'Awaiting assessment' : 'Rank'}</span><strong>${show.pending ? '—' : String(show.rank).padStart(2,'0')}</strong></span>
                 </a>
                 <div class="card-body">
@@ -105,7 +107,7 @@
                         <button class="score-button" data-show="${show.slug}" data-card-action="score" aria-label="${show.pending ? 'View assessment status for' : 'Explain score for'} ${escape(show.title)}${show.pending ? '' : ', ' + scoreText(show)}"><span class="score-number">${show.pending ? '—' : scoreText(show)}</span><span class="score-caption">${show.pending ? 'View status' : 'Score & review ↗'}</span></button>
                     </div>
                     <div class="card-genres" aria-label="Genres">${show.genres.map(g => '<span>' + escape(g) + '</span>').join('')}</div>
-                    ${show.pending ? '<p class="card-pending">A fresh assessment is needed. The old ratings are preserved but do not determine a score or rank.</p>' : `<div class="card-ratings-heading"><span>Seven dimensions</span><span>Ratings / 10</span></div><dl class="card-ratings">${cats.map(c => `<div class="card-rating" data-category="${c.key}"><dt id="rating-${show.slug}-${c.key}">${c.name}</dt><dd><span class="card-bar" role="meter" aria-labelledby="rating-${show.slug}-${c.key}" aria-valuemin="0" aria-valuemax="10" aria-valuenow="${show[c.key]}"><span class="card-bar-fill" style="width:${show[c.key] * 10}%;--bar-color:${show[c.key] >= 9 ? '#cfbd89' : show[c.key] >= 7 ? '#acbd98' : show[c.key] >= 5 ? '#87977e' : '#b28a80'}"></span></span><span class="card-rating-value" aria-hidden="true">${show[c.key]}</span></dd></div>`).join('')}</dl>`}
+                    ${show.pending ? '<p class="card-pending">A fresh assessment is needed. The old ratings are preserved but do not determine a score or rank.</p>' : `<div class="card-ratings-heading"><span>Seven dimensions</span><span>Ratings / 10</span></div><dl class="card-ratings">${cats.map(c => `<div class="card-rating" data-category="${c.key}" style="--rating-color:${ratingColor(show[c.key])}"><dt id="rating-${show.slug}-${c.key}">${c.name}</dt><dd><span class="card-bar" role="meter" aria-labelledby="rating-${show.slug}-${c.key}" aria-valuemin="0" aria-valuemax="10" aria-valuenow="${show[c.key]}"><span class="card-bar-fill" style="width:${show[c.key] * 10}%"></span></span><span class="card-rating-value" aria-hidden="true">${show[c.key]}</span></dd></div>`).join('')}</dl>`}
                     <div class="card-footer"><div>${breakdown ? `<p class="card-calculation">${points(breakdown.weighted)} quality <span>× ${breakdown.multiplier.toFixed(2)} ${model.prefs.multiplierEnabled ? 'length' : 'length off'}</span></p>` : ''}${show.assessment?.provisional ? '<p class="card-assessment-note">Research assessment · provisional</p>' : ''}</div><button class="card-pin" data-pin="${show.slug}" data-card-action="pin" data-edit aria-label="${pinned ? 'Remove' : 'Add'} ${escape(show.title)} ${pinned ? 'from' : 'to'} shortlist" aria-pressed="${pinned}"><span aria-hidden="true">${pinned ? '★' : '☆'}</span> ${pinned ? 'Shortlisted' : 'Shortlist'}</button></div>
                 </div>
             </article>`;
