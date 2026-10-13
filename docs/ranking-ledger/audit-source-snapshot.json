@@ -1,0 +1,161 @@
+{
+  "dateUTC": "2026-10-13T02:06:25.975184+00:00",
+  "scope": "Read-only local public-default research snapshot; no account overrides.",
+  "sources": [
+    {
+      "path": "ranking-math.js",
+      "sha256": "0a36f8001625e59d5750df35d9ea760d3c16e05304f4301bd80c7fa0cdf03035",
+      "bytes": 2919
+    },
+    {
+      "path": "ranking-state.js",
+      "sha256": "ce6c5be94ffca125d2fb5cf237da20e0c92d97ff8e04207d4d7ec0c6a71f2bdf",
+      "bytes": 11656
+    },
+    {
+      "path": "app.js",
+      "sha256": "890bebe3d2230995c2607fc65a3fc956a0056508d348d732bbfe445a4e655439",
+      "bytes": 33904
+    },
+    {
+      "path": "data/shows/index.json",
+      "sha256": "14374cb07dc4653785e3d79dc9570b693bdea342f64e0553321911b30d770a5b",
+      "bytes": 296020
+    },
+    {
+      "path": "data/core/ranked.json",
+      "sha256": "fa2893232cccc102258bc25816cabf1291997f9c4df14f3df948cd2a08c6e24d",
+      "bytes": 307912
+    },
+    {
+      "path": "data/core/00-foundation-list.json",
+      "sha256": "f7ab3236f28c7ddd2dfd82bb1313838942095f062d4510efac2688f8d9118528",
+      "bytes": 28772
+    },
+    {
+      "path": "data/core/00-HOW-TO-RANK.md",
+      "sha256": "6009cc54f362ca5378d7648f8e348d05b0402f44b88e4a8d79c813e7bd8fb6e2",
+      "bytes": 4775
+    },
+    {
+      "path": "data/core/04-DIRECTIVE.md",
+      "sha256": "97c21fcd252bd7976282515a5b3e9986cd8ff5fc10b09efde5470af1ea4de7c8",
+      "bytes": 5222
+    },
+    {
+      "path": "data/core/CLEAN-AND-REPAIR-DIRECTIVE.md",
+      "sha256": "4e3f17d6098693f79dd8eaadb81b1c6d4471d14f052ad7facf74a5c1151d6fd1",
+      "bytes": 3092
+    },
+    {
+      "path": "DIRECTIVE.md",
+      "sha256": "5603da3c485043229362d1a8f4c15fe2340f73ece4348c68586943e612ec2dcf",
+      "bytes": 3924
+    },
+    {
+      "path": "WORKFLOWS.md",
+      "sha256": "b604d5dac6d9e8ffa51f3946f40cefd6777092443c0287e65353bf0c165ca14b",
+      "bytes": 4264
+    },
+    {
+      "path": "docs/methodology/scoring_learnings.md",
+      "sha256": "0be0ac232d1292244169b8fde800450aa500ccc82e14124243434092740178fc",
+      "bytes": 9993
+    },
+    {
+      "path": "docs/methodology/current_rankings_rationale.md",
+      "sha256": "abd5b366509603d0998919882b13d6af3e37522d14a4589f5a4bdce7f2dc96fe",
+      "bytes": 11148
+    },
+    {
+      "path": "docs/methodology/MainBannerHook.txt",
+      "sha256": "8c3aaa173d980d1cabb94fb6bef19b1322f6867bd173dbd074fb8176c88677a0",
+      "bytes": 730
+    },
+    {
+      "path": "docs/top100currentdefault.md",
+      "sha256": "cedef103d7c5e2f2917c0ba4ed2a815b6dc186b2b7f173040a0a8dabcd73a8bc",
+      "bytes": 53232
+    },
+    {
+      "path": "_archived/old-archive/working-files/Entire Chat with Claude to Build Ranking System.txt",
+      "sha256": "9e48fe624ceb1857b79ff6c7a73db858305019bae43b21b5c9d3d87eff7228fc",
+      "bytes": 229392
+    },
+    {
+      "path": "_archived/old-archive/working-files/tv_ranking_agent_instructions.md",
+      "sha256": "1e50af2c0e9f025f137d82ef79b1dcfaa30e9c1a0d318124c8dd54cb97d1c8ad",
+      "bytes": 14838
+    },
+    {
+      "path": "_archived/old-archive/working-files/Master Ranking.txt",
+      "sha256": "8a9de9e9a87e610538aecf8a6f9ee60b4f338fcf4cb38375456eabeadc497e3b",
+      "bytes": 13203
+    },
+    {
+      "path": "_archived/old-archive/working-files/top_100_tv_rankings_v2.md",
+      "sha256": "706cf695ac36791d9cbe1d52c89b49f2effb22f3306f215c6449420cf34dfd89",
+      "bytes": 13205
+    },
+    {
+      "path": "_archived/old-archive/old-rankings/TVSHOWS-RANKED-MEMORY.md",
+      "sha256": "115e0a2e78020fa5b59e747502bf36eae5c4e5c54e0fab5f8cb00f1a98969370",
+      "bytes": 5697
+    },
+    {
+      "path": "_archived/memory/06-CHANGES.md",
+      "sha256": "e8e5fee74bedcd1e06f6176ff5dae3453478bfaff02b1ba952c09240ee25f621",
+      "bytes": 5702
+    },
+    {
+      "path": "data/archive/DAILY-REPORT-2026-02-23.md",
+      "sha256": "7af5b98ac7a53388330c9256ec9b5340edd81466f3e02ffffb472068daba602d",
+      "bytes": 1743
+    },
+    {
+      "path": "data/archive/RERANK-PLAN-2026-02-23.md",
+      "sha256": "1850fc063aa1de1b7bec6cd3e4226bc72c09bec95c36b6c90f6ba5533547f94e",
+      "bytes": 2875
+    },
+    {
+      "path": "scripts/build-ranking-ledger.py",
+      "sha256": "d3d2bfaa59c061741e61c09093e6768ff31bf78cda49d42640af1a17ef05bc9f",
+      "bytes": 10915
+    },
+    {
+      "path": "scripts/audit-ranking-design.py",
+      "sha256": "a821171ddd8b2e4485245d0cc53208df45b22ecf80ae8da000eb24db584f9cc1",
+      "bytes": 15205
+    },
+    {
+      "path": "scripts/verify-ranking-ledger.py",
+      "sha256": "7f080d96d8c5af76d5a8331145947ccea70db1c5b2f1e3ce08ece371964085ed",
+      "bytes": 8722
+    },
+    {
+      "path": "docs/ranking-ledger/editorial-findings.json",
+      "sha256": "eed83c29661f1840eb432f84c93f251046f5f54d1905a44c357956e3d9e98b49",
+      "bytes": 10455
+    },
+    {
+      "path": "_archived/josh-edits/tvranked-scores-2026-02-15T13-16-43.json",
+      "sha256": "806453240e32b72aaf9503be7c9fdf49434d47cceb66ad6ca85215cf2b39baff",
+      "bytes": 28706
+    },
+    {
+      "path": "_archived/josh-edits/tvranked-scores-2026-02-16T00-45-35.json",
+      "sha256": "deee40d4691fad9faf8c011a3e41dbb50473d225e46a40af490449ada39633fd",
+      "bytes": 28552
+    },
+    {
+      "path": "_archived/josh-edits/tvranked-scores-2026-02-16T02-34-48.json",
+      "sha256": "4309e5573d628e9ee85ff29ecb541be2edc3239ee913cfc21203a1c58b066c61",
+      "bytes": 36413
+    },
+    {
+      "path": "_archived/josh-edits/tvranked-scores-2026-02-16T02-49-35.json",
+      "sha256": "f7ab3236f28c7ddd2dfd82bb1313838942095f062d4510efac2688f8d9118528",
+      "bytes": 28772
+    }
+  ]
+}

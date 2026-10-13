@@ -1,0 +1,266 @@
+[
+  {
+    "id": "E01",
+    "slugs": [
+      "pluribus"
+    ],
+    "status": "verified-premise-mismatch",
+    "finding": "The archived review describes an anthology of eight futures; Apple's programme material describes the continuing Carol story.",
+    "source": "https://www.apple.com/tv-pr/originals/pluribus/",
+    "action": "Verify identity and rebuild supporting assessment before treating the current baseline as defensible. Preserve the historical vector and saved foundation values."
+  },
+  {
+    "id": "E02",
+    "slugs": [
+      "when-life-gives-you-tangerines"
+    ],
+    "status": "verified-premise-mismatch",
+    "finding": "The review's career-failure/tangerine-farm premise differs from Netflix's decades-spanning account of Ae-sun and Gwan-sik.",
+    "source": "https://www.netflix.com/tudum/articles/when-life-gives-you-tangerines-release-date-news",
+    "action": "Reassess from the actual programme; no replacement artistic score is established by this check."
+  },
+  {
+    "id": "E03",
+    "slugs": [
+      "museum-of-innocence"
+    ],
+    "status": "verified-metadata-conflict",
+    "finding": "Netflix announced nine episodes and a 13 February 2026 premiere. The review says 2023/45 episodes; the current catalogue says 2026/eight episodes.",
+    "source": "https://about.netflix.com/en/news/the-wait-is-finally-over-museum-of-innocence-premiering-on-netflix",
+    "action": "Correct metadata in a separate change. Eight versus nine stays in the same current multiplier band."
+  },
+  {
+    "id": "E04",
+    "slugs": [
+      "the-100-s1-5",
+      "vikings-s1-4",
+      "sherlock-s1-3"
+    ],
+    "status": "scope-leakage-in-review",
+    "finding": "Selected-season labels coexist with criticism based on later material. Vikings also calls a death the finale while labelling it S4E15.",
+    "action": "State exact included episodes and assess only their promises; check episode metadata separately."
+  },
+  {
+    "id": "E05",
+    "slugs": [
+      "wallander"
+    ],
+    "status": "identity-mixing-in-review",
+    "finding": "The BBC twelve-episode record's prose explicitly blends the Branagh and Henriksson adaptations.",
+    "action": "Tie all evidence to one identified adaptation."
+  },
+  {
+    "id": "E06",
+    "slugs": [
+      "pachinko",
+      "poker-face",
+      "the-white-lotus"
+    ],
+    "status": "missing-arithmetic-input-in-review",
+    "finding": "Archived review prints resolution N/A beside a numeric final and 20% resolution weight.",
+    "action": "Preserve the historical gap; define a deliberate ongoing-work policy rather than inventing an undocumented input."
+  },
+  {
+    "id": "E07",
+    "slugs": [
+      "godless",
+      "beef"
+    ],
+    "status": "placeholder-content",
+    "finding": "Review contains Content to be added placeholders; BEEF also contains conflicting score blocks.",
+    "action": "Reconcile assessment versions and supply actual evidence."
+  },
+  {
+    "id": "E08",
+    "slugs": [
+      "fear-the-walking-dead"
+    ],
+    "status": "malformed-source-html",
+    "finding": "Malformed closing tags obscure the cinematography heading and disrupt the document structure.",
+    "action": "Repair the archived markup separately; the audit marks the missing extraction rather than guessing a score."
+  },
+  {
+    "id": "E09",
+    "slugs": [
+      "game-of-thrones-s1-4"
+    ],
+    "status": "unexplained-review-calculation",
+    "finding": "Review contributions total 9.60 and then state a normalised 9.45 without a reproducible normalisation rule.",
+    "action": "Display derived totals for the identified assessment version. Current public-default 9.53 is a different, reproducible calculation."
+  },
+  {
+    "id": "E10",
+    "slugs": [
+      "the-underground-railroad"
+    ],
+    "status": "unexplained-review-calculation",
+    "finding": "Review contributions total 8.73 after individual rounding (8.725 unrounded), while the printed final is 7.8.",
+    "action": "Associate the prose with its actual historical vector and settings; do not treat the printed final as authoritative."
+  },
+  {
+    "id": "E11",
+    "slugs": [
+      "the-sopranos"
+    ],
+    "status": "criterion-conflict",
+    "finding": "The alternate short review calls the ending perfect yet lowers resolution because it was divisive.",
+    "action": "Judge coherent earned payoff according to the rubric, rather than audience agreement."
+  },
+  {
+    "id": "E12",
+    "slugs": [
+      "chernobyl"
+    ],
+    "status": "criterion-conflict",
+    "finding": "The alternate review penalises resolution because history fixes the outcome and the ending lacks innovation.",
+    "action": "A known historical outcome is compatible with an earned and effective payoff."
+  },
+  {
+    "id": "E13",
+    "slugs": [
+      "dopesick",
+      "extrapolations"
+    ],
+    "status": "criterion-conflict",
+    "finding": "Resolution discussion partly penalises the persistence of the real-world crisis.",
+    "action": "Separate narrative completion from the persistence of the real problem."
+  },
+  {
+    "id": "E14",
+    "slugs": [
+      "reacher",
+      "shetland",
+      "terriers",
+      "the-pitt",
+      "the-old-man"
+    ],
+    "status": "completion-policy-inconsistency",
+    "finding": "Some completed seasonal stories receive credit despite cancellation/continuation; other similarly described units are marked down chiefly for lacking a series endpoint.",
+    "action": "Define the assessed scope and judge actual promises consistently."
+  },
+  {
+    "id": "E15",
+    "slugs": [
+      "murder-one"
+    ],
+    "status": "category-definition-drift",
+    "finding": "Conceptual density is justified through television-format innovation and the ability to follow one complex case.",
+    "action": "Identify distinct ideas dramatised and interacting, separate from structural novelty."
+  },
+  {
+    "id": "E16",
+    "slugs": [
+      "silo",
+      "maid",
+      "in-treatment",
+      "my-so-called-life"
+    ],
+    "status": "spectacle-calibration-question",
+    "finding": "Low spectacle is largely justified by limited action or ordinary environments, despite the original allowance for unfamiliar lives and systems and a roughly five everyday baseline.",
+    "action": "Revisit the evidence against the stated visual-material definition; no automatic replacement rating."
+  },
+  {
+    "id": "E17",
+    "slugs": [
+      "the-wire",
+      "treme",
+      "mildred-pierce",
+      "the-deuce",
+      "escape-at-dannemora"
+    ],
+    "status": "drive-calibration-question",
+    "finding": "Some rationales penalise slow pace even while calling that pace purposeful or rewarding.",
+    "action": "Distinguish patient progression from stalling, using the original Breaking Bad calibration."
+  },
+  {
+    "id": "E18",
+    "slugs": [
+      "the-marvelous-mrs-maisel",
+      "angels-in-america",
+      "rome",
+      "the-crown"
+    ],
+    "status": "dimension-boundary-question",
+    "finding": "Reasons mix camera technique, emotional intensity, costumes or spending across camera, spectacle and other dimensions.",
+    "action": "Explain the distinct delivered quality under each dimension; spending alone is not artistic evidence."
+  },
+  {
+    "id": "E19",
+    "slugs": [
+      "queer-eye"
+    ],
+    "status": "eligibility-definition-conflict",
+    "finding": "The review explicitly describes reality makeovers and redefines acting as authenticity, conflicting with the original live-action drama/no-documentary remit.",
+    "action": "Resolve catalogue eligibility and cross-format comparability explicitly."
+  },
+  {
+    "id": "E20",
+    "slugs": [
+      "lost"
+    ],
+    "status": "saved-judgment-provenance",
+    "finding": "Current resolution one matches the archived 16 February 02:34 saved override. Other categories remain strong.",
+    "action": "Preserve this as a documented differentiated judgment; changing scope or rating requires a new supported assessment."
+  },
+  {
+    "id": "E21",
+    "slugs": [
+      "twin-peaks",
+      "twin-peaks-the-return"
+    ],
+    "status": "overlapping-assessment-scopes",
+    "finding": "Whole-run Twin Peaks prose includes The Return while The Return also has its own entry.",
+    "action": "Label intentional overlap; do not automatically merge distinct recommendation units."
+  },
+  {
+    "id": "E22",
+    "slugs": [
+      "the-loyal-pin",
+      "cross-2024",
+      "can-this-love-be-translated",
+      "dinastia-casillas",
+      "good-boy-2025",
+      "head-over-heels-2025",
+      "memory-of-a-killer",
+      "no-one-will-miss-us",
+      "tales-from-the-loop",
+      "stay-close"
+    ],
+    "status": "factual-verification-queue",
+    "finding": "Premise, identity or cast claims raised concerns during reading. These have not been externally verified in this audit.",
+    "action": "Check primary programme sources before allowing the prose to support reassessment. This flag is not a factual correction."
+  },
+  {
+    "id": "E23",
+    "slugs": [
+      "treme",
+      "the-third-day",
+      "rectify",
+      "utopia-uk"
+    ],
+    "status": "factual-or-source-conflict-queue",
+    "finding": "Examples include conflicting cast roles across versions, a final-season-length contradiction, and an asserted complete story needing verification.",
+    "action": "Verify the specific claim and its impact on the assessed scope. No blanket factual certification is implied."
+  },
+  {
+    "id": "E24",
+    "slugs": [
+      "golden-boy-2022",
+      "esrefs-dream",
+      "the-art-of-sarah"
+    ],
+    "status": "existing-app-review-withheld",
+    "finding": "Current catalogue already flags premise-mismatch and the interface withholds the review, while provisional scores remain active.",
+    "action": "Treat review status and numerical assessment support together; this audit did not re-verify the prior flag or change the scores."
+  },
+  {
+    "id": "E25",
+    "slugs": [
+      "andor",
+      "barry"
+    ],
+    "status": "historical-scope-differences",
+    "finding": "Alternate versions mix a twelve-episode Andor assessment with a two-season review; Barry S1–3's short alternative lists 32 episodes.",
+    "action": "Keep the rating vector and its reviewed run together. Verify counts against the selected scope."
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "verifiedAtUTC": "2026-10-13T02:06:25.996211+00:00",
+  "catalogueRows": 442,
+  "activeRanks": 439,
+  "independentDecimalFinalChecks": 1756,
+  "reviewBodies": 457,
+  "additionalDistinctReviewBodies": 219,
+  "htmlSourceHashesVerified": 835,
+  "nonHtmlSourceHashesRecorded": 31,
+  "perShowSections": 439,
+  "runtimeChecks": {
+    "boundaryCases": 17,
+    "uniformEight": [
+      7.68,
+      8.48
+    ],
+    "theoreticalMaximum": 10.6,
+    "personalOverrideIsolated": true,
+    "staleImportedFinalIgnored": true,
+    "tiesAlphabetical": true
+  },
+  "editorialBoundary": "No test certifies the artistic rating or every programme fact. Historical long-backup prose coverage is described separately in the report.",
+  "mutationBoundary": "Only ledger output files written. No application, rating, account or production mutation."
+}

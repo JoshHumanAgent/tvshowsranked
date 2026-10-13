@@ -15,10 +15,13 @@ let xml = `<?xml version="1.0" encoding="UTF-8"?>
   </url>
 `;
 
-// Add each show page
-shows.forEach(show => {
+// Reviews live in docs/shows, not /shows. Exclude duplicate and unverified archives.
+const published = shows.filter(show => !show.duplicateOf && show.verificationStatus !== 'unverified' && !show.reviewStatus && show.assessment?.review.status !== 'withheld');
+published.forEach(show => {
+  const reviewPath = path.join(__dirname, '../docs/shows', show.slug + '.html');
+  if (!fs.existsSync(reviewPath)) throw new Error('Missing review: ' + show.slug);
   xml += `  <url>
-    <loc>https://dynamicrankengine.com/shows/${show.slug}.html</loc>
+    <loc>https://dynamicrankengine.com/docs/shows/${show.slug}.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -29,4 +32,4 @@ xml += '</urlset>';
 
 // Write sitemap
 fs.writeFileSync(path.join(__dirname, '../sitemap.xml'), xml);
-console.log(`Generated sitemap with ${shows.length + 1} URLs`);
+console.log(`Generated sitemap with ${published.length + 1} existing URLs`);

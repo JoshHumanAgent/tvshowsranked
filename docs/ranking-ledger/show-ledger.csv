@@ -1,0 +1,443 @@
+﻿rank,title,slug,status,episodes,char,world,cine,spect,conc,drive,resol,weightedBase,lengthMultiplier,final,rankWithoutLength,scoreWithoutLength,reviewMismatchCategories,reviewAmbiguousCategories,reviewPath
+1,Game of Thrones (S1-4),game-of-thrones-s1-4,active,40,10,10,8,9.5,9,10,9,9.525,1,9.53,1,9.53,"cine,resol",,docs/shows/game-of-thrones-s1-4.html
+2,Breaking Bad,breaking-bad,active,62,9,7,10,6,9,10,10,8.95,1.04,9.31,2,8.95,"char,world,cine,spect,conc,drive",,docs/shows/breaking-bad.html
+3,The Wire,the-wire,active,60,9,9.5,6.5,8,10,7.5,9.5,8.925,1.03,9.19,3,8.93,"char,world,cine,spect,drive,resol",,docs/shows/the-wire.html
+4,The Sopranos,the-sopranos,active,86,9.5,8,6.5,5,9.5,8,9.5,8.675,1.05,9.11,5,8.68,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-sopranos.html
+5,Better Call Saul,better-call-saul,active,63,8.5,7,9.5,6,8,9,10,8.5,1.04,8.84,6,8.5,"char,world,cine,spect,drive,resol",,docs/shows/better-call-saul.html
+6,The Americans,the-americans,active,75,8.5,7.5,7,5,8.5,8,10,8.325,1.04,8.66,7,8.33,"char,world,cine,spect,conc",,docs/shows/the-americans.html
+7,The Shield,the-shield,active,88,8.5,7,6,5,7,9,10,8.125,1.05,8.53,11,8.13,"char,world,conc,drive",,docs/shows/the-shield.html
+8,Band of Brothers,band-of-brothers,active,10,8,9.5,8.5,10,8.5,9,9.5,8.875,0.96,8.52,4,8.88,"char,world,cine,spect,conc,drive,resol",,docs/shows/band-of-brothers.html
+9,Boardwalk Empire,boardwalk-empire,active,56,9,9,8,9.5,8.5,6.5,7.5,8.225,1.03,8.47,9,8.23,"char,cine,spect,conc,drive,resol",,docs/shows/boardwalk-empire.html
+10,Mad Men,mad-men,active,92,8.5,8,8,8.5,9,7,7.5,8.05,1.05,8.45,15,8.05,"char,world,cine,spect,conc,drive,resol",,docs/shows/mad-men.html
+11,The Expanse,the-expanse,active,62,7.5,10,7,10,8,7.5,7,7.95,1.04,8.27,23,7.95,"char,cine,spect,conc,drive,resol",,docs/shows/the-expanse.html
+12,Succession,succession,active,39,9,7,8,7,7.5,8.5,9,8.25,1,8.25,8,8.25,"char,world,conc,drive,resol",,docs/shows/succession.html
+13,Buffy the Vampire Slayer,buffy-the-vampire-slayer,active,144,8.5,8,6.5,6,7.5,8,7.5,7.775,1.06,8.24,49,7.78,"char,cine,spect,conc,resol",,docs/shows/buffy-the-vampire-slayer.html
+14,Girls,girls,active,62,8.5,7,7,5,8.5,8.5,8,7.925,1.04,8.24,24,7.93,"char,world,cine,conc,drive,resol","world,cine,spect,conc,drive,resol",docs/shows/girls.html
+15,Deadwood,deadwood,active,36,9,8.5,7,8,9,7,7.5,8.175,1,8.18,10,8.18,"char,world,cine,spect,conc,drive,resol",,docs/shows/deadwood.html
+16,Spiral,spiral,active,86,8,7.5,7.5,4,8,8,8,7.7,1.05,8.09,71,7.7,"world,cine,spect,drive",,docs/shows/spiral.html
+17,Mr. Robot,mr-robot,active,45,8,7,9,6,8,7.5,9,7.925,1.02,8.08,26,7.93,"char,world,cine,spect,conc,drive",,docs/shows/mr-robot.html
+18,Shameless (US),shameless-us,active,134,8.5,7,7,5,7.5,8,7.5,7.6,1.06,8.06,105,7.6,"char,world,cine,conc,resol",,docs/shows/shameless-us.html
+19,Halt and Catch Fire,halt-and-catch-fire,active,40,8.5,7.5,7,5,8,8,9,8.05,1,8.05,14,8.05,"char,world,spect,conc,resol",,docs/shows/halt-and-catch-fire.html
+20,Boston Legal,boston-legal,active,101,8.5,7.5,7,5,7.5,8,7,7.575,1.06,8.03,110,7.58,,,docs/shows/boston-legal.html
+21,Justified,justified,active,78,8,7.5,7,5,7.5,8,8,7.65,1.05,8.03,86,7.65,"char,world,spect,conc,resol",,docs/shows/justified.html
+22,Stranger Things,stranger-things,active,42,8,9,8,8,7,8.5,7,7.875,1.02,8.03,30,7.88,"spect,drive",,docs/shows/stranger-things.html
+23,Fargo,fargo,active,51,8,6.5,8.5,6,8.5,8,8,7.775,1.03,8.01,50,7.78,"char,world,cine,spect,conc,drive",,docs/shows/fargo.html
+24,Six Feet Under,six-feet-under,active,63,8,6.5,7,5,8,6,10,7.675,1.04,7.98,79,7.68,"char,world,spect,conc,drive",,docs/shows/six-feet-under.html
+25,The Practice,the-practice,active,168,8,7.5,7,5,8,8,7,7.525,1.06,7.98,137,7.53,,,docs/shows/the-practice.html
+26,12 Monkeys,12-monkeys,active,47,7.5,8,7,6,8.5,8,8,7.8,1.02,7.96,40,7.8,"char,world,spect,conc,resol",,docs/shows/12-monkeys.html
+27,The Crown,the-crown,active,60,8.5,8,9,8,7,7,7,7.675,1.03,7.91,80,7.68,"char,spect,resol",,docs/shows/the-crown.html
+28,Billions,billions,active,84,8,7.5,7,6,7.5,8,7,7.5,1.05,7.88,140,7.5,,,docs/shows/billions.html
+29,Murder One,murder-one,active,41,8.5,7.5,7,5,8.5,8,7,7.725,1.02,7.88,63,7.73,,,docs/shows/murder-one.html
+30,Search Party,search-party,active,50,8,7,7.5,6,8,8,8,7.725,1.02,7.88,64,7.73,"char,cine,spect,drive",,docs/shows/search-party.html
+31,The Bureau,the-bureau,active,50,8,7.5,7,5,8,8,8,7.725,1.02,7.88,65,7.73,,,docs/shows/the-bureau.html
+32,Yellowstone,yellowstone,active,53,8,8.5,7.5,7,7.5,7.5,7,7.65,1.03,7.88,90,7.65,"world,cine,spect,conc,drive,resol",,docs/shows/yellowstone.html
+33,The Walking Dead,the-walking-dead,active,177,7.5,8.5,7,7.5,7,8,6.5,7.425,1.06,7.87,175,7.43,"char,world,spect,drive,resol",,docs/shows/the-walking-dead.html
+34,Longmire,longmire,active,63,8,8,8,5.5,7,7.5,7.5,7.55,1.04,7.85,123,7.55,"world,cine,spect,conc,drive,resol",,docs/shows/longmire.html
+35,Angel,angel,active,110,8,7.5,6.5,6,7.5,7.5,7,7.4,1.06,7.84,176,7.4,"world,cine,spect,conc,drive,resol",,docs/shows/angel.html
+36,Elementary,elementary,active,154,8,7,6.5,4,7.5,8,7.5,7.4,1.06,7.84,178,7.4,"world,cine,spect,conc,drive,resol",,docs/shows/elementary.html
+37,Person of Interest,person-of-interest,active,103,7.5,7,7,6,8,7.5,7.5,7.4,1.06,7.84,179,7.4,"char,world,spect,drive,resol",,docs/shows/person-of-interest.html
+38,Ozark,ozark,active,44,8,6.5,8,6,8,8,8,7.675,1.02,7.83,75,7.68,"char,world,spect,drive,resol",,docs/shows/ozark.html
+39,The Last Kingdom,the-last-kingdom,active,46,7.5,8,8,7,7,8,8,7.675,1.02,7.83,81,7.68,"char,world,spect",,docs/shows/the-last-kingdom.html
+40,Vikings (S1-4),vikings-s1-4,active,49,8,8.5,8,7.5,7,8.5,6.5,7.675,1.02,7.83,83,7.68,"char,world,cine,spect,conc,drive,resol",,docs/shows/vikings-s1-4.html
+41,Dexter,dexter,active,96,8.5,7.5,7,6.5,7.5,8,6,7.45,1.05,7.82,163,7.45,"char,world,spect,conc,resol",,docs/shows/dexter.html
+42,Dark,dark,active,26,7,7.5,8.5,6.5,9,8.5,9,8.05,0.97,7.81,13,8.05,"char,world,cine,spect,conc,drive,resol",,docs/shows/dark.html
+43,The Leftovers,the-leftovers,active,28,7,8,8,7,9,8,9,8.05,0.97,7.81,16,8.05,"char,world,cine,resol",,docs/shows/the-leftovers.html
+44,Friday Night Lights,friday-night-lights,active,76,8,7.5,7,5,7,7,8,7.425,1.05,7.8,173,7.43,"char,world,cine,spect,conc,resol",,docs/shows/friday-night-lights.html
+45,Doctor Who,doctor-who,active,153,7.5,9,7,8,7,7.5,6,7.35,1.06,7.79,195,7.35,"char,world,cine,spect,conc,drive,resol",,docs/shows/doctor-who.html
+46,Babylon Berlin,babylon-berlin,active,36,7.5,8.5,9,9,8,7.5,7,7.775,1,7.78,47,7.78,"char,world,cine,spect,drive",,docs/shows/babylon-berlin.html
+47,Only Murders in the Building,only-murders-in-the-building,active,34,8.5,7.5,8,6,7.5,8,7.5,7.775,1,7.78,52,7.78,"char,cine,spect,conc,drive",,docs/shows/only-murders-in-the-building.html
+48,Rectify,rectify,active,30,9,7,8.5,5,9,6,9,8.025,0.97,7.78,17,8.03,"char,world,cine,spect,conc,drive,resol",,docs/shows/rectify.html
+49,The 100 (S1-5),the-100-s1-5,active,71,7.5,8,6.5,6,8,8.5,6.5,7.475,1.04,7.77,160,7.48,,,docs/shows/the-100-s1-5.html
+50,Atlanta,atlanta,active,41,8,7,8.5,6,8.5,7,7.5,7.6,1.02,7.75,100,7.6,"char,world,cine,spect,conc,resol",,docs/shows/atlanta.html
+51,Chernobyl,chernobyl,active,5,7,8,9,8,8,8.5,9,8.075,0.96,7.75,12,8.08,"char,world,cine,conc,drive,resol",,docs/shows/chernobyl.html
+52,Damages,damages,active,59,8.5,7,6.5,6,7.5,8,7,7.525,1.03,7.75,130,7.53,"char,cine,conc,drive,resol",,docs/shows/damages.html
+53,Hannibal,hannibal,active,39,8,6.5,10,8.5,8.5,6.5,8,7.75,1,7.75,56,7.75,"char,world,spect,conc,drive",,docs/shows/hannibal.html
+54,Money Heist,money-heist,active,41,7.5,7,7.5,6,7,9,8,7.6,1.02,7.75,104,7.6,"char,cine,spect",,docs/shows/money-heist.html
+55,Gilmore Girls,gilmore-girls,active,153,9,7.5,6,4,6.5,7,7,7.3,1.06,7.74,219,7.3,"char,world,spect,conc,resol",,docs/shows/gilmore-girls.html
+56,The Killing (US),the-killing-us,active,44,8,7.5,8.5,6,7.5,8,7,7.575,1.02,7.73,117,7.58,"char,world,cine,conc",,docs/shows/the-killing-us.html
+57,Homeland,homeland,active,96,8,7,7,6,7,8,7,7.35,1.05,7.72,197,7.35,"char,world,conc,resol",,docs/shows/homeland.html
+58,True Blood,true-blood,active,80,7.5,8,6.5,7.5,8,8.5,5.5,7.35,1.05,7.72,207,7.35,"char,cine,spect,conc,drive,resol",,docs/shows/true-blood.html
+59,In Treatment,in-treatment,active,106,8.5,6.5,6,3,8,7.5,7,7.275,1.06,7.71,224,7.28,"char,world,cine,spect,conc,drive,resol",,docs/shows/in-treatment.html
+60,Hell on Wheels,hell-on-wheels,active,57,7.5,8,8,7,7,8,7,7.475,1.03,7.7,153,7.48,,,docs/shows/hell-on-wheels.html
+61,Northern Exposure,northern-exposure,active,110,7.5,8,7.5,4,7,7,7.5,7.25,1.06,7.69,234,7.25,"char,world,cine,spect,conc,drive,resol",,docs/shows/northern-exposure.html
+62,Angels in America,angels-in-america,active,6,8,7,8,7,9,7,9,8.0,0.96,7.68,20,8,"char,world,spect,drive","world,cine,spect,conc,drive,resol",docs/shows/angels-in-america.html
+63,El Marginal,el-marginal,active,43,8,7.5,7.5,4,7.5,8,7.5,7.525,1.02,7.68,131,7.53,"world,cine,spect,conc,resol",,docs/shows/el-marginal.html
+64,True Detective S1,true-detective-s1,active,8,8,7,10,6,8,9,8,8.0,0.96,7.68,21,8,,,docs/shows/true-detective-s1.html
+65,Adolescence,adolescence,active,4,8,5,9.5,5,9,9,9,7.975,0.96,7.66,22,7.98,"char,world,cine,spect,conc,drive,resol",,docs/shows/adolescence.html
+66,The Good Wife,the-good-wife,active,156,8,7,6.5,5.5,7,7.5,7,7.225,1.06,7.66,242,7.23,"char,cine,spect,drive",,docs/shows/the-good-wife.html
+67,Borgen,borgen,active,40,8,7,7,5,8,8,8,7.65,1,7.65,84,7.65,"char,world",,docs/shows/borgen.html
+68,For All Mankind,for-all-mankind,active,40,7,8,8,8,8,8,7.5,7.65,1,7.65,85,7.65,"char,world,cine,spect,conc,drive,resol",,docs/shows/for-all-mankind.html
+69,Peaky Blinders,peaky-blinders,active,36,8,8,9,8.5,7,7.5,7,7.65,1,7.65,87,7.65,"char,spect,drive",,docs/shows/peaky-blinders.html
+70,Alias (S1-3),alias-s1-3,active,66,7.5,7.5,7,6,7.5,8.5,6.5,7.35,1.04,7.64,194,7.35,"char,world,spect,conc,drive,resol",,docs/shows/alias-s1-3.html
+71,The Originals,the-originals,active,92,7.5,8,6,6.5,7,7.5,7,7.275,1.05,7.64,228,7.28,"char,spect,drive",,docs/shows/the-originals.html
+72,Veronica Mars,veronica-mars,active,64,8.5,7,6.5,4,7,8,7,7.35,1.04,7.64,208,7.35,"char,world,cine,spect,conc,resol",,docs/shows/veronica-mars.html
+73,Bloodline,bloodline,active,33,8.5,8,7.5,5,8,8.5,6,7.625,1,7.63,91,7.63,"char,cine,spect,conc,drive",,docs/shows/bloodline.html
+74,Killjoys,killjoys,active,50,7.5,7.5,7,6,7.5,8,7.5,7.475,1.02,7.62,154,7.48,"world,drive",,docs/shows/killjoys.html
+75,Severance,severance,active,19,7.5,8.5,8.5,7,9.5,8.5,7,8.025,0.95,7.62,18,8.03,"char,world,cine,conc,drive,resol",,docs/shows/severance.html
+76,Eureka,eureka,active,77,7.5,8,6.5,5.5,7,7.5,7,7.25,1.05,7.61,231,7.25,"char,world,cine,spect,conc,drive",,docs/shows/eureka.html
+77,It's a Sin,its-a-sin,active,5,8,7.5,8,6,8,8,8.5,7.925,0.96,7.61,25,7.93,"char,world,conc","world,cine,spect,conc,drive,resol",docs/shows/its-a-sin.html
+78,Patrick Melrose,patrick-melrose,active,5,8.5,7,8,6,8,7,9,7.925,0.96,7.61,27,7.93,"char,world,cine,conc,drive,resol","world,spect,conc",docs/shows/patrick-melrose.html
+79,The Penguin,the-penguin,active,8,8,8.5,8,6.5,8,7.5,8,7.925,0.96,7.61,28,7.93,"world,spect,conc,drive","world,cine,spect,drive,resol",docs/shows/the-penguin.html
+80,Andor,andor,active,12,7.5,9,8,9,8,7.5,8,8.0,0.95,7.6,19,8,"char,world,cine,spect,conc,drive,resol",,docs/shows/andor.html
+81,Banshee,banshee,active,38,7.5,7.5,8,6,7.5,8.5,7.5,7.6,1,7.6,101,7.6,"char,world,cine,spect,conc,drive,resol",,docs/shows/banshee.html
+82,Better Things,better-things,active,49,8.5,7,7.5,4,7,7,8,7.45,1.02,7.6,162,7.45,"char,world,cine,spect,conc,drive",,docs/shows/better-things.html
+83,Bordertown,bordertown,active,33,7.5,8,8,6,7.5,8,7.5,7.6,1,7.6,102,7.6,"char,world,cine,spect,conc,drive,resol",,docs/shows/bordertown.html
+84,The Handmaid's Tale,the-handmaids-tale,active,56,7.5,8,8,7.5,8.5,7,6,7.375,1.03,7.6,190,7.38,"char,spect,conc,drive,resol",,docs/shows/the-handmaids-tale.html
+85,Euphoria,euphoria,active,24,8.5,8,9,8,7.5,7.5,7,7.825,0.97,7.59,35,7.83,"char,world,spect,conc,drive,resol","world,cine,spect,conc,drive,resol",docs/shows/euphoria.html
+86,The Umbrella Academy,the-umbrella-academy,active,36,8,8,7.5,7.5,7.5,8,6.5,7.575,1,7.58,120,7.58,"cine,spect,conc,resol",,docs/shows/the-umbrella-academy.html
+87,Wallander,wallander,active,36,8,7.5,8,6,7.5,7.5,7.5,7.575,1,7.58,121,7.58,"char,world,spect,conc,drive,resol",,docs/shows/wallander.html
+88,House of Cards (S1-2),house-of-cards-s1-2,active,26,8.5,8,8,5,8.5,9,6,7.8,0.97,7.57,41,7.8,"char,world,cine,conc,drive",,docs/shows/house-of-cards-s1-2.html
+89,Luther,luther,active,21,8.5,7.5,8,5.5,7.5,9,7,7.8,0.97,7.57,42,7.8,"char,world,cine,spect,conc,drive,resol",,docs/shows/luther.html
+90,Fringe,fringe,active,100,7,7.5,7,6.5,8,7,7,7.2,1.05,7.56,249,7.2,"char,world,spect,conc,resol",,docs/shows/fringe.html
+91,Station Eleven,station-eleven,active,10,7.5,8,9,7,9,7,8,7.875,0.96,7.56,29,7.88,"char,cine,spect,resol",,docs/shows/station-eleven.html
+92,Continuum,continuum,active,42,7.5,8,6.5,5.5,7.5,8,7,7.4,1.02,7.55,177,7.4,"char,cine,spect,conc,drive,resol",,docs/shows/continuum.html
+93,The Flash,the-flash,active,184,7.5,7.5,6.5,7.5,6.5,7,7,7.125,1.06,7.55,269,7.13,"char,world,cine,spect,conc",,docs/shows/the-flash.html
+94,The Vampire Diaries,the-vampire-diaries,active,171,7.5,7,6.5,6.5,7,8,6.5,7.125,1.06,7.55,271,7.13,"char,world,cine,spect,resol",,docs/shows/the-vampire-diaries.html
+95,Travelers,travelers,active,34,7.5,8,6.5,5,8,8,7.5,7.55,1,7.55,126,7.55,"char,cine,spect,resol",,docs/shows/travelers.html
+96,Beef,beef,active,10,7.5,6.5,8,5,8,9,9,7.85,0.96,7.54,31,7.85,char,"char,world,cine,spect,conc,drive,resol",docs/shows/beef.html
+97,Black Mirror,black-mirror,active,29,7,7,8,7,9.5,8,8,7.775,0.97,7.54,48,7.78,"char,world,conc",,docs/shows/black-mirror.html
+98,Sharp Objects,sharp-objects,active,8,8.5,7.5,9,6,8,7,8,7.85,0.96,7.54,33,7.85,"char,world,cine,spect,conc,drive,resol",,docs/shows/sharp-objects.html
+99,What We Do in the Shadows,what-we-do-in-the-shadows,active,61,7.5,7.5,7,6.5,7,7.5,7,7.25,1.04,7.54,238,7.25,"char,world,cine,spect",,docs/shows/what-we-do-in-the-shadows.html
+100,When They See Us,when-they-see-us,active,4,7.5,6.5,8,5,9,8,9,7.85,0.96,7.54,34,7.85,"char,world,drive,resol",,docs/shows/when-they-see-us.html
+101,Outlander (S1-3),outlander-s1-3,active,42,8,7.5,8.5,8.5,7,7,6.5,7.375,1.02,7.52,186,7.38,"char,world,cine,spect,conc,drive,resol",,docs/shows/outlander-s1-3.html
+102,Penny Dreadful,penny-dreadful,active,27,8.5,8,9,9,8,7.5,6,7.75,0.97,7.52,57,7.75,"char,world,drive,resol",,docs/shows/penny-dreadful.html
+103,Rome,rome,active,22,8,9,7,9,8,8,6,7.75,0.97,7.52,59,7.75,"char,world,cine,spect,conc,drive,resol",,docs/shows/rome.html
+104,Maid,maid,active,10,8.5,7.5,7.5,4,7.5,8.5,8,7.825,0.96,7.51,36,7.83,"char,world,cine,spect,conc,drive",,docs/shows/maid.html
+105,Midnight Mass,midnight-mass,active,7,7.5,7,8,6,9,7,9,7.825,0.96,7.51,37,7.83,"char,world,cine,spect,conc,drive,resol",,docs/shows/midnight-mass.html
+106,The Haunting of Hill House,the-haunting-of-hill-house,active,10,7.5,7,9,7,8,8,8.5,7.825,0.96,7.51,39,7.83,"char,world,cine,spect,resol",,docs/shows/the-haunting-of-hill-house.html
+107,Kingdom,kingdom,active,40,8,7.5,7,6,7.5,8,7,7.5,1,7.5,143,7.5,"world,cine,spect,conc,drive,resol",,docs/shows/kingdom.html
+108,Southland,southland,active,43,7.5,8,7.5,6.5,7,7.5,7,7.35,1.02,7.5,202,7.35,"char,cine,spect,conc,drive,resol",,docs/shows/southland.html
+109,The Librarians,the-librarians,active,42,7.5,7.5,6.5,5.5,7,8,7.5,7.35,1.02,7.5,206,7.35,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-librarians.html
+110,Westworld,westworld,active,36,7.5,8.5,8.5,9,10,6.5,5,7.5,1,7.5,148,7.5,"char,world,cine,conc,drive,resol",,docs/shows/westworld.html
+111,Small Axe,small-axe,active,5,8,8.5,9,5,8.5,7,7.5,7.8,0.96,7.49,43,7.8,"char,world,spect,conc,resol",,docs/shows/small-axe.html
+112,Taboo,taboo,active,8,8.5,9,9,7,7.5,8,6,7.8,0.96,7.49,44,7.8,"char,cine,conc",,docs/shows/taboo.html
+113,Warehouse 13,warehouse-13,active,64,7.5,7.5,6,5,7,8,7,7.2,1.04,7.49,255,7.2,"char,world,spect,conc,drive,resol",,docs/shows/warehouse-13.html
+114,Wolf Hall,wolf-hall,active,6,8,8.5,9,7,8.5,7,7,7.8,0.96,7.49,45,7.8,"char,world,spect,conc,resol",,docs/shows/wolf-hall.html
+115,Endeavour,endeavour,active,35,8,7,7.5,4,7.5,7.5,8,7.475,1,7.48,151,7.48,"char,world,cine,conc,drive,resol",,docs/shows/endeavour.html
+116,Lost Girl,lost-girl,active,77,7.5,7.5,6,5,7,7.5,7,7.125,1.05,7.48,267,7.13,"char,world,cine,conc,drive",,docs/shows/lost-girl.html
+117,The Blacklist,the-blacklist,active,218,8,7,6.5,4,7,7.5,6.5,7.05,1.06,7.47,291,7.05,"char,cine,spect,conc,drive,resol",,docs/shows/the-blacklist.html
+118,Unforgotten,unforgotten,active,30,8,7.5,7.5,5.5,7.5,8,8,7.7,0.97,7.47,73,7.7,"char,world,cine,spect,conc,resol",,docs/shows/unforgotten.html
+119,Altered Carbon (S1),altered-carbon-s1,active,10,8,9,9,9,7.5,8,6,7.775,0.96,7.46,46,7.78,"conc,drive",,docs/shows/altered-carbon-s1.html
+120,House of the Dragon,house-of-the-dragon,active,18,8,9,8,9.5,8,7.5,6.5,7.85,0.95,7.46,32,7.85,"char,cine,conc,drive,resol","world,spect,conc,drive,resol",docs/shows/house-of-the-dragon.html
+121,Mare of Easttown,mare-of-easttown,active,7,8,7.5,7,5,7,8,9,7.775,0.96,7.46,51,7.78,"char,world,cine,spect,resol",,docs/shows/mare-of-easttown.html
+122,We Own This City,we-own-this-city,active,6,8,8,8,5.5,8,8,7.5,7.775,0.96,7.46,54,7.78,"world,cine,spect,conc,drive,resol",,docs/shows/we-own-this-city.html
+123,Escape at Dannemora,escape-at-dannemora,active,7,8,7,8,5,7,8,9,7.75,0.96,7.44,55,7.75,"char,cine,spect,conc,drive,resol",,docs/shows/escape-at-dannemora.html
+124,Poker Face,poker-face,active,10,8.5,7,8,5,7.5,8,8,7.75,0.96,7.44,58,7.75,"char,cine,spect,conc",,docs/shows/poker-face.html
+125,Pose,pose,active,26,7.5,8,8,7,8,7,8,7.675,0.97,7.44,77,7.68,"char,world,spect,conc,drive",,docs/shows/pose.html
+126,Shetland,shetland,active,56,7.5,8,7.5,4,7,7.5,7,7.225,1.03,7.44,241,7.23,"char,world,cine,spect,drive,resol",,docs/shows/shetland.html
+127,Tabula Rasa,tabula-rasa,active,9,8,7.5,8,6.5,8,8,7.5,7.75,0.96,7.44,60,7.75,"char,world,cine,spect,resol",,docs/shows/tabula-rasa.html
+128,Everwood,everwood,active,89,8,7,6,4,6.5,7,7.5,7.075,1.05,7.43,284,7.08,"world,cine,spect,conc,resol",,docs/shows/everwood.html
+129,High Potential,high-potential,active,31,8,7,6.5,6,7,8,7.5,7.425,1,7.43,174,7.43,"world,cine,spect,conc,drive,resol",,docs/shows/high-potential.html
+130,Silo,silo,active,20,7.5,8.5,8,8,8,8.5,7,7.825,0.95,7.43,38,7.83,"world,cine,spect,conc,drive,resol",,docs/shows/silo.html
+131,The Good Fight,the-good-fight,active,60,8,6.5,7,4,7.5,7,7.5,7.2,1.03,7.42,254,7.2,"char,world,spect,conc,drive,resol",,docs/shows/the-good-fight.html
+132,The Morning Show,the-morning-show,active,30,8,8,8,6.5,8,7.5,7,7.65,0.97,7.42,89,7.65,"cine,spect,conc,drive,resol",,docs/shows/the-morning-show.html
+133,The X-Files,the-x-files,active,218,7.5,7.5,7,7,7,7,6,7.0,1.06,7.42,302,7,"char,world,spect,conc,resol",,docs/shows/the-x-files.html
+134,Foyle's War,foyles-war,active,28,8,8,7.5,4,7.5,7.5,8,7.625,0.97,7.4,93,7.63,"world,cine,conc,drive",,docs/shows/foyles-war.html
+135,The Marvelous Mrs. Maisel,the-marvelous-mrs-maisel,active,43,7,7,8,7,7,7,8,7.25,1.02,7.4,237,7.25,resol,,docs/shows/the-marvelous-mrs-maisel.html
+136,The White Lotus,the-white-lotus,active,21,7.5,7,9,8,8,7,8,7.625,0.97,7.4,98,7.63,"char,world,spect,drive",,docs/shows/the-white-lotus.html
+137,Generation Kill,generation-kill,active,7,7,8,8,7,9,7,8,7.7,0.96,7.39,67,7.7,"char,world,spect,conc,drive","char,world,cine,spect,resol",docs/shows/generation-kill.html
+138,Sherlock (S1-3),sherlock-s1-3,active,9,8.5,7.5,9,5.5,7.5,8,7,7.7,0.96,7.39,70,7.7,"char,world,cine,spect,conc,resol",,docs/shows/sherlock-s1-3.html
+139,Terriers,terriers,active,13,8.5,7,7,5,7.5,8.5,8,7.775,0.95,7.39,53,7.78,"char,cine,spect,conc,drive,resol",,docs/shows/terriers.html
+140,The Queen's Gambit,the-queens-gambit,active,7,7.5,7,8.5,7,7,9,8,7.7,0.96,7.39,72,7.7,"char,cine,spect,drive,resol",,docs/shows/the-queens-gambit.html
+141,The Killing (DK),the-killing-dk,active,40,7.5,7,7,5,7,8,8,7.375,1,7.38,191,7.38,,,docs/shows/the-killing-dk.html
+142,Dopesick,dopesick,active,8,7.5,7,7,5,9,8,8,7.675,0.96,7.37,74,7.68,"char,world,resol",,docs/shows/dopesick.html
+143,Shogun (2024),shogun-2024,active,10,8,8,8.5,8,7.5,7.5,7,7.675,0.96,7.37,78,7.68,"char,world,cine,spect,conc,drive,resol",,docs/shows/shogun-2024.html
+144,Gomorrah,gomorrah,active,58,7,8,8,6,7,7,7,7.15,1.03,7.36,260,7.15,"char,world,cine,spect","world,spect,conc,drive,resol",docs/shows/gomorrah.html
+145,The Knick,the-knick,active,20,8,8.5,9.5,8,8,8,6,7.75,0.95,7.36,61,7.75,"char,world,cine,spect",,docs/shows/the-knick.html
+146,Foundation,foundation,active,30,7,8.5,8.5,9.5,8,7,7,7.575,0.97,7.35,111,7.58,"char,world,cine,spect,conc,resol",,docs/shows/foundation.html
+147,From,from,active,30,7.5,8.5,7.5,7,8,8,6.5,7.575,0.97,7.35,112,7.58,"char,world,cine,resol",,docs/shows/from.html
+148,Heroes,heroes,active,78,7.5,7.5,7,7.5,7,7.5,5.5,7.0,1.05,7.35,298,7,"char,world,cine,spect,conc,drive,resol",,docs/shows/heroes.html
+149,Professor T,professor-t,active,39,8,7,7.5,5.5,7.5,7.5,7,7.35,1,7.35,199,7.35,"char,world,cine,spect,conc,drive,resol",,docs/shows/professor-t.html
+150,Ripper Street,ripper-street,active,37,7.5,8,8,6,7,7.5,7,7.35,1,7.35,200,7.35,"char,world,spect,conc,drive",,docs/shows/ripper-street.html
+151,Sweet Tooth,sweet-tooth,active,24,8,8,8,6.5,7.5,7.5,7,7.575,0.97,7.35,116,7.58,"cine,spect,conc,drive,resol",,docs/shows/sweet-tooth.html
+152,Mindhunter,mindhunter,active,19,8.5,8,9,5.5,9,7.5,6,7.725,0.95,7.34,62,7.73,"char,spect,drive,resol",,docs/shows/mindhunter.html
+153,Preacher,preacher,active,43,7.5,7.5,7,7,7,7,7,7.2,1.02,7.34,252,7.2,"char,world,conc",,docs/shows/preacher.html
+154,River,river,active,6,8.5,7,7.5,5.5,8,7.5,7.5,7.65,0.96,7.34,88,7.65,"char,cine,spect,drive,resol",,docs/shows/river.html
+155,The Last of Us,the-last-of-us,active,16,8,7.5,8,8,8,8,7,7.725,0.95,7.34,66,7.73,"char,world,cine,resol",,docs/shows/the-last-of-us.html
+156,Line of Duty,line-of-duty,active,37,7.5,7,7,5,7,9,7,7.325,1,7.33,212,7.33,"char,world,spect",,docs/shows/line-of-duty.html
+157,Skins (UK),skins-uk,active,61,8,7,7,4,7,8,6,7.05,1.04,7.33,290,7.05,"char,world,spect,conc,drive",,docs/shows/skins-uk.html
+158,Godless,godless,active,7,7.5,8,9,8,7,7,8,7.625,0.96,7.32,94,7.63,,,docs/shows/godless.html
+159,Happy Valley,happy-valley,active,18,8,7,7,5,7,8,9,7.7,0.95,7.32,68,7.7,"char,world",,docs/shows/happy-valley.html
+160,In the Flesh,in-the-flesh,active,9,8,7.5,7.5,6.5,8.5,7.5,7,7.625,0.96,7.32,95,7.63,"char,world,cine,spect,conc,drive,resol",,docs/shows/in-the-flesh.html
+161,Normal People,normal-people,active,12,9,6,8,3,8,8,8,7.7,0.95,7.32,69,7.7,"char,world,spect,conc,resol",,docs/shows/normal-people.html
+162,The Tunnel,the-tunnel,active,24,7.5,7.5,8,6.5,7.5,8,7.5,7.55,0.97,7.32,125,7.55,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-tunnel.html
+163,The Underground Railroad,the-underground-railroad,active,10,7.5,8,10,8,9,6,7,7.625,0.96,7.32,97,7.63,"char,world,cine,spect,drive,resol",,docs/shows/the-underground-railroad.html
+164,Yellowjackets,yellowjackets,active,29,8,8,7.5,7,8,7.5,6.5,7.55,0.97,7.32,129,7.55,"char,cine,drive,resol",,docs/shows/yellowjackets.html
+165,Downton Abbey,downton-abbey,active,52,7,8,8,8,6,7,7,7.1,1.03,7.31,277,7.1,"char,world",,docs/shows/downton-abbey.html
+166,Smallville,smallville,active,217,7.5,7.5,6,6,6.5,7.5,6,6.9,1.06,7.31,323,6.9,"char,world,spect,conc,drive",,docs/shows/smallville.html
+167,Jessica Jones,jessica-jones,active,39,8,7,7.5,5,8,7.5,6.5,7.3,1,7.3,220,7.3,"char,cine,spect,drive,resol",,docs/shows/jessica-jones.html
+168,Mr Inbetween,mr-inbetween,active,26,8.5,6.5,7.5,4,7,8,8,7.525,0.97,7.3,133,7.53,"char,world,cine,spect",,docs/shows/mr-inbetween.html
+169,Reacher,reacher,active,24,8,7,7,7.5,7,8,7.5,7.525,0.97,7.3,134,7.53,"char,world,cine,spect,conc,resol",,docs/shows/reacher.html
+170,The Chosen,the-chosen,active,40,8,7.5,8,5,8,7.5,6,7.3,1,7.3,221,7.3,"world,cine,conc,drive,resol",,docs/shows/the-chosen.html
+171,The Haunting of Bly Manor,the-haunting-of-bly-manor,active,9,8,8,8,7,7.5,7.5,7,7.6,0.96,7.3,106,7.6,"char,conc,drive,resol",,docs/shows/the-haunting-of-bly-manor.html
+172,The Third Day,the-third-day,active,6,7.5,8.5,9,7,7.5,7.5,7,7.6,0.96,7.3,107,7.6,"char,world,cine,spect,conc,drive",,docs/shows/the-third-day.html
+173,Lost,lost,active,121,9,8,7.5,7.5,7,9.5,1,6.875,1.06,7.29,325,6.88,"char,world,cine,spect,conc,drive,resol",,docs/shows/lost.html
+174,Pachinko,pachinko,active,16,8,8,8,7,8,7.5,7,7.675,0.95,7.29,76,7.68,"char,world,cine,spect,drive",,docs/shows/pachinko.html
+175,The Missing,the-missing,active,16,8,7.5,8,5,7.5,8.5,7.5,7.675,0.95,7.29,82,7.68,"world,cine,spect,conc,drive,resol",,docs/shows/the-missing.html
+176,Alchemy of Souls,alchemy-of-souls,active,30,7.5,8,8,7,7,7.5,7.5,7.5,0.97,7.28,139,7.5,"char,world,spect,conc,drive,resol",,docs/shows/alchemy-of-souls.html
+177,Battlestar Galactica,battlestar-galactica,active,75,7,7,7,8,8,7,6,7.0,1.04,7.28,297,7,"char,world,cine,conc,drive,resol",,docs/shows/battlestar-galactica.html
+178,The Newsroom,the-newsroom,active,25,8,7.5,7.5,4,8,8,7,7.5,0.97,7.28,145,7.5,"world,cine,spect,conc",,docs/shows/the-newsroom.html
+179,Tom Clancy's Jack Ryan,jack-ryan,active,30,7.5,7.5,8,7,7,8,7.5,7.5,0.97,7.28,147,7.5,"char,world,spect,conc,drive,resol",,docs/shows/jack-ryan.html
+180,IT: Welcome to Derry,it-welcome-to-derry,active,8,7.5,8.5,8,7.5,7.5,7.5,7,7.575,0.96,7.27,114,7.58,"char,world,cine,spect,conc,drive,resol",,docs/shows/it-welcome-to-derry.html
+181,Profit,profit,active,8,8.5,7,6.5,5,9,8.5,6,7.575,0.96,7.27,115,7.58,"char,cine,spect,conc,drive,resol",,docs/shows/profit.html
+182,The Pacific,the-pacific,active,10,7,8.5,8,9,7,7,8,7.575,0.96,7.27,118,7.58,"char,world,cine,spect,drive,resol",,docs/shows/the-pacific.html
+183,The Plot Against America,the-plot-against-america,active,6,7.5,8,8,6,9,7,7,7.575,0.96,7.27,119,7.58,"world,cine,conc,resol","cine,spect,conc,drive",docs/shows/the-plot-against-america.html
+184,American Horror Story,american-horror-story,active,132,7,7.5,8,7,6.5,7,6,6.85,1.06,7.26,329,6.85,"char,world,spect,conc,resol",,docs/shows/american-horror-story.html
+185,Broadchurch,broadchurch,active,24,7.5,7,8,6,7,8,8,7.475,0.97,7.25,149,7.48,"char,world,cine,spect",,docs/shows/broadchurch.html
+186,Cardinal,cardinal,active,24,7.5,7.5,8,6.5,7.5,7.5,7.5,7.475,0.97,7.25,150,7.48,"char,world,spect,conc,drive,resol",,docs/shows/cardinal.html
+187,"Love, Victor",love-victor,active,28,8,7,6.5,5.5,7.5,8,7.5,7.475,0.97,7.25,155,7.48,"cine,spect,conc,drive,resol",,docs/shows/love-victor.html
+188,Narcos,narcos,active,30,7.5,8,8,7,7,8,7,7.475,0.97,7.25,157,7.48,"char,world,conc,drive,resol",,docs/shows/narcos.html
+189,Shrinking,shrinking,active,22,8.5,7,7.5,5.5,7.5,7.5,7,7.475,0.97,7.25,159,7.48,"char,cine,spect,conc,drive,resol",,docs/shows/shrinking.html
+190,WandaVision,wandavision,active,9,8,7,8,6,8,8,7,7.55,0.96,7.25,127,7.55,"char,world,cine,spect",,docs/shows/wandavision.html
+191,Firefly,firefly,active,14,9,8.5,7.5,6.5,7.5,8.5,5,7.625,0.95,7.24,92,7.63,"world,cine,spect,conc,drive",,docs/shows/firefly.html
+192,Narcos: Mexico,narcos-mexico,active,20,7.5,8,7.5,6,8,8.5,7,7.625,0.95,7.24,96,7.63,"char,world,cine,spect,conc,drive",,docs/shows/narcos-mexico.html
+193,Young Royals,young-royals,active,18,8,7.5,7,6,7.5,7.5,8,7.625,0.95,7.24,99,7.63,"world,cine,spect,conc,drive",,docs/shows/young-royals.html
+194,Marcella,marcella,active,24,8,7,7.5,6,7.5,8,7,7.45,0.97,7.23,166,7.45,"cine,spect,conc",,docs/shows/marcella.html
+195,Physical,physical,active,30,8,7,7.5,5.5,7.5,7.5,7.5,7.45,0.97,7.23,167,7.45,"world,cine,spect,conc,drive,resol",,docs/shows/physical.html
+196,Brassic,brassic,active,42,7.5,7,6.5,5,6.5,8,7,7.075,1.02,7.22,283,7.08,"char,world,cine,spect,conc,drive,resol",,docs/shows/brassic.html
+197,Little America,little-america,active,16,8,8,7.5,5.5,8,7,7.5,7.6,0.95,7.22,103,7.6,"char,world,cine,spect,conc,resol",,docs/shows/little-america.html
+198,The Honourable Woman,the-honourable-woman,active,8,8,7.5,7.5,4,8.5,7,7.5,7.525,0.96,7.22,136,7.53,"char,world,cine,conc,resol",,docs/shows/the-honourable-woman.html
+199,The Stranger,the-stranger,active,8,7.5,7,7.5,6.5,7.5,8.5,7.5,7.525,0.96,7.22,138,7.53,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-stranger.html
+200,Twin Peaks: The Return,twin-peaks-the-return,active,18,8,8,9,9,9,5,7,7.6,0.95,7.22,108,7.6,"char,world,cine,spect,conc,drive",,docs/shows/twin-peaks-the-return.html
+201,Utopia (UK),utopia-uk,active,12,7.5,7.5,10,7,8,9,6,7.6,0.95,7.22,109,7.6,"char,world,spect,resol",,docs/shows/utopia-uk.html
+202,Bodyguard,bodyguard,active,6,7.5,7,8,6,7,9.5,7,7.5,0.96,7.2,141,7.5,"char,spect,drive",,docs/shows/bodyguard.html
+203,Carnivale,carnivale,active,24,7.5,9,7.5,6,8.5,7,6,7.425,0.97,7.2,171,7.43,"char,world,cine,spect,conc,resol",,docs/shows/carnivale.html
+204,Industry,industry,active,16,8,8,8,5,7.5,8,7,7.575,0.95,7.2,113,7.58,"cine,spect,conc,resol",,docs/shows/industry.html
+205,Nikita,nikita-2010,active,73,7,7,6.5,6,6.5,7.5,7,6.925,1.04,7.2,318,6.93,"spect,conc,drive",,docs/shows/nikita-2010.html
+206,Tales from the Loop,tales-from-the-loop,active,8,7,9,9.5,7,8,6.5,7,7.5,0.96,7.2,144,7.5,"char,cine,spect,drive",,docs/shows/tales-from-the-loop.html
+207,The Undoing,the-undoing,active,6,8,7,8,4,7,8,8,7.5,0.96,7.2,146,7.5,"cine,spect,conc,drive",,docs/shows/the-undoing.html
+208,Maniac,maniac,active,10,7.5,7.5,8,7,8,7.5,7,7.475,0.96,7.18,156,7.48,"char,world,cine,spect,drive,resol",,docs/shows/maniac.html
+209,The Righteous Gemstones,the-righteous-gemstones,active,27,8,7.5,7.5,5,7,8,7,7.4,0.97,7.18,180,7.4,"char,world,cine,spect,conc,resol",,docs/shows/the-righteous-gemstones.html
+210,It's Okay to Not Be Okay,its-okay-to-not-be-okay,active,16,8,7,8.5,5,7.5,8,7.5,7.55,0.95,7.17,122,7.55,"cine,conc,resol",,docs/shows/its-okay-to-not-be-okay.html
+211,The Returned (Les Revenants),the-returned-2012,active,16,7.5,8,8.5,6.5,8,7.5,7,7.55,0.95,7.17,124,7.55,"char,cine,spect,drive,resol",,docs/shows/the-returned-2012.html
+212,Tracker,tracker,active,44,7,6.5,6.5,6,6.5,8,7.5,7.025,1.02,7.17,296,7.03,"world,cine,spect,conc,drive,resol",,docs/shows/tracker.html
+213,Weak Hero,weak-hero,active,16,8,7,8,6,7.5,8.5,7,7.55,0.95,7.17,128,7.55,"cine,spect,conc,drive,resol",,docs/shows/weak-hero.html
+214,Fortitude,fortitude,active,24,7.5,9,8.5,7,7.5,7,6,7.375,0.97,7.15,183,7.38,"char,cine,spect,conc,drive",,docs/shows/fortitude.html
+215,Freaks and Geeks,freaks-and-geeks,active,18,9,8,7,4,8,7.5,6,7.525,0.95,7.15,132,7.53,"world,cine,spect,drive,resol",,docs/shows/freaks-and-geeks.html
+216,Misfits,misfits,active,37,8,7.5,6,5,7,7.5,6.5,7.15,1,7.15,262,7.15,"world,drive,resol",,docs/shows/misfits.html
+217,Queer Eye (2018),queer-eye,active,64,8,6,6.5,4,5,8,7.5,6.875,1.04,7.15,326,6.88,,,docs/shows/queer-eye.html
+218,Shardlake,shardlake,active,4,7.5,8,8,6.5,7.5,7.5,7,7.45,0.96,7.15,169,7.45,"char,cine,spect,conc,drive,resol",,docs/shows/shardlake.html
+219,Squid Game,squid-game,active,18,6.5,7.5,8,7.5,7,9,8,7.525,0.95,7.15,135,7.53,"char,world,cine,spect,conc,drive",,docs/shows/squid-game.html
+220,The Comeback,the-comeback,active,21,8.5,7,7,4,8,7,7,7.375,0.97,7.15,189,7.38,"char,world,cine,spect,conc",,docs/shows/the-comeback.html
+221,The Sinner,the-sinner,active,32,7.5,6,7,4,7.5,8,7.5,7.15,1,7.15,264,7.15,"char,world,spect,conc,resol",,docs/shows/the-sinner.html
+222,The O.C.,the-oc,active,92,8,6.5,6,4,6,7.5,6.5,6.8,1.05,7.14,342,6.8,"char,world,drive,resol",,docs/shows/the-oc.html
+223,Torchwood,torchwood,active,41,7.5,7.5,6.5,6,7,7.5,6,7.0,1.02,7.14,303,7,"char,world,cine,drive",,docs/shows/torchwood.html
+224,Barry,barry,active,32,7.5,6,8,6,7,8,7,7.125,1,7.13,266,7.13,"char,world,conc,drive,resol",,docs/shows/barry.html
+225,Enlightened,enlightened,active,18,8.5,7.5,7.5,4,7.5,7,7.5,7.5,0.95,7.13,142,7.5,"char,world,cine,spect,conc,resol",,docs/shows/enlightened.html
+226,EZ Streets,ez-streets,active,9,8.5,8,7.5,5,8.5,8,5,7.425,0.96,7.13,172,7.43,"char,world,cine,spect,conc,drive,resol",,docs/shows/ez-streets.html
+227,Greys Anatomy,greys-anatomy,active,465,8,7,6.5,5,6.5,7.5,5,6.725,1.06,7.13,352,6.73,"char,world,cine,spect,conc,drive,resol",,docs/shows/greys-anatomy.html
+228,The Bridge (US),the-bridge-us,active,26,7.5,7.5,8,6.5,7.5,8,6.5,7.35,0.97,7.13,204,7.35,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-bridge-us.html
+229,Looking,looking,active,22,8,7.5,8,4,7,7,7.5,7.325,0.97,7.11,213,7.33,"world,spect,drive,resol",,docs/shows/looking.html
+230,Studio 60 on the Sunset Strip,studio-60-on-the-sunset-strip,active,22,8,7.5,7,5,8,8,6,7.325,0.97,7.11,216,7.33,"world,spect,conc",,docs/shows/studio-60-on-the-sunset-strip.html
+231,The Bay,the-bay,active,24,7.5,7.5,7.5,6,7.5,7.5,7,7.325,0.97,7.11,217,7.33,"char,world,cine,spect,conc,drive",,docs/shows/the-bay.html
+232,Dark Matter,dark-matter,active,39,7.5,8,6.5,6,8,8,5,7.1,1,7.1,276,7.1,"char,cine,conc",,docs/shows/dark-matter.html
+233,Dawsons Creek,dawsons-creek,active,128,7.5,6.5,6,4,6,7,7,6.7,1.06,7.1,355,6.7,"char,spect,drive,resol",,docs/shows/dawsons-creek.html
+234,Good Omens,good-omens,active,12,8,8,7.5,7,7.5,7.5,6.5,7.475,0.95,7.1,152,7.48,"cine,spect,resol",,docs/shows/good-omens.html
+235,One Day,one-day-2024,active,14,8,7,7.5,6,7.5,7.5,7.5,7.475,0.95,7.1,158,7.48,"char,cine,spect,conc,drive,resol",,docs/shows/one-day-2024.html
+236,The Gilded Age,the-gilded-age,active,17,7.5,8.5,8.5,8,7,7,7,7.475,0.95,7.1,161,7.48,"char,world,cine,spect,conc,resol",,docs/shows/the-gilded-age.html
+237,3 Body Problem,3-body-problem,active,8,7.5,8,7.5,7.5,8,7,6.5,7.375,0.96,7.08,181,7.38,"char,world,cine,spect,conc,drive,resol",,docs/shows/3-body-problem.html
+238,Hotel Del Luna,hotel-del-luna,active,16,7.5,8,8,6,7,7.5,7.5,7.45,0.95,7.08,164,7.45,"char,world,cine,spect,drive,resol",,docs/shows/hotel-del-luna.html
+239,Itaewon Class,itaewon-class,active,16,8,7,7,6,7,8,7.5,7.45,0.95,7.08,165,7.45,"char,cine,spect,conc,drive,resol",,docs/shows/itaewon-class.html
+240,Killing Eve,killing-eve,active,32,7,6.5,7,7,7,8,7,7.075,1,7.08,285,7.08,"char,world,cine,resol",,docs/shows/killing-eve.html
+241,Queen of Tears,queen-of-tears,active,16,8,7,7,6,7,8,7.5,7.45,0.95,7.08,168,7.45,"char,cine,spect,conc,drive,resol",,docs/shows/queen-of-tears.html
+242,Requiem,requiem,active,6,7.5,7.5,8,6.5,7.5,7.5,7,7.375,0.96,7.08,187,7.38,"char,world,cine,spect,conc,drive,resol",,docs/shows/requiem.html
+243,The Good Bad Mother,the-good-bad-mother,active,14,8,7,7.5,4,7.5,8,7.5,7.45,0.95,7.08,170,7.45,"char,cine,spect,conc,resol",,docs/shows/the-good-bad-mother.html
+244,City on a Hill,city-on-a-hill,active,26,7.5,7.5,7.5,6.5,7,7.5,7,7.275,0.97,7.06,223,7.28,"char,world,cine,spect,drive,resol",,docs/shows/city-on-a-hill.html
+245,Monarch: Legacy of Monsters,monarch-legacy-of-monsters,active,10,7,8.5,8,9,7.5,7,6.5,7.35,0.96,7.06,198,7.35,"world,spect,conc,drive",,docs/shows/monarch-legacy-of-monsters.html
+246,The Boy's Word: Blood on the Asphalt,the-boy-s-word-blood-on-the-asphalt,active,8,7.5,7.5,7.5,5,7.5,8,7,7.35,0.96,7.06,203,7.35,"char,world,cine,spect,conc,resol",,docs/shows/the-boy-s-word-blood-on-the-asphalt.html
+247,Twin Peaks,twin-peaks,active,30,7.5,8,8,7,9,6,6,7.275,0.97,7.06,230,7.28,"char,world,cine,spect,conc,drive,resol",,docs/shows/twin-peaks.html
+248,Watchmen (2019),watchmen-2019,active,9,7,7.5,7.5,8,7,7,8,7.35,0.96,7.06,210,7.35,"char,world,cine,conc,drive,resol",,docs/shows/watchmen-2019.html
+249,Party of Five,party-of-five,active,142,7.5,6.5,5.5,4,6,7.5,6.5,6.65,1.06,7.05,369,6.65,"spect,conc,drive",,docs/shows/party-of-five.html
+250,Felicity,felicity,active,84,7.5,6.5,6,4,6,7,7,6.7,1.05,7.04,356,6.7,"spect,drive,resol",,docs/shows/felicity.html
+251,Sons of Anarchy,sons-of-anarchy,active,92,7,6.5,6,5,6,7.5,7,6.7,1.05,7.04,359,6.7,"char,world,cine,conc,drive,resol",,docs/shows/sons-of-anarchy.html
+252,Bridgerton,bridgerton,active,32,7.5,8,8.5,6,6,7.5,6,7.025,1,7.03,293,7.03,"char,cine,spect,drive",,docs/shows/bridgerton.html
+253,Safe,safe,active,8,7.5,7,7,6,7,8,7.5,7.325,0.96,7.03,215,7.33,"char,cine,spect,conc,resol",,docs/shows/safe.html
+254,The Bear,the-bear,active,28,7.5,6.5,9,6,7,8,7,7.25,0.97,7.03,236,7.25,"char,world,conc,drive",,docs/shows/the-bear.html
+255,Kurulus: Osman,kurulus-osman,active,194,7,7.5,7,6,7,7,5,6.625,1.06,7.02,372,6.63,,,docs/shows/kurulus-osman.html
+256,Big Little Lies,big-little-lies,active,14,7.5,7,8,7,7,7,8,7.375,0.95,7.01,182,7.38,"char,world,cine,spect,drive",,docs/shows/big-little-lies.html
+257,Bloodhounds,bloodhounds,active,8,7.5,7,7.5,7,7,8,7,7.3,0.96,7.01,218,7.3,"char,spect,conc",,docs/shows/bloodhounds.html
+258,Interview with the Vampire,interview-with-the-vampire,active,18,8,7.5,8,7,7,7,7,7.375,0.95,7.01,184,7.38,"char,world,cine,spect,drive,resol",,docs/shows/interview-with-the-vampire.html
+259,Loki,loki,active,12,8,8.5,8.5,7,7.5,8,5,7.375,0.95,7.01,185,7.38,"char,world,cine,spect,conc,drive,resol",,docs/shows/loki.html
+260,Rubicon,rubicon,active,13,8,8,7.5,4,9,7,6,7.375,0.95,7.01,188,7.38,"world,cine,spect,drive,resol",,docs/shows/rubicon.html
+261,The Night Agent,the-night-agent,active,20,7.5,7,7,7.5,7,8.5,7,7.375,0.95,7.01,192,7.38,"char,spect,conc,drive,resol",,docs/shows/the-night-agent.html
+262,Traces,traces,active,12,7.5,7.5,7,5.5,7.5,7.5,7.5,7.375,0.95,7.01,193,7.38,"char,world,cine,spect,conc,drive,resol",,docs/shows/traces.html
+263,Dickinson,dickinson,active,30,7.5,7,7.5,4,7,7,8,7.2,0.97,6.98,248,7.2,"char,world,cine,spect,conc",,docs/shows/dickinson.html
+264,Glitch,glitch,active,18,7.5,7.5,7.5,6.5,7.5,7.5,7,7.35,0.95,6.98,196,7.35,"char,world,cine,spect,conc,drive",,docs/shows/glitch.html
+265,Hacks,hacks,active,28,8,7,7,5,7.5,7.5,6.5,7.2,0.97,6.98,251,7.2,"char,conc,drive,resol",,docs/shows/hacks.html
+266,Slow Horses,slow-horses,active,18,8,7,7,6,7,8,7,7.35,0.95,6.98,201,7.35,"char,world",,docs/shows/slow-horses.html
+267,Stay Close,stay-close,active,8,7.5,7,7.5,6.5,7,8,7,7.275,0.96,6.98,226,7.28,"char,cine,spect,conc",,docs/shows/stay-close.html
+268,The Boys,the-boys,active,40,7,7,7,8,6.5,7,7,6.975,1,6.98,307,6.98,"char,world,spect,conc,drive",,docs/shows/the-boys.html
+269,The Day of the Jackal,the-day-of-the-jackal,active,8,7.5,7,8,6,7,8,7,7.275,0.96,6.98,227,7.28,"char,spect,conc,drive",,docs/shows/the-day-of-the-jackal.html
+270,The Fall,the-fall,active,17,8,7,7.5,4,7.5,8,7,7.35,0.95,6.98,205,7.35,"char,cine,spect,conc,drive,resol",,docs/shows/the-fall.html
+271,This Is Going to Hurt,this-is-going-to-hurt,active,7,8,6,7,4,7.5,8,7.5,7.275,0.96,6.98,229,7.28,"char,world,spect,conc,resol",,docs/shows/this-is-going-to-hurt.html
+272,Top Boy,top-boy,active,32,7.5,7,6.5,5,7,7.5,6.5,6.975,1,6.98,310,6.98,"char,world,cine,spect,conc,drive,resol",,docs/shows/top-boy.html
+273,Vincenzo,vincenzo,active,20,7.5,7,7.5,6,7,8,7.5,7.35,0.95,6.98,209,7.35,"char,world,cine,spect,conc,drive,resol",,docs/shows/vincenzo.html
+274,I May Destroy You,i-may-destroy-you,active,12,7.5,6.5,7,4,8,7.5,8,7.325,0.95,6.96,211,7.33,"char,world,cine,spect,conc,drive,resol",,docs/shows/i-may-destroy-you.html
+275,John Adams,john-adams,active,7,7.5,7.5,7,6,7.5,6.5,7.5,7.25,0.96,6.96,233,7.25,"char,world,conc,drive,resol",,docs/shows/john-adams.html
+276,Lupin,lupin,active,17,8,7.5,8,6,7.5,8.5,5.5,7.325,0.95,6.96,214,7.33,"char,world,spect,conc,drive,resol",,docs/shows/lupin.html
+277,Truth Be Told,truth-be-told,active,28,7.5,7,7.5,6,7,7.5,7,7.175,0.97,6.96,258,7.18,"char,cine,spect,drive,resol",,docs/shows/truth-be-told.html
+278,The Good Place,the-good-place,active,53,7,6.5,5.5,3,7.5,6.5,7.5,6.75,1.03,6.95,351,6.75,"char,world,cine,spect,conc,drive",,docs/shows/the-good-place.html
+279,The Witcher,the-witcher,active,32,7.5,8,7.5,7.5,6.5,7,5.5,6.95,1,6.95,316,6.95,"char,cine,spect,conc,resol",,docs/shows/the-witcher.html
+280,My Name,my-name,active,8,7.5,7,7,6,7,8,7,7.225,0.96,6.94,240,7.23,"char,cine,conc,drive",,docs/shows/my-name.html
+281,The New Look,the-new-look,active,10,7.5,7.5,7.5,7,7,7,7,7.225,0.96,6.94,244,7.23,"char,world,cine,conc",,docs/shows/the-new-look.html
+282,The Offer,the-offer,active,10,7.5,7,7.5,5,7,7.5,7.5,7.225,0.96,6.94,245,7.23,"char,world,cine,conc,drive,resol",,docs/shows/the-offer.html
+283,Anne with an E,anne-with-an-e,active,27,8.5,7,7,6,7,7,6,7.125,0.97,6.91,265,7.13,"char,world,cine,spect,conc,resol",,docs/shows/anne-with-an-e.html
+284,Annika,annika,active,18,7.5,7.5,7.5,6.5,7,7.5,7,7.275,0.95,6.91,222,7.28,"char,world,cine,spect,conc,drive",,docs/shows/annika.html
+285,Behind Her Eyes,behind-her-eyes,active,6,7,7,7.5,6,7.5,8,7,7.2,0.96,6.91,246,7.2,"world,cine,conc",,docs/shows/behind-her-eyes.html
+286,Defending Jacob,defending-jacob,active,8,7.5,7,8,6,7,7.5,7,7.2,0.96,6.91,247,7.2,"char,cine,spect,conc,drive,resol",,docs/shows/defending-jacob.html
+287,Gracepoint,gracepoint,active,10,7.5,7.5,7.5,5,7,7.5,7,7.2,0.96,6.91,250,7.2,"char,world,cine,spect,drive",,docs/shows/gracepoint.html
+288,Mr. Queen,mr-queen,active,20,7.5,7.5,7.5,5,7,8,7,7.275,0.95,6.91,225,7.28,"char,world,cine,spect,conc,resol",,docs/shows/mr-queen.html
+289,Home Before Dark,home-before-dark,active,20,7.5,7.5,7.5,6,7,7.5,7,7.25,0.95,6.89,232,7.25,"char,world,cine,spect,drive,resol",,docs/shows/home-before-dark.html
+290,One Tree Hill,one-tree-hill,active,187,7.5,6.5,6,4,5.5,7.5,6,6.5,1.06,6.89,390,6.5,"char,world,cine,spect,conc,drive",,docs/shows/one-tree-hill.html
+291,Sweet Home,sweet-home,active,18,7.5,7,7.5,8,7,8,6.5,7.25,0.95,6.89,235,7.25,spect,,docs/shows/sweet-home.html
+292,The Fall of the House of Usher,the-fall-of-the-house-of-usher,active,8,7,7,8,6,7.5,7,7.5,7.175,0.96,6.89,257,7.18,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-fall-of-the-house-of-usher.html
+293,Your Honor,your-honor,active,20,7.5,7,7.5,6,7,8,7,7.25,0.95,6.89,239,7.25,"char,cine,spect,conc,drive",,docs/shows/your-honor.html
+294,American Gods,american-gods,active,26,7.5,9,9,7,8.5,6.5,4,7.075,0.97,6.86,281,7.08,"char,cine,spect,conc,drive,resol",,docs/shows/american-gods.html
+295,Black Doves,black-doves,active,6,7.5,7,7.5,6,7,8,6.5,7.15,0.96,6.86,259,7.15,"char,cine,spect,resol",,docs/shows/black-doves.html
+296,Hellbound,hellbound,active,6,7,7.5,7.5,7,7.5,7.5,6.5,7.15,0.96,6.86,261,7.15,"char,world,cine",,docs/shows/hellbound.html
+297,Star Trek: Strange New Worlds,star-trek-strange-new-worlds,active,30,7.5,8.5,7.5,7,6.5,7.5,5.5,7.075,0.97,6.86,287,7.08,"char,world,cine,spect,conc,drive,resol",,docs/shows/star-trek-strange-new-worlds.html
+298,The Lord of the Rings: The Rings of Power,the-lord-of-the-rings-the-rings-of-power,active,16,7,8.5,9,9,7,7,6,7.225,0.95,6.86,243,7.23,"world,spect,drive,resol",,docs/shows/the-lord-of-the-rings-the-rings-of-power.html
+299,Shantaram,shantaram,active,12,7.5,8,8,7,7,7.5,6,7.2,0.95,6.84,253,7.2,"char,world,spect,drive,resol",,docs/shows/shantaram.html
+300,The Night Of,the-night-of,active,8,7.5,7,7.5,5,7,7.5,7,7.125,0.96,6.84,270,7.13,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-night-of.html
+301,Sports Night,sports-night,active,45,7.5,7,7,5,7,7.5,5,6.7,1.02,6.83,360,6.7,"char,cine,spect,drive,resol",,docs/shows/sports-night.html
+302,1899,1899,active,8,7.5,8,8,7,8.5,8,4,7.1,0.96,6.82,273,7.1,"char,world,cine,spect,conc",,docs/shows/1899.html
+303,Crazyhead,crazyhead,active,6,7.5,7,7,7,7,7.5,6.5,7.1,0.96,6.82,275,7.1,"char,cine,spect,conc,drive,resol",,docs/shows/crazyhead.html
+304,Gyeongseong Creature,gyeongseong-creature,active,17,7,7.5,7.5,6.5,7,7,7.5,7.175,0.95,6.82,256,7.18,"char,world,cine,spect,conc,drive,resol",,docs/shows/gyeongseong-creature.html
+305,Fear the Walking Dead,fear-the-walking-dead,active,113,6.5,7,6.5,5,6,6.5,6.5,6.425,1.06,6.81,399,6.43,"char,world,conc,drive,resol",,docs/shows/fear-the-walking-dead.html
+306,Agatha All Along,agatha-all-along,active,9,7.5,7,7,6,7,7,7,7.075,0.96,6.79,280,7.08,"char,world,cine,spect",,docs/shows/agatha-all-along.html
+307,Brand New Cherry Flavor,brand-new-cherry-flavor,active,8,7,7.5,8,6,6.5,7.5,7,7.075,0.96,6.79,282,7.08,"char,world,cine,spect,conc,drive",,docs/shows/brand-new-cherry-flavor.html
+308,Moon Knight,moon-knight,active,6,7.5,7,7.5,7.5,7,7,6.5,7.075,0.96,6.79,286,7.08,"char,world,cine,spect,conc,drive,resol",,docs/shows/moon-knight.html
+309,Pushing Daisies,pushing-daisies,active,22,8,7.5,8,6,7.5,7,5,7.0,0.97,6.79,301,7,"world,cine,spect",,docs/shows/pushing-daisies.html
+310,Snowdrop,snowdrop,active,16,7.5,7.5,8,4,7,8,6.5,7.15,0.95,6.79,263,7.15,"char,world,conc,resol",,docs/shows/snowdrop.html
+311,Tulsa King,tulsa-king,active,29,7.5,7.5,7.5,5,7,7.5,6,7.0,0.97,6.79,304,7,"char,world,cine,conc,drive,resol",,docs/shows/tulsa-king.html
+312,Alice in Borderland,alice-in-borderland,active,22,7,7,7,6,7.5,8,6,6.975,0.97,6.77,305,6.98,"world,cine,spect,conc,drive,resol",,docs/shows/alice-in-borderland.html
+313,My So-Called Life,my-so-called-life,active,19,9,7,6.5,4,7,7,6,7.125,0.95,6.77,268,7.13,"char,world,cine,spect,conc,drive",,docs/shows/my-so-called-life.html
+314,Superman & Lois,superman-lois,active,53,7,7,7,6,6.5,7,5.5,6.575,1.03,6.77,379,6.58,"char,spect,resol",,docs/shows/superman-lois.html
+315,Twinkling Watermelon,twinkling-watermelon,active,16,7.5,7,7.5,5,7,7.5,7,7.125,0.95,6.77,272,7.13,"char,world,cine,spect,conc,drive,resol",,docs/shows/twinkling-watermelon.html
+316,Vinyl,vinyl,active,10,7,9,9,8,7,7,5,7.05,0.96,6.77,292,7.05,"char,spect,drive,resol",,docs/shows/vinyl.html
+317,Counterpart,counterpart,active,20,8,8.5,7,5,8,7.5,4.5,7.1,0.95,6.75,274,7.1,"char,world,spect,drive,resol",,docs/shows/counterpart.html
+318,Moving,moving,active,20,7.5,7,7.5,7,7.5,7.5,6,7.1,0.95,6.75,278,7.1,"char,world,cine,spect,conc,drive,resol",,docs/shows/moving.html
+319,Navillera,navillera,active,12,7.5,6.5,7.5,4,7,7.5,7.5,7.1,0.95,6.75,279,7.1,"char,world,cine,conc,drive,resol",,docs/shows/navillera.html
+320,Presumed Innocent (2024),presumed-innocent-2024,active,8,7.5,6.5,7.5,5,7,8,6.5,7.025,0.96,6.74,295,7.03,"char,world,cine,spect,conc,resol",,docs/shows/presumed-innocent-2024.html
+321,Hijack,hijack,active,7,7.5,6,7,5,7,8.5,6.5,7.0,0.96,6.72,299,7,"char,world,conc,drive,resol",,docs/shows/hijack.html
+322,My Brilliant Friend,my-brilliant-friend,active,24,7.5,7,7,5,7.5,6.5,6.5,6.925,0.97,6.72,317,6.93,"char,world,cine,conc,drive,resol",,docs/shows/my-brilliant-friend.html
+323,Young Wallander,young-wallander,active,12,7,7,7.5,6.5,7,7.5,7,7.075,0.95,6.72,288,7.08,"world,cine,spect,drive,resol",,docs/shows/young-wallander.html
+324,High Maintenance,high-maintenance,active,19,7.5,7.5,7,4,7,7,7,7.05,0.95,6.7,289,7.05,"char,world,spect,conc,drive,resol",,docs/shows/high-maintenance.html
+325,Dollhouse,dollhouse,active,27,7,7.5,7,6,7.5,7,6,6.9,0.97,6.69,322,6.9,"char,world,cine,spect,conc,resol",,docs/shows/dollhouse.html
+326,Tremé,treme,active,38,7,7,6.5,4,7,6,7,6.675,1,6.68,366,6.68,"char,world,cine,spect,conc,drive,resol",,docs/shows/treme.html
+327,Extrapolations,extrapolations,active,8,7,7.5,7.5,6,7.5,6.5,6.5,6.95,0.96,6.67,311,6.95,"world,cine,spect,drive,resol",,docs/shows/extrapolations.html
+328,Goblin,goblin,active,16,7.5,7,7,6.5,6.5,7,7,7.025,0.95,6.67,294,7.03,"char,world,cine,spect,conc,drive,resol",,docs/shows/goblin.html
+329,Shanty Town,shanty-town,active,6,7,7.5,7,5,7,7.5,6.5,6.95,0.96,6.67,314,6.95,"world,cine,conc,drive,resol",,docs/shows/shanty-town.html
+330,Homecoming,homecoming,active,20,7,7,7,6,7.5,7.5,6.5,7.0,0.95,6.65,300,7,"char,cine,spect,conc,drive,resol",,docs/shows/homecoming.html
+331,Berlin Station,berlin-station,active,29,7,7,7,4,7,7,7,6.85,0.97,6.64,330,6.85,,,docs/shows/berlin-station.html
+332,Boss,boss,active,18,8,7.5,7,5,7.5,7.5,5,6.975,0.95,6.63,306,6.98,"char,world,spect,conc,drive",,docs/shows/boss.html
+333,Daredevil,daredevil,active,39,7,6.5,7,6,6,7,6.5,6.625,1,6.63,371,6.63,"char,world,cine,spect,conc,drive,resol",,docs/shows/daredevil.html
+334,The Judge from Hell,the-judge-from-hell,active,14,7,7,7,5,7,7.5,7,6.975,0.95,6.63,308,6.98,"world,cine,spect,drive,resol",,docs/shows/the-judge-from-hell.html
+335,Togetherness,togetherness,active,16,7.5,7,7,4,7,7,7,6.975,0.95,6.63,309,6.98,"char,world,cine,spect,conc,resol",,docs/shows/togetherness.html
+336,Dead Like Me,dead-like-me,active,29,7.5,7.5,7,6,7.5,7,5,6.825,0.97,6.62,333,6.83,"char,world,cine,spect,conc,resol",,docs/shows/dead-like-me.html
+337,The Trauma Code: Heroes on Call,the-trauma-code-heroes-on-call,active,8,7,6.5,7,5,7,7.5,7,6.9,0.96,6.62,324,6.9,,,docs/shows/the-trauma-code-heroes-on-call.html
+338,Bates Motel,bates-motel,active,50,7,6,6.5,5,6,7,6.5,6.475,1.02,6.6,392,6.48,"char,world,cine,spect,conc,resol",,docs/shows/bates-motel.html
+339,Lioness,lioness,active,16,7.5,7.5,7.5,6,7,7.5,5.5,6.95,0.95,6.6,312,6.95,"char,world,cine,spect,drive,resol",,docs/shows/lioness.html
+340,Marvel's Agent Carter,agent-carter,active,18,7.5,8,8,6,7,7.5,5,6.95,0.95,6.6,313,6.95,"char,world,cine,drive,resol",,docs/shows/agent-carter.html
+341,Surface,surface,active,16,7,7,7.5,6,7,7.5,6.5,6.95,0.95,6.6,315,6.95,"world,cine,spect,conc,drive,resol",,docs/shows/surface.html
+342,The Punisher,the-punisher,active,26,8,6.5,7.5,5.5,7,7.5,5,6.8,0.97,6.6,343,6.8,"world,cine,spect,conc,drive,resol",,docs/shows/the-punisher.html
+343,The Terror (S1),the-terror-s1,active,10,7,7.5,7,6.5,7,6.5,6.5,6.875,0.96,6.6,327,6.88,"char,world,cine,spect,drive,resol",,docs/shows/the-terror-s1.html
+344,WeCrashed,wecrashed,active,8,7.5,6.5,7,5,6.5,7,7,6.875,0.96,6.6,328,6.88,"world,cine,spect,conc,resol",,docs/shows/wecrashed.html
+345,This Country,this-country,active,19,8,7,6,3,6.5,7,7,6.925,0.95,6.58,319,6.93,"char,conc,drive,resol",,docs/shows/this-country.html
+346,All of Us Are Dead,all-of-us-are-dead,active,12,7,7,7.5,7,6.5,8,6,6.9,0.95,6.56,320,6.9,"cine,spect,conc,drive",,docs/shows/all-of-us-are-dead.html
+347,Castle Rock,castle-rock,active,20,7,8.5,8,6,7,7.5,5,6.9,0.95,6.56,321,6.9,"char,world,cine,spect,conc,drive,resol",,docs/shows/castle-rock.html
+348,Archive 81,archive-81,active,8,7,7.5,8,6,7.5,7.5,5,6.825,0.96,6.55,332,6.83,"world,spect,conc,drive,resol",,docs/shows/archive-81.html
+349,Lessons in Chemistry,lessons-in-chemistry,active,8,7,6.5,7.5,4,7,7,7,6.8,0.96,6.53,337,6.8,"char,world,cine",,docs/shows/lessons-in-chemistry.html
+350,Light Shop,light-shop,active,8,7,7,7,5,7,7,6.5,6.8,0.96,6.53,338,6.8,,,docs/shows/light-shop.html
+351,The Changeling,the-changeling,active,8,7,7.5,7.5,6.5,7,6.5,6,6.8,0.96,6.53,340,6.8,"char,world,cine,spect,conc",,docs/shows/the-changeling.html
+352,Unbelievable,unbelievable,active,8,7,6,7,4,7,7,7.5,6.8,0.96,6.53,344,6.8,"char,world,spect,conc,drive,resol",,docs/shows/unbelievable.html
+353,The Deuce,the-deuce,active,25,7,7,7,5,7,6.5,6.5,6.725,0.97,6.52,353,6.73,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-deuce.html
+354,Friendly Rivalry,friendly-rivalry,active,16,7,6.5,7,4,7,7.5,7,6.85,0.95,6.51,331,6.85,,,docs/shows/friendly-rivalry.html
+355,The Diplomat,the-diplomat,active,8,7,7,7,5,7,7.5,6,6.775,0.96,6.5,346,6.78,"char,world,cine,spect,drive,resol",,docs/shows/the-diplomat.html
+356,The Outsider,the-outsider-hbo,active,10,7.5,7,7.5,6,7,7.5,5,6.775,0.96,6.5,347,6.78,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-outsider-hbo.html
+357,The Responder,the-responder,active,10,8,6,7,4,7.5,8,5,6.775,0.96,6.5,348,6.78,"char,world,spect,resol",,docs/shows/the-responder.html
+358,Echo 3,echo-3,active,10,6.5,7,7.5,7.5,6.5,7,6.5,6.75,0.96,6.48,349,6.75,"char,cine,spect",,docs/shows/echo-3.html
+359,Evil,evil,active,50,7,6.5,6.5,5,6.5,6.5,5.5,6.35,1.02,6.48,402,6.35,"char,world,conc,drive,resol",,docs/shows/evil.html
+360,Marry My Husband,marry-my-husband,active,16,7,6.5,7,5,6.5,7.5,7,6.825,0.95,6.48,334,6.83,"char,world,cine,spect,conc,drive,resol",,docs/shows/marry-my-husband.html
+361,The Long Season,the-long-season,active,12,7,7,7,5,7,6.5,7,6.825,0.95,6.48,335,6.83,"char,world,spect,conc,drive",,docs/shows/the-long-season.html
+362,The Night Manager,the-night-manager,active,12,7,6.5,7.5,6,6.5,7,7,6.825,0.95,6.48,336,6.83,"char,world,cine,conc,drive",,docs/shows/the-night-manager.html
+363,Like Water for Chocolate,like-water-for-chocolate,active,12,7,7,7.5,4,6.5,7,7,6.8,0.95,6.46,339,6.8,"cine,spect,conc,drive",,docs/shows/like-water-for-chocolate.html
+364,The Flight Attendant,the-flight-attendant,active,16,7.5,6.5,7,4,6.5,7.5,6.5,6.8,0.95,6.46,341,6.8,"cine,conc",,docs/shows/the-flight-attendant.html
+365,Fleabag,fleabag,active,12,7.5,5,6.5,3,7,7.5,7.5,6.775,0.95,6.44,345,6.78,"char,world,cine,spect,conc,drive,resol",,docs/shows/fleabag.html
+366,Let the Right One In,let-the-right-one-in,active,10,7,7,7.5,6.5,7,7,5.5,6.7,0.96,6.43,357,6.7,"char,cine,spect,drive,resol",,docs/shows/let-the-right-one-in.html
+367,Resurrection,resurrection-2014,active,21,7,7,7,6,7,7.5,5,6.625,0.97,6.43,373,6.63,"world,cine,spect,drive",,docs/shows/resurrection-2014.html
+368,Show Me a Hero,show-me-a-hero,active,6,7,7,7,4,7,6,7,6.7,0.96,6.43,358,6.7,"char,world,spect,conc,drive,resol",,docs/shows/show-me-a-hero.html
+369,Unorthodox,unorthodox,active,4,7,6.5,7,4,6.5,7,7,6.7,0.96,6.43,362,6.7,"char,world,cine,spect,conc,drive,resol",,docs/shows/unorthodox.html
+370,Dear Edward,dear-edward,active,10,7,7,7,5.5,6.5,6.5,6.5,6.675,0.96,6.41,364,6.68,"world,cine,spect,conc,drive",,docs/shows/dear-edward.html
+371,Good Boy,good-boy-2025,active,16,7,6.5,7,5,6.5,7,7,6.75,0.95,6.41,350,6.75,,,docs/shows/good-boy-2025.html
+372,Mildred Pierce,mildred-pierce,active,5,7.5,6,7,4,7,6,7,6.675,0.96,6.41,365,6.68,"char,world,cine,spect,conc,drive,resol",,docs/shows/mildred-pierce.html
+373,When Life Gives You Tangerines,when-life-gives-you-tangerines,active,16,7,6.5,7,4,6,7,7.5,6.725,0.95,6.39,354,6.73,"world,drive,resol",,docs/shows/when-life-gives-you-tangerines.html
+374,McMafia,mcmafia,active,8,7,7.5,7,5,7.5,7,5,6.65,0.96,6.38,368,6.65,"world,resol",,docs/shows/mcmafia.html
+375,The Loyal Pin,the-loyal-pin,active,16,7,6.5,6.5,4,6,7,7.5,6.7,0.95,6.37,361,6.7,,,docs/shows/the-loyal-pin.html
+376,You,you,active,50,6.5,6,6,4,6.5,7.5,5.5,6.225,1.02,6.35,412,6.23,"char,world,conc,drive,resol",,docs/shows/you.html
+377,Crash Landing on You,crash-landing-on-you,active,16,7,6.5,6.5,5.5,6,7,7,6.675,0.95,6.34,363,6.68,"char,world,cine,spect,conc,drive,resol",,docs/shows/crash-landing-on-you.html
+378,Ms. Marvel,ms-marvel,active,6,7,7.5,6.5,6,5.5,6.5,6.5,6.6,0.96,6.34,376,6.6,"char,world,cine,conc,drive",,docs/shows/ms-marvel.html
+379,Tell Me You Love Me,tell-me-you-love-me,active,10,7.5,6.5,6.5,4,7,6.5,6,6.6,0.96,6.34,377,6.6,"char,world,cine,spect,drive",,docs/shows/tell-me-you-love-me.html
+380,The Book of Boba Fett,the-book-of-boba-fett,active,7,6.5,8,7.5,8,6,6,6,6.6,0.96,6.34,378,6.6,"char,world,cine,spect,conc",,docs/shows/the-book-of-boba-fett.html
+381,Sense8,sense8,active,24,7,7.5,7,7,6.5,6.5,5,6.525,0.97,6.33,385,6.53,"char,world,cine,spect,conc,drive,resol",,docs/shows/sense8.html
+382,The Bridge,the-bridge,active,38,7,7,6.5,5,6.5,6.5,5,6.325,1,6.33,405,6.33,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-bridge.html
+383,The Sandman,the-sandman,active,23,6.5,7,7,7,7,6,6,6.525,0.97,6.33,386,6.53,"char,world,cine,spect,conc,drive,resol",,docs/shows/the-sandman.html
+384,Lovely Runner,lovely-runner,active,16,7,6.5,6.5,5,5.5,7.5,7,6.65,0.95,6.32,367,6.65,"char,cine,conc,resol",,docs/shows/lovely-runner.html
+385,The Empress,the-empress,active,12,7,8,8,6.5,6,6.5,5.5,6.65,0.95,6.32,370,6.65,,,docs/shows/the-empress.html
+386,Marvel's Luke Cage,luke-cage,active,26,7,7.5,7.5,6,6.5,6.5,5,6.5,0.97,6.31,388,6.5,"char,world,cine,conc,resol",,docs/shows/luke-cage.html
+387,The Mandalorian,the-mandalorian,active,24,6.5,7.5,7.5,7.5,5.5,6.5,6,6.5,0.97,6.31,391,6.5,"char,world,cine,spect,conc,drive",,docs/shows/the-mandalorian.html
+388,Shadow and Bone,shadow-and-bone,active,16,7,8,7,7,7.5,7,4,6.625,0.95,6.29,374,6.63,"cine,conc,resol",,docs/shows/shadow-and-bone.html
+389,The Last Thing He Told Me,last-thing-he-told-me,active,7,6.5,6.5,7,5.5,6.5,7,6.5,6.55,0.96,6.29,382,6.55,"char,world,cine,spect,conc,resol",,docs/shows/last-thing-he-told-me.html
+390,Golden Boy,golden-boy-2022,active,103,6.5,6,6.5,4,6,6.5,5,5.925,1.06,6.28,426,5.93,"cine,spect,conc,drive,resol",,docs/shows/golden-boy-2022.html
+391,Cross,cross-2024,active,16,7,6.5,7,5,7,7.5,5.5,6.6,0.95,6.27,375,6.6,"spect,conc,drive,resol",,docs/shows/cross-2024.html
+392,Secret Invasion,secret-invasion,active,6,6.5,7,7,7,6.5,6.5,6,6.525,0.96,6.26,384,6.53,"char,world,cine,spect,conc,resol",,docs/shows/secret-invasion.html
+393,Gen V,gen-v,active,8,6.5,7,7,7,6.5,7,5.5,6.5,0.96,6.24,387,6.5,"char,world,drive,resol",,docs/shows/gen-v.html
+394,Obi-Wan Kenobi,obi-wan-kenobi,active,6,6.5,8,7,7.5,5,6,6.5,6.5,0.96,6.24,389,6.5,"char,world,cine,spect,conc,drive",,docs/shows/obi-wan-kenobi.html
+395,Hidden Love,hidden-love,active,25,7,6,7,3,5.5,7,7,6.425,0.97,6.23,400,6.43,"cine,conc,drive",,docs/shows/hidden-love.html
+396,"Bon Appétit, Your Majesty",bon-appetit-your-majesty,active,12,6.5,7,7,5,6,6.5,7,6.55,0.95,6.22,380,6.55,,,docs/shows/bon-appetit-your-majesty.html
+397,Club de Cuervos,club-de-cuervos,active,45,6.5,6,6,4,6,6.5,6,6.1,1.02,6.22,420,6.1,"char,world,drive,resol",,docs/shows/club-de-cuervos.html
+398,My Demon,my-demon,active,16,6.5,6.5,7,5,6,7,7,6.55,0.95,6.22,381,6.55,"char,world,cine,spect,drive",,docs/shows/my-demon.html
+399,The Peripheral,the-peripheral,active,8,6.5,8,7.5,6,7.5,7,4,6.475,0.96,6.22,393,6.48,"char,cine,conc,drive,resol",,docs/shows/the-peripheral.html
+400,Wonderfalls,wonderfalls,active,13,7.5,7,7,6,7.5,7,4,6.55,0.95,6.22,383,6.55,"cine,spect,conc,drive,resol",,docs/shows/wonderfalls.html
+401,A Knight of the Seven Kingdoms,a-knight-of-the-seven-kingdoms,active,6,6.5,7,7,7,6,6.5,6,6.45,0.96,6.19,394,6.45,"char,world,cine,conc,drive,resol",,docs/shows/a-knight-of-the-seven-kingdoms.html
+402,Fallout,fallout,active,8,6.5,7,7,7,6,6.5,6,6.45,0.96,6.19,395,6.45,"char,world,cine,spect,conc,drive,resol",,docs/shows/fallout.html
+403,Ahsoka,ahsoka,active,8,6.5,7,7,7,6.5,6.5,5.5,6.425,0.96,6.17,398,6.43,"char,world,cine,spect,conc,drive,resol",,docs/shows/ahsoka.html
+404,Bosch: Legacy,bosch-legacy,active,30,6.5,6.5,6.5,4,6.5,7,6,6.35,0.97,6.16,401,6.35,"char,world,cine,spect,conc,drive,resol",,docs/shows/bosch-legacy.html
+405,Head Over Heels,head-over-heels-2025,active,12,6.5,6.5,6.5,5,5.5,7,7,6.45,0.95,6.13,396,6.45,"world,cine,spect,conc,drive",,docs/shows/head-over-heels-2025.html
+406,The Old Man,the-old-man,active,15,7.5,7,7,5,6.5,7,4.5,6.45,0.95,6.13,397,6.45,"char,world,cine,conc,drive,resol",,docs/shows/the-old-man.html
+407,Heartstopper,heartstopper,active,24,7,6,6,3,6,6.5,6.5,6.275,0.97,6.09,406,6.28,"char,world,cine,spect,drive,resol",,docs/shows/heartstopper.html
+408,Daisy Jones & the Six,daisy-jones-the-six,active,10,6.5,6.5,7,4,6,6.5,6.5,6.325,0.96,6.07,403,6.33,"char,world,cine,spect,conc,drive,resol",,docs/shows/daisy-jones-the-six.html
+409,Daredevil: Born Again,daredevil-born-again,active,17,7,6.5,7,6,6,7,5,6.325,0.95,6.01,404,6.33,"char,world,cine,spect,conc,drive,resol",,docs/shows/daredevil-born-again.html
+410,The Man Who Fell to Earth,the-man-who-fell-to-earth,active,10,7,7,7,5.5,7,6.5,4,6.25,0.96,6,408,6.25,"char,spect,conc,drive,resol",,docs/shows/the-man-who-fell-to-earth.html
+411,The Witcher: Blood Origin,the-witcher-blood-origin,active,4,6,7,7,7,6,6,6,6.25,0.96,6,409,6.25,"world,cine,spect,conc,drive,resol",,docs/shows/the-witcher-blood-origin.html
+412,No Gain No Love,no-gain-no-love,active,12,6.5,6,6.5,3,5.5,7,7,6.275,0.95,5.96,407,6.28,"char,cine,spect,conc",,docs/shows/no-gain-no-love.html
+413,Heated Rivalry,heated-rivalry,active,6,6.5,6,6,4,6,6.5,6.5,6.2,0.96,5.95,413,6.2,"char,conc,drive,resol",,docs/shows/heated-rivalry.html
+414,MobLand,mobland,active,10,6.5,6,6.5,5.5,5.5,7,6,6.2,0.96,5.95,414,6.2,"char,world,cine,spect,conc",,docs/shows/mobland.html
+415,Tomorrow,tomorrow,active,16,6.5,6.5,6.5,5,6,6.5,6,6.25,0.95,5.94,410,6.25,"char,world,cine,spect,conc,resol",,docs/shows/tomorrow.html
+416,The Pitt,the-pitt,active,30,6.5,6,6,4,6,6.5,6,6.1,0.97,5.92,421,6.1,"char,world,spect,drive,resol",,docs/shows/the-pitt.html
+417,The OA (S1-2),the-oa,active,16,7,7,6.5,5.5,7,6.5,4,6.225,0.95,5.91,411,6.23,"char,world,cine,spect,conc,drive",,docs/shows/the-oa.html
+418,Sanctuary,sanctuary,active,8,6.5,6.5,6.5,5,6,6.5,5.5,6.15,0.96,5.9,416,6.15,"char,world,cine,conc,drive,resol",,docs/shows/sanctuary.html
+419,Memory of a Killer,memory-of-a-killer,active,10,6.5,6,6.5,5,6.5,7,5,6.125,0.96,5.88,418,6.13,"char,cine,conc,drive,resol",,docs/shows/memory-of-a-killer.html
+420,The Pendragon Cycle: Rise of the Merlin,the-pendragon-cycle,active,7,6.5,7,7,6,6,6,5,6.125,0.96,5.88,419,6.13,"char,cine,spect",,docs/shows/the-pendragon-cycle.html
+421,My Holo Love,my-holo-love,active,12,6.5,6,6.5,5,6,6.5,6,6.175,0.95,5.87,415,6.18,"char,world,cine,spect,drive,resol",,docs/shows/my-holo-love.html
+422,Landman,landman,active,20,6.5,6.5,6,5,6,6.5,5.5,6.125,0.95,5.82,417,6.13,"char,world,cine,spect,conc,drive,resol",,docs/shows/landman.html
+423,Marvel's Iron Fist,iron-fist,active,23,6,7,6.5,6.5,6,6,5,6.0,0.97,5.82,425,6,"world,cine,spect,conc,drive",,docs/shows/iron-fist.html
+424,High School Return of a Gangster,high-school-return-of-a-gangster,active,8,6.5,5.5,6,4,5,7,6.5,6.05,0.96,5.81,422,6.05,"char,world,spect,conc",,docs/shows/high-school-return-of-a-gangster.html
+425,No One Will Miss Us,no-one-will-miss-us,active,8,6.5,6,6.5,3,6,7,5.5,6.05,0.96,5.81,423,6.05,"cine,spect,conc,resol",,docs/shows/no-one-will-miss-us.html
+426,Dinastía Casillas,dinastia-casillas,active,92,6,5.5,5.5,4,5.5,6,5,5.525,1.05,5.8,431,5.53,"char,world,cine,conc,drive,resol",,docs/shows/dinastia-casillas.html
+427,From Dusk Till Dawn: The Series,from-dusk-till-dawn-the-series,active,30,6,6.5,6.5,6,5.5,6.5,5,5.9,0.97,5.72,427,5.9,"char,world,cine,conc,resol",,docs/shows/from-dusk-till-dawn-the-series.html
+428,Prime Suspect (US),prime-suspect-us,active,13,6.5,6,6.5,3,6.5,7,5,6.025,0.95,5.72,424,6.03,"char,cine,spect,conc,drive,resol",,docs/shows/prime-suspect-us.html
+429,The I-Land,the-i-land,active,7,5.5,6.5,6,5.5,6,6.5,5.5,5.9,0.96,5.66,428,5.9,"char,world,spect,conc,drive,resol",,docs/shows/the-i-land.html
+430,Maxton Hall,maxton-hall,active,12,6,6,6.5,4,5.5,6.5,5.5,5.825,0.95,5.53,429,5.83,"char,cine,spect,conc,drive,resol",,docs/shows/maxton-hall.html
+431,Rigo,rigo,active,99,5.5,5,5.5,4,5,6,5,5.25,1.05,5.51,435,5.25,"char,world,cine,spect,conc,drive,resol",,docs/shows/rigo.html
+432,Can This Love Be Translated?,can-this-love-be-translated,active,12,6.5,6,6.5,4,5.5,6,5,5.775,0.95,5.49,430,5.78,"char,cine,spect,conc,drive,resol",,docs/shows/can-this-love-be-translated.html
+433,Chicago Justice,chicago-justice,active,13,6,5.5,6,3,6,6.5,4,5.45,0.95,5.18,432,5.45,"world,cine,spect,conc,drive",,docs/shows/chicago-justice.html
+434,Paradise City,paradise-city,active,8,5.5,5.5,6,4,5,5.5,5,5.275,0.96,5.06,433,5.28,"char,world,cine,spect,conc,drive,resol",,docs/shows/paradise-city.html
+435,Esrefs Dream,esrefs-dream,active,10,5.5,5.5,5.5,4,5,5.5,5,5.25,0.96,5.04,434,5.25,"char,world,cine,conc,drive,resol",,docs/shows/esrefs-dream.html
+436,Speed and Love,speed-and-love,active,12,5.5,5,5.5,4,5,6,5,5.25,0.95,4.99,436,5.25,"char,world,cine,spect,drive,resol",,docs/shows/speed-and-love.html
+437,Museum of Innocence,museum-of-innocence,active,8,5.5,5.5,6,4,5,5.5,4.5,5.175,0.96,4.97,437,5.18,"char,world,cine,spect,conc,drive,resol",,docs/shows/museum-of-innocence.html
+438,Pluribus,pluribus,active,9,5.5,5.5,5.5,4,5,5.5,4.5,5.15,0.96,4.94,438,5.15,"char,world,cine,spect,conc,drive,resol",,docs/shows/pluribus.html
+439,The Art of Sarah,the-art-of-sarah,active,8,5.5,5.5,5.5,4,5,5.5,4.5,5.15,0.96,4.94,439,5.15,"char,world,cine,spect,conc,resol",,docs/shows/the-art-of-sarah.html
+,The Killing,the-killing,duplicate-alias,44,8,7.5,8,5,7.5,8,6.5,7.4,1.02,,,,"char,world,spect,conc,resol",,docs/shows/the-killing.html
+,Doctor Who (2005),doctor-who-2005,duplicate-alias,175,8,9,6.5,6,7,7,6,7.275,1.06,,,,"world,cine,conc,drive,resol",,docs/shows/doctor-who-2005.html
+,Revolution 9,revolution-9-2024,unverified,6,7,7,7,5.5,7.5,7.5,6.5,6.975,0.96,,,,"spect,conc,drive,resol",,docs/shows/revolution-9-2024.html

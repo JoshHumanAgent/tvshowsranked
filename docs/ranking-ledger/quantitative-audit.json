@@ -1,0 +1,959 @@
+{
+  "statistics": {
+    "catalogueRecords": 442,
+    "activeShows": 439,
+    "archivedReviews": 457,
+    "weights": {
+      "char": 25,
+      "world": 15,
+      "cine": 5,
+      "spect": 5,
+      "conc": 15,
+      "drive": 15,
+      "resol": 20
+    },
+    "weightsTotal": 100,
+    "reviewExplanationCoverage": {
+      "0": 1,
+      "3": 196,
+      "6": 4,
+      "7": 256
+    },
+    "reviewsWithAllSevenExtractableScores": 453,
+    "activeReviewsWithCategoryMismatch": 419,
+    "activeReviewsWithMultipleValues": 11,
+    "reviewsWith105PercentGrid": 22,
+    "reviewsUsingConceptualDepthLabel": 57,
+    "reviewsWithPlaceholders": 2,
+    "activeReviewsWhosePrintedFinalNeverMatchesCurrent": 417,
+    "activeReviewsWithExtractedPrintedFinal": 432,
+    "additionalDistinctReviewBodiesAudited": 219,
+    "foundationBaseCount": 103,
+    "foundationCategoryChanges": 18,
+    "roundedScoreTieGroups": 102,
+    "showsInRoundedTies": 360,
+    "lengthChangesRank": 427,
+    "scoreRange": [
+      4.94,
+      9.53
+    ],
+    "categoryDistribution": {
+      "char": {
+        "mean": 7.524,
+        "ninesOrHigher": 14,
+        "perfectTens": 1
+      },
+      "world": {
+        "mean": 7.288,
+        "ninesOrHigher": 17,
+        "perfectTens": 2
+      },
+      "cine": {
+        "mean": 7.38,
+        "ninesOrHigher": 33,
+        "perfectTens": 5
+      },
+      "spect": {
+        "mean": 5.839,
+        "ninesOrHigher": 16,
+        "perfectTens": 2
+      },
+      "conc": {
+        "mean": 7.229,
+        "ninesOrHigher": 26,
+        "perfectTens": 2
+      },
+      "drive": {
+        "mean": 7.44,
+        "ninesOrHigher": 17,
+        "perfectTens": 2
+      },
+      "resol": {
+        "mean": 6.805,
+        "ninesOrHigher": 25,
+        "perfectTens": 5
+      }
+    },
+    "method": "Scores and rankings use the application Model. Review counts use conservative heading/label extraction; missing extracted explanation means no labelled rationale was found, not proof the entire prose contains no relevant evidence."
+  },
+  "historicalExports": [
+    {
+      "path": "_archived/josh-edits/tvranked-scores-2026-02-15T13-16-43.json",
+      "timestamp": "2026-02-15T13:16:43.171Z",
+      "weights": {
+        "char": 20,
+        "world": 15,
+        "cine": 10,
+        "spect": 10,
+        "conc": 15,
+        "drive": 15,
+        "resol": 15
+      },
+      "baseCount": 103,
+      "overrides": {
+        "Chernobyl": {
+          "char": 7,
+          "world": 8,
+          "cine": 9,
+          "spect": 8,
+          "conc": 8,
+          "drive": 8,
+          "resol": 9
+        },
+        "Watchmen (2019)": {
+          "char": 7,
+          "world": 7.5,
+          "cine": 7.5,
+          "spect": 8,
+          "conc": 7,
+          "drive": 7,
+          "resol": 8
+        },
+        "Andor": {
+          "char": 7.5,
+          "world": 9.5,
+          "cine": 8.5,
+          "spect": 8.5,
+          "conc": 8.5,
+          "drive": 7.5,
+          "resol": 8
+        }
+      }
+    },
+    {
+      "path": "_archived/josh-edits/tvranked-scores-2026-02-16T00-45-35.json",
+      "timestamp": "2026-02-16T00:45:35.826Z",
+      "weights": {
+        "char": 20,
+        "world": 15,
+        "cine": 10,
+        "spect": 10,
+        "conc": 15,
+        "drive": 15,
+        "resol": 15
+      },
+      "baseCount": 103,
+      "overrides": {
+        "Breaking Bad": {
+          "char": 9,
+          "world": 7,
+          "cine": 10,
+          "spect": 6,
+          "conc": 9,
+          "drive": 10,
+          "resol": 10
+        },
+        "True Detective S1": {
+          "char": 8,
+          "world": 7.5,
+          "cine": 10,
+          "spect": 6,
+          "conc": 8,
+          "drive": 9,
+          "resol": 8
+        }
+      }
+    },
+    {
+      "path": "_archived/josh-edits/tvranked-scores-2026-02-16T02-34-48.json",
+      "timestamp": "2026-02-16T02:34:48.905Z",
+      "weights": {
+        "char": 20,
+        "world": 15,
+        "cine": 10,
+        "spect": 10,
+        "conc": 15,
+        "drive": 15,
+        "resol": 15
+      },
+      "baseCount": 103,
+      "overrides": {
+        "24": {
+          "char": 7,
+          "world": 6,
+          "cine": 6,
+          "spect": 7,
+          "conc": 6,
+          "drive": 9.5,
+          "resol": 7
+        },
+        "Andor": {
+          "char": 7.5,
+          "world": 9,
+          "cine": 8,
+          "spect": 8.5,
+          "conc": 8,
+          "drive": 7.5,
+          "resol": 8
+        },
+        "Adolescence": {
+          "char": 8,
+          "world": 5,
+          "cine": 9.5,
+          "spect": 5,
+          "conc": 9,
+          "drive": 9,
+          "resol": 9
+        },
+        "House of the Dragon": {
+          "char": 8,
+          "world": 9,
+          "cine": 8,
+          "spect": 9.5,
+          "conc": 7.5,
+          "drive": 7.5,
+          "resol": 6.5
+        },
+        "Angels in America": {
+          "char": 8,
+          "world": 7,
+          "cine": 8,
+          "spect": 7,
+          "conc": 9,
+          "drive": 7,
+          "resol": 9
+        },
+        "The Sopranos": {
+          "char": 9.5,
+          "world": 8,
+          "cine": 6.5,
+          "spect": 5,
+          "conc": 9.5,
+          "drive": 8,
+          "resol": 9.5
+        },
+        "Band of Brothers": {
+          "char": 7.5,
+          "world": 9,
+          "cine": 8,
+          "spect": 10,
+          "conc": 8.5,
+          "drive": 9,
+          "resol": 9.5
+        },
+        "The Wire": {
+          "char": 9,
+          "world": 9.5,
+          "cine": 6.5,
+          "spect": 7.5,
+          "conc": 10,
+          "drive": 7.5,
+          "resol": 9.5
+        },
+        "Boardwalk Empire": {
+          "char": 9,
+          "world": 9,
+          "cine": 8,
+          "spect": 9.5,
+          "conc": 8.5,
+          "drive": 6.5,
+          "resol": 7.5
+        },
+        "The Leftovers": {
+          "char": 7,
+          "world": 8,
+          "cine": 8,
+          "spect": 7,
+          "conc": 9,
+          "drive": 8,
+          "resol": 9
+        },
+        "Dark": {
+          "char": 7,
+          "world": 7.5,
+          "cine": 8.5,
+          "spect": 6.5,
+          "conc": 9,
+          "drive": 8.5,
+          "resol": 9
+        },
+        "True Detective S1": {
+          "char": 8,
+          "world": 7,
+          "cine": 10,
+          "spect": 6,
+          "conc": 8,
+          "drive": 9,
+          "resol": 8
+        },
+        "It's a Sin": {
+          "char": 8,
+          "world": 7.5,
+          "cine": 8,
+          "spect": 6,
+          "conc": 8,
+          "drive": 8,
+          "resol": 8.5
+        },
+        "Succession": {
+          "char": 9,
+          "world": 7,
+          "cine": 8,
+          "spect": 7,
+          "conc": 7.5,
+          "drive": 8.5,
+          "resol": 9
+        },
+        "Chernobyl": {
+          "char": 7,
+          "world": 8,
+          "cine": 9,
+          "spect": 8,
+          "conc": 8,
+          "drive": 8.5,
+          "resol": 9
+        },
+        "The Knick": {
+          "char": 8,
+          "world": 8.5,
+          "cine": 9.5,
+          "spect": 8,
+          "conc": 8,
+          "drive": 8,
+          "resol": 6
+        },
+        "The Haunting of Hill House": {
+          "char": 7.5,
+          "world": 7,
+          "cine": 9,
+          "spect": 7,
+          "conc": 8,
+          "drive": 8,
+          "resol": 8.5
+        },
+        "Wolf Hall": {
+          "char": 8,
+          "world": 8.5,
+          "cine": 9,
+          "spect": 7,
+          "conc": 8.5,
+          "drive": 7,
+          "resol": 7
+        },
+        "The Queen's Gambit": {
+          "char": 7.5,
+          "world": 7,
+          "cine": 8.5,
+          "spect": 7,
+          "conc": 7,
+          "drive": 9,
+          "resol": 8
+        },
+        "The Americans": {
+          "char": 8.5,
+          "world": 7.5,
+          "cine": 7,
+          "spect": 5,
+          "conc": 8.5,
+          "drive": 8,
+          "resol": 10
+        },
+        "The Expanse": {
+          "char": 7.5,
+          "world": 10,
+          "cine": 7,
+          "spect": 10,
+          "conc": 8,
+          "drive": 7.5,
+          "resol": 7
+        },
+        "Beef": {
+          "char": 8,
+          "world": 6.5,
+          "cine": 8,
+          "spect": 5,
+          "conc": 8,
+          "drive": 9,
+          "resol": 9
+        },
+        "Halt and Catch Fire": {
+          "char": 8.5,
+          "world": 7.5,
+          "cine": 7,
+          "spect": 5,
+          "conc": 8,
+          "drive": 8,
+          "resol": 9
+        },
+        "Squid Game": {
+          "char": 6.5,
+          "world": 7.5,
+          "cine": 8,
+          "spect": 7.5,
+          "conc": 7,
+          "drive": 9,
+          "resol": 8
+        },
+        "Babylon Berlin": {
+          "char": 7.5,
+          "world": 8.5,
+          "cine": 9,
+          "spect": 9,
+          "conc": 8,
+          "drive": 7.5,
+          "resol": 7
+        },
+        "Generation Kill": {
+          "char": 7,
+          "world": 8,
+          "cine": 8,
+          "spect": 7,
+          "conc": 9,
+          "drive": 7,
+          "resol": 8
+        },
+        "Deadwood": {
+          "char": 9,
+          "world": 8.5,
+          "cine": 7,
+          "spect": 8,
+          "conc": 9,
+          "drive": 7,
+          "resol": 7.5
+        },
+        "When They See Us": {
+          "char": 7.5,
+          "world": 6.5,
+          "cine": 8,
+          "spect": 5,
+          "conc": 9,
+          "drive": 8,
+          "resol": 9
+        },
+        "Silo": {
+          "char": 7.5,
+          "world": 8.5,
+          "cine": 8,
+          "spect": 8,
+          "conc": 8,
+          "drive": 8.5,
+          "resol": 7
+        },
+        "Rome": {
+          "char": 8,
+          "world": 9,
+          "cine": 7,
+          "spect": 9,
+          "conc": 8,
+          "drive": 8,
+          "resol": 6
+        },
+        "Black Mirror": {
+          "char": 7,
+          "world": 7,
+          "cine": 8,
+          "spect": 7,
+          "conc": 9.5,
+          "drive": 8,
+          "resol": 8
+        },
+        "The Shield": {
+          "char": 8.5,
+          "world": 7,
+          "cine": 6,
+          "spect": 5,
+          "conc": 7,
+          "drive": 9,
+          "resol": 10
+        },
+        "Hannibal": {
+          "char": 8,
+          "world": 6.5,
+          "cine": 10,
+          "spect": 8.5,
+          "conc": 8.5,
+          "drive": 6.5,
+          "resol": 8
+        },
+        "Penny Dreadful": {
+          "char": 8.5,
+          "world": 8,
+          "cine": 9,
+          "spect": 9,
+          "conc": 8,
+          "drive": 7.5,
+          "resol": 6
+        },
+        "Euphoria": {
+          "char": 8,
+          "world": 7,
+          "cine": 9.5,
+          "spect": 8.5,
+          "conc": 8,
+          "drive": 8,
+          "resol": 7
+        },
+        "Mad Men": {
+          "char": 8.5,
+          "world": 8,
+          "cine": 8,
+          "spect": 8.5,
+          "conc": 9,
+          "drive": 7,
+          "resol": 7.5
+        },
+        "Twin Peaks: The Return": {
+          "char": 8,
+          "world": 8,
+          "cine": 9,
+          "spect": 9,
+          "conc": 9,
+          "drive": 5,
+          "resol": 7
+        },
+        "The Penguin": {
+          "char": 8,
+          "world": 8.5,
+          "cine": 8,
+          "spect": 6.5,
+          "conc": 8,
+          "drive": 7.5,
+          "resol": 8
+        },
+        "Fargo": {
+          "char": 8,
+          "world": 6.5,
+          "cine": 8.5,
+          "spect": 6,
+          "conc": 8.5,
+          "drive": 8,
+          "resol": 8
+        },
+        "Midnight Mass": {
+          "char": 7.5,
+          "world": 7,
+          "cine": 8,
+          "spect": 6,
+          "conc": 9,
+          "drive": 7,
+          "resol": 9
+        },
+        "The Crown": {
+          "char": 7.5,
+          "world": 8,
+          "cine": 9,
+          "spect": 8.5,
+          "conc": 7,
+          "drive": 7,
+          "resol": 7
+        },
+        "Peaky Blinders": {
+          "char": 8,
+          "world": 8,
+          "cine": 9,
+          "spect": 8.5,
+          "conc": 7,
+          "drive": 7.5,
+          "resol": 7
+        },
+        "Girls": {
+          "char": 8.5,
+          "world": 7,
+          "cine": 7,
+          "spect": 5,
+          "conc": 8.5,
+          "drive": 8.5,
+          "resol": 8
+        },
+        "Justified": {
+          "char": 8,
+          "world": 7.5,
+          "cine": 7,
+          "spect": 5,
+          "conc": 7.5,
+          "drive": 8,
+          "resol": 8
+        },
+        "Foundation": {
+          "char": 7,
+          "world": 8.5,
+          "cine": 8.5,
+          "spect": 9.5,
+          "conc": 8,
+          "drive": 7,
+          "resol": 7
+        },
+        "Ozark": {
+          "char": 8.5,
+          "world": 7,
+          "cine": 8.5,
+          "spect": 6,
+          "conc": 9,
+          "drive": 8.5,
+          "resol": 8.5
+        },
+        "Westworld": {
+          "char": 7.5,
+          "world": 8.5,
+          "cine": 8.5,
+          "spect": 9,
+          "conc": 9.5,
+          "drive": 6.5,
+          "resol": 5
+        },
+        "The Handmaid's Tale": {
+          "char": 7.5,
+          "world": 8.5,
+          "cine": 8.5,
+          "spect": 7.5,
+          "conc": 8.5,
+          "drive": 7,
+          "resol": 6
+        },
+        "Lost": {
+          "char": 9,
+          "world": 8,
+          "cine": 7.5,
+          "spect": 7.5,
+          "conc": 7,
+          "drive": 9.5,
+          "resol": 1
+        },
+        "Stranger Things": {
+          "char": 7,
+          "world": 8,
+          "cine": 8,
+          "spect": 7.5,
+          "conc": 6,
+          "drive": 8.5,
+          "resol": 7
+        }
+      }
+    },
+    {
+      "path": "_archived/josh-edits/tvranked-scores-2026-02-16T02-49-35.json",
+      "timestamp": "2026-02-16T02:49:35.481Z",
+      "weights": {
+        "char": 20,
+        "world": 15,
+        "cine": 10,
+        "spect": 10,
+        "conc": 15,
+        "drive": 15,
+        "resol": 15
+      },
+      "baseCount": 103,
+      "overrides": {
+        "Ozark": {
+          "char": 8.5,
+          "world": 7,
+          "cine": 8.5,
+          "spect": 6,
+          "conc": 8.5,
+          "drive": 8,
+          "resol": 8
+        },
+        "The Bear": {
+          "char": 7.5,
+          "world": 6.5,
+          "cine": 9,
+          "spect": 6,
+          "conc": 7,
+          "drive": 8,
+          "resol": 7
+        },
+        "Stranger Things": {
+          "char": 7,
+          "world": 8.5,
+          "cine": 8,
+          "spect": 8,
+          "conc": 6.5,
+          "drive": 8.5,
+          "resol": 7
+        }
+      }
+    }
+  ],
+  "foundationChanges": [
+    {
+      "title": "The Wire",
+      "categories": {
+        "spect": {
+          "foundation": 7.5,
+          "current": 8
+        }
+      }
+    },
+    {
+      "title": "Band of Brothers",
+      "categories": {
+        "char": {
+          "foundation": 7.5,
+          "current": 8
+        },
+        "world": {
+          "foundation": 9,
+          "current": 9.5
+        },
+        "cine": {
+          "foundation": 8,
+          "current": 8.5
+        }
+      }
+    },
+    {
+      "title": "Better Call Saul",
+      "categories": {
+        "cine": {
+          "foundation": 9,
+          "current": 9.5
+        }
+      }
+    },
+    {
+      "title": "Severance",
+      "categories": {
+        "spect": {
+          "foundation": 6.5,
+          "current": 7
+        },
+        "conc": {
+          "foundation": 9,
+          "current": 9.5
+        },
+        "drive": {
+          "foundation": 9,
+          "current": 8.5
+        },
+        "resol": {
+          "foundation": 6,
+          "current": 7
+        }
+      }
+    },
+    {
+      "title": "Andor",
+      "categories": {
+        "spect": {
+          "foundation": 8.5,
+          "current": 9
+        }
+      }
+    },
+    {
+      "title": "Stranger Things",
+      "categories": {
+        "char": {
+          "foundation": 7,
+          "current": 8
+        },
+        "world": {
+          "foundation": 8,
+          "current": 9
+        },
+        "spect": {
+          "foundation": 7.5,
+          "current": 8
+        },
+        "conc": {
+          "foundation": 6,
+          "current": 7
+        }
+      }
+    },
+    {
+      "title": "House of the Dragon",
+      "categories": {
+        "conc": {
+          "foundation": 7.5,
+          "current": 8
+        }
+      }
+    },
+    {
+      "title": "Beef",
+      "categories": {
+        "char": {
+          "foundation": 8,
+          "current": 7.5
+        }
+      }
+    },
+    {
+      "title": "Euphoria",
+      "categories": {
+        "char": {
+          "foundation": 8,
+          "current": 8.5
+        },
+        "world": {
+          "foundation": 7,
+          "current": 8
+        },
+        "cine": {
+          "foundation": 9.5,
+          "current": 9
+        },
+        "spect": {
+          "foundation": 8.5,
+          "current": 8
+        },
+        "conc": {
+          "foundation": 8,
+          "current": 7.5
+        },
+        "drive": {
+          "foundation": 8,
+          "current": 7.5
+        }
+      }
+    },
+    {
+      "title": "Shogun (2024)",
+      "categories": {
+        "world": {
+          "foundation": 9,
+          "current": 8
+        },
+        "cine": {
+          "foundation": 9,
+          "current": 8.5
+        },
+        "spect": {
+          "foundation": 9,
+          "current": 8
+        },
+        "conc": {
+          "foundation": 7,
+          "current": 7.5
+        }
+      }
+    },
+    {
+      "title": "The Crown",
+      "categories": {
+        "char": {
+          "foundation": 7.5,
+          "current": 8.5
+        },
+        "spect": {
+          "foundation": 8.5,
+          "current": 8
+        }
+      }
+    },
+    {
+      "title": "Ozark",
+      "categories": {
+        "char": {
+          "foundation": 8.5,
+          "current": 8
+        },
+        "world": {
+          "foundation": 7,
+          "current": 6.5
+        },
+        "cine": {
+          "foundation": 8.5,
+          "current": 8
+        },
+        "conc": {
+          "foundation": 9,
+          "current": 8
+        },
+        "drive": {
+          "foundation": 8.5,
+          "current": 8
+        },
+        "resol": {
+          "foundation": 8.5,
+          "current": 8
+        }
+      }
+    },
+    {
+      "title": "The Pacific",
+      "categories": {
+        "world": {
+          "foundation": 8,
+          "current": 8.5
+        }
+      }
+    },
+    {
+      "title": "Westworld",
+      "categories": {
+        "conc": {
+          "foundation": 9.5,
+          "current": 10
+        }
+      }
+    },
+    {
+      "title": "The Handmaid's Tale",
+      "categories": {
+        "world": {
+          "foundation": 8.5,
+          "current": 8
+        },
+        "cine": {
+          "foundation": 8.5,
+          "current": 8
+        }
+      }
+    },
+    {
+      "title": "The Bear",
+      "categories": {
+        "spect": {
+          "foundation": 5,
+          "current": 6
+        }
+      }
+    },
+    {
+      "title": "The Boys",
+      "categories": {
+        "world": {
+          "foundation": 7.5,
+          "current": 7
+        },
+        "conc": {
+          "foundation": 8,
+          "current": 6.5
+        },
+        "drive": {
+          "foundation": 8,
+          "current": 7
+        },
+        "resol": {
+          "foundation": 6,
+          "current": 7
+        }
+      }
+    },
+    {
+      "title": "Pluribus",
+      "categories": {
+        "char": {
+          "foundation": 8.5,
+          "current": 5.5
+        },
+        "world": {
+          "foundation": 7.5,
+          "current": 5.5
+        },
+        "cine": {
+          "foundation": 8.5,
+          "current": 5.5
+        },
+        "spect": {
+          "foundation": 7,
+          "current": 4
+        },
+        "conc": {
+          "foundation": 9,
+          "current": 5
+        },
+        "drive": {
+          "foundation": 8.5,
+          "current": 5.5
+        },
+        "resol": {
+          "foundation": 6,
+          "current": 4.5
+        }
+      }
+    }
+  ]
+}
