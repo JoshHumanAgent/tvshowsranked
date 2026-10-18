@@ -5,7 +5,7 @@ A small, static television ranking app. No framework, package install or build s
 - Public site: <https://dynamicrankengine.com/> (GitHub Pages, `master`).
 - Local work: `D:\DynamicRankEngine`, branch `codex/local-development`.
 - Preview: <http://localhost:4173/>. Local editing and publication are separate steps.
-- 569 visible shows: 448 ranked (23 provisional research assessments and 425 legacy assessments) and 121 awaiting assessment. All 442 original records are preserved, plus 130 additions. Two duplicate aliases and one unidentified entry are excluded from display.
+- 578 visible shows: 450 ranked (25 provisional research assessments and 425 legacy assessments) and 128 awaiting assessment. All 442 original records are preserved, plus 139 additions. Two duplicate aliases and one unidentified entry are excluded from display.
 
 ## Work on the site
 
@@ -27,9 +27,9 @@ See [LOCAL-DEVELOPMENT.md](LOCAL-DEVELOPMENT.md) for startup, storage, testing a
 
 `data/core/00-foundation-list.json` is a historical baseline, not the live calculation. The browser ignores stored `final` and account `_final` caches and calculates from category ratings, applied weights and episode settings.
 
-## Catalogue maintenance — 13 October 2026
+## Catalogue maintenance — 19 October 2026
 
-The [release ledger](docs/catalogue-update-2026-10-13.md) records 130 additions, nine new research assessments and 34 existing release checks. Discovery is checked through 13 October; pending entries have no invented score. [Maintenance rules](docs/CATALOGUE-MAINTENANCE.md) preserve the editorial standard and separate released episodes from assessed scope. Historical verification notes below describe their own releases.
+The [latest report](docs/catalogue-update-2026-10-19.md) records two completed provisional assessments, nine further unranked additions and 163 refreshed episode checks, including seven changed counts. Discovery is checked through 19 October. The dated manifest preserves the previous ledger and records explicit before/after inputs. [Maintenance rules](docs/CATALOGUE-MAINTENANCE.md) preserve the editorial standard and separate released episodes from assessed scope. Historical verification notes below describe their own releases.
 
 ## Assessment improvements — 13 October 2026
 

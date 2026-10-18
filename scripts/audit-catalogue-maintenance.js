@@ -6,14 +6,50 @@ const math = require('../ranking-math');
 const state = require('../ranking-state');
 const canonical = value => Array.isArray(value) ? value.map(canonical) : value && typeof value === 'object'
     ? Object.fromEntries(Object.keys(value).sort().map(k => [k, canonical(value[k])])) : value;
+const same = (a,b) => JSON.stringify(canonical(a)) === JSON.stringify(canonical(b));
+const manifestDigest = ledger => crypto.createHash('sha256').update(JSON.stringify(canonical(ledger))).digest('hex');
+function unchangedDigest(shows, excludedSlugs) {
+    const excluded = new Set(excludedSlugs);
+    const records = shows.filter(s=>!excluded.has(s.slug)).map(({release,...s})=>s).sort((a,b)=>a.slug.localeCompare(b.slug,'en'));
+    return manifestDigest(records);
+}
+function validateTransition(ledger, previous) {
+    if (ledger.version === 1) return [];
+    const errors = [], check = (condition,message) => { if (!condition) errors.push(message); };
+    if (ledger.version !== 2 || !previous || !Array.isArray(ledger.changes) || !Array.isArray(ledger.intakeThisRun)) {
+        return ['Missing maintenance predecessor or change record'];
+    }
+    check(previous.cutoff === ledger.previousCutoff && ledger.previousCutoff < ledger.cutoff, 'Invalid maintenance predecessor');
+    check(manifestDigest(previous) === ledger.previousManifestDigest, 'Historical maintenance manifest changed');
+    const before = new Map(previous.added.map(s=>[s.slug,s]));
+    const after = new Map(ledger.added.map(s=>[s.slug,s]));
+    const changes = new Map(ledger.changes.map(c=>[c.slug,c]));
+    check(changes.size === ledger.changes.length, 'Duplicate maintenance change');
+    for (const [slug, entry] of before) {
+        const change = changes.get(slug);
+        if (!change) { check(same(entry,after.get(slug)), slug+': intake changed without a recorded transition'); continue; }
+        check(same(change.before,entry) && same(change.after,after.get(slug)),slug+': before/after transition disagrees');
+        check(typeof change.reason === 'string' && change.reason.trim().length > 0,slug+': missing change reason');
+        if (change.kind === 'assessment') {
+            check(change.after.status === 'reviewed' && change.after.assessmentVersion === (entry.assessmentVersion || 1)+1,slug+': assessment revision did not advance version');
+        } else if (change.kind === 'pending-release-count') {
+            check(entry.status === 'pending' && change.after.status === 'pending' &&
+                same({...entry,episodes:change.after.episodes},change.after),slug+': release refresh altered pending judgment');
+        } else check(false,slug+': unknown maintenance change kind');
+    }
+    check([...changes.keys()].every(slug=>before.has(slug)), 'Transition names an unknown previous entry');
+    const newlyAdded = [...after.keys()].filter(slug=>!before.has(slug)).sort();
+    check(same(newlyAdded,[...ledger.intakeThisRun].sort()), 'This-run intake does not match new identities');
+    check(same(previous.policy,ledger.policy) && previous.preservedDigest === ledger.preservedDigest, 'Maintenance changed the protected editorial baseline');
+    return errors;
+}
 function preservedDigest(shows) {
     const original = shows.filter(s => s.assessment?.origin !== 'new').map(({release, ...s}) => s).sort((a,b) => a.slug.localeCompare(b.slug,'en'));
     return crypto.createHash('sha256').update(JSON.stringify(canonical(original))).digest('hex');
 }
-function validateMaintenance(data, core, ledger) {
-    const errors = [];
+function validateMaintenance(data, core, ledger, previous) {
+    const errors = validateTransition(ledger,previous);
     const check = (condition, label) => { if (!condition) errors.push(label); };
-    const same = (a,b) => JSON.stringify(canonical(a)) === JSON.stringify(canonical(b));
     const text = s => typeof s === 'string' && s.trim().length > 0;
     const date = s => /^\d{4}-\d{2}-\d{2}$/.test(s || '') && Number.isFinite(Date.parse(s)) && new Date(s).toISOString().slice(0,10) === s;
     const https = url => { try { return new URL(url).protocol === 'https:'; } catch { return false; } };
@@ -21,6 +57,10 @@ function validateMaintenance(data, core, ledger) {
     check(same(math.DEFAULT_WEIGHTS,{char:25,world:15,cine:5,spect:5,conc:15,drive:15,resol:20}), 'Editorial weights drifted');
     check(state.defaults().multiplierEnabled === false && math.episodeMultiplier(10000) === 1.005, 'Duration policy drifted');
     check(same(ledger.policy.weights,math.DEFAULT_WEIGHTS) && ledger.policy.lengthDefault === false && ledger.policy.maxLengthMultiplier === 1.005, 'Manifest policy drifted');
+    if (ledger.version === 2 && Array.isArray(ledger.changes) && Array.isArray(ledger.intakeThisRun)) {
+        check(unchangedDigest(data.shows,[...ledger.intakeThisRun,...ledger.changes.map(c=>c.slug)]) === ledger.unchangedSincePreviousDigest,
+            'Unchanged catalogue records drifted since the previous maintenance release');
+    }
     const original = data.shows.filter(s => s.assessment?.origin !== 'new');
     const added = data.shows.filter(s => s.assessment?.origin === 'new');
     check(original.length === ledger.preservedCount && original.length === 442, 'Original catalogue record count changed');
@@ -80,7 +120,10 @@ function auditCatalogueMaintenance(root = path.resolve(__dirname,'..')) {
     const read = p => JSON.parse(fs.readFileSync(path.join(root,p),'utf8').replace(/^\uFEFF/,''));
     const data = read('data/shows/index.json');
     if (!/^\d{4}-\d{2}-\d{2}$/.test(data.catalogueCheckedThrough || '')) throw new Error('Missing catalogue discovery cutoff');
-    return validateMaintenance(data,read('data/core/ranked.json'),read('data/maintenance/'+data.catalogueCheckedThrough+'.json'));
+    const ledger = read('data/maintenance/'+data.catalogueCheckedThrough+'.json');
+    if (ledger.version === 2 && !/^\d{4}-\d{2}-\d{2}$/.test(ledger.previousCutoff || '')) throw new Error('Invalid maintenance predecessor date');
+    const previous = ledger.version === 2 ? read('data/maintenance/'+ledger.previousCutoff+'.json') : undefined;
+    return validateMaintenance(data,read('data/core/ranked.json'),ledger,previous);
 }
 if (require.main === module) { const result = auditCatalogueMaintenance(); console.log(JSON.stringify(result,null,2)); process.exitCode = result.errors.length ? 1 : 0; }
-module.exports = { auditCatalogueMaintenance, validateMaintenance, preservedDigest };
+module.exports = { auditCatalogueMaintenance, validateMaintenance, validateTransition, manifestDigest, unchangedDigest, preservedDigest };

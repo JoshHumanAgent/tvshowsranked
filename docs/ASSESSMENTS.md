@@ -45,6 +45,8 @@ The earlier critical-audit files and first-five reassessment totals are historic
 
 The [13 October release sweep](catalogue-update-2026-10-13.md) adds 130 programmes, including nine new provisional research assessments; 121 await adequate evidence. The original fourteen reassessments and 425 ranked legacy judgments are preserved. Discovery freshness is not a review date.
 
+The [19 October follow-up](catalogue-update-2026-10-19.md) advances Dying for Sex and The Chair Company from pending to provisional version-2 research assessments, with exact eight-episode scopes and current evidence for all seven dimensions. Nine further titles enter unranked. Across both passes, eleven new-origin entries are assessed and 128 remain pending. The original fourteen reassessments and 425 ranked legacy judgments remain unchanged; returning seasons are recorded as release gaps until separately assessed.
+
 New records use `origin: new`, start at version 1, and have `review.status: none` with a null path. A pending new record has null scores and reasons, an unassessed scope, identity sources and a concrete next action. It remains searchable and shortlistable. Its absence of evidence is never converted to zero. New researched records require the same seven sourced reasons, scope and limitations as a reassessment, plus named critical authors, ending coverage and calibration.
 
 `release` metadata describes dated releases separately from the episode input bound to the score. More released episodes do not enlarge assessment scope automatically. Recently added sorting mixes assessed and pending intake chronologically; score sorting still places pending entries last.

@@ -20,6 +20,8 @@ New research assessments are visibly provisional. If identity is established but
 
 Each deliberate revision records before/after scope and inputs in the dated maintenance ledger; current explanations live only in the canonical catalogue. Preserve the frozen pre-improvement ledger. An initial new assessment starts at version 1 and has no fictional original review. Later scope/score revisions increment its version.
 
+From 19 October, each version-2 maintenance manifest links the previous dated manifest with its canonical SHA-256 digest. Keep the cumulative intake list, identify this run's additions, and record each changed prior entry with its reason and exact before/after inputs. A pending-to-reviewed transition increments the assessment version; a released-count refresh for a still-pending entry cannot introduce a judgment. A second digest protects every otherwise unchanged catalogue record, excluding release metadata. Compute that digest from the predecessor, never from already edited data. Record release-count changes separately; refreshing release metadata does not change assessed scope. The validator checks this history as well as live/core parity.
+
 ## Release gate and repeat visits
 
 1. Check Git status and remote revision. Read this file, ASSESSMENTS.md and the latest maintenance ledger. Resume unresolved intake rather than rediscovering it.

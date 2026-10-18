@@ -48,7 +48,7 @@ do {
     try {
         $rankResponse = Invoke-WebRequest -Uri $rankUrl -UseBasicParsing -TimeoutSec 2
         if ($rankResponse.StatusCode -eq 200 -and
-            $rankResponse.Content.Contains('<title>Dynamic Rank Engine</title>')) {
+            $rankResponse.Content.Contains('<title>Dynamic Rank Engine')) {
             [pscustomobject]@{
                 Status = 'Running'
                 Url = $rankUrl
